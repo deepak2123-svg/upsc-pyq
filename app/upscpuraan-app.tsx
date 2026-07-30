@@ -4,17 +4,39 @@ import { useEffect, useMemo, useState } from "react";
 
 type Screen = "dashboard" | "builder" | "attempt" | "results" | "admin" | "legal";
 type Mode = "Exam" | "Practice";
-type Difficulty = "Easy" | "Moderate" | "Hard" | "Mixed";
+type QuestionDifficulty = "Easy" | "Moderate" | "Hard";
+type Difficulty = "All types" | QuestionDifficulty | "Mixed";
 
-const questions = [
+type Question = {
+  id: string;
+  origin: "pyq" | "generated";
+  sourceTextLocked: boolean;
+  subject: string;
+  topic: string;
+  difficulty: QuestionDifficulty;
+  year: number;
+  exam: string;
+  paper: string;
+  questionNumber: number;
+  promptLines: string[];
+  options: Record<string, string>;
+  answer: string;
+  explanation: string;
+};
+
+const questions: Question[] = [
   {
     id: "geo-2013-14",
+    origin: "pyq",
+    sourceTextLocked: true,
     subject: "Geography",
     topic: "Earth & Atmosphere",
     difficulty: "Moderate",
     year: 2013,
     exam: "CSE",
-    stem: "Variations in the length of daytime and nighttime from season to season are due to",
+    paper: "GS-I",
+    questionNumber: 14,
+    promptLines: ["Variations in the length of daytime and nighttime from season to season are due to"],
     options: {
       A: "the earth’s rotation on its axis",
       B: "the earth’s revolution round the sun in an elliptical manner",
@@ -25,72 +47,71 @@ const questions = [
     explanation: "Seasonal variation in day length is produced by Earth’s axial tilt combined with its revolution around the Sun. The tilt changes the duration for which each hemisphere faces the Sun through the year.",
   },
   {
-    id: "polity-2014-61",
-    subject: "Polity",
-    topic: "Constitution",
-    difficulty: "Hard",
+    id: "geo-cds-2014-75",
+    origin: "pyq",
+    sourceTextLocked: true,
+    subject: "Geography",
+    topic: "Earth–Sun Relations",
+    difficulty: "Moderate",
     year: 2014,
     exam: "CDS",
-    stem: "Who described the Draft Constitution as providing a machinery for government while leaving who should be in power to the people?",
+    paper: "I",
+    questionNumber: 75,
+    promptLines: ["Which of the following statements regarding the duration of day and night is correct?"],
     options: {
-      A: "Jawaharlal Nehru",
-      B: "B. R. Ambedkar",
-      C: "Maulana Abul Kalam Azad",
-      D: "Rajendra Prasad",
+      A: "Difference is least near the Equator and progressively increases away from it",
+      B: "Difference is maximum at the Equator and progressively decreases away from it",
+      C: "Difference is least at the Tropics and progressively increases towards the Equator and Poles",
+      D: "Difference is maximum at the Tropics and progressively decreases towards the Equator and Poles",
     },
-    answer: "B",
-    explanation: "The statement is attributed to Dr. B. R. Ambedkar during the Constituent Assembly debates. It underlines the Constitution’s institutional neutrality in democratic political competition.",
+    answer: "A",
+    explanation: "The seasonal difference between day and night is smallest near the Equator and increases progressively with latitude.",
   },
   {
     id: "geo-2017-1",
+    origin: "pyq",
+    sourceTextLocked: true,
     subject: "Geography",
     topic: "Agriculture",
     difficulty: "Easy",
     year: 2017,
     exam: "CAPF",
-    stem: "Plantation farming has mostly been practised in humid tropics. The soil of humid tropics is highly fertile. Which statement is correct?",
+    paper: "I",
+    questionNumber: 1,
+    promptLines: [
+      "The following items consist of two statements, Statement I and Statement II Examine these two statements carefully and select the correct answer using the code given below :",
+      "Statement I : Plantation farming has mostly been practiced in humid tropics",
+      "Statement II : The soil of humid tropics is highly fertile",
+    ],
     options: {
-      A: "Both are true and the second explains the first",
-      B: "Both are true but the second does not explain the first",
-      C: "The first is true but the second is false",
-      D: "The first is false but the second is true",
+      A: "Both the statements are individually true and Statement II is the correct explanation of Statement I",
+      B: "Both the statements are individually true but Statement II is NOT the correct explanation of Statement I",
+      C: "Statement I is true but Statement II is false",
+      D: "Statement I is false but Statement II is true",
     },
     answer: "C",
     explanation: "Plantations thrive in humid tropical climates, but intense leaching commonly makes tropical soils nutrient-poor. High productivity is maintained through management and nutrient inputs, not naturally high fertility.",
   },
   {
-    id: "polity-federal",
+    id: "polity-nda-2014-149",
+    origin: "pyq",
+    sourceTextLocked: true,
     subject: "Polity",
-    topic: "Federalism",
+    topic: "Citizenship",
     difficulty: "Moderate",
-    year: 2021,
-    exam: "CSE",
-    stem: "Which feature most directly protects the constitutional position of States in India?",
-    options: {
-      A: "Single citizenship",
-      B: "Written distribution of legislative powers",
-      C: "Unified judiciary",
-      D: "Appointment of Governors by the President",
-    },
-    answer: "B",
-    explanation: "A constitutionally written distribution of legislative powers prevents either level of government from unilaterally redefining the other’s law-making domain.",
-  },
-  {
-    id: "history-buddhism",
-    subject: "History",
-    topic: "Ancient India",
-    difficulty: "Easy",
-    year: 2019,
+    year: 2014,
     exam: "NDA",
-    stem: "The Fourth Buddhist Council, associated with the formal division of Buddhism, was held under the patronage of",
+    paper: "I",
+    questionNumber: 149,
+    promptLines: ["Under which of the following Acts is the National Population Register being created?"],
     options: {
-      A: "Ashoka",
-      B: "Ajatashatru",
-      C: "Kanishka",
-      D: "Harshavardhana",
+      A: "The Citizenship Act of India, 1955 as amended in 2004",
+      B: "The Census Act, 1948",
+      C: "The UID Act, 2010",
+      D: "None of the above",
     },
-    answer: "C",
-    explanation: "The Fourth Buddhist Council in the Kushana tradition was convened under Kanishka, commonly associated with Kashmir and the consolidation of Mahayana thought.",
+    answer: "A",
+    explanation: "The National Population Register is prepared under the Citizenship Act, 1955 and the Citizenship Rules, 2003, following the 2004 amendment framework.",
   },
 ];
 
@@ -103,8 +124,8 @@ const attempts = [
 export function UPSCPuraanApp() {
   const [screen, setScreen] = useState<Screen>("dashboard");
   const [exam, setExam] = useState("CSE");
-  const [subjects, setSubjects] = useState<string[]>(["Geography"]);
-  const [difficulty, setDifficulty] = useState<Difficulty>("Mixed");
+  const [subjects, setSubjects] = useState<string[]>([]);
+  const [difficulty, setDifficulty] = useState<Difficulty>("All types");
   const [mode, setMode] = useState<Mode>("Exam");
   const [count, setCount] = useState(20);
   const [duration, setDuration] = useState(30);
@@ -116,9 +137,24 @@ export function UPSCPuraanApp() {
   const [seconds, setSeconds] = useState(30 * 60);
 
   const visibleQuestions = useMemo(() => {
-    const filtered = questions.filter((q) => subjects.includes(q.subject) || subjects.length === 0);
-    return filtered.length >= 3 ? filtered : questions;
-  }, [subjects]);
+    const subjectPool = questions.filter((q) => subjects.length === 0 || subjects.includes(q.subject));
+    if (difficulty === "All types") return subjectPool;
+    if (difficulty !== "Mixed") return subjectPool.filter((q) => q.difficulty === difficulty);
+
+    const buckets: Record<QuestionDifficulty, Question[]> = {
+      Easy: subjectPool.filter((q) => q.difficulty === "Easy"),
+      Moderate: subjectPool.filter((q) => q.difficulty === "Moderate"),
+      Hard: subjectPool.filter((q) => q.difficulty === "Hard"),
+    };
+    const balanced: Question[] = [];
+    const depth = Math.max(buckets.Easy.length, buckets.Moderate.length, buckets.Hard.length);
+    for (let index = 0; index < depth; index += 1) {
+      for (const level of ["Easy", "Moderate", "Hard"] as QuestionDifficulty[]) {
+        if (buckets[level][index]) balanced.push(buckets[level][index]);
+      }
+    }
+    return balanced;
+  }, [subjects, difficulty]);
 
   useEffect(() => {
     if (screen !== "attempt" || mode !== "Exam") return;
@@ -136,6 +172,10 @@ export function UPSCPuraanApp() {
   }, [screen, mode]);
 
   function toggleSubject(value: string) {
+    if (value === "All subjects") {
+      setSubjects([]);
+      return;
+    }
     setSubjects((currentSubjects) =>
       currentSubjects.includes(value)
         ? currentSubjects.filter((subject) => subject !== value)
@@ -144,6 +184,7 @@ export function UPSCPuraanApp() {
   }
 
   function beginTest() {
+    if (visibleQuestions.length === 0) return;
     setCurrent(0);
     setAnswers({});
     setReview([]);
@@ -219,6 +260,7 @@ export function UPSCPuraanApp() {
             setDuration={setDuration}
             sourceMix={sourceMix}
             setSourceMix={setSourceMix}
+            inventoryCount={visibleQuestions.length}
             beginTest={beginTest}
           />
         )}
@@ -319,6 +361,7 @@ type BuilderProps = {
   count:number; setCount:(v:number)=>void;
   duration:number; setDuration:(v:number)=>void;
   sourceMix:boolean; setSourceMix:(v:boolean)=>void;
+  inventoryCount:number;
   beginTest:()=>void;
 };
 
@@ -341,14 +384,14 @@ function Builder(props: BuilderProps) {
       <div className="step">
         <div className="step-no">2</div>
         <div><h3>Subjects</h3><div className="chips">
-          {["Polity","History","Geography","Economy","Environment","Science"].map((subject)=><button key={subject} className={`chip ${props.subjects.includes(subject)?"selected":""}`} onClick={()=>props.toggleSubject(subject)}>{subject}</button>)}
+          {["All subjects","Polity","History","Geography","Economy","Environment","Science"].map((subject)=><button key={subject} className={`chip ${(subject==="All subjects" ? props.subjects.length===0 : props.subjects.includes(subject))?"selected":""}`} onClick={()=>props.toggleSubject(subject)}>{subject}</button>)}
         </div></div>
       </div>
 
       <div className="step">
         <div className="step-no">3</div>
         <div><h3>Difficulty</h3><div className="choice-grid">
-          {(["Easy","Moderate","Hard","Mixed"] as Difficulty[]).map((value)=><button key={value} className={`choice ${props.difficulty===value?"selected":""}`} onClick={()=>props.setDifficulty(value)}><strong>{value}</strong><small>{value==="Mixed"?"Balanced selection":`${value} questions`}</small></button>)}
+          {(["All types","Easy","Moderate","Hard","Mixed"] as Difficulty[]).map((value)=><button key={value} className={`choice ${props.difficulty===value?"selected":""}`} onClick={()=>props.setDifficulty(value)}><strong>{value}</strong><small>{value==="All types"?"No difficulty filter":value==="Mixed"?"Balanced selection":`${value} questions`}</small></button>)}
         </div></div>
       </div>
 
@@ -370,14 +413,14 @@ function Builder(props: BuilderProps) {
       </div>
 
       <div className="card builder-summary">
-        <div><strong>{props.exam} · {props.count} questions · {props.duration} min</strong><div className="meta">{props.difficulty} · {props.mode} mode · {props.subjects.join(", ") || "All subjects"}</div></div>
-        <button className="primary" onClick={props.beginTest}>Generate test →</button>
+        <div><strong>{props.exam} · {props.count} questions · {props.duration} min</strong><div className="meta">{props.difficulty === "All types" ? "All difficulty types" : props.difficulty} · {props.mode} mode · {props.subjects.join(", ") || "All subjects"}</div>{props.inventoryCount===0 && <div className="inventory-error" role="alert">No eligible questions match these filters. Choose a broader subject or difficulty.</div>}</div>
+        <button className="primary" onClick={props.beginTest} disabled={props.inventoryCount===0}>Generate test →</button>
       </div>
     </div>
   );
 }
 
-type TestQuestion = typeof questions[number];
+type TestQuestion = Question;
 function Attempt({ exam, mode, questions: qs, current, answers, review, revealed, seconds, answerQuestion, navigate, toggleReview, submit }: {
   exam:string; mode:Mode; questions:TestQuestion[]; current:number; answers:Record<number,string>; review:number[]; revealed:number[]; seconds:number;
   answerQuestion:(v:string)=>void; navigate:(n:number)=>void; toggleReview:()=>void; submit:()=>void;
@@ -395,8 +438,11 @@ function Attempt({ exam, mode, questions: qs, current, answers, review, revealed
       </header>
       <div className="test-grid">
         <section className="card question-card">
-          <div className="q-meta"><span>Question {current+1} of {qs.length}</span><span>{q.subject} · {q.difficulty} · {q.exam} {q.year}</span></div>
-          <div className="question">{q.stem}</div>
+          <div className="q-meta"><span>Question {current+1} of {qs.length}</span><span>{q.subject} · {q.difficulty} · {q.exam} {q.year} {q.paper} Q{q.questionNumber}</span></div>
+          <div className="source-lock" aria-label="Original exam wording">PYQ · Source verbatim</div>
+          <div className="prompt-lines">
+            {q.promptLines.map((line, index) => <p key={`${q.id}-line-${index}`}>{line}</p>)}
+          </div>
           <div className="options">
             {Object.entries(q.options).map(([key,value]) => {
               let className = answers[current]===key ? "option selected" : "option";

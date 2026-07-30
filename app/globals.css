@@ -176,6 +176,7 @@ h3 { font-size: 16px; }
 }
 .primary { background: var(--accent); color: white; }
 .primary:hover { background: #07543f; }
+.primary:disabled { background: #9babaa; cursor: not-allowed; }
 .secondary { background: var(--surface); border-color: var(--line); color: var(--ink); }
 .quiet { background: transparent; color: var(--accent); padding-inline: 8px; }
 .danger-btn { background: #fff1ef; color: var(--danger); border-color: #f4d1ce; }
@@ -289,6 +290,30 @@ h3 { font-size: 16px; }
 .question-card { padding:clamp(20px,4vw,38px); }
 .q-meta { display:flex; justify-content:space-between; color:var(--muted); font-size:12px; margin-bottom:24px; }
 .question { font-size:19px; line-height:1.55; font-weight:650; }
+.source-lock {
+  display: inline-flex;
+  margin-bottom: 16px;
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.prompt-lines {
+  font-size: 19px;
+  line-height: 1.55;
+  font-weight: 650;
+}
+.prompt-lines p { margin-bottom: 12px; white-space: pre-wrap; }
+.inventory-error {
+  color: var(--danger);
+  font-size: 12px;
+  font-weight: 650;
+  margin-top: 7px;
+}
 .options { display:grid; gap:10px; margin:24px 0; }
 .option {
   display:flex; gap:13px; align-items:flex-start; text-align:left;
