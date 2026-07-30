@@ -28,12 +28,14 @@ test("server-renders the UPSCPuraan product dashboard", async () => {
 });
 
 test("ships the PWA manifest and normalized database model", async () => {
-  const [manifestText, schema, appSource] = await Promise.all([
+  const [manifestText, schema, appSource, bankText] = await Promise.all([
     readFile(new URL("../public/manifest.webmanifest", import.meta.url), "utf8"),
     readFile(new URL("../db/schema.ts", import.meta.url), "utf8"),
     readFile(new URL("../app/upscpuraan-app.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../content/question-bank.json", import.meta.url), "utf8"),
   ]);
   const manifest = JSON.parse(manifestText);
+  const bank = JSON.parse(bankText);
   assert.equal(manifest.name, "UPSCPuraan");
   assert.equal(manifest.display, "standalone");
   assert.match(schema, /questions/);
@@ -44,26 +46,38 @@ test("ships the PWA manifest and normalized database model", async () => {
   assert.match(schema, /sourceTextHash/);
   assert.match(schema, /sourceTextLocked/);
 
-  for (const exam of ["CSE", "CAPF", "CDS", "NDA"]) {
-    assert.match(appSource, new RegExp(`exam: "${exam}"`));
+  assert.equal(bank.total, 1519);
+  assert.deepEqual(bank.sourceCounts, { CSE: 485, CAPF: 241, CDS: 313, NDA: 480 });
+  assert.equal(bank.questions.length, bank.total);
+  for (const question of bank.questions) {
+    assert.equal(question.origin, "pyq");
+    assert.equal(question.sourceTextLocked, true);
+    assert.match(question.sourceTextHash, /^[a-f0-9]{64}$/);
+    assert.ok(question.sourceText.length > 0);
+    assert.equal(Object.keys(question.options).length, 4);
+    assert.ok(question.options[question.answer]);
   }
-  const pyqCount = (appSource.match(/origin: "pyq",/g) ?? []).length;
-  const lockedCount = (appSource.match(/sourceTextLocked: true/g) ?? []).length;
-  const promptCount = (appSource.match(/promptLines: \[/g) ?? []).length;
-  assert.equal(pyqCount, 4);
-  assert.equal(lockedCount, pyqCount);
-  assert.equal(promptCount, pyqCount);
-  assert.match(appSource, /sourceTextLocked: true/);
-  assert.match(appSource, /Statement I : Plantation farming has mostly been practiced in humid tropics/);
-  assert.match(appSource, /Statement II is NOT the correct explanation of Statement I/);
-  assert.doesNotMatch(appSource, /Which statement is correct\?/);
-  assert.doesNotMatch(appSource, /Both are true and the second explains the first/);
-  assert.doesNotMatch(appSource, /The Fourth Buddhist Council, associated with/);
-  assert.match(appSource, /\["All subjects","Polity","History","Geography","Economy","Environment","Science"\]/);
+  const capf = bank.questions.find((question) => question.id === "capf-2017-i-1");
+  assert.ok(capf);
+  assert.equal(capf.sourceText, "The following items consist of two statements, Statement I and Statement II Examine these two statements carefully and select the correct answer using the code given below :\nStatement I : Plantation farming has mostly been practiced in humid tropics\nStatement II : The soil of humid tropics is highly fertile");
+  assert.deepEqual(capf.promptLines, [
+    "The following items consist of two statements, Statement I and Statement II Examine these two statements carefully and select the correct answer using the code given below :",
+    "Statement I : Plantation farming has mostly been practiced in humid tropics",
+    "Statement II : The soil of humid tropics is highly fertile",
+  ]);
+  assert.equal(capf.options.B, "Both the statements are individually true but Statement II is NOT the correct explanation of Statement I");
+  assert.doesNotMatch(capf.sourceText, /Which statement is correct\?/);
+  assert.doesNotMatch(capf.options.A, /Both are true and the second explains the first/);
+  assert.ok(bank.questions.some((question) => question.exam === "NDA" && question.source.dataset.includes("NDA")));
+  assert.ok(bank.questions.some((question) => question.exam === "CDS" && question.source.dataset.includes("CDS")));
+  assert.match(appSource, /questionBank\.questions/);
+  assert.match(appSource, /\["All subjects", \.\.\.props\.availableSubjects\]/);
   assert.match(appSource, /\["All types","Easy","Moderate","Hard","Mixed"\]/);
   assert.match(appSource, /useState<string\[\]>\(\[\]\)/);
   assert.match(appSource, /useState<Difficulty>\("All types"\)/);
   assert.match(appSource, /subjects\.length === 0 \|\| subjects\.includes\(q\.subject\)/);
   assert.match(appSource, /if \(difficulty === "All types"\) return subjectPool/);
+  assert.match(appSource, /eligibleQuestions\.slice\(0, count\)/);
+  assert.match(appSource, /sourceMix \? questions : questions\.filter\(\(q\) => q\.exam === exam\)/);
   assert.match(appSource, /Balanced selection/);
 });

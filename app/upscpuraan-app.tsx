@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import questionBank from "../content/question-bank.json";
 
 type Screen = "dashboard" | "builder" | "attempt" | "results" | "admin" | "legal";
 type Mode = "Exam" | "Practice";
@@ -11,10 +12,22 @@ type Question = {
   id: string;
   origin: "pyq" | "generated";
   sourceTextLocked: boolean;
+  sourceText: string;
+  sourceTextHash: string;
+  source: {
+    dataset: string;
+    year: number | null;
+    paper: string;
+    questionNumber: number;
+    answerStatus: string;
+    answerSource: string | null;
+    rawQuestionText: string | null;
+  };
   subject: string;
   topic: string;
+  subtopic: string;
   difficulty: QuestionDifficulty;
-  year: number;
+  year: number | null;
   exam: string;
   paper: string;
   questionNumber: number;
@@ -22,98 +35,10 @@ type Question = {
   options: Record<string, string>;
   answer: string;
   explanation: string;
+  requiresFigure: boolean;
 };
 
-const questions: Question[] = [
-  {
-    id: "geo-2013-14",
-    origin: "pyq",
-    sourceTextLocked: true,
-    subject: "Geography",
-    topic: "Earth & Atmosphere",
-    difficulty: "Moderate",
-    year: 2013,
-    exam: "CSE",
-    paper: "GS-I",
-    questionNumber: 14,
-    promptLines: ["Variations in the length of daytime and nighttime from season to season are due to"],
-    options: {
-      A: "the earth’s rotation on its axis",
-      B: "the earth’s revolution round the sun in an elliptical manner",
-      C: "latitudinal position of the place",
-      D: "revolution of the earth on a tilted axis",
-    },
-    answer: "D",
-    explanation: "Seasonal variation in day length is produced by Earth’s axial tilt combined with its revolution around the Sun. The tilt changes the duration for which each hemisphere faces the Sun through the year.",
-  },
-  {
-    id: "geo-cds-2014-75",
-    origin: "pyq",
-    sourceTextLocked: true,
-    subject: "Geography",
-    topic: "Earth–Sun Relations",
-    difficulty: "Moderate",
-    year: 2014,
-    exam: "CDS",
-    paper: "I",
-    questionNumber: 75,
-    promptLines: ["Which of the following statements regarding the duration of day and night is correct?"],
-    options: {
-      A: "Difference is least near the Equator and progressively increases away from it",
-      B: "Difference is maximum at the Equator and progressively decreases away from it",
-      C: "Difference is least at the Tropics and progressively increases towards the Equator and Poles",
-      D: "Difference is maximum at the Tropics and progressively decreases towards the Equator and Poles",
-    },
-    answer: "A",
-    explanation: "The seasonal difference between day and night is smallest near the Equator and increases progressively with latitude.",
-  },
-  {
-    id: "geo-2017-1",
-    origin: "pyq",
-    sourceTextLocked: true,
-    subject: "Geography",
-    topic: "Agriculture",
-    difficulty: "Easy",
-    year: 2017,
-    exam: "CAPF",
-    paper: "I",
-    questionNumber: 1,
-    promptLines: [
-      "The following items consist of two statements, Statement I and Statement II Examine these two statements carefully and select the correct answer using the code given below :",
-      "Statement I : Plantation farming has mostly been practiced in humid tropics",
-      "Statement II : The soil of humid tropics is highly fertile",
-    ],
-    options: {
-      A: "Both the statements are individually true and Statement II is the correct explanation of Statement I",
-      B: "Both the statements are individually true but Statement II is NOT the correct explanation of Statement I",
-      C: "Statement I is true but Statement II is false",
-      D: "Statement I is false but Statement II is true",
-    },
-    answer: "C",
-    explanation: "Plantations thrive in humid tropical climates, but intense leaching commonly makes tropical soils nutrient-poor. High productivity is maintained through management and nutrient inputs, not naturally high fertility.",
-  },
-  {
-    id: "polity-nda-2014-149",
-    origin: "pyq",
-    sourceTextLocked: true,
-    subject: "Polity",
-    topic: "Citizenship",
-    difficulty: "Moderate",
-    year: 2014,
-    exam: "NDA",
-    paper: "I",
-    questionNumber: 149,
-    promptLines: ["Under which of the following Acts is the National Population Register being created?"],
-    options: {
-      A: "The Citizenship Act of India, 1955 as amended in 2004",
-      B: "The Census Act, 1948",
-      C: "The UID Act, 2010",
-      D: "None of the above",
-    },
-    answer: "A",
-    explanation: "The National Population Register is prepared under the Citizenship Act, 1955 and the Citizenship Rules, 2003, following the 2004 amendment framework.",
-  },
-];
+const questions = questionBank.questions as Question[];
 
 const attempts = [
   { title: "CSE · Geography mixed", date: "Today, 09:42", score: "36.8 / 50", accuracy: "78%", time: "38m", tone: "good" },
@@ -136,8 +61,18 @@ export function UPSCPuraanApp() {
   const [revealed, setRevealed] = useState<number[]>([]);
   const [seconds, setSeconds] = useState(30 * 60);
 
-  const visibleQuestions = useMemo(() => {
-    const subjectPool = questions.filter((q) => subjects.length === 0 || subjects.includes(q.subject));
+  const availableSubjects = useMemo(() => {
+    const pool = sourceMix ? questions : questions.filter((q) => q.exam === exam);
+    return [...new Set(pool.map((q) => q.subject))].sort((a, b) => a.localeCompare(b));
+  }, [exam, sourceMix]);
+
+  useEffect(() => {
+    setSubjects((currentSubjects) => currentSubjects.filter((subject) => availableSubjects.includes(subject)));
+  }, [availableSubjects]);
+
+  const eligibleQuestions = useMemo(() => {
+    const examPool = sourceMix ? questions : questions.filter((q) => q.exam === exam);
+    const subjectPool = examPool.filter((q) => subjects.length === 0 || subjects.includes(q.subject));
     if (difficulty === "All types") return subjectPool;
     if (difficulty !== "Mixed") return subjectPool.filter((q) => q.difficulty === difficulty);
 
@@ -154,7 +89,9 @@ export function UPSCPuraanApp() {
       }
     }
     return balanced;
-  }, [subjects, difficulty]);
+  }, [exam, sourceMix, subjects, difficulty]);
+
+  const visibleQuestions = useMemo(() => eligibleQuestions.slice(0, count), [eligibleQuestions, count]);
 
   useEffect(() => {
     if (screen !== "attempt" || mode !== "Exam") return;
@@ -184,7 +121,7 @@ export function UPSCPuraanApp() {
   }
 
   function beginTest() {
-    if (visibleQuestions.length === 0) return;
+    if (visibleQuestions.length < count) return;
     setCurrent(0);
     setAnswers({});
     setReview([]);
@@ -250,6 +187,7 @@ export function UPSCPuraanApp() {
             setExam={setExam}
             subjects={subjects}
             toggleSubject={toggleSubject}
+            availableSubjects={availableSubjects}
             difficulty={difficulty}
             setDifficulty={setDifficulty}
             mode={mode}
@@ -260,7 +198,7 @@ export function UPSCPuraanApp() {
             setDuration={setDuration}
             sourceMix={sourceMix}
             setSourceMix={setSourceMix}
-            inventoryCount={visibleQuestions.length}
+            inventoryCount={eligibleQuestions.length}
             beginTest={beginTest}
           />
         )}
@@ -355,7 +293,7 @@ function Dashboard({ onCreate, onResume }: { onCreate: () => void; onResume: () 
 
 type BuilderProps = {
   exam: string; setExam: (v:string)=>void;
-  subjects: string[]; toggleSubject:(v:string)=>void;
+  subjects: string[]; toggleSubject:(v:string)=>void; availableSubjects:string[];
   difficulty: Difficulty; setDifficulty:(v:Difficulty)=>void;
   mode: Mode; setMode:(v:Mode)=>void;
   count:number; setCount:(v:number)=>void;
@@ -384,7 +322,7 @@ function Builder(props: BuilderProps) {
       <div className="step">
         <div className="step-no">2</div>
         <div><h3>Subjects</h3><div className="chips">
-          {["All subjects","Polity","History","Geography","Economy","Environment","Science"].map((subject)=><button key={subject} className={`chip ${(subject==="All subjects" ? props.subjects.length===0 : props.subjects.includes(subject))?"selected":""}`} onClick={()=>props.toggleSubject(subject)}>{subject}</button>)}
+          {["All subjects", ...props.availableSubjects].map((subject)=><button key={subject} className={`chip ${(subject==="All subjects" ? props.subjects.length===0 : props.subjects.includes(subject))?"selected":""}`} onClick={()=>props.toggleSubject(subject)}>{subject}</button>)}
         </div></div>
       </div>
 
@@ -413,8 +351,8 @@ function Builder(props: BuilderProps) {
       </div>
 
       <div className="card builder-summary">
-        <div><strong>{props.exam} · {props.count} questions · {props.duration} min</strong><div className="meta">{props.difficulty === "All types" ? "All difficulty types" : props.difficulty} · {props.mode} mode · {props.subjects.join(", ") || "All subjects"}</div>{props.inventoryCount===0 && <div className="inventory-error" role="alert">No eligible questions match these filters. Choose a broader subject or difficulty.</div>}</div>
-        <button className="primary" onClick={props.beginTest} disabled={props.inventoryCount===0}>Generate test →</button>
+        <div><strong>{props.exam}{props.sourceMix ? " + sibling exams" : ""} · {props.count} questions · {props.duration} min</strong><div className="meta">{props.difficulty === "All types" ? "All difficulty types" : props.difficulty} · {props.mode} mode · {props.subjects.join(", ") || "All subjects"}</div>{props.inventoryCount===0 && <div className="inventory-error" role="alert">No eligible questions match these filters. Choose a broader subject or difficulty.</div>}{props.inventoryCount>0 && props.inventoryCount<props.count && <div className="inventory-error" role="alert">Only {props.inventoryCount} eligible questions match these filters; choose a broader recipe or fewer questions.</div>}</div>
+        <button className="primary" onClick={props.beginTest} disabled={props.inventoryCount<props.count}>Generate test →</button>
       </div>
     </div>
   );
