@@ -47,6 +47,12 @@ test("ships the PWA manifest and normalized database model", async () => {
   for (const exam of ["CSE", "CAPF", "CDS", "NDA"]) {
     assert.match(appSource, new RegExp(`exam: "${exam}"`));
   }
+  const pyqCount = (appSource.match(/origin: "pyq",/g) ?? []).length;
+  const lockedCount = (appSource.match(/sourceTextLocked: true/g) ?? []).length;
+  const promptCount = (appSource.match(/promptLines: \[/g) ?? []).length;
+  assert.equal(pyqCount, 4);
+  assert.equal(lockedCount, pyqCount);
+  assert.equal(promptCount, pyqCount);
   assert.match(appSource, /sourceTextLocked: true/);
   assert.match(appSource, /Statement I : Plantation farming has mostly been practiced in humid tropics/);
   assert.match(appSource, /Statement II is NOT the correct explanation of Statement I/);
@@ -57,4 +63,7 @@ test("ships the PWA manifest and normalized database model", async () => {
   assert.match(appSource, /\["All types","Easy","Moderate","Hard","Mixed"\]/);
   assert.match(appSource, /useState<string\[\]>\(\[\]\)/);
   assert.match(appSource, /useState<Difficulty>\("All types"\)/);
+  assert.match(appSource, /subjects\.length === 0 \|\| subjects\.includes\(q\.subject\)/);
+  assert.match(appSource, /if \(difficulty === "All types"\) return subjectPool/);
+  assert.match(appSource, /Balanced selection/);
 });
