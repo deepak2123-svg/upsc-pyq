@@ -38,6 +38,11 @@ function toSnapshot(row: typeof questions.$inferSelect): QuestionSnapshot {
     subject: row.subject,
     topic: row.topic,
     subtopic: row.subtopic,
+    taxonomyVersion: row.taxonomyVersion,
+    taxonomyHead: row.taxonomyHead,
+    taxonomyChapter: row.taxonomyChapter,
+    taxonomySubtopic: row.taxonomySubtopic,
+    taxonomyId: row.taxonomyId,
     stem: row.stem,
     promptLines: row.promptLines,
     options: row.options,
@@ -79,6 +84,7 @@ function eligibleWhere(recipe: TestRecipe) {
   if (!recipe.sourceMix) predicates.push(eq(questions.exam, recipe.exam));
   if (recipe.subjects.length) predicates.push(inArray(questions.subject, recipe.subjects));
   if (recipe.topics?.length) predicates.push(inArray(questions.topic, recipe.topics));
+  if (recipe.subtopics?.length) predicates.push(inArray(questions.taxonomyId, recipe.subtopics));
   if (recipe.difficulty !== "All types" && recipe.difficulty !== "Mixed") {
     predicates.push(sql`coalesce(${questions.editorialDifficulty}, ${questions.suggestedDifficulty}) = ${recipe.difficulty}`);
   }
@@ -115,6 +121,10 @@ export async function getInventory(recipe: TestRecipe) {
     exam: questions.exam,
     subject: questions.subject,
     topic: questions.topic,
+    taxonomyId: questions.taxonomyId,
+    taxonomyHead: questions.taxonomyHead,
+    taxonomyChapter: questions.taxonomyChapter,
+    taxonomySubtopic: questions.taxonomySubtopic,
     difficulty: sql<string>`coalesce(${questions.editorialDifficulty}, ${questions.suggestedDifficulty}, 'Moderate')`,
   }).from(questions).where(eligibleWhere(recipe));
   return {
@@ -122,6 +132,7 @@ export async function getInventory(recipe: TestRecipe) {
     byExam: rows.reduce((counts, row) => ({ ...counts, [row.exam]: (counts[row.exam] ?? 0) + 1 }), {} as Record<string, number>),
     bySubject: rows.reduce((counts, row) => ({ ...counts, [row.subject]: (counts[row.subject] ?? 0) + 1 }), {} as Record<string, number>),
     byTopic: rows.reduce((counts, row) => ({ ...counts, [row.topic]: (counts[row.topic] ?? 0) + 1 }), {} as Record<string, number>),
+    bySubtopic: rows.reduce((counts, row) => row.taxonomyId ? ({ ...counts, [row.taxonomyId]: (counts[row.taxonomyId] ?? 0) + 1 }) : counts, {} as Record<string, number>),
     byDifficulty: rows.reduce((counts, row) => ({ ...counts, [row.difficulty]: (counts[row.difficulty] ?? 0) + 1 }), {} as Record<string, number>),
   };
 }

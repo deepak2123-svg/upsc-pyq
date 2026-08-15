@@ -6,7 +6,22 @@ import postgres from "postgres";
 
 const root = process.cwd();
 const sourcePath = path.join(root, "content", "question-bank.json");
+const taxonomyPath = path.join(root, "content", "taxonomy", "question-map.json");
+const taxonomyRegistryPath = path.join(root, "content", "taxonomy", "upsc-geography-v1.1.json");
 const apply = process.argv.includes("--apply");
+const taxonomyMap = JSON.parse(await fs.readFile(taxonomyPath, "utf8"));
+const taxonomyParts = await Promise.all(taxonomyMap.parts.map((part) => fs.readFile(path.join(root, "content", "taxonomy", part), "utf8").then(JSON.parse)));
+const taxonomyPairs = taxonomyParts.flatMap((part) => Object.entries(part.pairs));
+const taxonomyRegistry = JSON.parse(await fs.readFile(taxonomyRegistryPath, "utf8"));
+const slug = (value) => value.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const taxonomyById = new Map();
+for (const head of taxonomyRegistry.meta_heads) for (const [chapter, subtopics] of Object.entries(head.chapters)) for (const subtopic of subtopics) {
+  taxonomyById.set(`${slug(head.name)}/${slug(chapter)}/${slug(subtopic)}`, { taxonomyHead: head.name, taxonomyChapter: chapter, taxonomySubtopic: subtopic });
+}
+const taxonomyByQuestionId = new Map(taxonomyPairs.map(([id, index]) => {
+  const taxonomyId = taxonomyParts[0].ids[index];
+  return [id, { taxonomyVersion: taxonomyMap.version, taxonomyId, ...(taxonomyById.get(taxonomyId) ?? {}) }];
+}));
 
 function fingerprint(question) {
   const canonical = [
@@ -34,6 +49,7 @@ function normalize(question) {
   const explanation = typeof question.explanation === "string" && !/^Explanation pending/i.test(question.explanation.trim())
     ? question.explanation.trim()
     : null;
+  const taxonomy = taxonomyByQuestionId.get(question.id);
 
   return {
     record: {
@@ -45,6 +61,11 @@ function normalize(question) {
       subject: question.subject,
       topic: question.topic,
       subtopic: question.subtopic ?? null,
+      taxonomyVersion: taxonomy?.taxonomyVersion ?? null,
+      taxonomyHead: taxonomy?.taxonomyHead ?? null,
+      taxonomyChapter: taxonomy?.taxonomyChapter ?? null,
+      taxonomySubtopic: taxonomy?.taxonomySubtopic ?? null,
+      taxonomyId: taxonomy?.taxonomyId ?? null,
       stem: question.sourceText,
       promptLines: question.promptLines,
       options,
@@ -110,19 +131,29 @@ try {
       const rows = await transaction`
         insert into public.questions (
           id, exam, year, paper, source_question_number, subject, topic, subtopic,
+          taxonomy_version, taxonomy_head, taxonomy_chapter, taxonomy_subtopic, taxonomy_id,
           stem, prompt_lines, options, correct_option, explanation, elimination_notes,
           origin, source, source_fingerprint, source_text_hash, source_text_locked,
           verification_status, evidence, suggested_difficulty, editorial_difficulty,
           workflow_status, requires_figure, figure_key
         ) values (
           ${record.id}, ${record.exam}, ${record.year}, ${record.paper}, ${record.sourceQuestionNumber},
-          ${record.subject}, ${record.topic}, ${record.subtopic}, ${record.stem}, ${sql.json(record.promptLines)},
+          ${record.subject}, ${record.topic}, ${record.subtopic},
+          ${record.taxonomyVersion}, ${record.taxonomyHead}, ${record.taxonomyChapter}, ${record.taxonomySubtopic}, ${record.taxonomyId},
+          ${record.stem}, ${sql.json(record.promptLines)},
           ${sql.json(record.options)}, ${record.correctOption}, ${record.explanation}, ${record.eliminationNotes},
           ${record.origin}, ${sql.json(record.source)}, ${record.sourceFingerprint}, ${record.sourceTextHash},
           ${record.sourceTextLocked}, ${record.verificationStatus}, ${sql.json(record.evidence)},
           ${record.suggestedDifficulty}, ${record.editorialDifficulty}, ${record.workflowStatus},
           ${record.requiresFigure}, ${record.figureKey}
-        ) on conflict (id) do nothing returning id
+        ) on conflict (id) do update set
+          taxonomy_version = coalesce(excluded.taxonomy_version, public.questions.taxonomy_version),
+          taxonomy_head = coalesce(excluded.taxonomy_head, public.questions.taxonomy_head),
+          taxonomy_chapter = coalesce(excluded.taxonomy_chapter, public.questions.taxonomy_chapter),
+          taxonomy_subtopic = coalesce(excluded.taxonomy_subtopic, public.questions.taxonomy_subtopic),
+          taxonomy_id = coalesce(excluded.taxonomy_id, public.questions.taxonomy_id),
+          updated_at = now()
+        returning id
       `;
       inserted += rows.length;
     }

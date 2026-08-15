@@ -1,0 +1,57 @@
+{
+  "version": "upsc-geography-v1.1",
+  "basis": [
+    "UPSC Civil Services: Indian and World Geography - Physical, Social and Economic Geography",
+    "UPSC NDA Section E: Earth, mapping, geomorphology, oceanography, atmosphere, climate, natural regions and regional geography of India"
+  ],
+  "meta_heads": [
+    {
+      "name": "Physical Geography",
+      "chapters": {
+        "Earth, Solar System & Map Fundamentals": ["Solar System, Earth Motions & Time", "Latitude, Longitude, Maps & Geospatial Tools"],
+        "Geomorphology & Earth Structure": ["Earth Interior, Rocks & Tectonics", "Earthquakes, Volcanoes & Geological Hazards", "Weathering, Erosion & Landforms"],
+        "Climatology": ["Atmosphere, Insolation & Temperature", "Pressure, Winds & Weather Systems", "Humidity, Precipitation & Climate Types"],
+        "Oceanography": ["Ocean Relief, Properties & Marine Resources", "Ocean Currents, Tides & Ocean Hazards"]
+      }
+    },
+    {
+      "name": "Indian Geography",
+      "chapters": {
+        "Location, Physiography, Coasts & Islands": ["Location, States & Regional Setting", "Physiographic Divisions, Mountains, Plateaus & Passes", "Coasts, Islands & Coastal Features"],
+        "Climate, Soils, Natural Vegetation & Forests": ["Monsoon, Seasons & Rainfall", "Soils & Soil Conservation", "Natural Vegetation & Forests"],
+        "Drainage & Water Resources": ["River Systems, Lakes, Dams & River-Valley Projects", "Groundwater, Irrigation, Floods & Water Management"],
+        "Agriculture, Minerals, Energy & Industry": ["Agriculture, Crops & Land Use", "Minerals, Energy & Power", "Industries & Industrial Regions"],
+        "Transport, Ports, Trade & Infrastructure": ["Roads, Railways & Inland Transport", "Ports, Sea/Air Routes, Trade & Infrastructure"],
+        "Population, Settlements & Regional Geography": ["Population, Census, Settlements & Tribes", "Regional Development, Places & Institutions"]
+      }
+    },
+    {
+      "name": "World Geography",
+      "chapters": {
+        "Continents, Countries & Major Physical Features": ["Continents, Countries & Major Physical Features"],
+        "Climate, Biomes & Natural Regions": ["World Climates & Local Winds", "Natural Regions, Biomes & Vegetation"],
+        "Rivers, Lakes, Seas, Straits & Islands": ["Rivers, Lakes, Deltas & Canals", "Seas, Straits, Islands & Marine Regions"],
+        "Political, Regional & Economic Geography": ["Boundaries, Regions, Resources & Routes"]
+      }
+    },
+    {
+      "name": "Human & Economic Geography",
+      "chapters": {
+        "Population & Demography": ["Population, Demography & Migration"],
+        "Settlements, Culture & Human Development": ["Settlements, Culture & Human Development"],
+        "Resources, Agriculture & Primary Activities": ["Resource Concepts, Agriculture & Land Use", "Minerals, Energy, Fisheries & Primary Activities"],
+        "Industry, Transport, Services & Trade": ["Industry, Transport, Services & Trade"]
+      }
+    },
+    {
+      "name": "Environment & Ecology",
+      "chapters": {
+        "Ecology & Ecosystems": ["Ecosystems, Biomes & Ecological Processes"],
+        "Biodiversity, Protected Areas & Conservation": ["Biodiversity, Species & Habitat Conservation", "Protected Areas, Wetlands & Biosphere Reserves"],
+        "Pollution, Climate Change & Sustainability": ["Pollution, Climate Change & Sustainability"],
+        "Environmental Governance, Hazards & Disaster Management": ["Environmental Governance, Hazards & Disaster Management"]
+      }
+    }
+  ],
+  "forbidden_labels": ["General", "Miscellaneous", "Physical Geography Concepts", "Indian Geography Concepts", "Economic Geography Concepts"]
+}

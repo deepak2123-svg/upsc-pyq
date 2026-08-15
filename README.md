@@ -28,20 +28,27 @@ instead of exposing a client-side database secret.
 1. Create a Supabase project and configure Google under Authentication /
    Providers. Add https://upscpuraan.vercel.app/auth/callback (and the local
    callback URL) to the provider redirect allow-list.
-2. Run supabase/migrations/0001_upscpuraan.sql in the Supabase SQL editor,
-   followed by supabase/seed/exam-papers.sql.
+2. Run supabase/migrations/0001_upscpuraan.sql and
+   supabase/migrations/0002_taxonomy.sql in the Supabase SQL editor, followed
+   by supabase/seed/exam-papers.sql.
 3. Add the variables in .env.example to the Vercel project:
    NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, DATABASE_URL,
    DATABASE_POOL_SIZE, and NEXT_PUBLIC_APP_URL. DATABASE_URL is server-only
    and must never be prefixed with NEXT_PUBLIC_.
-4. Import the existing bank in dry-run mode, inspect the validation report, and
-   then apply it from a trusted machine:
+4. Check the canonical geography backfill and import the existing bank in
+   dry-run mode, inspect both reports, and then apply it from a trusted machine:
+
+       npm run content:taxonomy
 
        npm run content:import
        npm run content:import -- --apply
 
-   The import preserves exact PYQ stem/options and uses a source fingerprint
-   to skip duplicates. All existing records start as review and unverified.
+   The taxonomy backfill uses `upsc-geography-v1.1` and maps 1,017 current
+   records by source identifiers. Unmatched rows remain unrestricted until
+   editorially mapped. The import preserves exact PYQ stem/options, upserts
+   canonical taxonomy columns for existing records, and uses a source
+   fingerprint to detect duplicates. All existing records start as review and
+   unverified.
 5. Sign in once, then promote the first editorial account in Supabase:
 
        update public.profiles
@@ -69,8 +76,9 @@ remain protected.
 POST /api/tests creates an immutable, deterministic question snapshot and
 returns 409 with shortage details when the recipe cannot be fulfilled.
 Answer autosave, deadlines, submission, scoring and ownership are enforced on
-the server. All subjects and All types are unrestricted defaults, while Mixed
-deliberately cycles through Easy, Moderate and Hard pools.
+the server. All subjects, All types and All subsections are unrestricted
+defaults, while Mixed deliberately cycles through Easy, Moderate and Hard
+pools. Subsection IDs are canonical and use OR semantics.
 
 Use scripts/import-questions-to-supabase.mjs for batch imports. The admin
 import endpoint supports dry-run validation; editorial PATCH operations record

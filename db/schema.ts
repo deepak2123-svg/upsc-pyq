@@ -1,5 +1,6 @@
 import {
   boolean,
+  index,
   integer,
   jsonb,
   numeric,
@@ -31,6 +32,11 @@ export const questions = pgTable(
     subject: text("subject").notNull(),
     topic: text("topic").notNull(),
     subtopic: text("subtopic"),
+    taxonomyVersion: text("taxonomy_version"),
+    taxonomyHead: text("taxonomy_head"),
+    taxonomyChapter: text("taxonomy_chapter"),
+    taxonomySubtopic: text("taxonomy_subtopic"),
+    taxonomyId: text("taxonomy_id"),
     stem: text("stem").notNull(),
     promptLines: jsonb("prompt_lines").$type<string[]>().notNull(),
     options: jsonb("options").$type<Record<string, string>>().notNull(),
@@ -55,6 +61,7 @@ export const questions = pgTable(
   },
   (table) => [
     uniqueIndex("questions_source_fingerprint_idx").on(table.sourceFingerprint),
+    index("questions_taxonomy_filter_idx").on(table.taxonomyVersion, table.taxonomyHead, table.taxonomyChapter, table.taxonomyId),
   ],
 );
 

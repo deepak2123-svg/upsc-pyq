@@ -1,3 +1,5 @@
+import { validTaxonomyIds } from "../taxonomy";
+
 export const DIFFICULTIES = ["All types", "Easy", "Moderate", "Hard", "Mixed"] as const;
 export const EXAMS = ["CSE", "CAPF", "CDS", "NDA"] as const;
 
@@ -10,6 +12,8 @@ export type TestRecipe = {
   paper?: string;
   subjects: string[];
   topics?: string[];
+  /** Canonical taxonomy subtopic IDs. Empty preserves the unrestricted recipe. */
+  subtopics?: string[];
   difficulty: Difficulty;
   count: number;
   durationMinutes: number;
@@ -49,6 +53,11 @@ export type QuestionSnapshot = {
   difficulty: string;
   requiresFigure: boolean;
   figureKey: string | null;
+  taxonomyVersion: string | null;
+  taxonomyHead: string | null;
+  taxonomyChapter: string | null;
+  taxonomySubtopic: string | null;
+  taxonomyId: string | null;
 };
 
 export function normalizeRecipe(input: Partial<TestRecipe>): TestRecipe {
@@ -64,12 +73,14 @@ export function normalizeRecipe(input: Partial<TestRecipe>): TestRecipe {
   const topics = Array.isArray(input.topics)
     ? [...new Set(input.topics.filter((value): value is string => typeof value === "string" && value.trim().length > 0))]
     : [];
+  const subtopics = validTaxonomyIds(input.subtopics, subjects);
 
   return {
     exam,
     paper: typeof input.paper === "string" && input.paper.trim() ? input.paper : undefined,
     subjects,
     topics,
+    subtopics,
     difficulty,
     count,
     durationMinutes,

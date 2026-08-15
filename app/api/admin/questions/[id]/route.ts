@@ -4,6 +4,7 @@ import { editorialEvents, questions } from "../../../../../db/schema";
 import { requireStaff } from "../../../../../lib/server/admin";
 import { handleApiError, json, readJson, requireDatabase } from "../../../../../lib/server/http";
 import { ApiError } from "../../../../../lib/server/test-service";
+import { taxonomyNode } from "../../../../../lib/taxonomy";
 
 export async function PATCH(request: Request, context: { params: Promise<{ id: string }> }) {
   try {
@@ -17,6 +18,12 @@ export async function PATCH(request: Request, context: { params: Promise<{ id: s
     if (existing.origin === "pyq" && (payload.stem || payload.promptLines || payload.options || payload.correctOption)) {
       throw new ApiError(409, "PYQ_SOURCE_LOCKED", "PYQ stem, options, and answer are source-locked.");
     }
+    if (existing.origin === "generated" && payload.workflowStatus === "published" && !(payload.taxonomyId ?? existing.taxonomyId)) {
+      throw new ApiError(422, "TAXONOMY_REQUIRED", "Generated questions need a confirmed canonical taxonomy assignment before publishing.");
+    }
+    if (payload.taxonomyId && !taxonomyNode(payload.taxonomyId)) {
+      throw new ApiError(422, "TAXONOMY_INVALID", "taxonomyId is not present in the active canonical taxonomy registry.");
+    }
     const allowed = {
       explanation: payload.explanation,
       eliminationNotes: payload.eliminationNotes,
@@ -24,6 +31,11 @@ export async function PATCH(request: Request, context: { params: Promise<{ id: s
       workflowStatus: payload.workflowStatus,
       verificationStatus: payload.verificationStatus,
       evidence: payload.evidence,
+      taxonomyVersion: payload.taxonomyVersion,
+      taxonomyHead: payload.taxonomyHead,
+      taxonomyChapter: payload.taxonomyChapter,
+      taxonomySubtopic: payload.taxonomySubtopic,
+      taxonomyId: payload.taxonomyId,
     };
     const before = existing as Record<string, unknown>;
     const updated = (await db.update(questions).set({ ...allowed, updatedAt: new Date(), publishedAt: allowed.workflowStatus === "published" ? new Date() : existing.publishedAt }).where(eq(questions.id, id)).returning())[0];

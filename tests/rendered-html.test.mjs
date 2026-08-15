@@ -60,14 +60,18 @@ test("anonymous API surfaces fail closed until Supabase is configured", async ()
 });
 
 test("ships the PWA manifest and normalized database model", async () => {
-  const [manifestText, schema, appSource, bankText] = await Promise.all([
+  const [manifestText, schema, appSource, bankText, taxonomyText, taxonomyMapText] = await Promise.all([
     readFile(new URL("../public/manifest.webmanifest", import.meta.url), "utf8"),
     readFile(new URL("../db/schema.ts", import.meta.url), "utf8"),
     readFile(new URL("../app/upscpuraan-app.tsx", import.meta.url), "utf8"),
     readFile(new URL("../content/question-bank.json", import.meta.url), "utf8"),
+    readFile(new URL("../content/taxonomy/upsc-geography-v1.1.json", import.meta.url), "utf8"),
+    readFile(new URL("../content/taxonomy/question-map.json", import.meta.url), "utf8"),
   ]);
   const manifest = JSON.parse(manifestText);
   const bank = JSON.parse(bankText);
+  const taxonomy = JSON.parse(taxonomyText);
+  const taxonomyMap = JSON.parse(taxonomyMapText);
   assert.equal(manifest.name, "UPSCPuraan");
   assert.equal(manifest.display, "standalone");
   assert.match(schema, /questions/);
@@ -108,7 +112,13 @@ test("ships the PWA manifest and normalized database model", async () => {
   assert.match(appSource, /useState<string\[\]>\(\[\]\)/);
   assert.match(appSource, /useState<Difficulty>\("All types"\)/);
   assert.match(appSource, /subjects\.length === 0 \|\| subjects\.includes\(q\.subject\)/);
-  assert.match(appSource, /if \(difficulty === "All types"\) return subjectPool/);
+  assert.match(appSource, /if \(difficulty === "All types"\) return subtopics\.length \? subsectionPool : subjectPool/);
+  assert.match(appSource, /Subsections/);
+  assert.match(appSource, /PaperPreview/);
+  assert.match(appSource, /preview-instructions/);
+  assert.match(appSource, /penalty of one-third/);
+  assert.match(appSource, /toggleChapter/);
+  assert.match(appSource, /aria-checked/);
   assert.match(appSource, /eligibleQuestions\.slice\(0, count\)/);
   assert.match(appSource, /sourceMix \? questions : questions\.filter\(\(q\) => q\.exam === exam\)/);
   assert.match(appSource, /Balanced selection/);
@@ -117,4 +127,9 @@ test("ships the PWA manifest and normalized database model", async () => {
   assert.match(appSource, /attempt-app-shell/);
   assert.doesNotMatch(appSource, /PYQ · Source verbatim/);
   assert.doesNotMatch(appSource, /\{q\.subject\} · \{q\.difficulty\}/);
+  assert.equal(taxonomy.version, "upsc-geography-v1.1");
+  const nodes = taxonomy.meta_heads.flatMap((head) => Object.entries(head.chapters).flatMap(([chapter, subtopics]) => subtopics.map((subtopic) => `${head.name}/${chapter}/${subtopic}`)));
+  assert.equal(new Set(nodes).size, nodes.length);
+  assert.equal(taxonomyMap.version, taxonomy.version);
+  assert.equal(taxonomyMap.parts.length, 6);
 });

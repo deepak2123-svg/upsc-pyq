@@ -1,4 +1,5 @@
 import { getRequestIdentity } from "../../../lib/auth/session";
+import { normalizeRecipe } from "../../../lib/domain/test";
 import { handleApiError, json, readJson, requireDatabase } from "../../../lib/server/http";
 import { listSavedTests, saveTestRecipe } from "../../../lib/server/test-service";
 
@@ -20,7 +21,8 @@ export async function POST(request: Request) {
     if (!identity.userId) return json({ error: "Sign in to save a test recipe.", code: "AUTH_REQUIRED" }, { status: 401 });
     const payload = await readJson<{ name?: string; recipe?: Record<string, unknown> }>(request);
     if (!payload.recipe || typeof payload.recipe !== "object") return json({ error: "recipe is required", code: "INVALID_RECIPE" }, { status: 400 });
-    return json({ savedTest: await saveTestRecipe(identity.userId, payload.name ?? "Saved test", payload.recipe) }, { status: 201 });
+    const recipe = normalizeRecipe(payload.recipe as Partial<import("../../../lib/domain/test").TestRecipe>);
+    return json({ savedTest: await saveTestRecipe(identity.userId, payload.name ?? "Saved test", recipe) }, { status: 201 });
   } catch (error) {
     return handleApiError(error);
   }

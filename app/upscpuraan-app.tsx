@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import questionBank from "../content/question-bank.json";
 import { signInWithGoogle, signOut } from "../lib/auth/client";
 import { getSupabaseBrowser } from "../lib/supabase/client";
+import { TAXONOMY_VERSION, chapterSubtopicIds, taxonomyGroupsForSubjects, taxonomyIdForQuestion, taxonomyNode, taxonomyNodesForSubjects } from "../lib/taxonomy";
 
 type Screen = "dashboard" | "builder" | "attempt" | "results" | "admin" | "legal";
 type Mode = "Exam" | "Practice";
@@ -39,9 +40,25 @@ type Question = {
   correctOption?: string;
   explanation: string;
   requiresFigure: boolean;
+  taxonomyVersion?: string | null;
+  taxonomyHead?: string | null;
+  taxonomyChapter?: string | null;
+  taxonomySubtopic?: string | null;
+  taxonomyId?: string | null;
 };
 
-const questions = questionBank.questions as Question[];
+const questions = (questionBank.questions as Question[]).map((question) => {
+  const taxonomyId = question.taxonomyId ?? taxonomyIdForQuestion(question.id) ?? null;
+  const node = taxonomyId ? taxonomyNode(taxonomyId) : undefined;
+  return {
+    ...question,
+    taxonomyVersion: question.taxonomyVersion ?? (node ? TAXONOMY_VERSION : null),
+    taxonomyHead: question.taxonomyHead ?? node?.head ?? null,
+    taxonomyChapter: question.taxonomyChapter ?? node?.chapter ?? null,
+    taxonomySubtopic: question.taxonomySubtopic ?? node?.subtopic ?? null,
+    taxonomyId,
+  };
+});
 
 function mapServerQuestion(value: Record<string, unknown>): Question {
   return {
@@ -65,6 +82,11 @@ function mapServerQuestion(value: Record<string, unknown>): Question {
     correctOption: typeof value.correctOption === "string" ? value.correctOption : undefined,
     explanation: typeof value.explanation === "string" ? value.explanation : "",
     requiresFigure: Boolean(value.requiresFigure),
+    taxonomyVersion: typeof value.taxonomyVersion === "string" ? value.taxonomyVersion : null,
+    taxonomyHead: typeof value.taxonomyHead === "string" ? value.taxonomyHead : null,
+    taxonomyChapter: typeof value.taxonomyChapter === "string" ? value.taxonomyChapter : null,
+    taxonomySubtopic: typeof value.taxonomySubtopic === "string" ? value.taxonomySubtopic : null,
+    taxonomyId: typeof value.taxonomyId === "string" ? value.taxonomyId : taxonomyIdForQuestion(String(value.id)) ?? null,
   };
 }
 
@@ -78,6 +100,7 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
   const [screen, setScreen] = useState<Screen>(initialScreen);
   const [exam, setExam] = useState("CSE");
   const [subjects, setSubjects] = useState<string[]>([]);
+  const [subtopics, setSubtopics] = useState<string[]>([]);
   const [difficulty, setDifficulty] = useState<Difficulty>("All types");
   const [mode, setMode] = useState<Mode>("Exam");
   const [count, setCount] = useState(20);
@@ -111,17 +134,18 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
     if (typeof window === "undefined") return;
     const key = "upscpuraan_guest_state";
     if (screen === "dashboard" && !liveTestId) return;
-    window.localStorage.setItem(key, JSON.stringify({ screen, liveTestId, current, answers, review, seconds, exam, subjects, difficulty, mode, count, duration, sourceMix }));
-  }, [screen, liveTestId, current, answers, review, seconds, exam, subjects, difficulty, mode, count, duration, sourceMix]);
+    window.localStorage.setItem(key, JSON.stringify({ screen, liveTestId, current, answers, review, seconds, exam, subjects, subtopics, difficulty, mode, count, duration, sourceMix }));
+  }, [screen, liveTestId, current, answers, review, seconds, exam, subjects, subtopics, difficulty, mode, count, duration, sourceMix]);
 
   useEffect(() => {
     if (typeof window === "undefined" || initialScreen !== "dashboard") return;
     const raw = window.localStorage.getItem("upscpuraan_guest_state");
     if (!raw) return;
     try {
-      const saved = JSON.parse(raw) as { screen?: Screen; liveTestId?: string | null; current?: number; answers?: Record<number, string>; review?: number[]; seconds?: number; exam?: string; subjects?: string[]; difficulty?: Difficulty; mode?: Mode; count?: number; duration?: number; sourceMix?: boolean };
+      const saved = JSON.parse(raw) as { screen?: Screen; liveTestId?: string | null; current?: number; answers?: Record<number, string>; review?: number[]; seconds?: number; exam?: string; subjects?: string[]; subtopics?: string[]; difficulty?: Difficulty; mode?: Mode; count?: number; duration?: number; sourceMix?: boolean };
       if (saved.exam) setExam(saved.exam);
       if (saved.subjects) setSubjects(saved.subjects);
+      if (saved.subtopics) setSubtopics(saved.subtopics);
       if (saved.difficulty) setDifficulty(saved.difficulty);
       if (saved.mode) setMode(saved.mode);
       if (saved.count) setCount(saved.count);
@@ -187,16 +211,25 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
     setSubjects((currentSubjects) => currentSubjects.filter((subject) => availableSubjects.includes(subject)));
   }, [availableSubjects]);
 
+  const taxonomyGroups = useMemo(() => taxonomyGroupsForSubjects(subjects), [subjects]);
+  const availableTaxonomyIds = useMemo(() => new Set(taxonomyNodesForSubjects(subjects).map((node) => node.id)), [subjects]);
+  useEffect(() => {
+    setSubtopics((current) => current.filter((id) => availableTaxonomyIds.has(id)));
+  }, [availableTaxonomyIds]);
+
   const eligibleQuestions = useMemo(() => {
     const examPool = sourceMix ? questions : questions.filter((q) => q.exam === exam);
     const subjectPool = examPool.filter((q) => subjects.length === 0 || subjects.includes(q.subject));
-    if (difficulty === "All types") return subjectPool;
-    if (difficulty !== "Mixed") return subjectPool.filter((q) => q.difficulty === difficulty);
+    const subsectionPool = subtopics.length ? subjectPool.filter((q) => q.taxonomyId && subtopics.includes(q.taxonomyId)) : subjectPool;
+    // The legacy unrestricted path remains subjectPool when no subsection is selected.
+    if (difficulty === "All types") return subtopics.length ? subsectionPool : subjectPool;
+    const scopedPool = subsectionPool;
+    if (difficulty !== "Mixed") return scopedPool.filter((q) => q.difficulty === difficulty);
 
     const buckets: Record<QuestionDifficulty, Question[]> = {
-      Easy: subjectPool.filter((q) => q.difficulty === "Easy"),
-      Moderate: subjectPool.filter((q) => q.difficulty === "Moderate"),
-      Hard: subjectPool.filter((q) => q.difficulty === "Hard"),
+      Easy: scopedPool.filter((q) => q.difficulty === "Easy"),
+      Moderate: scopedPool.filter((q) => q.difficulty === "Moderate"),
+      Hard: scopedPool.filter((q) => q.difficulty === "Hard"),
     };
     const balanced: Question[] = [];
     const depth = Math.max(buckets.Easy.length, buckets.Moderate.length, buckets.Hard.length);
@@ -206,7 +239,7 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
       }
     }
     return balanced;
-  }, [exam, sourceMix, subjects, difficulty]);
+  }, [exam, sourceMix, subjects, subtopics, difficulty]);
 
   const visibleQuestions = useMemo(() => eligibleQuestions.slice(0, count), [eligibleQuestions, count]);
 
@@ -240,11 +273,21 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
       setSubjects([]);
       return;
     }
-    setSubjects((currentSubjects) =>
-      currentSubjects.includes(value)
+    setSubjects((currentSubjects) => {
+      const next = currentSubjects.includes(value)
         ? currentSubjects.filter((subject) => subject !== value)
-        : [...currentSubjects, value],
-    );
+        : [...currentSubjects, value];
+      return next;
+    });
+  }
+
+  function toggleSubtopic(value: string) {
+    setSubtopics((current) => current.includes(value) ? current.filter((id) => id !== value) : [...current, value]);
+  }
+
+  function toggleChapter(head: string, chapter: string) {
+    const ids = chapterSubtopicIds(head, chapter);
+    setSubtopics((current) => ids.every((id) => current.includes(id)) ? current.filter((id) => !ids.includes(id)) : [...new Set([...current, ...ids])]);
   }
 
   async function beginTest() {
@@ -261,7 +304,7 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
       const response = await fetch("/api/tests", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ recipe: { exam, subjects, difficulty, count, durationMinutes: duration, sourceMix, mode } }),
+        body: JSON.stringify({ recipe: { exam, subjects, subtopics, difficulty, count, durationMinutes: duration, sourceMix, mode } }),
       });
       const body = await response.json();
       if (response.ok && body.test) {
@@ -339,7 +382,7 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
     const response = await fetch("/api/saved-tests", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name: exam + " " + (subjects.length ? subjects.join(" & ") : "All subjects") + " test", recipe: { exam, subjects, difficulty, count, durationMinutes: duration, sourceMix, mode } }),
+      body: JSON.stringify({ name: exam + " " + (subjects.length ? subjects.join(" & ") : "All subjects") + " test", recipe: { exam, subjects, subtopics, difficulty, count, durationMinutes: duration, sourceMix, mode } }),
     });
     const body = await response.json();
     if (!response.ok) setServerError(body.error ?? "Sign in to save this recipe.");
@@ -395,6 +438,11 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
             subjects={subjects}
             toggleSubject={toggleSubject}
             availableSubjects={availableSubjects}
+            subtopics={subtopics}
+            taxonomyGroups={taxonomyGroups}
+            toggleSubtopic={toggleSubtopic}
+            toggleChapter={toggleChapter}
+            clearSubtopics={() => setSubtopics([])}
             difficulty={difficulty}
             setDifficulty={setDifficulty}
             mode={mode}
@@ -530,6 +578,11 @@ function Dashboard({ onCreate, onResume, cloudAttempts }: { onCreate: () => void
 type BuilderProps = {
   exam: string; setExam: (v:string)=>void;
   subjects: string[]; toggleSubject:(v:string)=>void; availableSubjects:string[];
+  subtopics: string[];
+  taxonomyGroups: ReturnType<typeof taxonomyGroupsForSubjects>;
+  toggleSubtopic: (v:string)=>void;
+  toggleChapter: (head:string, chapter:string)=>void;
+  clearSubtopics: ()=>void;
   difficulty: Difficulty; setDifficulty:(v:Difficulty)=>void;
   mode: Mode; setMode:(v:Mode)=>void;
   count:number; setCount:(v:number)=>void;
@@ -541,7 +594,12 @@ type BuilderProps = {
 };
 
 function Builder(props: BuilderProps) {
+  const selectedSubtopicNames = taxonomyNodesForSubjects([]).filter((node) => props.subtopics.includes(node.id)).map((node) => node.subtopic);
+  const subsectionSummary = selectedSubtopicNames.length
+    ? `${selectedSubtopicNames.slice(0, 2).join(", ")}${selectedSubtopicNames.length > 2 ? ` +${selectedSubtopicNames.length - 2}` : ""}`
+    : "All subsections";
   return (
+    <div className="builder-layout">
     <div className="builder">
       <div className="eyebrow">Guided test builder</div>
       <h1 style={{marginTop:10}}>Build your test</h1>
@@ -565,13 +623,46 @@ function Builder(props: BuilderProps) {
 
       <div className="step">
         <div className="step-no">3</div>
+        <div><h3>Subsections</h3><p className="step-help">Choose chapters or narrow the paper to specific subtopics. Your selection matches any chosen subtopic.</p>
+          <div className="subsection-toolbar"><button className={`chip ${props.subtopics.length === 0 ? "selected" : ""}`} onClick={props.clearSubtopics} aria-pressed={props.subtopics.length === 0}>All subsections</button><span className="meta">{props.subtopics.length ? `${props.subtopics.length} selected` : "No subsection filter"}</span></div>
+          <div className="taxonomy-groups">
+            {props.taxonomyGroups.map((group) => <details className="taxonomy-group" key={group.name}>
+              <summary>{group.name}<span className="meta">{Object.values(group.chapters).flat().length} subtopics</span></summary>
+              <div className="taxonomy-chapters">
+                {Object.entries(group.chapters).map(([chapter, children]) => {
+                  const ids = children.map((subtopic) => {
+                    const node = taxonomyNodesForSubjects([group.subject]).find((candidate) => candidate.head === group.name && candidate.chapter === chapter && candidate.subtopic === subtopic);
+                    return node?.id ?? "";
+                  }).filter(Boolean);
+                  const selectedCount = ids.filter((id) => props.subtopics.includes(id)).length;
+                  const allSelected = ids.length > 0 && selectedCount === ids.length;
+                  return <div className="taxonomy-chapter" key={chapter}>
+                    <button className={`taxonomy-chapter-toggle ${allSelected ? "selected" : ""} ${selectedCount > 0 && !allSelected ? "partial" : ""}`} onClick={() => props.toggleChapter(group.name, chapter)} role="checkbox" aria-checked={allSelected ? "true" : selectedCount > 0 ? "mixed" : "false"}><span>{chapter}</span><span className="meta">{selectedCount}/{ids.length}</span></button>
+                    <div className="subtopic-chips">
+                      {children.map((subtopic) => {
+                        const id = ids[children.indexOf(subtopic)];
+                        const selected = props.subtopics.includes(id);
+                        return <button key={id} className={`subtopic-chip ${selected ? "selected" : ""}`} onClick={() => props.toggleSubtopic(id)} aria-pressed={selected}>{subtopic}</button>;
+                      })}
+                    </div>
+                  </div>;
+                })}
+              </div>
+            </details>)}
+            {!props.taxonomyGroups.length && <p className="meta">This subject does not have a published PDF taxonomy yet. All subsections remains available.</p>}
+          </div>
+        </div>
+      </div>
+
+      <div className="step">
+        <div className="step-no">4</div>
         <div><h3>Difficulty</h3><div className="choice-grid">
           {(["All types","Easy","Moderate","Hard","Mixed"] as Difficulty[]).map((value)=><button key={value} className={`choice ${props.difficulty===value?"selected":""}`} onClick={()=>props.setDifficulty(value)}><strong>{value}</strong><small>{value==="All types"?"No difficulty filter":value==="Mixed"?"Balanced selection":`${value} questions`}</small></button>)}
         </div></div>
       </div>
 
       <div className="step">
-        <div className="step-no">4</div>
+        <div className="step-no">5</div>
         <div><h3>Length and pace</h3><div className="range-row">
           <div className="field"><label>Questions: {props.count}</label><input type="range" min="5" max="100" step="5" value={props.count} onChange={(e)=>props.setCount(Number(e.target.value))} /></div>
           <div className="field"><label>Duration: {props.duration} minutes</label><input type="range" min="10" max="120" step="5" value={props.duration} onChange={(e)=>props.setDuration(Number(e.target.value))} /></div>
@@ -579,7 +670,7 @@ function Builder(props: BuilderProps) {
       </div>
 
       <div className="step">
-        <div className="step-no">5</div>
+        <div className="step-no">6</div>
         <div><h3>Attempt style</h3><div className="choice-grid" style={{gridTemplateColumns:"repeat(2,1fr)"}}>
           {(["Exam","Practice"] as Mode[]).map((value)=><button key={value} className={`choice ${props.mode===value?"selected":""}`} onClick={()=>props.setMode(value)}><strong>{value} mode</strong><small>{value==="Exam"?"Timed, answers after submit":"Instant feedback and explanations"}</small></button>)}
         </div>
@@ -588,10 +679,54 @@ function Builder(props: BuilderProps) {
       </div>
 
       <div className="card builder-summary">
-        <div><strong>{props.exam}{props.sourceMix ? " + sibling exams" : ""} · {props.count} questions · {props.duration} min</strong><div className="meta">{props.difficulty === "All types" ? "All difficulty types" : props.difficulty} · {props.mode} mode · {props.subjects.join(", ") || "All subjects"}</div>{props.inventoryCount===0 && <div className="inventory-error" role="alert">No eligible questions match these filters. Choose a broader subject or difficulty.</div>}{props.inventoryCount>0 && props.inventoryCount<props.count && <div className="inventory-error" role="alert">Only {props.inventoryCount} eligible questions match these filters; choose a broader recipe or fewer questions.</div>}</div>
+        <div><strong>{props.exam}{props.sourceMix ? " + sibling exams" : ""} · {props.count} questions · {props.duration} min</strong><div className="meta">{props.difficulty === "All types" ? "All difficulty types" : props.difficulty} · {props.mode} mode · {props.subjects.join(", ") || "All subjects"} · {props.subtopics.length ? `${props.subtopics.length} subsections: ${subsectionSummary}` : subsectionSummary}</div>{props.inventoryCount===0 && <div className="inventory-error" role="alert">No eligible questions match these filters. Choose a broader subject, subsection, or difficulty.</div>}{props.inventoryCount>0 && props.inventoryCount<props.count && <div className="inventory-error" role="alert">Only {props.inventoryCount} eligible questions match these filters; choose a broader recipe or fewer questions.</div>}</div>
         <div style={{display:"flex",gap:10,flexWrap:"wrap",justifyContent:"end"}}><button className="secondary" onClick={props.saveRecipe}>Save recipe</button><button className="primary" onClick={props.beginTest} disabled={props.inventoryCount<props.count}>Generate test →</button></div>
       </div>
     </div>
+    <PaperPreview {...props} subsectionSummary={subsectionSummary} />
+    </div>
+  );
+}
+
+function PaperPreview(props: BuilderProps & { subsectionSummary: string }) {
+  const paperNames: Record<string, string> = {
+    CSE: "GS Paper I",
+    CAPF: "Paper I",
+    CDS: "General Knowledge",
+    NDA: "General Ability",
+  };
+  const subject = props.subjects.length ? props.subjects.join(" · ") : "All subjects";
+  const difficulty = props.difficulty === "All types" ? "All types" : props.difficulty;
+  const pace = `${(props.duration / props.count).toFixed(1)} min/Q`;
+  const dots = Math.min(props.count, 20);
+  return (
+    <aside className="paper-preview" aria-label="Paper preview">
+      <div className="paper-preview-kicker">Paper preview</div>
+      <h2>{props.exam}</h2>
+      <p className="paper-preview-paper">{paperNames[props.exam] ?? "General Ability"}</p>
+      <div className="preview-seal" aria-hidden="true"><span>UP</span></div>
+      <div className="preview-divider" />
+      <div className="preview-rows">
+        <div><span>Subject</span><strong>{subject}</strong></div>
+        <div><span>Difficulty</span><strong>{difficulty}</strong></div>
+        <div><span>Questions</span><strong>{props.count}</strong></div>
+        <div><span>Duration</span><strong>{props.duration} min</strong></div>
+        <div><span>Pace</span><strong>{pace}</strong></div>
+      </div>
+      {props.subtopics.length > 0 && <p className="preview-subsection">{props.subsectionSummary}</p>}
+      <div className="preview-dots" aria-hidden="true">{Array.from({ length: dots }, (_, index) => <i key={index} />)}</div>
+      <button className="preview-generate primary" onClick={props.beginTest} disabled={props.inventoryCount < props.count}>Generate test <span aria-hidden="true">→</span></button>
+      <p className="preview-note">Auto-balanced against {props.exam} weightage</p>
+      <div className="preview-instructions">
+        <strong>Instructions</strong>
+        <ol>
+          <li>Each question has one correct answer from four options.</li>
+          <li>A wrong answer attracts a penalty of one-third of the marks assigned to that question. There is no penalty for an unanswered question.</li>
+          <li>Mark only one option. The paper auto-submits when the timer ends.</li>
+        </ol>
+        <small>Independent practice platform · Not affiliated with UPSC</small>
+      </div>
+    </aside>
   );
 }
 
