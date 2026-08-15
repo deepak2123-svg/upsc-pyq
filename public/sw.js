@@ -1,4 +1,4 @@
-const CACHE = "upscpuraan-shell-v1";
+const CACHE = "upscpuraan-shell-v2";
 const SHELL = ["/", "/app", "/manifest.webmanifest", "/favicon.svg"];
 
 self.addEventListener("install", (event) => {
