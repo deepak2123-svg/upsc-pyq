@@ -131,7 +131,7 @@ export async function createTest(identity: RequestIdentity, recipe: TestRecipe) 
   const testId = randomUUID();
   const scoring = await resolveScoring(db, recipe);
   const startedAt = new Date();
-  const deadlineAt = recipe.mode === "Exam" ? new Date(startedAt.getTime() + recipe.durationMinutes * 60_000) : null;
+  const deadlineAt = new Date(startedAt.getTime() + recipe.durationMinutes * 60_000);
 
   return db.transaction(async (tx) => {
     const rows = await tx.select().from(questions).where(eligibleWhere(recipe));

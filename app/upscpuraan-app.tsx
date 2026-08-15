@@ -211,7 +211,7 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
   const visibleQuestions = useMemo(() => eligibleQuestions.slice(0, count), [eligibleQuestions, count]);
 
   useEffect(() => {
-    if (screen !== "attempt" || mode !== "Exam") return;
+    if (screen !== "attempt") return;
     const timer = window.setInterval(() => {
       setSeconds((value) => {
         if (liveDeadline) {
@@ -354,8 +354,8 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
   ];
 
   return (
-    <div className="app-shell">
-      <aside className="sidebar">
+    <div className={screen === "attempt" ? "app-shell attempt-app-shell" : "app-shell"}>
+      {screen !== "attempt" && <aside className="sidebar">
         <button className="brand" onClick={() => setScreen("dashboard")} aria-label="UPSCPuraan home">
           <span className="brand-mark">U</span>
           UPSCPuraan
@@ -375,7 +375,7 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
           Beta workspace<br />
           Verified PYQs · English
         </div>
-      </aside>
+      </aside>}
 
       <main className="main">
         {screen !== "attempt" && (
@@ -431,13 +431,13 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
         {screen === "legal" && <Legal />}
       </main>
 
-      <nav className="mobile-nav" aria-label="Mobile navigation">
+      {screen !== "attempt" && <nav className="mobile-nav" aria-label="Mobile navigation">
         {navItems.map((item) => (
           <button key={item.label} className={screen === item.target ? "active" : ""} onClick={() => setScreen(item.target)}>
             <span style={{display:"block", fontSize:16, marginBottom:2}}>{item.icon}</span>{item.label}
           </button>
         ))}
-      </nav>
+      </nav>}
     </div>
   );
 }
@@ -604,19 +604,21 @@ function Attempt({ exam, mode, questions: qs, current, answers, review, revealed
   const mm = String(Math.floor(seconds/60)).padStart(2,"0");
   const ss = String(seconds%60).padStart(2,"0");
   const showAnswer = revealed.includes(current);
+  const sourceLabel = q.origin === "pyq"
+    ? [q.exam, q.year, q.paper, q.questionNumber ? "Q" + q.questionNumber : null].filter(Boolean).join(" · ")
+    : "Reviewed question";
   return (
     <div className="test-shell">
       <header className="test-head">
         <div><strong>{exam} · Focus test</strong><div className="meta">{mode} mode · Autosaved</div></div>
-        <div className="timer" aria-label={`${mm} minutes ${ss} seconds remaining`}>{mode==="Exam" ? `${mm}:${ss}` : "Practice"}</div>
+        <div className="timer-block"><span>Time left</span><div className="timer" aria-label={`${mm} minutes ${ss} seconds remaining`}>{mm}:{ss}</div></div>
         <button className="secondary" onClick={submit}>Submit</button>
       </header>
       <div className="test-grid">
         <section className="card question-card">
-          <div className="q-meta"><span>Question {current+1} of {qs.length}</span><span>{q.subject} · {q.difficulty} · {q.exam} {q.year} {q.paper} Q{q.questionNumber}</span></div>
-          <div className="source-lock" aria-label="Original exam wording">PYQ · Source verbatim</div>
+          <div className="q-meta"><span>Question {current+1} of {qs.length}</span><span className="question-source">{q.subject} · {sourceLabel}</span></div>
           <div className="prompt-lines">
-            {q.promptLines.map((line, index) => <p key={`${q.id}-line-${index}`}>{line}</p>)}
+            {q.promptLines.map((line, index) => <p className={/^Statement\s/i.test(line) ? "statement-line" : ""} key={`${q.id}-line-${index}`}>{line}</p>)}
           </div>
           <div className="options">
             {Object.entries(q.options).map(([key,value]) => {
