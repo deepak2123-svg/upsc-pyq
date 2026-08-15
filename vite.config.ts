@@ -41,6 +41,24 @@ export default defineConfig(async () => {
   process.env.MINIFLARE_REGISTRY_PATH ??= ".wrangler/registry";
 
   // Wrangler snapshots its log path while the Cloudflare plugin is imported.
+  // Vercel runs vinext through Nitro. Keep the Cloudflare worker adapter for
+  // the local/Sites workflow, but let Nitro produce Vercel's `.output` bundle
+  // when the build is running on Vercel (or when testing the Vercel preset
+  // locally with `NITRO_PRESET=vercel`).
+  const isVercelBuild =
+    process.env.VERCEL === "1" || process.env.NITRO_PRESET === "vercel";
+
+  if (isVercelBuild) {
+    const { nitro } = await import("nitro/vite");
+
+    return {
+      server: isCodexSeatbeltSandbox
+        ? { watch: { useFsEvents: false, usePolling: true } }
+        : undefined,
+      plugins: [vinext(), sites(), nitro()],
+    };
+  }
+
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
   return {
