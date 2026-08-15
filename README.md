@@ -1,98 +1,88 @@
-# vinext-starter
+# UPSCPuraan
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+UPSCPuraan is a minimal, mobile-first UPSC CSE, CAPF, CDS and NDA test-series
+PWA. Visitors can browse the catalogue and attempt a guest test immediately.
+Google sign-in is optional and adds cloud history, saved recipes and
+cross-device resume.
 
-## Prerequisites
+The production target is GitHub + Vercel + Supabase PostgreSQL. The bundled
+question bank contains 1,519 source-preserved PYQs. They are imported as
+editorial-review records; only verified, explanation-complete questions can be
+published into student tests.
 
-- Node.js `>=22.13.0`
+## Local development
 
-## Quick Start
+Prerequisite: Node.js 22.13.0 or newer.
 
-```bash
-npm install
-npm run dev
-npm run build
-```
+    npm install
+    npm run dev
+    npm test
+    npm run build
 
-This starter does not use `wrangler.jsonc`.
+Without Supabase variables the app remains usable as a local anonymous demo.
+Server APIs intentionally return a clear DATABASE_UNCONFIGURED response
+instead of exposing a client-side database secret.
 
-## Included Shape
+## Supabase and Vercel setup
 
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
+1. Create a Supabase project and configure Google under Authentication /
+   Providers. Add https://upscpuraan.vercel.app/auth/callback (and the local
+   callback URL) to the provider redirect allow-list.
+2. Run supabase/migrations/0001_upscpuraan.sql in the Supabase SQL editor,
+   followed by supabase/seed/exam-papers.sql.
+3. Add the variables in .env.example to the Vercel project:
+   NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, DATABASE_URL,
+   DATABASE_POOL_SIZE, and NEXT_PUBLIC_APP_URL. DATABASE_URL is server-only
+   and must never be prefixed with NEXT_PUBLIC_.
+4. Import the existing bank in dry-run mode, inspect the validation report, and
+   then apply it from a trusted machine:
 
-## Workspace Auth Headers
+       npm run content:import
+       npm run content:import -- --apply
 
-OpenAI workspace sites can read the current user's email from
-`oai-authenticated-user-email`.
+   The import preserves exact PYQ stem/options and uses a source fingerprint
+   to skip duplicates. All existing records start as review and unverified.
+5. Sign in once, then promote the first editorial account in Supabase:
 
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
+       update public.profiles
+       set role = 'admin', updated_at = now()
+       where email = 'your-editor@example.com';
 
-Treat the full name as optional and fall back to email when it is absent:
+6. Deploy the main branch from Vercel. Configure a custom domain only after
+   UPSCPuraan trademark and domain checks are complete.
 
-```tsx
-import { headers } from "next/headers";
+## Routes
 
-export default async function Home() {
-  const requestHeaders = await headers();
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
+- Public: /, /exams/[exam], /subjects/[subject],
+  /pyqs/[exam]/[year]/[slug], and the legal/source pages.
+- Student: /app, /app/build, /app/tests/[id],
+  /app/results/[id], /app/attempts, /app/saved.
+- Editorial: /admin, /admin/imports, /admin/questions/[id],
+  /admin/review, /admin/history.
 
-  const displayName = fullName ?? email;
-  // ...
-}
-```
+Attempts and results are deliberately excluded from the sitemap and marked
+noindex. Published PYQ explanations can be indexed; generated-MCQ answers
+remain protected.
 
-## Optional Dispatch-Owned ChatGPT Sign-In
+## Content and API notes
 
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
+POST /api/tests creates an immutable, deterministic question snapshot and
+returns 409 with shortage details when the recipe cannot be fulfilled.
+Answer autosave, deadlines, submission, scoring and ownership are enforced on
+the server. All subjects and All types are unrestricted defaults, while Mixed
+deliberately cycles through Easy, Moderate and Hard pools.
 
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
+Use scripts/import-questions-to-supabase.mjs for batch imports. The admin
+import endpoint supports dry-run validation; editorial PATCH operations record
+every change in editorial_events and prevent edits to source-locked PYQ text.
 
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
+## Deployment checks
 
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
+    npm test
+    npm run build
+    node scripts/import-questions-to-supabase.mjs
 
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
-
-## Useful Commands
-
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
-
-## Learn More
-
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+Before public launch, run the acceptance matrix in the production plan:
+Google onboarding and role boundaries, shortages, deterministic snapshots,
+timer/timeout recovery, exact PYQ rendering, PWA install/offline behavior,
+accessibility, and load tests representing 5,000 registered students.

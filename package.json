@@ -10,13 +10,17 @@
     "build": "vinext build",
     "start": "vinext start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .vercel",
     "db:generate": "drizzle-kit generate",
-    "content:normalize": "node scripts/normalize-question-banks.mjs"
+    "content:normalize": "node scripts/normalize-question-banks.mjs",
+    "content:import": "node scripts/import-questions-to-supabase.mjs"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.12.4",
+    "@supabase/supabase-js": "^2.112.3",
     "drizzle-orm": "0.45.2",
     "next": "16.2.6",
+    "postgres": "^3.4.9",
     "react": "19.2.6",
     "react-dom": "19.2.6"
   },

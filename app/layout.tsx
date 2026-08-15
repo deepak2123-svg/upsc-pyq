@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { PwaRegister } from "./pwa-register";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://upscpuraan.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "https://upscpuraan.vercel.app"),
   title: {
     default: "UPSCPuraan — Build better UPSC tests",
     template: "%s | UPSCPuraan",
@@ -53,6 +54,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <PwaRegister />
       </body>
     </html>
   );

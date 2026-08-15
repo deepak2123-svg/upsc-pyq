@@ -2,29 +2,61 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-async function render() {
+async function render(pathname = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
   return worker.fetch(
-    new Request("http://localhost/", { headers: { accept: "text/html" } }),
+    new Request(`http://localhost${pathname}`, { headers: { accept: "text/html" } }),
     { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
     { waitUntil() {}, passThroughOnException() {} },
   );
 }
 
-test("server-renders the UPSCPuraan product dashboard", async () => {
+test("server-renders the public UPSCPuraan landing page", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /UPSCPuraan/);
   assert.match(html, /Your syllabus\./);
-  assert.match(html, /Create a test/);
-  assert.match(html, /Recent attempts/);
+  assert.match(html, /Build a test/);
+  assert.match(html, /Editorially reviewed content/);
   assert.match(html, /manifest\.webmanifest/);
   assert.match(html, /og\.png/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
+});
+
+test("server-renders the anonymous test lab route", async () => {
+  const response = await render("/app/build");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Build your test/);
+  assert.match(html, /All subjects/);
+  assert.match(html, /All types/);
+});
+
+test("anonymous API surfaces fail closed until Supabase is configured", async () => {
+  const me = await render("/api/me");
+  assert.equal(me.status, 200);
+  assert.deepEqual(await me.json(), { authenticated: false, guest: false, role: null });
+
+  const testsResponse = await render("/api/tests");
+  assert.equal(testsResponse.status, 405);
+  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
+  workerUrl.searchParams.set("api", "api-test");
+  const { default: worker } = await import(workerUrl.href);
+  const createResponse = await worker.fetch(
+    new Request("http://localhost/api/tests", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ recipe: { exam: "CSE", count: 5 } }),
+    }),
+    { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
+    { waitUntil() {}, passThroughOnException() {} },
+  );
+  assert.equal(createResponse.status, 503);
+  assert.equal((await createResponse.json()).code, "DATABASE_UNCONFIGURED");
 });
 
 test("ships the PWA manifest and normalized database model", async () => {
@@ -40,9 +72,9 @@ test("ships the PWA manifest and normalized database model", async () => {
   assert.equal(manifest.display, "standalone");
   assert.match(schema, /questions/);
   assert.match(schema, /sourceFingerprint/);
-  assert.match(schema, /questionSnapshotJson/);
+  assert.match(schema, /questionSnapshot/);
   assert.match(schema, /editorialEvents/);
-  assert.match(schema, /promptLinesJson/);
+  assert.match(schema, /promptLines/);
   assert.match(schema, /sourceTextHash/);
   assert.match(schema, /sourceTextLocked/);
 
