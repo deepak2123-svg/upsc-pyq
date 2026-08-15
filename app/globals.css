@@ -488,6 +488,14 @@ h3 { font-size: 16px; }
   border:1px solid var(--line); border-radius:8px; font-weight:750; font-size:12px;
 }
 .explanation { background:#f1f7f4; border-left:3px solid var(--accent); padding:16px; border-radius:7px; line-height:1.55; }
+.solution-row { padding:22px 0; border-bottom:1px solid var(--line); }
+.solution-row:last-child { border-bottom:0; }
+.solution-prompt { margin:10px 0 12px; font-size:17px; line-height:1.5; font-weight:650; }
+.solution-prompt p { margin:0 0 8px; white-space:pre-wrap; }
+.solution-prompt p:last-child { margin-bottom:0; }
+.solution-options { display:grid; gap:6px; margin:12px 0 14px; color:var(--muted); font-size:13px; line-height:1.45; }
+.solution-options div { display:flex; gap:10px; }
+.solution-options span { flex:0 0 24px; color:var(--ink); font-weight:750; }
 .test-actions { display:flex; align-items:center; justify-content:space-between; gap:12px; }
 .palette { padding:18px; height:max-content; position:sticky; top:24px; }
 .palette-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:7px; margin:16px 0 20px; }

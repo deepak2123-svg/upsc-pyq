@@ -124,7 +124,15 @@ test("ships the PWA manifest and normalized database model", async () => {
   assert.match(appSource, /Balanced selection/);
   assert.match(appSource, /className="timer-block"/);
   assert.match(appSource, /className="question-source"/);
+  assert.match(appSource, /target: "attempts"/);
+  assert.match(appSource, /function AttemptsView/);
+  assert.doesNotMatch(appSource, /Needs attention/);
   assert.match(appSource, /attempt-app-shell/);
+  assert.match(appSource, /calculateLocalResult/);
+  assert.match(appSource, /questionSourceLabel/);
+  assert.doesNotMatch(appSource, /PYQ source verbatim/);
+  assert.doesNotMatch(appSource, /CSE · Geography mixed/);
+  assert.doesNotMatch(appSource, /Physical geography needs another focused round/);
   assert.doesNotMatch(appSource, /PYQ · Source verbatim/);
   assert.doesNotMatch(appSource, /\{q\.subject\} · \{q\.difficulty\}/);
   assert.equal(taxonomy.version, "upsc-geography-v1.1");

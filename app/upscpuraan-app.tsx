@@ -6,7 +6,7 @@ import { signInWithGoogle, signOut } from "../lib/auth/client";
 import { getSupabaseBrowser } from "../lib/supabase/client";
 import { TAXONOMY_VERSION, chapterSubtopicIds, taxonomyGroupsForSubjects, taxonomyIdForQuestion, taxonomyNode, taxonomyNodesForSubjects } from "../lib/taxonomy";
 
-type Screen = "dashboard" | "builder" | "attempt" | "results" | "admin" | "legal";
+type Screen = "dashboard" | "builder" | "attempts" | "attempt" | "results" | "admin" | "legal";
 type Mode = "Exam" | "Practice";
 type QuestionDifficulty = "Easy" | "Moderate" | "Hard";
 type Difficulty = "All types" | QuestionDifficulty | "Mixed";
@@ -90,11 +90,76 @@ function mapServerQuestion(value: Record<string, unknown>): Question {
   };
 }
 
-const attempts = [
-  { title: "CSE · Geography mixed", date: "Today, 09:42", score: "36.8 / 50", accuracy: "78%", time: "38m", tone: "good" },
-  { title: "CAPF · Polity & History", date: "28 Jul, 18:10", score: "24.2 / 40", accuracy: "66%", time: "31m", tone: "mid" },
-  { title: "NDA · Physical Geography", date: "26 Jul, 07:15", score: "31.3 / 40", accuracy: "81%", time: "27m", tone: "good" },
-];
+type CloudAttempt = {
+  test?: {
+    id?: string;
+    exam?: string;
+    status?: string;
+    recipe?: { exam?: string; subjects?: string[]; count?: number; mode?: string };
+    submittedAt?: string | null;
+    startedAt?: string | null;
+  };
+  result?: { score?: number | string; maxScore?: number | string; accuracy?: number | string; timeUsedSeconds?: number } | null;
+};
+
+const localScoring: Record<string, { marksPerQuestion: number; negativeMarksPerQuestion: number }> = {
+  CSE: { marksPerQuestion: 2, negativeMarksPerQuestion: 2 / 3 },
+  CAPF: { marksPerQuestion: 2, negativeMarksPerQuestion: 2 / 3 },
+  CDS: { marksPerQuestion: 1, negativeMarksPerQuestion: 1 / 3 },
+  NDA: { marksPerQuestion: 4, negativeMarksPerQuestion: 4 / 3 },
+};
+
+function numberValue(value: unknown, fallback = 0) {
+  const parsed = typeof value === "number" ? value : Number(value);
+  return Number.isFinite(parsed) ? parsed : fallback;
+}
+
+function formatNumber(value: unknown, digits = 1) {
+  return numberValue(value).toFixed(digits).replace(/\.0+$/, "").replace(/(\.\d*?)0+$/, "$1");
+}
+
+function questionSourceLabel(question: Question) {
+  if (question.origin !== "pyq") return "Reviewed MCQ";
+  return [question.exam, question.year, question.paper, question.questionNumber ? `Q${question.questionNumber}` : null].filter(Boolean).join(" · ");
+}
+
+function calculateLocalResult(exam: string, questionList: Question[], answerMap: Record<number, string>, durationMinutes: number, secondsRemaining: number) {
+  const scoring = localScoring[exam] ?? localScoring.CSE;
+  let correctCount = 0;
+  let incorrectCount = 0;
+  const breakdown: Record<string, { total: number; correct: number; incorrect: number; unattempted: number; score: number }> = {};
+  questionList.forEach((question, index) => {
+    const subject = question.subject || "Uncategorised";
+    const bucket = breakdown[subject] ?? { total: 0, correct: 0, incorrect: 0, unattempted: 0, score: 0 };
+    const selected = answerMap[index];
+    const correctOption = question.answer ?? question.correctOption;
+    bucket.total += 1;
+    if (!selected) bucket.unattempted += 1;
+    else if (selected === correctOption) { correctCount += 1; bucket.correct += 1; bucket.score += scoring.marksPerQuestion; }
+    else { incorrectCount += 1; bucket.incorrect += 1; bucket.score -= scoring.negativeMarksPerQuestion; }
+    breakdown[subject] = bucket;
+  });
+  const unattemptedCount = questionList.length - correctCount - incorrectCount;
+  const score = correctCount * scoring.marksPerQuestion - incorrectCount * scoring.negativeMarksPerQuestion;
+  const maxScore = questionList.length * scoring.marksPerQuestion;
+  const accuracy = correctCount + incorrectCount ? (correctCount / (correctCount + incorrectCount)) * 100 : 0;
+  const weakAreas = Object.entries(breakdown)
+    .map(([subject, value]) => ({ subject, accuracy: value.correct + value.incorrect ? value.correct / (value.correct + value.incorrect) : 0 }))
+    .filter((value) => value.accuracy < 0.7)
+    .sort((a, b) => a.accuracy - b.accuracy)
+    .map((value) => value.subject);
+  return {
+    score: Number(score.toFixed(4)),
+    maxScore: Number(maxScore.toFixed(4)),
+    accuracy: Number(accuracy.toFixed(4)),
+    correctCount,
+    incorrectCount,
+    unattemptedCount,
+    timeUsedSeconds: Math.min(durationMinutes * 60, Math.max(0, durationMinutes * 60 - secondsRemaining)),
+    breakdown,
+    weakAreas,
+  };
+}
 
 export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { initialScreen?: Screen; initialTestId?: string } = {}) {
   const [screen, setScreen] = useState<Screen>(initialScreen);
@@ -117,7 +182,7 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
   const [serverError, setServerError] = useState<string | null>(null);
   const [isStaff, setIsStaff] = useState(false);
   const [questionsOverride, setQuestionsOverride] = useState<Question[] | null>(null);
-  const [cloudAttempts, setCloudAttempts] = useState<Array<{ test?: { id?: string; recipe?: { exam?: string }; submittedAt?: string | null; startedAt?: string }; result?: { score?: number; accuracy?: number } | null }>>([]);
+  const [cloudAttempts, setCloudAttempts] = useState<CloudAttempt[]>([]);
 
   useEffect(() => {
     fetch("/api/me")
@@ -183,11 +248,13 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
       if (!response.ok) throw new Error("This test could not be loaded.");
       const body = await response.json();
       if (!body.test) return;
-      const test = body.test as { id: string; recipe?: { exam?: string; mode?: Mode; durationMinutes?: number }; deadlineAt?: string | null; questions: Record<string, unknown>[]; answers?: Array<{ questionId: string; selectedOption?: string | null; markedForReview?: boolean }> };
+      const test = body.test as { id: string; recipe?: { exam?: string; subjects?: string[]; difficulty?: Difficulty; mode?: Mode; durationMinutes?: number }; deadlineAt?: string | null; questions: Record<string, unknown>[]; answers?: Array<{ questionId: string; selectedOption?: string | null; markedForReview?: boolean }> };
       const mapped = test.questions.map(mapServerQuestion);
       const positions = new Map(test.questions.map((question, index) => [String(question.id), index]));
       setLiveTestId(test.id);
       setExam(test.recipe?.exam ?? "CSE");
+      setSubjects(Array.isArray(test.recipe?.subjects) ? test.recipe.subjects : []);
+      if (test.recipe?.difficulty) setDifficulty(test.recipe.difficulty);
       setMode(test.recipe?.mode === "Practice" ? "Practice" : "Exam");
       setDuration(typeof test.recipe?.durationMinutes === "number" ? test.recipe.durationMinutes : 30);
       setLiveDeadline(test.deadlineAt ? new Date(test.deadlineAt).getTime() : null);
@@ -346,6 +413,7 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
 
   async function submitTest() {
     if (!liveTestId) {
+      setLiveResult(calculateLocalResult(exam, questionsOverride ?? visibleQuestions, answers, duration, seconds));
       setScreen("results");
       return;
     }
@@ -392,7 +460,7 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
   const navItems: { label: string; icon: string; target: Screen }[] = [
     { label: "Home", icon: "⌂", target: "dashboard" },
     { label: "Create test", icon: "＋", target: "builder" },
-    { label: "Attempts", icon: "◷", target: "dashboard" },
+    { label: "Attempts", icon: "◷", target: "attempts" },
     ...(isStaff ? [{ label: "Editorial", icon: "✎", target: "admin" as Screen }] : []),
   ];
 
@@ -430,7 +498,8 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
 
         {serverError && <div className="inventory-error" role="alert" style={{ marginBottom: 18 }}>{serverError}</div>}
 
-        {screen === "dashboard" && <Dashboard cloudAttempts={cloudAttempts} onCreate={() => setScreen("builder")} onResume={() => setScreen("attempt")} />}
+        {screen === "dashboard" && <Dashboard onCreate={() => setScreen("builder")} onResume={() => setScreen("attempt")} />}
+        {screen === "attempts" && <AttemptsView cloudAttempts={cloudAttempts} />}
         {screen === "builder" && (
           <Builder
             exam={exam}
@@ -474,7 +543,7 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
             submit={() => void submitTest()}
           />
         )}
-        {screen === "results" && <Results result={liveResult} questions={questionsOverride ?? visibleQuestions} answers={answers} onRetake={beginTest} onHome={() => setScreen("dashboard")} />}
+        {screen === "results" && <Results result={liveResult ?? calculateLocalResult(exam, questionsOverride ?? visibleQuestions, answers, duration, seconds)} questions={questionsOverride ?? visibleQuestions} answers={answers} exam={exam} subjects={subjects} difficulty={difficulty} mode={mode} onRetake={beginTest} onHome={() => setScreen("dashboard")} />}
         {screen === "admin" && <Admin />}
         {screen === "legal" && <Legal />}
       </main>
@@ -508,17 +577,7 @@ function AuthControl() {
   return <button className="secondary auth-button" onClick={() => void signInWithGoogle("/app")}>Sign in with Google</button>;
 }
 
-function Dashboard({ onCreate, onResume, cloudAttempts }: { onCreate: () => void; onResume: () => void; cloudAttempts: Array<{ test?: { id?: string; recipe?: { exam?: string }; submittedAt?: string | null; startedAt?: string }; result?: { score?: number; accuracy?: number } | null }> }) {
-  const recentAttempts = cloudAttempts.length
-    ? cloudAttempts.slice(0, 3).map((entry) => ({
-      title: (entry.test?.recipe?.exam ?? "UPSC") + " · Test attempt",
-      date: entry.test?.submittedAt ? new Date(entry.test.submittedAt).toLocaleString() : "In progress",
-      score: typeof entry.result?.score === "number" ? entry.result.score.toFixed(1) : "—",
-      accuracy: typeof entry.result?.accuracy === "number" ? Math.round(entry.result.accuracy) + "%" : "—",
-      time: "Cloud",
-      tone: typeof entry.result?.accuracy === "number" && entry.result.accuracy >= 70 ? "good" : "mid",
-    }))
-    : attempts;
+function Dashboard({ onCreate, onResume }: { onCreate: () => void; onResume: () => void }) {
   return (
     <>
       <section className="hero">
@@ -545,29 +604,54 @@ function Dashboard({ onCreate, onResume, cloudAttempts }: { onCreate: () => void
         <button className="secondary" onClick={onResume}>Resume</button>
       </div>
 
-      <div className="section-head"><h2>Recent attempts</h2><button className="quiet">View all</button></div>
-      <div className="card">
-        {recentAttempts.map((attempt) => (
-          <div className="attempt-row" key={attempt.title}>
+    </>
+  );
+}
+
+function AttemptsView({ cloudAttempts }: { cloudAttempts: CloudAttempt[] }) {
+  const rows = cloudAttempts.length
+    ? cloudAttempts.map((entry) => {
+      const recipe = entry.test?.recipe;
+      const exam = recipe?.exam ?? entry.test?.exam ?? "UPSC";
+      const subjects = Array.isArray(recipe?.subjects) && recipe.subjects.length ? recipe.subjects.join(" & ") : "All subjects";
+      const score = entry.result?.score !== undefined
+        ? `${entry.result.score}${entry.result.maxScore !== undefined ? ` / ${entry.result.maxScore}` : ""}`
+        : "—";
+      const accuracy = entry.result?.accuracy !== undefined ? `${Math.round(Number(entry.result.accuracy))}%` : "—";
+      const time = typeof entry.result?.timeUsedSeconds === "number" ? `${Math.round(entry.result.timeUsedSeconds / 60)}m` : "—";
+      const accuracyValue = Number(entry.result?.accuracy ?? 0);
+      return {
+        id: entry.test?.id,
+        status: entry.test?.status,
+        title: `${exam} · ${subjects}`,
+        date: entry.test?.submittedAt ? new Date(entry.test.submittedAt).toLocaleString() : entry.test?.startedAt ? `Started ${new Date(entry.test.startedAt).toLocaleString()}` : "In progress",
+        score,
+        accuracy,
+        time,
+        tone: accuracyValue >= 70 ? "good" : "mid",
+      };
+    })
+    : [];
+
+  return (
+    <>
+      <section className="hero">
+        <div className="hero-copy">
+          <div className="eyebrow" style={{marginBottom:12}}>Student workspace</div>
+          <h1>Recent attempts</h1>
+          <p>Review completed papers and continue any test still in progress.</p>
+        </div>
+        <span className="meta">{rows.length} {rows.length === 1 ? "attempt" : "attempts"}</span>
+      </section>
+      <div className="card attempts-list" style={{marginTop:28}}>
+        {!rows.length && <p className="muted" style={{padding:20,margin:0}}>No cloud attempts yet. Complete a test to see it here.</p>}
+        {rows.map((attempt) => (
+          <div className="attempt-row" key={attempt.id ?? attempt.title}>
             <div><div className="attempt-title">{attempt.title}</div><div className="meta">{attempt.date}</div></div>
             <div><div className="meta">Score</div><span className={`score ${attempt.tone}`}>{attempt.score}</span></div>
             <div><div className="meta">Accuracy</div><strong>{attempt.accuracy}</strong></div>
             <div><div className="meta">Time</div><strong>{attempt.time}</strong></div>
-            <button className="quiet">Review</button>
-          </div>
-        ))}
-      </div>
-
-      <div className="section-head"><h2>Needs attention</h2><span className="meta">Based on your last 10 tests</span></div>
-      <div className="weak-grid">
-        {[
-          ["Physical geography", "58%", 58],
-          ["Constitutional bodies", "63%", 63],
-          ["Ancient India", "69%", 69],
-        ].map(([name, value, width], index) => (
-          <div className="card weak-card" key={String(name)}>
-            <div className="weak-top"><strong>{name}</strong><span className="meta">{value}</span></div>
-            <div className={`bar ${index < 2 ? "warn" : ""}`}><span style={{width:`${width}%`}} /></div>
+            {attempt.id ? <a className="quiet" href={(attempt.status === "submitted" ? "/app/results/" : "/app/tests/") + attempt.id}>Review</a> : <button className="quiet">Review</button>}
           </div>
         ))}
       </div>
@@ -784,22 +868,38 @@ function Attempt({ exam, mode, questions: qs, current, answers, review, revealed
   );
 }
 
-function Results({result, questions, answers, onRetake, onHome}:{result:Record<string, unknown>|null;questions:Question[];answers:Record<number,string>;onRetake:()=>void;onHome:()=>void}) {
+function Results({result, questions, answers, exam, subjects, difficulty, mode, onRetake, onHome}:{result:Record<string, unknown>|null;questions:Question[];answers:Record<number,string>;exam:string;subjects:string[];difficulty:Difficulty;mode:Mode;onRetake:()=>void;onHome:()=>void}) {
   const [showSolutions, setShowSolutions] = useState(false);
-  const score = typeof result?.score === "number" || typeof result?.score === "string" ? String(result.score) : "36.8";
-  const maxScore = typeof result?.maxScore === "number" || typeof result?.maxScore === "string" ? String(result.maxScore) : "50";
-  const correct = typeof result?.correctCount === "number" ? result.correctCount : 14;
-  const incorrect = typeof result?.incorrectCount === "number" ? result.incorrectCount : 4;
-  const unattempted = typeof result?.unattemptedCount === "number" ? result.unattemptedCount : 2;
-  const accuracy = typeof result?.accuracy === "number" ? `${Number(result.accuracy).toFixed(0)}%` : "78%";
+  const scoreValue = numberValue(result?.score);
+  const maxScoreValue = numberValue(result?.maxScore);
+  const score = formatNumber(scoreValue);
+  const maxScore = formatNumber(maxScoreValue);
+  const scorePercent = maxScoreValue > 0 ? Math.max(0, Math.min(100, (scoreValue / maxScoreValue) * 100)) : 0;
+  const correct = numberValue(result?.correctCount);
+  const incorrect = numberValue(result?.incorrectCount);
+  const unattempted = numberValue(result?.unattemptedCount);
+  const accuracyValue = numberValue(result?.accuracy);
+  const accuracy = `${formatNumber(accuracyValue, 0)}%`;
+  const questionCount = questions.length || correct + incorrect + unattempted;
+  const derivedSubjects = [...new Set(questions.map((question) => question.subject).filter(Boolean))];
+  const subjectLabel = subjects.length ? subjects.join(" · ") : derivedSubjects.join(" · ") || "All subjects";
+  const weakAreas = Array.isArray(result?.weakAreas) ? result.weakAreas.map(String) : [];
+  const heading = accuracyValue >= 80 ? "Strong attempt." : accuracyValue >= 60 ? "A solid attempt." : "Keep building.";
+  const description = weakAreas.length ? `${weakAreas.join(", ")} need another focused round.` : "Review the solutions and use this result to plan your next paper.";
+  const timeUsed = numberValue(result?.timeUsedSeconds);
+  const breakdown = result?.breakdown && typeof result.breakdown === "object" ? result.breakdown as Record<string, { total?: number; correct?: number; incorrect?: number; unattempted?: number }> : {};
+  const breakdownRows = Object.entries(breakdown).map(([name, value]) => {
+    const answered = numberValue(value.correct) + numberValue(value.incorrect);
+    return { name, accuracy: answered ? Math.round((numberValue(value.correct) / answered) * 100) : 0 };
+  });
   return (
     <>
-      <div className="eyebrow">Test complete</div><h1 style={{marginTop:10}}>A solid attempt.</h1><p className="muted">Your accuracy is improving. Physical geography needs another focused round.</p>
+      <div className="eyebrow">Test complete</div><h1 style={{marginTop:10}}>{heading}</h1><p className="muted">{description}</p>
       <section className="card results-hero">
-        <div className="score-ring"><div><strong>{score}</strong><span className="meta">out of {maxScore}</span></div></div>
+        <div className="score-ring" style={{background:`conic-gradient(var(--accent) 0 ${scorePercent}%, #e5ebe7 ${scorePercent}% 100%)`}}><div><strong>{score}</strong><span className="meta">out of {maxScore}</span></div></div>
         <div>
-          <h2>CSE · Geography mixed</h2>
-          <div className="meta">{correct + incorrect + unattempted} questions · Exam scoring · {accuracy} accuracy</div>
+          <h2>{exam} · {subjectLabel}</h2>
+          <div className="meta">{questionCount} questions · {mode} mode · {difficulty} · {accuracy} accuracy{timeUsed ? ` · ${Math.round(timeUsed / 60)}m used` : ""}</div>
           <div className="breakdown"><div><strong>{correct}</strong><div className="meta">Correct</div></div><div><strong>{incorrect}</strong><div className="meta">Incorrect</div></div><div><strong>{unattempted}</strong><div className="meta">Unattempted</div></div></div>
           <div style={{display:"flex",gap:10,marginTop:20,flexWrap:"wrap"}}><button className="primary" onClick={() => setShowSolutions((value) => !value)}>{showSolutions ? "Hide solutions" : "Review solutions"}</button><button className="secondary" onClick={onRetake}>Retake</button><button className="quiet" onClick={onHome}>Dashboard</button></div>
         </div>
@@ -807,20 +907,17 @@ function Results({result, questions, answers, onRetake, onHome}:{result:Record<s
       {showSolutions && questions.length > 0 && <section className="card solution-list" style={{marginTop:22}}>
         <h2>Solutions</h2>
         {questions.map((question, index) => <article className="solution-row" key={question.id}>
-          <div className="meta">Question {index + 1} · {question.subject} · {question.origin === "pyq" ? "PYQ source verbatim" : "Reviewed MCQ"}</div>
-          <strong>{question.promptLines[0]}</strong>
-          <div className="meta">Your answer: {answers[index] ?? "Unattempted"} · Correct answer: {question.answer ?? "Unavailable"}</div>
-          <p>{question.explanation || "Explanation pending editorial review."}</p>
+          <div className="meta">Question {index + 1} · {questionSourceLabel(question)}</div>
+          <div className="solution-prompt">{question.promptLines.map((line, lineIndex) => <p key={`${question.id}-solution-line-${lineIndex}`}>{line}</p>)}</div>
+          <div className="solution-options">{Object.entries(question.options).map(([key, value]) => <div key={key}><span>{key}</span>{value}</div>)}</div>
+          <div className="meta">Your answer: {answers[index] ?? "Unattempted"} · Correct answer: {question.answer ?? question.correctOption ?? "Unavailable"}</div>
+          <p>{question.explanation || "No editorial explanation has been added yet."}</p>
         </article>)}
       </section>}
       <div className="section-head"><h2>Subject breakdown</h2><span className="meta">Accuracy</span></div>
-      <div className="weak-grid">
-        {[["Indian geography","82%",82],["Physical geography","58%",58],["Human geography","76%",76]].map(([name,value,width],index)=><div className="card weak-card" key={String(name)}><div className="weak-top"><strong>{name}</strong><span>{value}</span></div><div className={`bar ${index===1?"warn":""}`}><span style={{width:`${width}%`}} /></div></div>)}
-      </div>
-      <div className="section-head"><h2>Recommended next step</h2></div>
-      <div className="card" style={{padding:20,display:"flex",justifyContent:"space-between",alignItems:"center",gap:20}}>
-        <div><strong>10-question Physical Geography drill</strong><div className="meta">Moderate difficulty · Practice mode · about 12 minutes</div></div><button className="secondary" onClick={onRetake}>Start drill →</button>
-      </div>
+      {breakdownRows.length ? <div className="weak-grid">
+        {breakdownRows.map((row) => <div className="card weak-card" key={row.name}><div className="weak-top"><strong>{row.name}</strong><span>{row.accuracy}%</span></div><div className={`bar ${row.accuracy < 70 ? "warn" : ""}`}><span style={{width:`${row.accuracy}%`}} /></div></div>)}
+      </div> : <div className="card" style={{padding:20}}><p className="muted">Subject breakdown is unavailable for this attempt.</p></div>}
     </>
   );
 }
