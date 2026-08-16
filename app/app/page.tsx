@@ -1,7 +1,5 @@
-import { UPSCPuraanApp } from "../upscpuraan-app";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Test lab", robots: { index: false, follow: false } };
-
-export default function AppHome() {
-  return <UPSCPuraanApp />;
+export default function LegacyApp() {
+  redirect("/");
 }

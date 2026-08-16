@@ -1,8 +1,5 @@
-import { UPSCPuraanApp } from "../../../upscpuraan-app";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Test results", robots: { index: false, follow: false } };
-
-export default async function TestResultsPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  return <UPSCPuraanApp initialScreen="results" initialTestId={id} />;
+export default function LegacyResult() {
+  redirect("/attempts");
 }

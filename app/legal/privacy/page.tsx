@@ -1,7 +1,7 @@
 import Link from "next/link";
+import { SiteHeader } from "../../components/site-header";
 
-export const metadata = { title: "Privacy policy", description: "How UPSCPuraan handles account and attempt data." };
-
+export const metadata = { title: "Privacy policy", description: "How UPSCPuraan handles device-local practice data." };
 export default function PrivacyPage() {
-  return <article className="public-article"><div className="eyebrow">Legal</div><h1>Privacy policy</h1><p>UPSCPuraan collects only the information needed to provide test attempts, optional account sync, saved tests, and performance analysis.</p><h2>What we store</h2><p>Anonymous sessions use a short-lived guest identifier. If you sign in with Google, we store your email, display name, attempts, answers, saved recipes, and results.</p><h2>What we do not do</h2><p>We do not sell student data or use private attempts for public rankings. Published question provenance is kept separately from personal performance data.</p><h2>Contact</h2><p>For account or content requests, contact the UPSCPuraan team through the project’s published support address.</p><p><Link href="/">Return home →</Link></p></article>;
+  return <><SiteHeader /><article className="public-article"><div className="eyebrow">Legal</div><h1>Privacy policy</h1><p>UPSCPuraan does not require a student account. Attempts, answers and bookmarks are stored only in this browser.</p><h2>What reaches the server</h2><p>The website receives ordinary requests needed to load questions and verify answers. Student practice history is not attached to an identity or synchronised to an account.</p><h2>Your controls</h2><p>You can export or clear all locally stored practice data from the Attempts page. Clearing browser storage also removes it.</p><h2>Editorial access</h2><p>Staff authentication is limited to the separate editorial system and is not part of student practice.</p><p><Link href="/">Return to PYQs →</Link></p></article></>;
 }

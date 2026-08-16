@@ -1,40 +1,40 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { PwaRegister } from "./pwa-register";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-interface",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sourceSerif = Source_Serif_4({
+  variable: "--font-reading",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "https://upscpuraan.vercel.app"),
   title: {
-    default: "UPSCPuraan — Build better UPSC tests",
+    default: "UPSCPuraan — Official PYQ Practice",
     template: "%s | UPSCPuraan",
   },
   description:
-    "A focused test lab for UPSC CSE, CAPF, CDS and NDA aspirants.",
+    "Practise exact previous-year questions from UPSC CSE, CAPF, CDS and NDA papers.",
   applicationName: "UPSCPuraan",
   manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
-    title: "UPSCPuraan — Your syllabus. Your test.",
+    title: "UPSCPuraan — Official PYQ Practice",
     description:
-      "Build exam-aligned tests from verified PYQs and reviewed MCQs.",
-    images: [{ url: "/og.png", width: 1536, height: 1024, alt: "UPSCPuraan — Your syllabus. Your test." }],
+      "Browse and practise exact previous-year questions by exam, subject and topic.",
+    images: [{ url: "/og.png", width: 1536, height: 1024, alt: "UPSCPuraan official PYQ archive" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "UPSCPuraan — Your syllabus. Your test.",
+    title: "UPSCPuraan — Official PYQ Practice",
     description:
-      "Build exam-aligned tests from verified PYQs and reviewed MCQs.",
+      "Browse and practise exact previous-year questions by exam, subject and topic.",
     images: ["/og.png"],
   },
   icons: {
@@ -51,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${sourceSerif.variable}`}
       >
         {children}
         <PwaRegister />

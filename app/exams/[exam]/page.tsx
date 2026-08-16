@@ -1,21 +1,26 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
-import { catalogExams, type CatalogExam } from "../../../lib/catalog";
+import { SiteHeader } from "../../components/site-header";
+import { ArchiveWorkspace } from "../../components/archive-workspace";
+import { PYQ_EXAMS, getArchiveInventory, getExamSummary, isPyqExam, type PyqExam } from "../../../lib/pyq-catalog";
 
-export function generateStaticParams() {
-  return Object.keys(catalogExams).map((exam) => ({ exam }));
-}
+export function generateStaticParams() { return PYQ_EXAMS.map((exam) => ({ exam })); }
 
-export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }) {
-  const { exam } = await params;
-  const details = catalogExams[exam.toUpperCase() as CatalogExam];
-  return details ? { title: `${exam.toUpperCase()} Test Series`, description: details.description } : {};
-}
-
-export default async function ExamPage({ params }: { params: Promise<{ exam: string }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ exam: string }> }): Promise<Metadata> {
   const { exam: rawExam } = await params;
-  const exam = rawExam.toUpperCase() as CatalogExam;
-  const details = catalogExams[exam];
-  if (!details) notFound();
-  return <main className="public-article"><div className="eyebrow">Exam catalogue</div><h1>{exam} test series</h1><p>{details.description}</p><div className="card" style={{ marginTop: 28 }}><strong>{details.paper}</strong><p>Choose subjects, topics, difficulty, question count, duration, and Practice or Exam mode.</p><Link className="primary" href="/app/build">Build a {exam} test →</Link></div><h2>Editorial standard</h2><p>Published questions retain their original source wording, exam metadata, and provenance. Questions without verification or a detailed explanation remain unavailable in student tests.</p><p><Link href="/">Return home →</Link></p></main>;
+  if (!isPyqExam(rawExam)) return {};
+  const summary = getExamSummary(rawExam.toUpperCase() as PyqExam);
+  return {
+    title: `${summary.exam} Previous-Year Questions`,
+    description: `Practise ${summary.questionCount} exact ${summary.exam} PYQs from ${summary.yearFrom} to ${summary.yearTo} by subject and topic.`,
+  };
+}
+
+export default async function ExamPage({ params, searchParams }: { params: Promise<{ exam: string }>; searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+  const { exam: rawExam } = await params;
+  if (!isPyqExam(rawExam)) notFound();
+  const query = await searchParams;
+  const inventory = getArchiveInventory(rawExam.toUpperCase() as PyqExam, Number(query.from) || undefined, Number(query.to) || undefined);
+  const initialSelected = Array.isArray(query.path) ? query.path : query.path ? [query.path] : [];
+  return <><SiteHeader /><ArchiveWorkspace initialInventory={inventory} initialSelected={initialSelected} /></>;
 }
