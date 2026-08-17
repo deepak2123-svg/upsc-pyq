@@ -1,7 +1,7 @@
 import type { PyqExam } from "./pyq-catalog";
 
 export type PracticeOrder = "newest" | "shuffle";
-export type PracticeRecipe = {
+export type LegacyPracticeRecipe = {
   exam: PyqExam;
   yearFrom: number;
   yearTo: number;
@@ -9,6 +9,25 @@ export type PracticeRecipe = {
   count: number | "all";
   order: PracticeOrder;
 };
+
+export type PracticePathSelection = {
+  subtopicId: string;
+  exams: PyqExam[];
+};
+
+export type PracticeRecipeV2 = {
+  version: 2;
+  subjectIds: string[];
+  paths: PracticePathSelection[];
+  count: number | "all";
+  order: PracticeOrder;
+};
+
+export type PracticeRecipe = LegacyPracticeRecipe | PracticeRecipeV2;
+
+export function isPracticeRecipeV2(recipe: PracticeRecipe): recipe is PracticeRecipeV2 {
+  return "version" in recipe && recipe.version === 2;
+}
 
 export type PracticeQuestion = {
   id: string;

@@ -12,6 +12,9 @@ function sessionScope(attempt: LocalAttempt) {
   const subjects = [...new Set(attempt.snapshot.questions.map((question) => question.subject))];
   return subjects.length === 1 ? subjects[0] : subjects.length ? `${subjects.length} subjects` : "Official PYQs";
 }
+function sessionExams(attempt: LocalAttempt) {
+  return [...new Set(attempt.snapshot.questions.map((question) => question.exam))].join(" + ");
+}
 
 export function ResultsClient({ id }: { id: string }) {
   const router = useRouter();
@@ -47,7 +50,7 @@ export function ResultsClient({ id }: { id: string }) {
       <Link className="back-link" href="/attempts">← Attempts</Link>
       <section className="result-summary">
         <p className="pyq-kicker">Practice complete</p>
-        <h1>{attempt.snapshot.recipe.exam} · {sessionScope(attempt)}</h1>
+        <h1>{sessionExams(attempt)} · {sessionScope(attempt)}</h1>
         <p>{attempt.snapshot.questions.length} questions · {time(attempt.elapsedSeconds)}</p>
         <div className="result-numbers">
           <div><strong>{stats.accuracy}%</strong><span>Accuracy</span></div>
@@ -55,7 +58,7 @@ export function ResultsClient({ id }: { id: string }) {
           <div><strong>{stats.incorrect}</strong><span>Incorrect</span></div>
           <div><strong>{stats.unattempted}</strong><span>Unattempted</span></div>
         </div>
-        <div className="result-actions"><button onClick={() => void retake()}>Retake selection</button><Link href={`/exams/${attempt.snapshot.recipe.exam}`}>Choose new PYQs</Link></div>
+        <div className="result-actions"><button onClick={() => void retake()}>Retake selection</button><Link href="/">Choose new PYQs</Link></div>
       </section>
 
       <section className="result-breakdown">

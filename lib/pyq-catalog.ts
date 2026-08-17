@@ -1,5 +1,5 @@
 import questionBank from "../content/question-bank.json";
-import { taxonomyIdForQuestion, taxonomyNode } from "./taxonomy";
+import { taxonomyIdForLegacyQuestion, taxonomyIdForQuestion, taxonomyNode } from "./taxonomy";
 
 export const PYQ_EXAMS = ["CSE", "CAPF", "CDS", "NDA"] as const;
 export type PyqExam = (typeof PYQ_EXAMS)[number];
@@ -38,6 +38,42 @@ export type SankeyLink = {
   source: string;
   target: string;
   questionCount: number;
+};
+
+export type ExamCounts = Record<PyqExam, number>;
+
+export type PracticeSubject = {
+  id: string;
+  label: string;
+  questionCount: number;
+  examCounts: ExamCounts;
+};
+
+export type PracticeInventoryNode = {
+  id: string;
+  label: string;
+  kind: "topic" | "subtopic";
+  subjectId: string;
+  questionCount: number;
+  examCounts: ExamCounts;
+  parentId?: string;
+};
+
+export type PracticeInventoryLink = {
+  source: string;
+  target: string;
+  subjectId: string;
+  questionCount: number;
+  examCounts: ExamCounts;
+};
+
+export type SubjectPracticeInventory = {
+  totalCount: number;
+  mappedCount: number;
+  unmappedCount: number;
+  subjects: PracticeSubject[];
+  nodes: PracticeInventoryNode[];
+  links: PracticeInventoryLink[];
 };
 
 export type ArchiveInventory = {
@@ -105,7 +141,7 @@ export function getQuestionPath(question: PyqQuestion) {
     question.subtopic === "General"
   ) return null;
 
-  const mappedNode = taxonomyNode(question.taxonomyId || taxonomyIdForQuestion(question.id) || "");
+  const mappedNode = taxonomyNode(question.taxonomyId || taxonomyIdForQuestion(question.id) || taxonomyIdForLegacyQuestion(question) || "");
   const subject = mappedNode?.subject || question.subject;
   const topic = mappedNode?.chapter || question.taxonomyChapter || question.topic;
   const subtopic = mappedNode?.subtopic || question.taxonomySubtopic || question.subtopic;
@@ -113,6 +149,68 @@ export function getQuestionPath(question: PyqQuestion) {
   const topicId = `topic:${slug(subject)}:${slug(topic)}`;
   const subtopicId = `subtopic:${slug(subject)}:${slug(topic)}:${slug(subtopic)}`;
   return { subject, topic, subtopic, subjectId, topicId, subtopicId };
+}
+
+const emptyExamCounts = (): ExamCounts => ({ CSE: 0, CAPF: 0, CDS: 0, NDA: 0 });
+
+function incrementExam(counts: ExamCounts, exam: PyqExam) {
+  counts[exam] += 1;
+}
+
+export function getSubjectPracticeInventory(): SubjectPracticeInventory {
+  const subjects = new Map<string, PracticeSubject>();
+  const nodes = new Map<string, PracticeInventoryNode>();
+  const links = new Map<string, PracticeInventoryLink>();
+  let mappedCount = 0;
+
+  for (const question of pyqQuestions) {
+    const path = getQuestionPath(question);
+    if (!path) continue;
+    mappedCount += 1;
+
+    const subject = subjects.get(path.subjectId) || {
+      id: path.subjectId,
+      label: path.subject,
+      questionCount: 0,
+      examCounts: emptyExamCounts(),
+    };
+    subject.questionCount += 1;
+    incrementExam(subject.examCounts, question.exam);
+    subjects.set(subject.id, subject);
+
+    const pathNodes: PracticeInventoryNode[] = [
+      { id: path.topicId, label: path.topic, kind: "topic", subjectId: path.subjectId, questionCount: 0, examCounts: emptyExamCounts() },
+      { id: path.subtopicId, label: path.subtopic, kind: "subtopic", subjectId: path.subjectId, parentId: path.topicId, questionCount: 0, examCounts: emptyExamCounts() },
+    ];
+    for (const nextNode of pathNodes) {
+      const current = nodes.get(nextNode.id) || nextNode;
+      current.questionCount += 1;
+      incrementExam(current.examCounts, question.exam);
+      nodes.set(current.id, current);
+    }
+
+    const linkKey = `${path.topicId}->${path.subtopicId}`;
+    const link = links.get(linkKey) || {
+      source: path.topicId,
+      target: path.subtopicId,
+      subjectId: path.subjectId,
+      questionCount: 0,
+      examCounts: emptyExamCounts(),
+    };
+    link.questionCount += 1;
+    incrementExam(link.examCounts, question.exam);
+    links.set(linkKey, link);
+  }
+
+  const subjectOrder = new Map(["Geography", "Environment", "Polity"].map((label, index) => [label, index]));
+  return {
+    totalCount: pyqQuestions.length,
+    mappedCount,
+    unmappedCount: pyqQuestions.length - mappedCount,
+    subjects: [...subjects.values()].sort((a, b) => (subjectOrder.get(a.label) ?? 99) - (subjectOrder.get(b.label) ?? 99) || a.label.localeCompare(b.label)),
+    nodes: [...nodes.values()].sort((a, b) => a.subjectId.localeCompare(b.subjectId) || a.kind.localeCompare(b.kind) || a.label.localeCompare(b.label)),
+    links: [...links.values()].sort((a, b) => a.subjectId.localeCompare(b.subjectId) || a.source.localeCompare(b.source) || a.target.localeCompare(b.target)),
+  };
 }
 
 export function getArchiveInventory(exam: PyqExam, requestedFrom?: number, requestedTo?: number): ArchiveInventory {

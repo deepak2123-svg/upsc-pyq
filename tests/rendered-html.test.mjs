@@ -13,17 +13,19 @@ async function workerFetch(pathname = "/", init = {}) {
   );
 }
 
-test("server-renders the archive-first official PYQ home", async () => {
+test("server-renders the subject-first official PYQ workspace", async () => {
   const response = await workerFetch();
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Official previous-year questions/);
-  assert.match(html, /Choose an examination/);
-  assert.match(html, /Civil Services Examination/);
-  assert.match(html, />485</);
-  assert.match(html, />241</);
-  assert.match(html, />313</);
-  assert.match(html, />480</);
+  assert.match(html, /Choose subjects/);
+  assert.match(html, /Geography/);
+  assert.match(html, /Environment/);
+  assert.match(html, /Polity/);
+  assert.match(html, /Every subtopic is included initially/);
+  assert.match(html, /Topic/);
+  assert.match(html, /Subtopic/);
+  assert.doesNotMatch(html, /Choose an examination|Year range|Difficulty/);
   assert.match(html, /PYQs/);
   assert.match(html, /Attempts/);
   assert.match(html, /Bookmarks/);
@@ -31,12 +33,12 @@ test("server-renders the archive-first official PYQ home", async () => {
   assert.doesNotMatch(html, /Your syllabus|UPSC test lab|Guest mode|Sign in with Google/);
 });
 
-test("server-renders the continuous Sankey archive workspace", async () => {
+test("server-renders an exam archive through the subject-first selector", async () => {
   const response = await workerFetch("/exams/CSE");
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /Build a practice session/);
-  assert.match(html, /Subject/);
+  assert.match(html, /Choose subjects/);
+  assert.match(html, /CSE is preselected as the source/);
   assert.match(html, /Topic/);
   assert.match(html, /Subtopic/);
   assert.match(html, /Newest first/);
@@ -45,18 +47,66 @@ test("server-renders the continuous Sankey archive workspace", async () => {
   assert.doesNotMatch(html, /difficulty|generated MCQ|source verbatim/i);
 });
 
-test("inventory returns unique official PYQ flows and unresolved records separately", async () => {
-  const response = await workerFetch("/api/pyqs/inventory?exam=CSE");
+test("inventory returns cross-exam subjects and unique official PYQ flows", async () => {
+  const response = await workerFetch("/api/pyqs/inventory");
   assert.equal(response.status, 200);
   const inventory = await response.json();
-  assert.equal(inventory.exam, "CSE");
-  assert.equal(inventory.totalCount, 485);
+  assert.equal(inventory.totalCount, 1519);
   assert.equal(inventory.mappedCount + inventory.unmappedCount, inventory.totalCount);
-  assert.ok(inventory.nodes.some((node) => node.kind === "subject"));
+  assert.deepEqual(inventory.subjects.map((subject) => subject.label), ["Geography", "Environment", "Polity"]);
   assert.ok(inventory.nodes.some((node) => node.kind === "topic"));
   assert.ok(inventory.nodes.some((node) => node.kind === "subtopic"));
+  assert.ok(inventory.nodes.some((node) => node.kind === "subtopic" && node.examCounts.CDS > 0));
+  assert.ok(inventory.nodes.every((node) => Object.values(node.examCounts).reduce((sum, count) => sum + count, 0) === node.questionCount));
   assert.ok(inventory.links.every((link) => link.questionCount > 0));
   assert.equal(new Set(inventory.nodes.map((node) => node.id)).size, inventory.nodes.length);
+  assert.ok(!inventory.subjects.some((subject) => subject.label === "General Studies"));
+});
+
+test("creates a deterministic mixed-exam snapshot from exact subtopic paths", async () => {
+  const inventoryResponse = await workerFetch("/api/pyqs/inventory");
+  const inventory = await inventoryResponse.json();
+  const csePath = inventory.nodes.find((node) => node.kind === "subtopic" && node.examCounts.CSE > 0);
+  const cdsPath = inventory.nodes.find((node) => node.kind === "subtopic" && node.examCounts.CDS > 0 && node.id !== csePath?.id);
+  assert.ok(csePath && cdsPath);
+  const subjectIds = [...new Set([csePath.subjectId, cdsPath.subjectId])];
+  const response = await workerFetch("/api/practice-snapshots", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      version: 2,
+      subjectIds,
+      paths: [{ subtopicId: csePath.id, exams: ["CSE"] }, { subtopicId: cdsPath.id, exams: ["CDS"] }],
+      count: "all",
+      order: "newest",
+    }),
+  });
+  assert.equal(response.status, 201);
+  const snapshot = await response.json();
+  assert.equal(snapshot.recipe.version, 2);
+  assert.deepEqual(snapshot.recipe.subjectIds, subjectIds);
+  assert.ok(snapshot.questions.some((question) => question.exam === "CSE"));
+  assert.ok(snapshot.questions.some((question) => question.exam === "CDS"));
+  assert.ok(snapshot.questions.every((question) => ["CSE", "CDS"].includes(question.exam)));
+  assert.ok(snapshot.questions.every((question) => !("answer" in question) && !("explanation" in question)));
+});
+
+test("rejects a stale V2 count that exceeds the selected path inventory", async () => {
+  const inventoryResponse = await workerFetch("/api/pyqs/inventory");
+  const inventory = await inventoryResponse.json();
+  const path = inventory.nodes
+    .filter((node) => node.kind === "subtopic" && node.questionCount < 100)
+    .sort((a, b) => a.questionCount - b.questionCount)[0];
+  assert.ok(path);
+  const exam = ["CSE", "CAPF", "CDS", "NDA"].find((value) => path.examCounts[value] > 0);
+  const response = await workerFetch("/api/practice-snapshots", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ version: 2, subjectIds: [path.subjectId], paths: [{ subtopicId: path.id, exams: [exam] }], count: 100, order: "newest" }),
+  });
+  assert.equal(response.status, 409);
+  const body = await response.json();
+  assert.ok(body.available < 100);
 });
 
 test("creates a fixed, answer-free official-PYQ practice snapshot", async () => {

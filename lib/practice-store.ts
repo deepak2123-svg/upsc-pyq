@@ -8,12 +8,14 @@ interface PracticeDb extends DBSchema {
   bookmarks: { key: string; value: Bookmark; indexes: { "by-saved": string } };
 }
 
-const dbPromise = typeof window === "undefined" ? null : openDB<PracticeDb>("upscpuraan-pyq", 1, {
-  upgrade(db) {
-    const attempts = db.createObjectStore("attempts", { keyPath: "id" });
-    attempts.createIndex("by-updated", "updatedAt");
-    const bookmarks = db.createObjectStore("bookmarks", { keyPath: "questionId" });
-    bookmarks.createIndex("by-saved", "savedAt");
+const dbPromise = typeof window === "undefined" ? null : openDB<PracticeDb>("upscpuraan-pyq", 2, {
+  upgrade(db, oldVersion) {
+    if (oldVersion < 1) {
+      const attempts = db.createObjectStore("attempts", { keyPath: "id" });
+      attempts.createIndex("by-updated", "updatedAt");
+      const bookmarks = db.createObjectStore("bookmarks", { keyPath: "questionId" });
+      bookmarks.createIndex("by-saved", "savedAt");
+    }
   },
 });
 
@@ -58,5 +60,5 @@ export async function clearPracticeData() {
 }
 
 export async function exportPracticeData() {
-  return JSON.stringify({ version: 1, exportedAt: new Date().toISOString(), attempts: await listAttempts(), bookmarks: await listBookmarks() }, null, 2);
+  return JSON.stringify({ version: 2, exportedAt: new Date().toISOString(), attempts: await listAttempts(), bookmarks: await listBookmarks() }, null, 2);
 }

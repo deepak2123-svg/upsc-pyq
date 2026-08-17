@@ -14,6 +14,9 @@ function sessionScope(attempt: LocalAttempt) {
   const subjects = [...new Set(attempt.snapshot.questions.map((question) => question.subject))];
   return subjects.length === 1 ? subjects[0] : subjects.length ? `${subjects.length} subjects` : "Official PYQs";
 }
+function sessionExams(attempt: LocalAttempt) {
+  return [...new Set(attempt.snapshot.questions.map((question) => question.exam))].join(" + ");
+}
 
 export function AttemptsLibrary() {
   const [attempts, setAttempts] = useState<LocalAttempt[]>();
@@ -31,7 +34,7 @@ export function AttemptsLibrary() {
       const answered = Object.keys(attempt.answers).length;
       const correct = Object.values(attempt.feedback).filter((feedback) => feedback.correct).length;
       const accuracy = answered ? Math.round(correct / answered * 100) : 0;
-      return <motion.article layout key={attempt.id}><div><span>{attempt.snapshot.recipe.exam}</span><strong>{sessionScope(attempt)}</strong><small>{formatDate(attempt.updatedAt)}</small></div><div><span>{answered} / {attempt.snapshot.questions.length}</span><small>{attempt.status === "completed" ? `${accuracy}% accuracy` : "In progress"}</small></div><div><Link href={attempt.status === "completed" ? `/practice/${attempt.id}/results` : `/practice/${attempt.id}`}>{attempt.status === "completed" ? "Results" : "Resume"} →</Link><button aria-label={`Delete ${attempt.snapshot.recipe.exam} attempt`} onClick={() => void remove(attempt.id)}>Delete</button></div></motion.article>;
+      return <motion.article layout key={attempt.id}><div><span>{sessionExams(attempt)}</span><strong>{sessionScope(attempt)}</strong><small>{formatDate(attempt.updatedAt)}</small></div><div><span>{answered} / {attempt.snapshot.questions.length}</span><small>{attempt.status === "completed" ? `${accuracy}% accuracy` : "In progress"}</small></div><div><Link href={attempt.status === "completed" ? `/practice/${attempt.id}/results` : `/practice/${attempt.id}`}>{attempt.status === "completed" ? "Results" : "Resume"} →</Link><button aria-label={`Delete ${sessionExams(attempt)} attempt`} onClick={() => void remove(attempt.id)}>Delete</button></div></motion.article>;
     })}</div>}
   </LibraryShell>;
 }

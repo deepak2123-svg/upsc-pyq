@@ -5,6 +5,7 @@ import questionMap03 from "../content/taxonomy/question-map-03.json";
 import questionMap04 from "../content/taxonomy/question-map-04.json";
 import questionMap05 from "../content/taxonomy/question-map-05.json";
 import questionMap06 from "../content/taxonomy/question-map-06.json";
+import cdsGeographyAliases from "../content/taxonomy/cds-geography-aliases.json";
 
 export const TAXONOMY_VERSION = taxonomySource.version;
 export type TaxonomySubject = "Geography" | "Environment";
@@ -24,6 +25,7 @@ export const taxonomyNodes: TaxonomyNode[] = taxonomyGroups.flatMap((group) => O
   subtopic,
 }))));
 const nodeById = new Map(taxonomyNodes.map((node) => [node.id, node]));
+const nodeBySubtopic = new Map(taxonomyNodes.map((node) => [node.subtopic, node]));
 
 export function taxonomyGroupsForSubjects(subjects: string[]): TaxonomyGroup[] {
   const selected = new Set(subjects.length ? subjects : ["Geography", "Environment"]);
@@ -52,3 +54,11 @@ export type QuestionTaxonomy = { taxonomyVersion: string; taxonomyHead: string; 
 const questionMapParts = [questionMap01, questionMap02, questionMap03, questionMap04, questionMap05, questionMap06];
 const questionTaxonomyById = new Map(questionMapParts.flatMap((part) => Object.entries(part.pairs)).map(([questionId, taxonomyIndex]) => [questionId, questionMapParts[0].ids[taxonomyIndex]]));
 export function taxonomyIdForQuestion(questionId: string): string | undefined { return questionTaxonomyById.get(questionId); }
+
+export function taxonomyIdForLegacyQuestion(question: { id: string; exam: string; subject: string; subtopic: string }): string | undefined {
+  if (question.exam !== "CDS" || question.subject !== "Geography") return undefined;
+  const questionAliases = cdsGeographyAliases.questions as Record<string, string>;
+  const subtopicAliases = cdsGeographyAliases.subtopics as Record<string, string>;
+  const canonicalLabel = questionAliases[question.id] || subtopicAliases[question.subtopic];
+  return canonicalLabel ? nodeBySubtopic.get(canonicalLabel)?.id : undefined;
+}
