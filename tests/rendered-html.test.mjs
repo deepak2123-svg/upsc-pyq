@@ -174,6 +174,8 @@ test("ships exact, locked source records and the local-only PWA model", async ()
   assert.match(practiceSource, /question-heading/);
   assert.match(cssSource, /font-family: var\(--font-reading\)/);
   assert.match(archiveSource, /sankey/);
+  assert.match(archiveSource, /Subject ↓ Topic ↓ Subtopic/);
+  assert.match(archiveSource, /verticalLink/);
   assert.match(localStoreSource, /openDB/);
   assert.match(localStoreSource, /attempts/);
   assert.match(localStoreSource, /bookmarks/);

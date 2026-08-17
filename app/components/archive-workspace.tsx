@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
-import { sankey, sankeyLinkHorizontal, type SankeyGraph, type SankeyLink, type SankeyNode } from "d3-sankey";
+import { sankey, type SankeyGraph, type SankeyLink, type SankeyNode } from "d3-sankey";
 import {
   PYQ_EXAMS,
   type PracticeInventoryLink,
@@ -15,9 +15,18 @@ import {
 import type { PracticeOrder, PracticePathSelection, PracticeSnapshot } from "../../lib/practice-types";
 import { createLocalAttempt } from "../../lib/practice-store";
 
-type ChartLink = PracticeInventoryLink & { source: string | ChartNode; target: string | ChartNode; value: number };
-type ChartNode = PracticeInventoryNode & SankeyNode<PracticeInventoryNode, ChartLink>;
-type LayoutLink = SankeyLink<PracticeInventoryNode, ChartLink>;
+type FlowNode = {
+  id: string;
+  label: string;
+  kind: "subject" | "topic" | "subtopic";
+  subjectId: string;
+  questionCount: number;
+  examCounts: Record<PyqExam, number>;
+  parentId?: string;
+};
+type ChartLink = Omit<PracticeInventoryLink, "source" | "target"> & { source: string | ChartNode; target: string | ChartNode; value: number };
+type ChartNode = FlowNode & SankeyNode<FlowNode, ChartLink>;
+type LayoutLink = SankeyLink<FlowNode, ChartLink>;
 type SubjectMode = "all" | "custom";
 
 const COUNTS = [10, 20, 30, 50] as const;
@@ -36,32 +45,65 @@ function availableExams(node: PracticeInventoryNode, preferredExam?: PyqExam) {
   return PYQ_EXAMS.filter((exam) => node.examCounts[exam] > 0);
 }
 
-function countForExams(node: PracticeInventoryNode, exams: PyqExam[] = []) {
+function countForExams(node: { examCounts: Record<PyqExam, number> }, exams: PyqExam[] = []) {
   return exams.reduce((total, exam) => total + node.examCounts[exam], 0);
 }
 
 function buildLayout(inventory: SubjectPracticeInventory, selectedSubjects: Set<string>, pathExams: Record<string, PyqExam[]>) {
-  const visibleNodes = inventory.nodes.filter((node) => selectedSubjects.has(node.subjectId));
-  const visibleLinks = inventory.links.filter((link) => selectedSubjects.has(link.subjectId));
-  const subtopicCount = visibleNodes.filter((node) => node.kind === "subtopic").length;
-  const height = Math.min(1180, Math.max(430, subtopicCount * 25 + 64));
+  const taxonomyNodes = inventory.nodes.filter((node) => selectedSubjects.has(node.subjectId));
+  const subjectNodes: FlowNode[] = inventory.subjects
+    .filter((subject) => selectedSubjects.has(subject.id))
+    .map((subject) => ({ ...subject, kind: "subject", subjectId: subject.id }));
+  const visibleNodes: FlowNode[] = [...subjectNodes, ...taxonomyNodes];
+  const subtopicCount = taxonomyNodes.filter((node) => node.kind === "subtopic").length;
+  const topicCount = taxonomyNodes.filter((node) => node.kind === "topic").length;
+  const width = Math.max(980, subtopicCount * 24, topicCount * 108);
+  const height = 610;
   if (!visibleNodes.length) {
-    return { graph: { nodes: [], links: [] } as SankeyGraph<PracticeInventoryNode, ChartLink>, height };
+    return { graph: { nodes: [], links: [] } as SankeyGraph<FlowNode, ChartLink>, height, width };
   }
   const nodeById = new Map(visibleNodes.map((node) => [node.id, node]));
-  const links = visibleLinks.map((link) => {
+  const topicLinks: ChartLink[] = taxonomyNodes.filter((node) => node.kind === "topic").map((topic) => {
+    const selectedCount = taxonomyNodes
+      .filter((node) => node.kind === "subtopic" && node.parentId === topic.id)
+      .reduce((total, node) => total + countForExams(node, pathExams[node.id]), 0);
+    return {
+      source: topic.subjectId,
+      target: topic.id,
+      subjectId: topic.subjectId,
+      value: Math.max(1, selectedCount),
+      questionCount: selectedCount,
+      examCounts: topic.examCounts,
+    };
+  });
+  const subtopicLinks: ChartLink[] = inventory.links.filter((link) => selectedSubjects.has(link.subjectId)).map((link) => {
     const target = nodeById.get(link.target);
-    const selectedCount = target ? countForExams(target, pathExams[target.id]) : 0;
+    const selectedCount = target && target.kind === "subtopic" ? countForExams(target, pathExams[target.id]) : 0;
     return { ...link, value: Math.max(1, selectedCount), questionCount: selectedCount };
   });
-  const generator = sankey<PracticeInventoryNode, ChartLink>()
+  const generator = sankey<FlowNode, ChartLink>()
     .nodeId((node) => node.id)
-    .nodeWidth(10)
-    .nodePadding(10)
-    .extent([[170, 28], [670, height - 24]])
+    .nodeWidth(12)
+    .nodePadding(14)
+    .extent([[52, 92], [520, width - 80]])
     .iterations(48);
-  const graph = generator({ nodes: visibleNodes.map((node) => ({ ...node })), links });
-  return { graph, height } as { graph: SankeyGraph<PracticeInventoryNode, ChartLink>; height: number };
+  const graph = generator({ nodes: visibleNodes.map((node) => ({ ...node })), links: [...topicLinks, ...subtopicLinks] });
+  return { graph, height, width } as { graph: SankeyGraph<FlowNode, ChartLink>; height: number; width: number };
+}
+
+function verticalLink(link: LayoutLink) {
+  const source = link.source as ChartNode;
+  const target = link.target as ChartNode;
+  const sourceX = link.y0 || 0;
+  const targetX = link.y1 || 0;
+  const sourceY = source.x1 || 0;
+  const targetY = target.x0 || 0;
+  const middleY = (sourceY + targetY) / 2;
+  return `M${sourceX},${sourceY}C${sourceX},${middleY} ${targetX},${middleY} ${targetX},${targetY}`;
+}
+
+function chartLabel(label: string, limit = 26) {
+  return label.length > limit ? `${label.slice(0, limit - 1)}…` : label;
 }
 
 export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInventory: SubjectPracticeInventory; initialExam?: PyqExam }) {
@@ -77,7 +119,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
 
   const selectedSubjectSet = useMemo(() => new Set(selectedSubjects), [selectedSubjects]);
   const selectedSubtopicSet = useMemo(() => new Set(Object.keys(pathExams)), [pathExams]);
-  const { graph, height } = useMemo(() => buildLayout(initialInventory, selectedSubjectSet, pathExams), [initialInventory, selectedSubjectSet, pathExams]);
+  const { graph, height, width } = useMemo(() => buildLayout(initialInventory, selectedSubjectSet, pathExams), [initialInventory, selectedSubjectSet, pathExams]);
   const nodeById = useMemo(() => new Map(initialInventory.nodes.map((node) => [node.id, node])), [initialInventory]);
   const focusedNode = focusedSubtopic ? nodeById.get(focusedSubtopic) : undefined;
   const eligibleCount = Object.entries(pathExams).reduce((total, [id, exams]) => {
@@ -240,34 +282,41 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
         </aside>
 
         <section className="subject-sankey" aria-label="Topic and subtopic question flow">
-          <div className="sankey-section-heading"><div><span className="selector-label">2 · Refine</span><h2>Topic → Subtopic</h2></div><small>Flow width follows the selected exam sources.</small></div>
+          <div className="sankey-section-heading"><div><span className="selector-label">2 · Refine</span><h2>Subject ↓ Topic ↓ Subtopic</h2></div><small>Flows start at the selected subjects. Scroll sideways to explore wider taxonomies.</small></div>
           {!selectedSubjects.length ? <div className="empty-sankey"><strong>No subject selected</strong><span>Choose a subject above to see its topics and subtopics.</span></div> : <>
-            <div className="sankey-scroll">
-              <div className="sankey-column-labels two-columns"><span>Topic</span><span>Subtopic</span></div>
-              <svg className="sankey-chart subject-flow-chart" viewBox={`0 0 840 ${height}`} width="840" height={height} role="img" aria-labelledby="sankey-title sankey-desc">
-                <title id="sankey-title">Selected PYQ topic and subtopic flow</title>
-                <desc id="sankey-desc">Interactive flow from topics to subtopics. Wider links contain more currently eligible questions.</desc>
+            <div className="vertical-sankey-frame">
+              <div className="sankey-row-labels" aria-hidden="true"><span>Subject</span><span>Topic</span><span>Subtopic</span></div>
+              <div className="sankey-scroll vertical-sankey-scroll">
+              <svg className="sankey-chart subject-flow-chart vertical-flow-chart" viewBox={`0 0 ${width} ${height}`} width={width} height={height} role="img" aria-labelledby="sankey-title sankey-desc">
+                <title id="sankey-title">Selected PYQ subject, topic and subtopic flow</title>
+                <desc id="sankey-desc">Interactive top-to-bottom flow from subjects into topics and subtopics. Wider links contain more currently eligible questions.</desc>
                 <g className="sankey-links">{graph.links.map((link) => {
                   const source = link.source as ChartNode; const target = link.target as ChartNode;
-                  const active = selectedSubtopicSet.has(target.id);
-                  const path = sankeyLinkHorizontal<PracticeInventoryNode, ChartLink>()(link as LayoutLink) || "";
+                  const active = target.kind === "subtopic" ? selectedSubtopicSet.has(target.id) : link.questionCount > 0;
+                  const path = verticalLink(link as LayoutLink);
                   const subjectIndex = initialInventory.subjects.findIndex((subject) => subject.id === target.subjectId);
-                  return <motion.path key={`${source.id}-${target.id}`} d={path} animate={{ opacity: active ? .36 : .06 }} transition={{ duration: .18 }} stroke={SUBJECT_COLOURS[subjectIndex % SUBJECT_COLOURS.length]} strokeWidth={Math.max(1, link.width || 1)} onClick={() => toggleSubtopic(target.id)} role="button" tabIndex={0} aria-label={`${source.label} to ${target.label}: ${link.questionCount} selected questions`} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); toggleSubtopic(target.id); } }} />;
+                  const toggle = () => target.kind === "topic" ? toggleTopic(target.id) : toggleSubtopic(target.id);
+                  return <motion.path key={`${source.id}-${target.id}`} d={path} animate={{ opacity: active ? .32 : .05 }} transition={{ duration: .18 }} stroke={SUBJECT_COLOURS[subjectIndex % SUBJECT_COLOURS.length]} strokeWidth={Math.max(1, link.width || 1)} onClick={toggle} role="button" tabIndex={0} aria-label={`${source.label} to ${target.label}: ${link.questionCount} selected questions`} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); toggle(); } }} />;
                 })}</g>
                 <g className="sankey-nodes">{graph.nodes.map((node) => {
                   const children = node.kind === "topic" ? subtopicsForTopic(node.id, initialInventory) : [];
                   const selectedChildren = children.filter((child) => selectedSubtopicSet.has(child.id)).length;
-                  const active = node.kind === "subtopic" ? selectedSubtopicSet.has(node.id) : selectedChildren > 0;
-                  const state = node.kind === "subtopic" ? (active ? "selected" : "not selected") : selectedChildren === 0 ? "not selected" : selectedChildren === children.length ? "selected" : "partly selected";
-                  const x0 = node.x0 || 0; const x1 = node.x1 || 0; const y0 = node.y0 || 0; const y1 = node.y1 || 0;
-                  const labelX = node.kind === "topic" ? x0 - 9 : x1 + 9;
-                  const anchor = node.kind === "topic" ? "end" : "start";
-                  const visibleCount = node.kind === "subtopic" ? countForExams(node, pathExams[node.id]) : children.reduce((total, child) => total + countForExams(child, pathExams[child.id]), 0);
+                  const subjectChildren = node.kind === "subject" ? subtopicsForSubject(node.subjectId, initialInventory) : [];
+                  const active = node.kind === "subject" ? selectedSubjectSet.has(node.id) : node.kind === "subtopic" ? selectedSubtopicSet.has(node.id) : selectedChildren > 0;
+                  const state = node.kind === "subject" ? "selected" : node.kind === "subtopic" ? (active ? "selected" : "not selected") : selectedChildren === 0 ? "not selected" : selectedChildren === children.length ? "selected" : "partly selected";
+                  const x0 = node.y0 || 0; const x1 = node.y1 || 0; const y0 = node.x0 || 0; const y1 = node.x1 || 0;
+                  const barWidth = Math.max(2, x1 - x0);
+                  const labelY = node.kind === "subtopic" ? y1 + 16 : y0 - 10;
+                  const labelX = node.kind === "subject" ? x0 + 10 : (x0 + x1) / 2;
+                  const labelAnchor = node.kind === "subject" ? "start" : "middle";
+                  const visibleCount = node.kind === "subject" ? subjectChildren.reduce((total, child) => total + countForExams(child, pathExams[child.id]), 0) : node.kind === "subtopic" ? countForExams(node, pathExams[node.id]) : children.reduce((total, child) => total + countForExams(child, pathExams[child.id]), 0);
                   const subjectIndex = initialInventory.subjects.findIndex((subject) => subject.id === node.subjectId);
-                  const toggle = () => node.kind === "topic" ? toggleTopic(node.id) : toggleSubtopic(node.id);
-                  return <motion.g key={node.id} animate={{ opacity: active ? 1 : .25 }} transition={{ duration: .18 }} role="button" tabIndex={0} aria-label={`${node.label}, ${visibleCount} selected questions, ${state}`} onClick={toggle} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); toggle(); } }}><rect x={x0} y={y0} width={Math.max(2, x1 - x0)} height={Math.max(2, y1 - y0)} rx="2" fill={SUBJECT_COLOURS[subjectIndex % SUBJECT_COLOURS.length]} /><text x={labelX} y={(y0 + y1) / 2} dy=".34em" textAnchor={anchor}>{node.label}<tspan dx="5">{visibleCount}</tspan></text></motion.g>;
+                  const toggle = () => node.kind === "subject" ? toggleSubject(node.id) : node.kind === "topic" ? toggleTopic(node.id) : toggleSubtopic(node.id);
+                  const showLabel = node.kind !== "subtopic" || node.id === focusedSubtopic || barWidth >= 38;
+                  return <motion.g key={node.id} animate={{ opacity: active ? 1 : .22 }} transition={{ duration: .18 }} role="button" tabIndex={0} aria-label={`${node.label}, ${visibleCount} selected questions, ${state}`} onClick={toggle} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); toggle(); } }}><title>{node.label} · {visibleCount} selected PYQs</title><rect x={x0} y={y0} width={barWidth} height={Math.max(2, y1 - y0)} rx="2" fill={SUBJECT_COLOURS[subjectIndex % SUBJECT_COLOURS.length]} stroke={node.id === focusedSubtopic ? "#171a1f" : "transparent"} strokeWidth={node.id === focusedSubtopic ? 2 : 0} />{showLabel ? <text x={labelX} y={labelY} textAnchor={labelAnchor}>{chartLabel(node.label, node.kind === "subtopic" ? 22 : 30)}<tspan dx="5">{visibleCount}</tspan></text> : null}</motion.g>;
                 })}</g>
               </svg>
+              </div>
             </div>
 
             <details className="sankey-list"><summary>Use accessible list selection</summary><div className="sankey-list-grid">{selectedSubjects.map((subjectId) => <fieldset key={subjectId}><legend>{initialInventory.subjects.find((subject) => subject.id === subjectId)?.label}</legend>{initialInventory.nodes.filter((node) => node.kind === "topic" && node.subjectId === subjectId).map((topic) => {
