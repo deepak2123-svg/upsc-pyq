@@ -25,7 +25,7 @@ export function AttemptsLibrary() {
   async function remove(id: string) { await deleteAttempt(id); setAttempts((current) => current?.filter((attempt) => attempt.id !== id)); }
   async function exportData() {
     const blob = new Blob([await exportPracticeData()], { type: "application/json" });
-    const url = URL.createObjectURL(blob); const anchor = document.createElement("a"); anchor.href = url; anchor.download = `upscpuraan-history-${new Date().toISOString().slice(0, 10)}.json`; anchor.click(); URL.revokeObjectURL(url);
+    const url = URL.createObjectURL(blob); const anchor = document.createElement("a"); anchor.href = url; anchor.download = `upsc-pyq-practise-history-${new Date().toISOString().slice(0, 10)}.json`; anchor.click(); URL.revokeObjectURL(url);
   }
   async function clear() { if (!window.confirm("Clear all attempts and bookmarks stored in this browser?")) return; await clearPracticeData(); setAttempts([]); }
 

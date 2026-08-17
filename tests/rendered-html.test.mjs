@@ -18,6 +18,8 @@ test("server-renders the subject-first official PYQ workspace", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Official previous-year questions/);
+  assert.match(html, /UPSC\.PYQ\.Practise/);
+  assert.doesNotMatch(html, /UPSCPuraan/);
   assert.match(html, /Choose subjects/);
   assert.match(html, /Geography/);
   assert.match(html, /Environment/);
@@ -150,7 +152,8 @@ test("ships exact, locked source records and the local-only PWA model", async ()
   ]);
   const manifest = JSON.parse(manifestText);
   const bank = JSON.parse(bankText);
-  assert.equal(manifest.name, "UPSCPuraan");
+  assert.equal(manifest.name, "UPSC.PYQ.Practise");
+  assert.equal(manifest.short_name, "UPSC.PYQ");
   assert.equal(manifest.display, "standalone");
   assert.equal(bank.total, 1519);
   assert.deepEqual(bank.sourceCounts, { CSE: 485, CAPF: 241, CDS: 313, NDA: 480 });

@@ -16,26 +16,26 @@ const sourceSerif = Source_Serif_4({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? "https://upscpuraan.vercel.app"),
   title: {
-    default: "UPSCPuraan — Official PYQ Practice",
-    template: "%s | UPSCPuraan",
+    default: "UPSC.PYQ.Practise — Official PYQ Practice",
+    template: "%s | UPSC.PYQ.Practise",
   },
   description:
     "Practise exact previous-year questions from UPSC CSE, CAPF, CDS and NDA papers.",
-  applicationName: "UPSCPuraan",
+  applicationName: "UPSC.PYQ.Practise",
   manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
-    title: "UPSCPuraan — Official PYQ Practice",
+    title: "UPSC.PYQ.Practise — Official PYQ Practice",
     description:
       "Browse and practise exact previous-year questions by exam, subject and topic.",
-    images: [{ url: "/og.png", width: 1536, height: 1024, alt: "UPSCPuraan official PYQ archive" }],
+    images: [{ url: "/og-upsc-pyq-practise.png", width: 1536, height: 1024, alt: "UPSC.PYQ.Practise official PYQ archive" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "UPSCPuraan — Official PYQ Practice",
+    title: "UPSC.PYQ.Practise — Official PYQ Practice",
     description:
       "Browse and practise exact previous-year questions by exam, subject and topic.",
-    images: ["/og.png"],
+    images: ["/og-upsc-pyq-practise.png"],
   },
   icons: {
     icon: "/favicon.svg",

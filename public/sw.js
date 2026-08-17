@@ -1,4 +1,4 @@
-const CACHE = "upscpuraan-shell-v2";
+const CACHE = "upsc-pyq-practise-shell-v3";
 const SHELL = ["/", "/app", "/manifest.webmanifest", "/favicon.svg"];
 
 self.addEventListener("install", (event) => {
@@ -17,6 +17,6 @@ self.addEventListener("fetch", (event) => {
       const copy = response.clone();
       void caches.open(CACHE).then((cache) => cache.put(request, copy));
       return response;
-    }).catch(() => caches.match(request).then((cached) => cached ?? new Response("UPSCPuraan is offline. Reconnect to continue.", { status: 503, headers: { "Content-Type": "text/plain" } }))),
+    }).catch(() => caches.match(request).then((cached) => cached ?? new Response("UPSC.PYQ.Practise is offline. Reconnect to continue.", { status: 503, headers: { "Content-Type": "text/plain" } }))),
   );
 });

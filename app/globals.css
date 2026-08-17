@@ -898,6 +898,14 @@ h3 { font-size: 16px; }
 .vertical-flow-chart { min-width: 980px; }
 .vertical-flow-chart .sankey-nodes text { font-size: 10px; }
 .vertical-flow-chart .sankey-links path { transition: opacity 140ms ease, stroke 140ms ease; }
+.vertical-flow-chart foreignObject { overflow: visible; pointer-events: none; }
+.sankey-label-connector { fill: none; stroke-width: 1; stroke-dasharray: 3 3; opacity: .65; pointer-events: none; }
+.sankey-node-card { width: 100%; height: 100%; display: grid; align-content: center; gap: 2px; overflow: hidden; padding: 5px 8px; border: 1px solid; border-radius: 7px; background: rgba(255,255,255,.97); color: var(--ink); box-shadow: 0 2px 8px rgba(23,26,31,.06); font-family: var(--font-interface); line-height: 1.15; }
+.sankey-node-card strong { display: block; overflow-wrap: anywhere; font-size: 10px; font-weight: 750; }
+.sankey-node-card span { color: var(--muted); font-size: 8px; font-variant-numeric: tabular-nums; }
+.sankey-node-card.subject { grid-template-columns: 1fr auto; align-items: center; gap: 8px; padding-inline: 10px; }
+.sankey-node-card.subject strong { font-size: 12px; }
+.sankey-node-card.subject span { font-size: 9px; white-space: nowrap; }
 .empty-sankey { min-height: 410px; display: grid; align-content: center; justify-items: center; gap: 7px; border: 1px dashed var(--line); border-radius: 10px; text-align: center; }
 .empty-sankey strong { font-size: 14px; }
 .empty-sankey span { max-width: 300px; color: var(--muted); font-size: 12px; }

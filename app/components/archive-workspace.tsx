@@ -31,6 +31,8 @@ type SubjectMode = "all" | "custom";
 
 const COUNTS = [10, 20, 30, 50] as const;
 const SUBJECT_COLOURS = ["#2457d6", "#18794e", "#a15c00", "#6b4eff"];
+const SUBJECT_LABEL_WIDTH = 176;
+const TOPIC_LABEL_WIDTH = 154;
 
 function subtopicsForSubject(subjectId: string, inventory: SubjectPracticeInventory) {
   return inventory.nodes.filter((node) => node.kind === "subtopic" && node.subjectId === subjectId);
@@ -57,7 +59,7 @@ function buildLayout(inventory: SubjectPracticeInventory, selectedSubjects: Set<
   const visibleNodes: FlowNode[] = [...subjectNodes, ...taxonomyNodes];
   const subtopicCount = taxonomyNodes.filter((node) => node.kind === "subtopic").length;
   const topicCount = taxonomyNodes.filter((node) => node.kind === "topic").length;
-  const width = Math.max(980, subtopicCount * 24, topicCount * 108);
+  const width = Math.max(980, subtopicCount * 24, topicCount * (TOPIC_LABEL_WIDTH + 16) + 160);
   const height = 610;
   if (!visibleNodes.length) {
     return { graph: { nodes: [], links: [] } as SankeyGraph<FlowNode, ChartLink>, height, width };
@@ -106,6 +108,20 @@ function chartLabel(label: string, limit = 26) {
   return label.length > limit ? `${label.slice(0, limit - 1)}…` : label;
 }
 
+function labelCardPositions(nodes: ChartNode[], width: number, cardWidth: number) {
+  const positions = new Map<string, number>();
+  const sorted = [...nodes].sort((a, b) => ((a.y0 || 0) + (a.y1 || 0)) - ((b.y0 || 0) + (b.y1 || 0)));
+  let cursor = 16;
+  for (const node of sorted) {
+    const centre = ((node.y0 || 0) + (node.y1 || 0)) / 2;
+    const desired = Math.max(16, Math.min(width - cardWidth - 16, centre - cardWidth / 2));
+    const position = Math.max(cursor, desired);
+    positions.set(node.id, position);
+    cursor = position + cardWidth + 12;
+  }
+  return positions;
+}
+
 export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInventory: SubjectPracticeInventory; initialExam?: PyqExam }) {
   const router = useRouter();
   const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
@@ -120,6 +136,8 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const selectedSubjectSet = useMemo(() => new Set(selectedSubjects), [selectedSubjects]);
   const selectedSubtopicSet = useMemo(() => new Set(Object.keys(pathExams)), [pathExams]);
   const { graph, height, width } = useMemo(() => buildLayout(initialInventory, selectedSubjectSet, pathExams), [initialInventory, selectedSubjectSet, pathExams]);
+  const subjectLabelPositions = useMemo(() => labelCardPositions(graph.nodes.filter((node) => node.kind === "subject") as ChartNode[], width, SUBJECT_LABEL_WIDTH), [graph.nodes, width]);
+  const topicLabelPositions = useMemo(() => labelCardPositions(graph.nodes.filter((node) => node.kind === "topic") as ChartNode[], width, TOPIC_LABEL_WIDTH), [graph.nodes, width]);
   const nodeById = useMemo(() => new Map(initialInventory.nodes.map((node) => [node.id, node])), [initialInventory]);
   const focusedNode = focusedSubtopic ? nodeById.get(focusedSubtopic) : undefined;
   const eligibleCount = Object.entries(pathExams).reduce((total, [id, exams]) => {
@@ -306,14 +324,17 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
                   const state = node.kind === "subject" ? "selected" : node.kind === "subtopic" ? (active ? "selected" : "not selected") : selectedChildren === 0 ? "not selected" : selectedChildren === children.length ? "selected" : "partly selected";
                   const x0 = node.y0 || 0; const x1 = node.y1 || 0; const y0 = node.x0 || 0; const y1 = node.x1 || 0;
                   const barWidth = Math.max(2, x1 - x0);
-                  const labelY = node.kind === "subtopic" ? y1 + 16 : y0 - 10;
-                  const labelX = node.kind === "subject" ? x0 + 10 : (x0 + x1) / 2;
-                  const labelAnchor = node.kind === "subject" ? "start" : "middle";
+                  const labelY = y1 + 16;
                   const visibleCount = node.kind === "subject" ? subjectChildren.reduce((total, child) => total + countForExams(child, pathExams[child.id]), 0) : node.kind === "subtopic" ? countForExams(node, pathExams[node.id]) : children.reduce((total, child) => total + countForExams(child, pathExams[child.id]), 0);
                   const subjectIndex = initialInventory.subjects.findIndex((subject) => subject.id === node.subjectId);
+                  const nodeColour = SUBJECT_COLOURS[subjectIndex % SUBJECT_COLOURS.length];
                   const toggle = () => node.kind === "subject" ? toggleSubject(node.id) : node.kind === "topic" ? toggleTopic(node.id) : toggleSubtopic(node.id);
-                  const showLabel = node.kind !== "subtopic" || node.id === focusedSubtopic || barWidth >= 38;
-                  return <motion.g key={node.id} animate={{ opacity: active ? 1 : .22 }} transition={{ duration: .18 }} role="button" tabIndex={0} aria-label={`${node.label}, ${visibleCount} selected questions, ${state}`} onClick={toggle} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); toggle(); } }}><title>{node.label} · {visibleCount} selected PYQs</title><rect x={x0} y={y0} width={barWidth} height={Math.max(2, y1 - y0)} rx="2" fill={SUBJECT_COLOURS[subjectIndex % SUBJECT_COLOURS.length]} stroke={node.id === focusedSubtopic ? "#171a1f" : "transparent"} strokeWidth={node.id === focusedSubtopic ? 2 : 0} />{showLabel ? <text x={labelX} y={labelY} textAnchor={labelAnchor}>{chartLabel(node.label, node.kind === "subtopic" ? 22 : 30)}<tspan dx="5">{visibleCount}</tspan></text> : null}</motion.g>;
+                  const showSubtopicLabel = node.kind === "subtopic" && (node.id === focusedSubtopic || barWidth >= 38);
+                  const cardWidth = node.kind === "subject" ? SUBJECT_LABEL_WIDTH : TOPIC_LABEL_WIDTH;
+                  const cardX = node.kind === "subject" ? subjectLabelPositions.get(node.id) : node.kind === "topic" ? topicLabelPositions.get(node.id) : undefined;
+                  const cardY = node.kind === "subject" ? 4 : 218;
+                  const cardHeight = node.kind === "subject" ? 38 : 56;
+                  return <motion.g key={node.id} animate={{ opacity: active ? 1 : .22 }} transition={{ duration: .18 }} role="button" tabIndex={0} aria-label={`${node.label}, ${visibleCount} selected questions, ${state}`} onClick={toggle} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); toggle(); } }}><title>{node.label} · {visibleCount} selected PYQs</title>{cardX !== undefined ? <><line className="sankey-label-connector" x1={cardX + cardWidth / 2} y1={cardY + cardHeight} x2={(x0 + x1) / 2} y2={y0 - 3} stroke={nodeColour} /><foreignObject x={cardX} y={cardY} width={cardWidth} height={cardHeight}><div className={`sankey-node-card ${node.kind}`} style={{ borderColor: nodeColour }}><strong>{node.label}</strong><span>{visibleCount} PYQs</span></div></foreignObject></> : null}<rect x={x0} y={y0} width={barWidth} height={Math.max(2, y1 - y0)} rx="2" fill={nodeColour} stroke={node.id === focusedSubtopic ? "#171a1f" : "transparent"} strokeWidth={node.id === focusedSubtopic ? 2 : 0} />{showSubtopicLabel ? <text x={(x0 + x1) / 2} y={labelY} textAnchor="middle">{chartLabel(node.label, 22)}<tspan dx="5">{visibleCount}</tspan></text> : null}</motion.g>;
                 })}</g>
               </svg>
               </div>

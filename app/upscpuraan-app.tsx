@@ -467,9 +467,9 @@ export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { 
   return (
     <div className={screen === "attempt" ? "app-shell attempt-app-shell" : "app-shell"}>
       {screen !== "attempt" && <aside className="sidebar">
-        <button className="brand" onClick={() => setScreen("dashboard")} aria-label="UPSCPuraan home">
+        <button className="brand" onClick={() => setScreen("dashboard")} aria-label="UPSC.PYQ.Practise home">
           <span className="brand-mark">U</span>
-          UPSCPuraan
+          UPSC.PYQ.Practise
         </button>
         <nav className="nav" aria-label="Primary navigation">
           {navItems.map((item) => (
@@ -687,7 +687,7 @@ function Builder(props: BuilderProps) {
     <div className="builder">
       <div className="eyebrow">Guided test builder</div>
       <h1 style={{marginTop:10}}>Build your test</h1>
-      <p className="muted">Choose the ingredients. UPSCPuraan will balance the paper.</p>
+      <p className="muted">Choose the ingredients. UPSC.PYQ.Practise will balance the paper.</p>
 
       <div className="step">
         <div className="step-no">1</div>
@@ -1058,5 +1058,5 @@ function AdminLegacy() {
 void AdminLegacy;
 
 function Legal() {
-  return <article className="legal"><div className="eyebrow">Legal</div><h1 style={{marginTop:10}}>Trust and transparency</h1><h2>Independent preparation platform</h2><p>UPSCPuraan is an independent educational product and is not affiliated with, endorsed by, or connected to the Union Public Service Commission.</p><h2>Question provenance</h2><p>Previous-year questions retain exam, year, paper and source references. Generated questions are labelled and must pass editorial review before publication.</p><h2>Privacy</h2><p>We collect only the account and attempt information needed to save progress and provide performance analysis. We do not sell student data.</p></article>;
+  return <article className="legal"><div className="eyebrow">Legal</div><h1 style={{marginTop:10}}>Trust and transparency</h1><h2>Independent preparation platform</h2><p>UPSC.PYQ.Practise is an independent educational product and is not affiliated with, endorsed by, or connected to the Union Public Service Commission.</p><h2>Question provenance</h2><p>Previous-year questions retain exam, year, paper and source references. Generated questions are labelled and must pass editorial review before publication.</p><h2>Privacy</h2><p>We collect only the account and attempt information needed to save progress and provide performance analysis. We do not sell student data.</p></article>;
 }
