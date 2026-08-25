@@ -933,3 +933,27 @@ h3 { font-size: 16px; }
   .practice-builder-layout .selection-options { align-items: flex-start; flex-direction: column; }
   .practice-builder-layout .start-practice { width: 100%; }
 }
+
+/* Grouped SankeyMATIC-style question flow */
+.flow-map { min-width: 0; margin-top: 28px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.flow-back { margin-top: 8px; border: 0; padding: 0; background: transparent; color: var(--accent); font-size: 12px; font-weight: 700; }
+.flow-scroll { overflow: auto; padding-bottom: 12px; }
+.flow-chart { display: block; min-width: 800px; overflow: visible; }
+.flow-chart .flow-column-label { fill: var(--muted); font-family: var(--font-interface); font-size: 10px; font-weight: 750; letter-spacing: .09em; }
+.flow-links path { fill: none; pointer-events: none; transition: opacity 140ms ease; }
+.flow-nodes g { cursor: pointer; outline: none; transition: opacity 140ms ease; }
+.flow-hitbox { fill: transparent; }
+.flow-nodes g.inactive { opacity: .24; }
+.flow-nodes g:focus rect { stroke: var(--ink); stroke-width: 2; }
+.flow-node-label { fill: var(--ink); font-family: var(--font-interface); font-size: 10px; font-weight: 650; pointer-events: none; }
+.flow-count { fill: var(--muted); font-size: 9px; font-weight: 500; }
+.flow-inspector { display: grid; gap: 9px; padding-bottom: 17px; border-bottom: 1px solid var(--line); }
+.flow-inspector h3 { margin: 0; font-size: 15px; line-height: 1.25; }
+.flow-inspector > strong { color: var(--accent); font-size: 20px; font-variant-numeric: tabular-nums; }
+.flow-inspector .exam-source-list { margin-top: 4px; }
+.remove-subtopic { justify-self: start; margin-top: 2px; }
+
+@media (max-width: 960px) {
+  .flow-map { margin-top: 24px; }
+  .flow-scroll { margin-inline: -14px; padding-inline: 14px; }
+}

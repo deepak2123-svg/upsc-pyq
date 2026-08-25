@@ -19,6 +19,8 @@
   "dependencies": {
     "@supabase/ssr": "^0.12.4",
     "@supabase/supabase-js": "^2.112.3",
+    "@types/d3-sankey": "^0.12.5",
+    "d3-sankey": "^0.12.3",
     "drizzle-orm": "0.45.2",
     "idb": "^8.0.3",
     "motion": "^13.1.0",

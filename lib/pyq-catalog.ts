@@ -52,7 +52,7 @@ export type PracticeSubject = {
 export type PracticeInventoryNode = {
   id: string;
   label: string;
-  kind: "topic" | "subtopic";
+  kind: "head" | "topic" | "subtopic";
   subjectId: string;
   questionCount: number;
   examCounts: ExamCounts;
@@ -143,12 +143,15 @@ export function getQuestionPath(question: PyqQuestion) {
 
   const mappedNode = taxonomyNode(question.taxonomyId || taxonomyIdForQuestion(question.id) || taxonomyIdForLegacyQuestion(question) || "");
   const subject = mappedNode?.subject || question.subject;
+  const rawHead = mappedNode?.head || question.taxonomyHead || (subject === "Environment" ? "Environment & Ecology" : subject);
+  const head = subject === "Geography" && rawHead === "Geography" ? "Other Geography" : rawHead;
   const topic = mappedNode?.chapter || question.taxonomyChapter || question.topic;
   const subtopic = mappedNode?.subtopic || question.taxonomySubtopic || question.subtopic;
   const subjectId = `subject:${slug(subject)}`;
+  const headId = `head:${slug(subject)}:${slug(head)}`;
   const topicId = `topic:${slug(subject)}:${slug(topic)}`;
   const subtopicId = `subtopic:${slug(subject)}:${slug(topic)}:${slug(subtopic)}`;
-  return { subject, topic, subtopic, subjectId, topicId, subtopicId };
+  return { subject, head, topic, subtopic, subjectId, headId, topicId, subtopicId };
 }
 
 const emptyExamCounts = (): ExamCounts => ({ CSE: 0, CAPF: 0, CDS: 0, NDA: 0 });
@@ -179,7 +182,8 @@ export function getSubjectPracticeInventory(): SubjectPracticeInventory {
     subjects.set(subject.id, subject);
 
     const pathNodes: PracticeInventoryNode[] = [
-      { id: path.topicId, label: path.topic, kind: "topic", subjectId: path.subjectId, questionCount: 0, examCounts: emptyExamCounts() },
+      { id: path.headId, label: path.head, kind: "head", subjectId: path.subjectId, parentId: path.subjectId, questionCount: 0, examCounts: emptyExamCounts() },
+      { id: path.topicId, label: path.topic, kind: "topic", subjectId: path.subjectId, parentId: path.headId, questionCount: 0, examCounts: emptyExamCounts() },
       { id: path.subtopicId, label: path.subtopic, kind: "subtopic", subjectId: path.subjectId, parentId: path.topicId, questionCount: 0, examCounts: emptyExamCounts() },
     ];
     for (const nextNode of pathNodes) {
@@ -189,17 +193,19 @@ export function getSubjectPracticeInventory(): SubjectPracticeInventory {
       nodes.set(current.id, current);
     }
 
-    const linkKey = `${path.topicId}->${path.subtopicId}`;
-    const link = links.get(linkKey) || {
-      source: path.topicId,
-      target: path.subtopicId,
-      subjectId: path.subjectId,
-      questionCount: 0,
-      examCounts: emptyExamCounts(),
-    };
-    link.questionCount += 1;
-    incrementExam(link.examCounts, question.exam);
-    links.set(linkKey, link);
+    for (const [source, target] of [[path.subjectId, path.headId], [path.headId, path.topicId], [path.topicId, path.subtopicId]]) {
+      const linkKey = `${source}->${target}`;
+      const link = links.get(linkKey) || {
+        source,
+        target,
+        subjectId: path.subjectId,
+        questionCount: 0,
+        examCounts: emptyExamCounts(),
+      };
+      link.questionCount += 1;
+      incrementExam(link.examCounts, question.exam);
+      links.set(linkKey, link);
+    }
   }
 
   const subjectOrder = new Map(["Geography", "Environment", "Polity"].map((label, index) => [label, index]));
