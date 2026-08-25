@@ -168,6 +168,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       <div className="subject-buttons">{initialInventory.subjects.map((subject) => <button key={subject.id} aria-pressed={selectedSubjectSet.has(subject.id)} className={selectedSubjectSet.has(subject.id) ? "active" : ""} onClick={() => toggleSubject(subject.id)}><strong>{subject.label}</strong><span>{subject.questionCount} PYQs</span></button>)}</div>
     </section>
 
+    <div className="practice-builder-layout">
     <section className="practice-outline" aria-labelledby="refine-title">
       <div className="outline-heading"><div><span className="selector-label">2 · Refine</span><h2 id="refine-title">Topics and subtopics</h2></div>{initialInventory.unmappedCount > 0 ? <small>{initialInventory.unmappedCount} unclassified PYQs remain in exam archives.</small> : null}</div>
       {!selectedSubjects.length ? <div className="outline-empty"><strong>No subject selected</strong><span>Choose one or more subjects above to begin.</span></div> : selectedSubjects.map((subjectId) => {
@@ -201,11 +202,12 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       })}
     </section>
 
-    <section className="selection-dock" aria-label="Practice selection">
+    <aside className="selection-dock" aria-label="Practice selection">
       <div className="selection-summary"><span>{selectedSubjects.length ? `${selectedSubjects.length} subject${selectedSubjects.length === 1 ? "" : "s"} · ${selectedLabels.length} subtopics` : "No subjects selected"}</span><strong>{eligibleCount} questions</strong><small>{selectedLabels.length ? `${selectedLabels.slice(0, 3).join(", ")}${selectedLabels.length > 3 ? ` +${selectedLabels.length - 3}` : ""}` : "Choose subjects to begin"}</small></div>
       <div className="selection-options"><div><span>Questions</span><div className="segmented">{COUNTS.map((value) => <button key={value} disabled={value > eligibleCount} className={count === value ? "active" : ""} onClick={() => setCount(value)}>{value}</button>)}<button disabled={eligibleCount === 0} className={count === "all" ? "active" : ""} onClick={() => setCount("all")}>All</button></div></div><label>Order<select value={order} onChange={(event) => setOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label></div>
       <button className="start-practice" disabled={loading || eligibleCount === 0} onClick={() => void startPractice()}>{loading ? "Preparing…" : "Start practice →"}</button>
       {error ? <p className="inline-error">{error}</p> : null}
-    </section>
+    </aside>
+    </div>
   </main>;
 }

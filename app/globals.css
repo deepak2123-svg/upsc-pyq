@@ -905,3 +905,31 @@ h3 { font-size: 16px; }
   .subtopic-row { grid-template-columns: 1fr; gap: 10px; padding-left: 12px; }
   .exam-toggles { justify-content: flex-start; padding-left: 26px; }
 }
+
+/* Practice controls stay visible without competing with the outline. */
+.practice-builder-layout { display: grid; grid-template-columns: minmax(0, 1fr) 290px; align-items: start; gap: 30px; }
+.practice-builder-layout .selection-dock { position: sticky; top: 84px; bottom: auto; z-index: 10; margin-top: 28px; padding: 18px; grid-template-columns: 1fr; align-items: stretch; gap: 20px; border-radius: 10px; box-shadow: 0 8px 24px rgba(23,26,31,.08); }
+.practice-builder-layout .selection-summary { padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.practice-builder-layout .selection-summary strong { font-size: 28px; letter-spacing: -.04em; }
+.practice-builder-layout .selection-summary small { white-space: normal; line-height: 1.45; }
+.practice-builder-layout .selection-options { align-items: stretch; flex-direction: column; gap: 16px; }
+.practice-builder-layout .selection-options label { justify-content: space-between; }
+.practice-builder-layout .selection-options select { flex: 1; max-width: 166px; }
+.practice-builder-layout .segmented { width: 100%; }
+.practice-builder-layout .segmented button { flex: 1; min-width: 0; }
+.practice-builder-layout .start-practice { width: 100%; }
+
+@media (max-width: 960px) {
+  .practice-builder-layout { grid-template-columns: 1fr; gap: 0; }
+  .practice-builder-layout .selection-dock { position: static; margin-top: 24px; grid-template-columns: minmax(180px, 1fr) auto auto; }
+  .practice-builder-layout .selection-summary { padding-bottom: 0; border-bottom: 0; }
+  .practice-builder-layout .selection-summary strong { font-size: 18px; }
+  .practice-builder-layout .selection-options { align-items: flex-end; flex-direction: row; }
+  .practice-builder-layout .start-practice { width: auto; }
+}
+
+@media (max-width: 700px) {
+  .practice-builder-layout .selection-dock { grid-template-columns: 1fr; }
+  .practice-builder-layout .selection-options { align-items: flex-start; flex-direction: column; }
+  .practice-builder-layout .start-practice { width: 100%; }
+}
