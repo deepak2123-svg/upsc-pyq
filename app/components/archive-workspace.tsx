@@ -3,36 +3,12 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AnimatePresence, motion } from "motion/react";
-import { sankey, type SankeyGraph, type SankeyLink, type SankeyNode } from "d3-sankey";
-import {
-  PYQ_EXAMS,
-  type PracticeInventoryLink,
-  type PracticeInventoryNode,
-  type PyqExam,
-  type SubjectPracticeInventory,
-} from "../../lib/pyq-catalog";
+import { PYQ_EXAMS, type PracticeInventoryNode, type PyqExam, type SubjectPracticeInventory } from "../../lib/pyq-catalog";
 import type { PracticeOrder, PracticePathSelection, PracticeSnapshot } from "../../lib/practice-types";
 import { createLocalAttempt } from "../../lib/practice-store";
 
-type FlowNode = {
-  id: string;
-  label: string;
-  kind: "subject" | "topic" | "subtopic";
-  subjectId: string;
-  questionCount: number;
-  examCounts: Record<PyqExam, number>;
-  parentId?: string;
-};
-type ChartLink = Omit<PracticeInventoryLink, "source" | "target"> & { source: string | ChartNode; target: string | ChartNode; value: number };
-type ChartNode = FlowNode & SankeyNode<FlowNode, ChartLink>;
-type LayoutLink = SankeyLink<FlowNode, ChartLink>;
 type SubjectMode = "all" | "custom";
-
 const COUNTS = [10, 20, 30, 50] as const;
-const SUBJECT_COLOURS = ["#2457d6", "#18794e", "#a15c00", "#6b4eff"];
-const SUBJECT_LABEL_WIDTH = 176;
-const TOPIC_LABEL_WIDTH = 154;
 
 function subtopicsForSubject(subjectId: string, inventory: SubjectPracticeInventory) {
   return inventory.nodes.filter((node) => node.kind === "subtopic" && node.subjectId === subjectId);
@@ -51,83 +27,12 @@ function countForExams(node: { examCounts: Record<PyqExam, number> }, exams: Pyq
   return exams.reduce((total, exam) => total + node.examCounts[exam], 0);
 }
 
-function buildLayout(inventory: SubjectPracticeInventory, selectedSubjects: Set<string>, pathExams: Record<string, PyqExam[]>) {
-  const taxonomyNodes = inventory.nodes.filter((node) => selectedSubjects.has(node.subjectId));
-  const subjectNodes: FlowNode[] = inventory.subjects
-    .filter((subject) => selectedSubjects.has(subject.id))
-    .map((subject) => ({ ...subject, kind: "subject", subjectId: subject.id }));
-  const visibleNodes: FlowNode[] = [...subjectNodes, ...taxonomyNodes];
-  const subtopicCount = taxonomyNodes.filter((node) => node.kind === "subtopic").length;
-  const topicCount = taxonomyNodes.filter((node) => node.kind === "topic").length;
-  const width = Math.max(980, subtopicCount * 24, topicCount * (TOPIC_LABEL_WIDTH + 16) + 160);
-  const height = 610;
-  if (!visibleNodes.length) {
-    return { graph: { nodes: [], links: [] } as SankeyGraph<FlowNode, ChartLink>, height, width };
-  }
-  const nodeById = new Map(visibleNodes.map((node) => [node.id, node]));
-  const topicLinks: ChartLink[] = taxonomyNodes.filter((node) => node.kind === "topic").map((topic) => {
-    const selectedCount = taxonomyNodes
-      .filter((node) => node.kind === "subtopic" && node.parentId === topic.id)
-      .reduce((total, node) => total + countForExams(node, pathExams[node.id]), 0);
-    return {
-      source: topic.subjectId,
-      target: topic.id,
-      subjectId: topic.subjectId,
-      value: Math.max(1, selectedCount),
-      questionCount: selectedCount,
-      examCounts: topic.examCounts,
-    };
-  });
-  const subtopicLinks: ChartLink[] = inventory.links.filter((link) => selectedSubjects.has(link.subjectId)).map((link) => {
-    const target = nodeById.get(link.target);
-    const selectedCount = target && target.kind === "subtopic" ? countForExams(target, pathExams[target.id]) : 0;
-    return { ...link, value: Math.max(1, selectedCount), questionCount: selectedCount };
-  });
-  const generator = sankey<FlowNode, ChartLink>()
-    .nodeId((node) => node.id)
-    .nodeWidth(12)
-    .nodePadding(14)
-    .extent([[52, 92], [520, width - 80]])
-    .iterations(48);
-  const graph = generator({ nodes: visibleNodes.map((node) => ({ ...node })), links: [...topicLinks, ...subtopicLinks] });
-  return { graph, height, width } as { graph: SankeyGraph<FlowNode, ChartLink>; height: number; width: number };
-}
-
-function verticalLink(link: LayoutLink) {
-  const source = link.source as ChartNode;
-  const target = link.target as ChartNode;
-  const sourceX = link.y0 || 0;
-  const targetX = link.y1 || 0;
-  const sourceY = source.x1 || 0;
-  const targetY = target.x0 || 0;
-  const middleY = (sourceY + targetY) / 2;
-  return `M${sourceX},${sourceY}C${sourceX},${middleY} ${targetX},${middleY} ${targetX},${targetY}`;
-}
-
-function chartLabel(label: string, limit = 26) {
-  return label.length > limit ? `${label.slice(0, limit - 1)}…` : label;
-}
-
-function labelCardPositions(nodes: ChartNode[], width: number, cardWidth: number) {
-  const positions = new Map<string, number>();
-  const sorted = [...nodes].sort((a, b) => ((a.y0 || 0) + (a.y1 || 0)) - ((b.y0 || 0) + (b.y1 || 0)));
-  let cursor = 16;
-  for (const node of sorted) {
-    const centre = ((node.y0 || 0) + (node.y1 || 0)) / 2;
-    const desired = Math.max(16, Math.min(width - cardWidth - 16, centre - cardWidth / 2));
-    const position = Math.max(cursor, desired);
-    positions.set(node.id, position);
-    cursor = position + cardWidth + 12;
-  }
-  return positions;
-}
-
 export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInventory: SubjectPracticeInventory; initialExam?: PyqExam }) {
   const router = useRouter();
   const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
   const [subjectModes, setSubjectModes] = useState<Record<string, SubjectMode>>({});
   const [pathExams, setPathExams] = useState<Record<string, PyqExam[]>>({});
-  const [focusedSubtopic, setFocusedSubtopic] = useState<string>();
+  const [openTopics, setOpenTopics] = useState<string[]>([]);
   const [count, setCount] = useState<number | "all">(20);
   const [order, setOrder] = useState<PracticeOrder>("newest");
   const [loading, setLoading] = useState(false);
@@ -135,11 +40,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
 
   const selectedSubjectSet = useMemo(() => new Set(selectedSubjects), [selectedSubjects]);
   const selectedSubtopicSet = useMemo(() => new Set(Object.keys(pathExams)), [pathExams]);
-  const { graph, height, width } = useMemo(() => buildLayout(initialInventory, selectedSubjectSet, pathExams), [initialInventory, selectedSubjectSet, pathExams]);
-  const subjectLabelPositions = useMemo(() => labelCardPositions(graph.nodes.filter((node) => node.kind === "subject") as ChartNode[], width, SUBJECT_LABEL_WIDTH), [graph.nodes, width]);
-  const topicLabelPositions = useMemo(() => labelCardPositions(graph.nodes.filter((node) => node.kind === "topic") as ChartNode[], width, TOPIC_LABEL_WIDTH), [graph.nodes, width]);
   const nodeById = useMemo(() => new Map(initialInventory.nodes.map((node) => [node.id, node])), [initialInventory]);
-  const focusedNode = focusedSubtopic ? nodeById.get(focusedSubtopic) : undefined;
   const eligibleCount = Object.entries(pathExams).reduce((total, [id, exams]) => {
     const node = nodeById.get(id);
     return total + (node ? countForExams(node, exams) : 0);
@@ -165,14 +66,10 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
 
   function toggleSubject(subjectId: string) {
-    if (!selectedSubjectSet.has(subjectId)) {
-      selectAllSubtopics(subjectId);
-      return;
-    }
+    if (!selectedSubjectSet.has(subjectId)) return selectAllSubtopics(subjectId);
     setSelectedSubjects((current) => current.filter((id) => id !== subjectId));
     setSubjectModes((current) => Object.fromEntries(Object.entries(current).filter(([id]) => id !== subjectId)));
     setPathExams((current) => removeSubjectPaths(subjectId, current));
-    if (focusedNode?.subjectId === subjectId) setFocusedSubtopic(undefined);
   }
 
   function removeSubtopic(subtopicId: string) {
@@ -181,18 +78,15 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     const next = { ...pathExams };
     delete next[subtopicId];
     setPathExams(next);
-    const subjectStillSelected = Object.keys(next).some((id) => nodeById.get(id)?.subjectId === node.subjectId);
-    if (!subjectStillSelected) {
+    if (!Object.keys(next).some((id) => nodeById.get(id)?.subjectId === node.subjectId)) {
       setSelectedSubjects((subjects) => subjects.filter((id) => id !== node.subjectId));
       setSubjectModes((modes) => Object.fromEntries(Object.entries(modes).filter(([id]) => id !== node.subjectId)));
     }
-    if (focusedSubtopic === subtopicId) setFocusedSubtopic(undefined);
   }
 
   function toggleSubtopic(subtopicId: string) {
     const node = nodeById.get(subtopicId);
     if (!node) return;
-    setFocusedSubtopic(subtopicId);
     setError("");
     if (!selectedSubjectSet.has(node.subjectId)) {
       setSelectedSubjects((current) => [...current, node.subjectId]);
@@ -226,23 +120,22 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     if (subjectStillSelected) {
       setSubjectModes((current) => ({ ...current, [topic.subjectId]: "custom" }));
       setSelectedSubjects((current) => current.includes(topic.subjectId) ? current : [...current, topic.subjectId]);
-      setFocusedSubtopic(children.find((node) => next[node.id])?.id);
     } else {
       setSelectedSubjects((current) => current.filter((id) => id !== topic.subjectId));
       setSubjectModes((current) => Object.fromEntries(Object.entries(current).filter(([id]) => id !== topic.subjectId)));
-      setFocusedSubtopic(undefined);
     }
   }
 
-  function toggleExam(exam: PyqExam) {
-    if (!focusedNode || focusedNode.kind !== "subtopic" || focusedNode.examCounts[exam] === 0) return;
-    const current = pathExams[focusedNode.id] || [];
+  function toggleExam(subtopicId: string, exam: PyqExam) {
+    const node = nodeById.get(subtopicId);
+    if (!node || node.kind !== "subtopic" || node.examCounts[exam] === 0) return;
+    const current = pathExams[node.id] || [];
     if (current.includes(exam)) {
       const next = current.filter((value) => value !== exam);
-      if (!next.length) removeSubtopic(focusedNode.id);
-      else setPathExams((paths) => ({ ...paths, [focusedNode.id]: next }));
+      if (!next.length) removeSubtopic(node.id);
+      else setPathExams((paths) => ({ ...paths, [node.id]: next }));
     } else {
-      setPathExams((paths) => ({ ...paths, [focusedNode.id]: PYQ_EXAMS.filter((value) => value === exam || current.includes(value)) }));
+      setPathExams((paths) => ({ ...paths, [node.id]: PYQ_EXAMS.filter((value) => value === exam || current.includes(value)) }));
     }
   }
 
@@ -251,11 +144,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     setError("");
     const paths: PracticePathSelection[] = Object.entries(pathExams).map(([subtopicId, exams]) => ({ subtopicId, exams }));
     try {
-      const response = await fetch("/api/practice-snapshots", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ version: 2, subjectIds: selectedSubjects, paths, count, order }),
-      });
+      const response = await fetch("/api/practice-snapshots", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ version: 2, subjectIds: selectedSubjects, paths, count, order }) });
       const body = await response.json() as PracticeSnapshot & { error?: string };
       if (!response.ok) throw new Error(body.error || "The practice session could not be created.");
       await createLocalAttempt(body);
@@ -267,104 +156,56 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
 
   const selectedLabels = Object.keys(pathExams).map((id) => nodeById.get(id)?.label).filter(Boolean) as string[];
-  const focusedTotal = focusedNode ? countForExams(focusedNode, pathExams[focusedNode.id]) : 0;
 
-  return (
-    <main className="pyq-page archive-workspace">
-      <header className="archive-heading subject-first-heading">
-        <div>
-          {initialExam ? <Link className="back-link" href="/">← Subject practice</Link> : <p className="pyq-kicker">Official previous-year questions</p>}
-          <h1>Choose subjects.</h1>
-          <p>{initialExam ? `${initialExam} is preselected as the source where available. You can add other exams for any subtopic.` : "Combine subjects and choose exactly which exam sources you want for every subtopic."}</p>
-        </div>
-        <span className="inventory-total"><strong>{initialInventory.mappedCount.toLocaleString("en-IN")}</strong> classified PYQs</span>
-      </header>
+  return <main className="pyq-page archive-workspace">
+    <header className="archive-heading subject-first-heading">
+      <div>{initialExam ? <Link className="back-link" href="/">← Subject practice</Link> : <p className="pyq-kicker">Official previous-year questions</p>}<h1>Choose subjects.</h1><p>{initialExam ? `${initialExam} is preselected as the source where available. You can add other exams for any subtopic.` : "Combine subjects and choose exactly which exam sources you want for every subtopic."}</p></div>
+      <span className="inventory-total"><strong>{initialInventory.mappedCount.toLocaleString("en-IN")}</strong> classified PYQs</span>
+    </header>
 
-      <section className="subject-selector" aria-labelledby="subject-title">
-        <div><span>1</span><div><h2 id="subject-title">Subjects</h2><p>Select one or more. Every subtopic is included initially.</p></div></div>
-        <div className="subject-buttons">
-          {initialInventory.subjects.map((subject) => <button key={subject.id} aria-pressed={selectedSubjectSet.has(subject.id)} className={selectedSubjectSet.has(subject.id) ? "active" : ""} onClick={() => toggleSubject(subject.id)}><strong>{subject.label}</strong><span>{subject.questionCount} PYQs</span></button>)}
-        </div>
-      </section>
+    <section className="subject-selector" aria-labelledby="subject-title">
+      <div><span>1</span><div><h2 id="subject-title">Subjects</h2><p>Select one or more. Every subtopic is included initially.</p></div></div>
+      <div className="subject-buttons">{initialInventory.subjects.map((subject) => <button key={subject.id} aria-pressed={selectedSubjectSet.has(subject.id)} className={selectedSubjectSet.has(subject.id) ? "active" : ""} onClick={() => toggleSubject(subject.id)}><strong>{subject.label}</strong><span>{subject.questionCount} PYQs</span></button>)}</div>
+    </section>
 
-      <div className="selector-layout">
-        <aside className="selected-subjects" aria-label="Selected subject scope">
-          <span className="selector-label">Selected subjects</span>
-          {selectedSubjects.length ? selectedSubjects.map((subjectId) => {
-            const subject = initialInventory.subjects.find((item) => item.id === subjectId);
-            const selectedCount = Object.keys(pathExams).filter((id) => nodeById.get(id)?.subjectId === subjectId).length;
-            const total = subtopicsForSubject(subjectId, initialInventory).length;
-            return <div key={subjectId}><strong>{subject?.label}</strong><small>{subjectModes[subjectId] === "all" ? `All ${total} subtopics` : `${selectedCount} of ${total} subtopics`}</small><button onClick={() => selectAllSubtopics(subjectId)}>All subtopics</button></div>;
-          }) : <p>Select a subject to reveal its topic flow.</p>}
-          {initialInventory.unmappedCount > 0 ? <small className="unmapped-note">{initialInventory.unmappedCount} unclassified PYQs remain in the exam archives.</small> : null}
-        </aside>
+    <section className="practice-outline" aria-labelledby="refine-title">
+      <div className="outline-heading"><div><span className="selector-label">2 · Refine</span><h2 id="refine-title">Topics and subtopics</h2></div>{initialInventory.unmappedCount > 0 ? <small>{initialInventory.unmappedCount} unclassified PYQs remain in exam archives.</small> : null}</div>
+      {!selectedSubjects.length ? <div className="outline-empty"><strong>No subject selected</strong><span>Choose one or more subjects above to begin.</span></div> : selectedSubjects.map((subjectId) => {
+        const subject = initialInventory.subjects.find((item) => item.id === subjectId);
+        const topics = initialInventory.nodes.filter((node) => node.kind === "topic" && node.subjectId === subjectId);
+        const selectedCount = Object.keys(pathExams).filter((id) => nodeById.get(id)?.subjectId === subjectId).length;
+        const total = subtopicsForSubject(subjectId, initialInventory).length;
+        return <section className="outline-subject" key={subjectId} aria-labelledby={`subject-${subjectId}`}>
+          <div className="outline-subject-header"><div><h3 id={`subject-${subjectId}`}>{subject?.label}</h3><span>{subjectModes[subjectId] === "all" ? `All ${total} subtopics included` : `${selectedCount} of ${total} subtopics included`}</span></div><button className="text-button" onClick={() => selectAllSubtopics(subjectId)}>All subtopics</button></div>
+          <div className="topic-list">{topics.map((topic) => {
+            const children = subtopicsForTopic(topic.id, initialInventory);
+            const selectedChildren = children.filter((node) => selectedSubtopicSet.has(node.id));
+            const checked = selectedChildren.length === children.length;
+            const mixed = selectedChildren.length > 0 && !checked;
+            const isOpen = openTopics.includes(topic.id);
+            const included = selectedChildren.reduce((total, node) => total + countForExams(node, pathExams[node.id]), 0);
+            return <article className="outline-topic" key={topic.id}>
+              <div className="outline-topic-row"><input id={`topic-${topic.id}`} type="checkbox" checked={checked} ref={(input) => { if (input) input.indeterminate = mixed; }} onChange={() => toggleTopic(topic.id)} aria-label={`Select all subtopics in ${topic.label}`} /><button className="topic-trigger" aria-expanded={isOpen} onClick={() => setOpenTopics((current) => current.includes(topic.id) ? current.filter((id) => id !== topic.id) : [...current, topic.id])}><span>{topic.label}</span><small>{included} PYQs</small></button><button className="disclosure" aria-label={`${isOpen ? "Collapse" : "Expand"} ${topic.label}`} aria-expanded={isOpen} onClick={() => setOpenTopics((current) => current.includes(topic.id) ? current.filter((id) => id !== topic.id) : [...current, topic.id])}>{isOpen ? "−" : "+"}</button></div>
+              {isOpen ? <div className="subtopic-list">{children.map((node) => {
+                const selected = selectedSubtopicSet.has(node.id);
+                const included = countForExams(node, pathExams[node.id]);
+                return <div className={`subtopic-row ${selected ? "selected" : ""}`} key={node.id}><label><input type="checkbox" checked={selected} onChange={() => toggleSubtopic(node.id)} /><span>{node.label}</span><small>{selected ? `${included} included` : `${node.questionCount} PYQs`}</small></label><div className="exam-toggles" aria-label={`${node.label} exam sources`}>{PYQ_EXAMS.map((exam) => {
+                  const available = node.examCounts[exam];
+                  const enabled = pathExams[node.id]?.includes(exam) || false;
+                  return <button key={exam} type="button" disabled={!selected || available === 0} aria-pressed={enabled} className={enabled ? "active" : ""} onClick={() => toggleExam(node.id, exam)}>{exam} <span>{available}</span></button>;
+                })}</div></div>;
+              })}</div> : null}
+            </article>;
+          })}</div>
+        </section>;
+      })}
+    </section>
 
-        <section className="subject-sankey" aria-label="Topic and subtopic question flow">
-          <div className="sankey-section-heading"><div><span className="selector-label">2 · Refine</span><h2>Subject ↓ Topic ↓ Subtopic</h2></div><small>Flows start at the selected subjects. Scroll sideways to explore wider taxonomies.</small></div>
-          {!selectedSubjects.length ? <div className="empty-sankey"><strong>No subject selected</strong><span>Choose a subject above to see its topics and subtopics.</span></div> : <>
-            <div className="vertical-sankey-frame">
-              <div className="sankey-row-labels" aria-hidden="true"><span>Subject</span><span>Topic</span><span>Subtopic</span></div>
-              <div className="sankey-scroll vertical-sankey-scroll">
-              <svg className="sankey-chart subject-flow-chart vertical-flow-chart" viewBox={`0 0 ${width} ${height}`} width={width} height={height} role="img" aria-labelledby="sankey-title sankey-desc">
-                <title id="sankey-title">Selected PYQ subject, topic and subtopic flow</title>
-                <desc id="sankey-desc">Interactive top-to-bottom flow from subjects into topics and subtopics. Wider links contain more currently eligible questions.</desc>
-                <g className="sankey-links">{graph.links.map((link) => {
-                  const source = link.source as ChartNode; const target = link.target as ChartNode;
-                  const active = target.kind === "subtopic" ? selectedSubtopicSet.has(target.id) : link.questionCount > 0;
-                  const path = verticalLink(link as LayoutLink);
-                  const subjectIndex = initialInventory.subjects.findIndex((subject) => subject.id === target.subjectId);
-                  const toggle = () => target.kind === "topic" ? toggleTopic(target.id) : toggleSubtopic(target.id);
-                  return <motion.path key={`${source.id}-${target.id}`} d={path} animate={{ opacity: active ? .32 : .05 }} transition={{ duration: .18 }} stroke={SUBJECT_COLOURS[subjectIndex % SUBJECT_COLOURS.length]} strokeWidth={Math.max(1, link.width || 1)} onClick={toggle} role="button" tabIndex={0} aria-label={`${source.label} to ${target.label}: ${link.questionCount} selected questions`} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); toggle(); } }} />;
-                })}</g>
-                <g className="sankey-nodes">{graph.nodes.map((node) => {
-                  const children = node.kind === "topic" ? subtopicsForTopic(node.id, initialInventory) : [];
-                  const selectedChildren = children.filter((child) => selectedSubtopicSet.has(child.id)).length;
-                  const subjectChildren = node.kind === "subject" ? subtopicsForSubject(node.subjectId, initialInventory) : [];
-                  const active = node.kind === "subject" ? selectedSubjectSet.has(node.id) : node.kind === "subtopic" ? selectedSubtopicSet.has(node.id) : selectedChildren > 0;
-                  const state = node.kind === "subject" ? "selected" : node.kind === "subtopic" ? (active ? "selected" : "not selected") : selectedChildren === 0 ? "not selected" : selectedChildren === children.length ? "selected" : "partly selected";
-                  const x0 = node.y0 || 0; const x1 = node.y1 || 0; const y0 = node.x0 || 0; const y1 = node.x1 || 0;
-                  const barWidth = Math.max(2, x1 - x0);
-                  const labelY = y1 + 16;
-                  const visibleCount = node.kind === "subject" ? subjectChildren.reduce((total, child) => total + countForExams(child, pathExams[child.id]), 0) : node.kind === "subtopic" ? countForExams(node, pathExams[node.id]) : children.reduce((total, child) => total + countForExams(child, pathExams[child.id]), 0);
-                  const subjectIndex = initialInventory.subjects.findIndex((subject) => subject.id === node.subjectId);
-                  const nodeColour = SUBJECT_COLOURS[subjectIndex % SUBJECT_COLOURS.length];
-                  const toggle = () => node.kind === "subject" ? toggleSubject(node.id) : node.kind === "topic" ? toggleTopic(node.id) : toggleSubtopic(node.id);
-                  const showSubtopicLabel = node.kind === "subtopic" && (node.id === focusedSubtopic || barWidth >= 38);
-                  const cardWidth = node.kind === "subject" ? SUBJECT_LABEL_WIDTH : TOPIC_LABEL_WIDTH;
-                  const cardX = node.kind === "subject" ? subjectLabelPositions.get(node.id) : node.kind === "topic" ? topicLabelPositions.get(node.id) : undefined;
-                  const cardY = node.kind === "subject" ? 4 : 218;
-                  const cardHeight = node.kind === "subject" ? 38 : 56;
-                  return <motion.g key={node.id} animate={{ opacity: active ? 1 : .22 }} transition={{ duration: .18 }} role="button" tabIndex={0} aria-label={`${node.label}, ${visibleCount} selected questions, ${state}`} onClick={toggle} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); toggle(); } }}><title>{node.label} · {visibleCount} selected PYQs</title>{cardX !== undefined ? <><line className="sankey-label-connector" x1={cardX + cardWidth / 2} y1={cardY + cardHeight} x2={(x0 + x1) / 2} y2={y0 - 3} stroke={nodeColour} /><foreignObject x={cardX} y={cardY} width={cardWidth} height={cardHeight}><div className={`sankey-node-card ${node.kind}`} style={{ borderColor: nodeColour }}><strong>{node.label}</strong><span>{visibleCount} PYQs</span></div></foreignObject></> : null}<rect x={x0} y={y0} width={barWidth} height={Math.max(2, y1 - y0)} rx="2" fill={nodeColour} stroke={node.id === focusedSubtopic ? "#171a1f" : "transparent"} strokeWidth={node.id === focusedSubtopic ? 2 : 0} />{showSubtopicLabel ? <text x={(x0 + x1) / 2} y={labelY} textAnchor="middle">{chartLabel(node.label, 22)}<tspan dx="5">{visibleCount}</tspan></text> : null}</motion.g>;
-                })}</g>
-              </svg>
-              </div>
-            </div>
-
-            <details className="sankey-list"><summary>Use accessible list selection</summary><div className="sankey-list-grid">{selectedSubjects.map((subjectId) => <fieldset key={subjectId}><legend>{initialInventory.subjects.find((subject) => subject.id === subjectId)?.label}</legend>{initialInventory.nodes.filter((node) => node.kind === "topic" && node.subjectId === subjectId).map((topic) => {
-              const children = subtopicsForTopic(topic.id, initialInventory);
-              const checked = children.every((node) => selectedSubtopicSet.has(node.id));
-              const mixed = children.some((node) => selectedSubtopicSet.has(node.id)) && !checked;
-              return <div className="tree-topic" key={topic.id}><label><input type="checkbox" checked={checked} ref={(input) => { if (input) input.indeterminate = mixed; }} onChange={() => toggleTopic(topic.id)} /> {topic.label}<span>{children.reduce((total, node) => total + countForExams(node, pathExams[node.id]), 0)}</span></label><div>{children.map((node) => <label key={node.id}><input type="checkbox" checked={selectedSubtopicSet.has(node.id)} onChange={() => toggleSubtopic(node.id)} /> {node.label}<span>{countForExams(node, pathExams[node.id])}</span></label>)}</div></div>;
-            })}</fieldset>)}</div></details>
-          </>}
-        </section>
-
-        <aside className="subtopic-inspector" aria-label="Focused subtopic exam sources">
-          <span className="selector-label">3 · Exam sources</span>
-          {focusedNode && focusedNode.kind === "subtopic" && selectedSubtopicSet.has(focusedNode.id) ? <AnimatePresence mode="wait"><motion.div key={focusedNode.id} initial={{ opacity: 0, x: 6 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -4 }} transition={{ duration: .14 }}><small>{initialInventory.subjects.find((subject) => subject.id === focusedNode.subjectId)?.label}</small><h2>{focusedNode.label}</h2><strong className="focused-count">{focusedNode.questionCount} total PYQs</strong><p>{focusedTotal} currently included. Choose which exam sources contribute questions to this subtopic.</p><div className="exam-source-list">{PYQ_EXAMS.map((exam) => {
-            const available = focusedNode.examCounts[exam];
-            const enabled = pathExams[focusedNode.id]?.includes(exam) || false;
-            return <button key={exam} disabled={available === 0} aria-pressed={enabled} className={enabled ? "active" : ""} onClick={() => toggleExam(exam)}><span>{exam}</span><strong>{available}</strong></button>;
-          })}</div></motion.div></AnimatePresence> : <div className="inspector-empty"><strong>Focus a subtopic</strong><p>Select a subtopic in the flow to inspect its PYQ count and exam sources.</p></div>}
-        </aside>
-      </div>
-
-      <motion.section layout className="selection-dock" aria-label="Practice selection">
-        <div className="selection-summary"><span>{selectedSubjects.length ? `${selectedSubjects.length} subject${selectedSubjects.length === 1 ? "" : "s"} · ${selectedLabels.length} subtopics` : "No subjects selected"}</span><strong>{eligibleCount} questions</strong><small>{selectedLabels.length ? `${selectedLabels.slice(0, 3).join(", ")}${selectedLabels.length > 3 ? ` +${selectedLabels.length - 3}` : ""}` : "Choose subjects to begin"}</small></div>
-        <div className="selection-options"><div><span>Questions</span><div className="segmented">{COUNTS.map((value) => <button key={value} disabled={value > eligibleCount} className={count === value ? "active" : ""} onClick={() => setCount(value)}>{value}</button>)}<button disabled={eligibleCount === 0} className={count === "all" ? "active" : ""} onClick={() => setCount("all")}>All</button></div></div><label>Order<select value={order} onChange={(event) => setOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label></div>
-        <button className="start-practice" disabled={loading || eligibleCount === 0} onClick={() => void startPractice()}>{loading ? "Preparing…" : "Start practice →"}</button>
-        <AnimatePresence>{error ? <motion.p className="inline-error" initial={{ opacity: 0, y: -4 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>{error}</motion.p> : null}</AnimatePresence>
-      </motion.section>
-    </main>
-  );
+    <section className="selection-dock" aria-label="Practice selection">
+      <div className="selection-summary"><span>{selectedSubjects.length ? `${selectedSubjects.length} subject${selectedSubjects.length === 1 ? "" : "s"} · ${selectedLabels.length} subtopics` : "No subjects selected"}</span><strong>{eligibleCount} questions</strong><small>{selectedLabels.length ? `${selectedLabels.slice(0, 3).join(", ")}${selectedLabels.length > 3 ? ` +${selectedLabels.length - 3}` : ""}` : "Choose subjects to begin"}</small></div>
+      <div className="selection-options"><div><span>Questions</span><div className="segmented">{COUNTS.map((value) => <button key={value} disabled={value > eligibleCount} className={count === value ? "active" : ""} onClick={() => setCount(value)}>{value}</button>)}<button disabled={eligibleCount === 0} className={count === "all" ? "active" : ""} onClick={() => setCount("all")}>All</button></div></div><label>Order<select value={order} onChange={(event) => setOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label></div>
+      <button className="start-practice" disabled={loading || eligibleCount === 0} onClick={() => void startPractice()}>{loading ? "Preparing…" : "Start practice →"}</button>
+      {error ? <p className="inline-error">{error}</p> : null}
+    </section>
+  </main>;
 }

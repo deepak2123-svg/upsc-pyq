@@ -26,7 +26,7 @@ export type PyqQuestion = {
   taxonomySubtopic?: string | null;
 };
 
-export type SankeyNode = {
+export type TaxonomyNode = {
   id: string;
   label: string;
   kind: "subject" | "topic" | "subtopic";
@@ -34,7 +34,7 @@ export type SankeyNode = {
   parentId?: string;
 };
 
-export type SankeyLink = {
+export type TaxonomyLink = {
   source: string;
   target: string;
   questionCount: number;
@@ -84,8 +84,8 @@ export type ArchiveInventory = {
   totalCount: number;
   mappedCount: number;
   unmappedCount: number;
-  nodes: SankeyNode[];
-  links: SankeyLink[];
+  nodes: TaxonomyNode[];
+  links: TaxonomyLink[];
 };
 
 export const pyqQuestions = (questionBank.questions as PyqQuestion[]).filter(
@@ -219,15 +219,15 @@ export function getArchiveInventory(exam: PyqExam, requestedFrom?: number, reque
   const yearFrom = Math.max(years[0], requestedFrom || years[0]);
   const yearTo = Math.min(years.at(-1) || years[0], requestedTo || years.at(-1) || years[0]);
   const questions = getExamQuestions(exam, yearFrom, yearTo);
-  const nodes = new Map<string, SankeyNode>();
-  const links = new Map<string, SankeyLink>();
+  const nodes = new Map<string, TaxonomyNode>();
+  const links = new Map<string, TaxonomyLink>();
   let mappedCount = 0;
 
   for (const question of questions) {
     const path = getQuestionPath(question);
     if (!path) continue;
     mappedCount += 1;
-    const pathNodes: SankeyNode[] = [
+    const pathNodes: TaxonomyNode[] = [
       { id: path.subjectId, label: path.subject, kind: "subject", questionCount: 0 },
       { id: path.topicId, label: path.topic, kind: "topic", questionCount: 0, parentId: path.subjectId },
       { id: path.subtopicId, label: path.subtopic, kind: "subtopic", questionCount: 0, parentId: path.topicId },

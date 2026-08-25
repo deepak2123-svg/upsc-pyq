@@ -25,8 +25,7 @@ test("server-renders the subject-first official PYQ workspace", async () => {
   assert.match(html, /Environment/);
   assert.match(html, /Polity/);
   assert.match(html, /Every subtopic is included initially/);
-  assert.match(html, /Topic/);
-  assert.match(html, /Subtopic/);
+  assert.match(html, /Topics and subtopics/);
   assert.doesNotMatch(html, /Choose an examination|Year range|Difficulty/);
   assert.match(html, /PYQs/);
   assert.match(html, /Attempts/);
@@ -41,8 +40,7 @@ test("server-renders an exam archive through the subject-first selector", async 
   const html = await response.text();
   assert.match(html, /Choose subjects/);
   assert.match(html, /CSE is preselected as the source/);
-  assert.match(html, /Topic/);
-  assert.match(html, /Subtopic/);
+  assert.match(html, /Topics and subtopics/);
   assert.match(html, /Newest first/);
   assert.match(html, />Shuffle</);
   assert.match(html, /Start practice/);
@@ -176,9 +174,10 @@ test("ships exact, locked source records and the local-only PWA model", async ()
   assert.doesNotMatch(studentSources, /Explanation pending editorial review|source verbatim|Sign in with Google|Needs attention|difficulty filter/i);
   assert.match(practiceSource, /question-heading/);
   assert.match(cssSource, /font-family: var\(--font-reading\)/);
-  assert.match(archiveSource, /sankey/);
-  assert.match(archiveSource, /Subject ↓ Topic ↓ Subtopic/);
-  assert.match(archiveSource, /verticalLink/);
+  assert.doesNotMatch(archiveSource, /sankey|d3-sankey|verticalLink/i);
+  assert.match(archiveSource, /Topics and subtopics/);
+  assert.match(archiveSource, /All subtopics/);
+  assert.match(archiveSource, /exam-toggles/);
   assert.match(localStoreSource, /openDB/);
   assert.match(localStoreSource, /attempts/);
   assert.match(localStoreSource, /bookmarks/);
