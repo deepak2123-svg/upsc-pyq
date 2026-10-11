@@ -1,280 +1,184 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { sankey, type SankeyGraph, type SankeyLink, type SankeyNode } from "d3-sankey";
-import { PYQ_EXAMS, type PracticeInventoryNode, type PyqExam, type SubjectPracticeInventory } from "../../lib/pyq-catalog";
-import type { PracticeOrder, PracticePathSelection, PracticeSnapshot } from "../../lib/practice-types";
+import { PYQ_EXAMS, type PyqExam } from "../../lib/pyq-exams";
+import type { SubjectPracticeInventory } from "../../lib/pyq-catalog";
+import type { PracticeOrder, PracticeRecipeV3, PracticeSnapshot } from "../../lib/practice-types";
 import { createLocalAttempt } from "../../lib/practice-store";
-
-type SubjectMode = "all" | "custom";
-type FlowNode = {
-  id: string;
-  label: string;
-  kind: "subject" | "head" | "topic" | "subtopic";
-  subjectId: string;
-  questionCount: number;
-  examCounts: Record<PyqExam, number>;
-  parentId?: string;
-};
-type FlowLink = { source: string | ChartNode; target: string | ChartNode; value: number; questionCount: number; subjectId: string };
-type ChartNode = FlowNode & SankeyNode<FlowNode, FlowLink>;
-type LayoutLink = SankeyLink<FlowNode, FlowLink>;
+import { addScope, addedQuestionCount, ancestors, buildSelectionIndex, removeScope, replaceScope, sanitizePaths, scopeMetrics, selectedScopeIds, selectionCounts, setScopeExam, type SelectionIndex, type SelectionPaths } from "../../lib/practice-selection";
+import { ScopeFlow } from "./scope-flow";
 
 const COUNTS = [10, 20, 30, 50] as const;
-const SUBJECT_COLOURS = ["#2457d6", "#18794e", "#a15c00", "#6b4eff"];
-const CHART_WIDTH = 800;
-const FLOW_LEFT = 150;
-const FLOW_MIDDLE = 345;
-const FLOW_RIGHT = 540;
+const format = (value: number) => value.toLocaleString("en-IN");
 
-function subtopicsForSubject(subjectId: string, inventory: SubjectPracticeInventory) {
-  return inventory.nodes.filter((node) => node.kind === "subtopic" && node.subjectId === subjectId);
+function SourceChoice({ exam, state, count, disabled, onChange }: { exam: PyqExam; state: "none" | "partial" | "all"; count: number; disabled: boolean; onChange: () => void }) {
+  return <button type="button" role="checkbox" aria-checked={state === "partial" ? "mixed" : state === "all"} disabled={disabled} className={"scope-source " + state} onClick={onChange}>
+    <span className="scope-check" aria-hidden="true">{state === "all" ? "✓" : state === "partial" ? "−" : ""}</span><span>{exam}</span><strong>{format(count)}</strong>
+  </button>;
 }
 
-function subtopicsForTopic(topicId: string, inventory: SubjectPracticeInventory) {
-  return inventory.nodes.filter((node) => node.kind === "subtopic" && node.parentId === topicId);
-}
-
-function subtopicsForHead(headId: string, inventory: SubjectPracticeInventory) {
-  const topicIds = new Set(inventory.nodes.filter((node) => node.kind === "topic" && node.parentId === headId).map((node) => node.id));
-  return inventory.nodes.filter((node) => node.kind === "subtopic" && topicIds.has(node.parentId || ""));
-}
-
-function availableExams(node: PracticeInventoryNode, preferredExam?: PyqExam) {
-  if (preferredExam && node.examCounts[preferredExam] > 0) return [preferredExam];
-  return PYQ_EXAMS.filter((exam) => node.examCounts[exam] > 0);
-}
-
-function countForExams(node: { examCounts: Record<PyqExam, number> }, exams: PyqExam[] = []) {
-  return exams.reduce((total, exam) => total + node.examCounts[exam], 0);
-}
-
-function linesFor(label: string, maxLength: number) {
-  const words = label.split(/\s+/);
-  const lines: string[] = [];
-  let line = "";
-  for (const word of words) {
-    const next = line ? `${line} ${word}` : word;
-    if (next.length > maxLength && line) {
-      lines.push(line);
-      line = word;
-    } else line = next;
-  }
-  if (line) lines.push(line);
-  return lines.length > 2 ? [lines[0], `${lines.slice(1).join(" ").slice(0, maxLength - 1)}…`] : lines;
-}
-
-function flowPath(link: LayoutLink) {
-  const source = link.source as ChartNode;
-  const target = link.target as ChartNode;
-  const x0 = source.x1 || 0;
-  const x1 = target.x0 || 0;
-  const y0 = link.y0 || 0;
-  const y1 = link.y1 || 0;
-  const middle = (x0 + x1) / 2;
-  return `M${x0},${y0}C${middle},${y0} ${middle},${y1} ${x1},${y1}`;
-}
-
-function buildFlow(inventory: SubjectPracticeInventory, selectedSubjects: Set<string>, pathExams: Record<string, PyqExam[]>, focusedHeadId?: string, focusedTopicId?: string) {
-  const focusedHead = focusedHeadId ? inventory.nodes.find((node) => node.id === focusedHeadId && node.kind === "head") : undefined;
-  const focusedTopic = focusedTopicId ? inventory.nodes.find((node) => node.id === focusedTopicId && node.kind === "topic") : undefined;
-  const relatedHead = focusedTopic ? inventory.nodes.find((node) => node.id === focusedTopic.parentId && node.kind === "head") : undefined;
-  const heads = focusedHead ? [focusedHead] : focusedTopic && relatedHead ? [relatedHead] : inventory.nodes.filter((node) => node.kind === "head" && selectedSubjects.has(node.subjectId));
-  const topics = focusedTopic ? [focusedTopic] : focusedHead ? inventory.nodes.filter((node) => node.kind === "topic" && node.parentId === focusedHead.id) : [];
-  const subtopics = focusedTopic ? subtopicsForTopic(focusedTopic.id, inventory) : [];
-  const subjects: FlowNode[] = focusedTopic ? [] : inventory.subjects.filter((subject) => (focusedHead ? subject.id === focusedHead.subjectId : selectedSubjects.has(subject.id))).map((subject) => ({ ...subject, kind: "subject", subjectId: subject.id }));
-  const nodes: FlowNode[] = [...subjects, ...heads, ...topics, ...subtopics];
-  const height = focusedTopic ? Math.max(540, subtopics.length * 46 + 110) : focusedHead ? Math.max(500, topics.length * 40 + 100) : Math.max(430, heads.length * 80 + 100);
-  if (!nodes.length) return { graph: { nodes: [], links: [] } as SankeyGraph<FlowNode, FlowLink>, height };
-  const selectedNodeIds = new Set(nodes.map((node) => node.id));
-  const links: FlowLink[] = inventory.links.filter((link) => selectedNodeIds.has(link.source) && selectedNodeIds.has(link.target)).map((link) => {
-    const target = inventory.nodes.find((node) => node.id === link.target);
-    const descendants = target?.kind === "subtopic" ? [target] : target?.kind === "topic" ? subtopicsForTopic(target.id, inventory) : target?.kind === "head" ? subtopicsForHead(target.id, inventory) : [];
-    const selected = descendants.reduce((total, node) => total + countForExams(node, pathExams[node.id]), 0);
-    return { source: link.source, target: link.target, value: Math.max(1, selected), questionCount: selected, subjectId: link.subjectId };
-  });
-  const generator = sankey<FlowNode, FlowLink>().nodeId((node) => node.id).nodeWidth(14).nodePadding(focusedTopic ? 16 : 18).extent([[FLOW_LEFT, 46], [FLOW_RIGHT, height - 34]]).iterations(48);
-  return { graph: generator({ nodes: nodes.map((node) => ({ ...node })), links }), height };
+function AddScopeDialog({ index, paths, initialId, preferredExam, onAdd, onCancel }: { index: SelectionIndex; paths: SelectionPaths; initialId?: string; preferredExam?: PyqExam; onAdd: (id: string) => void; onCancel: () => void }) {
+  const dialog = useRef<HTMLDialogElement>(null);
+  const subjects = [...index.nodesById.values()].filter((node) => node.kind === "subject");
+  const [candidateId, setCandidateId] = useState(initialId || subjects[0]?.id || "");
+  const path = ancestors(candidateId, index);
+  const subject = path[0];
+  const section = path.find((node) => node.kind === "head");
+  const topic = path.find((node) => node.kind === "topic");
+  const leaf = path.find((node) => node.kind === "subtopic");
+  const additional = addedQuestionCount(paths, candidateId, index, preferredExam);
+  useEffect(() => {
+    const previous = document.activeElement as HTMLElement | null;
+    const current = dialog.current;
+    current?.showModal();
+    return () => { current?.close(); previous?.focus(); };
+  }, []);
+  return <dialog ref={dialog} className="scope-add-dialog" aria-labelledby="add-scope-title" onCancel={(event) => { event.preventDefault(); onCancel(); }}>
+    <form onSubmit={(event) => { event.preventDefault(); if (additional > 0) onAdd(candidateId); }}>
+      <span className="selector-label">Combine branches</span><h2 id="add-scope-title">Add to your current selection</h2>
+      <p>Browse freely here. Your selection changes only when you press Add.</p>
+      <label>Subject<select value={subject?.id || ""} onChange={(event) => setCandidateId(event.target.value)}>{subjects.map((node) => <option key={node.id} value={node.id}>{node.label}</option>)}</select></label>
+      {subject ? <label>Section<select value={section?.id || subject.id} onChange={(event) => setCandidateId(event.target.value)}><option value={subject.id}>Entire subject</option>{(index.childrenById.get(subject.id) || []).map((node) => <option key={node.id} value={node.id}>{node.label} · {node.questionCount}</option>)}</select></label> : null}
+      {section ? <label>Topic<select value={topic?.id || section.id} onChange={(event) => setCandidateId(event.target.value)}><option value={section.id}>Entire section</option>{(index.childrenById.get(section.id) || []).map((node) => <option key={node.id} value={node.id}>{node.label} · {node.questionCount}</option>)}</select></label> : null}
+      {topic ? <label>Subtopic<select value={leaf?.id || topic.id} onChange={(event) => setCandidateId(event.target.value)}><option value={topic.id}>Entire topic</option>{(index.childrenById.get(topic.id) || []).map((node) => <option key={node.id} value={node.id}>{node.label} · {node.questionCount}</option>)}</select></label> : null}
+      <div className="scope-add-preview"><strong>{index.nodesById.get(candidateId)?.label}</strong><span>{format(additional)} additional questions</span><small>{additional ? "Existing branches and their source settings will be preserved." : "This branch is already included, or has no questions from your default sources."}</small></div>
+      <div className="scope-dialog-actions"><button type="button" className="scope-secondary" onClick={onCancel}>Cancel</button><button className="scope-primary" type="submit" disabled={additional === 0}>Add {format(additional)} questions</button></div>
+    </form>
+  </dialog>;
 }
 
 export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInventory: SubjectPracticeInventory; initialExam?: PyqExam }) {
   const router = useRouter();
-  const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
-  const [subjectModes, setSubjectModes] = useState<Record<string, SubjectMode>>({});
-  const [pathExams, setPathExams] = useState<Record<string, PyqExam[]>>({});
-  const [focusedHead, setFocusedHead] = useState<string>();
-  const [focusedTopic, setFocusedTopic] = useState<string>();
-  const [focusedSubtopic, setFocusedSubtopic] = useState<string>();
+  const index = useMemo(() => buildSelectionIndex(initialInventory), [initialInventory]);
+  const [paths, setPaths] = useState<SelectionPaths>({});
+  const [focusId, setFocusId] = useState<string>();
   const [count, setCount] = useState<number | "all">(20);
   const [order, setOrder] = useState<PracticeOrder>("newest");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-
-  const selectedSubjectSet = useMemo(() => new Set(selectedSubjects), [selectedSubjects]);
-  const selectedSubtopicSet = useMemo(() => new Set(Object.keys(pathExams)), [pathExams]);
-  const nodeById = useMemo(() => new Map(initialInventory.nodes.map((node) => [node.id, node])), [initialInventory]);
-  const { graph, height } = useMemo(() => buildFlow(initialInventory, selectedSubjectSet, pathExams, focusedHead, focusedTopic), [initialInventory, selectedSubjectSet, pathExams, focusedHead, focusedTopic]);
-  const focusedNode = focusedSubtopic ? nodeById.get(focusedSubtopic) : undefined;
-  const eligibleCount = Object.entries(pathExams).reduce((total, [id, exams]) => {
-    const node = nodeById.get(id);
-    return total + (node ? countForExams(node, exams) : 0);
-  }, 0);
+  const [restored, setRestored] = useState(false);
+  const [addOpen, setAddOpen] = useState(false);
+  const [notice, setNotice] = useState("");
+  const [draftWarning, setDraftWarning] = useState("");
+  const focusHeading = useRef<HTMLHeadingElement>(null);
+  const moveFocus = useRef(false);
+  const draftKey = "upsc-pyq-builder:v3:" + (initialExam || "all");
 
   useEffect(() => {
-    if (count !== "all" && count > eligibleCount) setCount(eligibleCount >= 10 ? 10 : "all");
-  }, [count, eligibleCount]);
-
-  function removeSubjectPaths(subjectId: string, current: Record<string, PyqExam[]>) {
-    return Object.fromEntries(Object.entries(current).filter(([id]) => nodeById.get(id)?.subjectId !== subjectId));
-  }
-
-  function selectAllSubtopics(subjectId: string) {
-    setSelectedSubjects((current) => current.includes(subjectId) ? current : [...current, subjectId]);
-    setSubjectModes((current) => ({ ...current, [subjectId]: "all" }));
-    setPathExams((current) => {
-      const next = removeSubjectPaths(subjectId, current);
-      subtopicsForSubject(subjectId, initialInventory).forEach((node) => { next[node.id] = availableExams(node, initialExam); });
-      return next;
-    });
-    setError("");
-  }
-
-  function toggleSubject(subjectId: string) {
-    if (!selectedSubjectSet.has(subjectId)) return selectAllSubtopics(subjectId);
-    setSelectedSubjects((current) => current.filter((id) => id !== subjectId));
-    setSubjectModes((current) => Object.fromEntries(Object.entries(current).filter(([id]) => id !== subjectId)));
-    setPathExams((current) => removeSubjectPaths(subjectId, current));
-    if (focusedNode?.subjectId === subjectId) setFocusedSubtopic(undefined);
-    if (nodeById.get(focusedHead || "")?.subjectId === subjectId) setFocusedHead(undefined);
-    if (nodeById.get(focusedTopic || "")?.subjectId === subjectId) setFocusedTopic(undefined);
-  }
-
-  function removeSubtopic(subtopicId: string) {
-    const node = nodeById.get(subtopicId);
-    if (!node) return;
-    const next = { ...pathExams };
-    delete next[subtopicId];
-    setPathExams(next);
-    if (!Object.keys(next).some((id) => nodeById.get(id)?.subjectId === node.subjectId)) {
-      setSelectedSubjects((subjects) => subjects.filter((id) => id !== node.subjectId));
-      setSubjectModes((modes) => Object.fromEntries(Object.entries(modes).filter(([id]) => id !== node.subjectId)));
-    }
-    if (focusedSubtopic === subtopicId) setFocusedSubtopic(undefined);
-  }
-
-  function selectSubtopic(subtopicId: string) {
-    const node = nodeById.get(subtopicId);
-    if (!node) return;
-    setFocusedSubtopic(subtopicId);
-    setError("");
-    if (selectedSubtopicSet.has(subtopicId)) return;
-    if (!selectedSubjectSet.has(node.subjectId)) {
-      setSelectedSubjects((current) => [...current, node.subjectId]);
-      setSubjectModes((current) => ({ ...current, [node.subjectId]: "custom" }));
-      setPathExams((current) => ({ ...current, [node.id]: availableExams(node, initialExam) }));
-      return;
-    }
-    if (subjectModes[node.subjectId] === "all") {
-      setSubjectModes((current) => ({ ...current, [node.subjectId]: "custom" }));
-      setPathExams((current) => ({ ...removeSubjectPaths(node.subjectId, current), [node.id]: current[node.id] || availableExams(node, initialExam) }));
-      return;
-    }
-    setPathExams((current) => ({ ...current, [node.id]: availableExams(node, initialExam) }));
-  }
-
-  function focusHead(headId: string) {
-    const head = nodeById.get(headId);
-    if (!head) return;
-    setFocusedHead(headId);
-    setFocusedTopic(undefined);
-    setFocusedSubtopic(undefined);
-  }
-
-  function focusTopic(topicId: string) {
-    const topic = nodeById.get(topicId);
-    if (!topic) return;
-    setFocusedTopic(topicId);
-    setFocusedHead(topic.parentId);
-    setFocusedSubtopic(undefined);
-  }
-
-  function toggleExam(exam: PyqExam) {
-    if (!focusedNode || focusedNode.kind !== "subtopic" || focusedNode.examCounts[exam] === 0) return;
-    const current = pathExams[focusedNode.id] || [];
-    if (current.includes(exam)) {
-      const next = current.filter((value) => value !== exam);
-      if (!next.length) removeSubtopic(focusedNode.id);
-      else setPathExams((paths) => ({ ...paths, [focusedNode.id]: next }));
-    } else setPathExams((paths) => ({ ...paths, [focusedNode.id]: PYQ_EXAMS.filter((value) => value === exam || current.includes(value)) }));
-  }
-
-  async function startPractice() {
-    setLoading(true);
-    setError("");
-    const paths: PracticePathSelection[] = Object.entries(pathExams).map(([subtopicId, exams]) => ({ subtopicId, exams }));
     try {
-      const response = await fetch("/api/practice-snapshots", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ version: 2, subjectIds: selectedSubjects, paths, count, order }) });
-      const body = await response.json() as PracticeSnapshot & { error?: string };
-      if (!response.ok) throw new Error(body.error || "The practice session could not be created.");
-      await createLocalAttempt(body);
-      router.push(`/practice/${body.id}`);
-    } catch (reason) {
-      setError(reason instanceof Error ? reason.message : "The practice session could not be created.");
-      setLoading(false);
-    }
+      const raw = window.sessionStorage.getItem(draftKey);
+      if (raw) {
+        const draft = JSON.parse(raw);
+        if (draft.version === 3 && draft.inventoryVersion === initialInventory.version) {
+          setPaths(sanitizePaths(draft.paths, index));
+          if (typeof draft.focusId === "string" && index.nodesById.has(draft.focusId)) setFocusId(draft.focusId);
+          if (draft.count === "all" || Number.isInteger(draft.count) && draft.count > 0 && draft.count <= 100) setCount(draft.count);
+          if (draft.order === "newest" || draft.order === "shuffle") setOrder(draft.order);
+        }
+      }
+    } catch { setDraftWarning("Your builder settings could not be restored in this browser. You can still choose a new practice."); }
+    setRestored(true);
+  }, [draftKey, initialInventory.version, index]);
+  useEffect(() => {
+    if (!restored) return;
+    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 3, inventoryVersion: initialInventory.version, paths, focusId, count, order })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
+  }, [restored, draftKey, initialInventory.version, paths, focusId, count, order]);
+  useEffect(() => {
+    if (moveFocus.current) { focusHeading.current?.focus({ preventScroll: true }); moveFocus.current = false; }
+  }, [focusId]);
+
+  const totals = useMemo(() => selectionCounts(paths, index), [paths, index]);
+  const selectedIds = useMemo(() => selectedScopeIds(paths, index), [paths, index]);
+  const current = focusId ? index.nodesById.get(focusId) : undefined;
+  const focusPath = current ? ancestors(current.id, index) : [];
+  const metrics = current ? scopeMetrics(current.id, paths, index) : undefined;
+  const branchSourceCounts = useMemo(() => Object.fromEntries(PYQ_EXAMS.map((exam) => [exam,
+    (index.leavesById.get(focusId || "") || []).filter((leaf) => Object.hasOwn(paths, leaf.id)).reduce((sum, leaf) => sum + leaf.examCounts[exam], 0),
+  ])) as Record<PyqExam, number>, [focusId, index, paths]);
+  const practiceCount = count === "all" ? totals.matchingCount : count;
+  const shortage = totals.matchingCount > 0 && practiceCount > totals.matchingCount;
+  const canStart = restored && totals.matchingCount > 0 && !shortage && !loading;
+  function selectScope(id: string) {
+    if (loading || !restored) return;
+    setPaths((existing) => replaceScope(existing, id, index, initialExam));
+    setFocusId(id); setError(""); setNotice(""); moveFocus.current = true;
   }
-
-  const selectedLabels = Object.keys(pathExams).map((id) => nodeById.get(id)?.label).filter(Boolean) as string[];
-
-  return <main className="pyq-page archive-workspace">
-    <header className="archive-heading subject-first-heading">
-      <div>{initialExam ? <Link className="back-link" href="/">← Subject practice</Link> : <p className="pyq-kicker">Official previous-year questions</p>}<h1>Choose subjects.</h1><p>{initialExam ? `${initialExam} is preselected as the source where available. You can add other exams for any subtopic.` : "Combine subjects and choose exactly which exam sources you want for every subtopic."}</p></div>
-      <span className="inventory-total"><strong>{initialInventory.mappedCount.toLocaleString("en-IN")}</strong> classified PYQs</span>
-    </header>
-
-    <section className="subject-selector" aria-labelledby="subject-title">
-      <div><span>1</span><div><h2 id="subject-title">Subjects</h2><p>Select one or more. Every subtopic is included initially.</p></div></div>
-      <div className="subject-buttons">{initialInventory.subjects.map((subject) => <button key={subject.id} aria-pressed={selectedSubjectSet.has(subject.id)} className={selectedSubjectSet.has(subject.id) ? "active" : ""} onClick={() => toggleSubject(subject.id)}><strong>{subject.label}</strong><span>{subject.questionCount} PYQs</span></button>)}</div>
-    </section>
-
-    <div className="practice-builder-layout">
-      <section className="flow-map" aria-labelledby="flow-title">
-        <div className="outline-heading"><div><span className="selector-label">2 · Refine</span><h2 id="flow-title">{focusedTopic ? `${nodeById.get(focusedTopic)?.label} → Subtopics` : focusedHead ? `${nodeById.get(focusedHead)?.label} → Topics` : "Subject → Sections"}</h2>{focusedHead || focusedTopic ? <button className="flow-back" onClick={() => { if (focusedTopic) setFocusedTopic(undefined); else setFocusedHead(undefined); setFocusedSubtopic(undefined); }}>← {focusedTopic ? "Topics" : "All sections"}</button> : null}</div>{initialInventory.unmappedCount > 0 ? <small>{initialInventory.unmappedCount} unclassified PYQs remain in exam archives.</small> : null}</div>
-        {!selectedSubjects.length ? <div className="outline-empty"><strong>No subject selected</strong><span>Choose one or more subjects above to see the question flow.</span></div> : <div className="flow-scroll"><svg className="flow-chart" viewBox={`0 0 ${CHART_WIDTH} ${height}`} width={CHART_WIDTH} height={height} role="img" aria-labelledby="flow-title flow-description">
-          <desc id="flow-description">Question flow through sections, topics and subtopics. Wider links represent more included PYQs.</desc>
-          {focusedTopic ? <><text className="flow-column-label" x={FLOW_LEFT} y="20">SECTION</text><text className="flow-column-label" x={FLOW_MIDDLE} y="20">TOPIC</text><text className="flow-column-label" x={FLOW_RIGHT} y="20">SUBTOPIC</text></> : focusedHead ? <><text className="flow-column-label" x={FLOW_LEFT} y="20">SUBJECT</text><text className="flow-column-label" x={FLOW_MIDDLE} y="20">SECTION</text><text className="flow-column-label" x={FLOW_RIGHT} y="20">TOPIC</text></> : <><text className="flow-column-label" x={FLOW_LEFT} y="20">SUBJECT</text><text className="flow-column-label" x={FLOW_RIGHT} y="20">SECTION</text></>}
-          <g className="flow-links">{graph.links.map((link) => {
-            const target = link.target as ChartNode;
-            const subjectIndex = initialInventory.subjects.findIndex((subject) => subject.id === target.subjectId);
-            const active = target.kind === "subtopic" ? selectedSubtopicSet.has(target.id) : link.questionCount > 0;
-            return <path key={`${(link.source as ChartNode).id}-${target.id}`} d={flowPath(link as LayoutLink)} stroke={SUBJECT_COLOURS[subjectIndex % SUBJECT_COLOURS.length]} strokeWidth={Math.max(1, link.width || 1)} opacity={active ? .28 : .06} />;
-          })}</g>
-          <g className="flow-nodes">{graph.nodes.map((node) => {
-            const descendants = node.kind === "head" ? subtopicsForHead(node.id, initialInventory) : node.kind === "topic" ? subtopicsForTopic(node.id, initialInventory) : [];
-            const active = node.kind === "subject" ? selectedSubjectSet.has(node.id) : node.kind === "head" || node.kind === "topic" ? descendants.some((child) => selectedSubtopicSet.has(child.id)) : selectedSubtopicSet.has(node.id);
-            const subjectIndex = initialInventory.subjects.findIndex((subject) => subject.id === node.subjectId);
-            const colour = SUBJECT_COLOURS[subjectIndex % SUBJECT_COLOURS.length];
-            const x0 = node.x0 || 0; const x1 = node.x1 || 0; const y0 = node.y0 || 0; const y1 = node.y1 || 0;
-            const lines = linesFor(node.label, node.kind === "subtopic" ? 29 : 24);
-            const labelX = node.kind === "subtopic" ? x1 + 8 : x0 - 9;
-            const anchor = node.kind === "subtopic" ? "start" : "end";
-            const action = () => node.kind === "subject" ? toggleSubject(node.id) : node.kind === "head" ? focusHead(node.id) : node.kind === "topic" ? focusTopic(node.id) : selectSubtopic(node.id);
-            const hitboxX = node.kind === "subtopic" ? x0 : x0 - 235;
-            const hitboxWidth = node.kind === "subtopic" ? 270 : 250;
-            return <g key={node.id} className={active ? "active" : "inactive"} role="button" tabIndex={0} aria-label={`${node.label}, ${node.questionCount} PYQs`} onClick={action} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); action(); } }}><title>{node.label} · {node.questionCount} PYQs</title><rect className="flow-hitbox" x={hitboxX} y={(y0 + y1) / 2 - 18} width={hitboxWidth} height="36" rx="3" /><rect x={x0} y={y0} width={Math.max(2, x1 - x0)} height={Math.max(3, y1 - y0)} rx="2" fill={colour} stroke={node.id === focusedSubtopic ? "#171a1f" : "none"} strokeWidth="2" /><text className="flow-node-label" x={labelX} y={(y0 + y1) / 2 - (lines.length - 1) * 6} textAnchor={anchor}>{lines.map((line, index) => <tspan key={line} x={labelX} dy={index ? 12 : 0}>{line}</tspan>)}<tspan className="flow-count" x={labelX} dy="12">{node.questionCount}</tspan></text></g>;
-          })}</g>
-        </svg></div>}
+  function toggleSubject(id: string) {
+    if (loading || !restored) return;
+    if (totals.subjectIds.includes(id)) {
+      const next = removeScope(paths, id, index);
+      setPaths(next);
+      if (current?.subjectId === id) setFocusId(selectionCounts(next, index).subjectIds[0]);
+    } else { setPaths((existing) => addScope(existing, id, index, initialExam)); setFocusId(id); }
+    setError(""); setNotice("");
+  }
+  function browse(id: string) {
+    if (loading || !restored) return;
+    setFocusId(id); setNotice("View changed. Your practice selection is unchanged."); moveFocus.current = true;
+  }
+  function remove(id: string) {
+    if (loading || !restored) return;
+    const next = removeScope(paths, id, index);
+    setPaths(next); setError("");
+    if (!Object.keys(next).length) setFocusId(undefined);
+    else if (current && scopeMetrics(current.subjectId, next, index).state === "none") setFocusId(selectionCounts(next, index).subjectIds[0]);
+  }
+  async function startPractice() {
+    if (!canStart) return;
+    const recipe: PracticeRecipeV3 = { version: 3, subjectIds: totals.subjectIds, paths: Object.entries(paths).filter(([, exams]) => exams.length).map(([subtopicId, exams]) => ({ subtopicId, exams: [...exams] })), count, order };
+    setLoading(true); setError("");
+    try {
+      const response = await fetch("/api/practice-snapshots", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(recipe) });
+      const snapshot = await response.json() as PracticeSnapshot & { error?: string };
+      if (!response.ok) throw new Error(snapshot.error || "The practice could not be prepared. Please try again.");
+      if (snapshot.matchingCount !== totals.matchingCount || snapshot.questions.length !== practiceCount) throw new Error("The question inventory has changed. Refresh this page to review the updated selection.");
+      try { await createLocalAttempt(snapshot); } catch { throw new Error("This browser could not save your practice. Allow browser storage, then try again. Your selection is still here."); }
+      router.push("/practice/" + snapshot.id);
+    } catch (reason) { setError(reason instanceof Error ? reason.message : "The practice could not be prepared. Please try again."); setLoading(false); }
+  }
+  const instruction = metrics?.state === "none" ? "You are browsing this branch. Select it to replace the scope in this subject; your current practice is unchanged."
+    : current?.kind === "subtopic" ? "This subtopic is selected. Adjust its sources or start practice."
+    : current?.kind === "topic" ? "Choose a subtopic, or practise this entire topic."
+    : current?.kind === "head" ? "Choose a topic, or practise this entire section."
+    : metrics?.state === "all" ? "All sections are included. Choose a section to narrow your practice."
+    : "Part of this subject is selected. Choose a section to replace its scope, or use Add another topic to combine branches.";
+  return <main className="pyq-page archive-workspace scope-workspace" aria-busy={loading}>
+    <header className="scope-page-heading"><div>{initialExam ? <Link className="back-link" href="/">← All UPSC sources</Link> : <p className="pyq-kicker">Official previous-year questions</p>}<h1>Build your practice.</h1><p>Choose your scope. See exactly what is included. Practise at your own pace.</p></div><details className="scope-inventory-info"><summary>{format(initialInventory.mappedCount)} classified PYQs <span aria-hidden="true">ⓘ</span></summary><p>{format(initialInventory.unmappedCount)} questions are not yet classified into this hierarchy. They remain in the exam archives and are not included in topic-based selections.</p></details></header>
+    <ol className="scope-steps" aria-label="Practice setup"><li><span>1</span> Choose subjects</li><li><span>2</span> Refine your scope</li><li><span>3</span> Set size & start</li></ol>
+    <section className="subject-selector" aria-labelledby="subject-title"><div><span>1</span><div><h2 id="subject-title">Choose subjects</h2><p>{initialExam ? initialExam + " sources only initially. You can explicitly add other sources." : "Start with the whole subject, then narrow it down. All UPSC sources are enabled initially."}</p></div></div><div className="subject-buttons">{initialInventory.subjects.map((subject) => {
+      const selected = totals.subjectIds.includes(subject.id);
+      return <button key={subject.id} type="button" disabled={loading || !restored} aria-pressed={selected} onClick={() => toggleSubject(subject.id)} className={selected ? "active" : ""}><strong>{subject.label}</strong><span>{selected ? format(scopeMetrics(subject.id, paths, index).selectedCount) + " selected · " : ""}{format(subject.questionCount)} available</span></button>;
+    })}</div></section>
+    <div className="scope-builder-layout">
+      <section className="scope-refine" aria-labelledby="scope-refine-title">
+        <div className="scope-refine-heading"><div><span className="selector-label">2 · Refine your scope</span><h2 id="scope-refine-title" tabIndex={-1} ref={focusHeading}>{current?.label || "Where would you like to begin?"}</h2><p>{current ? instruction : "Choose a subject above to see its sections, topics and subtopics."}</p></div>{totals.subjectIds.length ? <button type="button" className="scope-secondary" disabled={loading} onClick={() => setAddOpen(true)}>＋ Add another topic</button> : null}</div>
+        {current ? <>
+          {totals.subjectIds.length > 1 ? <div className="scope-subject-tabs" aria-label="Browse selected subjects">{totals.subjectIds.map((id) => <button type="button" disabled={loading} aria-pressed={current.subjectId === id} key={id} onClick={() => browse(id)}>{index.nodesById.get(id)?.label}<span>{format(scopeMetrics(id, paths, index).selectedCount)}</span></button>)}</div> : null}
+          <nav className="scope-breadcrumbs" aria-label="Current syllabus path">{focusPath.map((node, position) => <span key={node.id}>{position ? <i aria-hidden="true">→</i> : null}<button type="button" disabled={loading} onClick={() => browse(node.id)} aria-current={node.id === current.id ? "location" : undefined}>{node.label}</button></span>)}</nav>
+          <div className="scope-navigation-help"><span>Click a branch to select its scope. Breadcrumbs only change your view.</span>{current.parentId ? <button type="button" disabled={loading} onClick={() => browse(current.parentId!)}>← Browse back · keep selection</button> : null}</div>
+          <div className="scope-current-action"><span><strong>{format(metrics?.selectedCount || 0)}</strong> selected here / {format(current.questionCount)} available</span><button type="button" disabled={loading} onClick={() => selectScope(current.id)}>{"Select this entire " + (current.kind === "head" ? "section" : current.kind)}</button></div>
+          <ScopeFlow inventory={initialInventory} paths={paths} focusId={focusId} onSelect={selectScope} onBrowse={browse} disabled={loading} />
+          <section className="scope-sources" aria-labelledby="scope-sources-title"><div><span className="selector-label">Sources for this branch</span><h3 id="scope-sources-title">{current.label}</h3><p>Counts show available questions in your selected subtopics here. Mixed means their sources differ. New branches use this subject’s currently enabled sources.</p></div><div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={branchSourceCounts[exam]} state={metrics?.examStates[exam] || "none"} disabled={loading || branchSourceCounts[exam] === 0 || metrics?.state === "none"} onChange={() => { setPaths((existing) => setScopeExam(existing, current.id, exam, metrics?.examStates[exam] !== "all", index)); setError(""); setNotice(""); }} />)}</div>{metrics?.state === "none" ? <small>Select this branch first to adjust its sources.</small> : null}</section>
+        </> : <div className="scope-empty"><span aria-hidden="true">↗</span><strong>Your syllabus, your pace.</strong><p>Select Geography, Environment or Polity to build a focused practice.</p></div>}
+        <p className="scope-status" role="status" aria-live="polite">{notice || (totals.subjectIds.length ? format(totals.matchingCount) + " questions match your selection across " + totals.subjectIds.length + " subject" + (totals.subjectIds.length === 1 ? "." : "s.") : "No subjects selected. Choose one to begin.")}</p>
       </section>
-
-      <aside className="selection-dock" aria-label="Practice selection">
-        {focusedNode && focusedNode.kind === "subtopic" && selectedSubtopicSet.has(focusedNode.id) ? <section className="flow-inspector"><span className="selector-label">Focused subtopic</span><h3>{focusedNode.label}</h3><strong>{focusedNode.questionCount} total PYQs</strong><div className="exam-source-list">{PYQ_EXAMS.map((exam) => { const available = focusedNode.examCounts[exam]; const enabled = pathExams[focusedNode.id]?.includes(exam) || false; return <button key={exam} disabled={available === 0} aria-pressed={enabled} className={enabled ? "active" : ""} onClick={() => toggleExam(exam)}><span>{exam}</span><strong>{available}</strong></button>; })}</div><button className="text-button remove-subtopic" onClick={() => removeSubtopic(focusedNode.id)}>Remove subtopic</button></section> : null}
-        <div className="selection-summary"><span>{selectedSubjects.length ? `${selectedSubjects.length} subject${selectedSubjects.length === 1 ? "" : "s"} · ${selectedLabels.length} subtopics` : "No subjects selected"}</span><strong>{eligibleCount} questions</strong><small>{selectedLabels.length ? `${selectedLabels.slice(0, 3).join(", ")}${selectedLabels.length > 3 ? ` +${selectedLabels.length - 3}` : ""}` : "Choose subjects to begin"}</small></div>
-        <div className="selection-options"><div><span>Questions</span><div className="segmented">{COUNTS.map((value) => <button key={value} disabled={value > eligibleCount} className={count === value ? "active" : ""} onClick={() => setCount(value)}>{value}</button>)}<button disabled={eligibleCount === 0} className={count === "all" ? "active" : ""} onClick={() => setCount("all")}>All</button></div></div><label>Order<select value={order} onChange={(event) => setOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label></div>
-        <button className="start-practice" disabled={loading || eligibleCount === 0} onClick={() => void startPractice()}>{loading ? "Preparing…" : "Start practice →"}</button>
-        {error ? <p className="inline-error">{error}</p> : null}
+      <aside className="selection-dock scope-dock" aria-labelledby="practice-summary-title">
+        <span className="selector-label">3 · Set size & start</span><h2 id="practice-summary-title">Your practice</h2>
+        <div className="scope-matching" data-testid="matching-count"><strong>{format(totals.matchingCount)}</strong><span>questions match your selection</span></div>
+        <div className="scope-selection-list">{selectedIds.map((id) => { const node = index.nodesById.get(id)!; const branchPath = ancestors(id, index); const metric = scopeMetrics(id, paths, index); const leaves = index.leavesById.get(id) || []; return <div className="scope-selection-item" key={id}><div><strong>{branchPath[0]?.label}</strong><span>{branchPath.length > 1 ? branchPath.slice(1).map((part) => part.label).join(" → ") : "All sections"}</span><small>{format(metric.selectedCount)} matching · {leaves.length} subtopic{leaves.length === 1 ? "" : "s"}</small></div><button type="button" disabled={loading} aria-label={"Remove " + node.label} onClick={() => remove(id)}>×</button></div>; })}{!selectedIds.length ? <p>Choose a subject to begin.</p> : null}</div>
+        <div className="session-paper-counts" aria-label="Matching questions by examination">{PYQ_EXAMS.map((exam) => <span key={exam}><b>{exam}</b><strong>{format(totals.examTotals[exam])}</strong></span>)}</div>
+        <fieldset className="scope-size-options" disabled={loading || !restored}><legend>Questions in this practice</legend><div className="segmented">{COUNTS.map((value) => <button type="button" key={value} className={count === value ? "active" : ""} aria-pressed={count === value} onClick={() => { setCount(value); setError(""); }}>{value}</button>)}<button type="button" className={count === "all" ? "active" : ""} aria-pressed={count === "all"} onClick={() => { setCount("all"); setError(""); }}>All</button></div></fieldset>
+        {shortage ? <div className="scope-shortage" role="alert"><p>You chose {practiceCount}, but only {format(totals.matchingCount)} questions match.</p><button type="button" disabled={loading} onClick={() => setCount("all")}>Use all {format(totals.matchingCount)} available</button></div> : null}
+        {totals.subjectIds.length > 0 && totals.matchingCount === 0 ? <p className="scope-shortage">No questions match the enabled sources. Add a source or choose another branch.</p> : null}
+        <label className="scope-order">Question order<select disabled={loading || !restored} value={order} onChange={(event) => setOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label>
+        <div className="scope-practice-size"><strong>{totals.subjectIds.length ? format(practiceCount) : "20"}</strong><span>questions in this practice{count === "all" ? " · all matches" : ""}</span></div>
+        <button type="button" className="start-practice" disabled={!canStart} onClick={() => void startPractice()}>{loading ? "Preparing your practice…" : "Start " + (totals.subjectIds.length ? format(practiceCount) : 20) + "-question practice →"}</button>
+        <small className="scope-local-note">Your attempt is saved on this browser. No account needed.</small>{draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}{error ? <p className="inline-error" role="alert">{error}</p> : null}
       </aside>
     </div>
+    <div className="scope-mobile-bar"><div><strong>{format(totals.matchingCount)} matching</strong><span>{format(practiceCount)} in practice</span></div><button type="button" disabled={!canStart} onClick={() => void startPractice()}>{loading ? "Preparing…" : "Start " + format(practiceCount) + " →"}</button></div>
+    {addOpen ? <AddScopeDialog index={index} paths={paths} initialId={current?.subjectId} preferredExam={initialExam} onCancel={() => setAddOpen(false)} onAdd={(id) => { setPaths((existing) => addScope(existing, id, index, initialExam)); setFocusId(id); setError(""); setNotice(""); setAddOpen(false); }} /> : null}
   </main>;
 }

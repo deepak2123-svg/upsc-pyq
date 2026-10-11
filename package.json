@@ -9,7 +9,8 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "vinext start",
-    "test": "npm run build && node --test tests/rendered-html.test.mjs tests/taxonomy.test.mjs",
+    "test": "npm run build && node --test tests/rendered-html.test.mjs tests/taxonomy.test.mjs tests/practice-selection.test.mjs tests/practice-api.test.mjs",
+    "test:browser": "playwright test",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .vercel",
     "db:generate": "drizzle-kit generate",
     "content:normalize": "node scripts/normalize-question-banks.mjs",
@@ -32,6 +33,7 @@
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.37.1",
     "@jridgewell/sourcemap-codec": "^1.5.4",
+    "@playwright/test": "1.64.0",
     "@tailwindcss/postcss": "4.2.1",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",

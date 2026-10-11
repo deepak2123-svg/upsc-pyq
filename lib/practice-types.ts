@@ -23,10 +23,16 @@ export type PracticeRecipeV2 = {
   order: PracticeOrder;
 };
 
-export type PracticeRecipe = LegacyPracticeRecipe | PracticeRecipeV2;
+export type PracticeRecipeV3 = Omit<PracticeRecipeV2, "version"> & { version: 3 };
+
+export type PracticeRecipe = LegacyPracticeRecipe | PracticeRecipeV2 | PracticeRecipeV3;
 
 export function isPracticeRecipeV2(recipe: PracticeRecipe): recipe is PracticeRecipeV2 {
   return "version" in recipe && recipe.version === 2;
+}
+
+export function isPracticeRecipeV3(recipe: PracticeRecipe): recipe is PracticeRecipeV3 {
+  return "version" in recipe && recipe.version === 3;
 }
 
 export type PracticeQuestion = {
@@ -49,6 +55,7 @@ export type PracticeSnapshot = {
   createdAt: string;
   recipe: PracticeRecipe;
   questions: PracticeQuestion[];
+  matchingCount?: number;
 };
 
 export type AnswerFeedback = {

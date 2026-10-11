@@ -1,5 +1,9 @@
 # UPSCPuraan
 
+For the current account-free public PYQ builder, selection rules, compatibility,
+and browser checks, see [PYQ selection](docs/pyq-selection.md). The older cloud
+application architecture below remains separate from that public practice flow.
+
 UPSCPuraan is a minimal, mobile-first UPSC CSE, CAPF, CDS and NDA test-series
 PWA. Visitors can browse the catalogue and attempt a guest test immediately.
 Google sign-in is optional and adds cloud history, saved recipes and

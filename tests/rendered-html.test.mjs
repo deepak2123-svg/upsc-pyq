@@ -24,14 +24,14 @@ test("server-renders the subject-first official PYQ workspace", async () => {
   assert.match(html, /Geography/);
   assert.match(html, /Environment/);
   assert.match(html, /Polity/);
-  assert.match(html, /Every subtopic is included initially/);
-  assert.match(html, /Subject → Sections/);
+  assert.match(html, /All UPSC sources are enabled initially/);
+  assert.match(html, /Refine your scope/);
   assert.doesNotMatch(html, /Choose an examination|Year range|Difficulty/);
   assert.match(html, /PYQs/);
   assert.match(html, /Attempts/);
   assert.match(html, /Bookmarks/);
   assert.match(html, /manifest\.webmanifest/);
-  assert.doesNotMatch(html, /Your syllabus|UPSC test lab|Guest mode|Sign in with Google/);
+  assert.doesNotMatch(html, /UPSC test lab|Guest mode|Sign in with Google/);
 });
 
 test("server-renders an exam archive through the subject-first selector", async () => {
@@ -39,11 +39,11 @@ test("server-renders an exam archive through the subject-first selector", async 
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Choose subjects/);
-  assert.match(html, /CSE is preselected as the source/);
-  assert.match(html, /Subject → Sections/);
+  assert.match(html, /CSE sources only initially/);
+  assert.match(html, /Refine your scope/);
   assert.match(html, /Newest first/);
   assert.match(html, />Shuffle</);
-  assert.match(html, /Start practice/);
+  assert.match(html, /Start 20-question practice/);
   assert.doesNotMatch(html, /difficulty|generated MCQ|source verbatim/i);
 });
 
@@ -174,10 +174,10 @@ test("ships exact, locked source records and the local-only PWA model", async ()
   assert.doesNotMatch(studentSources, /Explanation pending editorial review|source verbatim|Sign in with Google|Needs attention|difficulty filter/i);
   assert.match(practiceSource, /question-heading/);
   assert.match(cssSource, /font-family: var\(--font-reading\)/);
-  assert.match(archiveSource, /d3-sankey/);
-  assert.match(archiveSource, /Subject → Sections/);
-  assert.match(archiveSource, /flow-map/);
-  assert.match(archiveSource, /flow-inspector/);
+  assert.match(archiveSource, /ScopeFlow/);
+  assert.match(archiveSource, /scope-breadcrumbs/);
+  assert.match(archiveSource, /scope-sources/);
+  assert.match(archiveSource, /matchingCount/);
   assert.match(localStoreSource, /openDB/);
   assert.match(localStoreSource, /attempts/);
   assert.match(localStoreSource, /bookmarks/);

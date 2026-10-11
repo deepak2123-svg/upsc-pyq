@@ -1,8 +1,7 @@
 import questionBank from "../content/question-bank.json";
 import { taxonomyIdForLegacyQuestion, taxonomyIdForQuestion, taxonomyNode } from "./taxonomy";
-
-export const PYQ_EXAMS = ["CSE", "CAPF", "CDS", "NDA"] as const;
-export type PyqExam = (typeof PYQ_EXAMS)[number];
+import { PYQ_EXAMS, type PyqExam } from "./pyq-exams";
+export { PYQ_EXAMS, type PyqExam } from "./pyq-exams";
 
 export type PyqQuestion = {
   id: string;
@@ -68,12 +67,14 @@ export type PracticeInventoryLink = {
 };
 
 export type SubjectPracticeInventory = {
+  version: 3;
   totalCount: number;
   mappedCount: number;
   unmappedCount: number;
   subjects: PracticeSubject[];
   nodes: PracticeInventoryNode[];
   links: PracticeInventoryLink[];
+  legacyAliases: Record<string, string[]>;
 };
 
 export type ArchiveInventory = {
@@ -122,8 +123,8 @@ export function getExamQuestions(exam: PyqExam, yearFrom?: number, yearTo?: numb
   );
 }
 
-export function isPyqExam(value: string): value is PyqExam {
-  return PYQ_EXAMS.includes(value.toUpperCase() as PyqExam);
+export function isPyqExam(value: unknown): value is PyqExam {
+  return typeof value === "string" && PYQ_EXAMS.includes(value.toUpperCase() as PyqExam);
 }
 
 function slug(value: string) {
@@ -149,8 +150,8 @@ export function getQuestionPath(question: PyqQuestion) {
   const subtopic = mappedNode?.subtopic || question.taxonomySubtopic || question.subtopic;
   const subjectId = `subject:${slug(subject)}`;
   const headId = `head:${slug(subject)}:${slug(head)}`;
-  const topicId = `topic:${slug(subject)}:${slug(topic)}`;
-  const subtopicId = `subtopic:${slug(subject)}:${slug(topic)}:${slug(subtopic)}`;
+  const topicId = `topic:${slug(subject)}:${slug(head)}:${slug(topic)}`;
+  const subtopicId = `subtopic:${slug(subject)}:${slug(head)}:${slug(topic)}:${slug(subtopic)}`;
   return { subject, head, topic, subtopic, subjectId, headId, topicId, subtopicId };
 }
 
@@ -164,12 +165,17 @@ export function getSubjectPracticeInventory(): SubjectPracticeInventory {
   const subjects = new Map<string, PracticeSubject>();
   const nodes = new Map<string, PracticeInventoryNode>();
   const links = new Map<string, PracticeInventoryLink>();
+  const legacyAliases = new Map<string, Set<string>>();
   let mappedCount = 0;
 
   for (const question of pyqQuestions) {
     const path = getQuestionPath(question);
     if (!path) continue;
     mappedCount += 1;
+    const legacyId = `subtopic:${slug(path.subject)}:${slug(path.topic)}:${slug(path.subtopic)}`;
+    const aliases = legacyAliases.get(legacyId) || new Set<string>();
+    aliases.add(path.subtopicId);
+    legacyAliases.set(legacyId, aliases);
 
     const subject = subjects.get(path.subjectId) || {
       id: path.subjectId,
@@ -210,12 +216,14 @@ export function getSubjectPracticeInventory(): SubjectPracticeInventory {
 
   const subjectOrder = new Map(["Geography", "Environment", "Polity"].map((label, index) => [label, index]));
   return {
+    version: 3,
     totalCount: pyqQuestions.length,
     mappedCount,
     unmappedCount: pyqQuestions.length - mappedCount,
     subjects: [...subjects.values()].sort((a, b) => (subjectOrder.get(a.label) ?? 99) - (subjectOrder.get(b.label) ?? 99) || a.label.localeCompare(b.label)),
     nodes: [...nodes.values()].sort((a, b) => a.subjectId.localeCompare(b.subjectId) || a.kind.localeCompare(b.kind) || a.label.localeCompare(b.label)),
     links: [...links.values()].sort((a, b) => a.subjectId.localeCompare(b.subjectId) || a.source.localeCompare(b.source) || a.target.localeCompare(b.target)),
+    legacyAliases: Object.fromEntries([...legacyAliases.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([id, aliases]) => [id, [...aliases].sort()])),
   };
 }
 
