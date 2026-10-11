@@ -137,7 +137,8 @@ test("test duration defaults to untimed and survives draft reload and snapshot c
   await expect(page.locator(".question-heading")).toContainText("Question 1 of 20");
   const saved = await storedAttempt(page, snapshot.id);
   expect(Date.parse(saved.deadlineAt as string) - Date.parse(saved.startedAt as string)).toBe(20 * 60_000);
-  await expect(page.locator(".practice-topbar")).toContainText("Practice");
+  await expect(page.locator(".practice-topbar")).not.toContainText("Practice");
+  await expect(page.getByRole("complementary", { name: "Question palette" }).getByRole("button")).toHaveCount(20);
 });
 
 test("Exit restores the exam-specific builder's scope, sources, size and duration", async ({ page }) => {
@@ -151,7 +152,7 @@ test("Exit restores the exam-specific builder's scope, sources, size and duratio
   await page.getByRole("combobox", { name: "Test duration", exact: true }).selectOption("20");
   await start(page).click();
   await expect(page.locator(".question-heading")).toContainText("Question 1 of 12");
-  await page.getByRole("link", { name: "Exit practice", exact: true }).click();
+  await page.getByRole("link", { name: "Exit test", exact: true }).click();
   await expect(page).toHaveURL(/\/exams\/CSE$/);
   await expect(page.getByTestId("matching-count").locator("strong")).toHaveText("12");
   await expect(page.getByRole("navigation", { name: "Current syllabus path" })).toContainText("Physical Geography");
@@ -171,22 +172,27 @@ test("answers remain editable and hidden until submission; result sheet grades a
   const firstCorrect = correctAnswer(first.id);
   const firstWrong = Object.keys(first.options).find((option) => option !== firstCorrect)!;
   const options = page.getByRole("group", { name: "Answer options" });
+  const palette = page.getByRole("complementary", { name: "Question palette" });
+  await expect(palette.getByRole("button")).toHaveCount(3);
+  await expect(palette.getByRole("button", { name: /^Question 1,/ })).toHaveClass(/current/);
   await options.getByRole("button", { name: new RegExp(`^${firstWrong}\\b`) }).click();
   await expect(options.locator("button.selected")).toContainText(firstWrong);
+  await expect(palette.getByRole("button", { name: /^Question 1,/ })).toHaveClass(/answered/);
   await page.getByRole("button", { name: "Clear answer", exact: true }).click();
   await expect(options.locator("button.selected")).toHaveCount(0);
-  await expect(page.locator(".practice-topbar")).toContainText("0 of 3 answered");
+  await expect(page.locator(".practice-topbar")).toContainText("0 answered");
   await options.getByRole("button", { name: new RegExp(`^${firstCorrect}\\b`) }).click();
   await expect(options.locator("button.selected")).toContainText(firstCorrect);
   await page.reload();
   await expect(options.locator("button.selected")).toContainText(firstCorrect);
   await expect(options.locator("button.correct, button.incorrect")).toHaveCount(0);
   await expect(page.locator(".answer-feedback")).toHaveCount(0);
-  await expect(page.locator(".practice-topbar")).toContainText("1 of 3 answered");
+  await expect(page.locator(".practice-topbar")).toContainText("1 answered");
   await expect(page.locator(".practice-topbar")).not.toContainText(first.exam);
   expect(calls).toEqual([]);
-  await page.getByRole("button", { name: /^Next\b/ }).click();
+  await page.getByRole("button", { name: /^Save & next\b/i }).click();
   await expect(page.locator(".question-heading")).toContainText("Question 2 of 3");
+  await expect(palette.getByRole("button", { name: /^Question 2,/ })).toHaveClass(/current/);
   const secondWrong = Object.keys(second.options).find((option) => option !== correctAnswer(second.id))!;
   await options.getByRole("button", { name: new RegExp(`^${secondWrong}\\b`) }).focus();
   await page.keyboard.press("Enter");
@@ -279,7 +285,7 @@ test("editing an old fully graded in-progress attempt invalidates cached feedbac
   const calls: string[] = [];
   page.on("request", (request) => { if (/\/api\/practice\/(check|grade)$/.test(request.url())) calls.push(request.url()); });
   await page.reload();
-  await expect(page.locator(".practice-topbar")).toContainText("3 of 3 answered");
+  await expect(page.locator(".practice-topbar")).toContainText("3 answered");
   expect(Object.keys((await storedAttempt(page, snapshot.id)).feedback as object)).toHaveLength(3);
   const first = snapshot.questions[0];
   const wrong = Object.keys(first.options).find((option) => option !== correctAnswer(first.id))!;
@@ -386,6 +392,14 @@ for (const width of [390, 768, 1024, 1600]) {
     await page.setViewportSize({ width, height: 1000 });
     await page.emulateMedia({ reducedMotion: "reduce" });
     await fixture(page, request);
+    const paletteToggle = page.getByRole("button", { name: "Show all numbers", exact: true });
+    if (width < 960) {
+      await expect(paletteToggle).toBeVisible();
+      await paletteToggle.click();
+      await expect(page.getByRole("complementary", { name: "Question palette" }).getByRole("button", { name: /^Question 1,/ })).toBeVisible();
+    } else {
+      await expect(paletteToggle).toBeHidden();
+    }
     const reading = await page.locator(".practice-question h1").evaluate((element) => {
       const style = getComputedStyle(element);
       return { font: style.fontFamily, size: parseFloat(style.fontSize), lineHeight: parseFloat(style.lineHeight) };

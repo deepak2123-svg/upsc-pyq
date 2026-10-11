@@ -4,6 +4,7 @@ import {
   attemptClock, attemptReturnPath, completeAttempt, formatPracticeTime, hasCompleteFeedback,
   practiceDurationMinutes, requestAnswerFeedback, safePracticeReturnPath,
 } from "../lib/practice-session.ts";
+import { formatPracticePrompt } from "../lib/practice-prompt.ts";
 
 const started = Date.parse("2026-10-11T12:00:00.000Z");
 const recipe = { version: 3, subjectIds: ["subject:geography"], paths: [], count: 2, order: "newest", durationMinutes: 1 };
@@ -11,6 +12,19 @@ const feedback = {
   first: { correct: true, correctAnswer: "A", explanation: null },
   second: { correct: false, correctAnswer: "B", explanation: "Published explanation." },
 };
+
+test("flattened numbered statements are restored to paper-style lines without rewriting the source", () => {
+  assert.deepEqual(formatPracticePrompt(["Temperate forests are found in which hills? 1. Anaimalai 2. Nilgiris 3. Palani Select the answer using the code given below"]), [
+    { kind: "text", text: "Temperate forests are found in which hills?" },
+    { kind: "statement", number: 1, text: "Anaimalai" },
+    { kind: "statement", number: 2, text: "Nilgiris" },
+    { kind: "statement", number: 3, text: "Palani" },
+    { kind: "text", text: "Select the answer using the code given below" },
+  ]);
+  assert.deepEqual(formatPracticePrompt(["In 2025, consider 1 important change only."]), [
+    { kind: "text", text: "In 2025, consider 1 important change only." },
+  ]);
+});
 function attempt(overrides = {}) {
   return {
     id: "local-attempt", status: "in_progress", currentIndex: 0,
