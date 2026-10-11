@@ -177,7 +177,9 @@ export function PracticeClient({ id }: { id: string }) {
     const answers = { ...value.answers };
     if (option === null) delete answers[question.id];
     else answers[question.id] = option;
-    await saveChange({ ...value, answers });
+    // Older in-progress attempts may contain instant-feedback results. Any edit
+    // invalidates that cached grading; the final answer sheet must use new answers.
+    await saveChange({ ...value, answers, feedback: {} });
   }
 
   async function navigate(index: number) {

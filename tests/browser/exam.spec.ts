@@ -245,6 +245,71 @@ test("an unfinished attempt cannot reveal its answer sheet through the results U
   expect(calls).toEqual([]);
 });
 
+test("editing an old fully graded in-progress attempt invalidates cached feedback and grades the new answers", async ({ page, request }) => {
+  const snapshot = await fixture(page, request);
+  const answers = Object.fromEntries(snapshot.questions.map((question) => [question.id, correctAnswer(question.id)]));
+  const previousGrading = await request.post("/api/practice/grade", { data: { questionIds: snapshot.questions.map((question) => question.id), answers } });
+  expect(previousGrading.status()).toBe(200);
+  const { feedback } = await previousGrading.json();
+  expect(Object.values(feedback).every((item) => (item as { correct: boolean }).correct)).toBe(true);
+  await page.evaluate(async ({ id, oldAnswers, oldFeedback }) => {
+    const database = await new Promise<IDBDatabase>((resolve, reject) => {
+      const open = indexedDB.open("upscpuraan-pyq", 2);
+      open.onsuccess = () => resolve(open.result);
+      open.onerror = () => reject(open.error);
+    });
+    await new Promise<void>((resolve, reject) => {
+      const transaction = database.transaction("attempts", "readwrite");
+      const store = transaction.objectStore("attempts");
+      const get = store.get(id);
+      get.onsuccess = () => {
+        const legacy: Record<string, unknown> = { ...get.result, answers: oldAnswers, feedback: oldFeedback };
+        const savedSnapshot = legacy.snapshot as Record<string, unknown>;
+        legacy.snapshot = { ...savedSnapshot, recipe: { ...savedSnapshot.recipe as Record<string, unknown>, version: 2 } };
+        delete legacy.timingMode;
+        delete legacy.deadlineAt;
+        delete legacy.returnPath;
+        store.put(legacy);
+      };
+      transaction.oncomplete = () => resolve();
+      transaction.onerror = () => reject(transaction.error);
+    });
+    database.close();
+  }, { id: snapshot.id, oldAnswers: answers, oldFeedback: feedback });
+  const calls: string[] = [];
+  page.on("request", (request) => { if (/\/api\/practice\/(check|grade)$/.test(request.url())) calls.push(request.url()); });
+  await page.reload();
+  await expect(page.locator(".practice-topbar")).toContainText("3 of 3 answered");
+  expect(Object.keys((await storedAttempt(page, snapshot.id)).feedback as object)).toHaveLength(3);
+  const first = snapshot.questions[0];
+  const wrong = Object.keys(first.options).find((option) => option !== correctAnswer(first.id))!;
+  const options = page.getByRole("group", { name: "Answer options" });
+  const changedOption = options.getByRole("button", { name: new RegExp(`^${wrong}\\b`) });
+  await changedOption.click();
+  await expect(changedOption).toBeEnabled();
+  await expect(options.locator("button.selected")).toContainText(wrong);
+  expect((await storedAttempt(page, snapshot.id)).feedback).toEqual({});
+  await expect(page.locator(".answer-feedback")).toHaveCount(0);
+  await expect(options.locator("button.correct, button.incorrect")).toHaveCount(0);
+  expect(calls).toEqual([]);
+  const graded = page.waitForResponse((response) => response.url().endsWith("/api/practice/grade"));
+  await page.getByRole("button", { name: "Finish", exact: true }).click();
+  const response = await graded;
+  expect(response.status()).toBe(200);
+  const result = await response.json();
+  expect(result.correct).toBe(2);
+  expect(result.incorrect).toBe(1);
+  expect(result.unattempted).toBe(0);
+  expect(response.request().postDataJSON().answers).toEqual({ ...answers, [first.id]: wrong });
+  const sheet = page.getByRole("table", { name: "Answer sheet", exact: true });
+  await expect(sheet.getByRole("row").nth(1)).toContainText("Incorrect");
+  await expect(sheet.getByRole("row").nth(2)).toContainText("Correct");
+  await expect(sheet.getByRole("row").nth(3)).toContainText("Correct");
+  await expect(page.getByRole("table", { name: "Subject and topic performance", exact: true }).getByRole("row").nth(1).getByRole("cell")).toHaveText(["3", "3", "2", "1", "0", "67%"]);
+  expect(calls).toHaveLength(1);
+  expect(((await storedAttempt(page, snapshot.id)).feedback as Record<string, { correct: boolean }>)[first.id].correct).toBe(false);
+});
+
 test("a countdown retains its deadline on reload and submits when wall-clock time expires", async ({ page, request }) => {
   await page.clock.install();
   const snapshot = await fixture(page, request, 1);

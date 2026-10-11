@@ -34,7 +34,7 @@ test("saved practice return paths restore only known builders", () => {
     assert.equal(safePracticeReturnPath(`/exams/${exam}`), `/exams/${exam}`);
     assert.equal(attemptReturnPath(attempt({ returnPath: `/exams/${exam}` })), `/exams/${exam}`);
   }
-  for (const value of [undefined, null, 42, "/", "https://example.com", "//example.com", "/exams/CSE?return=other", "/exams/cse", "/exams/JEE", "/practice/elsewhere"]) {
+  for (const value of [undefined, null, 42, "/", "https://example.com", "//example.com", "/exams/CSE?return=other", "/exams/CSE\n", "/exams/cse", "/exams/JEE", "/practice/elsewhere"]) {
     assert.equal(safePracticeReturnPath(value), "/");
   }
   assert.equal(attemptReturnPath(attempt()), "/");
@@ -99,6 +99,14 @@ test("answer-sheet requests are forbidden before submission and never contact th
   const fetch = t.mock.method(globalThis, "fetch", async () => { throw new Error("Unexpected API request"); });
   await assert.rejects(requestAnswerFeedback(attempt()), /Finish this practice before viewing its answers/);
   assert.equal(fetch.mock.callCount(), 0);
+});
+
+test("cached grading must match current answers and known option keys", () => {
+  const completed = completeAttempt(attempt(), "submitted", started + 25_000);
+  assert.equal(hasCompleteFeedback({ ...completed, feedback }), true);
+  assert.equal(hasCompleteFeedback({ ...completed, answers: { first: "B" }, feedback }), false);
+  assert.equal(hasCompleteFeedback({ ...completed, feedback: { ...feedback, first: { ...feedback.first, correctAnswer: "Z" } } }), false);
+  assert.equal(hasCompleteFeedback({ ...completed, feedback: { ...feedback, first: { ...feedback.first, correct: false } } }), false);
 });
 
 test("completed attempts request all answer keys including skipped questions", async (t) => {

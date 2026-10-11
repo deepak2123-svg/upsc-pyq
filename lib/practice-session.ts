@@ -53,7 +53,11 @@ export function completeAttempt(attempt: LocalAttempt, reason: "submitted" | "ti
 }
 
 export function hasCompleteFeedback(attempt: LocalAttempt) {
-  return attempt.snapshot.questions.every((question) => Boolean(attempt.feedback[question.id]?.correctAnswer));
+  return attempt.snapshot.questions.every((question) => {
+    const feedback = attempt.feedback[question.id];
+    return Boolean(feedback && Object.hasOwn(question.options, feedback.correctAnswer)
+      && feedback.correct === (attempt.answers[question.id] === feedback.correctAnswer));
+  });
 }
 
 /** This endpoint is requested only after the local submission has been saved. */
