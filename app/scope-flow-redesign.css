@@ -1,0 +1,53 @@
+/* Source colours communicate the question inventory; neutral cards carry actions. */
+.scope-flow-legend {
+  gap: 10px 20px;
+  padding: 4px 0 16px;
+  color: #475569;
+  font-size: 13px;
+}
+.scope-flow-legend > span { font-weight: 650; }
+.scope-flow-legend i { width: 10px; height: 10px; border-radius: 3px; opacity: 1; }
+.scope-flow-legend small { max-width: 720px; font-size: 13px; line-height: 1.55; }
+.scope-flow-scroll { border-color: #e2e8f0; border-radius: 14px; background: #fff; scrollbar-gutter: stable; }
+.scope-flow-canvas { animation: scope-flow-enter 200ms ease-out; }
+.scope-flow-columns { color: #64748b; font-size: 13px; letter-spacing: .065em; }
+.scope-flow-node {
+  border-color: #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 7px #0f172a05;
+  animation: scope-flow-enter 200ms ease-out;
+  transition: top 200ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+.scope-flow-node[data-state=none] { background: #fff; }
+.scope-flow-node[data-state=all] { border-color: #b7c2d0; }
+.scope-flow-node[data-state=partial] { border-color: #64748b; border-style: dashed; }
+.scope-flow-node[data-active=true] { border-color: #64748b; box-shadow: 0 0 0 1px #64748b22, 0 3px 10px #0f172a08; background: #fff; }
+.scope-flow-select { padding: 8px 10px; border-radius: 10px; gap: 5px; }
+.scope-flow-select:hover { background: #f8fafc; }
+.scope-flow-select[aria-current], .scope-mobile-select[aria-current] { box-shadow: inset 3px 0 #475569; }
+.scope-flow-select:focus-visible, .scope-mobile-select:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+.scope-flow-node-label { font-size: 13px; font-weight: 650; line-height: 1.4; color: #17212f; }
+.scope-flow-node-count { color: #64748b; font-size: 13px; line-height: 1.4; }
+.scope-flow-aggregate { box-shadow: none; background: #f8fafc; }
+.scope-flow-aggregate[data-state=none] { background: #f8fafc; }
+.scope-flow-aggregate .scope-flow-node-label { color: #64748b; font-weight: 600; }
+.scope-flow-context-toggle { font-size: 13px; }
+.scope-mobile-hint { font-size: 13px; line-height: 1.6; }
+.scope-mobile-row { border-color: #e2e8f0; border-radius: 10px; background: #fff; }
+.scope-mobile-node[data-active=true] > .scope-mobile-row { border-color: #94a3b8; background: #fff; }
+.scope-mobile-node[data-state=all] > .scope-mobile-row { border-color: #b7c2d0; }
+.scope-mobile-node[data-state=partial] > .scope-mobile-row { border-color: #64748b; border-style: dashed; }
+.scope-mobile-node[data-aggregate=true] > .scope-mobile-row { background: #f8fafc; }
+.scope-mobile-select { gap: 6px; }
+.scope-mobile-tree .scope-mobile-tree { border-color: #e2e8f0; }
+@keyframes scope-flow-enter { from { opacity: .65; } to { opacity: 1; } }
+@media (max-width: 1099px) {
+  .scope-flow-legend { gap: 8px 18px; padding-bottom: 6px; }
+  .scope-overview-toggle { font-size: 13px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scope-flow-canvas { animation: none; }
+  .scope-flow-node { transition: none; }
+  .scope-flow-node { animation: none; }
+}

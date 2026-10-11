@@ -3,6 +3,7 @@
 import { useMemo, useState, type CSSProperties } from "react";
 import { sankey, type SankeyLink, type SankeyNode } from "d3-sankey";
 import type { SubjectPracticeInventory } from "../../lib/pyq-catalog";
+import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
 import {
   ancestors, buildSelectionIndex, scopeMetrics,
   type ScopeNode, type SelectionIndex, type SelectionPaths, type SelectionState,
@@ -30,15 +31,31 @@ type FlowNode = {
 type FlowLink = { source: string | ChartNode; target: string | ChartNode; value: number };
 type ChartNode = FlowNode & SankeyNode<FlowNode, FlowLink>;
 type ChartLink = SankeyLink<FlowNode, FlowLink>;
-type NodeSelection = { selectedCount: number; state: SelectionState };
+type ExamCounts = Record<PyqExam, number>;
+type NodeSelection = {
+  selectedCount: number;
+  state: SelectionState;
+  availableExams: ExamCounts;
+  selectedExams: ExamCounts;
+};
+type ExamLane = {
+  exam: PyqExam;
+  availableCount: number;
+  selectedCount: number;
+  availableWidth: number;
+  selectedWidth: number;
+  sourceCenter: number;
+  targetCenter: number;
+};
 
 const WIDTH = 1040;
 const COLUMN_WIDTH = 260;
 const CARD_WIDTH = 218;
-const LABEL_ROW_HEIGHT = 96;
+// Leave breathing room even for a three-line label and two-line count.
+const LABEL_ROW_HEIGHT = 104;
 const COLUMNS = ["Subject", "Section", "Topic", "Subtopic"];
-const SUBJECT_COLOURS = ["#2457d6", "#18794e", "#a15c00", "#6b4eff"];
 const number = (value: number) => value.toLocaleString("en-IN");
+const emptyExamCounts = (): ExamCounts => ({ CSE: 0, CAPF: 0, CDS: 0, NDA: 0 });
 
 /** Available inventory alone determines geometry; choosing sources never moves it. */
 function buildLayout(index: SelectionIndex, focus: ScopeNode | undefined, expanded: Set<string>) {
@@ -120,30 +137,57 @@ function buildLayout(index: SelectionIndex, focus: ScopeNode | undefined, expand
   return { ...graph, height, labelCenters };
 }
 
-function ribbonPath(link: ChartLink) {
+function ribbonPath(link: ChartLink, sourceCenter: number, targetCenter: number) {
   const source = link.source as ChartNode;
   const target = link.target as ChartNode;
   const x0 = source.x1 || 0;
   const x1 = target.x0 || 0;
   const middle = (x0 + x1) / 2;
-  return `M${x0},${link.y0 || 0}C${middle},${link.y0 || 0} ${middle},${link.y1 || 0} ${x1},${link.y1 || 0}`;
+  return `M${x0},${sourceCenter}C${middle},${sourceCenter} ${middle},${targetCenter} ${x1},${targetCenter}`;
 }
 
-/** Highlight each true incoming/outgoing slot rather than inventing a centered total. */
-function selectedSegments(node: ChartNode, selections: Map<string, NodeSelection>) {
-  const incoming = node.targetLinks || [];
-  const outgoing = node.sourceLinks || [];
-  return [
-    ...incoming.map((link) => ({ link, x: node.x0 || 0, width: outgoing.length ? 6 : 12, center: link.y1 || 0, side: "in" })),
-    ...outgoing.map((link) => ({ link, x: (node.x0 || 0) + (incoming.length ? 6 : 0), width: incoming.length ? 6 : 12, center: link.y0 || 0, side: "out" })),
-  ].flatMap(({ link, x, width, center, side }) => {
-    const selected = selections.get((link.target as ChartNode).id)?.selectedCount || 0;
-    const height = (link.width || 0) * selected / link.value;
-    return selected > 0 ? [{ id: `${side}:${(link.target as ChartNode).id}`, x, y: center - height / 2, width, height }] : [];
+/** Stack real source counts within the inventory's fixed incoming/outgoing slot. */
+function examLanes(link: ChartLink, selections: Map<string, NodeSelection>): ExamLane[] {
+  const selection = selections.get((link.target as ChartNode).id)!;
+  const unit = (link.width || 0) / link.value;
+  let precedingCount = 0;
+  return PYQ_EXAMS.flatMap((exam) => {
+    const availableCount = selection.availableExams[exam];
+    const selectedCount = selection.selectedExams[exam];
+    const availableWidth = availableCount * unit;
+    const offset = -(link.width || 0) / 2 + precedingCount * unit + availableWidth / 2;
+    precedingCount += availableCount;
+    return availableCount > 0 ? [{
+      exam, availableCount, selectedCount, availableWidth,
+      selectedWidth: selectedCount * unit,
+      sourceCenter: (link.y0 || 0) + offset,
+      targetCenter: (link.y1 || 0) + offset,
+    }] : [];
   });
 }
 
-export function ScopeFlow({ inventory, paths, focusId, onSelect, onBrowse, disabled = false }: ScopeFlowProps) {
+/** Join each ribbon's source lanes to the exact node slot, including tiny values. */
+function nodeSegments(node: ChartNode, selections: Map<string, NodeSelection>) {
+  const incoming = node.targetLinks || [];
+  const outgoing = node.sourceLinks || [];
+  return [
+    ...incoming.map((link) => ({ link, x: node.x0 || 0, width: outgoing.length ? 6 : 12, side: "in" })),
+    ...outgoing.map((link) => ({ link, x: (node.x0 || 0) + (incoming.length ? 6 : 0), width: incoming.length ? 6 : 12, side: "out" })),
+  ].flatMap(({ link, x, width, side }) => {
+    return examLanes(link, selections).map((lane) => {
+      const laneCenter = side === "in" ? lane.targetCenter : lane.sourceCenter;
+      return {
+        id: `${side}:${(link.target as ChartNode).id}:${lane.exam}`, x, width,
+        exam: lane.exam, availableY: laneCenter - lane.availableWidth / 2,
+        availableHeight: lane.availableWidth,
+        selectedY: laneCenter - lane.selectedWidth / 2,
+        selectedHeight: lane.selectedWidth,
+      };
+    });
+  });
+}
+
+export function ScopeFlow({ inventory, paths, focusId, onSelect, disabled = false }: ScopeFlowProps) {
   const index = useMemo(() => buildSelectionIndex(inventory), [inventory]);
   const [expandedContext, setExpandedContext] = useState<Set<string>>(() => new Set());
   const [showOverview, setShowOverview] = useState(false);
@@ -155,7 +199,19 @@ export function ScopeFlow({ inventory, paths, focusId, onSelect, onBrowse, disab
     const metrics = node.scopeIds.map((id) => scopeMetrics(id, paths, index));
     const state: SelectionState = metrics.every((metric) => metric.state === "all") ? "all"
       : metrics.every((metric) => metric.state === "none") ? "none" : "partial";
-    return [node.id, { selectedCount: metrics.reduce((sum, metric) => sum + metric.selectedCount, 0), state }];
+    const availableExams = emptyExamCounts();
+    const selectedExams = emptyExamCounts();
+    for (const scopeId of node.scopeIds) {
+      const scope = index.nodesById.get(scopeId)!;
+      for (const exam of PYQ_EXAMS) availableExams[exam] += scope.examCounts[exam];
+      for (const leaf of index.leavesById.get(scopeId) || []) {
+        for (const exam of paths[leaf.id] || []) selectedExams[exam] += leaf.examCounts[exam];
+      }
+    }
+    return [node.id, {
+      selectedCount: metrics.reduce((sum, metric) => sum + metric.selectedCount, 0),
+      state, availableExams, selectedExams,
+    }];
   })), [layout, paths, index]);
   const mobileChildren = useMemo(() => {
     const result = new Map<string, ChartNode[]>();
@@ -168,7 +224,6 @@ export function ScopeFlow({ inventory, paths, focusId, onSelect, onBrowse, disab
     }
     return result;
   }, [layout]);
-  const colour = SUBJECT_COLOURS[Math.max(0, inventory.subjects.findIndex((subject) => subject.id === focus?.subjectId)) % SUBJECT_COLOURS.length];
   const subjectLabel = index.nodesById.get(focus?.subjectId || "")?.label || "this subject";
   function toggleContext(id: string) {
     setExpandedContext((current) => {
@@ -184,64 +239,71 @@ export function ScopeFlow({ inventory, paths, focusId, onSelect, onBrowse, disab
   }
   function selectionLabel(node: ChartNode, selection: NodeSelection) {
     return node.aggregate ? `Show ${node.label.toLowerCase()}, ${number(node.availableCount)} available questions. Your selection stays the same.`
-      : `Choose ${node.label}. ${number(selection.selectedCount)} of ${number(node.availableCount)} questions included. Replace the current scope in ${subjectLabel}.`;
+      : `Choose ${node.label}. ${COLUMNS[node.column]} scope. ${number(selection.selectedCount)} of ${number(node.availableCount)} questions included. Replace the current scope in ${subjectLabel}.`;
   }
   function renderMobile(node: ChartNode) {
     const selection = selections.get(node.id)!;
     const children = mobileChildren.get(node.id) || [];
-    const canBrowse = !node.aggregate && Boolean(index.childrenById.get(node.id)?.length);
-    return <li key={node.id} className="scope-mobile-node" data-state={selection.state} data-active={node.active} data-aggregate={node.aggregate}>
+    return <li key={node.id} className="scope-mobile-node" data-state={selection.state} data-active={node.active} data-aggregate={node.aggregate} data-scope-id={node.id} data-available-count={node.availableCount} data-selected-count={selection.selectedCount}>
       <div className="scope-mobile-row">
         <button className="scope-mobile-select" disabled={disabled} onClick={() => choose(node)} aria-label={selectionLabel(node, selection)} aria-pressed={node.aggregate ? undefined : selection.state === "partial" ? "mixed" : selection.state === "all"} aria-expanded={node.aggregate ? false : undefined} aria-current={node.id === focus?.id ? "true" : undefined}>
           <span className="scope-flow-node-label">{node.label}{node.aggregate ? " +" : ""}</span>
           <span className="scope-flow-node-count">{number(selection.selectedCount)} selected / {number(node.availableCount)} available</span>
         </button>
-        {canBrowse ? <button className="scope-mobile-browse" disabled={disabled} onClick={() => onBrowse(node.id)} aria-label={`Browse ${node.label} without changing your selection`}>Browse <span aria-hidden="true">→</span></button> : null}
       </div>
       {children.length ? <ul className="scope-mobile-tree">{children.map(renderMobile)}</ul> : null}
     </li>;
   }
 
   if (!focus) return <div className="outline-empty"><strong>No subject selected</strong><span>Choose a subject to explore its sections, topics and subtopics.</span></div>;
-  return <section className="scope-flow" aria-label={`${subjectLabel} question flow`} style={{ "--scope-colour": colour } as CSSProperties}>
-    <div className="scope-flow-legend"><span><i data-state="selected" aria-hidden="true" />Included questions</span><span><i data-state="context" aria-hidden="true" />Available inventory</span><small>Widths show available questions; coloured overlays show your selection.</small></div>
+  return <section className="scope-flow" aria-label={`${subjectLabel} question flow`} style={{ "--scope-colour": "#475569" } as CSSProperties}>
+    <div className="scope-flow-legend" aria-label="Question source colours">
+      {PYQ_EXAMS.map((exam) => <span key={exam} data-exam={exam}><i aria-hidden="true" style={{ background: PYQ_EXAM_COLORS[exam] }} />{exam}</span>)}
+      <small>Each colour is an exam. Pale ribbons show available questions; stronger colour shows your selection. Select a branch to narrow your practice.</small>
+    </div>
     <button className="scope-overview-toggle" type="button" disabled={disabled} aria-expanded={showOverview} onClick={() => setShowOverview((value) => !value)}>{showOverview ? "Return to hierarchy" : "View Sankey flow overview"}</button>
     <div className="scope-flow-scroll" data-overview={showOverview}>
-      <div className="scope-flow-canvas" style={{ width: WIDTH, height: layout.height, position: "relative" }}>
+      <div className="scope-flow-canvas" data-focus-id={focus.id} style={{ width: WIDTH, height: layout.height, position: "relative" }}>
         <svg className="scope-flow-svg" width={WIDTH} height={layout.height} aria-hidden="true" focusable="false" style={{ position: "absolute", inset: 0 }}>
-          <g className="scope-flow-base-links">{layout.links.map((link) => <path key={`${(link.source as ChartNode).id}:${(link.target as ChartNode).id}`} d={ribbonPath(link)} fill="none" stroke={colour} strokeOpacity=".12" strokeWidth={link.width || 0} />)}</g>
-          <g className="scope-flow-selected-links">{layout.links.map((link) => {
-            const selected = selections.get((link.target as ChartNode).id)?.selectedCount || 0;
-            return selected > 0 ? <path key={`${(link.source as ChartNode).id}:${(link.target as ChartNode).id}`} d={ribbonPath(link)} fill="none" stroke={colour} strokeOpacity=".4" strokeWidth={(link.width || 0) * selected / link.value} /> : null;
-          })}</g>
+          <g className="scope-flow-base-links">{layout.links.flatMap((link) => examLanes(link, selections).map((lane) => <path
+            key={`${(link.source as ChartNode).id}:${(link.target as ChartNode).id}:${lane.exam}`}
+            data-exam={lane.exam} data-layer="available" data-question-count={lane.availableCount}
+            data-source-id={(link.source as ChartNode).id} data-target-id={(link.target as ChartNode).id}
+            d={ribbonPath(link, lane.sourceCenter, lane.targetCenter)} fill="none" stroke={PYQ_EXAM_COLORS[lane.exam]} strokeOpacity=".075" strokeWidth={lane.availableWidth}
+          />))}</g>
+          <g className="scope-flow-selected-links">{layout.links.flatMap((link) => examLanes(link, selections).flatMap((lane) => lane.selectedCount > 0 ? [<path
+            key={`${(link.source as ChartNode).id}:${(link.target as ChartNode).id}:${lane.exam}`}
+            data-exam={lane.exam} data-layer="selected" data-question-count={lane.selectedCount}
+            data-source-id={(link.source as ChartNode).id} data-target-id={(link.target as ChartNode).id}
+            d={ribbonPath(link, lane.sourceCenter, lane.targetCenter)} fill="none" stroke={PYQ_EXAM_COLORS[lane.exam]} strokeOpacity=".3" strokeWidth={lane.selectedWidth}
+          />] : []))}</g>
           {layout.nodes.map((node) => {
             const center = ((node.y0 || 0) + (node.y1 || 0)) / 2;
             const labelCenter = layout.labelCenters.get(node.id) || center;
-            const barHeight = (node.y1 || 0) - (node.y0 || 0);
             return <g key={node.id} className="scope-flow-bars" data-active={node.active}>
-              <rect x={node.x0} y={node.y0} width="12" height={barHeight} rx="2" fill={colour} fillOpacity=".18" />
-              {selectedSegments(node, selections).map((segment) => <rect key={segment.id} x={segment.x} y={segment.y} width={segment.width} height={segment.height} rx="1" fill={colour} />)}
-              <path className="scope-flow-leader" d={`M${node.x1},${center}L${node.column * COLUMN_WIDTH + 38},${labelCenter}`} fill="none" stroke={colour} strokeOpacity=".35" />
+              {nodeSegments(node, selections).map((segment) => <g key={segment.id} data-exam={segment.exam}>
+                <rect x={segment.x} y={segment.availableY} width={segment.width} height={segment.availableHeight} fill={PYQ_EXAM_COLORS[segment.exam]} fillOpacity=".14" />
+                {segment.selectedHeight > 0 ? <rect x={segment.x} y={segment.selectedY} width={segment.width} height={segment.selectedHeight} fill={PYQ_EXAM_COLORS[segment.exam]} fillOpacity=".7" /> : null}
+              </g>)}
+              <path className="scope-flow-leader" d={`M${node.x1},${center}L${node.column * COLUMN_WIDTH + 38},${labelCenter}`} fill="none" stroke="#94a3b8" strokeOpacity=".5" />
             </g>;
           })}
         </svg>
         <div className="scope-flow-columns">{COLUMNS.map((label, column) => <div key={label} style={{ position: "absolute", left: column * COLUMN_WIDTH + 18, top: 12, width: CARD_WIDTH }}>{label}</div>)}</div>
         {layout.nodes.map((node) => {
           const selection = selections.get(node.id)!;
-          const canBrowse = !node.aggregate && Boolean(index.childrenById.get(node.id)?.length);
-          return <div key={node.id} className={`scope-flow-node${node.aggregate ? " scope-flow-aggregate" : ""}`} data-state={selection.state} data-active={node.active} data-aggregate={node.aggregate} data-scope-id={node.id}
+          return <div key={node.id} className={`scope-flow-node${node.aggregate ? " scope-flow-aggregate" : ""}`} data-state={selection.state} data-active={node.active} data-aggregate={node.aggregate} data-scope-id={node.id} data-available-count={node.availableCount} data-selected-count={selection.selectedCount}
             style={{ position: "absolute", left: node.column * COLUMN_WIDTH + 38, top: (layout.labelCenters.get(node.id) || 98) - 32, width: CARD_WIDTH, minHeight: 64 }}>
             <button className="scope-flow-select" disabled={disabled} onClick={() => choose(node)} aria-label={selectionLabel(node, selection)} aria-pressed={node.aggregate ? undefined : selection.state === "partial" ? "mixed" : selection.state === "all"} aria-expanded={node.aggregate ? false : undefined} aria-current={node.id === focus.id ? "true" : undefined}>
               <span className="scope-flow-node-label">{node.label}{node.aggregate ? " +" : ""}</span>
               <span className="scope-flow-node-count">{number(selection.selectedCount)} selected / {number(node.availableCount)} available</span>
             </button>
-            {canBrowse ? <button className="scope-flow-browse" disabled={disabled} onClick={() => onBrowse(node.id)} aria-label={`Browse ${node.label} without changing your selection`}><span aria-hidden="true">↗</span></button> : null}
           </div>;
         })}
         {COLUMNS.map((label, column) => layout.nodes.some((node) => node.column === column) ? null : <p key={label} className="scope-flow-empty-column" style={{ position: "absolute", left: column * COLUMN_WIDTH + 38, top: 154, width: CARD_WIDTH }}>{column === 2 ? "Choose a section to see its topics." : "Choose a topic to see its subtopics."}</p>)}
       </div>
     </div>
-    <div className="scope-flow-mobile" data-overview={showOverview}><p className="scope-mobile-hint">Choose a branch to narrow your practice. Browse opens it without changing your selection.</p><ul className="scope-mobile-tree">{layout.nodes.filter((node) => node.column === 0).map(renderMobile)}</ul></div>
+    <div className="scope-flow-mobile" data-overview={showOverview}><p className="scope-mobile-hint">Select a branch to narrow your practice. Use the path above to browse back without changing your selection.</p><ul className="scope-mobile-tree">{layout.nodes.filter((node) => node.column === 0).map(renderMobile)}</ul></div>
     {[...expandedContext].filter((id) => layout.nodes.some((node) => node.id === id) && (index.childrenById.get(id)?.length || 0) > 1).map((id) => <button key={id} className="scope-flow-context-toggle" disabled={disabled} onClick={() => toggleContext(id)}>Collapse other {index.nodesById.get(id)?.label} branches</button>)}
   </section>;
 }

@@ -1,0 +1,45 @@
+.scope-dock .scope-sources {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 16px 0;
+  border: 0;
+  border-block: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+}
+.scope-dock .scope-sources h3 { margin: 0; font-size: 14px; font-weight: 650; }
+.scope-source-target { display: grid; gap: 6px; color: var(--muted); font-size: 12px; }
+.scope-source-target select { width: 100%; min-height: 44px; padding: 8px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--ink); font: inherit; }
+.scope-dock .scope-source-grid { min-width: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.scope-dock .scope-source { display: grid; grid-template-columns: 15px minmax(0, 1fr) auto; gap: 3px 6px; min-height: 68px; padding: 8px 6px; border-inline-start: 3px solid var(--exam-color); text-align: left; font-size: 13px; }
+.scope-dock .scope-source.all, .scope-dock .scope-source.partial { background: color-mix(in srgb, var(--exam-color) 7%, var(--surface)); border-color: color-mix(in srgb, var(--exam-color) 40%, var(--line)); border-inline-start-color: var(--exam-color); }
+.scope-dock .scope-source .scope-check { flex: 0 0 15px; width: 15px; height: 15px; font-size: 12px; color: var(--exam-color); }
+.scope-source-name { display: grid; gap: 3px; font-weight: 650; }
+.scope-dock .scope-source strong { display: grid; gap: 3px; color: var(--exam-color); text-align: right; font-size: 13px; }
+.scope-dock .scope-source small { color: var(--muted); font-size: 11px; font-weight: 450; line-height: 1.2; white-space: nowrap; }
+.scope-source-available { grid-column: 2 / -1; }
+.scope-dock .scope-sources > p { max-width: none; font-size: 11px; line-height: 1.55; }
+.scope-source-total { display: flex; gap: 7px; flex-wrap: wrap; color: var(--muted); font-size: 11px; }
+.scope-source-total span { color: var(--exam-color); font-weight: 600; }
+.scope-duration { display: grid; gap: 9px; }
+.scope-duration small { color: var(--muted); font-size: 11px; line-height: 1.55; }
+.scope-duration input { width: 110px; min-height: 44px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--ink); font: inherit; }
+.scope-dock .scope-practice-size { margin-top: 0; }
+.scope-practice-size > span { display: grid; gap: 4px; }
+.scope-practice-size > span small { font-size: 11px; color: var(--muted); }
+.scope-dock-body, .scope-dock-footer { display: contents; }
+@media (min-width: 1440px) {
+  .scope-dock.selection-dock { display: flex; flex-direction: column; gap: 0; max-height: calc(100dvh - 104px); overflow: hidden; }
+  .scope-dock-body { display: grid; gap: 16px; align-content: start; grid-auto-rows: max-content; flex: 1 1 auto; min-height: 0; overflow-y: auto; scrollbar-width: thin; scrollbar-gutter: stable; }
+  .scope-dock-footer { display: grid; gap: 12px; flex: 0 0 auto; padding-top: 16px; margin-top: 12px; border-top: 1px solid var(--line); background: var(--surface); }
+}
+@media (min-width: 700px) and (max-width: 1439px) {
+  .scope-dock-body > .selector-label, .scope-dock-body > h2 { grid-column: 1 / -1; }
+  .scope-dock .scope-sources { grid-row: span 3; padding: 0 16px 0 0; border-block: 0; border-right: 1px solid var(--line); }
+}
+@media (max-width: 699px) {
+  .scope-dock .scope-source { min-height: 68px; font-size: 14px; padding: 10px; }
+  .scope-dock .scope-source strong { font-size: 14px; }
+  .scope-dock .scope-source small { font-size: 11px; }
+}

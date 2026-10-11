@@ -2,6 +2,7 @@
 
 import { openDB, type DBSchema } from "idb";
 import type { Bookmark, LocalAttempt, PracticeSnapshot } from "./practice-types";
+import { practiceDurationMinutes, safePracticeReturnPath } from "./practice-session";
 
 interface PracticeDb extends DBSchema {
   attempts: { key: string; value: LocalAttempt; indexes: { "by-updated": string } };
@@ -24,8 +25,9 @@ async function database() {
   return dbPromise;
 }
 
-export async function createLocalAttempt(snapshot: PracticeSnapshot) {
+export async function createLocalAttempt(snapshot: PracticeSnapshot, returnPath?: string) {
   const now = new Date().toISOString();
+  const duration = practiceDurationMinutes(snapshot.recipe);
   const attempt: LocalAttempt = {
     id: snapshot.id,
     snapshot,
@@ -36,14 +38,17 @@ export async function createLocalAttempt(snapshot: PracticeSnapshot) {
     elapsedSeconds: 0,
     startedAt: now,
     updatedAt: now,
+    timingMode: "wall_clock",
+    returnPath: safePracticeReturnPath(returnPath ?? (typeof window !== "undefined" ? window.location.pathname : "/")),
+    ...(duration !== null ? { deadlineAt: new Date(Date.parse(now) + duration * 60_000).toISOString() } : {}),
   };
   await (await database()).put("attempts", attempt);
   return attempt;
 }
 
 export async function putAttempt(attempt: LocalAttempt) {
-  attempt.updatedAt = new Date().toISOString();
-  await (await database()).put("attempts", attempt);
+  const saved = { ...attempt, updatedAt: new Date().toISOString() };
+  await (await database()).put("attempts", saved);
 }
 
 export async function getAttempt(id: string) { return (await database()).get("attempts", id); }

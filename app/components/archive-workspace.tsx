@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { useRouter } from "next/navigation";
-import { PYQ_EXAMS, type PyqExam } from "../../lib/pyq-exams";
+import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
 import type { SubjectPracticeInventory } from "../../lib/pyq-catalog";
 import type { PracticeOrder, PracticeRecipeV3, PracticeSnapshot } from "../../lib/practice-types";
 import { createLocalAttempt } from "../../lib/practice-store";
@@ -11,11 +11,12 @@ import { addScope, addedQuestionCount, ancestors, buildSelectionIndex, removeSco
 import { ScopeFlow } from "./scope-flow";
 
 const COUNTS = [10, 20, 30, 50] as const;
+const DURATIONS = [10, 20, 30, 60, 120] as const;
 const format = (value: number) => value.toLocaleString("en-IN");
 
-function SourceChoice({ exam, state, count, disabled, onChange }: { exam: PyqExam; state: "none" | "partial" | "all"; count: number; disabled: boolean; onChange: () => void }) {
-  return <button type="button" role="checkbox" aria-checked={state === "partial" ? "mixed" : state === "all"} disabled={disabled} className={"scope-source " + state} onClick={onChange}>
-    <span className="scope-check" aria-hidden="true">{state === "all" ? "✓" : state === "partial" ? "−" : ""}</span><span>{exam}</span><strong>{format(count)}</strong>
+function SourceChoice({ exam, state, count, available, disabled, onChange }: { exam: PyqExam; state: "none" | "partial" | "all"; count: number; available: number; disabled: boolean; onChange: () => void }) {
+  return <button type="button" role="checkbox" aria-checked={state === "partial" ? "mixed" : state === "all"} disabled={disabled} className={"scope-source " + state} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} onClick={onChange}>
+    <span className="scope-check" aria-hidden="true">{state === "all" ? "✓" : state === "partial" ? "−" : ""}</span><span className="scope-source-name">{exam}</span><strong>{format(count)}<small>included</small></strong><small className="scope-source-available">{format(available)} available</small>
   </button>;
 }
 
@@ -56,6 +57,9 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const [focusId, setFocusId] = useState<string>();
   const [count, setCount] = useState<number | "all">(20);
   const [order, setOrder] = useState<PracticeOrder>("newest");
+  const [durationChoice, setDurationChoice] = useState("untimed");
+  const [customMinutes, setCustomMinutes] = useState("30");
+  const [sourceScopeId, setSourceScopeId] = useState("all");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [restored, setRestored] = useState(false);
@@ -76,6 +80,11 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
           if (typeof draft.focusId === "string" && index.nodesById.has(draft.focusId)) setFocusId(draft.focusId);
           if (draft.count === "all" || Number.isInteger(draft.count) && draft.count > 0 && draft.count <= 100) setCount(draft.count);
           if (draft.order === "newest" || draft.order === "shuffle") setOrder(draft.order);
+          if (Number.isInteger(draft.durationMinutes) && draft.durationMinutes >= 1 && draft.durationMinutes <= 720) {
+            const savedMinutes = String(draft.durationMinutes);
+            setDurationChoice(DURATIONS.some((minutes) => minutes === draft.durationMinutes) ? savedMinutes : "custom");
+            setCustomMinutes(savedMinutes);
+          }
         }
       }
     } catch { setDraftWarning("Your builder settings could not be restored in this browser. You can still choose a new practice."); }
@@ -83,8 +92,9 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }, [draftKey, initialInventory.version, index]);
   useEffect(() => {
     if (!restored) return;
-    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 3, inventoryVersion: initialInventory.version, paths, focusId, count, order })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
-  }, [restored, draftKey, initialInventory.version, paths, focusId, count, order]);
+    const minutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
+    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 3, inventoryVersion: initialInventory.version, paths, focusId, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
+  }, [restored, draftKey, initialInventory.version, paths, focusId, count, order, durationChoice, customMinutes]);
   useEffect(() => {
     if (moveFocus.current) { focusHeading.current?.focus({ preventScroll: true }); moveFocus.current = false; }
   }, [focusId]);
@@ -94,16 +104,29 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const current = focusId ? index.nodesById.get(focusId) : undefined;
   const focusPath = current ? ancestors(current.id, index) : [];
   const metrics = current ? scopeMetrics(current.id, paths, index) : undefined;
-  const branchSourceCounts = useMemo(() => Object.fromEntries(PYQ_EXAMS.map((exam) => [exam,
-    (index.leavesById.get(focusId || "") || []).filter((leaf) => Object.hasOwn(paths, leaf.id)).reduce((sum, leaf) => sum + leaf.examCounts[exam], 0),
-  ])) as Record<PyqExam, number>, [focusId, index, paths]);
+  const activeSourceId = sourceScopeId !== "all" && index.nodesById.has(sourceScopeId) && scopeMetrics(sourceScopeId, paths, index).state !== "none" ? sourceScopeId : "all";
+  const sourceLeaves = activeSourceId === "all" ? [...index.nodesById.values()].filter((node) => node.kind === "subtopic" && Object.hasOwn(paths, node.id)) : (index.leavesById.get(activeSourceId) || []).filter((node) => Object.hasOwn(paths, node.id));
+  const sourceMetrics = Object.fromEntries(PYQ_EXAMS.map((exam) => {
+    const eligible = sourceLeaves.filter((leaf) => leaf.examCounts[exam] > 0);
+    const enabled = eligible.filter((leaf) => paths[leaf.id]?.includes(exam));
+    return [exam, { available: eligible.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), count: enabled.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), state: (enabled.length === 0 ? "none" : enabled.length === eligible.length ? "all" : "partial") as "none" | "partial" | "all" }];
+  })) as Record<PyqExam, { available: number; count: number; state: "none" | "partial" | "all" }>;
+  const sourceTargets = [...new Set([...selectedIds, ...(activeSourceId !== "all" ? [activeSourceId] : []), ...(current && metrics?.state !== "none" ? [current.id] : [])])];
+  const durationMinutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
+  const validDuration = durationMinutes === null || Number.isInteger(durationMinutes) && durationMinutes >= 1 && durationMinutes <= 720;
   const practiceCount = count === "all" ? totals.matchingCount : count;
   const shortage = totals.matchingCount > 0 && practiceCount > totals.matchingCount;
-  const canStart = restored && totals.matchingCount > 0 && !shortage && !loading;
+  const canStart = restored && totals.matchingCount > 0 && !shortage && validDuration && !loading;
+  function toggleSource(exam: PyqExam) {
+    if (loading || !restored) return;
+    const enabled = sourceMetrics[exam].state !== "all";
+    setPaths((existing) => (activeSourceId === "all" ? totals.subjectIds : [activeSourceId]).reduce((updated, id) => setScopeExam(updated, id, exam, enabled, index), existing));
+    setError(""); setNotice("");
+  }
   function selectScope(id: string) {
     if (loading || !restored) return;
     setPaths((existing) => replaceScope(existing, id, index, initialExam));
-    setFocusId(id); setError(""); setNotice(""); moveFocus.current = true;
+    setFocusId(id); setSourceScopeId("all"); setError(""); setNotice(""); moveFocus.current = true;
   }
   function toggleSubject(id: string) {
     if (loading || !restored) return;
@@ -112,7 +135,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       setPaths(next);
       if (current?.subjectId === id) setFocusId(selectionCounts(next, index).subjectIds[0]);
     } else { setPaths((existing) => addScope(existing, id, index, initialExam)); setFocusId(id); }
-    setError(""); setNotice("");
+    setSourceScopeId("all"); setError(""); setNotice("");
   }
   function browse(id: string) {
     if (loading || !restored) return;
@@ -121,13 +144,13 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   function remove(id: string) {
     if (loading || !restored) return;
     const next = removeScope(paths, id, index);
-    setPaths(next); setError("");
+    setPaths(next); setSourceScopeId("all"); setError("");
     if (!Object.keys(next).length) setFocusId(undefined);
     else if (current && scopeMetrics(current.subjectId, next, index).state === "none") setFocusId(selectionCounts(next, index).subjectIds[0]);
   }
   async function startPractice() {
     if (!canStart) return;
-    const recipe: PracticeRecipeV3 = { version: 3, subjectIds: totals.subjectIds, paths: Object.entries(paths).filter(([, exams]) => exams.length).map(([subtopicId, exams]) => ({ subtopicId, exams: [...exams] })), count, order };
+    const recipe: PracticeRecipeV3 = { version: 3, subjectIds: totals.subjectIds, paths: Object.entries(paths).filter(([, exams]) => exams.length).map(([subtopicId, exams]) => ({ subtopicId, exams: [...exams] })), count, order, durationMinutes };
     setLoading(true); setError("");
     try {
       const response = await fetch("/api/practice-snapshots", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(recipe) });
@@ -160,25 +183,35 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
           <div className="scope-navigation-help"><span>Click a branch to select its scope. Breadcrumbs only change your view.</span>{current.parentId ? <button type="button" disabled={loading} onClick={() => browse(current.parentId!)}>← Browse back · keep selection</button> : null}</div>
           <div className="scope-current-action"><span><strong>{format(metrics?.selectedCount || 0)}</strong> selected here / {format(current.questionCount)} available</span><button type="button" disabled={loading} onClick={() => selectScope(current.id)}>{"Select this entire " + (current.kind === "head" ? "section" : current.kind)}</button></div>
           <ScopeFlow inventory={initialInventory} paths={paths} focusId={focusId} onSelect={selectScope} onBrowse={browse} disabled={loading} />
-          <section className="scope-sources" aria-labelledby="scope-sources-title"><div><span className="selector-label">Sources for this branch</span><h3 id="scope-sources-title">{current.label}</h3><p>Counts show available questions in your selected subtopics here. Mixed means their sources differ. New branches use this subject’s currently enabled sources.</p></div><div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={branchSourceCounts[exam]} state={metrics?.examStates[exam] || "none"} disabled={loading || branchSourceCounts[exam] === 0 || metrics?.state === "none"} onChange={() => { setPaths((existing) => setScopeExam(existing, current.id, exam, metrics?.examStates[exam] !== "all", index)); setError(""); setNotice(""); }} />)}</div>{metrics?.state === "none" ? <small>Select this branch first to adjust its sources.</small> : null}</section>
         </> : <div className="scope-empty"><span aria-hidden="true">↗</span><strong>Your syllabus, your pace.</strong><p>Select Geography, Environment or Polity to build a focused practice.</p></div>}
         <p className="scope-status" role="status" aria-live="polite">{notice || (totals.subjectIds.length ? format(totals.matchingCount) + " questions match your selection across " + totals.subjectIds.length + " subject" + (totals.subjectIds.length === 1 ? "." : "s.") : "No subjects selected. Choose one to begin.")}</p>
       </section>
       <aside className="selection-dock scope-dock" aria-labelledby="practice-summary-title">
+        <div className="scope-dock-body">
         <span className="selector-label">3 · Set size & start</span><h2 id="practice-summary-title">Your practice</h2>
         <div className="scope-matching" data-testid="matching-count"><strong>{format(totals.matchingCount)}</strong><span>questions match your selection</span></div>
         <div className="scope-selection-list">{selectedIds.map((id) => { const node = index.nodesById.get(id)!; const branchPath = ancestors(id, index); const metric = scopeMetrics(id, paths, index); const leaves = index.leavesById.get(id) || []; return <div className="scope-selection-item" key={id}><div><strong>{branchPath[0]?.label}</strong><span>{branchPath.length > 1 ? branchPath.slice(1).map((part) => part.label).join(" → ") : "All sections"}</span><small>{format(metric.selectedCount)} matching · {leaves.length} subtopic{leaves.length === 1 ? "" : "s"}</small></div><button type="button" disabled={loading} aria-label={"Remove " + node.label} onClick={() => remove(id)}>×</button></div>; })}{!selectedIds.length ? <p>Choose a subject to begin.</p> : null}</div>
-        <div className="session-paper-counts" aria-label="Matching questions by examination">{PYQ_EXAMS.map((exam) => <span key={exam}><b>{exam}</b><strong>{format(totals.examTotals[exam])}</strong></span>)}</div>
+        <section className="scope-sources" aria-labelledby="scope-sources-title">
+          <h3 id="scope-sources-title">Exam sources</h3>
+          <label className="scope-source-target">Apply sources to<select aria-label="Apply sources to" disabled={loading || !restored || !totals.subjectIds.length} value={activeSourceId} onChange={(event) => setSourceScopeId(event.target.value)}><option value="all">All selected questions</option>{sourceTargets.map((id) => <option value={id} key={id}>{index.nodesById.get(id)?.label}</option>)}</select></label>
+          <div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={sourceMetrics[exam].count} available={sourceMetrics[exam].available} state={sourceMetrics[exam].state} disabled={loading || !restored || sourceMetrics[exam].available === 0} onChange={() => toggleSource(exam)} />)}</div>
+          <p>Colours identify each exam throughout the chart and test. Mixed means only some selected subtopics use that source.</p>
+          {activeSourceId !== "all" ? <div className="scope-source-total" aria-label="Matching questions across all selected branches">Whole practice: {PYQ_EXAMS.map((exam) => <span key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties}>{exam} {format(totals.examTotals[exam])}</span>)}</div> : null}
+        </section>
         <fieldset className="scope-size-options" disabled={loading || !restored}><legend>Questions in this practice</legend><div className="segmented">{COUNTS.map((value) => <button type="button" key={value} className={count === value ? "active" : ""} aria-pressed={count === value} onClick={() => { setCount(value); setError(""); }}>{value}</button>)}<button type="button" className={count === "all" ? "active" : ""} aria-pressed={count === "all"} onClick={() => { setCount("all"); setError(""); }}>All</button></div></fieldset>
         {shortage ? <div className="scope-shortage" role="alert"><p>You chose {practiceCount}, but only {format(totals.matchingCount)} questions match.</p><button type="button" disabled={loading} onClick={() => setCount("all")}>Use all {format(totals.matchingCount)} available</button></div> : null}
         {totals.subjectIds.length > 0 && totals.matchingCount === 0 ? <p className="scope-shortage">No questions match the enabled sources. Add a source or choose another branch.</p> : null}
         <label className="scope-order">Question order<select disabled={loading || !restored} value={order} onChange={(event) => setOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label>
-        <div className="scope-practice-size"><strong>{totals.subjectIds.length ? format(practiceCount) : "20"}</strong><span>questions in this practice{count === "all" ? " · all matches" : ""}</span></div>
+        <div className="scope-duration"><label className="scope-order">Test duration<select disabled={loading || !restored} value={durationChoice} onChange={(event) => { setDurationChoice(event.target.value); setError(""); }}><option value="untimed">Untimed</option>{DURATIONS.map((minutes) => <option key={minutes} value={String(minutes)}>{minutes} minutes</option>)}<option value="custom">Custom time</option></select></label>{durationChoice === "custom" ? <label className="scope-order">Minutes<input type="number" inputMode="numeric" min={1} max={720} step={1} disabled={loading || !restored} value={customMinutes} onChange={(event) => setCustomMinutes(event.target.value)} /></label> : null}<small>{durationChoice === "untimed" ? "No time limit. Submit when you are ready." : "Countdown starts when the test opens. Time runs through refreshes and submits when it expires."}</small>{!validDuration ? <p className="inline-error" role="alert">Choose a whole number of minutes from 1 to 720.</p> : null}</div>
+        </div>
+        <div className="scope-dock-footer">
+        <div className="scope-practice-size"><strong>{totals.subjectIds.length ? format(practiceCount) : "20"}</strong><span>{totals.matchingCount === 0 || shortage ? "questions requested" : "questions in this practice"}<small>{format(totals.matchingCount)} matching{count === "all" ? " · all included" : ""}</small></span></div>
         <button type="button" className="start-practice" disabled={!canStart} onClick={() => void startPractice()}>{loading ? "Preparing your practice…" : "Start " + (totals.subjectIds.length ? format(practiceCount) : 20) + "-question practice →"}</button>
         <small className="scope-local-note">Your attempt is saved on this browser. No account needed.</small>{draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}{error ? <p className="inline-error" role="alert">{error}</p> : null}
+        </div>
       </aside>
     </div>
-    <div className="scope-mobile-bar"><div><strong>{format(totals.matchingCount)} matching</strong><span>{format(practiceCount)} in practice</span></div><button type="button" disabled={!canStart} onClick={() => void startPractice()}>{loading ? "Preparing…" : "Start " + format(practiceCount) + " →"}</button></div>
-    {addOpen ? <AddScopeDialog index={index} paths={paths} initialId={current?.subjectId} preferredExam={initialExam} onCancel={() => setAddOpen(false)} onAdd={(id) => { setPaths((existing) => addScope(existing, id, index, initialExam)); setFocusId(id); setError(""); setNotice(""); setAddOpen(false); }} /> : null}
+    <div className="scope-mobile-bar"><div><strong>{format(totals.matchingCount)} matching</strong><span>{format(practiceCount)} {totals.matchingCount === 0 || shortage ? "requested" : "in practice"}</span></div><button type="button" disabled={!canStart} onClick={() => void startPractice()}>{loading ? "Preparing…" : "Start " + format(practiceCount) + " →"}</button></div>
+    {addOpen ? <AddScopeDialog index={index} paths={paths} initialId={current?.subjectId} preferredExam={initialExam} onCancel={() => setAddOpen(false)} onAdd={(id) => { setPaths((existing) => addScope(existing, id, index, initialExam)); setFocusId(id); setSourceScopeId("all"); setError(""); setNotice(""); setAddOpen(false); }} /> : null}
   </main>;
 }

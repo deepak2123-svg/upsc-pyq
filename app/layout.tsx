@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
+import "./scope-flow-redesign.css";
+import "./practice-builder.css";
+import "./practice-experience.css";
 import { PwaRegister } from "./pwa-register";
 
 const inter = Inter({
@@ -11,6 +14,7 @@ const inter = Inter({
 const sourceSerif = Source_Serif_4({
   variable: "--font-reading",
   subsets: ["latin"],
+  fallback: ["Georgia", "serif"],
 });
 
 export const metadata: Metadata = {

@@ -41,6 +41,9 @@ export async function POST(request: Request) {
   if (strict && input.order !== "newest" && input.order !== "shuffle") {
     return NextResponse.json({ error: "Choose newest or shuffle order." }, { status: 400 });
   }
+  if (strict && input.durationMinutes !== undefined && input.durationMinutes !== null && (typeof input.durationMinutes !== "number" || !Number.isInteger(input.durationMinutes) || input.durationMinutes < 1 || input.durationMinutes > 720)) {
+    return NextResponse.json({ error: "Test duration must be a whole number of minutes from 1 to 720, or null for untimed." }, { status: 400 });
+  }
 
   const order = input.order === "shuffle" ? "shuffle" : "newest";
   const requestedCount: number | "all" = input.count === "all" ? "all" : strict
@@ -110,7 +113,7 @@ export async function POST(request: Request) {
       exams: PYQ_EXAMS.filter((exam) => exams.has(exam)),
     }));
     recipe = strict
-      ? { version: 3, subjectIds, paths, count: requestedCount, order } satisfies PracticeRecipeV3
+      ? { version: 3, subjectIds, paths, count: requestedCount, order, durationMinutes: typeof input.durationMinutes === "number" ? input.durationMinutes : null } satisfies PracticeRecipeV3
       : { version: 2, subjectIds, paths, count: requestedCount, order } satisfies PracticeRecipeV2;
   } else {
     if (!isPyqExam(input.exam)) return NextResponse.json({ error: "Choose a valid examination." }, { status: 400 });
@@ -150,6 +153,7 @@ export async function POST(request: Request) {
       paper: question.paper,
       questionNumber: question.questionNumber,
       subject: path?.subject || question.subject,
+      section: path?.head || question.taxonomyHead || undefined,
       topic: path?.topic || question.taxonomyChapter || question.topic,
       subtopic: path?.subtopic || question.taxonomySubtopic || question.subtopic,
       promptLines: question.promptLines,

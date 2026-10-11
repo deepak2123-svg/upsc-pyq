@@ -2,150 +2,243 @@
 
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { AnimatePresence, motion } from "motion/react";
-import { useCallback, useEffect, useState } from "react";
-import type { AnswerFeedback, Bookmark, LocalAttempt } from "../../lib/practice-types";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import type { Bookmark, LocalAttempt } from "../../lib/practice-types";
 import { deleteBookmark, getAttempt, getBookmark, putAttempt, saveBookmark } from "../../lib/practice-store";
-
-function formatTime(seconds: number) {
-  const minutes = Math.floor(seconds / 60).toString().padStart(2, "0");
-  return `${minutes}:${(seconds % 60).toString().padStart(2, "0")}`;
-}
+import { attemptClock, attemptReturnPath, completeAttempt, formatPracticeTime, hasCompleteFeedback, requestAnswerFeedback } from "../../lib/practice-session";
+import { PYQ_EXAM_COLORS } from "../../lib/pyq-exams";
 
 export function PracticeClient({ id }: { id: string }) {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const reducedMotion = useReducedMotion();
   const [attempt, setAttempt] = useState<LocalAttempt | null>();
-  const [checking, setChecking] = useState(false);
+  const [busy, setBusy] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
-  const requestedIndex = Number(searchParams.get("q"));
-  const attemptStatus = attempt?.status;
+  const [error, setError] = useState("");
+  const [gradeError, setGradeError] = useState("");
+  const [gradeRetry, setGradeRetry] = useState(0);
+  const [saveFailed, setSaveFailed] = useState(false);
+  const [now, setNow] = useState(() => Date.now());
+  const current = useRef<LocalAttempt | null>(null);
+  const writes = useRef<Promise<void>>(Promise.resolve());
+  const submitting = useRef(false);
+  const expiryTried = useRef(false);
+  const pendingCompletion = useRef<LocalAttempt | null>(null);
+  const queryIndex = searchParams.get("q");
 
-  useEffect(() => {
-    void getAttempt(id).then((stored) => {
-      if (stored && Number.isInteger(requestedIndex) && requestedIndex >= 0 && requestedIndex < stored.snapshot.questions.length) stored.currentIndex = requestedIndex;
-      setAttempt(stored || null);
-    });
-  }, [id, requestedIndex]);
+  const showAttempt = useCallback((value: LocalAttempt) => {
+    current.current = value;
+    setAttempt(value);
+  }, []);
 
-  useEffect(() => {
-    if (attemptStatus !== "in_progress") return;
-    const timer = window.setInterval(() => setAttempt((current) => current ? { ...current, elapsedSeconds: current.elapsedSeconds + 1 } : current), 1000);
-    return () => window.clearInterval(timer);
-  }, [attemptStatus]);
-
-  useEffect(() => {
-    if (attempt?.status === "in_progress" && attempt.elapsedSeconds % 5 === 0) void putAttempt(attempt);
-  }, [attempt]);
-
-  const question = attempt?.snapshot.questions[attempt.currentIndex];
-  const feedback = question ? attempt?.feedback[question.id] : undefined;
-  const selectedAnswer = question ? attempt?.answers[question.id] : undefined;
-
-  useEffect(() => {
-    if (!question) return;
-    void getBookmark(question.id).then((value) => setBookmarked(Boolean(value)));
-  }, [question]);
-
-  const persist = useCallback(async (next: LocalAttempt) => {
-    setAttempt(next);
-    await putAttempt(next);
+  // Queue immutable snapshots: timer, answer and navigation saves cannot race.
+  const persist = useCallback(async (value: LocalAttempt) => {
+    const write = writes.current.catch(() => {}).then(() => putAttempt(value));
+    writes.current = write;
+    await write;
   }, []);
 
   useEffect(() => {
-    if (!attempt || !question || attempt.status !== "completed" || feedback) return;
     let active = true;
-    void fetch("/api/practice/check", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ questionId: question.id, selectedOption: "review" }),
-    }).then(async (response) => {
-      if (!response.ok || !active) return;
-      const result = await response.json() as AnswerFeedback;
-      if (active) await persist({ ...attempt, feedback: { ...attempt.feedback, [question.id]: result } });
+    current.current = null;
+    pendingCompletion.current = null;
+    expiryTried.current = false;
+    submitting.current = false;
+    setAttempt(undefined);
+    setBusy(false);
+    setError("");
+    setGradeError("");
+    setSaveFailed(false);
+    void getAttempt(id).then((stored) => {
+      if (!active) return;
+      current.current = stored || null;
+      setAttempt(stored || null);
+      setNow(Date.now());
+    }).catch(() => {
+      if (active) { setAttempt(null); setError("This browser could not open your saved practice. Allow browser storage and reload this page."); }
     });
     return () => { active = false; };
-  }, [attempt, feedback, persist, question]);
+  }, [id]);
 
-  async function answer(option: string) {
-    if (!attempt || !question || selectedAnswer || checking || attempt.status === "completed") return;
-    setChecking(true);
-    const response = await fetch("/api/practice/check", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ questionId: question.id, selectedOption: option }) });
-    const result = await response.json() as AnswerFeedback;
-    if (response.ok) await persist({ ...attempt, answers: { ...attempt.answers, [question.id]: option }, feedback: { ...attempt.feedback, [question.id]: result } });
-    setChecking(false);
+  useEffect(() => {
+    const value = current.current;
+    const requestedIndex = queryIndex === null ? NaN : Number(queryIndex);
+    if (value && Number.isInteger(requestedIndex) && requestedIndex >= 0 && requestedIndex < value.snapshot.questions.length && requestedIndex !== value.currentIndex) {
+      showAttempt({ ...value, currentIndex: requestedIndex });
+    }
+  }, [attempt?.id, queryIndex, showAttempt]);
+
+  const finish = useCallback(async (reason: "submitted" | "time_expired" = "submitted") => {
+    const value = current.current;
+    if (!value || submitting.current) return;
+    if (value.status === "completed") { router.push(`/practice/${id}/results`); return; }
+    submitting.current = true;
+    setBusy(true);
+    setError("");
+    const completed = pendingCompletion.current || completeAttempt(value, attemptClock(value).expired ? "time_expired" : reason);
+    pendingCompletion.current = completed;
+    try {
+      await persist(completed);
+      showAttempt(completed);
+      setSaveFailed(false);
+      router.push(`/practice/${id}/results`);
+    } catch {
+      setSaveFailed(true);
+      setError("Your submission could not be saved in this browser. Your answers remain here. Retry saving before leaving this page.");
+    } finally {
+      submitting.current = false;
+      setBusy(false);
+    }
+  }, [id, persist, router, showAttempt]);
+
+  const attemptStatus = attempt?.status;
+  useEffect(() => {
+    if (attemptStatus !== "in_progress" || !saveFailed) return;
+    const warnBeforeLeaving = (event: BeforeUnloadEvent) => { event.preventDefault(); event.returnValue = ""; };
+    window.addEventListener("beforeunload", warnBeforeLeaving);
+    return () => window.removeEventListener("beforeunload", warnBeforeLeaving);
+  }, [attemptStatus, saveFailed]);
+
+  useEffect(() => {
+    if (attemptStatus !== "in_progress") return;
+    let ticks = 0;
+    function tick() {
+      const value = current.current;
+      if (!value || value.status !== "in_progress" || pendingCompletion.current) return;
+      const timestamp = Date.now();
+      setNow(timestamp);
+      const clock = attemptClock(value, timestamp);
+      if (clock.expired) {
+        if (!expiryTried.current) { expiryTried.current = true; void finish("time_expired"); }
+        return;
+      }
+      ticks += 1;
+      const elapsedSeconds = value.timingMode === "wall_clock" ? clock.elapsedSeconds : value.elapsedSeconds + 1;
+      const next = { ...value, elapsedSeconds };
+      showAttempt(next);
+      if (ticks % 5 === 0) void persist(next).catch(() => {
+        setSaveFailed(true);
+        setError("Your latest progress could not be saved. Retry saving before leaving this page.");
+      });
+    }
+    const timer = window.setInterval(tick, 1000);
+    const onVisible = () => { if (document.visibilityState === "visible") tick(); };
+    document.addEventListener("visibilitychange", onVisible);
+    if (current.current && attemptClock(current.current).expired) { expiryTried.current = true; void finish("time_expired"); }
+    return () => { window.clearInterval(timer); document.removeEventListener("visibilitychange", onVisible); };
+  }, [attemptStatus, finish, persist, showAttempt]);
+
+  const question = attempt?.snapshot.questions[attempt.currentIndex];
+  const questionId = question?.id;
+  const feedback = attempt?.status === "completed" && question ? attempt.feedback[question.id] : undefined;
+  const selectedAnswer = question ? attempt?.answers[question.id] : undefined;
+
+  useEffect(() => {
+    if (!questionId) return;
+    let active = true;
+    void getBookmark(questionId).then((value) => { if (active) setBookmarked(Boolean(value)); }).catch(() => {
+      if (active) setBookmarked(false);
+    });
+    return () => { active = false; };
+  }, [questionId]);
+
+  useEffect(() => {
+    const value = current.current;
+    if (!value || value.status !== "completed" || pendingCompletion.current || hasCompleteFeedback(value)) return;
+    let active = true;
+    setGradeError("");
+    void requestAnswerFeedback(value).then(async (graded) => {
+      if (!active) return;
+      const latest = current.current;
+      if (!latest || latest.status !== "completed") return;
+      const next = { ...latest, feedback: graded };
+      showAttempt(next);
+      await persist(next);
+    }).catch((failure: unknown) => {
+      if (active) setGradeError(failure instanceof Error ? failure.message : "Your answer sheet could not be loaded. Please retry.");
+    });
+    return () => { active = false; };
+  }, [attemptStatus, gradeRetry, persist, showAttempt]);
+
+  async function saveChange(next: LocalAttempt) {
+    showAttempt(next);
+    setBusy(true);
+    setError("");
+    try { await persist(next); setSaveFailed(false); }
+    catch { setSaveFailed(true); setError("Your latest progress could not be saved. Your answers remain here. Retry saving before leaving this page."); }
+    finally { setBusy(false); }
+  }
+
+  async function answer(option: string | null) {
+    const value = current.current;
+    if (!value || !question || busy || saveFailed || pendingCompletion.current || value.status !== "in_progress" || attemptClock(value).expired) return;
+    const answers = { ...value.answers };
+    if (option === null) delete answers[question.id];
+    else answers[question.id] = option;
+    await saveChange({ ...value, answers });
   }
 
   async function navigate(index: number) {
-    if (!attempt) return;
-    const next = { ...attempt, currentIndex: Math.max(0, Math.min(attempt.snapshot.questions.length - 1, index)) };
-    await persist(next);
+    const value = current.current;
+    if (!value || busy || pendingCompletion.current) return;
+    const next = { ...value, currentIndex: Math.max(0, Math.min(value.snapshot.questions.length - 1, index)) };
+    await saveChange(next);
     window.history.replaceState(null, "", `/practice/${id}?q=${next.currentIndex}`);
     document.querySelector<HTMLElement>(".practice-question h1")?.focus();
   }
 
   async function toggleBookmark() {
     if (!question) return;
-    if (bookmarked) await deleteBookmark(question.id);
-    else {
-      const bookmark: Bookmark = { questionId: question.id, exam: question.exam, year: question.year, paper: question.paper, questionNumber: question.questionNumber, subject: question.subject, topic: question.topic, prompt: question.promptLines.join("\n"), savedAt: new Date().toISOString() };
-      await saveBookmark(bookmark);
-    }
-    setBookmarked(!bookmarked);
-  }
-
-  async function finish() {
-    if (!attempt) return;
-    const completed = { ...attempt, status: "completed" as const, completedAt: new Date().toISOString() };
-    await persist(completed);
-    router.push(`/practice/${id}/results`);
+    try {
+      if (bookmarked) await deleteBookmark(question.id);
+      else {
+        const bookmark: Bookmark = { questionId: question.id, exam: question.exam, year: question.year, paper: question.paper, questionNumber: question.questionNumber, subject: question.subject, topic: question.topic, prompt: question.promptLines.join("\n"), savedAt: new Date().toISOString() };
+        await saveBookmark(bookmark);
+      }
+      setBookmarked(!bookmarked);
+    } catch { setError("This bookmark could not be saved. Your selected answer has not changed."); }
   }
 
   if (attempt === undefined) return <main className="practice-loading" aria-busy="true"><div /><div /><div /></main>;
-  if (!attempt || !question) return <main className="practice-missing"><p className="pyq-kicker">Local practice</p><h1>This session is not on this device.</h1><p>Practice history is stored only in this browser.</p><Link href="/">Return to PYQs</Link></main>;
+  if (!attempt || !question) return <main className="practice-missing"><p className="pyq-kicker">Local practice</p><h1>This session is not on this device.</h1><p>{error || "Practice history is stored only in this browser."}</p><Link href="/">Return to PYQs</Link></main>;
 
-  const answered = Object.keys(attempt.answers).length;
+  const answered = attempt.snapshot.questions.filter((item) => Boolean(attempt.answers[item.id])).length;
+  const clock = attemptClock(attempt, now);
+  const locked = busy || saveFailed || Boolean(pendingCompletion.current) || clock.expired || attempt.status === "completed";
+  const isTimed = clock.remainingSeconds !== null;
+  const timerValue = isTimed && attempt.status !== "completed" ? clock.remainingSeconds! : clock.elapsedSeconds;
   return (
-    <main className="practice-shell">
+    <main className="practice-shell exam-experience">
       <header className="practice-topbar">
-        <Link href={`/exams/${question.exam}`} aria-label="Exit practice">← Exit</Link>
-        <span><strong>{question.exam}</strong><small>{answered} of {attempt.snapshot.questions.length} answered</small></span>
-        <time aria-label={`Elapsed time ${formatTime(attempt.elapsedSeconds)}`}>{formatTime(attempt.elapsedSeconds)}</time>
-        <button onClick={() => void finish()}>{attempt.status === "completed" ? "Results" : "Finish"}</button>
+        <Link href={attemptReturnPath(attempt)} aria-label="Exit practice" onClick={(event) => { if (busy || saveFailed || pendingCompletion.current) { event.preventDefault(); setError("Save your latest progress before leaving this page."); } }}>← Exit</Link>
+        <span className="practice-session-title"><strong>Practice</strong><small aria-live="polite" aria-atomic="true">{answered} of {attempt.snapshot.questions.length} answered</small></span>
+        <div className={`practice-timer ${isTimed && timerValue <= 60 && attempt.status !== "completed" ? "is-low" : ""}`}><small>{isTimed && attempt.status !== "completed" ? "Time left" : "Elapsed"}</small><time aria-label={`${isTimed && attempt.status !== "completed" ? "Time remaining" : "Elapsed time"} ${formatPracticeTime(timerValue)}`}>{formatPracticeTime(timerValue)}</time></div>
+        <button disabled={busy} onClick={() => void finish()}>{busy ? "Saving…" : attempt.status === "completed" ? "Results" : pendingCompletion.current ? "Retry saving" : "Finish"}</button>
       </header>
-
-      <div className="practice-progress" role="progressbar" aria-label="Practice progress" aria-valuemin={1} aria-valuemax={attempt.snapshot.questions.length} aria-valuenow={attempt.currentIndex + 1}><span style={{ width: `${((attempt.currentIndex + 1) / attempt.snapshot.questions.length) * 100}%` }} /></div>
-
+      <div className="practice-progress" role="progressbar" aria-label="Practice progress" aria-valuemin={0} aria-valuemax={attempt.snapshot.questions.length} aria-valuenow={answered}><span style={{ width: `${answered / attempt.snapshot.questions.length * 100}%` }} /></div>
+      {error && <div className="practice-save-error" role="alert"><p>{error}</p>{saveFailed && !pendingCompletion.current && <button onClick={() => { const value = current.current; if (value) void saveChange(value); }}>Retry saving</button>}</div>}
       <AnimatePresence mode="wait" initial={false}>
-        <motion.article className="practice-question" key={question.id} initial={{ opacity: 0, x: 8 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -6 }} transition={{ duration: .16, ease: [.2, .8, .2, 1] }}>
-          <div className="question-heading">
-            <span>Question {attempt.currentIndex + 1} of {attempt.snapshot.questions.length}</span>
-            <span>{question.exam} {question.year} · {question.paper} · Question {question.questionNumber}</span>
-          </div>
+        <motion.article className="practice-question" key={question.id} initial={reducedMotion ? false : { opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={reducedMotion ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: reducedMotion ? 0 : .18 }}>
+          <div className="question-heading"><span>Question {attempt.currentIndex + 1} of {attempt.snapshot.questions.length}</span><span className="practice-source-badge" style={{ borderColor: PYQ_EXAM_COLORS[question.exam], color: PYQ_EXAM_COLORS[question.exam] }}>{question.exam} {question.year} · {question.paper} · Question {question.questionNumber}</span></div>
           <div className="question-copy">
             <h1 tabIndex={-1}>{question.promptLines.map((line, index) => <span key={`${question.id}-${index}`}>{line}</span>)}</h1>
-            <div className="practice-options" role="group" aria-label="Answer options">
-              {Object.entries(question.options).map(([key, value]) => {
-                const isSelected = selectedAnswer === key;
-                const isCorrect = Boolean(feedback && feedback.correctAnswer === key);
-                const isWrong = Boolean(feedback && isSelected && !feedback.correct);
-                return <button key={key} className={`${isSelected ? "selected" : ""} ${isCorrect ? "correct" : ""} ${isWrong ? "incorrect" : ""}`} disabled={Boolean(selectedAnswer) || checking || attempt.status === "completed"} onClick={() => void answer(key)}><span>{key}</span><strong>{value}</strong>{isCorrect && <em>Correct</em>}{isWrong && <em>Your answer</em>}</button>;
-              })}
+            <div className="practice-choice-panel">
+              <div className="practice-options" role="group" aria-label="Answer options" aria-busy={busy}>
+                {Object.entries(question.options).map(([key, value]) => {
+                  const isSelected = selectedAnswer === key;
+                  const isCorrect = feedback?.correctAnswer === key;
+                  const isWrong = Boolean(feedback && isSelected && !feedback.correct);
+                  return <button key={key} aria-pressed={isSelected} className={`${isSelected ? "selected" : ""} ${isCorrect ? "correct" : ""} ${isWrong ? "incorrect" : ""}`} disabled={locked} onClick={() => void answer(key)}><span>{key}</span><strong>{value}</strong>{isCorrect && <em>Correct answer</em>}{isWrong && <em>Your answer</em>}</button>;
+                })}
+              </div>
+              {attempt.status === "in_progress" && <div className="practice-answer-hint"><p>Choose one option. You can change it until you finish.</p>{selectedAnswer && <button disabled={locked} onClick={() => void answer(null)}>Clear answer</button>}<small>Answers and explanations appear after submission.</small></div>}
             </div>
           </div>
-
-          <AnimatePresence>
-            {feedback && <motion.section className={`answer-feedback ${feedback.correct ? "is-correct" : "is-incorrect"}`} initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} transition={{ duration: .18 }}>
-              <div><strong>{feedback.correct ? "Correct" : `Correct answer: ${feedback.correctAnswer}`}</strong><button className="bookmark-action" onClick={() => void toggleBookmark()}>{bookmarked ? "Saved" : "Bookmark"}</button></div>
-              {feedback.explanation && <p>{feedback.explanation}</p>}
-            </motion.section>}
-          </AnimatePresence>
-
-          <nav className="question-navigation" aria-label="Question navigation">
-            <button disabled={attempt.currentIndex === 0} onClick={() => void navigate(attempt.currentIndex - 1)}>← Previous</button>
-            {!feedback && <button className="bookmark-action" onClick={() => void toggleBookmark()}>{bookmarked ? "Saved" : "Bookmark"}</button>}
-            {attempt.currentIndex < attempt.snapshot.questions.length - 1 ? <button className="next-question" onClick={() => void navigate(attempt.currentIndex + 1)}>Next →</button> : <button className="next-question" onClick={() => void finish()}>View results →</button>}
-          </nav>
+          {attempt.status === "completed" && !feedback && <div className="practice-answer-hint" role="status"><p>{gradeError || "Loading your submitted answer sheet…"}</p>{gradeError && <button onClick={() => setGradeRetry((value) => value + 1)}>Retry answers</button>}</div>}
+          {feedback && <section className={`answer-feedback ${!selectedAnswer ? "is-unattempted" : feedback.correct ? "is-correct" : "is-incorrect"}`}><div><strong>{!selectedAnswer ? `Unattempted · Correct answer: ${feedback.correctAnswer}` : feedback.correct ? `Correct · Answer ${feedback.correctAnswer}` : `Correct answer: ${feedback.correctAnswer} · Your answer: ${selectedAnswer}`}</strong></div>{feedback.explanation ? <p>{feedback.explanation}</p> : <p className="explanation-unavailable">No published explanation is available for this question.</p>}</section>}
+          <nav className="question-navigation" aria-label="Question navigation"><button disabled={busy || Boolean(pendingCompletion.current) || attempt.currentIndex === 0} onClick={() => void navigate(attempt.currentIndex - 1)}>← Previous</button><button className="bookmark-action" onClick={() => void toggleBookmark()}>{bookmarked ? "Saved" : "Bookmark"}</button>{attempt.currentIndex < attempt.snapshot.questions.length - 1 ? <button className="next-question" disabled={busy || Boolean(pendingCompletion.current)} onClick={() => void navigate(attempt.currentIndex + 1)}>Next →</button> : <button className="next-question" disabled={busy} onClick={() => void finish()}>{attempt.status === "completed" ? "View results" : "Finish practice"}</button>}</nav>
         </motion.article>
       </AnimatePresence>
     </main>

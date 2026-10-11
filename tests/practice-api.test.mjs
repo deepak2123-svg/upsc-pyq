@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 async function workerFetch(pathname, init = {}) {
@@ -182,5 +183,84 @@ test("malformed payloads and older non-string exam values do not throw", async (
   for (const value of [null, [], "invalid", 42, { version: 2, subjectIds: [geo], paths: [{ subtopicId: oldEarthInterior, exams: [null, 3] }], count: "all", order: "newest" }, { exam: 3 }]) {
     const { response } = await create(value);
     assert.equal(response.status, 400, JSON.stringify(value));
+  }
+});
+
+test("V3 preserves optional duration without changing the selected question pool", async () => {
+  for (const durationMinutes of [null, 1, 60, 720]) {
+    const { response, body } = await create(recipeFor([{ subtopicId: earthInterior, exams: allExams }], { count: 3, durationMinutes }));
+    assert.equal(response.status, 201);
+    assert.equal(body.recipe.durationMinutes, durationMinutes);
+    assert.equal(body.matchingCount, 41);
+    assert.equal(body.questions.length, 3);
+    assert.ok(body.questions.every((question) => !Object.hasOwn(question, "answer") && !Object.hasOwn(question, "explanation")));
+  }
+  const untimed = await create(recipeFor([{ subtopicId: earthInterior, exams: allExams }], { count: 3 }));
+  assert.equal(untimed.response.status, 201);
+  assert.equal(untimed.body.recipe.durationMinutes ?? null, null);
+});
+
+test("V3 rejects malformed durations with an actionable error", async () => {
+  for (const durationMinutes of [0, -1, 721, 1.5, "20", false, {}, []]) {
+    const { response, body } = await create(recipeFor([{ subtopicId: earthInterior, exams: allExams }], { durationMinutes }));
+    assert.equal(response.status, 400, JSON.stringify(durationMinutes));
+    assert.match(body.error, /duration|minute|time/i);
+  }
+});
+
+async function grade(payload) {
+  const response = await workerFetch("/api/practice/grade", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  return { response, body: await response.json() };
+}
+
+test("final grading returns a complete answer sheet while keeping skipped questions separate", async () => {
+  const bank = JSON.parse(await readFile(new URL("../content/question-bank.json", import.meta.url), "utf8"));
+  const { body: snapshot } = await create(recipeFor([{ subtopicId: earthInterior, exams: allExams }], { count: 3 }));
+  const records = snapshot.questions.map((question) => bank.questions.find((candidate) => candidate.id === question.id));
+  const wrong = Object.keys(records[1].options).find((option) => option !== records[1].answer);
+  const { response, body } = await grade({
+    questionIds: records.map((question) => question.id),
+    answers: { [records[0].id]: records[0].answer, [records[1].id]: wrong },
+  });
+  assert.equal(response.status, 200);
+  assert.equal(body.total, 3);
+  assert.equal(body.correct, 1);
+  assert.equal(body.incorrect, 1);
+  assert.equal(body.unattempted, 1);
+  assert.deepEqual(Object.keys(body.feedback).sort(), records.map((question) => question.id).sort());
+  for (const record of records) {
+    assert.equal(body.feedback[record.id].correctAnswer, record.answer);
+    assert.equal(typeof body.feedback[record.id].correct, "boolean");
+    assert.notEqual(body.feedback[record.id].explanation, "Explanation pending editorial review.");
+  }
+  assert.equal(body.feedback[records[0].id].correct, true);
+  assert.equal(body.feedback[records[1].id].correct, false);
+  assert.equal(body.feedback[records[2].id].correct, false);
+});
+
+test("final grading rejects malformed or ambiguous question and answer sets", async () => {
+  const id = "cse-2013-gs-i-14";
+  const invalid = [
+    null, [], "bad", {},
+    { questionIds: [], answers: {} },
+    { questionIds: [id, id], answers: {} },
+    { questionIds: [id, "unknown"], answers: {} },
+    { questionIds: [3], answers: {} },
+    { questionIds: [id], answers: [] },
+    { questionIds: [id], answers: null },
+    { questionIds: [id], answers: { [id]: "Z" } },
+    { questionIds: [id], answers: { [id]: null } },
+    { questionIds: [id], answers: { [id]: 1 } },
+    { questionIds: [id], answers: { "unknown": "A" } },
+  ];
+  for (const payload of invalid) {
+    const { response, body } = await grade(payload);
+    assert.equal(response.status, 400, JSON.stringify(payload));
+    assert.equal(typeof body.error, "string");
+    assert.ok(body.error.length);
   }
 });

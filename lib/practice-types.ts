@@ -23,7 +23,11 @@ export type PracticeRecipeV2 = {
   order: PracticeOrder;
 };
 
-export type PracticeRecipeV3 = Omit<PracticeRecipeV2, "version"> & { version: 3 };
+export type PracticeRecipeV3 = Omit<PracticeRecipeV2, "version"> & {
+  version: 3;
+  /** Absent/null keeps older recipes and retakes untimed. */
+  durationMinutes?: number | null;
+};
 
 export type PracticeRecipe = LegacyPracticeRecipe | PracticeRecipeV2 | PracticeRecipeV3;
 
@@ -42,6 +46,7 @@ export type PracticeQuestion = {
   paper: string;
   questionNumber: number;
   subject: string;
+  section?: string;
   topic: string;
   subtopic: string;
   promptLines: string[];
@@ -75,6 +80,10 @@ export type LocalAttempt = {
   startedAt: string;
   updatedAt: string;
   completedAt?: string;
+  deadlineAt?: string;
+  timingMode?: "wall_clock";
+  completionReason?: "submitted" | "time_expired";
+  returnPath?: "/" | `/exams/${PyqExam}`;
 };
 
 export type Bookmark = {
