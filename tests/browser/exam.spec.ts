@@ -139,6 +139,13 @@ test("test duration defaults to untimed and survives draft reload and snapshot c
   expect(Date.parse(saved.deadlineAt as string) - Date.parse(saved.startedAt as string)).toBe(20 * 60_000);
   await expect(page.locator(".practice-topbar")).not.toContainText("Practice");
   await expect(page.getByRole("complementary", { name: "Question palette" }).getByRole("button")).toHaveCount(20);
+  const textSize = page.getByRole("group", { name: "Question text size" });
+  await expect(textSize.getByRole("button", { name: "Default question text" })).toHaveAttribute("aria-pressed", "true");
+  const defaultSize = await page.locator(".practice-question h1").evaluate((element) => parseFloat(getComputedStyle(element).fontSize));
+  await textSize.getByRole("button", { name: "Large question text" }).click();
+  expect(await page.locator(".practice-question h1").evaluate((element) => parseFloat(getComputedStyle(element).fontSize))).toBeGreaterThan(defaultSize);
+  await page.reload();
+  await expect(textSize.getByRole("button", { name: "Large question text" })).toHaveAttribute("aria-pressed", "true");
 });
 
 test("Exit restores the exam-specific builder's scope, sources, size and duration", async ({ page }) => {

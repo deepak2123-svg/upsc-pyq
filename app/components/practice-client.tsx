@@ -10,6 +10,14 @@ import { attemptClock, attemptReturnPath, completeAttempt, formatPracticeTime, h
 import { formatPracticePrompt } from "../../lib/practice-prompt";
 import { PYQ_EXAM_COLORS } from "../../lib/pyq-exams";
 
+type ReadingSize = "small" | "standard" | "large";
+const READING_SIZE_KEY = "upsc-pyq-reading-size:v1";
+const readingSizes: { value: ReadingSize; label: string; symbol: string }[] = [
+  { value: "small", label: "Small question text", symbol: "A−" },
+  { value: "standard", label: "Default question text", symbol: "A" },
+  { value: "large", label: "Large question text", symbol: "A+" },
+];
+
 const QuestionPalette = memo(function QuestionPalette({ questions, answers, currentIndex, bookmarkedIds, disabled, onNavigate }: {
   questions: PracticeQuestion[];
   answers: Record<string, string>;
@@ -45,6 +53,7 @@ export function PracticeClient({ id }: { id: string }) {
   const [busy, setBusy] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
   const [bookmarkedIds, setBookmarkedIds] = useState<Set<string>>(() => new Set());
+  const [readingSize, setReadingSize] = useState<ReadingSize>("standard");
   const [error, setError] = useState("");
   const [gradeError, setGradeError] = useState("");
   const [gradeRetry, setGradeRetry] = useState(0);
@@ -56,6 +65,18 @@ export function PracticeClient({ id }: { id: string }) {
   const expiryTried = useRef(false);
   const pendingCompletion = useRef<LocalAttempt | null>(null);
   const queryIndex = searchParams.get("q");
+
+  useEffect(() => {
+    try {
+      const saved = window.localStorage.getItem(READING_SIZE_KEY);
+      if (saved === "small" || saved === "standard" || saved === "large") setReadingSize(saved);
+    } catch { /* The control still works for this page if storage is unavailable. */ }
+  }, []);
+
+  const chooseReadingSize = useCallback((size: ReadingSize) => {
+    setReadingSize(size);
+    try { window.localStorage.setItem(READING_SIZE_KEY, size); } catch { /* Keep the in-memory choice. */ }
+  }, []);
 
   const showAttempt = useCallback((value: LocalAttempt) => {
     current.current = value;
@@ -264,8 +285,8 @@ export function PracticeClient({ id }: { id: string }) {
       <div className="exam-workspace">
         <QuestionPalette questions={attempt.snapshot.questions} answers={attempt.answers} currentIndex={attempt.currentIndex} bookmarkedIds={bookmarkedIds} disabled={busy || Boolean(pendingCompletion.current)} onNavigate={jumpToQuestion} />
       <AnimatePresence mode="wait" initial={false}>
-        <motion.article className="practice-question" key={question.id} initial={reducedMotion ? false : { opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={reducedMotion ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: reducedMotion ? 0 : .18 }}>
-          <div className="question-heading"><span>Question {attempt.currentIndex + 1} of {attempt.snapshot.questions.length}</span><span>{question.subject}{question.topic ? ` · ${question.topic}` : ""}</span></div>
+        <motion.article className={`practice-question reading-${readingSize}`} key={question.id} initial={reducedMotion ? false : { opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={reducedMotion ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: reducedMotion ? 0 : .18 }}>
+          <div className="question-heading"><div className="question-context"><span>Question {attempt.currentIndex + 1} of {attempt.snapshot.questions.length}</span><span>{question.subject}{question.topic ? ` · ${question.topic}` : ""}</span></div><fieldset className="reading-size" aria-label="Question text size"><legend>Text size</legend>{readingSizes.map((size) => <button key={size.value} type="button" title={size.label} aria-label={size.label} aria-pressed={readingSize === size.value} onClick={() => chooseReadingSize(size.value)}>{size.symbol}</button>)}</fieldset></div>
           <div className="question-copy">
             <div className="question-paper">
               <h1 tabIndex={-1}>{prompt.map((block, index) => block.kind === "statement" ? <span className="paper-statement" key={`${question.id}-${index}`}><b>{block.number}.</b>{block.text}</span> : <span key={`${question.id}-${index}`}>{block.text}</span>)}</h1>
