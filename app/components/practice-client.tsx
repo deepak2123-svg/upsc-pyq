@@ -301,7 +301,7 @@ export function PracticeClient({ id }: { id: string }) {
                   return <button key={key} aria-pressed={isSelected} className={`${isSelected ? "selected" : ""} ${isCorrect ? "correct" : ""} ${isWrong ? "incorrect" : ""}`} disabled={locked} onClick={() => void answer(key)}><span>{key}</span><strong>{value}</strong>{isCorrect && <em>Correct answer</em>}{isWrong && <em>Your answer</em>}</button>;
                 })}
               </div>
-              {attempt.status === "in_progress" && <div className="practice-answer-hint"><p>Choose one option. You can change it until you finish.</p>{selectedAnswer && <button disabled={locked} onClick={() => void answer(null)}>Clear answer</button>}<small>Answers and explanations appear after submission.</small></div>}
+              {attempt.status === "in_progress" && selectedAnswer ? <div className="practice-answer-hint"><button disabled={locked} onClick={() => void answer(null)}>Clear answer</button></div> : null}
             </div>
           </div>
           {attempt.status === "completed" && !feedback && <div className="practice-answer-hint" role="status"><p>{gradeError || "Loading your submitted answer sheet…"}</p>{gradeError && <button onClick={() => setGradeRetry((value) => value + 1)}>Retry answers</button>}</div>}

@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState, type CSSProperties } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { useReducedMotion } from "motion/react";
 import { sankey, type SankeyLink, type SankeyNode } from "d3-sankey";
 import type { SubjectPracticeInventory } from "../../lib/pyq-catalog";
 import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
@@ -188,9 +189,11 @@ function nodeSegments(node: ChartNode, selections: Map<string, NodeSelection>) {
 }
 
 export function ScopeFlow({ inventory, paths, focusId, onSelect, disabled = false }: ScopeFlowProps) {
+  const reducedMotion = useReducedMotion();
   const index = useMemo(() => buildSelectionIndex(inventory), [inventory]);
   const [expandedContext, setExpandedContext] = useState<Set<string>>(() => new Set());
   const [showOverview, setShowOverview] = useState(false);
+  const flowScroll = useRef<HTMLDivElement>(null);
   const focus = index.nodesById.get(focusId || "") || inventory.subjects
     .map((subject) => index.nodesById.get(subject.id)!)
     .find((subject) => (index.leavesById.get(subject.id) || []).some((leaf) => Object.hasOwn(paths, leaf.id)));
@@ -225,6 +228,11 @@ export function ScopeFlow({ inventory, paths, focusId, onSelect, disabled = fals
     return result;
   }, [layout]);
   const subjectLabel = index.nodesById.get(focus?.subjectId || "")?.label || "this subject";
+  useEffect(() => {
+    if (!showOverview || !focus || !window.matchMedia("(max-width: 1099px)").matches) return;
+    const active = flowScroll.current?.querySelector<HTMLElement>(`.scope-flow-node[data-scope-id="${CSS.escape(focus.id)}"]`);
+    active?.scrollIntoView({ block: "nearest", inline: "center", behavior: reducedMotion ? "auto" : "smooth" });
+  }, [focus, showOverview, reducedMotion]);
   function toggleContext(id: string) {
     setExpandedContext((current) => {
       const next = new Set(current);
@@ -247,8 +255,9 @@ export function ScopeFlow({ inventory, paths, focusId, onSelect, disabled = fals
     return <li key={node.id} className="scope-mobile-node" data-state={selection.state} data-active={node.active} data-aggregate={node.aggregate} data-scope-id={node.id} data-available-count={node.availableCount} data-selected-count={selection.selectedCount}>
       <div className="scope-mobile-row">
         <button className="scope-mobile-select" disabled={disabled} onClick={() => choose(node)} aria-label={selectionLabel(node, selection)} aria-pressed={node.aggregate ? undefined : selection.state === "partial" ? "mixed" : selection.state === "all"} aria-expanded={node.aggregate ? false : undefined} aria-current={node.id === focus?.id ? "true" : undefined}>
+          <small className="scope-mobile-level">{COLUMNS[node.column]}</small>
           <span className="scope-flow-node-label">{node.label}{node.aggregate ? " +" : ""}</span>
-          <span className="scope-flow-node-count">{number(selection.selectedCount)} selected / {number(node.availableCount)} available</span>
+          <span className="scope-flow-node-count">{selection.selectedCount === node.availableCount && selection.selectedCount > 0 ? `${number(selection.selectedCount)} selected` : `${number(selection.selectedCount)} / ${number(node.availableCount)} selected`}</span>
         </button>
       </div>
       {children.length ? <ul className="scope-mobile-tree">{children.map(renderMobile)}</ul> : null}
@@ -259,10 +268,9 @@ export function ScopeFlow({ inventory, paths, focusId, onSelect, disabled = fals
   return <section className="scope-flow" aria-label={`${subjectLabel} question flow`} style={{ "--scope-colour": "#475569" } as CSSProperties}>
     <div className="scope-flow-legend" aria-label="Question source colours">
       {PYQ_EXAMS.map((exam) => <span key={exam} data-exam={exam}><i aria-hidden="true" style={{ background: PYQ_EXAM_COLORS[exam] }} />{exam}</span>)}
-      <small>Each colour is an exam. Pale ribbons show available questions; stronger colour shows your selection. Select a branch to narrow your practice.</small>
     </div>
-    <button className="scope-overview-toggle" type="button" disabled={disabled} aria-expanded={showOverview} onClick={() => setShowOverview((value) => !value)}>{showOverview ? "Return to hierarchy" : "View Sankey flow overview"}</button>
-    <div className="scope-flow-scroll" data-overview={showOverview}>
+    <button className="scope-overview-toggle" type="button" disabled={disabled} aria-expanded={showOverview} onClick={() => setShowOverview((value) => !value)}>{showOverview ? "List view" : "Diagram view"}</button>
+    <div className="scope-flow-scroll" data-overview={showOverview} ref={flowScroll}>
       <div className="scope-flow-canvas" data-focus-id={focus.id} style={{ width: WIDTH, height: layout.height, position: "relative" }}>
         <svg className="scope-flow-svg" width={WIDTH} height={layout.height} aria-hidden="true" focusable="false" style={{ position: "absolute", inset: 0 }}>
           <g className="scope-flow-base-links">{layout.links.flatMap((link) => examLanes(link, selections).map((lane) => <path
@@ -296,14 +304,13 @@ export function ScopeFlow({ inventory, paths, focusId, onSelect, disabled = fals
             style={{ position: "absolute", left: node.column * COLUMN_WIDTH + 38, top: (layout.labelCenters.get(node.id) || 98) - 32, width: CARD_WIDTH, minHeight: 64 }}>
             <button className="scope-flow-select" disabled={disabled} onClick={() => choose(node)} aria-label={selectionLabel(node, selection)} aria-pressed={node.aggregate ? undefined : selection.state === "partial" ? "mixed" : selection.state === "all"} aria-expanded={node.aggregate ? false : undefined} aria-current={node.id === focus.id ? "true" : undefined}>
               <span className="scope-flow-node-label">{node.label}{node.aggregate ? " +" : ""}</span>
-              <span className="scope-flow-node-count">{number(selection.selectedCount)} selected / {number(node.availableCount)} available</span>
+              <span className="scope-flow-node-count">{selection.selectedCount === node.availableCount && selection.selectedCount > 0 ? `${number(selection.selectedCount)} selected` : `${number(selection.selectedCount)} / ${number(node.availableCount)} selected`}</span>
             </button>
           </div>;
         })}
-        {COLUMNS.map((label, column) => layout.nodes.some((node) => node.column === column) ? null : <p key={label} className="scope-flow-empty-column" style={{ position: "absolute", left: column * COLUMN_WIDTH + 38, top: 154, width: CARD_WIDTH }}>{column === 2 ? "Choose a section to see its topics." : "Choose a topic to see its subtopics."}</p>)}
       </div>
     </div>
-    <div className="scope-flow-mobile" data-overview={showOverview}><p className="scope-mobile-hint">Select a branch to narrow your practice. Use the path above to browse back without changing your selection.</p><ul className="scope-mobile-tree">{layout.nodes.filter((node) => node.column === 0).map(renderMobile)}</ul></div>
-    {[...expandedContext].filter((id) => layout.nodes.some((node) => node.id === id) && (index.childrenById.get(id)?.length || 0) > 1).map((id) => <button key={id} className="scope-flow-context-toggle" disabled={disabled} onClick={() => toggleContext(id)}>Collapse other {index.nodesById.get(id)?.label} branches</button>)}
+    <div className="scope-flow-mobile" data-overview={showOverview}><ul className="scope-mobile-tree">{layout.nodes.filter((node) => node.column === 0).map(renderMobile)}</ul></div>
+    {[...expandedContext].filter((id) => layout.nodes.some((node) => node.id === id) && (index.childrenById.get(id)?.length || 0) > 1).map((id) => <button key={id} className="scope-flow-context-toggle" disabled={disabled} onClick={() => toggleContext(id)}>Collapse branches</button>)}
   </section>;
 }

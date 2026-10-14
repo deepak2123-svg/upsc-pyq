@@ -24,6 +24,19 @@ test("flattened numbered statements are restored to paper-style lines without re
   assert.deepEqual(formatPracticePrompt(["In 2025, consider 1 important change only."]), [
     { kind: "text", text: "In 2025, consider 1 important change only." },
   ]);
+  assert.deepEqual(formatPracticePrompt(["Consider the rivers: I. Sharavathi II. Periyar III. Mandovi How many of the above are west-flowing rivers?"]), [
+    { kind: "text", text: "Consider the rivers:" },
+    { kind: "statement", number: 1, text: "Sharavathi" },
+    { kind: "statement", number: 2, text: "Periyar" },
+    { kind: "statement", number: 3, text: "Mandovi" },
+    { kind: "text", text: "How many of the above are west-flowing rivers?" },
+  ]);
+  assert.deepEqual(formatPracticePrompt(["Consider the following:", "1. First statement", "2. Second statement", "Which is correct?"]), [
+    { kind: "text", text: "Consider the following:" },
+    { kind: "statement", number: 1, text: "First statement" },
+    { kind: "statement", number: 2, text: "Second statement" },
+    { kind: "text", text: "Which is correct?" },
+  ]);
 });
 function attempt(overrides = {}) {
   return {

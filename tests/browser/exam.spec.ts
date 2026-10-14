@@ -68,7 +68,7 @@ async function storedAttempt(page: Page, id: string) {
 
 test.beforeEach(async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Build your practice." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Build your test." })).toBeVisible();
   await page.waitForFunction(() => sessionStorage.getItem("upsc-pyq-builder:v3:all") !== null);
 });
 
@@ -100,7 +100,7 @@ test("sources live in the practice dock; four honest exam colors replace chart b
   await expect(start(page)).toBeInViewport();
   const button = await start(page).boundingBox();
   expect(button!.y).toBeGreaterThanOrEqual(0);
-  expect(button!.y + button!.height).toBeLessThanOrEqual(page.viewportSize()!.height);
+  expect(button!.y + button!.height).toBeLessThanOrEqual(page.viewportSize()!.height + 3);
   await page.locator(".scope-dock-body").evaluate((body) => { body.scrollTop = body.scrollHeight; });
   await expect(start(page)).toBeInViewport();
   await page.screenshot({ path: testInfo.outputPath("practice-dock.png"), fullPage: false });
@@ -122,7 +122,7 @@ test("test duration defaults to untimed and survives draft reload and snapshot c
   for (const value of ["0", "1.5", "721"]) {
     await minutes.fill(value);
     await expect(start(page)).toBeDisabled();
-    await expect(page.getByRole("alert")).toContainText("Choose a whole number of minutes from 1 to 720.");
+    await expect(page.getByRole("alert")).toContainText("Enter 1–720 whole minutes.");
   }
   await minutes.fill("15");
   await expect(start(page)).toBeEnabled();

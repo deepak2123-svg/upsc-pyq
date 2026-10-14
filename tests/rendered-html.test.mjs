@@ -24,7 +24,7 @@ test("server-renders the subject-first official PYQ workspace", async () => {
   assert.match(html, /Geography/);
   assert.match(html, /Environment/);
   assert.match(html, /Polity/);
-  assert.match(html, /All UPSC sources are enabled initially/);
+  for (const exam of ["CSE", "CAPF", "CDS", "NDA"]) assert.match(html, new RegExp(`>${exam}<`));
   assert.match(html, /Refine your scope/);
   assert.doesNotMatch(html, /Choose an examination|Year range|Difficulty/);
   assert.match(html, /PYQs/);
@@ -39,7 +39,7 @@ test("server-renders an exam archive through the subject-first selector", async 
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Choose subjects/);
-  assert.match(html, /CSE sources only initially/);
+  assert.match(html, /CSE(?:<!-- -->)? only/);
   assert.match(html, /Refine your scope/);
   assert.match(html, /Newest first/);
   assert.match(html, />Shuffle</);

@@ -128,6 +128,8 @@
 .review-question-number { font-size: 12px; color: #566274; }
 .result-question-detail { padding: 4px 0 28px 42px; max-width: 92ch; }
 .result-question-prompt p { margin: 12px 0; font-family: var(--font-reading), Georgia, serif; font-size: 20px; line-height: 1.65; }
+.result-question-prompt .result-paper-statement { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 6px; padding-left: 8px; }
+.result-paper-statement b { font-weight: 600; }
 .result-question-options { margin: 22px 0; display: grid; gap: 8px; }
 .result-question-options > div { display: grid; grid-template-columns: 25px 1fr; gap: 12px; border: 1px solid #d8dfe8; border-radius: 8px; padding: 12px 14px; }
 .result-question-options dt { font-weight: 650; font-size: 13px; }

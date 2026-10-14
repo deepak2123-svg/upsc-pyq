@@ -27,7 +27,7 @@ async function geomorphology(page: Page) {
   await matching(page, 140);
 }
 async function addition(page: Page, subtopic = WEATHER) {
-  await page.getByRole("button", { name: /Add another topic/ }).click();
+  await page.getByRole("button", { name: /Add (?:another )?topic/ }).click();
   const dialog = page.getByRole("dialog", { name: "Add to your current selection" });
   await dialog.getByRole("combobox", { name: "Section", exact: true }).selectOption({ label: "Physical Geography · 363" });
   await dialog.getByRole("combobox", { name: "Topic", exact: true }).selectOption({ label: `${GEOMORPHOLOGY} · 140` });
@@ -41,7 +41,7 @@ async function snapshotResponse(page: Page) {
 test.beforeEach(async ({ page }) => {
   // Playwright creates a fresh context per test: no attempts, drafts or bookmarks leak.
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Build your practice." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Build your test." })).toBeVisible();
   await expect(page.getByRole("button", { name: /^Geography\b/ }).first()).toBeEnabled();
   await page.waitForFunction(() => sessionStorage.getItem("upsc-pyq-builder:v3:all") !== null);
   await expect(page.locator(".scope-size-options").getByRole("button", { name: "20", exact: true })).toHaveAttribute("aria-pressed", "true");
@@ -58,7 +58,7 @@ test("scope clicks narrow 1021 → 363 → 140 → 41, preserving ancestry and h
   await choose(page, EARTH);
   await matching(page, 41);
   await expect(breadcrumbs).toContainText(EARTH);
-  await page.getByRole("button", { name: "← Browse back · keep selection" }).click();
+  await page.getByRole("button", { name: /Back.*selection unchanged/ }).click();
   await matching(page, 41);
   await expect(page.getByRole("status")).toContainText("selection is unchanged");
   await choose(page, GEOMORPHOLOGY);
@@ -107,7 +107,7 @@ test("add picker previews unique additions; Cancel, overlap and remove/re-add pr
   await geomorphology(page);
   await choose(page, EARTH);
   let dialog = await addition(page);
-  await expect(dialog).toContainText("76 additional questions");
+  await expect(dialog).toContainText("76 new questions");
   await matching(page, 41);
   await dialog.getByRole("button", { name: "Cancel", exact: true }).click();
   await matching(page, 41);
@@ -115,7 +115,7 @@ test("add picker previews unique additions; Cancel, overlap and remove/re-add pr
   await dialog.getByRole("button", { name: "Add 76 questions", exact: true }).click();
   await matching(page, 117);
   dialog = await addition(page);
-  await expect(dialog).toContainText("0 additional questions");
+  await expect(dialog).toContainText("Already included or unavailable.");
   await expect(dialog.getByRole("button", { name: "Add 0 questions", exact: true })).toBeDisabled();
   await dialog.getByRole("button", { name: "Cancel", exact: true }).click();
   await page.getByRole("button", { name: `Remove ${WEATHER}`, exact: true }).click();
@@ -280,7 +280,7 @@ test("newly added leaves inherit the subject's chosen sources without resetting 
   }
   await matching(page, earth.examCounts.CSE);
   const dialog = await addition(page);
-  await expect(dialog).toContainText(`${weather.examCounts.CSE} additional questions`);
+  await expect(dialog).toContainText(`${weather.examCounts.CSE} new questions`);
   await dialog.getByRole("button", { name: `Add ${weather.examCounts.CSE} questions`, exact: true }).click();
   await matching(page, earth.examCounts.CSE + weather.examCounts.CSE);
   const draft = await page.evaluate(() => JSON.parse(sessionStorage.getItem("upsc-pyq-builder:v3:all") || "{}"));
@@ -391,6 +391,20 @@ for (const width of [390, 768, 1024, 1600]) {
       await expect(page.locator(".scope-flow-mobile")).toBeVisible();
       await expect(page.locator(".scope-mobile-bar")).toContainText("140 matching");
       await expect(page.locator(".scope-flow-scroll")).toBeHidden();
+      await expect(page.locator(".scope-mobile-level").first()).toBeVisible();
+      await page.getByRole("button", { name: "Diagram view" }).click();
+      const diagram = page.locator(".scope-flow-scroll");
+      await expect(diagram).toBeVisible();
+      const activeInView = await diagram.locator('.scope-flow-node [aria-current="true"]').evaluate((button) => {
+        const node = button.closest<HTMLElement>(".scope-flow-node")!;
+        const container = button.closest<HTMLElement>(".scope-flow-scroll")!;
+        const nodeRect = node.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        return nodeRect.left >= containerRect.left - 2 && nodeRect.right <= containerRect.right + 2;
+      });
+      expect(activeInView).toBe(true);
+      await page.getByRole("button", { name: "List view" }).click();
+      await expect(page.locator(".scope-flow-mobile")).toBeVisible();
     }
     const earthquake = scope(page).getByRole("button", { name: /^Choose Earthquakes, Volcanoes & Geological Hazards\./ });
     const box = await earthquake.boundingBox();
