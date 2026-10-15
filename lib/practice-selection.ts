@@ -52,7 +52,7 @@ export function buildSelectionIndex(inventory: SubjectPracticeInventory): Select
     childrenById.set(node.parentId, children);
   }
   for (const children of childrenById.values()) {
-    children.sort((a, b) => a.label.localeCompare(b.label) || a.id.localeCompare(b.id));
+    children.sort((a, b) => ("order" in a ? a.order : 0) - ("order" in b ? b.order : 0) || a.label.localeCompare(b.label) || a.id.localeCompare(b.id));
   }
 
   const visiting = new Set<string>();
@@ -249,4 +249,22 @@ export function sanitizePaths(draft: unknown, index: SelectionIndex): SelectionP
     paths[id] = EXAMS.filter((exam) => sources.includes(exam) && leaf.examCounts[exam] > 0);
   }
   return paths;
+}
+
+/** Restore current leaves and expand retired leaves through ancestry-safe aliases. */
+export function sanitizePathsWithAliases(
+  draft: unknown,
+  index: SelectionIndex,
+  aliases: Record<string, string[]>,
+): SelectionPaths {
+  if (!draft || typeof draft !== "object" || Array.isArray(draft)) return {};
+  const expanded: Record<string, unknown> = {};
+  for (const [id, sources] of Object.entries(draft)) {
+    const targetIds = index.nodesById.get(id) ? [id] : aliases[id] || [];
+    for (const targetId of targetIds) {
+      const existing = Array.isArray(expanded[targetId]) ? expanded[targetId] as unknown[] : [];
+      expanded[targetId] = [...new Set([...existing, ...(Array.isArray(sources) ? sources : [])])];
+    }
+  }
+  return sanitizePaths(expanded, index);
 }

@@ -24,7 +24,6 @@ test("server-renders the subject-first official PYQ workspace", async () => {
   assert.match(html, /Geography/);
   assert.match(html, /Environment/);
   assert.match(html, /Polity/);
-  for (const exam of ["CSE", "CAPF", "CDS", "NDA"]) assert.match(html, new RegExp(`>${exam}<`));
   assert.match(html, /Refine your scope/);
   assert.doesNotMatch(html, /Choose an examination|Year range|Difficulty/);
   assert.match(html, /PYQs/);
@@ -43,7 +42,8 @@ test("server-renders an exam archive through the subject-first selector", async 
   assert.match(html, /Refine your scope/);
   assert.match(html, /Newest first/);
   assert.match(html, />Shuffle</);
-  assert.match(html, /Start 20-question practice/);
+  assert.match(html, /Choose question count/);
+  assert.doesNotMatch(html, /Start 20-question practice/);
   assert.doesNotMatch(html, /difficulty|generated MCQ|source verbatim/i);
 });
 

@@ -1,0 +1,2548 @@
+{
+  "version": "upsc-geography-v1.2",
+  "sourceTaxonomyVersion": "upsc-geography-v1.1",
+  "reviewPolicy": "One primary subpart chosen from the answer-determining concept, otherwise the stem's central concept.",
+  "records": [
+    {
+      "questionId": "capf-2017-i-103",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/thunderstorms-lightning-and-tornadoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "thunderstorm"
+    },
+    {
+      "questionId": "capf-2017-i-123",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/plate-tectonics",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "plate-tectonics"
+    },
+    {
+      "questionId": "capf-2017-i-93",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/coral-reefs-and-atolls",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "coral"
+    },
+    {
+      "questionId": "capf-2018-i-14",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/how-the-atmosphere-is-heated-and-cooled",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-heating"
+    },
+    {
+      "questionId": "capf-2018-i-15",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/how-the-atmosphere-is-heated-and-cooled",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-heating"
+    },
+    {
+      "questionId": "capf-2018-i-16",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/rocks-overview",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "rock-overview"
+    },
+    {
+      "questionId": "capf-2018-i-31",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/salinity",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "salinity"
+    },
+    {
+      "questionId": "capf-2018-i-40",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-structure"
+    },
+    {
+      "questionId": "capf-2018-i-41",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "capf-2018-i-50",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "capf-2018-i-51",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/tropical-cyclones",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tropical-cyclone"
+    },
+    {
+      "questionId": "capf-2018-i-53",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/igneous-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "igneous-rock"
+    },
+    {
+      "questionId": "capf-2019-i-111",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/dwarf-planets-asteroids-meteors-comets",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "minor-body"
+    },
+    {
+      "questionId": "capf-2019-i-112",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "glacial-landform"
+    },
+    {
+      "questionId": "capf-2019-i-66",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "revolution-season"
+    },
+    {
+      "questionId": "capf-2019-i-96",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/planetary-winds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planetary-wind"
+    },
+    {
+      "questionId": "capf-2019-i-97",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "fluvial-landform"
+    },
+    {
+      "questionId": "capf-2019-i-98",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/layers-by-composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "composition-layer"
+    },
+    {
+      "questionId": "capf-2020-i-42",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/aeolian-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "aeolian-landform"
+    },
+    {
+      "questionId": "capf-2020-i-43",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/coral-reefs-and-atolls",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "coral"
+    },
+    {
+      "questionId": "capf-2020-i-65",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/waves",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-wave"
+    },
+    {
+      "questionId": "capf-2020-i-68",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/groundwater-and-karst-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "karst"
+    },
+    {
+      "questionId": "capf-2021-i-103",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/rocks-overview",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "rock-overview"
+    },
+    {
+      "questionId": "capf-2021-i-104",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/coral-reefs-and-atolls",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-coral-conditions"
+    },
+    {
+      "questionId": "capf-2021-i-105",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/plate-tectonics",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "plate-tectonics"
+    },
+    {
+      "questionId": "capf-2021-i-36",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "volcano"
+    },
+    {
+      "questionId": "capf-2021-i-37",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "capf-2021-i-38",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/wind-measurement",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "wind-measurement"
+    },
+    {
+      "questionId": "capf-2021-i-39",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "fluvial-landform"
+    },
+    {
+      "questionId": "capf-2021-i-61",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/weathering",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "weathering"
+    },
+    {
+      "questionId": "capf-2021-i-83",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/sedimentary-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sedimentary-rock"
+    },
+    {
+      "questionId": "capf-2022-i-105",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/el-nin-o-la-nin-a-and-the-southern-oscillation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "enso"
+    },
+    {
+      "questionId": "capf-2022-i-119",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/forms-of-condensation-near-the-ground",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "near-ground-condensation"
+    },
+    {
+      "questionId": "capf-2022-i-120",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/planets",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planet"
+    },
+    {
+      "questionId": "capf-2022-i-6",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/atmospheric-pressure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-pressure-trough-ridge"
+    },
+    {
+      "questionId": "capf-2022-i-60",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "capf-2022-i-61",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "capf-2022-i-63",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/lapse-rate-adiabatic-processes-and-inversion",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "lapse-rate"
+    },
+    {
+      "questionId": "capf-2023-i-112",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/sedimentary-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sedimentary-rock"
+    },
+    {
+      "questionId": "capf-2023-i-115",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "capf-2023-i-36",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/sedimentary-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sedimentary-rock"
+    },
+    {
+      "questionId": "capf-2023-i-39",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "glacial-landform"
+    },
+    {
+      "questionId": "capf-2023-i-73",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "major-landform"
+    },
+    {
+      "questionId": "capf-2023-i-75",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-floor-relief",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-floor"
+    },
+    {
+      "questionId": "capf-2023-i-93",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/aeolian-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "aeolian-landform"
+    },
+    {
+      "questionId": "capf-2024-i-31",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-moon-and-eclipses",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "moon-eclipse"
+    },
+    {
+      "questionId": "capf-2024-i-33",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/jet-streams",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "jet-stream"
+    },
+    {
+      "questionId": "capf-2024-i-34",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/world-climate-regions-and-the-ko-ppen-classification/dry-climates",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "dry-climate"
+    },
+    {
+      "questionId": "capf-2024-i-35",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/planets",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planet"
+    },
+    {
+      "questionId": "capf-2024-i-36",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-date-line"
+    },
+    {
+      "questionId": "capf-2024-i-37",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/thunderstorms-lightning-and-tornadoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "thunderstorm"
+    },
+    {
+      "questionId": "capf-2024-i-38",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "capf-2024-i-4",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-sun",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sun"
+    },
+    {
+      "questionId": "capf-2024-i-41",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/metamorphic-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "metamorphic-rock"
+    },
+    {
+      "questionId": "capf-2024-i-42",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/heat-budget-of-the-earth",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-net-radiation"
+    },
+    {
+      "questionId": "capf-2024-i-5",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/oceanography/waves",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-wave"
+    },
+    {
+      "questionId": "capf-2024-i-9",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-sun",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sun"
+    },
+    {
+      "questionId": "capf-2025-i-121",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "cloud"
+    },
+    {
+      "questionId": "capf-2025-i-71",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "capf-2025-i-72",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/rocks-overview",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "rock-overview"
+    },
+    {
+      "questionId": "capf-2025-i-73",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/mass-movements",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "mass-movement"
+    },
+    {
+      "questionId": "capf-2025-i-74",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/ionosphere",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ionosphere"
+    },
+    {
+      "questionId": "capf-2025-i-75",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/mass-movements",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "mass-movement"
+    },
+    {
+      "questionId": "capf-2025-i-76",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-floor-relief",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-floor"
+    },
+    {
+      "questionId": "capf-2025-i-77",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "capf-2025-i-80",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "capf-2025-i-81",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "capf-2026-i-77",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "capf-2026-i-78",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "capf-2026-i-80",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "cloud"
+    },
+    {
+      "questionId": "cds-2014-1-104",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/groundwater-and-karst-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "karst"
+    },
+    {
+      "questionId": "cds-2014-1-113",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earthquake"
+    },
+    {
+      "questionId": "cds-2014-1-115",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/igneous-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "igneous-rock"
+    },
+    {
+      "questionId": "cds-2014-1-75",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/all-motions-of-the-earth",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earth-motion"
+    },
+    {
+      "questionId": "cds-2014-1-90",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/rocks-overview",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "rock-overview"
+    },
+    {
+      "questionId": "cds-2014-1-94",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earthquake"
+    },
+    {
+      "questionId": "cds-2014-2-32",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/plate-tectonics",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "plate-tectonics"
+    },
+    {
+      "questionId": "cds-2014-2-33",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-pressure-gradient-wind"
+    },
+    {
+      "questionId": "cds-2014-2-38",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "revolution-season"
+    },
+    {
+      "questionId": "cds-2014-2-40",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "fluvial-landform"
+    },
+    {
+      "questionId": "cds-2014-2-42",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/thunderstorms-lightning-and-tornadoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "thunderstorm"
+    },
+    {
+      "questionId": "cds-2014-2-46",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "wind-force"
+    },
+    {
+      "questionId": "cds-2014-2-90",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/waves",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-wave"
+    },
+    {
+      "questionId": "cds-2015-1-10",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "cds-2015-1-13",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-structure"
+    },
+    {
+      "questionId": "cds-2015-1-2",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "cds-2015-1-26",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/waves",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-wave"
+    },
+    {
+      "questionId": "cds-2015-1-27",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-labrador-current"
+    },
+    {
+      "questionId": "cds-2015-1-3",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-sun",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sun"
+    },
+    {
+      "questionId": "cds-2015-1-37",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/world-climate-regions-and-the-ko-ppen-classification/tropical-humid-climates",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tropical-climate"
+    },
+    {
+      "questionId": "cds-2015-1-39",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/weathering",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "weathering"
+    },
+    {
+      "questionId": "cds-2015-1-43",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "cds-2015-1-44",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "wind-force"
+    },
+    {
+      "questionId": "cds-2015-1-6",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-sun",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sun"
+    },
+    {
+      "questionId": "cds-2015-2-13",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/groundwater-and-karst-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "karst"
+    },
+    {
+      "questionId": "cds-2015-2-21",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earthquake"
+    },
+    {
+      "questionId": "cds-2015-2-29",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-low-pressure-circulation"
+    },
+    {
+      "questionId": "cds-2015-2-31",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-atmosphere-extent"
+    },
+    {
+      "questionId": "cds-2015-2-33",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/basics-of-geomorphic-processes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-diastrophism"
+    },
+    {
+      "questionId": "cds-2015-2-38",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/fronts",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "front"
+    },
+    {
+      "questionId": "cds-2015-2-41",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/layers-by-composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "composition-layer"
+    },
+    {
+      "questionId": "cds-2015-2-44",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "cds-2015-2-9",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/universe-and-origin-theories",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-geological-time"
+    },
+    {
+      "questionId": "cds-2016-1-19",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "volcano"
+    },
+    {
+      "questionId": "cds-2016-1-20",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/planets",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planet"
+    },
+    {
+      "questionId": "cds-2016-1-29",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-sun",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sun"
+    },
+    {
+      "questionId": "cds-2016-1-30",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "volcano"
+    },
+    {
+      "questionId": "cds-2016-1-38",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/distribution-of-oceans-and-seas",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-sea-level-change"
+    },
+    {
+      "questionId": "cds-2016-1-40",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/all-motions-of-the-earth",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earth-motion"
+    },
+    {
+      "questionId": "cds-2016-1-41",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/tropical-cyclones",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tropical-cyclone"
+    },
+    {
+      "questionId": "cds-2016-2-14",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earthquake"
+    },
+    {
+      "questionId": "cds-2016-2-31",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "cds-2016-2-33",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-structure"
+    },
+    {
+      "questionId": "cds-2016-2-42",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "cds-2016-2-46",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-moon-and-eclipses",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "moon-eclipse"
+    },
+    {
+      "questionId": "cds-2016-2-47",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/aeolian-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "aeolian-landform"
+    },
+    {
+      "questionId": "cds-2017-1-23",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "volcano"
+    },
+    {
+      "questionId": "cds-2017-1-36",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-sun",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sun"
+    },
+    {
+      "questionId": "cds-2017-1-38",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "cds-2017-1-39",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/thunderstorms-lightning-and-tornadoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "thunderstorm"
+    },
+    {
+      "questionId": "cds-2017-1-45",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/fronts",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "front"
+    },
+    {
+      "questionId": "cds-2017-1-46",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/coral-reefs-and-atolls",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "coral"
+    },
+    {
+      "questionId": "cds-2017-1-86",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/planets",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planet"
+    },
+    {
+      "questionId": "cds-2017-2-21",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/ozone-layer",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ozone"
+    },
+    {
+      "questionId": "cds-2017-2-98",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "precipitation"
+    },
+    {
+      "questionId": "cse-2013-gs-i-14",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-sun",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sun"
+    },
+    {
+      "questionId": "cse-2013-gs-i-16",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/oceanography/distribution-of-oceans-and-seas",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-distribution"
+    },
+    {
+      "questionId": "cse-2013-gs-i-18",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "revolution-season"
+    },
+    {
+      "questionId": "cse-2013-gs-i-54",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-floor-relief",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-floor"
+    },
+    {
+      "questionId": "cse-2013-gs-i-60",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/temperature-distribution",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "temperature-distribution"
+    },
+    {
+      "questionId": "cse-2013-gs-i-72",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/thunderstorms-lightning-and-tornadoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "thunderstorm"
+    },
+    {
+      "questionId": "cse-2013-gs-i-90",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/scattering-reflection-and-albedo",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-rainbow-optics"
+    },
+    {
+      "questionId": "cse-2014-gs-i-13",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/continental-drift",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "continental-drift"
+    },
+    {
+      "questionId": "cse-2014-gs-i-43",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/world-climate-regions-and-the-ko-ppen-classification/ko-ppen-s-scheme-letters-and-codes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "climate-code"
+    },
+    {
+      "questionId": "cse-2015-gs-i-14",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "cse-2015-gs-i-45",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/dwarf-planets-asteroids-meteors-comets",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "minor-body"
+    },
+    {
+      "questionId": "cse-2015-gs-i-5",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/oceanography/temperature-of-ocean-water",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-temperature"
+    },
+    {
+      "questionId": "cse-2015-gs-i-66",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/air-masses",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "air-mass"
+    },
+    {
+      "questionId": "cse-2015-gs-i-70",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "cse-2015-gs-i-80",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/thunderstorms-lightning-and-tornadoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "thunderstorm"
+    },
+    {
+      "questionId": "cse-2017-gs-i-66",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/el-nin-o-la-nin-a-and-the-southern-oscillation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "enso"
+    },
+    {
+      "questionId": "cse-2018-gs-i-57",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-early-atmosphere"
+    },
+    {
+      "questionId": "cse-2019-gs-i-20",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-sun",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sun"
+    },
+    {
+      "questionId": "cse-2019-gs-i-44",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "cloud"
+    },
+    {
+      "questionId": "cse-2020-gs-i-93",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "precipitation"
+    },
+    {
+      "questionId": "cse-2020-gs-i-99",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/tropical-cyclones",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tropical-cyclone"
+    },
+    {
+      "questionId": "cse-2021-gs-i-58",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/planetary-winds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planetary-wind"
+    },
+    {
+      "questionId": "cse-2021-gs-i-62",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/oceanography/distribution-of-oceans-and-seas",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-distribution"
+    },
+    {
+      "questionId": "cse-2022-gs-i-29",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "revolution-season"
+    },
+    {
+      "questionId": "cse-2022-gs-i-40",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/oceanography/waves",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-wave"
+    },
+    {
+      "questionId": "cse-2022-gs-i-81",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "cloud"
+    },
+    {
+      "questionId": "cse-2023-gs-i-35",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/planets",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planet"
+    },
+    {
+      "questionId": "cse-2023-gs-i-72",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-composition"
+    },
+    {
+      "questionId": "cse-2023-gs-i-74",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/how-the-atmosphere-is-heated-and-cooled",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-land-sea-contrast"
+    },
+    {
+      "questionId": "cse-2023-gs-i-75",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/seismic-waves-and-what-they-reveal",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-seismic-waves"
+    },
+    {
+      "questionId": "cse-2024-gs-i-1",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/greenhouse-effect-and-global-warming",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "greenhouse"
+    },
+    {
+      "questionId": "cse-2024-gs-i-12",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-composition"
+    },
+    {
+      "questionId": "cse-2024-gs-i-14",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "wind-force"
+    },
+    {
+      "questionId": "cse-2024-gs-i-15",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "cse-2024-gs-i-2",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-structure"
+    },
+    {
+      "questionId": "cse-2024-gs-i-3",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "volcano"
+    },
+    {
+      "questionId": "cse-2024-gs-i-4",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "cse-2024-gs-i-7",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "precipitation"
+    },
+    {
+      "questionId": "cse-2025-gs-i-25",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/continental-drift",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "continental-drift"
+    },
+    {
+      "questionId": "cse-2025-gs-i-26",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "major-landform"
+    },
+    {
+      "questionId": "cse-2025-gs-i-27",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/temperature-distribution",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "temperature-distribution"
+    },
+    {
+      "questionId": "cse-2025-gs-i-28",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/rocks-overview",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "rock-overview"
+    },
+    {
+      "questionId": "cse-2025-gs-i-29",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/planets",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planet"
+    },
+    {
+      "questionId": "cse-2025-gs-i-33",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "major-landform"
+    },
+    {
+      "questionId": "cse-2025-gs-i-76",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "rotation-time"
+    },
+    {
+      "questionId": "cse-2025-gs-i-77",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-date-line"
+    },
+    {
+      "questionId": "cse-2025-gs-i-85",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "precipitation"
+    },
+    {
+      "questionId": "cse-2025-gs-i-94",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "cse-2026-gs-i-50",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/marine-deposits-and-resources",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-deep-ocean-mission"
+    },
+    {
+      "questionId": "cse-2026-gs-i-84",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/minerals",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "mineral"
+    },
+    {
+      "questionId": "nda-2014-i-103",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/planetary-winds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planetary-wind"
+    },
+    {
+      "questionId": "nda-2014-i-111",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/forms-of-condensation-near-the-ground",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "near-ground-condensation"
+    },
+    {
+      "questionId": "nda-2014-i-126",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/sedimentary-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sedimentary-rock"
+    },
+    {
+      "questionId": "nda-2014-i-143",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/temperature-distribution",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "temperature-distribution"
+    },
+    {
+      "questionId": "nda-2014-i-76",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "volcano"
+    },
+    {
+      "questionId": "nda-2014-i-78",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/basics-of-geomorphic-processes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-erosion-vegetation"
+    },
+    {
+      "questionId": "nda-2014-i-79",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-structure"
+    },
+    {
+      "questionId": "nda-2014-i-80",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "precipitation"
+    },
+    {
+      "questionId": "nda-2014-i-94",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/solar-radiation-and-insolation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "insolation"
+    },
+    {
+      "questionId": "nda-2014-ii-101",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "nda-2014-ii-107",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "nda-2014-ii-113",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "precipitation"
+    },
+    {
+      "questionId": "nda-2014-ii-117",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-rotation-speed"
+    },
+    {
+      "questionId": "nda-2014-ii-51",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-floor-relief",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-floor"
+    },
+    {
+      "questionId": "nda-2014-ii-58",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/tropical-cyclones",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tropical-cyclone"
+    },
+    {
+      "questionId": "nda-2014-ii-71",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-local-time"
+    },
+    {
+      "questionId": "nda-2014-ii-75",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "glacial-landform"
+    },
+    {
+      "questionId": "nda-2014-ii-79",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-map-scale"
+    },
+    {
+      "questionId": "nda-2014-ii-83",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/sedimentary-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sedimentary-rock"
+    },
+    {
+      "questionId": "nda-2014-ii-87",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/planetary-winds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planetary-wind"
+    },
+    {
+      "questionId": "nda-2014-ii-91",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "nda-2015-i-110",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/atmospheric-pressure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmospheric-pressure"
+    },
+    {
+      "questionId": "nda-2015-i-111",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "volcano"
+    },
+    {
+      "questionId": "nda-2015-i-113",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "cloud"
+    },
+    {
+      "questionId": "nda-2015-i-75",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "precipitation"
+    },
+    {
+      "questionId": "nda-2015-i-87",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "revolution-season"
+    },
+    {
+      "questionId": "nda-2015-ii-101",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/folding-faulting-and-mountain-building",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "folding-faulting"
+    },
+    {
+      "questionId": "nda-2015-ii-102",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-structure"
+    },
+    {
+      "questionId": "nda-2015-ii-111",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/air-masses",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "air-mass"
+    },
+    {
+      "questionId": "nda-2015-ii-120",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/shape-and-size-of-earth",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-earth-shape"
+    },
+    {
+      "questionId": "nda-2015-ii-89",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/groundwater-and-karst-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "karst"
+    },
+    {
+      "questionId": "nda-2015-ii-94",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/layers-by-mechanical-behaviour",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "mechanical-layer"
+    },
+    {
+      "questionId": "nda-2015-ii-97",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/temperature-distribution",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-temperature-latitude"
+    },
+    {
+      "questionId": "nda-2016-i-52",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/salinity",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "salinity"
+    },
+    {
+      "questionId": "nda-2016-i-53",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-composition"
+    },
+    {
+      "questionId": "nda-2016-i-70",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-moon-and-eclipses",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "moon-eclipse"
+    },
+    {
+      "questionId": "nda-2016-i-86",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/universe-and-origin-theories",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "universe-origin"
+    },
+    {
+      "questionId": "nda-2016-i-91",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "revolution-season"
+    },
+    {
+      "questionId": "nda-2016-i-98",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/world-climate-regions-and-the-ko-ppen-classification/cold-snow-forest-climates",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-coniferous-climate"
+    },
+    {
+      "questionId": "nda-2016-ii-138",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/basics-of-geomorphic-processes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-geomorphic-agents"
+    },
+    {
+      "questionId": "nda-2016-ii-139",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/temperature-distribution",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "temperature-distribution"
+    },
+    {
+      "questionId": "nda-2016-ii-52",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/ozone-layer",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ozone"
+    },
+    {
+      "questionId": "nda-2017-ii-117",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-gas-abundance"
+    },
+    {
+      "questionId": "nda-2017-ii-125",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/scattering-reflection-and-albedo",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-rainbow-optics"
+    },
+    {
+      "questionId": "nda-2017-ii-145",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/igneous-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "igneous-rock"
+    },
+    {
+      "questionId": "nda-2017-ii-146",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "wind-force"
+    },
+    {
+      "questionId": "nda-2017-ii-149",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/tropical-cyclones",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tropical-cyclone"
+    },
+    {
+      "questionId": "nda-2017-ii-57",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-floor-relief",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-floor"
+    },
+    {
+      "questionId": "nda-2017-ii-98",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "revolution-season"
+    },
+    {
+      "questionId": "nda-2018-i-100",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/rocks-overview",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "rock-overview"
+    },
+    {
+      "questionId": "nda-2018-i-109",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-floor-relief",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-floor"
+    },
+    {
+      "questionId": "nda-2018-i-76",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/planetary-winds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planetary-wind"
+    },
+    {
+      "questionId": "nda-2018-i-77",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/local-winds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "local-wind"
+    },
+    {
+      "questionId": "nda-2018-i-98",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/coastal-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "coastal-landform"
+    },
+    {
+      "questionId": "nda-2018-i-99",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/coastal-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "coastal-landform"
+    },
+    {
+      "questionId": "nda-2018-ii-100",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/thunderstorms-lightning-and-tornadoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "thunderstorm"
+    },
+    {
+      "questionId": "nda-2018-ii-102",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/metamorphic-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "metamorphic-rock"
+    },
+    {
+      "questionId": "nda-2018-ii-115",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/world-climate-regions-and-the-ko-ppen-classification/ko-ppen-s-scheme-letters-and-codes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "climate-code"
+    },
+    {
+      "questionId": "nda-2018-ii-119",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/weathering",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "weathering"
+    },
+    {
+      "questionId": "nda-2018-ii-56",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "wind-force"
+    },
+    {
+      "questionId": "nda-2018-ii-76",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-structure"
+    },
+    {
+      "questionId": "nda-2018-ii-77",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/salinity",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "salinity"
+    },
+    {
+      "questionId": "nda-2019-i-104",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/weathering",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "weathering"
+    },
+    {
+      "questionId": "nda-2019-i-106",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earthquake"
+    },
+    {
+      "questionId": "nda-2019-i-107",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "nda-2019-i-108",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "nda-2019-i-123",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/tropical-cyclones",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tropical-cyclone"
+    },
+    {
+      "questionId": "nda-2019-i-56",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "nda-2019-i-66",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/air-masses",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "air-mass"
+    },
+    {
+      "questionId": "nda-2019-i-71",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "precipitation"
+    },
+    {
+      "questionId": "nda-2019-i-91",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "nda-2019-ii-104",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "nda-2019-ii-106",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/layers-by-composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "composition-layer"
+    },
+    {
+      "questionId": "nda-2019-ii-113",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/sedimentary-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sedimentary-rock"
+    },
+    {
+      "questionId": "nda-2019-ii-114",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/world-climate-regions-and-the-ko-ppen-classification/ko-ppen-s-scheme-letters-and-codes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "climate-code"
+    },
+    {
+      "questionId": "nda-2019-ii-115",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/folding-faulting-and-mountain-building",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "folding-faulting"
+    },
+    {
+      "questionId": "nda-2019-ii-125",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/ionosphere",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ionosphere"
+    },
+    {
+      "questionId": "nda-2019-ii-128",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/groundwater-and-karst-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "karst"
+    },
+    {
+      "questionId": "nda-2019-ii-129",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "glacial-landform"
+    },
+    {
+      "questionId": "nda-2019-ii-130",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/plate-tectonics",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-major-plate"
+    },
+    {
+      "questionId": "nda-2019-ii-131",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/layers-by-mechanical-behaviour",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "mechanical-layer"
+    },
+    {
+      "questionId": "nda-2020-i-ii-106",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "nda-2021-i-109",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/plate-tectonics",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-minor-plate"
+    },
+    {
+      "questionId": "nda-2021-i-110",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/plate-tectonics",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-tectonic-activity"
+    },
+    {
+      "questionId": "nda-2021-i-111",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/minerals",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "mineral"
+    },
+    {
+      "questionId": "nda-2021-i-112",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "nda-2021-i-113",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/world-climate-regions-and-the-ko-ppen-classification/tropical-humid-climates",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tropical-climate"
+    },
+    {
+      "questionId": "nda-2021-i-119",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "glacial-landform"
+    },
+    {
+      "questionId": "nda-2021-i-120",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/planets",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planet"
+    },
+    {
+      "questionId": "nda-2021-i-121",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earthquake"
+    },
+    {
+      "questionId": "nda-2021-i-122",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/layers-by-mechanical-behaviour",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "mechanical-layer"
+    },
+    {
+      "questionId": "nda-2021-i-123",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "volcano"
+    },
+    {
+      "questionId": "nda-2021-i-131",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/forms-of-condensation-near-the-ground",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "near-ground-condensation"
+    },
+    {
+      "questionId": "nda-2021-i-132",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "cloud"
+    },
+    {
+      "questionId": "nda-2021-i-57",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-structure"
+    },
+    {
+      "questionId": "nda-2021-ii-51",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/planets",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planet"
+    },
+    {
+      "questionId": "nda-2021-ii-54",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "glacial-landform"
+    },
+    {
+      "questionId": "nda-2021-ii-55",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/evaporation-and-condensation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "evaporation-condensation"
+    },
+    {
+      "questionId": "nda-2021-ii-63",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/heat-budget-of-the-earth",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "heat-budget"
+    },
+    {
+      "questionId": "nda-2021-ii-64",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/ionosphere",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ionosphere"
+    },
+    {
+      "questionId": "nda-2021-ii-65",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/weathering",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-soil-formation"
+    },
+    {
+      "questionId": "nda-2021-ii-66",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/layers-by-mechanical-behaviour",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "mechanical-layer"
+    },
+    {
+      "questionId": "nda-2021-ii-67",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "rotation-time"
+    },
+    {
+      "questionId": "nda-2021-ii-77",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "nda-2021-ii-78",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "nda-2021-ii-85",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "fluvial-landform"
+    },
+    {
+      "questionId": "nda-2022-i-107",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "cloud"
+    },
+    {
+      "questionId": "nda-2022-i-108",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/shape-and-size-of-earth",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earth-shape"
+    },
+    {
+      "questionId": "nda-2022-i-109",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "nda-2022-i-110",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "nda-2022-i-117",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/planets",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planet"
+    },
+    {
+      "questionId": "nda-2022-i-118",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/mass-movements",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "mass-movement"
+    },
+    {
+      "questionId": "nda-2022-i-119",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earthquake"
+    },
+    {
+      "questionId": "nda-2022-i-120",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/mass-movements",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "mass-movement"
+    },
+    {
+      "questionId": "nda-2022-i-133",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/evaporation-and-condensation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "evaporation-condensation"
+    },
+    {
+      "questionId": "nda-2022-i-134",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/weathering",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "weathering"
+    },
+    {
+      "questionId": "nda-2022-i-138",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/metamorphic-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "metamorphic-rock"
+    },
+    {
+      "questionId": "nda-2022-i-139",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/folding-faulting-and-mountain-building",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "folding-faulting"
+    },
+    {
+      "questionId": "nda-2022-ii-108",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/evaporation-and-condensation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "evaporation-condensation"
+    },
+    {
+      "questionId": "nda-2022-ii-127",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/sedimentary-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "sedimentary-rock"
+    },
+    {
+      "questionId": "nda-2022-ii-128",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/anticyclones",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "anticyclone"
+    },
+    {
+      "questionId": "nda-2022-ii-129",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/layers-by-composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "composition-layer"
+    },
+    {
+      "questionId": "nda-2022-ii-60",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earthquake"
+    },
+    {
+      "questionId": "nda-2022-ii-91",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/metamorphic-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "metamorphic-rock"
+    },
+    {
+      "questionId": "nda-2022-ii-92",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/discontinuities",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "discontinuity"
+    },
+    {
+      "questionId": "nda-2022-ii-93",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/all-motions-of-the-earth",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earth-motion"
+    },
+    {
+      "questionId": "nda-2022-ii-94",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "rotation-time"
+    },
+    {
+      "questionId": "nda-2022-ii-96",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/basics-of-geomorphic-processes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-paleogeography"
+    },
+    {
+      "questionId": "nda-2023-i-132",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "precipitation"
+    },
+    {
+      "questionId": "nda-2023-i-133",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/discontinuities",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "discontinuity"
+    },
+    {
+      "questionId": "nda-2023-i-135",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/igneous-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "igneous-rock"
+    },
+    {
+      "questionId": "nda-2023-i-136",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-local-time"
+    },
+    {
+      "questionId": "nda-2023-i-137",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "nda-2023-i-57",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/igneous-rocks",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "igneous-rock"
+    },
+    {
+      "questionId": "nda-2023-i-58",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earthquake"
+    },
+    {
+      "questionId": "nda-2023-i-59",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/universe-and-origin-theories",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-geological-time"
+    },
+    {
+      "questionId": "nda-2023-i-60",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/planets",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "planet"
+    },
+    {
+      "questionId": "nda-2023-i-61",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "nda-2023-i-62",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/world-climate-regions-and-the-ko-ppen-classification/cold-snow-forest-climates",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "cold-snow-climate"
+    },
+    {
+      "questionId": "nda-2023-i-93",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "nda-2023-ii-123",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/folding-faulting-and-mountain-building",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "folding-faulting"
+    },
+    {
+      "questionId": "nda-2023-ii-124",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/weathering",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-soil-type"
+    },
+    {
+      "questionId": "nda-2023-ii-78",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/atmospheric-pressure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmospheric-pressure"
+    },
+    {
+      "questionId": "nda-2023-ii-79",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/rocks-and-minerals/rocks-overview",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "rock-overview"
+    },
+    {
+      "questionId": "nda-2023-ii-80",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "nda-2023-ii-81",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-structure"
+    },
+    {
+      "questionId": "nda-2024-i-108",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/tides",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tides"
+    },
+    {
+      "questionId": "nda-2024-i-109",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earthquake"
+    },
+    {
+      "questionId": "nda-2024-i-110",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/lapse-rate-adiabatic-processes-and-inversion",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "lapse-rate"
+    },
+    {
+      "questionId": "nda-2024-i-111",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-composition"
+    },
+    {
+      "questionId": "nda-2024-i-112",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/anticyclones",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "anticyclone"
+    },
+    {
+      "questionId": "nda-2024-i-115",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/layers-by-composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "composition-layer"
+    },
+    {
+      "questionId": "nda-2024-i-118",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/tropical-cyclones",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tropical-cyclone"
+    },
+    {
+      "questionId": "nda-2024-i-69",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "rotation-time"
+    },
+    {
+      "questionId": "nda-2024-i-70",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/ionosphere",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ionosphere"
+    },
+    {
+      "questionId": "nda-2024-i-71",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/aeolian-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "aeolian-landform"
+    },
+    {
+      "questionId": "nda-2024-i-73",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "cloud"
+    },
+    {
+      "questionId": "nda-2024-i-74",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/thunderstorms-lightning-and-tornadoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "thunderstorm"
+    },
+    {
+      "questionId": "nda-2024-ii-108",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/tropical-cyclones",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "tropical-cyclone"
+    },
+    {
+      "questionId": "nda-2024-ii-110",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "volcano"
+    },
+    {
+      "questionId": "nda-2024-ii-111",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/layers-by-composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "composition-layer"
+    },
+    {
+      "questionId": "nda-2024-ii-112",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/weathering",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "weathering"
+    },
+    {
+      "questionId": "nda-2024-ii-135",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "wind-force"
+    },
+    {
+      "questionId": "nda-2024-ii-80",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/forms-of-condensation-near-the-ground",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "near-ground-condensation"
+    },
+    {
+      "questionId": "nda-2024-ii-82",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "nda-2024-ii-83",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "glacial-landform"
+    },
+    {
+      "questionId": "nda-2025-i-104",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "volcano"
+    },
+    {
+      "questionId": "nda-2025-i-105",
+      "oldTaxonomyId": "physical-geography/climatology/humidity-precipitation-climate-types",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-composition"
+    },
+    {
+      "questionId": "nda-2025-i-86",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "nda-2025-i-87",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/layers-by-composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "composition-layer"
+    },
+    {
+      "questionId": "nda-2025-i-88",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/weathering",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "weathering"
+    },
+    {
+      "questionId": "nda-2025-i-89",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "nda-2025-i-90",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/latitude-longitude-maps-geospatial-tools",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/solar-radiation-and-insolation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "insolation"
+    },
+    {
+      "questionId": "nda-2025-i-91",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "wind-force"
+    },
+    {
+      "questionId": "nda-2025-i-92",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "precipitation"
+    },
+    {
+      "questionId": "nda-2025-ii-111",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "grid"
+    },
+    {
+      "questionId": "nda-2025-ii-112",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/interior-of-the-earth/layers-by-composition",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "composition-layer"
+    },
+    {
+      "questionId": "nda-2025-ii-113",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earth-interior-rocks-tectonics",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "volcano"
+    },
+    {
+      "questionId": "nda-2025-ii-114",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-relief-properties-marine-resources",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-floor-relief",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-floor"
+    },
+    {
+      "questionId": "nda-2025-ii-115",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "earthquake"
+    },
+    {
+      "questionId": "nda-2025-ii-116",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/earthquakes-volcanoes-geological-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-floor-relief",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-floor"
+    },
+    {
+      "questionId": "nda-2025-ii-117",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/oceanography/waves",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-wave"
+    },
+    {
+      "questionId": "nda-2025-ii-118",
+      "oldTaxonomyId": "physical-geography/geomorphology-earth-structure/weathering-erosion-landforms",
+      "newTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/weathering",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "manual-soil-process"
+    },
+    {
+      "questionId": "nda-2025-ii-119",
+      "oldTaxonomyId": "physical-geography/climatology/atmosphere-insolation-temperature",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "atmosphere-structure"
+    },
+    {
+      "questionId": "nda-2025-ii-120",
+      "oldTaxonomyId": "physical-geography/earth-solar-system-map-fundamentals/solar-system-earth-motions-time",
+      "newTaxonomyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/solar-radiation-and-insolation",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "insolation"
+    },
+    {
+      "questionId": "nda-2025-ii-121",
+      "oldTaxonomyId": "physical-geography/climatology/pressure-winds-weather-systems",
+      "newTaxonomyId": "physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "wind-force"
+    },
+    {
+      "questionId": "nda-2025-ii-122",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    },
+    {
+      "questionId": "nda-2025-ii-123",
+      "oldTaxonomyId": "physical-geography/oceanography/ocean-currents-tides-ocean-hazards",
+      "newTaxonomyId": "physical-geography/oceanography/ocean-currents",
+      "reviewStatus": "rule-reviewed",
+      "reviewReason": "ocean-current"
+    }
+  ]
+}

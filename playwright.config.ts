@@ -1,6 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
 
 const remoteBaseURL = process.env.PLAYWRIGHT_BASE_URL;
+const vercelOidcToken = process.env.VERCEL_OIDC_TOKEN;
 
 export default defineConfig({
   testDir: "./tests/browser",
@@ -15,6 +16,7 @@ export default defineConfig({
     ignoreHTTPSErrors: true,
     screenshot: "only-on-failure",
     trace: "retain-on-failure",
+    extraHTTPHeaders: vercelOidcToken ? { "x-vercel-trusted-oidc-idp-token": vercelOidcToken } : undefined,
   },
   projects: [{
     name: "chromium",

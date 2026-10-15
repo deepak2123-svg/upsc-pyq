@@ -47,7 +47,9 @@ instead of exposing a client-side database secret.
        npm run content:import
        npm run content:import -- --apply
 
-   The taxonomy backfill uses `upsc-geography-v1.1` and maps 1,017 current
+   The taxonomy backfill uses `upsc-geography-v1.2`; Physical Geography is
+   ordered by chapters 1–11 of the supplied outline and its historical v1.1
+   selections remain available for exact retakes. The import maps 1,017 current
    records by source identifiers. Unmatched rows remain unrestricted until
    editorially mapped. The import preserves exact PYQ stem/options, upserts
    canonical taxonomy columns for existing records, and uses a source

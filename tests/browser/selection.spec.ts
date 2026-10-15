@@ -1,13 +1,13 @@
 import { expect, test, type Page } from "@playwright/test";
 
-const EARTH = "Earth Interior, Rocks & Tectonics";
-const WEATHER = "Weathering, Erosion & Landforms";
-const GEOMORPHOLOGY = "Geomorphology & Earth Structure";
+const EARTH = "Planets";
+const WEATHER = "The Sun";
+const GEOMORPHOLOGY = "Universe, Solar System, Shape and Size of Earth";
 const formatted = (value: number) => value.toLocaleString("en-IN");
 const escape = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const summary = (page: Page) => page.getByTestId("matching-count");
-const start = (page: Page) => page.locator(".scope-dock").getByRole("button", { name: /^Start / });
-const scope = (page: Page) => page.locator((page.viewportSize()?.width || 1600) < 1100 ? ".scope-flow-mobile" : ".scope-flow-scroll");
+const start = (page: Page) => page.locator(".scope-dock .start-practice");
+const scope = (page: Page) => page.locator(".scope-cards");
 
 async function matching(page: Page, count: number) {
   await expect(summary(page).locator("strong")).toHaveText(formatted(count));
@@ -24,14 +24,14 @@ async function geomorphology(page: Page) {
   await choose(page, "Physical Geography");
   await matching(page, 363);
   await choose(page, GEOMORPHOLOGY);
-  await matching(page, 140);
+  await matching(page, 28);
 }
 async function addition(page: Page, subtopic = WEATHER) {
   await page.getByRole("button", { name: /Add (?:another )?topic/ }).click();
   const dialog = page.getByRole("dialog", { name: "Add to your current selection" });
   await dialog.getByRole("combobox", { name: "Section", exact: true }).selectOption({ label: "Physical Geography · 363" });
-  await dialog.getByRole("combobox", { name: "Topic", exact: true }).selectOption({ label: `${GEOMORPHOLOGY} · 140` });
-  await dialog.getByRole("combobox", { name: "Subtopic", exact: true }).selectOption({ label: `${subtopic} · ${subtopic === WEATHER ? 76 : 41}` });
+  await dialog.getByRole("combobox", { name: "Topic", exact: true }).selectOption({ label: `${GEOMORPHOLOGY} · 28` });
+  await dialog.getByRole("combobox", { name: "Subtopic", exact: true }).selectOption({ label: `${subtopic} · ${subtopic === WEATHER ? 8 : 10}` });
   return dialog;
 }
 async function snapshotResponse(page: Page) {
@@ -44,48 +44,84 @@ test.beforeEach(async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Build your test." })).toBeVisible();
   await expect(page.getByRole("button", { name: /^Geography\b/ }).first()).toBeEnabled();
   await page.waitForFunction(() => sessionStorage.getItem("upsc-pyq-builder:v3:all") !== null);
-  await expect(page.locator(".scope-size-options").getByRole("button", { name: "20", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator(".scope-size-options").getByRole("button", { pressed: true })).toHaveCount(0);
+  await expect(start(page)).toBeDisabled();
+  await expect(start(page)).toHaveText("Choose question count");
 });
 
-test("scope clicks narrow 1021 → 363 → 140 → 41, preserving ancestry and honest context", async ({ page }, testInfo) => {
+test("scope clicks narrow 1021 → 363 → 28 → 10, preserving ancestry and honest context", async ({ page }, testInfo) => {
   await geomorphology(page);
   const breadcrumbs = page.getByRole("navigation", { name: "Current syllabus path" });
   await expect(breadcrumbs).toContainText("Geography");
   await expect(breadcrumbs).toContainText("Physical Geography");
   await expect(breadcrumbs).toContainText(GEOMORPHOLOGY);
-  await expect(scope(page).getByRole("button", { name: /Show other sections, 658 available/ })).toBeVisible();
+  await expect(scope(page).getByRole("heading", { name: "Choose subparts" })).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath("physical-geomorphology.png"), fullPage: true });
   await choose(page, EARTH);
-  await matching(page, 41);
+  await matching(page, 10);
   await expect(breadcrumbs).toContainText(EARTH);
   await page.getByRole("button", { name: /Back.*selection unchanged/ }).click();
-  await matching(page, 41);
+  await matching(page, 10);
   await expect(page.getByRole("status")).toContainText("selection is unchanged");
-  await choose(page, GEOMORPHOLOGY);
-  await matching(page, 140);
+  await page.getByRole("button", { name: "Select entire topic", exact: true }).click();
+  await matching(page, 28);
 });
 
-test("source filtering gives 12 CSE questions, retains scope, and leaves geometry unchanged", async ({ page }) => {
+test("View explores another branch without changing the selected test scope", async ({ page }) => {
   await geomorphology(page);
-  const positions = await page.locator(".scope-flow-node").evaluateAll((nodes) => nodes.map((node) => ({
+  await page.getByRole("button", { name: /Back.*selection unchanged/ }).click();
+  await matching(page, 28);
+  await scope(page).getByRole("button", { name: /^Open Oceanography subparts without changing your selection$/ }).click();
+  await matching(page, 28);
+  await expect(page.getByRole("navigation", { name: "Current syllabus path" })).toContainText("Oceanography");
+  await expect(page.locator(".scope-selection-list")).toContainText(GEOMORPHOLOGY);
+  await expect(page.locator(".scope-selection-list")).not.toContainText("Oceanography");
+});
+
+test("Physical Geography chapter cards follow the canonical PDF order", async ({ page }) => {
+  await geography(page);
+  await choose(page, "Physical Geography");
+  const expected = [
+    "Universe, Solar System, Shape and Size of Earth",
+    "Latitudes, Longitudes, Time and Motions of the Earth",
+    "Interior of the Earth",
+    "Rocks and Minerals",
+    "Plate Tectonics, Earthquakes, Volcanoes and Mountain Building",
+    "Geomorphic Processes and Landforms",
+    "The Atmosphere, Insolation, Heat Budget and Temperature",
+    "Atmospheric Pressure, Winds and Circulation",
+    "Condensation, Clouds, Precipitation, Air Masses, Fronts and Cyclones",
+    "World Climate Regions and the Köppen Classification",
+    "Oceanography",
+  ];
+  await expect(scope(page).locator(".scope-card h4")).toHaveText(expected);
+  await scope(page).getByRole("button", { name: /^Open Oceanography subparts without changing your selection$/ }).click();
+  await matching(page, 363);
+  await expect(page.getByRole("navigation", { name: "Current syllabus path" })).toContainText("Oceanography");
+});
+
+test("source filtering gives 5 CSE questions, retains scope, and leaves geometry unchanged", async ({ page }) => {
+  await geomorphology(page);
+  await page.locator(".scope-size-options").getByRole("button", { name: "20", exact: true }).click();
+  const positions = await page.locator(".scope-card").evaluateAll((nodes) => nodes.map((node) => ({
     id: (node as HTMLElement).dataset.scopeId,
-    top: (node as HTMLElement).style.top,
-    left: (node as HTMLElement).style.left,
+    top: (node as HTMLElement).offsetTop,
+    left: (node as HTMLElement).offsetLeft,
   })));
   for (const exam of ["CAPF", "CDS", "NDA"]) {
     await page.locator(".scope-sources").getByRole("checkbox", { name: new RegExp(`^${exam}\\b`) }).click();
   }
-  await matching(page, 12);
+  await matching(page, 5);
   await expect(page.locator(".scope-sources").getByRole("checkbox", { name: /^CSE\b/ })).toBeChecked();
-  expect(await page.locator(".scope-flow-node").evaluateAll((nodes) => nodes.map((node) => ({
+  expect(await page.locator(".scope-card").evaluateAll((nodes) => nodes.map((node) => ({
     id: (node as HTMLElement).dataset.scopeId,
-    top: (node as HTMLElement).style.top,
-    left: (node as HTMLElement).style.left,
+    top: (node as HTMLElement).offsetTop,
+    left: (node as HTMLElement).offsetLeft,
   })))).toEqual(positions);
   await expect(start(page)).toBeDisabled();
-  await expect(page.getByRole("alert")).toContainText("You chose 20, but only 12 questions match.");
-  await page.getByRole("button", { name: "Use all 12 available" }).click();
-  await expect(start(page)).toHaveText("Start 12-question practice →");
+  await expect(page.getByRole("alert")).toContainText("You chose 20, but only 5 questions match.");
+  await page.getByRole("button", { name: "Use all 5 available" }).click();
+  await expect(start(page)).toHaveText("Start 5-question practice →");
 });
 
 test("topic replacement preserves another selected subject", async ({ page }) => {
@@ -96,9 +132,9 @@ test("topic replacement preserves another selected subject", async ({ page }) =>
   await choose(page, "Physical Geography");
   await matching(page, 380);
   await choose(page, GEOMORPHOLOGY);
-  await matching(page, 157);
+  await matching(page, 45);
   await choose(page, EARTH);
-  await matching(page, 58);
+  await matching(page, 27);
   await expect(page.locator(".scope-selection-list")).toContainText("Polity");
   await expect(page.locator(".scope-selection-list")).toContainText(EARTH);
 });
@@ -107,28 +143,29 @@ test("add picker previews unique additions; Cancel, overlap and remove/re-add pr
   await geomorphology(page);
   await choose(page, EARTH);
   let dialog = await addition(page);
-  await expect(dialog).toContainText("76 new questions");
-  await matching(page, 41);
+  await expect(dialog).toContainText("8 new questions");
+  await matching(page, 10);
   await dialog.getByRole("button", { name: "Cancel", exact: true }).click();
-  await matching(page, 41);
+  await matching(page, 10);
   dialog = await addition(page);
-  await dialog.getByRole("button", { name: "Add 76 questions", exact: true }).click();
-  await matching(page, 117);
+  await dialog.getByRole("button", { name: "Add 8 questions", exact: true }).click();
+  await matching(page, 18);
   dialog = await addition(page);
   await expect(dialog).toContainText("Already included or unavailable.");
   await expect(dialog.getByRole("button", { name: "Add 0 questions", exact: true })).toBeDisabled();
   await dialog.getByRole("button", { name: "Cancel", exact: true }).click();
   await page.getByRole("button", { name: `Remove ${WEATHER}`, exact: true }).click();
-  await matching(page, 41);
+  await matching(page, 10);
   dialog = await addition(page);
-  await dialog.getByRole("button", { name: "Add 76 questions", exact: true }).click();
-  await matching(page, 117);
+  await dialog.getByRole("button", { name: "Add 8 questions", exact: true }).click();
+  await matching(page, 18);
 });
 
 test("tiny branches keep requested size 20 until the student explicitly chooses All", async ({ page }) => {
   await geomorphology(page);
-  await choose(page, "Earthquakes, Volcanoes & Geological Hazards");
-  await matching(page, 23);
+  await page.locator(".scope-size-options").getByRole("button", { name: "20", exact: true }).click();
+  await choose(page, "Dwarf Planets, Asteroids, Meteors, Comets");
+  await matching(page, 2);
   for (const exam of ["CAPF", "CDS", "NDA"]) {
     const checkbox = page.locator(".scope-sources").getByRole("checkbox", { name: new RegExp(`^${exam}\\b`) });
     if (await checkbox.isEnabled()) await checkbox.click();
@@ -153,18 +190,19 @@ test("draft reload restores selection, sources, size, focus and question order",
   await page.locator(".scope-size-options").getByRole("button", { name: "30", exact: true }).click();
   await page.getByRole("combobox", { name: "Question order", exact: true }).selectOption("shuffle");
   await page.reload();
-  await matching(page, 41);
+  await matching(page, 10);
   await expect(page.getByRole("navigation", { name: "Current syllabus path" })).toContainText(EARTH);
   await expect(page.getByRole("combobox", { name: "Question order", exact: true })).toHaveValue("shuffle");
   await expect(page.locator(".scope-size-options").getByRole("button", { name: "30", exact: true })).toHaveAttribute("aria-pressed", "true");
   const draft = await page.evaluate(() => JSON.parse(sessionStorage.getItem("upsc-pyq-builder:v3:all") || "{}"));
-  expect(draft.version).toBe(3);
+  expect(draft.version).toBe(4);
   expect(draft.inventoryVersion).toBe(3);
   expect(Object.keys(draft.paths)).toHaveLength(1);
 });
 
 test("posted version-3 recipe exactly matches the displayed scope, for size 20 and All", async ({ page }) => {
   await geomorphology(page);
+  await page.locator(".scope-size-options").getByRole("button", { name: "20", exact: true }).click();
   let responsePromise = snapshotResponse(page);
   await start(page).click();
   let response = await responsePromise;
@@ -173,30 +211,31 @@ test("posted version-3 recipe exactly matches the displayed scope, for size 20 a
   expect(recipe.version).toBe(3);
   expect(recipe.count).toBe(20);
   expect(recipe.subjectIds).toEqual(["subject:geography"]);
-  expect(recipe.paths).toHaveLength(3);
-  expect(recipe.paths.every((path: { subtopicId: string }) => path.subtopicId.includes(":physical-geography:geomorphology-earth-structure:"))).toBe(true);
+  expect(recipe.paths).toHaveLength(6);
+  expect(recipe.paths.every((path: { subtopicId: string }) => path.subtopicId.includes(":physical-geography:universe-solar-system-shape-and-size-of-earth:"))).toBe(true);
   let snapshot = await response.json();
-  expect(snapshot.matchingCount).toBe(140);
+  expect(snapshot.matchingCount).toBe(28);
   expect(snapshot.questions).toHaveLength(20);
   expect(snapshot.questions.every((question: { topic: string }) => question.topic === GEOMORPHOLOGY)).toBe(true);
   await expect(page.locator(".question-heading")).toContainText("Question 1 of 20");
   await page.goBack();
-  await matching(page, 140);
+  await matching(page, 28);
   await page.locator(".scope-size-options").getByRole("button", { name: "All", exact: true }).click();
   responsePromise = snapshotResponse(page);
   await start(page).click();
   response = await responsePromise;
   snapshot = await response.json();
   expect(snapshot.recipe.count).toBe("all");
-  expect(snapshot.questions).toHaveLength(140);
-  expect(new Set(snapshot.questions.map((question: { id: string }) => question.id)).size).toBe(140);
+  expect(snapshot.questions).toHaveLength(28);
+  expect(new Set(snapshot.questions.map((question: { id: string }) => question.id)).size).toBe(28);
 });
 
 test("a saved practice finishes, retakes with its version-3 recipe and restores the builder", async ({ page }) => {
   await geomorphology(page);
   await choose(page, EARTH);
+  await page.locator(".scope-size-options").getByRole("button", { name: "10", exact: true }).click();
   await start(page).click();
-  await expect(page.locator(".question-heading")).toContainText("Question 1 of 20");
+  await expect(page.locator(".question-heading")).toContainText("Question 1 of 10");
   const firstUrl = page.url();
   await page.getByRole("button", { name: "Finish", exact: true }).click();
   await expect(page.getByText("Practice complete", { exact: true })).toBeVisible();
@@ -204,15 +243,16 @@ test("a saved practice finishes, retakes with its version-3 recipe and restores 
   await page.getByRole("button", { name: "Retake selection", exact: true }).click();
   const response = await retake;
   expect(response.request().postDataJSON().version).toBe(3);
-  expect((await response.json()).matchingCount).toBe(41);
-  await expect(page.locator(".question-heading")).toContainText("Question 1 of 20");
+  expect((await response.json()).matchingCount).toBe(10);
+  await expect(page.locator(".question-heading")).toContainText("Question 1 of 10");
   expect(page.url()).not.toBe(firstUrl);
   await page.goto("/");
-  await matching(page, 41);
+  await matching(page, 10);
 });
 
 test("in-flight creation freezes controls and server failure retains the visible selection", async ({ page }) => {
   await geomorphology(page);
+  await page.locator(".scope-size-options").getByRole("button", { name: "20", exact: true }).click();
   let release!: () => void;
   const gate = new Promise<void>((resolve) => { release = resolve; });
   await page.route("**/api/practice-snapshots", async (route) => {
@@ -226,7 +266,7 @@ test("in-flight creation freezes controls and server failure retains the visible
   await expect(page.getByRole("combobox", { name: "Question order", exact: true })).toBeDisabled();
   release();
   await expect(page.getByRole("alert")).toHaveText("Practice service is temporarily unavailable.");
-  await matching(page, 140);
+  await matching(page, 28);
   await expect(start(page)).toBeEnabled();
   await expect(page).toHaveURL("/");
 });
@@ -241,10 +281,11 @@ test("browser storage failure explains the problem without navigating to a missi
   });
   await page.reload();
   await geomorphology(page);
+  await page.locator(".scope-size-options").getByRole("button", { name: "20", exact: true }).click();
   await start(page).click();
   await expect(page.getByRole("alert")).toContainText("This browser could not save your practice.");
   await expect(page).toHaveURL("/");
-  await matching(page, 140);
+  await matching(page, 28);
   await expect(start(page)).toBeEnabled();
 });
 
@@ -334,14 +375,14 @@ test("a previously saved version-2 attempt resumes and retakes through its legac
   expect(page.url()).not.toContain(snapshot.id);
 });
 
-test("actual Sankey cards do not overlap at every ancestry level or for long environmental names", async ({ page }) => {
+test("chapter cards do not overlap at every level or for long environmental names", async ({ page }) => {
   async function assertCards() {
     // Wait for the implemented 200ms transitions to settle before checking final geometry.
-    await page.locator(".scope-flow").evaluate(async (flow) => {
+    await page.locator(".scope-cards").evaluate(async (flow) => {
       flow.getBoundingClientRect();
       await Promise.all(flow.getAnimations({ subtree: true }).map((animation) => animation.finished.catch(() => undefined)));
     });
-    const overlaps = await page.locator(".scope-flow-node").evaluateAll((nodes) => {
+    const overlaps = await page.locator(".scope-card").evaluateAll((nodes) => {
       const cards = nodes.map((node) => ({ id: (node as HTMLElement).dataset.scopeId, label: node.textContent, rect: node.getBoundingClientRect() }));
       return cards.flatMap((card, position) => cards.slice(position + 1).filter((other) => (
         card.rect.width > 0 && other.rect.width > 0 &&
@@ -350,7 +391,7 @@ test("actual Sankey cards do not overlap at every ancestry level or for long env
       )).map((other) => [card.id, other.id]));
     });
     expect(overlaps).toEqual([]);
-    for (const button of await scope(page).locator(".scope-flow-select, .scope-flow-browse").all()) {
+    for (const button of await scope(page).locator(".scope-card-select, .scope-card-open").all()) {
       const box = await button.boundingBox();
       expect(box?.height).toBeGreaterThanOrEqual(44);
     }
@@ -369,7 +410,7 @@ test("actual Sankey cards do not overlap at every ancestry level or for long env
   await page.locator(".scope-subject-tabs").getByRole("button", { name: /^Geography\b/ }).click();
   await choose(page, "Other Geography");
   await assertCards();
-  await choose(page, GEOMORPHOLOGY);
+  await choose(page, "Geomorphology & Earth Structure");
   await assertCards();
   const tiny = scope(page).getByRole("button", { name: /^Choose Earth Structure & Folding\./ });
   await tiny.focus();
@@ -388,32 +429,18 @@ for (const width of [390, 768, 1024, 1600]) {
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
     expect(overflow).toBe(false);
     if (width < 1100) {
-      await expect(page.locator(".scope-flow-mobile")).toBeVisible();
-      await expect(page.locator(".scope-mobile-bar")).toContainText("140 matching");
-      await expect(page.locator(".scope-flow-scroll")).toBeHidden();
-      await expect(page.locator(".scope-mobile-level").first()).toBeVisible();
-      await page.getByRole("button", { name: "Diagram view" }).click();
-      const diagram = page.locator(".scope-flow-scroll");
-      await expect(diagram).toBeVisible();
-      const activeInView = await diagram.locator('.scope-flow-node [aria-current="true"]').evaluate((button) => {
-        const node = button.closest<HTMLElement>(".scope-flow-node")!;
-        const container = button.closest<HTMLElement>(".scope-flow-scroll")!;
-        const nodeRect = node.getBoundingClientRect();
-        const containerRect = container.getBoundingClientRect();
-        return nodeRect.left >= containerRect.left - 2 && nodeRect.right <= containerRect.right + 2;
-      });
-      expect(activeInView).toBe(true);
-      await page.getByRole("button", { name: "List view" }).click();
-      await expect(page.locator(".scope-flow-mobile")).toBeVisible();
+      await expect(page.locator(".scope-card-grid")).toBeVisible();
+      await expect(page.locator(".scope-mobile-bar")).toContainText("28 matching");
+      await expect(page.getByRole("button", { name: "Diagram view" })).toHaveCount(0);
     }
-    const earthquake = scope(page).getByRole("button", { name: /^Choose Earthquakes, Volcanoes & Geological Hazards\./ });
-    const box = await earthquake.boundingBox();
+    const tinyBranch = scope(page).getByRole("button", { name: /^Choose Dwarf Planets, Asteroids, Meteors, Comets\./ });
+    const box = await tinyBranch.boundingBox();
     expect(box?.height).toBeGreaterThanOrEqual(44);
-    await earthquake.focus();
-    await expect(earthquake).toBeFocused();
+    await tinyBranch.focus();
+    await expect(tinyBranch).toBeFocused();
     await page.keyboard.press("Enter");
-    await matching(page, 23);
-    const font = await scope(page).locator(".scope-flow-node-label").first().evaluate((element) => parseFloat(getComputedStyle(element).fontSize));
+    await matching(page, 2);
+    const font = await scope(page).locator(".scope-card h4").first().evaluate((element) => parseFloat(getComputedStyle(element).fontSize));
     expect(font).toBeGreaterThanOrEqual(13);
   });
 }
@@ -430,5 +457,5 @@ test("reduced-motion users can refine and navigate with the keyboard", async ({ 
   await matching(page, 363);
   await expect(page.getByRole("heading", { name: "Physical Geography", exact: true }).first()).toBeFocused();
   await choose(page, GEOMORPHOLOGY);
-  await matching(page, 140);
+  await matching(page, 28);
 });

@@ -1,5 +1,5 @@
 import questionBank from "../content/question-bank.json";
-import { taxonomyIdForLegacyQuestion, taxonomyIdForQuestion, taxonomyNode } from "./taxonomy";
+import { historicalPhysicalQuestionSets, historicalPhysicalTargets, slug as taxonomySlug, taxonomyIdForLegacyQuestion, taxonomyIdForQuestion, taxonomyNode } from "./taxonomy";
 import { PYQ_EXAMS, type PyqExam } from "./pyq-exams";
 export { PYQ_EXAMS, type PyqExam } from "./pyq-exams";
 
@@ -56,6 +56,7 @@ export type PracticeInventoryNode = {
   questionCount: number;
   examCounts: ExamCounts;
   parentId?: string;
+  order: number;
 };
 
 export type PracticeInventoryLink = {
@@ -75,6 +76,7 @@ export type SubjectPracticeInventory = {
   nodes: PracticeInventoryNode[];
   links: PracticeInventoryLink[];
   legacyAliases: Record<string, string[]>;
+  legacyQuestionSets: Record<string, string[]>;
 };
 
 export type ArchiveInventory = {
@@ -152,7 +154,12 @@ export function getQuestionPath(question: PyqQuestion) {
   const headId = `head:${slug(subject)}:${slug(head)}`;
   const topicId = `topic:${slug(subject)}:${slug(head)}:${slug(topic)}`;
   const subtopicId = `subtopic:${slug(subject)}:${slug(head)}:${slug(topic)}:${slug(subtopic)}`;
-  return { subject, head, topic, subtopic, subjectId, headId, topicId, subtopicId };
+  return {
+    subject, head, topic, subtopic, subjectId, headId, topicId, subtopicId,
+    headOrder: mappedNode?.head === "Physical Geography" ? 1 : 100,
+    topicOrder: mappedNode?.chapterOrder ?? 100,
+    subtopicOrder: mappedNode?.subtopicOrder ?? 100,
+  };
 }
 
 const emptyExamCounts = (): ExamCounts => ({ CSE: 0, CAPF: 0, CDS: 0, NDA: 0 });
@@ -188,9 +195,9 @@ export function getSubjectPracticeInventory(): SubjectPracticeInventory {
     subjects.set(subject.id, subject);
 
     const pathNodes: PracticeInventoryNode[] = [
-      { id: path.headId, label: path.head, kind: "head", subjectId: path.subjectId, parentId: path.subjectId, questionCount: 0, examCounts: emptyExamCounts() },
-      { id: path.topicId, label: path.topic, kind: "topic", subjectId: path.subjectId, parentId: path.headId, questionCount: 0, examCounts: emptyExamCounts() },
-      { id: path.subtopicId, label: path.subtopic, kind: "subtopic", subjectId: path.subjectId, parentId: path.topicId, questionCount: 0, examCounts: emptyExamCounts() },
+      { id: path.headId, label: path.head, kind: "head", subjectId: path.subjectId, parentId: path.subjectId, order: path.headOrder, questionCount: 0, examCounts: emptyExamCounts() },
+      { id: path.topicId, label: path.topic, kind: "topic", subjectId: path.subjectId, parentId: path.headId, order: path.topicOrder, questionCount: 0, examCounts: emptyExamCounts() },
+      { id: path.subtopicId, label: path.subtopic, kind: "subtopic", subjectId: path.subjectId, parentId: path.topicId, order: path.subtopicOrder, questionCount: 0, examCounts: emptyExamCounts() },
     ];
     for (const nextNode of pathNodes) {
       const current = nodes.get(nextNode.id) || nextNode;
@@ -214,6 +221,23 @@ export function getSubjectPracticeInventory(): SubjectPracticeInventory {
     }
   }
 
+  const legacyQuestionSets: Record<string, string[]> = {};
+  for (const [oldTaxonomyId, questionIds] of Object.entries(historicalPhysicalQuestionSets)) {
+    const [, oldChapter, oldSubtopic] = oldTaxonomyId.split("/");
+    const legacyId = `subtopic:geography:physical-geography:${oldChapter}:${oldSubtopic}`;
+    const ancestryUnsafeId = `subtopic:geography:${oldChapter}:${oldSubtopic}`;
+    legacyQuestionSets[legacyId] = questionIds;
+    legacyQuestionSets[ancestryUnsafeId] = questionIds;
+    const targets = historicalPhysicalTargets[oldTaxonomyId] || [];
+    const aliases = legacyAliases.get(legacyId) || new Set<string>();
+    for (const target of targets) {
+      const node = taxonomyNode(target);
+      if (node) aliases.add(`subtopic:geography:physical-geography:${taxonomySlug(node.chapter)}:${taxonomySlug(node.subtopic)}`);
+    }
+    legacyAliases.set(legacyId, aliases);
+    legacyAliases.set(ancestryUnsafeId, new Set(aliases));
+  }
+
   const subjectOrder = new Map(["Geography", "Environment", "Polity"].map((label, index) => [label, index]));
   return {
     version: 3,
@@ -221,9 +245,10 @@ export function getSubjectPracticeInventory(): SubjectPracticeInventory {
     mappedCount,
     unmappedCount: pyqQuestions.length - mappedCount,
     subjects: [...subjects.values()].sort((a, b) => (subjectOrder.get(a.label) ?? 99) - (subjectOrder.get(b.label) ?? 99) || a.label.localeCompare(b.label)),
-    nodes: [...nodes.values()].sort((a, b) => a.subjectId.localeCompare(b.subjectId) || a.kind.localeCompare(b.kind) || a.label.localeCompare(b.label)),
+    nodes: [...nodes.values()].sort((a, b) => a.subjectId.localeCompare(b.subjectId) || a.kind.localeCompare(b.kind) || a.order - b.order || a.label.localeCompare(b.label)),
     links: [...links.values()].sort((a, b) => a.subjectId.localeCompare(b.subjectId) || a.source.localeCompare(b.source) || a.target.localeCompare(b.target)),
     legacyAliases: Object.fromEntries([...legacyAliases.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([id, aliases]) => [id, [...aliases].sort()])),
+    legacyQuestionSets,
   };
 }
 

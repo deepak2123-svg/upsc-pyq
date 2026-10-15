@@ -1,16 +1,16 @@
 import { readFileSync } from "node:fs";
 import { expect, test, type APIRequestContext, type Page } from "@playwright/test";
 
-const EARTH = "Earth Interior, Rocks & Tectonics";
+const CHAPTER = "Universe, Solar System, Shape and Size of Earth";
 const GEO = "subject:geography";
-const EARTH_ID = "subtopic:geography:physical-geography:geomorphology-earth-structure:earth-interior-rocks-tectonics";
+const EARTH_ID = "subtopic:geography:physical-geography:universe-solar-system-shape-and-size-of-earth:planets";
 const EXAMS = ["CSE", "CAPF", "CDS", "NDA"];
 const COLORS = { CSE: "#2563eb", CAPF: "#b45309", CDS: "#0f766e", NDA: "#7c3aed" };
 type FixtureQuestion = { id: string; exam: string; options: Record<string, string> };
 type FixtureSnapshot = { id: string; questions: FixtureQuestion[]; recipe: Record<string, unknown> };
 const records = JSON.parse(readFileSync(new URL("../../content/question-bank.json", import.meta.url), "utf8")) as { questions: { id: string; answer: string }[] };
 const correctAnswer = (id: string) => records.questions.find((question) => question.id === id)!.answer;
-const start = (page: Page) => page.locator(".scope-dock").getByRole("button", { name: /^Start / });
+const start = (page: Page) => page.locator(".scope-dock .start-practice");
 const choose = (page: Page, label: string) => page.locator(".scope-flow-scroll").getByRole("button", { name: new RegExp(`^Choose ${label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\.`) }).click();
 
 async function fixture(page: Page, request: APIRequestContext, durationMinutes: number | null = null) {
@@ -72,17 +72,17 @@ test.beforeEach(async ({ page }) => {
   await page.waitForFunction(() => sessionStorage.getItem("upsc-pyq-builder:v3:all") !== null);
 });
 
-test("sources live in the practice dock; four honest exam colors replace chart browse arrows", async ({ page, request }, testInfo) => {
+test("sources live beside the diagram; four honest exam colors replace chart browse arrows", async ({ page, request }, testInfo) => {
   await page.getByRole("button", { name: /^Geography\b/ }).first().click();
-  await expect(page.locator(".scope-dock .scope-sources")).toHaveCount(1);
+  await expect(page.locator(".scope-dock .scope-sources")).toHaveCount(0);
   await expect(page.locator(".scope-workspace .scope-sources")).toHaveCount(1);
   await expect(page.locator(".scope-flow-browse")).toHaveCount(0);
   await expect(page.locator(".scope-flow")).not.toContainText("↗");
   const inventory = await (await request.get("/api/pyqs/inventory")).json();
   const geo = inventory.subjects.find((subject: { id: string }) => subject.id === GEO);
   for (const exam of EXAMS) {
-    await expect(page.locator(".scope-flow-legend")).toContainText(exam);
-    await expect(page.locator(".scope-dock .scope-sources").getByRole("checkbox", { name: new RegExp(`^${exam}\\b`) })).toBeChecked();
+    await expect(page.locator(".scope-refine .scope-sources")).toContainText(exam);
+    await expect(page.locator(".scope-refine .scope-sources").getByRole("checkbox", { name: new RegExp(`^${exam}\\b`) })).toBeChecked();
     const ribbons = page.locator(`.scope-flow-scroll path[data-exam="${exam}"][data-layer="available"][data-source-id="${GEO}"]`);
     const lanes = await ribbons.evaluateAll((paths) => paths.map((path) => ({ color: path.getAttribute("stroke"), count: Number((path as SVGElement).dataset.questionCount) })));
     expect(lanes.length).toBeGreaterThan(0);
@@ -111,12 +111,12 @@ test("test duration defaults to untimed and survives draft reload and snapshot c
   await expect(duration).toHaveValue("untimed");
   await page.getByRole("button", { name: /^Geography\b/ }).first().click();
   await choose(page, "Physical Geography");
-  await choose(page, "Geomorphology & Earth Structure");
-  await choose(page, EARTH);
+  await choose(page, CHAPTER);
+  await page.locator(".scope-size-options").getByRole("button", { name: "20", exact: true }).click();
   await duration.selectOption("20");
   await page.reload();
   await expect(duration).toHaveValue("20");
-  await expect(page.getByTestId("matching-count").locator("strong")).toHaveText("41");
+  await expect(page.getByTestId("matching-count").locator("strong")).toHaveText("28");
   await duration.selectOption("custom");
   const minutes = page.getByRole("spinbutton", { name: "Minutes", exact: true });
   for (const value of ["0", "1.5", "721"]) {
@@ -153,17 +153,17 @@ test("Exit restores the exam-specific builder's scope, sources, size and duratio
   await page.waitForFunction(() => sessionStorage.getItem("upsc-pyq-builder:v3:CSE") !== null);
   await page.getByRole("button", { name: /^Geography\b/ }).first().click();
   await choose(page, "Physical Geography");
-  await choose(page, "Geomorphology & Earth Structure");
-  await expect(page.getByTestId("matching-count").locator("strong")).toHaveText("12");
+  await choose(page, CHAPTER);
+  await expect(page.getByTestId("matching-count").locator("strong")).toHaveText("5");
   await page.locator(".scope-size-options").getByRole("button", { name: "All", exact: true }).click();
   await page.getByRole("combobox", { name: "Test duration", exact: true }).selectOption("20");
   await start(page).click();
-  await expect(page.locator(".question-heading")).toContainText("Question 1 of 12");
+  await expect(page.locator(".question-heading")).toContainText("Question 1 of 5");
   await page.getByRole("link", { name: "Exit test", exact: true }).click();
   await expect(page).toHaveURL(/\/exams\/CSE$/);
-  await expect(page.getByTestId("matching-count").locator("strong")).toHaveText("12");
+  await expect(page.getByTestId("matching-count").locator("strong")).toHaveText("5");
   await expect(page.getByRole("navigation", { name: "Current syllabus path" })).toContainText("Physical Geography");
-  await expect(page.getByRole("navigation", { name: "Current syllabus path" })).toContainText("Geomorphology & Earth Structure");
+  await expect(page.getByRole("navigation", { name: "Current syllabus path" })).toContainText(CHAPTER);
   await expect(page.locator(".scope-size-options").getByRole("button", { name: "All", exact: true })).toHaveAttribute("aria-pressed", "true");
   await expect(page.getByRole("combobox", { name: "Test duration", exact: true })).toHaveValue("20");
   await expect(page.locator(".scope-sources").getByRole("checkbox", { name: /^CSE\b/ })).toBeChecked();
@@ -232,7 +232,7 @@ test("answers remain editable and hidden until submission; result sheet grades a
   }
   const topicTable = page.getByRole("table", { name: "Subject and topic performance", exact: true });
   await expect(topicTable).toContainText("Geography");
-  await expect(topicTable).toContainText("Geomorphology & Earth Structure");
+  await expect(topicTable).toContainText(CHAPTER);
   await expect(topicTable.getByRole("row").nth(1).getByRole("cell")).toHaveText(["3", "2", "1", "1", "1", "50%"]);
   const saved = await storedAttempt(page, snapshot.id);
   expect(saved.status).toBe("completed");

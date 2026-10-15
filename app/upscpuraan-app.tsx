@@ -711,10 +711,10 @@ function Builder(props: BuilderProps) {
           <div className="subsection-toolbar"><button className={`chip ${props.subtopics.length === 0 ? "selected" : ""}`} onClick={props.clearSubtopics} aria-pressed={props.subtopics.length === 0}>All subsections</button><span className="meta">{props.subtopics.length ? `${props.subtopics.length} selected` : "No subsection filter"}</span></div>
           <div className="taxonomy-groups">
             {props.taxonomyGroups.map((group) => <details className="taxonomy-group" key={group.name}>
-              <summary>{group.name}<span className="meta">{Object.values(group.chapters).flat().length} subtopics</span></summary>
+              <summary>{group.name}<span className="meta">{group.chapters.flatMap((chapter) => chapter.subtopics).length} subtopics</span></summary>
               <div className="taxonomy-chapters">
-                {Object.entries(group.chapters).map(([chapter, children]) => {
-                  const ids = children.map((subtopic) => {
+                {group.chapters.map(({ name: chapter, subtopics }) => {
+                  const ids = subtopics.map(({ name: subtopic }) => {
                     const node = taxonomyNodesForSubjects([group.subject]).find((candidate) => candidate.head === group.name && candidate.chapter === chapter && candidate.subtopic === subtopic);
                     return node?.id ?? "";
                   }).filter(Boolean);
@@ -723,8 +723,8 @@ function Builder(props: BuilderProps) {
                   return <div className="taxonomy-chapter" key={chapter}>
                     <button className={`taxonomy-chapter-toggle ${allSelected ? "selected" : ""} ${selectedCount > 0 && !allSelected ? "partial" : ""}`} onClick={() => props.toggleChapter(group.name, chapter)} role="checkbox" aria-checked={allSelected ? "true" : selectedCount > 0 ? "mixed" : "false"}><span>{chapter}</span><span className="meta">{selectedCount}/{ids.length}</span></button>
                     <div className="subtopic-chips">
-                      {children.map((subtopic) => {
-                        const id = ids[children.indexOf(subtopic)];
+                      {subtopics.map(({ name: subtopic }, index) => {
+                        const id = ids[index];
                         const selected = props.subtopics.includes(id);
                         return <button key={id} className={`subtopic-chip ${selected ? "selected" : ""}`} onClick={() => props.toggleSubtopic(id)} aria-pressed={selected}>{subtopic}</button>;
                       })}

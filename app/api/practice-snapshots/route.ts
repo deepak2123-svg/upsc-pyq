@@ -64,6 +64,7 @@ export async function POST(request: Request) {
     const allowedSubjects = new Set(subjectIds);
     const subtopics = new Map(inventory.nodes.filter((node) => node.kind === "subtopic").map((node) => [node.id, node]));
     const pathExams = new Map<string, Set<PyqExam>>();
+    const legacyPathExams = new Map<string, Set<PyqExam>>();
 
     if (strict && (!Array.isArray(input.paths) || !input.paths.length)) {
       return NextResponse.json({ error: "Choose at least one subtopic and examination source." }, { status: 400 });
@@ -74,14 +75,31 @@ export async function POST(request: Request) {
           if (strict) return NextResponse.json({ error: "Choose valid subtopic paths and examination sources." }, { status: 400 });
           continue;
         }
-        const resolvedIds = resolveSubtopics(candidate.subtopicId, subtopics, inventory.legacyAliases, !strict);
+        const historicalIds = inventory.legacyQuestionSets[candidate.subtopicId];
+        const isHistoricalPath = Boolean(historicalIds);
+        const resolvedIds = isHistoricalPath ? [] : resolveSubtopics(candidate.subtopicId, subtopics, inventory.legacyAliases, !strict);
         const nodes = resolvedIds.map((id) => subtopics.get(id)!);
-        if (!nodes.length || nodes.some((node) => !allowedSubjects.has(node.subjectId))) {
+        const historicalQuestions = isHistoricalPath
+          ? pyqQuestions.filter((question) => historicalIds.includes(question.id))
+          : [];
+        if ((!nodes.length && !historicalQuestions.length) || nodes.some((node) => !allowedSubjects.has(node.subjectId)) || (historicalQuestions.length && !allowedSubjects.has("subject:geography"))) {
           if (strict) return NextResponse.json({ error: "Every subtopic must belong to a selected subject." }, { status: 400 });
           continue;
         }
         if (strict && (!candidate.exams.length || candidate.exams.some((exam: unknown) => !isExactExam(exam)))) {
           return NextResponse.json({ error: "Choose valid examination sources for every subtopic." }, { status: 400 });
+        }
+        if (isHistoricalPath) {
+          const exams = legacyPathExams.get(candidate.subtopicId) || new Set<PyqExam>();
+          for (const exam of candidate.exams as unknown[]) {
+            if (!isExactExam(exam)) continue;
+            if (!historicalQuestions.some((question) => question.exam === exam)) {
+              if (strict) return NextResponse.json({ error: "An examination source has no questions for its selected historical subtopic." }, { status: 400 });
+              continue;
+            }
+            exams.add(exam);
+          }
+          if (exams.size) legacyPathExams.set(candidate.subtopicId, exams);
         }
         for (const node of nodes) {
           if (strict && candidate.exams.some((exam) => node.examCounts[exam as PyqExam] === 0)) {
@@ -99,16 +117,17 @@ export async function POST(request: Request) {
       }
     }
 
-    if (!subjectIds.length || !pathExams.size) {
+    if (!subjectIds.length || (!pathExams.size && !legacyPathExams.size)) {
       return NextResponse.json({ error: "Choose at least one subject and subtopic." }, { status: 400 });
     }
 
     eligible = pyqQuestions.filter((question) => {
       const path = getQuestionPath(question);
-      return Boolean(path && pathExams.get(path.subtopicId)?.has(question.exam));
+      if (path && pathExams.get(path.subtopicId)?.has(question.exam)) return true;
+      return [...legacyPathExams].some(([legacyId, exams]) => exams.has(question.exam) && inventory.legacyQuestionSets[legacyId].includes(question.id));
     });
 
-    const paths: PracticePathSelection[] = [...pathExams.entries()].map(([subtopicId, exams]) => ({
+    const paths: PracticePathSelection[] = [...pathExams.entries(), ...legacyPathExams.entries()].map(([subtopicId, exams]) => ({
       subtopicId,
       exams: PYQ_EXAMS.filter((exam) => exams.has(exam)),
     }));
@@ -161,6 +180,6 @@ export async function POST(request: Request) {
       sourceTextHash: question.sourceTextHash,
     };
   });
-  const snapshot: PracticeSnapshot = { id, contentVersion: "pyq-2026-08-subject-v3", createdAt: new Date().toISOString(), recipe, matchingCount, questions };
+  const snapshot: PracticeSnapshot = { id, contentVersion: "pyq-2026-10-physical-v1.2", createdAt: new Date().toISOString(), recipe, matchingCount, questions };
   return NextResponse.json(snapshot, { status: 201 });
 }

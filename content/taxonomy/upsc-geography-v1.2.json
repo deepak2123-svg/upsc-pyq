@@ -1,0 +1,168 @@
+{
+  "version": "upsc-geography-v1.2",
+  "basis": [
+    "Physical Geography for NDA and CDS: Chapter Outline, chapters 1-11",
+    "UPSC Civil Services: Indian and World Geography - Physical, Social and Economic Geography",
+    "UPSC NDA Section E: Earth, mapping, geomorphology, oceanography, atmosphere, climate, natural regions and regional geography of India"
+  ],
+  "meta_heads": [
+    {
+      "name": "Physical Geography",
+      "chapters": [
+        { "name": "Universe, Solar System, Shape and Size of Earth", "order": 1, "subtopics": [
+          { "name": "Universe and Origin Theories", "order": 1 },
+          { "name": "The Sun", "order": 2 },
+          { "name": "Planets", "order": 3 },
+          { "name": "Dwarf Planets, Asteroids, Meteors, Comets", "order": 4 },
+          { "name": "The Moon and Eclipses", "order": 5 },
+          { "name": "Shape and Size of Earth", "order": 6 }
+        ]},
+        { "name": "Latitudes, Longitudes, Time and Motions of the Earth", "order": 2, "subtopics": [
+          { "name": "The Grid: Latitudes and Longitudes", "order": 1 },
+          { "name": "Rotation and Time", "order": 2 },
+          { "name": "Revolution and Seasons", "order": 3 },
+          { "name": "All Motions of the Earth", "order": 4 }
+        ]},
+        { "name": "Interior of the Earth", "order": 3, "subtopics": [
+          { "name": "Sources of Information", "order": 1 },
+          { "name": "Temperature, Pressure and Density", "order": 2 },
+          { "name": "Layers by Composition", "order": 3 },
+          { "name": "Layers by Mechanical Behaviour", "order": 4 },
+          { "name": "Discontinuities", "order": 5 },
+          { "name": "Seismic Waves and What They Reveal", "order": 6 }
+        ]},
+        { "name": "Rocks and Minerals", "order": 4, "subtopics": [
+          { "name": "Minerals", "order": 1 },
+          { "name": "Rocks: Overview", "order": 2 },
+          { "name": "Igneous Rocks", "order": 3 },
+          { "name": "Sedimentary Rocks", "order": 4 },
+          { "name": "Metamorphic Rocks", "order": 5 },
+          { "name": "The Rock Cycle", "order": 6 }
+        ]},
+        { "name": "Plate Tectonics, Earthquakes, Volcanoes and Mountain Building", "order": 5, "subtopics": [
+          { "name": "Continental Drift", "order": 1 },
+          { "name": "Seafloor Spreading", "order": 2 },
+          { "name": "Plate Tectonics", "order": 3 },
+          { "name": "Earthquakes", "order": 4 },
+          { "name": "Volcanoes", "order": 5 },
+          { "name": "Folding, Faulting and Mountain Building", "order": 6 }
+        ]},
+        { "name": "Geomorphic Processes and Landforms", "order": 6, "subtopics": [
+          { "name": "Basics of Geomorphic Processes", "order": 1 },
+          { "name": "Weathering", "order": 2 },
+          { "name": "Mass Movements", "order": 3 },
+          { "name": "Fluvial Landforms", "order": 4 },
+          { "name": "Groundwater and Karst Landforms", "order": 5 },
+          { "name": "Glacial Landforms", "order": 6 },
+          { "name": "Aeolian Landforms", "order": 7 },
+          { "name": "Coastal Landforms", "order": 8 },
+          { "name": "Major Landform Types", "order": 9 }
+        ]},
+        { "name": "The Atmosphere, Insolation, Heat Budget and Temperature", "order": 7, "subtopics": [
+          { "name": "Composition", "order": 1 },
+          { "name": "Structure", "order": 2 },
+          { "name": "Ionosphere", "order": 3 },
+          { "name": "Solar Radiation and Insolation", "order": 4 },
+          { "name": "Scattering, Reflection and Albedo", "order": 5 },
+          { "name": "Heat Budget of the Earth", "order": 6 },
+          { "name": "How the Atmosphere Is Heated and Cooled", "order": 7 },
+          { "name": "Greenhouse Effect and Global Warming", "order": 8 },
+          { "name": "Ozone Layer", "order": 9 },
+          { "name": "Lapse Rate, Adiabatic Processes and Inversion", "order": 10 },
+          { "name": "Temperature Distribution", "order": 11 },
+          { "name": "Weather, Climate and Humidity", "order": 12 },
+          { "name": "Weather Instruments", "order": 13 },
+          { "name": "Air Pollution", "order": 14 }
+        ]},
+        { "name": "Atmospheric Pressure, Winds and Circulation", "order": 8, "subtopics": [
+          { "name": "Atmospheric Pressure", "order": 1 },
+          { "name": "Forces Affecting Wind", "order": 2 },
+          { "name": "Pressure Belts", "order": 3 },
+          { "name": "Planetary Winds", "order": 4 },
+          { "name": "General Circulation: Three-Cell Model", "order": 5 },
+          { "name": "ITCZ", "order": 6 },
+          { "name": "Secondary Winds", "order": 7 },
+          { "name": "Local Winds", "order": 8 },
+          { "name": "Jet Streams", "order": 9 },
+          { "name": "El Niño, La Niña and the Southern Oscillation", "order": 10 },
+          { "name": "Wind Measurement", "order": 11 }
+        ]},
+        { "name": "Condensation, Clouds, Precipitation, Air Masses, Fronts and Cyclones", "order": 9, "subtopics": [
+          { "name": "Evaporation and Condensation", "order": 1 },
+          { "name": "Forms of Condensation Near the Ground", "order": 2 },
+          { "name": "Clouds", "order": 3 },
+          { "name": "Precipitation", "order": 4 },
+          { "name": "Thunderstorms, Lightning and Tornadoes", "order": 5 },
+          { "name": "Air Masses", "order": 6 },
+          { "name": "Fronts", "order": 7 },
+          { "name": "Temperate Cyclones", "order": 8 },
+          { "name": "Tropical Cyclones", "order": 9 },
+          { "name": "Anticyclones", "order": 10 }
+        ]},
+        { "name": "World Climate Regions and the Köppen Classification", "order": 10, "subtopics": [
+          { "name": "Classification of Climates", "order": 1 },
+          { "name": "Köppen's Scheme: Letters and Codes", "order": 2 },
+          { "name": "Tropical Humid Climates", "order": 3 },
+          { "name": "Dry Climates", "order": 4 },
+          { "name": "Warm Temperate Climates", "order": 5 },
+          { "name": "Cold Snow Forest Climates", "order": 6 },
+          { "name": "Polar Climates", "order": 7 },
+          { "name": "Highland Climates", "order": 8 },
+          { "name": "Quick Comparison Tables", "order": 9 }
+        ]},
+        { "name": "Oceanography", "order": 11, "subtopics": [
+          { "name": "Distribution of Oceans and Seas", "order": 1 },
+          { "name": "Ocean Floor Relief", "order": 2 },
+          { "name": "Temperature of Ocean Water", "order": 3 },
+          { "name": "Salinity", "order": 4 },
+          { "name": "Waves", "order": 5 },
+          { "name": "Ocean Currents", "order": 6 },
+          { "name": "Indian Ocean Dipole", "order": 7 },
+          { "name": "Tides", "order": 8 },
+          { "name": "Coral Reefs and Atolls", "order": 9 },
+          { "name": "Marine Deposits and Resources", "order": 10 },
+          { "name": "Marine Zones, Life and Law", "order": 11 }
+        ]}
+      ]
+    },
+    {
+      "name": "Indian Geography",
+      "chapters": [
+        { "name": "Location, Physiography, Coasts & Islands", "subtopics": ["Location, States & Regional Setting", "Physiographic Divisions, Mountains, Plateaus & Passes", "Coasts, Islands & Coastal Features"] },
+        { "name": "Climate, Soils, Natural Vegetation & Forests", "subtopics": ["Monsoon, Seasons & Rainfall", "Soils & Soil Conservation", "Natural Vegetation & Forests"] },
+        { "name": "Drainage & Water Resources", "subtopics": ["River Systems, Lakes, Dams & River-Valley Projects", "Groundwater, Irrigation, Floods & Water Management"] },
+        { "name": "Agriculture, Minerals, Energy & Industry", "subtopics": ["Agriculture, Crops & Land Use", "Minerals, Energy & Power", "Industries & Industrial Regions"] },
+        { "name": "Transport, Ports, Trade & Infrastructure", "subtopics": ["Roads, Railways & Inland Transport", "Ports, Sea/Air Routes, Trade & Infrastructure"] },
+        { "name": "Population, Settlements & Regional Geography", "subtopics": ["Population, Census, Settlements & Tribes", "Regional Development, Places & Institutions"] }
+      ]
+    },
+    {
+      "name": "World Geography",
+      "chapters": [
+        { "name": "Continents, Countries & Major Physical Features", "subtopics": ["Continents, Countries & Major Physical Features"] },
+        { "name": "Climate, Biomes & Natural Regions", "subtopics": ["World Climates & Local Winds", "Natural Regions, Biomes & Vegetation"] },
+        { "name": "Rivers, Lakes, Seas, Straits & Islands", "subtopics": ["Rivers, Lakes, Deltas & Canals", "Seas, Straits, Islands & Marine Regions"] },
+        { "name": "Political, Regional & Economic Geography", "subtopics": ["Boundaries, Regions, Resources & Routes"] }
+      ]
+    },
+    {
+      "name": "Human & Economic Geography",
+      "chapters": [
+        { "name": "Population & Demography", "subtopics": ["Population, Demography & Migration"] },
+        { "name": "Settlements, Culture & Human Development", "subtopics": ["Settlements, Culture & Human Development"] },
+        { "name": "Resources, Agriculture & Primary Activities", "subtopics": ["Resource Concepts, Agriculture & Land Use", "Minerals, Energy, Fisheries & Primary Activities"] },
+        { "name": "Industry, Transport, Services & Trade", "subtopics": ["Industry, Transport, Services & Trade"] }
+      ]
+    },
+    {
+      "name": "Environment & Ecology",
+      "chapters": [
+        { "name": "Ecology & Ecosystems", "subtopics": ["Ecosystems, Biomes & Ecological Processes"] },
+        { "name": "Biodiversity, Protected Areas & Conservation", "subtopics": ["Biodiversity, Species & Habitat Conservation", "Protected Areas, Wetlands & Biosphere Reserves"] },
+        { "name": "Pollution, Climate Change & Sustainability", "subtopics": ["Pollution, Climate Change & Sustainability"] },
+        { "name": "Environmental Governance, Hazards & Disaster Management", "subtopics": ["Environmental Governance, Hazards & Disaster Management"] }
+      ]
+    }
+  ],
+  "forbidden_labels": ["General", "Miscellaneous", "Physical Geography Concepts", "Indian Geography Concepts", "Economic Geography Concepts"]
+}

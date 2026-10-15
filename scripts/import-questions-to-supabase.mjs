@@ -7,21 +7,31 @@ import postgres from "postgres";
 const root = process.cwd();
 const sourcePath = path.join(root, "content", "question-bank.json");
 const taxonomyPath = path.join(root, "content", "taxonomy", "question-map.json");
-const taxonomyRegistryPath = path.join(root, "content", "taxonomy", "upsc-geography-v1.1.json");
+const taxonomyRegistryPath = path.join(root, "content", "taxonomy", "upsc-geography-v1.2.json");
+const physicalReviewPath = path.join(root, "content", "taxonomy", "physical-geography-v1.2-review.json");
 const apply = process.argv.includes("--apply");
 const taxonomyMap = JSON.parse(await fs.readFile(taxonomyPath, "utf8"));
 const taxonomyParts = await Promise.all(taxonomyMap.parts.map((part) => fs.readFile(path.join(root, "content", "taxonomy", part), "utf8").then(JSON.parse)));
 const taxonomyPairs = taxonomyParts.flatMap((part) => Object.entries(part.pairs));
 const taxonomyRegistry = JSON.parse(await fs.readFile(taxonomyRegistryPath, "utf8"));
+const physicalReview = JSON.parse(await fs.readFile(physicalReviewPath, "utf8"));
 const slug = (value) => value.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const taxonomyById = new Map();
-for (const head of taxonomyRegistry.meta_heads) for (const [chapter, subtopics] of Object.entries(head.chapters)) for (const subtopic of subtopics) {
-  taxonomyById.set(`${slug(head.name)}/${slug(chapter)}/${slug(subtopic)}`, { taxonomyHead: head.name, taxonomyChapter: chapter, taxonomySubtopic: subtopic });
+for (const head of taxonomyRegistry.meta_heads) for (const chapter of head.chapters) for (const entry of chapter.subtopics) {
+  const subtopic = typeof entry === "string" ? entry : entry.name;
+  taxonomyById.set(`${slug(head.name)}/${slug(chapter.name)}/${slug(subtopic)}`, { taxonomyHead: head.name, taxonomyChapter: chapter.name, taxonomySubtopic: subtopic });
 }
 const taxonomyByQuestionId = new Map(taxonomyPairs.map(([id, index]) => {
   const taxonomyId = taxonomyParts[0].ids[index];
   return [id, { taxonomyVersion: taxonomyMap.version, taxonomyId, ...(taxonomyById.get(taxonomyId) ?? {}) }];
 }));
+for (const record of physicalReview.records) {
+  taxonomyByQuestionId.set(record.questionId, {
+    taxonomyVersion: taxonomyRegistry.version,
+    taxonomyId: record.newTaxonomyId,
+    ...(taxonomyById.get(record.newTaxonomyId) ?? {}),
+  });
+}
 
 function fingerprint(question) {
   const canonical = [
