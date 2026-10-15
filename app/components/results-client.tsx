@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { Fragment, useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { LocalAttempt, PracticeQuestion, PracticeSnapshot } from "../../lib/practice-types";
 import { createLocalAttempt, getAttempt, putAttempt } from "../../lib/practice-store";
@@ -46,6 +46,7 @@ export function ResultsClient({ id }: { id: string }) {
   const [retaking, setRetaking] = useState(false);
   const [retry, setRetry] = useState(0);
   const [actionError, setActionError] = useState("");
+  const [expandedQuestion, setExpandedQuestion] = useState<number | null>(null);
   useEffect(() => {
     let active = true;
     void getAttempt(id).then((value) => { if (active) setAttempt(value || null); }).catch(() => {
@@ -127,18 +128,13 @@ export function ResultsClient({ id }: { id: string }) {
       </section>
       <section className="result-breakdown"><h2>Performance by exam source</h2><PerformanceTable label="Exam source performance" rows={stats.byExam} ready={ready} source /></section>
       <section className="result-breakdown"><h2>Performance by subject and topic</h2><PerformanceTable label="Subject and topic performance" rows={stats.byTopic} ready={ready} /></section>
-      <section className="result-answer-sheet"><h2>Answer sheet</h2><p>Compare each submitted answer with the official answer. Open a row below to review the question.</p><p className="result-scroll-hint">Swipe to view all columns.</p><div className="result-table-scroll"><table aria-label="Answer sheet" data-testid="answer-sheet"><thead><tr><th scope="col">No.</th><th scope="col">Source / topic</th><th scope="col">Your answer</th><th scope="col">Correct answer</th><th scope="col">Result</th></tr></thead><tbody>{attempt.snapshot.questions.map((question, index) => {
+      <section className="result-answer-sheet result-combined-review"><h2>Answers and question review</h2><p>Compare your answers with the official key. Select any question to open its full paper view, options and explanation.</p><p className="result-scroll-hint">Swipe to view all columns.</p><div className="result-table-scroll"><table aria-label="Answer sheet" data-testid="answer-sheet"><thead><tr><th scope="col">No.</th><th scope="col">Source / topic</th><th scope="col">Your answer</th><th scope="col">Correct answer</th><th scope="col">Result</th></tr></thead><tbody>{attempt.snapshot.questions.map((question, index) => {
         const feedback = attempt.feedback[question.id];
         const selected = attempt.answers[question.id];
         const status = statusOf(attempt, question);
-        return <tr key={question.id}><th scope="row"><a href={`#review-${index + 1}`}>{index + 1}</a></th><td><span className="result-source" style={{ color: PYQ_EXAM_COLORS[question.exam] }}>{sourceLabel(question)}</span><small>{scopeLabel(question)}</small></td><td>{selected || "—"}</td><td>{feedback?.correctAnswer || "—"}</td><td><span className={`answer-status ${status.toLowerCase().replaceAll(" ", "-")}`}>{status}</span></td></tr>;
+        const expanded = expandedQuestion === index;
+        return <Fragment key={question.id}><tr className={expanded ? "is-expanded" : undefined}><th scope="row"><button type="button" className="result-review-toggle" aria-expanded={expanded} aria-controls={`answer-detail-${index + 1}`} aria-label={`${expanded ? "Close" : "Review"} question ${index + 1}`} onClick={() => setExpandedQuestion(expanded ? null : index)}><span>{index + 1}</span><i aria-hidden="true">⌄</i></button></th><td><button type="button" className="result-source-toggle" aria-expanded={expanded} aria-controls={`answer-detail-${index + 1}`} onClick={() => setExpandedQuestion(expanded ? null : index)}><span className="result-source" style={{ color: PYQ_EXAM_COLORS[question.exam] }}>{sourceLabel(question)}</span><small>{scopeLabel(question)}</small></button></td><td>{selected || "—"}</td><td>{feedback?.correctAnswer || "—"}</td><td><span className={`answer-status ${status.toLowerCase().replaceAll(" ", "-")}`}>{status}</span></td></tr>{expanded ? <tr className="result-answer-detail-row"><td colSpan={5} id={`answer-detail-${index + 1}`}><div className="result-question-detail"><PracticePromptView blocks={formatPracticePrompt(question.promptLines)} className="result-question-prompt" /><dl className="result-question-options">{Object.entries(question.options).map(([key, value]) => <div key={key} className={feedback?.correctAnswer === key ? "is-correct" : selected === key ? "is-selected" : ""}><dt>{key}</dt><dd>{value}{feedback?.correctAnswer === key && <small>Correct answer</small>}{selected === key && <small>Your answer</small>}</dd></div>)}</dl><p className="result-explanation-label">Explanation</p><p className="result-explanation">{feedback ? feedback.explanation || "No published explanation is available for this question." : "The answer sheet has not loaded yet."}</p><Link className="result-no-print" href={`/practice/${id}?q=${index}`}>Open in question view</Link></div></td></tr> : null}</Fragment>;
       })}</tbody></table></div></section>
-      <section className="result-review result-detailed-review"><h2>Question review</h2>{attempt.snapshot.questions.map((question, index) => {
-        const feedback = attempt.feedback[question.id];
-        const selected = attempt.answers[question.id];
-        const status = statusOf(attempt, question);
-        return <details key={question.id} id={`review-${index + 1}`}><summary><span className="review-question-number">{index + 1}</span><strong>{question.promptLines.join(" ")}</strong><span className={`answer-status ${status.toLowerCase().replaceAll(" ", "-")}`}>{status}</span></summary><div className="result-question-detail"><p className="result-source" style={{ color: PYQ_EXAM_COLORS[question.exam] }}>{sourceLabel(question)}</p><PracticePromptView blocks={formatPracticePrompt(question.promptLines)} className="result-question-prompt" /><dl className="result-question-options">{Object.entries(question.options).map(([key, value]) => <div key={key} className={feedback?.correctAnswer === key ? "is-correct" : selected === key ? "is-selected" : ""}><dt>{key}</dt><dd>{value}{feedback?.correctAnswer === key && <small>Correct answer</small>}{selected === key && <small>Your answer</small>}</dd></div>)}</dl><p className="result-explanation-label">Explanation</p><p className="result-explanation">{feedback ? feedback.explanation || "No published explanation is available for this question." : "The answer sheet has not loaded yet."}</p><Link className="result-no-print" href={`/practice/${id}?q=${index}`}>Review in question view</Link></div></details>;
-      })}</section>
       <p className="result-print-footer">UPSC.PYQ.Practise · Local practice result · {attempt.id}</p>
     </main>
   );

@@ -128,6 +128,20 @@
 .result-answer-sheet table { min-width: 590px; }
 .result-answer-sheet tbody th a { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; min-height: 32px; color: #2757d3; }
 .result-answer-sheet td small { display: block; margin-top: 5px; color: #566274; font-size: 12px; }
+.result-combined-review .result-table-scroll { overflow: visible; }
+.result-combined-review table { table-layout: fixed; }
+.result-combined-review th:first-child { width: 72px; }
+.result-combined-review th:nth-child(3), .result-combined-review th:nth-child(4) { width: 120px; }
+.result-combined-review th:last-child { width: 130px; }
+.result-review-toggle, .result-source-toggle { border: 0; background: transparent; color: inherit; text-align: left; cursor: pointer; }
+.result-review-toggle { display: inline-flex; align-items: center; gap: 8px; min-width: 48px; min-height: 36px; padding: 4px; color: #2757d3; font-weight: 650; }
+.result-review-toggle i { font-style: normal; transition: transform 150ms ease; }
+.is-expanded .result-review-toggle i { transform: rotate(180deg); }
+.result-source-toggle { width: 100%; padding: 2px 0; }
+.result-source-toggle:hover .result-source, .result-review-toggle:hover span { text-decoration: underline; }
+.result-combined-review tr.is-expanded > * { background: #f6f8fc; border-bottom: 0; }
+.result-answer-detail-row > td { padding: 0 !important; background: #f6f8fc; }
+.result-answer-detail-row .result-question-detail { max-width: none; padding: 24px 28px 30px; border-top: 1px solid #e1e6ee; }
 .result-source { font-size: 12px; font-weight: 600; }
 .answer-status { font-size: 11px; font-weight: 650; white-space: nowrap; }
 .answer-status.correct { color: #18794e; }
@@ -229,6 +243,9 @@
   .result-detailed-review summary { grid-template-columns: 22px minmax(0, 1fr); gap: 10px; }
   .result-detailed-review summary > .answer-status { grid-column: 2; }
   .result-question-detail { padding-left: 0; }
+  .result-combined-review .result-table-scroll { overflow-x: auto; }
+  .result-combined-review table { table-layout: auto; min-width: 680px; }
+  .result-answer-detail-row .result-question-detail { padding: 20px; }
   .result-question-prompt p { font-size: 19px; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -261,5 +278,6 @@
   .exam-results .result-breakdown, .result-answer-sheet, .exam-results .result-review { padding-top: 22px; }
   .exam-results h2 { font-size: 16px; break-after: avoid; }
   .result-detailed-review { display: none !important; }
+  .result-answer-detail-row { display: none !important; }
   .result-print-footer { font-size: 8px; margin-top: 22px; }
 }
