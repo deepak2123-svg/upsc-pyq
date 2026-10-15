@@ -16,7 +16,8 @@ const format = (value: number) => value.toLocaleString("en-IN");
 
 function SourceChoice({ exam, state, count, available, disabled, onChange }: { exam: PyqExam; state: "none" | "partial" | "all"; count: number; available: number; disabled: boolean; onChange: () => void }) {
   return <button type="button" role="checkbox" aria-checked={state === "partial" ? "mixed" : state === "all"} disabled={disabled} className={"scope-source " + state} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} onClick={onChange}>
-    <span className="scope-check" aria-hidden="true">{state === "all" ? "✓" : state === "partial" ? "−" : ""}</span><span className="scope-source-name">{exam}</span><strong>{format(count)}<small>included</small></strong><small className="scope-source-available">{format(available)} available</small>
+    <span className="scope-source-top"><span className="scope-check" aria-hidden="true">{state === "all" ? "✓" : state === "partial" ? "−" : ""}</span><span className="scope-source-name">{exam}</span><small className="scope-source-state">{state === "all" ? "Included" : state === "partial" ? "Partial" : "Not included"}</small></span>
+    <span className="scope-source-total"><strong>{format(state === "none" ? available : count)}</strong><small>{state === "all" ? "questions" : state === "partial" ? `of ${format(available)} questions` : "questions available"}</small></span>
   </button>;
 }
 
