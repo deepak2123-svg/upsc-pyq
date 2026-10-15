@@ -996,7 +996,7 @@ h3 { font-size: 16px; }
 .scope-secondary:hover { border-color: var(--accent); color: var(--accent); }
 .scope-primary { border: 0; border-radius: 8px; padding: 11px 18px; min-height: 44px; background: var(--accent); color: white; font-weight: 700; font-size: 14px; }
 .scope-workspace button:disabled { opacity: .45; cursor: not-allowed; }
-.scope-workspace button:focus-visible, .scope-workspace select:focus-visible, .scope-add-dialog button:focus-visible, .scope-add-dialog select:focus-visible { outline: 3px solid #2457d6; outline-offset: 3px; }
+.scope-workspace button:focus-visible, .scope-workspace select:focus-visible, .scope-add-dialog button:focus-visible, .scope-add-dialog select:focus-visible, .scope-add-dialog input:focus-visible { outline: 3px solid #2457d6; outline-offset: 3px; }
 .scope-subject-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 18px 0 0; }
 .scope-subject-tabs button { display: flex; align-items: center; gap: 9px; min-height: 44px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); padding: 8px 12px; color: var(--ink); font-size: 13px; }
 .scope-subject-tabs button[aria-pressed=true] { border-color: var(--accent); background: var(--accent-soft); }
@@ -1091,9 +1091,9 @@ h3 { font-size: 16px; }
 .scope-card-source-counts > span { display: inline-flex; align-items: center; gap: 4px; min-width: 0; color: var(--muted); font-size: 10px; font-variant-numeric: tabular-nums; }
 .scope-card-source-counts b { color: var(--ink); font-size: 9px; }
 .scope-card-source-counts i { width: 7px; height: 7px; flex: 0 0 auto; }
-.scope-card-actions { display: grid; grid-template-columns: minmax(82px, .75fr) minmax(0, 1.25fr); min-height: 48px; border-top: 1px solid #dce2ec; }
+.scope-card-actions { display: grid; grid-template-columns: minmax(142px, 1.15fr) minmax(0, 1fr); min-height: 48px; border-top: 1px solid #dce2ec; }
 .scope-card-actions:has(.scope-card-select:only-child) { grid-template-columns: 1fr; }
-.scope-card-actions button { min-height: 48px; border: 0; padding: 10px 12px; font-size: 12px; font-weight: 750; }
+.scope-card-actions button { min-height: 52px; border: 0; padding: 10px 12px; font-size: 12px; font-weight: 750; line-height: 1.25; }
 .scope-card-select { background: var(--accent); color: white; }
 .scope-card-select:hover { background: #194ac6; }
 .scope-card-select[aria-pressed=true] { background: #173f9e; }
@@ -1164,6 +1164,17 @@ h3 { font-size: 16px; }
 .scope-add-dialog p { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 20px; }
 .scope-add-dialog label { display: grid; gap: 7px; font-size: 12px; font-weight: 650; margin-top: 14px; }
 .scope-add-dialog select { width: 100%; min-height: 44px; padding: 9px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--surface); font-size: 13px; }
+.practice-setup-dialog { width: min(620px, calc(100% - 32px)); }
+.practice-setup-dialog fieldset { border: 0; padding: 0; margin: 22px 0 0; min-width: 0; }
+.practice-setup-dialog legend { padding: 0; margin-bottom: 9px; font-size: 13px; font-weight: 750; color: var(--ink); }
+.practice-setup-dialog .segmented { display: flex; flex-wrap: wrap; padding: 4px; border: 1px solid var(--line); border-radius: 10px; background: #f7f8fb; }
+.practice-setup-dialog .segmented button { flex: 1 1 68px; min-height: 44px; border: 0; border-radius: 7px; background: transparent; color: var(--muted); font: inherit; font-weight: 700; }
+.practice-setup-dialog .segmented button.active { color: white; background: var(--ink); }
+.practice-setup-dialog .scope-order { margin-top: 20px; }
+.practice-setup-dialog input { width: 100%; min-height: 44px; box-sizing: border-box; padding: 9px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--surface); font-size: 13px; }
+.practice-setup-dialog .scope-dialog-actions { margin-top: 26px; }
+.practice-setup-dialog .confirm-practice { min-width: 210px; }
+.scope-setup-note { margin: 18px 0 0; padding: 14px; border-radius: 8px; background: #f5f7fb; color: var(--muted); font-size: 12px; line-height: 1.55; }
 .scope-add-preview { display: grid; gap: 7px; padding: 16px; margin: 22px 0; background: var(--accent-soft); border-radius: 9px; font-size: 14px; }
 .scope-add-preview span { color: var(--accent); font-weight: 700; }
 .scope-add-preview small { color: var(--muted); font-size: 12px; line-height: 1.5; }

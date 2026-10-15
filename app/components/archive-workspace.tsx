@@ -54,6 +54,42 @@ function AddScopeDialog({ index, paths, initialId, preferredExam, onAdd, onCance
   </dialog>;
 }
 
+function PracticeSetupDialog({ matchingCount, count, order, durationChoice, customMinutes, shortage, validDuration, loading, canStart, error, onCount, onOrder, onDuration, onCustomMinutes, onUseAll, onStart, onCancel }: {
+  matchingCount: number; count: number | "all" | null; order: PracticeOrder; durationChoice: string; customMinutes: string; shortage: boolean; validDuration: boolean; loading: boolean; canStart: boolean; error: string;
+  onCount: (value: number | "all") => void; onOrder: (value: PracticeOrder) => void; onDuration: (value: string) => void; onCustomMinutes: (value: string) => void; onUseAll: () => void; onStart: () => void; onCancel: () => void;
+}) {
+  const dialog = useRef<HTMLDialogElement>(null);
+  const practiceCount = count === "all" ? matchingCount : count;
+  useEffect(() => {
+    const previous = document.activeElement as HTMLElement | null;
+    const current = dialog.current;
+    current?.showModal();
+    return () => { current?.close(); previous?.focus(); };
+  }, []);
+  return <dialog ref={dialog} className="scope-add-dialog practice-setup-dialog" aria-labelledby="practice-setup-title" onCancel={(event) => { event.preventDefault(); if (!loading) onCancel(); }}>
+    <form onSubmit={(event) => { event.preventDefault(); onStart(); }}>
+      <span className="selector-label">Final step</span>
+      <h2 id="practice-setup-title">Set up your test</h2>
+      <p><strong>{format(matchingCount)} questions</strong> match your selected chapters and exam sources.</p>
+      <fieldset className="scope-size-options" disabled={loading}>
+        <legend>Number of MCQs</legend>
+        <div className="segmented">{COUNTS.map((value) => <button type="button" key={value} className={count === value ? "active" : ""} aria-pressed={count === value} onClick={() => onCount(value)}>{value}</button>)}<button type="button" className={count === "all" ? "active" : ""} aria-pressed={count === "all"} onClick={() => onCount("all")}>All</button></div>
+      </fieldset>
+      {count === null ? <p className="scope-size-prompt">Choose how many questions you want to attempt.</p> : null}
+      {shortage ? <div className="scope-shortage" role="alert"><p>You chose {practiceCount}, but only {format(matchingCount)} questions match.</p><button type="button" disabled={loading} onClick={onUseAll}>Use all {format(matchingCount)} available</button></div> : null}
+      <fieldset className="scope-time-options" disabled={loading}>
+        <legend>Time</legend>
+        <div className="segmented"><button type="button" className={durationChoice === "untimed" ? "active" : ""} aria-pressed={durationChoice === "untimed"} onClick={() => onDuration("untimed")}>Untimed</button>{DURATIONS.map((minutes) => <button type="button" key={minutes} className={durationChoice === String(minutes) ? "active" : ""} aria-pressed={durationChoice === String(minutes)} onClick={() => onDuration(String(minutes))}>{minutes} min</button>)}<button type="button" className={durationChoice === "custom" ? "active" : ""} aria-pressed={durationChoice === "custom"} onClick={() => onDuration("custom")}>Custom</button></div>
+      </fieldset>
+      {durationChoice === "custom" ? <label className="scope-order">Custom minutes<input type="number" inputMode="numeric" min={1} max={720} step={1} disabled={loading} value={customMinutes} onChange={(event) => onCustomMinutes(event.target.value)} /></label> : null}
+      {!validDuration ? <p className="inline-error" role="alert">Enter 1–720 whole minutes.</p> : null}
+      <label className="scope-order">Question order<select disabled={loading} value={order} onChange={(event) => onOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label>
+      {error ? <p className="inline-error" role="alert">{error}</p> : null}
+      <div className="scope-dialog-actions"><button type="button" className="scope-secondary" disabled={loading} onClick={onCancel}>Continue choosing</button><button type="submit" className="scope-primary confirm-practice" disabled={!canStart}>{loading ? "Preparing test…" : count === null ? "Choose number of MCQs" : `Start ${format(practiceCount!)}-question test`}</button></div>
+    </form>
+  </dialog>;
+}
+
 export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInventory: SubjectPracticeInventory; initialExam?: PyqExam }) {
   const router = useRouter();
   const index = useMemo(() => buildSelectionIndex(initialInventory), [initialInventory]);
@@ -68,6 +104,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const [error, setError] = useState("");
   const [restored, setRestored] = useState(false);
   const [addOpen, setAddOpen] = useState(false);
+  const [setupOpen, setSetupOpen] = useState(false);
   const [notice, setNotice] = useState("");
   const [draftWarning, setDraftWarning] = useState("");
   const focusHeading = useRef<HTMLHeadingElement>(null);
@@ -127,10 +164,10 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     setPaths((existing) => (activeSourceId === "all" ? totals.subjectIds : [activeSourceId]).reduce((updated, id) => setScopeExam(updated, id, exam, enabled, index), existing));
     setError(""); setNotice("");
   }
-  function selectScope(id: string) {
+  function attemptScope(id: string) {
     if (loading || !restored) return;
     setPaths((existing) => replaceScope(existing, id, index, initialExam));
-    setFocusId(id); setSourceScopeId("all"); setError(""); setNotice(""); moveFocus.current = true;
+    setFocusId(id); setSourceScopeId("all"); setError(""); setNotice(""); setSetupOpen(true);
   }
   function toggleSubject(id: string) {
     if (loading || !restored) return;
@@ -186,13 +223,13 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
           {totals.subjectIds.length > 1 ? <div className="scope-subject-tabs" aria-label="Browse selected subjects">{totals.subjectIds.map((id) => <button type="button" disabled={loading} aria-pressed={current.subjectId === id} key={id} onClick={() => browse(id)}>{index.nodesById.get(id)?.label}<span>{format(scopeMetrics(id, paths, index).selectedCount)}</span></button>)}</div> : null}
           <nav className="scope-breadcrumbs" aria-label="Current syllabus path">{focusPath.map((node, position) => { const number = scopeDisplayNumber(node.id, index); return <span key={node.id}>{position ? <i aria-hidden="true">→</i> : null}<button type="button" disabled={loading} onClick={() => browse(node.id)} aria-current={node.id === current.id ? "location" : undefined}>{number ? <small>{number}</small> : null}{node.label}</button></span>; })}</nav>
           <div className="scope-navigation-help">{current.parentId ? <button type="button" disabled={loading} onClick={() => browse(current.parentId!)}>← Back <small>selection unchanged</small></button> : null}</div>
-          <div className="scope-current-action"><span><strong>{format(metrics?.selectedCount || 0)}</strong> / {format(current.questionCount)} selected</span><button type="button" disabled={loading} onClick={() => selectScope(current.id)}>{"Select entire " + (current.kind === "head" ? "section" : current.kind)}</button></div>
+          <div className="scope-current-action"><span><strong>{format(metrics?.selectedCount || 0)}</strong> / {format(current.questionCount)} selected</span><button type="button" disabled={loading} onClick={() => attemptScope(current.id)}>{current.kind === "subtopic" ? "Attempt this subpart" : `Attempt full ${current.kind === "head" ? "section" : current.kind === "topic" ? "chapter" : current.kind}`}</button></div>
           <section className="scope-sources scope-sources-inline" aria-labelledby="scope-sources-title">
             <div className="scope-source-heading"><h3 id="scope-sources-title">Exam sources</h3><span>Choose which exams to include</span></div>
             {sourceTargets.length > 1 ? <label className="scope-source-target">Apply to<select aria-label="Apply sources to" disabled={loading || !restored || !totals.subjectIds.length} value={activeSourceId} onChange={(event) => setSourceScopeId(event.target.value)}><option value="all">All selected questions</option>{sourceTargets.map((id) => <option value={id} key={id}>{index.nodesById.get(id)?.label}</option>)}</select></label> : null}
             <div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={sourceMetrics[exam].count} available={sourceMetrics[exam].available} state={sourceMetrics[exam].state} disabled={loading || !restored || sourceMetrics[exam].available === 0} onChange={() => toggleSource(exam)} />)}</div>
           </section>
-          <ScopeFlow inventory={initialInventory} paths={paths} focusId={focusId} onSelect={selectScope} onBrowse={browse} disabled={loading} />
+          <ScopeFlow inventory={initialInventory} paths={paths} focusId={focusId} onAttempt={attemptScope} onBrowse={browse} disabled={loading} />
         </> : <div className="scope-empty"><strong>Select a subject above</strong></div>}
         <p className="scope-status" role="status" aria-live="polite">{notice || (totals.subjectIds.length ? format(totals.matchingCount) + " questions match your selection across " + totals.subjectIds.length + " subject" + (totals.subjectIds.length === 1 ? "." : "s.") : "No subjects selected. Choose one to begin.")}</p>
       </section>
@@ -201,21 +238,17 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
         <span className="selector-label">3 · Set size & start</span><h2 id="practice-summary-title">Your practice</h2>
         <div className="scope-matching" data-testid="matching-count"><strong>{format(totals.matchingCount)}</strong><span>questions match your selection</span></div>
         <div className="scope-selection-list">{selectedIds.map((id) => { const node = index.nodesById.get(id)!; const branchPath = ancestors(id, index); const metric = scopeMetrics(id, paths, index); const leaves = index.leavesById.get(id) || []; return <div className="scope-selection-item" key={id}><div><strong>{branchPath[0]?.label}</strong><span>{branchPath.length > 1 ? branchPath.slice(1).map((part) => [scopeDisplayNumber(part.id, index), part.label].filter(Boolean).join(" · ")).join(" → ") : "All sections"}</span><small>{format(metric.selectedCount)} matching · {leaves.length} subtopic{leaves.length === 1 ? "" : "s"}</small></div><button type="button" disabled={loading} aria-label={"Remove " + node.label} onClick={() => remove(id)}>×</button></div>; })}{!selectedIds.length ? <p>Choose a subject to begin.</p> : null}</div>
-        <fieldset className="scope-size-options" disabled={loading || !restored}><legend>Questions in this practice</legend><div className="segmented">{COUNTS.map((value) => <button type="button" key={value} className={count === value ? "active" : ""} aria-pressed={count === value} onClick={() => { setCount(value); setError(""); }}>{value}</button>)}<button type="button" className={count === "all" ? "active" : ""} aria-pressed={count === "all"} onClick={() => { setCount("all"); setError(""); }}>All</button></div></fieldset>
-        {count === null ? <p className="scope-size-prompt">Choose how many questions you want to attempt.</p> : null}
-        {shortage ? <div className="scope-shortage" role="alert"><p>You chose {practiceCount}, but only {format(totals.matchingCount)} questions match.</p><button type="button" disabled={loading} onClick={() => setCount("all")}>Use all {format(totals.matchingCount)} available</button></div> : null}
         {totals.subjectIds.length > 0 && totals.matchingCount === 0 ? <p className="scope-shortage">No questions match the enabled sources. Add a source or choose another branch.</p> : null}
-        <label className="scope-order">Question order<select disabled={loading || !restored} value={order} onChange={(event) => setOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label>
-        <div className="scope-duration"><label className="scope-order">Test duration<select disabled={loading || !restored} value={durationChoice} onChange={(event) => { setDurationChoice(event.target.value); setError(""); }}><option value="untimed">Untimed</option>{DURATIONS.map((minutes) => <option key={minutes} value={String(minutes)}>{minutes} minutes</option>)}<option value="custom">Custom time</option></select></label>{durationChoice === "custom" ? <label className="scope-order">Minutes<input type="number" inputMode="numeric" min={1} max={720} step={1} disabled={loading || !restored} value={customMinutes} onChange={(event) => setCustomMinutes(event.target.value)} /></label> : null}{!validDuration ? <p className="inline-error" role="alert">Enter 1–720 whole minutes.</p> : null}</div>
+        <p className="scope-setup-note">When your chapters are ready, choose the number of MCQs and test time in one final step.</p>
         </div>
         <div className="scope-dock-footer">
-        <div className="scope-practice-size"><strong>{practiceCount === null ? "—" : format(practiceCount)}</strong><span>{count === null ? "choose a question count" : totals.matchingCount === 0 || shortage ? "questions requested" : "questions in this practice"}<small>{format(totals.matchingCount)} matching{count === "all" ? " · all included" : ""}</small></span></div>
-        <button type="button" className="start-practice" disabled={!canStart} onClick={() => void startPractice()}>{loading ? "Preparing your practice…" : count === null ? "Choose question count" : "Start " + format(practiceCount!) + "-question practice →"}</button>
-        {draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}{error ? <p className="inline-error" role="alert">{error}</p> : null}
+        <button type="button" className="start-practice" disabled={!restored || totals.matchingCount === 0 || loading} onClick={() => setSetupOpen(true)}>Set up test →</button>
+        {draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}
         </div>
       </aside>
     </div>
-    <div className="scope-mobile-bar"><div><strong>{format(totals.matchingCount)} matching</strong><span>{count === null ? "Choose question count" : format(practiceCount!) + " " + (totals.matchingCount === 0 || shortage ? "requested" : "in practice")}</span></div><button type="button" disabled={!canStart} onClick={() => void startPractice()}>{loading ? "Preparing…" : count === null ? "Choose size" : "Start " + format(practiceCount!) + " →"}</button></div>
+    <div className="scope-mobile-bar"><div><strong>{format(totals.matchingCount)} matching</strong><span>Choose MCQs and time next</span></div><button type="button" disabled={!restored || totals.matchingCount === 0 || loading} onClick={() => setSetupOpen(true)}>Set up test →</button></div>
     {addOpen ? <AddScopeDialog index={index} paths={paths} initialId={current?.subjectId} preferredExam={initialExam} onCancel={() => setAddOpen(false)} onAdd={(id) => { setPaths((existing) => addScope(existing, id, index, initialExam)); setFocusId(id); setSourceScopeId("all"); setError(""); setNotice(""); setAddOpen(false); }} /> : null}
+    {setupOpen ? <PracticeSetupDialog matchingCount={totals.matchingCount} count={count} order={order} durationChoice={durationChoice} customMinutes={customMinutes} shortage={shortage} validDuration={validDuration} loading={loading} canStart={canStart} error={error} onCount={(value) => { setCount(value); setError(""); }} onOrder={setOrder} onDuration={(value) => { setDurationChoice(value); setError(""); }} onCustomMinutes={setCustomMinutes} onUseAll={() => setCount("all")} onStart={() => void startPractice()} onCancel={() => { setSetupOpen(false); setError(""); }} /> : null}
   </main>;
 }

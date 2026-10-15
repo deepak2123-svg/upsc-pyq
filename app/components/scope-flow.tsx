@@ -16,7 +16,7 @@ type ScopeCardsProps = {
   inventory: SubjectPracticeInventory;
   paths: SelectionPaths;
   focusId?: string;
-  onSelect: (id: string) => void;
+  onAttempt: (id: string) => void;
   onBrowse: (id: string) => void;
   disabled?: boolean;
 };
@@ -65,7 +65,7 @@ function SourceDistribution({ counts }: { counts: ExamCounts }) {
   </>;
 }
 
-export function ScopeFlow({ inventory, paths, focusId, onSelect, onBrowse, disabled = false }: ScopeCardsProps) {
+export function ScopeFlow({ inventory, paths, focusId, onAttempt, onBrowse, disabled = false }: ScopeCardsProps) {
   const index = useMemo(() => buildSelectionIndex(inventory), [inventory]);
   const focus = index.nodesById.get(focusId || "") || inventory.subjects
     .map((subject) => index.nodesById.get(subject.id)!)
@@ -91,7 +91,7 @@ export function ScopeFlow({ inventory, paths, focusId, onSelect, onBrowse, disab
       <div>
         <span className="scope-cards-eyebrow">Browse {levelNames[focus.kind]}</span>
         <h3>{cards.length === 1 && cards[0].id === focus.id ? focus.label : `Choose ${pluralLevel}`}</h3>
-        <p><strong>Select</strong> changes your test. <strong>Open</strong> shows the next level without changing it.</p>
+        <p><strong>Attempt</strong> selects this scope and opens test setup. <strong>Open</strong> shows the next level without changing your selection.</p>
       </div>
       <div className="scope-card-exam-key" aria-label="Exam source colours">
         {PYQ_EXAMS.map((exam) => <span key={exam}><i style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} />{exam}</span>)}
@@ -130,10 +130,9 @@ export function ScopeFlow({ inventory, paths, focusId, onSelect, onBrowse, disab
               type="button"
               className="scope-card-select"
               disabled={disabled}
-              aria-pressed={metrics.state === "partial" ? "mixed" : metrics.state === "all"}
-              aria-label={`Choose ${node.label}. ${number(metrics.selectedCount)} of ${number(node.questionCount)} questions included. Replace the current scope in ${subjectLabel}.`}
-              onClick={() => onSelect(node.id)}
-            >Select</button>
+              aria-label={`Attempt ${node.label}. ${number(node.questionCount)} questions available. Select this scope and open test setup.`}
+              onClick={() => onAttempt(node.id)}
+            >{node.kind === "subtopic" ? "Attempt this subpart" : `Attempt full ${levelNames[node.kind]}`}</button>
             {hasChildren ? <button
               type="button"
               className="scope-card-open"

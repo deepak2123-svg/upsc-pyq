@@ -40,10 +40,9 @@ test("server-renders an exam archive through the subject-first selector", async 
   assert.match(html, /Choose subjects/);
   assert.match(html, /CSE(?:<!-- -->)? only/);
   assert.match(html, /Refine your scope/);
-  assert.match(html, /Newest first/);
-  assert.match(html, />Shuffle</);
-  assert.match(html, /Choose question count/);
-  assert.doesNotMatch(html, /Start 20-question practice/);
+  assert.match(html, /Set up test/);
+  assert.match(html, /choose the number of MCQs and test time/i);
+  assert.doesNotMatch(html, /Start 20-question (?:practice|test)/);
   assert.doesNotMatch(html, /difficulty|generated MCQ|source verbatim/i);
 });
 
