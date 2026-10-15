@@ -1,17 +1,17 @@
 export type PracticePromptBlock =
   | { kind: "text"; text: string }
-  | { kind: "statement"; number: number; text: string }
+  | { kind: "statement"; marker: string; text: string }
   | {
     kind: "match-table";
     left: { title: string; items: { label: string; text: string }[] };
     right: { title: string; items: { label: string; text: string }[] };
   };
 
-const numberedMarker = /(?:^|\s)(\d{1,2})[.)]\s+/g;
-const romanMarker = /(?:^|\s)(I|II|III|IV|V|VI|VII|VIII|IX|X)[.)]\s+/gi;
+const numberedMarker = /(?:^|\s)(\d{1,2})([.)])\s+/g;
+const romanMarker = /(?:^|\s)(I|II|III|IV|V|VI|VII|VIII|IX|X)([.)])\s+/gi;
 const instructionMarker = /\s+(?=(?:Select|Choose) the (?:correct )?answer\b|Which of the (?:following|statements|above)\b|How many of the (?:above|following)\b)/i;
-const leadingArabicMarker = /^\s*(\d{1,2})[.)]\s+(.+)$/;
-const leadingRomanMarker = /^\s*(I|II|III|IV|V|VI|VII|VIII|IX|X)[.)]\s+(.+)$/i;
+const leadingArabicMarker = /^\s*(\d{1,2})([.)])\s+(.+)$/;
+const leadingRomanMarker = /^\s*(I|II|III|IV|V|VI|VII|VIII|IX|X)([.)])\s+(.+)$/i;
 const listOneMarker = /\bList\s*[-–—]?\s*(?:I|1)\s*\(([^)]*)\)/i;
 const listTwoMarker = /\bList\s*[-–—]?\s*(?:II|2)\s*\(([^)]*)\)/i;
 const letteredItemMarker = /(?:^|\s)([A-Z])[.)]\s+/g;
@@ -39,12 +39,12 @@ function splitSequence(line: string, marker: RegExp, valueOf: (value: string) =>
       if (instructionAt >= 0) {
         const instruction = statement.slice(instructionAt).trim();
         statement = statement.slice(0, instructionAt).trim();
-        blocks.push({ kind: "statement", number: index + 1, text: statement });
+        blocks.push({ kind: "statement", marker: `${match[1]}${match[2]}`, text: statement });
         blocks.push({ kind: "text", text: instruction });
         return;
       }
     }
-    blocks.push({ kind: "statement", number: index + 1, text: statement });
+    blocks.push({ kind: "statement", marker: `${match[1]}${match[2]}`, text: statement });
   });
   return blocks;
 }
@@ -75,6 +75,7 @@ function matchingListBlocks(lines: string[]): PracticePromptBlock[] | null {
   const rightItems = listItems(value.slice(afterSecond, codeStart >= 0 ? afterSecond + codeStart : value.length), numberedMarker, ["1", "2", "3", "4", "5"]);
   if (!leftItems || !rightItems) return null;
   const introduction = value.slice(0, first.index).trim();
+  const trailing = codeStart >= 0 ? value.slice(afterSecond + codeStart).trim() : "";
   return [
     ...(introduction ? [{ kind: "text" as const, text: introduction }] : []),
     {
@@ -82,6 +83,7 @@ function matchingListBlocks(lines: string[]): PracticePromptBlock[] | null {
       left: { title: first[1]?.trim() || "List I", items: leftItems },
       right: { title: second[1]?.trim() || "List II", items: rightItems },
     },
+    ...(trailing ? [{ kind: "text" as const, text: trailing }] : []),
   ];
 }
 
@@ -96,20 +98,23 @@ export function formatPracticePrompt(lines: string[]): PracticePromptBlock[] {
   if (matchingLists) return matchingLists;
   const leading = cleanLines.map((line) => {
     const arabic = line.match(leadingArabicMarker);
-    if (arabic) return { number: Number(arabic[1]), text: arabic[2] };
+    if (arabic) return { order: Number(arabic[1]), marker: `${arabic[1]}${arabic[2]}`, text: arabic[3] };
     const roman = line.match(leadingRomanMarker);
-    return roman ? { number: romanValue(roman[1]), text: roman[2] } : null;
+    return roman ? { order: romanValue(roman[1]), marker: `${roman[1]}${roman[2]}`, text: roman[3] } : null;
   });
   const sequenceIndexes = new Set<number>();
   for (let start = 0; start < leading.length; start += 1) {
-    if (leading[start]?.number !== 1) continue;
+    if (leading[start]?.order !== 1) continue;
     let end = start;
-    while (leading[end + 1]?.number === leading[end]!.number + 1) end += 1;
+    while (leading[end + 1]?.order === leading[end]!.order + 1) end += 1;
     if (end > start) for (let index = start; index <= end; index += 1) sequenceIndexes.add(index);
   }
 
   return cleanLines.flatMap((line, lineIndex) => {
-    if (sequenceIndexes.has(lineIndex)) return [{ kind: "statement" as const, ...leading[lineIndex]! }];
+    if (sequenceIndexes.has(lineIndex)) {
+      const { marker, text } = leading[lineIndex]!;
+      return [{ kind: "statement" as const, marker, text }];
+    }
     return splitSequence(line, numberedMarker, Number)
       || splitSequence(line, romanMarker, romanValue)
       || [{ kind: "text" as const, text: line }];

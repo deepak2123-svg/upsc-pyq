@@ -16,9 +16,9 @@ const feedback = {
 test("flattened numbered statements are restored to paper-style lines without rewriting the source", () => {
   assert.deepEqual(formatPracticePrompt(["Temperate forests are found in which hills? 1. Anaimalai 2. Nilgiris 3. Palani Select the answer using the code given below"]), [
     { kind: "text", text: "Temperate forests are found in which hills?" },
-    { kind: "statement", number: 1, text: "Anaimalai" },
-    { kind: "statement", number: 2, text: "Nilgiris" },
-    { kind: "statement", number: 3, text: "Palani" },
+    { kind: "statement", marker: "1.", text: "Anaimalai" },
+    { kind: "statement", marker: "2.", text: "Nilgiris" },
+    { kind: "statement", marker: "3.", text: "Palani" },
     { kind: "text", text: "Select the answer using the code given below" },
   ]);
   assert.deepEqual(formatPracticePrompt(["In 2025, consider 1 important change only."]), [
@@ -26,16 +26,25 @@ test("flattened numbered statements are restored to paper-style lines without re
   ]);
   assert.deepEqual(formatPracticePrompt(["Consider the rivers: I. Sharavathi II. Periyar III. Mandovi How many of the above are west-flowing rivers?"]), [
     { kind: "text", text: "Consider the rivers:" },
-    { kind: "statement", number: 1, text: "Sharavathi" },
-    { kind: "statement", number: 2, text: "Periyar" },
-    { kind: "statement", number: 3, text: "Mandovi" },
+    { kind: "statement", marker: "I.", text: "Sharavathi" },
+    { kind: "statement", marker: "II.", text: "Periyar" },
+    { kind: "statement", marker: "III.", text: "Mandovi" },
     { kind: "text", text: "How many of the above are west-flowing rivers?" },
   ]);
   assert.deepEqual(formatPracticePrompt(["Consider the following:", "1. First statement", "2. Second statement", "Which is correct?"]), [
     { kind: "text", text: "Consider the following:" },
-    { kind: "statement", number: 1, text: "First statement" },
-    { kind: "statement", number: 2, text: "Second statement" },
+    { kind: "statement", marker: "1.", text: "First statement" },
+    { kind: "statement", marker: "2.", text: "Second statement" },
     { kind: "text", text: "Which is correct?" },
+  ]);
+});
+
+test("statement formatting preserves the source marker and punctuation", () => {
+  assert.deepEqual(formatPracticePrompt(["Consider the following: I) First II) Second Which of the statements is correct?"]), [
+    { kind: "text", text: "Consider the following:" },
+    { kind: "statement", marker: "I)", text: "First" },
+    { kind: "statement", marker: "II)", text: "Second" },
+    { kind: "text", text: "Which of the statements is correct?" },
   ]);
 });
 
@@ -65,6 +74,16 @@ test("match-the-list questions become an aligned two-column table", () => {
   assert.deepEqual(formatPracticePrompt(["A regular question with List-I mentioned only once."]), [
     { kind: "text", text: "A regular question with List-I mentioned only once." },
   ]);
+});
+
+test("match-the-list formatting never drops the printed code instruction", () => {
+  const blocks = formatPracticePrompt([
+    "Match List-I with List-II.",
+    "List-I (Type) A. Alpha B. Beta",
+    "List-II (Value) 1. One 2. Two Code: A B C D",
+  ]);
+  assert.equal(blocks.at(-1)?.kind, "text");
+  assert.equal(blocks.at(-1)?.text, "Code: A B C D");
 });
 function attempt(overrides = {}) {
   return {

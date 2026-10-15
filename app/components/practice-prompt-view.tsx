@@ -3,7 +3,7 @@ import type { PracticePromptBlock } from "../../lib/practice-prompt";
 export function PracticePromptView({ blocks, className }: { blocks: PracticePromptBlock[]; className: string }) {
   return <div className={className} tabIndex={-1}>
     {blocks.map((block, index) => {
-      if (block.kind === "statement") return <p className="paper-statement" key={index}><b>{block.number}.</b><span>{block.text}</span></p>;
+      if (block.kind === "statement") return <p className="paper-statement" key={index}><b>{block.marker}</b><span>{block.text}</span></p>;
       if (block.kind === "text") return <p key={index}>{block.text}</p>;
       const rowCount = Math.max(block.left.items.length, block.right.items.length);
       return <div className="matching-list-scroll" key={index}>
