@@ -990,6 +990,7 @@ h3 { font-size: 16px; }
 .scope-refine { min-width: 0; padding-top: 28px; }
 .scope-refine-heading { display: flex; justify-content: space-between; align-items: start; gap: 20px; }
 .scope-refine-heading h2 { font-size: 25px; letter-spacing: -.035em; line-height: 1.2; margin: 8px 0; outline-offset: 5px; }
+.scope-refine-heading h2 small { display: block; margin-bottom: 4px; color: var(--accent); font-size: 10px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
 .scope-refine-heading p { color: var(--muted); font-size: 13px; line-height: 1.55; margin: 0; max-width: 650px; }
 .scope-secondary { border: 1px solid var(--line); padding: 10px 14px; min-height: 44px; border-radius: 8px; color: var(--ink); background: var(--surface); font-size: 13px; font-weight: 650; white-space: nowrap; }
 .scope-secondary:hover { border-color: var(--accent); color: var(--accent); }
@@ -1004,6 +1005,7 @@ h3 { font-size: 16px; }
 .scope-breadcrumbs > span { display: inline-flex; align-items: center; min-width: 0; }
 .scope-breadcrumbs i { font-style: normal; color: var(--muted); font-size: 13px; margin: 0 7px; }
 .scope-breadcrumbs button { border: 0; background: none; color: var(--muted); font-size: 13px; text-align: left; padding: 7px 2px; min-height: 44px; }
+.scope-breadcrumbs button small { margin-right: 6px; color: var(--accent); font-size: 10px; font-weight: 800; letter-spacing: .04em; }
 .scope-breadcrumbs button[aria-current] { color: var(--accent); font-weight: 750; }
 .scope-navigation-help { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 12px 0; font-size: 12px; color: var(--muted); line-height: 1.5; }
 .scope-navigation-help button { border: 0; background: none; color: var(--accent); font-size: 12px; padding: 0; min-height: 28px; }
@@ -1077,6 +1079,8 @@ h3 { font-size: 16px; }
 .scope-card[data-state=all] { border-color: #6e8fd8; background: #f7f9ff; }
 .scope-card[data-active=true] { box-shadow: 0 0 0 2px #2457d61f, 0 8px 24px #2457d612; }
 .scope-card-body { display: flex; flex-direction: column; gap: 8px; padding: 17px 17px 14px; }
+.scope-card-meta { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.scope-card-number { color: var(--accent); font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .scope-card-state { align-self: flex-start; padding: 4px 7px; border-radius: 99px; background: #eef1f6; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
 .scope-card[data-state=partial] .scope-card-state, .scope-card[data-state=all] .scope-card-state { background: #e4ebfb; color: #244fae; }
 .scope-card h4 { margin: 2px 0 0; font-size: 16px; line-height: 1.38; letter-spacing: -.015em; overflow-wrap: anywhere; }

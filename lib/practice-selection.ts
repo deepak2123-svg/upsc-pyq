@@ -229,6 +229,18 @@ export function ancestors(scopeId: string, index: SelectionIndex): ScopeNode[] {
   return result;
 }
 
+/** Stable display numbering for the PDF-defined Physical Geography hierarchy. */
+export function scopeDisplayNumber(scopeId: string, index: SelectionIndex): string | undefined {
+  const path = ancestors(scopeId, index);
+  if (!path.some((node) => node.kind === "head" && node.label === "Physical Geography")) return undefined;
+  const topic = path.find((node) => node.kind === "topic");
+  const node = index.nodesById.get(scopeId);
+  if (!topic || !node) return undefined;
+  if (node.kind === "topic") return `Chapter ${topic.order}`;
+  if (node.kind === "subtopic") return `${topic.order}.${node.order}`;
+  return undefined;
+}
+
 export function addedQuestionCount(
   paths: SelectionPaths,
   scopeId: string,

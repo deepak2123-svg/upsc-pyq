@@ -5,6 +5,7 @@ import type { SubjectPracticeInventory } from "../../lib/pyq-catalog";
 import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
 import {
   buildSelectionIndex,
+  scopeDisplayNumber,
   scopeMetrics,
   type ScopeNode,
   type SelectionPaths,
@@ -100,6 +101,7 @@ export function ScopeFlow({ inventory, paths, focusId, onSelect, onBrowse, disab
     <div className="scope-card-grid">
       {cards.map((node) => {
         const metrics = cardMetrics(node, paths, index);
+        const displayNumber = scopeDisplayNumber(node.id, index);
         const hasChildren = (index.childrenById.get(node.id)?.length || 0) > 0;
         const selectedText = metrics.state === "all" ? "Included"
           : metrics.state === "partial" ? "Partly included" : "Available";
@@ -118,7 +120,7 @@ export function ScopeFlow({ inventory, paths, focusId, onSelect, onBrowse, disab
           data-selected-count={metrics.selectedCount}
         >
           <div className="scope-card-body">
-            <span className="scope-card-state">{selectedText}</span>
+            <div className="scope-card-meta">{displayNumber ? <span className="scope-card-number">{displayNumber}</span> : null}<span className="scope-card-state">{selectedText}</span></div>
             <h4>{node.label}</h4>
             <p>{countText}</p>
             <SourceDistribution counts={metrics.availableExams} />

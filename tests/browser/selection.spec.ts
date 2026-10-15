@@ -30,8 +30,8 @@ async function addition(page: Page, subtopic = WEATHER) {
   await page.getByRole("button", { name: /Add (?:another )?topic/ }).click();
   const dialog = page.getByRole("dialog", { name: "Add to your current selection" });
   await dialog.getByRole("combobox", { name: "Section", exact: true }).selectOption({ label: "Physical Geography · 363" });
-  await dialog.getByRole("combobox", { name: "Topic", exact: true }).selectOption({ label: `${GEOMORPHOLOGY} · 28` });
-  await dialog.getByRole("combobox", { name: "Subtopic", exact: true }).selectOption({ label: `${subtopic} · ${subtopic === WEATHER ? 8 : 10}` });
+  await dialog.getByRole("combobox", { name: "Topic", exact: true }).selectOption({ label: `Chapter 1 · ${GEOMORPHOLOGY} · 28` });
+  await dialog.getByRole("combobox", { name: "Subtopic", exact: true }).selectOption({ label: `1.${subtopic === WEATHER ? 2 : 3} · ${subtopic} · ${subtopic === WEATHER ? 8 : 10}` });
   return dialog;
 }
 async function snapshotResponse(page: Page) {
@@ -95,9 +95,11 @@ test("Physical Geography chapter cards follow the canonical PDF order", async ({
     "Oceanography",
   ];
   await expect(scope(page).locator(".scope-card h4")).toHaveText(expected);
+  await expect(scope(page).locator(".scope-card-number")).toHaveText(expected.map((_, index) => `Chapter ${index + 1}`));
   await scope(page).getByRole("button", { name: /^Open Oceanography subparts without changing your selection$/ }).click();
   await matching(page, 363);
   await expect(page.getByRole("navigation", { name: "Current syllabus path" })).toContainText("Oceanography");
+  await expect(scope(page).locator(".scope-card-number").first()).toHaveText(/^11\.\d+$/);
 });
 
 test("source filtering gives 5 CSE questions, retains scope, and leaves geometry unchanged", async ({ page }) => {

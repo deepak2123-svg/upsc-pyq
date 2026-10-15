@@ -7,7 +7,7 @@ import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
 import type { SubjectPracticeInventory } from "../../lib/pyq-catalog";
 import type { PracticeOrder, PracticeRecipeV3, PracticeSnapshot } from "../../lib/practice-types";
 import { createLocalAttempt } from "../../lib/practice-store";
-import { addScope, addedQuestionCount, ancestors, buildSelectionIndex, removeScope, replaceScope, sanitizePathsWithAliases, scopeMetrics, selectedScopeIds, selectionCounts, setScopeExam, type SelectionIndex, type SelectionPaths } from "../../lib/practice-selection";
+import { addScope, addedQuestionCount, ancestors, buildSelectionIndex, removeScope, replaceScope, sanitizePathsWithAliases, scopeDisplayNumber, scopeMetrics, selectedScopeIds, selectionCounts, setScopeExam, type SelectionIndex, type SelectionPaths } from "../../lib/practice-selection";
 import { ScopeFlow } from "./scope-flow";
 
 const COUNTS = [10, 20, 30, 50] as const;
@@ -31,6 +31,10 @@ function AddScopeDialog({ index, paths, initialId, preferredExam, onAdd, onCance
   const topic = path.find((node) => node.kind === "topic");
   const leaf = path.find((node) => node.kind === "subtopic");
   const additional = addedQuestionCount(paths, candidateId, index, preferredExam);
+  const optionLabel = (id: string, label: string) => {
+    const number = scopeDisplayNumber(id, index);
+    return number ? `${number} · ${label}` : label;
+  };
   useEffect(() => {
     const previous = document.activeElement as HTMLElement | null;
     const current = dialog.current;
@@ -42,8 +46,8 @@ function AddScopeDialog({ index, paths, initialId, preferredExam, onAdd, onCance
       <span className="selector-label">Combine branches</span><h2 id="add-scope-title">Add to your current selection</h2>
       <label>Subject<select value={subject?.id || ""} onChange={(event) => setCandidateId(event.target.value)}>{subjects.map((node) => <option key={node.id} value={node.id}>{node.label}</option>)}</select></label>
       {subject ? <label>Section<select value={section?.id || subject.id} onChange={(event) => setCandidateId(event.target.value)}><option value={subject.id}>Entire subject</option>{(index.childrenById.get(subject.id) || []).map((node) => <option key={node.id} value={node.id}>{node.label} · {node.questionCount}</option>)}</select></label> : null}
-      {section ? <label>Topic<select value={topic?.id || section.id} onChange={(event) => setCandidateId(event.target.value)}><option value={section.id}>Entire section</option>{(index.childrenById.get(section.id) || []).map((node) => <option key={node.id} value={node.id}>{node.label} · {node.questionCount}</option>)}</select></label> : null}
-      {topic ? <label>Subtopic<select value={leaf?.id || topic.id} onChange={(event) => setCandidateId(event.target.value)}><option value={topic.id}>Entire topic</option>{(index.childrenById.get(topic.id) || []).map((node) => <option key={node.id} value={node.id}>{node.label} · {node.questionCount}</option>)}</select></label> : null}
+      {section ? <label>Topic<select value={topic?.id || section.id} onChange={(event) => setCandidateId(event.target.value)}><option value={section.id}>Entire section</option>{(index.childrenById.get(section.id) || []).map((node) => <option key={node.id} value={node.id}>{optionLabel(node.id, node.label)} · {node.questionCount}</option>)}</select></label> : null}
+      {topic ? <label>Subtopic<select value={leaf?.id || topic.id} onChange={(event) => setCandidateId(event.target.value)}><option value={topic.id}>Entire topic</option>{(index.childrenById.get(topic.id) || []).map((node) => <option key={node.id} value={node.id}>{optionLabel(node.id, node.label)} · {node.questionCount}</option>)}</select></label> : null}
       <div className="scope-add-preview"><strong>{index.nodesById.get(candidateId)?.label}</strong><span>{format(additional)} new questions</span>{!additional ? <small>Already included or unavailable.</small> : null}</div>
       <div className="scope-dialog-actions"><button type="button" className="scope-secondary" onClick={onCancel}>Cancel</button><button className="scope-primary" type="submit" disabled={additional === 0}>Add {format(additional)} questions</button></div>
     </form>
@@ -177,10 +181,10 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     })}</div></section>
     <div className="scope-builder-layout">
       <section className="scope-refine" aria-labelledby="scope-refine-title">
-        <div className="scope-refine-heading"><div><span className="selector-label">2 · Refine</span><h2 id="scope-refine-title" tabIndex={-1} ref={focusHeading}>{current?.label || "Choose a subject"}</h2>{current ? <p>{instruction}</p> : null}</div>{totals.subjectIds.length ? <button type="button" className="scope-secondary" disabled={loading} onClick={() => setAddOpen(true)}>＋ Add topic</button> : null}</div>
+        <div className="scope-refine-heading"><div><span className="selector-label">2 · Refine</span><h2 id="scope-refine-title" tabIndex={-1} ref={focusHeading}>{current ? <>{scopeDisplayNumber(current.id, index) ? <small>{scopeDisplayNumber(current.id, index)}</small> : null}{current.label}</> : "Choose a subject"}</h2>{current ? <p>{instruction}</p> : null}</div>{totals.subjectIds.length ? <button type="button" className="scope-secondary" disabled={loading} onClick={() => setAddOpen(true)}>＋ Add topic</button> : null}</div>
         {current ? <>
           {totals.subjectIds.length > 1 ? <div className="scope-subject-tabs" aria-label="Browse selected subjects">{totals.subjectIds.map((id) => <button type="button" disabled={loading} aria-pressed={current.subjectId === id} key={id} onClick={() => browse(id)}>{index.nodesById.get(id)?.label}<span>{format(scopeMetrics(id, paths, index).selectedCount)}</span></button>)}</div> : null}
-          <nav className="scope-breadcrumbs" aria-label="Current syllabus path">{focusPath.map((node, position) => <span key={node.id}>{position ? <i aria-hidden="true">→</i> : null}<button type="button" disabled={loading} onClick={() => browse(node.id)} aria-current={node.id === current.id ? "location" : undefined}>{node.label}</button></span>)}</nav>
+          <nav className="scope-breadcrumbs" aria-label="Current syllabus path">{focusPath.map((node, position) => { const number = scopeDisplayNumber(node.id, index); return <span key={node.id}>{position ? <i aria-hidden="true">→</i> : null}<button type="button" disabled={loading} onClick={() => browse(node.id)} aria-current={node.id === current.id ? "location" : undefined}>{number ? <small>{number}</small> : null}{node.label}</button></span>; })}</nav>
           <div className="scope-navigation-help">{current.parentId ? <button type="button" disabled={loading} onClick={() => browse(current.parentId!)}>← Back <small>selection unchanged</small></button> : null}</div>
           <div className="scope-current-action"><span><strong>{format(metrics?.selectedCount || 0)}</strong> / {format(current.questionCount)} selected</span><button type="button" disabled={loading} onClick={() => selectScope(current.id)}>{"Select entire " + (current.kind === "head" ? "section" : current.kind)}</button></div>
           <section className="scope-sources scope-sources-inline" aria-labelledby="scope-sources-title">
@@ -196,7 +200,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
         <div className="scope-dock-body">
         <span className="selector-label">3 · Set size & start</span><h2 id="practice-summary-title">Your practice</h2>
         <div className="scope-matching" data-testid="matching-count"><strong>{format(totals.matchingCount)}</strong><span>questions match your selection</span></div>
-        <div className="scope-selection-list">{selectedIds.map((id) => { const node = index.nodesById.get(id)!; const branchPath = ancestors(id, index); const metric = scopeMetrics(id, paths, index); const leaves = index.leavesById.get(id) || []; return <div className="scope-selection-item" key={id}><div><strong>{branchPath[0]?.label}</strong><span>{branchPath.length > 1 ? branchPath.slice(1).map((part) => part.label).join(" → ") : "All sections"}</span><small>{format(metric.selectedCount)} matching · {leaves.length} subtopic{leaves.length === 1 ? "" : "s"}</small></div><button type="button" disabled={loading} aria-label={"Remove " + node.label} onClick={() => remove(id)}>×</button></div>; })}{!selectedIds.length ? <p>Choose a subject to begin.</p> : null}</div>
+        <div className="scope-selection-list">{selectedIds.map((id) => { const node = index.nodesById.get(id)!; const branchPath = ancestors(id, index); const metric = scopeMetrics(id, paths, index); const leaves = index.leavesById.get(id) || []; return <div className="scope-selection-item" key={id}><div><strong>{branchPath[0]?.label}</strong><span>{branchPath.length > 1 ? branchPath.slice(1).map((part) => [scopeDisplayNumber(part.id, index), part.label].filter(Boolean).join(" · ")).join(" → ") : "All sections"}</span><small>{format(metric.selectedCount)} matching · {leaves.length} subtopic{leaves.length === 1 ? "" : "s"}</small></div><button type="button" disabled={loading} aria-label={"Remove " + node.label} onClick={() => remove(id)}>×</button></div>; })}{!selectedIds.length ? <p>Choose a subject to begin.</p> : null}</div>
         <fieldset className="scope-size-options" disabled={loading || !restored}><legend>Questions in this practice</legend><div className="segmented">{COUNTS.map((value) => <button type="button" key={value} className={count === value ? "active" : ""} aria-pressed={count === value} onClick={() => { setCount(value); setError(""); }}>{value}</button>)}<button type="button" className={count === "all" ? "active" : ""} aria-pressed={count === "all"} onClick={() => { setCount("all"); setError(""); }}>All</button></div></fieldset>
         {count === null ? <p className="scope-size-prompt">Choose how many questions you want to attempt.</p> : null}
         {shortage ? <div className="scope-shortage" role="alert"><p>You chose {practiceCount}, but only {format(totals.matchingCount)} questions match.</p><button type="button" disabled={loading} onClick={() => setCount("all")}>Use all {format(totals.matchingCount)} available</button></div> : null}
