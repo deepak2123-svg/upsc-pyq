@@ -38,6 +38,34 @@ test("flattened numbered statements are restored to paper-style lines without re
     { kind: "text", text: "Which is correct?" },
   ]);
 });
+
+test("match-the-list questions become an aligned two-column table", () => {
+  assert.deepEqual(formatPracticePrompt([
+    "Match List-I with List-II and select the correct answer using the code given below the Lists:",
+    "List-I (Weathering type) A. Chemical weathering B. Mechanical weathering C. Glacial deposits D. Deposition by ground-water",
+    "List-II (Landform/Process) 1. Till 2. Oxidation 3. Plant roots 4. Stalactite",
+  ]), [
+    { kind: "text", text: "Match List-I with List-II and select the correct answer using the code given below the Lists:" },
+    {
+      kind: "match-table",
+      left: { title: "Weathering type", items: [
+        { label: "A", text: "Chemical weathering" },
+        { label: "B", text: "Mechanical weathering" },
+        { label: "C", text: "Glacial deposits" },
+        { label: "D", text: "Deposition by ground-water" },
+      ] },
+      right: { title: "Landform/Process", items: [
+        { label: "1", text: "Till" },
+        { label: "2", text: "Oxidation" },
+        { label: "3", text: "Plant roots" },
+        { label: "4", text: "Stalactite" },
+      ] },
+    },
+  ]);
+  assert.deepEqual(formatPracticePrompt(["A regular question with List-I mentioned only once."]), [
+    { kind: "text", text: "A regular question with List-I mentioned only once." },
+  ]);
+});
 function attempt(overrides = {}) {
   return {
     id: "local-attempt", status: "in_progress", currentIndex: 0,

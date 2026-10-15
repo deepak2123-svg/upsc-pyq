@@ -11,7 +11,7 @@ type FixtureSnapshot = { id: string; questions: FixtureQuestion[]; recipe: Recor
 const records = JSON.parse(readFileSync(new URL("../../content/question-bank.json", import.meta.url), "utf8")) as { questions: { id: string; answer: string }[] };
 const correctAnswer = (id: string) => records.questions.find((question) => question.id === id)!.answer;
 const start = (page: Page) => page.locator(".scope-dock .start-practice");
-const choose = (page: Page, label: string) => page.locator(".scope-flow-scroll").getByRole("button", { name: new RegExp(`^Choose ${label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\.`) }).click();
+const choose = (page: Page, label: string) => page.locator(".scope-cards").getByRole("button", { name: new RegExp(`^Choose ${label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\.`) }).click();
 
 async function fixture(page: Page, request: APIRequestContext, durationMinutes: number | null = null) {
   const response = await request.post("/api/practice-snapshots", {
@@ -72,28 +72,28 @@ test.beforeEach(async ({ page }) => {
   await page.waitForFunction(() => sessionStorage.getItem("upsc-pyq-builder:v3:all") !== null);
 });
 
-test("sources live beside the diagram; four honest exam colors replace chart browse arrows", async ({ page, request }, testInfo) => {
+test("sources live beside the chapter cards with four honest exam colors", async ({ page, request }, testInfo) => {
   await page.getByRole("button", { name: /^Geography\b/ }).first().click();
   await expect(page.locator(".scope-dock .scope-sources")).toHaveCount(0);
   await expect(page.locator(".scope-workspace .scope-sources")).toHaveCount(1);
-  await expect(page.locator(".scope-flow-browse")).toHaveCount(0);
-  await expect(page.locator(".scope-flow")).not.toContainText("↗");
+  await expect(page.locator(".scope-card-grid")).toBeVisible();
+  await expect(page.locator(".scope-cards")).not.toContainText("↗");
   const inventory = await (await request.get("/api/pyqs/inventory")).json();
   const geo = inventory.subjects.find((subject: { id: string }) => subject.id === GEO);
   for (const exam of EXAMS) {
     await expect(page.locator(".scope-refine .scope-sources")).toContainText(exam);
     await expect(page.locator(".scope-refine .scope-sources").getByRole("checkbox", { name: new RegExp(`^${exam}\\b`) })).toBeChecked();
-    const ribbons = page.locator(`.scope-flow-scroll path[data-exam="${exam}"][data-layer="available"][data-source-id="${GEO}"]`);
-    const lanes = await ribbons.evaluateAll((paths) => paths.map((path) => ({ color: path.getAttribute("stroke"), count: Number((path as SVGElement).dataset.questionCount) })));
-    expect(lanes.length).toBeGreaterThan(0);
-    expect(lanes.every((lane) => lane.color === COLORS[exam as keyof typeof COLORS])).toBe(true);
-    expect(lanes.reduce((sum, lane) => sum + lane.count, 0)).toBe(geo.examCounts[exam]);
+    const sources = page.locator(`.scope-card-source-counts span[data-exam="${exam}"]`);
+    expect(await sources.count()).toBeGreaterThan(0);
+    const values = await sources.allTextContents();
+    expect(values.reduce((sum, value) => sum + Number(value.match(/[\d,]+$/)?.[0].replaceAll(",", "") || 0), 0)).toBe(geo.examCounts[exam]);
+    const colors = await sources.locator("i").evaluateAll((dots) => dots.map((dot) => (dot as HTMLElement).style.getPropertyValue("--exam-color")));
+    expect(colors.every((color) => color === COLORS[exam as keyof typeof COLORS])).toBe(true);
   }
-  const geometry = await page.locator('path[data-layer="available"]').evaluateAll((paths) => paths.map((path) => ({ d: path.getAttribute("d"), width: path.getAttribute("stroke-width") })));
+  const cardOrder = await page.locator(".scope-card").evaluateAll((cards) => cards.map((card) => (card as HTMLElement).dataset.scopeId));
   await page.locator(".scope-sources").getByRole("checkbox", { name: /^NDA\b/ }).click();
   await expect(page.getByTestId("matching-count").locator("strong")).toHaveText((1021 - geo.examCounts.NDA).toLocaleString("en-IN"));
-  await expect(page.locator('path[data-exam="NDA"][data-layer="selected"]')).toHaveCount(0);
-  expect(await page.locator('path[data-layer="available"]').evaluateAll((paths) => paths.map((path) => ({ d: path.getAttribute("d"), width: path.getAttribute("stroke-width") })))).toEqual(geometry);
+  expect(await page.locator(".scope-card").evaluateAll((cards) => cards.map((card) => (card as HTMLElement).dataset.scopeId))).toEqual(cardOrder);
   await page.locator(".scope-builder-layout").evaluate((layout) => {
     window.scrollTo(0, layout.getBoundingClientRect().top + window.scrollY - 100);
   });
@@ -141,9 +141,9 @@ test("test duration defaults to untimed and survives draft reload and snapshot c
   await expect(page.getByRole("complementary", { name: "Question palette" }).getByRole("button")).toHaveCount(20);
   const textSize = page.getByRole("group", { name: "Question text size" });
   await expect(textSize.getByRole("button", { name: "Default question text" })).toHaveAttribute("aria-pressed", "true");
-  const defaultSize = await page.locator(".practice-question h1").evaluate((element) => parseFloat(getComputedStyle(element).fontSize));
+  const defaultSize = await page.locator(".practice-question .practice-prompt").evaluate((element) => parseFloat(getComputedStyle(element).fontSize));
   await textSize.getByRole("button", { name: "Large question text" }).click();
-  expect(await page.locator(".practice-question h1").evaluate((element) => parseFloat(getComputedStyle(element).fontSize))).toBeGreaterThan(defaultSize);
+  expect(await page.locator(".practice-question .practice-prompt").evaluate((element) => parseFloat(getComputedStyle(element).fontSize))).toBeGreaterThan(defaultSize);
   await page.reload();
   await expect(textSize.getByRole("button", { name: "Large question text" })).toHaveAttribute("aria-pressed", "true");
 });
@@ -407,7 +407,7 @@ for (const width of [390, 768, 1024, 1600]) {
     } else {
       await expect(paletteToggle).toBeHidden();
     }
-    const reading = await page.locator(".practice-question h1").evaluate((element) => {
+    const reading = await page.locator(".practice-question .practice-prompt").evaluate((element) => {
       const style = getComputedStyle(element);
       return { font: style.fontFamily, size: parseFloat(style.fontSize), lineHeight: parseFloat(style.lineHeight) };
     });

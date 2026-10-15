@@ -9,6 +9,7 @@ import { deleteBookmark, getAttempt, listBookmarks, putAttempt, saveBookmark } f
 import { attemptClock, attemptReturnPath, completeAttempt, formatPracticeTime, hasCompleteFeedback, requestAnswerFeedback } from "../../lib/practice-session";
 import { formatPracticePrompt } from "../../lib/practice-prompt";
 import { PYQ_EXAM_COLORS } from "../../lib/pyq-exams";
+import { PracticePromptView } from "./practice-prompt-view";
 
 type ReadingSize = "small" | "standard" | "large";
 const READING_SIZE_KEY = "upsc-pyq-reading-size:v1";
@@ -289,7 +290,7 @@ export function PracticeClient({ id }: { id: string }) {
           <div className="question-heading"><div className="question-context"><span>Question {attempt.currentIndex + 1} of {attempt.snapshot.questions.length}</span><span>{question.subject}{question.topic ? ` · ${question.topic}` : ""}</span></div><fieldset className="reading-size" aria-label="Question text size"><legend>Text size</legend>{readingSizes.map((size) => <button key={size.value} type="button" title={size.label} aria-label={size.label} aria-pressed={readingSize === size.value} onClick={() => chooseReadingSize(size.value)}>{size.symbol}</button>)}</fieldset></div>
           <div className="question-copy">
             <div className="question-paper">
-              <h1 tabIndex={-1}>{prompt.map((block, index) => block.kind === "statement" ? <span className="paper-statement" key={`${question.id}-${index}`}><b>{block.number}.</b>{block.text}</span> : <span key={`${question.id}-${index}`}>{block.text}</span>)}</h1>
+              <PracticePromptView blocks={prompt} className="practice-prompt" />
               <p className="question-origin"><span style={{ background: PYQ_EXAM_COLORS[question.exam] }} />First appeared: <strong>{sourceLabel}</strong> · Question {question.questionNumber}</p>
             </div>
             <div className="practice-choice-panel">
