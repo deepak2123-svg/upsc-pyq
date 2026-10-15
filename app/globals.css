@@ -1174,6 +1174,13 @@ h3 { font-size: 16px; }
 .practice-setup-dialog input { width: 100%; min-height: 44px; box-sizing: border-box; padding: 9px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--surface); font-size: 13px; }
 .practice-setup-dialog .scope-dialog-actions { margin-top: 26px; }
 .practice-setup-dialog .confirm-practice { min-width: 210px; }
+.pdf-answer-key { display: flex !important; grid-template-columns: none !important; align-items: flex-start; gap: 11px !important; margin-top: 20px !important; padding: 14px; border: 1px solid var(--line); border-radius: 9px; background: #f8f9fb; cursor: pointer; }
+.pdf-answer-key input { width: 18px; min-height: 18px; margin: 2px 0 0; accent-color: var(--accent); }
+.pdf-answer-key span { display: grid; gap: 3px; }
+.pdf-answer-key strong { font-size: 13px; }
+.pdf-answer-key small { color: var(--muted); font-size: 11px; font-weight: 450; line-height: 1.45; }
+.practice-setup-actions { flex-wrap: wrap; }
+.practice-setup-actions .export-pdf { color: var(--accent); border-color: #b8c8ef; }
 .scope-setup-note { margin: 18px 0 0; padding: 14px; border-radius: 8px; background: #f5f7fb; color: var(--muted); font-size: 12px; line-height: 1.55; }
 .scope-add-preview { display: grid; gap: 7px; padding: 16px; margin: 22px 0; background: var(--accent-soft); border-radius: 9px; font-size: 14px; }
 .scope-add-preview span { color: var(--accent); font-weight: 700; }

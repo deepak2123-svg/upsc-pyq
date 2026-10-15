@@ -54,9 +54,9 @@ function AddScopeDialog({ index, paths, initialId, preferredExam, onAdd, onCance
   </dialog>;
 }
 
-function PracticeSetupDialog({ matchingCount, count, order, durationChoice, customMinutes, shortage, validDuration, loading, canStart, error, onCount, onOrder, onDuration, onCustomMinutes, onUseAll, onStart, onCancel }: {
-  matchingCount: number; count: number | "all" | null; order: PracticeOrder; durationChoice: string; customMinutes: string; shortage: boolean; validDuration: boolean; loading: boolean; canStart: boolean; error: string;
-  onCount: (value: number | "all") => void; onOrder: (value: PracticeOrder) => void; onDuration: (value: string) => void; onCustomMinutes: (value: string) => void; onUseAll: () => void; onStart: () => void; onCancel: () => void;
+function PracticeSetupDialog({ matchingCount, count, order, durationChoice, customMinutes, includeAnswerKey, shortage, validDuration, loading, exporting, canStart, error, onCount, onOrder, onDuration, onCustomMinutes, onIncludeAnswerKey, onUseAll, onStart, onExport, onCancel }: {
+  matchingCount: number; count: number | "all" | null; order: PracticeOrder; durationChoice: string; customMinutes: string; includeAnswerKey: boolean; shortage: boolean; validDuration: boolean; loading: boolean; exporting: boolean; canStart: boolean; error: string;
+  onCount: (value: number | "all") => void; onOrder: (value: PracticeOrder) => void; onDuration: (value: string) => void; onCustomMinutes: (value: string) => void; onIncludeAnswerKey: (value: boolean) => void; onUseAll: () => void; onStart: () => void; onExport: () => void; onCancel: () => void;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const practiceCount = count === "all" ? matchingCount : count;
@@ -66,26 +66,28 @@ function PracticeSetupDialog({ matchingCount, count, order, durationChoice, cust
     current?.showModal();
     return () => { current?.close(); previous?.focus(); };
   }, []);
-  return <dialog ref={dialog} className="scope-add-dialog practice-setup-dialog" aria-labelledby="practice-setup-title" onCancel={(event) => { event.preventDefault(); if (!loading) onCancel(); }}>
+  const busy = loading || exporting;
+  return <dialog ref={dialog} className="scope-add-dialog practice-setup-dialog" aria-labelledby="practice-setup-title" onCancel={(event) => { event.preventDefault(); if (!busy) onCancel(); }}>
     <form onSubmit={(event) => { event.preventDefault(); onStart(); }}>
       <span className="selector-label">Final step</span>
       <h2 id="practice-setup-title">Set up your test</h2>
       <p><strong>{format(matchingCount)} questions</strong> match your selected chapters and exam sources.</p>
-      <fieldset className="scope-size-options" disabled={loading}>
+      <fieldset className="scope-size-options" disabled={busy}>
         <legend>Number of MCQs</legend>
         <div className="segmented">{COUNTS.map((value) => <button type="button" key={value} className={count === value ? "active" : ""} aria-pressed={count === value} onClick={() => onCount(value)}>{value}</button>)}<button type="button" className={count === "all" ? "active" : ""} aria-pressed={count === "all"} onClick={() => onCount("all")}>All</button></div>
       </fieldset>
       {count === null ? <p className="scope-size-prompt">Choose how many questions you want to attempt.</p> : null}
       {shortage ? <div className="scope-shortage" role="alert"><p>You chose {practiceCount}, but only {format(matchingCount)} questions match.</p><button type="button" disabled={loading} onClick={onUseAll}>Use all {format(matchingCount)} available</button></div> : null}
-      <fieldset className="scope-time-options" disabled={loading}>
+      <fieldset className="scope-time-options" disabled={busy}>
         <legend>Time</legend>
         <div className="segmented"><button type="button" className={durationChoice === "untimed" ? "active" : ""} aria-pressed={durationChoice === "untimed"} onClick={() => onDuration("untimed")}>Untimed</button>{DURATIONS.map((minutes) => <button type="button" key={minutes} className={durationChoice === String(minutes) ? "active" : ""} aria-pressed={durationChoice === String(minutes)} onClick={() => onDuration(String(minutes))}>{minutes} min</button>)}<button type="button" className={durationChoice === "custom" ? "active" : ""} aria-pressed={durationChoice === "custom"} onClick={() => onDuration("custom")}>Custom</button></div>
       </fieldset>
-      {durationChoice === "custom" ? <label className="scope-order">Custom minutes<input type="number" inputMode="numeric" min={1} max={720} step={1} disabled={loading} value={customMinutes} onChange={(event) => onCustomMinutes(event.target.value)} /></label> : null}
+      {durationChoice === "custom" ? <label className="scope-order">Custom minutes<input type="number" inputMode="numeric" min={1} max={720} step={1} disabled={busy} value={customMinutes} onChange={(event) => onCustomMinutes(event.target.value)} /></label> : null}
       {!validDuration ? <p className="inline-error" role="alert">Enter 1–720 whole minutes.</p> : null}
-      <label className="scope-order">Question order<select disabled={loading} value={order} onChange={(event) => onOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label>
+      <label className="scope-order">Question order<select disabled={busy} value={order} onChange={(event) => onOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label>
+      <label className="pdf-answer-key"><input type="checkbox" checked={includeAnswerKey} disabled={busy} onChange={(event) => onIncludeAnswerKey(event.target.checked)} /><span><strong>Include answer key</strong><small>Add the official answers on a separate final page of the PDF.</small></span></label>
       {error ? <p className="inline-error" role="alert">{error}</p> : null}
-      <div className="scope-dialog-actions"><button type="button" className="scope-secondary" disabled={loading} onClick={onCancel}>Continue choosing</button><button type="submit" className="scope-primary confirm-practice" disabled={!canStart}>{loading ? "Preparing test…" : count === null ? "Choose number of MCQs" : `Start ${format(practiceCount!)}-question test`}</button></div>
+      <div className="scope-dialog-actions practice-setup-actions"><button type="button" className="scope-secondary" disabled={busy} onClick={onCancel}>Continue choosing</button><button type="button" className="scope-secondary export-pdf" disabled={!canStart} onClick={onExport}>{exporting ? "Preparing PDF…" : "Export paper as PDF"}</button><button type="submit" className="scope-primary confirm-practice" disabled={!canStart}>{loading ? "Preparing test…" : count === null ? "Choose number of MCQs" : `Start ${format(practiceCount!)}-question test`}</button></div>
     </form>
   </dialog>;
 }
@@ -101,6 +103,8 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const [customMinutes, setCustomMinutes] = useState("30");
   const [sourceScopeId, setSourceScopeId] = useState("all");
   const [loading, setLoading] = useState(false);
+  const [exporting, setExporting] = useState(false);
+  const [includeAnswerKey, setIncludeAnswerKey] = useState(false);
   const [error, setError] = useState("");
   const [restored, setRestored] = useState(false);
   const [addOpen, setAddOpen] = useState(false);
@@ -157,7 +161,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const validDuration = durationMinutes === null || Number.isInteger(durationMinutes) && durationMinutes >= 1 && durationMinutes <= 720;
   const practiceCount = count === "all" ? totals.matchingCount : count;
   const shortage = count !== null && totals.matchingCount > 0 && practiceCount! > totals.matchingCount;
-  const canStart = restored && count !== null && totals.matchingCount > 0 && !shortage && validDuration && !loading;
+  const canStart = restored && count !== null && totals.matchingCount > 0 && !shortage && validDuration && !loading && !exporting;
   function toggleSource(exam: PyqExam) {
     if (loading || !restored) return;
     const enabled = sourceMetrics[exam].state !== "all";
@@ -189,19 +193,41 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     if (!Object.keys(next).length) setFocusId(undefined);
     else if (current && scopeMetrics(current.subjectId, next, index).state === "none") setFocusId(selectionCounts(next, index).subjectIds[0]);
   }
-  async function startPractice() {
-    if (!canStart) return;
+  async function createSnapshot() {
     if (count === null || practiceCount === null) return;
     const recipe: PracticeRecipeV3 = { version: 3, subjectIds: totals.subjectIds, paths: Object.entries(paths).filter(([, exams]) => exams.length).map(([subtopicId, exams]) => ({ subtopicId, exams: [...exams] })), count, order, durationMinutes };
+    const response = await fetch("/api/practice-snapshots", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(recipe) });
+    const snapshot = await response.json() as PracticeSnapshot & { error?: string };
+    if (!response.ok) throw new Error(snapshot.error || "The paper could not be prepared. Please try again.");
+    if (snapshot.matchingCount !== totals.matchingCount || snapshot.questions.length !== practiceCount) throw new Error("The question inventory has changed. Refresh this page to review the updated selection.");
+    return snapshot;
+  }
+  async function startPractice() {
+    if (!canStart) return;
     setLoading(true); setError("");
     try {
-      const response = await fetch("/api/practice-snapshots", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(recipe) });
-      const snapshot = await response.json() as PracticeSnapshot & { error?: string };
-      if (!response.ok) throw new Error(snapshot.error || "The practice could not be prepared. Please try again.");
-      if (snapshot.matchingCount !== totals.matchingCount || snapshot.questions.length !== practiceCount) throw new Error("The question inventory has changed. Refresh this page to review the updated selection.");
+      const snapshot = await createSnapshot();
+      if (!snapshot) return;
       try { await createLocalAttempt(snapshot); } catch { throw new Error("This browser could not save your practice. Allow browser storage, then try again. Your selection is still here."); }
       router.push("/practice/" + snapshot.id);
     } catch (reason) { setError(reason instanceof Error ? reason.message : "The practice could not be prepared. Please try again."); setLoading(false); }
+  }
+  async function exportPaper() {
+    if (!canStart) return;
+    const printWindow = window.open("", "_blank");
+    if (!printWindow) { setError("Your browser blocked the PDF window. Allow pop-ups for this site, then try again."); return; }
+    printWindow.document.title = "Preparing PDF…";
+    printWindow.document.body.innerHTML = "<p style='font:16px system-ui;padding:32px'>Preparing your printable paper…</p>";
+    setExporting(true); setError("");
+    try {
+      const snapshot = await createSnapshot();
+      if (!snapshot) throw new Error("Choose the number of MCQs before exporting.");
+      printWindow.sessionStorage.setItem(`upsc-pyq-print:${snapshot.id}`, JSON.stringify({ snapshot, includeAnswerKey }));
+      printWindow.location.href = `/practice/${snapshot.id}/print`;
+    } catch (reason) {
+      printWindow.close();
+      setError(reason instanceof Error ? reason.message : "The PDF could not be prepared. Please try again.");
+    } finally { setExporting(false); }
   }
   const instruction = metrics?.state === "none" ? "Browsing only · select to replace"
     : current?.kind === "subtopic" ? "Subtopic selected"
@@ -249,6 +275,6 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     </div>
     <div className="scope-mobile-bar"><div><strong>{format(totals.matchingCount)} matching</strong><span>Choose MCQs and time next</span></div><button type="button" disabled={!restored || totals.matchingCount === 0 || loading} onClick={() => setSetupOpen(true)}>Set up test →</button></div>
     {addOpen ? <AddScopeDialog index={index} paths={paths} initialId={current?.subjectId} preferredExam={initialExam} onCancel={() => setAddOpen(false)} onAdd={(id) => { setPaths((existing) => addScope(existing, id, index, initialExam)); setFocusId(id); setSourceScopeId("all"); setError(""); setNotice(""); setAddOpen(false); }} /> : null}
-    {setupOpen ? <PracticeSetupDialog matchingCount={totals.matchingCount} count={count} order={order} durationChoice={durationChoice} customMinutes={customMinutes} shortage={shortage} validDuration={validDuration} loading={loading} canStart={canStart} error={error} onCount={(value) => { setCount(value); setError(""); }} onOrder={setOrder} onDuration={(value) => { setDurationChoice(value); setError(""); }} onCustomMinutes={setCustomMinutes} onUseAll={() => setCount("all")} onStart={() => void startPractice()} onCancel={() => { setSetupOpen(false); setError(""); }} /> : null}
+    {setupOpen ? <PracticeSetupDialog matchingCount={totals.matchingCount} count={count} order={order} durationChoice={durationChoice} customMinutes={customMinutes} includeAnswerKey={includeAnswerKey} shortage={shortage} validDuration={validDuration} loading={loading} exporting={exporting} canStart={canStart} error={error} onCount={(value) => { setCount(value); setError(""); }} onOrder={setOrder} onDuration={(value) => { setDurationChoice(value); setError(""); }} onCustomMinutes={setCustomMinutes} onIncludeAnswerKey={setIncludeAnswerKey} onUseAll={() => setCount("all")} onStart={() => void startPractice()} onExport={() => void exportPaper()} onCancel={() => { setSetupOpen(false); setError(""); }} /> : null}
   </main>;
 }
