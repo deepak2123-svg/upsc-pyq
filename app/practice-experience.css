@@ -163,8 +163,15 @@
 .result-question-options dd small { display: inline-block; font-family: var(--font-interface), sans-serif; font-size: 10px; font-weight: 650; margin-left: 10px; color: #566274; }
 .result-question-options > .is-correct { background: #edf8f0; border-color: #95bea3; }
 .result-question-options > .is-selected { background: #fff3f0; border-color: #d6a296; }
-.result-explanation-label { margin-top: 24px; font-size: 12px; font-weight: 700; }
-.result-explanation { font-family: var(--font-reading), Georgia, serif; font-size: 18px; line-height: 1.7; }
+.result-explanation-label { margin: 22px 0 6px; font-size: 12px; font-weight: 700; }
+.result-explanation {
+  max-width: 88ch;
+  margin: 0;
+  color: #46536a;
+  font-family: var(--font-interface), Inter, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
 .result-question-detail > a { display: inline-block; min-height: 40px; padding-top: 8px; color: #2757d3; font-size: 13px; }
 .result-print-footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #d8dfe8; font-size: 11px; color: #566274; overflow-wrap: anywhere; }
 
