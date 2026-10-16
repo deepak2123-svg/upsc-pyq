@@ -7,7 +7,7 @@ import { memo, useCallback, useEffect, useRef, useState } from "react";
 import type { Bookmark, LocalAttempt, PracticeQuestion } from "../../lib/practice-types";
 import { deleteBookmark, getAttempt, listBookmarks, putAttempt, saveBookmark } from "../../lib/practice-store";
 import { attemptClock, attemptReturnPath, completeAttempt, formatPracticeTime, hasCompleteFeedback, requestAnswerFeedback } from "../../lib/practice-session";
-import { formatPracticePrompt } from "../../lib/practice-prompt";
+import { formatPracticePrompt, formatPracticeText } from "../../lib/practice-prompt";
 import { PYQ_EXAM_COLORS } from "../../lib/pyq-exams";
 import { PracticePromptView } from "./practice-prompt-view";
 
@@ -299,7 +299,7 @@ export function PracticeClient({ id }: { id: string }) {
                   const isSelected = selectedAnswer === key;
                   const isCorrect = feedback?.correctAnswer === key;
                   const isWrong = Boolean(feedback && isSelected && !feedback.correct);
-                  return <button key={key} aria-pressed={isSelected} className={`${isSelected ? "selected" : ""} ${isCorrect ? "correct" : ""} ${isWrong ? "incorrect" : ""}`} disabled={locked} onClick={() => void answer(key)}><span>{key}</span><strong>{value}</strong>{isCorrect && <em>Correct answer</em>}{isWrong && <em>Your answer</em>}</button>;
+                  return <button key={key} aria-pressed={isSelected} className={`${isSelected ? "selected" : ""} ${isCorrect ? "correct" : ""} ${isWrong ? "incorrect" : ""}`} disabled={locked} onClick={() => void answer(key)}><span>{key}</span><strong>{formatPracticeText(value)}</strong>{isCorrect && <em>Correct answer</em>}{isWrong && <em>Your answer</em>}</button>;
                 })}
               </div>
               {attempt.status === "in_progress" && selectedAnswer ? <div className="practice-answer-hint"><button disabled={locked} onClick={() => void answer(null)}>Clear answer</button></div> : null}

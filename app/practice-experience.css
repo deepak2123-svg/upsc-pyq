@@ -265,7 +265,7 @@
 .print-taxonomy-summary p { display: grid; grid-template-columns: 47px minmax(0, 1fr); gap: 6px; margin: 0; }
 .print-taxonomy-summary strong { color: #202a38; font-size: 7px; letter-spacing: .05em; text-transform: uppercase; }
 .print-question-list { margin: 0; padding: 0; columns: 2 350px; column-gap: 34px; column-rule: 1px solid #d8dde5; list-style: none; }
-.print-question { padding: 10px 0; border-bottom: 1px solid #cfd5dd; break-inside: auto; page-break-inside: auto; }
+.print-question { padding: 10px 0; border-bottom: 1px solid #cfd5dd; break-inside: avoid; page-break-inside: avoid; }
 .print-question-meta { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 7px; font-family: var(--font-interface), sans-serif; font-size: 9px; }
 .print-question-meta span { color: #5b6471; text-align: right; }
 .print-question-meta, .print-question-prompt p, .print-option-list > div { break-inside: avoid; page-break-inside: avoid; }

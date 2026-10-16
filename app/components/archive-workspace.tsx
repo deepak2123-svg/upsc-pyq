@@ -71,8 +71,10 @@ function PracticeSetupDialog({ matchingCount, examMetrics, count, order, duratio
   return <dialog ref={dialog} className="scope-add-dialog practice-setup-dialog" aria-labelledby="practice-setup-title" onCancel={(event) => { event.preventDefault(); if (!busy) onCancel(); }}>
     <form onSubmit={(event) => { event.preventDefault(); onStart(); }}>
       <span className="selector-label">Final step</span>
-      <h2 id="practice-setup-title">Set up your test</h2>
+      <h2 id="practice-setup-title">Choose how you want to attempt</h2>
       <p><strong>{format(matchingCount)} questions</strong> match your selected chapters and exam sources.</p>
+      <section className="online-attempt-panel" aria-labelledby="online-attempt-title">
+      <div className="attempt-mode-heading"><span>Primary</span><div><h3 id="online-attempt-title">Attempt online</h3><p>Answer on this website, use the question palette, and receive your result sheet after submission.</p></div></div>
       <fieldset className="setup-exam-options" disabled={busy}>
         <legend>Exams to include</legend>
         <div className="setup-exam-grid">{PYQ_EXAMS.map((exam) => { const metric = examMetrics[exam]; return <button type="button" role="checkbox" aria-checked={metric.state === "partial" ? "mixed" : metric.state === "all"} disabled={busy || metric.available === 0} className={metric.state} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} key={exam} onClick={() => onExam(exam)}><span className="scope-check" aria-hidden="true">{metric.state === "all" ? "✓" : metric.state === "partial" ? "−" : ""}</span><strong>{exam}</strong><small>{metric.state === "none" ? `${format(metric.available)} available` : `${format(metric.count)} included`}</small></button>; })}</div>
@@ -92,7 +94,8 @@ function PracticeSetupDialog({ matchingCount, examMetrics, count, order, duratio
       <label className="scope-order">Question order<select disabled={busy} value={order} onChange={(event) => onOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label>
       {error ? <p className="inline-error" role="alert">{error}</p> : null}
       <div className="scope-dialog-actions practice-setup-actions"><button type="button" className="scope-secondary" disabled={busy} onClick={onCancel}>Continue choosing</button><button type="submit" className="scope-primary confirm-practice" disabled={!canStart}>{loading ? "Preparing test…" : count === null ? "Choose number of MCQs" : `Start ${format(practiceCount!)}-question test`}</button></div>
-      <section className="pdf-export-panel" aria-labelledby="pdf-export-title"><div><h3 id="pdf-export-title">Export as PDF</h3><p>Create the same selected paper for offline students.</p></div><label className="pdf-answer-key"><input type="checkbox" checked={includeAnswerKey} disabled={busy} onChange={(event) => onIncludeAnswerKey(event.target.checked)} /><span><strong>Add answer key</strong><small>Official answers appear on a separate final page.</small></span></label><button type="button" className="scope-secondary export-pdf" disabled={!canStart} onClick={onExport}>{exporting ? "Preparing PDF…" : "Export paper as PDF"}</button></section>
+      </section>
+      <section className="pdf-export-panel" aria-labelledby="pdf-export-title"><div className="attempt-mode-heading"><span>Optional</span><div><h3 id="pdf-export-title">Attempt offline</h3><p>Download a printable version of this same paper. No online attempt or result sheet will be created.</p></div></div><button type="button" className="scope-secondary export-pdf" disabled={!canStart} onClick={onExport}>{exporting ? "Preparing PDF…" : "Download printable PDF"}</button><label className="pdf-answer-key"><input type="checkbox" checked={includeAnswerKey} disabled={busy} onChange={(event) => onIncludeAnswerKey(event.target.checked)} /><span><strong>Include answer key</strong><small>Add answers on a separate final page of the PDF.</small></span></label></section>
     </form>
   </dialog>;
 }

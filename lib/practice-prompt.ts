@@ -7,23 +7,49 @@ export type PracticePromptBlock =
     right: { title: string; items: { label: string; text: string }[] };
   };
 
-const numberedMarker = /(?:^|\s)(\d{1,2})([.)])\s+/g;
-const romanMarker = /(?:^|\s)(I|II|III|IV|V|VI|VII|VIII|IX|X)([.)])\s+/gi;
+const numberedMarker = /(?<!\S)(\d{1,2})([.)])\s+/g;
+const romanMarker = /(?<!\S)(I|II|III|IV|V|VI|VII|VIII|IX|X)([.)])\s+/gi;
 const instructionMarker = /\s+(?=(?:Select|Choose) the (?:correct )?answer\b|Which of the (?:following|statements|above)\b|How many of the (?:above|following)\b)/i;
 const leadingArabicMarker = /^\s*(\d{1,2})([.)])\s+(.+)$/;
 const leadingRomanMarker = /^\s*(I|II|III|IV|V|VI|VII|VIII|IX|X)([.)])\s+(.+)$/i;
 const listOneMarker = /\bList\s*[-–—]?\s*(?:I|1)\s*\(([^)]*)\)/i;
 const listTwoMarker = /\bList\s*[-–—]?\s*(?:II|2)\s*\(([^)]*)\)/i;
-const letteredItemMarker = /(?:^|\s)([A-Z])[.)]\s+/g;
+const letteredItemMarker = /(?<!\S)([A-Z])[.)]\s+/g;
 
 function romanValue(value: string) {
   const numerals: Record<string, number> = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10 };
   return numerals[value.toUpperCase()];
 }
 
+/** Convert the limited TeX notation found in legacy imports for display. */
+export function formatPracticeText(value: string) {
+  return value
+    .replace(/\\{1,2}\(/g, "")
+    .replace(/\\{1,2}\)/g, "")
+    .replace(/\^\{\\prime\\prime\}/g, "″")
+    .replace(/\^\{\\prime\}/g, "′")
+    .replace(/\^\{\\circ\}/g, "°")
+    .replace(/\s+([,.;:?!])/g, "$1");
+}
+
+function orderedMatches(line: string, marker: RegExp, valueOf: (value: string) => number) {
+  const candidates = [...line.matchAll(marker)];
+  const first = candidates.findIndex((match) => valueOf(match[1]) === 1);
+  if (first < 0) return [];
+  const matches = [candidates[first]];
+  let expected = 2;
+  for (let index = first + 1; index < candidates.length; index += 1) {
+    if (valueOf(candidates[index][1]) === expected) {
+      matches.push(candidates[index]);
+      expected += 1;
+    }
+  }
+  return matches.length >= 2 ? matches : [];
+}
+
 function splitSequence(line: string, marker: RegExp, valueOf: (value: string) => number) {
-  const matches = [...line.matchAll(marker)];
-  if (matches.length < 2 || !matches.every((match, index) => valueOf(match[1]) === index + 1)) return null;
+  const matches = orderedMatches(line, marker, valueOf);
+  if (matches.length < 2) return null;
   const blocks: PracticePromptBlock[] = [];
   const firstIndex = matches[0].index! + (matches[0][0].startsWith(" ") ? 1 : 0);
   const introduction = line.slice(0, firstIndex).trim();
@@ -93,7 +119,7 @@ function matchingListBlocks(lines: string[]): PracticePromptBlock[] | null {
  * and other isolated numbers remain untouched.
  */
 export function formatPracticePrompt(lines: string[]): PracticePromptBlock[] {
-  const cleanLines = lines.map((line) => line.trim()).filter(Boolean);
+  const cleanLines = lines.map((line) => formatPracticeText(line).trim()).filter(Boolean);
   const matchingLists = matchingListBlocks(cleanLines);
   if (matchingLists) return matchingLists;
   const leading = cleanLines.map((line) => {

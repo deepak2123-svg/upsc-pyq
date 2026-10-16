@@ -1165,6 +1165,11 @@ h3 { font-size: 16px; }
 .scope-add-dialog label { display: grid; gap: 7px; font-size: 12px; font-weight: 650; margin-top: 14px; }
 .scope-add-dialog select { width: 100%; min-height: 44px; padding: 9px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--surface); font-size: 13px; }
 .practice-setup-dialog { width: min(620px, calc(100% - 32px)); }
+.online-attempt-panel { margin-top: 20px; padding: 18px; border: 1px solid #b9c9ef; border-radius: 12px; background: #f7f9ff; }
+.attempt-mode-heading { display: flex; align-items: flex-start; gap: 11px; }
+.attempt-mode-heading > span { flex: 0 0 auto; margin-top: 1px; padding: 4px 7px; border-radius: 999px; background: var(--accent); color: white; font-size: 9px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.attempt-mode-heading h3 { margin: 0 0 3px; font-size: 16px; letter-spacing: -.01em; }
+.attempt-mode-heading p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
 .practice-setup-dialog fieldset { border: 0; padding: 0; margin: 22px 0 0; min-width: 0; }
 .practice-setup-dialog legend { padding: 0; margin-bottom: 9px; font-size: 13px; font-weight: 750; color: var(--ink); }
 .practice-setup-dialog .segmented { display: flex; flex-wrap: wrap; padding: 4px; border: 1px solid var(--line); border-radius: 10px; background: #f7f8fb; }
@@ -1189,9 +1194,8 @@ h3 { font-size: 16px; }
 .pdf-answer-key small { color: var(--muted); font-size: 11px; font-weight: 450; line-height: 1.45; }
 .practice-setup-actions { flex-wrap: wrap; }
 .practice-setup-actions .export-pdf { color: var(--accent); border-color: #b8c8ef; }
-.pdf-export-panel { display: grid; grid-template-columns: 1fr auto; gap: 12px 16px; align-items: center; margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); }
-.pdf-export-panel h3 { margin: 0 0 3px; font-size: 15px; }
-.pdf-export-panel p { margin: 0; color: var(--muted); font-size: 11px; }
+.pdf-export-panel { display: grid; grid-template-columns: 1fr auto; gap: 12px 16px; align-items: center; margin-top: 16px; padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: #fbfbfc; }
+.pdf-export-panel .attempt-mode-heading > span { color: var(--muted); background: #e9ecf1; }
 .pdf-export-panel .pdf-answer-key { grid-column: 1 / -1; margin: 0 !important; }
 .pdf-export-panel .export-pdf { grid-column: 2; grid-row: 1; min-height: 42px; }
 @media (max-width: 640px) {
