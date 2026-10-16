@@ -2,12 +2,13 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-const [registry, migration, candidates, classification, answerAudit, bank] = await Promise.all([
+const [registry, migration, candidates, classification, answerAudit, importDraft, bank] = await Promise.all([
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-migration-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-source-candidates.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-classification-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-answer-audit.json", import.meta.url), "utf8").then(JSON.parse),
+  readFile(new URL("../content/taxonomy/indian-geography-v1.3-import-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/question-bank.json", import.meta.url), "utf8").then(JSON.parse),
 ]);
 
@@ -83,4 +84,22 @@ test("Indian Geography answer audit covers every candidate without overstating v
   assert.ok(answerAudit.records
     .filter((record) => record.disposition === "answer-conflict")
     .every((record) => record.publicationGate === "blocked"));
+});
+
+test("Indian Geography import draft joins every in-scope record and preserves all gates", () => {
+  assert.equal(importDraft.status, "blocked-until-audits-clear-do-not-publish");
+  assert.equal(importDraft.sourceCandidateCount, 609);
+  assert.equal(importDraft.recordCount, 600);
+  assert.equal(importDraft.excludedOrMovedCount, 9);
+  assert.equal(importDraft.records.length, 600);
+  assert.equal(new Set(importDraft.records.map((record) => record.sourceIdentity.label)).size, 600);
+  assert.equal(Object.values(importDraft.summary.byExam).reduce((sum, count) => sum + count, 0), 600);
+  assert.equal(Object.values(importDraft.summary.byImportAction).reduce((sum, count) => sum + count, 0), 600);
+  assert.equal(Object.values(importDraft.summary.byAnswerGate).reduce((sum, count) => sum + count, 0), 600);
+  assert.equal(Object.values(importDraft.summary.byReproductionGate).reduce((sum, count) => sum + count, 0), 600);
+  assert.equal(Object.values(importDraft.summary.byImportGate).reduce((sum, count) => sum + count, 0), 600);
+  assert.ok(importDraft.records.every((record) => record.targetPath?.taxonomyId));
+  assert.ok(importDraft.records
+    .filter((record) => record.gates.import === "ready-for-final-editorial-review")
+    .every((record) => record.gates.answer === "answer-cleared"));
 });
