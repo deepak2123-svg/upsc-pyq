@@ -1,0 +1,216 @@
+{
+  "version": "indian-geography-v1.3-draft",
+  "status": "migration-review-required",
+  "scope": "Existing and newly discovered Indian Geography MCQs from UPSC CSE, CAPF, CDS and NDA papers",
+  "classification_rule": "Assign each question to exactly one primary subtopic according to the concept required to answer it. A place name alone does not make a question Regional Geography.",
+  "boundary_rules": [
+    "Species, protected areas, ecology, pollution and environmental legislation remain in Environment unless the question principally tests Indian spatial distribution.",
+    "General atmospheric, geomorphic and oceanographic processes remain in Physical Geography unless the question principally tests their expression in India.",
+    "General resource, population and industry theory remains in Human and Economic Geography unless the question principally tests India.",
+    "Regional and Map-Based Geography is a fallback only when no stronger conceptual chapter determines the answer."
+  ],
+  "chapters": [
+    {
+      "name": "India: Location and Political Geography",
+      "order": 1,
+      "subtopics": [
+        { "name": "Location, Extent and Hemispheric Position", "order": 1 },
+        { "name": "Latitudes, Longitudes and Standard Time", "order": 2 },
+        { "name": "Neighbouring Countries and International Boundaries", "order": 3 },
+        { "name": "States, Union Territories and Capitals", "order": 4 },
+        { "name": "Administrative and Regional Divisions", "order": 5 },
+        { "name": "Strategic Location and Maritime Boundaries", "order": 6 }
+      ]
+    },
+    {
+      "name": "Geological Structure and Physiography",
+      "order": 2,
+      "subtopics": [
+        { "name": "Geological Evolution of India", "order": 1 },
+        { "name": "Physiographic Divisions of India", "order": 2 },
+        { "name": "Himalayan Ranges, Peaks, Passes and Valleys", "order": 3 },
+        { "name": "Northern Plains", "order": 4 },
+        { "name": "Peninsular Plateau and Central Highlands", "order": 5 },
+        { "name": "Western Ghats, Eastern Ghats and Hill Systems", "order": 6 },
+        { "name": "Indian Desert", "order": 7 },
+        { "name": "Notable Indian Landforms", "order": 8 }
+      ]
+    },
+    {
+      "name": "Coasts and Islands",
+      "order": 3,
+      "subtopics": [
+        { "name": "Western Coastal Plain", "order": 1 },
+        { "name": "Eastern Coastal Plain", "order": 2 },
+        { "name": "Deltas, Estuaries, Lagoons and Beaches", "order": 3 },
+        { "name": "Gulfs, Bays and Straits", "order": 4 },
+        { "name": "Andaman and Nicobar Islands", "order": 5 },
+        { "name": "Lakshadweep Islands", "order": 6 },
+        { "name": "Coral Islands, Reefs and Coastal Locations", "order": 7 }
+      ]
+    },
+    {
+      "name": "Drainage Systems",
+      "order": 4,
+      "subtopics": [
+        { "name": "Indus River System", "order": 1 },
+        { "name": "Ganga River System", "order": 2 },
+        { "name": "Brahmaputra River System", "order": 3 },
+        { "name": "East-Flowing Peninsular Rivers", "order": 4 },
+        { "name": "West-Flowing Peninsular Rivers", "order": 5 },
+        { "name": "Tributaries, Confluences and River Basins", "order": 6 },
+        { "name": "Drainage Patterns and River Landforms", "order": 7 },
+        { "name": "Lakes and Inland Drainage", "order": 8 }
+      ]
+    },
+    {
+      "name": "Water Resources and River Projects",
+      "order": 5,
+      "subtopics": [
+        { "name": "Groundwater", "order": 1 },
+        { "name": "Irrigation Systems", "order": 2 },
+        { "name": "Dams, Reservoirs and Multipurpose Projects", "order": 3 },
+        { "name": "River Interlinking and Basin Management", "order": 4 },
+        { "name": "Floods, Droughts and Watershed Management", "order": 5 },
+        { "name": "Water Disputes and Water Governance", "order": 6 },
+        { "name": "Inland Waterways", "order": 7 }
+      ]
+    },
+    {
+      "name": "Climate of India",
+      "order": 6,
+      "subtopics": [
+        { "name": "Controls of Indian Climate", "order": 1 },
+        { "name": "Indian Monsoon Mechanism", "order": 2 },
+        { "name": "Southwest Monsoon", "order": 3 },
+        { "name": "Northeast and Retreating Monsoon", "order": 4 },
+        { "name": "Indian Seasons and Temperature Patterns", "order": 5 },
+        { "name": "Rainfall Distribution", "order": 6 },
+        { "name": "Western Disturbances and Local Weather", "order": 7 },
+        { "name": "Tropical Cyclones Affecting India", "order": 8 },
+        { "name": "Monsoon Variability, ENSO and Indian Ocean Dipole", "order": 9 },
+        { "name": "Climatic Regions of India", "order": 10 }
+      ]
+    },
+    {
+      "name": "Soils of India",
+      "order": 7,
+      "subtopics": [
+        { "name": "Soil Formation and Classification", "order": 1 },
+        { "name": "Alluvial Soils", "order": 2 },
+        { "name": "Black Soils", "order": 3 },
+        { "name": "Red and Yellow Soils", "order": 4 },
+        { "name": "Laterite Soils", "order": 5 },
+        { "name": "Arid and Desert Soils", "order": 6 },
+        { "name": "Forest, Mountain, Saline and Peaty Soils", "order": 7 },
+        { "name": "Soil Distribution", "order": 8 },
+        { "name": "Soil Erosion, Conservation and Land Degradation", "order": 9 }
+      ]
+    },
+    {
+      "name": "Natural Vegetation and Forests",
+      "order": 8,
+      "subtopics": [
+        { "name": "Controls and Distribution of Natural Vegetation", "order": 1 },
+        { "name": "Tropical Evergreen and Semi-Evergreen Forests", "order": 2 },
+        { "name": "Tropical Deciduous Forests", "order": 3 },
+        { "name": "Thorn and Scrub Vegetation", "order": 4 },
+        { "name": "Montane Forests", "order": 5 },
+        { "name": "Littoral, Swamp and Mangrove Forests", "order": 6 },
+        { "name": "Grasslands", "order": 7 },
+        { "name": "Forest Resources, Social Forestry and Management", "order": 8 }
+      ]
+    },
+    {
+      "name": "Agriculture and Land Use",
+      "order": 9,
+      "subtopics": [
+        { "name": "Land-Use and Cropping Patterns", "order": 1 },
+        { "name": "Agricultural Seasons", "order": 2 },
+        { "name": "Food Crops", "order": 3 },
+        { "name": "Commercial and Cash Crops", "order": 4 },
+        { "name": "Plantation Crops and Horticulture", "order": 5 },
+        { "name": "Irrigated and Dryland Agriculture", "order": 6 },
+        { "name": "Green Revolution and Agricultural Regions", "order": 7 },
+        { "name": "Agro-Climatic Zones and Regional Specialisation", "order": 8 },
+        { "name": "Livestock, Dairy and Fisheries", "order": 9 }
+      ]
+    },
+    {
+      "name": "Minerals and Energy Resources",
+      "order": 10,
+      "subtopics": [
+        { "name": "Mineral Distribution and Mineral Belts", "order": 1 },
+        { "name": "Iron Ore and Ferro-Alloy Minerals", "order": 2 },
+        { "name": "Non-Ferrous Minerals", "order": 3 },
+        { "name": "Non-Metallic Minerals", "order": 4 },
+        { "name": "Coal", "order": 5 },
+        { "name": "Petroleum and Natural Gas", "order": 6 },
+        { "name": "Atomic Minerals", "order": 7 },
+        { "name": "Hydroelectric and Thermal Power", "order": 8 },
+        { "name": "Nuclear Power", "order": 9 },
+        { "name": "Renewable Energy", "order": 10 }
+      ]
+    },
+    {
+      "name": "Industries and Industrial Regions",
+      "order": 11,
+      "subtopics": [
+        { "name": "Factors Affecting Industrial Location", "order": 1 },
+        { "name": "Iron and Steel Industry", "order": 2 },
+        { "name": "Textile Industries", "order": 3 },
+        { "name": "Sugar and Food-Processing Industries", "order": 4 },
+        { "name": "Cement Industry", "order": 5 },
+        { "name": "Petrochemical and Chemical Industries", "order": 6 },
+        { "name": "Engineering, Automobile and Technology Industries", "order": 7 },
+        { "name": "Industrial Regions, Corridors and Special Economic Zones", "order": 8 }
+      ]
+    },
+    {
+      "name": "Transport, Infrastructure and Trade",
+      "order": 12,
+      "subtopics": [
+        { "name": "Road Transport", "order": 1 },
+        { "name": "Railways", "order": 2 },
+        { "name": "Major Seaports", "order": 3 },
+        { "name": "Airports and Air Routes", "order": 4 },
+        { "name": "Pipelines and Communication Networks", "order": 5 },
+        { "name": "Freight and Transport Corridors", "order": 6 },
+        { "name": "Domestic and International Trade", "order": 7 },
+        { "name": "Strategic Infrastructure", "order": 8 }
+      ]
+    },
+    {
+      "name": "Population and Settlements",
+      "order": 13,
+      "subtopics": [
+        { "name": "Population Distribution and Density", "order": 1 },
+        { "name": "Population Growth and Demographic Composition", "order": 2 },
+        { "name": "Census Concepts", "order": 3 },
+        { "name": "Migration", "order": 4 },
+        { "name": "Rural Settlements", "order": 5 },
+        { "name": "Urban Settlements and Urbanisation", "order": 6 },
+        { "name": "Metropolitan Regions", "order": 7 },
+        { "name": "Tribal Distribution", "order": 8 },
+        { "name": "Languages and Cultural Regions", "order": 9 }
+      ]
+    },
+    {
+      "name": "Regional and Map-Based Geography of India",
+      "order": 14,
+      "subtopics": [
+        { "name": "North India", "order": 1 },
+        { "name": "Northeast India", "order": 2 },
+        { "name": "Western India", "order": 3 },
+        { "name": "Central India", "order": 4 },
+        { "name": "Southern India", "order": 5 },
+        { "name": "Himalayan States", "order": 6 },
+        { "name": "Coastal States", "order": 7 },
+        { "name": "River-Basin Regions", "order": 8 },
+        { "name": "Important Cities and Places", "order": 9 },
+        { "name": "Regional Resources and Economic Specialisation", "order": 10 },
+        { "name": "State-Resource, State-River and State-Industry Matching", "order": 11 }
+      ]
+    }
+  ]
+}
