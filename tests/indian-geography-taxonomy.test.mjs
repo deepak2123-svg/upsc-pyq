@@ -13,7 +13,7 @@ const [registry, migration, candidates, classification, bank] = await Promise.al
 test("Indian Geography draft has a complete ordered and unique registry", () => {
   assert.equal(registry.status, "migration-review-required");
   assert.equal(registry.chapters.length, 14);
-  assert.equal(registry.chapters.flatMap((chapter) => chapter.subtopics).length, 118);
+  assert.equal(registry.chapters.flatMap((chapter) => chapter.subtopics).length, 122);
   assert.deepEqual(registry.chapters.map((chapter) => chapter.order), Array.from({ length: 14 }, (_, index) => index + 1));
   const labels = [];
   for (const chapter of registry.chapters) {
@@ -32,9 +32,11 @@ test("every source candidate has one valid v1.3 classification proposal", () => 
   assert.equal(classification.recordCount, 609);
   assert.equal(classification.records.length, 609);
   assert.equal(Object.values(classification.countsByConfidence).reduce((sum, count) => sum + count, 0), 609);
-  assert.equal(Object.values(classification.countsByChapter).reduce((sum, count) => sum + count, 0), 609);
-  assert.ok(classification.records.every((record) => validIds.has(record.proposedPath.taxonomyId)));
-  assert.ok(classification.records.every((record) => record.reviewStatus !== "reviewed"));
+  assert.deepEqual(classification.countsByScopeDecision, { include: 605, "move-out": 4 });
+  assert.equal(Object.values(classification.countsByChapter).reduce((sum, count) => sum + count, 0), 605);
+  assert.ok(classification.records.filter((record) => record.scopeDecision === "include").every((record) => validIds.has(record.proposedPath.taxonomyId)));
+  assert.ok(classification.records.filter((record) => record.scopeDecision === "move-out").every((record) => record.proposedPath === null && record.moveOutDestination?.head));
+  assert.equal(classification.countsByConfidence.low, 0);
 });
 
 test("Indian Geography migration draft covers every current question without claiming review", () => {

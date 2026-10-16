@@ -46,7 +46,9 @@
         { "name": "Gulfs, Bays and Straits", "order": 4 },
         { "name": "Andaman and Nicobar Islands", "order": 5 },
         { "name": "Lakshadweep Islands", "order": 6 },
-        { "name": "Coral Islands, Reefs and Coastal Locations", "order": 7 }
+        { "name": "Coral Islands and Reefs", "order": 7 },
+        { "name": "Coastal Extent and Important Locations", "order": 8 },
+        { "name": "Comparison of Western and Eastern Coasts", "order": 9 }
       ]
     },
     {
@@ -209,7 +211,9 @@
         { "name": "River-Basin Regions", "order": 8 },
         { "name": "Important Cities and Places", "order": 9 },
         { "name": "Regional Resources and Economic Specialisation", "order": 10 },
-        { "name": "State-Resource, State-River and State-Industry Matching", "order": 11 }
+        { "name": "State-Resource, State-River and State-Industry Matching", "order": 11 },
+        { "name": "Mapping Institutions and Geospatial Frameworks", "order": 12 },
+        { "name": "Regional Development and Planning", "order": 13 }
       ]
     }
   ]

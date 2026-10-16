@@ -19,9 +19,56 @@ const target = (chapter, subtopic) => {
 };
 const textFor = (candidate) => [candidate.sourceText, ...Object.values(candidate.options)].join(" ").toLowerCase();
 const has = (text, pattern) => pattern.test(text);
-const choose = (chapter, subtopic, rule, confidence = "high") => ({ ...target(chapter, subtopic), rule, confidence });
+const choose = (chapter, subtopic, rule, confidence = "high") => ({ scopeDecision: "include", ...target(chapter, subtopic), rule, confidence });
+const moveOut = (head, chapter, subtopic, rule) => ({ scopeDecision: "move-out", destination: { head, chapter, subtopic }, rule, confidence: "reviewed" });
+
+const manualOverrides = {
+  "NDA 2017 II Q143": choose("Coasts and Islands", "Coastal Extent and Important Locations", "manual/coastline-length", "reviewed"),
+  "NDA 2019 I Q144": choose("Coasts and Islands", "Andaman and Nicobar Islands", "manual/island-renaming", "reviewed"),
+  "CDS 2021 I Q19": choose("India: Location and Political Geography", "Strategic Location and Maritime Boundaries", "manual/territorial-sea", "reviewed"),
+  "CDS 2022 II Q48": choose("Coasts and Islands", "Comparison of Western and Eastern Coasts", "manual/coast-comparison", "reviewed"),
+  "CDS 2023 I Q105": choose("Coasts and Islands", "Coastal Extent and Important Locations", "manual/coastline-length", "reviewed"),
+  "NDA 2018 II Q143": choose("Water Resources and River Projects", "Water Disputes and Water Governance", "manual/water-management-index", "reviewed"),
+  "CAPF 2022 Q84": choose("Water Resources and River Projects", "Water Disputes and Water Governance", "manual/international-water-sharing", "reviewed"),
+  "CDS 2014 II Q43": moveOut("Environment & Ecology", "Biodiversity, Protected Areas & Conservation", "Protected Areas, Wetlands & Biosphere Reserves", "manual/tiger-reserve-location"),
+  "NDA 2014 II Q104": choose("Industries and Industrial Regions", "Petrochemical and Chemical Industries", "manual/refinery-chronology", "reviewed"),
+  "CSE 2014 Q23": choose("Natural Vegetation and Forests", "Montane Forests", "manual/himalayan-vegetation", "reviewed"),
+  "CDS 2016 I Q50": choose("Regional and Map-Based Geography of India", "Important Cities and Places", "manual/hill-station-elevation", "reviewed"),
+  "NDA 2016 I Q61": choose("Regional and Map-Based Geography of India", "Important Cities and Places", "manual/city-longitude-order", "reviewed"),
+  "NDA 2016 I Q67": choose("Geological Structure and Physiography", "Notable Indian Landforms", "manual/karewa-landform", "reviewed"),
+  "NDA 2016 I Q83": choose("Regional and Map-Based Geography of India", "Mapping Institutions and Geospatial Frameworks", "manual/mapping-institution", "reviewed"),
+  "NDA 2016 I Q113": choose("Geological Structure and Physiography", "Indian Desert", "manual/thar-dune", "reviewed"),
+  "NDA 2016 II Q67": moveOut("General Science", "Biology", "Plant Adaptations", "manual/cactus-physiology"),
+  "CSE 2017 Q19": choose("Coasts and Islands", "Coastal Extent and Important Locations", "manual/chandipur-tides", "reviewed"),
+  "CSE 2017 Q98": choose("Coasts and Islands", "Andaman and Nicobar Islands", "manual/great-nicobar-location", "reviewed"),
+  "NDA 2018 II Q73": choose("India: Location and Political Geography", "Latitudes, Longitudes and Standard Time", "manual/sunrise-longitude", "reviewed"),
+  "NDA 2018 II Q74": choose("Coasts and Islands", "Deltas, Estuaries, Lagoons and Beaches", "manual/delta-upland", "reviewed"),
+  "NDA 2019 I Q122": choose("India: Location and Political Geography", "States, Union Territories and Capitals", "manual/union-territory-area", "reviewed"),
+  "CSE 2019 Q18": choose("Natural Vegetation and Forests", "Montane Forests", "manual/alpine-zone", "reviewed"),
+  "CDS 2020 I Q50": choose("Population and Settlements", "Migration", "manual/female-migration", "reviewed"),
+  "CDS 2020 I Q110": choose("Regional and Map-Based Geography of India", "Mapping Institutions and Geospatial Frameworks", "manual/water-academy-location", "reviewed"),
+  "CDS 2020 II Q32": moveOut("Human & Economic Geography", "Population & Human Development", "Human Development Index", "manual/global-hdi-order"),
+  "CDS 2020 II Q39": choose("India: Location and Political Geography", "States, Union Territories and Capitals", "manual/union-territory-area", "reviewed"),
+  "NDA 2020 I/II Q81": choose("Population and Settlements", "Languages and Cultural Regions", "manual/language-families", "reviewed"),
+  "CSE 2020 Q96": choose("Geological Structure and Physiography", "Himalayan Ranges, Peaks, Passes and Valleys", "manual/siachen-location", "reviewed"),
+  "NDA 2021 II Q76": choose("Minerals and Energy Resources", "Coal", "manual/coalfield-location", "reviewed"),
+  "NDA 2021 II Q87": choose("Agriculture and Land Use", "Livestock, Dairy and Fisheries", "manual/livestock-mission", "reviewed"),
+  "CAPF 2022 Q62": choose("Regional and Map-Based Geography of India", "Regional Development and Planning", "manual/sdg-index", "reviewed"),
+  "NDA 2022 I Q136": choose("Geological Structure and Physiography", "Peninsular Plateau and Central Highlands", "manual/peninsular-plateau", "reviewed"),
+  "NDA 2022 II Q56": choose("Agriculture and Land Use", "Land-Use and Cropping Patterns", "manual/fallow-land", "reviewed"),
+  "NDA 2022 II Q58": choose("Water Resources and River Projects", "Inland Waterways", "manual/national-waterways", "reviewed"),
+  "NDA 2023 II Q125": choose("Transport, Infrastructure and Trade", "Freight and Transport Corridors", "manual/road-corridor", "reviewed"),
+  "NDA 2024 I Q139": moveOut("Human & Economic Geography", "Industry, Transport, Services & Trade", "Historical Trade Routes", "manual/silk-routes"),
+  "NDA 2024 II Q150": choose("Transport, Infrastructure and Trade", "Domestic and International Trade", "manual/logistics-maritime-policy", "reviewed"),
+  "CSE 2024 Q98": choose("Agriculture and Land Use", "Land-Use and Cropping Patterns", "manual/land-records", "reviewed"),
+  "NDA 2025 I Q97": choose("Minerals and Energy Resources", "Petroleum and Natural Gas", "manual/oilfield-location", "reviewed"),
+  "CDS 2025 II Q100": choose("Regional and Map-Based Geography of India", "Central India", "manual/indore-region", "reviewed"),
+  "CAPF 2026 Q22": choose("Regional and Map-Based Geography of India", "Regional Development and Planning", "manual/sdg-state-score", "reviewed"),
+};
 
 function classify(candidate) {
+  const manual = manualOverrides[candidate.sourceIdentity.label];
+  if (manual) return manual;
   const text = textFor(candidate);
   const old = candidate.previousPath.subtopic;
 
@@ -47,12 +94,12 @@ function classify(candidate) {
   if (old === "Coasts, Islands & Coastal Features") {
     if (has(text, /andaman|nicobar|barren island|narcondam/)) return choose("Coasts and Islands", "Andaman and Nicobar Islands", "coasts/andaman-nicobar");
     if (has(text, /lakshadweep|minicoy|amindivi/)) return choose("Coasts and Islands", "Lakshadweep Islands", "coasts/lakshadweep");
-    if (has(text, /coral|reef|atoll/)) return choose("Coasts and Islands", "Coral Islands, Reefs and Coastal Locations", "coasts/coral");
+    if (has(text, /coral|reef|atoll/)) return choose("Coasts and Islands", "Coral Islands and Reefs", "coasts/coral");
     if (has(text, /gulf|bay\b|strait|channel/)) return choose("Coasts and Islands", "Gulfs, Bays and Straits", "coasts/marine-feature");
     if (has(text, /delta|estuar|lagoon|beach|backwater/)) return choose("Coasts and Islands", "Deltas, Estuaries, Lagoons and Beaches", "coasts/landform");
     if (has(text, /konkan|kanara|malabar|western coast/)) return choose("Coasts and Islands", "Western Coastal Plain", "coasts/western");
     if (has(text, /coromandel|northern circars|eastern coast/)) return choose("Coasts and Islands", "Eastern Coastal Plain", "coasts/eastern");
-    return choose("Coasts and Islands", "Coral Islands, Reefs and Coastal Locations", "coasts/fallback", "low");
+    return choose("Coasts and Islands", "Coastal Extent and Important Locations", "coasts/fallback", "low");
   }
 
   if (old === "River Systems, Lakes, Dams & River-Valley Projects") {
@@ -195,24 +242,28 @@ const records = sourceLedger.candidates.map((candidate) => {
     existingQuestionIds: candidate.existingQuestionIds,
     importAction: candidate.importAction,
     oldPath: candidate.previousPath,
-    proposedPath: { head: "Indian Geography", chapter: result.chapter, subtopic: result.subtopic, taxonomyId: result.taxonomyId },
+    scopeDecision: result.scopeDecision,
+    proposedPath: result.scopeDecision === "include" ? { head: "Indian Geography", chapter: result.chapter, subtopic: result.subtopic, taxonomyId: result.taxonomyId } : null,
+    moveOutDestination: result.scopeDecision === "move-out" ? result.destination : null,
     classificationRule: result.rule,
     classificationConfidence: result.confidence,
-    reviewStatus: result.confidence === "high" ? "rule-proposed-needs-confirmation" : "needs-manual-review",
+    reviewStatus: result.confidence === "reviewed" ? "manually-reviewed" : result.confidence === "high" ? "rule-proposed-needs-confirmation" : "needs-manual-review",
   };
 });
 
-const countsByConfidence = Object.fromEntries(["high", "medium", "low"].map((confidence) => [confidence, records.filter((record) => record.classificationConfidence === confidence).length]));
-const countsByChapter = Object.fromEntries(registry.chapters.map((chapter) => [chapter.name, records.filter((record) => record.proposedPath.chapter === chapter.name).length]));
+const countsByConfidence = Object.fromEntries(["reviewed", "high", "medium", "low"].map((confidence) => [confidence, records.filter((record) => record.classificationConfidence === confidence).length]));
+const countsByScopeDecision = Object.fromEntries(["include", "move-out"].map((decision) => [decision, records.filter((record) => record.scopeDecision === decision).length]));
+const countsByChapter = Object.fromEntries(registry.chapters.map((chapter) => [chapter.name, records.filter((record) => record.proposedPath?.chapter === chapter.name).length]));
 const output = {
   version: registry.version,
   status: "classification-draft-do-not-publish",
   generatedAt: new Date().toISOString(),
   recordCount: records.length,
   countsByConfidence,
+  countsByScopeDecision,
   countsByChapter,
   records,
 };
 
 await writeFile(resolve(root, "content/taxonomy/indian-geography-v1.3-classification-draft.json"), `${JSON.stringify(output, null, 2)}\n`, "utf8");
-console.log(JSON.stringify({ recordCount: records.length, countsByConfidence, countsByChapter }, null, 2));
+console.log(JSON.stringify({ recordCount: records.length, countsByConfidence, countsByScopeDecision, countsByChapter }, null, 2));
