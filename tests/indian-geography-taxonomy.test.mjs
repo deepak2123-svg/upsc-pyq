@@ -2,18 +2,19 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-const [registry, migration, candidates, classification, bank] = await Promise.all([
+const [registry, migration, candidates, classification, answerAudit, bank] = await Promise.all([
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-migration-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-source-candidates.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-classification-draft.json", import.meta.url), "utf8").then(JSON.parse),
+  readFile(new URL("../content/taxonomy/indian-geography-v1.3-answer-audit.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/question-bank.json", import.meta.url), "utf8").then(JSON.parse),
 ]);
 
 test("Indian Geography draft has a complete ordered and unique registry", () => {
   assert.equal(registry.status, "migration-review-required");
   assert.equal(registry.chapters.length, 14);
-  assert.equal(registry.chapters.flatMap((chapter) => chapter.subtopics).length, 122);
+  assert.equal(registry.chapters.flatMap((chapter) => chapter.subtopics).length, 123);
   assert.deepEqual(registry.chapters.map((chapter) => chapter.order), Array.from({ length: 14 }, (_, index) => index + 1));
   const labels = [];
   for (const chapter of registry.chapters) {
@@ -32,11 +33,12 @@ test("every source candidate has one valid v1.3 classification proposal", () => 
   assert.equal(classification.recordCount, 609);
   assert.equal(classification.records.length, 609);
   assert.equal(Object.values(classification.countsByConfidence).reduce((sum, count) => sum + count, 0), 609);
-  assert.deepEqual(classification.countsByScopeDecision, { include: 605, "move-out": 4 });
-  assert.equal(Object.values(classification.countsByChapter).reduce((sum, count) => sum + count, 0), 605);
+  assert.deepEqual(classification.countsByScopeDecision, { include: 600, "move-out": 9 });
+  assert.equal(Object.values(classification.countsByChapter).reduce((sum, count) => sum + count, 0), 600);
   assert.ok(classification.records.filter((record) => record.scopeDecision === "include").every((record) => validIds.has(record.proposedPath.taxonomyId)));
   assert.ok(classification.records.filter((record) => record.scopeDecision === "move-out").every((record) => record.proposedPath === null && record.moveOutDestination?.head));
   assert.equal(classification.countsByConfidence.low, 0);
+  assert.equal(classification.countsByConfidence.medium, 0);
 });
 
 test("Indian Geography migration draft covers every current question without claiming review", () => {
@@ -62,4 +64,23 @@ test("Indian Geography source ledger exposes missing imports and verification de
   assert.ok(candidates.candidates.every((candidate) => Object.keys(candidate.options).length === 4));
   assert.ok(candidates.candidates.every((candidate) => /^[A-D]$/.test(candidate.answer) || (candidate.answer === "X" && candidate.answerVerification.status === "official-dropped")));
   assert.ok(candidates.candidates.every((candidate) => candidate.targetTaxonomyStatus === "needs-question-level-review"));
+});
+
+test("Indian Geography answer audit covers every candidate without overstating verification", () => {
+  assert.equal(answerAudit.status, "draft-audit-do-not-publish");
+  assert.equal(answerAudit.candidateCount, 609);
+  assert.equal(answerAudit.records.length, 609);
+  assert.equal(new Set(answerAudit.records.map((record) => record.sourceIdentity.label)).size, 609);
+  assert.equal(Object.values(answerAudit.summary.byDisposition).reduce((sum, count) => sum + count, 0), 609);
+  assert.equal(Object.values(answerAudit.summary.byPublicationGate).reduce((sum, count) => sum + count, 0), 609);
+  assert.equal(answerAudit.summary.byDisposition["officially-dropped-quarantine"], 3);
+  assert.ok(answerAudit.records
+    .filter((record) => record.priorVerification.status === "official-dropped")
+    .every((record) => record.publicationGate === "blocked" && record.sourceAnswer === "X"));
+  assert.ok(answerAudit.records
+    .filter((record) => record.publicationGate === "answer-cleared")
+    .every((record) => record.priorVerification.status.startsWith("official-")));
+  assert.ok(answerAudit.records
+    .filter((record) => record.disposition === "answer-conflict")
+    .every((record) => record.publicationGate === "blocked"));
 });

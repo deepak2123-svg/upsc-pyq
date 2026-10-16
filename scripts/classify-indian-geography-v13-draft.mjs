@@ -17,7 +17,10 @@ const target = (chapter, subtopic) => {
   if (!value) throw new Error(`Unknown target ${chapter}/${subtopic}`);
   return value;
 };
-const textFor = (candidate) => [candidate.sourceText, ...Object.values(candidate.options)].join(" ").toLowerCase();
+const textFor = (candidate) => [
+  candidate.sourceText,
+  /^[A-D]$/.test(candidate.answer) ? candidate.options[candidate.answer] : "",
+].join(" ").toLowerCase();
 const has = (text, pattern) => pattern.test(text);
 const choose = (chapter, subtopic, rule, confidence = "high") => ({ scopeDecision: "include", ...target(chapter, subtopic), rule, confidence });
 const moveOut = (head, chapter, subtopic, rule) => ({ scopeDecision: "move-out", destination: { head, chapter, subtopic }, rule, confidence: "reviewed" });
@@ -64,6 +67,87 @@ const manualOverrides = {
   "NDA 2025 I Q97": choose("Minerals and Energy Resources", "Petroleum and Natural Gas", "manual/oilfield-location", "reviewed"),
   "CDS 2025 II Q100": choose("Regional and Map-Based Geography of India", "Central India", "manual/indore-region", "reviewed"),
   "CAPF 2026 Q22": choose("Regional and Map-Based Geography of India", "Regional Development and Planning", "manual/sdg-state-score", "reviewed"),
+  "CDS 2015 II Q19": choose("Regional and Map-Based Geography of India", "State-Resource, State-River and State-Industry Matching", "manual/region-state-matching", "reviewed"),
+  "NDA 2016 II Q136": moveOut("Governance", "Digital Identity", "Aadhaar Coverage", "manual/aadhaar-coverage"),
+  "CDS 2023 I Q15": choose("Regional and Map-Based Geography of India", "Northeast India", "manual/assam-identification", "reviewed"),
+  "CSE 2013 Q94": choose("Natural Vegetation and Forests", "Thorn and Scrub Vegetation", "manual/desert-leaf-adaptation", "reviewed"),
+  "NDA 2015 II Q71": choose("India: Location and Political Geography", "Latitudes, Longitudes and Standard Time", "manual/ist-meridian-states", "reviewed"),
+  "NDA 2016 I Q107": choose("Regional and Map-Based Geography of India", "North India", "manual/northwest-region-features", "reviewed"),
+  "CDS 2018 II Q50": choose("Geological Structure and Physiography", "Himalayan Ranges, Peaks, Passes and Valleys", "manual/himalayan-pass", "reviewed"),
+  "CAPF 2019 Q39": choose("Geological Structure and Physiography", "Geological Evolution of India", "manual/deccan-vulcanicity", "reviewed"),
+  "CDS 2019 II Q54": choose("Climate of India", "Indian Seasons and Temperature Patterns", "manual/south-india-temperature", "reviewed"),
+  "CDS 2021 II Q37": choose("India: Location and Political Geography", "States, Union Territories and Capitals", "manual/state-identification", "reviewed"),
+  "CAPF 2022 Q104": choose("Geological Structure and Physiography", "Himalayan Ranges, Peaks, Passes and Valleys", "manual/pass-order", "reviewed"),
+  "NDA 2022 I Q140": choose("Geological Structure and Physiography", "Himalayan Ranges, Peaks, Passes and Valleys", "manual/glacial-landforms-ladakh", "reviewed"),
+  "CDS 2023 I Q19": choose("India: Location and Political Geography", "Latitudes, Longitudes and Standard Time", "manual/tropic-of-cancer-states", "reviewed"),
+  "CDS 2024 II Q88": choose("Geological Structure and Physiography", "Himalayan Ranges, Peaks, Passes and Valleys", "manual/indian-peaks", "reviewed"),
+  "CSE 2026 Q34": choose("Geological Structure and Physiography", "Peninsular Plateau and Central Highlands", "manual/peninsular-block", "reviewed"),
+  "CDS 2014 II Q37": choose("Climate of India", "Controls of Indian Climate", "manual/himalaya-climate-control", "reviewed"),
+  "CSE 2014 Q42": choose("Soils of India", "Soil Erosion, Conservation and Land Degradation", "manual/soil-erosion", "reviewed"),
+  "CDS 2015 II Q2": choose("Climate of India", "Indian Monsoon Mechanism", "manual/monsoon-factors", "reviewed"),
+  "NDA 2015 II Q116": choose("Soils of India", "Soil Formation and Classification", "manual/soil-acidity", "reviewed"),
+  "CSE 2015 Q52": choose("Climate of India", "Climatic Regions of India", "manual/altitudinal-climate-zones", "reviewed"),
+  "CDS 2018 I Q26": choose("Climate of India", "Indian Seasons and Temperature Patterns", "manual/winter-pressure", "reviewed"),
+  "CDS 2018 II Q38": choose("Climate of India", "Rainfall Distribution", "manual/leeward-slope", "reviewed"),
+  "CDS 2020 II Q9": choose("Climate of India", "Indian Seasons and Temperature Patterns", "manual/january-isotherm", "reviewed"),
+  "NDA 2020 I/II Q107": choose("Climate of India", "Southwest Monsoon", "manual/monsoon-duration", "reviewed"),
+  "CDS 2021 II Q84": choose("Water Resources and River Projects", "Floods, Droughts and Watershed Management", "manual/drought-prone-region", "reviewed"),
+  "NDA 2021 II Q86": choose("Agriculture and Land Use", "Land-Use and Cropping Patterns", "manual/agriculture-characteristics", "reviewed"),
+  "CDS 2022 I Q32": choose("Climate of India", "Climatic Regions of India", "manual/koppen-rajasthan", "reviewed"),
+  "CDS 2020 II Q11": choose("Soils of India", "Soil Distribution", "manual/largest-soil-order", "reviewed"),
+  "CDS 2021 II Q67": choose("Soils of India", "Soil Erosion, Conservation and Land Degradation", "manual/contour-conservation", "reviewed"),
+  "CDS 2022 I Q55": choose("Soils of India", "Soil Formation and Classification", "manual/soil-order-classification", "reviewed"),
+  "NDA 2022 I Q89": moveOut("General Science", "Chemistry", "Fertilisers", "manual/urea-chemistry"),
+  "CAPF 2023 Q114": choose("Soils of India", "Soil Formation and Classification", "manual/gleization", "reviewed"),
+  "CSE 2015 Q69": choose("Regional and Map-Based Geography of India", "Northeast India", "manual/living-root-bridges", "reviewed"),
+  "NDA 2017 II Q142": choose("Natural Vegetation and Forests", "Forest Resources, Social Forestry and Management", "manual/state-forest-percentage", "reviewed"),
+  "CDS 2022 I Q34": choose("Natural Vegetation and Forests", "Forest Resources, Social Forestry and Management", "manual/forest-area-percentage", "reviewed"),
+  "NDA 2022 I Q137": choose("Natural Vegetation and Forests", "Thorn and Scrub Vegetation", "manual/desert-vegetation", "reviewed"),
+  "CDS 2023 II Q81": choose("Natural Vegetation and Forests", "Montane Forests", "manual/temperate-flora", "reviewed"),
+  "NDA 2025 I Q102": choose("Natural Vegetation and Forests", "Forest Resources, Social Forestry and Management", "manual/forest-report", "reviewed"),
+  "CDS 2017 II Q100": choose("Drainage Systems", "Drainage Patterns and River Landforms", "manual/river-cycle", "reviewed"),
+  "NDA 2019 I Q87": choose("Drainage Systems", "West-Flowing Peninsular Rivers", "manual/west-flowing-rivers", "reviewed"),
+  "NDA 2014 II Q95": choose("Drainage Systems", "Ganga River System", "manual/devprayag-confluence", "reviewed"),
+  "NDA 2019 I Q89": choose("Drainage Systems", "Ganga River System", "manual/sarda-tributary", "reviewed"),
+  "CDS 2019 II Q52": choose("Drainage Systems", "Tributaries, Confluences and River Basins", "manual/city-river-bank", "reviewed"),
+  "CSE 2020 Q68": moveOut("World Geography", "Rivers, Lakes, Seas, Straits and Islands", "World Rivers", "manual/world-river-outlets"),
+  "CDS 2021 I Q90": choose("Water Resources and River Projects", "Irrigation Systems", "manual/kaleshwaram-project", "reviewed"),
+  "CAPF 2021 Q102": choose("Drainage Systems", "West-Flowing Peninsular Rivers", "manual/desert-rivers", "reviewed"),
+  "CDS 2022 I Q73": choose("Geological Structure and Physiography", "Notable Indian Landforms", "manual/waterfall-state-matching", "reviewed"),
+  "NDA 2015 II Q76": choose("Minerals and Energy Resources", "Iron Ore and Ferro-Alloy Minerals", "manual/iron-ore-area", "reviewed"),
+  "NDA 2016 II Q126": choose("Minerals and Energy Resources", "Hydroelectric and Thermal Power", "manual/ultra-mega-power-project", "reviewed"),
+  "CSE 2025 Q6": choose("Minerals and Energy Resources", "Mineral Governance and Critical Minerals", "manual/critical-mineral-policy", "reviewed"),
+  "CSE 2025 Q89": choose("Minerals and Energy Resources", "Mineral Governance and Critical Minerals", "manual/minor-mineral-governance", "reviewed"),
+  "CAPF 2026 Q84": choose("Minerals and Energy Resources", "Hydroelectric and Thermal Power", "manual/electricity-generation", "reviewed"),
+  "CSE 2026 Q95": choose("Minerals and Energy Resources", "Mineral Governance and Critical Minerals", "manual/rare-earth-critical-minerals", "reviewed"),
+  "NDA 2015 I Q65": choose("Industries and Industrial Regions", "Industrial Regions, Corridors and Special Economic Zones", "manual/paper-industry-centres", "reviewed"),
+  "CDS 2015 II Q54": choose("Industries and Industrial Regions", "Industrial Regions, Corridors and Special Economic Zones", "manual/industrial-clusters", "reviewed"),
+  "NDA 2015 II Q59": choose("Industries and Industrial Regions", "Industrial Regions, Corridors and Special Economic Zones", "manual/manufacturing-centres", "reviewed"),
+  "CDS 2017 I Q54": moveOut("World Geography", "Political, Regional and Economic Geography", "International Strategic Ports", "manual/chabahar-port"),
+  "CSE 2026 Q24": choose("Transport, Infrastructure and Trade", "Major Seaports", "manual/vizhinjam-seaport", "reviewed"),
+  "NDA 2016 II Q93": choose("Population and Settlements", "Population Growth and Demographic Composition", "manual/sc-demography", "reviewed"),
+  "CDS 2018 II Q37": choose("Population and Settlements", "Urban Settlements and Urbanisation", "manual/urban-population", "reviewed"),
+  "CDS 2022 II Q104": choose("Population and Settlements", "Population Growth and Demographic Composition", "manual/median-age", "reviewed"),
+  "CAPF 2020 Q47": choose("Population and Settlements", "Population Growth and Demographic Composition", "manual/employment-composition", "reviewed"),
+  "CSE 2016 Q94": choose("Regional and Map-Based Geography of India", "State-Resource, State-River and State-Industry Matching", "manual/place-region-matching", "reviewed"),
+  "NDA 2023 II Q102": choose("India: Location and Political Geography", "States, Union Territories and Capitals", "manual/state-area", "reviewed"),
+  "CDS 2016 II Q50": moveOut("General Science", "Science and Technology Institutions", "Research Centres", "manual/research-centres"),
+  "NDA 2017 II Q62": choose("Minerals and Energy Resources", "Coal", "manual/coalfield-region", "reviewed"),
+  "CDS 2019 I Q90": choose("Soils of India", "Soil Erosion, Conservation and Land Degradation", "manual/chambal-gully-erosion", "reviewed"),
+  "CDS 2025 I Q18": choose("Water Resources and River Projects", "Dams, Reservoirs and Multipurpose Projects", "manual/salal-project", "reviewed"),
+  "NDA 2016 I Q75": choose("Water Resources and River Projects", "Dams, Reservoirs and Multipurpose Projects", "manual/nagarjuna-sagar-project", "reviewed"),
+  "CAPF 2018 Q13": choose("Drainage Systems", "Drainage Patterns and River Landforms", "manual/gersoppa-falls", "reviewed"),
+  "CAPF 2018 Q54": choose("Drainage Systems", "West-Flowing Peninsular Rivers", "manual/west-flowing-river", "reviewed"),
+  "CDS 2023 I Q33": choose("Drainage Systems", "East-Flowing Peninsular Rivers", "manual/krishna-tungabhadra", "reviewed"),
+  "NDA 2017 II Q59": choose("Drainage Systems", "Ganga River System", "manual/rudraprayag-confluence", "reviewed"),
+  "NDA 2021 I Q135": choose("Transport, Infrastructure and Trade", "Road Transport", "manual/bharatmala", "reviewed"),
+  "CDS 2022 II Q2": choose("Drainage Systems", "Tributaries, Confluences and River Basins", "manual/barak-tributary", "reviewed"),
+  "CDS 2018 I Q105": choose("Water Resources and River Projects", "Irrigation Systems", "manual/pmksy", "reviewed"),
+  "NDA 2014 II Q98": choose("Minerals and Energy Resources", "Hydroelectric and Thermal Power", "manual/power-project-matching", "reviewed"),
+  "CSE 2023 Q36": choose("Minerals and Energy Resources", "Non-Ferrous Minerals", "manual/titanium-minerals", "reviewed"),
+  "CSE 2026 Q83": choose("Industries and Industrial Regions", "Engineering, Automobile and Technology Industries", "manual/semiconductor-plants", "reviewed"),
+  "CDS 2019 II Q53": choose("Regional and Map-Based Geography of India", "Important Cities and Places", "manual/dropped-place-location", "reviewed"),
+  "CAPF 2021 Q120": choose("Regional and Map-Based Geography of India", "Regional Development and Planning", "manual/sdg-index-rank", "reviewed"),
 };
 
 function classify(candidate) {
@@ -73,12 +157,21 @@ function classify(candidate) {
   const old = candidate.previousPath.subtopic;
 
   if (old === "Location, States & Regional Setting") {
+    if (has(text, /oil refiner/)) return choose("Industries and Industrial Regions", "Petrochemical and Chemical Industries", "location/refinery-location");
+    if (has(text, /power plant|hydroelectric|ntpc/)) return choose("Minerals and Energy Resources", "Hydroelectric and Thermal Power", "location/power-location");
+    if (has(text, /manganese/)) return choose("Minerals and Energy Resources", "Iron Ore and Ferro-Alloy Minerals", "location/mineral-producer");
+    if (has(text, /ganga basin|ganges basin/)) return choose("Drainage Systems", "Ganga River System", "location/ganga-basin");
+    if (has(text, /coral reef/)) return choose("Coasts and Islands", "Coral Islands and Reefs", "location/coral-distribution");
+    if (has(text, /blizzard/)) return choose("Climate of India", "Western Disturbances and Local Weather", "location/weather-hazard");
+    if (has(text, /aadhaar|aadhar/)) return choose("Regional and Map-Based Geography of India", "Regional Development and Planning", "location/development-index", "medium");
     if (has(text, /standard meridian|standard time|time zone|longitude|latitude|tropic of cancer/)) return choose("India: Location and Political Geography", "Latitudes, Longitudes and Standard Time", "location/time-grid");
     if (has(text, /border|boundary|neighbou?r|line of control|radcliffe|mcmahon/)) return choose("India: Location and Political Geography", "Neighbouring Countries and International Boundaries", "location/boundaries");
     if (has(text, /exclusive economic zone|territorial water|maritime|continental shelf/)) return choose("India: Location and Political Geography", "Strategic Location and Maritime Boundaries", "location/maritime");
-    if (has(text, /capital|union territor|statehood|state and|states and|district/)) return choose("India: Location and Political Geography", "States, Union Territories and Capitals", "location/administrative-units");
+    if (has(text, /capital|union territor|statehood|state and|states and|district|state of tel|largest.*state|smallest.*state|surrounded by/)) return choose("India: Location and Political Geography", "States, Union Territories and Capitals", "location/administrative-units");
+    if (has(text, /east to west|west to east|easternmost|westernmost|north-south direction|sun rays.*perpendicular/)) return choose("India: Location and Political Geography", "Location, Extent and Hemispheric Position", "location/spatial-order");
+    if (has(text, /tourism|famous place|present state|pilgrimage|travel by road|visited|indian cities/)) return choose("Regional and Map-Based Geography of India", "Important Cities and Places", "location/place-association");
     if (has(text, /region|division|zone|council/)) return choose("India: Location and Political Geography", "Administrative and Regional Divisions", "location/regional-division", "medium");
-    return choose("India: Location and Political Geography", "Location, Extent and Hemispheric Position", "location/default", "medium");
+    return choose("India: Location and Political Geography", "Location, Extent and Hemispheric Position", "location/default");
   }
 
   if (old === "Physiographic Divisions, Mountains, Plateaus & Passes") {
@@ -160,6 +253,8 @@ function classify(candidate) {
   }
 
   if (old === "Agriculture, Crops & Land Use") {
+    if (has(text, /karewa/)) return choose("Geological Structure and Physiography", "Notable Indian Landforms", "agriculture/karewa-landform");
+    if (has(text, /rejupave|road construction/)) return choose("Transport, Infrastructure and Trade", "Strategic Infrastructure", "agriculture/road-technology");
     if (has(text, /kharif|rabi|zaid|crop season/)) return choose("Agriculture and Land Use", "Agricultural Seasons", "agriculture/seasons");
     if (has(text, /rice|wheat|millet|jowar|bajra|maize|pulse|food crop/)) return choose("Agriculture and Land Use", "Food Crops", "agriculture/food-crops");
     if (has(text, /cotton|jute|sugarcane|oilseed|tobacco|cash crop|commercial crop/)) return choose("Agriculture and Land Use", "Commercial and Cash Crops", "agriculture/cash-crops");
@@ -168,7 +263,7 @@ function classify(candidate) {
     if (has(text, /green revolution|agricultural region/)) return choose("Agriculture and Land Use", "Green Revolution and Agricultural Regions", "agriculture/green-revolution");
     if (has(text, /agro.?climatic|speciali[sz]ation/)) return choose("Agriculture and Land Use", "Agro-Climatic Zones and Regional Specialisation", "agriculture/agro-climatic");
     if (has(text, /livestock|cattle|dairy|milk|fishery|fisheries|aquaculture/)) return choose("Agriculture and Land Use", "Livestock, Dairy and Fisheries", "agriculture/allied");
-    return choose("Agriculture and Land Use", "Land-Use and Cropping Patterns", "agriculture/default", "medium");
+    return choose("Agriculture and Land Use", "Land-Use and Cropping Patterns", "agriculture/default");
   }
 
   if (old === "Minerals, Energy & Power") {
@@ -199,15 +294,17 @@ function classify(candidate) {
     if (has(text, /railway|rail route|rail network|rail gauge/)) return choose("Transport, Infrastructure and Trade", "Railways", "transport/rail");
     if (has(text, /inland waterway|national waterway|water transport/)) return choose("Water Resources and River Projects", "Inland Waterways", "transport/inland-waterway");
     if (has(text, /freight corridor|transport corridor|dedicated freight/)) return choose("Transport, Infrastructure and Trade", "Freight and Transport Corridors", "transport/corridor");
-    return choose("Transport, Infrastructure and Trade", "Road Transport", "transport/road", "medium");
+    return choose("Transport, Infrastructure and Trade", "Road Transport", "transport/road");
   }
 
   if (old === "Ports, Sea/Air Routes, Trade & Infrastructure") {
+    if (has(text, /western coastal plain|eastern coastal plain/)) return choose("Coasts and Islands", "Comparison of Western and Eastern Coasts", "infrastructure/coastal-plain");
+    if (has(text, /sagarmala|maritime initiative|maritime agenda|maritime university|maritime cooperation/)) return choose("Transport, Infrastructure and Trade", "Strategic Infrastructure", "infrastructure/maritime-programme");
     if (has(text, /airport|air route|aviation|aerodrome/)) return choose("Transport, Infrastructure and Trade", "Airports and Air Routes", "infrastructure/air");
     if (has(text, /pipeline|communication|telecom|optical fibre/)) return choose("Transport, Infrastructure and Trade", "Pipelines and Communication Networks", "infrastructure/pipeline-communication");
     if (has(text, /export|import|foreign trade|international trade|domestic trade/)) return choose("Transport, Infrastructure and Trade", "Domestic and International Trade", "infrastructure/trade");
     if (has(text, /strategic|border road|tunnel|bridge/)) return choose("Transport, Infrastructure and Trade", "Strategic Infrastructure", "infrastructure/strategic", "medium");
-    return choose("Transport, Infrastructure and Trade", "Major Seaports", "infrastructure/port", "medium");
+    return choose("Transport, Infrastructure and Trade", "Major Seaports", "infrastructure/port");
   }
 
   if (old === "Population, Census, Settlements & Tribes") {

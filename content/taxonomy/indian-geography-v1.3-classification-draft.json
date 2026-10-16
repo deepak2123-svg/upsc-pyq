@@ -1,33 +1,33 @@
 {
   "version": "indian-geography-v1.3-draft",
   "status": "classification-draft-do-not-publish",
-  "generatedAt": "2026-10-16T13:02:01.113Z",
+  "generatedAt": "2026-10-16T13:05:04.842Z",
   "recordCount": 609,
   "countsByConfidence": {
-    "reviewed": 41,
-    "high": 414,
-    "medium": 154,
+    "reviewed": 122,
+    "high": 487,
+    "medium": 0,
     "low": 0
   },
   "countsByScopeDecision": {
-    "include": 605,
-    "move-out": 4
+    "include": 600,
+    "move-out": 9
   },
   "countsByChapter": {
-    "India: Location and Political Geography": 43,
-    "Geological Structure and Physiography": 48,
-    "Coasts and Islands": 30,
-    "Drainage Systems": 106,
-    "Water Resources and River Projects": 30,
-    "Climate of India": 36,
-    "Soils of India": 24,
-    "Natural Vegetation and Forests": 28,
-    "Agriculture and Land Use": 61,
-    "Minerals and Energy Resources": 46,
-    "Industries and Industrial Regions": 22,
+    "India: Location and Political Geography": 31,
+    "Geological Structure and Physiography": 44,
+    "Coasts and Islands": 32,
+    "Drainage Systems": 100,
+    "Water Resources and River Projects": 33,
+    "Climate of India": 34,
+    "Soils of India": 26,
+    "Natural Vegetation and Forests": 27,
+    "Agriculture and Land Use": 59,
+    "Minerals and Energy Resources": 51,
+    "Industries and Industrial Regions": 23,
     "Transport, Infrastructure and Trade": 74,
     "Population and Settlements": 40,
-    "Regional and Map-Based Geography of India": 17
+    "Regional and Map-Based Geography of India": 26
   },
   "records": [
     {
@@ -51,14 +51,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Industries and Industrial Regions",
+        "subtopic": "Petrochemical and Chemical Industries",
+        "taxonomyId": "indian-geography/industries-and-industrial-regions/petrochemical-and-chemical-industries"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/refinery-location",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -82,13 +82,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "subtopic": "States, Union Territories and Capitals",
+        "taxonomyId": "indian-geography/india-location-and-political-geography/states-union-territories-and-capitals"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/administrative-units",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -117,8 +117,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -141,14 +141,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Administrative and Regional Divisions",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/administrative-and-regional-divisions"
+        "chapter": "Regional and Map-Based Geography of India",
+        "subtopic": "State-Resource, State-River and State-Industry Matching",
+        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/state-resource-state-river-and-state-industry-matching"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/regional-division",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/region-state-matching",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -176,9 +176,9 @@
         "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/spatial-order",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -201,14 +201,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Regional and Map-Based Geography of India",
+        "subtopic": "Important Cities and Places",
+        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/important-cities-and-places"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/place-association",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -259,14 +259,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Minerals and Energy Resources",
+        "subtopic": "Hydroelectric and Thermal Power",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/hydroelectric-and-thermal-power"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/power-location",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -286,17 +286,16 @@
         "chapter": "Location, Physiography, Coasts & Islands",
         "subtopic": "Location, States & Regional Setting"
       },
-      "scopeDecision": "include",
-      "proposedPath": {
-        "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+      "scopeDecision": "move-out",
+      "proposedPath": null,
+      "moveOutDestination": {
+        "head": "Governance",
+        "chapter": "Digital Identity",
+        "subtopic": "Aadhaar Coverage"
       },
-      "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/aadhaar-coverage",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -324,9 +323,9 @@
         "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/spatial-order",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -379,14 +378,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Regional and Map-Based Geography of India",
+        "subtopic": "Important Cities and Places",
+        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/important-cities-and-places"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/place-association",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -525,14 +524,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Regional and Map-Based Geography of India",
+        "subtopic": "Important Cities and Places",
+        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/important-cities-and-places"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/place-association",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -613,14 +612,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Regional and Map-Based Geography of India",
+        "subtopic": "Important Cities and Places",
+        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/important-cities-and-places"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/place-association",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -697,14 +696,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Regional and Map-Based Geography of India",
+        "subtopic": "Important Cities and Places",
+        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/important-cities-and-places"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/place-association",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -725,14 +724,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Climate of India",
+        "subtopic": "Western Disturbances and Local Weather",
+        "taxonomyId": "indian-geography/climate-of-india/western-disturbances-and-local-weather"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/weather-hazard",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -783,14 +782,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Coasts and Islands",
+        "subtopic": "Coral Islands and Reefs",
+        "taxonomyId": "indian-geography/coasts-and-islands/coral-islands-and-reefs"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/coral-distribution",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -811,14 +810,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Administrative and Regional Divisions",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/administrative-and-regional-divisions"
+        "chapter": "Regional and Map-Based Geography of India",
+        "subtopic": "Northeast India",
+        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/northeast-india"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/regional-division",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/assam-identification",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -872,9 +871,9 @@
         "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/spatial-order",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -897,14 +896,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Minerals and Energy Resources",
+        "subtopic": "Iron Ore and Ferro-Alloy Minerals",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/iron-ore-and-ferro-alloy-minerals"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/mineral-producer",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -953,14 +952,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Drainage Systems",
+        "subtopic": "Ganga River System",
+        "taxonomyId": "indian-geography/drainage-systems/ganga-river-system"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/ganga-basin",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -983,14 +982,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Minerals and Energy Resources",
+        "subtopic": "Hydroelectric and Thermal Power",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/hydroelectric-and-thermal-power"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/power-location",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -1018,9 +1017,9 @@
         "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/spatial-order",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -1073,14 +1072,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "India: Location and Political Geography",
-        "subtopic": "Location, Extent and Hemispheric Position",
-        "taxonomyId": "indian-geography/india-location-and-political-geography/location-extent-and-hemispheric-position"
+        "chapter": "Minerals and Energy Resources",
+        "subtopic": "Hydroelectric and Thermal Power",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/hydroelectric-and-thermal-power"
       },
       "moveOutDestination": null,
-      "classificationRule": "location/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "location/power-location",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -1193,14 +1192,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Geological Structure and Physiography",
-        "subtopic": "Physiographic Divisions of India",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/physiographic-divisions-of-india"
+        "chapter": "Natural Vegetation and Forests",
+        "subtopic": "Thorn and Scrub Vegetation",
+        "taxonomyId": "indian-geography/natural-vegetation-and-forests/thorn-and-scrub-vegetation"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/desert-leaf-adaptation",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -1313,14 +1312,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Geological Structure and Physiography",
-        "subtopic": "Physiographic Divisions of India",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/physiographic-divisions-of-india"
+        "chapter": "India: Location and Political Geography",
+        "subtopic": "Latitudes, Longitudes and Standard Time",
+        "taxonomyId": "indian-geography/india-location-and-political-geography/latitudes-longitudes-and-standard-time"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/ist-meridian-states",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -1374,11 +1373,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Geological Structure and Physiography",
-        "subtopic": "Himalayan Ranges, Peaks, Passes and Valleys",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/himalayan-ranges-peaks-passes-and-valleys"
+        "subtopic": "Peninsular Plateau and Central Highlands",
+        "taxonomyId": "indian-geography/geological-structure-and-physiography/peninsular-plateau-and-central-highlands"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/himalaya",
+      "classificationRule": "physiography/plateau",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -1433,14 +1432,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Geological Structure and Physiography",
-        "subtopic": "Physiographic Divisions of India",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/physiographic-divisions-of-india"
+        "chapter": "Regional and Map-Based Geography of India",
+        "subtopic": "North India",
+        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/north-india"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/northwest-region-features",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -1640,13 +1639,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Geological Structure and Physiography",
-        "subtopic": "Physiographic Divisions of India",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/physiographic-divisions-of-india"
+        "subtopic": "Himalayan Ranges, Peaks, Passes and Valleys",
+        "taxonomyId": "indian-geography/geological-structure-and-physiography/himalayan-ranges-peaks-passes-and-valleys"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/himalayan-pass",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -1670,13 +1669,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Geological Structure and Physiography",
-        "subtopic": "Physiographic Divisions of India",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/physiographic-divisions-of-india"
+        "subtopic": "Geological Evolution of India",
+        "taxonomyId": "indian-geography/geological-structure-and-physiography/geological-evolution-of-india"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/deccan-vulcanicity",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -1727,14 +1726,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Geological Structure and Physiography",
-        "subtopic": "Physiographic Divisions of India",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/physiographic-divisions-of-india"
+        "chapter": "Climate of India",
+        "subtopic": "Indian Seasons and Temperature Patterns",
+        "taxonomyId": "indian-geography/climate-of-india/indian-seasons-and-temperature-patterns"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/south-india-temperature",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -1813,14 +1812,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Geological Structure and Physiography",
-        "subtopic": "Physiographic Divisions of India",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/physiographic-divisions-of-india"
+        "chapter": "India: Location and Political Geography",
+        "subtopic": "States, Union Territories and Capitals",
+        "taxonomyId": "indian-geography/india-location-and-political-geography/states-union-territories-and-capitals"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/state-identification",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -1932,13 +1931,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Geological Structure and Physiography",
-        "subtopic": "Physiographic Divisions of India",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/physiographic-divisions-of-india"
+        "subtopic": "Himalayan Ranges, Peaks, Passes and Valleys",
+        "taxonomyId": "indian-geography/geological-structure-and-physiography/himalayan-ranges-peaks-passes-and-valleys"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/pass-order",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -1992,13 +1991,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Geological Structure and Physiography",
-        "subtopic": "Physiographic Divisions of India",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/physiographic-divisions-of-india"
+        "subtopic": "Himalayan Ranges, Peaks, Passes and Valleys",
+        "taxonomyId": "indian-geography/geological-structure-and-physiography/himalayan-ranges-peaks-passes-and-valleys"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/glacial-landforms-ladakh",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -2077,14 +2076,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Geological Structure and Physiography",
-        "subtopic": "Physiographic Divisions of India",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/physiographic-divisions-of-india"
+        "chapter": "India: Location and Political Geography",
+        "subtopic": "Latitudes, Longitudes and Standard Time",
+        "taxonomyId": "indian-geography/india-location-and-political-geography/latitudes-longitudes-and-standard-time"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/tropic-of-cancer-states",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -2165,14 +2164,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Geological Structure and Physiography",
-        "subtopic": "Peninsular Plateau and Central Highlands",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/peninsular-plateau-and-central-highlands"
+        "chapter": "India: Location and Political Geography",
+        "subtopic": "States, Union Territories and Capitals",
+        "taxonomyId": "indian-geography/india-location-and-political-geography/states-union-territories-and-capitals"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/plateau",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/state-area",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -2312,13 +2311,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Geological Structure and Physiography",
-        "subtopic": "Physiographic Divisions of India",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/physiographic-divisions-of-india"
+        "subtopic": "Himalayan Ranges, Peaks, Passes and Valleys",
+        "taxonomyId": "indian-geography/geological-structure-and-physiography/himalayan-ranges-peaks-passes-and-valleys"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/indian-peaks",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -2458,13 +2457,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Geological Structure and Physiography",
-        "subtopic": "Physiographic Divisions of India",
-        "taxonomyId": "indian-geography/geological-structure-and-physiography/physiographic-divisions-of-india"
+        "subtopic": "Peninsular Plateau and Central Highlands",
+        "taxonomyId": "indian-geography/geological-structure-and-physiography/peninsular-plateau-and-central-highlands"
       },
       "moveOutDestination": null,
-      "classificationRule": "physiography/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/peninsular-block",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -2488,11 +2487,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Coasts and Islands",
-        "subtopic": "Andaman and Nicobar Islands",
-        "taxonomyId": "indian-geography/coasts-and-islands/andaman-and-nicobar-islands"
+        "subtopic": "Lakshadweep Islands",
+        "taxonomyId": "indian-geography/coasts-and-islands/lakshadweep-islands"
       },
       "moveOutDestination": null,
-      "classificationRule": "coasts/andaman-nicobar",
+      "classificationRule": "coasts/lakshadweep",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -2788,11 +2787,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Coasts and Islands",
-        "subtopic": "Andaman and Nicobar Islands",
-        "taxonomyId": "indian-geography/coasts-and-islands/andaman-and-nicobar-islands"
+        "subtopic": "Coral Islands and Reefs",
+        "taxonomyId": "indian-geography/coasts-and-islands/coral-islands-and-reefs"
       },
       "moveOutDestination": null,
-      "classificationRule": "coasts/andaman-nicobar",
+      "classificationRule": "coasts/coral",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -2818,11 +2817,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Coasts and Islands",
-        "subtopic": "Andaman and Nicobar Islands",
-        "taxonomyId": "indian-geography/coasts-and-islands/andaman-and-nicobar-islands"
+        "subtopic": "Lakshadweep Islands",
+        "taxonomyId": "indian-geography/coasts-and-islands/lakshadweep-islands"
       },
       "moveOutDestination": null,
-      "classificationRule": "coasts/andaman-nicobar",
+      "classificationRule": "coasts/lakshadweep",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -2846,11 +2845,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Coasts and Islands",
-        "subtopic": "Andaman and Nicobar Islands",
-        "taxonomyId": "indian-geography/coasts-and-islands/andaman-and-nicobar-islands"
+        "subtopic": "Lakshadweep Islands",
+        "taxonomyId": "indian-geography/coasts-and-islands/lakshadweep-islands"
       },
       "moveOutDestination": null,
-      "classificationRule": "coasts/andaman-nicobar",
+      "classificationRule": "coasts/lakshadweep",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -2990,11 +2989,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Coasts and Islands",
-        "subtopic": "Lakshadweep Islands",
-        "taxonomyId": "indian-geography/coasts-and-islands/lakshadweep-islands"
+        "subtopic": "Coral Islands and Reefs",
+        "taxonomyId": "indian-geography/coasts-and-islands/coral-islands-and-reefs"
       },
       "moveOutDestination": null,
-      "classificationRule": "coasts/lakshadweep",
+      "classificationRule": "coasts/coral",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -3364,13 +3363,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Climate of India",
-        "subtopic": "Indian Monsoon Mechanism",
-        "taxonomyId": "indian-geography/climate-of-india/indian-monsoon-mechanism"
+        "subtopic": "Controls of Indian Climate",
+        "taxonomyId": "indian-geography/climate-of-india/controls-of-indian-climate"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/himalaya-climate-control",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -3393,14 +3392,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Climate of India",
-        "subtopic": "Indian Monsoon Mechanism",
-        "taxonomyId": "indian-geography/climate-of-india/indian-monsoon-mechanism"
+        "chapter": "Soils of India",
+        "subtopic": "Soil Erosion, Conservation and Land Degradation",
+        "taxonomyId": "indian-geography/soils-of-india/soil-erosion-conservation-and-land-degradation"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/soil-erosion",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -3458,9 +3457,9 @@
         "taxonomyId": "indian-geography/climate-of-india/indian-monsoon-mechanism"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/monsoon-factors",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -3485,14 +3484,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Climate of India",
-        "subtopic": "Indian Monsoon Mechanism",
-        "taxonomyId": "indian-geography/climate-of-india/indian-monsoon-mechanism"
+        "chapter": "Soils of India",
+        "subtopic": "Soil Formation and Classification",
+        "taxonomyId": "indian-geography/soils-of-india/soil-formation-and-classification"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/soil-acidity",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -3516,13 +3515,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Climate of India",
-        "subtopic": "Indian Monsoon Mechanism",
-        "taxonomyId": "indian-geography/climate-of-india/indian-monsoon-mechanism"
+        "subtopic": "Climatic Regions of India",
+        "taxonomyId": "indian-geography/climate-of-india/climatic-regions-of-india"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/altitudinal-climate-zones",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -3756,11 +3755,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Climate of India",
-        "subtopic": "Tropical Cyclones Affecting India",
-        "taxonomyId": "indian-geography/climate-of-india/tropical-cyclones-affecting-india"
+        "subtopic": "Western Disturbances and Local Weather",
+        "taxonomyId": "indian-geography/climate-of-india/western-disturbances-and-local-weather"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/cyclone",
+      "classificationRule": "climate/local-weather",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -3786,11 +3785,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Climate of India",
-        "subtopic": "Western Disturbances and Local Weather",
-        "taxonomyId": "indian-geography/climate-of-india/western-disturbances-and-local-weather"
+        "subtopic": "Southwest Monsoon",
+        "taxonomyId": "indian-geography/climate-of-india/southwest-monsoon"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/local-weather",
+      "classificationRule": "climate/southwest",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -3814,13 +3813,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Climate of India",
-        "subtopic": "Indian Monsoon Mechanism",
-        "taxonomyId": "indian-geography/climate-of-india/indian-monsoon-mechanism"
+        "subtopic": "Indian Seasons and Temperature Patterns",
+        "taxonomyId": "indian-geography/climate-of-india/indian-seasons-and-temperature-patterns"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/winter-pressure",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -3842,13 +3841,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Climate of India",
-        "subtopic": "Indian Monsoon Mechanism",
-        "taxonomyId": "indian-geography/climate-of-india/indian-monsoon-mechanism"
+        "subtopic": "Rainfall Distribution",
+        "taxonomyId": "indian-geography/climate-of-india/rainfall-distribution"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/leeward-slope",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -3870,11 +3869,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Climate of India",
-        "subtopic": "Western Disturbances and Local Weather",
-        "taxonomyId": "indian-geography/climate-of-india/western-disturbances-and-local-weather"
+        "subtopic": "Northeast and Retreating Monsoon",
+        "taxonomyId": "indian-geography/climate-of-india/northeast-and-retreating-monsoon"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/local-weather",
+      "classificationRule": "climate/retreating",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -3898,11 +3897,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Climate of India",
-        "subtopic": "Western Disturbances and Local Weather",
-        "taxonomyId": "indian-geography/climate-of-india/western-disturbances-and-local-weather"
+        "subtopic": "Indian Seasons and Temperature Patterns",
+        "taxonomyId": "indian-geography/climate-of-india/indian-seasons-and-temperature-patterns"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/local-weather",
+      "classificationRule": "climate/seasons",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -4014,13 +4013,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Climate of India",
-        "subtopic": "Indian Monsoon Mechanism",
-        "taxonomyId": "indian-geography/climate-of-india/indian-monsoon-mechanism"
+        "subtopic": "Indian Seasons and Temperature Patterns",
+        "taxonomyId": "indian-geography/climate-of-india/indian-seasons-and-temperature-patterns"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/january-isotherm",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -4074,13 +4073,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Climate of India",
-        "subtopic": "Indian Monsoon Mechanism",
-        "taxonomyId": "indian-geography/climate-of-india/indian-monsoon-mechanism"
+        "subtopic": "Southwest Monsoon",
+        "taxonomyId": "indian-geography/climate-of-india/southwest-monsoon"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/monsoon-duration",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -4129,14 +4128,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Climate of India",
-        "subtopic": "Indian Monsoon Mechanism",
-        "taxonomyId": "indian-geography/climate-of-india/indian-monsoon-mechanism"
+        "chapter": "Water Resources and River Projects",
+        "subtopic": "Floods, Droughts and Watershed Management",
+        "taxonomyId": "indian-geography/water-resources-and-river-projects/floods-droughts-and-watershed-management"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/drought-prone-region",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -4159,14 +4158,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Climate of India",
-        "subtopic": "Indian Monsoon Mechanism",
-        "taxonomyId": "indian-geography/climate-of-india/indian-monsoon-mechanism"
+        "chapter": "Agriculture and Land Use",
+        "subtopic": "Land-Use and Cropping Patterns",
+        "taxonomyId": "indian-geography/agriculture-and-land-use/land-use-and-cropping-patterns"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/agriculture-characteristics",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -4188,13 +4187,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Climate of India",
-        "subtopic": "Indian Monsoon Mechanism",
-        "taxonomyId": "indian-geography/climate-of-india/indian-monsoon-mechanism"
+        "subtopic": "Climatic Regions of India",
+        "taxonomyId": "indian-geography/climate-of-india/climatic-regions-of-india"
       },
       "moveOutDestination": null,
-      "classificationRule": "climate/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/koppen-rajasthan",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -4514,13 +4513,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Soils of India",
-        "subtopic": "Soil Formation and Classification",
-        "taxonomyId": "indian-geography/soils-of-india/soil-formation-and-classification"
+        "subtopic": "Soil Distribution",
+        "taxonomyId": "indian-geography/soils-of-india/soil-distribution"
       },
       "moveOutDestination": null,
-      "classificationRule": "soil/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/largest-soil-order",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -4600,11 +4599,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Soils of India",
-        "subtopic": "Alluvial Soils",
-        "taxonomyId": "indian-geography/soils-of-india/alluvial-soils"
+        "subtopic": "Arid and Desert Soils",
+        "taxonomyId": "indian-geography/soils-of-india/arid-and-desert-soils"
       },
       "moveOutDestination": null,
-      "classificationRule": "soil/alluvial",
+      "classificationRule": "soil/arid",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -4628,13 +4627,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Soils of India",
-        "subtopic": "Soil Distribution",
-        "taxonomyId": "indian-geography/soils-of-india/soil-distribution"
+        "subtopic": "Soil Erosion, Conservation and Land Degradation",
+        "taxonomyId": "indian-geography/soils-of-india/soil-erosion-conservation-and-land-degradation"
       },
       "moveOutDestination": null,
-      "classificationRule": "soil/distribution",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/contour-conservation",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -4690,9 +4689,9 @@
         "taxonomyId": "indian-geography/soils-of-india/soil-formation-and-classification"
       },
       "moveOutDestination": null,
-      "classificationRule": "soil/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/soil-order-classification",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -4710,17 +4709,16 @@
         "chapter": "Climate, Soils, Natural Vegetation & Forests",
         "subtopic": "Soils & Soil Conservation"
       },
-      "scopeDecision": "include",
-      "proposedPath": {
-        "head": "Indian Geography",
-        "chapter": "Soils of India",
-        "subtopic": "Soil Distribution",
-        "taxonomyId": "indian-geography/soils-of-india/soil-distribution"
+      "scopeDecision": "move-out",
+      "proposedPath": null,
+      "moveOutDestination": {
+        "head": "General Science",
+        "chapter": "Chemistry",
+        "subtopic": "Fertilisers"
       },
-      "moveOutDestination": null,
-      "classificationRule": "soil/distribution",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/urea-chemistry",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -4806,9 +4804,9 @@
         "taxonomyId": "indian-geography/soils-of-india/soil-formation-and-classification"
       },
       "moveOutDestination": null,
-      "classificationRule": "soil/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/gleization",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -4830,11 +4828,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Soils of India",
-        "subtopic": "Laterite Soils",
-        "taxonomyId": "indian-geography/soils-of-india/laterite-soils"
+        "subtopic": "Forest, Mountain, Saline and Peaty Soils",
+        "taxonomyId": "indian-geography/soils-of-india/forest-mountain-saline-and-peaty-soils"
       },
       "moveOutDestination": null,
-      "classificationRule": "soil/laterite",
+      "classificationRule": "soil/other-types",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -5187,14 +5185,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Natural Vegetation and Forests",
-        "subtopic": "Controls and Distribution of Natural Vegetation",
-        "taxonomyId": "indian-geography/natural-vegetation-and-forests/controls-and-distribution-of-natural-vegetation"
+        "chapter": "Regional and Map-Based Geography of India",
+        "subtopic": "Northeast India",
+        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/northeast-india"
       },
       "moveOutDestination": null,
-      "classificationRule": "vegetation/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/living-root-bridges",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -5248,11 +5246,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Natural Vegetation and Forests",
-        "subtopic": "Tropical Evergreen and Semi-Evergreen Forests",
-        "taxonomyId": "indian-geography/natural-vegetation-and-forests/tropical-evergreen-and-semi-evergreen-forests"
+        "subtopic": "Tropical Deciduous Forests",
+        "taxonomyId": "indian-geography/natural-vegetation-and-forests/tropical-deciduous-forests"
       },
       "moveOutDestination": null,
-      "classificationRule": "vegetation/evergreen",
+      "classificationRule": "vegetation/deciduous",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -5278,11 +5276,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Natural Vegetation and Forests",
-        "subtopic": "Tropical Deciduous Forests",
-        "taxonomyId": "indian-geography/natural-vegetation-and-forests/tropical-deciduous-forests"
+        "subtopic": "Grasslands",
+        "taxonomyId": "indian-geography/natural-vegetation-and-forests/grasslands"
       },
       "moveOutDestination": null,
-      "classificationRule": "vegetation/deciduous",
+      "classificationRule": "vegetation/grassland",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -5304,17 +5302,16 @@
         "chapter": "Climate, Soils, Natural Vegetation & Forests",
         "subtopic": "Natural Vegetation & Forests"
       },
-      "scopeDecision": "include",
-      "proposedPath": {
-        "head": "Indian Geography",
-        "chapter": "Natural Vegetation and Forests",
-        "subtopic": "Forest Resources, Social Forestry and Management",
-        "taxonomyId": "indian-geography/natural-vegetation-and-forests/forest-resources-social-forestry-and-management"
+      "scopeDecision": "move-out",
+      "proposedPath": null,
+      "moveOutDestination": {
+        "head": "General Science",
+        "chapter": "Science and Technology Institutions",
+        "subtopic": "Research Centres"
       },
-      "moveOutDestination": null,
-      "classificationRule": "vegetation/management",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/research-centres",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -5368,13 +5365,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Natural Vegetation and Forests",
-        "subtopic": "Controls and Distribution of Natural Vegetation",
-        "taxonomyId": "indian-geography/natural-vegetation-and-forests/controls-and-distribution-of-natural-vegetation"
+        "subtopic": "Forest Resources, Social Forestry and Management",
+        "taxonomyId": "indian-geography/natural-vegetation-and-forests/forest-resources-social-forestry-and-management"
       },
       "moveOutDestination": null,
-      "classificationRule": "vegetation/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/state-forest-percentage",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -5488,11 +5485,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Natural Vegetation and Forests",
-        "subtopic": "Tropical Evergreen and Semi-Evergreen Forests",
-        "taxonomyId": "indian-geography/natural-vegetation-and-forests/tropical-evergreen-and-semi-evergreen-forests"
+        "subtopic": "Tropical Deciduous Forests",
+        "taxonomyId": "indian-geography/natural-vegetation-and-forests/tropical-deciduous-forests"
       },
       "moveOutDestination": null,
-      "classificationRule": "vegetation/evergreen",
+      "classificationRule": "vegetation/deciduous",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -5516,13 +5513,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Natural Vegetation and Forests",
-        "subtopic": "Controls and Distribution of Natural Vegetation",
-        "taxonomyId": "indian-geography/natural-vegetation-and-forests/controls-and-distribution-of-natural-vegetation"
+        "subtopic": "Forest Resources, Social Forestry and Management",
+        "taxonomyId": "indian-geography/natural-vegetation-and-forests/forest-resources-social-forestry-and-management"
       },
       "moveOutDestination": null,
-      "classificationRule": "vegetation/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/forest-area-percentage",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -5546,13 +5543,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Natural Vegetation and Forests",
-        "subtopic": "Controls and Distribution of Natural Vegetation",
-        "taxonomyId": "indian-geography/natural-vegetation-and-forests/controls-and-distribution-of-natural-vegetation"
+        "subtopic": "Thorn and Scrub Vegetation",
+        "taxonomyId": "indian-geography/natural-vegetation-and-forests/thorn-and-scrub-vegetation"
       },
       "moveOutDestination": null,
-      "classificationRule": "vegetation/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/desert-vegetation",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -5660,13 +5657,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Natural Vegetation and Forests",
-        "subtopic": "Controls and Distribution of Natural Vegetation",
-        "taxonomyId": "indian-geography/natural-vegetation-and-forests/controls-and-distribution-of-natural-vegetation"
+        "subtopic": "Montane Forests",
+        "taxonomyId": "indian-geography/natural-vegetation-and-forests/montane-forests"
       },
       "moveOutDestination": null,
-      "classificationRule": "vegetation/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/temperate-flora",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -5748,13 +5745,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Natural Vegetation and Forests",
-        "subtopic": "Controls and Distribution of Natural Vegetation",
-        "taxonomyId": "indian-geography/natural-vegetation-and-forests/controls-and-distribution-of-natural-vegetation"
+        "subtopic": "Forest Resources, Social Forestry and Management",
+        "taxonomyId": "indian-geography/natural-vegetation-and-forests/forest-resources-social-forestry-and-management"
       },
       "moveOutDestination": null,
-      "classificationRule": "vegetation/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/forest-report",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -6074,11 +6071,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Indus River System",
-        "taxonomyId": "indian-geography/drainage-systems/indus-river-system"
+        "subtopic": "Ganga River System",
+        "taxonomyId": "indian-geography/drainage-systems/ganga-river-system"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/indus",
+      "classificationRule": "drainage/ganga",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -6103,14 +6100,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Drainage Systems",
-        "subtopic": "Ganga River System",
-        "taxonomyId": "indian-geography/drainage-systems/ganga-river-system"
+        "chapter": "Minerals and Energy Resources",
+        "subtopic": "Coal",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/coal"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/ganga",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/coalfield-region",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -6280,11 +6277,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Ganga River System",
-        "taxonomyId": "indian-geography/drainage-systems/ganga-river-system"
+        "subtopic": "Brahmaputra River System",
+        "taxonomyId": "indian-geography/drainage-systems/brahmaputra-river-system"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/ganga",
+      "classificationRule": "drainage/brahmaputra",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -6337,14 +6334,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Drainage Systems",
-        "subtopic": "Ganga River System",
-        "taxonomyId": "indian-geography/drainage-systems/ganga-river-system"
+        "chapter": "Soils of India",
+        "subtopic": "Soil Erosion, Conservation and Land Degradation",
+        "taxonomyId": "indian-geography/soils-of-india/soil-erosion-conservation-and-land-degradation"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/ganga",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/chambal-gully-erosion",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -6396,11 +6393,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Ganga River System",
-        "taxonomyId": "indian-geography/drainage-systems/ganga-river-system"
+        "subtopic": "Brahmaputra River System",
+        "taxonomyId": "indian-geography/drainage-systems/brahmaputra-river-system"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/ganga",
+      "classificationRule": "drainage/brahmaputra",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -6718,11 +6715,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Ganga River System",
-        "taxonomyId": "indian-geography/drainage-systems/ganga-river-system"
+        "subtopic": "Brahmaputra River System",
+        "taxonomyId": "indian-geography/drainage-systems/brahmaputra-river-system"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/ganga",
+      "classificationRule": "drainage/brahmaputra",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -6979,14 +6976,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Drainage Systems",
-        "subtopic": "Indus River System",
-        "taxonomyId": "indian-geography/drainage-systems/indus-river-system"
+        "chapter": "Water Resources and River Projects",
+        "subtopic": "Dams, Reservoirs and Multipurpose Projects",
+        "taxonomyId": "indian-geography/water-resources-and-river-projects/dams-reservoirs-and-multipurpose-projects"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/indus",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/salal-project",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -7361,14 +7358,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Drainage Systems",
-        "subtopic": "East-Flowing Peninsular Rivers",
-        "taxonomyId": "indian-geography/drainage-systems/east-flowing-peninsular-rivers"
+        "chapter": "Water Resources and River Projects",
+        "subtopic": "Dams, Reservoirs and Multipurpose Projects",
+        "taxonomyId": "indian-geography/water-resources-and-river-projects/dams-reservoirs-and-multipurpose-projects"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/east-flowing",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/nagarjuna-sagar-project",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -7422,11 +7419,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Ganga River System",
-        "taxonomyId": "indian-geography/drainage-systems/ganga-river-system"
+        "subtopic": "West-Flowing Peninsular Rivers",
+        "taxonomyId": "indian-geography/drainage-systems/west-flowing-peninsular-rivers"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/ganga",
+      "classificationRule": "drainage/west-flowing",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -7452,11 +7449,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "West-Flowing Peninsular Rivers",
-        "taxonomyId": "indian-geography/drainage-systems/west-flowing-peninsular-rivers"
+        "subtopic": "East-Flowing Peninsular Rivers",
+        "taxonomyId": "indian-geography/drainage-systems/east-flowing-peninsular-rivers"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/west-flowing",
+      "classificationRule": "drainage/east-flowing",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -7510,11 +7507,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Ganga River System",
-        "taxonomyId": "indian-geography/drainage-systems/ganga-river-system"
+        "subtopic": "East-Flowing Peninsular Rivers",
+        "taxonomyId": "indian-geography/drainage-systems/east-flowing-peninsular-rivers"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/ganga",
+      "classificationRule": "drainage/east-flowing",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -7540,13 +7537,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Tributaries, Confluences and River Basins",
-        "taxonomyId": "indian-geography/drainage-systems/tributaries-confluences-and-river-basins"
+        "subtopic": "Drainage Patterns and River Landforms",
+        "taxonomyId": "indian-geography/drainage-systems/drainage-patterns-and-river-landforms"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/river-cycle",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -7570,13 +7567,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Brahmaputra River System",
-        "taxonomyId": "indian-geography/drainage-systems/brahmaputra-river-system"
+        "subtopic": "Drainage Patterns and River Landforms",
+        "taxonomyId": "indian-geography/drainage-systems/drainage-patterns-and-river-landforms"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/brahmaputra",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/gersoppa-falls",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -7630,13 +7627,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "East-Flowing Peninsular Rivers",
-        "taxonomyId": "indian-geography/drainage-systems/east-flowing-peninsular-rivers"
+        "subtopic": "West-Flowing Peninsular Rivers",
+        "taxonomyId": "indian-geography/drainage-systems/west-flowing-peninsular-rivers"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/east-flowing",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/west-flowing-river",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -7718,13 +7715,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Tributaries, Confluences and River Basins",
-        "taxonomyId": "indian-geography/drainage-systems/tributaries-confluences-and-river-basins"
+        "subtopic": "West-Flowing Peninsular Rivers",
+        "taxonomyId": "indian-geography/drainage-systems/west-flowing-peninsular-rivers"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/west-flowing-rivers",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -7926,13 +7923,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "West-Flowing Peninsular Rivers",
-        "taxonomyId": "indian-geography/drainage-systems/west-flowing-peninsular-rivers"
+        "subtopic": "East-Flowing Peninsular Rivers",
+        "taxonomyId": "indian-geography/drainage-systems/east-flowing-peninsular-rivers"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/west-flowing",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/krishna-tungabhadra",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -8716,13 +8713,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Tributaries, Confluences and River Basins",
-        "taxonomyId": "indian-geography/drainage-systems/tributaries-confluences-and-river-basins"
+        "subtopic": "Ganga River System",
+        "taxonomyId": "indian-geography/drainage-systems/ganga-river-system"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/devprayag-confluence",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -8780,9 +8777,9 @@
         "taxonomyId": "indian-geography/drainage-systems/ganga-river-system"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/ganga",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/rudraprayag-confluence",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -8864,13 +8861,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Tributaries, Confluences and River Basins",
-        "taxonomyId": "indian-geography/drainage-systems/tributaries-confluences-and-river-basins"
+        "subtopic": "Ganga River System",
+        "taxonomyId": "indian-geography/drainage-systems/ganga-river-system"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/sarda-tributary",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -8896,9 +8893,9 @@
         "taxonomyId": "indian-geography/drainage-systems/tributaries-confluences-and-river-basins"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/city-river-bank",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -8948,17 +8945,16 @@
         "chapter": "Drainage & Water Resources",
         "subtopic": "River Systems, Lakes, Dams & River-Valley Projects"
       },
-      "scopeDecision": "include",
-      "proposedPath": {
-        "head": "Indian Geography",
-        "chapter": "Drainage Systems",
-        "subtopic": "Tributaries, Confluences and River Basins",
-        "taxonomyId": "indian-geography/drainage-systems/tributaries-confluences-and-river-basins"
+      "scopeDecision": "move-out",
+      "proposedPath": null,
+      "moveOutDestination": {
+        "head": "World Geography",
+        "chapter": "Rivers, Lakes, Seas, Straits and Islands",
+        "subtopic": "World Rivers"
       },
-      "moveOutDestination": null,
-      "classificationRule": "drainage/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/world-river-outlets",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -8979,14 +8975,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Drainage Systems",
-        "subtopic": "Tributaries, Confluences and River Basins",
-        "taxonomyId": "indian-geography/drainage-systems/tributaries-confluences-and-river-basins"
+        "chapter": "Water Resources and River Projects",
+        "subtopic": "Irrigation Systems",
+        "taxonomyId": "indian-geography/water-resources-and-river-projects/irrigation-systems"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/kaleshwaram-project",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -9010,13 +9006,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Tributaries, Confluences and River Basins",
-        "taxonomyId": "indian-geography/drainage-systems/tributaries-confluences-and-river-basins"
+        "subtopic": "West-Flowing Peninsular Rivers",
+        "taxonomyId": "indian-geography/drainage-systems/west-flowing-peninsular-rivers"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/desert-rivers",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -9039,14 +9035,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Water Resources and River Projects",
-        "subtopic": "River Interlinking and Basin Management",
-        "taxonomyId": "indian-geography/water-resources-and-river-projects/river-interlinking-and-basin-management"
+        "chapter": "Transport, Infrastructure and Trade",
+        "subtopic": "Road Transport",
+        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/road-transport"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/interlinking",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/bharatmala",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -9127,14 +9123,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Drainage Systems",
-        "subtopic": "Tributaries, Confluences and River Basins",
-        "taxonomyId": "indian-geography/drainage-systems/tributaries-confluences-and-river-basins"
+        "chapter": "Geological Structure and Physiography",
+        "subtopic": "Notable Indian Landforms",
+        "taxonomyId": "indian-geography/geological-structure-and-physiography/notable-indian-landforms"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/waterfall-state-matching",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -9156,13 +9152,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Drainage Systems",
-        "subtopic": "Brahmaputra River System",
-        "taxonomyId": "indian-geography/drainage-systems/brahmaputra-river-system"
+        "subtopic": "Tributaries, Confluences and River Basins",
+        "taxonomyId": "indian-geography/drainage-systems/tributaries-confluences-and-river-basins"
       },
       "moveOutDestination": null,
-      "classificationRule": "drainage/brahmaputra",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/barak-tributary",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -9486,9 +9482,9 @@
         "taxonomyId": "indian-geography/water-resources-and-river-projects/irrigation-systems"
       },
       "moveOutDestination": null,
-      "classificationRule": "water/irrigation",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/pmksy",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -9568,11 +9564,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Water Resources and River Projects",
-        "subtopic": "Irrigation Systems",
-        "taxonomyId": "indian-geography/water-resources-and-river-projects/irrigation-systems"
+        "subtopic": "Water Disputes and Water Governance",
+        "taxonomyId": "indian-geography/water-resources-and-river-projects/water-disputes-and-water-governance"
       },
       "moveOutDestination": null,
-      "classificationRule": "water/irrigation",
+      "classificationRule": "water/governance",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -9719,8 +9715,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -9749,8 +9745,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -9777,8 +9773,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -9800,11 +9796,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Agriculture and Land Use",
-        "subtopic": "Food Crops",
-        "taxonomyId": "indian-geography/agriculture-and-land-use/food-crops"
+        "subtopic": "Land-Use and Cropping Patterns",
+        "taxonomyId": "indian-geography/agriculture-and-land-use/land-use-and-cropping-patterns"
       },
       "moveOutDestination": null,
-      "classificationRule": "agriculture/food-crops",
+      "classificationRule": "agriculture/default",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -9835,8 +9831,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10036,11 +10032,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Agriculture and Land Use",
-        "subtopic": "Food Crops",
-        "taxonomyId": "indian-geography/agriculture-and-land-use/food-crops"
+        "subtopic": "Commercial and Cash Crops",
+        "taxonomyId": "indian-geography/agriculture-and-land-use/commercial-and-cash-crops"
       },
       "moveOutDestination": null,
-      "classificationRule": "agriculture/food-crops",
+      "classificationRule": "agriculture/cash-crops",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -10064,11 +10060,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Agriculture and Land Use",
-        "subtopic": "Agricultural Seasons",
-        "taxonomyId": "indian-geography/agriculture-and-land-use/agricultural-seasons"
+        "subtopic": "Land-Use and Cropping Patterns",
+        "taxonomyId": "indian-geography/agriculture-and-land-use/land-use-and-cropping-patterns"
       },
       "moveOutDestination": null,
-      "classificationRule": "agriculture/seasons",
+      "classificationRule": "agriculture/default",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -10296,11 +10292,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Agriculture and Land Use",
-        "subtopic": "Plantation Crops and Horticulture",
-        "taxonomyId": "indian-geography/agriculture-and-land-use/plantation-crops-and-horticulture"
+        "subtopic": "Land-Use and Cropping Patterns",
+        "taxonomyId": "indian-geography/agriculture-and-land-use/land-use-and-cropping-patterns"
       },
       "moveOutDestination": null,
-      "classificationRule": "agriculture/plantation",
+      "classificationRule": "agriculture/default",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -10537,8 +10533,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10567,8 +10563,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10597,8 +10593,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10620,11 +10616,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Agriculture and Land Use",
-        "subtopic": "Commercial and Cash Crops",
-        "taxonomyId": "indian-geography/agriculture-and-land-use/commercial-and-cash-crops"
+        "subtopic": "Livestock, Dairy and Fisheries",
+        "taxonomyId": "indian-geography/agriculture-and-land-use/livestock-dairy-and-fisheries"
       },
       "moveOutDestination": null,
-      "classificationRule": "agriculture/cash-crops",
+      "classificationRule": "agriculture/allied",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -10683,8 +10679,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10713,8 +10709,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10771,8 +10767,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10801,8 +10797,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10831,8 +10827,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10861,8 +10857,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10891,8 +10887,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10921,8 +10917,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10943,14 +10939,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Agriculture and Land Use",
-        "subtopic": "Land-Use and Cropping Patterns",
-        "taxonomyId": "indian-geography/agriculture-and-land-use/land-use-and-cropping-patterns"
+        "chapter": "Geological Structure and Physiography",
+        "subtopic": "Notable Indian Landforms",
+        "taxonomyId": "indian-geography/geological-structure-and-physiography/notable-indian-landforms"
       },
       "moveOutDestination": null,
-      "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "agriculture/karewa-landform",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -10979,8 +10975,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -11007,8 +11003,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -11029,14 +11025,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Agriculture and Land Use",
-        "subtopic": "Land-Use and Cropping Patterns",
-        "taxonomyId": "indian-geography/agriculture-and-land-use/land-use-and-cropping-patterns"
+        "chapter": "Transport, Infrastructure and Trade",
+        "subtopic": "Strategic Infrastructure",
+        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/strategic-infrastructure"
       },
       "moveOutDestination": null,
-      "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "agriculture/road-technology",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -11063,8 +11059,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -11085,14 +11081,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Agriculture and Land Use",
-        "subtopic": "Land-Use and Cropping Patterns",
-        "taxonomyId": "indian-geography/agriculture-and-land-use/land-use-and-cropping-patterns"
+        "chapter": "Geological Structure and Physiography",
+        "subtopic": "Notable Indian Landforms",
+        "taxonomyId": "indian-geography/geological-structure-and-physiography/notable-indian-landforms"
       },
       "moveOutDestination": null,
-      "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "agriculture/karewa-landform",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -11149,8 +11145,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -11179,8 +11175,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -11209,8 +11205,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -11267,8 +11263,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -11297,8 +11293,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "agriculture/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -11444,9 +11440,9 @@
         "taxonomyId": "indian-geography/minerals-and-energy-resources/hydroelectric-and-thermal-power"
       },
       "moveOutDestination": null,
-      "classificationRule": "energy/conventional-power",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/power-project-matching",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -11562,13 +11558,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Minerals and Energy Resources",
-        "subtopic": "Mineral Distribution and Mineral Belts",
-        "taxonomyId": "indian-geography/minerals-and-energy-resources/mineral-distribution-and-mineral-belts"
+        "subtopic": "Iron Ore and Ferro-Alloy Minerals",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/iron-ore-and-ferro-alloy-minerals"
       },
       "moveOutDestination": null,
-      "classificationRule": "mineral/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/iron-ore-area",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -11652,11 +11648,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Minerals and Energy Resources",
-        "subtopic": "Nuclear Power",
-        "taxonomyId": "indian-geography/minerals-and-energy-resources/nuclear-power"
+        "subtopic": "Hydroelectric and Thermal Power",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/hydroelectric-and-thermal-power"
       },
       "moveOutDestination": null,
-      "classificationRule": "energy/nuclear",
+      "classificationRule": "energy/conventional-power",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -11682,13 +11678,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Minerals and Energy Resources",
-        "subtopic": "Mineral Distribution and Mineral Belts",
-        "taxonomyId": "indian-geography/minerals-and-energy-resources/mineral-distribution-and-mineral-belts"
+        "subtopic": "Hydroelectric and Thermal Power",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/hydroelectric-and-thermal-power"
       },
       "moveOutDestination": null,
-      "classificationRule": "mineral/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/ultra-mega-power-project",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -12152,11 +12148,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Minerals and Energy Resources",
-        "subtopic": "Iron Ore and Ferro-Alloy Minerals",
-        "taxonomyId": "indian-geography/minerals-and-energy-resources/iron-ore-and-ferro-alloy-minerals"
+        "subtopic": "Non-Ferrous Minerals",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/non-ferrous-minerals"
       },
       "moveOutDestination": null,
-      "classificationRule": "mineral/ferro",
+      "classificationRule": "mineral/non-ferrous",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -12216,9 +12212,9 @@
         "taxonomyId": "indian-geography/minerals-and-energy-resources/non-ferrous-minerals"
       },
       "moveOutDestination": null,
-      "classificationRule": "mineral/non-ferrous",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/titanium-minerals",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -12272,11 +12268,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Minerals and Energy Resources",
-        "subtopic": "Coal",
-        "taxonomyId": "indian-geography/minerals-and-energy-resources/coal"
+        "subtopic": "Renewable Energy",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/renewable-energy"
       },
       "moveOutDestination": null,
-      "classificationRule": "energy/coal",
+      "classificationRule": "energy/renewable",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -12480,13 +12476,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Minerals and Energy Resources",
-        "subtopic": "Mineral Distribution and Mineral Belts",
-        "taxonomyId": "indian-geography/minerals-and-energy-resources/mineral-distribution-and-mineral-belts"
+        "subtopic": "Mineral Governance and Critical Minerals",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/mineral-governance-and-critical-minerals"
       },
       "moveOutDestination": null,
-      "classificationRule": "mineral/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/critical-mineral-policy",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -12570,13 +12566,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Minerals and Energy Resources",
-        "subtopic": "Mineral Distribution and Mineral Belts",
-        "taxonomyId": "indian-geography/minerals-and-energy-resources/mineral-distribution-and-mineral-belts"
+        "subtopic": "Mineral Governance and Critical Minerals",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/mineral-governance-and-critical-minerals"
       },
       "moveOutDestination": null,
-      "classificationRule": "mineral/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/minor-mineral-governance",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -12658,13 +12654,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Minerals and Energy Resources",
-        "subtopic": "Mineral Distribution and Mineral Belts",
-        "taxonomyId": "indian-geography/minerals-and-energy-resources/mineral-distribution-and-mineral-belts"
+        "subtopic": "Hydroelectric and Thermal Power",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/hydroelectric-and-thermal-power"
       },
       "moveOutDestination": null,
-      "classificationRule": "mineral/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/electricity-generation",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -12688,13 +12684,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Minerals and Energy Resources",
-        "subtopic": "Mineral Distribution and Mineral Belts",
-        "taxonomyId": "indian-geography/minerals-and-energy-resources/mineral-distribution-and-mineral-belts"
+        "subtopic": "Mineral Governance and Critical Minerals",
+        "taxonomyId": "indian-geography/minerals-and-energy-resources/mineral-governance-and-critical-minerals"
       },
       "moveOutDestination": null,
-      "classificationRule": "mineral/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/rare-earth-critical-minerals",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -12718,13 +12714,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Industries and Industrial Regions",
-        "subtopic": "Factors Affecting Industrial Location",
-        "taxonomyId": "indian-geography/industries-and-industrial-regions/factors-affecting-industrial-location"
+        "subtopic": "Industrial Regions, Corridors and Special Economic Zones",
+        "taxonomyId": "indian-geography/industries-and-industrial-regions/industrial-regions-corridors-and-special-economic-zones"
       },
       "moveOutDestination": null,
-      "classificationRule": "industry/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/paper-industry-centres",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -12776,13 +12772,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Industries and Industrial Regions",
-        "subtopic": "Factors Affecting Industrial Location",
-        "taxonomyId": "indian-geography/industries-and-industrial-regions/factors-affecting-industrial-location"
+        "subtopic": "Industrial Regions, Corridors and Special Economic Zones",
+        "taxonomyId": "indian-geography/industries-and-industrial-regions/industrial-regions-corridors-and-special-economic-zones"
       },
       "moveOutDestination": null,
-      "classificationRule": "industry/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/industrial-clusters",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -12806,13 +12802,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Industries and Industrial Regions",
-        "subtopic": "Factors Affecting Industrial Location",
-        "taxonomyId": "indian-geography/industries-and-industrial-regions/factors-affecting-industrial-location"
+        "subtopic": "Industrial Regions, Corridors and Special Economic Zones",
+        "taxonomyId": "indian-geography/industries-and-industrial-regions/industrial-regions-corridors-and-special-economic-zones"
       },
       "moveOutDestination": null,
-      "classificationRule": "industry/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/manufacturing-centres",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -13314,9 +13310,9 @@
         "taxonomyId": "indian-geography/industries-and-industrial-regions/engineering-automobile-and-technology-industries"
       },
       "moveOutDestination": null,
-      "classificationRule": "industry/engineering-tech",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/semiconductor-plants",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -13345,8 +13341,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -13613,8 +13609,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -13643,8 +13639,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -13671,8 +13667,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -13699,8 +13695,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -13785,8 +13781,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -13810,11 +13806,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Transport, Infrastructure and Trade",
-        "subtopic": "Railways",
-        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/railways"
+        "subtopic": "Road Transport",
+        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/road-transport"
       },
       "moveOutDestination": null,
-      "classificationRule": "transport/rail",
+      "classificationRule": "transport/road",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -13845,8 +13841,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -13901,8 +13897,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -13959,8 +13955,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -13987,8 +13983,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14045,8 +14041,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14161,8 +14157,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14191,8 +14187,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14219,8 +14215,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14247,8 +14243,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14277,8 +14273,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14365,8 +14361,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14393,8 +14389,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14446,11 +14442,11 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Transport, Infrastructure and Trade",
-        "subtopic": "Railways",
-        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/railways"
+        "subtopic": "Road Transport",
+        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/road-transport"
       },
       "moveOutDestination": null,
-      "classificationRule": "transport/rail",
+      "classificationRule": "transport/road",
       "classificationConfidence": "high",
       "reviewStatus": "rule-proposed-needs-confirmation"
     },
@@ -14481,8 +14477,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "transport/road",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14511,8 +14507,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14535,14 +14531,14 @@
       "scopeDecision": "include",
       "proposedPath": {
         "head": "Indian Geography",
-        "chapter": "Transport, Infrastructure and Trade",
-        "subtopic": "Major Seaports",
-        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/major-seaports"
+        "chapter": "Coasts and Islands",
+        "subtopic": "Comparison of Western and Eastern Coasts",
+        "taxonomyId": "indian-geography/coasts-and-islands/comparison-of-western-and-eastern-coasts"
       },
       "moveOutDestination": null,
-      "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "infrastructure/coastal-plain",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14571,8 +14567,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14631,8 +14627,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14661,8 +14657,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14680,17 +14676,16 @@
         "chapter": "Transport, Ports, Trade & Infrastructure",
         "subtopic": "Ports, Sea/Air Routes, Trade & Infrastructure"
       },
-      "scopeDecision": "include",
-      "proposedPath": {
-        "head": "Indian Geography",
-        "chapter": "Transport, Infrastructure and Trade",
-        "subtopic": "Strategic Infrastructure",
-        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/strategic-infrastructure"
+      "scopeDecision": "move-out",
+      "proposedPath": null,
+      "moveOutDestination": {
+        "head": "World Geography",
+        "chapter": "Political, Regional and Economic Geography",
+        "subtopic": "International Strategic Ports"
       },
-      "moveOutDestination": null,
-      "classificationRule": "infrastructure/strategic",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/chabahar-port",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -14712,13 +14707,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Transport, Infrastructure and Trade",
-        "subtopic": "Major Seaports",
-        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/major-seaports"
+        "subtopic": "Strategic Infrastructure",
+        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/strategic-infrastructure"
       },
       "moveOutDestination": null,
-      "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "infrastructure/maritime-programme",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14740,13 +14735,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Transport, Infrastructure and Trade",
-        "subtopic": "Major Seaports",
-        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/major-seaports"
+        "subtopic": "Strategic Infrastructure",
+        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/strategic-infrastructure"
       },
       "moveOutDestination": null,
-      "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "infrastructure/maritime-programme",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14773,8 +14768,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14803,8 +14798,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14833,8 +14828,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14863,8 +14858,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -14949,8 +14944,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15007,8 +15002,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15037,8 +15032,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15067,8 +15062,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15097,8 +15092,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15125,8 +15120,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15155,8 +15150,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15178,13 +15173,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Transport, Infrastructure and Trade",
-        "subtopic": "Major Seaports",
-        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/major-seaports"
+        "subtopic": "Strategic Infrastructure",
+        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/strategic-infrastructure"
       },
       "moveOutDestination": null,
-      "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "infrastructure/maritime-programme",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15213,8 +15208,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15238,13 +15233,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Transport, Infrastructure and Trade",
-        "subtopic": "Major Seaports",
-        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/major-seaports"
+        "subtopic": "Strategic Infrastructure",
+        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/strategic-infrastructure"
       },
       "moveOutDestination": null,
-      "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "infrastructure/maritime-programme",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15273,8 +15268,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15363,8 +15358,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15391,8 +15386,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15421,8 +15416,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15449,8 +15444,8 @@
       },
       "moveOutDestination": null,
       "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -15474,13 +15469,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Transport, Infrastructure and Trade",
-        "subtopic": "Strategic Infrastructure",
-        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/strategic-infrastructure"
+        "subtopic": "Major Seaports",
+        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/major-seaports"
       },
       "moveOutDestination": null,
-      "classificationRule": "infrastructure/strategic",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/vizhinjam-seaport",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -15504,13 +15499,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Transport, Infrastructure and Trade",
-        "subtopic": "Major Seaports",
-        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/major-seaports"
+        "subtopic": "Strategic Infrastructure",
+        "taxonomyId": "indian-geography/transport-infrastructure-and-trade/strategic-infrastructure"
       },
       "moveOutDestination": null,
-      "classificationRule": "infrastructure/port",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "infrastructure/maritime-programme",
+      "classificationConfidence": "high",
+      "reviewStatus": "rule-proposed-needs-confirmation"
     },
     {
       "sourceIdentity": {
@@ -16206,13 +16201,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Population and Settlements",
-        "subtopic": "Population Distribution and Density",
-        "taxonomyId": "indian-geography/population-and-settlements/population-distribution-and-density"
+        "subtopic": "Population Growth and Demographic Composition",
+        "taxonomyId": "indian-geography/population-and-settlements/population-growth-and-demographic-composition"
       },
       "moveOutDestination": null,
-      "classificationRule": "population/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/sc-demography",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -16290,13 +16285,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Population and Settlements",
-        "subtopic": "Population Distribution and Density",
-        "taxonomyId": "indian-geography/population-and-settlements/population-distribution-and-density"
+        "subtopic": "Urban Settlements and Urbanisation",
+        "taxonomyId": "indian-geography/population-and-settlements/urban-settlements-and-urbanisation"
       },
       "moveOutDestination": null,
-      "classificationRule": "population/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/urban-population",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -16346,13 +16341,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Population and Settlements",
-        "subtopic": "Population Distribution and Density",
-        "taxonomyId": "indian-geography/population-and-settlements/population-distribution-and-density"
+        "subtopic": "Population Growth and Demographic Composition",
+        "taxonomyId": "indian-geography/population-and-settlements/population-growth-and-demographic-composition"
       },
       "moveOutDestination": null,
-      "classificationRule": "population/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/median-age",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -16552,13 +16547,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Population and Settlements",
-        "subtopic": "Population Distribution and Density",
-        "taxonomyId": "indian-geography/population-and-settlements/population-distribution-and-density"
+        "subtopic": "Population Growth and Demographic Composition",
+        "taxonomyId": "indian-geography/population-and-settlements/population-growth-and-demographic-composition"
       },
       "moveOutDestination": null,
-      "classificationRule": "population/default",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/employment-composition",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -17002,9 +16997,9 @@
         "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/state-resource-state-river-and-state-industry-matching"
       },
       "moveOutDestination": null,
-      "classificationRule": "regional/matching",
-      "classificationConfidence": "medium",
-      "reviewStatus": "needs-manual-review"
+      "classificationRule": "manual/place-region-matching",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -17264,13 +17259,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Regional and Map-Based Geography of India",
-        "subtopic": "Northeast India",
-        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/northeast-india"
+        "subtopic": "Important Cities and Places",
+        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/important-cities-and-places"
       },
       "moveOutDestination": null,
-      "classificationRule": "regional/northeast",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/dropped-place-location",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
@@ -17495,13 +17490,13 @@
       "proposedPath": {
         "head": "Indian Geography",
         "chapter": "Regional and Map-Based Geography of India",
-        "subtopic": "Himalayan States",
-        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/himalayan-states"
+        "subtopic": "Regional Development and Planning",
+        "taxonomyId": "indian-geography/regional-and-map-based-geography-of-india/regional-development-and-planning"
       },
       "moveOutDestination": null,
-      "classificationRule": "regional/himalayan",
-      "classificationConfidence": "high",
-      "reviewStatus": "rule-proposed-needs-confirmation"
+      "classificationRule": "manual/sdg-index-rank",
+      "classificationConfidence": "reviewed",
+      "reviewStatus": "manually-reviewed"
     },
     {
       "sourceIdentity": {
