@@ -12,7 +12,7 @@
 | Legacy coordinate/angle notation in `cds-2015-1-37`, `cds-2016-2-31`, and `cds-2016-2-46` | Resolved | Shared presentation formatter now converts the imported TeX subset to `°`, `′`, and `″` without modifying locked source text or hashes. Automated regression tests cover coordinates and angles. |
 | Flattened numbered statements containing dates, including NDA 2016 I Q91 | Resolved | Sequence parsing now ignores date punctuation such as `March 21.` and renders the genuine 1–4 statements separately. |
 | Ordinary questions splitting between PDF columns | Resolved | Printable question blocks now avoid column/page breaks when the complete block fits. |
-| `cds-2015-1-10` missing List II map | Open - critical | The retained record and parent dataset both omit the map. A secondary full-paper scan confirms that List II is a numbered map, so the question cannot be reconstructed faithfully as text alone. It must remain excluded or be restored with the original map asset. |
+| `cds-2015-1-10` missing List II map | Open - critical | The retained record and parent dataset both omit the map. A secondary full-paper scan confirms that List II is a numbered map, so the question cannot be reconstructed faithfully as text alone. Secondary answer sources also conflict between options A and B. It must remain excluded until the original map and authoritative key are recovered. |
 | First-party answer-key verification | Open | Internal consistency is complete, but official-key provenance remains incomplete as detailed below. |
 
 **Remediation build:** `9a4a0f3` (`Clarify test modes and fix printed MCQ formatting`)
@@ -62,7 +62,7 @@ The sampled PDF pages showed readable two-column flow without clipping or overla
 
 | Severity | Question | Status | Evidence / required action |
 |---|---|---|---|
-| Critical | `cds-2015-1-10` | Open | The prompt stops after the List-II heading. A recovered secondary scan shows that List II is a world map numbered 1–4, not four missing text labels. Restore the original map asset and mark `requiresFigure`, or exclude the question until that asset is available. Recheck option mapping and the answer against an authoritative key. |
+| Critical | `cds-2015-1-10` | Open | The prompt stops after the List-II heading. A recovered secondary scan shows that List II is a world map numbered 1–4, not four missing text labels. Secondary sources conflict on whether option A or B is correct. Restore the original map asset and mark `requiresFigure`, and verify the answer against an authoritative key; otherwise exclude the question. |
 | High | `cds-2015-1-37` | Resolved | Imported coordinate markup now displays with conventional degree and prime symbols. |
 | High | `cds-2016-2-31` | Resolved | Imported coordinates now display with degree, prime, and double-prime symbols. |
 | High | `cds-2016-2-46` | Resolved | Option A now displays `180°` correctly. |
