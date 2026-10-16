@@ -3,7 +3,20 @@
 **Audit date:** 16 October 2026  
 **Inventory audited:** 363 questions (CSE 50, CAPF 70, CDS 55, NDA 188)  
 **Scope:** reproduction and representation, verbatim integrity, and answer-key correctness  
-**Audit disposition:** **Conditional fail — four question records require correction, and most answers still lack first-party official-key provenance.**
+**Audit disposition:** **Conditional fail — three representation defects are resolved, one incomplete source question remains quarantinable, and most answers still lack first-party official-key provenance.**
+
+## Remediation status
+
+| Work item | Status | Evidence |
+|---|---|---|
+| Legacy coordinate/angle notation in `cds-2015-1-37`, `cds-2016-2-31`, and `cds-2016-2-46` | Resolved | Shared presentation formatter now converts the imported TeX subset to `°`, `′`, and `″` without modifying locked source text or hashes. Automated regression tests cover coordinates and angles. |
+| Flattened numbered statements containing dates, including NDA 2016 I Q91 | Resolved | Sequence parsing now ignores date punctuation such as `March 21.` and renders the genuine 1–4 statements separately. |
+| Ordinary questions splitting between PDF columns | Resolved | Printable question blocks now avoid column/page breaks when the complete block fits. |
+| `cds-2015-1-10` missing List II map | Open - critical | The retained record and parent dataset both omit the map. A secondary full-paper scan confirms that List II is a numbered map, so the question cannot be reconstructed faithfully as text alone. It must remain excluded or be restored with the original map asset. |
+| First-party answer-key verification | Open | Internal consistency is complete, but official-key provenance remains incomplete as detailed below. |
+
+**Remediation build:** `9a4a0f3` (`Clarify test modes and fix printed MCQ formatting`)  
+**Regression result:** 50 automated tests passed, including the new notation and date-containing statement cases.
 
 ## Executive finding
 
@@ -11,8 +24,8 @@ The current Physical Geography bank is structurally sound and the practice/PDF f
 
 The bank must nevertheless not be certified as fully accurate yet:
 
-- One match-the-lists question is incomplete in the retained source itself.
-- Three questions contain literal LaTeX notation that the current renderer prints as markup instead of conventional degree/minute/second symbols.
+- One match-the-lists question is incomplete in the retained source itself and depends on a missing map.
+- The three previously identified LaTeX display defects are fixed in the renderer and protected by tests.
 - All 363 answers agree across the website bank, its parent dataset, and the answer ledger, but this is a consistency result rather than independent proof of correctness. Only two records in this inventory are explicitly backed by an official provisional key in the current ledger.
 
 ## Coverage and method
@@ -45,14 +58,14 @@ For reproduction, the audit also passed all 363 questions through the same struc
 
 The sampled PDF pages showed readable two-column flow without clipping or overlap. Numbered statements begin on separate lines, and complete match-list questions render as tables. The final audit page naturally contains unused space because it is the last page; this is not a pagination failure.
 
-### Failed records
+### Defect disposition
 
 | Severity | Question | Defect | Required action |
 |---|---|---|---|
-| Critical | `cds-2015-1-10` | The prompt stops after the List-II heading and does not contain the right-hand list. The retained parent dataset is also truncated, so the renderer cannot reconstruct it. | Recover the complete question from the original CDS 2015 I paper, reproduce both lists, and then recheck all options and the answer. Do not publish this question in generated papers until repaired. |
-| High | `cds-2015-1-37` | Latitude/longitude notation is stored as literal LaTeX commands and is printed as markup. | Compare with the original paper and store/render the exact degree and prime symbols. |
-| High | `cds-2016-2-31` | Latitude/longitude notation is stored as literal LaTeX commands and is printed as markup. | Compare with the original paper and store/render the exact degree, prime, and double-prime symbols. |
-| High | `cds-2016-2-46` | Option A contains literal LaTeX for 180 degrees. | Compare with the original paper and reproduce `180°` correctly. |
+| Critical | `cds-2015-1-10` | Open | The prompt stops after the List-II heading. A recovered secondary scan shows that List II is a world map numbered 1–4, not four missing text labels. Restore the original map asset and mark `requiresFigure`, or exclude the question until that asset is available. Recheck option mapping and the answer against an authoritative key. |
+| High | `cds-2015-1-37` | Resolved | Imported coordinate markup now displays with conventional degree and prime symbols. |
+| High | `cds-2016-2-31` | Resolved | Imported coordinates now display with degree, prime, and double-prime symbols. |
+| High | `cds-2016-2-46` | Resolved | Option A now displays `180°` correctly. |
 
 ## 2. Verbatim integrity
 
@@ -103,11 +116,10 @@ Physical Geography should not yet receive a “fully audited” badge. The safe 
 
 Before certification:
 
-1. Remove or quarantine `cds-2015-1-10` from practice and PDF export until its missing List II is recovered.
-2. Correct and visually verify the three notation records against the original papers.
-3. Verify the 55 CDS answers first against official keys, followed by NDA (188), CAPF (70), and the 48 non-officially-supported CSE records.
-4. Record the exact official paper/key filename and page for every verification; reviewer name, date, and result must be stored in the ledger.
-5. Rerun the automated formatter audit and visually inspect every special-format question after corrections.
+1. Remove or quarantine `cds-2015-1-10` from practice and PDF export until its original map is recovered.
+2. Verify the 55 CDS answers first against official keys, followed by NDA (188), CAPF (70), and the 48 non-officially-supported CSE records.
+3. Record the exact official paper/key filename and page for every verification; reviewer name, date, and result must be stored in the ledger.
+4. Rerun the complete formatter audit and visually inspect every special-format question after source corrections.
 
 ## Audit rule going forward
 
