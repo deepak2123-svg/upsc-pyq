@@ -102,4 +102,7 @@ test("Indian Geography import draft joins every in-scope record and preserves al
   assert.ok(importDraft.records
     .filter((record) => record.gates.import === "ready-for-final-editorial-review")
     .every((record) => record.gates.answer === "answer-cleared"));
+  assert.ok(importDraft.records
+    .filter((record) => record.gates.reproduction === "original-paper-high-confidence-match")
+    .every((record) => record.provenance.originalPdf.ocr_confidence_band === "high" || record.provenance.originalPdf.ocr_confidence >= 0.9));
 });

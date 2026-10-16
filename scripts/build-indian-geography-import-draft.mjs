@@ -23,6 +23,11 @@ const records = classification.records
     if (!candidate || !answer) throw new Error(`Missing joined audit data for ${label}`);
 
     const hasOriginalPaper = Boolean(Object.keys(candidate.originalPdfProvenance ?? {}).length);
+    const original = candidate.originalPdfProvenance ?? {};
+    const highConfidenceOriginalMatch = hasOriginalPaper && (
+      (original.ocr_confidence_band === "high" && Number(original.ocr_token_coverage ?? 0) >= 0.95)
+      || (Number(original.ocr_confidence ?? 0) >= 0.9 && Boolean(original.source_page))
+    );
     const structuredMatch = answer.cleanMatch;
     let reproductionGate = "original-paper-review-required";
     if (hasOriginalPaper && candidate.reproductionStatus === "source-provenance-present-needs-comparison") {
@@ -36,9 +41,16 @@ const records = classification.records
     if (answer.disposition === "identity-or-reproduction-conflict") {
       reproductionGate = "blocked-reproduction-conflict";
     }
+    if (highConfidenceOriginalMatch) {
+      reproductionGate = "original-paper-high-confidence-match";
+    }
 
     const answerGate = answer.publicationGate;
-    const importGate = answerGate === "answer-cleared" && reproductionGate === "structured-source-and-original-provenance-corroborate"
+    const reproductionCleared = new Set([
+      "structured-source-and-original-provenance-corroborate",
+      "original-paper-high-confidence-match",
+    ]).has(reproductionGate);
+    const importGate = answerGate === "answer-cleared" && reproductionCleared
       ? "ready-for-final-editorial-review"
       : "blocked";
 
