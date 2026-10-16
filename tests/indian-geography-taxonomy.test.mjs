@@ -2,10 +2,11 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-const [registry, migration, candidates, bank] = await Promise.all([
+const [registry, migration, candidates, classification, bank] = await Promise.all([
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-migration-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-source-candidates.json", import.meta.url), "utf8").then(JSON.parse),
+  readFile(new URL("../content/taxonomy/indian-geography-v1.3-classification-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/question-bank.json", import.meta.url), "utf8").then(JSON.parse),
 ]);
 
@@ -20,6 +21,20 @@ test("Indian Geography draft has a complete ordered and unique registry", () => 
     labels.push(...chapter.subtopics.map((subtopic) => `${chapter.name}/${subtopic.name}`));
   }
   assert.equal(new Set(labels).size, labels.length);
+});
+
+test("every source candidate has one valid v1.3 classification proposal", () => {
+  const validIds = new Set(registry.chapters.flatMap((chapter) => chapter.subtopics.map((subtopic) => {
+    const slug = (value) => value.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    return `indian-geography/${slug(chapter.name)}/${slug(subtopic.name)}`;
+  })));
+  assert.equal(classification.status, "classification-draft-do-not-publish");
+  assert.equal(classification.recordCount, 609);
+  assert.equal(classification.records.length, 609);
+  assert.equal(Object.values(classification.countsByConfidence).reduce((sum, count) => sum + count, 0), 609);
+  assert.equal(Object.values(classification.countsByChapter).reduce((sum, count) => sum + count, 0), 609);
+  assert.ok(classification.records.every((record) => validIds.has(record.proposedPath.taxonomyId)));
+  assert.ok(classification.records.every((record) => record.reviewStatus !== "reviewed"));
 });
 
 test("Indian Geography migration draft covers every current question without claiming review", () => {
