@@ -2,9 +2,10 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-const [registry, migration, bank] = await Promise.all([
+const [registry, migration, candidates, bank] = await Promise.all([
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-migration-draft.json", import.meta.url), "utf8").then(JSON.parse),
+  readFile(new URL("../content/taxonomy/indian-geography-v1.3-source-candidates.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/question-bank.json", import.meta.url), "utf8").then(JSON.parse),
 ]);
 
@@ -32,4 +33,16 @@ test("Indian Geography migration draft covers every current question without cla
   assert.ok(migration.records.every((record) => record.verbatimStatus === "not-yet-verified"));
   assert.ok(migration.records.every((record) => record.answerKeyStatus === "not-yet-verified"));
   assert.ok(migration.records.every((record) => bank.questions.some((question) => question.id === record.questionId)));
+});
+
+test("Indian Geography source ledger exposes missing imports and verification debt", () => {
+  assert.equal(candidates.status, "audit-required-do-not-import");
+  assert.equal(candidates.candidateCount, 609);
+  assert.deepEqual(candidates.byExam, { CSE: 123, CAPF: 65, CDS: 235, NDA: 186 });
+  assert.deepEqual(candidates.byAction, { "reuse-existing": 414, "resolve-ambiguous-existing": 2, "add-new": 193 });
+  assert.equal(candidates.byAnswerVerification["project-key-without-per-record-citation"], 205);
+  assert.ok(candidates.candidates.every((candidate) => candidate.sourceText));
+  assert.ok(candidates.candidates.every((candidate) => Object.keys(candidate.options).length === 4));
+  assert.ok(candidates.candidates.every((candidate) => /^[A-D]$/.test(candidate.answer) || (candidate.answer === "X" && candidate.answerVerification.status === "official-dropped")));
+  assert.ok(candidates.candidates.every((candidate) => candidate.targetTaxonomyStatus === "needs-question-level-review"));
 });
