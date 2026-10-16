@@ -15,7 +15,7 @@
 | `cds-2015-1-10` missing List II map | Open - critical | The retained record and parent dataset both omit the map. A secondary full-paper scan confirms that List II is a numbered map, so the question cannot be reconstructed faithfully as text alone. It must remain excluded or be restored with the original map asset. |
 | First-party answer-key verification | Open | Internal consistency is complete, but official-key provenance remains incomplete as detailed below. |
 
-**Remediation build:** `9a4a0f3` (`Clarify test modes and fix printed MCQ formatting`)  
+**Remediation build:** `9a4a0f3` (`Clarify test modes and fix printed MCQ formatting`)
 **Regression result:** 50 automated tests passed, including the new notation and date-containing statement cases.
 
 ## Executive finding
@@ -60,7 +60,7 @@ The sampled PDF pages showed readable two-column flow without clipping or overla
 
 ### Defect disposition
 
-| Severity | Question | Defect | Required action |
+| Severity | Question | Status | Evidence / required action |
 |---|---|---|---|
 | Critical | `cds-2015-1-10` | Open | The prompt stops after the List-II heading. A recovered secondary scan shows that List II is a world map numbered 1–4, not four missing text labels. Restore the original map asset and mark `requiresFigure`, or exclude the question until that asset is available. Recheck option mapping and the answer against an authoritative key. |
 | High | `cds-2015-1-37` | Resolved | Imported coordinate markup now displays with conventional degree and prime symbols. |
