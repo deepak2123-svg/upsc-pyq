@@ -2,12 +2,13 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-const [registry, migration, candidates, classification, answerAudit, importDraft, bank] = await Promise.all([
+const [registry, migration, candidates, classification, answerAudit, originalPdfAudit, importDraft, bank] = await Promise.all([
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-migration-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-source-candidates.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-classification-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-answer-audit.json", import.meta.url), "utf8").then(JSON.parse),
+  readFile(new URL("../content/taxonomy/indian-geography-v1.3-original-pdf-audit.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-import-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/question-bank.json", import.meta.url), "utf8").then(JSON.parse),
 ]);
@@ -104,5 +105,18 @@ test("Indian Geography import draft joins every in-scope record and preserves al
     .every((record) => record.gates.answer === "answer-cleared"));
   assert.ok(importDraft.records
     .filter((record) => record.gates.reproduction === "original-paper-high-confidence-match")
-    .every((record) => record.provenance.originalPdf.ocr_confidence_band === "high" || record.provenance.originalPdf.ocr_confidence >= 0.9));
+    .every((record) => record.provenance.originalPageAudit.status === "high-confidence-original-page-match"
+      || record.provenance.originalPdf.ocr_confidence_band === "high"
+      || record.provenance.originalPdf.ocr_confidence >= 0.9));
+});
+
+test("Indian Geography original-PDF audit covers all in-scope candidates", () => {
+  assert.equal(originalPdfAudit.status, "machine-audit-with-manual-review-queue");
+  assert.equal(originalPdfAudit.recordCount, 600);
+  assert.equal(originalPdfAudit.records.length, 600);
+  assert.equal(new Set(originalPdfAudit.records.map((record) => record.sourceIdentity.label)).size, 600);
+  assert.equal(Object.values(originalPdfAudit.summary.byStatus).reduce((sum, count) => sum + count, 0), 600);
+  assert.ok(originalPdfAudit.records
+    .filter((record) => record.status === "high-confidence-original-page-match")
+    .every((record) => record.bestPage.questionCoverage >= 0.88 && record.bestPage.optionStrongCount >= 3 && record.bestPage.optionMean >= 0.78));
 });

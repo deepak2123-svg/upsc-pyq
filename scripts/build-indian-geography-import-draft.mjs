@@ -7,12 +7,14 @@ const read = (name) => JSON.parse(fs.readFileSync(path.join(root, "content/taxon
 const candidates = read("indian-geography-v1.3-source-candidates.json");
 const classification = read("indian-geography-v1.3-classification-draft.json");
 const answerAudit = read("indian-geography-v1.3-answer-audit.json");
+const originalPdfAudit = read("indian-geography-v1.3-original-pdf-audit.json");
 
 const byLabel = (records, selector = (record) => record.sourceIdentity.label) =>
   new Map(records.map((record) => [selector(record), record]));
 
 const candidateByLabel = byLabel(candidates.candidates);
 const answerByLabel = byLabel(answerAudit.records);
+const originalPdfByLabel = byLabel(originalPdfAudit.records);
 
 const records = classification.records
   .filter((record) => record.scopeDecision === "include")
@@ -20,7 +22,8 @@ const records = classification.records
     const label = classified.sourceIdentity.label;
     const candidate = candidateByLabel.get(label);
     const answer = answerByLabel.get(label);
-    if (!candidate || !answer) throw new Error(`Missing joined audit data for ${label}`);
+    const originalPdfMatch = originalPdfByLabel.get(label);
+    if (!candidate || !answer || !originalPdfMatch) throw new Error(`Missing joined audit data for ${label}`);
 
     const hasOriginalPaper = Boolean(Object.keys(candidate.originalPdfProvenance ?? {}).length);
     const original = candidate.originalPdfProvenance ?? {};
@@ -43,6 +46,11 @@ const records = classification.records
     }
     if (highConfidenceOriginalMatch) {
       reproductionGate = "original-paper-high-confidence-match";
+    }
+    if (originalPdfMatch.status === "high-confidence-original-page-match") {
+      reproductionGate = "original-paper-high-confidence-match";
+    } else if (originalPdfMatch.status === "manual-original-page-review" && reproductionGate === "original-paper-review-required") {
+      reproductionGate = "manual-original-page-review";
     }
 
     const answerGate = answer.publicationGate;
@@ -72,6 +80,7 @@ const records = classification.records
       provenance: {
         sourceRefs: candidate.sourceRefs,
         originalPdf: candidate.originalPdfProvenance,
+        originalPageAudit: originalPdfMatch,
       },
       gates: {
         answer: answerGate,
