@@ -1,4 +1,4 @@
-const CACHE = "upsc-pyq-practise-shell-v3";
+const CACHE = "upsc-pyq-practise-shell-v4";
 const SHELL = ["/", "/app", "/manifest.webmanifest", "/favicon.svg"];
 
 self.addEventListener("install", (event) => {
