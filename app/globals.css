@@ -1171,6 +1171,14 @@ h3 { font-size: 16px; }
 .practice-setup-dialog .segmented button { flex: 1 1 68px; min-height: 44px; border: 0; border-radius: 7px; background: transparent; color: var(--muted); font: inherit; font-weight: 700; }
 .practice-setup-dialog .segmented button.active { color: white; background: var(--ink); }
 .practice-setup-dialog .scope-order { margin-top: 20px; }
+.setup-exam-options { margin-top: 20px !important; }
+.setup-exam-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.setup-exam-grid button { display: grid; grid-template-columns: 20px 1fr; align-items: center; gap: 2px 7px; min-height: 58px; padding: 9px; border: 1px solid color-mix(in srgb, var(--exam-color) 45%, var(--line)); border-left: 4px solid var(--exam-color); border-radius: 8px; color: var(--ink); background: color-mix(in srgb, var(--exam-color) 6%, white); text-align: left; }
+.setup-exam-grid button.none { border-color: var(--line); border-left-color: #aeb6c2; background: var(--surface); }
+.setup-exam-grid button:disabled { opacity: .45; }
+.setup-exam-grid .scope-check { grid-row: 1 / span 2; }
+.setup-exam-grid strong { font-size: 13px; }
+.setup-exam-grid small { color: var(--muted); font-size: 10px; }
 .practice-setup-dialog input { width: 100%; min-height: 44px; box-sizing: border-box; padding: 9px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--surface); font-size: 13px; }
 .practice-setup-dialog .scope-dialog-actions { margin-top: 26px; }
 .practice-setup-dialog .confirm-practice { min-width: 210px; }
@@ -1181,6 +1189,16 @@ h3 { font-size: 16px; }
 .pdf-answer-key small { color: var(--muted); font-size: 11px; font-weight: 450; line-height: 1.45; }
 .practice-setup-actions { flex-wrap: wrap; }
 .practice-setup-actions .export-pdf { color: var(--accent); border-color: #b8c8ef; }
+.pdf-export-panel { display: grid; grid-template-columns: 1fr auto; gap: 12px 16px; align-items: center; margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); }
+.pdf-export-panel h3 { margin: 0 0 3px; font-size: 15px; }
+.pdf-export-panel p { margin: 0; color: var(--muted); font-size: 11px; }
+.pdf-export-panel .pdf-answer-key { grid-column: 1 / -1; margin: 0 !important; }
+.pdf-export-panel .export-pdf { grid-column: 2; grid-row: 1; min-height: 42px; }
+@media (max-width: 640px) {
+  .setup-exam-grid { grid-template-columns: repeat(2, 1fr); }
+  .pdf-export-panel { grid-template-columns: 1fr; }
+  .pdf-export-panel .export-pdf { grid-column: 1; grid-row: auto; width: 100%; }
+}
 .scope-setup-note { margin: 18px 0 0; padding: 14px; border-radius: 8px; background: #f5f7fb; color: var(--muted); font-size: 12px; line-height: 1.55; }
 .scope-add-preview { display: grid; gap: 7px; padding: 16px; margin: 22px 0; background: var(--accent-soft); border-radius: 9px; font-size: 14px; }
 .scope-add-preview span { color: var(--accent); font-weight: 700; }

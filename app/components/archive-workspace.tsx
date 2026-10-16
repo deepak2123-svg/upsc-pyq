@@ -54,9 +54,10 @@ function AddScopeDialog({ index, paths, initialId, preferredExam, onAdd, onCance
   </dialog>;
 }
 
-function PracticeSetupDialog({ matchingCount, count, order, durationChoice, customMinutes, includeAnswerKey, shortage, validDuration, loading, exporting, canStart, error, onCount, onOrder, onDuration, onCustomMinutes, onIncludeAnswerKey, onUseAll, onStart, onExport, onCancel }: {
+function PracticeSetupDialog({ matchingCount, examMetrics, count, order, durationChoice, customMinutes, includeAnswerKey, shortage, validDuration, loading, exporting, canStart, error, onExam, onCount, onOrder, onDuration, onCustomMinutes, onIncludeAnswerKey, onUseAll, onStart, onExport, onCancel }: {
   matchingCount: number; count: number | "all" | null; order: PracticeOrder; durationChoice: string; customMinutes: string; includeAnswerKey: boolean; shortage: boolean; validDuration: boolean; loading: boolean; exporting: boolean; canStart: boolean; error: string;
-  onCount: (value: number | "all") => void; onOrder: (value: PracticeOrder) => void; onDuration: (value: string) => void; onCustomMinutes: (value: string) => void; onIncludeAnswerKey: (value: boolean) => void; onUseAll: () => void; onStart: () => void; onExport: () => void; onCancel: () => void;
+  examMetrics: Record<PyqExam, { available: number; count: number; state: "none" | "partial" | "all" }>;
+  onExam: (exam: PyqExam) => void; onCount: (value: number | "all") => void; onOrder: (value: PracticeOrder) => void; onDuration: (value: string) => void; onCustomMinutes: (value: string) => void; onIncludeAnswerKey: (value: boolean) => void; onUseAll: () => void; onStart: () => void; onExport: () => void; onCancel: () => void;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const practiceCount = count === "all" ? matchingCount : count;
@@ -72,6 +73,10 @@ function PracticeSetupDialog({ matchingCount, count, order, durationChoice, cust
       <span className="selector-label">Final step</span>
       <h2 id="practice-setup-title">Set up your test</h2>
       <p><strong>{format(matchingCount)} questions</strong> match your selected chapters and exam sources.</p>
+      <fieldset className="setup-exam-options" disabled={busy}>
+        <legend>Exams to include</legend>
+        <div className="setup-exam-grid">{PYQ_EXAMS.map((exam) => { const metric = examMetrics[exam]; return <button type="button" role="checkbox" aria-checked={metric.state === "partial" ? "mixed" : metric.state === "all"} disabled={busy || metric.available === 0} className={metric.state} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} key={exam} onClick={() => onExam(exam)}><span className="scope-check" aria-hidden="true">{metric.state === "all" ? "✓" : metric.state === "partial" ? "−" : ""}</span><strong>{exam}</strong><small>{metric.state === "none" ? `${format(metric.available)} available` : `${format(metric.count)} included`}</small></button>; })}</div>
+      </fieldset>
       <fieldset className="scope-size-options" disabled={busy}>
         <legend>Number of MCQs</legend>
         <div className="segmented">{COUNTS.map((value) => <button type="button" key={value} className={count === value ? "active" : ""} aria-pressed={count === value} onClick={() => onCount(value)}>{value}</button>)}<button type="button" className={count === "all" ? "active" : ""} aria-pressed={count === "all"} onClick={() => onCount("all")}>All</button></div>
@@ -85,9 +90,9 @@ function PracticeSetupDialog({ matchingCount, count, order, durationChoice, cust
       {durationChoice === "custom" ? <label className="scope-order">Custom minutes<input type="number" inputMode="numeric" min={1} max={720} step={1} disabled={busy} value={customMinutes} onChange={(event) => onCustomMinutes(event.target.value)} /></label> : null}
       {!validDuration ? <p className="inline-error" role="alert">Enter 1–720 whole minutes.</p> : null}
       <label className="scope-order">Question order<select disabled={busy} value={order} onChange={(event) => onOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label>
-      <label className="pdf-answer-key"><input type="checkbox" checked={includeAnswerKey} disabled={busy} onChange={(event) => onIncludeAnswerKey(event.target.checked)} /><span><strong>Include answer key</strong><small>Add the official answers on a separate final page of the PDF.</small></span></label>
       {error ? <p className="inline-error" role="alert">{error}</p> : null}
-      <div className="scope-dialog-actions practice-setup-actions"><button type="button" className="scope-secondary" disabled={busy} onClick={onCancel}>Continue choosing</button><button type="button" className="scope-secondary export-pdf" disabled={!canStart} onClick={onExport}>{exporting ? "Preparing PDF…" : "Export paper as PDF"}</button><button type="submit" className="scope-primary confirm-practice" disabled={!canStart}>{loading ? "Preparing test…" : count === null ? "Choose number of MCQs" : `Start ${format(practiceCount!)}-question test`}</button></div>
+      <div className="scope-dialog-actions practice-setup-actions"><button type="button" className="scope-secondary" disabled={busy} onClick={onCancel}>Continue choosing</button><button type="submit" className="scope-primary confirm-practice" disabled={!canStart}>{loading ? "Preparing test…" : count === null ? "Choose number of MCQs" : `Start ${format(practiceCount!)}-question test`}</button></div>
+      <section className="pdf-export-panel" aria-labelledby="pdf-export-title"><div><h3 id="pdf-export-title">Export as PDF</h3><p>Create the same selected paper for offline students.</p></div><label className="pdf-answer-key"><input type="checkbox" checked={includeAnswerKey} disabled={busy} onChange={(event) => onIncludeAnswerKey(event.target.checked)} /><span><strong>Add answer key</strong><small>Official answers appear on a separate final page.</small></span></label><button type="button" className="scope-secondary export-pdf" disabled={!canStart} onClick={onExport}>{exporting ? "Preparing PDF…" : "Export paper as PDF"}</button></section>
     </form>
   </dialog>;
 }
@@ -156,6 +161,12 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     const enabled = eligible.filter((leaf) => paths[leaf.id]?.includes(exam));
     return [exam, { available: eligible.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), count: enabled.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), state: (enabled.length === 0 ? "none" : enabled.length === eligible.length ? "all" : "partial") as "none" | "partial" | "all" }];
   })) as Record<PyqExam, { available: number; count: number; state: "none" | "partial" | "all" }>;
+  const allSourceLeaves = [...index.nodesById.values()].filter((node) => node.kind === "subtopic" && Object.hasOwn(paths, node.id));
+  const setupSourceMetrics = Object.fromEntries(PYQ_EXAMS.map((exam) => {
+    const eligible = allSourceLeaves.filter((leaf) => leaf.examCounts[exam] > 0);
+    const enabled = eligible.filter((leaf) => paths[leaf.id]?.includes(exam));
+    return [exam, { available: eligible.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), count: enabled.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), state: (enabled.length === 0 ? "none" : enabled.length === eligible.length ? "all" : "partial") as "none" | "partial" | "all" }];
+  })) as Record<PyqExam, { available: number; count: number; state: "none" | "partial" | "all" }>;
   const sourceTargets = [...new Set([...selectedIds, ...(activeSourceId !== "all" ? [activeSourceId] : []), ...(current && metrics?.state !== "none" ? [current.id] : [])])];
   const durationMinutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
   const validDuration = durationMinutes === null || Number.isInteger(durationMinutes) && durationMinutes >= 1 && durationMinutes <= 720;
@@ -166,6 +177,12 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     if (loading || !restored) return;
     const enabled = sourceMetrics[exam].state !== "all";
     setPaths((existing) => (activeSourceId === "all" ? totals.subjectIds : [activeSourceId]).reduce((updated, id) => setScopeExam(updated, id, exam, enabled, index), existing));
+    setError(""); setNotice("");
+  }
+  function toggleSetupSource(exam: PyqExam) {
+    if (loading || exporting || !restored) return;
+    const enabled = setupSourceMetrics[exam].state !== "all";
+    setPaths((existing) => totals.subjectIds.reduce((updated, id) => setScopeExam(updated, id, exam, enabled, index), existing));
     setError(""); setNotice("");
   }
   function attemptScope(id: string) {
@@ -275,6 +292,6 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     </div>
     <div className="scope-mobile-bar"><div><strong>{format(totals.matchingCount)} matching</strong><span>Choose MCQs and time next</span></div><button type="button" disabled={!restored || totals.matchingCount === 0 || loading} onClick={() => setSetupOpen(true)}>Set up test →</button></div>
     {addOpen ? <AddScopeDialog index={index} paths={paths} initialId={current?.subjectId} preferredExam={initialExam} onCancel={() => setAddOpen(false)} onAdd={(id) => { setPaths((existing) => addScope(existing, id, index, initialExam)); setFocusId(id); setSourceScopeId("all"); setError(""); setNotice(""); setAddOpen(false); }} /> : null}
-    {setupOpen ? <PracticeSetupDialog matchingCount={totals.matchingCount} count={count} order={order} durationChoice={durationChoice} customMinutes={customMinutes} includeAnswerKey={includeAnswerKey} shortage={shortage} validDuration={validDuration} loading={loading} exporting={exporting} canStart={canStart} error={error} onCount={(value) => { setCount(value); setError(""); }} onOrder={setOrder} onDuration={(value) => { setDurationChoice(value); setError(""); }} onCustomMinutes={setCustomMinutes} onIncludeAnswerKey={setIncludeAnswerKey} onUseAll={() => setCount("all")} onStart={() => void startPractice()} onExport={() => void exportPaper()} onCancel={() => { setSetupOpen(false); setError(""); }} /> : null}
+    {setupOpen ? <PracticeSetupDialog matchingCount={totals.matchingCount} examMetrics={setupSourceMetrics} count={count} order={order} durationChoice={durationChoice} customMinutes={customMinutes} includeAnswerKey={includeAnswerKey} shortage={shortage} validDuration={validDuration} loading={loading} exporting={exporting} canStart={canStart} error={error} onExam={toggleSetupSource} onCount={(value) => { setCount(value); setError(""); }} onOrder={setOrder} onDuration={(value) => { setDurationChoice(value); setError(""); }} onCustomMinutes={setCustomMinutes} onIncludeAnswerKey={setIncludeAnswerKey} onUseAll={() => setCount("all")} onStart={() => void startPractice()} onExport={() => void exportPaper()} onCancel={() => { setSetupOpen(false); setError(""); }} /> : null}
   </main>;
 }
