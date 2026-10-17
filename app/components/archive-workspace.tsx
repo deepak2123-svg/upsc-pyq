@@ -95,7 +95,7 @@ function PracticeSetupDialog({ matchingCount, examMetrics, count, order, duratio
       <p><strong>{format(matchingCount)} questions</strong> match your selected chapters.</p>
       {!mode ? <div className="attempt-route-grid">
         <button type="button" className="attempt-route online" onClick={() => setMode("online")}><span className="route-badge">Recommended</span><strong>Take an online test</strong><small>Answer on screen, move between questions, and receive a result sheet after submission.</small><b>Set up online test →</b></button>
-        <button type="button" className="attempt-route offline" onClick={() => setMode("pdf")}><span className="route-badge">Optional</span><strong>Print a question paper</strong><small>Download a two-column PDF to attempt away from the screen. No online result is created.</small><b>Set up printable PDF →</b></button>
+        <button type="button" className="attempt-route offline" onClick={() => setMode("pdf")}><span className="route-badge">Optional</span><strong>Download a PDF with an answer key</strong><b>Set up PDF →</b></button>
       </div> : <section className={`attempt-setup-panel ${mode}`} aria-labelledby="chosen-attempt-title">
         <div className="chosen-attempt-heading"><button type="button" className="scope-secondary" disabled={busy} onClick={() => setMode(null)}>← Change method</button><div><span>{mode === "online" ? "Online test" : "Printable PDF"}</span><h3 id="chosen-attempt-title">{mode === "online" ? "Set up your online test" : "Set up your printable paper"}</h3></div></div>
         <SetupControls />
