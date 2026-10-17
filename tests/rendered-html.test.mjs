@@ -13,18 +13,20 @@ async function workerFetch(pathname = "/", init = {}) {
   );
 }
 
-test("server-renders the subject-first official PYQ workspace", async () => {
+test("server-renders the browse-first official PYQ workspace", async () => {
   const response = await workerFetch();
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /Official previous-year questions/);
+  assert.match(html, /UPSC question library/i);
   assert.match(html, /UPSC\.PYQ\.Practise/);
   assert.doesNotMatch(html, /UPSCPuraan/);
-  assert.match(html, /Choose subjects/);
+  assert.match(html, /Choose a subject/);
   assert.match(html, /Geography/);
   assert.match(html, /Environment/);
   assert.match(html, /Polity/);
-  assert.match(html, /Refine your scope/);
+  assert.match(html, /Selected syllabus/);
+  assert.match(html, /Nothing selected yet/);
+  assert.match(html, /Your test/);
   assert.doesNotMatch(html, /Choose an examination|Year range|Difficulty/);
   assert.match(html, /PYQs/);
   assert.match(html, /Attempts/);
@@ -33,15 +35,15 @@ test("server-renders the subject-first official PYQ workspace", async () => {
   assert.doesNotMatch(html, /UPSC test lab|Guest mode|Sign in with Google/);
 });
 
-test("server-renders an exam archive through the subject-first selector", async () => {
+test("server-renders an exam archive through the browse-first selector", async () => {
   const response = await workerFetch("/exams/CSE");
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /Choose subjects/);
+  assert.match(html, /Choose a subject/);
   assert.match(html, /CSE(?:<!-- -->)? only/);
-  assert.match(html, /Refine your scope/);
+  assert.match(html, /Selected syllabus/);
   assert.match(html, /Set up test/);
-  assert.match(html, /choose the number of MCQs and test time/i);
+  assert.match(html, /Question count, time, and online or printable mode/i);
   assert.doesNotMatch(html, /Start 20-question (?:practice|test)/);
   assert.doesNotMatch(html, /difficulty|generated MCQ|source verbatim/i);
 });
