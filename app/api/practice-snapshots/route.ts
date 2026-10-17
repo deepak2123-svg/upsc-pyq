@@ -178,6 +178,10 @@ export async function POST(request: Request) {
       promptLines: question.promptLines,
       options: question.options,
       sourceTextHash: question.sourceTextHash,
+      figure: question.requiresFigure && question.figureKey ? {
+        src: question.figureKey,
+        alt: question.figureAlt || "Original figure supplied with this question",
+      } : undefined,
     };
   });
   const snapshot: PracticeSnapshot = { id, contentVersion: "pyq-2026-10-physical-v1.2", createdAt: new Date().toISOString(), recipe, matchingCount, questions };

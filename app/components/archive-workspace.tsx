@@ -60,6 +60,7 @@ function PracticeSetupDialog({ matchingCount, examMetrics, count, order, duratio
   onExam: (exam: PyqExam) => void; onCount: (value: number | "all") => void; onOrder: (value: PracticeOrder) => void; onDuration: (value: string) => void; onCustomMinutes: (value: string) => void; onIncludeAnswerKey: (value: boolean) => void; onUseAll: () => void; onStart: () => void; onExport: () => void; onCancel: () => void;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
+  const [mode, setMode] = useState<"online" | "pdf" | null>(null);
   const practiceCount = count === "all" ? matchingCount : count;
   useEffect(() => {
     const previous = document.activeElement as HTMLElement | null;
@@ -68,34 +69,40 @@ function PracticeSetupDialog({ matchingCount, examMetrics, count, order, duratio
     return () => { current?.close(); previous?.focus(); };
   }, []);
   const busy = loading || exporting;
-  return <dialog ref={dialog} className="scope-add-dialog practice-setup-dialog" aria-labelledby="practice-setup-title" onCancel={(event) => { event.preventDefault(); if (!busy) onCancel(); }}>
-    <form onSubmit={(event) => { event.preventDefault(); onStart(); }}>
-      <span className="selector-label">Final step</span>
-      <h2 id="practice-setup-title">Choose how you want to attempt</h2>
-      <p><strong>{format(matchingCount)} questions</strong> match your selected chapters and exam sources.</p>
-      <section className="online-attempt-panel" aria-labelledby="online-attempt-title">
-      <div className="attempt-mode-heading"><span>Primary</span><div><h3 id="online-attempt-title">Attempt online</h3><p>Answer on this website, use the question palette, and receive your result sheet after submission.</p></div></div>
-      <fieldset className="setup-exam-options" disabled={busy}>
+  const SetupControls = () => <>
+    <fieldset className="setup-exam-options" disabled={busy}>
         <legend>Exams to include</legend>
         <div className="setup-exam-grid">{PYQ_EXAMS.map((exam) => { const metric = examMetrics[exam]; return <button type="button" role="checkbox" aria-checked={metric.state === "partial" ? "mixed" : metric.state === "all"} disabled={busy || metric.available === 0} className={metric.state} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} key={exam} onClick={() => onExam(exam)}><span className="scope-check" aria-hidden="true">{metric.state === "all" ? "✓" : metric.state === "partial" ? "−" : ""}</span><strong>{exam}</strong><small>{metric.state === "none" ? `${format(metric.available)} available` : `${format(metric.count)} included`}</small></button>; })}</div>
       </fieldset>
       <fieldset className="scope-size-options" disabled={busy}>
-        <legend>Number of MCQs</legend>
-        <div className="segmented">{COUNTS.map((value) => <button type="button" key={value} className={count === value ? "active" : ""} aria-pressed={count === value} onClick={() => onCount(value)}>{value}</button>)}<button type="button" className={count === "all" ? "active" : ""} aria-pressed={count === "all"} onClick={() => onCount("all")}>All</button></div>
+        <legend>How many questions?</legend>
+        <div className="segmented">{COUNTS.map((value) => <button type="button" key={value} className={count === value ? "active" : ""} aria-pressed={count === value} onClick={() => onCount(value)}>{value}</button>)}<button type="button" className={count === "all" ? "active" : ""} aria-pressed={count === "all"} onClick={() => onCount("all")}>All {format(matchingCount)}</button></div>
       </fieldset>
       {count === null ? <p className="scope-size-prompt">Choose how many questions you want to attempt.</p> : null}
       {shortage ? <div className="scope-shortage" role="alert"><p>You chose {practiceCount}, but only {format(matchingCount)} questions match.</p><button type="button" disabled={loading} onClick={onUseAll}>Use all {format(matchingCount)} available</button></div> : null}
       <fieldset className="scope-time-options" disabled={busy}>
-        <legend>Time</legend>
-        <div className="segmented"><button type="button" className={durationChoice === "untimed" ? "active" : ""} aria-pressed={durationChoice === "untimed"} onClick={() => onDuration("untimed")}>Untimed</button>{DURATIONS.map((minutes) => <button type="button" key={minutes} className={durationChoice === String(minutes) ? "active" : ""} aria-pressed={durationChoice === String(minutes)} onClick={() => onDuration(String(minutes))}>{minutes} min</button>)}<button type="button" className={durationChoice === "custom" ? "active" : ""} aria-pressed={durationChoice === "custom"} onClick={() => onDuration("custom")}>Custom</button></div>
+        <legend>{mode === "pdf" ? "Time printed on the paper" : "Time limit"}</legend>
+        <div className="segmented"><button type="button" className={durationChoice === "untimed" ? "active" : ""} aria-pressed={durationChoice === "untimed"} onClick={() => onDuration("untimed")}>No time limit</button>{DURATIONS.map((minutes) => <button type="button" key={minutes} className={durationChoice === String(minutes) ? "active" : ""} aria-pressed={durationChoice === String(minutes)} onClick={() => onDuration(String(minutes))}>{minutes} min</button>)}<button type="button" className={durationChoice === "custom" ? "active" : ""} aria-pressed={durationChoice === "custom"} onClick={() => onDuration("custom")}>Custom</button></div>
       </fieldset>
       {durationChoice === "custom" ? <label className="scope-order">Custom minutes<input type="number" inputMode="numeric" min={1} max={720} step={1} disabled={busy} value={customMinutes} onChange={(event) => onCustomMinutes(event.target.value)} /></label> : null}
       {!validDuration ? <p className="inline-error" role="alert">Enter 1–720 whole minutes.</p> : null}
-      <label className="scope-order">Question order<select disabled={busy} value={order} onChange={(event) => onOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle</option></select></label>
-      {error ? <p className="inline-error" role="alert">{error}</p> : null}
-      <div className="scope-dialog-actions practice-setup-actions"><button type="button" className="scope-secondary" disabled={busy} onClick={onCancel}>Continue choosing</button><button type="submit" className="scope-primary confirm-practice" disabled={!canStart}>{loading ? "Preparing test…" : count === null ? "Choose number of MCQs" : `Start ${format(practiceCount!)}-question test`}</button></div>
-      </section>
-      <section className="pdf-export-panel" aria-labelledby="pdf-export-title"><div className="attempt-mode-heading"><span>Optional</span><div><h3 id="pdf-export-title">Attempt offline</h3><p>Download a printable version of this same paper. No online attempt or result sheet will be created.</p></div></div><button type="button" className="scope-secondary export-pdf" disabled={!canStart} onClick={onExport}>{exporting ? "Preparing PDF…" : "Download printable PDF"}</button><label className="pdf-answer-key"><input type="checkbox" checked={includeAnswerKey} disabled={busy} onChange={(event) => onIncludeAnswerKey(event.target.checked)} /><span><strong>Include answer key</strong><small>Add answers on a separate final page of the PDF.</small></span></label></section>
+      <label className="scope-order">Question order<select disabled={busy} value={order} onChange={(event) => onOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle questions</option></select></label>
+  </>;
+  return <dialog ref={dialog} className="scope-add-dialog practice-setup-dialog" aria-labelledby="practice-setup-title" onCancel={(event) => { event.preventDefault(); if (!busy) onCancel(); }}>
+    <form onSubmit={(event) => { event.preventDefault(); if (mode === "online") onStart(); }}>
+      <span className="selector-label">Final step</span>
+      <h2 id="practice-setup-title">How would you like to attempt these questions?</h2>
+      <p><strong>{format(matchingCount)} questions</strong> match your selected chapters.</p>
+      {!mode ? <div className="attempt-route-grid">
+        <button type="button" className="attempt-route online" onClick={() => setMode("online")}><span className="route-badge">Recommended</span><strong>Take an online test</strong><small>Answer on screen, move between questions, and receive a result sheet after submission.</small><b>Set up online test →</b></button>
+        <button type="button" className="attempt-route offline" onClick={() => setMode("pdf")}><span className="route-badge">Optional</span><strong>Print a question paper</strong><small>Download a two-column PDF to attempt away from the screen. No online result is created.</small><b>Set up printable PDF →</b></button>
+      </div> : <section className={`attempt-setup-panel ${mode}`} aria-labelledby="chosen-attempt-title">
+        <div className="chosen-attempt-heading"><button type="button" className="scope-secondary" disabled={busy} onClick={() => setMode(null)}>← Change method</button><div><span>{mode === "online" ? "Online test" : "Printable PDF"}</span><h3 id="chosen-attempt-title">{mode === "online" ? "Set up your online test" : "Set up your printable paper"}</h3></div></div>
+        <SetupControls />
+        {mode === "pdf" ? <label className="pdf-answer-key"><input type="checkbox" checked={includeAnswerKey} disabled={busy} onChange={(event) => onIncludeAnswerKey(event.target.checked)} /><span><strong>Add an answer key</strong><small>Official answers will appear on a separate final page.</small></span></label> : null}
+        {error ? <p className="inline-error" role="alert">{error}</p> : null}
+        <div className="scope-dialog-actions practice-setup-actions"><button type="button" className="scope-secondary" disabled={busy} onClick={onCancel}>Continue choosing chapters</button>{mode === "online" ? <button type="submit" className="scope-primary confirm-practice" disabled={!canStart}>{loading ? "Preparing test…" : count === null ? "Choose a question count" : `Start ${format(practiceCount!)}-question test`}</button> : <button type="button" className="scope-primary confirm-practice" disabled={!canStart} onClick={onExport}>{exporting ? "Preparing PDF…" : count === null ? "Choose a question count" : `Download ${format(practiceCount!)}-question PDF`}</button>}</div>
+      </section>}
     </form>
   </dialog>;
 }

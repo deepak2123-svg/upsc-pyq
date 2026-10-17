@@ -23,6 +23,9 @@ export type PyqQuestion = {
   taxonomyHead?: string | null;
   taxonomyChapter?: string | null;
   taxonomySubtopic?: string | null;
+  requiresFigure?: boolean;
+  figureKey?: string | null;
+  figureAlt?: string | null;
 };
 
 export type TaxonomyNode = {

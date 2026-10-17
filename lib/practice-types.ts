@@ -52,6 +52,7 @@ export type PracticeQuestion = {
   promptLines: string[];
   options: Record<string, string>;
   sourceTextHash: string;
+  figure?: { src: string; alt: string };
 };
 
 export type PracticeSnapshot = {

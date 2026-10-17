@@ -290,7 +290,7 @@ export function PracticeClient({ id }: { id: string }) {
           <div className="question-heading"><div className="question-context"><span>Question {attempt.currentIndex + 1} of {attempt.snapshot.questions.length}</span><span>{question.subject}{question.topic ? ` · ${question.topic}` : ""}</span></div><fieldset className="reading-size" aria-label="Question text size"><legend>Text size</legend>{readingSizes.map((size) => <button key={size.value} type="button" title={size.label} aria-label={size.label} aria-pressed={readingSize === size.value} onClick={() => chooseReadingSize(size.value)}>{size.symbol}</button>)}</fieldset></div>
           <div className="question-copy">
             <div className="question-paper">
-              <PracticePromptView blocks={prompt} className="practice-prompt" />
+              <PracticePromptView blocks={prompt} className="practice-prompt" figure={question.figure} />
               <p className="question-origin"><span style={{ background: PYQ_EXAM_COLORS[question.exam] }} />First appeared: <strong>{sourceLabel}</strong> · Question {question.questionNumber}</p>
             </div>
             <div className="practice-choice-panel">

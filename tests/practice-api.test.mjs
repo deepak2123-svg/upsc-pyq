@@ -127,6 +127,23 @@ test("mixed subjects and duplicate paths use a unique union of question records"
   assert.deepEqual(body.recipe.subjectIds, selectedSubjects);
 });
 
+test("questions that depend on an original figure carry that asset into snapshots", async () => {
+  const data = await inventory();
+  const capfGeography = data.nodes
+    .filter((node) => node.kind === "subtopic" && node.subjectId === geo && node.examCounts.CAPF > 0)
+    .map((node) => ({ subtopicId: node.id, exams: ["CAPF"] }));
+  const { response, body } = await create(recipeFor(capfGeography));
+  assert.equal(response.status, 201);
+  const question = body.questions.find((item) => item.id === "capf-2019-i-120");
+  assert.ok(question, "CAPF 2019 Q120 should remain in the Geography snapshot");
+  assert.deepEqual(question.figure, {
+    src: "/question-figures/capf-2019-i-q120-map.png",
+    alt: "Original CAPF 2019 map of Sikkim with four numbered border locations",
+  });
+  const figure = await readFile(new URL("../public/question-figures/capf-2019-i-q120-map.png", import.meta.url));
+  assert.ok(figure.length > 10_000, "the original map crop should be a substantive image asset");
+});
+
 test("retired V3 Physical Geography leaves preserve their exact historical question sets", async () => {
   const old = await create(recipeFor([{ subtopicId: oldEarthInterior, exams: allExams }]));
   assert.equal(old.response.status, 201);

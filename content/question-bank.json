@@ -20958,6 +20958,8 @@
         "questionNumber": 120,
         "answerStatus": "verified_external_key",
         "answerSource": "https://prepp.in/paper/upsc-capf-general-ability-question-paper-18-aug-2019-69fb7b4b874ae195f6cde479",
+        "figureSource": "Original CAPF 2019 Paper I, printed page 43, Question 120",
+        "figureExtraction": "Lossless crop from the locally archived original-paper page; no redrawing or generative reconstruction",
         "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Border of Sikkim) A. Nepal B. Bhutan C. China D. West Bengal List II (Location in map) ① ② ③ ④ Code: A B C D"
       },
       "exam": "CAPF",
@@ -20969,7 +20971,15 @@
       "subtopic": "General",
       "difficulty": "Easy",
       "promptLines": [
-        "Match List I with List II and select the correct answer using the code given below the Lists: List I (Border of Sikkim) A. Nepal B. Bhutan C. China D. West Bengal List II (Location in map) ① ② ③ ④ Code: A B C D"
+        "Match List I with List II and select the correct answer using the code given below the Lists:",
+        "List I (Border of Sikkim)",
+        "A. Nepal",
+        "B. Bhutan",
+        "C. China",
+        "D. West Bengal",
+        "List II (Location in map)",
+        "Use the numbered locations shown in the original map.",
+        "Code: A B C D"
       ],
       "options": {
         "A": "3 2 1 4",
@@ -20979,7 +20989,9 @@
       },
       "answer": "C",
       "explanation": "Explanation pending editorial review.",
-      "requiresFigure": false
+      "requiresFigure": true,
+      "figureKey": "/question-figures/capf-2019-i-q120-map.png",
+      "figureAlt": "Original CAPF 2019 map of Sikkim with four numbered border locations"
     },
     {
       "id": "capf-2020-i-41",

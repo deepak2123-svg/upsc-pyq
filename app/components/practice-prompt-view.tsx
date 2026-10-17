@@ -1,6 +1,6 @@
 import type { PracticePromptBlock } from "../../lib/practice-prompt";
 
-export function PracticePromptView({ blocks, className }: { blocks: PracticePromptBlock[]; className: string }) {
+export function PracticePromptView({ blocks, className, figure }: { blocks: PracticePromptBlock[]; className: string; figure?: { src: string; alt: string } }) {
   return <div className={className} tabIndex={-1}>
     {blocks.map((block, index) => {
       if (block.kind === "statement") return <p className="paper-statement" key={index}><b>{block.marker}</b><span>{block.text}</span></p>;
@@ -24,5 +24,6 @@ export function PracticePromptView({ blocks, className }: { blocks: PracticeProm
         </table>
       </div>;
     })}
+    {figure ? <figure className="question-figure"><img src={figure.src} alt={figure.alt} /><figcaption>Figure supplied with the original question</figcaption></figure> : null}
   </div>;
 }
