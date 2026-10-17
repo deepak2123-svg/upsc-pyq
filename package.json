@@ -9,7 +9,7 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "vinext start",
-    "test": "npm run build && node --test tests/rendered-html.test.mjs tests/taxonomy.test.mjs tests/indian-geography-taxonomy.test.mjs tests/practice-selection.test.mjs tests/practice-api.test.mjs tests/practice-session.test.mjs tests/practice-prompt.test.mjs",
+    "test": "npm run build && node --test tests/rendered-html.test.mjs tests/taxonomy.test.mjs tests/indian-geography-taxonomy.test.mjs tests/geography-figure-audit.test.mjs tests/practice-selection.test.mjs tests/practice-api.test.mjs tests/practice-session.test.mjs tests/practice-prompt.test.mjs",
     "test:browser": "playwright test",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .vercel",
     "db:generate": "drizzle-kit generate",
@@ -18,6 +18,7 @@
     "content:audit-indian-geography": "node scripts/audit-indian-geography-answers.mjs",
     "content:draft-indian-geography-import": "node scripts/build-indian-geography-import-draft.mjs",
     "content:audit-indian-geography-pdfs": "node scripts/audit-indian-geography-original-pdfs.mjs",
+    "content:audit-geography-figures": "node scripts/audit-geography-question-figures.mjs",
     "content:import": "node scripts/import-questions-to-supabase.mjs"
   },
   "dependencies": {

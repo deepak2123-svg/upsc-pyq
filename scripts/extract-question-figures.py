@@ -9,9 +9,24 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 # deliberately lossless: no redrawing, OCR reconstruction, or generative repair.
 FIGURES = [
     {
+        "source": PROJECT_ROOT.parent / ".tmp" / "full_reaudit_pages" / "CAPF" / "2017" / "page-41.jpg",
+        "crop": (610, 735, 1005, 1070),
+        "output": PROJECT_ROOT / "public" / "question-figures" / "capf-2017-i-q120-map.png",
+    },
+    {
+        "source": PROJECT_ROOT.parent / ".tmp" / "full_reaudit_pages" / "CAPF" / "2019" / "page-39.jpg",
+        "crop": (500, 165, 965, 715),
+        "output": PROJECT_ROOT / "public" / "question-figures" / "capf-2019-i-q113-map.png",
+    },
+    {
         "source": PROJECT_ROOT.parent / ".tmp" / "full_reaudit_pages" / "CAPF" / "2019" / "page-43.jpg",
         "crop": (300, 272, 521, 489),
         "output": PROJECT_ROOT / "public" / "question-figures" / "capf-2019-i-q120-map.png",
+    },
+    {
+        "source": PROJECT_ROOT.parent / ".tmp" / "full_reaudit_pages" / "CDS" / "2014-2" / "page-10.jpg",
+        "crop": (585, 130, 1005, 390),
+        "output": PROJECT_ROOT / "public" / "question-figures" / "cds-2014-2-q33-diagram.png",
     },
 ]
 

@@ -93,7 +93,7 @@ function normalize(question) {
       editorialDifficulty: null,
       workflowStatus: errors.length ? "draft" : "review",
       requiresFigure: Boolean(question.requiresFigure),
-      figureKey: null,
+      figureKey: question.requiresFigure ? question.figureKey ?? null : null,
     },
     errors,
   };

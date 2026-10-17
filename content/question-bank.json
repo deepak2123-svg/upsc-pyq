@@ -19374,7 +19374,9 @@
         "questionNumber": 120,
         "answerStatus": "verified_external_key",
         "answerSource": "https://prepp.in/paper/upsc-capf-general-ability-question-paper-23-jul-2017-69ea2e62c500e45a7bda67d4",
-        "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists : List I (National Park) A. Corbett B. Neora Valley C. Betla D. Kanha List II (Location in map) Code :"
+        "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists : List I (National Park) A. Corbett B. Neora Valley C. Betla D. Kanha List II (Location in map) Code :",
+        "figureSource": "Original CAPF 2017 Paper I, printed page 41, Question 120",
+        "figureExtraction": "Lossless crop from the locally archived original-paper page; no redrawing, OCR reconstruction, or generative repair"
       },
       "exam": "CAPF",
       "year": 2017,
@@ -19395,7 +19397,9 @@
       },
       "answer": "D",
       "explanation": "Explanation pending editorial review.",
-      "requiresFigure": true
+      "requiresFigure": true,
+      "figureKey": "/question-figures/capf-2017-i-q120-map.png",
+      "figureAlt": "Original CAPF 2017 map of India with four numbered national-park locations"
     },
     {
       "id": "capf-2017-i-121",
@@ -20922,7 +20926,9 @@
         "questionNumber": 113,
         "answerStatus": "verified_external_key",
         "answerSource": "https://prepp.in/paper/upsc-capf-general-ability-question-paper-18-aug-2019-69fb7b4b874ae195f6cde479",
-        "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (River) A. Penner B. Vaigai C. Cauvery D. Krishna List II (Location in map) ① ② ③ ④ Code: A B C D"
+        "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (River) A. Penner B. Vaigai C. Cauvery D. Krishna List II (Location in map) ① ② ③ ④ Code: A B C D",
+        "figureSource": "Original CAPF 2019 Paper I, printed page 39, Question 113",
+        "figureExtraction": "Lossless crop from the locally archived original-paper page; no redrawing, OCR reconstruction, or generative repair"
       },
       "exam": "CAPF",
       "year": 2019,
@@ -20943,7 +20949,9 @@
       },
       "answer": "D",
       "explanation": "Explanation pending editorial review.",
-      "requiresFigure": false
+      "requiresFigure": true,
+      "figureKey": "/question-figures/capf-2019-i-q113-map.png",
+      "figureAlt": "Original CAPF 2019 map of India with four numbered river locations"
     },
     {
       "id": "capf-2019-i-120",
@@ -20959,7 +20967,7 @@
         "answerStatus": "verified_external_key",
         "answerSource": "https://prepp.in/paper/upsc-capf-general-ability-question-paper-18-aug-2019-69fb7b4b874ae195f6cde479",
         "figureSource": "Original CAPF 2019 Paper I, printed page 43, Question 120",
-        "figureExtraction": "Lossless crop from the locally archived original-paper page; no redrawing or generative reconstruction",
+        "figureExtraction": "Lossless crop from the locally archived original-paper page; no redrawing, OCR reconstruction, or generative repair",
         "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Border of Sikkim) A. Nepal B. Bhutan C. China D. West Bengal List II (Location in map) ① ② ③ ④ Code: A B C D"
       },
       "exam": "CAPF",
@@ -33969,7 +33977,9 @@
         "questionNumber": 33,
         "answerStatus": "source-record",
         "answerSource": null,
-        "rawQuestionText": "Consider the diagram given below\n1012 mb A\n998 mb C\n1020 mb B\nThe above diagram represents the pressure conditions of three different places, viz., A, B and C. Which of the following is the correct direction of movement of winds?"
+        "rawQuestionText": "Consider the diagram given below\n1012 mb A\n998 mb C\n1020 mb B\nThe above diagram represents the pressure conditions of three different places, viz., A, B and C. Which of the following is the correct direction of movement of winds?",
+        "figureSource": "Original CDS 2014 Paper 2, printed page 10, Question 33",
+        "figureExtraction": "Lossless crop from the locally archived original-paper page; no redrawing, OCR reconstruction, or generative repair"
       },
       "exam": "CDS",
       "year": 2014,
@@ -33994,7 +34004,9 @@
       },
       "answer": "C",
       "explanation": "Explanation pending editorial review.",
-      "requiresFigure": false
+      "requiresFigure": true,
+      "figureKey": "/question-figures/cds-2014-2-q33-diagram.png",
+      "figureAlt": "Original CDS 2014 pressure diagram showing locations A, B and C"
     },
     {
       "id": "cds-2014-2-40",
