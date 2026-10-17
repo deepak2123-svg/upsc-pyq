@@ -266,14 +266,17 @@
 .print-paper { width: min(820px, calc(100% - 40px)); margin: 0 auto; padding: 36px 0 80px; color: #111; background: #fff; }
 .print-toolbar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 28px; padding: 12px 14px; border: 1px solid #d8dde5; border-radius: 9px; background: #f7f8fa; font-size: 12px; }
 .print-toolbar button { min-height: 40px; padding: 8px 14px; border: 0; border-radius: 7px; background: #2757d3; color: #fff; font-weight: 700; }
-.print-paper-header { padding: 0 0 9px; border-bottom: 2px solid #1f2937; }
+.print-paper-header { padding: 0 0 7px; border-bottom: 2px solid #1f2937; }
 .print-title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; }
 .print-paper-header .print-title-row h1 { margin: 0; font-family: var(--font-reading), Georgia, serif; font-size: 20px; }
-.print-title-row > p { display: flex; gap: 6px; margin: 0; color: #414b5b; font-size: 9px; font-weight: 650; white-space: nowrap; }
-.print-title-row > p span { color: #9098a4; }
-.print-taxonomy-summary { display: grid; gap: 2px; margin-top: 5px; color: #465164; font-size: 8px; line-height: 1.3; }
-.print-taxonomy-summary p { display: grid; grid-template-columns: 47px minmax(0, 1fr); gap: 6px; margin: 0; }
-.print-taxonomy-summary strong { color: #202a38; font-size: 7px; letter-spacing: .05em; text-transform: uppercase; }
+.print-paper-summary { width: 100%; margin-top: 5px; border-collapse: collapse; table-layout: fixed; font-family: var(--font-interface), sans-serif; font-size: 8px; line-height: 1.25; }
+.print-paper-summary th, .print-paper-summary td { padding: 3px 5px; border: 1px solid #cbd1da; text-align: center; vertical-align: top; }
+.print-paper-summary th { color: #465164; background: #f2f4f7; font-size: 6.5px; letter-spacing: .045em; text-transform: uppercase; }
+.print-paper-summary th:first-child, .print-paper-summary td:first-child { width: 54%; text-align: left; }
+.print-paper-summary th:last-child, .print-paper-summary td:last-child { width: 9%; }
+.print-paper-summary td { font-weight: 700; }
+.print-paper-summary td:first-child strong { display: block; font-size: 8px; font-weight: 650; }
+.print-paper-summary td:first-child small { display: block; margin-top: 1px; color: #5b6471; font-size: 6.5px; font-weight: 450; }
 .print-question-list { margin: 0; padding: 0; columns: 2 350px; column-gap: 34px; column-rule: 1px solid #d8dde5; list-style: none; }
 .print-question { padding: 10px 0; border-bottom: 1px solid #cfd5dd; break-inside: avoid; page-break-inside: avoid; }
 .print-question-meta { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 7px; font-family: var(--font-interface), sans-serif; font-size: 9px; }
