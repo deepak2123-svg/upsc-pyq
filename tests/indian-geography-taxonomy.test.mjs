@@ -2,13 +2,14 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-const [registry, migration, candidates, classification, answerAudit, originalPdfAudit, importDraft, bank] = await Promise.all([
+const [registry, migration, candidates, classification, answerAudit, originalPdfAudit, officialKeyExtraction, importDraft, bank] = await Promise.all([
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-migration-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-source-candidates.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-classification-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-answer-audit.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-original-pdf-audit.json", import.meta.url), "utf8").then(JSON.parse),
+  readFile(new URL("../content/taxonomy/indian-geography-v1.3-official-key-extraction.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/taxonomy/indian-geography-v1.3-import-draft.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../content/question-bank.json", import.meta.url), "utf8").then(JSON.parse),
 ]);
@@ -119,4 +120,17 @@ test("Indian Geography original-PDF audit covers all in-scope candidates", () =>
   assert.ok(originalPdfAudit.records
     .filter((record) => record.status === "high-confidence-original-page-match")
     .every((record) => record.bestPage.questionCoverage >= 0.88 && record.bestPage.optionStrongCount >= 3 && record.bestPage.optionMean >= 0.78));
+});
+
+test("official answer-key extraction remains evidence, not an automatic publication gate", () => {
+  assert.equal(officialKeyExtraction.status, "evidence-extraction-not-yet-publication-authority");
+  assert.ok(officialKeyExtraction.records.length > 0);
+  assert.equal(
+    officialKeyExtraction.candidateComparisons.length,
+    candidates.candidates.filter((candidate) => ["CDS", "NDA"].includes(candidate.sourceIdentity.exam)).length,
+  );
+  for (const record of officialKeyExtraction.records) {
+    assert.match(record.status, /series-alignment|conflicting-ocr/);
+    assert.ok(record.evidence.length > 0);
+  }
 });
