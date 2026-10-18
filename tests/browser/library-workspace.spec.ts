@@ -101,6 +101,56 @@ test("the full syllabus hierarchy is compact on mobile", async ({ page }) => {
   await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toBeVisible();
 });
 
+test("clicking the current syllabus level again folds it", async ({ page }) => {
+  const browser = page.locator(".scope-library-browser");
+  const syllabus = page.getByRole("navigation", { name: "Syllabus" });
+  const geography = syllabus.getByRole("button", { name: "Geography", exact: true });
+
+  await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
+  await expect(geography).toHaveAttribute("aria-current", "location");
+  await expect(geography).toHaveAttribute("aria-expanded", "true");
+  await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toBeVisible();
+
+  await geography.click();
+  await expect(syllabus.getByRole("button", { name: "Subjects" })).toHaveAttribute("aria-current", "location");
+  await expect(geography).toHaveAttribute("aria-expanded", "false");
+  await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toHaveCount(0);
+  await expect(browser.getByRole("heading", { name: "Subjects", exact: true })).toBeVisible();
+
+  await geography.click();
+  const physical = syllabus.getByRole("button", { name: "Physical Geography", exact: true });
+  await physical.click();
+  await expect(physical).toHaveAttribute("aria-current", "location");
+  await expect(physical).toHaveAttribute("aria-expanded", "true");
+  await expect(syllabus.getByRole("button", { name: "Universe, Solar System, Shape and Size of Earth", exact: true })).toBeVisible();
+
+  const chapter = syllabus.getByRole("button", { name: "Latitudes, Longitudes, Time and Motions of the Earth", exact: true });
+  await chapter.click();
+  await expect(chapter).toHaveAttribute("aria-current", "location");
+  await expect(chapter).toHaveAttribute("aria-expanded", "true");
+  await expect(syllabus.getByRole("button", { name: "Rotation and Time", exact: true })).toBeVisible();
+
+  await chapter.click();
+  await expect(physical).toHaveAttribute("aria-current", "location");
+  await expect(chapter).toHaveAttribute("aria-expanded", "false");
+  await expect(syllabus.getByRole("button", { name: "Rotation and Time", exact: true })).toHaveCount(0);
+
+  await physical.click();
+  await expect(geography).toHaveAttribute("aria-current", "location");
+  await expect(physical).toHaveAttribute("aria-expanded", "false");
+  await expect(syllabus.getByRole("button", { name: "Universe, Solar System, Shape and Size of Earth", exact: true })).toHaveCount(0);
+
+  await browser.getByRole("button", { name: "Select Indian Geography. 402 questions available." }).click();
+  const indian = syllabus.getByRole("button", { name: "Indian Geography", exact: true });
+  await expect(indian).toHaveAttribute("aria-current", "location");
+  await expect(page.locator(".scope-test-summary").getByTestId("matching-count").locator("strong")).toHaveText("402");
+
+  await indian.click();
+  await expect(geography).toHaveAttribute("aria-current", "location");
+  await expect(syllabus.getByRole("button", { name: "Remove Indian Geography from selection" })).toBeVisible();
+  await expect(page.locator(".scope-test-summary").getByTestId("matching-count").locator("strong")).toHaveText("402");
+});
+
 test("exam sources use the clear two-by-two card layout", async ({ page }) => {
   const browser = page.locator(".scope-library-browser");
 

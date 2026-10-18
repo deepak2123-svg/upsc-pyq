@@ -197,7 +197,9 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
   function browse(id: string) {
     if (loading || !restored) return;
-    setFocusId(id); setNotice("Syllabus view changed.");
+    const isFolding = focusId === id && (index.childrenById.get(id)?.length || 0) > 0;
+    setFocusId(isFolding ? index.nodesById.get(id)?.parentId : id);
+    setNotice(isFolding ? "Syllabus level collapsed." : "Syllabus view changed.");
   }
   function browseRoot() {
     if (loading || !restored) return;
