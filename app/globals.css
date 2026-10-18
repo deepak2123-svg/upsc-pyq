@@ -1392,7 +1392,7 @@ h3 { font-size: 16px; }
 }
 
 /* Explorer: navigation, folder contents, and test collection. */
-.explorer-layout { grid-template-columns: 270px minmax(0, 1fr) 300px; align-items: start; }
+.explorer-layout { grid-template-columns: 310px minmax(0, 1fr) 300px; align-items: start; }
 .explorer-layout .scope-syllabus-row { display: flex; padding-left: calc(8px + var(--tree-depth) * 12px); gap: 2px; }
 .explorer-layout .scope-syllabus-link { display: block; padding: 8px 3px; min-width: 0; flex: 1; }
 .explorer-caret, .explorer-caret-space { width: 28px; flex: 0 0 28px; }
@@ -1453,7 +1453,7 @@ h3 { font-size: 16px; }
 .explorer-drawer-close, .explorer-overlay { display: none; }
 .explorer-layout button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 @media (max-width: 1280px) {
-  .explorer-layout { grid-template-columns: 250px minmax(0, 1fr); }
+  .explorer-layout { grid-template-columns: 280px minmax(0, 1fr); }
   .explorer-layout .scope-test-summary.scope-dock.selection-dock { display: none; }
   .explorer-layout .scope-test-summary.scope-dock.selection-dock[data-mobile-open=true] { position: fixed; inset: auto 12px 82px; top: auto; z-index: 51; display: flex; max-height: 75dvh; overflow: hidden; }
   .explorer-layout .scope-test-summary .explorer-drawer-close { display: block; border: 0; background: transparent; color: var(--muted); min-height: 32px; }
@@ -1474,31 +1474,32 @@ h3 { font-size: 16px; }
   .explorer-layout .scope-card-source-counts { padding-left: 0; gap: 10px; }
 }
 
-.explorer-layout .scope-syllabus-rail { background: transparent; border: 0; box-shadow: none; overflow: visible; max-height: calc(100dvh - 200px); scrollbar-gutter: auto; }
+.explorer-layout .scope-syllabus-rail { background: transparent; border: 0; box-shadow: none; overflow: visible; max-height: calc(100dvh - 180px); scrollbar-gutter: auto; }
 .explorer-layout .scope-syllabus-content { max-height: inherit; }
 .syllabus-split { display: flex; flex-direction: column; gap: 14px; padding: 0; max-height: inherit; }
 .syllabus-context-panel { flex: 0 0 auto; }
-.syllabus-context-panel, .syllabus-chapters-panel { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px; box-shadow: 0 3px 18px #17213405; }
+.syllabus-context-panel, .syllabus-chapters-panel { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 15px; box-shadow: 0 3px 18px #17213405; }
 .syllabus-context-panel .scope-syllabus-root { padding: 3px 3px 12px; margin: 0; font-size: 10px; }
 .syllabus-subject { display: flex; width: 100%; gap: 10px; align-items: center; justify-content: space-between; border: 0; background: transparent; padding: 12px 6px; text-align: left; color: var(--ink); font-size: 16px; }
 .syllabus-subject span { color: var(--muted); font-size: 11px; }
 .syllabus-sections { list-style: none; padding: 0; margin: 0; }
-.syllabus-sections button { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 12px; min-height: 38px; padding: 8px 9px; border: 0; border-radius: 6px; background: transparent; color: var(--muted); text-align: left; font-size: 12px; line-height: 1.4; }
+.syllabus-sections button { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 12px; min-height: 40px; padding: 9px; border: 0; border-radius: 6px; background: transparent; color: var(--muted); text-align: left; font-size: 13px; line-height: 1.4; }
 .syllabus-sections small { font-size: 10px; font-variant-numeric: tabular-nums; }
 .syllabus-sections button[data-active=true], .syllabus-sections button:hover { background: #edf2ff; color: var(--accent); }
 .syllabus-sections button[data-active=true] { font-weight: 700; }
-.syllabus-chapters-panel { flex: 1 1 auto; min-height: 180px; overflow-y: auto; }
+.syllabus-chapters-panel { flex: 1 1 auto; min-height: 280px; overflow-y: auto; }
 .syllabus-chapters-panel > header { padding: 5px 5px 12px; border-bottom: 1px solid var(--line); }
 .syllabus-chapters-panel header small { color: var(--accent); font-size: 10px; }
-.syllabus-chapters-panel h3 { font-size: 12px; margin: 5px 0 0; }
+.syllabus-chapters-panel h3 { font-size: 14px; margin: 5px 0 0; }
 .syllabus-chapters-panel .scope-syllabus-tree > li + li { border-top: 1px solid #eef0f4; }
 .syllabus-chapters-panel .scope-syllabus-tree ul { margin-left: 18px; padding-left: 5px; border-left: 1px solid #ccd7ed; }
 .explorer-layout .syllabus-chapters-panel .scope-syllabus-row { padding-left: 0; }
-.syllabus-chapters-panel .scope-syllabus-link { font-size: 11px; }
+.explorer-layout .syllabus-chapters-panel .scope-syllabus-link { padding-block: 11px; font-size: 13px; line-height: 1.45; }
+.explorer-layout .syllabus-chapters-panel .scope-syllabus-count { font-size: 12px; }
 .syllabus-chapters-panel .scope-syllabus-link > span { display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; align-items: baseline; }
 .syllabus-chapters-panel .scope-syllabus-link > span[data-numbered=true] { grid-template-columns: 25px minmax(0, 1fr); }
 .syllabus-node-label { min-width: 0; word-break: normal; overflow-wrap: break-word; }
-.syllabus-chapters-panel .scope-syllabus-link small { margin: 0; font-size: 10px; letter-spacing: 0; }
+.syllabus-chapters-panel .scope-syllabus-link small { margin: 0; font-size: 11px; letter-spacing: 0; }
 .explorer-layout .scope-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; border: 0; border-radius: 0; background: transparent; }
 .explorer-layout .scope-card, .explorer-layout .scope-card:last-child { border: 1px solid var(--line); border-radius: 10px; }
 .explorer-layout .scope-card-body { padding: 12px; gap: 7px; }
