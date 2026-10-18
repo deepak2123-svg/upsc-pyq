@@ -1,6 +1,10 @@
 import type { AnswerFeedback, LocalAttempt, PracticeRecipe } from "./practice-types";
 import type { PyqExam } from "./pyq-exams";
 
+/** Bump a question's revision whenever its published key is corrected. No answers are exposed here. */
+const answerKeyRevisions: Readonly<Record<string, number>> = { "nda-2021-ii-54": 1 };
+export function answerKeyRevision(questionId: string) { return answerKeyRevisions[questionId] || 0; }
+
 export function safePracticeReturnPath(value: unknown): "/" | `/exams/${PyqExam}` {
   if (typeof value === "string" && value.trim() === value && /^\/exams\/(CSE|CAPF|CDS|NDA)$/.test(value)) return value as `/exams/${PyqExam}`;
   return "/";
@@ -56,6 +60,7 @@ export function hasCompleteFeedback(attempt: LocalAttempt) {
   return attempt.snapshot.questions.every((question) => {
     const feedback = attempt.feedback[question.id];
     return Boolean(feedback && Object.hasOwn(question.options, feedback.correctAnswer)
+      && (feedback.answerKeyRevision ?? 0) === answerKeyRevision(question.id)
       && feedback.correct === (attempt.answers[question.id] === feedback.correctAnswer));
   });
 }
@@ -74,6 +79,7 @@ export async function requestAnswerFeedback(attempt: LocalAttempt): Promise<Reco
   if (!feedback || !attempt.snapshot.questions.every((question) => {
     const item = feedback[question.id];
     return item && typeof item.correct === "boolean" && typeof item.correctAnswer === "string"
+      && (item.answerKeyRevision ?? 0) === answerKeyRevision(question.id)
       && Object.hasOwn(question.options, item.correctAnswer) && (item.explanation === null || typeof item.explanation === "string");
   })) throw new Error("The answer sheet was incomplete. Your submitted answers are saved; please retry.");
   return feedback;

@@ -272,3 +272,16 @@ test("final grading rejects malformed or ambiguous question and answer sets", as
     assert.ok(body.error.length);
   }
 });
+
+test("NDA 2021 II Q54 grades Playa as A and publishes its key revision", async () => {
+  const id = "nda-2021-ii-54";
+  const accepted = await grade({ questionIds: [id], answers: { [id]: "A" } });
+  assert.equal(accepted.response.status, 200);
+  assert.equal(accepted.body.correct, 1);
+  assert.equal(accepted.body.feedback[id].correctAnswer, "A");
+  assert.equal(accepted.body.feedback[id].answerKeyRevision, 1);
+  assert.match(accepted.body.feedback[id].explanation, /playa.*temporary lake/i);
+  const rejected = await grade({ questionIds: [id], answers: { [id]: "C" } });
+  assert.equal(rejected.body.incorrect, 1);
+  assert.equal(rejected.body.feedback[id].correct, false);
+});

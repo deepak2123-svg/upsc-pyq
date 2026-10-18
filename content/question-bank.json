@@ -42833,8 +42833,15 @@
         "year": 2021,
         "paper": "II",
         "questionNumber": 54,
-        "answerStatus": "imported_from_answer_key",
-        "answerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+        "answerStatus": "set-a-key-crosschecked",
+        "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2023/02/nda_2_2021_gat_answer_key-fb8190f7.pdf",
+        "answerCorrection": {
+          "previousAnswer": "C",
+          "correctedAt": "2026-10-18",
+          "reason": "The previous imported key was not aligned to this question numbering. The Set A key lists Q54 as A, Playa.",
+          "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf"
+        },
+        "explanationSource": "https://water.usgs.gov/nwsum/WSP2425/glossary.html",
         "rawQuestionText": "Fine-grained bed of ephemeral lake in a desert is also known as"
       },
       "exam": "NDA",
@@ -42854,8 +42861,8 @@
         "C": "Drumlin",
         "D": "Natural levee"
       },
-      "answer": "C",
-      "explanation": "Explanation pending editorial review.",
+      "answer": "A",
+      "explanation": "A playa is the dry bed of a temporary lake in an arid region. Water collects after rainfall and then evaporates, leaving fine sediment and often salts.",
       "requiresFigure": false
     },
     {

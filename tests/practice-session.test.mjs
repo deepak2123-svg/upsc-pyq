@@ -183,6 +183,21 @@ test("cached grading must match current answers and known option keys", () => {
   assert.equal(hasCompleteFeedback({ ...completed, feedback: { ...feedback, first: { ...feedback.first, correct: false } } }), false);
 });
 
+test("corrected keys invalidate saved feedback without changing submitted answers", async (t) => {
+  const id = "nda-2021-ii-54";
+  const saved = completeAttempt(attempt({
+    snapshot: { ...attempt().snapshot, questions: [{ id, options: { A: "Playa", B: "Oasis", C: "Drumlin", D: "Natural levee" } }] },
+    answers: { [id]: "A" }, feedback: { [id]: { correct: false, correctAnswer: "C", explanation: null } },
+  }), "submitted", started + 25_000);
+  assert.equal(hasCompleteFeedback(saved), false);
+  const corrected = { [id]: { correct: true, correctAnswer: "A", explanation: "A playa is a dry lake bed.", answerKeyRevision: 1 } };
+  t.mock.method(globalThis, "fetch", async () => Response.json({ feedback: corrected }));
+  const refreshed = await requestAnswerFeedback(saved);
+  assert.equal(hasCompleteFeedback({ ...saved, feedback: refreshed }), true);
+  assert.deepEqual(saved.answers, { [id]: "A" });
+  assert.equal(saved.feedback[id].correctAnswer, "C", "regrading must not mutate the saved attempt in place");
+});
+
 test("completed attempts request all answer keys including skipped questions", async (t) => {
   const completed = completeAttempt(attempt(), "submitted", started + 25_000);
   assert.equal(hasCompleteFeedback(completed), false);

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { pyqQuestions } from "../../../../lib/pyq-catalog";
 import type { AnswerFeedback } from "../../../../lib/practice-types";
+import { answerKeyRevision } from "../../../../lib/practice-session";
 
 const questionsById = new Map(pyqQuestions.map((question) => [question.id, question]));
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -38,7 +39,7 @@ export async function POST(request: Request) {
       if (isCorrect) correct += 1;
       else incorrect += 1;
     }
-    feedback[id] = { correct: isCorrect, correctAnswer: question.answer, explanation: publishedExplanation(question.explanation) };
+    feedback[id] = { correct: isCorrect, correctAnswer: question.answer, explanation: publishedExplanation(question.explanation), answerKeyRevision: answerKeyRevision(id) };
   }
   return NextResponse.json({ correct, incorrect, unattempted: ids.length - correct - incorrect, total: ids.length, feedback });
 }

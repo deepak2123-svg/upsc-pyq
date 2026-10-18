@@ -342,6 +342,40 @@ test("editing an old fully graded in-progress attempt invalidates cached feedbac
   expect(((await storedAttempt(page, snapshot.id)).feedback as Record<string, { correct: boolean }>)[first.id].correct).toBe(false);
 });
 
+test("a corrected answer key refreshes an existing completed result", async ({ page, request }) => {
+  const saved = await fixture(page, request);
+  const response = await request.post("/api/practice-snapshots", { data: {
+    version: 3, subjectIds: [GEO], paths: [{ subtopicId: "subtopic:geography:physical-geography:geomorphic-processes-and-landforms:glacial-landforms", exams: ["NDA"] }],
+    count: "all", order: "newest", durationMinutes: null,
+  } });
+  expect(response.status()).toBe(201);
+  const pool = await response.json();
+  const question = pool.questions.find((item: { id: string }) => item.id === "nda-2021-ii-54");
+  expect(question).toBeTruthy();
+  await page.evaluate(async ({ id, question }) => {
+    const database = await new Promise<IDBDatabase>((resolve, reject) => {
+      const open = indexedDB.open("upscpuraan-pyq", 2);
+      open.onsuccess = () => resolve(open.result); open.onerror = () => reject(open.error);
+    });
+    await new Promise<void>((resolve, reject) => {
+      const transaction = database.transaction("attempts", "readwrite");
+      const store = transaction.objectStore("attempts"); const get = store.get(id);
+      get.onsuccess = () => store.put({ ...get.result, status: "completed", completedAt: new Date().toISOString(),
+        snapshot: { ...get.result.snapshot, questions: [question] }, answers: { [question.id]: "A" },
+        feedback: { [question.id]: { correct: false, correctAnswer: "C", explanation: null } },
+      });
+      transaction.oncomplete = () => resolve(); transaction.onerror = () => reject(transaction.error);
+    });
+    database.close();
+  }, { id: saved.id, question });
+  const regraded = page.waitForResponse((item) => item.url().endsWith("/api/practice/grade"));
+  await page.goto(`/practice/${saved.id}/results`);
+  expect((await regraded).status()).toBe(200);
+  await expect(page.getByRole("table", { name: "Answer sheet", exact: true }).getByRole("row").nth(1)).toContainText("Correct");
+  const updated = (await storedAttempt(page, saved.id)).feedback as Record<string, { correct: boolean; correctAnswer: string; answerKeyRevision: number }>;
+  expect(updated[question.id]).toMatchObject({ correct: true, correctAnswer: "A", answerKeyRevision: 1 });
+});
+
 test("a countdown retains its deadline on reload and submits when wall-clock time expires", async ({ page, request }) => {
   await page.clock.install();
   const snapshot = await fixture(page, request, 1);

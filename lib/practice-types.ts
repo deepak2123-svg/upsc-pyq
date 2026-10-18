@@ -68,6 +68,7 @@ export type AnswerFeedback = {
   correct: boolean;
   correctAnswer: string;
   explanation: string | null;
+  answerKeyRevision?: number;
 };
 
 export type LocalAttempt = {
