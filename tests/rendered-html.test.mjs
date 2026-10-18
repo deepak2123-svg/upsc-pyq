@@ -176,7 +176,8 @@ test("ships exact, locked source records and the local-only PWA model", async ()
   assert.match(practiceSource, /question-heading/);
   assert.match(cssSource, /font-family: var\(--font-reading\)/);
   assert.match(archiveSource, /ScopeFlow/);
-  assert.match(archiveSource, /scope-breadcrumbs/);
+  assert.match(archiveSource, /SyllabusNavigation/);
+  assert.doesNotMatch(archiveSource, /scope-breadcrumbs/);
   assert.match(archiveSource, /scope-sources/);
   assert.match(archiveSource, /matchingCount/);
   assert.match(localStoreSource, /openDB/);

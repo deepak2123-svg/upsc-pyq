@@ -9,6 +9,7 @@ import type { PracticeOrder, PracticeRecipeV3, PracticeSnapshot } from "../../li
 import { createLocalAttempt } from "../../lib/practice-store";
 import { addScope, addedQuestionCount, ancestors, buildSelectionIndex, removeScope, replaceScope, sanitizePathsWithAliases, scopeDisplayNumber, scopeMetrics, selectedScopeIds, selectionCounts, setScopeExam, type SelectionIndex, type SelectionPaths } from "../../lib/practice-selection";
 import { ScopeFlow } from "./scope-flow";
+import { SyllabusNavigation } from "./syllabus-navigation";
 
 const COUNTS = [10, 20, 30, 50] as const;
 const DURATIONS = [10, 20, 30, 60, 120] as const;
@@ -124,10 +125,9 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const [restored, setRestored] = useState(false);
   const [addOpen, setAddOpen] = useState(false);
   const [setupOpen, setSetupOpen] = useState(false);
+  const [syllabusOpen, setSyllabusOpen] = useState(false);
   const [notice, setNotice] = useState("");
   const [draftWarning, setDraftWarning] = useState("");
-  const focusHeading = useRef<HTMLHeadingElement>(null);
-  const moveFocus = useRef(false);
   const draftKey = "upsc-pyq-builder:v3:" + (initialExam || "all");
 
   useEffect(() => {
@@ -155,10 +155,6 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     const minutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
     try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 4, inventoryVersion: initialInventory.version, paths, focusId, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
   }, [restored, draftKey, initialInventory.version, paths, focusId, count, order, durationChoice, customMinutes]);
-  useEffect(() => {
-    if (moveFocus.current) { focusHeading.current?.focus({ preventScroll: true }); moveFocus.current = false; }
-  }, [focusId]);
-
   const totals = useMemo(() => selectionCounts(paths, index), [paths, index]);
   const selectedIds = useMemo(() => selectedScopeIds(paths, index), [paths, index]);
   const current = focusId ? index.nodesById.get(focusId) : undefined;
@@ -201,11 +197,11 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
   function browse(id: string) {
     if (loading || !restored) return;
-    setFocusId(id); setNotice("Syllabus view changed."); moveFocus.current = true;
+    setFocusId(id); setNotice("Syllabus view changed.");
   }
   function browseRoot() {
     if (loading || !restored) return;
-    setFocusId(undefined); setNotice("Showing all subjects."); moveFocus.current = true;
+    setFocusId(undefined); setNotice("Showing all subjects.");
   }
   function clearSelection() {
     if (loading || !restored) return;
@@ -257,21 +253,23 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading}>
     <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{initialExam ? `${initialExam} question library` : "Question library"}</h1></div><details className="scope-inventory-info"><summary>{format(initialInventory.mappedCount)} PYQs <span aria-hidden="true">ⓘ</span></summary><p>{format(initialInventory.unmappedCount)} unclassified questions remain in exam archives.</p></details></header>
     <div className={`scope-library-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
-      {selectedIds.length ? <aside className="scope-selection-rail" aria-labelledby="selection-rail-title">
-        <div className="scope-rail-heading"><h2 id="selection-rail-title">Selected</h2><button type="button" disabled={loading} onClick={clearSelection}>Clear</button></div>
-          <div className="scope-selection-list">{selectedIds.map((id) => { const node = index.nodesById.get(id)!; const branchPath = ancestors(id, index); const metric = scopeMetrics(id, paths, index); const leaves = index.leavesById.get(id) || []; const parents = branchPath.slice(0, -1).slice(-2).map((part) => part.label).join(" / ") || node.label; const title = branchPath.length === 1 ? "All sections" : [scopeDisplayNumber(node.id, index), node.label].filter(Boolean).join(" · "); return <article className="scope-selection-item" key={id}><div className="scope-selection-copy"><small>{parents}</small><strong>{title}</strong><span>{format(metric.selectedCount)} questions · {leaves.length} subpart{leaves.length === 1 ? "" : "s"}</span></div><div className="scope-selection-actions"><button type="button" className="scope-selection-change" disabled={loading} aria-label={`Open ${node.label} in syllabus`} onClick={() => browse(id)}>Open</button><button type="button" className="scope-selection-remove" disabled={loading} aria-label={"Remove " + node.label} onClick={() => remove(id)}>Remove</button></div></article>; })}</div>
-          <button type="button" className="scope-add-another" disabled={loading} onClick={() => setAddOpen(true)}>＋ Add</button>
+      <aside className="scope-syllabus-rail">
+        <button type="button" className="scope-syllabus-mobile-toggle" aria-expanded={syllabusOpen} aria-controls="scope-syllabus-content" onClick={() => setSyllabusOpen((open) => !open)}><span>Syllabus</span><strong>{current?.label || "All subjects"}</strong></button>
+          <div id="scope-syllabus-content" className="scope-syllabus-content" data-mobile-open={syllabusOpen ? "true" : "false"}>
+            <SyllabusNavigation index={index} paths={paths} focusPath={focusPath} selectedIds={selectedIds} mappedCount={initialExam ? initialInventory.subjects.reduce((sum, subject) => sum + subject.examCounts[initialExam], 0) : initialInventory.mappedCount} preferredExam={initialExam} disabled={loading || !restored} onBrowse={browse} onBrowseRoot={browseRoot} onRemove={remove} />
+            {selectedIds.length ? <>
+              <div className="scope-selection-tools"><strong>Selection</strong><button type="button" disabled={loading} onClick={() => setAddOpen(true)}>＋ Add</button><button type="button" disabled={loading} onClick={clearSelection}>Clear</button></div>
           <section className="scope-sources scope-sources-rail" aria-labelledby="scope-sources-title">
             <div className="scope-source-heading"><h3 id="scope-sources-title">Exam sources</h3></div>
             {sourceTargets.length > 1 ? <label className="scope-source-target">Apply to<select aria-label="Apply sources to" disabled={loading || !restored} value={activeSourceId} onChange={(event) => setSourceScopeId(event.target.value)}><option value="all">All selected</option>{sourceTargets.map((id) => <option value={id} key={id}>{index.nodesById.get(id)?.label}</option>)}</select></label> : null}
             <div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={sourceMetrics[exam].count} available={sourceMetrics[exam].available} state={sourceMetrics[exam].state} disabled={loading || !restored || sourceMetrics[exam].available === 0} onChange={() => toggleSource(exam)} />)}</div>
           </section>
-      </aside> : null}
+            </> : null}
+          </div>
+      </aside>
 
       <section className="scope-refine scope-library-browser" aria-labelledby="scope-refine-title">
-        <div className="scope-refine-heading"><div><h2 id="scope-refine-title" tabIndex={-1} ref={focusHeading}>{current ? <>{scopeDisplayNumber(current.id, index) ? <small>{scopeDisplayNumber(current.id, index)}</small> : null}{current.label}</> : "Subjects"}</h2></div></div>
-        <nav className="scope-breadcrumbs" aria-label="Current syllabus path"><span><button type="button" disabled={loading} onClick={browseRoot} aria-current={!current ? "location" : undefined}>All subjects</button></span>{focusPath.map((node) => { const number = scopeDisplayNumber(node.id, index); return <span key={node.id}><i aria-hidden="true">→</i><button type="button" disabled={loading} onClick={() => browse(node.id)} aria-current={node.id === current?.id ? "location" : undefined}>{number ? <small>{number}</small> : null}{node.label}</button></span>; })}</nav>
-        {current ? <div className="scope-navigation-help"><button type="button" disabled={loading} onClick={() => current.parentId ? browse(current.parentId) : browseRoot()}>← Back</button></div> : null}
+        <h2 id="scope-refine-title" className="visually-hidden">{current ? `Browse ${current.label}` : "Browse subjects"}</h2>
         <ScopeFlow inventory={initialInventory} paths={paths} focusId={focusId} preferredExam={initialExam} onAttempt={selectScope} onBrowse={browse} disabled={loading || !restored} />
         <p className="visually-hidden" role="status" aria-live="polite">{notice}</p>
       </section>

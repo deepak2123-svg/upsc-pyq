@@ -7,41 +7,55 @@ test.beforeEach(async ({ page }) => {
 });
 
 test("browsing stays separate from the committed selection", async ({ page }) => {
-  const selection = page.locator(".scope-selection-rail");
+  const syllabus = page.getByRole("navigation", { name: "Syllabus" });
   const summary = page.locator(".scope-test-summary");
   const browser = page.locator(".scope-library-browser");
 
-  await expect(selection).toHaveCount(0);
+  await expect(syllabus).toBeVisible();
+  await expect(syllabus.getByRole("button", { name: "Geography", exact: true })).toBeVisible();
+  await expect(syllabus.getByRole("button", { name: "Environment", exact: true })).toBeVisible();
+  await expect(syllabus.getByRole("button", { name: "Polity", exact: true })).toBeVisible();
+  await expect(syllabus.locator(".scope-syllabus-check")).toHaveCount(0);
+  await expect(page.locator(".scope-breadcrumbs")).toHaveCount(0);
   await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("0");
   await expect(summary.getByRole("button", { name: "Set up test" })).toBeDisabled();
 
   await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
   await expect(browser.getByRole("heading", { name: "Sections" })).toBeVisible();
-  await expect(selection).toHaveCount(0);
+  await expect(syllabus.getByRole("button", { name: "Geography", exact: true })).toHaveAttribute("aria-current", "location");
+  for (const section of ["Physical Geography", "Human & Economic Geography", "Indian Geography", "World Geography", "Other Geography"]) {
+    await expect(syllabus.getByRole("button", { name: section, exact: true })).toBeVisible();
+  }
+  await expect(syllabus.locator(".scope-syllabus-check")).toHaveCount(0);
   await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("0");
 
   await browser.getByRole("button", { name: "Select Indian Geography. 402 questions available." }).click();
-  await expect(selection).toHaveCount(1);
-  await expect(selection).toContainText("Indian Geography");
-  await expect(selection).not.toContainText("Human & Economic Geography");
+  await expect(syllabus.getByRole("button", { name: "Remove Indian Geography from selection" })).toBeVisible();
+  await expect(syllabus.locator(".scope-syllabus-check")).toHaveCount(1);
   await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("402");
   await expect(summary.getByRole("button", { name: "Set up test" })).toBeEnabled();
-  const openSelection = selection.getByRole("button", { name: "Open Indian Geography in syllabus" });
-  await expect(openSelection).toBeVisible();
-  await expect(openSelection).toHaveText("Open");
-  expect(await openSelection.evaluate((button) => button.scrollWidth <= button.clientWidth + 1)).toBe(true);
-  expect(await selection.locator(".scope-selection-list").evaluate((list) => list.scrollHeight <= list.clientHeight + 1)).toBe(true);
 
-  await browser.getByRole("button", { name: "Back" }).click();
+  await syllabus.getByRole("button", { name: "Physical Geography", exact: true }).click();
+  await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toHaveAttribute("aria-current", "location");
+  await expect(syllabus.getByRole("button", { name: "Remove Indian Geography from selection" })).toBeVisible();
+  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("402");
+
+  await syllabus.getByRole("button", { name: "Geography", exact: true }).click();
   await browser.getByRole("button", { name: "Select Physical Geography. 363 questions available." }).click();
-  await expect(selection).toContainText("Physical Geography");
-  await expect(selection).not.toContainText("Indian Geography");
+  await expect(syllabus.getByRole("button", { name: "Remove Physical Geography from selection" })).toBeVisible();
+  await expect(syllabus.getByRole("button", { name: "Remove Indian Geography from selection" })).toHaveCount(0);
   await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("363");
 
-  await browser.getByRole("button", { name: "All subjects" }).click();
+  const chapter = "Latitudes, Longitudes, Time and Motions of the Earth";
+  await browser.getByRole("button", { name: `Open ${chapter} subparts without changing your selection` }).click();
+  await expect(syllabus.getByRole("button", { name: chapter, exact: true })).toHaveAttribute("aria-current", "location");
+  await expect(syllabus.getByRole("button", { name: "Rotation and Time", exact: true })).toBeVisible();
+  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("363");
+
+  await syllabus.getByRole("button", { name: "Subjects" }).click();
   await browser.getByRole("button", { name: "Select Polity. 17 questions available." }).click();
-  await expect(selection).toContainText("Polity");
-  await expect(selection).not.toContainText("Physical Geography");
+  await expect(syllabus.getByRole("button", { name: "Remove Polity from selection" })).toBeVisible();
+  await expect(syllabus.getByRole("button", { name: "Remove Physical Geography from selection" })).toHaveCount(0);
   await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("17");
 });
 
@@ -69,6 +83,22 @@ test("the homepage relies on controls instead of instructional prose", async ({ 
   ]) {
     await expect(main.getByText(phrase, { exact: false })).toHaveCount(0);
   }
+});
+
+test("the full syllabus hierarchy is compact on mobile", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+
+  const toggle = page.getByRole("button", { name: /Syllabus/ });
+  const syllabus = page.getByRole("navigation", { name: "Syllabus" });
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+  await expect(syllabus).toBeHidden();
+
+  await toggle.click();
+  await expect(toggle).toHaveAttribute("aria-expanded", "true");
+  await expect(syllabus).toBeVisible();
+  await syllabus.getByRole("button", { name: "Geography", exact: true }).click();
+  await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toBeVisible();
 });
 
 test("the selected scope opens the existing choose-mode-first setup", async ({ page }) => {
