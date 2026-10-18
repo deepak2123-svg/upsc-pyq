@@ -59,7 +59,7 @@ function SourceDistribution({ counts, exams = PYQ_EXAMS }: { counts: ExamCounts;
         style={{ "--exam-color": PYQ_EXAM_COLORS[exam], flexGrow: counts[exam] } as CSSProperties}
       /> : null)}
     </span>
-    <span className="scope-card-source-counts" aria-label={`Available sources: ${exams.map((exam) => `${exam} ${number(counts[exam])}`).join(", ")}. ${number(total)} questions total.`}>
+    <span className="scope-card-source-counts" role="group" aria-label={`Available sources: ${exams.map((exam) => `${exam} ${number(counts[exam])}`).join(", ")}. ${number(total)} questions total.`}>
       {exams.map((exam) => <span key={exam} data-exam={exam}>
         <i style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} aria-hidden="true" />
         <b>{exam}</b> {number(counts[exam])}
@@ -102,8 +102,6 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAttempt,
         const availableCount = preferredExam ? node.examCounts[preferredExam] : node.questionCount;
         const displayNumber = scopeDisplayNumber(node.id, index);
         const hasChildren = (index.childrenById.get(node.id)?.length || 0) > 0;
-        const selectedText = metrics.state === "all" ? "Included"
-          : metrics.state === "partial" ? "Partly included" : "";
         const childKind = index.childrenById.get(node.id)?.[0]?.kind;
         const childLabel = childKind ? `${levelNames[childKind]}s` : "details";
         const countText = `${number(availableCount)} questions`;
@@ -117,26 +115,30 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAttempt,
           data-selected-count={metrics.selectedCount}
         >
           <div className="scope-card-body">
-            {displayNumber || selectedText ? <div className="scope-card-meta">{displayNumber ? <span className="scope-card-number">{displayNumber}</span> : null}{selectedText ? <span className="scope-card-state">{selectedText}</span> : null}</div> : null}
-            <h4>{node.label}</h4>
-            <p>{countText}</p>
+            <div className="scope-card-main">
+              <button
+                type="button"
+                className="scope-card-select"
+                disabled={disabled}
+                aria-current={metrics.state === "all" ? "true" : undefined}
+                aria-label={`Use ${node.label} as the test scope. ${number(availableCount)} questions available.`}
+                onClick={() => onAttempt(node.id)}
+              ><span aria-hidden="true">{metrics.state === "all" ? "✓" : metrics.state === "partial" ? "−" : ""}</span></button>
+              <div className="scope-card-copy">
+                {displayNumber ? <div className="scope-card-meta"><span className="scope-card-number">{displayNumber}</span></div> : null}
+                <h4>{node.label}</h4>
+                <p>{countText}</p>
+              </div>
+              {hasChildren ? <button
+                type="button"
+                className="scope-card-open"
+                disabled={disabled}
+                title={`View ${childLabel}`}
+                aria-label={`Open ${node.label} ${childLabel} without changing your selection`}
+                onClick={() => onBrowse(node.id)}
+              ><span aria-hidden="true">›</span></button> : null}
+            </div>
             <SourceDistribution counts={metrics.availableExams} exams={preferredExam ? [preferredExam] : PYQ_EXAMS} />
-          </div>
-          <div className="scope-card-actions">
-            <button
-              type="button"
-              className="scope-card-select"
-              disabled={disabled}
-              aria-label={`Select ${node.label}. ${number(availableCount)} questions available.`}
-              onClick={() => onAttempt(node.id)}
-            >Select</button>
-            {hasChildren ? <button
-              type="button"
-              className="scope-card-open"
-              disabled={disabled}
-              aria-label={`Open ${node.label} ${childLabel} without changing your selection`}
-              onClick={() => onBrowse(node.id)}
-            >View {childLabel}</button> : null}
           </div>
         </article>;
       })}

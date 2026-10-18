@@ -159,6 +159,30 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const selectedIds = useMemo(() => selectedScopeIds(paths, index), [paths, index]);
   const current = focusId ? index.nodesById.get(focusId) : undefined;
   const focusPath = current ? ancestors(current.id, index) : [];
+  const hasExplicitSelection = selectedIds.length > 0;
+  const summaryPaths = useMemo<SelectionPaths>(() => {
+    if (hasExplicitSelection) return paths;
+    if (current) return replaceScope({}, current.id, index, initialExam);
+    return initialInventory.subjects
+      .filter((subject) => !initialExam || subject.examCounts[initialExam] > 0)
+      .reduce((next, subject) => addScope(next, subject.id, index, initialExam), {} as SelectionPaths);
+  }, [current, hasExplicitSelection, index, initialExam, initialInventory.subjects, paths]);
+  const summaryTotals = useMemo(() => selectionCounts(summaryPaths, index), [summaryPaths, index]);
+  const selectedScopeLabels = selectedIds.flatMap((id) => {
+    const node = index.nodesById.get(id);
+    if (!node) return [];
+    const number = scopeDisplayNumber(id, index);
+    return [number ? `${number} · ${node.label}` : node.label];
+  });
+  const fullScopeLevel = !current ? "library" : current.kind === "subject" ? "subject" : current.kind === "head" ? "section" : current.kind === "topic" ? "chapter" : "subpart";
+  const summaryContextLabel = hasExplicitSelection ? "Selected syllabus" : `Full ${fullScopeLevel}`;
+  const summaryScopeLabel = hasExplicitSelection
+    ? selectedScopeLabels.length === 1 ? selectedScopeLabels[0] : `${selectedScopeLabels.length} selected parts`
+    : current?.label || (initialExam ? `${initialExam} question library` : "Question library");
+  const summaryScopeDetail = hasExplicitSelection && selectedScopeLabels.length > 1
+    ? `${selectedScopeLabels.slice(0, 2).join(" · ")}${selectedScopeLabels.length > 2 ? ` · +${selectedScopeLabels.length - 2} more` : ""}`
+    : "";
+  const summaryActionLabel = hasExplicitSelection ? "Set up selected test →" : `Set up full ${fullScopeLevel} test →`;
   const activeSourceId = sourceScopeId !== "all" && index.nodesById.has(sourceScopeId) && scopeMetrics(sourceScopeId, paths, index).state !== "none" ? sourceScopeId : "all";
   const sourceLeaves = activeSourceId === "all" ? [...index.nodesById.values()].filter((node) => node.kind === "subtopic" && Object.hasOwn(paths, node.id)) : (index.leavesById.get(activeSourceId) || []).filter((node) => Object.hasOwn(paths, node.id));
   const sourceMetrics = Object.fromEntries(PYQ_EXAMS.map((exam) => {
@@ -215,6 +239,14 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     setPaths(next); setSourceScopeId("all"); setError("");
     if (!Object.keys(next).length) setFocusId(undefined);
     else if (current && scopeMetrics(current.subjectId, next, index).state === "none") setFocusId(selectionCounts(next, index).subjectIds[0]);
+  }
+  function openSetup() {
+    if (!restored || loading || summaryTotals.matchingCount === 0) return;
+    if (!hasExplicitSelection) {
+      setPaths(summaryPaths);
+      setSourceScopeId("all"); setError(""); setNotice("Full scope selected.");
+    }
+    setSetupOpen(true);
   }
   async function createSnapshot() {
     if (count === null || practiceCount === null) return;
@@ -278,14 +310,15 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
 
       <aside className="selection-dock scope-dock scope-test-summary" aria-labelledby="practice-summary-title">
         <div className="scope-dock-body"><h2 id="practice-summary-title">Test</h2>
-          <div className="scope-matching" data-testid="matching-count"><strong>{format(totals.matchingCount)}</strong><span>questions</span></div>
-          {selectedIds.length ? <><div className="scope-test-source-bar" aria-hidden="true">{PYQ_EXAMS.map((exam) => totals.examTotals[exam] ? <i key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam], flexGrow: totals.examTotals[exam] } as CSSProperties} /> : null)}</div><div className="scope-test-source-list">{PYQ_EXAMS.map((exam) => <span key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties}><i />{exam} <b>{format(totals.examTotals[exam])}</b></span>)}</div></> : null}
+          <div className="scope-test-context" data-testid="test-scope-label"><span>{summaryContextLabel}</span><strong title={summaryScopeLabel}>{summaryScopeLabel}</strong>{summaryScopeDetail ? <small>{summaryScopeDetail}</small> : null}</div>
+          <div className="scope-matching" data-testid="matching-count"><strong>{format(summaryTotals.matchingCount)}</strong><span>questions</span></div>
+          {summaryTotals.matchingCount ? <><div className="scope-test-source-bar" aria-hidden="true">{PYQ_EXAMS.map((exam) => summaryTotals.examTotals[exam] ? <i key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam], flexGrow: summaryTotals.examTotals[exam] } as CSSProperties} /> : null)}</div><div className="scope-test-source-list">{PYQ_EXAMS.map((exam) => <span key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties}><i />{exam} <b>{format(summaryTotals.examTotals[exam])}</b></span>)}</div></> : null}
           {totals.subjectIds.length > 0 && totals.matchingCount === 0 ? <p className="scope-shortage">No questions match the enabled exam sources. Re-enable a source or choose another scope.</p> : null}
         </div>
-        <div className="scope-dock-footer"><button type="button" className="start-practice" disabled={!restored || totals.matchingCount === 0 || loading} onClick={() => setSetupOpen(true)}>Set up test →</button>{draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}</div>
+        <div className="scope-dock-footer"><button type="button" className="start-practice" data-testid={hasExplicitSelection ? undefined : "full-scope-action"} disabled={!restored || summaryTotals.matchingCount === 0 || loading} onClick={openSetup}>{summaryActionLabel}</button>{draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}</div>
       </aside>
     </div>
-    <div className="scope-mobile-bar"><div><strong>{format(totals.matchingCount)} questions</strong></div><button type="button" disabled={!restored || totals.matchingCount === 0 || loading} onClick={() => setSetupOpen(true)}>Set up test →</button></div>
+    <div className="scope-mobile-bar"><div><strong>{format(summaryTotals.matchingCount)} questions</strong><span>{summaryScopeLabel}</span></div><button type="button" disabled={!restored || summaryTotals.matchingCount === 0 || loading} onClick={openSetup}>{hasExplicitSelection ? "Set up test →" : `Full ${fullScopeLevel} test →`}</button></div>
     {addOpen ? <AddScopeDialog index={index} paths={paths} initialId={current?.subjectId || totals.subjectIds[0]} preferredExam={initialExam} onCancel={() => setAddOpen(false)} onAdd={(id) => { setPaths((existing) => addScope(existing, id, index, initialExam)); setFocusId(id); setSourceScopeId("all"); setError(""); setNotice("Scope added."); setAddOpen(false); }} /> : null}
     {setupOpen ? <PracticeSetupDialog matchingCount={totals.matchingCount} examMetrics={setupSourceMetrics} count={count} order={order} durationChoice={durationChoice} customMinutes={customMinutes} includeAnswerKey={includeAnswerKey} shortage={shortage} validDuration={validDuration} loading={loading} exporting={exporting} canStart={canStart} error={error} onExam={toggleSetupSource} onCount={(value) => { setCount(value); setError(""); }} onOrder={setOrder} onDuration={(value) => { setDurationChoice(value); setError(""); }} onCustomMinutes={setCustomMinutes} onIncludeAnswerKey={setIncludeAnswerKey} onUseAll={() => setCount("all")} onStart={() => void startPractice()} onExport={() => void exportPaper()} onCancel={() => { setSetupOpen(false); setError(""); }} /> : null}
   </main>;

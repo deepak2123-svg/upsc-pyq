@@ -17,8 +17,10 @@ test("browsing stays separate from the committed selection", async ({ page }) =>
   await expect(syllabus.getByRole("button", { name: "Polity", exact: true })).toBeVisible();
   await expect(syllabus.locator(".scope-syllabus-check")).toHaveCount(0);
   await expect(page.locator(".scope-breadcrumbs")).toHaveCount(0);
-  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("0");
-  await expect(summary.getByRole("button", { name: "Set up test" })).toBeDisabled();
+  await expect(summary.getByTestId("test-scope-label")).toContainText("Full library");
+  await expect(summary.getByTestId("test-scope-label")).toContainText("Question library");
+  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("1,210");
+  await expect(summary.getByRole("button", { name: "Set up full library test" })).toBeEnabled();
 
   await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
   await expect(browser.getByRole("heading", { name: "Sections" })).toBeVisible();
@@ -27,13 +29,18 @@ test("browsing stays separate from the committed selection", async ({ page }) =>
     await expect(syllabus.getByRole("button", { name: section, exact: true })).toBeVisible();
   }
   await expect(syllabus.locator(".scope-syllabus-check")).toHaveCount(0);
-  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("0");
+  await expect(summary.getByTestId("test-scope-label")).toContainText("Full subject");
+  await expect(summary.getByTestId("test-scope-label")).toContainText("Geography");
+  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("1,021");
+  await expect(summary.getByRole("button", { name: "Set up full subject test" })).toBeEnabled();
 
-  await browser.getByRole("button", { name: "Select Indian Geography. 402 questions available." }).click();
+  await browser.getByRole("button", { name: "Use Indian Geography as the test scope. 402 questions available." }).click();
   await expect(syllabus.getByRole("button", { name: "Remove Indian Geography from selection" })).toBeVisible();
   await expect(syllabus.locator(".scope-syllabus-check")).toHaveCount(1);
+  await expect(summary.getByTestId("test-scope-label")).toContainText("Selected syllabus");
+  await expect(summary.getByTestId("test-scope-label")).toContainText("Indian Geography");
   await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("402");
-  await expect(summary.getByRole("button", { name: "Set up test" })).toBeEnabled();
+  await expect(summary.getByRole("button", { name: "Set up selected test" })).toBeEnabled();
 
   await syllabus.getByRole("button", { name: "Physical Geography", exact: true }).click();
   await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toHaveAttribute("aria-current", "location");
@@ -41,7 +48,7 @@ test("browsing stays separate from the committed selection", async ({ page }) =>
   await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("402");
 
   await syllabus.getByRole("button", { name: "Geography", exact: true }).click();
-  await browser.getByRole("button", { name: "Select Physical Geography. 363 questions available." }).click();
+  await browser.getByRole("button", { name: "Use Physical Geography as the test scope. 363 questions available." }).click();
   await expect(syllabus.getByRole("button", { name: "Remove Physical Geography from selection" })).toBeVisible();
   await expect(syllabus.getByRole("button", { name: "Remove Indian Geography from selection" })).toHaveCount(0);
   await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("363");
@@ -53,10 +60,54 @@ test("browsing stays separate from the committed selection", async ({ page }) =>
   await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("363");
 
   await syllabus.getByRole("button", { name: "Subjects" }).click();
-  await browser.getByRole("button", { name: "Select Polity. 17 questions available." }).click();
+  await browser.getByRole("button", { name: "Use Polity as the test scope. 17 questions available." }).click();
   await expect(syllabus.getByRole("button", { name: "Remove Polity from selection" })).toBeVisible();
   await expect(syllabus.getByRole("button", { name: "Remove Physical Geography from selection" })).toHaveCount(0);
   await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("17");
+});
+
+test("the empty selection offers and commits the full browsed scope", async ({ page }) => {
+  const syllabus = page.getByRole("navigation", { name: "Syllabus" });
+  const summary = page.locator(".scope-test-summary");
+  const browser = page.locator(".scope-library-browser");
+
+  await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
+  await browser.getByRole("button", { name: "Open Physical Geography chapters without changing your selection" }).click();
+
+  await expect(syllabus.locator(".scope-syllabus-check")).toHaveCount(0);
+  await expect(summary.getByTestId("test-scope-label")).toContainText("Full section");
+  await expect(summary.getByTestId("test-scope-label")).toContainText("Physical Geography");
+  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("363");
+
+  await summary.getByRole("button", { name: "Set up full section test" }).click();
+  await expect(syllabus.getByRole("button", { name: "Remove Physical Geography from selection" })).toBeVisible();
+  await expect(page.getByRole("dialog", { name: "How would you like to attempt these questions?" })).toContainText("363 questions");
+});
+
+test("chapter cards keep both actions compact and distinct", async ({ page }) => {
+  const browser = page.locator(".scope-library-browser");
+  await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
+  await browser.getByRole("button", { name: "Open Physical Geography chapters without changing your selection" }).click();
+
+  const cards = browser.locator(".scope-card");
+  await expect(cards).toHaveCount(11);
+  await expect(browser.locator(".scope-card-actions")).toHaveCount(0);
+  await expect(cards.first().locator(".scope-card-main > .scope-card-select")).toBeVisible();
+  await expect(cards.first().locator(".scope-card-main > .scope-card-open")).toBeVisible();
+
+  const metrics = await cards.evaluateAll((nodes) => nodes.map((node) => {
+    const card = node.getBoundingClientRect();
+    const select = node.querySelector<HTMLElement>(".scope-card-select")!.getBoundingClientRect();
+    const open = node.querySelector<HTMLElement>(".scope-card-open")!.getBoundingClientRect();
+    return { height: card.height, selectWidth: select.width, selectHeight: select.height, openWidth: open.width, openHeight: open.height };
+  }));
+  expect(Math.max(...metrics.map(({ height }) => height))).toBeLessThan(190);
+  for (const metric of metrics) {
+    expect(metric.selectWidth).toBeGreaterThanOrEqual(44);
+    expect(metric.selectHeight).toBeGreaterThanOrEqual(44);
+    expect(metric.openWidth).toBeGreaterThanOrEqual(44);
+    expect(metric.openHeight).toBeGreaterThanOrEqual(44);
+  }
 });
 
 test("exam archive cards show only that exam's inventory", async ({ page }) => {
@@ -140,7 +191,7 @@ test("clicking the current syllabus level again folds it", async ({ page }) => {
   await expect(physical).toHaveAttribute("aria-expanded", "false");
   await expect(syllabus.getByRole("button", { name: "Universe, Solar System, Shape and Size of Earth", exact: true })).toHaveCount(0);
 
-  await browser.getByRole("button", { name: "Select Indian Geography. 402 questions available." }).click();
+  await browser.getByRole("button", { name: "Use Indian Geography as the test scope. 402 questions available." }).click();
   const indian = syllabus.getByRole("button", { name: "Indian Geography", exact: true });
   await expect(indian).toHaveAttribute("aria-current", "location");
   await expect(page.locator(".scope-test-summary").getByTestId("matching-count").locator("strong")).toHaveText("402");
@@ -155,7 +206,7 @@ test("exam sources use the clear two-by-two card layout", async ({ page }) => {
   const browser = page.locator(".scope-library-browser");
 
   await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
-  await browser.getByRole("button", { name: "Select Indian Geography. 402 questions available." }).click();
+  await browser.getByRole("button", { name: "Use Indian Geography as the test scope. 402 questions available." }).click();
 
   const sourceRail = page.locator(".scope-syllabus-rail .scope-sources-rail");
   const cards = sourceRail.getByRole("checkbox");
@@ -198,8 +249,8 @@ test("the selected scope opens the existing choose-mode-first setup", async ({ p
   const summary = page.locator(".scope-test-summary");
 
   await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
-  await browser.getByRole("button", { name: "Select Indian Geography. 402 questions available." }).click();
-  await summary.getByRole("button", { name: "Set up test" }).click();
+  await browser.getByRole("button", { name: "Use Indian Geography as the test scope. 402 questions available." }).click();
+  await summary.getByRole("button", { name: "Set up selected test" }).click();
 
   const dialog = page.getByRole("dialog", { name: "How would you like to attempt these questions?" });
   await expect(dialog).toContainText("402 questions");

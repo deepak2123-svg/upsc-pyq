@@ -10,8 +10,15 @@ type FixtureQuestion = { id: string; exam: string; options: Record<string, strin
 type FixtureSnapshot = { id: string; questions: FixtureQuestion[]; recipe: Record<string, unknown> };
 const records = JSON.parse(readFileSync(new URL("../../content/question-bank.json", import.meta.url), "utf8")) as { questions: { id: string; answer: string }[] };
 const correctAnswer = (id: string) => records.questions.find((question) => question.id === id)!.answer;
-const start = (page: Page) => page.locator(".scope-dock .start-practice");
-const choose = (page: Page, label: string) => page.locator(".scope-cards").getByRole("button", { name: new RegExp(`^Choose ${label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\.`) }).click();
+const start = (page: Page) => page.locator(".practice-setup-dialog .confirm-practice");
+const choose = (page: Page, label: string) => page.locator(".scope-cards").getByRole("button", { name: new RegExp(`^Use ${label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")} as the test scope\\.`) }).click();
+
+async function openOnlineSetup(page: Page) {
+  await page.locator(".scope-test-summary .start-practice").click();
+  const dialog = page.getByRole("dialog", { name: "How would you like to attempt these questions?" });
+  await dialog.getByRole("button", { name: /Take an online test/ }).click();
+  return dialog;
+}
 
 async function fixture(page: Page, request: APIRequestContext, durationMinutes: number | null = null) {
   const response = await request.post("/api/practice-snapshots", {
@@ -68,21 +75,22 @@ async function storedAttempt(page: Page, id: string) {
 
 test.beforeEach(async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Build your test." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Question library" })).toBeVisible();
   await page.waitForFunction(() => sessionStorage.getItem("upsc-pyq-builder:v3:all") !== null);
 });
 
 test("sources live beside the chapter cards with four honest exam colors", async ({ page, request }, testInfo) => {
-  await page.getByRole("button", { name: /^Geography\b/ }).first().click();
+  await choose(page, "Geography");
   await expect(page.locator(".scope-dock .scope-sources")).toHaveCount(0);
   await expect(page.locator(".scope-workspace .scope-sources")).toHaveCount(1);
   await expect(page.locator(".scope-card-grid")).toBeVisible();
   await expect(page.locator(".scope-cards")).not.toContainText("↗");
   const inventory = await (await request.get("/api/pyqs/inventory")).json();
   const geo = inventory.subjects.find((subject: { id: string }) => subject.id === GEO);
+  const sourceRail = page.locator(".scope-syllabus-rail .scope-sources");
   for (const exam of EXAMS) {
-    await expect(page.locator(".scope-refine .scope-sources")).toContainText(exam);
-    await expect(page.locator(".scope-refine .scope-sources").getByRole("checkbox", { name: new RegExp(`^${exam}\\b`) })).toBeChecked();
+    await expect(sourceRail).toContainText(exam);
+    await expect(sourceRail.getByRole("checkbox", { name: new RegExp(`^${exam}\\b`) })).toBeChecked();
     const sources = page.locator(`.scope-card-source-counts span[data-exam="${exam}"]`);
     expect(await sources.count()).toBeGreaterThan(0);
     const values = await sources.allTextContents();
@@ -91,34 +99,38 @@ test("sources live beside the chapter cards with four honest exam colors", async
     expect(colors.every((color) => color === COLORS[exam as keyof typeof COLORS])).toBe(true);
   }
   const cardOrder = await page.locator(".scope-card").evaluateAll((cards) => cards.map((card) => (card as HTMLElement).dataset.scopeId));
-  await page.locator(".scope-sources").getByRole("checkbox", { name: /^NDA\b/ }).click();
+  await sourceRail.getByRole("checkbox", { name: /^NDA\b/ }).click();
   await expect(page.getByTestId("matching-count").locator("strong")).toHaveText((1021 - geo.examCounts.NDA).toLocaleString("en-IN"));
   expect(await page.locator(".scope-card").evaluateAll((cards) => cards.map((card) => (card as HTMLElement).dataset.scopeId))).toEqual(cardOrder);
-  await page.locator(".scope-builder-layout").evaluate((layout) => {
+  await page.locator(".scope-library-layout").evaluate((layout) => {
     window.scrollTo(0, layout.getBoundingClientRect().top + window.scrollY - 100);
   });
-  await expect(start(page)).toBeInViewport();
-  const button = await start(page).boundingBox();
+  const setupButton = page.locator(".scope-test-summary .start-practice");
+  await expect(setupButton).toBeInViewport();
+  const button = await setupButton.boundingBox();
   expect(button!.y).toBeGreaterThanOrEqual(0);
   expect(button!.y + button!.height).toBeLessThanOrEqual(page.viewportSize()!.height + 3);
   await page.locator(".scope-dock-body").evaluate((body) => { body.scrollTop = body.scrollHeight; });
-  await expect(start(page)).toBeInViewport();
+  await expect(setupButton).toBeInViewport();
   await page.screenshot({ path: testInfo.outputPath("practice-dock.png"), fullPage: false });
 });
 
 test("test duration defaults to untimed and survives draft reload and snapshot creation", async ({ page }) => {
-  const duration = page.getByRole("combobox", { name: "Test duration", exact: true });
-  await expect(duration).toHaveValue("untimed");
-  await page.getByRole("button", { name: /^Geography\b/ }).first().click();
+  await choose(page, "Geography");
   await choose(page, "Physical Geography");
   await choose(page, CHAPTER);
-  await page.locator(".scope-size-options").getByRole("button", { name: "20", exact: true }).click();
-  await duration.selectOption("20");
+  let dialog = await openOnlineSetup(page);
+  let timeOptions = dialog.getByRole("group", { name: "Time limit" });
+  await expect(timeOptions.getByRole("button", { name: "No time limit", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await dialog.getByRole("group", { name: "How many questions?" }).getByRole("button", { name: "20", exact: true }).click();
+  await timeOptions.getByRole("button", { name: "20 min", exact: true }).click();
   await page.reload();
-  await expect(duration).toHaveValue("20");
+  dialog = await openOnlineSetup(page);
+  timeOptions = dialog.getByRole("group", { name: "Time limit" });
+  await expect(timeOptions.getByRole("button", { name: "20 min", exact: true })).toHaveAttribute("aria-pressed", "true");
   await expect(page.getByTestId("matching-count").locator("strong")).toHaveText("28");
-  await duration.selectOption("custom");
-  const minutes = page.getByRole("spinbutton", { name: "Minutes", exact: true });
+  await timeOptions.getByRole("button", { name: "Custom", exact: true }).click();
+  let minutes = dialog.getByRole("spinbutton", { name: "Custom minutes", exact: true });
   for (const value of ["0", "1.5", "721"]) {
     await minutes.fill(value);
     await expect(start(page)).toBeDisabled();
@@ -127,9 +139,12 @@ test("test duration defaults to untimed and survives draft reload and snapshot c
   await minutes.fill("15");
   await expect(start(page)).toBeEnabled();
   await page.reload();
-  await expect(duration).toHaveValue("custom");
+  dialog = await openOnlineSetup(page);
+  timeOptions = dialog.getByRole("group", { name: "Time limit" });
+  await expect(timeOptions.getByRole("button", { name: "Custom", exact: true })).toHaveAttribute("aria-pressed", "true");
+  minutes = dialog.getByRole("spinbutton", { name: "Custom minutes", exact: true });
   await expect(minutes).toHaveValue("15");
-  await duration.selectOption("20");
+  await timeOptions.getByRole("button", { name: "20 min", exact: true }).click();
   const created = page.waitForResponse((response) => response.url().endsWith("/api/practice-snapshots") && response.request().method() === "POST");
   await start(page).click();
   const snapshot = await (await created).json();
@@ -151,23 +166,27 @@ test("test duration defaults to untimed and survives draft reload and snapshot c
 test("Exit restores the exam-specific builder's scope, sources, size and duration", async ({ page }) => {
   await page.goto("/exams/CSE");
   await page.waitForFunction(() => sessionStorage.getItem("upsc-pyq-builder:v3:CSE") !== null);
-  await page.getByRole("button", { name: /^Geography\b/ }).first().click();
+  await choose(page, "Geography");
   await choose(page, "Physical Geography");
   await choose(page, CHAPTER);
   await expect(page.getByTestId("matching-count").locator("strong")).toHaveText("5");
-  await page.locator(".scope-size-options").getByRole("button", { name: "All", exact: true }).click();
-  await page.getByRole("combobox", { name: "Test duration", exact: true }).selectOption("20");
+  let dialog = await openOnlineSetup(page);
+  await dialog.getByRole("group", { name: "How many questions?" }).getByRole("button", { name: "All 5", exact: true }).click();
+  await dialog.getByRole("group", { name: "Time limit" }).getByRole("button", { name: "20 min", exact: true }).click();
   await start(page).click();
   await expect(page.locator(".question-heading")).toContainText("Question 1 of 5");
   await page.getByRole("link", { name: "Exit test", exact: true }).click();
   await expect(page).toHaveURL(/\/exams\/CSE$/);
   await expect(page.getByTestId("matching-count").locator("strong")).toHaveText("5");
-  await expect(page.getByRole("navigation", { name: "Current syllabus path" })).toContainText("Physical Geography");
-  await expect(page.getByRole("navigation", { name: "Current syllabus path" })).toContainText(CHAPTER);
-  await expect(page.locator(".scope-size-options").getByRole("button", { name: "All", exact: true })).toHaveAttribute("aria-pressed", "true");
-  await expect(page.getByRole("combobox", { name: "Test duration", exact: true })).toHaveValue("20");
-  await expect(page.locator(".scope-sources").getByRole("checkbox", { name: /^CSE\b/ })).toBeChecked();
-  for (const exam of ["CAPF", "CDS", "NDA"]) await expect(page.locator(".scope-sources").getByRole("checkbox", { name: new RegExp(`^${exam}\\b`) })).not.toBeChecked();
+  const syllabus = page.getByRole("navigation", { name: "Syllabus" });
+  await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toBeVisible();
+  await expect(syllabus.getByRole("button", { name: CHAPTER, exact: true })).toHaveAttribute("aria-current", "location");
+  dialog = await openOnlineSetup(page);
+  await expect(dialog.getByRole("group", { name: "How many questions?" }).getByRole("button", { name: "All 5", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await expect(dialog.getByRole("group", { name: "Time limit" }).getByRole("button", { name: "20 min", exact: true })).toHaveAttribute("aria-pressed", "true");
+  const exams = dialog.getByRole("group", { name: "Exams to include" });
+  await expect(exams.getByRole("checkbox", { name: /^CSE\b/ })).toBeChecked();
+  for (const exam of ["CAPF", "CDS", "NDA"]) await expect(exams.getByRole("checkbox", { name: new RegExp(`^${exam}\\b`) })).not.toBeChecked();
 });
 
 test("answers remain editable and hidden until submission; result sheet grades answered and skipped questions", async ({ page, request }, testInfo) => {
