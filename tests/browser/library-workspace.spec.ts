@@ -36,6 +36,27 @@ test("opening and folding folders never adds questions", async ({ page }) => {
   await expect(browser(page).locator(".explorer-folder svg")).toHaveCount(0);
 });
 
+test("unnumbered chapters use the panel width and the library heading fits", async ({ page }, testInfo) => {
+  await open(page, "Geography");
+  await open(page, "Human & Economic Geography");
+  const label = page.locator(".syllabus-chapters-panel .syllabus-node-label").first();
+  for (const width of [1600, 1024, 390, 320]) {
+    await page.setViewportSize({ width, height: 1000 });
+    if (width <= 820) await page.locator(".scope-syllabus-mobile-toggle").click();
+    await expect(label).toBeVisible();
+    const bounds = await label.boundingBox();
+    expect(bounds!.width).toBeGreaterThan(100);
+    expect(bounds!.height).toBeLessThan(70);
+    if (width <= 820) await page.keyboard.press("Escape");
+    const title = page.getByRole("heading", { name: "Question library", exact: true });
+    const titleBounds = await title.boundingBox();
+    expect(titleBounds!.x + titleBounds!.width).toBeLessThanOrEqual(width);
+    expect(await title.evaluate((element) => element.scrollWidth <= element.clientWidth)).toBe(true);
+  }
+  await page.setViewportSize({ width: 1600, height: 1000 });
+  await page.screenshot({ path: testInfo.outputPath("human-geography-panel.png"), fullPage: false });
+});
+
 test("adding parts is cumulative and keeps the folder open", async ({ page }, testInfo) => {
   await open(page, "Geography");
   await open(page, "Physical Geography");

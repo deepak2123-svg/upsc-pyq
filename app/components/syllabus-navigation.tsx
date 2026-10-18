@@ -72,7 +72,7 @@ export function SyllabusNavigation({
           aria-current={isCurrent ? "location" : undefined}
           onClick={() => onBrowse(node.id)}
         >
-          <span>{displayNumber ? <small>{displayNumber.replace(/^Chapter\s+/i, "")}</small> : null}{node.label}</span>
+          <span data-numbered={Boolean(displayNumber)}>{displayNumber ? <small>{displayNumber.replace(/^Chapter\s+/i, "")}</small> : null}<span className="syllabus-node-label">{node.label}</span></span>
         </button>
         <span className="scope-syllabus-count">{format(nodeCount(node, preferredExam))}</span>
       </div>
