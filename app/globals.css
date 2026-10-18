@@ -1324,16 +1324,24 @@ h3 { font-size: 16px; }
 .scope-selection-tools { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 5px; margin-top: 15px; padding: 14px 4px 0; border-top: 1px solid var(--line); }
 .scope-selection-tools strong { font-size: 12px; }
 .scope-selection-tools button { min-height: 30px; padding: 3px 7px; border: 0; background: transparent; color: var(--accent); font-size: 11px; font-weight: 750; }
-.scope-sources-rail.scope-sources { display: grid; gap: 10px; align-items: stretch; margin: 18px -2px 0; padding: 16px 2px 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; }
+.scope-sources-rail.scope-sources { display: grid; gap: 12px; align-items: stretch; margin: 20px -2px 0; padding: 18px 2px 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; }
 .scope-sources-rail .scope-source-heading { min-width: 0; }
+.scope-sources-rail .scope-source-heading h3 { margin: 0; font-size: 17px; line-height: 1.25; }
 .scope-sources-rail .scope-source-heading span { white-space: normal; }
 .scope-sources-rail .scope-source-target { display: grid; gap: 5px; color: var(--muted); font-size: 10px; }
 .scope-sources-rail .scope-source-target select { width: 100%; min-height: 38px; padding: 6px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--ink); font-size: 10px; }
-.scope-sources-rail .scope-source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; min-width: 0; }
-.scope-sources-rail .scope-source { min-width: 0; min-height: 57px; gap: 3px; padding: 7px; border-left: 3px solid var(--exam-color); }
+.scope-sources-rail .scope-source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; min-width: 0; }
+.scope-sources-rail .scope-source { min-width: 0; min-height: 94px; align-content: center; gap: 7px; padding: 13px 10px; border: 1px solid #a9bfff; border-left: 5px solid var(--exam-color); border-radius: 14px; background: #f2f6ff; box-shadow: none; }
+.scope-sources-rail .scope-source:hover:not(:disabled) { background: #eaf1ff; border-color: #86a4fb; border-left-color: var(--exam-color); }
+.scope-sources-rail .scope-source:focus-visible { outline: 3px solid color-mix(in srgb, var(--exam-color) 28%, white); outline-offset: 2px; }
+.scope-sources-rail .scope-source.none { border-color: var(--line); border-left-color: var(--exam-color); background: var(--surface); }
+.scope-sources-rail .scope-source:disabled { opacity: .52; }
+.scope-sources-rail .scope-source-top { gap: 8px; }
+.scope-sources-rail .scope-check { width: 28px; height: 28px; flex: 0 0 28px; border-color: #9aabc9; border-radius: 6px; color: var(--exam-color); font-size: 22px; line-height: 1; }
+.scope-sources-rail .scope-source-name { overflow: hidden; font-size: 17px; line-height: 1.15; text-overflow: ellipsis; }
 .scope-sources-rail .scope-source-state, .scope-sources-rail .scope-source-total small { display: none; }
-.scope-sources-rail .scope-source-total { padding-left: 24px; }
-.scope-sources-rail .scope-source-total strong { font-size: 14px; }
+.scope-sources-rail .scope-source-total { padding-left: 36px; }
+.scope-sources-rail .scope-source-total strong { color: var(--exam-color); font-size: 24px; line-height: 1; }
 .scope-library-browser { min-width: 0; padding-top: 0; }
 .scope-library-browser .scope-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .scope-library-browser .scope-card { min-height: 218px; }

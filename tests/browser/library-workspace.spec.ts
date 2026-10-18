@@ -101,6 +101,48 @@ test("the full syllabus hierarchy is compact on mobile", async ({ page }) => {
   await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toBeVisible();
 });
 
+test("exam sources use the clear two-by-two card layout", async ({ page }) => {
+  const browser = page.locator(".scope-library-browser");
+
+  await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
+  await browser.getByRole("button", { name: "Select Indian Geography. 402 questions available." }).click();
+
+  const sourceRail = page.locator(".scope-syllabus-rail .scope-sources-rail");
+  const cards = sourceRail.getByRole("checkbox");
+  await expect(sourceRail.getByRole("heading", { name: "Exam sources" })).toBeVisible();
+  await expect(cards).toHaveCount(4);
+
+  const metrics = await sourceRail.evaluate((rail) => {
+    const sourceCards = [...rail.querySelectorAll<HTMLElement>(".scope-source")];
+    const boxes = sourceCards.map((card) => card.getBoundingClientRect());
+    const firstCardStyle = getComputedStyle(sourceCards[0]);
+    const firstCheckStyle = getComputedStyle(sourceCards[0].querySelector<HTMLElement>(".scope-check")!);
+    const firstCountStyle = getComputedStyle(sourceCards[0].querySelector<HTMLElement>(".scope-source-total strong")!);
+    return {
+      boxes: boxes.map(({ x, y, width, height }) => ({ x, y, width, height })),
+      railOverflow: rail.scrollWidth - rail.clientWidth,
+      borderWidth: Number.parseFloat(firstCardStyle.borderLeftWidth),
+      borderColor: firstCardStyle.borderLeftColor,
+      checkboxWidth: Number.parseFloat(firstCheckStyle.width),
+      countSize: Number.parseFloat(firstCountStyle.fontSize),
+      countColor: firstCountStyle.color,
+    };
+  });
+
+  expect(Math.abs(metrics.boxes[0].y - metrics.boxes[1].y)).toBeLessThan(2);
+  expect(Math.abs(metrics.boxes[2].y - metrics.boxes[3].y)).toBeLessThan(2);
+  expect(metrics.boxes[2].y).toBeGreaterThan(metrics.boxes[0].y + 50);
+  expect(Math.abs(metrics.boxes[0].x - metrics.boxes[2].x)).toBeLessThan(2);
+  expect(metrics.railOverflow).toBeLessThanOrEqual(1);
+  expect(metrics.boxes[0].height).toBeGreaterThanOrEqual(90);
+  expect(metrics.borderWidth).toBeGreaterThanOrEqual(5);
+  expect(metrics.checkboxWidth).toBeGreaterThanOrEqual(28);
+  expect(metrics.countSize).toBeGreaterThanOrEqual(24);
+  expect(metrics.countColor).toBe(metrics.borderColor);
+  await expect(sourceRail.locator(".scope-source-state").first()).toBeHidden();
+  await expect(sourceRail.locator(".scope-source-total small").first()).toBeHidden();
+});
+
 test("the selected scope opens the existing choose-mode-first setup", async ({ page }) => {
   const browser = page.locator(".scope-library-browser");
   const summary = page.locator(".scope-test-summary");
