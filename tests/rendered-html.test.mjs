@@ -25,7 +25,7 @@ test("server-renders the browse-first official PYQ workspace", async () => {
   assert.match(html, /Environment/);
   assert.match(html, /Polity/);
   assert.doesNotMatch(html, /Selected syllabus|Nothing selected yet/);
-  assert.match(html, />Test</);
+  assert.match(html, />Your test</);
   assert.doesNotMatch(html, /Browse freely|explicitly select|Opening a level|selection unchanged|Select adds|Open only|Question count, time|Choose MCQs and time next/i);
   assert.doesNotMatch(html, /Choose an examination|Year range|Difficulty/);
   assert.match(html, /PYQs/);
@@ -42,7 +42,7 @@ test("server-renders an exam archive through the browse-first selector", async (
   assert.match(html, /Subjects/);
   assert.match(html, /CSE(?:<!-- -->)? question library/);
   assert.doesNotMatch(html, /Selected syllabus/);
-  assert.match(html, /Set up full library test/);
+  assert.match(html, /Test this folder/);
   assert.doesNotMatch(html, /Browse freely|explicitly select|Opening a level|selection unchanged|Select adds|Open only|Question count, time|Choose MCQs and time next/i);
   assert.doesNotMatch(html, /Start 20-question (?:practice|test)/);
   assert.doesNotMatch(html, /difficulty|generated MCQ|source verbatim/i);

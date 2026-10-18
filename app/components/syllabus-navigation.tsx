@@ -4,23 +4,20 @@ import type { CSSProperties } from "react";
 import type { PyqExam } from "../../lib/pyq-exams";
 import {
   scopeDisplayNumber,
-  scopeMetrics,
   type ScopeNode,
   type SelectionIndex,
-  type SelectionPaths,
 } from "../../lib/practice-selection";
 
 type SyllabusNavigationProps = {
   index: SelectionIndex;
-  paths: SelectionPaths;
   focusPath: ScopeNode[];
-  selectedIds: string[];
+  expandedIds: string[];
   mappedCount: number;
   preferredExam?: PyqExam;
   disabled?: boolean;
   onBrowse: (id: string) => void;
   onBrowseRoot: () => void;
-  onRemove: (id: string) => void;
+  onToggle: (id: string) => void;
 };
 
 const format = (value: number) => value.toLocaleString("en-IN");
@@ -31,31 +28,29 @@ function nodeCount(node: ScopeNode, preferredExam?: PyqExam) {
 
 export function SyllabusNavigation({
   index,
-  paths,
   focusPath,
-  selectedIds,
+  expandedIds,
   mappedCount,
   preferredExam,
   disabled = false,
   onBrowse,
   onBrowseRoot,
-  onRemove,
+  onToggle,
 }: SyllabusNavigationProps) {
   const activeId = focusPath.at(-1)?.id;
   const activePathIds = new Set(focusPath.map((node) => node.id));
-  const selectedIdSet = new Set(selectedIds);
+  const expanded = new Set(expandedIds);
   const subjects = [...index.nodesById.values()]
     .filter((node) => node.kind === "subject" && nodeCount(node, preferredExam) > 0)
-    .sort((a, b) => a.order - b.order || a.label.localeCompare(b.label));
+    .sort((a, b) => ("order" in a ? a.order : 0) - ("order" in b ? b.order : 0) || a.label.localeCompare(b.label));
 
   function renderNode(node: ScopeNode, depth: number) {
     const children = (index.childrenById.get(node.id) || [])
       .filter((child) => nodeCount(child, preferredExam) > 0)
-      .sort((a, b) => a.order - b.order || a.label.localeCompare(b.label));
+      .sort((a, b) => ("order" in a ? a.order : 0) - ("order" in b ? b.order : 0) || a.label.localeCompare(b.label));
     const isCurrent = node.id === activeId;
     const isOnPath = activePathIds.has(node.id);
-    const isSelected = selectedIdSet.has(node.id);
-    const selectionState = scopeMetrics(node.id, paths, index).state;
+    const isExpanded = expanded.has(node.id);
     const displayNumber = scopeDisplayNumber(node.id, index);
 
     return <li key={node.id}>
@@ -64,31 +59,22 @@ export function SyllabusNavigation({
         data-scope-id={node.id}
         data-depth={depth}
         data-path={isOnPath ? "true" : "false"}
-        data-selection-state={selectionState}
         style={{ "--tree-depth": depth } as CSSProperties}
       >
+        {children.length ? <button type="button" className="explorer-caret" disabled={disabled} aria-label={`${isExpanded ? "Collapse" : "Expand"} ${node.label}`} aria-expanded={isExpanded} onClick={() => onToggle(node.id)}>{isExpanded ? "▾" : "▸"}</button> : <span className="explorer-caret-space" />}
         <button
           type="button"
           className="scope-syllabus-link"
           disabled={disabled}
           aria-label={node.label}
           aria-current={isCurrent ? "location" : undefined}
-          aria-expanded={children.length ? isOnPath : undefined}
           onClick={() => onBrowse(node.id)}
         >
-          <span className="scope-syllabus-caret" aria-hidden="true">{children.length ? (isOnPath ? "▾" : "▸") : ""}</span>
           <span>{displayNumber ? <small>{displayNumber}</small> : null}{node.label}</span>
         </button>
         <span className="scope-syllabus-count">{format(nodeCount(node, preferredExam))}</span>
-        {isSelected ? <button
-          type="button"
-          className="scope-syllabus-check"
-          aria-label={`Remove ${node.label} from selection`}
-          disabled={disabled}
-          onClick={() => onRemove(node.id)}
-        >✓</button> : selectionState === "partial" ? <span className="scope-syllabus-partial" aria-label="Contains selected topics">•</span> : null}
       </div>
-      {children.length && isOnPath ? <ul>{children.map((child) => renderNode(child, depth + 1))}</ul> : null}
+      {children.length && isExpanded ? <ul>{children.map((child) => renderNode(child, depth + 1))}</ul> : null}
     </li>;
   }
 

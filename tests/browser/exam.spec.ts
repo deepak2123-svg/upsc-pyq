@@ -11,7 +11,7 @@ type FixtureSnapshot = { id: string; questions: FixtureQuestion[]; recipe: Recor
 const records = JSON.parse(readFileSync(new URL("../../content/question-bank.json", import.meta.url), "utf8")) as { questions: { id: string; answer: string }[] };
 const correctAnswer = (id: string) => records.questions.find((question) => question.id === id)!.answer;
 const start = (page: Page) => page.locator(".practice-setup-dialog .confirm-practice");
-const choose = (page: Page, label: string) => page.locator(".scope-cards").getByRole("button", { name: new RegExp(`^Use ${label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")} as the test scope\\.`) }).click();
+const choose = (page: Page, label: string) => page.locator(".scope-cards").getByRole("button", { name: `Open ${label}`, exact: true }).click();
 
 async function openOnlineSetup(page: Page) {
   await page.locator(".scope-test-summary .start-practice").click();
@@ -79,18 +79,18 @@ test.beforeEach(async ({ page }) => {
   await page.waitForFunction(() => sessionStorage.getItem("upsc-pyq-builder:v3:all") !== null);
 });
 
-test("sources live beside the chapter cards with four honest exam colors", async ({ page, request }, testInfo) => {
+test("sources live in the test panel with four honest exam colors", async ({ page, request }, testInfo) => {
   await choose(page, "Geography");
-  await expect(page.locator(".scope-dock .scope-sources")).toHaveCount(0);
+  await expect(page.locator(".scope-dock .scope-sources")).toHaveCount(1);
   await expect(page.locator(".scope-workspace .scope-sources")).toHaveCount(1);
   await expect(page.locator(".scope-card-grid")).toBeVisible();
   await expect(page.locator(".scope-cards")).not.toContainText("↗");
   const inventory = await (await request.get("/api/pyqs/inventory")).json();
   const geo = inventory.subjects.find((subject: { id: string }) => subject.id === GEO);
-  const sourceRail = page.locator(".scope-syllabus-rail .scope-sources");
+  const sourceRail = page.locator(".scope-test-summary .scope-sources");
   for (const exam of EXAMS) {
     await expect(sourceRail).toContainText(exam);
-    await expect(sourceRail.getByRole("checkbox", { name: new RegExp(`^${exam}\\b`) })).toBeChecked();
+    await expect(sourceRail.getByRole("button", { name: new RegExp(`^${exam}\\b`) })).toHaveAttribute("aria-pressed", "true");
     const sources = page.locator(`.scope-card-source-counts span[data-exam="${exam}"]`);
     expect(await sources.count()).toBeGreaterThan(0);
     const values = await sources.allTextContents();
@@ -99,7 +99,7 @@ test("sources live beside the chapter cards with four honest exam colors", async
     expect(colors.every((color) => color === COLORS[exam as keyof typeof COLORS])).toBe(true);
   }
   const cardOrder = await page.locator(".scope-card").evaluateAll((cards) => cards.map((card) => (card as HTMLElement).dataset.scopeId));
-  await sourceRail.getByRole("checkbox", { name: /^NDA\b/ }).click();
+  await sourceRail.getByRole("button", { name: /^NDA\b/ }).click();
   await expect(page.getByTestId("matching-count").locator("strong")).toHaveText((1021 - geo.examCounts.NDA).toLocaleString("en-IN"));
   expect(await page.locator(".scope-card").evaluateAll((cards) => cards.map((card) => (card as HTMLElement).dataset.scopeId))).toEqual(cardOrder);
   await page.locator(".scope-library-layout").evaluate((layout) => {

@@ -1389,3 +1389,86 @@ h3 { font-size: 16px; }
   .scope-library-heading h1 { font-size: 32px; }
   .scope-test-source-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Explorer: navigation, folder contents, and test collection. */
+.explorer-layout { grid-template-columns: 270px minmax(0, 1fr) 300px; align-items: start; }
+.explorer-layout .scope-syllabus-row { display: flex; padding-left: calc(8px + var(--tree-depth) * 12px); gap: 2px; }
+.explorer-layout .scope-syllabus-link { display: block; padding: 8px 3px; min-width: 0; flex: 1; }
+.explorer-caret, .explorer-caret-space { width: 28px; flex: 0 0 28px; }
+.explorer-caret { min-height: 44px; padding: 0; border: 0; background: transparent; color: var(--muted); cursor: pointer; }
+.explorer-layout .scope-syllabus-count { padding-right: 8px; font-size: 11px; }
+.explorer-layout .scope-syllabus-row:has([aria-current=location]) { background: #edf2ff; border-radius: 7px; }
+.explorer-layout .scope-card-grid { grid-template-columns: 1fr; gap: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: white; }
+.explorer-layout .scope-card { border: 0; border-bottom: 1px solid var(--line); border-radius: 0; box-shadow: none; }
+.explorer-layout .scope-card:last-child { border-bottom: 0; }
+.explorer-layout .scope-card:hover { transform: none; background: #fafbfe; box-shadow: none; }
+.explorer-layout .scope-card-body { padding: 15px 18px; gap: 8px; }
+.explorer-layout .scope-card-main { grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 16px; }
+.explorer-folder { display: flex; align-items: center; gap: 9px; width: 100%; padding: 4px 0; min-height: 36px; border: 0; background: transparent; text-align: left; color: var(--ink); font: inherit; cursor: pointer; }
+.explorer-folder > svg { flex: 0 0 20px; color: #8595b3; }
+.explorer-folder > span:last-child { margin-left: auto; color: #8a97ac; font-size: 21px; }
+.explorer-folder:hover { color: var(--accent); }
+.explorer-add { flex: 0 0 auto; min-height: 40px; border: 1px solid #d5dff4; border-radius: 7px; padding: 8px 12px; background: #f4f7ff; color: var(--accent); font-size: 12px; font-weight: 700; cursor: pointer; }
+.explorer-add:disabled { color: var(--muted); background: #f4f5f7; border-color: #e8ebef; cursor: default; opacity: 1; }
+.explorer-added { font-size: 10px; color: var(--accent); }
+.explorer-layout .scope-card-source-strip { display: none; }
+.explorer-layout .scope-card-source-counts { display: flex; flex-wrap: wrap; gap: 14px; padding-left: 32px; }
+.explorer-layout .scope-cards-heading { display: flex; align-items: center; padding: 0 0 20px; background: transparent; border: 0; gap: 12px; }
+.explorer-layout .scope-cards-heading > div:first-child { display: grid; gap: 6px; flex: 1; }
+.explorer-layout .scope-cards-heading h3 { font-size: 23px; line-height: 1.3; }
+.explorer-layout .scope-cards-heading small, .explorer-layout .scope-cards-heading > div > span { font-size: 12px; color: var(--muted); }
+.explorer-layout .scope-card-exam-key { display: none; }
+.explorer-back { justify-self: start; min-height: 36px; padding: 0; border: 0; color: var(--muted); background: transparent; font-size: 12px; cursor: pointer; }
+.explorer-contents-label { margin: 0 0 12px; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .07em; }
+.explorer-leaf { padding: 20px; border: 1px solid var(--line); border-radius: 10px; background: white; }
+.explorer-test-heading { display: flex; gap: 10px; align-items: start; justify-content: space-between; }
+.explorer-clear { min-height: 32px; padding: 0; border: 0; color: var(--muted); background: transparent; font-size: 12px; cursor: pointer; }
+.explorer-test-items { list-style: none; padding: 0; margin: 18px 0; max-height: 34vh; overflow-y: auto; }
+.explorer-test-items li { display: flex; align-items: start; gap: 8px; padding: 12px 0; border-top: 1px solid var(--line); }
+.explorer-test-items li > div { display: grid; gap: 5px; flex: 1; min-width: 0; }
+.explorer-test-items small { color: var(--muted); font-size: 10px; line-height: 1.4; }
+.explorer-test-items strong { font-size: 12px; line-height: 1.4; overflow-wrap: anywhere; }
+.explorer-test-items span { color: var(--muted); font-size: 11px; }
+.explorer-test-items button { min-height: 36px; padding: 2px; border: 0; color: var(--muted); background: transparent; font-size: 10px; cursor: pointer; }
+.explorer-sources.scope-sources { display: grid; gap: 10px; padding: 16px 0 0; margin: 16px 0 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; background: transparent; }
+.explorer-sources .scope-source-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.explorer-sources .scope-source { display: grid; gap: 6px; padding: 10px; border: 1px solid var(--line); border-left: 3px solid var(--exam-color); border-radius: 8px; min-width: 0; background: #fafbfc; }
+.explorer-sources .scope-source.all, .explorer-sources .scope-source.partial { background: color-mix(in srgb, var(--exam-color) 6%, white); }
+.explorer-sources .scope-source.none { opacity: .6; }
+.explorer-sources .scope-source-top { display: flex; justify-content: space-between; align-items: center; }
+.explorer-sources .scope-source-name { font-size: 12px; }
+.explorer-sources .scope-source-state { display: inline; font-size: 9px; color: var(--muted); }
+.explorer-sources .scope-source-total { display: flex; gap: 5px; align-items: baseline; padding: 0; }
+.explorer-sources .scope-source-total strong { font-size: 20px; color: var(--exam-color); }
+.explorer-sources .scope-source-total small { font-size: 9px; }
+.explorer-layout .scope-test-summary.scope-dock.selection-dock { display: flex; flex-direction: column; gap: 0; max-height: calc(100dvh - 104px); overflow: hidden; }
+.explorer-layout .scope-dock-body { display: block; flex: 1 1 auto; min-height: 0; overflow-y: auto; scrollbar-gutter: auto; }
+.explorer-layout .scope-dock-footer { display: block; flex: 0 0 auto; width: 100%; margin: 14px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); }
+.explorer-layout .explorer-sources.scope-sources { grid-row: auto; padding: 14px 0 0; border: 0; border-top: 1px solid var(--line); margin: 16px 0 0; }
+.explorer-layout .explorer-sources .scope-source { grid-template-columns: 1fr; padding: 10px; gap: 8px; }
+.explorer-layout .explorer-sources .scope-source-total { flex-wrap: nowrap; }
+.explorer-layout .explorer-sources .scope-source-total strong { display: block; text-align: left; font-size: 20px; }
+.explorer-layout .explorer-sources .scope-source small { font-size: 9px; }
+.explorer-drawer-close, .explorer-overlay { display: none; }
+.explorer-layout button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 1280px) {
+  .explorer-layout { grid-template-columns: 250px minmax(0, 1fr); }
+  .explorer-layout .scope-test-summary.scope-dock.selection-dock { display: none; }
+  .explorer-layout .scope-test-summary.scope-dock.selection-dock[data-mobile-open=true] { position: fixed; inset: auto 12px 82px; top: auto; z-index: 51; display: flex; max-height: 75dvh; overflow: hidden; }
+  .explorer-layout .scope-test-summary .explorer-drawer-close { display: block; border: 0; background: transparent; color: var(--muted); min-height: 32px; }
+  .explorer-overlay { display: block; position: fixed; inset: 0; z-index: 49; background: #10182755; border: 0; }
+  .library-workspace .scope-mobile-bar { z-index: 52; }
+  .scope-mobile-bar .explorer-test-toggle { display: grid; gap: 4px; min-width: 0; padding: 0; background: transparent; color: var(--ink); text-align: left; }
+}
+@media (max-width: 820px) {
+  .explorer-layout { grid-template-columns: 1fr; }
+  .explorer-layout .scope-syllabus-content[data-mobile-open=true] { position: fixed; inset: 0 auto 0 0; display: block; width: min(350px, 90vw); padding: 20px 12px; background: white; z-index: 51; overflow-y: auto; }
+  .explorer-layout .scope-syllabus-content > .explorer-drawer-close { display: block; margin-left: auto; min-height: 44px; padding: 8px; border: 0; background: transparent; color: var(--muted); }
+  .explorer-layout .scope-cards-heading { align-items: start; flex-direction: column; }
+  .explorer-layout .scope-cards-heading h3 { font-size: 20px; }
+  .explorer-layout .scope-card-body { padding: 13px; }
+  .explorer-layout .scope-card-main { gap: 10px; }
+  .explorer-layout .scope-card h4 { font-size: 13px; }
+  .explorer-add { min-height: 44px; padding: 8px 10px; font-size: 11px; }
+  .explorer-layout .scope-card-source-counts { padding-left: 0; gap: 10px; }
+}

@@ -1,261 +1,170 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
+
+const chapter = "Universe, Solar System, Shape and Size of Earth";
+const browser = (page: Page) => page.locator(".scope-library-browser");
+const summary = (page: Page) => page.locator(".scope-test-summary");
+const open = (page: Page, name: string) => browser(page).getByRole("button", { name: `Open ${name}`, exact: true }).click();
+const add = (page: Page, name: string) => browser(page).getByRole("button", { name: `Add to test: ${name}`, exact: true }).click();
+const count = (page: Page) => summary(page).getByTestId("matching-count").locator("strong");
+const heading = (page: Page) => browser(page).locator(".scope-cards-heading h3");
 
 test.beforeEach(async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Question library" })).toBeVisible();
-  await expect(page.locator(".scope-library-browser").getByRole("button", { name: "Open Geography sections without changing your selection" })).toBeEnabled();
+  await expect(browser(page).getByRole("button", { name: "Open Geography", exact: true })).toBeEnabled();
 });
 
-test("browsing stays separate from the committed selection", async ({ page }) => {
-  const syllabus = page.getByRole("navigation", { name: "Syllabus" });
-  const summary = page.locator(".scope-test-summary");
-  const browser = page.locator(".scope-library-browser");
-
-  await expect(syllabus).toBeVisible();
-  await expect(syllabus.getByRole("button", { name: "Geography", exact: true })).toBeVisible();
-  await expect(syllabus.getByRole("button", { name: "Environment", exact: true })).toBeVisible();
-  await expect(syllabus.getByRole("button", { name: "Polity", exact: true })).toBeVisible();
-  await expect(syllabus.locator(".scope-syllabus-check")).toHaveCount(0);
-  await expect(page.locator(".scope-breadcrumbs")).toHaveCount(0);
-  await expect(summary.getByTestId("test-scope-label")).toContainText("Full library");
-  await expect(summary.getByTestId("test-scope-label")).toContainText("Question library");
-  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("1,210");
-  await expect(summary.getByRole("button", { name: "Set up full library test" })).toBeEnabled();
-
-  await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
-  await expect(browser.getByRole("heading", { name: "Sections" })).toBeVisible();
-  await expect(syllabus.getByRole("button", { name: "Geography", exact: true })).toHaveAttribute("aria-current", "location");
-  for (const section of ["Physical Geography", "Human & Economic Geography", "Indian Geography", "World Geography", "Other Geography"]) {
-    await expect(syllabus.getByRole("button", { name: section, exact: true })).toBeVisible();
-  }
-  await expect(syllabus.locator(".scope-syllabus-check")).toHaveCount(0);
-  await expect(summary.getByTestId("test-scope-label")).toContainText("Full subject");
-  await expect(summary.getByTestId("test-scope-label")).toContainText("Geography");
-  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("1,021");
-  await expect(summary.getByRole("button", { name: "Set up full subject test" })).toBeEnabled();
-
-  await browser.getByRole("button", { name: "Use Indian Geography as the test scope. 402 questions available." }).click();
-  await expect(syllabus.getByRole("button", { name: "Remove Indian Geography from selection" })).toBeVisible();
-  await expect(syllabus.locator(".scope-syllabus-check")).toHaveCount(1);
-  await expect(summary.getByTestId("test-scope-label")).toContainText("Selected syllabus");
-  await expect(summary.getByTestId("test-scope-label")).toContainText("Indian Geography");
-  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("402");
-  await expect(summary.getByRole("button", { name: "Set up selected test" })).toBeEnabled();
-
-  await syllabus.getByRole("button", { name: "Physical Geography", exact: true }).click();
-  await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toHaveAttribute("aria-current", "location");
-  await expect(syllabus.getByRole("button", { name: "Remove Indian Geography from selection" })).toBeVisible();
-  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("402");
-
-  await syllabus.getByRole("button", { name: "Geography", exact: true }).click();
-  await browser.getByRole("button", { name: "Use Physical Geography as the test scope. 363 questions available." }).click();
-  await expect(syllabus.getByRole("button", { name: "Remove Physical Geography from selection" })).toBeVisible();
-  await expect(syllabus.getByRole("button", { name: "Remove Indian Geography from selection" })).toHaveCount(0);
-  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("363");
-
-  const chapter = "Latitudes, Longitudes, Time and Motions of the Earth";
-  await browser.getByRole("button", { name: `Open ${chapter} subparts without changing your selection` }).click();
-  await expect(syllabus.getByRole("button", { name: chapter, exact: true })).toHaveAttribute("aria-current", "location");
-  await expect(syllabus.getByRole("button", { name: "Rotation and Time", exact: true })).toBeVisible();
-  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("363");
-
-  await syllabus.getByRole("button", { name: "Subjects" }).click();
-  await browser.getByRole("button", { name: "Use Polity as the test scope. 17 questions available." }).click();
-  await expect(syllabus.getByRole("button", { name: "Remove Polity from selection" })).toBeVisible();
-  await expect(syllabus.getByRole("button", { name: "Remove Physical Geography from selection" })).toHaveCount(0);
-  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("17");
+test("opening and folding folders never adds questions", async ({ page }) => {
+  const tree = page.getByRole("navigation", { name: "Syllabus" });
+  await expect(count(page)).toHaveText("1,210");
+  await open(page, "Geography");
+  await open(page, "Physical Geography");
+  await expect(heading(page)).toHaveText("Physical Geography");
+  await expect(count(page)).toHaveText("363");
+  await expect(summary(page).getByTestId("test-scope-label")).toContainText("Current folder");
+  await expect(page.locator(".explorer-test-items li")).toHaveCount(0);
+  await tree.getByRole("button", { name: "Collapse Geography", exact: true }).click();
+  await expect(heading(page)).toHaveText("Physical Geography");
+  await expect(tree.getByRole("button", { name: "Physical Geography", exact: true })).toHaveCount(0);
+  await tree.getByRole("button", { name: "Expand Geography", exact: true }).click();
+  await expect(tree.getByRole("button", { name: "Physical Geography", exact: true })).toHaveAttribute("aria-current", "location");
+  await expect(browser(page).getByRole("checkbox")).toHaveCount(0);
+  await expect(tree.getByRole("checkbox")).toHaveCount(0);
 });
 
-test("the empty selection offers and commits the full browsed scope", async ({ page }) => {
-  const syllabus = page.getByRole("navigation", { name: "Syllabus" });
-  const summary = page.locator(".scope-test-summary");
-  const browser = page.locator(".scope-library-browser");
-
-  await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
-  await browser.getByRole("button", { name: "Open Physical Geography chapters without changing your selection" }).click();
-
-  await expect(syllabus.locator(".scope-syllabus-check")).toHaveCount(0);
-  await expect(summary.getByTestId("test-scope-label")).toContainText("Full section");
-  await expect(summary.getByTestId("test-scope-label")).toContainText("Physical Geography");
-  await expect(summary.getByTestId("matching-count").locator("strong")).toHaveText("363");
-
-  await summary.getByRole("button", { name: "Set up full section test" }).click();
-  await expect(syllabus.getByRole("button", { name: "Remove Physical Geography from selection" })).toBeVisible();
-  await expect(page.getByRole("dialog", { name: "How would you like to attempt these questions?" })).toContainText("363 questions");
+test("adding parts is cumulative and keeps the folder open", async ({ page }, testInfo) => {
+  await open(page, "Geography");
+  await open(page, "Physical Geography");
+  await add(page, chapter);
+  await expect(heading(page)).toHaveText("Physical Geography");
+  await expect(count(page)).toHaveText("28");
+  await add(page, "Interior of the Earth");
+  await expect(count(page)).toHaveText("43");
+  await expect(page.locator(".explorer-test-items li")).toHaveCount(2);
+  await page.screenshot({ path: testInfo.outputPath("explorer-desktop.png"), fullPage: true });
+  await open(page, "Rocks and Minerals");
+  await expect(count(page)).toHaveText("43");
+  await summary(page).getByRole("button", { name: `Remove ${chapter} from test`, exact: true }).click();
+  await expect(heading(page)).toHaveText("Rocks and Minerals");
+  await expect(count(page)).toHaveText("15");
+  await summary(page).getByRole("button", { name: "Clear", exact: true }).click();
+  await expect(heading(page)).toHaveText("Rocks and Minerals");
+  await expect(count(page)).toHaveText("25");
+  await expect(summary(page)).toContainText("Current folder");
 });
 
-test("chapter cards keep both actions compact and distinct", async ({ page }) => {
-  const browser = page.locator(".scope-library-browser");
-  await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
-  await browser.getByRole("button", { name: "Open Physical Geography chapters without changing your selection" }).click();
-
-  const cards = browser.locator(".scope-card");
-  await expect(cards).toHaveCount(11);
-  await expect(browser.locator(".scope-card-actions")).toHaveCount(0);
-  await expect(cards.first().locator(".scope-card-main > .scope-card-select")).toBeVisible();
-  await expect(cards.first().locator(".scope-card-main > .scope-card-open")).toBeVisible();
-
-  const metrics = await cards.evaluateAll((nodes) => nodes.map((node) => {
-    const card = node.getBoundingClientRect();
-    const select = node.querySelector<HTMLElement>(".scope-card-select")!.getBoundingClientRect();
-    const open = node.querySelector<HTMLElement>(".scope-card-open")!.getBoundingClientRect();
-    return { height: card.height, selectWidth: select.width, selectHeight: select.height, openWidth: open.width, openHeight: open.height };
-  }));
-  expect(Math.max(...metrics.map(({ height }) => height))).toBeLessThan(190);
-  for (const metric of metrics) {
-    expect(metric.selectWidth).toBeGreaterThanOrEqual(44);
-    expect(metric.selectHeight).toBeGreaterThanOrEqual(44);
-    expect(metric.openWidth).toBeGreaterThanOrEqual(44);
-    expect(metric.openHeight).toBeGreaterThanOrEqual(44);
-  }
+test("adding a parent deduplicates a selected child and collapses the selection", async ({ page }) => {
+  await open(page, "Geography");
+  await open(page, "Physical Geography");
+  await open(page, chapter);
+  const first = browser(page).locator(".scope-card").first();
+  await first.getByRole("button", { name: /^Add to test:/ }).click();
+  await browser(page).getByRole("button", { name: "Add remaining", exact: true }).click();
+  await expect(count(page)).toHaveText("28");
+  await expect(page.locator(".explorer-test-items li")).toHaveCount(1);
+  await expect(summary(page)).toContainText(chapter);
+  await browser(page).getByRole("button", { name: "← Back", exact: true }).click();
+  await expect(browser(page).getByRole("button", { name: `Added ${chapter}`, exact: true })).toBeDisabled();
 });
 
-test("exam archive cards show only that exam's inventory", async ({ page }) => {
-  await page.goto("/exams/CSE");
-  await expect(page.getByRole("heading", { name: "CSE question library" })).toBeVisible();
-
-  const geography = page.locator(".scope-card").filter({ has: page.getByRole("heading", { name: "Geography" }) });
-  await expect(geography.locator(".scope-card-source-counts [data-exam]")).toHaveCount(1);
-  await expect(geography.locator(".scope-card-source-counts [data-exam=\"CSE\"]")).toBeVisible();
-  await expect(geography.locator(".scope-card-source-counts [data-exam=\"CAPF\"]")).toHaveCount(0);
+test("different subjects combine into one paper and export the exact selection", async ({ page }) => {
+  await page.context().addInitScript(() => { window.print = () => undefined; });
+  await open(page, "Geography");
+  await open(page, "Physical Geography");
+  await add(page, chapter);
+  await page.getByRole("navigation", { name: "Syllabus" }).getByRole("button", { name: /^Subjects/ }).click();
+  await add(page, "Polity");
+  await expect(count(page)).toHaveText("45");
+  await expect(page.locator(".explorer-test-items li")).toHaveCount(2);
+  await summary(page).getByRole("button", { name: "Set up test" }).click();
+  const dialog = page.getByRole("dialog");
+  await dialog.getByRole("button", { name: /Download a PDF with an answer key/ }).click();
+  await dialog.getByRole("group", { name: "How many questions?" }).getByRole("button", { name: "All 45", exact: true }).click();
+  await dialog.getByRole("checkbox", { name: /Add an answer key/ }).check();
+  const popupPromise = page.waitForEvent("popup");
+  await dialog.getByRole("button", { name: "Download 45-question PDF", exact: true }).click();
+  const popup = await popupPromise;
+  await expect(popup).toHaveURL(/\/practice\/.+\/print/);
+  await expect(popup.locator(".print-question")).toHaveCount(45);
+  await popup.close();
 });
 
-test("the homepage relies on controls instead of instructional prose", async ({ page }) => {
-  const main = page.getByRole("main");
-  for (const phrase of [
-    "Browse freely",
-    "explicitly select",
-    "Opening a level",
-    "selection unchanged",
-    "Select adds",
-    "Open only",
-    "Question count, time",
-    "Choose MCQs and time next",
-  ]) {
-    await expect(main.getByText(phrase, { exact: false })).toHaveCount(0);
-  }
+test("exam choices carry across branches and zero sources retain selection", async ({ page }) => {
+  await open(page, "Geography");
+  await open(page, "Physical Geography");
+  await add(page, chapter);
+  const sources = summary(page).getByRole("region", { name: "Exam sources" });
+  await sources.getByRole("button", { name: /^NDA\b/ }).click();
+  await expect(count(page)).toHaveText("19");
+  await add(page, "Interior of the Earth");
+  await expect(count(page)).toHaveText("22");
+  for (const exam of ["CSE", "CAPF", "CDS"]) await sources.getByRole("button", { name: new RegExp(`^${exam}\\b`) }).click();
+  await expect(count(page)).toHaveText("0");
+  await expect(page.locator(".explorer-test-items li")).toHaveCount(2);
+  await expect(summary(page).getByRole("button", { name: "Set up test" })).toBeDisabled();
+  await open(page, "Rocks and Minerals");
+  await browser(page).getByRole("button", { name: "Add entire folder" }).click();
+  await expect(count(page)).toHaveText("0");
+  await sources.getByRole("button", { name: /^CSE\b/ }).click();
+  await expect(count(page)).toHaveText("8");
 });
 
-test("the full syllabus hierarchy is compact on mobile", async ({ page }) => {
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/");
-
-  const toggle = page.getByRole("button", { name: /Syllabus/ });
-  const syllabus = page.getByRole("navigation", { name: "Syllabus" });
-  await expect(toggle).toHaveAttribute("aria-expanded", "false");
-  await expect(syllabus).toBeHidden();
-
-  await toggle.click();
-  await expect(toggle).toHaveAttribute("aria-expanded", "true");
-  await expect(syllabus).toBeVisible();
-  await syllabus.getByRole("button", { name: "Geography", exact: true }).click();
-  await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toBeVisible();
-});
-
-test("clicking the current syllabus level again folds it", async ({ page }) => {
-  const browser = page.locator(".scope-library-browser");
-  const syllabus = page.getByRole("navigation", { name: "Syllabus" });
-  const geography = syllabus.getByRole("button", { name: "Geography", exact: true });
-
-  await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
-  await expect(geography).toHaveAttribute("aria-current", "location");
-  await expect(geography).toHaveAttribute("aria-expanded", "true");
-  await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toBeVisible();
-
-  await geography.click();
-  await expect(syllabus.getByRole("button", { name: "Subjects" })).toHaveAttribute("aria-current", "location");
-  await expect(geography).toHaveAttribute("aria-expanded", "false");
-  await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toHaveCount(0);
-  await expect(browser.getByRole("heading", { name: "Subjects", exact: true })).toBeVisible();
-
-  await geography.click();
-  const physical = syllabus.getByRole("button", { name: "Physical Geography", exact: true });
-  await physical.click();
-  await expect(physical).toHaveAttribute("aria-current", "location");
-  await expect(physical).toHaveAttribute("aria-expanded", "true");
-  await expect(syllabus.getByRole("button", { name: "Universe, Solar System, Shape and Size of Earth", exact: true })).toBeVisible();
-
-  const chapter = syllabus.getByRole("button", { name: "Latitudes, Longitudes, Time and Motions of the Earth", exact: true });
-  await chapter.click();
-  await expect(chapter).toHaveAttribute("aria-current", "location");
-  await expect(chapter).toHaveAttribute("aria-expanded", "true");
-  await expect(syllabus.getByRole("button", { name: "Rotation and Time", exact: true })).toBeVisible();
-
-  await chapter.click();
-  await expect(physical).toHaveAttribute("aria-current", "location");
-  await expect(chapter).toHaveAttribute("aria-expanded", "false");
-  await expect(syllabus.getByRole("button", { name: "Rotation and Time", exact: true })).toHaveCount(0);
-
-  await physical.click();
-  await expect(geography).toHaveAttribute("aria-current", "location");
-  await expect(physical).toHaveAttribute("aria-expanded", "false");
-  await expect(syllabus.getByRole("button", { name: "Universe, Solar System, Shape and Size of Earth", exact: true })).toHaveCount(0);
-
-  await browser.getByRole("button", { name: "Use Indian Geography as the test scope. 402 questions available." }).click();
-  const indian = syllabus.getByRole("button", { name: "Indian Geography", exact: true });
-  await expect(indian).toHaveAttribute("aria-current", "location");
-  await expect(page.locator(".scope-test-summary").getByTestId("matching-count").locator("strong")).toHaveText("402");
-
-  await indian.click();
-  await expect(geography).toHaveAttribute("aria-current", "location");
-  await expect(syllabus.getByRole("button", { name: "Remove Indian Geography from selection" })).toBeVisible();
-  await expect(page.locator(".scope-test-summary").getByTestId("matching-count").locator("strong")).toHaveText("402");
-});
-
-test("exam sources use the clear two-by-two card layout", async ({ page }) => {
-  const browser = page.locator(".scope-library-browser");
-
-  await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
-  await browser.getByRole("button", { name: "Use Indian Geography as the test scope. 402 questions available." }).click();
-
-  const sourceRail = page.locator(".scope-syllabus-rail .scope-sources-rail");
-  const cards = sourceRail.getByRole("checkbox");
-  await expect(sourceRail.getByRole("heading", { name: "Exam sources" })).toBeVisible();
-  await expect(cards).toHaveCount(4);
-
-  const metrics = await sourceRail.evaluate((rail) => {
-    const sourceCards = [...rail.querySelectorAll<HTMLElement>(".scope-source")];
-    const boxes = sourceCards.map((card) => card.getBoundingClientRect());
-    const firstCardStyle = getComputedStyle(sourceCards[0]);
-    const firstCheckStyle = getComputedStyle(sourceCards[0].querySelector<HTMLElement>(".scope-check")!);
-    const firstCountStyle = getComputedStyle(sourceCards[0].querySelector<HTMLElement>(".scope-source-total strong")!);
-    return {
-      boxes: boxes.map(({ x, y, width, height }) => ({ x, y, width, height })),
-      railOverflow: rail.scrollWidth - rail.clientWidth,
-      borderWidth: Number.parseFloat(firstCardStyle.borderLeftWidth),
-      borderColor: firstCardStyle.borderLeftColor,
-      checkboxWidth: Number.parseFloat(firstCheckStyle.width),
-      countSize: Number.parseFloat(firstCountStyle.fontSize),
-      countColor: firstCountStyle.color,
-    };
-  });
-
-  expect(Math.abs(metrics.boxes[0].y - metrics.boxes[1].y)).toBeLessThan(2);
-  expect(Math.abs(metrics.boxes[2].y - metrics.boxes[3].y)).toBeLessThan(2);
-  expect(metrics.boxes[2].y).toBeGreaterThan(metrics.boxes[0].y + 50);
-  expect(Math.abs(metrics.boxes[0].x - metrics.boxes[2].x)).toBeLessThan(2);
-  expect(metrics.railOverflow).toBeLessThanOrEqual(1);
-  expect(metrics.boxes[0].height).toBeGreaterThanOrEqual(90);
-  expect(metrics.borderWidth).toBeGreaterThanOrEqual(5);
-  expect(metrics.checkboxWidth).toBeGreaterThanOrEqual(28);
-  expect(metrics.countSize).toBeGreaterThanOrEqual(24);
-  expect(metrics.countColor).toBe(metrics.borderColor);
-  await expect(sourceRail.locator(".scope-source-state").first()).toBeHidden();
-  await expect(sourceRail.locator(".scope-source-total small").first()).toBeHidden();
-});
-
-test("the selected scope opens the existing choose-mode-first setup", async ({ page }) => {
-  const browser = page.locator(".scope-library-browser");
-  const summary = page.locator(".scope-test-summary");
-
-  await browser.getByRole("button", { name: "Open Geography sections without changing your selection" }).click();
-  await browser.getByRole("button", { name: "Use Indian Geography as the test scope. 402 questions available." }).click();
-  await summary.getByRole("button", { name: "Set up selected test" }).click();
-
-  const dialog = page.getByRole("dialog", { name: "How would you like to attempt these questions?" });
-  await expect(dialog).toContainText("402 questions");
+test("current folder commits into online or PDF setup", async ({ page }) => {
+  await open(page, "Geography");
+  await open(page, "Physical Geography");
+  await summary(page).getByRole("button", { name: "Test this folder" }).click();
+  const dialog = page.getByRole("dialog");
+  await expect(dialog).toContainText("363 questions");
   await dialog.getByRole("button", { name: /Take an online test/ }).click();
-  await expect(dialog.getByRole("group", { name: "Exams to include" })).toBeVisible();
   await expect(dialog.getByRole("group", { name: "How many questions?" })).toBeVisible();
-  await expect(dialog.getByRole("group", { name: "Time limit" })).toBeVisible();
+  await expect(dialog.getByRole("checkbox", { name: /Add an answer key/ })).toHaveCount(0);
+  await dialog.getByRole("button", { name: "Change method" }).click();
+  await dialog.getByRole("button", { name: /Download a PDF with an answer key/ }).click();
+  await expect(dialog.getByRole("checkbox", { name: /Add an answer key/ })).toBeVisible();
+});
+
+test("selection, folder, expanded branches, and sources restore on reload", async ({ page }) => {
+  await open(page, "Geography");
+  await open(page, "Physical Geography");
+  await add(page, chapter);
+  await summary(page).getByRole("button", { name: /^NDA\b/ }).click();
+  await open(page, "Interior of the Earth");
+  await page.reload();
+  await expect(heading(page)).toHaveText("Interior of the Earth");
+  await expect(count(page)).toHaveText("19");
+  await expect(summary(page).getByRole("button", { name: /^NDA\b/ })).toHaveAttribute("aria-pressed", "false");
+  await expect(page.getByRole("navigation", { name: "Syllabus" }).getByRole("button", { name: "Collapse Geography", exact: true })).toBeVisible();
+});
+
+test("deepest subpart renders once and keyboard navigation opens folders", async ({ page }) => {
+  await browser(page).getByRole("button", { name: "Open Geography", exact: true }).focus();
+  await page.keyboard.press("Enter");
+  await open(page, "Physical Geography");
+  await open(page, chapter);
+  const leafName = await browser(page).locator(".explorer-folder").first().getAttribute("aria-label");
+  await browser(page).locator(".explorer-folder").first().click();
+  await expect(heading(page)).toHaveText(leafName!.replace(/^Open /, ""));
+  await expect(browser(page).locator(".scope-card")).toHaveCount(0);
+  await expect(browser(page).getByRole("button", { name: "Add entire folder" })).toBeVisible();
+});
+
+test("mobile library drawer and test panel remain independently usable", async ({ page }, testInfo) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.locator(".scope-syllabus-mobile-toggle").click();
+  const tree = page.getByRole("navigation", { name: "Syllabus" });
+  await tree.getByRole("button", { name: "Geography", exact: true }).click();
+  await expect(heading(page)).toHaveText("Geography");
+  await expect(tree).not.toBeVisible();
+  await add(page, "Physical Geography");
+  await page.locator(".explorer-test-toggle").click();
+  await expect(summary(page)).toBeVisible();
+  await expect(count(page)).toHaveText("363");
+  await page.screenshot({ path: testInfo.outputPath("explorer-mobile.png"), fullPage: true });
+  await summary(page).getByRole("button", { name: "Clear", exact: true }).click();
+  await expect(heading(page)).toHaveText("Geography");
+  await summary(page).getByRole("button", { name: "Close ×", exact: true }).click();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.locator(".scope-mobile-bar").getByRole("button", { name: "Test this folder" }).click();
+  await expect(page.getByRole("dialog")).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(page.getByRole("dialog")).toHaveCount(0);
 });

@@ -7,7 +7,7 @@ import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
 import type { SubjectPracticeInventory } from "../../lib/pyq-catalog";
 import type { PracticeOrder, PracticeRecipeV3, PracticeSnapshot } from "../../lib/practice-types";
 import { createLocalAttempt } from "../../lib/practice-store";
-import { addScope, addedQuestionCount, ancestors, buildSelectionIndex, removeScope, replaceScope, sanitizePathsWithAliases, scopeDisplayNumber, scopeMetrics, selectedScopeIds, selectionCounts, setScopeExam, type SelectionIndex, type SelectionPaths } from "../../lib/practice-selection";
+import { addScope, ancestors, buildSelectionIndex, removeScope, replaceScope, sanitizePathsWithAliases, scopeDisplayNumber, scopeMetrics, selectedScopeIds, selectionCounts, setScopeExam, type SelectionPaths } from "../../lib/practice-selection";
 import { ScopeFlow } from "./scope-flow";
 import { SyllabusNavigation } from "./syllabus-navigation";
 
@@ -16,43 +16,10 @@ const DURATIONS = [10, 20, 30, 60, 120] as const;
 const format = (value: number) => value.toLocaleString("en-IN");
 
 function SourceChoice({ exam, state, count, available, disabled, onChange }: { exam: PyqExam; state: "none" | "partial" | "all"; count: number; available: number; disabled: boolean; onChange: () => void }) {
-  return <button type="button" role="checkbox" aria-checked={state === "partial" ? "mixed" : state === "all"} disabled={disabled} className={"scope-source " + state} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} onClick={onChange}>
-    <span className="scope-source-top"><span className="scope-check" aria-hidden="true">{state === "all" ? "✓" : state === "partial" ? "−" : ""}</span><span className="scope-source-name">{exam}</span><small className="scope-source-state">{state === "all" ? "Included" : state === "partial" ? "Partial" : "Not included"}</small></span>
-    <span className="scope-source-total"><strong>{format(state === "none" ? available : count)}</strong><small>{state === "all" ? "questions" : state === "partial" ? `of ${format(available)} questions` : "questions available"}</small></span>
+  return <button type="button" aria-pressed={state !== "none"} disabled={disabled} className={"scope-source " + state} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} onClick={onChange}>
+    <span className="scope-source-top"><span className="scope-source-name">{exam}</span><small className="scope-source-state">{state === "all" ? "Included" : state === "partial" ? "Partial" : "Off"}</small></span>
+    <span className="scope-source-total"><strong>{format(state === "none" ? available : count)}</strong><small>{state === "none" ? "available" : "MCQs"}</small></span>
   </button>;
-}
-
-function AddScopeDialog({ index, paths, initialId, preferredExam, onAdd, onCancel }: { index: SelectionIndex; paths: SelectionPaths; initialId?: string; preferredExam?: PyqExam; onAdd: (id: string) => void; onCancel: () => void }) {
-  const dialog = useRef<HTMLDialogElement>(null);
-  const subjects = [...index.nodesById.values()].filter((node) => node.kind === "subject");
-  const [candidateId, setCandidateId] = useState(initialId || subjects[0]?.id || "");
-  const path = ancestors(candidateId, index);
-  const subject = path[0];
-  const section = path.find((node) => node.kind === "head");
-  const topic = path.find((node) => node.kind === "topic");
-  const leaf = path.find((node) => node.kind === "subtopic");
-  const additional = addedQuestionCount(paths, candidateId, index, preferredExam);
-  const optionLabel = (id: string, label: string) => {
-    const number = scopeDisplayNumber(id, index);
-    return number ? `${number} · ${label}` : label;
-  };
-  useEffect(() => {
-    const previous = document.activeElement as HTMLElement | null;
-    const current = dialog.current;
-    current?.showModal();
-    return () => { current?.close(); previous?.focus(); };
-  }, []);
-  return <dialog ref={dialog} className="scope-add-dialog" aria-labelledby="add-scope-title" onCancel={(event) => { event.preventDefault(); onCancel(); }}>
-    <form onSubmit={(event) => { event.preventDefault(); if (additional > 0) onAdd(candidateId); }}>
-      <span className="selector-label">Combine branches</span><h2 id="add-scope-title">Add to your current selection</h2>
-      <label>Subject<select value={subject?.id || ""} onChange={(event) => setCandidateId(event.target.value)}>{subjects.map((node) => <option key={node.id} value={node.id}>{node.label}</option>)}</select></label>
-      {subject ? <label>Section<select value={section?.id || subject.id} onChange={(event) => setCandidateId(event.target.value)}><option value={subject.id}>Entire subject</option>{(index.childrenById.get(subject.id) || []).map((node) => <option key={node.id} value={node.id}>{node.label} · {node.questionCount}</option>)}</select></label> : null}
-      {section ? <label>Topic<select value={topic?.id || section.id} onChange={(event) => setCandidateId(event.target.value)}><option value={section.id}>Entire section</option>{(index.childrenById.get(section.id) || []).map((node) => <option key={node.id} value={node.id}>{optionLabel(node.id, node.label)} · {node.questionCount}</option>)}</select></label> : null}
-      {topic ? <label>Subtopic<select value={leaf?.id || topic.id} onChange={(event) => setCandidateId(event.target.value)}><option value={topic.id}>Entire topic</option>{(index.childrenById.get(topic.id) || []).map((node) => <option key={node.id} value={node.id}>{optionLabel(node.id, node.label)} · {node.questionCount}</option>)}</select></label> : null}
-      <div className="scope-add-preview"><strong>{index.nodesById.get(candidateId)?.label}</strong><span>{format(additional)} new questions</span>{!additional ? <small>Already included or unavailable.</small> : null}</div>
-      <div className="scope-dialog-actions"><button type="button" className="scope-secondary" onClick={onCancel}>Cancel</button><button className="scope-primary" type="submit" disabled={additional === 0}>Add {format(additional)} questions</button></div>
-    </form>
-  </dialog>;
 }
 
 function PracticeSetupDialog({ matchingCount, examMetrics, count, order, durationChoice, customMinutes, includeAnswerKey, shortage, validDuration, loading, exporting, canStart, error, onExam, onCount, onOrder, onDuration, onCustomMinutes, onIncludeAnswerKey, onUseAll, onStart, onExport, onCancel }: {
@@ -113,32 +80,62 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const index = useMemo(() => buildSelectionIndex(initialInventory), [initialInventory]);
   const [paths, setPaths] = useState<SelectionPaths>({});
   const [focusId, setFocusId] = useState<string>();
+  const [expandedIds, setExpandedIds] = useState<string[]>([]);
+  const [enabledExams, setEnabledExams] = useState<PyqExam[]>(initialExam ? [initialExam] : [...PYQ_EXAMS]);
   const [count, setCount] = useState<number | "all" | null>(null);
   const [order, setOrder] = useState<PracticeOrder>("newest");
   const [durationChoice, setDurationChoice] = useState("untimed");
   const [customMinutes, setCustomMinutes] = useState("30");
-  const [sourceScopeId, setSourceScopeId] = useState("all");
   const [loading, setLoading] = useState(false);
   const [exporting, setExporting] = useState(false);
   const [includeAnswerKey, setIncludeAnswerKey] = useState(false);
   const [error, setError] = useState("");
   const [restored, setRestored] = useState(false);
-  const [addOpen, setAddOpen] = useState(false);
   const [setupOpen, setSetupOpen] = useState(false);
   const [syllabusOpen, setSyllabusOpen] = useState(false);
+  const [testPanelOpen, setTestPanelOpen] = useState(false);
   const [notice, setNotice] = useState("");
   const [draftWarning, setDraftWarning] = useState("");
+  const libraryDrawer = useRef<HTMLDivElement>(null);
+  const testDrawer = useRef<HTMLElement>(null);
   const draftKey = "upsc-pyq-builder:v3:" + (initialExam || "all");
+  useEffect(() => {
+    if (!syllabusOpen && !testPanelOpen) return;
+    const panel = syllabusOpen ? libraryDrawer.current : testDrawer.current;
+    const previous = document.activeElement as HTMLElement | null;
+    const oldOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const focusable = () => Array.from(panel?.querySelectorAll<HTMLElement>('button:not(:disabled), select:not(:disabled), input:not(:disabled), a[href]') || []).filter((element) => element.getClientRects().length);
+    focusable()[0]?.focus();
+    function onKey(event: KeyboardEvent) {
+      if (event.key === "Escape") { setSyllabusOpen(false); setTestPanelOpen(false); }
+      if (event.key !== "Tab") return;
+      const elements = focusable();
+      const first = elements[0]; const last = elements.at(-1);
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+    }
+    document.addEventListener("keydown", onKey);
+    return () => { document.body.style.overflow = oldOverflow; document.removeEventListener("keydown", onKey); previous?.focus(); };
+  }, [syllabusOpen, testPanelOpen]);
 
   useEffect(() => {
     try {
       const raw = window.sessionStorage.getItem(draftKey);
       if (raw) {
         const draft = JSON.parse(raw);
-        if ((draft.version === 3 || draft.version === 4) && draft.inventoryVersion === initialInventory.version) {
-          setPaths(sanitizePathsWithAliases(draft.paths, index, initialInventory.legacyAliases));
-          if (typeof draft.focusId === "string" && index.nodesById.has(draft.focusId)) setFocusId(draft.focusId);
-          if (draft.version === 4 && (draft.count === "all" || Number.isInteger(draft.count) && draft.count > 0 && draft.count <= 100)) setCount(draft.count);
+        if ([3, 4, 5].includes(draft.version) && draft.inventoryVersion === initialInventory.version) {
+          const savedPaths = sanitizePathsWithAliases(draft.paths, index, initialInventory.legacyAliases);
+          setPaths(savedPaths);
+          if (Array.isArray(draft.enabledExams)) setEnabledExams(PYQ_EXAMS.filter((exam) => draft.enabledExams.includes(exam) && (!initialExam || initialExam === exam)));
+          else if (Object.keys(savedPaths).length) setEnabledExams(PYQ_EXAMS.filter((exam) => Object.values(savedPaths).some((exams) => exams.includes(exam))));
+          const savedExpanded = Array.isArray(draft.expandedIds) ? draft.expandedIds.filter((id: unknown): id is string => typeof id === "string" && index.nodesById.has(id)) : [];
+          setExpandedIds(savedExpanded);
+          if (typeof draft.focusId === "string" && index.nodesById.has(draft.focusId)) {
+            setFocusId(draft.focusId);
+            setExpandedIds([...new Set([...savedExpanded, ...ancestors(draft.focusId, index).map((node) => node.id)])]);
+          }
+          if (draft.version >= 4 && (draft.count === "all" || Number.isInteger(draft.count) && draft.count > 0 && draft.count <= 100)) setCount(draft.count);
           if (draft.order === "newest" || draft.order === "shuffle") setOrder(draft.order);
           if (Number.isInteger(draft.durationMinutes) && draft.durationMinutes >= 1 && draft.durationMinutes <= 720) {
             const savedMinutes = String(draft.durationMinutes);
@@ -149,12 +146,12 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       }
     } catch { setDraftWarning("Your builder settings could not be restored in this browser. You can still choose a new practice."); }
     setRestored(true);
-  }, [draftKey, initialInventory.version, initialInventory.legacyAliases, index]);
+  }, [draftKey, initialInventory.version, initialInventory.legacyAliases, index, initialExam]);
   useEffect(() => {
     if (!restored) return;
     const minutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
-    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 4, inventoryVersion: initialInventory.version, paths, focusId, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
-  }, [restored, draftKey, initialInventory.version, paths, focusId, count, order, durationChoice, customMinutes]);
+    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 5, inventoryVersion: initialInventory.version, paths, focusId, expandedIds, enabledExams, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
+  }, [restored, draftKey, initialInventory.version, paths, focusId, expandedIds, enabledExams, count, order, durationChoice, customMinutes]);
   const totals = useMemo(() => selectionCounts(paths, index), [paths, index]);
   const selectedIds = useMemo(() => selectedScopeIds(paths, index), [paths, index]);
   const current = focusId ? index.nodesById.get(focusId) : undefined;
@@ -162,11 +159,11 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const hasExplicitSelection = selectedIds.length > 0;
   const summaryPaths = useMemo<SelectionPaths>(() => {
     if (hasExplicitSelection) return paths;
-    if (current) return replaceScope({}, current.id, index, initialExam);
-    return initialInventory.subjects
+    const base = current ? replaceScope({}, current.id, index, initialExam) : initialInventory.subjects
       .filter((subject) => !initialExam || subject.examCounts[initialExam] > 0)
       .reduce((next, subject) => addScope(next, subject.id, index, initialExam), {} as SelectionPaths);
-  }, [current, hasExplicitSelection, index, initialExam, initialInventory.subjects, paths]);
+    return Object.fromEntries(Object.entries(base).map(([id, exams]) => [id, exams.filter((exam) => enabledExams.includes(exam))]));
+  }, [current, hasExplicitSelection, index, initialExam, initialInventory.subjects, paths, enabledExams]);
   const summaryTotals = useMemo(() => selectionCounts(summaryPaths, index), [summaryPaths, index]);
   const selectedScopeLabels = selectedIds.flatMap((id) => {
     const node = index.nodesById.get(id);
@@ -174,20 +171,15 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     const number = scopeDisplayNumber(id, index);
     return [number ? `${number} · ${node.label}` : node.label];
   });
-  const fullScopeLevel = !current ? "library" : current.kind === "subject" ? "subject" : current.kind === "head" ? "section" : current.kind === "topic" ? "chapter" : "subpart";
-  const summaryContextLabel = hasExplicitSelection ? "Selected syllabus" : `Full ${fullScopeLevel}`;
+  const summaryContextLabel = hasExplicitSelection ? "Selected parts" : "Current folder";
   const summaryScopeLabel = hasExplicitSelection
     ? selectedScopeLabels.length === 1 ? selectedScopeLabels[0] : `${selectedScopeLabels.length} selected parts`
     : current?.label || (initialExam ? `${initialExam} question library` : "Question library");
-  const summaryScopeDetail = hasExplicitSelection && selectedScopeLabels.length > 1
-    ? `${selectedScopeLabels.slice(0, 2).join(" · ")}${selectedScopeLabels.length > 2 ? ` · +${selectedScopeLabels.length - 2} more` : ""}`
-    : "";
-  const summaryActionLabel = hasExplicitSelection ? "Set up selected test →" : `Set up full ${fullScopeLevel} test →`;
-  const activeSourceId = sourceScopeId !== "all" && index.nodesById.has(sourceScopeId) && scopeMetrics(sourceScopeId, paths, index).state !== "none" ? sourceScopeId : "all";
-  const sourceLeaves = activeSourceId === "all" ? [...index.nodesById.values()].filter((node) => node.kind === "subtopic" && Object.hasOwn(paths, node.id)) : (index.leavesById.get(activeSourceId) || []).filter((node) => Object.hasOwn(paths, node.id));
+  const summaryActionLabel = hasExplicitSelection ? "Set up test →" : "Test this folder →";
+  const sourceLeaves = [...index.nodesById.values()].filter((node) => node.kind === "subtopic" && Object.hasOwn(summaryPaths, node.id));
   const sourceMetrics = Object.fromEntries(PYQ_EXAMS.map((exam) => {
     const eligible = sourceLeaves.filter((leaf) => leaf.examCounts[exam] > 0);
-    const enabled = eligible.filter((leaf) => paths[leaf.id]?.includes(exam));
+    const enabled = eligible.filter((leaf) => summaryPaths[leaf.id]?.includes(exam));
     return [exam, { available: eligible.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), count: enabled.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), state: (enabled.length === 0 ? "none" : enabled.length === eligible.length ? "all" : "partial") as "none" | "partial" | "all" }];
   })) as Record<PyqExam, { available: number; count: number; state: "none" | "partial" | "all" }>;
   const allSourceLeaves = [...index.nodesById.values()].filter((node) => node.kind === "subtopic" && Object.hasOwn(paths, node.id));
@@ -196,7 +188,6 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     const enabled = eligible.filter((leaf) => paths[leaf.id]?.includes(exam));
     return [exam, { available: eligible.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), count: enabled.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), state: (enabled.length === 0 ? "none" : enabled.length === eligible.length ? "all" : "partial") as "none" | "partial" | "all" }];
   })) as Record<PyqExam, { available: number; count: number; state: "none" | "partial" | "all" }>;
-  const sourceTargets = [...new Set(selectedIds)];
   const durationMinutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
   const validDuration = durationMinutes === null || Number.isInteger(durationMinutes) && durationMinutes >= 1 && durationMinutes <= 720;
   const practiceCount = count === "all" ? totals.matchingCount : count;
@@ -205,46 +196,50 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   function toggleSource(exam: PyqExam) {
     if (loading || !restored) return;
     const enabled = sourceMetrics[exam].state !== "all";
-    setPaths((existing) => (activeSourceId === "all" ? totals.subjectIds : [activeSourceId]).reduce((updated, id) => setScopeExam(updated, id, exam, enabled, index), existing));
-    setError(""); setNotice("");
-  }
-  function toggleSetupSource(exam: PyqExam) {
-    if (loading || exporting || !restored) return;
-    const enabled = setupSourceMetrics[exam].state !== "all";
+    setEnabledExams((existing) => enabled ? [...existing, exam] : existing.filter((item) => item !== exam));
     setPaths((existing) => totals.subjectIds.reduce((updated, id) => setScopeExam(updated, id, exam, enabled, index), existing));
     setError(""); setNotice("");
   }
-  function selectScope(id: string) {
+  function toggleSetupSource(exam: PyqExam) {
+    if (exporting) return;
+    toggleSource(exam);
+  }
+  function addToTest(id: string) {
     if (loading || !restored) return;
-    setPaths(() => replaceScope({}, id, index, initialExam));
-    setFocusId(id); setSourceScopeId("all"); setError(""); setNotice("Selection updated.");
+    setPaths((existing) => {
+      const next = addScope(existing, id, index, initialExam);
+      return Object.fromEntries(Object.entries(next).map(([leafId, exams]) => [leafId, Object.hasOwn(existing, leafId) ? exams : enabledExams.filter((exam) => index.nodesById.get(leafId)!.examCounts[exam] > 0)]));
+    });
+    setError(""); setNotice("Added to test.");
   }
   function browse(id: string) {
     if (loading || !restored) return;
-    const isFolding = focusId === id && (index.childrenById.get(id)?.length || 0) > 0;
-    setFocusId(isFolding ? index.nodesById.get(id)?.parentId : id);
-    setNotice(isFolding ? "Syllabus level collapsed." : "Syllabus view changed.");
+    setFocusId(id);
+    setExpandedIds((existing) => [...new Set([...existing, ...ancestors(id, index).map((node) => node.id)])]);
+    setSyllabusOpen(false);
+    setNotice("Folder opened.");
+  }
+  function toggleBranch(id: string) {
+    setExpandedIds((existing) => existing.includes(id) ? existing.filter((item) => item !== id) : [...existing, id]);
   }
   function browseRoot() {
     if (loading || !restored) return;
-    setFocusId(undefined); setNotice("Showing all subjects.");
+    setFocusId(undefined); setSyllabusOpen(false); setNotice("Showing all subjects.");
   }
   function clearSelection() {
     if (loading || !restored) return;
-    setPaths({}); setSourceScopeId("all"); setError(""); setNotice("Selection cleared.");
+    setPaths({}); setError(""); setNotice("Selection cleared.");
   }
   function remove(id: string) {
     if (loading || !restored) return;
-    const next = removeScope(paths, id, index);
-    setPaths(next); setSourceScopeId("all"); setError("");
-    if (!Object.keys(next).length) setFocusId(undefined);
-    else if (current && scopeMetrics(current.subjectId, next, index).state === "none") setFocusId(selectionCounts(next, index).subjectIds[0]);
+    setPaths((existing) => removeScope(existing, id, index)); setError("");
   }
   function openSetup() {
     if (!restored || loading || summaryTotals.matchingCount === 0) return;
+    setTestPanelOpen(false);
     if (!hasExplicitSelection) {
       setPaths(summaryPaths);
-      setSourceScopeId("all"); setError(""); setNotice("Full scope selected.");
+      setError(""); setNotice("Folder added to test.");
     }
     setSetupOpen(true);
   }
@@ -286,40 +281,38 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
   return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading}>
     <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{initialExam ? `${initialExam} question library` : "Question library"}</h1></div><details className="scope-inventory-info"><summary>{format(initialInventory.mappedCount)} PYQs <span aria-hidden="true">ⓘ</span></summary><p>{format(initialInventory.unmappedCount)} unclassified questions remain in exam archives.</p></details></header>
-    <div className={`scope-library-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
+    <div className={`scope-library-layout explorer-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
       <aside className="scope-syllabus-rail">
-        <button type="button" className="scope-syllabus-mobile-toggle" aria-expanded={syllabusOpen} aria-controls="scope-syllabus-content" onClick={() => setSyllabusOpen((open) => !open)}><span>Syllabus</span><strong>{current?.label || "All subjects"}</strong></button>
-          <div id="scope-syllabus-content" className="scope-syllabus-content" data-mobile-open={syllabusOpen ? "true" : "false"}>
-            <SyllabusNavigation index={index} paths={paths} focusPath={focusPath} selectedIds={selectedIds} mappedCount={initialExam ? initialInventory.subjects.reduce((sum, subject) => sum + subject.examCounts[initialExam], 0) : initialInventory.mappedCount} preferredExam={initialExam} disabled={loading || !restored} onBrowse={browse} onBrowseRoot={browseRoot} onRemove={remove} />
-            {selectedIds.length ? <>
-              <div className="scope-selection-tools"><strong>Selection</strong><button type="button" disabled={loading} onClick={() => setAddOpen(true)}>＋ Add</button><button type="button" disabled={loading} onClick={clearSelection}>Clear</button></div>
-          <section className="scope-sources scope-sources-rail" aria-labelledby="scope-sources-title">
-            <div className="scope-source-heading"><h3 id="scope-sources-title">Exam sources</h3></div>
-            {sourceTargets.length > 1 ? <label className="scope-source-target">Apply to<select aria-label="Apply sources to" disabled={loading || !restored} value={activeSourceId} onChange={(event) => setSourceScopeId(event.target.value)}><option value="all">All selected</option>{sourceTargets.map((id) => <option value={id} key={id}>{index.nodesById.get(id)?.label}</option>)}</select></label> : null}
-            <div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={sourceMetrics[exam].count} available={sourceMetrics[exam].available} state={sourceMetrics[exam].state} disabled={loading || !restored || sourceMetrics[exam].available === 0} onChange={() => toggleSource(exam)} />)}</div>
-          </section>
-            </> : null}
+        <button type="button" className="scope-syllabus-mobile-toggle" aria-expanded={syllabusOpen} aria-controls="scope-syllabus-content" onClick={() => setSyllabusOpen((open) => !open)}><span>Library</span><strong>{current?.label || "All subjects"}</strong></button>
+          <div ref={libraryDrawer} id="scope-syllabus-content" className="scope-syllabus-content" data-mobile-open={syllabusOpen ? "true" : "false"} role={syllabusOpen ? "dialog" : undefined} aria-modal={syllabusOpen || undefined} aria-label={syllabusOpen ? "Library" : undefined}>
+            <button type="button" className="explorer-drawer-close" onClick={() => setSyllabusOpen(false)}>Close library ×</button>
+            <SyllabusNavigation index={index} focusPath={focusPath} expandedIds={expandedIds} mappedCount={initialExam ? initialInventory.subjects.reduce((sum, subject) => sum + subject.examCounts[initialExam], 0) : initialInventory.mappedCount} preferredExam={initialExam} disabled={loading || !restored} onBrowse={browse} onBrowseRoot={browseRoot} onToggle={toggleBranch} />
           </div>
       </aside>
 
       <section className="scope-refine scope-library-browser" aria-labelledby="scope-refine-title">
         <h2 id="scope-refine-title" className="visually-hidden">{current ? `Browse ${current.label}` : "Browse subjects"}</h2>
-        <ScopeFlow inventory={initialInventory} paths={paths} focusId={focusId} preferredExam={initialExam} onAttempt={selectScope} onBrowse={browse} disabled={loading || !restored} />
+        <ScopeFlow inventory={initialInventory} paths={paths} focusId={focusId} preferredExam={initialExam} onAdd={addToTest} onBrowse={browse} onBack={() => current?.parentId ? browse(current.parentId) : browseRoot()} disabled={loading || !restored} />
         <p className="visually-hidden" role="status" aria-live="polite">{notice}</p>
       </section>
 
-      <aside className="selection-dock scope-dock scope-test-summary" aria-labelledby="practice-summary-title">
-        <div className="scope-dock-body"><h2 id="practice-summary-title">Test</h2>
-          <div className="scope-test-context" data-testid="test-scope-label"><span>{summaryContextLabel}</span><strong title={summaryScopeLabel}>{summaryScopeLabel}</strong>{summaryScopeDetail ? <small>{summaryScopeDetail}</small> : null}</div>
+      <aside ref={testDrawer} className="selection-dock scope-dock scope-test-summary" data-mobile-open={testPanelOpen} role={testPanelOpen ? "dialog" : undefined} aria-modal={testPanelOpen || undefined} aria-labelledby="practice-summary-title">
+        <div className="scope-dock-body"><div className="explorer-test-heading"><h2 id="practice-summary-title">Your test</h2><button type="button" className="explorer-drawer-close" onClick={() => setTestPanelOpen(false)}>Close ×</button>{hasExplicitSelection ? <button type="button" className="explorer-clear" disabled={loading} onClick={clearSelection}>Clear</button> : null}</div>
+          <div className="scope-test-context" data-testid="test-scope-label"><span>{summaryContextLabel}</span><strong title={summaryScopeLabel}>{summaryScopeLabel}</strong></div>
           <div className="scope-matching" data-testid="matching-count"><strong>{format(summaryTotals.matchingCount)}</strong><span>questions</span></div>
-          {summaryTotals.matchingCount ? <><div className="scope-test-source-bar" aria-hidden="true">{PYQ_EXAMS.map((exam) => summaryTotals.examTotals[exam] ? <i key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam], flexGrow: summaryTotals.examTotals[exam] } as CSSProperties} /> : null)}</div><div className="scope-test-source-list">{PYQ_EXAMS.map((exam) => <span key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties}><i />{exam} <b>{format(summaryTotals.examTotals[exam])}</b></span>)}</div></> : null}
+          {hasExplicitSelection ? <ul className="explorer-test-items">{selectedIds.map((id) => {
+            const node = index.nodesById.get(id)!;
+            const context = ancestors(id, index).slice(0, -1).map((parent) => parent.label).join(" › ");
+            return <li key={id}><div><small>{context}</small><strong>{scopeDisplayNumber(id, index)} {node.label}</strong><span>{format(scopeMetrics(id, paths, index).selectedCount)} MCQs</span></div><button type="button" disabled={loading} aria-label={`Remove ${node.label} from test`} onClick={() => remove(id)}>Remove</button></li>;
+          })}</ul> : null}
+          <section className="scope-sources explorer-sources" aria-labelledby="scope-sources-title"><h3 id="scope-sources-title">Exam sources</h3><div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={sourceMetrics[exam].count} available={sourceMetrics[exam].available} state={sourceMetrics[exam].state} disabled={loading || !restored || sourceMetrics[exam].available === 0} onChange={() => toggleSource(exam)} />)}</div></section>
           {totals.subjectIds.length > 0 && totals.matchingCount === 0 ? <p className="scope-shortage">No questions match the enabled exam sources. Re-enable a source or choose another scope.</p> : null}
         </div>
         <div className="scope-dock-footer"><button type="button" className="start-practice" data-testid={hasExplicitSelection ? undefined : "full-scope-action"} disabled={!restored || summaryTotals.matchingCount === 0 || loading} onClick={openSetup}>{summaryActionLabel}</button>{draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}</div>
       </aside>
     </div>
-    <div className="scope-mobile-bar"><div><strong>{format(summaryTotals.matchingCount)} questions</strong><span>{summaryScopeLabel}</span></div><button type="button" disabled={!restored || summaryTotals.matchingCount === 0 || loading} onClick={openSetup}>{hasExplicitSelection ? "Set up test →" : `Full ${fullScopeLevel} test →`}</button></div>
-    {addOpen ? <AddScopeDialog index={index} paths={paths} initialId={current?.subjectId || totals.subjectIds[0]} preferredExam={initialExam} onCancel={() => setAddOpen(false)} onAdd={(id) => { setPaths((existing) => addScope(existing, id, index, initialExam)); setFocusId(id); setSourceScopeId("all"); setError(""); setNotice("Scope added."); setAddOpen(false); }} /> : null}
+    {syllabusOpen || testPanelOpen ? <button type="button" className="explorer-overlay" aria-label="Close panels" onClick={() => { setSyllabusOpen(false); setTestPanelOpen(false); }} /> : null}
+    <div className="scope-mobile-bar"><button type="button" className="explorer-test-toggle" aria-expanded={testPanelOpen} onClick={() => { setSyllabusOpen(false); setTestPanelOpen((open) => !open); }}><strong>{format(summaryTotals.matchingCount)} MCQs</strong><span>{hasExplicitSelection ? "Your test ↑" : "Current folder ↑"}</span></button><button type="button" disabled={!restored || summaryTotals.matchingCount === 0 || loading} onClick={openSetup}>{summaryActionLabel}</button></div>
     {setupOpen ? <PracticeSetupDialog matchingCount={totals.matchingCount} examMetrics={setupSourceMetrics} count={count} order={order} durationChoice={durationChoice} customMinutes={customMinutes} includeAnswerKey={includeAnswerKey} shortage={shortage} validDuration={validDuration} loading={loading} exporting={exporting} canStart={canStart} error={error} onExam={toggleSetupSource} onCount={(value) => { setCount(value); setError(""); }} onOrder={setOrder} onDuration={(value) => { setDurationChoice(value); setError(""); }} onCustomMinutes={setCustomMinutes} onIncludeAnswerKey={setIncludeAnswerKey} onUseAll={() => setCount("all")} onStart={() => void startPractice()} onExport={() => void exportPaper()} onCancel={() => { setSetupOpen(false); setError(""); }} /> : null}
   </main>;
 }

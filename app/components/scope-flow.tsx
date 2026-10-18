@@ -17,8 +17,9 @@ type ScopeCardsProps = {
   paths: SelectionPaths;
   focusId?: string;
   preferredExam?: PyqExam;
-  onAttempt: (id: string) => void;
+  onAdd: (id: string) => void;
   onBrowse: (id: string) => void;
+  onBack: () => void;
   disabled?: boolean;
 };
 
@@ -68,16 +69,16 @@ function SourceDistribution({ counts, exams = PYQ_EXAMS }: { counts: ExamCounts;
   </>;
 }
 
-export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAttempt, onBrowse, disabled = false }: ScopeCardsProps) {
+export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAdd, onBrowse, onBack, disabled = false }: ScopeCardsProps) {
   const index = useMemo(() => buildSelectionIndex(inventory), [inventory]);
   const focus = index.nodesById.get(focusId || "");
 
   const cards = useMemo(() => {
     if (!focus) return inventory.subjects.map((subject) => index.nodesById.get(subject.id)!).filter((node) => node && (!preferredExam || node.examCounts[preferredExam] > 0));
     const children = index.childrenById.get(focus.id) || [];
-    return (children.length ? children : [focus])
+    return children
       .filter((node) => preferredExam ? node.examCounts[preferredExam] > 0 : node.questionCount > 0)
-      .sort((a, b) => a.order - b.order || a.label.localeCompare(b.label));
+      .sort((a, b) => ("order" in a ? a.order : 0) - ("order" in b ? b.order : 0) || a.label.localeCompare(b.label));
   }, [focus, index, inventory.subjects, preferredExam]);
 
   const subjectLabel = focus ? index.nodesById.get(focus.subjectId)?.label || "this subject" : "UPSC";
@@ -85,25 +86,27 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAttempt,
   const nextLevel = levelNames[nextKind];
   const pluralLevel = `${nextLevel}${nextLevel === "subpart" ? "s" : "s"}`;
   const heading = pluralLevel.charAt(0).toUpperCase() + pluralLevel.slice(1);
+  const focusState = focus ? scopeMetrics(focus.id, paths, index).state : "none";
 
   return <section className="scope-cards" aria-label={`${subjectLabel} ${pluralLevel}`} data-focus-id={focus?.id || "root"}>
     <header className="scope-cards-heading">
       <div>
-        <h3>{focus && cards.length === 1 && cards[0].id === focus.id ? focus.label : heading}</h3>
+        {focus ? <button type="button" className="explorer-back" disabled={disabled} onClick={onBack}>← Back</button> : null}
+        {focus ? <small>{scopeDisplayNumber(focus.id, index)}</small> : null}
+        <h3>{focus?.label || "Subjects"}</h3>
+        {focus ? <span>{number(preferredExam ? focus.examCounts[preferredExam] : focus.questionCount)} MCQs</span> : null}
       </div>
       <div className="scope-card-exam-key" aria-label="Exam source colours">
         {(preferredExam ? [preferredExam] : PYQ_EXAMS).map((exam) => <span key={exam}><i style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} />{exam}</span>)}
       </div>
+      {focus ? <button type="button" className="explorer-add" disabled={disabled || focusState === "all"} onClick={() => onAdd(focus.id)}>{focusState === "all" ? "Added" : focusState === "partial" ? "Add remaining" : "Add entire folder"}</button> : null}
     </header>
-
+    {cards.length ? <h4 className="explorer-contents-label">{heading}</h4> : focus ? <div className="explorer-leaf"><SourceDistribution counts={cardMetrics(focus, paths, index, preferredExam).availableExams} exams={preferredExam ? [preferredExam] : PYQ_EXAMS} /></div> : null}
     <div className="scope-card-grid">
       {cards.map((node) => {
         const metrics = cardMetrics(node, paths, index, preferredExam);
         const availableCount = preferredExam ? node.examCounts[preferredExam] : node.questionCount;
         const displayNumber = scopeDisplayNumber(node.id, index);
-        const hasChildren = (index.childrenById.get(node.id)?.length || 0) > 0;
-        const childKind = index.childrenById.get(node.id)?.[0]?.kind;
-        const childLabel = childKind ? `${levelNames[childKind]}s` : "details";
         const countText = `${number(availableCount)} questions`;
         return <article
           key={node.id}
@@ -116,27 +119,13 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAttempt,
         >
           <div className="scope-card-body">
             <div className="scope-card-main">
-              <button
-                type="button"
-                className="scope-card-select"
-                disabled={disabled}
-                aria-current={metrics.state === "all" ? "true" : undefined}
-                aria-label={`Use ${node.label} as the test scope. ${number(availableCount)} questions available.`}
-                onClick={() => onAttempt(node.id)}
-              ><span aria-hidden="true">{metrics.state === "all" ? "✓" : metrics.state === "partial" ? "−" : ""}</span></button>
               <div className="scope-card-copy">
                 {displayNumber ? <div className="scope-card-meta"><span className="scope-card-number">{displayNumber}</span></div> : null}
-                <h4>{node.label}</h4>
+                <h4><button type="button" className="explorer-folder" disabled={disabled} aria-label={`Open ${node.label}`} onClick={() => onBrowse(node.id)}><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 7V5a1 1 0 0 1 1-1h5l2 3h9a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /></svg>{node.label}<span aria-hidden="true">›</span></button></h4>
                 <p>{countText}</p>
+                {metrics.state !== "none" ? <small className="explorer-added">{metrics.state === "all" ? "Added" : "Partly added"}</small> : null}
               </div>
-              {hasChildren ? <button
-                type="button"
-                className="scope-card-open"
-                disabled={disabled}
-                title={`View ${childLabel}`}
-                aria-label={`Open ${node.label} ${childLabel} without changing your selection`}
-                onClick={() => onBrowse(node.id)}
-              ><span aria-hidden="true">›</span></button> : null}
+              <button type="button" className="explorer-add" disabled={disabled || metrics.state === "all"} aria-label={`${metrics.state === "all" ? "Added" : "Add to test:"} ${node.label}`} onClick={() => onAdd(node.id)}>{metrics.state === "all" ? "Added" : metrics.state === "partial" ? "Add remaining" : "Add to test"}</button>
             </div>
             <SourceDistribution counts={metrics.availableExams} exams={preferredExam ? [preferredExam] : PYQ_EXAMS} />
           </div>
