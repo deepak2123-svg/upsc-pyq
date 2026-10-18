@@ -163,7 +163,6 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const selectedIds = useMemo(() => selectedScopeIds(paths, index), [paths, index]);
   const current = focusId ? index.nodesById.get(focusId) : undefined;
   const focusPath = current ? ancestors(current.id, index) : [];
-  const metrics = current ? scopeMetrics(current.id, paths, index) : undefined;
   const activeSourceId = sourceScopeId !== "all" && index.nodesById.has(sourceScopeId) && scopeMetrics(sourceScopeId, paths, index).state !== "none" ? sourceScopeId : "all";
   const sourceLeaves = activeSourceId === "all" ? [...index.nodesById.values()].filter((node) => node.kind === "subtopic" && Object.hasOwn(paths, node.id)) : (index.leavesById.get(activeSourceId) || []).filter((node) => Object.hasOwn(paths, node.id));
   const sourceMetrics = Object.fromEntries(PYQ_EXAMS.map((exam) => {
@@ -177,7 +176,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     const enabled = eligible.filter((leaf) => paths[leaf.id]?.includes(exam));
     return [exam, { available: eligible.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), count: enabled.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), state: (enabled.length === 0 ? "none" : enabled.length === eligible.length ? "all" : "partial") as "none" | "partial" | "all" }];
   })) as Record<PyqExam, { available: number; count: number; state: "none" | "partial" | "all" }>;
-  const sourceTargets = [...new Set([...selectedIds, ...(activeSourceId !== "all" ? [activeSourceId] : []), ...(current && metrics?.state !== "none" ? [current.id] : [])])];
+  const sourceTargets = [...new Set(selectedIds)];
   const durationMinutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
   const validDuration = durationMinutes === null || Number.isInteger(durationMinutes) && durationMinutes >= 1 && durationMinutes <= 720;
   const practiceCount = count === "all" ? totals.matchingCount : count;
@@ -198,19 +197,19 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   function selectScope(id: string) {
     if (loading || !restored) return;
     setPaths(() => replaceScope({}, id, index, initialExam));
-    setFocusId(id); setSourceScopeId("all"); setError(""); setNotice("Selection updated. It now appears in the left panel.");
+    setFocusId(id); setSourceScopeId("all"); setError(""); setNotice("Selection updated.");
   }
   function browse(id: string) {
     if (loading || !restored) return;
-    setFocusId(id); setNotice("View changed. Your practice selection is unchanged."); moveFocus.current = true;
+    setFocusId(id); setNotice("Syllabus view changed."); moveFocus.current = true;
   }
   function browseRoot() {
     if (loading || !restored) return;
-    setFocusId(undefined); setNotice("Showing all subjects. Your selection is unchanged."); moveFocus.current = true;
+    setFocusId(undefined); setNotice("Showing all subjects."); moveFocus.current = true;
   }
   function clearSelection() {
     if (loading || !restored) return;
-    setPaths({}); setSourceScopeId("all"); setError(""); setNotice("Selection cleared. Continue browsing to choose a new scope.");
+    setPaths({}); setSourceScopeId("all"); setError(""); setNotice("Selection cleared.");
   }
   function remove(id: string) {
     if (loading || !restored) return;
@@ -255,49 +254,39 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       setError(reason instanceof Error ? reason.message : "The PDF could not be prepared. Please try again.");
     } finally { setExporting(false); }
   }
-  const instruction = !current ? "Choose a subject to browse its syllabus"
-    : metrics?.state === "none" ? "Browsing only · your selection is unchanged"
-    : current?.kind === "subtopic" ? "Subtopic selected"
-    : current?.kind === "topic" ? "Choose a subtopic or keep this topic"
-    : current?.kind === "head" ? "Choose a topic or keep this section"
-    : metrics?.state === "all" ? "All sections selected"
-    : "Partly selected";
   return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading}>
-    <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam} only</p></> : <p className="pyq-kicker">UPSC question library</p>}<h1>Build from the syllabus.</h1><p>Browse freely. Only the subject, section, chapter or subpart you explicitly select is added to your test.</p></div><details className="scope-inventory-info"><summary>{format(initialInventory.mappedCount)} classified PYQs <span aria-hidden="true">ⓘ</span></summary><p>{format(initialInventory.unmappedCount)} unclassified questions remain in exam archives.</p></details></header>
-    <div className="scope-library-layout">
-      <aside className="scope-selection-rail" aria-labelledby="selection-rail-title">
-        <div className="scope-rail-heading"><div><span className="selector-label">Your selection</span><h2 id="selection-rail-title">Selected syllabus</h2></div>{selectedIds.length ? <button type="button" disabled={loading} onClick={clearSelection}>Clear</button> : null}</div>
-        {!selectedIds.length ? <div className="scope-selection-empty"><span aria-hidden="true">＋</span><strong>Nothing selected yet</strong><p>Open the syllabus and select one scope. It will appear here only after you choose it.</p></div> : <>
-          <div className="scope-selection-list">{selectedIds.map((id) => { const node = index.nodesById.get(id)!; const branchPath = ancestors(id, index); const metric = scopeMetrics(id, paths, index); const leaves = index.leavesById.get(id) || []; return <article className="scope-selection-item" key={id}><div><small>{branchPath[0]?.label}</small><strong>{branchPath.slice(1).map((part) => [scopeDisplayNumber(part.id, index), part.label].filter(Boolean).join(" · ")).join(" › ") || "Entire subject"}</strong><span>{format(metric.selectedCount)} matching · {leaves.length} subpart{leaves.length === 1 ? "" : "s"}</span><button type="button" className="scope-selection-change" disabled={loading} onClick={() => browse(id)}>View in syllabus</button></div><button type="button" className="scope-selection-remove" disabled={loading} aria-label={"Remove " + node.label} onClick={() => remove(id)}>×</button></article>; })}</div>
-          <button type="button" className="scope-add-another" disabled={loading} onClick={() => setAddOpen(true)}>＋ Add another chapter or topic</button>
+    <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{initialExam ? `${initialExam} question library` : "Question library"}</h1></div><details className="scope-inventory-info"><summary>{format(initialInventory.mappedCount)} PYQs <span aria-hidden="true">ⓘ</span></summary><p>{format(initialInventory.unmappedCount)} unclassified questions remain in exam archives.</p></details></header>
+    <div className={`scope-library-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
+      {selectedIds.length ? <aside className="scope-selection-rail" aria-labelledby="selection-rail-title">
+        <div className="scope-rail-heading"><h2 id="selection-rail-title">Selected</h2><button type="button" disabled={loading} onClick={clearSelection}>Clear</button></div>
+          <div className="scope-selection-list">{selectedIds.map((id) => { const node = index.nodesById.get(id)!; const branchPath = ancestors(id, index); const metric = scopeMetrics(id, paths, index); const leaves = index.leavesById.get(id) || []; const parents = branchPath.slice(0, -1).slice(-2).map((part) => part.label).join(" / ") || node.label; const title = branchPath.length === 1 ? "All sections" : [scopeDisplayNumber(node.id, index), node.label].filter(Boolean).join(" · "); return <article className="scope-selection-item" key={id}><div className="scope-selection-copy"><small>{parents}</small><strong>{title}</strong><span>{format(metric.selectedCount)} questions · {leaves.length} subpart{leaves.length === 1 ? "" : "s"}</span></div><div className="scope-selection-actions"><button type="button" className="scope-selection-change" disabled={loading} aria-label={`Open ${node.label} in syllabus`} onClick={() => browse(id)}>Open</button><button type="button" className="scope-selection-remove" disabled={loading} aria-label={"Remove " + node.label} onClick={() => remove(id)}>Remove</button></div></article>; })}</div>
+          <button type="button" className="scope-add-another" disabled={loading} onClick={() => setAddOpen(true)}>＋ Add</button>
           <section className="scope-sources scope-sources-rail" aria-labelledby="scope-sources-title">
-            <div className="scope-source-heading"><h3 id="scope-sources-title">Exam sources</h3><span>Applied only to your selection</span></div>
-            {sourceTargets.length > 1 ? <label className="scope-source-target">Apply to<select aria-label="Apply sources to" disabled={loading || !restored} value={activeSourceId} onChange={(event) => setSourceScopeId(event.target.value)}><option value="all">All selected questions</option>{sourceTargets.map((id) => <option value={id} key={id}>{index.nodesById.get(id)?.label}</option>)}</select></label> : null}
+            <div className="scope-source-heading"><h3 id="scope-sources-title">Exam sources</h3></div>
+            {sourceTargets.length > 1 ? <label className="scope-source-target">Apply to<select aria-label="Apply sources to" disabled={loading || !restored} value={activeSourceId} onChange={(event) => setSourceScopeId(event.target.value)}><option value="all">All selected</option>{sourceTargets.map((id) => <option value={id} key={id}>{index.nodesById.get(id)?.label}</option>)}</select></label> : null}
             <div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={sourceMetrics[exam].count} available={sourceMetrics[exam].available} state={sourceMetrics[exam].state} disabled={loading || !restored || sourceMetrics[exam].available === 0} onChange={() => toggleSource(exam)} />)}</div>
           </section>
-        </>}
-      </aside>
+      </aside> : null}
 
       <section className="scope-refine scope-library-browser" aria-labelledby="scope-refine-title">
-        <div className="scope-refine-heading"><div><span className="selector-label">Browsing</span><h2 id="scope-refine-title" tabIndex={-1} ref={focusHeading}>{current ? <>{scopeDisplayNumber(current.id, index) ? <small>{scopeDisplayNumber(current.id, index)}</small> : null}{current.label}</> : "Choose a subject"}</h2><p>{instruction}. Opening a level never changes the selection shown on the left.</p></div></div>
+        <div className="scope-refine-heading"><div><h2 id="scope-refine-title" tabIndex={-1} ref={focusHeading}>{current ? <>{scopeDisplayNumber(current.id, index) ? <small>{scopeDisplayNumber(current.id, index)}</small> : null}{current.label}</> : "Subjects"}</h2></div></div>
         <nav className="scope-breadcrumbs" aria-label="Current syllabus path"><span><button type="button" disabled={loading} onClick={browseRoot} aria-current={!current ? "location" : undefined}>All subjects</button></span>{focusPath.map((node) => { const number = scopeDisplayNumber(node.id, index); return <span key={node.id}><i aria-hidden="true">→</i><button type="button" disabled={loading} onClick={() => browse(node.id)} aria-current={node.id === current?.id ? "location" : undefined}>{number ? <small>{number}</small> : null}{node.label}</button></span>; })}</nav>
-        <div className="scope-navigation-help">{current ? <button type="button" disabled={loading} onClick={() => current.parentId ? browse(current.parentId) : browseRoot()}>← Back <small>selection unchanged</small></button> : <span>Select adds one scope; Open only explores it.</span>}</div>
+        {current ? <div className="scope-navigation-help"><button type="button" disabled={loading} onClick={() => current.parentId ? browse(current.parentId) : browseRoot()}>← Back</button></div> : null}
         <ScopeFlow inventory={initialInventory} paths={paths} focusId={focusId} preferredExam={initialExam} onAttempt={selectScope} onBrowse={browse} disabled={loading || !restored} />
-        <p className="scope-status" role="status" aria-live="polite">{notice || (selectedIds.length ? format(totals.matchingCount) + " questions are in your selected scope." : "Nothing selected. Browse the syllabus and choose one scope when ready.")}</p>
+        <p className="visually-hidden" role="status" aria-live="polite">{notice}</p>
       </section>
 
       <aside className="selection-dock scope-dock scope-test-summary" aria-labelledby="practice-summary-title">
-        <div className="scope-dock-body"><span className="selector-label">Your test</span><h2 id="practice-summary-title">Ready when you are</h2>
-          <div className="scope-matching" data-testid="matching-count"><strong>{format(totals.matchingCount)}</strong><span>questions in scope</span></div>
-          {selectedIds.length ? <><div className="scope-test-source-bar" aria-hidden="true">{PYQ_EXAMS.map((exam) => totals.examTotals[exam] ? <i key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam], flexGrow: totals.examTotals[exam] } as CSSProperties} /> : null)}</div><div className="scope-test-source-list">{PYQ_EXAMS.map((exam) => <span key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties}><i />{exam} <b>{format(totals.examTotals[exam])}</b></span>)}</div></> : <p className="scope-summary-empty">Your test summary will appear after you select a syllabus scope.</p>}
+        <div className="scope-dock-body"><h2 id="practice-summary-title">Test</h2>
+          <div className="scope-matching" data-testid="matching-count"><strong>{format(totals.matchingCount)}</strong><span>questions</span></div>
+          {selectedIds.length ? <><div className="scope-test-source-bar" aria-hidden="true">{PYQ_EXAMS.map((exam) => totals.examTotals[exam] ? <i key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam], flexGrow: totals.examTotals[exam] } as CSSProperties} /> : null)}</div><div className="scope-test-source-list">{PYQ_EXAMS.map((exam) => <span key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties}><i />{exam} <b>{format(totals.examTotals[exam])}</b></span>)}</div></> : null}
           {totals.subjectIds.length > 0 && totals.matchingCount === 0 ? <p className="scope-shortage">No questions match the enabled exam sources. Re-enable a source or choose another scope.</p> : null}
-          <p className="scope-setup-note">Question count, time, and online or printable mode are chosen in the final step.</p>
         </div>
         <div className="scope-dock-footer"><button type="button" className="start-practice" disabled={!restored || totals.matchingCount === 0 || loading} onClick={() => setSetupOpen(true)}>Set up test →</button>{draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}</div>
       </aside>
     </div>
-    <div className="scope-mobile-bar"><div><strong>{format(totals.matchingCount)} matching</strong><span>Choose MCQs and time next</span></div><button type="button" disabled={!restored || totals.matchingCount === 0 || loading} onClick={() => setSetupOpen(true)}>Set up test →</button></div>
-    {addOpen ? <AddScopeDialog index={index} paths={paths} initialId={current?.subjectId || totals.subjectIds[0]} preferredExam={initialExam} onCancel={() => setAddOpen(false)} onAdd={(id) => { setPaths((existing) => addScope(existing, id, index, initialExam)); setFocusId(id); setSourceScopeId("all"); setError(""); setNotice("Additional scope added to your selection."); setAddOpen(false); }} /> : null}
+    <div className="scope-mobile-bar"><div><strong>{format(totals.matchingCount)} questions</strong></div><button type="button" disabled={!restored || totals.matchingCount === 0 || loading} onClick={() => setSetupOpen(true)}>Set up test →</button></div>
+    {addOpen ? <AddScopeDialog index={index} paths={paths} initialId={current?.subjectId || totals.subjectIds[0]} preferredExam={initialExam} onCancel={() => setAddOpen(false)} onAdd={(id) => { setPaths((existing) => addScope(existing, id, index, initialExam)); setFocusId(id); setSourceScopeId("all"); setError(""); setNotice("Scope added."); setAddOpen(false); }} /> : null}
     {setupOpen ? <PracticeSetupDialog matchingCount={totals.matchingCount} examMetrics={setupSourceMetrics} count={count} order={order} durationChoice={durationChoice} customMinutes={customMinutes} includeAnswerKey={includeAnswerKey} shortage={shortage} validDuration={validDuration} loading={loading} exporting={exporting} canStart={canStart} error={error} onExam={toggleSetupSource} onCount={(value) => { setCount(value); setError(""); }} onOrder={setOrder} onDuration={(value) => { setDurationChoice(value); setError(""); }} onCustomMinutes={setCustomMinutes} onIncludeAnswerKey={setIncludeAnswerKey} onUseAll={() => setCount("all")} onStart={() => void startPractice()} onExport={() => void exportPaper()} onCancel={() => { setSetupOpen(false); setError(""); }} /> : null}
   </main>;
 }

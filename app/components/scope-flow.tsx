@@ -84,13 +84,12 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAttempt,
   const nextKind = cards[0]?.kind || focus?.kind || "subject";
   const nextLevel = levelNames[nextKind];
   const pluralLevel = `${nextLevel}${nextLevel === "subpart" ? "s" : "s"}`;
+  const heading = pluralLevel.charAt(0).toUpperCase() + pluralLevel.slice(1);
 
   return <section className="scope-cards" aria-label={`${subjectLabel} ${pluralLevel}`} data-focus-id={focus?.id || "root"}>
     <header className="scope-cards-heading">
       <div>
-        <span className="scope-cards-eyebrow">{focus ? `Browsing ${levelNames[focus.kind]}` : "UPSC syllabus"}</span>
-        <h3>{focus && cards.length === 1 && cards[0].id === focus.id ? focus.label : `Choose ${pluralLevel}`}</h3>
-        <p><strong>Select</strong> adds this scope to the left. <strong>Open</strong> only shows the next level.</p>
+        <h3>{focus && cards.length === 1 && cards[0].id === focus.id ? focus.label : heading}</h3>
       </div>
       <div className="scope-card-exam-key" aria-label="Exam source colours">
         {(preferredExam ? [preferredExam] : PYQ_EXAMS).map((exam) => <span key={exam}><i style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} />{exam}</span>)}
@@ -104,12 +103,10 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAttempt,
         const displayNumber = scopeDisplayNumber(node.id, index);
         const hasChildren = (index.childrenById.get(node.id)?.length || 0) > 0;
         const selectedText = metrics.state === "all" ? "Included"
-          : metrics.state === "partial" ? "Partly included" : "Available";
+          : metrics.state === "partial" ? "Partly included" : "";
         const childKind = index.childrenById.get(node.id)?.[0]?.kind;
         const childLabel = childKind ? `${levelNames[childKind]}s` : "details";
-        const countText = metrics.selectedCount > 0
-          ? `${number(metrics.selectedCount)} selected of ${number(availableCount)} available`
-          : `${number(availableCount)} questions available`;
+        const countText = `${number(availableCount)} questions`;
         return <article
           key={node.id}
           className="scope-card"
@@ -120,7 +117,7 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAttempt,
           data-selected-count={metrics.selectedCount}
         >
           <div className="scope-card-body">
-            <div className="scope-card-meta">{displayNumber ? <span className="scope-card-number">{displayNumber}</span> : null}<span className="scope-card-state">{selectedText}</span></div>
+            {displayNumber || selectedText ? <div className="scope-card-meta">{displayNumber ? <span className="scope-card-number">{displayNumber}</span> : null}{selectedText ? <span className="scope-card-state">{selectedText}</span> : null}</div> : null}
             <h4>{node.label}</h4>
             <p>{countText}</p>
             <SourceDistribution counts={metrics.availableExams} exams={preferredExam ? [preferredExam] : PYQ_EXAMS} />
@@ -132,14 +129,14 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAttempt,
               disabled={disabled}
               aria-label={`Select ${node.label}. ${number(availableCount)} questions available.`}
               onClick={() => onAttempt(node.id)}
-            >{node.kind === "subtopic" ? "Select subpart" : `Select full ${levelNames[node.kind]}`}</button>
+            >Select</button>
             {hasChildren ? <button
               type="button"
               className="scope-card-open"
               disabled={disabled}
               aria-label={`Open ${node.label} ${childLabel} without changing your selection`}
               onClick={() => onBrowse(node.id)}
-            >Open {childLabel}</button> : null}
+            >View {childLabel}</button> : null}
           </div>
         </article>;
       })}
