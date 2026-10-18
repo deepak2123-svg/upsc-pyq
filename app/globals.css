@@ -1472,3 +1472,49 @@ h3 { font-size: 16px; }
   .explorer-add { min-height: 44px; padding: 8px 10px; font-size: 11px; }
   .explorer-layout .scope-card-source-counts { padding-left: 0; gap: 10px; }
 }
+
+.explorer-layout .scope-syllabus-rail { background: transparent; border: 0; box-shadow: none; overflow: visible; max-height: calc(100dvh - 200px); scrollbar-gutter: auto; }
+.explorer-layout .scope-syllabus-content { max-height: inherit; }
+.syllabus-split { display: flex; flex-direction: column; gap: 14px; padding: 0; max-height: inherit; }
+.syllabus-context-panel { flex: 0 0 auto; }
+.syllabus-context-panel, .syllabus-chapters-panel { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px; box-shadow: 0 3px 18px #17213405; }
+.syllabus-context-panel .scope-syllabus-root { padding: 3px 3px 12px; margin: 0; font-size: 10px; }
+.syllabus-subject { display: flex; width: 100%; gap: 10px; align-items: center; justify-content: space-between; border: 0; background: transparent; padding: 12px 6px; text-align: left; color: var(--ink); font-size: 16px; }
+.syllabus-subject span { color: var(--muted); font-size: 11px; }
+.syllabus-sections { list-style: none; padding: 0; margin: 0; }
+.syllabus-sections button { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 12px; min-height: 38px; padding: 8px 9px; border: 0; border-radius: 6px; background: transparent; color: var(--muted); text-align: left; font-size: 12px; line-height: 1.4; }
+.syllabus-sections small { font-size: 10px; font-variant-numeric: tabular-nums; }
+.syllabus-sections button[data-active=true], .syllabus-sections button:hover { background: #edf2ff; color: var(--accent); }
+.syllabus-sections button[data-active=true] { font-weight: 700; }
+.syllabus-chapters-panel { flex: 1 1 auto; min-height: 180px; overflow-y: auto; }
+.syllabus-chapters-panel > header { padding: 5px 5px 12px; border-bottom: 1px solid var(--line); }
+.syllabus-chapters-panel header small { color: var(--accent); font-size: 10px; }
+.syllabus-chapters-panel h3 { font-size: 12px; margin: 5px 0 0; }
+.syllabus-chapters-panel .scope-syllabus-tree > li + li { border-top: 1px solid #eef0f4; }
+.syllabus-chapters-panel .scope-syllabus-tree ul { margin-left: 18px; padding-left: 5px; border-left: 1px solid #ccd7ed; }
+.explorer-layout .syllabus-chapters-panel .scope-syllabus-row { padding-left: 0; }
+.syllabus-chapters-panel .scope-syllabus-link { font-size: 11px; }
+.syllabus-chapters-panel .scope-syllabus-link > span { display: grid; grid-template-columns: 25px minmax(0, 1fr); gap: 4px; align-items: baseline; }
+.syllabus-chapters-panel .scope-syllabus-link small { margin: 0; font-size: 10px; letter-spacing: 0; }
+.explorer-layout .scope-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; border: 0; border-radius: 0; background: transparent; }
+.explorer-layout .scope-card, .explorer-layout .scope-card:last-child { border: 1px solid var(--line); border-radius: 10px; }
+.explorer-layout .scope-card-body { padding: 12px; gap: 7px; }
+.explorer-layout .scope-card-main { gap: 9px; }
+.explorer-layout .scope-card-copy { gap: 2px; }
+.explorer-layout .scope-card h4 { font-size: 13px; }
+.explorer-layout .explorer-folder { min-height: 32px; padding: 0; gap: 6px; line-height: 1.35; }
+.explorer-layout .scope-card-copy > p { font-size: 10px; }
+.explorer-layout .scope-card-source-counts { padding-left: 0; gap: 9px; }
+.explorer-layout .scope-card-source-counts > span { font-size: 10px; gap: 3px; }
+.explorer-layout .scope-card-source-counts b { font-size: 9px; }
+.explorer-layout .scope-card .explorer-add { padding: 7px 8px; font-size: 10px; min-height: 36px; }
+@media (max-width: 1050px) {
+  .explorer-layout .scope-card-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 820px) {
+  .explorer-layout .scope-syllabus-rail { max-height: none; border: 1px solid var(--line); border-radius: 10px; background: white; }
+  .explorer-layout .scope-syllabus-content[data-mobile-open=true] { max-height: 100dvh; }
+  .syllabus-split { max-height: none; }
+  .syllabus-chapters-panel { flex: 0 0 auto; }
+  .explorer-layout .scope-card .explorer-add { min-height: 44px; }
+}

@@ -22,13 +22,18 @@ test("opening and folding folders never adds questions", async ({ page }) => {
   await expect(count(page)).toHaveText("363");
   await expect(summary(page).getByTestId("test-scope-label")).toContainText("Current folder");
   await expect(page.locator(".explorer-test-items li")).toHaveCount(0);
-  await tree.getByRole("button", { name: "Collapse Geography", exact: true }).click();
-  await expect(heading(page)).toHaveText("Physical Geography");
-  await expect(tree.getByRole("button", { name: "Physical Geography", exact: true })).toHaveCount(0);
-  await tree.getByRole("button", { name: "Expand Geography", exact: true }).click();
-  await expect(tree.getByRole("button", { name: "Physical Geography", exact: true })).toHaveAttribute("aria-current", "location");
+  await expect(tree.getByRole("region", { name: "Subject and section" })).toContainText("Geography");
+  await expect(tree.getByRole("region", { name: "Chapters & subchapters" })).toBeVisible();
+  await tree.getByRole("button", { name: chapter, exact: true }).click();
+  await expect(tree.getByRole("button", { name: `Collapse ${chapter}`, exact: true })).toBeVisible();
+  await tree.getByRole("button", { name: "Interior of the Earth", exact: true }).click();
+  await expect(tree.getByRole("button", { name: `Expand ${chapter}`, exact: true })).toBeVisible();
+  await expect(tree.getByRole("button", { name: "The Sun", exact: true })).toHaveCount(0);
+  await tree.getByRole("button", { name: "Collapse Interior of the Earth", exact: true }).click();
+  await expect(heading(page)).toHaveText("Interior of the Earth");
   await expect(browser(page).getByRole("checkbox")).toHaveCount(0);
   await expect(tree.getByRole("checkbox")).toHaveCount(0);
+  await expect(browser(page).locator(".explorer-folder svg")).toHaveCount(0);
 });
 
 test("adding parts is cumulative and keeps the folder open", async ({ page }, testInfo) => {
@@ -132,7 +137,7 @@ test("selection, folder, expanded branches, and sources restore on reload", asyn
   await expect(heading(page)).toHaveText("Interior of the Earth");
   await expect(count(page)).toHaveText("19");
   await expect(summary(page).getByRole("button", { name: /^NDA\b/ })).toHaveAttribute("aria-pressed", "false");
-  await expect(page.getByRole("navigation", { name: "Syllabus" }).getByRole("button", { name: "Collapse Geography", exact: true })).toBeVisible();
+  await expect(page.getByRole("navigation", { name: "Syllabus" }).getByRole("button", { name: "Collapse Interior of the Earth", exact: true })).toBeVisible();
 });
 
 test("deepest subpart renders once and keyboard navigation opens folders", async ({ page }) => {

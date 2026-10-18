@@ -133,7 +133,8 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
           setExpandedIds(savedExpanded);
           if (typeof draft.focusId === "string" && index.nodesById.has(draft.focusId)) {
             setFocusId(draft.focusId);
-            setExpandedIds([...new Set([...savedExpanded, ...ancestors(draft.focusId, index).map((node) => node.id)])]);
+            const currentPath = ancestors(draft.focusId, index).map((node) => node.id);
+            setExpandedIds(currentPath);
           }
           if (draft.version >= 4 && (draft.count === "all" || Number.isInteger(draft.count) && draft.count > 0 && draft.count <= 100)) setCount(draft.count);
           if (draft.order === "newest" || draft.order === "shuffle") setOrder(draft.order);
@@ -215,12 +216,14 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   function browse(id: string) {
     if (loading || !restored) return;
     setFocusId(id);
-    setExpandedIds((existing) => [...new Set([...existing, ...ancestors(id, index).map((node) => node.id)])]);
+    setExpandedIds(ancestors(id, index).map((node) => node.id));
     setSyllabusOpen(false);
     setNotice("Folder opened.");
   }
   function toggleBranch(id: string) {
-    setExpandedIds((existing) => existing.includes(id) ? existing.filter((item) => item !== id) : [...existing, id]);
+    setExpandedIds((existing) => existing.includes(id)
+      ? existing.filter((item) => !ancestors(item, index).some((ancestor) => ancestor.id === id))
+      : ancestors(id, index).map((node) => node.id));
   }
   function browseRoot() {
     if (loading || !restored) return;

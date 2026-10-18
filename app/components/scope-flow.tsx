@@ -121,7 +121,7 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAdd, onB
             <div className="scope-card-main">
               <div className="scope-card-copy">
                 {displayNumber ? <div className="scope-card-meta"><span className="scope-card-number">{displayNumber}</span></div> : null}
-                <h4><button type="button" className="explorer-folder" disabled={disabled} aria-label={`Open ${node.label}`} onClick={() => onBrowse(node.id)}><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 7V5a1 1 0 0 1 1-1h5l2 3h9a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /></svg>{node.label}<span aria-hidden="true">›</span></button></h4>
+                <h4><button type="button" className="explorer-folder" disabled={disabled} aria-label={`Open ${node.label}`} onClick={() => onBrowse(node.id)}>{node.label}<span aria-hidden="true">›</span></button></h4>
                 <p>{countText}</p>
                 {metrics.state !== "none" ? <small className="explorer-added">{metrics.state === "all" ? "Added" : "Partly added"}</small> : null}
               </div>
