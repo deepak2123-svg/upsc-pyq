@@ -19,3 +19,15 @@ cover desktop left/right geometry, stacked full-width options, bookmarks and
 answered states, widths through 320px, palette toggle, editable answers and
 submitted results, unfinished-result access, timer expiry/reload, failed grading
 and storage recovery. Desktop and mobile screenshots were visually inspected.
+
+## Compact spacing revision
+
+Reduce the desktop canvas to 1,380px, card padding to 18px/20px, header gap to
+16px, option gap to 8px and short option rows to 52px (previously 72px). Use
+20px question/16px option text at the default size, retaining A-/A/A+ controls.
+Tighten source, choice-panel and footer spacing and shrink the side palette.
+Mobile rows retain at least 48px height. No answer or timing behaviour changes.
+
+Build and 163 automated tests pass. Browser checks cover answer/submission and
+desktop/mobile reading layout; explicit assertions bound option height, option
+gaps and card padding to prevent oversized whitespace returning.

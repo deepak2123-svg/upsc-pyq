@@ -210,6 +210,11 @@ test('reading layout places full-width answers left and the palette right',async
   const second=(await options.getByRole('button').nth(1).boundingBox())!;
   expect(second.y).toBeGreaterThan(first.y+first.height);
   expect(first.width).toBeGreaterThan(cardBox.width*.8);
+  expect(first.height).toBeGreaterThanOrEqual(44);
+  expect(first.height).toBeLessThanOrEqual(60);
+  expect(second.y-first.y-first.height).toBeLessThanOrEqual(9);
+  expect(await card.evaluate(element=>parseFloat(getComputedStyle(element).paddingTop))).toBeLessThanOrEqual(20);
+  expect(await page.locator('.question-heading').evaluate(element=>parseFloat(getComputedStyle(element).marginBottom))).toBeLessThanOrEqual(16);
   await expect(palette.getByRole('group')).toHaveCount(0);
   await expect(palette.locator('.palette-legend')).toContainText('Not answered');
   await page.getByRole('button',{name:'Save for later',exact:true}).click();
