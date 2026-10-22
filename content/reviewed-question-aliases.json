@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "purpose": "Reviewed duplicate source occurrences; preserve historical IDs and keep one active canonical question",
+  "records": [
+    {
+      "aliasId": "nda-2016-i-138",
+      "canonicalId": "cds-2016-2016-1-138",
+      "expectedAliasHash": "8aba7a170646c93322fb3e0d95e35f7a50e8224060c928465d31628cb14b2cae",
+      "expectedCanonicalHash": "7356149d027d3d47fe4ae838a332de7b736f00375fb47ccd71667f216964f31b",
+      "revision": 1,
+      "review": {
+        "status": "approved",
+        "source": { "exam": "NDA", "year": 2016, "paper": "I", "questionNumber": 138 },
+        "rationale": "Both current records have identical full prompt lines, all four options and answer, and the same corrected source identity. Keep the repaired, original-page-reviewed legacy record canonical; do not delete either historical ID.",
+        "secondPass": "Complete displayed wording and choices compared again. This is the same NDA source occurrence, not a similar question from a different exam.",
+        "evidenceReviewRecordId": "cds-2016-2016-1-138",
+        "paperSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
+        "keySha256": "71d756e6de6bb89c511e513edbd799f3c69b076529d6ebb9618ce25c751b7619",
+        "evidenceBasis": "Existing verified original page 34 and Series A final-key review; current local PDF hashes rechecked. No new answer or source-text correction."
+      }
+    }
+  ]
+}

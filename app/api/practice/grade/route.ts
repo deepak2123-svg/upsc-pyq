@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { pyqQuestions } from "../../../../lib/pyq-catalog";
+import { historicalPyqQuestions as pyqQuestions } from "../../../../lib/pyq-catalog";
+import { questionExclusion, questionReviewRevision } from '../../../../lib/question-review';
 import type { AnswerFeedback } from "../../../../lib/practice-types";
 import { answerKeyRevision } from "../../../../lib/practice-session";
 
@@ -18,6 +19,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "A question snapshot and answer map are required." }, { status: 400 });
   }
   const ids = input.questionIds;
+  const contentRevisions = input.contentRevisions;
+  if (contentRevisions !== undefined && (!isRecord(contentRevisions) || Object.entries(contentRevisions).some(([id, value]) => !ids.includes(id) || !Number.isInteger(value) || Number(value) < 0))) return NextResponse.json({ error: 'Invalid question content revisions.' }, { status: 400 });
   if (!ids.length || ids.length > pyqQuestions.length || ids.some((id) => typeof id !== "string" || !questionsById.has(id)) || new Set(ids).size !== ids.length) {
     return NextResponse.json({ error: "Question IDs must be known, unique questions from your practice." }, { status: 400 });
   }
@@ -30,16 +33,23 @@ export async function POST(request: Request) {
   }
   let correct = 0;
   let incorrect = 0;
+  let excluded = 0;
   const feedback: Record<string, AnswerFeedback> = {};
   for (const id of ids as string[]) {
     const question = questionsById.get(id)!;
     const answer = input.answers[id];
+    const exclusionReason = questionExclusion(id, isRecord(contentRevisions) ? Number(contentRevisions[id] ?? 0) : 0);
+    if (exclusionReason) {
+      excluded += 1;
+      feedback[id] = { disposition: 'excluded', correct: null, correctAnswer: null, explanation: exclusionReason, exclusionReason, answerKeyRevision: answerKeyRevision(id), reviewRevision: questionReviewRevision(id) };
+      continue;
+    }
     const isCorrect = answer === question.answer;
     if (answer !== undefined) {
       if (isCorrect) correct += 1;
       else incorrect += 1;
     }
-    feedback[id] = { correct: isCorrect, correctAnswer: question.answer, explanation: publishedExplanation(question.explanation), answerKeyRevision: answerKeyRevision(id) };
+    feedback[id] = { disposition: 'scored', correct: isCorrect, correctAnswer: question.answer, explanation: publishedExplanation(question.explanation), answerKeyRevision: answerKeyRevision(id), reviewRevision: questionReviewRevision(id) };
   }
-  return NextResponse.json({ correct, incorrect, unattempted: ids.length - correct - incorrect, total: ids.length, feedback });
+  return NextResponse.json({ correct, incorrect, excluded, scored: ids.length - excluded, unattempted: ids.length - excluded - correct - incorrect, total: ids.length, feedback });
 }

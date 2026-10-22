@@ -1,0 +1,319 @@
+{
+  "version": 1,
+  "evidence": {
+    "exam": "CSE", "year": 2013, "paper": "GS-I", "series": "A",
+    "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2013.pdf",
+    "originalPdfSha256": "cd9f0fcc9d911af504953efa996cdbd75264579e66f9dbf7da87e6cbb6997330",
+    "keyPdf": "../.tmp/full_reaudit_answer_keys/CSE/2013_GS1_answer_key.pdf",
+    "keySha256": "8cb17c812afb63e5a1c7445cb45f45353ea1f3a817e7e9dbd65e459315298054",
+    "keyUrl": "https://drive.usercontent.google.com/download?id=1GEzVf-hpZP0iidf1A28TPF6p8agnfJ3l&export=download&confirm=t",
+    "keyPage": 1,
+    "evidenceTier": "official-final-key-mirror-visually-reviewed",
+    "reviewedAt": "2026-10-21"
+  },
+  "records": [
+    {"questionId":"cse-2013-gs-i-72","questionNumber":72,"sourcePage":32,
+      "expectedRecordHash":"02783462d099da1265bd281ada4e897aa80d65abb014a476c5ba16c31a348bf6",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Full thunderstorm stem, all three proposed mechanisms and four alternatives visually match page 32.",
+      "secondPass":"Rechecked each printed proposed cause without silently replacing it with the actual heating mechanism; Series A Q72 cell D accepts None of the above produces the thunder. Existing record unchanged."},
+    {"questionId":"cse-2013-gs-i-73","questionNumber":73,"sourcePage":32,
+      "expectedRecordHash":"94b77272547aebcd143c9ab748f8fa3fb531a7193dbd3d7ace5e9e9eb42476b2",
+      "officialAnswer":"A","displayedAnswer":"A","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Tribe/State headings, Limboo, Karbi, Dongaria Kondh and Bonda pairings, instruction and code alternatives compared with page 32.",
+      "secondPass":"Rechecked all four printed state associations and code order; Series A Q73 cell A accepts 1 and 3 only. Do not correct the wrong proposed pairings."},
+    {"questionId":"cse-2013-gs-i-77","questionNumber":77,"sourcePage":34,
+      "expectedRecordHash":"b66f24cbac597ecc345e922b5e6d81f9908a995fe399adc0e824d63b920a5418",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete maximum-industrial-water-consumer question and Engineering, Paper and pulp, Textiles and Thermal power alternatives match page 34.",
+      "secondPass":"Rechecked the maximum-consumer qualifier and every industry label; Series A Q77 cell D agrees with Thermal power. Preserve examination-date framing."},
+    {"questionId":"cse-2013-gs-i-78","questionNumber":78,"sourcePage":34,
+      "expectedRecordHash":"a578813a9a9596f7a6e8b9b8b086b2c4870c41ca2c6f19a0ebb75986718a1474",
+      "officialAnswer":"A","displayedAnswer":"A","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Full demographic-dividend prompt and skill, social security, mortality and higher-education alternatives compared with page 34.",
+      "secondPass":"Rechecked the exact policy alternatives; Series A Q78 cell A accepts Promoting skill development. Existing ID and classifications retained."},
+    {"questionId":"cse-2013-gs-i-87","questionNumber":87,"sourcePage":38,
+      "expectedRecordHash":"460c55433b4a013df12609eac69fef9471e4ba5c0e7cec175850a8a5544af450",
+      "officialAnswer":"C","displayedAnswer":"C","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete fauna list and endangered instruction match the already restored record; the source does not say critically endangered. All four codes compared.",
+      "secondPass":"Rechecked Gharial, Leatherback turtle, Swamp deer and the exact threat-status qualifier; Series A Q87 cell C agrees with all three. Preserve the existing material revision and historical exclusion safeguards."},
+    {"questionId":"cse-2013-gs-i-90","questionNumber":90,"sourcePage":38,
+      "expectedRecordHash":"7a41e0e09d31c4f90d3131582a3535760ed6a270378f8147d1cc5cf00bb580ab",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete rainbow question, dispersion/refraction/internal-reflection list, instruction and four alternatives match page 38.",
+      "secondPass":"Rechecked all three named physical phenomena and code order; Series A Q90 cell D accepts all three. Existing source occurrence reused."},
+    {"questionId":"cse-2013-gs-i-94","questionNumber":94,"sourcePage":40,
+      "expectedRecordHash":"bb911fa83f8061de047ae4b232fa46ad02d3c5622ba0aa300f98e6e0493ba854",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "materialRepairRevision":1,"reviewedDisplaySourceTextHash":"97369ee809ad8800479020f311635658016bfc48b3f5617f2dbc115012d6b900",
+      "reproduction":"After the separately approved material repair, the full source-exact stem and Tiny leaves or no leaves statement match page 40; other statements and options agree.",
+      "secondPass":"Rechecked occurs/occur, the missing or no leaves qualifier and every option; Series A Q94 cell D remains the official answer. New snapshots use content revision 1; old raw snapshots remain visible but excluded from score."},
+    {"questionId":"cse-2013-gs-i-97","questionNumber":97,"sourcePage":42,
+      "expectedRecordHash":"75a52551e3c3c0f039fbb85bce18b87116e11825eeb23accd0f23e61cc999441",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete mycorrhizal rehabilitation stem, drought/absorption, pH and disease propositions and four codes compared with page 42.",
+      "secondPass":"Rechecked all three plant-benefit statements and code order; Series A Q97 cell D accepts all three. No extra import or revision."},
+    {"questionId":"cds-2013-2013-98","questionNumber":98,"sourcePage":42,
+      "expectedRecordHash":"05e51eed6168183b5765a19175e3dee27878ad9db4f04117aaa3fa9e3ef089fd",
+      "officialAnswer":"B","displayedAnswer":"B","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete NDC membership prompt, Prime Minister, Finance Commission Chairman, Union Cabinet Ministers and Chief Ministers list and every alternative compared with page 42.",
+      "secondPass":"Rechecked membership rather than substituting present-day institutions; Series A Q98 cell B accepts 1, 3 and 4 only. Keep the historical CDS-prefixed CSE ID."},
+    {
+      "questionId":"cse-2013-gs-i-60","questionNumber":60,"sourcePage":26,
+      "expectedRecordHash":"9250b0e73095afadeb78fcb3e8698148a427b559b25fa6ca351fb623a57d6143",
+      "officialAnswer":"A","displayedAnswer":"A","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Full annual-temperature-range stem, four proposed causes and four code choices visually compared with the original page.",
+      "secondPass":"Rechecked thermal difference, altitude, winds and rainfall propositions in full; Series A Q60 cell A accepts 1 only. Preserve all printed alternatives and existing ID."
+    },
+    {
+      "questionId":"cse-2013-gs-i-61","questionNumber":61,"sourcePage":26,
+      "expectedRecordHash":"30a186ae5f143ae941f74028f8107fbb14632df302ec8e651d1725f54d176e4b",
+      "officialAnswer":"A","displayedAnswer":"A","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Indian-coal prompt, high ash/low sulphur/low ash-fusion-temperature statements and all four codes match the original page.",
+      "secondPass":"Rechecked low ash fusion temperature as the assessed third statement, not a correction to make; Series A Q61 cell A agrees with 1 and 2 only. No changes to the stored question."
+    },
+    {
+      "questionId":"cse-2013-gs-i-62","questionNumber":62,"sourcePage":26,
+      "expectedRecordHash":"4ee0cbe7deb311b938378394b0206287bf1fc6840b62c231eb7431c5fbaff174",
+      "officialAnswer":"C","displayedAnswer":"C","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Laterite-soil stem, four colour/nutrient/distribution/crop statements and every code alternative visually compared against the complete page.",
+      "secondPass":"Rechecked nitrogen and potash, Rajasthan and UP, and tapioca/cashew wording; Series A Q62 cell C accepts 1 and 4. Preserve the incorrect proposed statements verbatim."
+    },
+    {
+      "questionId":"cse-2013-gs-i-63","questionNumber":63,"sourcePage":26,
+      "expectedRecordHash":"c2852ea85e57614524d0e61a6226709327635be60c5d3c307c9a473977af3a70",
+      "officialAnswer":"B","displayedAnswer":"B","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Full Gondwana gas, Kodarma mica and Dharwar petroleum propositions and all answer combinations match the original page.",
+      "secondPass":"Rechecked all geological and location names and original alternative order; Series A Q63 cell B accepts 2 only. Existing record retained without rewriting proposed resource associations."
+    },
+    {
+      "questionId":"cse-2013-gs-i-64","questionNumber":64,"sourcePage":28,
+      "expectedRecordHash":"913bf265b0e13cfe4adfc9726a6338b1dff7974c6129a13ba1a36cf8c3bae5c1",
+      "officialAnswer":"C","displayedAnswer":"C","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Cotton, Groundnut, Rice and Wheat list, Kharif instruction and all four combinations visually compared against page 28.",
+      "secondPass":"Rechecked numbering and the 2 and 3 only alternative; Series A Q64 cell C agrees with 1, 2 and 3. No source or content change."
+    },
+    {
+      "questionId":"cse-2013-gs-i-65","questionNumber":65,"sourcePage":28,
+      "expectedRecordHash":"2d7179d628bdd3405d8cf29ea41086430e6636ee005830f9040fe6e1d0d7e363",
+      "officialAnswer":"B","displayedAnswer":"B","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete quoted extreme-climate, scanty-rainfall and former-nomadic-herder description, question and four named regions match the original page.",
+      "secondPass":"Rechecked the complete regional labels and description; Series A Q65 cell B accepts Central Asian Steppe. Retain existing source occurrence and exact alternatives."
+    },
+    {
+      "questionId":"cds-2013-2013-69","questionNumber":69,"sourcePage":30,
+      "expectedRecordHash":"48573035205277dc13d436b346f0521b013abbd6d686e9c55b40c357b1cd7f67",
+      "officialAnswer":"B","displayedAnswer":"B","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete NDC/Planning Commission, Concurrent List and Panchayat planning statements and all four codes visually compared against page 30.",
+      "secondPass":"Rechecked every institution and constitutional proposition, preserving the examination-date context; Series A Q69 cell B accepts 2 and 3 only. Reuse the legacy-prefixed CSE record instead of creating a copy."
+    },
+    {
+      "questionId":"cds-2013-2013-51","questionNumber":51,"sourcePage":22,
+      "expectedRecordHash":"56a6fba1559c2b6fca00fb35134890b7983fac67f08d1db6397845e38a8f1c2b",
+      "officialAnswer":"B","displayedAnswer":"B","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete Public Accounts Committee stem, membership/account/CAG statements and four alternatives visually compared against the source page.",
+      "secondPass":"Rechecked the printed 25 Lok Sabha members claim without correcting it; Series A Q51 cell B accepts 2 and 3 only. Preserve the legacy-prefixed ID."
+    },
+    {
+      "questionId":"cse-2013-gs-i-53","questionNumber":53,"sourcePage":22,
+      "expectedRecordHash":"8c54767de5a718fd724fdcb8d0ce37c7c12933b2b1ec2899e838b34f97cc5a06",
+      "officialAnswer":"B","displayedAnswer":"B","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproductionOverrideRevision":1,
+      "reviewedDisplaySourceTextHash":"fe11ee0daac2360e9c3b9001973c73a59ac714ba360ae3f86236d0d904035eb0",
+      "reproduction":"After the separately approved nonmaterial correction, the full decomposer stem matches kinds of organism as printed. Virus, Fungi, Bacteria and all four codes agree.",
+      "secondPass":"Rechecked the full cross-column question and Series A Q53 cell B. The extra article is corrected only in new current displays; raw historical text and saved attempts remain unchanged."
+    },
+    {
+      "questionId":"cse-2013-gs-i-54","questionNumber":54,"sourcePage":22,
+      "expectedRecordHash":"6855d3e9beec1ca7365554340bc7537be6eaab411111c06a3f68f2c001d51d73",
+      "officialAnswer":"C","displayedAnswer":"C","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete world fishing-ground prompt and four atmospheric/oceanic current, river discharge and shelf alternatives match the original page.",
+      "secondPass":"Rechecked atmospheric versus oceanic in the alternatives; Series A Q54 cell C agrees with the displayed ocean-current option. No record change."
+    },
+    {
+      "questionId":"cse-2013-gs-i-55","questionNumber":55,"sourcePage":22,
+      "expectedRecordHash":"b783e06b1298618a0e5405cce7e97f0f35b228a49d44ae9a8594ae0aa5036080",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Equatorial-forest prompt, canopy/species/epiphyte statements and four code alternatives visually compared with the original page.",
+      "secondPass":"Rechecked all three characteristics and the complete four alternatives; Series A Q55 accepts D, all three. Existing record retained."
+    },
+    {
+      "questionId":"cse-2013-gs-i-48","questionNumber":48,"sourcePage":20,
+      "expectedRecordHash":"f37c7eaf7b9963df37ef7470d8409bc50e630d237ddc36fd468f2dbb27090625",
+      "officialAnswer":"B","displayedAnswer":"B","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete physical-space and functional-role prompt and Ecotone/Niche/Habitat/Home range alternatives match the original page.",
+      "secondPass":"Rechecked both parts of the definition and all four labels; Series A Q48 cell B agrees with Ecological niche. Existing record retained."
+    },
+    {
+      "questionId":"cse-2013-gs-i-49","questionNumber":49,"sourcePage":20,
+      "expectedRecordHash":"3ff88ecc8a3b81dc98c250992c3b7402e28307d9d6ef8f8b11effb3e2ddab0fd",
+      "officialAnswer":"A","displayedAnswer":"A","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Full photochemical-smog prompt and four gas/PAN, sunlight, temperature and evening alternatives visually compared. Flattened subscripts preserve the chemical tokens.",
+      "secondPass":"Rechecked each formula and condition against the original page; Series A Q49 accepts A. Retain the printed reaction alternatives without scientific restyling or source reordering."
+    },
+    {
+      "questionId":"cse-2013-gs-i-31","questionNumber":31,"sourcePage":14,
+      "expectedRecordHash":"93742d5352cb61c55c6f0dbf37525b61aa6e7c035822df7039ca1b87884f0791",
+      "officialAnswer":"A","displayedAnswer":"A","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Full food-chain prompt, three statements and four alternatives visually compared; all numbered claims are present in the stored question.",
+      "secondPass":"Rechecked sequence, within-species population and numerical claims independently; Series A Q31 accepts A, 1 only. Existing source occurrence reused, not imported or relabelled through the legacy overlay."
+    },
+    {
+      "questionId":"cse-2013-gs-i-32","questionNumber":32,"sourcePage":14,
+      "expectedRecordHash":"e099b8d1ae92b26dba3dba282bb47b34c1afa7692b23ce0cb5e6a0aac4573054",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Full National Park/River flowing through the Park headings, three pairings and four alternatives visually compared with original page 14.",
+      "secondPass":"Rechecked Corbett/Ganga, Kaziranga/Manas and Silent Valley/Kaveri as printed; Series A Q32 cell D accepts None. No river names silently corrected."
+    },
+    {
+      "questionId":"cse-2013-gs-i-33","questionNumber":33,"sourcePage":14,
+      "expectedRecordHash":"7e342904d3f6cd159640f4f86e07a6158d9325bc80df5e181e221e39c1c819a9",
+      "officialAnswer":"B","displayedAnswer":"B","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete Agaricus/Nostoc/Spirogyra list, biofertilizer instruction and four code alternatives match the original page.",
+      "secondPass":"Rechecked every organism name and code; Series A Q33 key B agrees with 2 only. Preserve existing ID, options and answer."
+    },
+    {
+      "questionId":"cse-2013-gs-i-34","questionNumber":34,"sourcePage":14,
+      "expectedRecordHash":"430cf9cd9fbc0d92b4232a38b5d4e81f82fccf8eaaa124b8afe94eb88513420d",
+      "officialAnswer":"C","displayedAnswer":"C","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Full soil-nitrogen stem, urea/coal/vegetation statements and four combinations visually compared.",
+      "secondPass":"Rechecked all proposed nitrogen sources and alternatives; Series A Q34 cell C matches 1 and 3 only. Do not rewrite the coal statement."
+    },
+    {
+      "questionId":"cse-2013-gs-i-35","questionNumber":35,"sourcePage":14,
+      "expectedRecordHash":"257b8d2050fd6eaeb9d3c77801ebe737e93a4e169b187617fa3c8cfeb3699a1d",
+      "officialAnswer":"A","displayedAnswer":"A","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Lion-tailed macaque habitat prompt, four states and all code choices agree with the complete original page.",
+      "secondPass":"Rechecked the natural-habitat qualifier and all four geographic choices; Series A Q35 accepts A, 1, 2 and 3 only. Existing source identity retained."
+    },
+    {
+      "questionId":"cds-2013-2013-38","questionNumber":38,"sourcePage":16,
+      "expectedRecordHash":"909ac64a1cade81882fa9d2339c87ec0baf716780cfe9ab8b67bafe9dfca6af9",
+      "officialAnswer":"C","displayedAnswer":"C","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete fundamental-for-governance prompt and four constitutional-category alternatives visually compared.",
+      "secondPass":"Rechecked the exact governance wording; Series A Q38 cell C agrees with Directive Principles of State Policy. Retain the legacy-prefixed ID and earlier verified source correction."
+    },
+    {
+      "questionId":"cds-2013-2013-21","questionNumber":21,"sourcePage":10,
+      "expectedRecordHash":"2301bd3db670723df56f410c2b2277777ec5afe18252ec533660a482a650eb28",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete treaty-implementation stem and four state-consent alternatives visually compared with the original Series A page.",
+      "secondPass":"Rechecked whole/any-part wording and consent alternatives; Q21 key cell D matches without consent of any State. Reuse the legacy-prefixed ID and existing correction."
+    },
+    {
+      "questionId":"cse-2013-gs-i-22","questionNumber":22,"sourcePage":10,
+      "expectedRecordHash":"c97084a0cf08ad57bb029d4b832caaf101dd4d39ff54c84d447be71ed1ca6941",
+      "officialAnswer":"C","displayedAnswer":"C","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Full grassland succession question and all insect/fungi, sunlight/nutrient, water/fire and none alternatives visually compared.",
+      "secondPass":"Rechecked the causal instruction and exact water limits and fire option; Series A Q22 accepts C. No ecological wording rewritten."
+    },
+    {
+      "questionId":"cse-2013-gs-i-23","questionNumber":23,"sourcePage":10,
+      "expectedRecordHash":"7be0b0dfb1326f28ed426f5b26f331cd18be48c0577d73369a0f39c906db272d",
+      "officialAnswer":"C","displayedAnswer":"C","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Decreasing-productivity stem and all four complete ecosystem sequences match the original page.",
+      "secondPass":"Rechecked every ordered ecosystem sequence, not just the accepted option; Series A Q23 cell C agrees with the displayed sequence. Existing answer retained."
+    },
+    {
+      "questionId":"cse-2013-gs-i-24","questionNumber":24,"sourcePage":10,
+      "expectedRecordHash":"f33fbe1ba8997fc6dac96ab02ad939566e95a6db55c60735930b96571cd19de4",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete contour-bunding prompt and all desert-margin, flat-floodplain, scrubland and none alternatives visually compared.",
+      "secondPass":"Rechecked all terrain qualifiers against the page; Series A Q24 accepts D. No missing option or figure is inferred from the none answer."
+    },
+    {
+      "questionId":"cse-2013-gs-i-26","questionNumber":26,"sourcePage":12,
+      "expectedRecordHash":"6457f4dd76abdf8333a0539201e648c97beee205033b12fd5eac4479982a8571",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Full Forest Rights Act authority question and all four administrative/Gram Sabha alternatives agree with the original page.",
+      "secondPass":"Rechecked individual/community rights and initiation wording; Series A Q26 key D matches Gram Sabha. The existing CDS-prefixed duplicate remains excluded; no new occurrence is imported."
+    },
+    {
+      "questionId":"cds-2013-2013-28","questionNumber":28,"sourcePage":12,
+      "expectedRecordHash":"1e246b9bd68a02c3d8e9823c6cb28fb0186881da0de2837409da493a0b92a75b",
+      "officialAnswer":"B","displayedAnswer":"B","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Economic Justice prompt and four Preamble/rights/directives combinations visually compared with the original page.",
+      "secondPass":"Rechecked the combined constitutional locations and negative none alternative; Series A Q28 cell B agrees with Preamble and Directive Principles. Preserve the existing legacy-prefixed ID."
+    },
+    {
+      "questionId":"cse-2013-gs-i-29","questionNumber":29,"sourcePage":12,
+      "expectedRecordHash":"997b50c67c81ac6b80b5950ceb53b485b18556e03e1bad73e9d2ebaef3de41ea",
+      "officialAnswer":"B","displayedAnswer":"B","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Full e-waste disposal stem, seven substances and all four code alternatives visually compared; no item or neighbouring question omitted.",
+      "secondPass":"Rechecked Heptachlor and Plutonium as printed alternatives without normalisation; Series A Q29 cell B matches displayed 1, 2, 3, 5 and 6 only. Existing record retained."
+    },
+    {
+      "questionId":"cse-2013-gs-i-30","questionNumber":30,"sourcePage":12,
+      "expectedRecordHash":"2a30d82c0a9dfb26f93e635e9122b0c14dc1b2482380d74c2e53a775db223ebd",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Full acid-rain stem and four gas-pair options agree with the source, including the printed nitrous oxide in D.",
+      "secondPass":"Rechecked the original nitrous oxide and sulphur dioxide wording and Series A Q30 cell D. Retain the examination answer and exact source wording; this does not independently endorse the scientific terminology or silently replace it with nitrogen oxides."
+    },
+    {
+      "questionId":"cse-2013-gs-i-13","questionNumber":13,"sourcePage":6,
+      "expectedRecordHash":"b580c1cc6db0009fb07fea19cd095ed58d750c37dd620bbc4f443dc1ecd5dd34",
+      "officialAnswer":"C","displayedAnswer":"C","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete sugar-industry by-products stem, three statements and four combinations visually compared with the original page.",
+      "secondPass":"Rechecked the printed synthetic-chemical-fertilizer claim without changing it; Series A Q13 cell C agrees with displayed 1 and 3 only. Retain the existing record."
+    },
+    {
+      "questionId":"cse-2013-gs-i-14","questionNumber":14,"sourcePage":6,
+      "expectedRecordHash":"78e839702e1c8522e94067dcf9e9eee4a10140aec90f4d30ce68e40fa10f8542",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete seasonal daytime/nighttime stem and four proposed causes visually compared with the original page; no continuation is missing.",
+      "secondPass":"Rechecked rotation, elliptical revolution, latitude and tilted-axis alternatives independently; Series A Q14 cell D matches the displayed option. No source rewrite."
+    },
+    {
+      "questionId":"cse-2013-gs-i-15","questionNumber":15,"sourcePage":8,
+      "expectedRecordHash":"4d929b8f40df1da212bb55a86da570ff5311856e00f1c134693eb8b80c2d89b2",
+      "officialAnswer":"A","displayedAnswer":"A","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Narmada west-flow question, three proposed reasons and all four code choices agree with the complete original page.",
+      "secondPass":"Rechecked the rift, intervening ranges and westward-slope claims without correcting distractors; Series A Q15 accepts A, 1 only. Existing ID retained."
+    },
+    {
+      "questionId":"cse-2013-gs-i-16","questionNumber":16,"sourcePage":8,
+      "expectedRecordHash":"5c38fe8622c5e7cf7a23240b71824686da85cf436876d6da53e950a6143befc9",
+      "officialAnswer":"C","displayedAnswer":"C","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete remaining-freshwater stem and atmosphere, surface-water, groundwater and soil-moisture alternatives visually compared.",
+      "secondPass":"Rechecked the qualification excluding ice caps/glaciers; Series A Q16 cell C agrees with exists as groundwater. No record or key change."
+    },
+    {
+      "questionId":"cse-2013-gs-i-17","questionNumber":17,"sourcePage":8,
+      "expectedRecordHash":"f06f3aba10d750a1821dfd8d09ce98a9bbb93e1fb6601e66064ac508ecc7b478",
+      "officialAnswer":"A","displayedAnswer":"A","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Nokrek, Logtak (Loktak) and Namdapha region pairings and all code alternatives match the printed page; split Bio-sphere line wrap is presentation only.",
+      "secondPass":"Rechecked the three source pairings, including the proposed Barail and Dafla associations; Series A Q17 cell A matches 1 only. No regional names silently repaired."
+    },
+    {
+      "questionId":"cse-2013-gs-i-18","questionNumber":18,"sourcePage":8,
+      "expectedRecordHash":"4fb4cdb839ce8e89cbbb1cf52699eb4c566e5fe11797fa092268f70e329443b3",
+      "officialAnswer":"D","displayedAnswer":"D","optionsReordered":false,"status":"verified-existing-reuse",
+      "reproduction":"Complete six-item list of dynamic-change drivers, instruction and four combinations visually compared with the original page.",
+      "secondPass":"Rechecked every driver and code choice; Series A Q18 cell D accepts all six, with no reordering. Preserve the existing record and placement."
+    },
+    {
+      "questionId": "cse-2013-gs-i-3", "questionNumber": 3, "sourcePage": 2,
+      "expectedRecordHash": "af48213fffeb42a32c8a89c110f20ba3511fec25ac68690c1c8191d5d3f1b318",
+      "officialAnswer": "B", "displayedAnswer": "B", "optionsReordered": false,
+      "status": "verified-existing-reuse",
+      "reproduction": "Full two-column page compared: generic matching stem, Geographical Feature/Region headings, all four geographic pairs and option order agree. Line-wrap and punctuation formatting do not change the task.",
+      "secondPass": "Original page and Series A Q3 key cell reread; accepted B corresponds to the displayed Atlas Mountains/North-Western Africa pair. Retain existing ID and raw record."
+    },
+    {
+      "questionId": "cse-2013-gs-i-7", "questionNumber": 7, "sourcePage": 4,
+      "expectedRecordHash": "74e84af11d3f538b54467ffe707f7bc8a556456da586b71894abcc7685296b4b",
+      "officialAnswer": "A", "displayedAnswer": "A", "optionsReordered": false,
+      "status": "verified-existing-reuse",
+      "reproduction": "Full numbered organism list, natural occurrence in India instruction and four code alternatives compared with the original page; no neighbouring question included.",
+      "secondPass": "Rechecked all four organism names and alternatives against the page, then Series A Q7 cell A. Preserve original source identity and existing record."
+    },
+    {
+      "questionId": "cse-2013-gs-i-8", "questionNumber": 8, "sourcePage": 4,
+      "expectedRecordHash": "491277bd287924076a6a1e369496810d4805d8bad5659814197cdf8cfc14a3bf",
+      "officialAnswer": "C", "displayedAnswer": "C", "optionsReordered": false,
+      "status": "verified-existing-reuse",
+      "reproduction": "Complete drinking-water prompt, five listed substances and four code alternatives visually compared with the original page.",
+      "secondPass": "Rechecked Sorbitol, Formaldehyde and Uranium as printed rather than silently normalising the list; Series A Q8 cell C agrees with displayed 1, 3 and 5. Preserve existing record."
+    }
+  ]
+}

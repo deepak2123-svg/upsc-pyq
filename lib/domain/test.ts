@@ -1,4 +1,5 @@
 import { validTaxonomyIds } from "../taxonomy";
+import { reviewedAnswer } from '../reviewed-grading';
 
 export const DIFFICULTIES = ["All types", "Easy", "Moderate", "Hard", "Mixed"] as const;
 export const EXAMS = ["CSE", "CAPF", "CDS", "NDA"] as const;
@@ -35,6 +36,7 @@ export type ScoringConfig = {
 
 export type QuestionSnapshot = {
   id: string;
+  contentRevision?: number;
   exam: string;
   year: number | null;
   paper: string | null;
@@ -89,9 +91,8 @@ export function normalizeRecipe(input: Partial<TestRecipe>): TestRecipe {
   };
 }
 
-export function publicSnapshot(snapshot: QuestionSnapshot, revealAnswer: boolean): Omit<QuestionSnapshot, "correctOption"> & { correctOption?: string } {
-  if (revealAnswer) return snapshot;
-  const safe = { ...snapshot };
-  delete safe.correctOption;
+export function publicSnapshot(snapshot: QuestionSnapshot, revealAnswer: boolean) {
+  const {correctOption: _originalAnswer, ...safe}=snapshot;
+  if(revealAnswer) return {...safe,...reviewedAnswer(snapshot)};
   return safe;
 }

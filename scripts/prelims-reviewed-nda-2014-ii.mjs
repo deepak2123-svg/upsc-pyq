@@ -1,0 +1,21 @@
+const G='Geography',E='Environment & Ecology';
+export const nda2014SessionII=[
+ ['nda-2014-ii-95',`${G}/Indian Geography/Drainage/River tributaries`,[],
+ 'Four places are compared for the Alaknanda-Bhagirathi confluence.',
+ 'Second pass: drainage-network confluence geography is sufficient. No pilgrimage tradition or religious history is independently asked.'],
+ ['nda-2014-ii-63',`${G}/World Geography/World Resources/Industrial regions`,[],
+ 'Four industrial activities are compared for Rotterdam association.',
+ 'Second pass: industrial city identity is the actual task. No current port tonnage or bilateral agreement is stated.'],
+ ['nda-2014-ii-98','Economy/Industry, Services & Infrastructure/Services and Infrastructure/Energy',[`${G}/Indian Geography/Industry and Transport/Industrial location`],
+ 'Four Indian power projects are compared with generation types.',
+ 'Second pass: generating-project type and named industry geography are material. Preserve the negative instruction and project names rather than normalise potentially distinct hydro/thermal complexes.'],
+ ['nda-2014-ii-104','Economy/Industry, Services & Infrastructure/Industry and Enterprise/Industrial history and development',[],
+ 'Four Indian refineries are ordered by establishment time.',
+ 'Second pass: industrial development chronology is primary, not longitude ordering. The names alone do not make this a question about petroleum extraction geology.'],
+ ['nda-2014-ii-115','Social Development/Population/Demography and Development/Population measures',[`${G}/Human & Economic Geography/Population Geography/Migration`],
+ 'Beginning population is adjusted for births, deaths, immigration and emigration.',
+ 'Second pass: population accounting explicitly tests natural and migratory change, not context-free arithmetic. The selected answer and source numbers are not changed.'],
+ ['nda-2014-ii-86',`${E}/Pollution/Waste and Control/Bioindicators and biomonitoring`,[`${E}/Pollution/Pollutants and Impacts/Air pollution`],
+ 'Four organism groups are compared as indicators of sulphur-dioxide air pollution.',
+ 'Second pass: biological pollution monitoring is the actual concept. Preserve the source plant-group wording; classification does not rewrite organism taxonomy.'],
+];

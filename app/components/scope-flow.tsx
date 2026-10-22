@@ -42,11 +42,7 @@ const levelNames: Record<ScopeNode["kind"], string> = {
 function cardMetrics(node: ScopeNode, paths: SelectionPaths, index: ReturnType<typeof buildSelectionIndex>, preferredExam?: PyqExam): CardMetrics {
   const metric = scopeMetrics(node.id, paths, index);
   const availableExams = emptyExamCounts();
-  for (const leaf of index.leavesById.get(node.id) || []) {
-    for (const exam of PYQ_EXAMS) {
-      if (!preferredExam || exam === preferredExam) availableExams[exam] += leaf.examCounts[exam];
-    }
-  }
+  for (const exam of PYQ_EXAMS) if (!preferredExam || exam === preferredExam) availableExams[exam] = node.examCounts[exam];
   return { selectedCount: metric.selectedCount, state: metric.state, availableExams };
 }
 
@@ -74,10 +70,10 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAdd, onB
   const focus = index.nodesById.get(focusId || "");
 
   const cards = useMemo(() => {
-    if (!focus) return inventory.subjects.map((subject) => index.nodesById.get(subject.id)!).filter((node) => node && (!preferredExam || node.examCounts[preferredExam] > 0));
+    if (!focus) return inventory.subjects.map((subject) => index.nodesById.get(subject.id)!).filter((node) => node&&!node.legacyOnly);
     const children = index.childrenById.get(focus.id) || [];
     return children
-      .filter((node) => preferredExam ? node.examCounts[preferredExam] > 0 : node.questionCount > 0)
+      .filter((node) => focus.legacyOnly||!node.legacyOnly)
       .sort((a, b) => ("order" in a ? a.order : 0) - ("order" in b ? b.order : 0) || a.label.localeCompare(b.label));
   }, [focus, index, inventory.subjects, preferredExam]);
 
@@ -99,7 +95,7 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAdd, onB
       <div className="scope-card-exam-key" aria-label="Exam source colours">
         {(preferredExam ? [preferredExam] : PYQ_EXAMS).map((exam) => <span key={exam}><i style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} />{exam}</span>)}
       </div>
-      {focus ? <button type="button" className="explorer-add" disabled={disabled || focusState === "all"} onClick={() => onAdd(focus.id)}>{focusState === "all" ? "Added" : focusState === "partial" ? "Add remaining" : "Add entire folder"}</button> : null}
+      {focus ? <button type="button" className="explorer-add" disabled={disabled || (preferredExam?focus.examCounts[preferredExam]:focus.questionCount)===0 || focusState === "all"} onClick={() => onAdd(focus.id)}>{focusState === "all" ? "Added" : focusState === "partial" ? "Add remaining" : "Add entire folder"}</button> : null}
     </header>
     {cards.length ? <h4 className="explorer-contents-label">{heading}</h4> : focus ? <div className="explorer-leaf"><SourceDistribution counts={cardMetrics(focus, paths, index, preferredExam).availableExams} exams={preferredExam ? [preferredExam] : PYQ_EXAMS} /></div> : null}
     <div className="scope-card-grid">
@@ -125,7 +121,7 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAdd, onB
                 <p>{countText}</p>
                 {metrics.state !== "none" ? <small className="explorer-added">{metrics.state === "all" ? "Added" : "Partly added"}</small> : null}
               </div>
-              <button type="button" className="explorer-add" disabled={disabled || metrics.state === "all"} aria-label={`${metrics.state === "all" ? "Added" : "Add to test:"} ${node.label}`} onClick={() => onAdd(node.id)}>{metrics.state === "all" ? "Added" : metrics.state === "partial" ? "Add remaining" : "Add to test"}</button>
+              <button type="button" className="explorer-add" disabled={disabled || availableCount===0 || metrics.state === "all"} aria-label={`${metrics.state === "all" ? "Added" : "Add to test:"} ${node.label}`} onClick={() => onAdd(node.id)}>{metrics.state === "all" ? "Added" : metrics.state === "partial" ? "Add remaining" : "Add to test"}</button>
             </div>
             <SourceDistribution counts={metrics.availableExams} exams={preferredExam ? [preferredExam] : PYQ_EXAMS} />
           </div>

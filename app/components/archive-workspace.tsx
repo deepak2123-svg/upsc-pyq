@@ -5,9 +5,10 @@ import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react"
 import { useRouter } from "next/navigation";
 import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
 import type { SubjectPracticeInventory } from "../../lib/pyq-catalog";
-import type { PracticeOrder, PracticeRecipeV3, PracticeSnapshot } from "../../lib/practice-types";
+import type { PracticeOrder, PracticeRecipeV3, PracticeRecipeV4, PracticeSnapshot } from "../../lib/practice-types";
 import { createLocalAttempt } from "../../lib/practice-store";
-import { addScope, ancestors, buildSelectionIndex, removeScope, replaceScope, sanitizePathsWithAliases, scopeDisplayNumber, scopeMetrics, selectedScopeIds, selectionCounts, setScopeExam, type SelectionPaths } from "../../lib/practice-selection";
+import { addScope, ancestors, buildSelectionIndex, removeScope, replaceScope, restoreVersionedPaths, scopeDisplayNumber, scopeMetrics, selectedScopeIds, selectionCounts, setScopeExam, type SelectionPaths } from "../../lib/practice-selection";
+import {coalesceCoveredDraftScopes,freezeSelectionMembership,restoreFrozenSelection} from '../../lib/practice-draft-membership';
 import { ScopeFlow } from "./scope-flow";
 import { SyllabusNavigation } from "./syllabus-navigation";
 
@@ -77,7 +78,10 @@ function PracticeSetupDialog({ matchingCount, examMetrics, count, order, duratio
 
 export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInventory: SubjectPracticeInventory; initialExam?: PyqExam }) {
   const router = useRouter();
-  const index = useMemo(() => buildSelectionIndex(initialInventory), [initialInventory]);
+  const [workingInventory,setWorkingInventory]=useState(initialInventory);
+  const baseIndex=useMemo(()=>buildSelectionIndex(initialInventory),[initialInventory]);
+  const index = useMemo(() => buildSelectionIndex(workingInventory), [workingInventory]);
+  const libraryCount=useMemo(()=>initialExam?new Set(initialInventory.nodes.filter(node=>node.kind==='subtopic'&&!node.legacyOnly).flatMap(node=>node.questionIdsByExam?.[initialExam]||[])).size:initialInventory.mappedCount,[initialInventory,initialExam]);
   const [paths, setPaths] = useState<SelectionPaths>({});
   const [focusId, setFocusId] = useState<string>();
   const [expandedIds, setExpandedIds] = useState<string[]>([]);
@@ -124,16 +128,23 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       const raw = window.sessionStorage.getItem(draftKey);
       if (raw) {
         const draft = JSON.parse(raw);
-        if ([3, 4, 5].includes(draft.version) && draft.inventoryVersion === initialInventory.version) {
-          const savedPaths = sanitizePathsWithAliases(draft.paths, index, initialInventory.legacyAliases);
+        if ([3, 4, 5, 6].includes(draft.version) && (draft.inventoryVersion === initialInventory.version || draft.inventoryVersion === 3 && initialInventory.version === 4)) {
+          let savedPaths:SelectionPaths;
+          if(draft.version===6) {
+            const frozen=restoreFrozenSelection(initialInventory,draft.paths,draft.frozenScopes);
+            setWorkingInventory(frozen.inventory);savedPaths=frozen.paths;
+            if(frozen.removedCount)setDraftWarning('Some saved questions are no longer eligible and were removed.');
+          } else if(draft.taxonomyVersion===initialInventory.taxonomyVersion&&draft.taxonomyVersion&&Object.keys(draft.paths||{}).length) {
+            savedPaths={};setDraftWarning('This older selection has no question-membership record. Re-add its parts to confirm the current questions.');
+          } else savedPaths=restoreVersionedPaths(draft.paths,baseIndex,initialInventory.legacyAliases,initialInventory.legacyRestoreAliases||{},draft.taxonomyVersion!==initialInventory.taxonomyVersion);
           setPaths(savedPaths);
           if (Array.isArray(draft.enabledExams)) setEnabledExams(PYQ_EXAMS.filter((exam) => draft.enabledExams.includes(exam) && (!initialExam || initialExam === exam)));
           else if (Object.keys(savedPaths).length) setEnabledExams(PYQ_EXAMS.filter((exam) => Object.values(savedPaths).some((exams) => exams.includes(exam))));
-          const savedExpanded = Array.isArray(draft.expandedIds) ? draft.expandedIds.filter((id: unknown): id is string => typeof id === "string" && index.nodesById.has(id)) : [];
+          const savedExpanded = Array.isArray(draft.expandedIds) ? draft.expandedIds.filter((id: unknown): id is string => typeof id === "string" && baseIndex.nodesById.has(id)) : [];
           setExpandedIds(savedExpanded);
-          if (typeof draft.focusId === "string" && index.nodesById.has(draft.focusId)) {
+          if (typeof draft.focusId === "string" && baseIndex.nodesById.has(draft.focusId)) {
             setFocusId(draft.focusId);
-            const currentPath = ancestors(draft.focusId, index).map((node) => node.id);
+            const currentPath = ancestors(draft.focusId, baseIndex).map((node) => node.id);
             setExpandedIds(currentPath);
           }
           if (draft.version >= 4 && (draft.count === "all" || Number.isInteger(draft.count) && draft.count > 0 && draft.count <= 100)) setCount(draft.count);
@@ -145,14 +156,14 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
           }
         }
       }
-    } catch { setDraftWarning("Your builder settings could not be restored in this browser. You can still choose a new practice."); }
+    } catch { setPaths({});setWorkingInventory(initialInventory);setDraftWarning("Your builder settings could not be restored in this browser. You can still choose a new practice."); }
     setRestored(true);
-  }, [draftKey, initialInventory.version, initialInventory.legacyAliases, index, initialExam]);
+  }, [draftKey, initialInventory, baseIndex, initialExam]);
   useEffect(() => {
     if (!restored) return;
     const minutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
-    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 5, inventoryVersion: initialInventory.version, paths, focusId, expandedIds, enabledExams, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
-  }, [restored, draftKey, initialInventory.version, paths, focusId, expandedIds, enabledExams, count, order, durationChoice, customMinutes]);
+    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 6, inventoryVersion: initialInventory.version, taxonomyVersion:initialInventory.taxonomyVersion, frozenScopes:freezeSelectionMembership(paths,index), paths, focusId, expandedIds, enabledExams, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
+  }, [restored, draftKey, initialInventory.version, initialInventory.taxonomyVersion, index, paths, focusId, expandedIds, enabledExams, count, order, durationChoice, customMinutes]);
   const totals = useMemo(() => selectionCounts(paths, index), [paths, index]);
   const selectedIds = useMemo(() => selectedScopeIds(paths, index), [paths, index]);
   const current = focusId ? index.nodesById.get(focusId) : undefined;
@@ -181,13 +192,15 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const sourceMetrics = Object.fromEntries(PYQ_EXAMS.map((exam) => {
     const eligible = sourceLeaves.filter((leaf) => leaf.examCounts[exam] > 0);
     const enabled = eligible.filter((leaf) => summaryPaths[leaf.id]?.includes(exam));
-    return [exam, { available: eligible.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), count: enabled.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), state: (enabled.length === 0 ? "none" : enabled.length === eligible.length ? "all" : "partial") as "none" | "partial" | "all" }];
+    const available = selectionCounts(Object.fromEntries(eligible.map(leaf => [leaf.id, [exam]])), index).examTotals[exam];
+    return [exam, { available, count: summaryTotals.examTotals[exam], state: (enabled.length === 0 ? "none" : enabled.length === eligible.length ? "all" : "partial") as "none" | "partial" | "all" }];
   })) as Record<PyqExam, { available: number; count: number; state: "none" | "partial" | "all" }>;
   const allSourceLeaves = [...index.nodesById.values()].filter((node) => node.kind === "subtopic" && Object.hasOwn(paths, node.id));
   const setupSourceMetrics = Object.fromEntries(PYQ_EXAMS.map((exam) => {
     const eligible = allSourceLeaves.filter((leaf) => leaf.examCounts[exam] > 0);
     const enabled = eligible.filter((leaf) => paths[leaf.id]?.includes(exam));
-    return [exam, { available: eligible.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), count: enabled.reduce((sum, leaf) => sum + leaf.examCounts[exam], 0), state: (enabled.length === 0 ? "none" : enabled.length === eligible.length ? "all" : "partial") as "none" | "partial" | "all" }];
+    const available = selectionCounts(Object.fromEntries(eligible.map(leaf => [leaf.id, [exam]])), index).examTotals[exam];
+    return [exam, { available, count: totals.examTotals[exam], state: (enabled.length === 0 ? "none" : enabled.length === eligible.length ? "all" : "partial") as "none" | "partial" | "all" }];
   })) as Record<PyqExam, { available: number; count: number; state: "none" | "partial" | "all" }>;
   const durationMinutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
   const validDuration = durationMinutes === null || Number.isInteger(durationMinutes) && durationMinutes >= 1 && durationMinutes <= 720;
@@ -198,7 +211,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     if (loading || !restored) return;
     const enabled = sourceMetrics[exam].state !== "all";
     setEnabledExams((existing) => enabled ? [...existing, exam] : existing.filter((item) => item !== exam));
-    setPaths((existing) => totals.subjectIds.reduce((updated, id) => setScopeExam(updated, id, exam, enabled, index), existing));
+    setPaths((existing) => Object.keys(existing).reduce((updated, id) => setScopeExam(updated, id, exam, enabled, index), existing));
     setError(""); setNotice("");
   }
   function toggleSetupSource(exam: PyqExam) {
@@ -209,9 +222,9 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     if (loading || !restored) return;
     setPaths((existing) => {
       const next = addScope(existing, id, index, initialExam);
-      return Object.fromEntries(Object.entries(next).map(([leafId, exams]) => [leafId, Object.hasOwn(existing, leafId) ? exams : enabledExams.filter((exam) => index.nodesById.get(leafId)!.examCounts[exam] > 0)]));
+      return coalesceCoveredDraftScopes(Object.fromEntries(Object.entries(next).map(([leafId, exams]) => [leafId, Object.hasOwn(existing, leafId) ? exams : enabledExams.filter((exam) => index.nodesById.get(leafId)!.examCounts[exam] > 0)])),index);
     });
-    setError(""); setNotice("Added to test.");
+    setError("");setDraftWarning(""); setNotice("Added to test.");
   }
   function browse(id: string) {
     if (loading || !restored) return;
@@ -248,7 +261,8 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
   async function createSnapshot() {
     if (count === null || practiceCount === null) return;
-    const recipe: PracticeRecipeV3 = { version: 3, subjectIds: totals.subjectIds, paths: Object.entries(paths).filter(([, exams]) => exams.length).map(([subtopicId, exams]) => ({ subtopicId, exams: [...exams] })), count, order, durationMinutes };
+    const enabledPaths=Object.fromEntries(Object.entries(paths).filter(([,exams])=>exams.length));
+    const recipe: PracticeRecipeV3 | PracticeRecipeV4 = { version: initialInventory.version, ...(initialInventory.version===4?{taxonomyVersion:initialInventory.taxonomyVersion,frozenScopes:freezeSelectionMembership(enabledPaths,index)}:{}), subjectIds: totals.subjectIds, paths: Object.entries(enabledPaths).map(([subtopicId, exams]) => ({ subtopicId, exams: [...exams] })), count, order, durationMinutes };
     const response = await fetch("/api/practice-snapshots", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(recipe) });
     const snapshot = await response.json() as PracticeSnapshot & { error?: string };
     if (!response.ok) throw new Error(snapshot.error || "The paper could not be prepared. Please try again.");
@@ -283,19 +297,19 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     } finally { setExporting(false); }
   }
   return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading}>
-    <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{initialExam ? `${initialExam} question library` : "Question library"}</h1></div><details className="scope-inventory-info"><summary>{format(initialInventory.mappedCount)} PYQs <span aria-hidden="true">ⓘ</span></summary><p>{format(initialInventory.unmappedCount)} unclassified questions remain in exam archives.</p></details></header>
+    <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{initialExam ? `${initialExam} question library` : "Question library"}</h1></div><details className="scope-inventory-info"><summary>{format(libraryCount)} PYQs <span aria-hidden="true">ⓘ</span></summary><p>{format(initialInventory.unmappedCount)} unclassified questions remain in exam archives.</p></details></header>
     <div className={`scope-library-layout explorer-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
       <aside className="scope-syllabus-rail">
         <button type="button" className="scope-syllabus-mobile-toggle" aria-expanded={syllabusOpen} aria-controls="scope-syllabus-content" onClick={() => setSyllabusOpen((open) => !open)}><span>Library</span><strong>{current?.label || "All subjects"}</strong></button>
           <div ref={libraryDrawer} id="scope-syllabus-content" className="scope-syllabus-content" data-mobile-open={syllabusOpen ? "true" : "false"} role={syllabusOpen ? "dialog" : undefined} aria-modal={syllabusOpen || undefined} aria-label={syllabusOpen ? "Library" : undefined}>
             <button type="button" className="explorer-drawer-close" onClick={() => setSyllabusOpen(false)}>Close library ×</button>
-            <SyllabusNavigation index={index} focusPath={focusPath} expandedIds={expandedIds} mappedCount={initialExam ? initialInventory.subjects.reduce((sum, subject) => sum + subject.examCounts[initialExam], 0) : initialInventory.mappedCount} preferredExam={initialExam} disabled={loading || !restored} onBrowse={browse} onBrowseRoot={browseRoot} onToggle={toggleBranch} />
+            <SyllabusNavigation index={index} focusPath={focusPath} expandedIds={expandedIds} mappedCount={libraryCount} preferredExam={initialExam} disabled={loading || !restored} onBrowse={browse} onBrowseRoot={browseRoot} onToggle={toggleBranch} />
           </div>
       </aside>
 
       <section className="scope-refine scope-library-browser" aria-labelledby="scope-refine-title">
         <h2 id="scope-refine-title" className="visually-hidden">{current ? `Browse ${current.label}` : "Browse subjects"}</h2>
-        <ScopeFlow inventory={initialInventory} paths={paths} focusId={focusId} preferredExam={initialExam} onAdd={addToTest} onBrowse={browse} onBack={() => current?.parentId ? browse(current.parentId) : browseRoot()} disabled={loading || !restored} />
+        <ScopeFlow inventory={workingInventory} paths={paths} focusId={focusId} preferredExam={initialExam} onAdd={addToTest} onBrowse={browse} onBack={() => current?.parentId ? browse(current.parentId) : browseRoot()} disabled={loading || !restored} />
         <p className="visually-hidden" role="status" aria-live="polite">{notice}</p>
       </section>
 

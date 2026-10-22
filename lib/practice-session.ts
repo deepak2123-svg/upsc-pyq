@@ -1,8 +1,10 @@
 import type { AnswerFeedback, LocalAttempt, PracticeRecipe } from "./practice-types";
 import type { PyqExam } from "./pyq-exams";
+import publishedAnswerKeyRevisions from "../content/answer-key-revisions.json" with { type: "json" };
+import { questionExclusion, questionReviewRevision } from './question-review.ts';
 
 /** Bump a question's revision whenever its published key is corrected. No answers are exposed here. */
-const answerKeyRevisions: Readonly<Record<string, number>> = { "nda-2021-ii-54": 1 };
+const answerKeyRevisions: Readonly<Record<string, number>> = publishedAnswerKeyRevisions;
 export function answerKeyRevision(questionId: string) { return answerKeyRevisions[questionId] || 0; }
 
 export function safePracticeReturnPath(value: unknown): "/" | `/exams/${PyqExam}` {
@@ -17,7 +19,7 @@ export function attemptReturnPath(attempt: LocalAttempt): "/" | `/exams/${PyqExa
 }
 
 export function practiceDurationMinutes(recipe: PracticeRecipe): number | null {
-  if (!("version" in recipe) || recipe.version !== 3) return null;
+  if (!("version" in recipe) || recipe.version !== 3 && recipe.version !== 4) return null;
   const duration = recipe.durationMinutes;
   return typeof duration === "number" && Number.isInteger(duration) && duration >= 1 && duration <= 720 ? duration : null;
 }
@@ -59,7 +61,10 @@ export function completeAttempt(attempt: LocalAttempt, reason: "submitted" | "ti
 export function hasCompleteFeedback(attempt: LocalAttempt) {
   return attempt.snapshot.questions.every((question) => {
     const feedback = attempt.feedback[question.id];
-    return Boolean(feedback && Object.hasOwn(question.options, feedback.correctAnswer)
+    const exclusion = questionExclusion(question.id, question.contentRevision ?? 0);
+    if (exclusion) return Boolean(feedback && feedback.disposition === 'excluded' && feedback.correct === null && feedback.correctAnswer === null && feedback.exclusionReason === exclusion && (feedback.reviewRevision ?? 0) === questionReviewRevision(question.id));
+    return Boolean(feedback && feedback.disposition !== 'excluded' && typeof feedback.correctAnswer === 'string' && Object.hasOwn(question.options, feedback.correctAnswer)
+      && (feedback.reviewRevision ?? 0) === questionReviewRevision(question.id)
       && (feedback.answerKeyRevision ?? 0) === answerKeyRevision(question.id)
       && feedback.correct === (attempt.answers[question.id] === feedback.correctAnswer));
   });
@@ -71,14 +76,17 @@ export async function requestAnswerFeedback(attempt: LocalAttempt): Promise<Reco
   const response = await fetch("/api/practice/grade", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ questionIds: attempt.snapshot.questions.map((question) => question.id), answers: attempt.answers }),
+    body: JSON.stringify({ questionIds: attempt.snapshot.questions.map((question) => question.id), answers: attempt.answers, contentRevisions: Object.fromEntries(attempt.snapshot.questions.map(question => [question.id, question.contentRevision ?? 0])) }),
   });
   const result = await response.json().catch(() => null) as { error?: string; feedback?: Record<string, AnswerFeedback> } | null;
   if (!response.ok) throw new Error(result?.error || "The answer sheet could not be loaded. Your submitted answers are saved.");
   const feedback = result?.feedback;
   if (!feedback || !attempt.snapshot.questions.every((question) => {
     const item = feedback[question.id];
-    return item && typeof item.correct === "boolean" && typeof item.correctAnswer === "string"
+    const exclusion = questionExclusion(question.id, question.contentRevision ?? 0);
+    if (exclusion) return item && item.disposition === 'excluded' && item.correct === null && item.correctAnswer === null && item.exclusionReason === exclusion && (item.reviewRevision ?? 0) === questionReviewRevision(question.id);
+    return item && item.disposition !== 'excluded' && typeof item.correct === "boolean" && typeof item.correctAnswer === "string"
+      && (item.reviewRevision ?? 0) === questionReviewRevision(question.id)
       && (item.answerKeyRevision ?? 0) === answerKeyRevision(question.id)
       && Object.hasOwn(question.options, item.correctAnswer) && (item.explanation === null || typeof item.explanation === "string");
   })) throw new Error("The answer sheet was incomplete. Your submitted answers are saved; please retry.");

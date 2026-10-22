@@ -5,6 +5,9 @@ import path from "node:path";
 const projectRoot = process.cwd();
 const dataRoot = path.resolve(projectRoot, "../data");
 const outputRoot = path.resolve(projectRoot, "content");
+if (fs.existsSync(path.join(outputRoot, 'question-review-state.json'))) {
+  throw new Error('The legacy normalizer cannot overwrite the audited bank. Reconstruct source identities and apply hash-guarded approved corrections instead.');
+}
 
 function readJson(relativePath) {
   return JSON.parse(fs.readFileSync(path.join(dataRoot, relativePath), "utf8"));

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-19",
+  "productionBuild": "passed (npm run build via npm test)",
+  "coreSuite": { "command": "npm test", "passed": 75, "failed": 0 },
+  "currentBrowserSuite": {
+    "command": "npx playwright test tests/browser/exam.spec.ts tests/browser/library-workspace.spec.ts tests/browser/audit-exclusions.spec.ts",
+    "passed": 26,
+    "failed": 0,
+    "coverage": "Selection, source filtering, restoration, online submission, corrected saved results, exclusions, historical source notices, mobile layouts and actual PDF generation."
+  },
+  "pdfVisualReview": {
+    "status": "passed",
+    "pagesReviewed": 4,
+    "artifacts": [
+      "test-results/audit-exclusions-new-print-d87c5-s-and-corrected-answer-keys-chromium/verified-map-and-matching.pdf",
+      "test-results/audit-exclusions-historica-e9dce-uestion-review-and-PDF-keys-chromium/historical-exclusions.pdf"
+    ],
+    "observations": "Original Sikkim map and four-row matching table remain legible. Corrected A keys agree with online grading. Historical malformed option remains unchanged and is marked Excluded in its key; withdrawn question is also Excluded. No clipping or missing content on the reviewed pages."
+  },
+  "idempotence": "Passed: reconstruction applier changed 0, metadata finalizer changed 0; bank, register, policy and key revisions byte-identical on reapplication.",
+  "importProtection": "Passed: old normalizer refuses to overwrite the audited bank; no files changed.",
+  "evidenceIntegrity": "Passed: all local PDF hashes checked; original cohort exactly 204; duplicates have identical canonical stems/options/answers; all dispositions reconciled.",
+  "typecheck": "Not clean: eight pre-existing errors remain in admin import, examples/d1, scope-node ordering and worker ambient types. No diagnostics in the newly modified audit/grading paths in the final check.",
+  "liveDatabaseEndToEnd": "Not run. Shared legacy/cloud grading logic is unit-tested and database boundaries inspected. No database contents were mutated.",
+  "retiredTests": "tests/browser/selection.spec.ts targets the superseded selection UI; not counted in the current browser suite.",
+  "release": "Local working copy only. No push, deployment or release authorization assumed."
+}

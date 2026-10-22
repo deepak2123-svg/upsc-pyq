@@ -1,5 +1,10 @@
 import { createHash, randomUUID } from "node:crypto";
-import { and, asc, desc, eq, inArray, isNotNull, or, sql } from "drizzle-orm";
+import { and, asc, desc, eq, inArray, isNotNull, notInArray, or, sql } from "drizzle-orm";
+import { heldQuestionIds, gsOutOfScopeIds, questionContentRevision } from '../question-review';
+import { scoreReviewedQuestions } from '../reviewed-grading';
+import bank from '../combined-question-bank';
+import {getQuestionPath,type PyqQuestion} from '../pyq-catalog';
+import {matchesPlacementRecipe} from '../prelims-recipe-matching';
 import { getDb } from "../../db";
 import { attemptAnswers, examPapers, profiles, questions, results, savedTests, testQuestions, tests } from "../../db/schema";
 import type { RequestIdentity } from "../auth/session";
@@ -29,8 +34,16 @@ function stableRank(seed: string, questionId: string) {
 }
 
 function toSnapshot(row: typeof questions.$inferSelect): QuestionSnapshot {
+  const corrected=bank.questions.find(q=>q.id===row.id);
+  if(corrected) {
+    const path=getQuestionPath(corrected as PyqQuestion);
+    row={...row,exam:corrected.exam,year:corrected.year,paper:corrected.paper,sourceQuestionNumber:String(corrected.questionNumber),subject:path?.subject||corrected.subject,topic:path?.topic||corrected.topic,subtopic:path?.subtopic||corrected.subtopic,stem:corrected.sourceText,promptLines:corrected.promptLines,options:corrected.options,correctOption:corrected.answer,explanation:corrected.explanation,source:corrected.source,
+      taxonomyId:path?.taxonomyId||row.taxonomyId,taxonomyHead:path?.head||row.taxonomyHead,taxonomyChapter:path?.topic||row.taxonomyChapter,taxonomySubtopic:path?.subtopic||row.taxonomySubtopic,
+      taxonomyVersion:('taxonomyVersion'in corrected&&corrected.taxonomyVersion)||row.taxonomyVersion};
+  }
   return {
     id: row.id,
+    contentRevision: questionContentRevision(row.id),
     exam: row.exam,
     year: row.year,
     paper: row.paper,
@@ -81,14 +94,22 @@ function eligibleWhere(recipe: TestRecipe) {
     eq(questions.verificationStatus, "verified"),
     isNotNull(questions.explanation),
   ];
-  if (!recipe.sourceMix) predicates.push(eq(questions.exam, recipe.exam));
-  if (recipe.subjects.length) predicates.push(inArray(questions.subject, recipe.subjects));
-  if (recipe.topics?.length) predicates.push(inArray(questions.topic, recipe.topics));
-  if (recipe.subtopics?.length) predicates.push(inArray(questions.taxonomyId, recipe.subtopics));
+  if (heldQuestionIds.length) predicates.push(notInArray(questions.id, heldQuestionIds));
+  if (gsOutOfScopeIds.length) predicates.push(notInArray(questions.id, gsOutOfScopeIds));
   if (recipe.difficulty !== "All types" && recipe.difficulty !== "Mixed") {
     predicates.push(sql`coalesce(${questions.editorialDifficulty}, ${questions.suggestedDifficulty}) = ${recipe.difficulty}`);
   }
   return and(...predicates);
+}
+
+function matchesReviewedRecipe(row:typeof questions.$inferSelect,recipe:TestRecipe) {
+  const canonical=bank.questions.find(q=>q.id===row.id);
+  if(canonical)return matchesPlacementRecipe(canonical as PyqQuestion,recipe);
+  const q=toSnapshot(row);
+  return (recipe.sourceMix||q.exam===recipe.exam)
+    && (!recipe.subjects.length||recipe.subjects.includes(q.subject))
+    && (!recipe.topics?.length||recipe.topics.includes(q.topic))
+    && (!recipe.subtopics?.length||Boolean(q.taxonomyId&&recipe.subtopics.includes(q.taxonomyId)));
 }
 
 function selectQuestions(rows: (typeof questions.$inferSelect)[], recipe: TestRecipe, seed: string) {
@@ -116,17 +137,8 @@ function selectQuestions(rows: (typeof questions.$inferSelect)[], recipe: TestRe
 
 export async function getInventory(recipe: TestRecipe) {
   const db = getDb();
-  const rows = await db.select({
-    id: questions.id,
-    exam: questions.exam,
-    subject: questions.subject,
-    topic: questions.topic,
-    taxonomyId: questions.taxonomyId,
-    taxonomyHead: questions.taxonomyHead,
-    taxonomyChapter: questions.taxonomyChapter,
-    taxonomySubtopic: questions.taxonomySubtopic,
-    difficulty: sql<string>`coalesce(${questions.editorialDifficulty}, ${questions.suggestedDifficulty}, 'Moderate')`,
-  }).from(questions).where(eligibleWhere(recipe));
+  const records = await db.select().from(questions).where(eligibleWhere(recipe));
+  const rows=records.filter(row=>matchesReviewedRecipe(row,recipe)).map(toSnapshot);
   return {
     total: rows.length,
     byExam: rows.reduce((counts, row) => ({ ...counts, [row.exam]: (counts[row.exam] ?? 0) + 1 }), {} as Record<string, number>),
@@ -145,7 +157,7 @@ export async function createTest(identity: RequestIdentity, recipe: TestRecipe) 
   const deadlineAt = new Date(startedAt.getTime() + recipe.durationMinutes * 60_000);
 
   return db.transaction(async (tx) => {
-    const rows = await tx.select().from(questions).where(eligibleWhere(recipe));
+    const rows = (await tx.select().from(questions).where(eligibleWhere(recipe))).filter(row=>matchesReviewedRecipe(row,recipe));
     const selected = selectQuestions(rows, recipe, seedFor(recipe, testId));
     if (selected.length < recipe.count) {
       throw new ApiError(409, "INSUFFICIENT_INVENTORY", `Only ${selected.length} published questions match this recipe.`, { requested: recipe.count, available: selected.length, recipe });
@@ -214,42 +226,10 @@ export async function saveAnswer(identity: RequestIdentity, testId: string, ques
 
 function buildResult(test: typeof tests.$inferSelect, questionRows: (typeof testQuestions.$inferSelect)[], answerRows: (typeof attemptAnswers.$inferSelect)[]) {
   const scoring = test.scoring as ScoringConfig;
-  const answers = new Map(answerRows.map((answer) => [answer.questionId, answer]));
-  let correctCount = 0;
-  let incorrectCount = 0;
-  const breakdown: Record<string, { total: number; correct: number; incorrect: number; unattempted: number; score: number }> = {};
-
-  for (const row of questionRows) {
-    const question = row.questionSnapshot as QuestionSnapshot;
-    const answer = answers.get(question.id)?.selectedOption ?? null;
-    const bucket = breakdown[question.subject] ?? { total: 0, correct: 0, incorrect: 0, unattempted: 0, score: 0 };
-    bucket.total += 1;
-    if (!answer) bucket.unattempted += 1;
-    else if (answer === question.correctOption) { correctCount += 1; bucket.correct += 1; bucket.score += scoring.marksPerQuestion; }
-    else { incorrectCount += 1; bucket.incorrect += 1; bucket.score -= scoring.negativeMarksPerQuestion; }
-    breakdown[question.subject] = bucket;
-  }
-
-  const unattemptedCount = questionRows.length - correctCount - incorrectCount;
-  const score = correctCount * scoring.marksPerQuestion - incorrectCount * scoring.negativeMarksPerQuestion;
-  const maxScore = questionRows.length * scoring.marksPerQuestion;
-  const accuracy = correctCount + incorrectCount ? (correctCount / (correctCount + incorrectCount)) * 100 : 0;
-  const weakAreas = Object.entries(breakdown)
-    .map(([subject, value]) => ({ subject, accuracy: value.correct + value.incorrect ? value.correct / (value.correct + value.incorrect) : 0 }))
-    .filter((value) => value.accuracy < 0.7)
-    .sort((a, b) => a.accuracy - b.accuracy)
-    .map((value) => value.subject);
-
+  const graded=scoreReviewedQuestions(questionRows.map(row=>row.questionSnapshot as QuestionSnapshot),new Map(answerRows.map(a=>[a.questionId,a.selectedOption])),scoring);
   return {
-    score: Number(score.toFixed(4)),
-    maxScore: Number(maxScore.toFixed(4)),
-    accuracy: Number(accuracy.toFixed(4)),
-    correctCount,
-    incorrectCount,
-    unattemptedCount,
+    ...graded,
     timeUsedSeconds: Math.min(test.durationSeconds, Math.max(0, Math.floor((Date.now() - new Date(test.startedAt).getTime()) / 1000))),
-    breakdown,
-    weakAreas,
   };
 }
 
@@ -260,30 +240,36 @@ export async function submitTest(identity: RequestIdentity, testId: string) {
     if (!test) throw new ApiError(404, "TEST_NOT_FOUND", "Test not found.");
     if (test.status !== "active") {
       const existing = (await tx.select().from(results).where(eq(results.testId, testId)))[0];
-      if (existing) return existing;
+      if (existing) return getResult(identity,testId);
       throw new ApiError(409, "TEST_LOCKED", "This test has already been submitted.");
     }
     const questionRows = await tx.select().from(testQuestions).where(eq(testQuestions.testId, testId)).orderBy(asc(testQuestions.position));
     const answerRows = await tx.select().from(attemptAnswers).where(eq(attemptAnswers.testId, testId));
     const result = buildResult(test, questionRows, answerRows);
     await tx.update(tests).set({ status: "submitted", submittedAt: new Date() }).where(eq(tests.id, testId));
-    await tx.insert(results).values({ testId, ...result }).onConflictDoNothing();
-    return (await tx.select().from(results).where(eq(results.testId, testId)))[0];
+    const {excludedCount:_excluded,scoredCount:_scored,...stored}=result;
+    await tx.insert(results).values({ testId, ...stored,score:String(result.score),maxScore:String(result.maxScore),accuracy:String(result.accuracy) }).onConflictDoNothing();
+    return {testId,...result};
   });
 }
 
 export async function getResult(identity: RequestIdentity, testId: string) {
   const db = getDb();
-  const test = (await db.select({ id: tests.id }).from(tests).where(and(eq(tests.id, testId), ownerPredicate(identity))))[0];
+  const test = (await db.select().from(tests).where(and(eq(tests.id, testId), ownerPredicate(identity))))[0];
   if (!test) throw new ApiError(404, "TEST_NOT_FOUND", "Test not found.");
   const result = (await db.select().from(results).where(eq(results.testId, testId)))[0];
   if (!result) throw new ApiError(404, "RESULT_NOT_FOUND", "This test has not been submitted yet.");
-  return result;
+  const [questionRows,answerRows]=await Promise.all([db.select().from(testQuestions).where(eq(testQuestions.testId,testId)),db.select().from(attemptAnswers).where(eq(attemptAnswers.testId,testId))]);
+  return {...result,...buildResult(test,questionRows,answerRows),timeUsedSeconds:result.timeUsedSeconds};
 }
 
 export async function listAttempts(identity: RequestIdentity) {
   const db = getDb();
-  return db.select({ test: tests, result: results }).from(tests).leftJoin(results, eq(results.testId, tests.id)).where(ownerPredicate(identity)).orderBy(desc(tests.startedAt)).limit(100);
+  const rows=await db.select({ test: tests, result: results }).from(tests).leftJoin(results, eq(results.testId, tests.id)).where(ownerPredicate(identity)).orderBy(desc(tests.startedAt)).limit(100);
+  const ids=rows.filter(r=>r.result).map(r=>r.test.id);
+  if(!ids.length) return rows;
+  const [questionRows,answerRows]=await Promise.all([db.select().from(testQuestions).where(inArray(testQuestions.testId,ids)),db.select().from(attemptAnswers).where(inArray(attemptAnswers.testId,ids))]);
+  return rows.map(row=>({...row,result:row.result?{...row.result,...buildResult(row.test,questionRows.filter(q=>q.testId===row.test.id),answerRows.filter(a=>a.testId===row.test.id)),timeUsedSeconds:row.result.timeUsedSeconds}:null}));
 }
 
 export async function listSavedTests(userId: string) {

@@ -5,9 +5,14 @@ import {
   practiceDurationMinutes, requestAnswerFeedback, safePracticeReturnPath,
 } from "../lib/practice-session.ts";
 import { formatPracticePrompt } from "../lib/practice-prompt.ts";
+import { questionReviewRevision } from '../lib/question-review.ts';
 
 const started = Date.parse("2026-10-11T12:00:00.000Z");
 const recipe = { version: 3, subjectIds: ["subject:geography"], paths: [], count: 2, order: "newest", durationMinutes: 1 };
+
+test('V4 multi-placement recipes retain the same timed-session semantics', () => {
+  assert.equal(practiceDurationMinutes({...recipe,version:4,durationMinutes:30}),30);
+});
 const feedback = {
   first: { correct: true, correctAnswer: "A", explanation: null },
   second: { correct: false, correctAnswer: "B", explanation: "Published explanation." },
@@ -183,6 +188,18 @@ test("cached grading must match current answers and known option keys", () => {
   assert.equal(hasCompleteFeedback({ ...completed, feedback: { ...feedback, first: { ...feedback.first, correct: false } } }), false);
 });
 
+test('pending keys invalidate legacy grades and accept explicit exclusions without changing answers', async (t) => {
+  const id = 'cse-2024-gs-i-20';
+  const saved = completeAttempt(attempt({ snapshot: { ...attempt().snapshot, questions: [{ id, options: { A: 'A', B: 'B', C: 'C', D: 'D' } }] }, answers: { [id]: 'A' }, feedback: { [id]: { correct: false, correctAnswer: 'C', explanation: null } } }), 'submitted', started + 25_000);
+  assert.equal(hasCompleteFeedback(saved), false);
+  const exclusionReason = 'Withdrawn in the official answer key. Excluded from score.';
+  const refreshed = { [id]: { disposition: 'excluded', correct: null, correctAnswer: null, explanation: exclusionReason, exclusionReason, reviewRevision: questionReviewRevision(id) } };
+  t.mock.method(globalThis, 'fetch', async () => Response.json({ feedback: refreshed }));
+  const result = await requestAnswerFeedback(saved);
+  assert.equal(hasCompleteFeedback({ ...saved, feedback: result }), true);
+  assert.deepEqual(saved.answers, { [id]: 'A' });
+});
+
 test("corrected keys invalidate saved feedback without changing submitted answers", async (t) => {
   const id = "nda-2021-ii-54";
   const saved = completeAttempt(attempt({
@@ -207,7 +224,7 @@ test("completed attempts request all answer keys including skipped questions", a
   const [url, options] = fetch.mock.calls[0].arguments;
   assert.equal(url, "/api/practice/grade");
   assert.equal(options.method, "POST");
-  assert.deepEqual(JSON.parse(options.body), { questionIds: ["first", "second"], answers: { first: "A" } });
+  assert.deepEqual(JSON.parse(options.body), { questionIds: ["first", "second"], answers: { first: "A" }, contentRevisions: { first: 0, second: 0 } });
   assert.equal(hasCompleteFeedback({ ...completed, feedback }), true);
   assert.equal(hasCompleteFeedback({ ...completed, feedback: { first: feedback.first } }), false);
   assert.deepEqual(completed.feedback, {}, "requesting feedback must not mutate the submitted attempt");

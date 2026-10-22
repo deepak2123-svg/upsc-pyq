@@ -5,6 +5,15 @@ export function PracticePromptView({ blocks, className, figure }: { blocks: Prac
     {blocks.map((block, index) => {
       if (block.kind === "statement") return <p className="paper-statement" key={index}><b>{block.marker}</b><span>{block.text}</span></p>;
       if (block.kind === "text") return <p key={index}>{block.text}</p>;
+      if (block.kind === "pair-table") return <div className="matching-list-scroll" key={index}>
+        <table className="matching-list-table paired-row-table">
+          <caption>Pairs to assess</caption>
+          <thead><tr><th scope="col">{block.leftTitle}</th><th scope="col">{block.rightTitle}</th></tr></thead>
+          <tbody>{block.rows.map(row => <tr key={row.marker}>
+            <td><b>{row.marker}</b><span>{row.left}</span></td><td>{row.right}</td>
+          </tr>)}</tbody>
+        </table>
+      </div>;
       const rowCount = Math.max(block.left.items.length, block.right.items.length);
       return <div className="matching-list-scroll" key={index}>
         <table className="matching-list-table">

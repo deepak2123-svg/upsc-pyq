@@ -23,6 +23,16 @@ export type SelectionState = "none" | "partial" | "all";
 const EXAMS: readonly PyqExam[] = ["CSE", "CAPF", "CDS", "NDA"];
 const emptyCounts = (): ExamCounts => ({ CSE: 0, CAPF: 0, CDS: 0, NDA: 0 });
 const hasPath = (paths: SelectionPaths, id: string) => Object.hasOwn(paths, id);
+function questionIdsForPaths(paths: SelectionPaths, index: SelectionIndex): Set<string> | null {
+  const ids = new Set<string>();
+  for (const [id, exams] of Object.entries(paths)) {
+    const leaf = index.nodesById.get(id);
+    if (!leaf || leaf.kind !== 'subtopic') continue;
+    if (!leaf.questionIdsByExam) return null;
+    for (const exam of EXAMS) if (exams.includes(exam)) for (const questionId of leaf.questionIdsByExam[exam]) ids.add(questionId);
+  }
+  return ids;
+}
 const copyPaths = (paths: SelectionPaths): SelectionPaths =>
   Object.fromEntries(Object.entries(paths).map(([id, exams]) => [id, [...exams]]));
 
@@ -64,7 +74,7 @@ export function buildSelectionIndex(inventory: SubjectPracticeInventory): Select
     const node = nodesById.get(id)!;
     const leaves = node.kind === "subtopic"
       ? [node]
-      : (childrenById.get(id) || []).flatMap((child) => descend(child.id));
+      : (childrenById.get(id) || []).filter(child=>node.legacyOnly||!child.legacyOnly).flatMap((child) => descend(child.id));
     visiting.delete(id);
     leavesById.set(id, leaves);
     return leaves;
@@ -156,6 +166,7 @@ export function selectionCounts(paths: SelectionPaths, index: SelectionIndex): {
   leafCount: number;
 } {
   const examTotals = emptyCounts();
+  const examQuestionIds = Object.fromEntries(EXAMS.map(exam => [exam, new Set<string>()])) as Record<PyqExam, Set<string>>;
   const subjects = new Set<string>();
   let leafCount = 0;
   for (const [id, exams] of Object.entries(paths)) {
@@ -164,10 +175,14 @@ export function selectionCounts(paths: SelectionPaths, index: SelectionIndex): {
     subjects.add(leaf.subjectId);
     leafCount += 1;
     for (const exam of EXAMS) {
-      if (exams.includes(exam)) examTotals[exam] += leaf.examCounts[exam];
+      if (exams.includes(exam)) {
+        if (leaf.questionIdsByExam) for (const questionId of leaf.questionIdsByExam[exam]) examQuestionIds[exam].add(questionId);
+        else examTotals[exam] += leaf.examCounts[exam];
+      }
     }
   }
   // Preserve the inventory's subject order, rather than click order.
+  for (const exam of EXAMS) examTotals[exam] += examQuestionIds[exam].size;
   const subjectIds = [...index.nodesById.values()]
     .filter((node) => node.kind === "subject" && subjects.has(node.id))
     .map((node) => node.id);
@@ -187,6 +202,18 @@ export function scopeMetrics(scopeId: string, paths: SelectionPaths, index: Sele
 } {
   const leaves = index.leavesById.get(scopeId) || [];
   const selectedLeaves = leaves.filter((leaf) => hasPath(paths, leaf.id));
+  const selectedIds = questionIdsForPaths(paths, index);
+  if (selectedIds && leaves.every(leaf => Boolean(leaf.questionIdsByExam))) {
+    const availableByExam = Object.fromEntries(EXAMS.map(exam => [exam, new Set(leaves.flatMap(leaf => leaf.questionIdsByExam![exam]))])) as Record<PyqExam, Set<string>>;
+    const availableIds = new Set(EXAMS.flatMap(exam => [...availableByExam[exam]]));
+    const selectedCount = [...availableIds].filter(id => selectedIds.has(id)).length;
+    const examStates = Object.fromEntries(EXAMS.map(exam => {
+      const available = availableByExam[exam];
+      const count = [...available].filter(id => selectedIds.has(id)).length;
+      return [exam, count === 0 ? 'none' : count === available.size ? 'all' : 'partial'];
+    })) as Record<PyqExam, SelectionState>;
+    return { availableCount: availableIds.size, selectedCount, state: selectedCount === 0 ? 'none' : selectedCount === availableIds.size ? 'all' : 'partial', examStates };
+  }
   const examStates = Object.fromEntries(EXAMS.map((exam) => {
     const eligible = selectedLeaves.filter((leaf) => leaf.examCounts[exam] > 0);
     const enabled = eligible.filter((leaf) => paths[leaf.id].includes(exam)).length;
@@ -214,8 +241,9 @@ export function selectedScopeIds(paths: SelectionPaths, index: SelectionIndex): 
     else for (const child of index.childrenById.get(scope.id) || []) visit(child);
   }
   for (const scope of index.nodesById.values()) {
-    if (scope.kind === "subject") visit(scope);
+    if (scope.kind === "subject"&&!scope.legacyOnly) visit(scope);
   }
+  for(const id of Object.keys(paths))if(index.nodesById.get(id)?.legacyOnly&&!result.includes(id))result.push(id);
   return result;
 }
 
@@ -233,7 +261,7 @@ export function ancestors(scopeId: string, index: SelectionIndex): ScopeNode[] {
 export function scopeDisplayNumber(scopeId: string, index: SelectionIndex): string | undefined {
   const path = ancestors(scopeId, index);
   if (!path.some((node) => node.kind === "head" && node.label === "Physical Geography")) return undefined;
-  const topic = path.find((node) => node.kind === "topic");
+  const topic = path.find((node):node is PracticeInventoryNode => node.kind === "topic");
   const node = index.nodesById.get(scopeId);
   if (!topic || !node) return undefined;
   if (node.kind === "topic") return `Chapter ${topic.order}`;
@@ -279,4 +307,12 @@ export function sanitizePathsWithAliases(
     }
   }
   return sanitizePaths(expanded, index);
+}
+
+/** A pre-expansion draft must use its exact frozen scope, not a broader new leaf. */
+export function restoreVersionedPaths(draft:unknown,index:SelectionIndex,aliases:Record<string,string[]>,restoreAliases:Record<string,string>,useFrozen:boolean):SelectionPaths {
+  if(!draft||typeof draft!=='object'||Array.isArray(draft))return {};
+  const migrated:Record<string,unknown>={};
+  for(const [id,exams]of Object.entries(draft))migrated[useFrozen?(restoreAliases[id]||id):id]=exams;
+  return sanitizePathsWithAliases(migrated,index,aliases);
 }

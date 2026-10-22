@@ -1,0 +1,77 @@
+import {expect,test} from '@playwright/test';
+
+test('a saved exact subset survives catalogue growth, reload, source changes and online setup',async({page,request},testInfo)=>{
+  const data=await(await request.get('/api/pyqs/inventory')).json();
+  const leaf=data.nodes.find((n:any)=>n.kind==='subtopic'&&!n.legacyOnly&&n.subjectId==='subject:geography'&&n.questionIdsByExam.CSE.length>2);
+  const id=leaf.questionIdsByExam.CSE[0];
+  const scope={id:leaf.id,subjectId:leaf.subjectId,label:leaf.label,parentId:leaf.parentId,order:leaf.order,questionIdsByExam:{...leaf.questionIdsByExam,CSE:[id]}};
+  const draft={version:6,inventoryVersion:4,taxonomyVersion:data.taxonomyVersion,paths:{[leaf.id]:['CSE']},frozenScopes:[scope],focusId:leaf.parentId,expandedIds:[],enabledExams:['CSE'],count:'all',order:'newest',durationMinutes:20};
+  await page.goto('/');
+  await expect(page.getByRole('button',{name:'Open Geography',exact:true})).toBeEnabled();
+  await page.evaluate(draft=>sessionStorage.setItem('upsc-pyq-builder:v3:all',JSON.stringify(draft)),draft);
+  await page.reload();
+  const summary=page.locator('.scope-test-summary'),count=summary.getByTestId('matching-count').locator('strong');
+  await expect(count).toHaveText('1');
+  await expect(page.locator('.explorer-test-items li')).toHaveCount(1);
+  await expect(page.locator('.scope-library-browser').getByRole('button',{name:`Open ${leaf.label}`,exact:true})).toBeVisible();
+  await page.screenshot({path:testInfo.outputPath('saved-exact-subset.png'),fullPage:true});
+  await summary.getByRole('button',{name:/^CSE\b/}).click();
+  await expect(count).toHaveText('0');
+  await expect(summary.getByRole('button',{name:'Set up test'})).toBeDisabled();
+  await summary.getByRole('button',{name:/^CSE\b/}).click();
+  await expect(count).toHaveText('1');
+  await page.reload();
+  await expect(count).toHaveText('1');
+  await summary.getByRole('button',{name:'Set up test'}).click();
+  const dialog=page.getByRole('dialog');
+  await dialog.getByRole('button',{name:/Take an online test/}).click();
+  await expect(dialog.getByRole('button',{name:'20 min',exact:true})).toHaveAttribute('aria-pressed','true');
+  const response=page.waitForResponse(response=>response.url().endsWith('/api/practice-snapshots')&&response.request().method()==='POST');
+  await dialog.getByRole('button',{name:'Start 1-question test',exact:true}).click();
+  const result=await(await response).json();
+  expect(result.matchingCount).toBe(1);
+  expect(result.questions.map((q:any)=>q.id)).toEqual([id]);
+  expect(result.recipe.frozenScopes[0].id).toBe(`draft:${leaf.id}`);
+  await expect(page).toHaveURL(/\/practice\/[^/]+$/);
+  await expect(page.locator('.question-heading')).toContainText('Question 1 of 1');
+});
+
+test('unverifiable pre-membership working drafts require confirmation, not silent enlargement',async({page,request})=>{
+  const data=await(await request.get('/api/pyqs/inventory')).json();
+  const leaf=data.nodes.find((n:any)=>n.kind==='subtopic'&&!n.legacyOnly&&n.questionIdsByExam.CSE.length>2);
+  await page.goto('/');
+  await expect(page.getByRole('button',{name:'Open Geography',exact:true})).toBeEnabled();
+  await page.evaluate(({leaf,version})=>sessionStorage.setItem('upsc-pyq-builder:v3:all',JSON.stringify({version:5,inventoryVersion:4,taxonomyVersion:version,paths:{[leaf.id]:['CSE']},focusId:leaf.parentId,count:20,order:'newest',durationMinutes:30})),{leaf,version:data.taxonomyVersion});
+  await page.reload();
+  await expect(page.locator('.explorer-test-items li')).toHaveCount(0);
+  await expect(page.getByText('This older selection has no question-membership record. Re-add its parts to confirm the current questions.')).toBeVisible();
+  await expect(page.locator('.scope-test-summary').getByTestId('test-scope-label')).toContainText('Current folder');
+  await expect(page.locator('.scope-test-summary').getByRole('button',{name:'Set up test'})).toHaveCount(0);
+});
+
+test('explicit Add remaining replaces the saved subset and PDF uses that exact current union',async({page,request})=>{
+  await page.addInitScript(()=>{window.print=()=>{};});
+  const data=await(await request.get('/api/pyqs/inventory')).json();
+  const leaf=data.nodes.find((n:any)=>n.kind==='subtopic'&&!n.legacyOnly&&n.subjectId==='subject:geography'&&n.questionIdsByExam.CSE.length>2);
+  const scope={id:leaf.id,subjectId:leaf.subjectId,label:leaf.label,parentId:leaf.parentId,order:leaf.order,questionIdsByExam:{...leaf.questionIdsByExam,CSE:leaf.questionIdsByExam.CSE.slice(0,1)}};
+  await page.goto('/');
+  await expect(page.getByRole('button',{name:'Open Geography',exact:true})).toBeEnabled();
+  await page.evaluate(({scope,leaf,version})=>sessionStorage.setItem('upsc-pyq-builder:v3:all',JSON.stringify({version:6,inventoryVersion:4,taxonomyVersion:version,paths:{[leaf.id]:['CSE']},frozenScopes:[scope],focusId:leaf.parentId,enabledExams:['CSE'],count:'all',order:'newest'})),{scope,leaf,version:data.taxonomyVersion});
+  await page.reload();
+  const summary=page.locator('.scope-test-summary'),browser=page.locator('.scope-library-browser');
+  await expect(summary.getByTestId('matching-count').locator('strong')).toHaveText('1');
+  await browser.getByRole('button',{name:`Add to test: ${leaf.label}`,exact:true}).click();
+  await expect(summary.getByTestId('matching-count').locator('strong')).toHaveText(String(leaf.questionIdsByExam.CSE.length));
+  await expect(page.locator('.explorer-test-items li')).toHaveCount(1);
+  await summary.getByRole('button',{name:'Set up test'}).click();
+  const dialog=page.getByRole('dialog');
+  await dialog.getByRole('button',{name:/Download a PDF with an answer key/}).click();
+  const response=page.waitForResponse(response=>response.url().endsWith('/api/practice-snapshots')&&response.request().method()==='POST');
+  const popup=page.waitForEvent('popup');
+  await dialog.getByRole('button',{name:`Download ${leaf.questionIdsByExam.CSE.length}-question PDF`,exact:true}).click();
+  const result=await(await response).json();
+  expect(result.questions.map((q:any)=>q.id).sort()).toEqual([...leaf.questionIdsByExam.CSE].sort());
+  const print=await popup;
+  await expect(print.locator('.print-question')).toHaveCount(leaf.questionIdsByExam.CSE.length);
+  await print.close();
+});

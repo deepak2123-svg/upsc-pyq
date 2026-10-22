@@ -7,13 +7,14 @@ import questionMap05 from "../content/taxonomy/question-map-05.json";
 import questionMap06 from "../content/taxonomy/question-map-06.json";
 import cdsGeographyAliases from "../content/taxonomy/cds-geography-aliases.json";
 import physicalReview from "../content/taxonomy/physical-geography-v1.2-review.json";
+import {prelimsPaths,canonicalSubjectLabel} from './prelims-taxonomy';
 
 export const TAXONOMY_VERSION = taxonomySource.version;
-export type TaxonomySubject = "Geography" | "Environment";
+export type TaxonomySubject = "Geography" | "Environment" | "Polity" | "History" | "Polity & Governance" | "Economy" | "Environment & Ecology" | "Science & Technology" | "Social Development" | "International Relations & Organisations" | "Current Affairs";
 export type TaxonomyChapter = { name: string; order: number; subtopics: { name: string; order: number }[] };
 export type TaxonomyHead = { name: string; chapters: TaxonomyChapter[] };
 export type TaxonomyGroup = TaxonomyHead & { subject: TaxonomySubject };
-export type TaxonomyNode = { id: string; subject: TaxonomySubject; head: string; chapter: string; subtopic: string; chapterOrder: number; subtopicOrder: number };
+export type TaxonomyNode = { id: string; subject: TaxonomySubject; head: string; chapter: string; subtopic: string; chapterOrder: number; subtopicOrder: number; headOrder?:number };
 
 export const slug = (value: string) => value.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const subjectForHead = (head: string): TaxonomySubject => head === "Environment & Ecology" ? "Environment" : "Geography";
@@ -47,10 +48,11 @@ export function taxonomyGroupsForSubjects(subjects: string[]): TaxonomyGroup[] {
   return taxonomyGroups.filter((group) => selected.has(group.subject));
 }
 export function taxonomyNodesForSubjects(subjects: string[]): TaxonomyNode[] {
-  const allowed = new Set(taxonomyGroupsForSubjects(subjects).map((group) => group.name));
-  return taxonomyNodes.filter((node) => allowed.has(node.head));
+  const selected=new Set(subjects.map(canonicalSubjectLabel));
+  return [...taxonomyNodes,...prelimsPaths as TaxonomyNode[]].filter(node=>!selected.size||selected.has(canonicalSubjectLabel(node.subject)));
 }
-export function taxonomyNode(id: string): TaxonomyNode | undefined { return nodeById.get(id); }
+const prelimsById=new Map(prelimsPaths.map(node=>[node.id,node as TaxonomyNode]));
+export function taxonomyNode(id: string): TaxonomyNode | undefined { return nodeById.get(id)||prelimsById.get(id); }
 export function validTaxonomyIds(ids: unknown, subjects: string[] = []): string[] {
   const allowed = new Set(taxonomyNodesForSubjects(subjects).map((node) => node.id));
   return Array.isArray(ids) ? [...new Set(ids.filter((value): value is string => typeof value === "string" && allowed.has(value)))] : [];

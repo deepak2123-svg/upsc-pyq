@@ -1,0 +1,50 @@
+{
+  "cse-2013-gs-i-94": {
+    "revision": 1,
+    "contentRevision": 1,
+    "material": true,
+    "promptLines": [
+      "Which of the following leaf modifications occurs/occur in the desert areas to inhibit water loss?",
+      "1. Hard and waxy leaves",
+      "2. Tiny leaves or no leaves",
+      "3. Thorns instead of leaves",
+      "Select the correct answer using the codes given below."
+    ],
+    "sourceText": "Which of the following leaf modifications occurs/occur in the desert areas to inhibit water loss? \n\n1. Hard and waxy leaves \n2. Tiny leaves or no leaves \n3. Thorns instead of leaves \nSelect the correct answer using the codes given below.",
+    "sourceTextHash": "97369ee809ad8800479020f311635658016bfc48b3f5617f2dbc115012d6b900"
+  },
+  "cse-2014-gs-i-13": {
+    "revision": 1,
+    "contentRevision": 1,
+    "material": true,
+    "promptLines": [
+      "Which of the following phenomena might have influenced the evolution of organisms?",
+      "1. Continental drift",
+      "2. Glacial cycles",
+      "Select the correct answer using the code given below."
+    ],
+    "sourceText": "Which of the following phenomena might have influenced the evolution of organisms? \n\n1. Continental drift \n2. Glacial cycles \nSelect the correct answer using the code given below.",
+    "sourceTextHash": "687c5dd2e3d422f9f5efd50d7c66680a20e1ee2b80e1fb3ee9bf24e95ec5e96b"
+  },
+  "cse-2014-gs-i-19": {
+    "revision": 1,
+    "contentRevision": 1,
+    "material": true,
+    "promptLines": [
+      "Which of the following adds/add carbon dioxide to the carbon cycle on the planet Earth?",
+      "1. Volcanic action",
+      "2. Respiration",
+      "3. Photosynthesis",
+      "4. Decay of organic matter",
+      "Select the correct answer using the code given below."
+    ],
+    "sourceText": "Which of the following adds/add carbon dioxide to the carbon cycle on the planet Earth? \n\n1. Volcanic action \n2. Respiration \n3. Photosynthesis \n4. Decay of organic matter \nSelect the correct answer using the code given below.",
+    "sourceTextHash": "3bd30fc1098f37a857996e57bd94f4d77b47aa6883420e72daae9e8e16a82134",
+    "options": {
+      "A": "1 and 3 only",
+      "B": "2 only",
+      "C": "1, 2 and 4 only",
+      "D": "1, 2, 3 and 4"
+    }
+  }
+}

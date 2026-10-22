@@ -43,12 +43,11 @@ export function SyllabusNavigation({
   const subject = focusPath.find((node) => node.kind === "subject");
   const section = focusPath.find((node) => node.kind === "head");
   const subjects = [...index.nodesById.values()]
-    .filter((node) => node.kind === "subject" && nodeCount(node, preferredExam) > 0)
-    .sort((a, b) => ("order" in a ? a.order : 0) - ("order" in b ? b.order : 0) || a.label.localeCompare(b.label));
+    .filter((node) => node.kind === "subject" && !node.legacyOnly);
 
   function renderNode(node: ScopeNode, depth: number) {
     const children = (index.childrenById.get(node.id) || [])
-      .filter((child) => nodeCount(child, preferredExam) > 0)
+      .filter((child) => node.legacyOnly||!child.legacyOnly)
       .sort((a, b) => ("order" in a ? a.order : 0) - ("order" in b ? b.order : 0) || a.label.localeCompare(b.label));
     const isCurrent = node.id === activeId;
     const isOnPath = activePathIds.has(node.id);
@@ -87,9 +86,9 @@ export function SyllabusNavigation({
     </button>
     {subject ? <>
       <button type="button" className="syllabus-subject" disabled={disabled} aria-label={subject.label} aria-current={activeId === subject.id ? "location" : undefined} onClick={() => onBrowse(subject.id)}><strong>{subject.label}</strong><span>{format(nodeCount(subject, preferredExam))}</span></button>
-      <ul className="syllabus-sections">{(index.childrenById.get(subject.id) || []).filter((node) => nodeCount(node, preferredExam) > 0).map((node) => <li key={node.id}><button type="button" disabled={disabled} aria-label={node.label} aria-current={node.id === activeId ? "location" : undefined} data-active={section?.id === node.id} onClick={() => onBrowse(node.id)}><span>{node.label}</span><small>{format(nodeCount(node, preferredExam))}</small></button></li>)}</ul>
+      <ul className="syllabus-sections">{(index.childrenById.get(subject.id) || []).filter((node) => subject.legacyOnly||!node.legacyOnly).map((node) => <li key={node.id}><button type="button" disabled={disabled} aria-label={node.label} aria-current={node.id === activeId ? "location" : undefined} data-active={section?.id === node.id} onClick={() => onBrowse(node.id)}><span>{node.label}</span><small>{format(nodeCount(node, preferredExam))}</small></button></li>)}</ul>
     </> : <ul className="syllabus-sections">{subjects.map((node) => <li key={node.id}><button type="button" disabled={disabled} aria-label={node.label} onClick={() => onBrowse(node.id)}><strong>{node.label}</strong><small>{format(nodeCount(node, preferredExam))}</small></button></li>)}</ul>}
     </section>
-    {section ? <section className="syllabus-chapters-panel" aria-labelledby="syllabus-chapters-title"><header><small>{section.label}</small><h3 id="syllabus-chapters-title">Chapters & subchapters</h3></header><ul className="scope-syllabus-tree">{(index.childrenById.get(section.id) || []).filter((node) => nodeCount(node, preferredExam) > 0).map((node) => renderNode(node, 0))}</ul></section> : null}
+    {section ? <section className="syllabus-chapters-panel" aria-labelledby="syllabus-chapters-title"><header><small>{section.label}</small><h3 id="syllabus-chapters-title">Chapters & subchapters</h3></header><ul className="scope-syllabus-tree">{(index.childrenById.get(section.id) || []).filter((node) => section.legacyOnly||!node.legacyOnly).map((node) => renderNode(node, 0))}</ul></section> : null}
   </nav>;
 }

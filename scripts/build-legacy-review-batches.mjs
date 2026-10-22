@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const target = 'content/audits/legacy-review-batches.json';
+const register = JSON.parse(fs.readFileSync('content/question-review-state.json', 'utf8'));
+const baseline = new Map(JSON.parse(fs.readFileSync('content/audits/answer-key-baseline.json', 'utf8')).questions.map(row => [row.id, row]));
+const rows = Object.entries(register.records).filter(([, row]) => row.category === 'legacy-reconstruction').map(([id, row]) => ({ id, source: row.originalSourceIdentity, expectedHash: baseline.get(id).hash }));
+rows.sort((a, b) => a.source.exam.localeCompare(b.source.exam) || a.source.year - b.source.year || a.source.paper.localeCompare(b.source.paper, undefined, { numeric: true }) || a.source.questionNumber - b.source.questionNumber);
+assert.equal(rows.length, 160);
+const batches = Array.from({ length: 8 }, (_, index) => ({ batch: index + 1, records: rows.slice(index * 20, index * 20 + 20) }));
+const output = { version: 1, frozenAt: '2026-10-19', batches };
+if (fs.existsSync(target)) assert.deepEqual(JSON.parse(fs.readFileSync(target, 'utf8')), output, 'Never silently reorder the frozen batches');
+else fs.writeFileSync(target, `${JSON.stringify(output, null, 2)}\n`);

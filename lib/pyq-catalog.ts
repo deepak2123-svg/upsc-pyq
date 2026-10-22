@@ -1,4 +1,7 @@
-import questionBank from "../content/question-bank.json";
+import questionBank, {legacyQuestions} from "./combined-question-bank";
+import { questionEligible,questionInGsScope } from './question-review';
+import {canonicalSubjectLabel,subjectScopeKey,prelimsPaths,PRELIMS_TAXONOMY_VERSION} from './prelims-taxonomy';
+import {bridgeLegacyPlacements} from './legacy-placement-bridge';
 import { historicalPhysicalQuestionSets, historicalPhysicalTargets, slug as taxonomySlug, taxonomyIdForLegacyQuestion, taxonomyIdForQuestion, taxonomyNode } from "./taxonomy";
 import { PYQ_EXAMS, type PyqExam } from "./pyq-exams";
 export { PYQ_EXAMS, type PyqExam } from "./pyq-exams";
@@ -26,6 +29,7 @@ export type PyqQuestion = {
   requiresFigure?: boolean;
   figureKey?: string | null;
   figureAlt?: string | null;
+  additionalPaths?: { subject: string; head: string; chapter: string; subtopic: string; taxonomyId?:string }[];
 };
 
 export type TaxonomyNode = {
@@ -49,6 +53,7 @@ export type PracticeSubject = {
   label: string;
   questionCount: number;
   examCounts: ExamCounts;
+  legacyOnly?:boolean;
 };
 
 export type PracticeInventoryNode = {
@@ -60,6 +65,8 @@ export type PracticeInventoryNode = {
   examCounts: ExamCounts;
   parentId?: string;
   order: number;
+  questionIdsByExam?: Record<PyqExam, string[]>;
+  legacyOnly?:boolean;
 };
 
 export type PracticeInventoryLink = {
@@ -71,7 +78,9 @@ export type PracticeInventoryLink = {
 };
 
 export type SubjectPracticeInventory = {
-  version: 3;
+  version: 3 | 4;
+  taxonomyVersion?:string;
+  legacyRestoreAliases?:Record<string,string>;
   totalCount: number;
   mappedCount: number;
   unmappedCount: number;
@@ -94,9 +103,11 @@ export type ArchiveInventory = {
   links: TaxonomyLink[];
 };
 
-export const pyqQuestions = (questionBank.questions as PyqQuestion[]).filter(
+export const historicalPyqQuestions = (questionBank.questions as PyqQuestion[]).filter(
   (question) => question.origin === "pyq" && question.sourceTextLocked,
 );
+export const pyqQuestions = historicalPyqQuestions.filter(question => questionEligible(question.id)&&questionInGsScope(question.id));
+const legacyQuestionById=new Map((legacyQuestions as PyqQuestion[]).map(q=>[q.id,q]));
 
 const examNames: Record<PyqExam, { name: string; paper: string }> = {
   CSE: { name: "Civil Services Examination", paper: "General Studies Paper I" },
@@ -140,7 +151,7 @@ function slug(value: string) {
     .replace(/^-|-$/g, "");
 }
 
-export function getQuestionPath(question: PyqQuestion) {
+function questionPath(question: PyqQuestion,canonicalLabels:boolean) {
   if (
     question.subject === "General Studies" &&
     question.topic === "General" &&
@@ -148,40 +159,77 @@ export function getQuestionPath(question: PyqQuestion) {
   ) return null;
 
   const mappedNode = taxonomyNode(question.taxonomyId || taxonomyIdForQuestion(question.id) || taxonomyIdForLegacyQuestion(question) || "");
-  const subject = mappedNode?.subject || question.subject;
+  const subject = canonicalLabels?canonicalSubjectLabel(mappedNode?.subject || question.subject):mappedNode?.subject || question.subject;
   const rawHead = mappedNode?.head || question.taxonomyHead || (subject === "Environment" ? "Environment & Ecology" : subject);
   const head = subject === "Geography" && rawHead === "Geography" ? "Other Geography" : rawHead;
   const topic = mappedNode?.chapter || question.taxonomyChapter || question.topic;
   const subtopic = mappedNode?.subtopic || question.taxonomySubtopic || question.subtopic;
-  const subjectId = `subject:${slug(subject)}`;
-  const headId = `head:${slug(subject)}:${slug(head)}`;
-  const topicId = `topic:${slug(subject)}:${slug(head)}:${slug(topic)}`;
-  const subtopicId = `subtopic:${slug(subject)}:${slug(head)}:${slug(topic)}:${slug(subtopic)}`;
+  const subjectKey=canonicalLabels?subjectScopeKey(subject):slug(subject);
+  const subjectId = `subject:${subjectKey}`;
+  const headId = `head:${subjectKey}:${slug(head)}`;
+  const topicId = `topic:${subjectKey}:${slug(head)}:${slug(topic)}`;
+  const subtopicId = `subtopic:${subjectKey}:${slug(head)}:${slug(topic)}:${slug(subtopic)}`;
   return {
-    subject, head, topic, subtopic, subjectId, headId, topicId, subtopicId,
-    headOrder: mappedNode?.head === "Physical Geography" ? 1 : 100,
+    subject, head, topic, subtopic, subjectId, headId, topicId, subtopicId, taxonomyId:mappedNode?.id||question.taxonomyId||undefined,
+    headOrder: mappedNode?.headOrder??(mappedNode?.head === "Physical Geography" ? 1 : 100),
     topicOrder: mappedNode?.chapterOrder ?? 100,
     subtopicOrder: mappedNode?.subtopicOrder ?? 100,
   };
 }
+export function getQuestionPath(question:PyqQuestion){return questionPath(question,true);}
+export function getLegacyQuestionPath(question:PyqQuestion){return questionPath(legacyQuestionById.get(question.id)||question,false);}
 
 const emptyExamCounts = (): ExamCounts => ({ CSE: 0, CAPF: 0, CDS: 0, NDA: 0 });
+
+/** Additional locations are reviewed source data, never duplicated question rows. */
+export function getQuestionPaths(question: PyqQuestion) {
+  const primary = getQuestionPath(question);
+  const paths = primary ? [primary] : [];
+  for (const place of question.additionalPaths || []) {
+    const subject=canonicalSubjectLabel(place.subject);
+    const { head, chapter: topic, subtopic } = place;
+    const mapped=place.taxonomyId?taxonomyNode(place.taxonomyId):undefined;
+    const key=subjectScopeKey(subject);
+    const subjectId = `subject:${key}`;
+    const headId = `head:${key}:${slug(head)}`;
+    const topicId = `topic:${key}:${slug(head)}:${slug(topic)}`;
+    const subtopicId = `subtopic:${key}:${slug(head)}:${slug(topic)}:${slug(subtopic)}`;
+    if (!paths.some(path => path.subtopicId === subtopicId)) paths.push({ subject, head, topic, subtopic, subjectId, headId, topicId, subtopicId, taxonomyId:mapped?.id||place.taxonomyId||undefined, headOrder: mapped?.headOrder??100, topicOrder: mapped?.chapterOrder??100, subtopicOrder: mapped?.subtopicOrder??100 });
+  }
+  return paths;
+}
 
 function incrementExam(counts: ExamCounts, exam: PyqExam) {
   counts[exam] += 1;
 }
 
-export function getSubjectPracticeInventory(): SubjectPracticeInventory {
+export function getSubjectPracticeInventory(multiPlacement = true): SubjectPracticeInventory {
   const subjects = new Map<string, PracticeSubject>();
   const nodes = new Map<string, PracticeInventoryNode>();
   const links = new Map<string, PracticeInventoryLink>();
   const legacyAliases = new Map<string, Set<string>>();
   let mappedCount = 0;
 
+  if(multiPlacement)for(const leaf of prelimsPaths) {
+    const key=subjectScopeKey(leaf.subject);
+    const subjectId=`subject:${key}`,headId=`head:${key}:${slug(leaf.head)}`,topicId=`topic:${key}:${slug(leaf.head)}:${slug(leaf.chapter)}`,subtopicId=`subtopic:${key}:${slug(leaf.head)}:${slug(leaf.chapter)}:${slug(leaf.subtopic)}`;
+    if(!subjects.has(subjectId))subjects.set(subjectId,{id:subjectId,label:leaf.subject,questionCount:0,examCounts:emptyExamCounts()});
+    const seed:PracticeInventoryNode[]=[
+      {id:headId,label:leaf.head,kind:'head',subjectId,parentId:subjectId,order:leaf.headOrder,questionCount:0,examCounts:emptyExamCounts()},
+      {id:topicId,label:leaf.chapter,kind:'topic',subjectId,parentId:headId,order:leaf.chapterOrder,questionCount:0,examCounts:emptyExamCounts()},
+      {id:subtopicId,label:leaf.subtopic,kind:'subtopic',subjectId,parentId:topicId,order:leaf.subtopicOrder,questionCount:0,examCounts:emptyExamCounts(),questionIdsByExam:{CSE:[],CAPF:[],CDS:[],NDA:[]}},
+    ];
+    for(const node of seed)if(!nodes.has(node.id))nodes.set(node.id,node);
+    for(const [source,target]of[[subjectId,headId],[headId,topicId],[topicId,subtopicId]])if(!links.has(`${source}->${target}`))links.set(`${source}->${target}`,{source,target,subjectId,questionCount:0,examCounts:emptyExamCounts()});
+  }
+
   for (const question of pyqQuestions) {
-    const path = getQuestionPath(question);
-    if (!path) continue;
+    const primary = multiPlacement?getQuestionPath(question):getLegacyQuestionPath(question);
+    const paths = multiPlacement ? getQuestionPaths(question) : primary ? [primary] : [];
+    if (!paths.length) continue;
     mappedCount += 1;
+    const seen = new Set<string>();
+    for (const path of paths) {
     const legacyId = `subtopic:${slug(path.subject)}:${slug(path.topic)}:${slug(path.subtopic)}`;
     const aliases = legacyAliases.get(legacyId) || new Set<string>();
     aliases.add(path.subtopicId);
@@ -193,8 +241,11 @@ export function getSubjectPracticeInventory(): SubjectPracticeInventory {
       questionCount: 0,
       examCounts: emptyExamCounts(),
     };
-    subject.questionCount += 1;
-    incrementExam(subject.examCounts, question.exam);
+    if (!seen.has(subject.id)) {
+      subject.questionCount += 1;
+      incrementExam(subject.examCounts, question.exam);
+      seen.add(subject.id);
+    }
     subjects.set(subject.id, subject);
 
     const pathNodes: PracticeInventoryNode[] = [
@@ -204,8 +255,15 @@ export function getSubjectPracticeInventory(): SubjectPracticeInventory {
     ];
     for (const nextNode of pathNodes) {
       const current = nodes.get(nextNode.id) || nextNode;
-      current.questionCount += 1;
-      incrementExam(current.examCounts, question.exam);
+      if (!seen.has(current.id)) {
+        current.questionCount += 1;
+        incrementExam(current.examCounts, question.exam);
+        seen.add(current.id);
+      }
+      if (multiPlacement && current.kind === 'subtopic') {
+        current.questionIdsByExam ||= { CSE: [], CAPF: [], CDS: [], NDA: [] };
+        if (!current.questionIdsByExam[question.exam].includes(question.id)) current.questionIdsByExam[question.exam].push(question.id);
+      }
       nodes.set(current.id, current);
     }
 
@@ -218,19 +276,25 @@ export function getSubjectPracticeInventory(): SubjectPracticeInventory {
         questionCount: 0,
         examCounts: emptyExamCounts(),
       };
-      link.questionCount += 1;
-      incrementExam(link.examCounts, question.exam);
+      if (!seen.has(`link:${linkKey}`)) {
+        link.questionCount += 1;
+        incrementExam(link.examCounts, question.exam);
+        seen.add(`link:${linkKey}`);
+      }
       links.set(linkKey, link);
+    }
     }
   }
 
+  const legacyRestoreAliases=multiPlacement?bridgeLegacyPlacements(subjects,nodes,new Map(pyqQuestions.map(q=>[q.id,q.exam]))):undefined;
+  if(multiPlacement)for(const node of nodes.values())if(node.legacyOnly&&node.parentId)links.set(`${node.parentId}->${node.id}`,{source:node.parentId,target:node.id,subjectId:node.subjectId,questionCount:node.questionCount,examCounts:node.examCounts});
   const legacyQuestionSets: Record<string, string[]> = {};
   for (const [oldTaxonomyId, questionIds] of Object.entries(historicalPhysicalQuestionSets)) {
     const [, oldChapter, oldSubtopic] = oldTaxonomyId.split("/");
     const legacyId = `subtopic:geography:physical-geography:${oldChapter}:${oldSubtopic}`;
     const ancestryUnsafeId = `subtopic:geography:${oldChapter}:${oldSubtopic}`;
-    legacyQuestionSets[legacyId] = questionIds;
-    legacyQuestionSets[ancestryUnsafeId] = questionIds;
+    legacyQuestionSets[legacyId] = questionIds.filter(questionEligible);
+    legacyQuestionSets[ancestryUnsafeId] = questionIds.filter(questionEligible);
     const targets = historicalPhysicalTargets[oldTaxonomyId] || [];
     const aliases = legacyAliases.get(legacyId) || new Set<string>();
     for (const target of targets) {
@@ -241,9 +305,10 @@ export function getSubjectPracticeInventory(): SubjectPracticeInventory {
     legacyAliases.set(ancestryUnsafeId, new Set(aliases));
   }
 
-  const subjectOrder = new Map(["Geography", "Environment", "Polity"].map((label, index) => [label, index]));
+  const subjectOrder = new Map(["Geography", "History", "Polity & Governance", "Economy", "Environment & Ecology", "Science & Technology", "Social Development", "International Relations & Organisations", "Current Affairs", "Environment", "Polity"].map((label, index) => [label, index]));
   return {
-    version: 3,
+    version: multiPlacement ? 4 : 3,
+    ...(multiPlacement?{taxonomyVersion:PRELIMS_TAXONOMY_VERSION,legacyRestoreAliases}:{}),
     totalCount: pyqQuestions.length,
     mappedCount,
     unmappedCount: pyqQuestions.length - mappedCount,

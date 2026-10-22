@@ -1522,3 +1522,8 @@ h3 { font-size: 16px; }
   .syllabus-chapters-panel { flex: 0 0 auto; }
   .explorer-layout .scope-card .explorer-add { min-height: 44px; }
 }
+/* Preserve a historical choice neutrally when its question is excluded. */
+.result-combined-review tr:has(.answer-status.excluded-from-score) + .result-answer-detail-row .result-question-options .is-selected {
+  background: #eef2ff;
+  border-color: #b8c7ee;
+}

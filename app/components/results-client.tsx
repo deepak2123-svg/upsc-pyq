@@ -9,15 +9,18 @@ import { attemptReturnPath, formatPracticeTime, hasCompleteFeedback, practiceDur
 import { PYQ_EXAMS, PYQ_EXAM_COLORS } from "../../lib/pyq-exams";
 import { formatPracticePrompt, formatPracticeText } from "../../lib/practice-prompt";
 import { PracticePromptView } from "./practice-prompt-view";
+import { questionExclusion, questionCorrectionNotice } from '../../lib/question-review';
 
-type Performance = { total: number; answered: number; correct: number; incorrect: number; unattempted: number };
-function newPerformance(): Performance { return { total: 0, answered: 0, correct: 0, incorrect: 0, unattempted: 0 }; }
+type Performance = { total: number; answered: number; correct: number; incorrect: number; unattempted: number; excluded: number };
+function newPerformance(): Performance { return { total: 0, answered: 0, correct: 0, incorrect: 0, unattempted: 0, excluded: 0 }; }
 function statusOf(attempt: LocalAttempt, question: PracticeQuestion) {
+  if (questionExclusion(question.id, question.contentRevision ?? 0)) return 'Excluded from score';
   if (!attempt.answers[question.id]) return "Unattempted";
   const feedback = attempt.feedback[question.id];
   return feedback ? feedback.correct ? "Correct" : "Incorrect" : "Awaiting grading";
 }
 function countQuestion(value: Performance, attempt: LocalAttempt, question: PracticeQuestion) {
+  if (questionExclusion(question.id, question.contentRevision ?? 0)) { value.excluded += 1; return; }
   value.total += 1;
   if (!attempt.answers[question.id]) value.unattempted += 1;
   else {
@@ -120,8 +123,10 @@ export function ResultsClient({ id }: { id: string }) {
       <section className="result-summary">
         <div className="result-sheet-heading"><div><p className="pyq-kicker">Practice complete</p><h1>Result sheet</h1><p>{subjects || "Official PYQs"}</p></div><span className="result-completion-reason">{completed}</span></div>
         <dl className="result-session-details"><div><dt>Completed</dt><dd>{dateLabel(attempt.completedAt)}</dd></div><div><dt>Time taken</dt><dd>{formatPracticeTime(attempt.elapsedSeconds)}</dd></div><div><dt>Time limit</dt><dd>{duration === null ? "Untimed" : `${duration} minutes`}</dd></div><div><dt>Attempt ID</dt><dd>{attempt.id}</dd></div></dl>
-        <div className="result-numbers"><div><strong>{stats.total.total}</strong><span>Total questions</span></div><div><strong>{stats.total.answered}</strong><span>Answered</span></div><div><strong>{ready ? stats.total.correct : "—"}</strong><span>Correct</span></div><div><strong>{ready ? stats.total.incorrect : "—"}</strong><span>Incorrect</span></div><div><strong>{stats.total.unattempted}</strong><span>Unattempted</span></div><div><strong>{ready ? accuracy(stats.total) : "—"}</strong><span>Accuracy</span></div></div>
-        <p className="result-score-note">Accuracy is correct answers ÷ answered questions. Unattempted questions are excluded. No common marks scheme is applied to mixed-exam practice.</p>
+        <div className="result-numbers"><div><strong>{stats.total.total}</strong><span>Scored questions</span></div><div><strong>{stats.total.answered}</strong><span>Answered</span></div><div><strong>{ready ? stats.total.correct : "—"}</strong><span>Correct</span></div><div><strong>{ready ? stats.total.incorrect : "—"}</strong><span>Incorrect</span></div><div><strong>{stats.total.unattempted}</strong><span>Unattempted</span></div><div><strong>{ready ? accuracy(stats.total) : "—"}</strong><span>Accuracy</span></div></div>
+        <p className="result-score-note">Accuracy is correct answers ÷ scored answers. Unattempted and excluded questions do not affect accuracy. No common marks scheme is applied to mixed-exam practice.</p>
+        {attempt.snapshot.questions.map((q,index)=>questionCorrectionNotice(q)?<p className="result-score-note" key={q.id}>Saved Q{index+1}: {questionCorrectionNotice(q)}</p>:null)}
+        {stats.total.excluded > 0 && <p role="status">{stats.total.excluded} question{stats.total.excluded === 1 ? '' : 's'} excluded from score. Totals above include scored questions only; your original answers are preserved.</p>}
         {(grading || !ready) && <div className="result-grading-status result-no-print" role={error ? "alert" : "status"} aria-live="polite"><p>{error || "Your answers are submitted and saved. Loading the answer sheet…"}</p>{error && <button disabled={grading} onClick={() => setRetry((value) => value + 1)}>Retry answers</button>}</div>}
         <div className="result-actions result-no-print"><button disabled={retaking} onClick={() => void retake()}>{retaking ? "Starting…" : "Retake selection"}</button><button className="result-print-button" disabled={!ready} onClick={() => window.print()}>Print result sheet</button><Link href="/">Choose new PYQs</Link></div>
         {actionError && <p className="result-action-error result-no-print" role="alert">{actionError}</p>}
@@ -129,7 +134,7 @@ export function ResultsClient({ id }: { id: string }) {
       <section className="result-breakdown"><h2>Performance by exam source</h2><PerformanceTable label="Exam source performance" rows={stats.byExam} ready={ready} source /></section>
       <section className="result-breakdown"><h2>Performance by subject and topic</h2><PerformanceTable label="Subject and topic performance" rows={stats.byTopic} ready={ready} /></section>
       <section className="result-answer-sheet result-combined-review"><h2>Answers and question review</h2><p>Compare your answers with the official key. Select any question to open its full paper view, options and explanation.</p><p className="result-scroll-hint">Swipe to view all columns.</p><div className="result-table-scroll"><table aria-label="Answer sheet" data-testid="answer-sheet"><thead><tr><th scope="col">No.</th><th scope="col">Source / topic</th><th scope="col">Your answer</th><th scope="col">Correct answer</th><th scope="col">Result</th></tr></thead><tbody>{attempt.snapshot.questions.map((question, index) => {
-        const feedback = attempt.feedback[question.id];
+        const feedback = ready ? attempt.feedback[question.id] : undefined;
         const selected = attempt.answers[question.id];
         const status = statusOf(attempt, question);
         const expanded = expandedQuestion === index;

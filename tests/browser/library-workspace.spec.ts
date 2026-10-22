@@ -7,6 +7,16 @@ const open = (page: Page, name: string) => browser(page).getByRole("button", { n
 const add = (page: Page, name: string) => browser(page).getByRole("button", { name: `Add to test: ${name}`, exact: true }).click();
 const count = (page: Page) => summary(page).getByTestId("matching-count").locator("strong");
 const heading = (page: Page) => browser(page).locator(".scope-cards-heading h3");
+const physicalCount=async(page:Page)=>{
+  const data=await(await page.request.get('/api/pyqs/inventory')).json();
+  return data.nodes.find((node:{kind:string;label:string;legacyOnly?:boolean})=>node.kind==='head'&&node.label==='Physical Geography'&&!node.legacyOnly).questionCount as number;
+};
+const chapterUnionCount=async(page:Page,labels:string[],exams=['CSE','CAPF','CDS','NDA'])=>{
+  const data=await(await page.request.get('/api/pyqs/inventory')).json();
+  const topics=new Set(data.nodes.filter((node:{kind:string;label:string;legacyOnly?:boolean})=>node.kind==='topic'&&!node.legacyOnly&&labels.includes(node.label)).map((node:{id:string})=>node.id));
+  expect(topics.size).toBe(labels.length);
+  return new Set(data.nodes.filter((node:{kind:string;parentId:string;legacyOnly?:boolean})=>node.kind==='subtopic'&&!node.legacyOnly&&topics.has(node.parentId)).flatMap((node:{questionIdsByExam:Record<string,string[]>})=>exams.flatMap(exam=>node.questionIdsByExam[exam]||[]))).size;
+};
 
 test.beforeEach(async ({ page }) => {
   await page.goto("/");
@@ -15,11 +25,12 @@ test.beforeEach(async ({ page }) => {
 
 test("opening and folding folders never adds questions", async ({ page }) => {
   const tree = page.getByRole("navigation", { name: "Syllabus" });
-  await expect(count(page)).toHaveText("1,210");
+  const inventory=await(await page.request.get('/api/pyqs/inventory')).json();
+  await expect(count(page)).toHaveText(inventory.mappedCount.toLocaleString('en-IN'));
   await open(page, "Geography");
   await open(page, "Physical Geography");
   await expect(heading(page)).toHaveText("Physical Geography");
-  await expect(count(page)).toHaveText("363");
+  await expect(count(page)).toHaveText(String(await physicalCount(page)));
   await expect(summary(page).getByTestId("test-scope-label")).toContainText("Current folder");
   await expect(page.locator(".explorer-test-items li")).toHaveCount(0);
   await expect(tree.getByRole("region", { name: "Subject and section" })).toContainText("Geography");
@@ -58,34 +69,39 @@ test("unnumbered chapters use the panel width and the library heading fits", asy
 });
 
 test("adding parts is cumulative and keeps the folder open", async ({ page }, testInfo) => {
+  const chapterCount=await chapterUnionCount(page,[chapter]);
+  const combinedCount=await chapterUnionCount(page,[chapter,'Interior of the Earth']);
+  const interiorCount=await chapterUnionCount(page,['Interior of the Earth']);
+  const rocksCount=await chapterUnionCount(page,['Rocks and Minerals']);
   await open(page, "Geography");
   await open(page, "Physical Geography");
   await add(page, chapter);
   await expect(heading(page)).toHaveText("Physical Geography");
-  await expect(count(page)).toHaveText("28");
+  await expect(count(page)).toHaveText(String(chapterCount));
   await add(page, "Interior of the Earth");
-  await expect(count(page)).toHaveText("43");
+  await expect(count(page)).toHaveText(String(combinedCount));
   await expect(page.locator(".explorer-test-items li")).toHaveCount(2);
   await page.screenshot({ path: testInfo.outputPath("explorer-desktop.png"), fullPage: true });
   await open(page, "Rocks and Minerals");
-  await expect(count(page)).toHaveText("43");
+  await expect(count(page)).toHaveText(String(combinedCount));
   await summary(page).getByRole("button", { name: `Remove ${chapter} from test`, exact: true }).click();
   await expect(heading(page)).toHaveText("Rocks and Minerals");
-  await expect(count(page)).toHaveText("15");
+  await expect(count(page)).toHaveText(String(interiorCount));
   await summary(page).getByRole("button", { name: "Clear", exact: true }).click();
   await expect(heading(page)).toHaveText("Rocks and Minerals");
-  await expect(count(page)).toHaveText("25");
+  await expect(count(page)).toHaveText(String(rocksCount));
   await expect(summary(page)).toContainText("Current folder");
 });
 
 test("adding a parent deduplicates a selected child and collapses the selection", async ({ page }) => {
+  const chapterCount=await chapterUnionCount(page,[chapter]);
   await open(page, "Geography");
   await open(page, "Physical Geography");
   await open(page, chapter);
   const first = browser(page).locator(".scope-card").first();
   await first.getByRole("button", { name: /^Add to test:/ }).click();
   await browser(page).getByRole("button", { name: "Add remaining", exact: true }).click();
-  await expect(count(page)).toHaveText("28");
+  await expect(count(page)).toHaveText(String(chapterCount));
   await expect(page.locator(".explorer-test-items li")).toHaveCount(1);
   await expect(summary(page)).toContainText(chapter);
   await browser(page).getByRole("button", { name: "← Back", exact: true }).click();
@@ -94,35 +110,42 @@ test("adding a parent deduplicates a selected child and collapses the selection"
 
 test("different subjects combine into one paper and export the exact selection", async ({ page }) => {
   await page.context().addInitScript(() => { window.print = () => undefined; });
+  const inventory=await(await page.request.get('/api/pyqs/inventory')).json();
+  const chapterId=inventory.nodes.find((n:{label:string;kind:string})=>n.kind==='topic'&&n.label===chapter).id;
+  const ids=new Set(inventory.nodes.filter((n:{kind:string;legacyOnly?:boolean;subjectId:string;parentId:string})=>n.kind==='subtopic'&&!n.legacyOnly&&(n.subjectId==='subject:polity'||n.parentId===chapterId)).flatMap((n:{questionIdsByExam:Record<string,string[]>})=>Object.values(n.questionIdsByExam).flat()));
+  const expected=ids.size;
   await open(page, "Geography");
   await open(page, "Physical Geography");
   await add(page, chapter);
   await page.getByRole("navigation", { name: "Syllabus" }).getByRole("button", { name: /^Subjects/ }).click();
-  await add(page, "Polity");
-  await expect(count(page)).toHaveText("45");
+  await add(page, "Polity & Governance");
+  await expect(count(page)).toHaveText(expected.toLocaleString('en-IN'));
   await expect(page.locator(".explorer-test-items li")).toHaveCount(2);
   await summary(page).getByRole("button", { name: "Set up test" }).click();
   const dialog = page.getByRole("dialog");
   await dialog.getByRole("button", { name: /Download a PDF with an answer key/ }).click();
-  await dialog.getByRole("group", { name: "How many questions?" }).getByRole("button", { name: "All 45", exact: true }).click();
+  await dialog.getByRole("group", { name: "How many questions?" }).getByRole("button", { name: `All ${expected}`, exact: true }).click();
   await dialog.getByRole("checkbox", { name: /Add an answer key/ }).check();
   const popupPromise = page.waitForEvent("popup");
-  await dialog.getByRole("button", { name: "Download 45-question PDF", exact: true }).click();
+  await dialog.getByRole("button", { name: `Download ${expected}-question PDF`, exact: true }).click();
   const popup = await popupPromise;
   await expect(popup).toHaveURL(/\/practice\/.+\/print/);
-  await expect(popup.locator(".print-question")).toHaveCount(45);
+  await expect(popup.locator(".print-question")).toHaveCount(expected);
   await popup.close();
 });
 
 test("exam choices carry across branches and zero sources retain selection", async ({ page }) => {
+  const noNda=await chapterUnionCount(page,[chapter],['CSE','CAPF','CDS']);
+  const combinedNoNda=await chapterUnionCount(page,[chapter,'Interior of the Earth'],['CSE','CAPF','CDS']);
+  const combinedCse=await chapterUnionCount(page,[chapter,'Interior of the Earth','Rocks and Minerals'],['CSE']);
   await open(page, "Geography");
   await open(page, "Physical Geography");
   await add(page, chapter);
   const sources = summary(page).getByRole("region", { name: "Exam sources" });
   await sources.getByRole("button", { name: /^NDA\b/ }).click();
-  await expect(count(page)).toHaveText("19");
+  await expect(count(page)).toHaveText(String(noNda));
   await add(page, "Interior of the Earth");
-  await expect(count(page)).toHaveText("22");
+  await expect(count(page)).toHaveText(String(combinedNoNda));
   for (const exam of ["CSE", "CAPF", "CDS"]) await sources.getByRole("button", { name: new RegExp(`^${exam}\\b`) }).click();
   await expect(count(page)).toHaveText("0");
   await expect(page.locator(".explorer-test-items li")).toHaveCount(2);
@@ -131,7 +154,7 @@ test("exam choices carry across branches and zero sources retain selection", asy
   await browser(page).getByRole("button", { name: "Add entire folder" }).click();
   await expect(count(page)).toHaveText("0");
   await sources.getByRole("button", { name: /^CSE\b/ }).click();
-  await expect(count(page)).toHaveText("8");
+  await expect(count(page)).toHaveText(String(combinedCse));
 });
 
 test("current folder commits into online or PDF setup", async ({ page }) => {
@@ -139,7 +162,7 @@ test("current folder commits into online or PDF setup", async ({ page }) => {
   await open(page, "Physical Geography");
   await summary(page).getByRole("button", { name: "Test this folder" }).click();
   const dialog = page.getByRole("dialog");
-  await expect(dialog).toContainText("363 questions");
+  await expect(dialog).toContainText(`${await physicalCount(page)} questions`);
   await dialog.getByRole("button", { name: /Take an online test/ }).click();
   await expect(dialog.getByRole("group", { name: "How many questions?" })).toBeVisible();
   await expect(dialog.getByRole("checkbox", { name: /Add an answer key/ })).toHaveCount(0);
@@ -149,6 +172,7 @@ test("current folder commits into online or PDF setup", async ({ page }) => {
 });
 
 test("selection, folder, expanded branches, and sources restore on reload", async ({ page }) => {
+  const noNda=await chapterUnionCount(page,[chapter],['CSE','CAPF','CDS']);
   await open(page, "Geography");
   await open(page, "Physical Geography");
   await add(page, chapter);
@@ -156,7 +180,7 @@ test("selection, folder, expanded branches, and sources restore on reload", asyn
   await open(page, "Interior of the Earth");
   await page.reload();
   await expect(heading(page)).toHaveText("Interior of the Earth");
-  await expect(count(page)).toHaveText("19");
+  await expect(count(page)).toHaveText(String(noNda));
   await expect(summary(page).getByRole("button", { name: /^NDA\b/ })).toHaveAttribute("aria-pressed", "false");
   await expect(page.getByRole("navigation", { name: "Syllabus" }).getByRole("button", { name: "Collapse Interior of the Earth", exact: true })).toBeVisible();
 });
@@ -183,7 +207,7 @@ test("mobile library drawer and test panel remain independently usable", async (
   await add(page, "Physical Geography");
   await page.locator(".explorer-test-toggle").click();
   await expect(summary(page)).toBeVisible();
-  await expect(count(page)).toHaveText("363");
+  await expect(count(page)).toHaveText(String(await physicalCount(page)));
   await page.screenshot({ path: testInfo.outputPath("explorer-mobile.png"), fullPage: true });
   await summary(page).getByRole("button", { name: "Clear", exact: true }).click();
   await expect(heading(page)).toHaveText("Geography");

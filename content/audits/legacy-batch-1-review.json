@@ -1,0 +1,26 @@
+{
+  "batch": 1,
+  "method": "Original question pages and Series A final-key cells visually compared; manual cells below are independent of the candidate answer fields.",
+  "records": [
+    { "id": "cds-2017-2017-12", "answer": "B" },
+    { "id": "cds-2017-2017-26", "answer": "C", "canonicalId": "capf-2017-i-26" },
+    { "id": "cds-2017-2017-41", "answer": "B", "options": { "A": "The Councils Act 1861", "B": "The Government of India Act 1858", "C": "The Morley Minto Reforms", "D": "Montague Chelmsford reforms" } },
+    { "id": "cds-2018-2018-74", "answer": "B" },
+    { "id": "cds-2018-2018-80", "answer": "A" },
+    { "id": "cds-2018-2018-82", "answer": "A", "note": "Retain the exact original December 1949 wording and the official A, despite the historical date issue; do not silently rewrite the source." },
+    { "id": "cds-2018-2018-94", "answer": "B" },
+    { "id": "cds-2018-2018-95", "answer": "B" },
+    { "id": "cds-2018-2018-99", "answer": "C" },
+    { "id": "cds-2018-2018-106", "answer": "B" },
+    { "id": "cds-2018-2018-115", "answer": "C", "text": "Which one of the following statements with regard to Panchayats is not correct?", "options": { "A": "Members of Panchayats are elected directly by the Gram Sabha.", "B": "The elections to Panchayats are conducted by the State Election Commission.", "C": "The Central Government may by law authorize a Panchayat to levy taxes.", "D": "Every Panchayat continues for five years from the date of convening of its first meeting." } },
+    { "id": "cds-2018-2018-116", "answer": "B", "canonicalId": "capf-2018-i-116" },
+    { "id": "cds-2018-2018-117", "answer": "D", "options": { "A": "Uniform Civil Code for all citizens", "B": "Separation of Judiciary from Executive", "C": "Duty of the State to raise the level of nutrition and standard of living", "D": "Promotion of scientific temper, humanity and the spirit of inquiry and reform" } },
+    { "id": "cds-2018-2018-119", "answer": "B", "text": "The Buddhist text Majjhima Nikaya is in", "options": { "A": "Sanskrit", "B": "Pali", "C": "Prakrit", "D": "Telugu" } },
+    { "id": "cds-2014-2014-1-11", "answer": "A", "text": "Consider the following statements:\n1. The Jains believed that Mahavira had twenty-three predecessors.\n2. Parshvanatha was twenty-third Tirthankara.\n3. Rishava was immediate successor of Mahavira.\nWhich of the statements given above is/are correct?", "options": { "A": "1 and 2", "B": "2 and 3", "C": "2 only", "D": "3 only" } },
+    { "id": "cds-2014-2014-1-17", "answer": "D" },
+    { "id": "cds-2014-2014-1-24", "answer": "B" },
+    { "id": "cds-2014-2014-1-27", "answer": "B", "note": "Preserve official B rather than independently replacing the accepted examination answer." },
+    { "id": "cds-2014-2014-1-30", "answer": "D" },
+    { "id": "cds-2014-2014-1-34", "answer": "B", "text": "Which of the following nations were recently suspended with regard to the voting rights by the UNESCO for not paying their dues to it?\n1. USA\n2. Israel\n3. Iran\n4. Iraq\nSelect the correct answer using the code given below.", "options": { "A": "1, 2, 3 and 4", "B": "1 and 2 only", "C": "2 and 3 only", "D": "3 and 4 only" } }
+  ]
+}

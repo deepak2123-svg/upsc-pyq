@@ -1,0 +1,71 @@
+{
+  "version":1,
+  "records":[{
+    "questionId":"cse-2013-gs-i-53",
+    "expectedRecordHash":"8c54767de5a718fd724fdcb8d0ce37c7c12933b2b1ec2899e838b34f97cc5a06",
+    "revision":1,"material":false,"status":"approved",
+    "changes":[{"from":"kinds of an organism","to":"kinds of organism"}],
+    "expectedCorrectedSourceTextHash":"fe11ee0daac2360e9c3b9001973c73a59ac714ba360ae3f86236d0d904035eb0",
+    "acceptedAnswer":"B",
+    "rationale":"Remove one spurious article absent from the printed question. No organism, instruction, choice, logical qualifier or answer changes; this is a nonmaterial reproduction correction.",
+    "secondPass":"Full original page 22 rechecked after spotting the article difference; the original reads kinds of organism. Virus, Fungi, Bacteria and all four options match. Series A Q53 accepts B.",
+    "evidence":{
+      "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2013.pdf",
+      "originalPdfSha256":"cd9f0fcc9d911af504953efa996cdbd75264579e66f9dbf7da87e6cbb6997330",
+      "sourcePage":22,"series":"A",
+      "keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2013_GS1_answer_key.pdf",
+      "keySha256":"8cb17c812afb63e5a1c7445cb45f45353ea1f3a817e7e9dbd65e459315298054",
+      "keyPage":1,"questionNumber":53,"keyAnswer":"B","reviewedAt":"2026-10-21"
+    }
+  },{
+    "questionId":"cse-2015-gs-i-33",
+    "expectedRecordHash":"f96782fccff1bd2b17fac070d2a826f0e3eb9f49a1cee4db3b6cd82f4bfe7bdc",
+    "revision":1,"material":false,"status":"approved",
+    "changes":[{"from":"‘Golan Heights’","to":"The area known as 'Golan Heights'"}],
+    "expectedCorrectedSourceTextHash":"97ca3681d215ed04b9d040583e61639fe0714486fbf85c6efab089a67f72d0b7",
+    "acceptedAnswer":"B",
+    "rationale":"Restore the printed introductory noun phrase. The named area, task, temporal wording, every region alternative and answer are unchanged; historical questions remain equally answerable.",
+    "secondPass":"Full English page 12 reread: The area known as precedes Golan Heights. All four region options match, and Series A Q33 accepts B. This is not a changed location or substantive new qualifier.",
+    "evidence":{"originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2015.pdf","originalPdfSha256":"cb82d062ee48ab46ef5e8796c3ed3fff4c28cad7e96af4a27dc7e10e62492e17","sourcePage":12,"series":"A","keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2015_GS1_answer_key.pdf","keySha256":"6190bfb2d8b2a0d930c43dc1c1a5c813610fc737bb261ebf5015358dc93c4d5a","keyPage":1,"questionNumber":33,"keyAnswer":"B","reviewedAt":"2026-10-22"}
+  },{
+    "questionId":"cse-2015-gs-i-36",
+    "expectedRecordHash":"d760e2c24cf95a500f8d09403037a6d6af97d397460d0bf5a3f7da88f243851e",
+    "revision":1,"material":false,"status":"approved",
+    "changes":[{"from":"Pranhita","to":"Pranahita"}],
+    "expectedCorrectedSourceTextHash":"d580fb9d24dc395ac5383127df8ac673e1a8f2b1394fbd5af32491b29cd3a082",
+    "acceptedAnswer":"D",
+    "rationale":"Restore one missing letter in the same intended river name. The list position, river identity, tributary task, codes and answer do not change; old snapshots retain valid scoring.",
+    "secondPass":"Full English page 12 and the numbered list reread: entry 3 prints Pranahita. Vamsadhara, Indravati, Pennar, all codes and Series A Q36 D match. No river is replaced by a different river.",
+    "evidence":{"originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2015.pdf","originalPdfSha256":"cb82d062ee48ab46ef5e8796c3ed3fff4c28cad7e96af4a27dc7e10e62492e17","sourcePage":12,"series":"A","keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2015_GS1_answer_key.pdf","keySha256":"6190bfb2d8b2a0d930c43dc1c1a5c813610fc737bb261ebf5015358dc93c4d5a","keyPage":1,"questionNumber":36,"keyAnswer":"D","reviewedAt":"2026-10-22"}
+  },{
+    "questionId":"cse-2016-gs-i-23",
+    "expectedRecordHash":"06ad2c69da9e6a2bd2cb289161c5af7b288e0e555cdcaa7608647ec4bca6cc64",
+    "revision":1,"material":false,"status":"approved",
+    "changes":[{"from":"Authority (NGRBA)?","to":"Authority (NGRBA)'?"}],
+    "expectedCorrectedSourceTextHash":"252cdf025adf44d0608a056c0f93f5a0f4241f3e766de77ec8f154ad5a373c58",
+    "acceptedAnswer":"A",
+    "rationale":"Restore the missing closing quotation mark around the authority name. Every word, statement, option, source identity and accepted answer remains unchanged; historical snapshots remain equally answerable.",
+    "secondPass":"Complete English PDF page 11 (printed page 10) reread: a closing quote follows NGRBA). All three propositions and four code options match; Series A Q23 accepts A. This is punctuation only, not a substantive content revision.",
+    "evidence":{"originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2016.pdf","originalPdfSha256":"9ecc3d665b9a3df9bd6b46b7f5730bbd989574439474a86f75cd072bc07781f3","sourcePage":11,"series":"A","keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2016_GS1_answer_key.pdf","keySha256":"376ec3a203b1f9589f70c6d1d5d98a1676bee85a043e1f6dec9c46beb72b4971","keyPage":1,"questionNumber":23,"keyAnswer":"A","reviewedAt":"2026-10-22"}
+  },{
+    "questionId":"cse-2016-gs-i-55",
+    "expectedRecordHash":"68aef5580950d3514d197c7da4d7ffb00f198a5db769ce5bf6e0b47bf6739567",
+    "revision":1,"material":false,"status":"approved",
+    "changes":[{"from":"Gas Protocol?","to":"Gas Protocol'?"}],
+    "expectedCorrectedSourceTextHash":"30c941696497371fcad51e426b5622871ad065d7ce9aac11b6039b5a2ffbee10",
+    "acceptedAnswer":"A",
+    "rationale":"Restore the missing closing quote around Greenhouse Gas Protocol. No word, option, qualifier, source identity or accepted answer changes. Historical snapshots remain equally answerable.",
+    "secondPass":"Full English PDF page 21 reread: the closing quote follows Protocol before the question mark. All four alternatives and Series A Q55 A match; this is punctuation-only and leaves content revision zero.",
+    "evidence":{"originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2016.pdf","originalPdfSha256":"9ecc3d665b9a3df9bd6b46b7f5730bbd989574439474a86f75cd072bc07781f3","sourcePage":21,"series":"A","keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2016_GS1_answer_key.pdf","keySha256":"376ec3a203b1f9589f70c6d1d5d98a1676bee85a043e1f6dec9c46beb72b4971","keyPage":1,"questionNumber":55,"keyAnswer":"A","reviewedAt":"2026-10-22"}
+  },{
+    "questionId":"cse-2016-gs-i-90",
+    "expectedRecordHash":"547058794daed981b302404783e78b2bf75ccc97b644f6a04eb3e361b39929ec",
+    "revision":1,"material":false,"status":"approved",
+    "changes":[{"from":"State Butterfly?","to":"State Butterfly'?"}],
+    "expectedCorrectedSourceTextHash":"9523e4b3f8ab1f59cf1b738c8903d911de0d45f1d936671930b36d0f0431f571",
+    "acceptedAnswer":"D",
+    "rationale":"Restore the printed closing quote after State Butterfly. Every word, qualifier, option and answer is unchanged. Historical snapshots remain equally answerable.",
+    "secondPass":"Complete English PDF page 33 reread: closing quote follows Butterfly before the question mark. All four states match; Series A Q90 accepts D. No date or species is inferred.",
+    "evidence":{"originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2016.pdf","originalPdfSha256":"9ecc3d665b9a3df9bd6b46b7f5730bbd989574439474a86f75cd072bc07781f3","sourcePage":33,"series":"A","keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2016_GS1_answer_key.pdf","keySha256":"376ec3a203b1f9589f70c6d1d5d98a1676bee85a043e1f6dec9c46beb72b4971","keyPage":1,"questionNumber":90,"keyAnswer":"D","reviewedAt":"2026-10-22"}
+  }]
+}

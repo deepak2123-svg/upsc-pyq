@@ -2,6 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import questionBank from "../content/question-bank.json";
+import {questionEligible,questionContentRevision} from '../lib/question-review';
+import {reviewedAnswer,scoreReviewedQuestions} from '../lib/reviewed-grading';
 import { signInWithGoogle, signOut } from "../lib/auth/client";
 import { getSupabaseBrowser } from "../lib/supabase/client";
 import { TAXONOMY_VERSION, chapterSubtopicIds, taxonomyGroupsForSubjects, taxonomyIdForQuestion, taxonomyNode, taxonomyNodesForSubjects } from "../lib/taxonomy";
@@ -13,6 +15,7 @@ type Difficulty = "All types" | QuestionDifficulty | "Mixed";
 
 type Question = {
   id: string;
+  contentRevision?: number;
   origin: "pyq" | "generated";
   sourceTextLocked: boolean;
   sourceText: string;
@@ -47,11 +50,12 @@ type Question = {
   taxonomyId?: string | null;
 };
 
-const questions = (questionBank.questions as Question[]).map((question) => {
+const questions = (questionBank.questions as Question[]).filter(q=>questionEligible(q.id)).map((question) => {
   const taxonomyId = question.taxonomyId ?? taxonomyIdForQuestion(question.id) ?? null;
   const node = taxonomyId ? taxonomyNode(taxonomyId) : undefined;
   return {
     ...question,
+    contentRevision:questionContentRevision(question.id),
     taxonomyVersion: question.taxonomyVersion ?? (node ? TAXONOMY_VERSION : null),
     taxonomyHead: question.taxonomyHead ?? node?.head ?? null,
     taxonomyChapter: question.taxonomyChapter ?? node?.chapter ?? null,
@@ -63,6 +67,7 @@ const questions = (questionBank.questions as Question[]).map((question) => {
 function mapServerQuestion(value: Record<string, unknown>): Question {
   return {
     id: String(value.id),
+    contentRevision:typeof value.contentRevision==='number'?value.contentRevision:0,
     origin: value.origin === "generated" ? "generated" : "pyq",
     sourceTextLocked: Boolean(value.sourceTextLocked ?? true),
     sourceText: String(value.stem ?? ""),
@@ -125,40 +130,7 @@ function questionSourceLabel(question: Question) {
 
 function calculateLocalResult(exam: string, questionList: Question[], answerMap: Record<number, string>, durationMinutes: number, secondsRemaining: number) {
   const scoring = localScoring[exam] ?? localScoring.CSE;
-  let correctCount = 0;
-  let incorrectCount = 0;
-  const breakdown: Record<string, { total: number; correct: number; incorrect: number; unattempted: number; score: number }> = {};
-  questionList.forEach((question, index) => {
-    const subject = question.subject || "Uncategorised";
-    const bucket = breakdown[subject] ?? { total: 0, correct: 0, incorrect: 0, unattempted: 0, score: 0 };
-    const selected = answerMap[index];
-    const correctOption = question.answer ?? question.correctOption;
-    bucket.total += 1;
-    if (!selected) bucket.unattempted += 1;
-    else if (selected === correctOption) { correctCount += 1; bucket.correct += 1; bucket.score += scoring.marksPerQuestion; }
-    else { incorrectCount += 1; bucket.incorrect += 1; bucket.score -= scoring.negativeMarksPerQuestion; }
-    breakdown[subject] = bucket;
-  });
-  const unattemptedCount = questionList.length - correctCount - incorrectCount;
-  const score = correctCount * scoring.marksPerQuestion - incorrectCount * scoring.negativeMarksPerQuestion;
-  const maxScore = questionList.length * scoring.marksPerQuestion;
-  const accuracy = correctCount + incorrectCount ? (correctCount / (correctCount + incorrectCount)) * 100 : 0;
-  const weakAreas = Object.entries(breakdown)
-    .map(([subject, value]) => ({ subject, accuracy: value.correct + value.incorrect ? value.correct / (value.correct + value.incorrect) : 0 }))
-    .filter((value) => value.accuracy < 0.7)
-    .sort((a, b) => a.accuracy - b.accuracy)
-    .map((value) => value.subject);
-  return {
-    score: Number(score.toFixed(4)),
-    maxScore: Number(maxScore.toFixed(4)),
-    accuracy: Number(accuracy.toFixed(4)),
-    correctCount,
-    incorrectCount,
-    unattemptedCount,
-    timeUsedSeconds: Math.min(durationMinutes * 60, Math.max(0, durationMinutes * 60 - secondsRemaining)),
-    breakdown,
-    weakAreas,
-  };
+  return {...scoreReviewedQuestions(questionList.map(q=>({...q,correctOption:q.answer??q.correctOption})),new Map(questionList.map((q,i)=>[q.id,answerMap[i]??null])),scoring),timeUsedSeconds:Math.min(durationMinutes*60,Math.max(0,durationMinutes*60-secondsRemaining))};
 }
 
 export function UPSCPuraanApp({ initialScreen = "dashboard", initialTestId }: { initialScreen?: Screen; initialTestId?: string } = {}) {
@@ -901,6 +873,7 @@ function Results({result, questions, answers, exam, subjects, difficulty, mode, 
           <h2>{exam} · {subjectLabel}</h2>
           <div className="meta">{questionCount} questions · {mode} mode · {difficulty} · {accuracy} accuracy{timeUsed ? ` · ${Math.round(timeUsed / 60)}m used` : ""}</div>
           <div className="breakdown"><div><strong>{correct}</strong><div className="meta">Correct</div></div><div><strong>{incorrect}</strong><div className="meta">Incorrect</div></div><div><strong>{unattempted}</strong><div className="meta">Unattempted</div></div></div>
+          {numberValue(result?.excludedCount)>0 && <p className="meta">{numberValue(result?.excludedCount)} excluded from score</p>}
           <div style={{display:"flex",gap:10,marginTop:20,flexWrap:"wrap"}}><button className="primary" onClick={() => setShowSolutions((value) => !value)}>{showSolutions ? "Hide solutions" : "Review solutions"}</button><button className="secondary" onClick={onRetake}>Retake</button><button className="quiet" onClick={onHome}>Dashboard</button></div>
         </div>
       </section>
@@ -910,7 +883,7 @@ function Results({result, questions, answers, exam, subjects, difficulty, mode, 
           <div className="meta">Question {index + 1} · {questionSourceLabel(question)}</div>
           <div className="solution-prompt">{question.promptLines.map((line, lineIndex) => <p key={`${question.id}-solution-line-${lineIndex}`}>{line}</p>)}</div>
           <div className="solution-options">{Object.entries(question.options).map(([key, value]) => <div key={key}><span>{key}</span>{value}</div>)}</div>
-          <div className="meta">Your answer: {answers[index] ?? "Unattempted"} · Correct answer: {question.answer ?? question.correctOption ?? "Unavailable"}</div>
+          <div className="meta">Your answer: {answers[index] ?? "Unattempted"} · {reviewedAnswer(question).exclusionReason ?? `Correct answer: ${reviewedAnswer(question).correctOption ?? "Unavailable"}`}</div>
           <p>{question.explanation || "No editorial explanation has been added yet."}</p>
         </article>)}
       </section>}

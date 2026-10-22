@@ -1,0 +1,53 @@
+{
+  "version":1,
+  "records":[{
+    "exam":"CSE","year":2013,"paper":"GS-I","series":"A","questionCount":100,
+    "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2013.pdf",
+    "originalPdfSha256":"cd9f0fcc9d911af504953efa996cdbd75264579e66f9dbf7da87e6cbb6997330",
+    "coverPage":1,"languages":["Hindi","English"],
+    "reviewedLanguage":"English","questionPages":[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42],
+    "keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2013_GS1_answer_key.pdf",
+    "keySha256":"8cb17c812afb63e5a1c7445cb45f45353ea1f3a817e7e9dbd65e459315298054",
+    "keyPage":1,"keySeries":"A","keyQuestionCount":100,"droppedQuestions":[],
+    "identityStatus":"cover-key-and-question-identity-reviewed",
+    "identityRationale":"The original cover explicitly identifies GENERAL STUDIES PAPER-I, Series A, 100 items and Hindi/English printing. It does not print an examination year. The matching key header identifies Civil Services (Preliminary) 2013, GS-I, Series A, 100 items and Nil dropped. The complete numbered question sequence and corresponding cells were compared; year/exam are not inferred from the downloaded filename alone.",
+    "secondPass":"Cover, key header, complete English pages and Q1-Q100 decisions reconciled. Q53 has a nonmaterial article correction, Q94 a material statement repair, and the earlier Q87 repair remains in force. The raw bank and saved snapshots are preserved.",
+    "reviewedAt":"2026-10-21"
+  },{
+    "exam":"CSE","year":2014,"paper":"GS-I","series":"A","questionCount":100,
+    "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2014.pdf",
+    "originalPdfSha256":"8920775971a7101d3f96fa2f4cf25ee9370ffc55b0997f6f063b54d542d7343b",
+    "coverPage":1,"languages":["Hindi","English"],"reviewedLanguage":"English","questionPages":[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44],
+    "keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2014_GS1_answer_key.pdf",
+    "keySha256":"2c4a77531961fd5798fa9df743d2d54a65e7ca4dfb9b930a73e15c1873500eeb",
+    "keyPage":1,"keySeries":"A","keyQuestionCount":100,"droppedQuestions":[],
+    "identityStatus":"cover-key-and-question-identity-reviewed",
+    "identityRationale":"The printed cover identifies GS Paper-I, Series A, 100 bilingual items. A handwritten CS(P) 2014 note is not the sole year evidence: the matching official key header explicitly identifies Civil Services (Preliminary) 2014, GS-I, Series A, 100 items and NIL dropped, and the complete first twelve questions were compared with it.",
+    "secondPass":"Cover, key header and complete English pages 2 through 44 (even-numbered pages), all Q1-Q100 stems/options and matching Series A key cells reread. Q13 and Q19 use separately reviewed current-display material repairs. CSE Q55, Q57, Q62 and Q71 retain their original CDS-prefixed published IDs after source-identity correction. Historical highway numbering, Non-Plan expenditure, false treaty/institution/saint/site propositions and negative qualifiers are preserved rather than rewritten. All 100 source occurrences have individual decisions; this does not establish source coverage of other papers.",
+    "reviewedAt":"2026-10-21"
+  },{
+    "exam":"CSE","year":2015,"paper":"GS-I","series":"A","questionCount":100,
+    "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2015.pdf",
+    "originalPdfSha256":"cb82d062ee48ab46ef5e8796c3ed3fff4c28cad7e96af4a27dc7e10e62492e17",
+    "coverPage":1,"languages":["Hindi","English"],"reviewedLanguage":"English","questionPages":[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36],
+    "keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2015_GS1_answer_key.pdf",
+    "keySha256":"6190bfb2d8b2a0d930c43dc1c1a5c813610fc737bb261ebf5015358dc93c4d5a",
+    "keyPage":1,"keySeries":"A","keyQuestionCount":100,"droppedQuestions":[],
+    "identityStatus":"cover-key-and-question-identity-reviewed",
+    "identityRationale":"Printed cover identifies GENERAL STUDIES Paper-I, Series A and 100 bilingual items, with a Civil Services (Prelim) Exam-2015 stamp. The independently matching key header identifies Civil Services (Preliminary) Exam 2015, GS Paper-I, Series A, 100 items and NIL dropped. Q1-Q7 wording, displayed options and corresponding cells were compared; identity is not inferred from filename alone.",
+    "secondPass":"Cover, complete English pages 2 through 36 (even-numbered) and matching key cells reread. All Q1-Q100 source occurrences now have individual decisions: 62 imports and 38 canonical reuses. Q4/Q16/Q41/Q48/Q64 continuations stay with their question across columns. Q33/Q36 have separate nonmaterial wording/spelling restorations. Q40/Q43/Q49/Q52 reuse canonical IDs without reactivating existing aliases. Q61/Q79/Q89/Q91 keep their published legacy-prefixed IDs. Q66 retains the original incorrect north/south latitude claim. Printed false statements, option order, last-decade references, recent recognitions, GI and corporate status remain in their examination context; no event dates are inferred.",
+    "reviewedAt":"2026-10-22"
+  },{
+    "exam":"CSE","year":2016,"paper":"GS-I","series":"A","questionCount":100,
+    "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2016.pdf",
+    "originalPdfSha256":"9ecc3d665b9a3df9bd6b46b7f5730bbd989574439474a86f75cd072bc07781f3",
+    "coverPage":2,"languages":["Hindi","English"],"reviewedLanguage":"English","questionPages":[3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33],
+    "keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2016_GS1_answer_key.pdf",
+    "keySha256":"376ec3a203b1f9589f70c6d1d5d98a1676bee85a043e1f6dec9c46beb72b4971",
+    "keyPage":1,"keySeries":"A","keyQuestionCount":100,"droppedQuestions":[],
+    "identityStatus":"cover-key-and-question-identity-reviewed",
+    "identityRationale":"Both language covers show Series A, GS Paper-I and 100 bilingual questions; English cover PDF page 2 bears Civil Services (Prelim) Exam-2016. The matching independently headed key identifies CSE Preliminary 2016 GS-I Series A, 100 scoring items and NIL dropped. Opening English Q1-Q5 identities and options were compared, not inferred from filename.",
+    "secondPass":"Reread covers PDF pages 1/2, complete English question pages 3 through 33 (odd-numbered) and corresponding Series A Q1-Q90 cells. Q3/Q8/Q48/Q66/Q78/Q83 continue across columns. English questions start at PDF page 3, not page 2. Only Q1-Q90 currently reviewed: 61 imports and 29 reuses; 10 remain pending. Q23/Q55/Q90 have separate nonmaterial closing-quote restorations. Preserve the printed solar-alliance membership, EU agency wording, pension-family, Taniyurs, negative-membership, gold-FDI, Bitcoin and proposed NIMZ claims, historical regimes and prior corrected Q45 answer; use only canonical Q54 while its duplicate stays held. No unsupported event dates or recent policy rewrites.",
+    "reviewedAt":"2026-10-22"
+  }]
+}

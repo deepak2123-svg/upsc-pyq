@@ -1,0 +1,60 @@
+{
+  "version":1,
+  "records":[{
+    "questionId":"cse-2013-gs-i-94",
+    "expectedRecordHash":"bb911fa83f8061de047ae4b232fa46ad02d3c5622ba0aa300f98e6e0493ba854",
+    "expectedPreviousReviewRevision":0,"expectedPreviousContentRevision":0,
+    "revision":1,"contentRevision":1,"status":"official-final","material":true,
+    "changes":[
+      {"from":"Which of the following is/are the leaf modification/modifications in the desert areas to inhibit water loss?","to":"Which of the following leaf modifications occurs/occur in the desert areas to inhibit water loss?"},
+      {"from":"2. Tiny leaves","to":"2. Tiny leaves or no leaves"}
+    ],
+    "expectedCorrectedSourceTextHash":"97369ee809ad8800479020f311635658016bfc48b3f5617f2dbc115012d6b900",
+    "acceptedAnswer":"D",
+    "rationale":"The printed second statement includes or no leaves, which the stored transcription omits. Restore the whole source-exact stem and statement. Because a tested proposition changes, old revision-zero snapshots must be excluded instead of graded against the repaired question, even though the key letter remains D.",
+    "secondPass":"Complete page 40 reread: the instruction says leaf modifications occurs/occur, statement 2 says Tiny leaves or no leaves, and statements 1/3, instruction and all four alternatives match. Series A Q94 cell D accepts all three. Raw record and historical snapshots are retained.",
+    "historicalDisposition":"exclude-before-content-revision",
+    "evidence":{
+      "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2013.pdf",
+      "originalPdfSha256":"cd9f0fcc9d911af504953efa996cdbd75264579e66f9dbf7da87e6cbb6997330",
+      "sourcePage":40,"series":"A","questionNumber":94,
+      "keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2013_GS1_answer_key.pdf",
+      "keySha256":"8cb17c812afb63e5a1c7445cb45f45353ea1f3a817e7e9dbd65e459315298054",
+      "keyPage":1,"keyAnswer":"D","optionsReordered":false,"reviewedAt":"2026-10-21"
+    }
+  },{
+    "questionId":"cse-2014-gs-i-13",
+    "expectedRecordHash":"6503fc5052950a25b47d682f22b80982c41c930210778815744b9736be37e714",
+    "expectedPreviousReviewRevision":0,"expectedPreviousContentRevision":0,
+    "revision":1,"contentRevision":1,"status":"official-final","material":true,
+    "changes":[{"from":"Which of the following has/have influenced the evolution of organisms?","to":"Which of the following phenomena might have influenced the evolution of organisms?"}],
+    "expectedCorrectedSourceTextHash":"687c5dd2e3d422f9f5efd50d7c66680a20e1ee2b80e1fb3ee9bf24e95ec5e96b",
+    "acceptedAnswer":"C","historicalDisposition":"exclude-before-content-revision",
+    "rationale":"Restore phenomena might have influenced as printed. The previous has/have wording strengthens a tested epistemic qualifier, so historical snapshots must not be graded against the repaired stem even though C remains the key.",
+    "secondPass":"Full page 8 reread: the prompt explicitly says phenomena might have influenced. Continental drift, Glacial cycles, instruction and all four choices agree; Series A Q13 cell C accepts both. Preserve raw and saved records.",
+    "evidence":{
+      "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2014.pdf","originalPdfSha256":"8920775971a7101d3f96fa2f4cf25ee9370ffc55b0997f6f063b54d542d7343b",
+      "sourcePage":8,"series":"A","questionNumber":13,
+      "keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2014_GS1_answer_key.pdf","keySha256":"2c4a77531961fd5798fa9df743d2d54a65e7ca4dfb9b930a73e15c1873500eeb",
+      "keyPage":1,"keyAnswer":"C","optionsReordered":false,"reviewedAt":"2026-10-21"
+    }
+  },{
+    "questionId":"cse-2014-gs-i-19",
+    "expectedRecordHash":"3bda1acaa52d034e4f182684fffbc162546eba201d5bb29557f5cad9c30d7dc8",
+    "expectedPreviousReviewRevision":0,"expectedPreviousContentRevision":0,
+    "revision":1,"contentRevision":1,"status":"official-final","material":true,
+    "changes":[{"from":"Which of the following add/adds carbon dioxide to the carbon cycle on the planet Earth?","to":"Which of the following adds/add carbon dioxide to the carbon cycle on the planet Earth?"}],
+    "optionChanges":[{"letter":"C","from":"1, 2 and 4","to":"1, 2 and 4 only"}],
+    "expectedCorrectedOptionsHash":"86cd73cdb5302db838562effcb0fc361bcd882da55236cbde54db4be31b7096e",
+    "expectedCorrectedSourceTextHash":"3bd30fc1098f37a857996e57bd94f4d77b47aa6883420e72daae9e8e16a82134",
+    "acceptedAnswer":"C","historicalDisposition":"exclude-before-content-revision",
+    "rationale":"Restore the source-exact adds/add stem and the omitted only in option C. Because an accepted displayed choice changes, retain the old snapshot and exclude revision zero rather than assume the student saw the repaired alternative.",
+    "secondPass":"Complete page 10 reread: all four carbon-cycle processes, instruction and A/B/D alternatives agree; printed C is 1, 2 and 4 only. Series A Q19 cell C is unchanged. No option is reordered and raw source/options remain preserved.",
+    "evidence":{
+      "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2014.pdf","originalPdfSha256":"8920775971a7101d3f96fa2f4cf25ee9370ffc55b0997f6f063b54d542d7343b",
+      "sourcePage":10,"series":"A","questionNumber":19,
+      "keyPdf":"../.tmp/full_reaudit_answer_keys/CSE/2014_GS1_answer_key.pdf","keySha256":"2c4a77531961fd5798fa9df743d2d54a65e7ca4dfb9b930a73e15c1873500eeb",
+      "keyPage":1,"keyAnswer":"C","optionsReordered":false,"reviewedAt":"2026-10-21"
+    }
+  }]
+}

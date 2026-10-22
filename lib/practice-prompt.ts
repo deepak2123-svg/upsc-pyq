@@ -1,6 +1,7 @@
 export type PracticePromptBlock =
   | { kind: "text"; text: string }
   | { kind: "statement"; marker: string; text: string }
+  | { kind: "pair-table"; leftTitle: string; rightTitle: string; rows: { marker: string; left: string; right: string }[] }
   | {
     kind: "match-table";
     left: { title: string; items: { label: string; text: string }[] };
@@ -113,6 +114,37 @@ function matchingListBlocks(lines: string[]): PracticePromptBlock[] | null {
   ];
 }
 
+/** Only explicit two-column headings and complete sequential paired rows qualify. */
+function pairedRowBlocks(lines: string[]): PracticePromptBlock[] | null {
+  if (!lines.some(line => /\bpairs\b|\bcorrectly matched\b/i.test(line))) return null;
+  for (let header = 0; header < lines.length - 2; header += 1) {
+    // This legacy heading lost its column gap, not its words. The column split
+    // was visually confirmed on CSE 2015 Series A page 6; do not guess others.
+    const reviewedTitles = lines[header] === 'Place of Pilgrimage Location'
+      ? ['Place of Pilgrimage', 'Location'] : null;
+    const titles = lines[header].match(/^([^:]+):\s*([^:]+)$/)
+      ?? (reviewedTitles ? [lines[header], ...reviewedTitles] : null);
+    if (!titles || leadingArabicMarker.test(lines[header])) continue;
+    const rows: { marker: string; left: string; right: string }[] = [];
+    let end = header + 1;
+    for (; end < lines.length; end += 1) {
+      const numbered = lines[end].match(leadingArabicMarker);
+      if (!numbered) break;
+      const pair = numbered[3].match(/^(.+?):\s*(.+)$/);
+      // Never turn just the well-formed prefix of a damaged table into a table.
+      if (Number(numbered[1]) !== rows.length + 1 || !pair) return null;
+      rows.push({ marker: `${numbered[1]}${numbered[2]}`, left: pair[1].trim(), right: pair[2].trim() });
+    }
+    if (rows.length < 2) continue;
+    return [
+      ...lines.slice(0, header).map(text => ({ kind: "text" as const, text })),
+      { kind: "pair-table", leftTitle: titles[1].trim(), rightTitle: titles[2].trim(), rows },
+      ...lines.slice(end).map(text => ({ kind: "text" as const, text })),
+    ];
+  }
+  return null;
+}
+
 /**
  * Restores paper-style statement lines when an imported source was flattened.
  * It only restructures a sequential list beginning at 1, so years, quantities,
@@ -122,6 +154,8 @@ export function formatPracticePrompt(lines: string[]): PracticePromptBlock[] {
   const cleanLines = lines.map((line) => formatPracticeText(line).trim()).filter(Boolean);
   const matchingLists = matchingListBlocks(cleanLines);
   if (matchingLists) return matchingLists;
+  const pairedRows = pairedRowBlocks(cleanLines);
+  if (pairedRows) return pairedRows;
   const leading = cleanLines.map((line) => {
     const arabic = line.match(leadingArabicMarker);
     if (arabic) return { order: Number(arabic[1]), marker: `${arabic[1]}${arabic[2]}`, text: arabic[3] };

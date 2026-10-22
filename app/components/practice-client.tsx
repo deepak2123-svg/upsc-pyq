@@ -10,6 +10,7 @@ import { attemptClock, attemptReturnPath, completeAttempt, formatPracticeTime, h
 import { formatPracticePrompt, formatPracticeText } from "../../lib/practice-prompt";
 import { PYQ_EXAM_COLORS } from "../../lib/pyq-exams";
 import { PracticePromptView } from "./practice-prompt-view";
+import { questionCorrectionNotice } from '../../lib/question-review';
 
 type ReadingSize = "small" | "standard" | "large";
 const READING_SIZE_KEY = "upsc-pyq-reading-size:v1";
@@ -183,7 +184,7 @@ export function PracticeClient({ id }: { id: string }) {
 
   const question = attempt?.snapshot.questions[attempt.currentIndex];
   const questionId = question?.id;
-  const feedback = attempt?.status === "completed" && question ? attempt.feedback[question.id] : undefined;
+  const feedback = attempt?.status === "completed" && question && hasCompleteFeedback(attempt) ? attempt.feedback[question.id] : undefined;
   const selectedAnswer = question ? attempt?.answers[question.id] : undefined;
 
   useEffect(() => {
@@ -292,13 +293,14 @@ export function PracticeClient({ id }: { id: string }) {
             <div className="question-paper">
               <PracticePromptView blocks={prompt} className="practice-prompt" figure={question.figure} />
               <p className="question-origin"><span style={{ background: PYQ_EXAM_COLORS[question.exam] }} />First appeared: <strong>{sourceLabel}</strong> · Question {question.questionNumber}</p>
+              {questionCorrectionNotice(question) && <p className="question-origin">{questionCorrectionNotice(question)}</p>}
             </div>
             <div className="practice-choice-panel">
               <div className="practice-options" role="group" aria-label="Answer options" aria-busy={busy}>
                 {Object.entries(question.options).map(([key, value]) => {
                   const isSelected = selectedAnswer === key;
                   const isCorrect = feedback?.correctAnswer === key;
-                  const isWrong = Boolean(feedback && isSelected && !feedback.correct);
+                  const isWrong = Boolean(feedback && feedback.disposition !== 'excluded' && isSelected && !feedback.correct);
                   return <button key={key} aria-pressed={isSelected} className={`${isSelected ? "selected" : ""} ${isCorrect ? "correct" : ""} ${isWrong ? "incorrect" : ""}`} disabled={locked} onClick={() => void answer(key)}><span>{key}</span><strong>{formatPracticeText(value)}</strong>{isCorrect && <em>Correct answer</em>}{isWrong && <em>Your answer</em>}</button>;
                 })}
               </div>
@@ -306,7 +308,7 @@ export function PracticeClient({ id }: { id: string }) {
             </div>
           </div>
           {attempt.status === "completed" && !feedback && <div className="practice-answer-hint" role="status"><p>{gradeError || "Loading your submitted answer sheet…"}</p>{gradeError && <button onClick={() => setGradeRetry((value) => value + 1)}>Retry answers</button>}</div>}
-          {feedback && <section className={`answer-feedback ${!selectedAnswer ? "is-unattempted" : feedback.correct ? "is-correct" : "is-incorrect"}`}><div><strong>{!selectedAnswer ? `Unattempted · Correct answer: ${feedback.correctAnswer}` : feedback.correct ? `Correct · Answer ${feedback.correctAnswer}` : `Correct answer: ${feedback.correctAnswer} · Your answer: ${selectedAnswer}`}</strong></div>{feedback.explanation ? <p>{feedback.explanation}</p> : <p className="explanation-unavailable">No published explanation is available for this question.</p>}</section>}
+          {feedback && <section className={`answer-feedback ${feedback.disposition === 'excluded' ? 'is-excluded' : !selectedAnswer ? "is-unattempted" : feedback.correct ? "is-correct" : "is-incorrect"}`}><div><strong>{feedback.disposition === 'excluded' ? 'Excluded from score' : !selectedAnswer ? `Unattempted · Correct answer: ${feedback.correctAnswer}` : feedback.correct ? `Correct · Answer ${feedback.correctAnswer}` : `Correct answer: ${feedback.correctAnswer} · Your answer: ${selectedAnswer}`}</strong></div>{feedback.explanation ? <p>{feedback.explanation}</p> : <p className="explanation-unavailable">No published explanation is available for this question.</p>}</section>}
           <nav className="question-navigation" aria-label="Question navigation"><button disabled={busy || Boolean(pendingCompletion.current) || attempt.currentIndex === 0} onClick={() => void navigate(attempt.currentIndex - 1)}>← Previous</button><button className="bookmark-action" onClick={() => void toggleBookmark()}>{bookmarked ? "Saved" : "Save for later"}</button>{attempt.currentIndex < attempt.snapshot.questions.length - 1 ? <button className="next-question" disabled={busy || Boolean(pendingCompletion.current)} onClick={() => void navigate(attempt.currentIndex + 1)}>Save & next →</button> : <button className="next-question" disabled={busy} onClick={() => void finish()}>{attempt.status === "completed" ? "View results" : "Submit test"}</button>}</nav>
         </motion.article>
       </AnimatePresence>

@@ -1,0 +1,272 @@
+{
+  "version": 1,
+  "taxonomyVersion": "upsc-prelims-v2-draft",
+  "scope": "Initial diagnostic pilot: all 17 existing Polity-labelled records, not a pilot across all nine subjects",
+  "activated": false,
+  "records": [
+    {
+      "questionId": "cse-2022-gs-i-41",
+      "expectedRecordHash": "8200d6bf5a0477d4969010795f156a2c232d090c779dd63eb0d8f66b99e03006",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:environment-ecology/environmental-governance/international-framework/assessment-institutions",
+      "additionalCandidates": [],
+      "tags": [
+        "Static"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "The stem asks the institutional identity of an emissions-pledge assessment tracker; the options contrast research organisations with intergovernmental agencies.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2022-gs-i-42",
+      "expectedRecordHash": "4573f2f919364e43b5cae4dbf7d3db4497008e742f1a3c1eb663882b204a28b8",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:environment-ecology/environmental-governance/international-framework/assessment-institutions",
+      "additionalCandidates": [
+        "syllabus:environment-ecology/climate-change/climate-responses/mitigation"
+      ],
+      "tags": [
+        "Static"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "Statements test Climate Group, EP100 and Under2 institutional relationships and energy-efficiency mitigation; no Indian constitutional institution is tested.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2022-gs-i-75",
+      "expectedRecordHash": "40e6fa30c69a3b88eed58b13ae9e3898053010ad3e6e1eb99b93ebd4dc65788c",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:environment-ecology/environmental-governance/indian-framework/institutions",
+      "additionalCandidates": [
+        "syllabus:environment-ecology/environmental-governance/indian-framework/environmental-laws"
+      ],
+      "tags": [
+        "Static"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "The discriminating concept is which environmental authority is constituted under the Environment Protection Act; generic public-institution ownership would obscure the subject.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2022-gs-i-77",
+      "expectedRecordHash": "c31ce846ea855f026d1e39eb47abb8b0c381f94b0195eadaadff5adc163937df",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:international-relations-organisations/agreements-global-governance/international-cooperation/maritime-governance",
+      "additionalCandidates": [],
+      "tags": [
+        "Static"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "All alternatives define the Polar Code; maritime safety governance is materially tested, whereas polar location is contextual.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2022-gs-i-89",
+      "expectedRecordHash": "2d14d3b820e8ca71217cbb8c42b27c88d7c4cda17e6b0961a03bd368e8e09939",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:environment-ecology/environmental-governance/indian-framework/environmental-laws",
+      "additionalCandidates": [
+        "syllabus:environment-ecology/conservation/conservation-methods/human-wildlife-conflict"
+      ],
+      "tags": [
+        "Static"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "Statements explicitly test wildlife ownership, protection outside reserves and grounds for capture or killing in human-wildlife conflict.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2023-gs-i-23",
+      "expectedRecordHash": "85366e885dc36f14a56b36bbe804e737569281d900e3597146ea516bec98a953",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:environment-ecology/biodiversity/species-and-relationships/invasive-species",
+      "additionalCandidates": [
+        "syllabus:environment-ecology/environmental-governance/international-framework/assessment-institutions"
+      ],
+      "tags": [
+        "Static"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "The question identifies the organisational home of the Invasive Species Specialist Group and its database; both invasive-species knowledge infrastructure and institution identity are tested.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2023-gs-i-99",
+      "expectedRecordHash": "dc605adfc0f97526121c7f7ddf90773969bf2d04067cf787fe2e7df37d3e5bfa",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:environment-ecology/environmental-governance/indian-framework/biodiversity-governance",
+      "additionalCandidates": [
+        "syllabus:environment-ecology/environmental-governance/international-framework/biodiversity-conventions"
+      ],
+      "tags": [
+        "Static"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "Both statements concern biodiversity committees and access-benefit sharing, explicitly connecting domestic mechanisms with Nagoya Protocol objectives.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2024-gs-i-95",
+      "expectedRecordHash": "00d11d8bd7bfecbea81dfa6b0a0d7be86e908220479f5de9e8110b988da92d2f",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/environmental-policy",
+      "additionalCandidates": [
+        "syllabus:environment-ecology/climate-change/climate-responses/mitigation"
+      ],
+      "tags": [
+        "Event-based"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "The recent EU Net-Zero Industry Act is the subject; the second statement separately tests the carbon-neutrality and clean-technology policy rationale.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2025-gs-i-32",
+      "expectedRecordHash": "cfa97b61d060129b092c36a1278700863f61fc3fb5d0759880d1fb14f66235dd",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/climate-negotiations",
+      "additionalCandidates": [
+        "syllabus:environment-ecology/climate-change/climate-responses/adaptation"
+      ],
+      "tags": [
+        "Event-based"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "The named COP28 declaration and India's response are event-based; the statements also explicitly test health-system resilience under climate policy.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2025-gs-i-34",
+      "expectedRecordHash": "eed848e0ec2b6f6f028402f4d1038f5031f9a2d31c2baa303f6f33817e588668",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:environment-ecology/climate-change/climate-responses/carbon-markets",
+      "additionalCandidates": [
+        "syllabus:environment-ecology/environmental-governance/international-framework/climate-conventions"
+      ],
+      "tags": [
+        "Static"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "The tested propositions concern Article 6 market and non-market mechanisms rather than a dated announcement. Frequent discussion alone does not establish an event date.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2025-gs-i-35",
+      "expectedRecordHash": "47156f684bff2f27de8d3e9f460105761bf62de5efe82b165f9a6800f85f9438",
+      "originalSubject": "Polity",
+      "primaryCandidate": null,
+      "additionalCandidates": [],
+      "tags": [
+        "Event-based"
+      ],
+      "firstPassStatus": "needs-syllabus-amendment",
+      "rationale": "The launch and institutional sponsor of a nature-finance hub are tested. The current draft lacks a precise nature-finance initiative leaf; this candidate requires a syllabus amendment before approval.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2025-gs-i-90",
+      "expectedRecordHash": "ec2ed27b573694d27668c5eca95e11d2f211c1bc85d19536f83a6519bf242069",
+      "originalSubject": "Polity",
+      "primaryCandidate": null,
+      "additionalCandidates": [],
+      "tags": [
+        "Event-based"
+      ],
+      "firstPassStatus": "needs-syllabus-amendment",
+      "rationale": "The stem asks which organisation enacted a named restoration law. The proposed forest-restoration secondary leaf is too narrow for all ecosystems and must be reconsidered.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2026-gs-i-38",
+      "expectedRecordHash": "c471fb9d10b273667991636f1a1b6f3625e42880c2fcc84297f21a1e4fe45211",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:current-affairs/international-affairs/summits-and-organisations/summit-outcomes",
+      "additionalCandidates": [
+        "syllabus:economy/agriculture/allied-activities/fisheries"
+      ],
+      "tags": [
+        "Event-based"
+      ],
+      "eventDate": "2025-06",
+      "eventDateEvidence": "Explicit month and year in the original stem",
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "The stem dates UNOC to June 2025 and asks FAO's Blue Transformation formulation; examination year is not the event year. Fisheries and aquaculture are explicit.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2026-gs-i-40",
+      "expectedRecordHash": "b954a57a97c799eb7f99bc385f3e77fa97adab95c5f232a4dc38ba2577ebe4aa",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/conservation-initiatives",
+      "additionalCandidates": [
+        "syllabus:environment-ecology/climate-change/climate-responses/carbon-markets"
+      ],
+      "tags": [
+        "Event-based"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "A named first certified REDD+ project is tested, including its emissions-reduction certification context; no unsupported event date is assigned.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2026-gs-i-77",
+      "expectedRecordHash": "262b25623b41283b2c739ab993a67c454cb1fb5898a923a26bb325ea1b9fd3a6",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:environment-ecology/environmental-governance/indian-framework/institutions",
+      "additionalCandidates": [],
+      "tags": [
+        "Static"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "All three propositions test vertical-to-lead-institute mappings within NIRANTAR; the stem does not establish a dated event.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "cse-2026-gs-i-92",
+      "expectedRecordHash": "44b945edfa2953b9257d4c8b07aed0a504034870ca393c091c28c6a336dc220e",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:economy/money-banking/financial-markets/bonds-and-yields",
+      "additionalCandidates": [
+        "syllabus:economy/development/development-policy/sustainable-development"
+      ],
+      "tags": [
+        "Static"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "The definition distinguishes green, social, sustainability and sovereign bonds. Both financial instrument classification and combined environmental/social use of proceeds are tested.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    },
+    {
+      "questionId": "nda-2020-i-ii-77",
+      "expectedRecordHash": "536a865cbeb8e8d19bc2d3a705a9ac106b74e06bc363c18cbde7ae1c034f8318",
+      "originalSubject": "Polity",
+      "primaryCandidate": "syllabus:environment-ecology/environmental-governance/international-framework/biodiversity-conventions",
+      "additionalCandidates": [
+        "syllabus:science-technology/health-biotechnology/biotechnology/biosafety"
+      ],
+      "tags": [
+        "Static"
+      ],
+      "firstPassStatus": "first-pass-complete",
+      "rationale": "The Biosafety Protocol to the CBD is identified through its associated city; treaty identity and biosafety are material, not general Indian polity.",
+      "secondPass": "pending",
+      "status": "candidate-not-approved"
+    }
+  ]
+}

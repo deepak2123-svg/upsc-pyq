@@ -46,3 +46,12 @@ next-env.d.ts
 /.tmp-pack/
 /.tmp-dev*.log
 /.tmp-live*.log
+
+# Downloaded audit evidence stays local; ledgers retain URLs and SHA-256 hashes.
+/content/audits/*.pdf
+
+# Local review renders, QA exports and Python bytecode.
+/tmp/
+/output/
+__pycache__/
+*.pyc

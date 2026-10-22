@@ -29,14 +29,24 @@ export type PracticeRecipeV3 = Omit<PracticeRecipeV2, "version"> & {
   durationMinutes?: number | null;
 };
 
-export type PracticeRecipe = LegacyPracticeRecipe | PracticeRecipeV2 | PracticeRecipeV3;
+/** Answer-free explicit membership: a saved selection must not grow with a topic. */
+export type PracticeFrozenScope = {
+  id:string;
+  subjectId:string;
+  label:string;
+  parentId?:string;
+  order:number;
+  questionIdsByExam:Record<PyqExam,string[]>;
+};
+export type PracticeRecipeV4 = Omit<PracticeRecipeV3, 'version'> & { version: 4; taxonomyVersion?:string; frozenScopes?:PracticeFrozenScope[] };
+export type PracticeRecipe = LegacyPracticeRecipe | PracticeRecipeV2 | PracticeRecipeV3 | PracticeRecipeV4;
 
 export function isPracticeRecipeV2(recipe: PracticeRecipe): recipe is PracticeRecipeV2 {
   return "version" in recipe && recipe.version === 2;
 }
 
-export function isPracticeRecipeV3(recipe: PracticeRecipe): recipe is PracticeRecipeV3 {
-  return "version" in recipe && recipe.version === 3;
+export function isPracticeRecipeV3(recipe: PracticeRecipe): recipe is PracticeRecipeV3 | PracticeRecipeV4 {
+  return "version" in recipe && (recipe.version === 3 || recipe.version === 4);
 }
 
 export type PracticeQuestion = {
@@ -52,6 +62,7 @@ export type PracticeQuestion = {
   promptLines: string[];
   options: Record<string, string>;
   sourceTextHash: string;
+  contentRevision?: number;
   figure?: { src: string; alt: string };
 };
 
@@ -65,8 +76,11 @@ export type PracticeSnapshot = {
 };
 
 export type AnswerFeedback = {
-  correct: boolean;
-  correctAnswer: string;
+  correct: boolean | null;
+  correctAnswer: string | null;
+  disposition?: 'scored' | 'excluded';
+  exclusionReason?: string;
+  reviewRevision?: number;
   explanation: string | null;
   answerKeyRevision?: number;
 };

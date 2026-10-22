@@ -52,14 +52,15 @@ test("inventory returns cross-exam subjects and unique official PYQ flows", asyn
   const response = await workerFetch("/api/pyqs/inventory");
   assert.equal(response.status, 200);
   const inventory = await response.json();
-  assert.equal(inventory.totalCount, 1519);
+  assert.equal(inventory.totalCount, 1713);
   assert.equal(inventory.mappedCount + inventory.unmappedCount, inventory.totalCount);
-  assert.deepEqual(inventory.subjects.map((subject) => subject.label), ["Geography", "Environment", "Polity"]);
+  assert.deepEqual(inventory.subjects.filter(s=>!s.legacyOnly).map((subject) => subject.label), ["Geography", "History", "Polity & Governance", "Economy", "Environment & Ecology", "Science & Technology", "Social Development", "International Relations & Organisations", "Current Affairs"]);
   assert.ok(inventory.nodes.some((node) => node.kind === "topic"));
   assert.ok(inventory.nodes.some((node) => node.kind === "subtopic"));
   assert.ok(inventory.nodes.some((node) => node.kind === "subtopic" && node.examCounts.CDS > 0));
   assert.ok(inventory.nodes.every((node) => Object.values(node.examCounts).reduce((sum, count) => sum + count, 0) === node.questionCount));
-  assert.ok(inventory.links.every((link) => link.questionCount > 0));
+  assert.ok(inventory.links.every((link) => link.questionCount >= 0));
+  assert.ok(inventory.links.some(link=>link.questionCount===0));
   assert.equal(new Set(inventory.nodes.map((node) => node.id)).size, inventory.nodes.length);
   assert.ok(!inventory.subjects.some((subject) => subject.label === "General Studies"));
 });
@@ -75,7 +76,8 @@ test("creates a deterministic mixed-exam snapshot from exact subtopic paths", as
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify({
-      version: 2,
+      version: 4,
+      taxonomyVersion:inventory.taxonomyVersion,
       subjectIds,
       paths: [{ subtopicId: csePath.id, exams: ["CSE"] }, { subtopicId: cdsPath.id, exams: ["CDS"] }],
       count: "all",
@@ -84,7 +86,7 @@ test("creates a deterministic mixed-exam snapshot from exact subtopic paths", as
   });
   assert.equal(response.status, 201);
   const snapshot = await response.json();
-  assert.equal(snapshot.recipe.version, 2);
+  assert.equal(snapshot.recipe.version, 4);
   assert.deepEqual(snapshot.recipe.subjectIds, subjectIds);
   assert.ok(snapshot.questions.some((question) => question.exam === "CSE"));
   assert.ok(snapshot.questions.some((question) => question.exam === "CDS"));
@@ -95,9 +97,7 @@ test("creates a deterministic mixed-exam snapshot from exact subtopic paths", as
 test("rejects a stale V2 count that exceeds the selected path inventory", async () => {
   const inventoryResponse = await workerFetch("/api/pyqs/inventory");
   const inventory = await inventoryResponse.json();
-  const path = inventory.nodes
-    .filter((node) => node.kind === "subtopic" && node.questionCount < 100)
-    .sort((a, b) => a.questionCount - b.questionCount)[0];
+  const path = inventory.nodes.find(node=>node.id==='subtopic:geography:physical-geography:universe-solar-system-shape-and-size-of-earth:planets');
   assert.ok(path);
   const exam = ["CSE", "CAPF", "CDS", "NDA"].find((value) => path.examCounts[value] > 0);
   const response = await workerFetch("/api/practice-snapshots", {
@@ -155,7 +155,8 @@ test("ships exact, locked source records and the local-only PWA model", async ()
   assert.equal(manifest.short_name, "UPSC.PYQ");
   assert.equal(manifest.display, "standalone");
   assert.equal(bank.total, 1519);
-  assert.deepEqual(bank.sourceCounts, { CSE: 485, CAPF: 241, CDS: 313, NDA: 480 });
+  assert.deepEqual(bank.sourceCounts, { CSE: 539, CAPF: 255, CDS: 184, NDA: 541 });
+  for(const [exam,n] of Object.entries(bank.sourceCounts)) assert.equal(bank.questions.filter(q=>q.exam===exam).length,n);
   for (const question of bank.questions) {
     assert.equal(question.origin, "pyq");
     assert.equal(question.sourceTextLocked, true);

@@ -1,6 +1,43 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { formatPracticePrompt, formatPracticeText } from "../lib/practice-prompt.ts";
+import fs from 'node:fs';
+
+test('explicit source pairs become two columns without losing long descriptions or instructions',()=>{
+  const imports=JSON.parse(fs.readFileSync('content/reviewed-prelims-imports.json')).questions;
+  for(const n of [85,89,97]) {
+    const question=imports.find(q=>q.id===`cse-2014-gs-i-${n}`),before=JSON.stringify(question.promptLines);
+    const blocks=formatPracticePrompt(question.promptLines),table=blocks.find(b=>b.kind==='pair-table');
+    assert.ok(table);assert.equal(table.rows.length,3);
+    assert.deepEqual(table.rows.map(r=>r.marker),['1.','2.','3.']);
+    assert.equal(blocks.at(-1).text,'Which of the pairs given above is/are correctly matched?');
+    assert.equal(JSON.stringify(question.promptLines),before);
+    for(const row of table.rows)assert.ok(question.promptLines.some(line=>formatPracticeText(line).includes(`${row.left}: ${row.right}`)));
+  }
+  const sculpture=formatPracticePrompt(imports.find(q=>q.id==='cse-2014-gs-i-85').promptLines).find(b=>b.kind==='pair-table');
+  assert.equal(sculpture.leftTitle,'Famous work of sculpture');assert.equal(sculpture.rightTitle,'Site');
+  assert.ok(sculpture.rows[0].left.includes('sorrowful figures of his followers below'));
+  assert.equal(sculpture.rows[1].right,'Mount Abu');
+});
+
+test('paired-row formatting refuses guessed headings, incomplete pairs and broken numbering',()=>{
+  const cases=[
+    ['Consider the following:','1. Claim: explanation','2. Claim: explanation'],
+    ['Consider the following pairs:','Vitamin : Deficiency disease','1. C : Scurvy','3. D : Rickets'],
+    ['Consider the following pairs:','Vitamin : Deficiency disease','1. C : Scurvy','2. D'],
+    ['Consider the following pairs:','1. Garba : Gujarat','2. Mohiniattam : Odisha'],
+  ];
+  for(const lines of cases)assert.ok(!formatPracticePrompt(lines).some(b=>b.kind==='pair-table'));
+});
+
+test('source-reviewed pilgrimage heading restores its two columns without editing the legacy transcript',()=>{
+  const q=JSON.parse(fs.readFileSync('content/question-bank.json')).questions.find(q=>q.id==='cse-2015-gs-i-15');
+  const before=JSON.stringify(q),blocks=formatPracticePrompt(q.promptLines),table=blocks.find(b=>b.kind==='pair-table');
+  assert.equal(table.leftTitle,'Place of Pilgrimage');assert.equal(table.rightTitle,'Location');
+  assert.deepEqual(table.rows.map(r=>[r.left,r.right]),[['Srisailam','Nallamala Hills'],['Omkareshwar','Satmala Hills'],['Pushkar','Mahadeo Hills']]);
+  assert.equal(blocks.at(-1).text,'Which of the above pairs is/are correctly matched?');
+  assert.equal(JSON.stringify(q),before);
+});
 
 test("prints legacy coordinate notation as conventional paper symbols", () => {
   assert.equal(
