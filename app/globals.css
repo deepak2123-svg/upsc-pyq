@@ -1549,6 +1549,37 @@ h3 { font-size: 16px; }
 .library-breadcrumbs li button:hover { color: var(--accent); text-decoration: underline; }
 .library-breadcrumbs [aria-current] { padding: 4px 0; color: var(--ink); font-weight: 650; overflow-wrap: anywhere; }
 .library-breadcrumbs .library-back-arrow { flex: 0 0 32px; height: 32px; padding: 0; border: 1px solid var(--line); border-radius: 8px; background: white; font-size: 19px; text-align: center; }
+
+/* One shared heading row; all three panel borders start on the next row. */
+.explorer-layout { row-gap: 14px; }
+.library-column-label { margin: 0; min-height: 28px; font-size: 20px; line-height: 1.4; letter-spacing: -.025em; grid-row: 1; }
+.library-column-label-left { grid-column: 1; }
+.library-column-label-middle { grid-column: 2; }
+.library-column-label-right { grid-column: 3; }
+.explorer-layout > .scope-syllabus-rail { grid-column: 1; grid-row: 2; }
+.explorer-layout > .scope-library-browser { grid-column: 2; grid-row: 2; }
+.explorer-layout > .scope-test-summary { grid-column: 3; grid-row: 2; }
+.explorer-layout .scope-syllabus-content { padding: 0; }
+.explorer-layout .scope-syllabus-root[aria-current=location] { display: none; }
+.explorer-layout .scope-cards { border: 1px solid var(--line); border-radius: 12px; background: white; padding: 16px; overflow: hidden; }
+.explorer-layout .scope-cards[data-focus-id=root] { padding: 0; }
+.explorer-layout .scope-cards[data-focus-id=root] .scope-cards-heading { display: none; }
+.explorer-layout .scope-cards .scope-card-grid { border: 0; border-radius: 0; }
+.explorer-layout .scope-cards:not([data-focus-id=root]) .scope-card-grid { border-top: 1px solid var(--line); }
+.explorer-test-heading:empty { display: none; }
+@media (max-width: 1150px) {
+  .library-column-label-right { display: none; }
+}
+@media (max-width: 820px) {
+  .explorer-layout { display: flex; flex-direction: column; gap: 14px; }
+  .explorer-layout > * { width: 100%; }
+  .library-column-label-left { display: none; }
+  .explorer-layout > .scope-syllabus-rail { order: 1; }
+  .library-column-label-middle { order: 2; }
+  .explorer-layout > .scope-library-browser { order: 3; }
+  .explorer-layout .scope-syllabus-content[data-mobile-open=true] { padding: 20px 12px; }
+  .explorer-layout .scope-cards { padding: 12px; }
+}
 .setup-navigation { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: -6px 0 18px; }
 .setup-navigation button { min-width: 40px; min-height: 40px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); background: white; font-size: 18px; }
 .setup-navigation button span { font-size: 13px; }

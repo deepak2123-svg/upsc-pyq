@@ -47,6 +47,31 @@ test("opening and folding folders never adds questions", async ({ page }) => {
   await expect(browser(page).locator(".explorer-folder svg")).toHaveCount(0);
 });
 
+test('column labels sit outside aligned panels and the middle label follows the level',async({page})=>{
+  await expect(page.locator('.library-column-label-left')).toHaveText('Library');
+  await expect(page.locator('.library-column-label-middle')).toHaveText('Subjects');
+  await expect(page.locator('.library-column-label-right')).toHaveText('Test');
+  const aligned=async()=>{
+    const tops=await Promise.all([
+      page.locator('.syllabus-context-panel'),
+      browser(page).locator('.scope-cards'),
+      summary(page)
+    ].map(async element=>(await element.boundingBox())!.y));
+    expect(Math.max(...tops)-Math.min(...tops)).toBeLessThan(1);
+  };
+  await aligned();
+  await page.screenshot({path:'tmp/library-aligned-columns.png',fullPage:true});
+  await open(page,'Geography');
+  await expect(page.locator('.library-column-label-middle')).toHaveText('Sections');
+  await aligned();
+  await open(page,'Physical Geography');
+  await expect(page.locator('.library-column-label-middle')).toHaveText('Chapters');
+  await aligned();
+  await open(page,chapter);
+  await expect(page.locator('.library-column-label-middle')).toHaveText('Subparts');
+  await aligned();
+});
+
 test('clickable folder path, compact rows and setup cancellation preserve selection',async({page})=>{
   await page.screenshot({path:'tmp/library-organised-desktop.png',fullPage:true});
   await open(page,'Environment & Ecology');

@@ -346,6 +346,9 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading}>
     <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{initialExam ? `${initialExam} question library` : "Question library"}</h1></div><details className="scope-inventory-info"><summary>{format(libraryCount)} PYQs <span aria-hidden="true">ⓘ</span></summary><p>{format(initialInventory.unmappedCount)} unclassified questions remain in exam archives.</p></details></header>
     <div className={`scope-library-layout explorer-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
+      <h2 className="library-column-label library-column-label-left">Library</h2>
+      <h2 className="library-column-label library-column-label-middle">{current ? ({subject:"Sections",head:"Chapters",topic:"Subparts",subtopic:"Subpart"} as const)[current.kind] : "Subjects"}</h2>
+      <h2 className="library-column-label library-column-label-right" id="practice-summary-title">Test</h2>
       <aside className="scope-syllabus-rail">
         <button type="button" className="scope-syllabus-mobile-toggle" aria-expanded={syllabusOpen} aria-controls="scope-syllabus-content" onClick={() => setSyllabusOpen((open) => !open)}><span>Library</span><strong>{current?.label || "All subjects"}</strong></button>
           <div ref={libraryDrawer} id="scope-syllabus-content" className="scope-syllabus-content" data-mobile-open={syllabusOpen ? "true" : "false"} role={syllabusOpen ? "dialog" : undefined} aria-modal={syllabusOpen || undefined} aria-label={syllabusOpen ? "Library" : undefined}>
@@ -361,7 +364,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       </section>
 
       <aside ref={testDrawer} className="selection-dock scope-dock scope-test-summary" data-mobile-open={testPanelOpen} role={testPanelOpen ? "dialog" : undefined} aria-modal={testPanelOpen || undefined} aria-labelledby="practice-summary-title">
-        <div className="scope-dock-body"><div className="explorer-test-heading"><h2 id="practice-summary-title">Your test</h2><button type="button" className="explorer-drawer-close" onClick={() => setTestPanelOpen(false)}>Close ×</button>{hasExplicitSelection ? <button type="button" className="explorer-clear" disabled={loading} onClick={clearSelection}>Clear</button> : null}</div>
+        <div className="scope-dock-body"><div className="explorer-test-heading"><button type="button" className="explorer-drawer-close" onClick={() => setTestPanelOpen(false)}>Close ×</button>{hasExplicitSelection ? <button type="button" className="explorer-clear" disabled={loading} onClick={clearSelection}>Clear</button> : null}</div>
           <div className="scope-test-context" data-testid="test-scope-label"><span>{summaryContextLabel}</span><strong title={summaryScopeLabel}>{summaryScopeLabel}</strong></div>
           <div className="scope-matching" data-testid="matching-count"><strong>{format(summaryTotals.matchingCount)}</strong><span>questions</span></div>
           {hasExplicitSelection ? <ul className="explorer-test-items">{selectedIds.map((id) => {

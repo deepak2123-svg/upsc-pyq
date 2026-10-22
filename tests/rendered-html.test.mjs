@@ -25,7 +25,8 @@ test("server-renders the browse-first official PYQ workspace", async () => {
   assert.match(html, /Environment/);
   assert.match(html, /Polity/);
   assert.doesNotMatch(html, /Selected syllabus|Nothing selected yet/);
-  assert.match(html, />Your test</);
+  assert.match(html, /class="library-column-label library-column-label-left">Library</);
+  assert.match(html, /id="practice-summary-title">Test</);
   assert.doesNotMatch(html, /Browse freely|explicitly select|Opening a level|selection unchanged|Select adds|Open only|Question count, time|Choose MCQs and time next/i);
   assert.doesNotMatch(html, /Choose an examination|Year range|Difficulty/);
   assert.match(html, /PYQs/);

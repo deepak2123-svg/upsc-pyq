@@ -21,3 +21,16 @@ folding, responsive long labels (320–1,600px), cumulative/overlapping selectio
 source masks, reload restoration, deepest subparts, keyboard and mobile panels.
 Desktop, setup and mobile screenshots were visually inspected. No source,
 classification, answer, snapshot or saved-attempt data changed.
+
+## Aligned column headings
+
+Use a shared grid heading row: Library, the current contents level (Subjects,
+Sections, Chapters, Subparts/Subpart), and Test. All three bordered panels begin
+on the following row. Remove the repeated root Subjects strip and move Test
+out of its card. Preserve the current-folder title and clickable path inside the
+middle panel. On small screens retain the library drawer and test bottom panel.
+
+The focused alignment test measures the three panel top coordinates (less than
+one pixel difference) at root, subject, section and chapter levels and checks
+each dynamic heading. Three additional browser checks cover folder navigation,
+setup cancellation and mobile panels. Desktop screenshot visually inspected.
