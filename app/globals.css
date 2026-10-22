@@ -1601,3 +1601,32 @@ h3 { font-size: 16px; }
   .library-breadcrumbs li + li::before { padding: 0 5px; }
   .practice-setup-dialog .attempt-route { min-height: 160px; }
 }
+
+/* Subject overview cards: name, proportional exam mix, then add action. */
+.explorer-layout .scope-cards[data-focus-id=root] { border: 0; background: transparent; overflow: visible; }
+.explorer-layout .scope-cards[data-focus-id=root] .scope-card-grid { gap: 12px; background: transparent; }
+.explorer-layout .subject-overview, .explorer-layout .subject-overview:last-child { border: 1px solid #dce1ec; border-radius: 16px; background: white; }
+.explorer-layout .subject-overview .scope-card-body { grid-template-columns: minmax(0,1.15fr) minmax(0,1.5fr) 114px; gap: 10px 20px; padding: 18px 20px; }
+.explorer-layout .subject-overview .scope-card-copy { grid-column: 1; grid-row: 1 / span 2; }
+.explorer-layout .subject-overview h4 { font-size: 16px; }
+.explorer-layout .subject-overview .explorer-folder > span { display: none; }
+.explorer-layout .subject-overview .scope-card-copy > p { font-size: 13px; margin: 4px 0 0; }
+.explorer-layout .subject-overview .scope-card-main > .explorer-add { grid-column: 3; grid-row: 1 / span 2; padding: 10px 12px; min-height: 44px; border: 1px solid #c8d2fa; border-radius: 11px; background: #eef2ff; color: #2445c6; font-size: 12px; font-weight: 700; }
+.explorer-layout .subject-overview .scope-card-source-strip { display: flex; grid-column: 2; grid-row: 1; height: 7px; overflow: hidden; border-radius: 99px; background: #edf0f6; }
+.explorer-layout .subject-overview .scope-card-source-strip i { flex-basis: 0; min-width: 0; background: var(--exam-color); }
+.explorer-layout .subject-overview .scope-card-source-strip i + i { border-left: 2px solid white; }
+.explorer-layout .subject-overview .scope-card-source-counts { display: flex; grid-column: 2; grid-row: 2; flex-wrap: wrap; gap: 7px 14px; padding: 0; }
+.explorer-layout .subject-overview .scope-card-source-counts > span { font-size: 12px; gap: 5px; }
+.explorer-layout .subject-overview .scope-card-source-counts b { font-size: 12px; }
+.explorer-layout .subject-overview .scope-card-source-counts > [data-exam=NDA] { flex-basis: 100%; }
+@media (max-width: 1250px) {
+  .explorer-layout .subject-overview .scope-card-body { gap: 9px 12px; padding: 16px; grid-template-columns: minmax(0,1fr) minmax(0,1.25fr) 104px; }
+  .explorer-layout .subject-overview h4 { font-size: 14px; }
+}
+@media (max-width: 700px) {
+  .explorer-layout .subject-overview .scope-card-body { grid-template-columns: minmax(0,1fr) 104px; gap: 12px; padding: 16px; }
+  .explorer-layout .subject-overview .scope-card-copy { grid-column: 1; grid-row: 1; }
+  .explorer-layout .subject-overview .scope-card-main > .explorer-add { grid-column: 2; grid-row: 1; }
+  .explorer-layout .subject-overview .scope-card-source-strip { grid-column: 1 / -1; grid-row: 2; }
+  .explorer-layout .subject-overview .scope-card-source-counts { grid-column: 1 / -1; grid-row: 3; }
+}

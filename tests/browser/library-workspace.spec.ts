@@ -47,6 +47,33 @@ test("opening and folding folders never adds questions", async ({ page }) => {
   await expect(browser(page).locator(".explorer-folder svg")).toHaveCount(0);
 });
 
+test('subject cards show proportional exam strips and independent add actions',async({page})=>{
+  const data=await(await page.request.get('/api/pyqs/inventory')).json();
+  const card=browser(page).locator('.subject-overview').filter({has:page.getByRole('button',{name:'Open Geography',exact:true})});
+  const source=data.subjects.find((subject:{label:string})=>subject.label==='Geography');
+  const strip=card.locator('.scope-card-source-strip');
+  await expect(strip).toBeVisible();
+  expect(await strip.locator('i').evaluateAll(nodes=>nodes.map(n=>(n as HTMLElement).dataset.exam))).toEqual(['CSE','CDS','CAPF','NDA']);
+  for(const exam of ['CSE','CDS','CAPF','NDA']){
+    const segment=strip.locator(`[data-exam=${exam}]`);
+    expect(Number(await segment.evaluate(n=>getComputedStyle(n).flexGrow))).toBe(source.examCounts[exam]);
+    await expect(card.locator(`.scope-card-source-counts [data-exam=${exam}]`)).toContainText(`${exam} ${source.examCounts[exam]}`);
+  }
+  await expect(card.getByRole('button',{name:'Add to test: Geography',exact:true})).toHaveText('+ Add to test');
+  await page.screenshot({path:'tmp/subject-overview-desktop.png',fullPage:true});
+  await add(page,'Geography');
+  await expect(heading(page)).toHaveText('Subjects');
+  await expect(card.getByRole('button',{name:'Added Geography',exact:true})).toBeDisabled();
+  await open(page,'Geography');
+  await expect(heading(page)).toHaveText('Geography');
+  await page.goBack();
+  for(const width of [1024,390,320]){
+    await page.setViewportSize({width,height:1000});
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+  }
+  await page.screenshot({path:'tmp/subject-overview-mobile.png',fullPage:true});
+});
+
 test('column labels sit outside aligned panels and the middle label follows the level',async({page})=>{
   await expect(page.locator('.library-column-label-left')).toHaveText('Library');
   await expect(page.locator('.library-column-label-middle')).toHaveText('Subjects');

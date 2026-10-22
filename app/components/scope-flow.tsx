@@ -33,6 +33,7 @@ type CardMetrics = {
 };
 
 const number = (value: number) => value.toLocaleString("en-IN");
+const SUBJECT_SOURCE_ORDER: readonly PyqExam[] = ["CSE", "CDS", "CAPF", "NDA"];
 const emptyExamCounts = (): ExamCounts => ({ CSE: 0, CAPF: 0, CDS: 0, NDA: 0 });
 const levelNames: Record<ScopeNode["kind"], string> = {
   subject: "subject",
@@ -116,7 +117,7 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAdd, onB
         const countText = `${number(availableCount)} questions`;
         return <article
           key={node.id}
-          className="scope-card"
+          className={`scope-card${node.kind === "subject" ? " subject-overview" : ""}`}
           data-state={metrics.state}
           data-active={node.id === focus?.id}
           data-scope-id={node.id}
@@ -131,9 +132,9 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAdd, onB
                 <p>{countText}</p>
                 {metrics.state !== "none" ? <small className="explorer-added">{metrics.state === "all" ? "Added" : "Partly added"}</small> : null}
               </div>
-              <button type="button" className="explorer-add" disabled={disabled || availableCount===0 || metrics.state === "all"} aria-label={`${metrics.state === "all" ? "Added" : "Add to test:"} ${node.label}`} onClick={() => onAdd(node.id)}>{metrics.state === "all" ? "Added" : metrics.state === "partial" ? "Add remaining" : "Add to test"}</button>
+              <button type="button" className="explorer-add" disabled={disabled || availableCount===0 || metrics.state === "all"} aria-label={`${metrics.state === "all" ? "Added" : "Add to test:"} ${node.label}`} onClick={() => onAdd(node.id)}>{metrics.state === "all" ? "Added" : metrics.state === "partial" ? "Add remaining" : node.kind === "subject" ? "+ Add to test" : "Add to test"}</button>
             </div>
-            <SourceDistribution counts={metrics.availableExams} exams={preferredExam ? [preferredExam] : PYQ_EXAMS} />
+            <SourceDistribution counts={metrics.availableExams} exams={preferredExam ? [preferredExam] : node.kind === "subject" ? SUBJECT_SOURCE_ORDER : PYQ_EXAMS} />
           </div>
         </article>;
       })}
