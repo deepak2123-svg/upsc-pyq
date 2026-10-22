@@ -198,6 +198,34 @@ test("Exit restores the exam-specific builder's scope, sources, size and duratio
   for (const exam of ["CAPF", "CDS", "NDA"]) await expect(exams.getByRole("checkbox", { name: new RegExp(`^${exam}\\b`) })).not.toBeChecked();
 });
 
+test('reading layout places full-width answers left and the palette right',async({page,request})=>{
+  await fixture(page,request);
+  const card=page.locator('.practice-question'),palette=page.getByRole('complementary',{name:'Question palette'});
+  const cardBox=(await card.boundingBox())!,paletteBox=(await palette.boundingBox())!;
+  expect(cardBox.x+cardBox.width).toBeLessThan(paletteBox.x);
+  expect(Math.abs(cardBox.y-paletteBox.y)).toBeLessThan(1);
+  await expect(page.locator('.question-subject-badge')).toHaveText('Geography');
+  const options=page.getByRole('group',{name:'Answer options'});
+  const first=(await options.getByRole('button').first().boundingBox())!;
+  const second=(await options.getByRole('button').nth(1).boundingBox())!;
+  expect(second.y).toBeGreaterThan(first.y+first.height);
+  expect(first.width).toBeGreaterThan(cardBox.width*.8);
+  await expect(palette.getByRole('group')).toHaveCount(0);
+  await expect(palette.locator('.palette-legend')).toContainText('Not answered');
+  await page.getByRole('button',{name:'Save for later',exact:true}).click();
+  await expect(palette.getByRole('button',{name:/^Question 1,/})).toHaveClass(/saved/);
+  await options.getByRole('button').first().click();
+  await expect(palette.getByRole('button',{name:/^Question 1,/})).toHaveClass(/answered/);
+  await page.screenshot({path:'tmp/practice-reading-desktop.png',fullPage:true});
+  for(const width of [820,390,320]){
+    await page.setViewportSize({width,height:900});
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+  }
+  await palette.getByRole('button',{name:'Show all numbers',exact:true}).click();
+  await expect(palette.getByRole('button',{name:/^Question 3,/})).toBeVisible();
+  await page.screenshot({path:'tmp/practice-reading-mobile.png',fullPage:true});
+});
+
 test("answers remain editable and hidden until submission; result sheet grades answered and skipped questions", async ({ page, request }, testInfo) => {
   const calls: string[] = [];
   page.on("request", (response) => { if (/\/api\/practice\/(check|grade)$/.test(response.url())) calls.push(response.url()); });

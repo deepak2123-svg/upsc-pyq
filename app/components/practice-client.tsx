@@ -33,6 +33,7 @@ const QuestionPalette = memo(function QuestionPalette({ questions, answers, curr
   return <aside className={`question-palette ${open ? "open" : ""}`} aria-label="Question palette">
     <div className="palette-heading"><div><strong>Questions</strong><span>{answered}/{questions.length} answered</span></div><button type="button" className="palette-toggle" aria-expanded={open} aria-controls="question-palette-body" onClick={() => setOpen((value) => !value)}>{open ? "Hide numbers" : "Show all numbers"}</button></div>
     <div className="palette-body" id="question-palette-body">
+      <div className="palette-legend" aria-label="Question status legend"><span><i className="current" />Current</span><span><i className="answered" />Answered</span><span><i className="saved" />Saved</span><span><i className="unanswered" />Not answered</span></div>
       <div className="palette-grid">
         {questions.map((item, index) => {
           const isCurrent = index === currentIndex;
@@ -42,7 +43,6 @@ const QuestionPalette = memo(function QuestionPalette({ questions, answers, curr
           return <button key={item.id} type="button" className={state} aria-current={isCurrent ? "step" : undefined} aria-label={`Question ${index + 1}, ${isAnswered ? "answered" : "not answered"}${isSaved ? ", saved" : ""}`} disabled={disabled} onClick={() => onNavigate(index)}>{index + 1}</button>;
         })}
       </div>
-      <div className="palette-legend" aria-label="Question status legend"><span><i className="current" />Current</span><span><i className="answered" />Answered</span><span><i className="unanswered" />Not answered</span><span><i className="saved" />Saved</span></div>
     </div>
   </aside>;
 });
@@ -285,10 +285,9 @@ export function PracticeClient({ id }: { id: string }) {
       <div className="practice-progress" role="progressbar" aria-label="Practice progress" aria-valuemin={0} aria-valuemax={attempt.snapshot.questions.length} aria-valuenow={answered}><span style={{ width: `${answered / attempt.snapshot.questions.length * 100}%` }} /></div>
       {error && <div className="practice-save-error" role="alert"><p>{error}</p>{saveFailed && !pendingCompletion.current && <button onClick={() => { const value = current.current; if (value) void saveChange(value); }}>Retry saving</button>}</div>}
       <div className="exam-workspace">
-        <QuestionPalette questions={attempt.snapshot.questions} answers={attempt.answers} currentIndex={attempt.currentIndex} bookmarkedIds={bookmarkedIds} disabled={busy || Boolean(pendingCompletion.current)} onNavigate={jumpToQuestion} />
       <AnimatePresence mode="wait" initial={false}>
         <motion.article className={`practice-question reading-${readingSize}`} key={question.id} initial={reducedMotion ? false : { opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={reducedMotion ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: reducedMotion ? 0 : .18 }}>
-          <div className="question-heading"><div className="question-context"><span>Question {attempt.currentIndex + 1} of {attempt.snapshot.questions.length}</span><span>{question.subject}{question.topic ? ` · ${question.topic}` : ""}</span></div><fieldset className="reading-size" aria-label="Question text size"><legend>Text size</legend>{readingSizes.map((size) => <button key={size.value} type="button" title={size.label} aria-label={size.label} aria-pressed={readingSize === size.value} onClick={() => chooseReadingSize(size.value)}>{size.symbol}</button>)}</fieldset></div>
+          <div className="question-heading"><div className="question-context"><span className="visually-hidden">Question {attempt.currentIndex + 1} of {attempt.snapshot.questions.length}</span><span className="question-subject-badge">{question.subject}</span>{question.topic ? <span className="question-topic-badge">{question.topic}</span> : null}</div><fieldset className="reading-size" aria-label="Question text size"><legend>Text size</legend>{readingSizes.map((size) => <button key={size.value} type="button" title={size.label} aria-label={size.label} aria-pressed={readingSize === size.value} onClick={() => chooseReadingSize(size.value)}>{size.symbol}</button>)}</fieldset></div>
           <div className="question-copy">
             <div className="question-paper">
               <PracticePromptView blocks={prompt} className="practice-prompt" figure={question.figure} />
@@ -312,6 +311,7 @@ export function PracticeClient({ id }: { id: string }) {
           <nav className="question-navigation" aria-label="Question navigation"><button disabled={busy || Boolean(pendingCompletion.current) || attempt.currentIndex === 0} onClick={() => void navigate(attempt.currentIndex - 1)}>← Previous</button><button className="bookmark-action" onClick={() => void toggleBookmark()}>{bookmarked ? "Saved" : "Save for later"}</button>{attempt.currentIndex < attempt.snapshot.questions.length - 1 ? <button className="next-question" disabled={busy || Boolean(pendingCompletion.current)} onClick={() => void navigate(attempt.currentIndex + 1)}>Save & next →</button> : <button className="next-question" disabled={busy} onClick={() => void finish()}>{attempt.status === "completed" ? "View results" : "Submit test"}</button>}</nav>
         </motion.article>
       </AnimatePresence>
+        <QuestionPalette questions={attempt.snapshot.questions} answers={attempt.answers} currentIndex={attempt.currentIndex} bookmarkedIds={bookmarkedIds} disabled={busy || Boolean(pendingCompletion.current)} onNavigate={jumpToQuestion} />
       </div>
     </main>
   );
