@@ -47,6 +47,40 @@ test("opening and folding folders never adds questions", async ({ page }) => {
   await expect(browser(page).locator(".explorer-folder svg")).toHaveCount(0);
 });
 
+test('clickable folder path, compact rows and setup cancellation preserve selection',async({page})=>{
+  await page.screenshot({path:'tmp/library-organised-desktop.png',fullPage:true});
+  await open(page,'Environment & Ecology');
+  await open(page,'Biodiversity');
+  const path=page.getByRole('navigation',{name:'Folder path'});
+  await expect(path).toContainText('Subjects');
+  await expect(path.getByRole('button',{name:'Environment & Ecology',exact:true})).toBeVisible();
+  await expect(path.locator('[aria-current=location]')).toHaveText('Biodiversity');
+  await summary(page).getByRole('button',{name:'Test this folder →',exact:true}).click();
+  const selectedCount=await count(page).innerText();
+  const dialog=page.getByRole('dialog');
+  await expect(dialog.getByRole('button',{name:'Back to library',exact:true})).toBeVisible();
+  await page.screenshot({path:'tmp/library-organised-setup.png',fullPage:true});
+  await dialog.getByRole('button',{name:'Back to library',exact:true}).click();
+  await expect(dialog).toHaveCount(0);
+  await expect(count(page)).toHaveText(selectedCount);
+  await summary(page).getByRole('button',{name:'Set up test →',exact:true}).click();
+  await dialog.getByRole('button',{name:/Take an online test/}).click();
+  await dialog.getByRole('button',{name:'Back to attempt methods',exact:true}).click();
+  await expect(dialog.getByRole('button',{name:/Take an online test/})).toBeVisible();
+  await dialog.getByRole('button',{name:'Close test setup',exact:true}).click();
+  await expect(dialog).toHaveCount(0);
+  await path.getByRole('button',{name:'Environment & Ecology',exact:true}).click();
+  await expect(heading(page)).toHaveText('Environment & Ecology');
+  await expect(count(page)).toHaveText(selectedCount);
+  await path.getByRole('button',{name:'Subjects',exact:true}).click();
+  await expect(heading(page)).toHaveText('Subjects');
+  for(const width of [1600,1024,390,320]){
+    await page.setViewportSize({width,height:1000});
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+  }
+  await page.screenshot({path:'tmp/library-organised-mobile.png',fullPage:true});
+});
+
 test("browser and app Back follow folder history without changing selected questions", async ({ page }) => {
   await open(page, "Geography");
   await open(page, "Physical Geography");
@@ -64,7 +98,7 @@ test("browser and app Back follow folder history without changing selected quest
   await page.reload();
   await expect(heading(page)).toHaveText(chapter);
   await expect(count(page)).toHaveText(selectedCount);
-  await browser(page).getByRole('button', { name: '← Back', exact: true }).click();
+  await browser(page).getByRole('button', { name: 'Back to previous folder', exact: true }).click();
   await expect(heading(page)).toHaveText("Physical Geography");
   await expect(count(page)).toHaveText(selectedCount);
   await page.goForward();
@@ -81,7 +115,7 @@ test("a direct folder link overrides a saved location and has a usable parent Ba
   await page.evaluate(() => sessionStorage.clear());
   await page.goto(link);
   await expect(heading(page)).toHaveText(chapter);
-  await browser(page).getByRole('button', { name: '← Back', exact: true }).click();
+  await browser(page).getByRole('button', { name: 'Back to previous folder', exact: true }).click();
   await expect(heading(page)).toHaveText("Physical Geography");
 });
 
@@ -159,7 +193,7 @@ test("adding a parent deduplicates a selected child and collapses the selection"
   await expect(count(page)).toHaveText(String(chapterCount));
   await expect(page.locator(".explorer-test-items li")).toHaveCount(1);
   await expect(summary(page)).toContainText(chapter);
-  await browser(page).getByRole("button", { name: "← Back", exact: true }).click();
+  await browser(page).getByRole("button", { name: "Back to previous folder", exact: true }).click();
   await expect(browser(page).getByRole("button", { name: `Added ${chapter}`, exact: true })).toBeDisabled();
 });
 

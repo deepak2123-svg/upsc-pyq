@@ -59,6 +59,10 @@ function PracticeSetupDialog({ matchingCount, examMetrics, count, order, duratio
   </>;
   return <dialog ref={dialog} className="scope-add-dialog practice-setup-dialog" aria-labelledby="practice-setup-title" onCancel={(event) => { event.preventDefault(); if (!busy) onCancel(); }}>
     <form onSubmit={(event) => { event.preventDefault(); if (mode === "online") onStart(); }}>
+      <div className="setup-navigation">
+        <button type="button" aria-label={mode ? "Back to attempt methods" : "Back to library"} disabled={busy} onClick={() => mode ? setMode(null) : onCancel()}>← <span>{mode ? "Methods" : "Library"}</span></button>
+        <button type="button" aria-label="Close test setup" disabled={busy} onClick={onCancel}>×</button>
+      </div>
       <span className="selector-label">Final step</span>
       <h2 id="practice-setup-title">How would you like to attempt these questions?</h2>
       <p><strong>{format(matchingCount)} questions</strong> match your selected chapters.</p>
@@ -352,7 +356,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
 
       <section className="scope-refine scope-library-browser" aria-labelledby="scope-refine-title">
         <h2 id="scope-refine-title" className="visually-hidden">{current ? `Browse ${current.label}` : "Browse subjects"}</h2>
-        <ScopeFlow inventory={workingInventory} paths={paths} focusId={focusId} preferredExam={initialExam} onAdd={addToTest} onBrowse={browse} onBack={goBack} disabled={loading || !restored} />
+        <ScopeFlow inventory={workingInventory} paths={paths} focusId={focusId} preferredExam={initialExam} onAdd={addToTest} onBrowse={browse} onBack={goBack} onBrowseRoot={browseRoot} disabled={loading || !restored} />
         <p className="visually-hidden" role="status" aria-live="polite">{notice}</p>
       </section>
 

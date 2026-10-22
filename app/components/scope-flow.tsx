@@ -7,6 +7,7 @@ import {
   buildSelectionIndex,
   scopeDisplayNumber,
   scopeMetrics,
+  ancestors,
   type ScopeNode,
   type SelectionPaths,
   type SelectionState,
@@ -20,6 +21,7 @@ type ScopeCardsProps = {
   onAdd: (id: string) => void;
   onBrowse: (id: string) => void;
   onBack: () => void;
+  onBrowseRoot: () => void;
   disabled?: boolean;
 };
 
@@ -65,7 +67,7 @@ function SourceDistribution({ counts, exams = PYQ_EXAMS }: { counts: ExamCounts;
   </>;
 }
 
-export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAdd, onBrowse, onBack, disabled = false }: ScopeCardsProps) {
+export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAdd, onBrowse, onBack, onBrowseRoot, disabled = false }: ScopeCardsProps) {
   const index = useMemo(() => buildSelectionIndex(inventory), [inventory]);
   const focus = index.nodesById.get(focusId || "");
 
@@ -85,9 +87,17 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAdd, onB
   const focusState = focus ? scopeMetrics(focus.id, paths, index).state : "none";
 
   return <section className="scope-cards" aria-label={`${subjectLabel} ${pluralLevel}`} data-focus-id={focus?.id || "root"}>
+    {focus ? <nav className="library-breadcrumbs" aria-label="Folder path">
+      <button type="button" className="library-back-arrow" aria-label="Back to previous folder" disabled={disabled} onClick={onBack}>←</button>
+      <ol>
+        <li><button type="button" disabled={disabled} onClick={onBrowseRoot}>Subjects</button></li>
+        {ancestors(focus.id,index).map(node=><li key={node.id}>{node.id===focus.id
+          ? <span aria-current="location">{node.label}</span>
+          : <button type="button" disabled={disabled} onClick={()=>onBrowse(node.id)}>{node.label}</button>}</li>)}
+      </ol>
+    </nav> : null}
     <header className="scope-cards-heading">
       <div>
-        {focus ? <button type="button" className="explorer-back" disabled={disabled} onClick={onBack}>← Back</button> : null}
         {focus ? <small>{scopeDisplayNumber(focus.id, index)}</small> : null}
         <h3>{focus?.label || "Subjects"}</h3>
         {focus ? <span>{number(preferredExam ? focus.examCounts[preferredExam] : focus.questionCount)} MCQs</span> : null}
@@ -97,7 +107,7 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAdd, onB
       </div>
       {focus ? <button type="button" className="explorer-add" disabled={disabled || (preferredExam?focus.examCounts[preferredExam]:focus.questionCount)===0 || focusState === "all"} onClick={() => onAdd(focus.id)}>{focusState === "all" ? "Added" : focusState === "partial" ? "Add remaining" : "Add entire folder"}</button> : null}
     </header>
-    {cards.length ? <h4 className="explorer-contents-label">{heading}</h4> : focus ? <div className="explorer-leaf"><SourceDistribution counts={cardMetrics(focus, paths, index, preferredExam).availableExams} exams={preferredExam ? [preferredExam] : PYQ_EXAMS} /></div> : null}
+    {cards.length && focus ? <h4 className="explorer-contents-label">{heading}</h4> : !cards.length && focus ? <div className="explorer-leaf"><SourceDistribution counts={cardMetrics(focus, paths, index, preferredExam).availableExams} exams={preferredExam ? [preferredExam] : PYQ_EXAMS} /></div> : null}
     <div className="scope-card-grid">
       {cards.map((node) => {
         const metrics = cardMetrics(node, paths, index, preferredExam);
