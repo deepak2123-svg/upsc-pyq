@@ -1172,7 +1172,9 @@
       "questionId": "capf-2019-i-27",
       "expectedRecordHash": "276ad021f48d1534444ed2e92a89b60498c784b62cf745540bc186c00e2dc463",
       "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports",
-      "additionalIds": [],
+      "additionalIds": [
+        "syllabus:economy/current-affairs/economic-reports-and-indices/development-reports"
+      ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
       "rationale": "Four report themes are compared for UNFPA State of World Population 2019.",
@@ -1184,7 +1186,17 @@
         "Event-based"
       ],
       "editorialBatch": "CAPF/2019/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/development-reports"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "capf-2019-i-37",
@@ -1686,7 +1698,8 @@
       "primaryId": "syllabus:economy/development/labour-and-distribution/employment-measurement",
       "additionalIds": [
         "syllabus:social-development/employment-skills/work-and-skills/labour-participation",
-        "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports"
+        "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports",
+        "syllabus:economy/current-affairs/economic-reports-and-indices/development-reports"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -1699,7 +1712,17 @@
         "Event-based"
       ],
       "editorialBatch": "CAPF/2020/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/development-reports"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "capf-2020-i-65",
@@ -2097,7 +2120,8 @@
       "expectedRecordHash": "b81c9c67bd2e60b201ce874ece6a9a36b3c5c282da52d2b643250f1ea0dba1e8",
       "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/economic-rankings",
       "additionalIds": [
-        "syllabus:social-development/population/demography-and-development/human-development-indicators"
+        "syllabus:social-development/population/demography-and-development/human-development-indicators",
+        "syllabus:economy/current-affairs/economic-reports-and-indices/economic-rankings"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -2110,7 +2134,17 @@
         "Event-based"
       ],
       "editorialBatch": "CAPF/2021/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/economic-rankings"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/economic-rankings"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "capf-2021-i-34",
@@ -2623,7 +2657,8 @@
       "expectedRecordHash": "de3368c8142f4023e30ed4a55b55d32d727f66f8100c8054d05e7ab1ae542dc6",
       "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/indicators-and-methodology",
       "additionalIds": [
-        "syllabus:social-development/population/demography-and-development/human-development-indicators"
+        "syllabus:social-development/population/demography-and-development/human-development-indicators",
+        "syllabus:economy/current-affairs/economic-reports-and-indices/indicators-and-methodology"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -2636,7 +2671,17 @@
         "Static"
       ],
       "editorialBatch": "CAPF/2022/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/indicators-and-methodology"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/indicators-and-methodology"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "capf-2022-i-63",
@@ -3229,7 +3274,8 @@
       "primaryId": "syllabus:geography/indian-geography/agriculture-and-irrigation/food-crops",
       "additionalIds": [
         "syllabus:science-technology/biology/human-physiology/nutrition-and-digestion",
-        "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -3242,7 +3288,17 @@
         "Event-based"
       ],
       "editorialBatch": "CAPF/2023/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "capf-2023-i-83",
@@ -3888,7 +3944,8 @@
       "expectedRecordHash": "a0e733509e6ea26c89e52e68d152445e5c093f141cdb76d45720e98422d4d008",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
       "additionalIds": [
-        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy"
+        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy",
+        "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -3901,7 +3958,17 @@
         "Event-based"
       ],
       "editorialBatch": "CAPF/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "capf-2025-i-121",
@@ -4220,7 +4287,8 @@
       "expectedRecordHash": "39dfe265c1b4a16d9202c025ae0682980dfb94b88a9a64085329b697443bac8f",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
-        "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks"
+        "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -4233,7 +4301,17 @@
         "Static"
       ],
       "editorialBatch": "CAPF/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "capf-2025-i-85",
@@ -4336,7 +4414,9 @@
       "expectedRecordHash": "d0f3a35766afdcb8c9e5951863ce64d9bc8326ea423b73a8029897b969ea9cb3",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics",
       "additionalIds": [
-        "syllabus:current-affairs/economy-development/sectoral-developments/industrial-developments"
+        "syllabus:current-affairs/economy-development/sectoral-developments/industrial-developments",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics",
+        "syllabus:economy/current-affairs/sectoral-developments/industrial-developments"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -4349,14 +4429,27 @@
         "Event-based"
       ],
       "editorialBatch": "CAPF/2026/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics",
+          "syllabus:current-affairs/economy-development/sectoral-developments/industrial-developments"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics",
+          "syllabus:economy/current-affairs/sectoral-developments/industrial-developments"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "capf-2026-i-22",
       "expectedRecordHash": "3bdcd5d8d10e7e7b8b01b4d7b6cdb7fcbe9efbe68832315a1330a11fb3011b95",
       "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/economic-rankings",
       "additionalIds": [
-        "syllabus:social-development/population/demography-and-development/human-development-indicators"
+        "syllabus:social-development/population/demography-and-development/human-development-indicators",
+        "syllabus:economy/current-affairs/economic-reports-and-indices/economic-rankings"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -4369,7 +4462,17 @@
         "Event-based"
       ],
       "editorialBatch": "CAPF/2026/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/economic-rankings"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/economic-rankings"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "capf-2026-i-6",
@@ -4377,7 +4480,8 @@
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
         "syllabus:international-relations-organisations/india-s-relations/bilateral-relations/major-powers",
-        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy"
+        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -4390,7 +4494,17 @@
         "Event-based"
       ],
       "editorialBatch": "CAPF/2026/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "capf-2026-i-71",
@@ -4492,7 +4606,8 @@
       "primaryId": "syllabus:geography/indian-geography/location-and-extent/strategic-locations",
       "additionalIds": [
         "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
-        "syllabus:environment-ecology/biodiversity/species-and-relationships/species-distribution"
+        "syllabus:environment-ecology/biodiversity/species-and-relationships/species-distribution",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -4505,7 +4620,17 @@
         "Event-based"
       ],
       "editorialBatch": "CAPF/2026/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "capf-2026-i-77",
@@ -4649,7 +4774,8 @@
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
       "additionalIds": [
         "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy",
-        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/household-energy-access"
+        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/household-energy-access",
+        "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -4662,7 +4788,17 @@
         "Event-based"
       ],
       "editorialBatch": "CAPF/2026/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "capf-2026-i-85",
@@ -7732,7 +7868,8 @@
       "expectedRecordHash": "7f62fe0c07dc7686320d3bc3f2a0ea5bf6d047d01020def89660aa7a7cdfa8f3",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
       "additionalIds": [
-        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy"
+        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy",
+        "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -7745,7 +7882,17 @@
         "Event-based"
       ],
       "editorialBatch": "CDS/2016/2/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cds-2016-2-30",
@@ -8215,7 +8362,8 @@
       "expectedRecordHash": "f96773d19df745b73b68be45b7050592e6e755b6ea11758c92044e5f3e918144",
       "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions",
       "additionalIds": [
-        "syllabus:economy/external-sector/trade-and-exchange-rates/international-financial-institutions"
+        "syllabus:economy/external-sector/trade-and-exchange-rates/international-financial-institutions",
+        "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -8228,7 +8376,17 @@
         "Static"
       ],
       "editorialBatch": "CSE/2016/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cds-2016-2016-77",
@@ -8742,7 +8900,8 @@
       "expectedRecordHash": "bef45ed47d7821845db6c47723460af7c844d0e68a26168805db5fde36ddc069",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics",
       "additionalIds": [
-        "syllabus:geography/indian-geography/agriculture-and-irrigation/commercial-crops"
+        "syllabus:geography/indian-geography/agriculture-and-irrigation/commercial-crops",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -8755,7 +8914,17 @@
         "Event-based"
       ],
       "editorialBatch": "CDS/2017/2/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cds-2017-2-28",
@@ -9154,7 +9323,9 @@
       "questionId": "cds-2017-2017-2-96",
       "expectedRecordHash": "131403335b434b43a6a181685b6a4013e0bf6ca510d2d458077f1fd9435c1617",
       "primaryId": "syllabus:current-affairs/economy-development/finance-and-economic-policy/financial-regulation",
-      "additionalIds": [],
+      "additionalIds": [
+        "syllabus:economy/current-affairs/finance-and-economic-policy/financial-regulation"
+      ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
       "rationale": "Four official designations are compared for chairmanship of a virtual-currency review committee.",
@@ -9166,7 +9337,17 @@
         "Event-based"
       ],
       "editorialBatch": "NDA/2017/II/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/finance-and-economic-policy/financial-regulation"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/finance-and-economic-policy/financial-regulation"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cds-2017-2017-26",
@@ -9231,7 +9412,8 @@
       "expectedRecordHash": "eb1fdd3dc698b860d68ab3a5c132bcb55c7c71ac6fede37b8d8867172a6308a0",
       "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions",
       "additionalIds": [
-        "syllabus:social-development/vulnerable-groups/equity-and-empowerment/women"
+        "syllabus:social-development/vulnerable-groups/equity-and-empowerment/women",
+        "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -9244,7 +9426,17 @@
         "Static"
       ],
       "editorialBatch": "CSE/2017/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cds-2018-2018-1-137",
@@ -9704,7 +9896,9 @@
       "questionId": "cds-2019-2019-3",
       "expectedRecordHash": "34242094278e95af75150f8377679f221b435ab1a0942ead84f3359eddb8bb27",
       "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions",
-      "additionalIds": [],
+      "additionalIds": [
+        "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+      ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
       "rationale": "The alternatives identify the publisher of the Global Competitiveness Report.",
@@ -9716,7 +9910,17 @@
         "Static"
       ],
       "editorialBatch": "CSE/2019/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cds-2020-2020-1-and-2-102",
@@ -10473,7 +10677,8 @@
       "expectedRecordHash": "2226a9239c37fafa3d18f1e07b0b0b9e1ce4cf672d35d2ee2d7ae5604f5fc8f6",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/development-programmes",
       "additionalIds": [
-        "syllabus:economy/development/development-policy/planning-institutions"
+        "syllabus:economy/development/development-policy/planning-institutions",
+        "syllabus:economy/current-affairs/sectoral-developments/development-programmes"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -10486,7 +10691,17 @@
         "Event-based"
       ],
       "editorialBatch": "NDA/2025/II/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/development-programmes"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/development-programmes"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cds-2025-2025-2-24",
@@ -13999,7 +14214,9 @@
       "questionId": "cse-2014-gs-i-99",
       "expectedRecordHash": "eec4695511a9d3c6907120b3184b626210bdc67ba470435da5d665386d1cce1c",
       "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions",
-      "additionalIds": [],
+      "additionalIds": [
+        "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+      ],
       "status": "approved",
       "basis": "original-page-and-key-reviewed-import",
       "rationale": "The publishing institution of an economic report is tested. Use the subject-specific economic-report home, not miscellaneous or international appointments. With no named edition, date or finding, this is Static rather than a claimed recent event.",
@@ -14009,7 +14226,17 @@
       },
       "tags": [
         "Static"
-      ]
+      ],
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2015-gs-i-1",
@@ -14222,7 +14449,8 @@
       "primaryId": "syllabus:polity-governance/institutions/constitutional-and-statutory-bodies/finance-commission",
       "additionalIds": [
         "syllabus:economy/public-finance/taxation/fiscal-federalism",
-        "syllabus:current-affairs/economy-development/finance-and-economic-policy/fiscal-policy-and-devolution"
+        "syllabus:current-affairs/economy-development/finance-and-economic-policy/fiscal-policy-and-devolution",
+        "syllabus:economy/current-affairs/finance-and-economic-policy/fiscal-policy-and-devolution"
       ],
       "status": "approved",
       "basis": "original-page-and-key-reviewed-import",
@@ -14233,7 +14461,17 @@
       },
       "tags": [
         "Event-based"
-      ]
+      ],
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/finance-and-economic-policy/fiscal-policy-and-devolution"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/finance-and-economic-policy/fiscal-policy-and-devolution"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2015-gs-i-20",
@@ -14255,7 +14493,9 @@
       "questionId": "cse-2015-gs-i-21",
       "expectedRecordHash": "fd2481691213d9df2a03d71640880225daf6708941ade5afada0883603ac10b6",
       "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions",
-      "additionalIds": [],
+      "additionalIds": [
+        "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+      ],
       "status": "approved",
       "basis": "original-page-and-key-reviewed-import",
       "rationale": "This is static identification of an economic report publisher. No edition, date or findings are specified; keep it in the economic-report section without inventing a current event.",
@@ -14265,7 +14505,17 @@
       },
       "tags": [
         "Static"
-      ]
+      ],
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2015-gs-i-22",
@@ -14387,7 +14637,8 @@
       "expectedRecordHash": "422b93e52cc88a62db40815a3d4c871f2f5736dcbc45969345e3e003bbda24a1",
       "primaryId": "syllabus:economy/economic-foundations/inflation/price-indices",
       "additionalIds": [
-        "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions"
+        "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions",
+        "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
       ],
       "status": "approved",
       "basis": "original-page-and-key-reviewed-import",
@@ -14398,7 +14649,17 @@
       },
       "tags": [
         "Static"
-      ]
+      ],
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2015-gs-i-3",
@@ -15754,7 +16015,8 @@
       "expectedRecordHash": "41ce730a31ffa5f9af316c9bd4841178e5a3c81a6a5b8281d4ff1730b8450568",
       "primaryId": "syllabus:current-affairs/economy-development/finance-and-economic-policy/international-monetary-developments",
       "additionalIds": [
-        "syllabus:economy/external-sector/balance-of-payments/reserves"
+        "syllabus:economy/external-sector/balance-of-payments/reserves",
+        "syllabus:economy/current-affairs/finance-and-economic-policy/international-monetary-developments"
       ],
       "status": "approved",
       "basis": "original-page-and-key-reviewed-import",
@@ -15765,7 +16027,17 @@
       },
       "tags": [
         "Event-based"
-      ]
+      ],
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/finance-and-economic-policy/international-monetary-developments"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/finance-and-economic-policy/international-monetary-developments"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2016-gs-i-15",
@@ -16178,7 +16450,9 @@
       "questionId": "cse-2016-gs-i-37",
       "expectedRecordHash": "82041cb7cede02240d06ba3d244e055a44a3b7425e78b1afc02d8d58f7304901",
       "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions",
-      "additionalIds": [],
+      "additionalIds": [
+        "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+      ],
       "status": "approved",
       "basis": "original-page-and-key-reviewed-import",
       "rationale": "Publisher identification for an economic ranking is the full task. No particular index release, numerical rank or event date is supplied; keep Static.",
@@ -16188,7 +16462,17 @@
       },
       "tags": [
         "Static"
-      ]
+      ],
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2016-gs-i-38",
@@ -16383,7 +16667,8 @@
       "expectedRecordHash": "85b2c883b1ca6918f59099ea4d131c5f6dd7078c99992729566acd306bde5426",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives",
       "additionalIds": [
-        "syllabus:economy/agriculture/agricultural-economy/inputs"
+        "syllabus:economy/agriculture/agricultural-economy/inputs",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -16396,7 +16681,17 @@
         "Static"
       ],
       "editorialBatch": "CSE/2016/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2016-gs-i-49",
@@ -16636,7 +16931,8 @@
       "expectedRecordHash": "4f207b997db61abf1ceb4e0cec6a30344cc9a670c0dd3978c1bec516995ae103",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/industrial-developments",
       "additionalIds": [
-        "syllabus:economy/industry-services-infrastructure/industry-and-enterprise/industrial-zones-and-sezs"
+        "syllabus:economy/industry-services-infrastructure/industry-and-enterprise/industrial-zones-and-sezs",
+        "syllabus:economy/current-affairs/sectoral-developments/industrial-developments"
       ],
       "status": "approved",
       "basis": "original-page-and-key-reviewed-import",
@@ -16647,7 +16943,17 @@
       },
       "tags": [
         "Event-based"
-      ]
+      ],
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/industrial-developments"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/industrial-developments"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2016-gs-i-62",
@@ -17054,7 +17360,8 @@
       "expectedRecordHash": "3c5245b908e4167e39a57c150592678dd7db4f063f5dffd0040b9cb15ccd6e14",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
-        "syllabus:geography/indian-geography/drainage/river-projects"
+        "syllabus:geography/indian-geography/drainage/river-projects",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -17067,7 +17374,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2016/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2016-gs-i-86",
@@ -17194,7 +17511,8 @@
       "expectedRecordHash": "3b9cd8df3ef42ab5128189231baf26f59f0141ebff88ec566b8c4186ba5b35e9",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
-        "syllabus:geography/indian-geography/industry-and-transport/ports-and-waterways"
+        "syllabus:geography/indian-geography/industry-and-transport/ports-and-waterways",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -17207,7 +17525,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2016/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2016-gs-i-97",
@@ -17623,7 +17951,8 @@
       "expectedRecordHash": "bdbc40bc5b2fb405f9f48a002158ad0f57e95cf417674fb43ba82c3d46e823f2",
       "primaryId": "syllabus:economy/agriculture/agricultural-economy/inputs",
       "additionalIds": [
-        "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives"
+        "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -17636,7 +17965,17 @@
         "Static"
       ],
       "editorialBatch": "CSE/2017/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2017-gs-i-80",
@@ -18493,7 +18832,8 @@
       "expectedRecordHash": "0945e887ae63c23b5b018d7615b2142bd08e8e6ac413a6d37be2d6827624e83f",
       "primaryId": "syllabus:geography/human-economic-geography/transport-and-trade/international-trade-patterns",
       "additionalIds": [
-        "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -18506,7 +18846,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2019/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2019-gs-i-38",
@@ -18627,7 +18977,8 @@
       "expectedRecordHash": "d152de89022c370f0a454780e210b5cbf4180b16fff4556b1b8e6c6baa1c1e3b",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics",
       "additionalIds": [
-        "syllabus:geography/indian-geography/agriculture-and-irrigation/cropping-patterns"
+        "syllabus:geography/indian-geography/agriculture-and-irrigation/cropping-patterns",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -18640,7 +18991,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2019/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2020-gs-i-10",
@@ -18961,7 +19322,8 @@
       "expectedRecordHash": "88c768c825e9d1d4de57b01f5b376449c7afb87f0cf8f2398bff3253b2a4e625",
       "primaryId": "syllabus:geography/indian-geography/agriculture-and-irrigation/crop-seasons",
       "additionalIds": [
-        "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -18974,7 +19336,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2020/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2020-gs-i-87",
@@ -20219,7 +20591,8 @@
       "primaryId": "syllabus:geography/human-economic-geography/economic-activities/global-production-networks",
       "additionalIds": [
         "syllabus:economy/external-sector/trade-and-exchange-rates/foreign-investment",
-        "syllabus:current-affairs/economy-development/sectoral-developments/international-economic-developments"
+        "syllabus:current-affairs/economy-development/sectoral-developments/international-economic-developments",
+        "syllabus:economy/current-affairs/sectoral-developments/international-economic-developments"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -20232,7 +20605,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2022/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/international-economic-developments"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/international-economic-developments"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2022-gs-i-7",
@@ -20431,7 +20814,8 @@
       "expectedRecordHash": "fca090850bcaf68606fb09d670c99f02fef21cab62b6b76676f2e2225b024717",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
-        "syllabus:geography/indian-geography/mineral-and-energy-resources/renewable-resources"
+        "syllabus:geography/indian-geography/mineral-and-energy-resources/renewable-resources",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -20444,7 +20828,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2022/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2022-gs-i-85",
@@ -20491,7 +20885,8 @@
       "expectedRecordHash": "ea47263d3d533020e7815b2cd5974d3cb3421dc14433c0e4eff05af1f3e81927",
       "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
       "additionalIds": [
-        "syllabus:current-affairs/economy-development/sectoral-developments/international-economic-developments"
+        "syllabus:current-affairs/economy-development/sectoral-developments/international-economic-developments",
+        "syllabus:economy/current-affairs/sectoral-developments/international-economic-developments"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -20504,7 +20899,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2022/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/international-economic-developments"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/international-economic-developments"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2022-gs-i-88",
@@ -20863,7 +21268,8 @@
       "expectedRecordHash": "7aa0de254c1a3610a5f284786bd3cb2759ad8df338f96480b8f56b5b42a43830",
       "primaryId": "syllabus:geography/world-geography/world-resources/mineral-belts",
       "additionalIds": [
-        "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
+        "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -20876,7 +21282,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2023/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2023-gs-i-38",
@@ -21413,7 +21829,8 @@
       "expectedRecordHash": "d27f1a742e7e7429e6f01cd66aba1df0e7a5555c6dee7f04f829e84f00bea54f",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
-        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/transport"
+        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/transport",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -21426,7 +21843,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2024/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2024-gs-i-12",
@@ -21714,7 +22141,8 @@
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives",
       "additionalIds": [
         "syllabus:environment-ecology/climate-change/climate-responses/adaptation",
-        "syllabus:environment-ecology/climate-change/climate-responses/mitigation"
+        "syllabus:environment-ecology/climate-change/climate-responses/mitigation",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -21727,7 +22155,17 @@
         "Static"
       ],
       "editorialBatch": "CSE/2024/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2024-gs-i-27",
@@ -21968,7 +22406,8 @@
       "expectedRecordHash": "44502cbb9a53606a564db2627c96aaabf976b21d74e1df8e5728a596e021f354",
       "primaryId": "syllabus:geography/world-geography/world-resources/agricultural-regions",
       "additionalIds": [
-        "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -21988,7 +22427,17 @@
         }
       ],
       "editorialBatch": "CSE/2024/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2024-gs-i-59",
@@ -22117,7 +22566,8 @@
       "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/conflicts-and-peace-processes",
       "additionalIds": [
         "syllabus:current-affairs/economy-development/sectoral-developments/international-economic-developments",
-        "syllabus:current-affairs/international-affairs/summits-and-organisations/membership-changes"
+        "syllabus:current-affairs/international-affairs/summits-and-organisations/membership-changes",
+        "syllabus:economy/current-affairs/sectoral-developments/international-economic-developments"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -22130,7 +22580,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2024/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/international-economic-developments"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/international-economic-developments"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2024-gs-i-88",
@@ -22276,7 +22736,8 @@
       "expectedRecordHash": "f802aebb512f33ac98e6db9d6d3a38a651c2003a234328022c81bbd4a919a746",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/international-economic-developments",
       "additionalIds": [
-        "syllabus:geography/world-geography/world-resources/energy-regions"
+        "syllabus:geography/world-geography/world-resources/energy-regions",
+        "syllabus:economy/current-affairs/sectoral-developments/international-economic-developments"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -22289,7 +22750,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2024/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/international-economic-developments"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/international-economic-developments"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2024-gs-i-98",
@@ -22420,7 +22891,8 @@
       "expectedRecordHash": "407aa0c4fbc6029c8d0a4c4405b5fabff72aa573400b72b7e03eb260ed153d32",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics",
       "additionalIds": [
-        "syllabus:geography/indian-geography/agriculture-and-irrigation/commercial-crops"
+        "syllabus:geography/indian-geography/agriculture-and-irrigation/commercial-crops",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -22433,7 +22905,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2025/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2025-gs-i-25",
@@ -22541,7 +23023,8 @@
       "primaryId": "syllabus:economy/agriculture/allied-activities/livestock",
       "additionalIds": [
         "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives",
-        "syllabus:social-development/poverty-inclusion/poverty-and-inequality/inclusive-development"
+        "syllabus:social-development/poverty-inclusion/poverty-and-inequality/inclusive-development",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -22554,7 +23037,17 @@
         "Static"
       ],
       "editorialBatch": "CSE/2025/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2025-gs-i-31",
@@ -22647,7 +23140,8 @@
       "expectedRecordHash": "47156f684bff2f27de8d3e9f460105761bf62de5efe82b165f9a6800f85f9438",
       "primaryId": "syllabus:current-affairs/economy-development/finance-and-economic-policy/nature-and-climate-finance-initiatives",
       "additionalIds": [
-        "syllabus:environment-ecology/climate-change/climate-responses/climate-finance"
+        "syllabus:environment-ecology/climate-change/climate-responses/climate-finance",
+        "syllabus:economy/current-affairs/finance-and-economic-policy/nature-and-climate-finance-initiatives"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -22663,6 +23157,16 @@
         "file": "content/taxonomy/prelims-classification-pilot.json",
         "status": "needs-syllabus-amendment",
         "rationale": "The launch and institutional sponsor of a nature-finance hub are tested. The current draft lacks a precise nature-finance initiative leaf; this candidate requires a syllabus amendment before approval."
+      },
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/finance-and-economic-policy/nature-and-climate-finance-initiatives"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/finance-and-economic-policy/nature-and-climate-finance-initiatives"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
       }
     },
     {
@@ -22947,7 +23451,8 @@
       "primaryId": "syllabus:science-technology/chemistry/materials-and-applications/fuels",
       "additionalIds": [
         "syllabus:geography/world-geography/world-resources/energy-regions",
-        "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
+        "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -22960,7 +23465,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2025/GS-I/existing-2",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2025-gs-i-64",
@@ -22989,7 +23504,8 @@
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
         "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy",
-        "syllabus:social-development/employment-skills/work-and-skills/skill-development"
+        "syllabus:social-development/employment-skills/work-and-skills/skill-development",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -23002,7 +23518,17 @@
         "Static"
       ],
       "editorialBatch": "CSE/2025/GS-I/existing-2",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2025-gs-i-75",
@@ -23123,7 +23649,8 @@
       "expectedRecordHash": "1421bc8e147fc7082d55cc9a8b7bd9f4445ae64ad7d3e394d61217b2554524b3",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
-        "syllabus:science-technology/computing-emerging-technologies/digital-foundations/communication-technologies"
+        "syllabus:science-technology/computing-emerging-technologies/digital-foundations/communication-technologies",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -23136,7 +23663,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2025/GS-I/existing-2",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2025-gs-i-85",
@@ -23285,7 +23822,8 @@
       "expectedRecordHash": "39be14249c470235c85498a2ee3e2ff6c909f98b4657b81c25f30bd8df436c92",
       "primaryId": "syllabus:social-development/poverty-inclusion/poverty-and-inequality/multidimensional-poverty",
       "additionalIds": [
-        "syllabus:current-affairs/economy-development/economic-reports-and-indices/indicators-and-methodology"
+        "syllabus:current-affairs/economy-development/economic-reports-and-indices/indicators-and-methodology",
+        "syllabus:economy/current-affairs/economic-reports-and-indices/indicators-and-methodology"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -23298,7 +23836,17 @@
         "Static"
       ],
       "editorialBatch": "CSE/2026/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/indicators-and-methodology"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/indicators-and-methodology"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2026-gs-i-11",
@@ -23409,7 +23957,8 @@
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
         "syllabus:geography/indian-geography/industry-and-transport/ports-and-waterways",
-        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/transport"
+        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/transport",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -23422,7 +23971,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2026/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2026-gs-i-25",
@@ -23490,7 +24049,8 @@
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives",
       "additionalIds": [
         "syllabus:geography/human-economic-geography/resources-and-land-use/agricultural-systems",
-        "syllabus:environment-ecology/climate-change/climate-responses/adaptation"
+        "syllabus:environment-ecology/climate-change/climate-responses/adaptation",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -23503,7 +24063,17 @@
         "Static"
       ],
       "editorialBatch": "CSE/2026/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2026-gs-i-29",
@@ -23634,7 +24204,8 @@
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
         "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/transport",
-        "syllabus:geography/indian-geography/industry-and-transport/ports-and-waterways"
+        "syllabus:geography/indian-geography/industry-and-transport/ports-and-waterways",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -23647,7 +24218,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2026/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2026-gs-i-36",
@@ -23742,7 +24323,8 @@
       "additionalIds": [
         "syllabus:science-technology/chemistry/matter-and-reactions/electrochemistry",
         "syllabus:environment-ecology/climate-change/climate-responses/mitigation",
-        "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
+        "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -23755,7 +24337,17 @@
         "Static"
       ],
       "editorialBatch": "CSE/2026/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2026-gs-i-50",
@@ -23917,7 +24509,8 @@
       "expectedRecordHash": "ac5fe02e75b24633a8b58e65b7d510163d1ef5367e8d9b4e3a11dc0daeeaaedf",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/industrial-developments",
       "additionalIds": [
-        "syllabus:geography/indian-geography/industry-and-transport/industrial-location"
+        "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
+        "syllabus:economy/current-affairs/sectoral-developments/industrial-developments"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -23930,7 +24523,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2026/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/industrial-developments"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/industrial-developments"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "cse-2026-gs-i-84",
@@ -23981,7 +24584,8 @@
       "primaryId": "syllabus:science-technology/computing-emerging-technologies/emerging-technologies/advanced-materials",
       "additionalIds": [
         "syllabus:geography/world-geography/world-resources/mineral-belts",
-        "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
+        "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -23994,7 +24598,17 @@
         "Event-based"
       ],
       "editorialBatch": "CSE/2026/GS-I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "nda-2014-i-103",
@@ -27135,7 +27749,8 @@
       "expectedRecordHash": "49e11705140d27b7a83870f575667f751e88cf17c9c3f8ae040460f985d393fd",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
-        "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks"
+        "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -27148,7 +27763,17 @@
         "Event-based"
       ],
       "editorialBatch": "NDA/2018/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "nda-2018-i-114",
@@ -27211,7 +27836,8 @@
       "expectedRecordHash": "912ad59f930f80e84fc9c1316bffad21599a4e0475f9aaefa4499e059d9841fb",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
-        "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks"
+        "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -27224,7 +27850,17 @@
         "Event-based"
       ],
       "editorialBatch": "NDA/2018/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "nda-2018-i-75",
@@ -29358,7 +29994,8 @@
       "expectedRecordHash": "9c6409baa32ce4d336503ecab7cb7d8d251c58e0dd28f2cf9c552c97b8c42b81",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
-        "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks"
+        "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -29371,7 +30008,17 @@
         "Event-based"
       ],
       "editorialBatch": "NDA/2021/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "nda-2021-i-136",
@@ -30510,7 +31157,8 @@
       "expectedRecordHash": "76c608ab1253c3ca6597276e9950b9ce4bf7599ae43846037b460a62aa030826",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
       "additionalIds": [
-        "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks"
+        "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -30523,7 +31171,17 @@
         "Event-based"
       ],
       "editorialBatch": "NDA/2023/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "nda-2023-i-130",
@@ -32376,7 +33034,8 @@
       "expectedRecordHash": "e236ffc385e8e694477b6e9a6931ca3bf2ed7fa1685bb6569a75aa7502a8c6a5",
       "primaryId": "syllabus:geography/indian-geography/mineral-and-energy-resources/resource-mapping",
       "additionalIds": [
-        "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
+        "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -32389,7 +33048,17 @@
         "Event-based"
       ],
       "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "nda-2025-i-97",
@@ -32432,7 +33101,8 @@
       "expectedRecordHash": "86875b185ad1d6a530c42ed149a9376afc5499245d6e6afb055fea3cb26b5a7c",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives",
       "additionalIds": [
-        "syllabus:economy/agriculture/agricultural-economy/food-security"
+        "syllabus:economy/agriculture/agricultural-economy/food-security",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -32445,7 +33115,17 @@
         "Event-based"
       ],
       "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "nda-2025-ii-111",
@@ -32893,7 +33573,8 @@
       "expectedRecordHash": "d18558c3723d362283a5790e7e40c7e5fdd460247a0b4a7bc93d1a12ce16be48",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives",
       "additionalIds": [
-        "syllabus:geography/human-economic-geography/resources-and-land-use/agricultural-systems"
+        "syllabus:geography/human-economic-geography/resources-and-land-use/agricultural-systems",
+        "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -32906,7 +33587,17 @@
         "Event-based"
       ],
       "editorialBatch": "NDA/2026/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "nda-2026-i-102",
@@ -33261,7 +33952,8 @@
       "expectedRecordHash": "d8e5a67de12ccdae884284e3cbe5d0e9fc6dd7a71c76d315003f5b9f26ffa603",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/industrial-developments",
       "additionalIds": [
-        "syllabus:economy/industry-services-infrastructure/industry-and-enterprise/industrial-zones-and-sezs"
+        "syllabus:economy/industry-services-infrastructure/industry-and-enterprise/industrial-zones-and-sezs",
+        "syllabus:economy/current-affairs/sectoral-developments/industrial-developments"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -33274,14 +33966,25 @@
         "Event-based"
       ],
       "editorialBatch": "NDA/2026/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/industrial-developments"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/industrial-developments"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "nda-2026-i-148",
       "expectedRecordHash": "d6a0fbee48393ca083a3681480498c274ff661bcfc6aa6c2e7316c7b990aed8b",
       "primaryId": "syllabus:geography/human-economic-geography/settlements/metropolitan-regions",
       "additionalIds": [
-        "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports"
+        "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports",
+        "syllabus:economy/current-affairs/economic-reports-and-indices/development-reports"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
@@ -33294,7 +33997,17 @@
         "Event-based"
       ],
       "editorialBatch": "NDA/2026/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/development-reports"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     }
   ]
 }

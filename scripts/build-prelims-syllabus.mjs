@@ -56,6 +56,16 @@ for (const [subjectIndex, [subject, sections]] of Object.entries(outline).entrie
     }
   }
 }
+// Inherit concept boundaries and reviewed examples from the shared source.
+for (const node of nodes.filter(n => n.id.startsWith('syllabus:economy/current-affairs/'))) {
+  const sourceId = node.id.replace('syllabus:economy/current-affairs/', 'syllabus:current-affairs/economy-development/');
+  const source = nodes.find(n => n.id === sourceId);
+  assert.ok(source, `Missing shared Economy Current Affairs concept: ${node.id}`);
+  for (const key of ['includes', 'excludes', 'placementRule', 'representativeQuestions', 'editorialExampleStatus']) {
+    if (source[key] !== undefined) node[key] = source[key];
+  }
+  node.sharedConceptSourceId = sourceId;
+}
 const currentAffairs = nodes.filter(node => node.kind === 'section' && node.parentId === 'syllabus:current-affairs');
 assert.equal(currentAffairs.length, 7);
 assert.ok(!currentAffairs.some(node => /miscellaneous|general awareness|^other$/i.test(node.label)));

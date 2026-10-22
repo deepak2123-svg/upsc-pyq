@@ -203,6 +203,18 @@ for(const [id,primary,additional,rationale,secondPass,tags=['Static'],extra={}] 
 for(const question of rawBank.filter(q=>q.subject==='English')) {
   records.set(question.id,{questionId:question.id,expectedRecordHash:hash(question),status:'out-of-scope',basis:'complete-stem-and-options-scope-review',scopeReason:'English language is outside this GS phase.',rationale:'Complete question and options test vocabulary, idiom, grammatical completion or sentence ordering. A reference to a constitution, economy or civil service does not turn the language task into GS.',secondPass:{status:'approved',rationale:'All ten English-labelled records reread in full, including the paragraph-ordering and fill-in-the-blank options. Keep historical grading available; exclude only from new GS selections.'}});
 }
+// Explicit category cross-listing requested by the editor. Existing reviewed
+// Current Affairs placements are retained; no raw question, primary placement,
+// source verification decision or answer eligibility is changed.
+for (const record of records.values()) {
+  if (record.status !== 'approved') continue;
+  const sourceIds = [record.primaryId, ...record.additionalIds].filter(id => id.startsWith('syllabus:current-affairs/economy-development/'));
+  if (!sourceIds.length) continue;
+  const sharedIds = sourceIds.map(id => id.replace('syllabus:current-affairs/economy-development/', 'syllabus:economy/current-affairs/'));
+  for (const id of sharedIds) assert.equal(nodeById.get(id)?.kind, 'subpart', `Missing Economy cross-list: ${id}`);
+  record.additionalIds = [...new Set([...record.additionalIds, ...sharedIds])];
+  record.sharedEconomyCurrentAffairs = {sourceIds, additionalIds: sharedIds, basis: 'editor-requested-shared-category', rationale: 'Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility.'};
+}
 const rows=[...records.values()].sort((a,b)=>a.questionId.localeCompare(b.questionId));
 const coverage=new Set(rows.filter(r=>r.status==='approved').flatMap(r=>[r.primaryId,...r.additionalIds].map(id=>labelsFor(id)[0])));
 assert.equal(coverage.size,9,'Pilot must include material placements in all nine subjects');

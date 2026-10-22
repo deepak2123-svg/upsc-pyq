@@ -159,6 +159,12 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 
 - **1. Development Policy:** Planning institutions; Five Year Plans; Economic reforms; Inclusive growth; Sustainable development; Regional development.
 - **2. Labour and Distribution:** Employment measurement; Informal economy; Wages; Poverty measurement; Inequality.
+### Current Affairs
+
+- **1. Budget and Economic Survey:** Budget measures; Survey findings; Fiscal announcements; Economic priorities.
+- **2. Finance and Economic Policy:** Banking developments; Monetary decisions; Fiscal policy and devolution; Financial regulation; Trade and investment developments; Nature and climate finance initiatives; International monetary developments.
+- **3. Sectoral Developments:** Agricultural initiatives; Agricultural trends and statistics; Mineral and energy trends; International economic developments; Industrial developments; Infrastructure projects; Development programmes.
+- **4. Economic Reports and Indices:** Economic rankings; Development reports; Publishing institutions; Indicators and methodology.
 ## Environment & Ecology
 
 ### Ecology & Ecosystems

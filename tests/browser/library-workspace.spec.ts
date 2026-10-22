@@ -85,6 +85,23 @@ test("a direct folder link overrides a saved location and has a usable parent Ba
   await expect(heading(page)).toHaveText("Physical Geography");
 });
 
+test("economic current affairs can be browsed and added from either subject without duplicates", async ({ page }) => {
+  await open(page, 'Economy');
+  await open(page, 'Current Affairs');
+  await expect(heading(page)).toHaveText('Current Affairs');
+  for(const label of ['Budget and Economic Survey','Finance and Economic Policy','Sectoral Developments','Economic Reports and Indices']) {
+    await expect(browser(page).getByRole('button',{name:`Open ${label}`,exact:true})).toBeVisible();
+  }
+  await add(page,'Economic Reports and Indices');
+  const selectedCount=await count(page).innerText();
+  await page.goBack();
+  await page.goBack();
+  await open(page,'Current Affairs');
+  await open(page,'Economy & Development');
+  await expect(browser(page).getByRole('button',{name:'Added Economic Reports and Indices',exact:true})).toBeDisabled();
+  await expect(count(page)).toHaveText(selectedCount);
+});
+
 test("unnumbered chapters use the panel width and the library heading fits", async ({ page }, testInfo) => {
   await open(page, "Geography");
   await open(page, "Human & Economic Geography");

@@ -331,7 +331,7 @@ test('CSE 2015 first page reaches current snapshots with separate source evidenc
   const data=await inventory();
   const answers={'cse-2015-gs-i-1':'C','cse-2015-gs-i-2':'A','cse-2015-gs-i-3':'B','cse-2015-gs-i-4':'A','cse-2015-gs-i-5':'B','cse-2015-gs-i-6':'D','cse-2015-gs-i-7':'C'};
   const ids=Object.keys(answers),leaves=data.nodes.filter(n=>n.kind==='subtopic'&&!n.legacyOnly&&ids.some(id=>n.questionIdsByExam.CSE.includes(id)));
-  assert.equal(leaves.filter(n=>n.questionIdsByExam.CSE.includes('cse-2015-gs-i-2')).length,3);
+  assert.equal(leaves.filter(n=>n.questionIdsByExam.CSE.includes('cse-2015-gs-i-2')).length,4);
   for(const [label,n]of [['Access and objectives',1],['Fiscal policy and devolution',2],['Tax revenue indicators',4],['Nature and enforceability',7]])assert.ok(leaves.some(leaf=>leaf.label===label&&leaf.questionIdsByExam.CSE.includes(`cse-2015-gs-i-${n}`)));
   const result=await create({version:4,taxonomyVersion:data.taxonomyVersion,subjectIds:[...new Set(leaves.map(n=>n.subjectId))],paths:leaves.map(n=>({subtopicId:n.id,exams:['CSE']})),count:'all',order:'newest'});
   assert.equal(result.response.status,201,JSON.stringify(result.body));
@@ -480,7 +480,7 @@ test('CSE 2016 Q12-Q22 additions preserve original doctrinal, regulatory and his
   const data=await inventory(),entries=[[12,'D'],[14,'D'],[15,'C'],[16,'C'],[17,'C'],[18,'D'],[20,'B'],[21,'B']];
   const answers=Object.fromEntries(entries.map(([n,a])=>[`cse-2016-gs-i-${n}`,a]));
   const ids=Object.keys(answers),leaves=data.nodes.filter(n=>n.kind==='subtopic'&&!n.legacyOnly&&ids.some(id=>n.questionIdsByExam.CSE.includes(id)));
-  for(const n of [14,15,17,20,21])assert.equal(leaves.filter(l=>l.questionIdsByExam.CSE.includes(`cse-2016-gs-i-${n}`)).length,2);
+  for(const n of [14,15,17,20,21])assert.equal(leaves.filter(l=>l.questionIdsByExam.CSE.includes(`cse-2016-gs-i-${n}`)).length,n===14?3:2);
   const result=await create({version:4,taxonomyVersion:data.taxonomyVersion,subjectIds:[...new Set(leaves.map(n=>n.subjectId))],paths:leaves.map(n=>({subtopicId:n.id,exams:['CSE']})),count:'all',order:'newest'});
   assert.equal(result.response.status,201,JSON.stringify(result.body));
   for(const id of ids)assert.equal(result.body.questions.filter(q=>q.id===id).length,1);
@@ -546,7 +546,7 @@ test('CSE 2016 Q57-Q69 imports retain historical cryptocurrency, NIMZ and monume
   const data=await inventory(),entries=[[58,'C'],[59,'D'],[60,'B'],[61,'A'],[62,'B'],[63,'D'],[64,'D'],[65,'B'],[66,'B'],[67,'B'],[69,'B']];
   const answers=Object.fromEntries(entries.map(([n,a])=>[`cse-2016-gs-i-${n}`,a]));
   const ids=Object.keys(answers),leaves=data.nodes.filter(n=>n.kind==='subtopic'&&!n.legacyOnly&&ids.some(id=>n.questionIdsByExam.CSE.includes(id)));
-  for(const n of [61,63,66])assert.equal(leaves.filter(l=>l.questionIdsByExam.CSE.includes(`cse-2016-gs-i-${n}`)).length,2);
+  for(const n of [61,63,66])assert.equal(leaves.filter(l=>l.questionIdsByExam.CSE.includes(`cse-2016-gs-i-${n}`)).length,n===61?3:2);
   const result=await create({version:4,taxonomyVersion:data.taxonomyVersion,subjectIds:[...new Set(leaves.map(n=>n.subjectId))],paths:leaves.map(n=>({subtopicId:n.id,exams:['CSE']})),count:'all',order:'newest'});
   assert.equal(result.response.status,201,JSON.stringify(result.body));
   for(const id of ids)assert.equal(result.body.questions.filter(q=>q.id===id).length,1);

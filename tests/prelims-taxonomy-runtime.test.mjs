@@ -28,6 +28,38 @@ test('working syllabus exposes all nine GS subjects, every empty subpart and pre
   assert.deepEqual(data.nodes.filter(n=>n.kind==='subtopic'&&!n.legacyOnly).map(n=>fullPath(n,liveById)).sort(),registry.nodes.filter(n=>n.kind==='subpart').map(n=>fullPath(n,sourceById)).sort(),'Every registry leaf must remain visible, whether populated or empty');
   assert.ok(empty.every(n=>Object.values(n.questionIdsByExam).every(ids=>ids.length===0)));
 });
+test('Economy Current Affairs mirrors every approved economic current-affairs leaf without duplicate MCQs',async()=>{
+  const data=await inventory(),index=buildSelectionIndex(data);
+  const economy=data.subjects.find(s=>s.label==='Economy'),ca=data.subjects.find(s=>s.label==='Current Affairs');
+  const source=data.nodes.find(n=>n.parentId===ca.id&&n.label==='Economy & Development'&&!n.legacyOnly);
+  const target=data.nodes.find(n=>n.parentId===economy.id&&n.label==='Current Affairs'&&!n.legacyOnly);
+  assert.ok(source&&target);
+  const children=id=>data.nodes.filter(n=>n.parentId===id&&!n.legacyOnly);
+  const sourceChapters=children(source.id),targetChapters=children(target.id);
+  assert.deepEqual(targetChapters.map(n=>n.label),sourceChapters.map(n=>n.label));
+  for(const sourceChapter of sourceChapters){
+    const targetChapter=targetChapters.find(n=>n.label===sourceChapter.label);
+    const sourceLeaves=children(sourceChapter.id),targetLeaves=children(targetChapter.id);
+    assert.deepEqual(targetLeaves.map(n=>n.label),sourceLeaves.map(n=>n.label));
+    for(const leaf of sourceLeaves){
+      const mirror=targetLeaves.find(n=>n.label===leaf.label);
+      for(const exam of ['CSE','CAPF','CDS','NDA'])assert.deepEqual([...mirror.questionIdsByExam[exam]].sort(),[...leaf.questionIdsByExam[exam]].sort());
+    }
+  }
+  const sourcePaths=addScope({},source.id,index),both=addScope(sourcePaths,target.id,index);
+  const membership=paths=>{const counts=selectionCounts(paths,index);return {matchingCount:counts.matchingCount,examTotals:counts.examTotals};};
+  assert.deepEqual(membership(both),membership(sourcePaths));
+  const remaining=removeScope(both,source.id,index);
+  assert.deepEqual(membership(remaining),membership(sourcePaths));
+  const selectedLeaves=Object.entries(both).filter(([,exams])=>exams.length);
+  const result=await snapshot({version:4,taxonomyVersion:data.taxonomyVersion,subjectIds:[ca.id,economy.id],paths:selectedLeaves.map(([subtopicId,exams])=>({subtopicId,exams})),count:'all',order:'newest'});
+  assert.equal(result.response.status,201,JSON.stringify(result.body));
+  const ids=result.body.questions.map(q=>q.id);
+  assert.equal(new Set(ids).size,ids.length);
+  assert.equal(ids.length,selectionCounts(sourcePaths,index).matchingCount);
+  assert.equal(data.totalCount,1713,'Sharing categories must not create new question records');
+});
+
 test('older V4 and V3 scopes retain frozen membership after a question moves to another subject',async()=>{
   const data=await inventory();
   const old=frozen.nodes.find(n=>n.kind==='subtopic'&&n.questionIdsByExam.CSE.includes('cse-2022-gs-i-41'));

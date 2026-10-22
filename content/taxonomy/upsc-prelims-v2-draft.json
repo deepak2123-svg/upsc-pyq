@@ -12928,6 +12928,467 @@
       "editorialExampleStatus": "pending-real-question-pilot"
     },
     {
+      "id": "syllabus:economy/current-affairs",
+      "parentId": "syllabus:economy",
+      "kind": "section",
+      "label": "Current Affairs",
+      "order": 8
+    },
+    {
+      "id": "syllabus:economy/current-affairs/budget-and-economic-survey",
+      "parentId": "syllabus:economy/current-affairs",
+      "kind": "chapter",
+      "label": "Budget and Economic Survey",
+      "order": 1,
+      "includes": [
+        "Budget measures",
+        "Survey findings",
+        "Fiscal announcements",
+        "Economic priorities"
+      ],
+      "boundary": "Questions testing Budget and Economic Survey in Current Affairs; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
+      "reviewStatus": "editorial-draft",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/budget-and-economic-survey"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/budget-and-economic-survey/budget-measures",
+      "parentId": "syllabus:economy/current-affairs/budget-and-economic-survey",
+      "kind": "subpart",
+      "label": "Budget measures",
+      "order": 1,
+      "includes": [
+        "Budget measures"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/budget-and-economic-survey/budget-measures"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/budget-and-economic-survey/survey-findings",
+      "parentId": "syllabus:economy/current-affairs/budget-and-economic-survey",
+      "kind": "subpart",
+      "label": "Survey findings",
+      "order": 2,
+      "includes": [
+        "Survey findings"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/budget-and-economic-survey/survey-findings"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/budget-and-economic-survey/fiscal-announcements",
+      "parentId": "syllabus:economy/current-affairs/budget-and-economic-survey",
+      "kind": "subpart",
+      "label": "Fiscal announcements",
+      "order": 3,
+      "includes": [
+        "Fiscal announcements"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/budget-and-economic-survey/fiscal-announcements"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/budget-and-economic-survey/economic-priorities",
+      "parentId": "syllabus:economy/current-affairs/budget-and-economic-survey",
+      "kind": "subpart",
+      "label": "Economic priorities",
+      "order": 4,
+      "includes": [
+        "Economic priorities"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/budget-and-economic-survey/economic-priorities"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/finance-and-economic-policy",
+      "parentId": "syllabus:economy/current-affairs",
+      "kind": "chapter",
+      "label": "Finance and Economic Policy",
+      "order": 2,
+      "includes": [
+        "Banking developments",
+        "Monetary decisions",
+        "Fiscal policy and devolution",
+        "Financial regulation",
+        "Trade and investment developments",
+        "Nature and climate finance initiatives",
+        "International monetary developments"
+      ],
+      "boundary": "Questions testing Finance and Economic Policy in Current Affairs; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
+      "reviewStatus": "editorial-draft",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/finance-and-economic-policy"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/finance-and-economic-policy/banking-developments",
+      "parentId": "syllabus:economy/current-affairs/finance-and-economic-policy",
+      "kind": "subpart",
+      "label": "Banking developments",
+      "order": 1,
+      "includes": [
+        "Banking developments"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/finance-and-economic-policy/banking-developments"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/finance-and-economic-policy/monetary-decisions",
+      "parentId": "syllabus:economy/current-affairs/finance-and-economic-policy",
+      "kind": "subpart",
+      "label": "Monetary decisions",
+      "order": 2,
+      "includes": [
+        "Monetary decisions"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/finance-and-economic-policy/monetary-decisions"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/finance-and-economic-policy/fiscal-policy-and-devolution",
+      "parentId": "syllabus:economy/current-affairs/finance-and-economic-policy",
+      "kind": "subpart",
+      "label": "Fiscal policy and devolution",
+      "order": 3,
+      "includes": [
+        "Dated fiscal recommendations and changes",
+        "Changes to tax devolution and intergovernmental fiscal transfers"
+      ],
+      "excludes": [
+        "Timeless constitutional composition of a Finance Commission",
+        "A budget measure without independently assessed devolution",
+        "An event year inferred from examination year"
+      ],
+      "placementRule": "Use when a specific fiscal change or named recommendation is assessed. Add the static institution or fiscal-federalism home when those concepts are independently material.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "CSE 2015 GS-I Series A Q2: Fourteenth Finance Commission recommendations"
+      ],
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/finance-and-economic-policy/fiscal-policy-and-devolution"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/finance-and-economic-policy/financial-regulation",
+      "parentId": "syllabus:economy/current-affairs/finance-and-economic-policy",
+      "kind": "subpart",
+      "label": "Financial regulation",
+      "order": 4,
+      "includes": [
+        "Financial regulation"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/finance-and-economic-policy/financial-regulation"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/finance-and-economic-policy/trade-and-investment-developments",
+      "parentId": "syllabus:economy/current-affairs/finance-and-economic-policy",
+      "kind": "subpart",
+      "label": "Trade and investment developments",
+      "order": 5,
+      "includes": [
+        "Trade and investment developments"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/finance-and-economic-policy/trade-and-investment-developments"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/finance-and-economic-policy/nature-and-climate-finance-initiatives",
+      "parentId": "syllabus:economy/current-affairs/finance-and-economic-policy",
+      "kind": "subpart",
+      "label": "Nature and climate finance initiatives",
+      "order": 6,
+      "includes": [
+        "Nature and climate finance initiatives"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/finance-and-economic-policy/nature-and-climate-finance-initiatives"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/finance-and-economic-policy/international-monetary-developments",
+      "parentId": "syllabus:economy/current-affairs/finance-and-economic-policy",
+      "kind": "subpart",
+      "label": "International monetary developments",
+      "order": 7,
+      "includes": [
+        "Dated or news-framed changes to international monetary arrangements",
+        "Reserve-basket changes and international monetary policy developments"
+      ],
+      "excludes": [
+        "Static reserve definitions without an event focus",
+        "A domestic repo-rate decision alone",
+        "Exam year treated as the date of a proposal or implementation"
+      ],
+      "placementRule": "Use for an actual monetary-system development, retaining proposal versus implementation wording and historical context. Add the static reserve or institutional home when materially tested.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "CSE 2016 GS-I Series A Q14: proposed SDR-basket currency addition"
+      ],
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/finance-and-economic-policy/international-monetary-developments"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/sectoral-developments",
+      "parentId": "syllabus:economy/current-affairs",
+      "kind": "chapter",
+      "label": "Sectoral Developments",
+      "order": 3,
+      "includes": [
+        "Agricultural initiatives",
+        "Agricultural trends and statistics",
+        "Mineral and energy trends",
+        "International economic developments",
+        "Industrial developments",
+        "Infrastructure projects",
+        "Development programmes"
+      ],
+      "boundary": "Questions testing Sectoral Developments in Current Affairs; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
+      "reviewStatus": "editorial-draft",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/sectoral-developments"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives",
+      "parentId": "syllabus:economy/current-affairs/sectoral-developments",
+      "kind": "subpart",
+      "label": "Agricultural initiatives",
+      "order": 1,
+      "includes": [
+        "Agricultural initiatives"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics",
+      "parentId": "syllabus:economy/current-affairs/sectoral-developments",
+      "kind": "subpart",
+      "label": "Agricultural trends and statistics",
+      "order": 2,
+      "includes": [
+        "Agricultural trends and statistics"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends",
+      "parentId": "syllabus:economy/current-affairs/sectoral-developments",
+      "kind": "subpart",
+      "label": "Mineral and energy trends",
+      "order": 3,
+      "includes": [
+        "Mineral and energy trends"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/sectoral-developments/international-economic-developments",
+      "parentId": "syllabus:economy/current-affairs/sectoral-developments",
+      "kind": "subpart",
+      "label": "International economic developments",
+      "order": 4,
+      "includes": [
+        "International economic developments"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/sectoral-developments/international-economic-developments"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/sectoral-developments/industrial-developments",
+      "parentId": "syllabus:economy/current-affairs/sectoral-developments",
+      "kind": "subpart",
+      "label": "Industrial developments",
+      "order": 5,
+      "includes": [
+        "Industrial developments"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/sectoral-developments/industrial-developments"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects",
+      "parentId": "syllabus:economy/current-affairs/sectoral-developments",
+      "kind": "subpart",
+      "label": "Infrastructure projects",
+      "order": 6,
+      "includes": [
+        "Infrastructure projects"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/sectoral-developments/development-programmes",
+      "parentId": "syllabus:economy/current-affairs/sectoral-developments",
+      "kind": "subpart",
+      "label": "Development programmes",
+      "order": 7,
+      "includes": [
+        "Development programmes"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/sectoral-developments/development-programmes"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/economic-reports-and-indices",
+      "parentId": "syllabus:economy/current-affairs",
+      "kind": "chapter",
+      "label": "Economic Reports and Indices",
+      "order": 4,
+      "includes": [
+        "Economic rankings",
+        "Development reports",
+        "Publishing institutions",
+        "Indicators and methodology"
+      ],
+      "boundary": "Questions testing Economic Reports and Indices in Current Affairs; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
+      "reviewStatus": "editorial-draft",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/economic-reports-and-indices"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/economic-reports-and-indices/economic-rankings",
+      "parentId": "syllabus:economy/current-affairs/economic-reports-and-indices",
+      "kind": "subpart",
+      "label": "Economic rankings",
+      "order": 1,
+      "includes": [
+        "Economic rankings"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/economic-rankings"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/economic-reports-and-indices/development-reports",
+      "parentId": "syllabus:economy/current-affairs/economic-reports-and-indices",
+      "kind": "subpart",
+      "label": "Development reports",
+      "order": 2,
+      "includes": [
+        "Development reports"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions",
+      "parentId": "syllabus:economy/current-affairs/economic-reports-and-indices",
+      "kind": "subpart",
+      "label": "Publishing institutions",
+      "order": 3,
+      "includes": [
+        "Publishing institutions"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions"
+    },
+    {
+      "id": "syllabus:economy/current-affairs/economic-reports-and-indices/indicators-and-methodology",
+      "parentId": "syllabus:economy/current-affairs/economic-reports-and-indices",
+      "kind": "subpart",
+      "label": "Indicators and methodology",
+      "order": 4,
+      "includes": [
+        "Indicators and methodology"
+      ],
+      "excludes": [
+        "Incidental references without testing this concept",
+        "Unrelated neighbouring concepts"
+      ],
+      "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
+      "editorialExampleStatus": "pending-real-question-pilot",
+      "sharedConceptSourceId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/indicators-and-methodology"
+    },
+    {
       "id": "syllabus:environment-ecology",
       "parentId": null,
       "kind": "subject",

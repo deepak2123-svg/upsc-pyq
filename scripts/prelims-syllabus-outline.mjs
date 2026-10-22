@@ -188,3 +188,7 @@ Culture and Heritage Recognition|Cultural events;Heritage inscriptions;Cultural 
 Personalities and Commemorations|Notable contributions;Birth anniversaries;Memorials;Significant days and themes`,
   },
 };
+
+// Shared browsing location requested by the editor: one syllabus source,
+// not a second set of question records or independently diverging categories.
+outline.Economy['Current Affairs'] = outline['Current Affairs']['Economy & Development'];
