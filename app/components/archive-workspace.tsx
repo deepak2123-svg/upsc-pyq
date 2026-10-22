@@ -157,8 +157,33 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
         }
       }
     } catch { setPaths({});setWorkingInventory(initialInventory);setDraftWarning("Your builder settings could not be restored in this browser. You can still choose a new practice."); }
+    const urlScope = new URL(window.location.href).searchParams.get("scope");
+    const historyEntry = window.history.state?.pyqLibrary;
+    if (urlScope !== null || historyEntry?.draftKey === draftKey) {
+      const locationId = urlScope && baseIndex.nodesById.has(urlScope) ? urlScope : undefined;
+      setFocusId(locationId);
+      setExpandedIds(locationId ? ancestors(locationId, baseIndex).map((node) => node.id) : []);
+    }
     setRestored(true);
   }, [draftKey, initialInventory, baseIndex, initialExam]);
+  useEffect(() => {
+    if (!restored) return;
+    const url = new URL(window.location.href);
+    if (focusId) url.searchParams.set("scope", focusId);
+    else url.searchParams.delete("scope");
+    if (window.history.state?.pyqLibrary?.draftKey !== draftKey) {
+      window.history.replaceState({ ...window.history.state, pyqLibrary: { draftKey, depth: 0 } }, "", url);
+    }
+    function restoreLocation() {
+      const scope = new URL(window.location.href).searchParams.get("scope");
+      const locationId = scope && baseIndex.nodesById.has(scope) ? scope : undefined;
+      setFocusId(locationId);
+      setExpandedIds(locationId ? ancestors(locationId, baseIndex).map((node) => node.id) : []);
+      setSetupOpen(false); setSyllabusOpen(false); setTestPanelOpen(false);
+    }
+    window.addEventListener("popstate", restoreLocation);
+    return () => window.removeEventListener("popstate", restoreLocation);
+  }, [restored, draftKey, baseIndex, focusId]);
   useEffect(() => {
     if (!restored) return;
     const minutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
@@ -228,6 +253,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
   function browse(id: string) {
     if (loading || !restored) return;
+    recordLocation(id);
     setFocusId(id);
     setExpandedIds(ancestors(id, index).map((node) => node.id));
     setSyllabusOpen(false);
@@ -240,7 +266,24 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
   function browseRoot() {
     if (loading || !restored) return;
+    recordLocation();
     setFocusId(undefined); setSyllabusOpen(false); setNotice("Showing all subjects.");
+  }
+  function recordLocation(id?: string) {
+    if (id === focusId) return;
+    const url = new URL(window.location.href);
+    if (id) url.searchParams.set("scope", id);
+    else url.searchParams.delete("scope");
+    const previous = window.history.state?.pyqLibrary;
+    const depth = previous?.draftKey === draftKey && Number.isInteger(previous.depth) ? previous.depth : 0;
+    window.history.pushState({ ...window.history.state, pyqLibrary: { draftKey, depth: depth + 1 } }, "", url);
+  }
+  function goBack() {
+    if (loading || !restored) return;
+    const entry = window.history.state?.pyqLibrary;
+    if (entry?.draftKey === draftKey && entry.depth > 0) window.history.back();
+    else if (current?.parentId) browse(current.parentId);
+    else browseRoot();
   }
   function clearSelection() {
     if (loading || !restored) return;
@@ -309,7 +352,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
 
       <section className="scope-refine scope-library-browser" aria-labelledby="scope-refine-title">
         <h2 id="scope-refine-title" className="visually-hidden">{current ? `Browse ${current.label}` : "Browse subjects"}</h2>
-        <ScopeFlow inventory={workingInventory} paths={paths} focusId={focusId} preferredExam={initialExam} onAdd={addToTest} onBrowse={browse} onBack={() => current?.parentId ? browse(current.parentId) : browseRoot()} disabled={loading || !restored} />
+        <ScopeFlow inventory={workingInventory} paths={paths} focusId={focusId} preferredExam={initialExam} onAdd={addToTest} onBrowse={browse} onBack={goBack} disabled={loading || !restored} />
         <p className="visually-hidden" role="status" aria-live="polite">{notice}</p>
       </section>
 

@@ -47,6 +47,44 @@ test("opening and folding folders never adds questions", async ({ page }) => {
   await expect(browser(page).locator(".explorer-folder svg")).toHaveCount(0);
 });
 
+test("browser and app Back follow folder history without changing selected questions", async ({ page }) => {
+  await open(page, "Geography");
+  await open(page, "Physical Geography");
+  await add(page, chapter);
+  const selectedCount = await count(page).innerText();
+  await open(page, chapter);
+  const chapterURL = page.url();
+  await expect(page).toHaveURL(/scope=/);
+  await page.goBack();
+  await expect(heading(page)).toHaveText("Physical Geography");
+  await expect(count(page)).toHaveText(selectedCount);
+  await page.goForward();
+  await expect(heading(page)).toHaveText(chapter);
+  await expect(count(page)).toHaveText(selectedCount);
+  await page.reload();
+  await expect(heading(page)).toHaveText(chapter);
+  await expect(count(page)).toHaveText(selectedCount);
+  await browser(page).getByRole('button', { name: '← Back', exact: true }).click();
+  await expect(heading(page)).toHaveText("Physical Geography");
+  await expect(count(page)).toHaveText(selectedCount);
+  await page.goForward();
+  await expect(page).toHaveURL(chapterURL);
+  await expect(heading(page)).toHaveText(chapter);
+});
+
+test("a direct folder link overrides a saved location and has a usable parent Back", async ({ page }) => {
+  await open(page, "Geography");
+  await open(page, "Physical Geography");
+  await open(page, chapter);
+  const link = page.url();
+  await page.context().clearCookies();
+  await page.evaluate(() => sessionStorage.clear());
+  await page.goto(link);
+  await expect(heading(page)).toHaveText(chapter);
+  await browser(page).getByRole('button', { name: '← Back', exact: true }).click();
+  await expect(heading(page)).toHaveText("Physical Geography");
+});
+
 test("unnumbered chapters use the panel width and the library heading fits", async ({ page }, testInfo) => {
   await open(page, "Geography");
   await open(page, "Human & Economic Geography");
