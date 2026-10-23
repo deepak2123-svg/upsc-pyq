@@ -28,53 +28,35 @@ function PracticeSetupDialog({ matchingCount, examMetrics, count, order, duratio
   onExam: (exam: PyqExam) => void; onCount: (value: number | "all") => void; onOrder: (value: PracticeOrder) => void; onDuration: (value: string) => void; onCustomMinutes: (value: string) => void; onIncludeAnswerKey: (value: boolean) => void; onUseAll: () => void; onStart: () => void; onExport: () => void; onCancel: () => void;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
-  const [mode, setMode] = useState<"online" | "pdf" | null>(null);
+  const [mode, setMode] = useState<"online" | "pdf">("online");
   const practiceCount = count === "all" ? matchingCount : count;
+  const busy = loading || exporting;
   useEffect(() => {
     const previous = document.activeElement as HTMLElement | null;
     const current = dialog.current;
     current?.showModal();
     return () => { current?.close(); previous?.focus(); };
   }, []);
-  const busy = loading || exporting;
-  const SetupControls = () => <>
-    <fieldset className="setup-exam-options" disabled={busy}>
-        <legend>Exams to include</legend>
-        <div className="setup-exam-grid">{PYQ_EXAMS.map((exam) => { const metric = examMetrics[exam]; return <button type="button" role="checkbox" aria-checked={metric.state === "partial" ? "mixed" : metric.state === "all"} disabled={busy || metric.available === 0} className={metric.state} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} key={exam} onClick={() => onExam(exam)}><span className="scope-check" aria-hidden="true">{metric.state === "all" ? "✓" : metric.state === "partial" ? "−" : ""}</span><strong>{exam}</strong><small>{metric.state === "none" ? `${format(metric.available)} available` : `${format(metric.count)} included`}</small></button>; })}</div>
-      </fieldset>
-      <fieldset className="scope-size-options" disabled={busy}>
-        <legend>How many questions?</legend>
-        <div className="segmented">{COUNTS.map((value) => <button type="button" key={value} className={count === value ? "active" : ""} aria-pressed={count === value} onClick={() => onCount(value)}>{value}</button>)}<button type="button" className={count === "all" ? "active" : ""} aria-pressed={count === "all"} onClick={() => onCount("all")}>All {format(matchingCount)}</button></div>
-      </fieldset>
-      {count === null ? <p className="scope-size-prompt">Choose how many questions you want to attempt.</p> : null}
-      {shortage ? <div className="scope-shortage" role="alert"><p>You chose {practiceCount}, but only {format(matchingCount)} questions match.</p><button type="button" disabled={loading} onClick={onUseAll}>Use all {format(matchingCount)} available</button></div> : null}
-      <fieldset className="scope-time-options" disabled={busy}>
-        <legend>{mode === "pdf" ? "Time printed on the paper" : "Time limit"}</legend>
-        <div className="segmented"><button type="button" className={durationChoice === "untimed" ? "active" : ""} aria-pressed={durationChoice === "untimed"} onClick={() => onDuration("untimed")}>No time limit</button>{DURATIONS.map((minutes) => <button type="button" key={minutes} className={durationChoice === String(minutes) ? "active" : ""} aria-pressed={durationChoice === String(minutes)} onClick={() => onDuration(String(minutes))}>{minutes} min</button>)}<button type="button" className={durationChoice === "custom" ? "active" : ""} aria-pressed={durationChoice === "custom"} onClick={() => onDuration("custom")}>Custom</button></div>
-      </fieldset>
-      {durationChoice === "custom" ? <label className="scope-order">Custom minutes<input type="number" inputMode="numeric" min={1} max={720} step={1} disabled={busy} value={customMinutes} onChange={(event) => onCustomMinutes(event.target.value)} /></label> : null}
-      {!validDuration ? <p className="inline-error" role="alert">Enter 1–720 whole minutes.</p> : null}
-      <label className="scope-order">Question order<select disabled={busy} value={order} onChange={(event) => onOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle questions</option></select></label>
-  </>;
-  return <dialog ref={dialog} className="scope-add-dialog practice-setup-dialog" aria-labelledby="practice-setup-title" onCancel={(event) => { event.preventDefault(); if (!busy) onCancel(); }}>
-    <form onSubmit={(event) => { event.preventDefault(); if (mode === "online") onStart(); }}>
-      <div className="setup-navigation">
-        <button type="button" aria-label={mode ? "Back to attempt methods" : "Back to library"} disabled={busy} onClick={() => mode ? setMode(null) : onCancel()}>← <span>{mode ? "Methods" : "Library"}</span></button>
-        <button type="button" aria-label="Close test setup" disabled={busy} onClick={onCancel}>×</button>
+  return <dialog ref={dialog} className="scope-add-dialog practice-setup-dialog compact-setup" aria-labelledby="practice-setup-title" onCancel={event => { event.preventDefault(); if (!busy) onCancel(); }}>
+    <form onSubmit={event => { event.preventDefault(); if (canStart && !busy) { if (mode === "online") onStart(); else onExport(); } }}>
+      <header className="compact-setup-heading"><button type="button" className="compact-setup-back" aria-label="Close test setup" disabled={busy} onClick={onCancel}>←</button><div><h2 id="practice-setup-title">Finalise test</h2><p>{format(matchingCount)} available MCQs</p></div></header>
+      <div className="compact-methods" aria-label="Attempt method">{(["online","pdf"] as const).map(value => <button key={value} type="button" disabled={busy} aria-pressed={mode === value} onClick={() => setMode(value)}>{value === "online" ? "Online test" : "PDF paper"}</button>)}</div>
+      <fieldset className="compact-source-options" disabled={busy}><legend>Exam sources <small>Whole test</small></legend><div className="compact-source-grid">{PYQ_EXAMS.map(exam => {
+        const metric = examMetrics[exam], included = metric.state !== "none";
+        return <button type="button" key={exam} className="compact-source" aria-pressed={included} disabled={busy || metric.available === 0} style={{"--exam-color":PYQ_EXAM_COLORS[exam]} as CSSProperties} onClick={() => onExam(exam)}><span><i aria-hidden="true" />{exam} · {format(metric.available)}</span><small>{included ? "Included" : "Excluded"}</small></button>;
+      })}</div></fieldset>
+      <fieldset className="compact-count-options" disabled={busy}><legend>Questions</legend><div className="compact-counts">{COUNTS.map(value => <button type="button" key={value} aria-pressed={count === value} onClick={() => onCount(value)}>{value}</button>)}<button type="button" aria-pressed={count === "all"} onClick={() => onCount("all")}>All</button></div></fieldset>
+      {count === null ? <p className="compact-hint">Choose a question count.</p> : null}
+      {shortage ? <div className="scope-shortage" role="alert"><p>Only {format(matchingCount)} questions match.</p><button type="button" disabled={busy} onClick={onUseAll}>Use all {format(matchingCount)} available</button></div> : null}
+      <div className="compact-settings">
+        <label>{mode === "pdf" ? "Time printed on paper" : "Time limit"}<select aria-label={mode === "pdf" ? "Time printed on paper" : "Time limit"} disabled={busy} value={durationChoice} onChange={event => onDuration(event.target.value)}><option value="untimed">No time limit</option>{DURATIONS.map(minutes => <option key={minutes} value={String(minutes)}>{minutes} minutes</option>)}<option value="custom">Custom</option></select></label>
+        <label>Question order<select aria-label="Question order" disabled={busy} value={order} onChange={event => onOrder(event.target.value as PracticeOrder)}><option value="newest">Newest first</option><option value="shuffle">Shuffle questions</option></select></label>
+        {durationChoice === "custom" ? <label>Custom minutes<input type="number" inputMode="numeric" min={1} max={720} step={1} disabled={busy} value={customMinutes} onChange={event => onCustomMinutes(event.target.value)} /></label> : null}
+        {mode === "pdf" ? <label>Answer key<select aria-label="Answer key" disabled={busy} value={includeAnswerKey ? "yes" : "no"} onChange={event => onIncludeAnswerKey(event.target.value === "yes")}><option value="no">Questions only</option><option value="yes">Include answer key</option></select></label> : null}
       </div>
-      <span className="selector-label">Final step</span>
-      <h2 id="practice-setup-title">How would you like to attempt these questions?</h2>
-      <p><strong>{format(matchingCount)} questions</strong> match your selected chapters.</p>
-      {!mode ? <div className="attempt-route-grid">
-        <button type="button" className="attempt-route online" onClick={() => setMode("online")}><span className="route-badge">Recommended</span><strong>Take an online test</strong><small>Answer on screen, move between questions, and receive a result sheet after submission.</small><b>Set up online test →</b></button>
-        <button type="button" className="attempt-route offline" onClick={() => setMode("pdf")}><span className="route-badge">Optional</span><strong>Download a PDF with an answer key</strong><b>Set up PDF →</b></button>
-      </div> : <section className={`attempt-setup-panel ${mode}`} aria-labelledby="chosen-attempt-title">
-        <div className="chosen-attempt-heading"><button type="button" className="scope-secondary" disabled={busy} onClick={() => setMode(null)}>← Change method</button><div><span>{mode === "online" ? "Online test" : "Printable PDF"}</span><h3 id="chosen-attempt-title">{mode === "online" ? "Set up your online test" : "Set up your printable paper"}</h3></div></div>
-        <SetupControls />
-        {mode === "pdf" ? <label className="pdf-answer-key"><input type="checkbox" checked={includeAnswerKey} disabled={busy} onChange={(event) => onIncludeAnswerKey(event.target.checked)} /><span><strong>Add an answer key</strong><small>Official answers will appear on a separate final page.</small></span></label> : null}
-        {error ? <p className="inline-error" role="alert">{error}</p> : null}
-        <div className="scope-dialog-actions practice-setup-actions"><button type="button" className="scope-secondary" disabled={busy} onClick={onCancel}>Continue choosing chapters</button>{mode === "online" ? <button type="submit" className="scope-primary confirm-practice" disabled={!canStart}>{loading ? "Preparing test…" : count === null ? "Choose a question count" : `Start ${format(practiceCount!)}-question test`}</button> : <button type="button" className="scope-primary confirm-practice" disabled={!canStart} onClick={onExport}>{exporting ? "Preparing PDF…" : count === null ? "Choose a question count" : `Download ${format(practiceCount!)}-question PDF`}</button>}</div>
-      </section>}
+      {!validDuration ? <p className="inline-error" role="alert">Enter 1–720 whole minutes.</p> : null}
+      {error ? <p className="inline-error" role="alert">{error}</p> : null}
+      <footer className="compact-setup-footer"><div><strong>{format(practiceCount ?? matchingCount)}</strong><small>unique MCQs</small></div><button type="submit" className="scope-primary confirm-practice" disabled={!canStart || busy}>{busy ? "Preparing…" : mode === "online" ? "Start test →" : "Create PDF →"}</button></footer>
     </form>
   </dialog>;
 }

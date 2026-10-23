@@ -56,9 +56,9 @@ test('2015 innovation institution is browsable and its reviewed pilgrimage/Rowla
   await expect(summary.getByTestId('matching-count').locator('strong')).toHaveText('1');
   const created=page.waitForResponse(response=>response.url().endsWith('/api/practice-snapshots')&&response.request().method()==='POST');
   await summary.getByRole('button',{name:/^Test this folder/}).click();
-  const dialog=page.getByRole('dialog');await dialog.getByRole('button',{name:/Take an online test/}).click();
-  await dialog.getByRole('group',{name:'How many questions?'}).getByRole('button',{name:'All 1',exact:true}).click();
-  await dialog.getByRole('button',{name:'Start 1-question test',exact:true}).click();
+  const dialog=page.getByRole('dialog');await dialog.getByRole('button',{name: "Online test", exact: true}).click();
+  await dialog.getByRole('group',{name: "Questions", exact: true}).getByRole('button',{name: "All",exact:true}).click();
+  await dialog.getByRole('button',{name:'Start test →',exact:true}).click();
   const response=await created;expect(response.status()).toBe(201);
   expect((await response.json()).questions.map((q:{id:string})=>q.id)).toEqual(['cse-2015-gs-i-10']);
   await expect(page.getByText(/National Innovation Foundation-India/)).toBeVisible();
@@ -96,9 +96,9 @@ test('reviewed national-calendar topic opens through setup, grading and a one-an
   const created=page.waitForResponse(response=>response.url().endsWith('/api/practice-snapshots')&&response.request().method()==='POST');
   await summary.getByRole('button',{name:/^Test this folder/}).click();
   const dialog=page.getByRole('dialog');
-  await dialog.getByRole('button',{name:/Take an online test/}).click();
-  await dialog.getByRole('group',{name:'How many questions?'}).getByRole('button',{name:'All 1',exact:true}).click();
-  await dialog.getByRole('button',{name:'Start 1-question test',exact:true}).click();
+  await dialog.getByRole('button',{name: "Online test", exact: true}).click();
+  await dialog.getByRole('group',{name: "Questions", exact: true}).getByRole('button',{name: "All",exact:true}).click();
+  await dialog.getByRole('button',{name:'Start test →',exact:true}).click();
   const response=await created;expect(response.status()).toBe(201);
   const snapshot:PracticeSnapshot=await response.json();
   expect(snapshot.questions.map(q=>q.id)).toEqual(['cse-2014-gs-i-84']);
@@ -164,9 +164,9 @@ test('historical BRICS membership keeps one occurrence when IR and Current Affai
   await expect(summary.getByTestId('matching-count').locator('strong')).toHaveText(ids.size.toLocaleString('en-IN'));
   const created=page.waitForResponse(r=>r.url().endsWith('/api/practice-snapshots')&&r.request().method()==='POST');
   await summary.getByRole('button',{name:/Set up test/}).click();const dialog=page.getByRole('dialog');
-  await dialog.getByRole('button',{name:/Take an online test/}).click();
-  await dialog.getByRole('group',{name:'How many questions?'}).getByRole('button',{name:`All ${ids.size}`,exact:true}).click();
-  await dialog.getByRole('button',{name:`Start ${ids.size}-question test`,exact:true}).click();
+  await dialog.getByRole('button',{name: "Online test", exact: true}).click();
+  await dialog.getByRole('group',{name: "Questions", exact: true}).getByRole('button',{name: "All",exact:true}).click();
+  await dialog.getByRole('button',{name: "Start test →",exact:true}).click();
   const response=await created;expect(response.status()).toBe(201);const snapshot=await response.json();
   expect(snapshot.questions.map((q:any)=>q.id).sort()).toEqual([...ids].sort());
   expect(snapshot.questions.filter((q:any)=>q.id==='cse-2014-gs-i-11')).toHaveLength(1);
@@ -193,9 +193,9 @@ test('source-reviewed Legal aid opens from the explorer and scores through setup
   const created=page.waitForResponse(response=>response.url().endsWith('/api/practice-snapshots')&&response.request().method()==='POST');
   await summary.getByRole('button',{name:/^Test this folder/}).click();
   const dialog=page.getByRole('dialog');
-  await dialog.getByRole('button',{name:/Take an online test/}).click();
-  await dialog.getByRole('group',{name:'How many questions?'}).getByRole('button',{name:'All 1',exact:true}).click();
-  await dialog.getByRole('button',{name:'Start 1-question test',exact:true}).click();
+  await dialog.getByRole('button',{name: "Online test", exact: true}).click();
+  await dialog.getByRole('group',{name: "Questions", exact: true}).getByRole('button',{name: "All",exact:true}).click();
+  await dialog.getByRole('button',{name:'Start test →',exact:true}).click();
   const response=await created;expect(response.status()).toBe(201);
   const snapshot=await response.json();
   expect(snapshot.questions.map((q:{id:string})=>q.id)).toEqual(['cse-2013-gs-i-71']);
@@ -263,10 +263,10 @@ test('History overlap stays unique through source counts, timed setup, results a
   await expect(summary.getByTestId('matching-count').locator('strong')).toHaveText('4');
   await summary.getByRole('button',{name:'Set up test'}).click();
   const dialog=page.getByRole('dialog');
-  await dialog.getByRole('button',{name:/Take an online test/}).click();
-  await dialog.getByRole('group',{name:'How many questions?'}).getByRole('button',{name:'All 4',exact:true}).click();
-  await dialog.getByRole('button',{name:'30 min',exact:true}).click();
-  await dialog.getByRole('button',{name:'Start 4-question test',exact:true}).click();
+  await dialog.getByRole('button',{name: "Online test", exact: true}).click();
+  await dialog.getByRole('group',{name: "Questions", exact: true}).getByRole('button',{name: "All",exact:true}).click();
+  await dialog.getByLabel('Time limit',{exact:true}).selectOption('30');
+  await dialog.getByRole('button',{name:'Start test →',exact:true}).click();
   await expect(page).toHaveURL(/\/practice\/[^/]+$/);
   await expect(page.getByText(/What is\/are common to the two historical places/)).toBeVisible();
   const snapshot=await page.evaluate(async()=>{

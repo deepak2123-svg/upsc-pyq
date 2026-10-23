@@ -111,15 +111,15 @@ test('clickable folder path, compact rows and setup cancellation preserve select
   await summary(page).getByRole('button',{name:'Finalise test →',exact:true}).click();
   const selectedCount=await count(page).innerText();
   const dialog=page.getByRole('dialog');
-  await expect(dialog.getByRole('button',{name:'Back to library',exact:true})).toBeVisible();
+  await expect(dialog.getByRole('button',{name:'Close test setup',exact:true})).toBeVisible();
   await page.screenshot({path:'tmp/library-organised-setup.png',fullPage:true});
-  await dialog.getByRole('button',{name:'Back to library',exact:true}).click();
+  await dialog.getByRole('button',{name:'Close test setup',exact:true}).click();
   await expect(dialog).toHaveCount(0);
   await expect(count(page)).toHaveText(selectedCount);
   await summary(page).getByRole('button',{name:'Finalise test →',exact:true}).click();
-  await dialog.getByRole('button',{name:/Take an online test/}).click();
-  await dialog.getByRole('button',{name:'Back to attempt methods',exact:true}).click();
-  await expect(dialog.getByRole('button',{name:/Take an online test/})).toBeVisible();
+  await dialog.getByRole('button',{name:'PDF paper',exact:true}).click();
+  await dialog.getByRole('button',{name:'Online test',exact:true}).click();
+  await expect(dialog.getByRole('button',{name:'Online test',exact:true})).toHaveAttribute('aria-pressed','true');
   await dialog.getByRole('button',{name:'Close test setup',exact:true}).click();
   await expect(dialog).toHaveCount(0);
   await path.getByRole('button',{name:'Environment & Ecology',exact:true}).click();
@@ -285,11 +285,11 @@ test("different subjects combine into one paper and export the exact selection",
   await expect(page.locator(".explorer-test-items li")).toHaveCount(2);
   await summary(page).getByRole("button", { name: "Finalise test" }).click();
   const dialog = page.getByRole("dialog");
-  await dialog.getByRole("button", { name: /Download a PDF with an answer key/ }).click();
-  await dialog.getByRole("group", { name: "How many questions?" }).getByRole("button", { name: `All ${expected}`, exact: true }).click();
-  await dialog.getByRole("checkbox", { name: /Add an answer key/ }).check();
+  await dialog.getByRole("button", { name: "PDF paper", exact: true }).click();
+  await dialog.getByRole("group", { name: "Questions", exact: true }).getByRole("button", { name: "All", exact: true }).click();
+  await dialog.getByLabel("Answer key", { exact: true }).selectOption("yes");
   const popupPromise = page.waitForEvent("popup");
-  await dialog.getByRole("button", { name: `Download ${expected}-question PDF`, exact: true }).click();
+  await dialog.getByRole("button", { name: "Create PDF →", exact: true }).click();
   const popup = await popupPromise;
   await expect(popup).toHaveURL(/\/practice\/.+\/print/);
   await expect(popup.locator(".print-question")).toHaveCount(expected);
@@ -326,13 +326,11 @@ test("only added parts enter online or PDF setup", async ({ page }) => {
   await browser(page).getByRole('button',{name:'Add entire folder',exact:true}).click();
   await summary(page).getByRole("button", { name: "Finalise test" }).click();
   const dialog = page.getByRole("dialog");
-  await expect(dialog).toContainText(`${await physicalCount(page)} questions`);
-  await dialog.getByRole("button", { name: /Take an online test/ }).click();
-  await expect(dialog.getByRole("group", { name: "How many questions?" })).toBeVisible();
-  await expect(dialog.getByRole("checkbox", { name: /Add an answer key/ })).toHaveCount(0);
-  await dialog.getByRole("button", { name: "Change method" }).click();
-  await dialog.getByRole("button", { name: /Download a PDF with an answer key/ }).click();
-  await expect(dialog.getByRole("checkbox", { name: /Add an answer key/ })).toBeVisible();
+  await expect(dialog).toContainText(`${await physicalCount(page)} available MCQs`);
+  await expect(dialog.getByRole("group", { name: "Questions", exact: true })).toBeVisible();
+  await expect(dialog.getByLabel("Answer key", { exact: true })).toHaveCount(0);
+  await dialog.getByRole("button", { name: "PDF paper", exact: true }).click();
+  await expect(dialog.getByLabel("Answer key", { exact: true })).toBeVisible();
 });
 
 test("selection, folder, expanded branches, and sources restore on reload", async ({ page }) => {

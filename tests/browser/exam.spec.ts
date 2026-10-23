@@ -15,8 +15,8 @@ const choose = (page: Page, label: string) => page.locator(".scope-cards").getBy
 
 async function openOnlineSetup(page: Page) {
   await page.locator(".scope-test-summary .start-practice").click();
-  const dialog = page.getByRole("dialog", { name: "How would you like to attempt these questions?" });
-  await dialog.getByRole("button", { name: /Take an online test/ }).click();
+  const dialog = page.getByRole("dialog", { name: "Finalise test" });
+  await dialog.getByRole("button", { name: "Online test", exact: true }).click();
   return dialog;
 }
 
@@ -129,16 +129,16 @@ test("test duration defaults to untimed and survives draft reload and snapshot c
   await choose(page, "Physical Geography");
   await choose(page, CHAPTER);
   let dialog = await openOnlineSetup(page);
-  let timeOptions = dialog.getByRole("group", { name: "Time limit" });
-  await expect(timeOptions.getByRole("button", { name: "No time limit", exact: true })).toHaveAttribute("aria-pressed", "true");
-  await dialog.getByRole("group", { name: "How many questions?" }).getByRole("button", { name: "20", exact: true }).click();
-  await timeOptions.getByRole("button", { name: "20 min", exact: true }).click();
+  let timeOptions = dialog.getByLabel("Time limit", { exact: true });
+  await expect(timeOptions).toHaveValue("untimed");
+  await dialog.getByRole("group", { name: "Questions", exact: true }).getByRole("button", { name: "20", exact: true }).click();
+  await timeOptions.selectOption("20");
   await page.reload();
   dialog = await openOnlineSetup(page);
-  timeOptions = dialog.getByRole("group", { name: "Time limit" });
-  await expect(timeOptions.getByRole("button", { name: "20 min", exact: true })).toHaveAttribute("aria-pressed", "true");
+  timeOptions = dialog.getByLabel("Time limit", { exact: true });
+  await expect(timeOptions).toHaveValue("20");
   await expect(page.getByTestId("matching-count").locator("strong")).toHaveText(String(chapterCount));
-  await timeOptions.getByRole("button", { name: "Custom", exact: true }).click();
+  await timeOptions.selectOption("custom");
   let minutes = dialog.getByRole("spinbutton", { name: "Custom minutes", exact: true });
   for (const value of ["0", "1.5", "721"]) {
     await minutes.fill(value);
@@ -149,11 +149,11 @@ test("test duration defaults to untimed and survives draft reload and snapshot c
   await expect(start(page)).toBeEnabled();
   await page.reload();
   dialog = await openOnlineSetup(page);
-  timeOptions = dialog.getByRole("group", { name: "Time limit" });
-  await expect(timeOptions.getByRole("button", { name: "Custom", exact: true })).toHaveAttribute("aria-pressed", "true");
+  timeOptions = dialog.getByLabel("Time limit", { exact: true });
+  await expect(timeOptions).toHaveValue("custom");
   minutes = dialog.getByRole("spinbutton", { name: "Custom minutes", exact: true });
   await expect(minutes).toHaveValue("15");
-  await timeOptions.getByRole("button", { name: "20 min", exact: true }).click();
+  await timeOptions.selectOption("20");
   const created = page.waitForResponse((response) => response.url().endsWith("/api/practice-snapshots") && response.request().method() === "POST");
   await start(page).click();
   const snapshot = await (await created).json();
@@ -180,8 +180,8 @@ test("Exit restores the exam-specific builder's scope, sources, size and duratio
   await choose(page, CHAPTER);
   await expect(page.getByTestId("matching-count").locator("strong")).toHaveText("5");
   let dialog = await openOnlineSetup(page);
-  await dialog.getByRole("group", { name: "How many questions?" }).getByRole("button", { name: "All 5", exact: true }).click();
-  await dialog.getByRole("group", { name: "Time limit" }).getByRole("button", { name: "20 min", exact: true }).click();
+  await dialog.getByRole("group", { name: "Questions", exact: true }).getByRole("button", { name: "All", exact: true }).click();
+  await dialog.getByLabel("Time limit", { exact: true }).selectOption("20");
   await start(page).click();
   await expect(page.locator(".question-heading")).toContainText("Question 1 of 5");
   await page.getByRole("link", { name: "Exit test", exact: true }).click();
@@ -191,11 +191,11 @@ test("Exit restores the exam-specific builder's scope, sources, size and duratio
   await expect(syllabus.getByRole("button", { name: "Physical Geography", exact: true })).toBeVisible();
   await expect(syllabus.getByRole("button", { name: CHAPTER, exact: true })).toHaveAttribute("aria-current", "location");
   dialog = await openOnlineSetup(page);
-  await expect(dialog.getByRole("group", { name: "How many questions?" }).getByRole("button", { name: "All 5", exact: true })).toHaveAttribute("aria-pressed", "true");
-  await expect(dialog.getByRole("group", { name: "Time limit" }).getByRole("button", { name: "20 min", exact: true })).toHaveAttribute("aria-pressed", "true");
-  const exams = dialog.getByRole("group", { name: "Exams to include" });
-  await expect(exams.getByRole("checkbox", { name: /^CSE\b/ })).toBeChecked();
-  for (const exam of ["CAPF", "CDS", "NDA"]) await expect(exams.getByRole("checkbox", { name: new RegExp(`^${exam}\\b`) })).not.toBeChecked();
+  await expect(dialog.getByRole("group", { name: "Questions", exact: true }).getByRole("button", { name: "All", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await expect(dialog.getByLabel("Time limit", { exact: true })).toHaveValue("20");
+  const exams = dialog.getByRole("group", { name: /Exam sources/ });
+  await expect(exams.getByRole("button", { name: /^CSE\b/ })).toHaveAttribute("aria-pressed", "true");
+  for (const exam of ["CAPF", "CDS", "NDA"]) await expect(exams.getByRole("button", { name: new RegExp(`^${exam}\\b`) })).toHaveAttribute("aria-pressed", "false");
 });
 
 test('reading layout places full-width answers left and the palette right',async({page,request})=>{

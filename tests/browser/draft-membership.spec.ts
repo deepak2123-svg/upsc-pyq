@@ -24,10 +24,10 @@ test('a saved exact subset survives catalogue growth, reload, source changes and
   await expect(count).toHaveText('1');
   await summary.getByRole('button',{name:'Set up test'}).click();
   const dialog=page.getByRole('dialog');
-  await dialog.getByRole('button',{name:/Take an online test/}).click();
-  await expect(dialog.getByRole('button',{name:'20 min',exact:true})).toHaveAttribute('aria-pressed','true');
+  await dialog.getByRole('button',{name: "Online test", exact: true}).click();
+  await expect(dialog.getByLabel('Time limit',{exact:true})).toHaveValue('20');
   const response=page.waitForResponse(response=>response.url().endsWith('/api/practice-snapshots')&&response.request().method()==='POST');
-  await dialog.getByRole('button',{name:'Start 1-question test',exact:true}).click();
+  await dialog.getByRole('button',{name:'Start test →',exact:true}).click();
   const result=await(await response).json();
   expect(result.matchingCount).toBe(1);
   expect(result.questions.map((q:any)=>q.id)).toEqual([id]);
@@ -65,10 +65,10 @@ test('explicit Add remaining replaces the saved subset and PDF uses that exact c
   await expect(page.locator('.explorer-test-items li')).toHaveCount(1);
   await summary.getByRole('button',{name:'Set up test'}).click();
   const dialog=page.getByRole('dialog');
-  await dialog.getByRole('button',{name:/Download a PDF with an answer key/}).click();
+  await dialog.getByRole('button',{name: "PDF paper", exact: true}).click();
   const response=page.waitForResponse(response=>response.url().endsWith('/api/practice-snapshots')&&response.request().method()==='POST');
   const popup=page.waitForEvent('popup');
-  await dialog.getByRole('button',{name:`Download ${leaf.questionIdsByExam.CSE.length}-question PDF`,exact:true}).click();
+  await dialog.getByRole('button',{name: "Create PDF →",exact:true}).click();
   const result=await(await response).json();
   expect(result.questions.map((q:any)=>q.id).sort()).toEqual([...leaf.questionIdsByExam.CSE].sort());
   const print=await popup;
