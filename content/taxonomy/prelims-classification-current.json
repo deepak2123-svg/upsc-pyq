@@ -50695,6 +50695,1639 @@
       "tags": [
         "Static"
       ]
+    },
+    {
+      "questionId": "nda-2026-ii-100",
+      "expectedRecordHash": "d4d7e6a15c1747a9ade7d6e968a400e5628e96fd26d08cd96fbef750e94fa7c5",
+      "primaryId": "syllabus:science-technology/biology/plants-and-microorganisms/plant-morphology",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Floral and pollen adaptations for insect pollination.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 27 and independently transcribed Series A Q100 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-101",
+      "expectedRecordHash": "2b7d1e005258a32f177f1526697c5092acd118093ca4370e50992fa092004ff2",
+      "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Distribution of jute mills among Indian states, rather than jute crop physiology.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 29 and independently transcribed Series A Q101 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-102",
+      "expectedRecordHash": "80da69cce144895e0165df22a6aa09d30c65eba4c956d7f7643714b0b407ce69",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Mechanical weathering is contrasted with chemical processes.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 29 and independently transcribed Series A Q102 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-103",
+      "expectedRecordHash": "f42f441600d8c755a0ebcfe1e3c92f3771da9741861a632facef7bc1dafe6a90",
+      "primaryId": "syllabus:geography/world-geography/continents-and-regions/asia",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Named continental grasslands and their climatic classification.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 29 and independently transcribed Series A Q103 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-104",
+      "expectedRecordHash": "1c04a1318b52b8187403466d1195cec255c032aa825fa52abbee6b2eff0d66b1",
+      "primaryId": "syllabus:geography/human-economic-geography/resources-and-land-use/agricultural-systems",
+      "additionalIds": [
+        "syllabus:geography/indian-geography/agriculture-and-irrigation/cropping-patterns"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Shifting cultivation as an agricultural system and its Indian regional name.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 29 and independently transcribed Series A Q104 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-105",
+      "expectedRecordHash": "bde9d4c871e1ae2c2740d00bd54a0b8039f640f835ec33c93b65310ec439b02c",
+      "primaryId": "syllabus:geography/indian-geography/climate-and-monsoon/western-disturbances",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The identity and origin claim of western disturbances is directly tested; preserve Caspian Sea in the false statement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 29 and independently transcribed Series A Q105 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-106",
+      "expectedRecordHash": "0bd3bbf858ed05ad0d246255c4ee1c063af4945067079e782305dddff6fe0798",
+      "primaryId": "syllabus:geography/physical-geography/interior-of-the-earth/seismic-waves-and-what-they-reveal",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Seismic wave propagation and shadow zones.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 31 and independently transcribed Series A Q106 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-107",
+      "expectedRecordHash": "120fddca89b46696cf12a84d2af416e7540984a47e4ad80d071d37eae10a27f1",
+      "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The official provisional key accepts D. Retain the printed angle-of-latitude wording; it is not silently rewritten to sine of latitude.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 31 and independently transcribed Series A Q107 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-108",
+      "expectedRecordHash": "ebda0b264d76a06ab9d49821bd58d9c99f8c53b1a246f1a3b75fab679972f6a3",
+      "primaryId": "syllabus:geography/physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Volcano morphology, with Hawaii as the directly tested example.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 31 and independently transcribed Series A Q108 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-109",
+      "expectedRecordHash": "73c69b704612709a61947f60a3247345c022452b449b65da6f21b99c9a48b9e5",
+      "primaryId": "syllabus:geography/indian-geography/natural-vegetation/forest-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Named montane forest type and distribution in southern India.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 31 and independently transcribed Series A Q109 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-110",
+      "expectedRecordHash": "b090e925be7ff23c0cbf7e3743879229afa028ed8d6266034ee9b72fab889584",
+      "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/igneous-rocks",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Igneous rock formation, texture and primary-rock designation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 31 and independently transcribed Series A Q110 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-111",
+      "expectedRecordHash": "9411f54ad4c53128c5081b279d5694d64ed0d87beb8d41a8c8955612a821d126",
+      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Date line and longitude-time conversion are the assessed concepts.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 33 and independently transcribed Series A Q111 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-112",
+      "expectedRecordHash": "b69c4761733feacf6bb0c637a6b272dfcd4fdc6e1dc3c913c96b362a10083970",
+      "primaryId": "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/shape-and-size-of-earth",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Earth shape and rotational bulge.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 33 and independently transcribed Series A Q112 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-113",
+      "expectedRecordHash": "71bdb9035194e08bc8bc5f0fb25ebafd748ae23da8c7a273f4b1cdaf8e12bbd7",
+      "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/planetary-winds",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Direction of the trade winds in a specified hemisphere.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 33 and independently transcribed Series A Q113 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-114",
+      "expectedRecordHash": "08ccc200f1bd7bc4569ddbf1b76e42ebcc4d7469a960f5d2a42a09e37e81de05",
+      "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
+      "additionalIds": [
+        "syllabus:science-technology/computing-emerging-technologies/digital-foundations/communication-technologies"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Atmospheric layers, ozone location and temperature profile; ionospheric propagation is explicitly assessed.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 33 and independently transcribed Series A Q114 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-115",
+      "expectedRecordHash": "ae805cdc3c254d9e425693f540f2128c2785f45c97102fb0c304ea5d0ff94312",
+      "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-currents",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Basin attribution of seven named ocean currents.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 33 and independently transcribed Series A Q115 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-116",
+      "expectedRecordHash": "a75882ad220fd30513ea33f762f7b051ac317c50f34df2bb694861147d84be4e",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Processes of river erosion, not depositional landforms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 35 and independently transcribed Series A Q116 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-117",
+      "expectedRecordHash": "c5371e3185c73621ed583e556b33951864923f99a8d12bc3958e6eaeeee862d7",
+      "primaryId": "syllabus:geography/indian-geography/natural-hazards-and-disaster-risk/drought",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Meteorological versus other drought definitions.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 35 and independently transcribed Series A Q117 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-118",
+      "expectedRecordHash": "6cd66c19383813749e997616652867870e30c24b90c63a94d93bb9baeaae110b",
+      "primaryId": "syllabus:geography/indian-geography/location-and-extent/states-and-union-territories",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Both adjacency and landlocked qualification are essential; preserve the excluded coastal-state alternatives.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 35 and independently transcribed Series A Q118 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-119",
+      "expectedRecordHash": "71fedcc2038862ee0e914402d4a4a3c868be97526b7b9ec8d01c4962a8999b72",
+      "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/rocks-overview",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Comparative rock composition, hardness, colour and metamorphic foliation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 35 and independently transcribed Series A Q119 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-120",
+      "expectedRecordHash": "d56a41f17f520cd34f305c381761388a04d266c1fc5ac8dee0f6fd1cf07a98e0",
+      "primaryId": "syllabus:geography/human-economic-geography/population-geography/population-indicators",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Definition of a population-density indicator, not crop productivity.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 35 and independently transcribed Series A Q120 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-121",
+      "expectedRecordHash": "ce4e556026a95e9a2b86b94e8dd096ff7755cd1cc2312d2add2fe7fdc804c238",
+      "primaryId": "syllabus:history/modern-india-national-movement/gandhian-movements/congress-sessions-and-resolutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Congress session location in the national movement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 37 and independently transcribed Series A Q121 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-122",
+      "expectedRecordHash": "f3cbcfef38a8bbb67b0d85bf09070670118f204f565a178c1bd1a03a753d495a",
+      "primaryId": "syllabus:history/ancient-india/indus-valley-civilisation/agriculture-and-trade",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Harappan trade connections and commodities; Afghanistan is historical context, not current diplomacy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 37 and independently transcribed Series A Q122 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-123",
+      "expectedRecordHash": "ccd7f16e9636d584ffd4745cd4706b45309e23f6d2e88c60da9916f8465bcc63",
+      "primaryId": "syllabus:economy/industry-services-infrastructure/industry-and-enterprise/industrial-history-and-development",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Industrialisation and historical labour demands belong to the existing industrial-history concept; do not misplace a British movement under Indian nationalist workers.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 37 and independently transcribed Series A Q123 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-124",
+      "expectedRecordHash": "7510d2680cf7db42083289d9681710eaf5261214b77616ffaf7c6e91dc3b30d0",
+      "primaryId": "syllabus:economy/industry-services-infrastructure/industry-and-enterprise/industrial-history-and-development",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Historical industrial development and resource co-location; retain the printed blast-furnace chronology proposition.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 37 and independently transcribed Series A Q124 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-125",
+      "expectedRecordHash": "6975ce0c828693475a982d3dcb8b7c251fec522d48bc7b9056da0ba685e6dbd6",
+      "primaryId": "syllabus:history/ancient-india/sources-and-chronology/inscriptions-and-coins",
+      "additionalIds": [
+        "syllabus:history/ancient-india/gupta-and-post-gupta-india/land-grants-and-economy"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "An inscription as an economic-history source; the Gupta-period guild is also directly identified.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 37 and independently transcribed Series A Q125 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-126",
+      "expectedRecordHash": "e094e2f95f9296817ce355c4c29313e6f5c5016a0644697c943b3706b30b2815",
+      "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/arya-samaj",
+      "additionalIds": [
+        "syllabus:history/modern-india-national-movement/social-and-religious-reform/women-and-reform"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Chronology of reform institutions and consent legislation; both Arya Samaj and women/reform are materially assessed.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 37 and independently transcribed Series A Q126 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-127",
+      "expectedRecordHash": "3490067616b27f5b50cabcc060d200f6bed449b0f35791ecf91e5417f1754201",
+      "primaryId": "syllabus:history/ancient-india/sources-and-chronology/literary-sources",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Land terminology in an explicitly named ancient literary source.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 39 and independently transcribed Series A Q127 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-128",
+      "expectedRecordHash": "c36a53bcb757d97c58b71fd3336315e7aef067f88623a5a812a70994bc7a41e5",
+      "primaryId": "syllabus:polity-governance/elections/electoral-system/political-parties",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Political-party functions in democratic systems.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 39 and independently transcribed Series A Q128 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-129",
+      "expectedRecordHash": "cc3d6dabc3e7a82d55aa75b9f19a009e13f0e2d3c54107477374d358cb8030fb",
+      "primaryId": "syllabus:history/modern-india-national-movement/gandhian-movements/congress-sessions-and-resolutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Lahore resolution and the coordinated Independence Day observance.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 39 and independently transcribed Series A Q129 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-130",
+      "expectedRecordHash": "b408cb99484ed6270bd08aa5a6d87777a1c24c1f762481d9856facff9a51ed76",
+      "primaryId": "syllabus:history/art-culture/architecture/dravida-temples",
+      "additionalIds": [
+        "syllabus:history/medieval-india/early-medieval-kingdoms/pallavas"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Specific Pallava temple form and patronage are assessed; architecture and Pallava-period history are both relevant.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 39 and independently transcribed Series A Q130 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-131",
+      "expectedRecordHash": "6b825fc63b72f44fbdb1027e3df459b4a7bc8b1096151b4397e2cd50173d7935",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/salient-features",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Constitutional Parts and their subject matter; keep the incorrect XII/XIV pairings.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 41 and independently transcribed Series A Q131 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-132",
+      "expectedRecordHash": "1b7edeab5b2985c4d9ecf97e59b1bf0e703bd86a552f32b001bb027643447c41",
+      "primaryId": "syllabus:international-relations-organisations/india-s-relations/neighbourhood/border-relationships",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Panchsheel principles governing interstate and neighbourhood relations; not a recent treaty event.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 41 and independently transcribed Series A Q132 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-133",
+      "expectedRecordHash": "832d17c6a1919ed56d1f4fcdeb6dca27e65da3bcd0d6c8e9025f960c6e00986b",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/political-concepts/state-and-sovereignty",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Nation-building and regional integration are the principal political concepts, not a named welfare scheme.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 41 and independently transcribed Series A Q133 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-134",
+      "expectedRecordHash": "f8bd65487ae4ce96d4bb20f413750cae2dad24f88f32eb0098304190b61860ce",
+      "primaryId": "syllabus:international-relations-organisations/international-institutions/global-institutions/united-nations-organs",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "UN organs, representation and India’s institutional-reform position.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 41 and independently transcribed Series A Q134 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-135",
+      "expectedRecordHash": "b70289bc13f48b9d64d9eba6317db60b62209826b1acd274557d14c77637ddcc",
+      "primaryId": "syllabus:economy/development/development-policy/planning-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Historical planning-document identity; do not present a Five-Year Plan as a current initiative.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 43 and independently transcribed Series A Q135 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-136",
+      "expectedRecordHash": "c8595917dd5c672bef2204d340ca54943a39970958368142538255efb3f33b5c",
+      "primaryId": "syllabus:polity-governance/federalism-local-government/local-government/scheduled-areas",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "PESA applicability and Gram Sabha powers are directly tested; preserve the negative qualifier.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 43 and independently transcribed Series A Q136 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-137",
+      "expectedRecordHash": "db0075c7d3c26a6c48e2aa9e44ed4f01eb5b8a3610cc2a92ed77cd7e25a4ca1f",
+      "primaryId": "syllabus:economy/development/development-policy/planning-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "NITI Aayog’s institutional basis distinguishes the alternatives; not every distractor warrants an additional home.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 43 and independently transcribed Series A Q137 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-138",
+      "expectedRecordHash": "c732d220f1872a141aa830674728800b5c529681a79c68b00723909640add797",
+      "primaryId": "syllabus:polity-governance/federalism-local-government/local-government/panchayats",
+      "additionalIds": [
+        "syllabus:polity-governance/federalism-local-government/local-government/municipalities"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Committee recommendation on constitutional status for local bodies.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 43 and independently transcribed Series A Q138 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-139",
+      "expectedRecordHash": "ff66591f6263448e1a46875a1eb7ee280a91282970baf10ee323b03a6f98d304",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/amendment-and-basic-structure",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Anti-defection constitutional amendment is the exact task.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 43 and independently transcribed Series A Q139 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-140",
+      "expectedRecordHash": "1fd319ffba055eccd35abbbbb877ae8237467daef7fc279829505578a7b6944c",
+      "primaryId": "syllabus:current-affairs/international-affairs/agreements-and-cooperation/humanitarian-cooperation",
+      "additionalIds": [
+        "syllabus:international-relations-organisations/india-s-relations/neighbourhood/regional-cooperation"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Named contemporary assistance and relief operations in India’s neighbourhood are substantive; Bhutan maritime wording remains false.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 43 and independently transcribed Series A Q140 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-141",
+      "expectedRecordHash": "9aa58d44914fb3b2192894bc6bef1e354ec3d20735d303eee235575cb4df53af",
+      "primaryId": "syllabus:current-affairs/defence-security/defence-cooperation/procurement-agreements",
+      "additionalIds": [
+        "syllabus:international-relations-organisations/india-s-relations/bilateral-relations/southeast-and-east-asia"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Named missile-supply agreements are defence cooperation, not generic missile physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 45 and independently transcribed Series A Q141 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-142",
+      "expectedRecordHash": "3523440a91752c643bb6b5a06b4161971af71746deb78b2f27f12a9faf1d392d",
+      "primaryId": "syllabus:science-technology/research-innovation/research-institutions-and-systems/research-funding",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Research-fellowship institutional affiliation is the primary concept.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 45 and independently transcribed Series A Q142 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-143",
+      "expectedRecordHash": "7fb3fb1e65eaee26f0db0534e7f684cb1e81faf56f5fd58ab8ebcd760cfd6b53",
+      "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/conservation-initiatives",
+      "additionalIds": [
+        "syllabus:environment-ecology/conservation/conservation-programmes/species-programmes"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Examination-date membership in a named conservation initiative.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 45 and independently transcribed Series A Q143 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-144",
+      "expectedRecordHash": "b7b00d9452da9d37ae453353554d3533954e4f693ac12c15a6ac0eccab65035a",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/international-awards",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The 2026 award and recipients are the explicit focus; do not rewrite the historical year or infer an event date.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 45 and independently transcribed Series A Q144 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-145",
+      "expectedRecordHash": "78d6ec06c8f0c745849a8c69a536784be4863bc940a5ee4001b7cdb0664fab03",
+      "primaryId": "syllabus:current-affairs/international-affairs/agreements-and-cooperation/new-agreements",
+      "additionalIds": [
+        "syllabus:international-relations-organisations/india-s-relations/bilateral-relations/americas"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "A dated bilateral uranium agreement tests contemporary international cooperation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 45 and independently transcribed Series A Q145 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-146",
+      "expectedRecordHash": "04d11bb6a56efa8693b56b5c1d07bd18d77305bcf0089e4084e3564734d9fd81",
+      "primaryId": "syllabus:current-affairs/defence-security/exercises-and-operations/military-exercises",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "A named, dated exercise and its objective; preserve UAE as printed, not the actual partner.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 45 and independently transcribed Series A Q146 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-147",
+      "expectedRecordHash": "651228b2fd4ec20c94a188948e710465fc66edc3b11184cd72a1aabe21850c22",
+      "primaryId": "syllabus:current-affairs/defence-security/exercises-and-operations/military-exercises",
+      "additionalIds": [
+        "syllabus:current-affairs/defence-security/exercises-and-operations/participating-forces"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Exercise venue and participating aircraft are all directly tested.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 47 and independently transcribed Series A Q147 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-148",
+      "expectedRecordHash": "45d0bebc6f4c0a120fd863b4754c6572a8eb066ba028421d8d6245845af9dea1",
+      "primaryId": "syllabus:current-affairs/national-affairs/government-initiatives/implementing-institutions",
+      "additionalIds": [
+        "syllabus:geography/indian-geography/drainage/river-projects"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Scheme status, mandate and implementing agency are explicitly assessed.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 47 and independently transcribed Series A Q148 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-149",
+      "expectedRecordHash": "2d7448c12bae9e99a66341d61f211dc73c0050eafdc724058f19a368ce04ff82",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/competitions-and-venues",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "A specific sports edition, mascot and umbrella scheme; no event year is inferred from the exam year.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 47 and independently transcribed Series A Q149 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-150",
+      "expectedRecordHash": "3c946c2bd72053196cc5dcc3e72d81d25f81ad45cd38c9758de950787b0af63d",
+      "primaryId": "syllabus:current-affairs/defence-security/defence-cooperation/defence-production",
+      "additionalIds": [
+        "syllabus:economy/industry-services-infrastructure/industry-and-enterprise/manufacturing"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Examination-context domestic defence production and indigenisation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 47 and independently transcribed Series A Q150 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-51",
+      "expectedRecordHash": "5d30382da14df9af10bb56364ee491d9279dd64e55f96331c4ba3edb07943443",
+      "primaryId": "syllabus:science-technology/physics/mechanics/force-and-momentum",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The tested concept is friction providing centripetal force; this is physics, not standalone mathematics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 9 and independently transcribed Series A Q51 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-52",
+      "expectedRecordHash": "c60e08cbe403443cdcba42a3929c159d6b54210c4541af37b3d48161892ba9ac",
+      "primaryId": "syllabus:science-technology/physics/mechanics/work-energy-and-power",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Gravitational potential energy converts to kinetic energy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 9 and independently transcribed Series A Q52 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-53",
+      "expectedRecordHash": "97db66e8471e9461a1191fb1690d05347cfde8e12e274e9e33dbecbe7371a389",
+      "primaryId": "syllabus:science-technology/physics/mechanics/work-energy-and-power",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Maximum height and potential energy test mechanical energy conservation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 9 and independently transcribed Series A Q53 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-54",
+      "expectedRecordHash": "2509c142f7fbb9397b618197924c8dbb196676b8c29a27116486b19f2331fc41",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/optics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Total internal reflection conditions are the entire task.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 9 and independently transcribed Series A Q54 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-55",
+      "expectedRecordHash": "67f8527cf062cca4ec2f65a87faf01cbd6b1d2498608f54ca5f322973a220f66",
+      "primaryId": "syllabus:science-technology/physics/mechanics/gravitation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The distinction between inertial mass, gravitational mass and weight is directly tested.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 9 and independently transcribed Series A Q55 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-56",
+      "expectedRecordHash": "03bca6ab9ccfc46d4a36ef44d7c83badb2c25b99c357fa43060cfcfa110c7bab",
+      "primaryId": "syllabus:science-technology/physics/mechanics/gravitation",
+      "additionalIds": [
+        "syllabus:science-technology/physics/light-and-electricity/electrostatics",
+        "syllabus:science-technology/physics/modern-physics/fundamental-interactions"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Inverse-square field dependence is compared across fundamental interactions. The official provisional C cell is retained; the inclusion of a bar-magnet field requires an editorial caveat.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 11 and independently transcribed Series A Q56 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-57",
+      "expectedRecordHash": "9fae64bd3b65049c7c1ddb13f26ad989dd270671561c7aee758000cd940b8d0b",
+      "primaryId": "syllabus:science-technology/physics/mechanics/fluids",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "A liquid-surface phenomenon is tested rather than atmospheric humidity.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 11 and independently transcribed Series A Q57 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-58",
+      "expectedRecordHash": "74765ff88087ce5adb49a2837b6c92ff01ac8c768f9fc777dfec4c1fcda9c763",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/optics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Apparent depth through successive refractive media.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 11 and independently transcribed Series A Q58 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-59",
+      "expectedRecordHash": "918a61cb2f2b70489f4757a488c8753c7dd217b1504e49e92b8acd3ea5391e7e",
+      "primaryId": "syllabus:science-technology/physics/mechanics/work-energy-and-power",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Work done by a position-dependent force determines kinetic energy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 11 and independently transcribed Series A Q59 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-60",
+      "expectedRecordHash": "f5cb1c757d56c78b9dcad941c678304c6dd031e89d3596ec930ddc3a5d8ff5db",
+      "primaryId": "syllabus:science-technology/physics/mechanics/gravitation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Gravitational force inside a uniform sphere produces oscillation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 11 and independently transcribed Series A Q60 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-61",
+      "expectedRecordHash": "a030addea040c982a39c7e4e00fa1ad103f0390eef7abd1d63bc80550e7d7e71",
+      "primaryId": "syllabus:science-technology/physics/mechanics/motion",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Relative velocity vectors determine the apparent rain directions.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 13 and independently transcribed Series A Q61 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-62",
+      "expectedRecordHash": "0eb4b55dd4d6c932500aa4ab94374b8ec432a504399355b09afc4e596bcd8785",
+      "primaryId": "syllabus:science-technology/physics/mechanics/work-energy-and-power",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete vertical-circle condition combines tension and energy conservation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 13 and independently transcribed Series A Q62 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-63",
+      "expectedRecordHash": "943f74990da5f313cde967f269e3b605b6715099009542868adc52f407e4a38d",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/current-electricity",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Resistance depends on length and cross-sectional area.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 13 and independently transcribed Series A Q63 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-64",
+      "expectedRecordHash": "3cfd012f0659baa8886fb988eafd7a65a88d275d5ef956a4c5315db58a24ad19",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/optics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Lens-maker and image-distance relations are tested.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 13 and independently transcribed Series A Q64 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-65",
+      "expectedRecordHash": "5edab045e329382a70a6188a2eee0645b94c16d5e69c00f197f1b2323d8e8995",
+      "primaryId": "syllabus:science-technology/physics/mechanics/force-and-momentum",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Impulse equals change in momentum during contact.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 13 and independently transcribed Series A Q65 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-66",
+      "expectedRecordHash": "2f67a19a08e473152f970c58ef0d72d9d121604d9e5f9db05ae528ab21fa582f",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/optics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Wavelength changes with refractive index while frequency remains fixed.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 13 and independently transcribed Series A Q66 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-67",
+      "expectedRecordHash": "d6b83ded558b34d1bc93813a743be178290904497fc3cb6cf6dad4a1e5a301ed",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/current-electricity",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Temperature dependence of filament resistance and series-circuit voltage distribution.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 15 and independently transcribed Series A Q67 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-68",
+      "expectedRecordHash": "53aa3d4e7d0d2dca742e4d4ab04e432563d71e5448d0f015c49e7f40695053e5",
+      "primaryId": "syllabus:science-technology/physics/mechanics/force-and-momentum",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "An isolated system conserves momentum and centre-of-mass motion.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 15 and independently transcribed Series A Q68 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-69",
+      "expectedRecordHash": "a548b9caffc79812e3382474ffc2aca48624de1aa1910daafdb38fcf7aa224bf",
+      "primaryId": "syllabus:science-technology/physics/mechanics/motion",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Speed and acceleration around a pulley are distinct kinematic quantities.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 15 and independently transcribed Series A Q69 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-70",
+      "expectedRecordHash": "bba7cfff758f77673a57961cfb1d8e8073107577f2ab378a8112ccdf3eb09b81",
+      "primaryId": "syllabus:science-technology/physics/heat-and-waves/temperature-and-heat",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Calorimetry includes latent heat and cooling of condensed steam.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 15 and independently transcribed Series A Q70 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-71",
+      "expectedRecordHash": "351dd41cb7329d74d3509b8111d587273ccc08fab4a0ccc8353ca45d7a0ca5d7",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/optics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Successive refractions through parallel surfaces preserve the emergence angle.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 17 and independently transcribed Series A Q71 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-72",
+      "expectedRecordHash": "ea53d533a0b8457ce6b96a822f27f2c549b6f7e18cc53f3ceab83600ec4b347c",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/current-electricity",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Electrical resistance is related to conductivity and cross-sectional area.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 17 and independently transcribed Series A Q72 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-73",
+      "expectedRecordHash": "4e8ddc21da5d325e3b2211231c26ae9a08b7758897eb475235846468ac865fcb",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/electrostatics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Minimum electrostatic potential energy implies equilibrium at the third charge.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 17 and independently transcribed Series A Q73 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-74",
+      "expectedRecordHash": "3da9f17a3b9267cbec23dfc4911b76e2d26280bcee376bbad6a77a12316d0210",
+      "primaryId": "syllabus:science-technology/physics/heat-and-waves/sound",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Dependence of sound speed on temperature, humidity and pressure is tested.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 17 and independently transcribed Series A Q74 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-75",
+      "expectedRecordHash": "c1969c43f19d43678a7524127fe638d9b718ee0e3493cf4cccebfb2859bb2096",
+      "primaryId": "syllabus:science-technology/physics/heat-and-waves/temperature-and-heat",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The causal assertion concerns anomalous expansion of water, not marine species classification.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 17 and independently transcribed Series A Q75 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-76",
+      "expectedRecordHash": "5816a7476306b71c02ab088930fb79a96713f9cee82846375162e059278f1122",
+      "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/reaction-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Oxidation-state assignment and redox terminology.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 19 and independently transcribed Series A Q76 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-77",
+      "expectedRecordHash": "f9b0886e6960baa9defa097454a2b6e62e43ba1f6776dd2189f02687d2966036",
+      "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/atomic-and-molecular-structure",
+      "additionalIds": [
+        "syllabus:science-technology/computing-emerging-technologies/emerging-technologies/energy-technologies"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Hydrogen isotope decay and water molecular geometry determine the incorrect propositions; hydrogen energy is separately tested.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 19 and independently transcribed Series A Q77 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-78",
+      "expectedRecordHash": "e8eb74e8a3ee4e5aacfdcf51e11bf93bedcc5474e6c63062a9e73d9bdfe9ee26",
+      "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/chemical-bonding",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Molecular and intermolecular bonding in nitrogen.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 19 and independently transcribed Series A Q78 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-79",
+      "expectedRecordHash": "b324e7854f009f42ff26db6e54e2570335fc4b42950849391c7703e95e087de6",
+      "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/acids-bases-and-salts",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Acid-base neutralisation and indicator colour.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 19 and independently transcribed Series A Q79 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-80",
+      "expectedRecordHash": "ca7a3aaa1c6b718972d226c0dc8928b6246ab9ece5b4b744d7834a7931de16f8",
+      "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/reaction-types",
+      "additionalIds": [
+        "syllabus:science-technology/chemistry/matter-and-reactions/acids-bases-and-salts"
+      ],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Zinc reactivity and acid identification are explicit, separately assessed propositions.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 19 and independently transcribed Series A Q80 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-81",
+      "expectedRecordHash": "12dfa59738e984155b3dd1c7d997f0e75bf5b7a18c4fd71944fb12a7b124a4ff",
+      "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/surface-chemistry-and-adsorption",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Classification of solutions, suspensions and colloids.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 21 and independently transcribed Series A Q81 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-82",
+      "expectedRecordHash": "90600100341e937b6b3b15df6556f3456d10220dd677d4bca9b1899f9fcda283",
+      "primaryId": "syllabus:science-technology/chemistry/materials-and-applications/everyday-chemicals",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Hydrogen peroxide concentration and hydrated copper sulphate are tested.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 21 and independently transcribed Series A Q82 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-83",
+      "expectedRecordHash": "20254653c52c8e25fdb61bcd1471eed08907eda5d8f88ec22435d9bf39c6b952",
+      "primaryId": "syllabus:science-technology/chemistry/materials-and-applications/everyday-chemicals",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Natural acid, plaster and hydrate chemistry; preserve the deliberately incorrect carbonate and green dihydrate wording.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 21 and independently transcribed Series A Q83 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-84",
+      "expectedRecordHash": "74e916834c76968c849f5ad34a6c766a66d6006e9ae44b61440bd21f203dab67",
+      "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/reaction-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "All four paired reaction equations and classifications are essential; keep each pair on its own prompt line.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 21 and independently transcribed Series A Q84 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-85",
+      "expectedRecordHash": "b06181f2120d9cb473cc8238e4c3993dcd6eb86c46659c7fd4ddf3b971b8867e",
+      "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/atomic-and-molecular-structure",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Elemental mass composition of a chemical compound.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 23 and independently transcribed Series A Q85 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-86",
+      "expectedRecordHash": "144613d4f8bbd841e1e978e4faf42a8e4a078499c374bc270b4923501c4a1853",
+      "primaryId": "syllabus:science-technology/chemistry/materials-and-applications/carbon-compounds",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Saponification products distinguish glycerol/glycol and sodium/potassium salts.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 23 and independently transcribed Series A Q86 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-87",
+      "expectedRecordHash": "bec86d674cf3fd6d1072cbe2c10681c51bc57a2185b94dcb7753ab879b4dc326",
+      "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/chemical-bonding",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Hydrogen-bond formation, intermolecular character and strength.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 23 and independently transcribed Series A Q87 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-88",
+      "expectedRecordHash": "9a59522124ecde317e073af43ffcf0ff2fb4660577c3216558419ce8c124220a",
+      "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/chemical-bonding",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Ionic crystal bonding explains physical properties.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 23 and independently transcribed Series A Q88 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-89",
+      "expectedRecordHash": "2f69a447a6068d1057e0bc07d115e4cbcfb335eabb6e888285850c19664f60b3",
+      "primaryId": "syllabus:science-technology/chemistry/materials-and-applications/construction-materials",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Gypsum retardation and setting of cement are the specific application.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 23 and independently transcribed Series A Q89 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-90",
+      "expectedRecordHash": "8f3ae6b26347802fda2d17c921eacf23702fb69d0280bd5d9e5bbd97ab8ae17c",
+      "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/surface-chemistry-and-adsorption",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Colloid example-to-type matching; all four table rows are retained.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 23 and independently transcribed Series A Q90 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-91",
+      "expectedRecordHash": "1bab314ff1b66a461ea95b146326a5339cab69677c2dd4f919485838821219d7",
+      "primaryId": "syllabus:science-technology/biology/human-physiology/respiration",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Aerobic/anaerobic respiration and glycolysis are tested.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 25 and independently transcribed Series A Q91 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-92",
+      "expectedRecordHash": "de79aa216144835b9180619b138403601e642c568224da66df3ab01a2ae90906",
+      "primaryId": "syllabus:science-technology/biology/human-physiology/nutrition-and-digestion",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The regulating structure at the stomach exit is specifically tested.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 25 and independently transcribed Series A Q92 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-93",
+      "expectedRecordHash": "8e66b2955f0415ec9802b30479fd1efd7a9afcfb58220487dde92afc727a9aef",
+      "primaryId": "syllabus:science-technology/biology/plants-and-microorganisms/plant-tissues",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Xylem and phloem components are complex permanent plant tissues.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 25 and independently transcribed Series A Q93 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-94",
+      "expectedRecordHash": "fd4e284cd3d7385ddc8e420f01318bf00b9a13591bb4e449971999696b1d6a1b",
+      "primaryId": "syllabus:science-technology/biology/human-physiology/nervous-and-endocrine-systems",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Anatomical brain regions rather than disease.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 25 and independently transcribed Series A Q94 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-95",
+      "expectedRecordHash": "4eabe9267dec881f4a7636279ed0bacf9bff6321af8101be78b63a8cb04d8fe5",
+      "primaryId": "syllabus:science-technology/biology/animal-biology/reproductive-strategies",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "External versus internal fertilisation across animal groups.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 27 and independently transcribed Series A Q95 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-96",
+      "expectedRecordHash": "6d38799aa73075b251966a82d721d0c5208b71be128766fac9c607776483da80",
+      "primaryId": "syllabus:science-technology/biology/plants-and-microorganisms/biological-classification",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Dominant plant-body ploidy distinguishes plant groups.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 27 and independently transcribed Series A Q96 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-97",
+      "expectedRecordHash": "8edac44671d2a68e0eaa10d2234b483a9f03c01e32aef182f6342788e3e274aa",
+      "primaryId": "syllabus:science-technology/biology/plants-and-microorganisms/plant-morphology",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Morphological components of a typical flower.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 27 and independently transcribed Series A Q97 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-98",
+      "expectedRecordHash": "74cd09aa7c737a51ce746f529f4f050546411332b15e32c8496bd57b93ed7e65",
+      "primaryId": "syllabus:science-technology/biology/cell-and-genetics/cell-structure",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Cell organelles shared between prokaryotes and eukaryotes.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 27 and independently transcribed Series A Q98 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-ii-99",
+      "expectedRecordHash": "890684cc616a9a0e70ffeea38286267d9ba4a3a8d9c63edd6c48c283f3ddb054",
+      "primaryId": "syllabus:science-technology/biology/human-physiology/muscles-and-movement",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "Muscle versus connective tissue classification.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate second-pass check against complete English page 27 and independently transcribed Series A Q99 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
+      },
+      "tags": [
+        "Static"
+      ]
     }
   ],
   "note": "Preserved Physical Geography decisions are explicitly distinguished from fresh source/option review. Answer eligibility remains in the independent review policy."

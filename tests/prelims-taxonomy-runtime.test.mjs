@@ -3,13 +3,20 @@ import {freezeSelectionMembership,restoreFrozenSelection} from '../lib/practice-
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
-import {buildSelectionIndex,restoreVersionedPaths,addScope,removeScope,selectionCounts} from '../lib/practice-selection.ts';
+import {buildSelectionIndex,restoreVersionedPaths,addScope,removeScope,selectionCounts,scopeDisplayNumber} from '../lib/practice-selection.ts';
 const frozen=JSON.parse(fs.readFileSync('content/taxonomy/prelims-legacy-inventory.json')).inventory;
 async function fetchWorker(url,init={}) {
   const {default:worker}=await import('../dist/server/index.js');
   return worker.fetch(new Request(`http://localhost${url}`,init),{ASSETS:{fetch:async()=>new Response('Not found',{status:404})}},{waitUntil(){},passThroughOnException(){}});
 }
 async function inventory(){return(await fetchWorker('/api/pyqs/inventory')).json();}
+test('every syllabus chapter and subpart has stable section-local display numbering',async()=>{
+ const data=await inventory(), index=buildSelectionIndex(data);
+ for(const node of data.nodes.filter(n=>!n.legacyOnly)){
+  if(node.kind==='topic')assert.equal(scopeDisplayNumber(node.id,index),`Chapter ${node.order}`);
+  if(node.kind==='subtopic')assert.equal(scopeDisplayNumber(node.id,index),`${index.nodesById.get(node.parentId).order}.${node.order}`);
+ }
+});
 async function snapshot(recipe){const response=await fetchWorker('/api/practice-snapshots',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(recipe)});return{response,body:await response.json()};}
 test('working syllabus exposes all nine GS subjects, every empty subpart and precisely seven Current Affairs sections',async()=>{
   const data=await inventory();
@@ -57,7 +64,7 @@ test('Economy Current Affairs mirrors every approved economic current-affairs le
   const ids=result.body.questions.map(q=>q.id);
   assert.equal(new Set(ids).size,ids.length);
   assert.equal(ids.length,selectionCounts(sourcePaths,index).matchingCount);
-  assert.equal(data.totalCount,1713,'Sharing categories must not create new question records');
+  assert.equal(data.totalCount,1813,'Sharing categories must not create new question records; NDA II 2026 adds 100 unique GS occurrences');
 });
 
 test('older V4 and V3 scopes retain frozen membership after a question moves to another subject',async()=>{

@@ -97,9 +97,12 @@ function matchingListBlocks(lines: string[]): PracticePromptBlock[] | null {
   if (!second) return null;
   const secondStart = afterFirst + second.index;
   const afterSecond = secondStart + second[0].length;
-  const codeStart = value.slice(afterSecond).search(/\s+Code\s*:/i);
-  const leftItems = listItems(value.slice(afterFirst, secondStart), letteredItemMarker, ["A", "B", "C", "D", "E"]);
-  const rightItems = listItems(value.slice(afterSecond, codeStart >= 0 ? afterSecond + codeStart : value.length), numberedMarker, ["1", "2", "3", "4", "5"]);
+  const codeStart = value.slice(afterSecond).search(/\s+(?:Code\s*:|Select the (?:correct )?answer\b)/i);
+  const leftText = value.slice(afterFirst, secondStart);
+  const rightText = value.slice(afterSecond, codeStart >= 0 ? afterSecond + codeStart : value.length);
+  const romanLeft = /^\s*I[.)]\s/.test(leftText);
+  const leftItems = romanLeft ? listItems(leftText, romanMarker, ["I","II","III","IV","V"]) : listItems(leftText, letteredItemMarker, ["A", "B", "C", "D", "E"]);
+  const rightItems = romanLeft ? listItems(rightText, letteredItemMarker, ["A","B","C","D","E"]) : listItems(rightText, numberedMarker, ["1", "2", "3", "4", "5"]);
   if (!leftItems || !rightItems) return null;
   const introduction = value.slice(0, first.index).trim();
   const trailing = codeStart >= 0 ? value.slice(afterSecond + codeStart).trim() : "";
@@ -122,17 +125,18 @@ function pairedRowBlocks(lines: string[]): PracticePromptBlock[] | null {
     // was visually confirmed on CSE 2015 Series A page 6; do not guess others.
     const reviewedTitles = lines[header] === 'Place of Pilgrimage Location'
       ? ['Place of Pilgrimage', 'Location'] : null;
-    const titles = lines[header].match(/^([^:]+):\s*([^:]+)$/)
+    const pipeTitles = lines[header].match(/^([^|]+)\|\s*([^|]+)$/);
+    const titles = pipeTitles ?? lines[header].match(/^([^:]+):\s*([^:]+)$/)
       ?? (reviewedTitles ? [lines[header], ...reviewedTitles] : null);
     if (!titles || leadingArabicMarker.test(lines[header])) continue;
     const rows: { marker: string; left: string; right: string }[] = [];
     let end = header + 1;
     for (; end < lines.length; end += 1) {
-      const numbered = lines[end].match(leadingArabicMarker);
+      const numbered = lines[end].match(pipeTitles ? leadingRomanMarker : leadingArabicMarker);
       if (!numbered) break;
-      const pair = numbered[3].match(/^(.+?):\s*(.+)$/);
+      const pair = numbered[3].match(pipeTitles ? /^(.+?)\|\s*(.+)$/ : /^(.+?):\s*(.+)$/);
       // Never turn just the well-formed prefix of a damaged table into a table.
-      if (Number(numbered[1]) !== rows.length + 1 || !pair) return null;
+      if ((pipeTitles ? romanValue(numbered[1]) : Number(numbered[1])) !== rows.length + 1 || !pair) return null;
       rows.push({ marker: `${numbered[1]}${numbered[2]}`, left: pair[1].trim(), right: pair[2].trim() });
     }
     if (rows.length < 2) continue;

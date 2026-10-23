@@ -282,7 +282,6 @@ export function PracticeClient({ id }: { id: string }) {
         <div className={`practice-timer ${isTimed && timerValue <= 60 && attempt.status !== "completed" ? "is-low" : ""}`}><small>{isTimed && attempt.status !== "completed" ? "Time left" : "Elapsed"}</small><time aria-label={`${isTimed && attempt.status !== "completed" ? "Time remaining" : "Elapsed time"} ${formatPracticeTime(timerValue)}`}>{formatPracticeTime(timerValue)}</time></div>
         <button disabled={busy} onClick={() => void finish()}>{busy ? "Saving…" : attempt.status === "completed" ? "Results" : pendingCompletion.current ? "Retry saving" : "Finish"}</button>
       </header>
-      <div className="practice-progress" role="progressbar" aria-label="Practice progress" aria-valuemin={0} aria-valuemax={attempt.snapshot.questions.length} aria-valuenow={answered}><span style={{ width: `${answered / attempt.snapshot.questions.length * 100}%` }} /></div>
       {error && <div className="practice-save-error" role="alert"><p>{error}</p>{saveFailed && !pendingCompletion.current && <button onClick={() => { const value = current.current; if (value) void saveChange(value); }}>Retry saving</button>}</div>}
       <div className="exam-workspace">
       <AnimatePresence mode="wait" initial={false}>

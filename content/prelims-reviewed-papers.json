@@ -49,5 +49,19 @@
     "identityRationale":"Both language covers show Series A, GS Paper-I and 100 bilingual questions; English cover PDF page 2 bears Civil Services (Prelim) Exam-2016. The matching independently headed key identifies CSE Preliminary 2016 GS-I Series A, 100 scoring items and NIL dropped. Opening English Q1-Q5 identities and options were compared, not inferred from filename.",
     "secondPass":"Reread covers PDF pages 1/2, complete English question pages 3 through 33 (odd-numbered) and corresponding Series A Q1-Q90 cells. Q3/Q8/Q48/Q66/Q78/Q83 continue across columns. English questions start at PDF page 3, not page 2. Only Q1-Q90 currently reviewed: 61 imports and 29 reuses; 10 remain pending. Q23/Q55/Q90 have separate nonmaterial closing-quote restorations. Preserve the printed solar-alliance membership, EU agency wording, pension-family, Taniyurs, negative-membership, gold-FDI, Bitcoin and proposed NIMZ claims, historical regimes and prior corrected Q45 answer; use only canonical Q54 while its duplicate stays held. No unsupported event dates or recent policy rewrites.",
     "reviewedAt":"2026-10-22"
+  },{
+    "exam":"NDA","year":2026,"paper":"II","series":"A","questionCount":150,
+    "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-2.pdf",
+    "originalPdfSha256":"cc524b288fb4136f50ae648face0bd648a8a0c1f0753e9e8c5130f723cc9a987",
+    "coverPage":1,"languages":["Hindi","English"],"reviewedLanguage":"English",
+    "questionPages":[9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47],
+    "keyPdf":"../.tmp/full_reaudit_answer_keys/NDA/2026_II_GAT_provisional.pdf",
+    "keySha256":"1d86b52baed1a38607c7203bbccfb3625c78168cf351484bc5b6a45c101d01f3",
+    "keyPage":1,"keySeries":"A","keyQuestionCount":150,"keyStatus":"official-provisional","droppedQuestions":[],
+    "identityStatus":"cover-key-and-question-identity-reviewed",
+    "identityRationale":"Original cover explicitly identifies NDA & NA Examination (II), 2026, Series A, GAT, 150 items. Original English Part B begins at Q51 on page 9 and ends at Q150 on page 47. UPSC-hosted key header independently identifies NDA & NA-II-Exam-2026 (PROVISIONAL KEY), GAT, Series A, 150 total/scoring questions, zero dropped. Document hashes and complete Q51-Q150 cells were checked; identity is not inferred from the filename.",
+    "secondPass":"English GS pages 9-47 and Series A key page 1 checked against the two fixed batches (Q51-Q100 and Q101-Q150). Q84/Q90 retain full paired tables, Q126 both matching lists, and numerical questions retain units and expressions. Key-only caveats for Q56 and Q107 are explicit. The official provisional answer is not silently replaced by independent reasoning. Part A Q1-Q50 is English and excluded from this GS import; this is a scope decision, not answer verification of those items.",
+    "outOfScopeRanges":[{"from":1,"to":50,"reason":"Part A English; outside the approved GS-only collection","evidencePages":[2,3,4,5,6,7]}],
+    "reviewedAt":"2026-10-23"
   }]
 }

@@ -1,6 +1,8 @@
 import frozen from '../content/taxonomy/prelims-legacy-inventory.json' with {type:'json'};
 import type {PracticeInventoryNode,PracticeSubject,PyqExam} from './pyq-catalog';
 
+export const legacySnapshotQuestionIds=new Set(frozen.inventory.nodes.filter(node=>node.kind==='subtopic').flatMap(node=>Object.values(node.questionIdsByExam||{}).flat()));
+
 /** Frozen memberships are compatibility scopes, not new public syllabus branches. */
 export function bridgeLegacyPlacements(subjects:Map<string,PracticeSubject>,nodes:Map<string,PracticeInventoryNode>,allowed:Map<string,PyqExam>) {
   const oldNodes=new Map(frozen.inventory.nodes.map(n=>[n.id,n]));

@@ -257,10 +257,9 @@ export function ancestors(scopeId: string, index: SelectionIndex): ScopeNode[] {
   return result;
 }
 
-/** Stable display numbering for the PDF-defined Physical Geography hierarchy. */
+/** Stable chapter/subpart numbering within every syllabus section. */
 export function scopeDisplayNumber(scopeId: string, index: SelectionIndex): string | undefined {
   const path = ancestors(scopeId, index);
-  if (!path.some((node) => node.kind === "head" && node.label === "Physical Geography")) return undefined;
   const topic = path.find((node):node is PracticeInventoryNode => node.kind === "topic");
   const node = index.nodesById.get(scopeId);
   if (!topic || !node) return undefined;

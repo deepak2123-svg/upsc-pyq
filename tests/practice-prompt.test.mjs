@@ -3,6 +3,23 @@ import test from "node:test";
 import { formatPracticePrompt, formatPracticeText } from "../lib/practice-prompt.ts";
 import fs from 'node:fs';
 
+test('NDA II 2026 preserves chemical tables and Roman-to-letter matching lists',()=>{
+  const questions=JSON.parse(fs.readFileSync('content/reviewed-prelims-imports.json')).questions;
+  for(const number of [84,90]) {
+    const q=questions.find(q=>q.id===`nda-2026-ii-${number}`),before=JSON.stringify(q);
+    const table=formatPracticePrompt(q.promptLines).find(b=>b.kind==='pair-table');
+    assert.ok(table);assert.equal(table.rows.length,4);
+    assert.deepEqual(table.rows.map(r=>r.marker),['I.','II.','III.','IV.']);
+    assert.equal(JSON.stringify(q),before);
+  }
+  const q=questions.find(q=>q.id==='nda-2026-ii-126');
+  const blocks=formatPracticePrompt(q.promptLines),table=blocks.find(b=>b.kind==='match-table');
+  assert.ok(table);assert.deepEqual(table.left.items.map(r=>r.label),['I','II','III','IV']);
+  assert.deepEqual(table.right.items.map(r=>r.label),['A','B','C','D']);
+  assert.equal(table.right.items[3].text,'1891');
+  assert.equal(blocks.at(-1).text,'Select the answer using the code given below:');
+});
+
 test('explicit source pairs become two columns without losing long descriptions or instructions',()=>{
   const imports=JSON.parse(fs.readFileSync('content/reviewed-prelims-imports.json')).questions;
   for(const n of [85,89,97]) {

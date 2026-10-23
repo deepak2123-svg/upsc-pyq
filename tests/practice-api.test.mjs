@@ -29,6 +29,22 @@ async function create(recipe) {
   return { response, body: await response.json() };
 }
 
+test('NDA II 2026 all 100 original GS questions reach answer-free snapshots and official provisional grading',async()=>{
+ const data=await inventory();
+ const imports=JSON.parse(await readFile(new URL('../content/reviewed-prelims-imports.json',import.meta.url),'utf8')).questions.filter(q=>q.exam==='NDA'&&q.year===2026&&q.paper==='II');
+ const ids=new Set(imports.map(q=>q.id));
+ const leaves=data.nodes.filter(n=>n.kind==='subtopic'&&!n.legacyOnly&&n.questionIdsByExam?.NDA.some(id=>ids.has(id)));
+ const frozenScopes=leaves.map(n=>({id:n.id,subjectId:n.subjectId,label:n.label,parentId:n.parentId,order:n.order,questionIdsByExam:{CSE:[],CAPF:[],CDS:[],NDA:n.questionIdsByExam.NDA.filter(id=>ids.has(id))}}));
+ const {response,body}=await create({version:4,taxonomyVersion:data.taxonomyVersion,subjectIds:[...new Set(leaves.map(n=>n.subjectId))],paths:leaves.map(n=>({subtopicId:n.id,exams:['NDA']})),frozenScopes,count:'all',order:'newest',durationMinutes:null});
+ assert.equal(response.status,201);assert.equal(body.matchingCount,100);assert.equal(body.questions.length,100);
+ assert.deepEqual(new Set(body.questions.map(q=>q.id)),ids);
+ for(const q of body.questions){assert.ok(!('answer'in q));assert.ok(!('explanation'in q));assert.equal(q.paper,'II');assert.equal(q.year,2026);}
+ for(const q of imports){
+  const response=await workerFetch('/api/practice/check',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({questionId:q.id,selectedOption:q.answer})});
+  assert.equal(response.status,200,q.id);const feedback=await response.json();assert.equal(feedback.correct,true,q.id);assert.equal(feedback.correctAnswer,q.answer);
+ }
+});
+
 const geo = "subject:geography";
 const physical = "head:geography:physical-geography";
 const other = "head:geography:other-geography";
@@ -50,7 +66,7 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 1713);
+  assert.equal(data.totalCount, 1813);
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);

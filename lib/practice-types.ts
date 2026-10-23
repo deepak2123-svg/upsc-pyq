@@ -62,6 +62,8 @@ export type PracticeQuestion = {
   promptLines: string[];
   options: Record<string, string>;
   sourceTextHash: string;
+  /** Evidence label only; never exposes the accepted answer. */
+  answerKeyStatus?: 'official-provisional';
   contentRevision?: number;
   figure?: { src: string; alt: string };
 };

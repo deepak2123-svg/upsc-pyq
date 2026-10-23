@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import {readFrozenScopes} from '../../../lib/practice-draft-membership';
-import { questionContentRevision } from '../../../lib/question-review';
+import {legacySnapshotQuestionIds} from '../../../lib/legacy-placement-bridge';
+import { questionContentRevision,questionReview } from '../../../lib/question-review';
 import { PYQ_EXAMS, getExamQuestions, getQuestionPath, getLegacyQuestionPath, getSubjectPracticeInventory, isPyqExam, pyqQuestions, type PracticeInventoryNode, type PyqExam } from "../../../lib/pyq-catalog";
 import type { PracticeFrozenScope, PracticePathSelection, PracticeQuestion, PracticeRecipe, PracticeRecipeV2, PracticeRecipeV3, PracticeRecipeV4, PracticeSnapshot } from "../../../lib/practice-types";
 
@@ -153,6 +154,7 @@ export async function POST(request: Request) {
     const selectedIds=new Set<string>();
     if(input.version===4)for(const [id,exams]of pathExams)for(const exam of exams)for(const questionId of (frozenById.get(id)?.questionIdsByExam[exam]||subtopics.get(id)?.questionIdsByExam?.[exam]||[]))selectedIds.add(questionId);
     eligible = pyqQuestions.filter((question) => {
+      if(input.version===3&&!legacySnapshotQuestionIds.has(question.id))return false;
       const path = getLegacyQuestionPath(question);
       if (input.version===4?selectedIds.has(question.id):Boolean(path&&pathExams.get(path.subtopicId)?.has(question.exam))) return true;
       return [...legacyPathExams].some(([legacyId, exams]) => exams.has(question.exam) && inventory.legacyQuestionSets[legacyId].includes(question.id));
@@ -210,6 +212,7 @@ export async function POST(request: Request) {
       options: question.options,
       sourceTextHash: question.sourceTextHash,
       contentRevision: questionContentRevision(question.id),
+      ...(questionReview(question.id)?.status==='official-provisional'?{answerKeyStatus:'official-provisional' as const}:{}),
       figure: question.requiresFigure && question.figureKey ? {
         src: question.figureKey,
         alt: question.figureAlt || "Original figure supplied with this question",

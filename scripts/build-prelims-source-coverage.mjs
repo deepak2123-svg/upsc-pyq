@@ -54,6 +54,7 @@ for(const row of reuse.records) {
 }
 }
 const reviewedEntries = [
+  ...reviewedPapers.flatMap(paper=>(paper.outOfScopeRanges||[]).flatMap(range=>Array.from({length:range.to-range.from+1},(_,i)=>[`${paper.originalPdfSha256}/${range.from+i}`,{disposition:'out-of-scope',page:range.evidencePages[0],evidence:'content/prelims-reviewed-papers.json',reason:range.reason}]))),
   ...reviewedPilot.questions.map(q => [`${q.source.originalPdfSha256}/${q.questionNumber}`, { id:q.id, disposition:'verified-local-import',page:q.source.originalPage,evidence:'content/reviewed-prelims-imports.json' }]),
   ...reviewedPilot.placements.map(p => {
     const q=bank.find(q=>q.id===p.questionId);
@@ -103,9 +104,10 @@ for (const source of sourceRegister.sources) {
   const completedDecisions=reviewedPaper?Array.from({length:expected},(_,i)=>reviewedOccurrences.get(`${source.sha256}/${i+1}`)).filter(Boolean):[];
   if(reviewedPaper) {
     assert.equal(reviewedPaper.exam,exam);assert.equal(reviewedPaper.questionCount,expected);
-    const evidence=reuseGroups.find(group=>group.evidence.originalPdfSha256===source.sha256)?.evidence;
-    assert.ok(evidence);assert.equal(reviewedPaper.series,evidence.series);assert.equal(reviewedPaper.keySha256,evidence.keySha256);
-    assert.ok(completedDecisions.every(row=>reviewedPaper.questionPages.includes(row.page)));
+    const evidence=reuseGroups.find(group=>group.evidence.originalPdfSha256===source.sha256)?.evidence
+      ?? reviewedPilot.questions.find(q=>q.source.originalPdfSha256===source.sha256)?.source;
+    assert.ok(evidence);assert.equal(reviewedPaper.series,evidence.series??evidence.bookletSeries);assert.equal(reviewedPaper.keySha256,evidence.keySha256);
+    assert.ok(completedDecisions.every(row=>row.disposition==='out-of-scope'||reviewedPaper.questionPages.includes(row.page)));
   }
   papers.push({ discoveryId: source.discoveryId, relativePath: source.relativePath, sha256: source.sha256, expectedQuestionCount: expected,
     exam, paperId,
@@ -117,6 +119,7 @@ for (const source of sourceRegister.sources) {
     ...(reviewedPaper?{year:reviewedPaper.year,paper:reviewedPaper.paper,series:reviewedPaper.series,languages:reviewedPaper.languages,reviewedLanguage:reviewedPaper.reviewedLanguage,
       reviewedSlots:completedDecisions.length,pendingSlots:expected-completedDecisions.length,
       verifiedImports:completedDecisions.filter(row=>row.disposition==='verified-local-import').length,
+      outOfScope:completedDecisions.filter(row=>row.disposition==='out-of-scope').length,
       verifiedReuses:completedDecisions.filter(row=>row.disposition==='verified-existing-reuse').length}:{}),
   });
   for (let number = 1; number <= (expected ?? 0); number++) {
@@ -128,8 +131,8 @@ for (const source of sourceRegister.sources) {
       priorReconstructionStatus: previous?.reconstruction_status ?? null,
       existingStemMatchIds: exactStemIds,
       disposition: completed?.disposition ?? 'pending-current-source-review',
-      ...(completed ? { reviewedRecordId: completed.id, reviewedSourcePage:completed.page, decisionEvidence: completed.evidence } : {}),
-      note: completed ? `Original Series A page ${completed.page} and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented.` : 'A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision.',
+      ...(completed ? { ...(completed.id?{reviewedRecordId:completed.id}:{}), reviewedSourcePage:completed.page, decisionEvidence: completed.evidence } : {}),
+      note: completed?.disposition==='out-of-scope'?completed.reason:completed ? `Original Series A page ${completed.page} and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented.` : 'A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision.',
     });
   }
 }
