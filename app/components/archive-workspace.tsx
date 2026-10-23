@@ -7,7 +7,7 @@ import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
 import type { SubjectPracticeInventory } from "../../lib/pyq-catalog";
 import type { PracticeOrder, PracticeRecipeV3, PracticeRecipeV4, PracticeSnapshot } from "../../lib/practice-types";
 import { createLocalAttempt } from "../../lib/practice-store";
-import { addScope, ancestors, buildSelectionIndex, removeScope, replaceScope, restoreVersionedPaths, scopeDisplayNumber, scopeMetrics, selectedScopeIds, selectionCounts, setScopeExam, type SelectionPaths } from "../../lib/practice-selection";
+import { addScope, ancestors, buildSelectionIndex, removeScope, restoreVersionedPaths, scopeDisplayNumber, selectedScopeIds, selectionCounts, setScopeExam, type SelectionPaths } from "../../lib/practice-selection";
 import {coalesceCoveredDraftScopes,freezeSelectionMembership,restoreFrozenSelection} from '../../lib/practice-draft-membership';
 import { ScopeFlow } from "./scope-flow";
 import { SyllabusNavigation } from "./syllabus-navigation";
@@ -198,25 +198,9 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const current = focusId ? index.nodesById.get(focusId) : undefined;
   const focusPath = current ? ancestors(current.id, index) : [];
   const hasExplicitSelection = selectedIds.length > 0;
-  const summaryPaths = useMemo<SelectionPaths>(() => {
-    if (hasExplicitSelection) return paths;
-    const base = current ? replaceScope({}, current.id, index, initialExam) : initialInventory.subjects
-      .filter((subject) => !initialExam || subject.examCounts[initialExam] > 0)
-      .reduce((next, subject) => addScope(next, subject.id, index, initialExam), {} as SelectionPaths);
-    return Object.fromEntries(Object.entries(base).map(([id, exams]) => [id, exams.filter((exam) => enabledExams.includes(exam))]));
-  }, [current, hasExplicitSelection, index, initialExam, initialInventory.subjects, paths, enabledExams]);
+  const summaryPaths = paths;
   const summaryTotals = useMemo(() => selectionCounts(summaryPaths, index), [summaryPaths, index]);
-  const selectedScopeLabels = selectedIds.flatMap((id) => {
-    const node = index.nodesById.get(id);
-    if (!node) return [];
-    const number = scopeDisplayNumber(id, index);
-    return [number ? `${number} · ${node.label}` : node.label];
-  });
-  const summaryContextLabel = hasExplicitSelection ? "Selected parts" : "Current folder";
-  const summaryScopeLabel = hasExplicitSelection
-    ? selectedScopeLabels.length === 1 ? selectedScopeLabels[0] : `${selectedScopeLabels.length} selected parts`
-    : current?.label || (initialExam ? `${initialExam} question library` : "Question library");
-  const summaryActionLabel = hasExplicitSelection ? "Set up test →" : "Test this folder →";
+  const summaryActionLabel = "Finalise test →";
   const sourceLeaves = [...index.nodesById.values()].filter((node) => node.kind === "subtopic" && Object.hasOwn(summaryPaths, node.id));
   const sourceMetrics = Object.fromEntries(PYQ_EXAMS.map((exam) => {
     const eligible = sourceLeaves.filter((leaf) => leaf.examCounts[exam] > 0);
@@ -238,7 +222,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const canStart = restored && count !== null && totals.matchingCount > 0 && !shortage && validDuration && !loading && !exporting;
   function toggleSource(exam: PyqExam) {
     if (loading || !restored) return;
-    const enabled = sourceMetrics[exam].state !== "all";
+    const enabled = !enabledExams.includes(exam);
     setEnabledExams((existing) => enabled ? [...existing, exam] : existing.filter((item) => item !== exam));
     setPaths((existing) => Object.keys(existing).reduce((updated, id) => setScopeExam(updated, id, exam, enabled, index), existing));
     setError(""); setNotice("");
@@ -300,10 +284,6 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   function openSetup() {
     if (!restored || loading || summaryTotals.matchingCount === 0) return;
     setTestPanelOpen(false);
-    if (!hasExplicitSelection) {
-      setPaths(summaryPaths);
-      setError(""); setNotice("Folder added to test.");
-    }
     setSetupOpen(true);
   }
   async function createSnapshot() {
@@ -364,22 +344,24 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       </section>
 
       <aside ref={testDrawer} className="selection-dock scope-dock scope-test-summary" data-mobile-open={testPanelOpen} role={testPanelOpen ? "dialog" : undefined} aria-modal={testPanelOpen || undefined} aria-labelledby="practice-summary-title">
-        <div className="scope-dock-body"><div className="explorer-test-heading"><button type="button" className="explorer-drawer-close" onClick={() => setTestPanelOpen(false)}>Close ×</button>{hasExplicitSelection ? <button type="button" className="explorer-clear" disabled={loading} onClick={clearSelection}>Clear</button> : null}</div>
-          <div className="scope-test-context" data-testid="test-scope-label"><span>{summaryContextLabel}</span><strong title={summaryScopeLabel}>{summaryScopeLabel}</strong></div>
-          <div className="scope-matching" data-testid="matching-count"><strong>{format(summaryTotals.matchingCount)}</strong><span>questions</span></div>
+        <div className="scope-dock-body"><div className="explorer-test-heading"><button type="button" className="explorer-drawer-close" onClick={() => setTestPanelOpen(false)}>Close ×</button>{hasExplicitSelection ? <button type="button" className="explorer-clear" disabled={loading} onClick={clearSelection}>Clear all</button> : null}</div>
+          <div className="scope-test-context" data-testid="test-scope-label"><span>Your test cart</span><strong>{hasExplicitSelection ? `${selectedIds.length} added ${selectedIds.length === 1 ? "part" : "parts"}` : "No questions added"}</strong></div>
           {hasExplicitSelection ? <ul className="explorer-test-items">{selectedIds.map((id) => {
             const node = index.nodesById.get(id)!;
             const context = ancestors(id, index).slice(0, -1).map((parent) => parent.label).join(" › ");
-            return <li key={id}><div><small>{context}</small><strong>{scopeDisplayNumber(id, index)} {node.label}</strong><span>{format(scopeMetrics(id, paths, index).selectedCount)} MCQs</span></div><button type="button" disabled={loading} aria-label={`Remove ${node.label} from test`} onClick={() => remove(id)}>Remove</button></li>;
+            const leaves = index.leavesById.get(id) || [];
+            const metric = selectionCounts(Object.fromEntries(leaves.filter(leaf => Object.hasOwn(paths, leaf.id)).map(leaf => [leaf.id, paths[leaf.id]])), index);
+            return <li key={id}><div><strong>{scopeDisplayNumber(id, index)} {node.label}</strong>{context ? <small className="test-item-path">{context}</small> : null}<span>{format(metric.matchingCount)} MCQs</span><div className="test-item-exams">{PYQ_EXAMS.map(exam => <small key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties}><i aria-hidden="true" />{exam} {format(metric.examTotals[exam])}</small>)}</div></div><button type="button" disabled={loading} aria-label={`Remove ${node.label} from test`} onClick={() => remove(id)}>Remove</button></li>;
           })}</ul> : null}
-          <section className="scope-sources explorer-sources" aria-labelledby="scope-sources-title"><h3 id="scope-sources-title">Exam sources</h3><div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={sourceMetrics[exam].count} available={sourceMetrics[exam].available} state={sourceMetrics[exam].state} disabled={loading || !restored || sourceMetrics[exam].available === 0} onChange={() => toggleSource(exam)} />)}</div></section>
+          <section className="scope-sources explorer-sources" aria-labelledby="scope-sources-title"><h3 id="scope-sources-title">Exam sources</h3><div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={sourceMetrics[exam].count} available={sourceMetrics[exam].available} state={enabledExams.includes(exam) ? "all" : "none"} disabled={loading || !restored || !!initialExam && initialExam !== exam} onChange={() => toggleSource(exam)} />)}</div></section>
+          <div className="scope-matching test-cart-total" data-testid="matching-count"><strong>{format(summaryTotals.matchingCount)}</strong><span>unique MCQs</span></div>
           {totals.subjectIds.length > 0 && totals.matchingCount === 0 ? <p className="scope-shortage">No questions match the enabled exam sources. Re-enable a source or choose another scope.</p> : null}
         </div>
-        <div className="scope-dock-footer"><button type="button" className="start-practice" data-testid={hasExplicitSelection ? undefined : "full-scope-action"} disabled={!restored || summaryTotals.matchingCount === 0 || loading} onClick={openSetup}>{summaryActionLabel}</button>{draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}</div>
+        <div className="scope-dock-footer"><button type="button" className="start-practice" disabled={!restored || summaryTotals.matchingCount === 0 || loading} onClick={openSetup}>{summaryActionLabel}</button>{draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}</div>
       </aside>
     </div>
     {syllabusOpen || testPanelOpen ? <button type="button" className="explorer-overlay" aria-label="Close panels" onClick={() => { setSyllabusOpen(false); setTestPanelOpen(false); }} /> : null}
-    <div className="scope-mobile-bar"><button type="button" className="explorer-test-toggle" aria-expanded={testPanelOpen} onClick={() => { setSyllabusOpen(false); setTestPanelOpen((open) => !open); }}><strong>{format(summaryTotals.matchingCount)} MCQs</strong><span>{hasExplicitSelection ? "Your test ↑" : "Current folder ↑"}</span></button><button type="button" disabled={!restored || summaryTotals.matchingCount === 0 || loading} onClick={openSetup}>{summaryActionLabel}</button></div>
+    <div className="scope-mobile-bar"><button type="button" className="explorer-test-toggle" aria-expanded={testPanelOpen} onClick={() => { setSyllabusOpen(false); setTestPanelOpen((open) => !open); }}><strong>{format(summaryTotals.matchingCount)} MCQs</strong><span>Your test ↑</span></button><button type="button" disabled={!restored || summaryTotals.matchingCount === 0 || loading} onClick={openSetup}>{summaryActionLabel}</button></div>
     {setupOpen ? <PracticeSetupDialog matchingCount={totals.matchingCount} examMetrics={setupSourceMetrics} count={count} order={order} durationChoice={durationChoice} customMinutes={customMinutes} includeAnswerKey={includeAnswerKey} shortage={shortage} validDuration={validDuration} loading={loading} exporting={exporting} canStart={canStart} error={error} onExam={toggleSetupSource} onCount={(value) => { setCount(value); setError(""); }} onOrder={setOrder} onDuration={(value) => { setDurationChoice(value); setError(""); }} onCustomMinutes={setCustomMinutes} onIncludeAnswerKey={setIncludeAnswerKey} onUseAll={() => setCount("all")} onStart={() => void startPractice()} onExport={() => void exportPaper()} onCancel={() => { setSetupOpen(false); setError(""); }} /> : null}
   </main>;
 }

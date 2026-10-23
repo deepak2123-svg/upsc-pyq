@@ -43,7 +43,8 @@ test("server-renders an exam archive through the browse-first selector", async (
   assert.match(html, /Subjects/);
   assert.match(html, /CSE(?:<!-- -->)? question library/);
   assert.doesNotMatch(html, /Selected syllabus/);
-  assert.match(html, /Test this folder/);
+  assert.match(html, /Finalise test/);
+  assert.match(html, /No questions added/);
   assert.doesNotMatch(html, /Browse freely|explicitly select|Opening a level|selection unchanged|Select adds|Open only|Question count, time|Choose MCQs and time next/i);
   assert.doesNotMatch(html, /Start 20-question (?:practice|test)/);
   assert.doesNotMatch(html, /difficulty|generated MCQ|source verbatim/i);

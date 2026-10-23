@@ -1431,6 +1431,12 @@ h3 { font-size: 16px; }
 .explorer-test-items strong { font-size: 12px; line-height: 1.4; overflow-wrap: anywhere; }
 .explorer-test-items span { color: var(--muted); font-size: 11px; }
 .explorer-test-items button { min-height: 36px; padding: 2px; border: 0; color: var(--muted); background: transparent; font-size: 10px; cursor: pointer; }
+.test-item-path { overflow-wrap: anywhere; }
+.test-item-exams { display: flex; flex-wrap: wrap; gap: 5px 10px; }
+.test-item-exams small { display: inline-flex; align-items: center; gap: 4px; }
+.test-item-exams i { width: 6px; height: 6px; border-radius: 50%; background: var(--exam-color); }
+.scope-test-summary .test-cart-total { display: flex; align-items: baseline; gap: 9px; margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--line); }
+.scope-test-summary .test-cart-total strong { font-size: 32px; }
 .explorer-sources.scope-sources { display: grid; gap: 10px; padding: 16px 0 0; margin: 16px 0 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; background: transparent; }
 .explorer-sources .scope-source-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .explorer-sources .scope-source { display: grid; gap: 6px; padding: 10px; border: 1px solid var(--line); border-left: 3px solid var(--exam-color); border-radius: 8px; min-width: 0; background: #fafbfc; }
@@ -1455,7 +1461,7 @@ h3 { font-size: 16px; }
 @media (max-width: 1280px) {
   .explorer-layout { grid-template-columns: 280px minmax(0, 1fr); }
   .explorer-layout .scope-test-summary.scope-dock.selection-dock { display: none; }
-  .explorer-layout .scope-test-summary.scope-dock.selection-dock[data-mobile-open=true] { position: fixed; inset: auto 12px 82px; top: auto; z-index: 51; display: flex; max-height: 75dvh; overflow: hidden; }
+  .explorer-layout .scope-test-summary.scope-dock.selection-dock[data-mobile-open=true] { position: fixed; inset: auto 12px 82px; top: auto; width: calc(100% - 24px); z-index: 51; display: flex; max-height: 75dvh; overflow: hidden; }
   .explorer-layout .scope-test-summary .explorer-drawer-close { display: block; border: 0; background: transparent; color: var(--muted); min-height: 32px; }
   .explorer-overlay { display: block; position: fixed; inset: 0; z-index: 49; background: #10182755; border: 0; }
   .library-workspace .scope-mobile-bar { z-index: 52; }
