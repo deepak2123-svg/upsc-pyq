@@ -1608,6 +1608,32 @@ h3 { font-size: 16px; }
   .practice-setup-dialog .attempt-route { min-height: 160px; }
 }
 
+/* Minimal test cart: source chips, compact items, and one checkout row. */
+.explorer-layout .scope-test-summary.scope-dock.selection-dock { padding: 14px; }
+.scope-test-summary .scope-dock-body { display: grid; grid-template-columns: minmax(0,1fr) auto; align-content: start; }
+.scope-test-summary .explorer-test-heading { grid-column: 2; grid-row: 1; align-items: center; }
+.scope-test-summary .scope-test-context { grid-column: 1; grid-row: 1; border: 0; padding: 0; margin: 0; align-self: center; }
+.scope-test-summary .scope-test-context strong { font-size: 12px; }
+.scope-test-summary .explorer-sources, .scope-test-summary .explorer-test-items, .scope-test-summary .scope-shortage { grid-column: 1 / -1; }
+.explorer-layout .scope-test-summary .explorer-sources.scope-sources { margin: 8px 0 10px; padding: 0; border: 0; }
+.explorer-layout .scope-test-summary .scope-source-grid { display: flex; flex-wrap: wrap; gap: 4px; }
+.explorer-layout .scope-test-summary .explorer-sources .scope-source { display: inline-flex; align-items: center; gap: 4px; min-height: 30px; padding: 5px 6px; border: 1px solid #dce2ec; border-radius: 6px; font-size: 10px; color: var(--ink); background: #f5f7fc; }
+.explorer-layout .scope-test-summary .scope-source strong { font-size: 10px; font-weight: 600; }
+.source-chip-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--exam-color); }
+.explorer-layout .scope-test-summary .scope-source.none { background: white; opacity: .55; }
+.scope-source.none .source-chip-dot { background: #a3acbb; }
+.scope-test-summary .explorer-test-items { margin: 0; max-height: none; }
+.scope-test-summary .explorer-test-items li { padding: 10px 0; }
+.scope-test-summary .explorer-test-items li > .test-item-actions { flex: 0 0 auto; text-align: right; gap: 0; }
+.test-item-actions > span { white-space: nowrap; font-weight: 600; }
+.explorer-layout .scope-test-summary .scope-dock-footer { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 10px; align-items: center; padding-top: 12px; margin-top: 8px; }
+.scope-test-summary .scope-dock-footer .test-cart-total { display: grid; gap: 0; padding: 0; margin: 0; border: 0; }
+.scope-test-summary .scope-dock-footer .test-cart-total strong { font-size: 24px; line-height: 1.2; }
+.scope-test-summary .scope-dock-footer .test-cart-total span { font-size: 10px; }
+.scope-test-summary .scope-dock-footer .start-practice { width: auto; min-height: 40px; padding: 9px 12px; font-size: 12px; }
+.scope-test-summary .scope-dock-footer > p { grid-column: 1 / -1; }
+@media (pointer: coarse) { .explorer-layout .scope-test-summary .explorer-sources .scope-source { min-height: 40px; } }
+
 /* Subject overview cards: name, proportional exam mix, then add action. */
 .explorer-layout .scope-cards[data-focus-id=root] { border: 0; background: transparent; overflow: visible; }
 .explorer-layout .scope-cards[data-focus-id=root] .scope-card-grid { gap: 12px; background: transparent; }

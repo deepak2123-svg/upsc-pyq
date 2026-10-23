@@ -18,8 +18,7 @@ const format = (value: number) => value.toLocaleString("en-IN");
 
 function SourceChoice({ exam, state, count, available, disabled, onChange }: { exam: PyqExam; state: "none" | "partial" | "all"; count: number; available: number; disabled: boolean; onChange: () => void }) {
   return <button type="button" aria-pressed={state !== "none"} disabled={disabled} className={"scope-source " + state} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} onClick={onChange}>
-    <span className="scope-source-top"><span className="scope-source-name">{exam}</span><small className="scope-source-state">{state === "all" ? "Included" : state === "partial" ? "Partial" : "Off"}</small></span>
-    <span className="scope-source-total"><strong>{format(state === "none" ? available : count)}</strong><small>{state === "none" ? "available" : "MCQs"}</small></span>
+    <i className="source-chip-dot" aria-hidden="true" /><span>{exam}</span><strong>{format(state === "none" ? 0 : count)}</strong>
   </button>;
 }
 
@@ -345,19 +344,18 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
 
       <aside ref={testDrawer} className="selection-dock scope-dock scope-test-summary" data-mobile-open={testPanelOpen} role={testPanelOpen ? "dialog" : undefined} aria-modal={testPanelOpen || undefined} aria-labelledby="practice-summary-title">
         <div className="scope-dock-body"><div className="explorer-test-heading"><button type="button" className="explorer-drawer-close" onClick={() => setTestPanelOpen(false)}>Close ×</button>{hasExplicitSelection ? <button type="button" className="explorer-clear" disabled={loading} onClick={clearSelection}>Clear all</button> : null}</div>
-          <div className="scope-test-context" data-testid="test-scope-label"><span>Your test cart</span><strong>{hasExplicitSelection ? `${selectedIds.length} added ${selectedIds.length === 1 ? "part" : "parts"}` : "No questions added"}</strong></div>
+          <div className="scope-test-context" data-testid="test-scope-label"><strong>{hasExplicitSelection ? `${selectedIds.length} added ${selectedIds.length === 1 ? "part" : "parts"}` : "No questions added"}</strong></div>
+          <section className="scope-sources explorer-sources" aria-labelledby="scope-sources-title"><h3 className="visually-hidden" id="scope-sources-title">Exam sources</h3><div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={sourceMetrics[exam].count} available={sourceMetrics[exam].available} state={enabledExams.includes(exam) ? "all" : "none"} disabled={loading || !restored || !!initialExam && initialExam !== exam} onChange={() => toggleSource(exam)} />)}</div></section>
           {hasExplicitSelection ? <ul className="explorer-test-items">{selectedIds.map((id) => {
             const node = index.nodesById.get(id)!;
             const context = ancestors(id, index).slice(0, -1).map((parent) => parent.label).join(" › ");
             const leaves = index.leavesById.get(id) || [];
             const metric = selectionCounts(Object.fromEntries(leaves.filter(leaf => Object.hasOwn(paths, leaf.id)).map(leaf => [leaf.id, paths[leaf.id]])), index);
-            return <li key={id}><div><strong>{scopeDisplayNumber(id, index)} {node.label}</strong>{context ? <small className="test-item-path">{context}</small> : null}<span>{format(metric.matchingCount)} MCQs</span><div className="test-item-exams">{PYQ_EXAMS.map(exam => <small key={exam} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties}><i aria-hidden="true" />{exam} {format(metric.examTotals[exam])}</small>)}</div></div><button type="button" disabled={loading} aria-label={`Remove ${node.label} from test`} onClick={() => remove(id)}>Remove</button></li>;
+            return <li key={id}><div><strong>{scopeDisplayNumber(id, index)} {node.label}</strong>{context ? <small className="test-item-path">{context}</small> : null}</div><div className="test-item-actions"><span>{format(metric.matchingCount)} MCQs</span><button type="button" disabled={loading} aria-label={`Remove ${node.label} from test`} onClick={() => remove(id)}>Remove</button></div></li>;
           })}</ul> : null}
-          <section className="scope-sources explorer-sources" aria-labelledby="scope-sources-title"><h3 id="scope-sources-title">Exam sources</h3><div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={sourceMetrics[exam].count} available={sourceMetrics[exam].available} state={enabledExams.includes(exam) ? "all" : "none"} disabled={loading || !restored || !!initialExam && initialExam !== exam} onChange={() => toggleSource(exam)} />)}</div></section>
-          <div className="scope-matching test-cart-total" data-testid="matching-count"><strong>{format(summaryTotals.matchingCount)}</strong><span>unique MCQs</span></div>
           {totals.subjectIds.length > 0 && totals.matchingCount === 0 ? <p className="scope-shortage">No questions match the enabled exam sources. Re-enable a source or choose another scope.</p> : null}
         </div>
-        <div className="scope-dock-footer"><button type="button" className="start-practice" disabled={!restored || summaryTotals.matchingCount === 0 || loading} onClick={openSetup}>{summaryActionLabel}</button>{draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}</div>
+        <div className="scope-dock-footer"><div className="scope-matching test-cart-total" data-testid="matching-count"><strong>{format(summaryTotals.matchingCount)}</strong><span>unique MCQs</span></div><button type="button" className="start-practice" disabled={!restored || summaryTotals.matchingCount === 0 || loading} onClick={openSetup}>{summaryActionLabel}</button>{draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}</div>
       </aside>
     </div>
     {syllabusOpen || testPanelOpen ? <button type="button" className="explorer-overlay" aria-label="Close panels" onClick={() => { setSyllabusOpen(false); setTestPanelOpen(false); }} /> : null}

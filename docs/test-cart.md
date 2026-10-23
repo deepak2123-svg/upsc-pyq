@@ -2,7 +2,7 @@
 
 The right panel contains only explicitly added syllabus parts. Browsing does not change its contents. An empty cart has zero MCQs and cannot open setup.
 
-Each item shows its name, parent syllabus path, matching MCQ count, exam breakdown and Remove action. Fully covered branches coalesce using the existing selection helpers; the total is a union of canonical question IDs, not a sum of item counts.
+The accepted Minimal layout shows each item's name, parent syllabus path, matching MCQ count and Remove action. Compact exam-source chips above the items show the whole-test exam breakdown, avoiding repetition on every item. The unique total and Finalise test share one footer row. Fully covered branches coalesce using the existing selection helpers; the total is a union of canonical question IDs, not a sum of item counts.
 
 Exam sources apply to the whole test and carry into subsequent additions. Disabling every source retains the added parts while disabling Finalise test. Clear all removes the parts without changing the open folder or source preferences.
 

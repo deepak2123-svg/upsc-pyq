@@ -217,7 +217,7 @@ test('empty cart source choices apply to future additions',async({page})=>{
   await open(page,'Physical Geography');
   await add(page,chapter);
   await expect(count(page)).toHaveText(String(await chapterUnionCount(page,[chapter],['CSE','CAPF','CDS'])));
-  await expect(summary(page).locator('.test-item-exams')).toContainText('NDA 0');
+  await expect(summary(page).getByRole('button',{name:/^NDA\b/})).toHaveText('NDA0');
   await summary(page).getByRole('button',{name:'Clear all',exact:true}).click();
   await expect(count(page)).toHaveText('0');
   await expect(summary(page).getByRole('button',{name:/^NDA\b/})).toHaveAttribute('aria-pressed','false');
@@ -237,7 +237,11 @@ test("adding parts is cumulative and keeps the folder open", async ({ page }, te
   await expect(count(page)).toHaveText(String(combinedCount));
   await expect(page.locator(".explorer-test-items li")).toHaveCount(2);
   await expect(summary(page).locator('.test-item-path').first()).toHaveText('Geography › Physical Geography');
-  await expect(summary(page).locator('.test-item-exams').first()).toContainText('CSE');
+  await expect(summary(page).locator('.test-item-exams')).toHaveCount(0);
+  const footer=summary(page).locator('.scope-dock-footer');
+  const totalBounds=await footer.getByTestId('matching-count').boundingBox();
+  const actionBounds=await footer.getByRole('button',{name:'Finalise test'}).boundingBox();
+  expect(Math.abs(totalBounds!.y-actionBounds!.y)).toBeLessThan(10);
   await page.screenshot({path:'tmp/test-cart-desktop.png',fullPage:true});
   await page.screenshot({ path: testInfo.outputPath("explorer-desktop.png"), fullPage: true });
   await open(page, "Rocks and Minerals");
