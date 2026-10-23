@@ -117,7 +117,7 @@ test('clickable folder path, compact rows and setup cancellation preserve select
   await expect(dialog).toHaveCount(0);
   await expect(count(page)).toHaveText(selectedCount);
   await summary(page).getByRole('button',{name:'Finalise test →',exact:true}).click();
-  await dialog.getByRole('button',{name:'PDF paper',exact:true}).click();
+  await dialog.getByRole('button',{name:'Offline - PDF paper',exact:true}).click();
   await dialog.getByRole('button',{name:'Online test',exact:true}).click();
   await expect(dialog.getByRole('button',{name:'Online test',exact:true})).toHaveAttribute('aria-pressed','true');
   await dialog.getByRole('button',{name:'Close test setup',exact:true}).click();
@@ -285,7 +285,7 @@ test("different subjects combine into one paper and export the exact selection",
   await expect(page.locator(".explorer-test-items li")).toHaveCount(2);
   await summary(page).getByRole("button", { name: "Finalise test" }).click();
   const dialog = page.getByRole("dialog");
-  await dialog.getByRole("button", { name: "PDF paper", exact: true }).click();
+  await dialog.getByRole("button", { name: "Offline - PDF paper", exact: true }).click();
   await dialog.getByRole("group", { name: "Questions", exact: true }).getByRole("button", { name: "All", exact: true }).click();
   await dialog.getByLabel("Answer key", { exact: true }).selectOption("yes");
   const popupPromise = page.waitForEvent("popup");
@@ -329,7 +329,7 @@ test("only added parts enter online or PDF setup", async ({ page }) => {
   await expect(dialog).toContainText(`${await physicalCount(page)} available MCQs`);
   await expect(dialog.getByRole("group", { name: "Questions", exact: true })).toBeVisible();
   await expect(dialog.getByLabel("Answer key", { exact: true })).toHaveCount(0);
-  await dialog.getByRole("button", { name: "PDF paper", exact: true }).click();
+  await dialog.getByRole("button", { name: "Offline - PDF paper", exact: true }).click();
   await expect(dialog.getByLabel("Answer key", { exact: true })).toBeVisible();
 });
 

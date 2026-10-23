@@ -65,7 +65,7 @@ test('explicit Add remaining replaces the saved subset and PDF uses that exact c
   await expect(page.locator('.explorer-test-items li')).toHaveCount(1);
   await summary.getByRole('button',{name:'Set up test'}).click();
   const dialog=page.getByRole('dialog');
-  await dialog.getByRole('button',{name: "PDF paper", exact: true}).click();
+  await dialog.getByRole('button',{name: "Offline - PDF paper", exact: true}).click();
   const response=page.waitForResponse(response=>response.url().endsWith('/api/practice-snapshots')&&response.request().method()==='POST');
   const popup=page.waitForEvent('popup');
   await dialog.getByRole('button',{name: "Create PDF →",exact:true}).click();

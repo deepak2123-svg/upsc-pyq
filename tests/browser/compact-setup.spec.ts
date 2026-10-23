@@ -25,7 +25,7 @@ test('compact setup keeps sources explicit, validates timing and starts the sele
  await dialog.getByLabel('Custom minutes',{exact:true}).fill('0');
  await expect(dialog.getByRole('button',{name:'Start test →',exact:true})).toBeDisabled();
  await dialog.getByLabel('Custom minutes',{exact:true}).fill('15');
- await dialog.getByRole('button',{name:'PDF paper',exact:true}).click();
+ await dialog.getByRole('button',{name:'Offline - PDF paper',exact:true}).click();
  await dialog.getByLabel('Answer key',{exact:true}).selectOption('yes');
  await dialog.getByRole('button',{name:'Online test',exact:true}).click();
  await page.screenshot({path:'tmp/compact-setup-desktop.png'});
