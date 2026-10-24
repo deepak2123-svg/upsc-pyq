@@ -1,4 +1,5 @@
 import type { PyqExam } from "./pyq-catalog";
+import type { PreparationExam } from './preparation-exams';
 
 export type PracticeOrder = "newest" | "shuffle";
 export type LegacyPracticeRecipe = {
@@ -38,7 +39,7 @@ export type PracticeFrozenScope = {
   order:number;
   questionIdsByExam:Record<PyqExam,string[]>;
 };
-export type PracticeRecipeV4 = Omit<PracticeRecipeV3, 'version'> & { version: 4; taxonomyVersion?:string; frozenScopes?:PracticeFrozenScope[] };
+export type PracticeRecipeV4 = Omit<PracticeRecipeV3, 'version'> & { version: 4; taxonomyVersion?:string; frozenScopes?:PracticeFrozenScope[]; preparationExam?: PreparationExam };
 export type PracticeRecipe = LegacyPracticeRecipe | PracticeRecipeV2 | PracticeRecipeV3 | PracticeRecipeV4;
 
 export function isPracticeRecipeV2(recipe: PracticeRecipe): recipe is PracticeRecipeV2 {
@@ -63,7 +64,7 @@ export type PracticeQuestion = {
   options: Record<string, string>;
   sourceTextHash: string;
   /** Evidence label only; never exposes the accepted answer. */
-  answerKeyStatus?: 'official-provisional';
+  answerKeyStatus?: 'official-provisional' | 'reasoned-verified';
   contentRevision?: number;
   figure?: { src: string; alt: string };
 };
@@ -101,8 +102,9 @@ export type LocalAttempt = {
   deadlineAt?: string;
   timingMode?: "wall_clock";
   completionReason?: "submitted" | "time_expired";
-  returnPath?: "/" | `/exams/${PyqExam}`;
+  returnPath?: PracticeReturnPath;
 };
+export type PracticeReturnPath = '/' | '/library' | `/exams/${PyqExam}` | `/prepare/${PreparationExam}`;
 
 export type Bookmark = {
   questionId: string;

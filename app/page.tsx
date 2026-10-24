@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "./components/site-header";
 import { ArchiveWorkspace } from "./components/archive-workspace";
-import { getSubjectPracticeInventory } from "../lib/pyq-catalog";
+import { getPreparationInventory } from "../lib/preparation-catalog";
 
 export const metadata: Metadata = {
   title: "Practise Official UPSC PYQs by Subject",
@@ -9,6 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const inventory = getSubjectPracticeInventory();
-  return <><SiteHeader /><ArchiveWorkspace initialInventory={inventory} /></>;
+  const inventory = getPreparationInventory('CSE');
+  return <><SiteHeader /><ArchiveWorkspace key="CSE" initialInventory={inventory} /></>;
 }

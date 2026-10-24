@@ -11,13 +11,14 @@ import { addScope, ancestors, buildSelectionIndex, removeScope, restoreVersioned
 import {coalesceCoveredDraftScopes,freezeSelectionMembership,restoreFrozenSelection} from '../../lib/practice-draft-membership';
 import { ScopeFlow } from "./scope-flow";
 import { SyllabusNavigation } from "./syllabus-navigation";
+import { PREPARATION_EXAMS, preparationDraftKey, type PreparationExam, type PreparationView } from '../../lib/preparation-exams';
 
 const COUNTS = [10, 20, 30, 50] as const;
 const DURATIONS = [10, 20, 30, 60, 120] as const;
 const format = (value: number) => value.toLocaleString("en-IN");
 
 function SourceChoice({ exam, state, count, available, disabled, onChange }: { exam: PyqExam; state: "none" | "partial" | "all"; count: number; available: number; disabled: boolean; onChange: () => void }) {
-  return <button type="button" aria-pressed={state !== "none"} disabled={disabled} className={"scope-source " + state} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} onClick={onChange}>
+  return <button type="button" aria-pressed={state !== "none"} title={`${exam}: ${format(available)} available in added parts`} disabled={disabled} className={"scope-source " + state} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} onClick={onChange}>
     <i className="source-chip-dot" aria-hidden="true" /><span>{exam}</span><strong>{format(state === "none" ? 0 : count)}</strong>
   </button>;
 }
@@ -61,8 +62,12 @@ function PracticeSetupDialog({ matchingCount, examMetrics, count, order, duratio
   </dialog>;
 }
 
-export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInventory: SubjectPracticeInventory; initialExam?: PyqExam }) {
+export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInventory: SubjectPracticeInventory & { preparationExam?: PreparationExam; preparationViews?: PreparationView[] }; initialExam?: PyqExam }) {
   const router = useRouter();
+  const preparationExam = initialInventory.preparationExam;
+  const views = initialInventory.preparationViews;
+  const defaultView = views?.find(view => ['nda-gs', 'cds-gk', 'cse-gs'].includes(view.id))?.id;
+  const [viewId, setViewId] = useState(defaultView);
   const [workingInventory,setWorkingInventory]=useState(initialInventory);
   const baseIndex=useMemo(()=>buildSelectionIndex(initialInventory),[initialInventory]);
   const index = useMemo(() => buildSelectionIndex(workingInventory), [workingInventory]);
@@ -70,7 +75,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const [paths, setPaths] = useState<SelectionPaths>({});
   const [focusId, setFocusId] = useState<string>();
   const [expandedIds, setExpandedIds] = useState<string[]>([]);
-  const [enabledExams, setEnabledExams] = useState<PyqExam[]>(initialExam ? [initialExam] : [...PYQ_EXAMS]);
+  const [enabledExams, setEnabledExams] = useState<PyqExam[]>(preparationExam ? [preparationExam] : initialExam ? [initialExam] : [...PYQ_EXAMS]);
   const [count, setCount] = useState<number | "all" | null>(null);
   const [order, setOrder] = useState<PracticeOrder>("newest");
   const [durationChoice, setDurationChoice] = useState("untimed");
@@ -87,7 +92,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const [draftWarning, setDraftWarning] = useState("");
   const libraryDrawer = useRef<HTMLDivElement>(null);
   const testDrawer = useRef<HTMLElement>(null);
-  const draftKey = "upsc-pyq-builder:v3:" + (initialExam || "all");
+  const draftKey = preparationExam ? preparationDraftKey(preparationExam) : "upsc-pyq-builder:v3:" + (initialExam || "all");
   useEffect(() => {
     if (!syllabusOpen && !testPanelOpen) return;
     const panel = syllabusOpen ? libraryDrawer.current : testDrawer.current;
@@ -113,6 +118,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       const raw = window.sessionStorage.getItem(draftKey);
       if (raw) {
         const draft = JSON.parse(raw);
+        if (views?.some(view => view.id === draft.viewId)) setViewId(draft.viewId);
         if ([3, 4, 5, 6].includes(draft.version) && (draft.inventoryVersion === initialInventory.version || draft.inventoryVersion === 3 && initialInventory.version === 4)) {
           let savedPaths:SelectionPaths;
           if(draft.version===6) {
@@ -143,6 +149,8 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       }
     } catch { setPaths({});setWorkingInventory(initialInventory);setDraftWarning("Your builder settings could not be restored in this browser. You can still choose a new practice."); }
     const urlScope = new URL(window.location.href).searchParams.get("scope");
+    const urlView = new URL(window.location.href).searchParams.get('view');
+    if (views?.some(view => view.id === urlView)) setViewId(urlView!);
     const historyEntry = window.history.state?.pyqLibrary;
     if (urlScope !== null || historyEntry?.draftKey === draftKey) {
       const locationId = urlScope && baseIndex.nodesById.has(urlScope) ? urlScope : undefined;
@@ -150,7 +158,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       setExpandedIds(locationId ? ancestors(locationId, baseIndex).map((node) => node.id) : []);
     }
     setRestored(true);
-  }, [draftKey, initialInventory, baseIndex, initialExam]);
+  }, [draftKey, initialInventory, baseIndex, initialExam, views]);
   useEffect(() => {
     if (!restored) return;
     const url = new URL(window.location.href);
@@ -161,6 +169,8 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     }
     function restoreLocation() {
       const scope = new URL(window.location.href).searchParams.get("scope");
+      const view = new URL(window.location.href).searchParams.get('view');
+      if (views?.some(item => item.id === view)) setViewId(view!);
       const locationId = scope && baseIndex.nodesById.has(scope) ? scope : undefined;
       setFocusId(locationId);
       setExpandedIds(locationId ? ancestors(locationId, baseIndex).map((node) => node.id) : []);
@@ -168,15 +178,21 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     }
     window.addEventListener("popstate", restoreLocation);
     return () => window.removeEventListener("popstate", restoreLocation);
-  }, [restored, draftKey, baseIndex, focusId]);
+  }, [restored, draftKey, baseIndex, focusId, views]);
   useEffect(() => {
     if (!restored) return;
     const minutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
-    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 6, inventoryVersion: initialInventory.version, taxonomyVersion:initialInventory.taxonomyVersion, frozenScopes:freezeSelectionMembership(paths,index), paths, focusId, expandedIds, enabledExams, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
-  }, [restored, draftKey, initialInventory.version, initialInventory.taxonomyVersion, index, paths, focusId, expandedIds, enabledExams, count, order, durationChoice, customMinutes]);
+    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 6, viewId, inventoryVersion: initialInventory.version, taxonomyVersion:initialInventory.taxonomyVersion, frozenScopes:freezeSelectionMembership(paths,index), paths, focusId, expandedIds, enabledExams, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
+  }, [restored, draftKey, viewId, initialInventory.version, initialInventory.taxonomyVersion, index, paths, focusId, expandedIds, enabledExams, count, order, durationChoice, customMinutes]);
   const totals = useMemo(() => selectionCounts(paths, index), [paths, index]);
   const selectedIds = useMemo(() => selectedScopeIds(paths, index), [paths, index]);
   const current = focusId ? index.nodesById.get(focusId) : undefined;
+  const activeView = (current && views?.find(view => view.subjectIds.includes(current.subjectId))) || views?.find(view => view.id === viewId) || views?.[0];
+  const visibleSubjectIds = activeView?.subjectIds;
+  function changeView(view: PreparationView) {
+    if (loading || exporting || !restored) return;
+    recordLocation(undefined, view.id); setFocusId(undefined); setExpandedIds([]); setViewId(view.id);
+  }
   const focusPath = current ? ancestors(current.id, index) : [];
   const hasExplicitSelection = selectedIds.length > 0;
   const summaryPaths = paths;
@@ -238,11 +254,13 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     recordLocation();
     setFocusId(undefined); setSyllabusOpen(false); setNotice("Showing all subjects.");
   }
-  function recordLocation(id?: string) {
-    if (id === focusId) return;
+  function recordLocation(id?: string, nextViewId?: string) {
+    if (id === focusId && (!nextViewId || nextViewId === viewId)) return;
     const url = new URL(window.location.href);
     if (id) url.searchParams.set("scope", id);
     else url.searchParams.delete("scope");
+    const locationView = nextViewId || views?.find(view => id && view.subjectIds.includes(index.nodesById.get(id)?.subjectId || ''))?.id || activeView?.id;
+    if (locationView) url.searchParams.set('view', locationView);
     const previous = window.history.state?.pyqLibrary;
     const depth = previous?.draftKey === draftKey && Number.isInteger(previous.depth) ? previous.depth : 0;
     window.history.pushState({ ...window.history.state, pyqLibrary: { draftKey, depth: depth + 1 } }, "", url);
@@ -270,7 +288,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   async function createSnapshot() {
     if (count === null || practiceCount === null) return;
     const enabledPaths=Object.fromEntries(Object.entries(paths).filter(([,exams])=>exams.length));
-    const recipe: PracticeRecipeV3 | PracticeRecipeV4 = { version: initialInventory.version, ...(initialInventory.version===4?{taxonomyVersion:initialInventory.taxonomyVersion,frozenScopes:freezeSelectionMembership(enabledPaths,index)}:{}), subjectIds: totals.subjectIds, paths: Object.entries(enabledPaths).map(([subtopicId, exams]) => ({ subtopicId, exams: [...exams] })), count, order, durationMinutes };
+    const recipe: PracticeRecipeV3 | PracticeRecipeV4 = { version: initialInventory.version, ...(initialInventory.version===4?{taxonomyVersion:initialInventory.taxonomyVersion,frozenScopes:freezeSelectionMembership(enabledPaths,index), ...(preparationExam ? {preparationExam} : {})}:{}), subjectIds: totals.subjectIds, paths: Object.entries(enabledPaths).map(([subtopicId, exams]) => ({ subtopicId, exams: [...exams] })), count, order, durationMinutes };
     const response = await fetch("/api/practice-snapshots", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(recipe) });
     const snapshot = await response.json() as PracticeSnapshot & { error?: string };
     if (!response.ok) throw new Error(snapshot.error || "The paper could not be prepared. Please try again.");
@@ -305,7 +323,17 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     } finally { setExporting(false); }
   }
   return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading}>
-    <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{initialExam ? `${initialExam} question library` : "Question library"}</h1></div><details className="scope-inventory-info"><summary>{format(libraryCount)} PYQs <span aria-hidden="true">ⓘ</span></summary><p>{format(initialInventory.unmappedCount)} unclassified questions remain in exam archives.</p></details></header>
+    <section className="preparation-navigation" aria-label="Preparation exam and paper">
+      <label>Preparing for<select aria-label="Preparing for" value={preparationExam || ''} disabled={loading || exporting} onChange={event => router.push(`/prepare/${event.target.value}`)}>
+        {!preparationExam ? <option value="" disabled>All PYQ sources</option> : null}
+        {PREPARATION_EXAMS.map(exam => <option key={exam} value={exam}>UPSC {exam}{exam === 'CSE' ? ' Prelims' : ''}</option>)}
+      </select></label>
+      {views ? <div className="preparation-papers"><div role="group" aria-label="Paper">{[...new Set(views.map(view => view.paper))].map(paper => <button type="button" key={paper} disabled={!restored || loading || exporting} aria-pressed={activeView?.paper === paper} onClick={() => changeView(views.find(view => view.paper === paper)!)}>{paper}</button>)}</div>
+        {preparationExam === 'NDA' && activeView?.paper === 'GAT' ? <div role="group" aria-label="GAT section">{views.filter(view => view.paper === 'GAT').map(view => <button type="button" key={view.id} disabled={!restored || loading || exporting} aria-pressed={activeView?.id === view.id} onClick={() => changeView(view)}>{view.label}</button>)}</div> : null}
+      </div> : null}
+      {preparationExam === 'CDS' ? <small>OTA: English + General Knowledge. Mathematics: IMA / INA / AFA.</small> : null}
+    </section>
+    <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{preparationExam ? `${preparationExam} question library` : initialExam ? `${initialExam} question library` : "Question library"}</h1></div><details className="scope-inventory-info"><summary>{format(libraryCount)} PYQs <span aria-hidden="true">ⓘ</span></summary><p>{preparationExam ? 'Available across compatible sources. Your test starts with your preparation exam only.' : `${format(initialInventory.unmappedCount)} unclassified questions remain in exam archives.`}</p>{preparationExam ? <Link href="/library">Previous saved selections</Link> : null}</details></header>
     <div className={`scope-library-layout explorer-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
       <h2 className="library-column-label library-column-label-left">Library</h2>
       <h2 className="library-column-label library-column-label-middle">{current ? ({subject:"Sections",head:"Chapters",topic:"Subparts",subtopic:"Subpart"} as const)[current.kind] : "Subjects"}</h2>
@@ -314,13 +342,13 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
         <button type="button" className="scope-syllabus-mobile-toggle" aria-expanded={syllabusOpen} aria-controls="scope-syllabus-content" onClick={() => setSyllabusOpen((open) => !open)}><span>Library</span><strong>{current?.label || "All subjects"}</strong></button>
           <div ref={libraryDrawer} id="scope-syllabus-content" className="scope-syllabus-content" data-mobile-open={syllabusOpen ? "true" : "false"} role={syllabusOpen ? "dialog" : undefined} aria-modal={syllabusOpen || undefined} aria-label={syllabusOpen ? "Library" : undefined}>
             <button type="button" className="explorer-drawer-close" onClick={() => setSyllabusOpen(false)}>Close library ×</button>
-            <SyllabusNavigation index={index} focusPath={focusPath} expandedIds={expandedIds} mappedCount={libraryCount} preferredExam={initialExam} disabled={loading || !restored} onBrowse={browse} onBrowseRoot={browseRoot} onToggle={toggleBranch} />
+            <SyllabusNavigation index={index} focusPath={focusPath} expandedIds={expandedIds} mappedCount={libraryCount} preferredExam={initialExam} visibleSubjectIds={visibleSubjectIds} disabled={loading || !restored} onBrowse={browse} onBrowseRoot={browseRoot} onToggle={toggleBranch} />
           </div>
       </aside>
 
       <section className="scope-refine scope-library-browser" aria-labelledby="scope-refine-title">
         <h2 id="scope-refine-title" className="visually-hidden">{current ? `Browse ${current.label}` : "Browse subjects"}</h2>
-        <ScopeFlow inventory={workingInventory} paths={paths} focusId={focusId} preferredExam={initialExam} onAdd={addToTest} onBrowse={browse} onBack={goBack} onBrowseRoot={browseRoot} disabled={loading || !restored} />
+        <ScopeFlow inventory={workingInventory} paths={paths} focusId={focusId} preferredExam={initialExam} visibleSubjectIds={visibleSubjectIds} onAdd={addToTest} onBrowse={browse} onBack={goBack} onBrowseRoot={browseRoot} disabled={loading || !restored} />
         <p className="visually-hidden" role="status" aria-live="polite">{notice}</p>
       </section>
 

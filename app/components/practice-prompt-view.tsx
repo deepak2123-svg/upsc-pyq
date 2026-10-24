@@ -1,10 +1,18 @@
 import type { PracticePromptBlock } from "../../lib/practice-prompt";
 
+function PromptText({ value }: { value: string }) {
+  // Preserve source text while drawing combining-vector marks independently of
+  // the reading font, which may not contain U+20D7 (notably in print output).
+  return <>{value.split(/([A-Za-z]\u20d7)/u).map((part,index) => /^[A-Za-z]\u20d7$/u.test(part)
+    ? <span className="math-vector" aria-label={`vector ${part[0]}`} key={index}><span aria-hidden="true">{part[0]}</span><span className="visually-hidden" aria-hidden="true">⃗</span></span>
+    : part)}</>;
+}
+
 export function PracticePromptView({ blocks, className, figure }: { blocks: PracticePromptBlock[]; className: string; figure?: { src: string; alt: string } }) {
   return <div className={className} tabIndex={-1}>
     {blocks.map((block, index) => {
-      if (block.kind === "statement") return <p className="paper-statement" key={index}><b>{block.marker}</b><span>{block.text}</span></p>;
-      if (block.kind === "text") return <p key={index}>{block.text}</p>;
+      if (block.kind === "statement") return <p className="paper-statement" key={index}><b>{block.marker}</b><span><PromptText value={block.text} /></span></p>;
+      if (block.kind === "text") return <p key={index}><PromptText value={block.text} /></p>;
       if (block.kind === "pair-table") return <div className="matching-list-scroll" key={index}>
         <table className="matching-list-table paired-row-table">
           <caption>Pairs to assess</caption>

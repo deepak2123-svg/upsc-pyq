@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import {readFrozenScopes} from '../../../lib/practice-draft-membership';
 import {legacySnapshotQuestionIds} from '../../../lib/legacy-placement-bridge';
 import { questionContentRevision,questionReview } from '../../../lib/question-review';
+import { getPreparationInventory, preparationQuestionIds, getPreparationQuestions } from '../../../lib/preparation-catalog';
+import { isPreparationExam } from '../../../lib/preparation-exams';
 import { PYQ_EXAMS, getExamQuestions, getQuestionPath, getLegacyQuestionPath, getSubjectPracticeInventory, isPyqExam, pyqQuestions, type PracticeInventoryNode, type PyqExam } from "../../../lib/pyq-catalog";
 import type { PracticeFrozenScope, PracticePathSelection, PracticeQuestion, PracticeRecipe, PracticeRecipeV2, PracticeRecipeV3, PracticeRecipeV4, PracticeSnapshot } from "../../../lib/practice-types";
 
@@ -33,6 +35,10 @@ function resolveSubtopics(id: string, subtopics: Map<string, PracticeInventoryNo
 export async function POST(request: Request) {
   const input: unknown = await request.json().catch(() => null);
   if (!isRecord(input)) return NextResponse.json({ error: "Choose at least one subject." }, { status: 400 });
+  if (input.preparationExam !== undefined && (!isPreparationExam(input.preparationExam) || input.version !== 4)) {
+    return NextResponse.json({ error: 'Choose a valid preparation exam with a V4 recipe.' }, { status: 400 });
+  }
+  const preparationExam = isPreparationExam(input.preparationExam) ? input.preparationExam : undefined;
   if ("version" in input && input.version !== 2 && input.version !== 3 && input.version !== 4) {
     return NextResponse.json({ error: "Choose a supported practice recipe version." }, { status: 400 });
   }
@@ -57,7 +63,15 @@ export async function POST(request: Request) {
   let eligible = [] as typeof pyqQuestions;
 
   if (input.version === 2 || input.version === 3 || input.version === 4) {
-    const inventory = getSubjectPracticeInventory(input.version === 4);
+    const inventory = preparationExam ? getPreparationInventory(preparationExam) : getSubjectPracticeInventory(input.version === 4);
+    const preparationIds = preparationExam ? preparationQuestionIds(inventory) : undefined;
+    const questionPool = preparationExam ? getPreparationQuestions(inventory) : pyqQuestions;
+    const preparationSubjectIds = new Map<string, Set<string>>();
+    if (preparationExam) for (const leaf of inventory.nodes) if (leaf.kind === 'subtopic') {
+      const ids = preparationSubjectIds.get(leaf.subjectId) || new Set<string>();
+      for (const exam of PYQ_EXAMS) for (const id of leaf.questionIdsByExam?.[exam] || []) ids.add(id);
+      preparationSubjectIds.set(leaf.subjectId, ids);
+    }
     if(input.version===4&&input.taxonomyVersion!==undefined&&typeof input.taxonomyVersion!=='string')return NextResponse.json({error:'Choose a valid syllabus version.'},{status:400});
     if(input.version===4&&input.frozenScopes===undefined&&input.taxonomyVersion!==undefined&&input.taxonomyVersion!==inventory.taxonomyVersion)return NextResponse.json({error:'The syllabus has changed. Refresh the library before starting a new test.'},{status:409});
     const availableSubjects = new Set(inventory.subjects.map((subject) => subject.id));
@@ -72,13 +86,16 @@ export async function POST(request: Request) {
     let frozenScopes:PracticeFrozenScope[]=[];
     if(input.frozenScopes!==undefined) {
       try {frozenScopes=readFrozenScopes(input.frozenScopes);} catch {return NextResponse.json({error:'Choose a valid saved question membership.'},{status:400});}
-      const eligibleById=new Map(pyqQuestions.map(question=>[question.id,question]));
+      const eligibleById=new Map(questionPool.map(question=>[question.id,question]));
       for(const scope of frozenScopes) {
         if(!allowedSubjects.has(scope.subjectId)||(!subtopics.has(scope.id)&&!scope.id.startsWith('draft:'))||(subtopics.has(scope.id)&&subtopics.get(scope.id)!.subjectId!==scope.subjectId))return NextResponse.json({error:'Every saved scope must belong to a selected subject.'},{status:400});
         for(const exam of PYQ_EXAMS)for(const id of scope.questionIdsByExam[exam]) {
           const question=eligibleById.get(id);
           if(!question)return NextResponse.json({error:'Some saved questions are no longer eligible. Refresh the library to review the selection.'},{status:409});
           if(question.exam!==exam)return NextResponse.json({error:'A saved question has a different examination source.'},{status:400});
+          if (preparationExam && !preparationSubjectIds.get(scope.subjectId)?.has(id)) {
+            return NextResponse.json({ error: 'A saved question does not belong to this preparation subject.' }, { status: 400 });
+          }
         }
       }
     }
@@ -153,7 +170,8 @@ export async function POST(request: Request) {
 
     const selectedIds=new Set<string>();
     if(input.version===4)for(const [id,exams]of pathExams)for(const exam of exams)for(const questionId of (frozenById.get(id)?.questionIdsByExam[exam]||subtopics.get(id)?.questionIdsByExam?.[exam]||[]))selectedIds.add(questionId);
-    eligible = pyqQuestions.filter((question) => {
+    eligible = questionPool.filter((question) => {
+      if (preparationIds && !preparationIds.has(question.id)) return false;
       if(input.version===3&&!legacySnapshotQuestionIds.has(question.id))return false;
       const path = getLegacyQuestionPath(question);
       if (input.version===4?selectedIds.has(question.id):Boolean(path&&pathExams.get(path.subtopicId)?.has(question.exam))) return true;
@@ -165,7 +183,7 @@ export async function POST(request: Request) {
       exams: PYQ_EXAMS.filter((exam) => exams.has(exam)),
     }));
     recipe = strict
-      ? { version: input.version === 4 ? 4 : 3, ...(input.version===4?{taxonomyVersion:inventory.taxonomyVersion,...(input.frozenScopes!==undefined?{frozenScopes}:{} )}:{}), subjectIds, paths, count: requestedCount, order, durationMinutes: typeof input.durationMinutes === "number" ? input.durationMinutes : null } satisfies PracticeRecipeV3 | PracticeRecipeV4
+      ? { version: input.version === 4 ? 4 : 3, ...(input.version===4?{taxonomyVersion:inventory.taxonomyVersion,...(preparationExam?{preparationExam}:{}),...(input.frozenScopes!==undefined?{frozenScopes}:{} )}:{}), subjectIds, paths, count: requestedCount, order, durationMinutes: typeof input.durationMinutes === "number" ? input.durationMinutes : null } satisfies PracticeRecipeV3 | PracticeRecipeV4
       : { version: 2, subjectIds, paths, count: requestedCount, order } satisfies PracticeRecipeV2;
   } else {
     if (!isPyqExam(input.exam)) return NextResponse.json({ error: "Choose a valid examination." }, { status: 400 });
@@ -212,7 +230,7 @@ export async function POST(request: Request) {
       options: question.options,
       sourceTextHash: question.sourceTextHash,
       contentRevision: questionContentRevision(question.id),
-      ...(questionReview(question.id)?.status==='official-provisional'?{answerKeyStatus:'official-provisional' as const}:{}),
+      ...(['official-provisional','reasoned-verified'].includes(questionReview(question.id)?.status??'')?{answerKeyStatus:questionReview(question.id)!.status as 'official-provisional'|'reasoned-verified'}:{}),
       figure: question.requiresFigure && question.figureKey ? {
         src: question.figureKey,
         alt: question.figureAlt || "Original figure supplied with this question",

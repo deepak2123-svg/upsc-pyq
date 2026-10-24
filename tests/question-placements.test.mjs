@@ -102,9 +102,9 @@ test('reviewed pilot reuses legacy source identities instead of adding copies', 
   }
   for (const q of imports.questions) {
     assert.ok(!bank.some(old=>old.exam===q.exam && old.year===q.year && old.paper===q.paper && old.questionNumber===q.questionNumber));
-    assert.equal(policy[q.id].status,q.exam==='NDA'&&q.year===2026&&q.paper==='II'?'official-provisional':'official-final');
+    assert.equal(policy[q.id].status,q.source.answerStatus==='reasoned-verified'?'reasoned-verified':q.exam==='NDA'&&q.year===2026&&q.paper==='II'?'official-provisional':'official-final');
     assert.equal(q.source.optionsReordered,false);
-    assert.equal(q.source.officialAnswer,q.answer);
+    assert.equal(q.source.officialAnswer,q.source.answerStatus==='reasoned-verified'?null:q.answer);
     assert.ok(q.source.secondPass);
   }
   assert.ok(imports.placements.every(p=>bank.some(q=>q.id===p.questionId)));

@@ -1,0 +1,33 @@
+import {expect,test} from '@playwright/test';
+
+test('NDA I reasoned batch preserves equations in print and remains a partial source collection',async({page,request})=>{
+ const inventory=await(await request.get('/api/pyqs/inventory')).json();
+ const wanted=new Set([51,53,57,61].map(n=>`nda-2026-i-${n}`));
+ const leaves=inventory.nodes.filter((n:any)=>n.kind==='subtopic'&&!n.legacyOnly&&n.questionIdsByExam?.NDA.some((id:string)=>wanted.has(id)));
+ const frozenScopes=leaves.map((n:any)=>({id:n.id,subjectId:n.subjectId,label:n.label,parentId:n.parentId,order:n.order,questionIdsByExam:{CSE:[],CAPF:[],CDS:[],NDA:n.questionIdsByExam.NDA.filter((id:string)=>wanted.has(id))}}));
+ const response=await request.post('/api/practice-snapshots',{data:{version:4,taxonomyVersion:inventory.taxonomyVersion,subjectIds:[...new Set(leaves.map((n:any)=>n.subjectId))],paths:leaves.map((n:any)=>({subtopicId:n.id,exams:['NDA']})),frozenScopes,count:'all',order:'newest',durationMinutes:null}});
+ expect(response.status()).toBe(201);const snapshot=await response.json();expect(snapshot.questions).toHaveLength(4);
+ expect(snapshot.questions.every((q:any)=>q.answer===undefined&&q.explanation===undefined&&q.answerKeyStatus!=='official-provisional')).toBe(true);
+ await page.goto('/');
+ await page.evaluate(({snapshot})=>{sessionStorage.setItem(`upsc-pyq-print:${snapshot.id}`,JSON.stringify({snapshot,includeAnswerKey:true}));window.print=()=>undefined;},{snapshot});
+ await page.goto(`/practice/${snapshot.id}/print`);
+ await expect(page.locator('.print-question')).toHaveCount(4);
+ await expect(page.locator('[data-question-id="nda-2026-i-51"]')).toContainText('θ = 60°');
+ await expect(page.locator('[data-question-id="nda-2026-i-53"]')).toContainText('(α/2)');
+ await expect(page.locator('[data-question-id="nda-2026-i-57"]')).toContainText('√3 t²');
+ await expect(page.locator('[data-question-id="nda-2026-i-57"] .math-vector')).toHaveAttribute('aria-label','vector r');
+ await expect(page.locator('[data-question-id="nda-2026-i-61"]')).toContainText('−20 °C');
+ await expect(page.getByText('† Official provisional key; subject to revision.',{exact:true})).toHaveCount(0);
+ await expect(page.getByText('‡ Independently verified from primary sources; no matching official key recovered.',{exact:true})).toBeVisible();
+ await page.screenshot({path:'tmp/nda-2026-i/print-preview.png',fullPage:true});
+ await page.goto('/legal/sources');
+ await page.getByRole('button',{name:/^NDA\b/}).click();
+ await expect(page.getByRole('button',{name:/^NDA\b/})).toHaveAttribute('aria-pressed','true');
+ await page.getByRole('combobox').nth(0).selectOption('2026');
+ const paper=page.locator('.source-paper-card').filter({hasText:'2026 · I'}).filter({hasNotText:'2026 · II'});
+ await expect(paper).toContainText('39 MCQs');
+ await expect(paper).toContainText('Partial collection');
+ await expect(paper).not.toContainText('Complete source review');
+ await page.setViewportSize({width:390,height:844});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});

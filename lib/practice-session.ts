@@ -1,4 +1,4 @@
-import type { AnswerFeedback, LocalAttempt, PracticeRecipe } from "./practice-types";
+import type { AnswerFeedback, LocalAttempt, PracticeRecipe, PracticeReturnPath } from "./practice-types";
 import type { PyqExam } from "./pyq-exams";
 import publishedAnswerKeyRevisions from "../content/answer-key-revisions.json" with { type: "json" };
 import { questionExclusion, questionReviewRevision } from './question-review.ts';
@@ -7,14 +7,17 @@ import { questionExclusion, questionReviewRevision } from './question-review.ts'
 const answerKeyRevisions: Readonly<Record<string, number>> = publishedAnswerKeyRevisions;
 export function answerKeyRevision(questionId: string) { return answerKeyRevisions[questionId] || 0; }
 
-export function safePracticeReturnPath(value: unknown): "/" | `/exams/${PyqExam}` {
+export function safePracticeReturnPath(value: unknown): PracticeReturnPath {
   if (typeof value === "string" && value.trim() === value && /^\/exams\/(CSE|CAPF|CDS|NDA)$/.test(value)) return value as `/exams/${PyqExam}`;
+  if (typeof value === 'string' && /^\/prepare\/(CSE|CDS|NDA)$/.test(value)) return value as PracticeReturnPath;
+  if (value === '/library') return '/library';
   return "/";
 }
 
-export function attemptReturnPath(attempt: LocalAttempt): "/" | `/exams/${PyqExam}` {
+export function attemptReturnPath(attempt: LocalAttempt): PracticeReturnPath {
   if (attempt.returnPath !== undefined) return safePracticeReturnPath(attempt.returnPath);
   const recipe = attempt.snapshot.recipe;
+  if ('version' in recipe && recipe.version === 4 && recipe.preparationExam) return safePracticeReturnPath(`/prepare/${recipe.preparationExam}`);
   return "exam" in recipe ? safePracticeReturnPath(`/exams/${recipe.exam}`) : "/";
 }
 

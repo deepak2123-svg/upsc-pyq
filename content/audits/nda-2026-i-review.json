@@ -1,0 +1,2163 @@
+{
+  "version": 1,
+  "status": "paper-review-in-progress",
+  "reviewedAt": "2026-10-24",
+  "evidence": {
+    "exam": "NDA",
+    "year": 2026,
+    "paper": "I",
+    "series": "A",
+    "questionCount": 150,
+    "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+    "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+    "officialPaperUrl": "https://www.upsc.gov.in/sites/default/files/QP-NDA-NA-I-26-GENERAL-ABILITY-TEST-130426.pdf",
+    "answerVerificationMethod": "primary-source-reasoning",
+    "keyStatus": "not-recovered",
+    "reviewedAt": "2026-10-24"
+  },
+  "primaryEvidence": {
+    "pendulum": {
+      "title": "Penn State: nonlinear simple pendulum",
+      "url": "https://www.acs.psu.edu/drussell/Demos/Pendulum/Pendulum.html",
+      "localFile": "../.tmp/nda-2026-i-primary-evidence/pendulum.html",
+      "sha256": "f9a7d9b5faa133956630b5ef74813c1bf72b22bba79b5ec660a4bce693a16099",
+      "section": "The equation of motion and the real nonlinear simple pendulum; exact finite-amplitude integral derived separately."
+    },
+    "motion": {
+      "title": "NCERT Physics: Laws of Motion",
+      "url": "https://ncert.nic.in/textbook/pdf/keph104.pdf",
+      "localFile": "../.tmp/nda-2026-i-primary-evidence/motion.pdf",
+      "sha256": "8a5df412b53d86040d73ec589ddc98ae23201c420973c7b910e1acca85d234ef",
+      "section": "Newton’s second law, impulse and equilibrium."
+    },
+    "energy": {
+      "title": "NCERT Physics: Work, Energy and Power",
+      "url": "https://ncert.nic.in/textbook/pdf/keph105.pdf",
+      "localFile": "../.tmp/nda-2026-i-primary-evidence/energy.pdf",
+      "sha256": "a6d4b72b0fc10230bd54393f86e58630ccd258d54269b60de226c68d0eaa937e",
+      "section": "Sections 5.4–5.8 and 5.10: kinetic energy, net work, conservative potential and power."
+    },
+    "thermodynamics": {
+      "title": "NCERT Physics: Thermodynamics",
+      "url": "https://ncert.nic.in/textbook/pdf/keph204.pdf",
+      "localFile": "../.tmp/nda-2026-i-primary-evidence/thermodynamics.pdf",
+      "sha256": "00462650d55bda8843f5fbf4eba1a7996faf13d04a8858fa04061b1309e090ba",
+      "section": "Specific heat, ideal-gas equation of state and isochoric processes."
+    },
+    "thermal-properties": {
+      "title": "NCERT Physics: Thermal Properties of Matter",
+      "url": "https://ncert.nic.in/textbook/pdf/keph203.pdf",
+      "localFile": "../.tmp/nda-2026-i-primary-evidence/thermal-properties.pdf",
+      "sha256": "b062894aea80298f8df2f83e34dc11f5f96577bfe08d0ad35e2e647a8446854e",
+      "section": "Calorimetry, specific heats and latent heat of fusion."
+    },
+    "waves": {
+      "title": "NCERT Physics: Waves",
+      "url": "https://ncert.nic.in/textbook/pdf/keph207.pdf",
+      "localFile": "../.tmp/nda-2026-i-primary-evidence/waves.pdf",
+      "sha256": "9f39d09b0556c3a59b89d6b979189f960e5c663af11cdd52d6c7af0cd2e7d1c9",
+      "section": "Speed of a travelling wave: ideal-gas sound speed and temperature dependence."
+    },
+    "optics": {
+      "title": "NCERT Physics: Ray Optics and Optical Instruments",
+      "url": "https://ncert.nic.in/textbook/pdf/leph201.pdf",
+      "localFile": "../.tmp/nda-2026-i-primary-evidence/optics.pdf",
+      "sha256": "5c9570cc9f45cbe8f8d62100ccecd3370f8d8085f57041764bd1940bf467d235",
+      "section": "Section 9.2: spherical mirrors, image location and mirror equation."
+    },
+    "gravitation": {
+      "title": "NASA: Orbits and Kepler’s Laws",
+      "url": "https://science.nasa.gov/solar-system/orbits-and-keplers-laws/",
+      "localFile": "../.tmp/nda-2026-i-primary-evidence/gravitation.html",
+      "sha256": "6285cc8f7bdb0f0bdbde89fa1de53a51142f04c569100082660c06e78438471d",
+      "section": "Kepler’s third law: period squared and semimajor axis cubed."
+    }
+  },
+  "rejectedSecondaryKey": {
+    "localFile": "../.tmp/full_reaudit_clean_cache/NDA_1_2026_GAT_Answer_Key_SET_A.pdf",
+    "status": "secondary-only-not-clearance-evidence",
+    "reason": "Prepp-branded table is not an official UPSC key. Opening Q51/Q52/Q53 cells C/B/B conflict with independently derived displayed A/C/D; no blanket remapping is inferred."
+  },
+  "existingMetadataFlags": [
+    {
+      "questionId": "cds-2026-2026-1-139",
+      "issue": "Prior official-provisional label cites a Prepp-hosted PDF; reassess source/key status when reviewing Q139. Original ID and attempt references retained."
+    },
+    {
+      "questionId": "cds-2026-2026-1-146",
+      "issue": "Prior official-provisional label cites a Prepp-hosted PDF; reassess source/key status when reviewing Q146. Original ID and attempt references retained."
+    }
+  ],
+  "counts": {
+    "total": 150,
+    "outOfScope": 50,
+    "reasonedVerified": 15,
+    "quarantined": 5,
+    "pendingCurrentSourceReview": 80,
+    "existingOccurrences": 24
+  },
+  "records": [
+    {
+      "questionNumber": 1,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 2,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 3,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 4,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 5,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 6,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 7,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 8,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 9,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 10,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 11,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 12,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 13,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 14,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 15,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 16,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 17,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 18,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 19,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 20,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 21,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 22,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 23,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 24,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 25,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 26,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 27,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 28,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 29,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 30,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 31,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 32,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 33,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 34,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 35,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 36,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 37,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 38,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 39,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 40,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 41,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 42,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 43,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 44,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 45,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 46,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 47,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 48,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 49,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 50,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "out-of-scope",
+      "reason": "English Part A; GS-only scope exclusion, not an answer verification",
+      "sourcePages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 51,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 9,
+      "firstPass": {
+        "number": 51,
+        "page": 9,
+        "placement": "Science & Technology/Physics/Heat and Waves/Wave properties",
+        "promptLines": [
+          "A pendulum of length L oscillates with an angular amplitude of θ = 60° and time period T. Let T₀ = 2π√(L/g) be the time period for small angle of oscillations, where g is the acceleration due to gravity. If air resistance is negligibly small and the string remains straight, then which one of the following is correct?"
+        ],
+        "options": {
+          "A": "T will be slightly greater than T₀.",
+          "B": "T will be slightly smaller than T₀.",
+          "C": "T will be exactly equal to T₀.",
+          "D": "T will depend upon the mass of the bob."
+        },
+        "proposedAnswer": "A",
+        "reasoning": "Using the exact pendulum equation, T/T₀ = (2/π)K(sin(θ/2)). For θ=60°, the ratio is about 1.0732, greater than one and independent of bob mass. B and C contradict the finite-amplitude correction; D introduces a mass dependence absent from the equation.",
+        "evidenceIds": [
+          "pendulum"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread original p9 including 60°, all four comparisons and the small-angle definition. Independent quadrature of the nonlinear equation gives T/T₀≈1.073182; mass cancels. Retain A, not the cached secondary C.",
+      "approvedId": "nda-2026-i-51",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 52,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 9,
+      "firstPass": {
+        "number": 52,
+        "page": 9,
+        "placement": "Science & Technology/Physics/Mechanics/Force and momentum",
+        "promptLines": [
+          "Two forces of equal magnitude simultaneously act at a point. It is observed that the resultant force is equal in magnitude to the individual forces. Which of the following statements is/are correct?",
+          "I. The angle between one of the individual forces and the resultant force is π/3.",
+          "II. The angle between the individual forces is 2π/3.",
+          "Select the answer using the code given below."
+        ],
+        "options": {
+          "A": "I only",
+          "B": "II only",
+          "C": "Both I and II",
+          "D": "Neither I nor II"
+        },
+        "proposedAnswer": "C",
+        "reasoning": "R²=2F²(1+cos θ) and R=F give cos θ=-1/2, so θ=120°. Equal-force symmetry bisects that angle, giving 60° to the resultant. Both statements hold; each other option excludes a true statement.",
+        "evidenceIds": [
+          "motion"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p9: the resultant is equal to each force, not their sum. Constructing the force triangle makes it equilateral; the tail-to-tail angle is 120° and the force-to-resultant angle is 60°. Both I and II, displayed C.",
+      "approvedId": "nda-2026-i-52",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 53,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 9,
+      "firstPass": {
+        "number": 53,
+        "page": 9,
+        "placement": "Science & Technology/Physics/Heat and Waves/Temperature and heat",
+        "promptLines": [
+          "A solid of mass m has temperature-dependent specific heat as C(T) = C₀ + αT, where C₀ and α are constants. The solid is heated from T₁ to T₂. Which one of the following is the correct expression for quantity of heat (Q) of the solid mass?"
+        ],
+        "options": {
+          "A": "Q = mC₀(T₂ − T₁)",
+          "B": "Q = m(T₂ − T₁)[C₀ + α(T₁ + T₂)]",
+          "C": "Q = m(T₂ − T₁)[C₀(T₁ + T₂) + α]",
+          "D": "Q = m(T₂ − T₁)[C₀ + (α/2)(T₁ + T₂)]"
+        },
+        "proposedAnswer": "D",
+        "reasoning": "Integrating dQ=m(C₀+αT)dT yields mC₀(T₂−T₁)+(mα/2)(T₂²−T₁²), equivalent to D. A omits temperature dependence, B doubles its contribution, and C does not have the integrated form.",
+        "evidenceIds": [
+          "thermodynamics"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p9; options B and D differ by the factor 1/2 on α. Reintegrated the temperature-dependent heat capacity and differentiated D to recover m(C₀+αT). Retain D; no option reorder.",
+      "approvedId": "nda-2026-i-53",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 54,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 9,
+      "firstPass": {
+        "number": 54,
+        "page": 9,
+        "placement": "Science & Technology/Physics/Heat and Waves/Thermodynamics",
+        "promptLines": [
+          "In a certain process, the relation between pressure (P) and volume (V), for an ideal gas, is given by PV² = constant. If the initial temperature is T₁ and the final temperature is T₂; and the initial volume is V₁ and the final volume is V₂, then which one of the following is correct?"
+        ],
+        "options": {
+          "A": "T₁/T₂ = V₁/V₂",
+          "B": "T₁/T₂ = (V₁/V₂)²",
+          "C": "T₁/T₂ = V₂/V₁",
+          "D": "T₁/T₂ = (V₂/V₁)²"
+        },
+        "proposedAnswer": "C",
+        "reasoning": "For a fixed amount of ideal gas, PV=nRT. Combining this with PV²=k gives TV=k/(nR), hence T₁/T₂=V₂/V₁. A reverses the relation; B and D incorrectly retain a squared volume dependence after applying PV=nRT.",
+        "evidenceIds": [
+          "thermodynamics"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p9: PV², not P²V. From PV=nRT and PV²=k obtain T∝1/V, hence T₁/T₂=V₂/V₁, C. Checked a doubled-volume counterexample against all four ratios.",
+      "approvedId": "nda-2026-i-54",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 55,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 11,
+      "firstPass": {
+        "number": 55,
+        "page": 11,
+        "placement": "Science & Technology/Physics/Heat and Waves/Thermodynamics",
+        "promptLines": [
+          "For an ideal gas, a process is described by P = kT, where k is a constant. If the molar heat capacity for this process is C, then which one of the following is correct (where the symbols have their usual meanings)?"
+        ],
+        "options": {
+          "A": "C = Cₚ",
+          "B": "C = Cᵥ",
+          "C": "C = (Cₚ + Cᵥ)/2",
+          "D": "C is never constant"
+        },
+        "proposedAnswer": "B",
+        "reasoning": "P/T=k and PV=nRT imply constant V=nR/k for fixed n. With dV=0, the heat supplied equals the internal-energy change and the process heat capacity is Cᵥ. It is not the constant-pressure capacity or its average; no compulsory temperature variation is implied by the stated process.",
+        "evidenceIds": [
+          "thermodynamics"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p11: P=kT with molar heat capacity, not constant P. Fixed gas amount implies V is fixed; boundary work vanishes. Heat capacity is Cᵥ, B.",
+      "approvedId": "nda-2026-i-55",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 56,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 11,
+      "firstPass": {
+        "number": 56,
+        "page": 11,
+        "placement": "Science & Technology/Physics/Mechanics/Gravitation",
+        "promptLines": [
+          "For an object in gravitational field, the gravitational potential is the same at two points A and B, but the gravitational field is not the same at these two points. Which one of the following statements is correct?"
+        ],
+        "options": {
+          "A": "Positive work is done by gravity in moving the object from point A to point B.",
+          "B": "Negative work is done by gravity in moving the object from point A to point B.",
+          "C": "Gravity must be non-conservative in such a region.",
+          "D": "No work is done by gravity in moving the object from point A to point B."
+        },
+        "proposedAnswer": "D",
+        "reasoning": "Gravitational work is m(V_A−V_B)=0. Different field vectors at equal-potential endpoints do not change that result or make gravity non-conservative. A and B require a nonzero potential difference.",
+        "evidenceIds": [
+          "energy"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p11: potentials equal but field values unequal. Work is minus potential-energy change and is zero. A radial equal-radius pair supplies a conservative-field counterexample to C. D alone remains valid.",
+      "approvedId": "nda-2026-i-56",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 57,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 11,
+      "firstPass": {
+        "number": 57,
+        "page": 11,
+        "placement": "Science & Technology/Physics/Mechanics/Force and momentum",
+        "promptLines": [
+          "The position vector of a particle is given by r⃗ = √3 t² î + √2 t ĵ + √5 k̂. Which one of the following statements is correct?"
+        ],
+        "options": {
+          "A": "The force acting on the particle is parallel to the instantaneous momentum of the particle.",
+          "B": "The force acting on the particle is perpendicular to the instantaneous momentum of the particle.",
+          "C": "The particle experiences zero force.",
+          "D": "The force acting on the particle is not parallel to the instantaneous momentum of the particle."
+        },
+        "proposedAnswer": "D",
+        "reasoning": "Differentiation gives velocity (2√3 t,√2,0) and acceleration (2√3,0,0). The nonzero y component of momentum rules out parallelism to the x-directed force. Force is nonzero and is not generally perpendicular, so A–C are not generally true.",
+        "evidenceIds": [
+          "motion"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Magnified p11 expression: square roots cover coefficients 3, 2 and 5; t² and t are outside the radicals. Differentiated twice independently. Force has only x component, velocity has nonzero y component. Nonparallel D; perpendicular B fails except at one instant.",
+      "approvedId": "nda-2026-i-57",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 58,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 11,
+      "firstPass": {
+        "number": 58,
+        "page": 11,
+        "placement": "Science & Technology/Physics/Mechanics/Work energy and power",
+        "promptLines": [
+          "A ball is dropped from rest from height h above the ground in frame S (the Earth’s frame). Another frame S′ is moving upwards with constant speed u relative to the Earth. In frame S′, the ball has initial downward speed v. Pertaining to the change in kinetic energy (ΔK) of the ball from release to just before hitting the ground as measured in frames S and S′ separately, which one of the following is correct?"
+        ],
+        "options": {
+          "A": "ΔK is the same in both the frames.",
+          "B": "ΔK is larger in frame S.",
+          "C": "ΔK is larger in frame S′.",
+          "D": "ΔK cannot be compared without the information of mass of the ball."
+        },
+        "proposedAnswer": "C",
+        "reasoning": "Let w=√(2gh) be the final downward Earth-frame speed. In the upward-moving frame initial downward speed is u (so v=u) and final speed is w+u. Thus ΔK′=mgh+muw>mgh=ΔK for u>0. Mass is positive and cannot reverse the comparison. A and B contradict the positive cross term; D is unnecessary.",
+        "evidenceIds": [
+          "energy",
+          "motion"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p11 and retained printed initial-speed symbol v. The moving frame travels upward; final downward speed is w+u and initial downward speed u. Subtracting squared speeds gives extra positive muw, so C. Reversing frame direction would be a different question.",
+      "approvedId": "nda-2026-i-58",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 59,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "quarantined",
+      "originalPage": 11,
+      "firstPass": {
+        "number": 59,
+        "page": 11,
+        "placement": "Science & Technology/Physics/Mechanics/Fluids",
+        "promptLines": [
+          "A floating body is in stable state. Which one of the following is correct?"
+        ],
+        "options": {
+          "A": "The centre of gravity of the body is above its centre of buoyancy.",
+          "B": "The centre of gravity of the body is below its centre of buoyancy.",
+          "C": "The centre of gravity of the body coincides with its centre of buoyancy.",
+          "D": "The centre of gravity of the body is below the metacentre."
+        },
+        "proposedAnswer": "D",
+        "reasoning": "Proposed result: stable small-angle floating equilibrium requires positive metacentric height, with the metacentre above the centre of gravity. The centre-of-buoyancy comparisons A–C are not universal criteria. A directly applicable primary metacentric-stability source still needs to be attached before clearance.",
+        "evidenceIds": [
+          "fluids"
+        ],
+        "caveat": "Pending a primary source that explicitly establishes metacentric stability; a general buoyancy chapter alone is insufficient evidence.",
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "needs-ambiguity-review",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": {
+        "status": "held",
+        "reason": "Pending a primary source that explicitly establishes metacentric stability; a general buoyancy chapter alone is insufficient evidence."
+      },
+      "approvedId": null,
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 60,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "quarantined",
+      "originalPage": 11,
+      "firstPass": {
+        "number": 60,
+        "page": 11,
+        "placement": "Science & Technology/Physics/Mechanics/Work energy and power",
+        "promptLines": [
+          "A constant power machine pulls a block on a smooth horizontal surface. Which one of the following correctly describes the relation between speed of the block (v) and time (t)?"
+        ],
+        "options": {
+          "A": "v ∝ t",
+          "B": "v ∝ √t",
+          "C": "v ∝ t²",
+          "D": "v ∝ t³ᐟ²"
+        },
+        "proposedAnswer": "B",
+        "reasoning": "P=d(mv²/2)/dt gives v²=v₀²+2Pt/m. B follows only for a rest initial condition or a suitable shifted time origin. A, C and D do not give constant power for a block of fixed mass.",
+        "evidenceIds": [
+          "energy"
+        ],
+        "caveat": "The printed stem does not state that the block starts from rest. Do not add that missing initial condition to the source text or approve a strictly proportional answer without resolving the ambiguity.",
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "needs-ambiguity-review",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": {
+        "status": "held",
+        "reason": "The printed stem does not state that the block starts from rest. Do not add that missing initial condition to the source text or approve a strictly proportional answer without resolving the ambiguity."
+      },
+      "approvedId": null,
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 61,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 13,
+      "firstPass": {
+        "number": 61,
+        "page": 13,
+        "placement": "Science & Technology/Physics/Heat and Waves/Temperature and heat",
+        "promptLines": [
+          "A 5 g piece of ice at −20 °C is put into m kg of water at 30 °C temperature. The heat is exchanged only between the ice and the water. The final temperature of the mixture is 0 °C in liquid phase. What is the value of m in kg?"
+        ],
+        "options": {
+          "A": "0·050",
+          "B": "0·010",
+          "C": "0·015",
+          "D": "0·150"
+        },
+        "proposedAnswer": "C",
+        "reasoning": "Using NCERT values c_ice=2100 J kg⁻¹ K⁻¹, L_f=3.35×10⁵ J kg⁻¹ and c_water=4186 J kg⁻¹ K⁻¹, 0.005(2100×20+335000)=m×4186×30. This gives m≈0.01501 kg, uniquely selecting 0.015 kg. The other masses fail the heat balance.",
+        "evidenceIds": [
+          "thermal-properties"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p13: 5 g, −20 °C, 30 °C and final all-liquid 0 °C. Converted ice to 0.005 kg; heat balance with NCERT constants gives approximately 0.01501 kg. Of the four printed masses only C rounds correctly.",
+      "approvedId": "nda-2026-i-61",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 62,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 13,
+      "firstPass": {
+        "number": 62,
+        "page": 13,
+        "placement": "Science & Technology/Physics/Heat and Waves/Sound",
+        "promptLines": [
+          "A very large container consists of an ideal gas. The speed of sound in the gas is x. When the pressure of the gas is doubled while keeping the temperature constant, the speed of sound now becomes y. What is the ratio of x to y?"
+        ],
+        "options": {
+          "A": "1",
+          "B": "√2",
+          "C": "2",
+          "D": "4"
+        },
+        "proposedAnswer": "A",
+        "reasoning": "For the same ideal gas, sound speed is √(γRT/M). At fixed temperature, pressure and density double together, leaving the speed unchanged. x/y=1; the other ratios treat density as unchanged or introduce an unsupported pressure dependence.",
+        "evidenceIds": [
+          "waves"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p13: both measurements are in the same ideal gas at constant temperature. Sound formula gives no pressure change when density changes consistently. Ratio 1, A; did not hold density fixed.",
+      "approvedId": "nda-2026-i-62",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 63,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 13,
+      "firstPass": {
+        "number": 63,
+        "page": 13,
+        "placement": "Science & Technology/Physics/Mechanics/Force and momentum",
+        "promptLines": [
+          "A person jumps from a height on soft sand. Which one of the following is the correct reason for less likely injury to the person?"
+        ],
+        "options": {
+          "A": "The sand exerts no reaction force.",
+          "B": "The sand reduces the change in momentum.",
+          "C": "The sand increases the impact time.",
+          "D": "The sand increases the momentum."
+        },
+        "proposedAnswer": "C",
+        "reasoning": "For approximately the same initial momentum and a final rest state, soft sand extends stopping time and reduces average impact force Δp/Δt. A falsely removes the force that stops the person; B and D confuse the stopping impulse with its duration.",
+        "evidenceIds": [
+          "motion"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p13: soft sand and less likely injury, not a different impact momentum. Impulse magnitude is approximately fixed while stopping time grows; mean force decreases. C alone supplies the mechanism.",
+      "approvedId": "nda-2026-i-63",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 64,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "quarantined",
+      "originalPage": 13,
+      "firstPass": {
+        "number": 64,
+        "page": 13,
+        "placement": "Science & Technology/Physics/Light and Electricity/Optics",
+        "promptLines": [
+          "An object is placed far beyond the centre of curvature of a concave mirror. The object then starts accelerating towards the mirror. Which one of the following is correct?"
+        ],
+        "options": {
+          "A": "The image will accelerate towards the centre of curvature.",
+          "B": "The image will accelerate towards the focus.",
+          "C": "The image will accelerate towards the pole of the mirror.",
+          "D": "The image will move with a constant speed towards the focus."
+        },
+        "proposedAnswer": "A",
+        "reasoning": "While the object remains beyond the centre of curvature, v=fu/(u−f). As u decreases toward 2f, v increases from near f toward 2f; an approaching accelerating object produces an accelerating image toward the centre. B and D reverse the initial direction, and C is inconsistent with this region.",
+        "evidenceIds": [
+          "optics"
+        ],
+        "caveat": "The statement does not limit the motion to the initial beyond-centre region. After the object crosses the centre/focus, the unqualified trajectory description needs care. Retain proposed A but require a second-pass ambiguity decision rather than silently restricting the printed stem.",
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "needs-ambiguity-review",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": {
+        "status": "held",
+        "reason": "The statement does not limit the motion to the initial beyond-centre region. After the object crosses the centre/focus, the unqualified trajectory description needs care. Retain proposed A but require a second-pass ambiguity decision rather than silently restricting the printed stem."
+      },
+      "approvedId": null,
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 65,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 13,
+      "firstPass": {
+        "number": 65,
+        "page": 13,
+        "placement": "Science & Technology/Physics/Mechanics/Work energy and power",
+        "promptLines": [
+          "A particle is moved from point X to point Y under a force field. The work done depends only on the initial and final speeds. Which one of the following is correct?"
+        ],
+        "options": {
+          "A": "The force is conservative.",
+          "B": "The net work equals the change in kinetic energy.",
+          "C": "The force is constant.",
+          "D": "The velocity must always increase."
+        },
+        "proposedAnswer": "B",
+        "reasoning": "The work–energy theorem establishes W_net=½m(v_Y²−v_X²). This alone does not establish a conservative spatial force field or a constant force. Net work can be negative, so increasing velocity is not necessary.",
+        "evidenceIds": [
+          "energy"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p13: endpoints specify speeds, not a position-only potential. Work–energy theorem guarantees B, whereas variable/nonconservative forces can also satisfy the theorem. No claim of conservative or constant force follows.",
+      "approvedId": "nda-2026-i-65",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 66,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 13,
+      "firstPass": {
+        "number": 66,
+        "page": 13,
+        "placement": "Science & Technology/Physics/Mechanics/Gravitation",
+        "promptLines": [
+          "One year at a planet is 8 times as large as compared to the one year at the Earth. Which one of the following is correct about the planet’s orbit?"
+        ],
+        "options": {
+          "A": "The semimajor axis of the planet’s orbit is same as that of the Earth.",
+          "B": "The semimajor axis of the planet’s orbit is twice as compared to that of the Earth.",
+          "C": "The semimajor axis of the planet’s orbit is thrice as compared to that of the Earth.",
+          "D": "The semimajor axis of the planet’s orbit is four times as compared to that of the Earth."
+        },
+        "proposedAnswer": "D",
+        "reasoning": "For planets orbiting the Sun, Kepler’s third law gives a/a_E=(T/T_E)^(2/3)=8^(2/3)=4. The axis ratios in A–C produce period ratios 1, 2√2 and 3√3 rather than 8.",
+        "evidenceIds": [
+          "gravitation"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p13: orbital period is eight Earth years; semimajor-axis comparison is asked. Cubing 4 and squaring 8 both give 64, independently confirming D for a planet of the Solar System.",
+      "approvedId": "nda-2026-i-66",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 67,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "quarantined",
+      "originalPage": 15,
+      "firstPass": {
+        "number": 67,
+        "page": 15,
+        "placement": "Science & Technology/Physics/Light and Electricity/Electrostatics",
+        "promptLines": [
+          "A lightning rod with sharp tip reduces damage risk. Which one of the following is the primary reason for it?"
+        ],
+        "options": {
+          "A": "It attracts lightning directly.",
+          "B": "The sharp tip reduces the local electric field.",
+          "C": "It enhances field and promotes continuous corona discharge.",
+          "D": "It repels charged clouds."
+        },
+        "proposedAnswer": "C",
+        "reasoning": "The small radius of curvature enhances the local electric field and can initiate corona discharge. B has the field effect reversed and D supplies an unsupported repulsion mechanism. A is not an adequate protection mechanism. The choice wording calls corona the primary protective cause; modern lightning-protection evidence must distinguish that claim from providing a grounded strike path.",
+        "evidenceIds": [],
+        "caveat": "Needs a directly applicable primary lightning-protection reference and a second-pass decision on the printed primary-reason claim; do not approve solely from a school-level sharp-point rule.",
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "needs-ambiguity-review",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": {
+        "status": "held",
+        "reason": "Needs a directly applicable primary lightning-protection reference and a second-pass decision on the printed primary-reason claim; do not approve solely from a school-level sharp-point rule."
+      },
+      "approvedId": null,
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 68,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "quarantined",
+      "originalPage": 15,
+      "firstPass": {
+        "number": 68,
+        "page": 15,
+        "placement": "Science & Technology/Physics/Light and Electricity/Optics",
+        "promptLines": [
+          "A periscope uses two plane mirrors inclined at 45°. If the tube of the periscope is filled with a complete transparent liquid of refractive index 1·5, then which one of the following is correct in respect of the image seen?"
+        ],
+        "options": {
+          "A": "The image will remain unchanged.",
+          "B": "The image will appear laterally shifted.",
+          "C": "The image will appear 1·5 times brighter.",
+          "D": "The image will appear 1·5 times darker."
+        },
+        "proposedAnswer": "A",
+        "reasoning": "Plane-mirror reflection directions do not depend on the surrounding medium. For axial rays at normal entrance/exit, the usual periscope image geometry is unchanged. A refractive index by itself does not prescribe the fixed brightness factors in C or D; B requires a specified oblique refraction geometry.",
+        "evidenceIds": [
+          "optics"
+        ],
+        "caveat": "Entrance/exit geometry and observation conditions are not specified. A is the intended ideal axial-ray interpretation, but complete image behaviour cannot be asserted without qualifying assumptions. Keep pending rather than inserting assumptions into the question.",
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "needs-ambiguity-review",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": {
+        "status": "held",
+        "reason": "Entrance/exit geometry and observation conditions are not specified. A is the intended ideal axial-ray interpretation, but complete image behaviour cannot be asserted without qualifying assumptions. Keep pending rather than inserting assumptions into the question."
+      },
+      "approvedId": null,
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 69,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 15,
+      "firstPass": {
+        "number": 69,
+        "page": 15,
+        "placement": "Science & Technology/Physics/Light and Electricity/Optics",
+        "promptLines": [
+          "It has been observed that a mirror always forms the image between the pole and the focus, irrespective of the location of the object. Which one of the following is correct in respect of the nature of the mirror?"
+        ],
+        "options": {
+          "A": "It is a plane mirror.",
+          "B": "It is a convex mirror.",
+          "C": "It is a concave mirror of small focal length.",
+          "D": "It is a concave mirror of large focal length."
+        },
+        "proposedAnswer": "B",
+        "reasoning": "For a real object in front of a convex mirror, the virtual image lies behind the mirror between its pole and focus. Plane mirrors do not have such a finite focal interval; concave mirrors do not keep the image in it for all object locations.",
+        "evidenceIds": [
+          "optics"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p15: any real-object position and an image between pole and focus. The convex-mirror construction has that property. Concave-mirror counterexamples disqualify both focal-length alternatives; B retained.",
+      "approvedId": "nda-2026-i-69",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 70,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "reasoned-verified",
+      "originalPage": 15,
+      "firstPass": {
+        "number": 70,
+        "page": 15,
+        "placement": "Science & Technology/Physics/Mechanics/Force and momentum",
+        "promptLines": [
+          "What is the upward force acting on a skydiver of mass 60 kg who is falling at a uniform speed of 2 m/s?"
+        ],
+        "options": {
+          "A": "0",
+          "B": "60 N",
+          "C": "588 N",
+          "D": "708 N"
+        },
+        "proposedAnswer": "C",
+        "reasoning": "Uniform velocity gives zero acceleration and zero resultant force. Upward air force therefore balances mg=60×9.8=588 N. The downward speed does not add a force term. A, B and D do not balance the weight.",
+        "evidenceIds": [
+          "motion"
+        ],
+        "caveat": null,
+        "reproductionStatus": "first-pass-original-visual-transcription",
+        "answerStatus": "first-pass-reasoning",
+        "secondPassStatus": "pending",
+        "publicationEligible": false
+      },
+      "secondPass": "Reread p15: uniform speed, mass 60 kg, upward force not net force. a=0 and upward drag equals weight. 60×9.8=588 N, C; the stated 2 m/s is not an acceleration.",
+      "approvedId": "nda-2026-i-70",
+      "publicationDecisionThisPass": "approved-local-import"
+    },
+    {
+      "questionNumber": 71,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 72,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 73,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 74,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 75,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 76,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 77,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 78,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 79,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 80,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 81,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 82,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 83,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 84,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 85,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 86,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 87,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 88,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 89,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 90,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 91,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 92,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 93,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 94,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 95,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 96,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 97,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 98,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 99,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 100,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 101,
+      "existingId": "nda-2026-i-101",
+      "existingRecordHash": "d18558c3723d362283a5790e7e40c7e5fdd460247a0b4a7bc93d1a12ce16be48",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 102,
+      "existingId": "nda-2026-i-102",
+      "existingRecordHash": "ece4505438d16b5789a3ae945a0641769ff0745c6218fca287e9415051cf11c9",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 103,
+      "existingId": "nda-2026-i-103",
+      "existingRecordHash": "5942d28b3ef9b8a9dbfbd0bc5fa2b391ca8229659873646919c7a22ce0e0c602",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 104,
+      "existingId": "nda-2026-i-104",
+      "existingRecordHash": "633c31149c5ffa2867c18eb2af84650727021b78e0423e396a60756e2c16fe82",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 105,
+      "existingId": "nda-2026-i-105",
+      "existingRecordHash": "b57203c81c7671bfab66ded618e1db8a3691f416e885658da87fc460ceac08d0",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 106,
+      "existingId": "nda-2026-i-106",
+      "existingRecordHash": "0fe53255c955c39f98db92514cd2eda0f6230179d67d42494740dd1819e56d7b",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 107,
+      "existingId": "nda-2026-i-107",
+      "existingRecordHash": "9fe4cc436fbd5aa0f89bd55d45a5fb78f00788a14d210e233bfb622d807384c2",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 108,
+      "existingId": "nda-2026-i-108",
+      "existingRecordHash": "bb5da077064db3ca2be2492ed4b52b991459fd16009c75c41e456ff5f9807ef6",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 109,
+      "existingId": "nda-2026-i-109",
+      "existingRecordHash": "8c8377fb22e05b7af026a174337be8d59f11dd94e6469cff17fb5815d0f97acb",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 110,
+      "existingId": "nda-2026-i-110",
+      "existingRecordHash": "ccdf33a0860d1d22cce04afbb92965c48913d5306e653e3224f9218a482c748a",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 111,
+      "existingId": "nda-2026-i-111",
+      "existingRecordHash": "0b441aabccfe2aeb0bf6e221ba9085cb09c7de21810ec1f8df75c21f9a5e3304",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 112,
+      "existingId": "nda-2026-i-112",
+      "existingRecordHash": "271c49f7ad3f1c0352f8ab0f00cf3f84c6a5ffbb34428c9019996a5ff24b3e10",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 113,
+      "existingId": "nda-2026-i-113",
+      "existingRecordHash": "aefb0006bff543cd8313eca88b3b7550be174efe9fca231db642f8e36bf58e02",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 114,
+      "existingId": "nda-2026-i-114",
+      "existingRecordHash": "c193d8cd532257e3e673b00938c12a5347e399f7cac0b9bf5998c5c362a11beb",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 115,
+      "existingId": "nda-2026-i-115",
+      "existingRecordHash": "624a63b1c5eff25a28058c2bac88d7d7c3d728c0f03130dbf8a09b7a1bd0c6d6",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 116,
+      "existingId": "nda-2026-i-116",
+      "existingRecordHash": "5855349996273e4313aa9df522136b1ba5cf1b11519004ac66fdc1d1178322e2",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 117,
+      "existingId": "nda-2026-i-117",
+      "existingRecordHash": "9e498008aa1a9eb3dd40dfb1e23c16624243b3ad45d0930b4f136d787f2c0231",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 118,
+      "existingId": "nda-2026-i-118",
+      "existingRecordHash": "d17b852d3c870fd86c85970c0279acd209292135bca8e817bf8c12407ba88c95",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 119,
+      "existingId": "nda-2026-i-119",
+      "existingRecordHash": "6aeeb15fe0273b3f600eb5a7b855041718b1b26927cfdb11b5a6cf8f74cf8637",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 120,
+      "existingId": "nda-2026-i-120",
+      "existingRecordHash": "296eb22e2a9d99f49df2ab06fde3c9b61c449930d3f7d2f760bf9409bb5a8fba",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 121,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 122,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 123,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 124,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 125,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 126,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 127,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 128,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 129,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 130,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 131,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 132,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 133,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 134,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 135,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 136,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 137,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 138,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 139,
+      "existingId": "cds-2026-2026-1-139",
+      "existingRecordHash": "a6166b6f73bf814263f6e23f5584000a58c9049d5fbf8772d51a260c510fa490",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 140,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 141,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 142,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 143,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 144,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 145,
+      "existingId": "nda-2026-i-145",
+      "existingRecordHash": "d8e5a67de12ccdae884284e3cbe5d0e9fc6dd7a71c76d315003f5b9f26ffa603",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 146,
+      "existingId": "cds-2026-2026-1-146",
+      "existingRecordHash": "261aebcdd23dd7771b7b5073e0b5b4de02c8695df3fdae1a3ad2c83ac2aa206c",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 147,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 148,
+      "existingId": "nda-2026-i-148",
+      "existingRecordHash": "d6a0fbee48393ca083a3681480498c274ff661bcfc6aa6c2e7316c7b990aed8b",
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 149,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    },
+    {
+      "questionNumber": 150,
+      "existingId": null,
+      "existingRecordHash": null,
+      "disposition": "pending-current-source-review",
+      "publicationDecisionThisPass": "not-newly-cleared"
+    }
+  ],
+  "nextBatch": {
+    "from": 71,
+    "to": 100,
+    "note": "Q72 requires its original circuit figure. Do not import it as text-only."
+  }
+}

@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { SiteHeader } from "../../components/site-header";
 import { ArchiveWorkspace } from "../../components/archive-workspace";
 import { PYQ_EXAMS, getExamSummary, getSubjectPracticeInventory, isPyqExam, type PyqExam } from "../../../lib/pyq-catalog";
+import { isPreparationExam } from '../../../lib/preparation-exams';
+import { getPreparationInventory } from '../../../lib/preparation-catalog';
 
 export function generateStaticParams() { return PYQ_EXAMS.map((exam) => ({ exam })); }
 
@@ -20,6 +22,7 @@ export default async function ExamPage({ params }: { params: Promise<{ exam: str
   const { exam: rawExam } = await params;
   if (!isPyqExam(rawExam)) notFound();
   const exam = rawExam.toUpperCase() as PyqExam;
+  if (isPreparationExam(exam)) return <><SiteHeader /><ArchiveWorkspace key={exam} initialInventory={getPreparationInventory(exam)} /></>;
   const inventory = getSubjectPracticeInventory();
   return <><SiteHeader /><ArchiveWorkspace initialInventory={inventory} initialExam={exam} /></>;
 }

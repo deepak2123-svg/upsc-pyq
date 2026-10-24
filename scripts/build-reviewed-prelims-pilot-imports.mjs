@@ -6,6 +6,7 @@ import {cse2014Evidence,cse2014Imports} from './prelims-reviewed-cse-2014-import
 import {cse2015Evidence,cse2015Imports} from './prelims-reviewed-cse-2015-imports.mjs';
 import {cse2016Evidence,cse2016Imports} from './prelims-reviewed-cse-2016-imports.mjs';
 import {nda2026IIQuestions,validateNda2026IIEvidence} from './prelims-reviewed-nda-2026-ii-imports.mjs';
+import {nda2026IQuestions,validateNda2026IEvidence} from './prelims-reviewed-nda-2026-i-imports.mjs';
 
 const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const pdf = 'C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2013.pdf';
@@ -297,7 +298,10 @@ const questions = raw.flatMap(row => {
 validateNda2026IIEvidence();
 for(const q of nda2026IIQuestions)assert.ok(!originals.some(old=>old.id===q.id||old.exam===q.exam&&old.year===q.year&&old.paper===q.paper&&old.questionNumber===q.questionNumber),'Existing NDA II source occurrence must be reconciled before import');
 questions.push(...nda2026IIQuestions);
-const policy = Object.fromEntries(questions.map(q => [q.id, { status: q.exam==='NDA'?'official-provisional':'official-final', revision: 1, contentRevision: 0 }]));
+validateNda2026IEvidence();
+for(const q of nda2026IQuestions)assert.ok(!originals.some(old=>old.id===q.id||old.exam===q.exam&&old.year===q.year&&old.paper===q.paper&&old.questionNumber===q.questionNumber),'Existing NDA I source occurrence must be reconciled before import');
+questions.push(...nda2026IQuestions);
+const policy = Object.fromEntries(questions.map(q => [q.id, { status: q.source.answerStatus==='reasoned-verified'?'reasoned-verified':q.exam==='NDA'?'official-provisional':'official-final', revision: 1, contentRevision: 0 }]));
 for (const [file, value] of [['content/reviewed-prelims-imports.json', { version: 1, batch: 'CSE-2013-page-2-pilot', questions, placements }], ['content/prelims-import-review-policy.json', policy]]) {
   const expected = `${JSON.stringify(value, null, 2)}\n`;
   if (process.argv.includes('--check')) assert.equal(fs.readFileSync(file,'utf8'),expected,`Stale approved imports: ${file}`);

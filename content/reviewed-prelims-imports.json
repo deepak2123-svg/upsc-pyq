@@ -18331,6 +18331,931 @@
         "classificationRationale": "Examination-context domestic defence production and indigenisation.",
         "secondPass": "Separate second-pass check against complete English page 47 and independently transcribed Series A Q150 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
       }
+    },
+    {
+      "id": "nda-2026-i-51",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "A pendulum of length L oscillates with an angular amplitude of θ = 60° and time period T. Let T₀ = 2π√(L/g) be the time period for small angle of oscillations, where g is the acceleration due to gravity. If air resistance is negligibly small and the string remains straight, then which one of the following is correct?",
+      "sourceTextHash": "b615c0f34594e5ce7883c73f5f25487189d94e14dda6ac5e993861eb57a64a1a",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 51,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Heat and Waves",
+      "subtopic": "Wave properties",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "A pendulum of length L oscillates with an angular amplitude of θ = 60° and time period T. Let T₀ = 2π√(L/g) be the time period for small angle of oscillations, where g is the acceleration due to gravity. If air resistance is negligibly small and the string remains straight, then which one of the following is correct?"
+      ],
+      "options": {
+        "A": "T will be slightly greater than T₀.",
+        "B": "T will be slightly smaller than T₀.",
+        "C": "T will be exactly equal to T₀.",
+        "D": "T will depend upon the mass of the bob."
+      },
+      "answer": "A",
+      "explanation": "Reasoned verification (no matching official key recovered): Using the exact pendulum equation, T/T₀ = (2/π)K(sin(θ/2)). For θ=60°, the ratio is about 1.0732, greater than one and independent of bob mass. B and C contradict the finite-amplitude correction; D introduces a mass dependence absent from the equation.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 51,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 9,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://www.acs.psu.edu/drussell/Demos/Pendulum/Pendulum.html",
+        "officialAnswer": null,
+        "displayedAnswer": "A",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "Penn State: nonlinear simple pendulum",
+            "url": "https://www.acs.psu.edu/drussell/Demos/Pendulum/Pendulum.html",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/pendulum.html",
+            "sha256": "f9a7d9b5faa133956630b5ef74813c1bf72b22bba79b5ec660a4bce693a16099",
+            "section": "The equation of motion and the real nonlinear simple pendulum; exact finite-amplitude integral derived separately."
+          }
+        ],
+        "reproductionReview": "Complete original English page 9, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests wave properties within Heat and Waves; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread original p9 including 60°, all four comparisons and the small-angle definition. Independent quadrature of the nonlinear equation gives T/T₀≈1.073182; mass cancels. Retain A, not the cached secondary C.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-52",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Two forces of equal magnitude simultaneously act at a point. It is observed that the resultant force is equal in magnitude to the individual forces. Which of the following statements is/are correct? I. The angle between one of the individual forces and the resultant force is π/3. II. The angle between the individual forces is 2π/3. Select the answer using the code given below.",
+      "sourceTextHash": "2d76d348dd380a7274ba7360bc6dfbdfd2e1bb745ee2e69b54cc70beace2c60c",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 52,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Mechanics",
+      "subtopic": "Force and momentum",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Two forces of equal magnitude simultaneously act at a point. It is observed that the resultant force is equal in magnitude to the individual forces. Which of the following statements is/are correct?",
+        "I. The angle between one of the individual forces and the resultant force is π/3.",
+        "II. The angle between the individual forces is 2π/3.",
+        "Select the answer using the code given below."
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): R²=2F²(1+cos θ) and R=F give cos θ=-1/2, so θ=120°. Equal-force symmetry bisects that angle, giving 60° to the resultant. Both statements hold; each other option excludes a true statement.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 52,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 9,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/keph104.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Laws of Motion",
+            "url": "https://ncert.nic.in/textbook/pdf/keph104.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/motion.pdf",
+            "sha256": "8a5df412b53d86040d73ec589ddc98ae23201c420973c7b910e1acca85d234ef",
+            "section": "Newton’s second law, impulse and equilibrium."
+          }
+        ],
+        "reproductionReview": "Complete original English page 9, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests force and momentum within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p9: the resultant is equal to each force, not their sum. Constructing the force triangle makes it equilateral; the tail-to-tail angle is 120° and the force-to-resultant angle is 60°. Both I and II, displayed C.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-53",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "A solid of mass m has temperature-dependent specific heat as C(T) = C₀ + αT, where C₀ and α are constants. The solid is heated from T₁ to T₂. Which one of the following is the correct expression for quantity of heat (Q) of the solid mass?",
+      "sourceTextHash": "6ec9af9ccfd4a4962e6e1c9e17bf25b713cb12bd70b81fee2976834fc9195cf8",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 53,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Heat and Waves",
+      "subtopic": "Temperature and heat",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "A solid of mass m has temperature-dependent specific heat as C(T) = C₀ + αT, where C₀ and α are constants. The solid is heated from T₁ to T₂. Which one of the following is the correct expression for quantity of heat (Q) of the solid mass?"
+      ],
+      "options": {
+        "A": "Q = mC₀(T₂ − T₁)",
+        "B": "Q = m(T₂ − T₁)[C₀ + α(T₁ + T₂)]",
+        "C": "Q = m(T₂ − T₁)[C₀(T₁ + T₂) + α]",
+        "D": "Q = m(T₂ − T₁)[C₀ + (α/2)(T₁ + T₂)]"
+      },
+      "answer": "D",
+      "explanation": "Reasoned verification (no matching official key recovered): Integrating dQ=m(C₀+αT)dT yields mC₀(T₂−T₁)+(mα/2)(T₂²−T₁²), equivalent to D. A omits temperature dependence, B doubles its contribution, and C does not have the integrated form.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 53,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 9,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/keph204.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "D",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Thermodynamics",
+            "url": "https://ncert.nic.in/textbook/pdf/keph204.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/thermodynamics.pdf",
+            "sha256": "00462650d55bda8843f5fbf4eba1a7996faf13d04a8858fa04061b1309e090ba",
+            "section": "Specific heat, ideal-gas equation of state and isochoric processes."
+          }
+        ],
+        "reproductionReview": "Complete original English page 9, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests temperature and heat within Heat and Waves; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p9; options B and D differ by the factor 1/2 on α. Reintegrated the temperature-dependent heat capacity and differentiated D to recover m(C₀+αT). Retain D; no option reorder.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-54",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "In a certain process, the relation between pressure (P) and volume (V), for an ideal gas, is given by PV² = constant. If the initial temperature is T₁ and the final temperature is T₂; and the initial volume is V₁ and the final volume is V₂, then which one of the following is correct?",
+      "sourceTextHash": "053899204fb31f0a13b239003edefd86b101eff092e0b69864200cfe8c856483",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 54,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Heat and Waves",
+      "subtopic": "Thermodynamics",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "In a certain process, the relation between pressure (P) and volume (V), for an ideal gas, is given by PV² = constant. If the initial temperature is T₁ and the final temperature is T₂; and the initial volume is V₁ and the final volume is V₂, then which one of the following is correct?"
+      ],
+      "options": {
+        "A": "T₁/T₂ = V₁/V₂",
+        "B": "T₁/T₂ = (V₁/V₂)²",
+        "C": "T₁/T₂ = V₂/V₁",
+        "D": "T₁/T₂ = (V₂/V₁)²"
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): For a fixed amount of ideal gas, PV=nRT. Combining this with PV²=k gives TV=k/(nR), hence T₁/T₂=V₂/V₁. A reverses the relation; B and D incorrectly retain a squared volume dependence after applying PV=nRT.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 54,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 9,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/keph204.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Thermodynamics",
+            "url": "https://ncert.nic.in/textbook/pdf/keph204.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/thermodynamics.pdf",
+            "sha256": "00462650d55bda8843f5fbf4eba1a7996faf13d04a8858fa04061b1309e090ba",
+            "section": "Specific heat, ideal-gas equation of state and isochoric processes."
+          }
+        ],
+        "reproductionReview": "Complete original English page 9, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests thermodynamics within Heat and Waves; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p9: PV², not P²V. From PV=nRT and PV²=k obtain T∝1/V, hence T₁/T₂=V₂/V₁, C. Checked a doubled-volume counterexample against all four ratios.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-55",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "For an ideal gas, a process is described by P = kT, where k is a constant. If the molar heat capacity for this process is C, then which one of the following is correct (where the symbols have their usual meanings)?",
+      "sourceTextHash": "1d574c338ad70bcf7b53fd8edf7528f800f6375e81909f982ed7a9b271e69f07",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 55,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Heat and Waves",
+      "subtopic": "Thermodynamics",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "For an ideal gas, a process is described by P = kT, where k is a constant. If the molar heat capacity for this process is C, then which one of the following is correct (where the symbols have their usual meanings)?"
+      ],
+      "options": {
+        "A": "C = Cₚ",
+        "B": "C = Cᵥ",
+        "C": "C = (Cₚ + Cᵥ)/2",
+        "D": "C is never constant"
+      },
+      "answer": "B",
+      "explanation": "Reasoned verification (no matching official key recovered): P/T=k and PV=nRT imply constant V=nR/k for fixed n. With dV=0, the heat supplied equals the internal-energy change and the process heat capacity is Cᵥ. It is not the constant-pressure capacity or its average; no compulsory temperature variation is implied by the stated process.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 55,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 11,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/keph204.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "B",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Thermodynamics",
+            "url": "https://ncert.nic.in/textbook/pdf/keph204.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/thermodynamics.pdf",
+            "sha256": "00462650d55bda8843f5fbf4eba1a7996faf13d04a8858fa04061b1309e090ba",
+            "section": "Specific heat, ideal-gas equation of state and isochoric processes."
+          }
+        ],
+        "reproductionReview": "Complete original English page 11, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests thermodynamics within Heat and Waves; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p11: P=kT with molar heat capacity, not constant P. Fixed gas amount implies V is fixed; boundary work vanishes. Heat capacity is Cᵥ, B.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-56",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "For an object in gravitational field, the gravitational potential is the same at two points A and B, but the gravitational field is not the same at these two points. Which one of the following statements is correct?",
+      "sourceTextHash": "25de244ae015d85463f6082459fe7fb8832176eca55cee156420537cbae9c540",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 56,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Mechanics",
+      "subtopic": "Gravitation",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "For an object in gravitational field, the gravitational potential is the same at two points A and B, but the gravitational field is not the same at these two points. Which one of the following statements is correct?"
+      ],
+      "options": {
+        "A": "Positive work is done by gravity in moving the object from point A to point B.",
+        "B": "Negative work is done by gravity in moving the object from point A to point B.",
+        "C": "Gravity must be non-conservative in such a region.",
+        "D": "No work is done by gravity in moving the object from point A to point B."
+      },
+      "answer": "D",
+      "explanation": "Reasoned verification (no matching official key recovered): Gravitational work is m(V_A−V_B)=0. Different field vectors at equal-potential endpoints do not change that result or make gravity non-conservative. A and B require a nonzero potential difference.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 56,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 11,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/keph105.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "D",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Work, Energy and Power",
+            "url": "https://ncert.nic.in/textbook/pdf/keph105.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/energy.pdf",
+            "sha256": "a6d4b72b0fc10230bd54393f86e58630ccd258d54269b60de226c68d0eaa937e",
+            "section": "Sections 5.4–5.8 and 5.10: kinetic energy, net work, conservative potential and power."
+          }
+        ],
+        "reproductionReview": "Complete original English page 11, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests gravitation within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p11: potentials equal but field values unequal. Work is minus potential-energy change and is zero. A radial equal-radius pair supplies a conservative-field counterexample to C. D alone remains valid.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-57",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "The position vector of a particle is given by r⃗ = √3 t² î + √2 t ĵ + √5 k̂. Which one of the following statements is correct?",
+      "sourceTextHash": "afb7c24f9645843c4ff80f66833364704f5f992ba1685a54c7334456ed69cb90",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 57,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Mechanics",
+      "subtopic": "Force and momentum",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "The position vector of a particle is given by r⃗ = √3 t² î + √2 t ĵ + √5 k̂. Which one of the following statements is correct?"
+      ],
+      "options": {
+        "A": "The force acting on the particle is parallel to the instantaneous momentum of the particle.",
+        "B": "The force acting on the particle is perpendicular to the instantaneous momentum of the particle.",
+        "C": "The particle experiences zero force.",
+        "D": "The force acting on the particle is not parallel to the instantaneous momentum of the particle."
+      },
+      "answer": "D",
+      "explanation": "Reasoned verification (no matching official key recovered): Differentiation gives velocity (2√3 t,√2,0) and acceleration (2√3,0,0). The nonzero y component of momentum rules out parallelism to the x-directed force. Force is nonzero and is not generally perpendicular, so A–C are not generally true.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 57,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 11,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/keph104.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "D",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Laws of Motion",
+            "url": "https://ncert.nic.in/textbook/pdf/keph104.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/motion.pdf",
+            "sha256": "8a5df412b53d86040d73ec589ddc98ae23201c420973c7b910e1acca85d234ef",
+            "section": "Newton’s second law, impulse and equilibrium."
+          }
+        ],
+        "reproductionReview": "Complete original English page 11, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests force and momentum within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Magnified p11 expression: square roots cover coefficients 3, 2 and 5; t² and t are outside the radicals. Differentiated twice independently. Force has only x component, velocity has nonzero y component. Nonparallel D; perpendicular B fails except at one instant.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-58",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "A ball is dropped from rest from height h above the ground in frame S (the Earth’s frame). Another frame S′ is moving upwards with constant speed u relative to the Earth. In frame S′, the ball has initial downward speed v. Pertaining to the change in kinetic energy (ΔK) of the ball from release to just before hitting the ground as measured in frames S and S′ separately, which one of the following is correct?",
+      "sourceTextHash": "064a815068a83fbde3a96a3ae324f0ec0574e6266610e0b64240a0a13b3f5755",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 58,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Mechanics",
+      "subtopic": "Work energy and power",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "A ball is dropped from rest from height h above the ground in frame S (the Earth’s frame). Another frame S′ is moving upwards with constant speed u relative to the Earth. In frame S′, the ball has initial downward speed v. Pertaining to the change in kinetic energy (ΔK) of the ball from release to just before hitting the ground as measured in frames S and S′ separately, which one of the following is correct?"
+      ],
+      "options": {
+        "A": "ΔK is the same in both the frames.",
+        "B": "ΔK is larger in frame S.",
+        "C": "ΔK is larger in frame S′.",
+        "D": "ΔK cannot be compared without the information of mass of the ball."
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): Let w=√(2gh) be the final downward Earth-frame speed. In the upward-moving frame initial downward speed is u (so v=u) and final speed is w+u. Thus ΔK′=mgh+muw>mgh=ΔK for u>0. Mass is positive and cannot reverse the comparison. A and B contradict the positive cross term; D is unnecessary.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 58,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 11,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/keph105.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Work, Energy and Power",
+            "url": "https://ncert.nic.in/textbook/pdf/keph105.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/energy.pdf",
+            "sha256": "a6d4b72b0fc10230bd54393f86e58630ccd258d54269b60de226c68d0eaa937e",
+            "section": "Sections 5.4–5.8 and 5.10: kinetic energy, net work, conservative potential and power."
+          },
+          {
+            "title": "NCERT Physics: Laws of Motion",
+            "url": "https://ncert.nic.in/textbook/pdf/keph104.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/motion.pdf",
+            "sha256": "8a5df412b53d86040d73ec589ddc98ae23201c420973c7b910e1acca85d234ef",
+            "section": "Newton’s second law, impulse and equilibrium."
+          }
+        ],
+        "reproductionReview": "Complete original English page 11, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests work energy and power within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p11 and retained printed initial-speed symbol v. The moving frame travels upward; final downward speed is w+u and initial downward speed u. Subtracting squared speeds gives extra positive muw, so C. Reversing frame direction would be a different question.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-61",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "A 5 g piece of ice at −20 °C is put into m kg of water at 30 °C temperature. The heat is exchanged only between the ice and the water. The final temperature of the mixture is 0 °C in liquid phase. What is the value of m in kg?",
+      "sourceTextHash": "44bfcbd83bb35a8bf59f99db4a897e11e49637adfb72a82d6c029a368ae05090",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 61,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Heat and Waves",
+      "subtopic": "Temperature and heat",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "A 5 g piece of ice at −20 °C is put into m kg of water at 30 °C temperature. The heat is exchanged only between the ice and the water. The final temperature of the mixture is 0 °C in liquid phase. What is the value of m in kg?"
+      ],
+      "options": {
+        "A": "0·050",
+        "B": "0·010",
+        "C": "0·015",
+        "D": "0·150"
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): Using NCERT values c_ice=2100 J kg⁻¹ K⁻¹, L_f=3.35×10⁵ J kg⁻¹ and c_water=4186 J kg⁻¹ K⁻¹, 0.005(2100×20+335000)=m×4186×30. This gives m≈0.01501 kg, uniquely selecting 0.015 kg. The other masses fail the heat balance.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 61,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 13,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/keph203.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Thermal Properties of Matter",
+            "url": "https://ncert.nic.in/textbook/pdf/keph203.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/thermal-properties.pdf",
+            "sha256": "b062894aea80298f8df2f83e34dc11f5f96577bfe08d0ad35e2e647a8446854e",
+            "section": "Calorimetry, specific heats and latent heat of fusion."
+          }
+        ],
+        "reproductionReview": "Complete original English page 13, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests temperature and heat within Heat and Waves; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p13: 5 g, −20 °C, 30 °C and final all-liquid 0 °C. Converted ice to 0.005 kg; heat balance with NCERT constants gives approximately 0.01501 kg. Of the four printed masses only C rounds correctly.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-62",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "A very large container consists of an ideal gas. The speed of sound in the gas is x. When the pressure of the gas is doubled while keeping the temperature constant, the speed of sound now becomes y. What is the ratio of x to y?",
+      "sourceTextHash": "2c2cfc0de427af073a682c61eaeeb9111de612275ce0d0f6ab461b1ca6fad645",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 62,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Heat and Waves",
+      "subtopic": "Sound",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "A very large container consists of an ideal gas. The speed of sound in the gas is x. When the pressure of the gas is doubled while keeping the temperature constant, the speed of sound now becomes y. What is the ratio of x to y?"
+      ],
+      "options": {
+        "A": "1",
+        "B": "√2",
+        "C": "2",
+        "D": "4"
+      },
+      "answer": "A",
+      "explanation": "Reasoned verification (no matching official key recovered): For the same ideal gas, sound speed is √(γRT/M). At fixed temperature, pressure and density double together, leaving the speed unchanged. x/y=1; the other ratios treat density as unchanged or introduce an unsupported pressure dependence.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 62,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 13,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/keph207.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "A",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Waves",
+            "url": "https://ncert.nic.in/textbook/pdf/keph207.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/waves.pdf",
+            "sha256": "9f39d09b0556c3a59b89d6b979189f960e5c663af11cdd52d6c7af0cd2e7d1c9",
+            "section": "Speed of a travelling wave: ideal-gas sound speed and temperature dependence."
+          }
+        ],
+        "reproductionReview": "Complete original English page 13, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests sound within Heat and Waves; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p13: both measurements are in the same ideal gas at constant temperature. Sound formula gives no pressure change when density changes consistently. Ratio 1, A; did not hold density fixed.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-63",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "A person jumps from a height on soft sand. Which one of the following is the correct reason for less likely injury to the person?",
+      "sourceTextHash": "5084b79b71a356435809445810981bc919b8a01c73573eb76905b4f4621fa075",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 63,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Mechanics",
+      "subtopic": "Force and momentum",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "A person jumps from a height on soft sand. Which one of the following is the correct reason for less likely injury to the person?"
+      ],
+      "options": {
+        "A": "The sand exerts no reaction force.",
+        "B": "The sand reduces the change in momentum.",
+        "C": "The sand increases the impact time.",
+        "D": "The sand increases the momentum."
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): For approximately the same initial momentum and a final rest state, soft sand extends stopping time and reduces average impact force Δp/Δt. A falsely removes the force that stops the person; B and D confuse the stopping impulse with its duration.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 63,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 13,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/keph104.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Laws of Motion",
+            "url": "https://ncert.nic.in/textbook/pdf/keph104.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/motion.pdf",
+            "sha256": "8a5df412b53d86040d73ec589ddc98ae23201c420973c7b910e1acca85d234ef",
+            "section": "Newton’s second law, impulse and equilibrium."
+          }
+        ],
+        "reproductionReview": "Complete original English page 13, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests force and momentum within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p13: soft sand and less likely injury, not a different impact momentum. Impulse magnitude is approximately fixed while stopping time grows; mean force decreases. C alone supplies the mechanism.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-65",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "A particle is moved from point X to point Y under a force field. The work done depends only on the initial and final speeds. Which one of the following is correct?",
+      "sourceTextHash": "3d3c67634e8b6df374d3c95628dac3badc4e38fe2971bf3fa027fe96352191ec",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 65,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Mechanics",
+      "subtopic": "Work energy and power",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "A particle is moved from point X to point Y under a force field. The work done depends only on the initial and final speeds. Which one of the following is correct?"
+      ],
+      "options": {
+        "A": "The force is conservative.",
+        "B": "The net work equals the change in kinetic energy.",
+        "C": "The force is constant.",
+        "D": "The velocity must always increase."
+      },
+      "answer": "B",
+      "explanation": "Reasoned verification (no matching official key recovered): The work–energy theorem establishes W_net=½m(v_Y²−v_X²). This alone does not establish a conservative spatial force field or a constant force. Net work can be negative, so increasing velocity is not necessary.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 65,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 13,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/keph105.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "B",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Work, Energy and Power",
+            "url": "https://ncert.nic.in/textbook/pdf/keph105.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/energy.pdf",
+            "sha256": "a6d4b72b0fc10230bd54393f86e58630ccd258d54269b60de226c68d0eaa937e",
+            "section": "Sections 5.4–5.8 and 5.10: kinetic energy, net work, conservative potential and power."
+          }
+        ],
+        "reproductionReview": "Complete original English page 13, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests work energy and power within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p13: endpoints specify speeds, not a position-only potential. Work–energy theorem guarantees B, whereas variable/nonconservative forces can also satisfy the theorem. No claim of conservative or constant force follows.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-66",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "One year at a planet is 8 times as large as compared to the one year at the Earth. Which one of the following is correct about the planet’s orbit?",
+      "sourceTextHash": "38e9f2749f9e7f70df780bb5a7e1d20c7fc16afe407bba8dcbc6b03d4868ce9d",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 66,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Mechanics",
+      "subtopic": "Gravitation",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "One year at a planet is 8 times as large as compared to the one year at the Earth. Which one of the following is correct about the planet’s orbit?"
+      ],
+      "options": {
+        "A": "The semimajor axis of the planet’s orbit is same as that of the Earth.",
+        "B": "The semimajor axis of the planet’s orbit is twice as compared to that of the Earth.",
+        "C": "The semimajor axis of the planet’s orbit is thrice as compared to that of the Earth.",
+        "D": "The semimajor axis of the planet’s orbit is four times as compared to that of the Earth."
+      },
+      "answer": "D",
+      "explanation": "Reasoned verification (no matching official key recovered): For planets orbiting the Sun, Kepler’s third law gives a/a_E=(T/T_E)^(2/3)=8^(2/3)=4. The axis ratios in A–C produce period ratios 1, 2√2 and 3√3 rather than 8.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 66,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 13,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://science.nasa.gov/solar-system/orbits-and-keplers-laws/",
+        "officialAnswer": null,
+        "displayedAnswer": "D",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NASA: Orbits and Kepler’s Laws",
+            "url": "https://science.nasa.gov/solar-system/orbits-and-keplers-laws/",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/gravitation.html",
+            "sha256": "6285cc8f7bdb0f0bdbde89fa1de53a51142f04c569100082660c06e78438471d",
+            "section": "Kepler’s third law: period squared and semimajor axis cubed."
+          }
+        ],
+        "reproductionReview": "Complete original English page 13, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests gravitation within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p13: orbital period is eight Earth years; semimajor-axis comparison is asked. Cubing 4 and squaring 8 both give 64, independently confirming D for a planet of the Solar System.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-69",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "It has been observed that a mirror always forms the image between the pole and the focus, irrespective of the location of the object. Which one of the following is correct in respect of the nature of the mirror?",
+      "sourceTextHash": "95741b684f468d87ddb92e3af2f9f1e4b22762a5197ffc8cb08e118d0c9c031c",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 69,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Light and Electricity",
+      "subtopic": "Optics",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "It has been observed that a mirror always forms the image between the pole and the focus, irrespective of the location of the object. Which one of the following is correct in respect of the nature of the mirror?"
+      ],
+      "options": {
+        "A": "It is a plane mirror.",
+        "B": "It is a convex mirror.",
+        "C": "It is a concave mirror of small focal length.",
+        "D": "It is a concave mirror of large focal length."
+      },
+      "answer": "B",
+      "explanation": "Reasoned verification (no matching official key recovered): For a real object in front of a convex mirror, the virtual image lies behind the mirror between its pole and focus. Plane mirrors do not have such a finite focal interval; concave mirrors do not keep the image in it for all object locations.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 69,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 15,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/leph201.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "B",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Ray Optics and Optical Instruments",
+            "url": "https://ncert.nic.in/textbook/pdf/leph201.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/optics.pdf",
+            "sha256": "5c9570cc9f45cbe8f8d62100ccecd3370f8d8085f57041764bd1940bf467d235",
+            "section": "Section 9.2: spherical mirrors, image location and mirror equation."
+          }
+        ],
+        "reproductionReview": "Complete original English page 15, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests optics within Light and Electricity; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p15: any real-object position and an image between pole and focus. The convex-mirror construction has that property. Concave-mirror counterexamples disqualify both focal-length alternatives; B retained.",
+        "reviewedAt": "2026-10-24"
+      }
+    },
+    {
+      "id": "nda-2026-i-70",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "What is the upward force acting on a skydiver of mass 60 kg who is falling at a uniform speed of 2 m/s?",
+      "sourceTextHash": "14f2b5c7da865a9e5547c9b06b8ad1b077ff6021bf4b34dbf6dc518c3e9c8eae",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 70,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Mechanics",
+      "subtopic": "Force and momentum",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "What is the upward force acting on a skydiver of mass 60 kg who is falling at a uniform speed of 2 m/s?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "60 N",
+        "C": "588 N",
+        "D": "708 N"
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): Uniform velocity gives zero acceleration and zero resultant force. Upward air force therefore balances mg=60×9.8=588 N. The downward speed does not add a force term. A, B and D do not balance the weight.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 70,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 15,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/keph104.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Physics: Laws of Motion",
+            "url": "https://ncert.nic.in/textbook/pdf/keph104.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/motion.pdf",
+            "sha256": "8a5df412b53d86040d73ec589ddc98ae23201c420973c7b910e1acca85d234ef",
+            "section": "Newton’s second law, impulse and equilibrium."
+          }
+        ],
+        "reproductionReview": "Complete original English page 15, stem, notation and all four options visually reread in a separate pass. No diagram required for this item.",
+        "classificationRationale": "The complete question tests force and momentum within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+        "secondPass": "Reread p15: uniform speed, mass 60 kg, upward force not net force. a=0 and upward drag equals weight. 60×9.8=588 N, C; the stated 2 m/s is not an acceleration.",
+        "reviewedAt": "2026-10-24"
+      }
     }
   ],
   "placements": [

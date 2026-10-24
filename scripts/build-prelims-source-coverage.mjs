@@ -3,6 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import assert from 'node:assert/strict';
 import {sourceReuseFiles} from './prelims-source-review-registers.mjs';
+import {nda2026IPrimaryEvidence,validateNda2026IEvidence} from './prelims-reviewed-nda-2026-i-imports.mjs';
 
 const hash = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const normalize = value => String(value || '').toLowerCase().normalize('NFKC').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -20,9 +21,17 @@ const reviewedPapers=JSON.parse(fs.readFileSync('content/prelims-reviewed-papers
 assert.equal(new Set(reviewedPapers.map(row=>row.originalPdfSha256)).size,reviewedPapers.length,'Repeated reviewed-paper identity');
 for(const row of reviewedPapers) {
   assert.equal(hash(fs.readFileSync(row.originalPdf)),row.originalPdfSha256);
-  assert.equal(hash(fs.readFileSync(row.keyPdf)),row.keySha256);
-  assert.equal(row.identityStatus,'cover-key-and-question-identity-reviewed');
-  assert.equal(row.series,row.keySeries);assert.equal(row.questionCount,row.keyQuestionCount);
+  if(row.answerVerificationMethod==='primary-source-reasoning') {
+    assert.equal(row.identityStatus,'cover-and-question-identity-reviewed');
+    assert.equal(row.keyStatus,'not-recovered');
+    assert.equal(row.primaryEvidenceModule,'scripts/prelims-reviewed-nda-2026-i-imports.mjs');
+    validateNda2026IEvidence();
+    assert.ok(Object.keys(nda2026IPrimaryEvidence).length);
+  } else {
+    assert.equal(hash(fs.readFileSync(row.keyPdf)),row.keySha256);
+    assert.equal(row.identityStatus,'cover-key-and-question-identity-reviewed');
+    assert.equal(row.series,row.keySeries);assert.equal(row.questionCount,row.keyQuestionCount);
+  }
   assert.ok(row.identityRationale&&row.secondPass&&row.questionPages.length);
 }
 for(const reuse of reuseGroups) {
@@ -55,7 +64,7 @@ for(const row of reuse.records) {
 }
 const reviewedEntries = [
   ...reviewedPapers.flatMap(paper=>(paper.outOfScopeRanges||[]).flatMap(range=>Array.from({length:range.to-range.from+1},(_,i)=>[`${paper.originalPdfSha256}/${range.from+i}`,{disposition:'out-of-scope',page:range.evidencePages[0],evidence:'content/prelims-reviewed-papers.json',reason:range.reason}]))),
-  ...reviewedPilot.questions.map(q => [`${q.source.originalPdfSha256}/${q.questionNumber}`, { id:q.id, disposition:'verified-local-import',page:q.source.originalPage,evidence:'content/reviewed-prelims-imports.json' }]),
+  ...reviewedPilot.questions.map(q => [`${q.source.originalPdfSha256}/${q.questionNumber}`, { id:q.id, disposition:'verified-local-import',page:q.source.originalPage,evidence:'content/reviewed-prelims-imports.json',verificationMethod:q.source.answerStatus==='reasoned-verified'?'primary-source-reasoning':'official-key' }]),
   ...reviewedPilot.placements.map(p => {
     const q=bank.find(q=>q.id===p.questionId);
     assert.ok(q && hash(JSON.stringify(q))===p.expectedRecordHash,`Stale placement evidence: ${p.questionId}`);
@@ -106,7 +115,8 @@ for (const source of sourceRegister.sources) {
     assert.equal(reviewedPaper.exam,exam);assert.equal(reviewedPaper.questionCount,expected);
     const evidence=reuseGroups.find(group=>group.evidence.originalPdfSha256===source.sha256)?.evidence
       ?? reviewedPilot.questions.find(q=>q.source.originalPdfSha256===source.sha256)?.source;
-    assert.ok(evidence);assert.equal(reviewedPaper.series,evidence.series??evidence.bookletSeries);assert.equal(reviewedPaper.keySha256,evidence.keySha256);
+    assert.ok(evidence);assert.equal(reviewedPaper.series,evidence.series??evidence.bookletSeries);
+    if(reviewedPaper.answerVerificationMethod!=='primary-source-reasoning')assert.equal(reviewedPaper.keySha256,evidence.keySha256);
     assert.ok(completedDecisions.every(row=>row.disposition==='out-of-scope'||reviewedPaper.questionPages.includes(row.page)));
   }
   papers.push({ discoveryId: source.discoveryId, relativePath: source.relativePath, sha256: source.sha256, expectedQuestionCount: expected,
@@ -115,7 +125,7 @@ for (const source of sourceRegister.sources) {
     coverEvidence: reviewedPaper?{page:reviewedPaper.coverPage,registry:'content/prelims-reviewed-papers.json',observed:reviewedPaper.identityRationale}:newlyObserved ? { page: 1, localRender: 'tmp/prelims-source-review/NDA-2026-II-page-1.png', observed: 'N.D.A. & N.A. Examination (II), 2026; General Ability Test; Series A; 150 questions' } : null,
     originalHashMatchesPriorInventory: Boolean(oldInventory),
     priorSlotCount: prior.length,
-    coverageStatus: reviewedPaper&&completedDecisions.length===expected?'current-source-content-and-key-reviewed':reviewedPaper&&completedDecisions.length?'current-source-review-in-progress':'slots-accounted-not-question-content-verified',
+    coverageStatus: reviewedPaper&&completedDecisions.length===expected?(reviewedPaper.answerVerificationMethod==='primary-source-reasoning'?'current-source-content-and-reasoning-reviewed':'current-source-content-and-key-reviewed'):reviewedPaper&&completedDecisions.length?'current-source-review-in-progress':'slots-accounted-not-question-content-verified',
     ...(reviewedPaper?{year:reviewedPaper.year,paper:reviewedPaper.paper,series:reviewedPaper.series,languages:reviewedPaper.languages,reviewedLanguage:reviewedPaper.reviewedLanguage,
       reviewedSlots:completedDecisions.length,pendingSlots:expected-completedDecisions.length,
       verifiedImports:completedDecisions.filter(row=>row.disposition==='verified-local-import').length,
@@ -132,7 +142,7 @@ for (const source of sourceRegister.sources) {
       existingStemMatchIds: exactStemIds,
       disposition: completed?.disposition ?? 'pending-current-source-review',
       ...(completed ? { ...(completed.id?{reviewedRecordId:completed.id}:{}), reviewedSourcePage:completed.page, decisionEvidence: completed.evidence } : {}),
-      note: completed?.disposition==='out-of-scope'?completed.reason:completed ? `Original Series A page ${completed.page} and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented.` : 'A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision.',
+      note: completed?.disposition==='out-of-scope'?completed.reason:completed?.verificationMethod==='primary-source-reasoning'?`Original Series A page ${completed.page} visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered.`:completed ? `Original Series A page ${completed.page} and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented.` : 'A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision.',
     });
   }
 }

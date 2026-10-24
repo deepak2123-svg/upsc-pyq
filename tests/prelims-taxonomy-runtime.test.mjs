@@ -64,7 +64,7 @@ test('Economy Current Affairs mirrors every approved economic current-affairs le
   const ids=result.body.questions.map(q=>q.id);
   assert.equal(new Set(ids).size,ids.length);
   assert.equal(ids.length,selectionCounts(sourcePaths,index).matchingCount);
-  assert.equal(data.totalCount,1813,'Sharing categories must not create new question records; NDA II 2026 adds 100 unique GS occurrences');
+  assert.equal(data.totalCount,1828,'Sharing categories must not create new question records; NDA I 2026 batch one adds 15 unique GS occurrences');
 });
 
 test('older V4 and V3 scopes retain frozen membership after a question moves to another subject',async()=>{

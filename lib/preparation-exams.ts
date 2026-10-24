@@ -1,0 +1,9 @@
+/** Preparation target is deliberately separate from a question's source exam. */
+export const PREPARATION_EXAMS = ['NDA', 'CDS', 'CSE'] as const;
+export type PreparationExam = typeof PREPARATION_EXAMS[number];
+export function isPreparationExam(value: unknown): value is PreparationExam {
+  return typeof value === 'string' && PREPARATION_EXAMS.includes(value as PreparationExam);
+}
+export type PreparationView = { id: string; paper: string; label: string; subjectIds: string[] };
+export const PREPARATION_VERSION = 'preparation-v1';
+export function preparationDraftKey(exam: PreparationExam) { return `upsc-pyq-builder:preparation-v1:${exam}`; }

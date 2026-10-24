@@ -1,0 +1,53 @@
+import { expect, test } from '@playwright/test';
+
+test('target selector, separate carts, NDA branches and optional sources', async ({ page }) => {
+  await page.goto('/prepare/NDA');
+  await expect(page.getByRole('combobox', { name: 'Preparing for' })).toHaveValue('NDA');
+  const gat = page.getByRole('group', { name: 'GAT section', exact: true });
+  await expect(gat.getByRole('button')).toHaveText(['English', 'GS', 'Science']);
+  await gat.getByRole('button', { name: 'English', exact: true }).click();
+  await page.getByRole('button', { name: 'Open English', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Open Vocabulary', exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Add entire folder', exact: true })).toBeDisabled();
+  await gat.getByRole('button', { name: 'Science', exact: true }).click();
+  await page.getByRole('button', { name: 'Open Science & Technology', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Open Physics', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Add entire folder', exact: true }).click();
+  await expect(page.locator('.test-cart-total strong')).not.toHaveText('0');
+  const ndaCount = await page.locator('.test-cart-total strong').innerText();
+  await expect(page.locator('.scope-source-grid button').filter({ hasText: 'NDA' })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.scope-source-grid button').filter({ hasText: 'CSE' })).toHaveAttribute('aria-pressed', 'false');
+  await gat.getByRole('button', { name: 'GS', exact: true }).click();
+  await expect(page.locator('.test-cart-total strong')).toHaveText(ndaCount);
+  await page.getByRole('combobox', { name: 'Preparing for' }).selectOption('CSE');
+  await expect(page.getByRole('heading', { name: 'CSE question library' })).toBeVisible();
+  await expect(page.locator('.test-cart-total strong')).toHaveText('0');
+  await page.getByRole('combobox', { name: 'Preparing for' }).selectOption('NDA');
+  await expect(page.locator('.test-cart-total strong')).toHaveText(ndaCount);
+  await page.reload();
+  await expect(page.locator('.test-cart-total strong')).toHaveText(ndaCount);
+  await page.getByRole('button', { name: 'Finalise test →', exact: true }).first().click();
+  await page.getByRole('button', { name: 'All', exact: true }).click();
+  await page.getByRole('button', { name: 'Start test →', exact: true }).click();
+  await expect(page).toHaveURL(/\/practice\//);
+  await page.getByRole('link', { name: 'Exit test', exact: true }).click();
+  await expect(page).toHaveURL(/\/prepare\/NDA/);
+  await expect(page.locator('.test-cart-total strong')).toHaveText(ndaCount);
+});
+
+test('empty maths and CSAT topics stay browsable, with responsive navigation', async ({ page }) => {
+  await page.goto('/prepare/NDA');
+  await page.getByRole('group', { name: 'Paper', exact: true }).getByRole('button', { name: 'Mathematics', exact: true }).click();
+  await page.getByRole('button', { name: 'Open Mathematics', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Open Differential Calculus', exact: true })).toBeVisible();
+  await page.getByRole('combobox', { name: 'Preparing for' }).selectOption('CDS');
+  await expect(page.getByText('OTA: English + General Knowledge. Mathematics: IMA / INA / AFA.')).toBeVisible();
+  await page.getByRole('combobox', { name: 'Preparing for' }).selectOption('CSE');
+  await page.getByRole('button', { name: 'GS Paper II / CSAT', exact: true }).click();
+  await page.getByRole('button', { name: 'Open CSAT', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Open Data Interpretation', exact: true })).toBeVisible();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(page.getByRole('combobox', { name: 'Preparing for' })).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.screenshot({ path: 'tmp/preparation-mobile.png', fullPage: true });
+});

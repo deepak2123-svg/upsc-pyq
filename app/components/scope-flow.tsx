@@ -18,6 +18,7 @@ type ScopeCardsProps = {
   paths: SelectionPaths;
   focusId?: string;
   preferredExam?: PyqExam;
+  visibleSubjectIds?: string[];
   onAdd: (id: string) => void;
   onBrowse: (id: string) => void;
   onBack: () => void;
@@ -68,17 +69,17 @@ function SourceDistribution({ counts, exams = PYQ_EXAMS }: { counts: ExamCounts;
   </>;
 }
 
-export function ScopeFlow({ inventory, paths, focusId, preferredExam, onAdd, onBrowse, onBack, onBrowseRoot, disabled = false }: ScopeCardsProps) {
+export function ScopeFlow({ inventory, paths, focusId, preferredExam, visibleSubjectIds, onAdd, onBrowse, onBack, onBrowseRoot, disabled = false }: ScopeCardsProps) {
   const index = useMemo(() => buildSelectionIndex(inventory), [inventory]);
   const focus = index.nodesById.get(focusId || "");
 
   const cards = useMemo(() => {
-    if (!focus) return inventory.subjects.map((subject) => index.nodesById.get(subject.id)!).filter((node) => node&&!node.legacyOnly);
+    if (!focus) return inventory.subjects.map((subject) => index.nodesById.get(subject.id)!).filter((node) => node&&!node.legacyOnly&&(!visibleSubjectIds||visibleSubjectIds.includes(node.id)));
     const children = index.childrenById.get(focus.id) || [];
     return children
       .filter((node) => focus.legacyOnly||!node.legacyOnly)
       .sort((a, b) => ("order" in a ? a.order : 0) - ("order" in b ? b.order : 0) || a.label.localeCompare(b.label));
-  }, [focus, index, inventory.subjects, preferredExam]);
+  }, [focus, index, inventory.subjects, visibleSubjectIds]);
 
   const subjectLabel = focus ? index.nodesById.get(focus.subjectId)?.label || "this subject" : "UPSC";
   const nextKind = cards[0]?.kind || focus?.kind || "subject";

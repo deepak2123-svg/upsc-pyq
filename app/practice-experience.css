@@ -27,6 +27,8 @@
 .practice-question.reading-small { --question-font-size: clamp(15px, .95vw, 17px); --option-font-size: 14px; }
 .practice-question.reading-large { --question-font-size: clamp(20px, 1.25vw, 22px); --option-font-size: 18px; }
 .practice-prompt { display: grid; gap: 10px; font-family: var(--font-reading), Georgia, serif; font-size: var(--question-font-size); font-weight: 450; line-height: 1.58; letter-spacing: -.008em; color: #222a35; }
+.math-vector { position: relative; display: inline-block; padding: 0 .08em; }
+.math-vector::after { content: "→"; position: absolute; left: 0; right: 0; top: -.45em; font: .75em/1 Arial, sans-serif; text-align: center; }
 .practice-prompt > p { margin: 0; }
 .practice-prompt .paper-statement { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 6px; padding-left: 8px; }
 .paper-statement b { font: inherit; font-weight: 600; font-variant-numeric: tabular-nums; }
@@ -408,3 +410,14 @@
   .print-answer-key table { font-size: 7.5pt; }
   .print-answer-key th, .print-answer-key td { padding: 2.2mm 2mm; }
 }
+/* Preparation target and source exams are independent controls. */
+.preparation-navigation { display:flex; align-items:center; flex-wrap:wrap; gap:14px 24px; margin:0 0 22px; padding:14px 18px; background:#fff; border:1px solid #dce1eb; border-radius:14px; }
+.preparation-navigation label { display:flex; align-items:center; gap:12px; font-size:13px; font-weight:600; color:#657087; }
+.preparation-navigation select { padding:9px 32px 9px 12px; color:#171b23; background:#f7f8fc; border:1px solid #dce1eb; border-radius:8px; font:inherit; }
+.preparation-papers { display:flex; flex-wrap:wrap; gap:10px 18px; }
+.preparation-papers [role="group"] { display:flex; flex-wrap:wrap; gap:5px; }
+.preparation-papers button { border:1px solid transparent; border-radius:8px; padding:8px 12px; background:#f4f5f8; color:#58647a; font:inherit; font-size:13px; cursor:pointer; }
+.preparation-papers button[aria-pressed="true"] { background:#edf1ff; color:#2352da; border-color:#b8c8ff; font-weight:700; }
+.preparation-papers button:focus-visible,.preparation-navigation select:focus-visible { outline:2px solid #2452db; outline-offset:3px; }
+.preparation-navigation small { color:#657087; font-size:12px; }
+@media(max-width:640px) { .preparation-navigation { padding:12px; gap:12px; } .preparation-navigation label { width:100%; justify-content:space-between; } .preparation-papers { width:100%; } }

@@ -63,5 +63,17 @@
     "secondPass":"English GS pages 9-47 and Series A key page 1 checked against the two fixed batches (Q51-Q100 and Q101-Q150). Q84/Q90 retain full paired tables, Q126 both matching lists, and numerical questions retain units and expressions. Key-only caveats for Q56 and Q107 are explicit. The official provisional answer is not silently replaced by independent reasoning. Part A Q1-Q50 is English and excluded from this GS import; this is a scope decision, not answer verification of those items.",
     "outOfScopeRanges":[{"from":1,"to":50,"reason":"Part A English; outside the approved GS-only collection","evidencePages":[2,3,4,5,6,7]}],
     "reviewedAt":"2026-10-23"
+  },{
+    "exam":"NDA","year":2026,"paper":"I","series":"A","questionCount":150,
+    "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+    "originalPdfSha256":"1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+    "coverPage":1,"languages":["Hindi","English"],"reviewedLanguage":"English",
+    "questionPages":[9,11,13,15],"answerVerificationMethod":"primary-source-reasoning","keyStatus":"not-recovered",
+    "primaryEvidenceModule":"scripts/prelims-reviewed-nda-2026-i-imports.mjs",
+    "identityStatus":"cover-and-question-identity-reviewed",
+    "identityRationale":"Printed cover explicitly identifies NDA & NA Examination (I), 2026, General Ability Test, Series A and 150 items. The official UPSC exam page links the same 27,246,978-byte question paper. English Part A Q1-Q50 is on pages 2-7; Part B starts at Q51 on page 9. Only the first GS batch Q51-Q70 has been transcribed and reread in this pass. A cached Prepp-branded answer table is not an official key and conflicts with the first three physics derivations; it is not used for clearance.",
+    "secondPass":"Original English pages 9, 11, 13 and 15 reread; Q57 coefficients checked at magnification. Fifteen explicitly enumerated questions independently derived from NCERT, Penn State and NASA primary evidence with content hashes. Q59/Q60/Q64/Q67/Q68 remain held in the batch ledger pending evidence or ambiguity decisions. No remaining source question, including the 24 historical occurrences, is newly claimed verified by this paper pass.",
+    "outOfScopeRanges":[{"from":1,"to":50,"reason":"Part A English; outside the approved GS-only collection","evidencePages":[2,3,4,5,6,7]}],
+    "reviewedAt":"2026-10-24"
   }]
 }

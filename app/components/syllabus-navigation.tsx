@@ -14,6 +14,7 @@ type SyllabusNavigationProps = {
   expandedIds: string[];
   mappedCount: number;
   preferredExam?: PyqExam;
+  visibleSubjectIds?: string[];
   disabled?: boolean;
   onBrowse: (id: string) => void;
   onBrowseRoot: () => void;
@@ -32,6 +33,7 @@ export function SyllabusNavigation({
   expandedIds,
   mappedCount,
   preferredExam,
+  visibleSubjectIds,
   disabled = false,
   onBrowse,
   onBrowseRoot,
@@ -43,7 +45,7 @@ export function SyllabusNavigation({
   const subject = focusPath.find((node) => node.kind === "subject");
   const section = focusPath.find((node) => node.kind === "head");
   const subjects = [...index.nodesById.values()]
-    .filter((node) => node.kind === "subject" && !node.legacyOnly);
+    .filter((node) => node.kind === "subject" && !node.legacyOnly && (!visibleSubjectIds || visibleSubjectIds.includes(node.id)));
 
   function renderNode(node: ScopeNode, depth: number) {
     const children = (index.childrenById.get(node.id) || [])

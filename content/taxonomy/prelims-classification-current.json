@@ -50697,6 +50697,246 @@
       ]
     },
     {
+      "questionId": "nda-2026-i-51",
+      "expectedRecordHash": "48625f2113145c8456fa3caed15d321aeb28773b14e3e06783998b22bbe42d8a",
+      "primaryId": "syllabus:science-technology/physics/heat-and-waves/wave-properties",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests wave properties within Heat and Waves; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread original p9 including 60°, all four comparisons and the small-angle definition. Independent quadrature of the nonlinear equation gives T/T₀≈1.073182; mass cancels. Retain A, not the cached secondary C."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-52",
+      "expectedRecordHash": "f3e5e0449deb858f6dda2da461b292aa66bc6d3094a16ec0fc9079c28751049b",
+      "primaryId": "syllabus:science-technology/physics/mechanics/force-and-momentum",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests force and momentum within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p9: the resultant is equal to each force, not their sum. Constructing the force triangle makes it equilateral; the tail-to-tail angle is 120° and the force-to-resultant angle is 60°. Both I and II, displayed C."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-53",
+      "expectedRecordHash": "a5504d9942ca12ec499bed28770bb7ac7a108bfeb7329fd4ee47f862520fbe78",
+      "primaryId": "syllabus:science-technology/physics/heat-and-waves/temperature-and-heat",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests temperature and heat within Heat and Waves; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p9; options B and D differ by the factor 1/2 on α. Reintegrated the temperature-dependent heat capacity and differentiated D to recover m(C₀+αT). Retain D; no option reorder."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-54",
+      "expectedRecordHash": "6def916cbb1e68b99f6fa948b7e041a16e02b3486505c694610d1048e379e6f3",
+      "primaryId": "syllabus:science-technology/physics/heat-and-waves/thermodynamics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests thermodynamics within Heat and Waves; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p9: PV², not P²V. From PV=nRT and PV²=k obtain T∝1/V, hence T₁/T₂=V₂/V₁, C. Checked a doubled-volume counterexample against all four ratios."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-55",
+      "expectedRecordHash": "47ee9925ea64c3be1a676f3d97b7f4b36d77cee31e7b8193c048b6250dd7fb06",
+      "primaryId": "syllabus:science-technology/physics/heat-and-waves/thermodynamics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests thermodynamics within Heat and Waves; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p11: P=kT with molar heat capacity, not constant P. Fixed gas amount implies V is fixed; boundary work vanishes. Heat capacity is Cᵥ, B."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-56",
+      "expectedRecordHash": "9e70ecbe40fe9f36286e2560d7cccdaaf2039be282823617f421074212be09c1",
+      "primaryId": "syllabus:science-technology/physics/mechanics/gravitation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests gravitation within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p11: potentials equal but field values unequal. Work is minus potential-energy change and is zero. A radial equal-radius pair supplies a conservative-field counterexample to C. D alone remains valid."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-57",
+      "expectedRecordHash": "cd319ab16a51eeba315e5bea3bc570b8673dfcf061aaae57a785f584bd8a63bd",
+      "primaryId": "syllabus:science-technology/physics/mechanics/force-and-momentum",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests force and momentum within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Magnified p11 expression: square roots cover coefficients 3, 2 and 5; t² and t are outside the radicals. Differentiated twice independently. Force has only x component, velocity has nonzero y component. Nonparallel D; perpendicular B fails except at one instant."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-58",
+      "expectedRecordHash": "e651ed153e6472ea4794f96ee4560c6fa563f9883668e9ce97fd595b598f1ee1",
+      "primaryId": "syllabus:science-technology/physics/mechanics/work-energy-and-power",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests work energy and power within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p11 and retained printed initial-speed symbol v. The moving frame travels upward; final downward speed is w+u and initial downward speed u. Subtracting squared speeds gives extra positive muw, so C. Reversing frame direction would be a different question."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-61",
+      "expectedRecordHash": "32a8d12c18c706e5a61d879949df638572bb9d5c644e7aeebdd532c19d07ff21",
+      "primaryId": "syllabus:science-technology/physics/heat-and-waves/temperature-and-heat",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests temperature and heat within Heat and Waves; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p13: 5 g, −20 °C, 30 °C and final all-liquid 0 °C. Converted ice to 0.005 kg; heat balance with NCERT constants gives approximately 0.01501 kg. Of the four printed masses only C rounds correctly."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-62",
+      "expectedRecordHash": "a81961765b5a748c25c0725d1dc760c5aa0ae7f3cd59555fed423e46e8846630",
+      "primaryId": "syllabus:science-technology/physics/heat-and-waves/sound",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests sound within Heat and Waves; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p13: both measurements are in the same ideal gas at constant temperature. Sound formula gives no pressure change when density changes consistently. Ratio 1, A; did not hold density fixed."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-63",
+      "expectedRecordHash": "c45316896cce2115f3e014c7e05a07ea4e679258273e882da74bea44f3d3eaaa",
+      "primaryId": "syllabus:science-technology/physics/mechanics/force-and-momentum",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests force and momentum within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p13: soft sand and less likely injury, not a different impact momentum. Impulse magnitude is approximately fixed while stopping time grows; mean force decreases. C alone supplies the mechanism."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-65",
+      "expectedRecordHash": "8b769495095e7d10c157886b5069ed9ac26e84c7897f8c288f36180c9a40a881",
+      "primaryId": "syllabus:science-technology/physics/mechanics/work-energy-and-power",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests work energy and power within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p13: endpoints specify speeds, not a position-only potential. Work–energy theorem guarantees B, whereas variable/nonconservative forces can also satisfy the theorem. No claim of conservative or constant force follows."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-66",
+      "expectedRecordHash": "d7ba88b970f6927ee3060f5f405dd5f0cbdc1c07cec2b83918581fa6f0b6f997",
+      "primaryId": "syllabus:science-technology/physics/mechanics/gravitation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests gravitation within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p13: orbital period is eight Earth years; semimajor-axis comparison is asked. Cubing 4 and squaring 8 both give 64, independently confirming D for a planet of the Solar System."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-69",
+      "expectedRecordHash": "dbf034a6024554af3f98f5b49c6e9c6a3ab702952033f7596d209c10a1f056b5",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/optics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests optics within Light and Electricity; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p15: any real-object position and an image between pole and focus. The convex-mirror construction has that property. Concave-mirror counterexamples disqualify both focal-length alternatives; B retained."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-70",
+      "expectedRecordHash": "6b25e7b6ad7b030bfe133124a403e185022b5d37c7de16eb484c9701b732abcd",
+      "primaryId": "syllabus:science-technology/physics/mechanics/force-and-momentum",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "original-page-and-key-reviewed-import",
+      "rationale": "The complete question tests force and momentum within Mechanics; it is GS physics, not standalone mathematics. No incidental geography/personality placement is added.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Reread p15: uniform speed, mass 60 kg, upward force not net force. a=0 and upward drag equals weight. 60×9.8=588 N, C; the stated 2 m/s is not an acceleration."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2026-ii-100",
       "expectedRecordHash": "d4d7e6a15c1747a9ade7d6e968a400e5628e96fd26d08cd96fbef750e94fa7c5",
       "primaryId": "syllabus:science-technology/biology/plants-and-microorganisms/plant-morphology",
