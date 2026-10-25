@@ -4,6 +4,13 @@ For the current account-free public PYQ builder, selection rules, compatibility,
 and browser checks, see [PYQ selection](docs/pyq-selection.md). The older cloud
 application architecture below remains separate from that public practice flow.
 
+For every new paper or paper correction, follow the [standing paper-processing
+SOP](docs/paper-processing-sop.md), its [release checklist](docs/paper-release-checklist.md)
+and [review templates](docs/templates/README.md). Process one complete paper at a
+time; official-key evidence, faithful reproduction and reviewed classification
+are separate requirements. The SOP is a workflow standard, not an automatic
+verification of future imports.
+
 UPSCPuraan is a minimal, mobile-first UPSC CSE, CAPF, CDS and NDA test-series
 PWA. Visitors can browse the catalogue and attempt a guest test immediately.
 Google sign-in is optional and adds cloud history, saved recipes and

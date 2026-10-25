@@ -1,7 +1,9 @@
 {
-  "templateVersion": 1,
+  "templateVersion": 2,
   "notice": "Documentation template, not an active runtime policy or an approved case. Populate and review before application.",
   "caseId": null,
+  "paperRegisterReference": null,
+  "questionReviewReference": null,
   "canonicalQuestionId": null,
   "workflowState": "awaiting-review",
   "sourceIdentity": {
@@ -38,6 +40,8 @@
     "status": "not-established",
     "officialAnswer": null,
     "displayedAnswer": null,
+    "officialAcceptedOptions": [],
+    "displayedAcceptedOptions": [],
     "optionsReordered": null,
     "optionTextMapping": [],
     "keyUrl": null,
@@ -46,6 +50,7 @@
     "keySeries": null,
     "keyPageAndCell": null,
     "visuallyMatched": false,
+    "doubleTranscriptionComparisonReference": null,
     "withdrawalOrErratum": null,
     "searchLog": []
   },
@@ -81,6 +86,8 @@
     "disposition": null,
     "eligibleForNewScoredTests": false,
     "qualityCaveat": null,
+    "officialAnswerScoringRetainedDespiteAcademicCaveat": false,
+    "multipleAcceptedOptionsRuntimeVerified": false,
     "historicalScoringAction": "not-applied",
     "specificReopeningTrigger": null
   },
@@ -96,5 +103,10 @@
     "canonicalAliasIfDuplicate": null,
     "testEvidence": [],
     "releaseApprovalReference": null
+  },
+  "releaseInstruction": {
+    "default": "Follow the master paper SOP: complete, self-review, test, push and verify; later user restrictions take precedence.",
+    "laterUserRestriction": null,
+    "releaseReportReference": null
   }
 }

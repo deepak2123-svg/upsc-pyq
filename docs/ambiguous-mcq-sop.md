@@ -1,25 +1,26 @@
 # SOP: ambiguous, disputed and evidence-incomplete MCQs
 
-Version 1.0 · 25 October 2026 · Applies to all preparation exams and PYQ sources.
+Version 2.0 · 25 October 2026 · Applies to all preparation exams and PYQ sources.
 
-Update: [NDA I 2026 is complete against the recovered official provisional key](nda-2026-i-official-completion.md); previous pending counts in historical reports are superseded. When a matching official key scores a faithfully reproduced question, retain normal official-answer grading and record any editorial disagreement separately. Do not replace its answer with an agent's preference or call a provisional key final. Genuine import defects and official withdrawals retain the historical exclusion safeguards below.
+Read the [master paper-processing SOP](paper-processing-sop.md) first. This document
+covers exceptions within that workflow, not a separate import/publication policy.
 
-## 1. Purpose and current position
+## 1. Purpose and current policy
 
 Publish faithful, defensibly answered questions without penalising students for defective imports or ambiguous originals. Preserve the original question, source identity and historical attempts. An unanswered research question must not become a guessed answer merely to complete a paper.
 
-For NDA I 2026 GAT, the current register accounts for all 150 numbers:
+A faithful question with an authentic applicable official answer receives normal
+official-answer scoring. Academic disagreement, unusual assumptions or defective
+wording in the original are documented as separate editorial caveats, not grounds
+alone to hide the official answer or make that question unscored. This does not
+permit scoring an import missing material present in the original.
 
-| State | Meaning | Current count |
-|---|---|---:|
-| Awaiting current source review | The complete current-source comparison and answer check have not yet been performed. Not a finding that the question is wrong. | 50: Q101–150 |
-| Held after review | We inspected the question but cannot yet approve it because of ambiguity, evidence gaps or a source issue. | 11 |
-| Reasoned-verified new imports | Complete reproduction, defensible answer and documented second pass completed without a recovered matching official key. | 39 |
-| English review deferred | Q1–50 belongs to the new English branch and will be processed separately. Its old “out-of-scope” label means outside this GS import, not outside NDA. | 50 |
-
-The 24 historical occurrences already present in the bank are contained within the 50 questions awaiting current-source review. They are not an additional 24 questions and are not being claimed as newly verified. There are 63 currently available NDA I questions: 24 historical + 39 newly imported.
-
-**Counts must specify their denominator.** The coverage tool currently combines 50 unreviewed GS items and 11 held GS items into 61 pending slots. Its 89 completed slots include 50 English scope decisions and therefore do not mean 89 verified answers.
+[NDA I 2026 is complete](nda-2026-i-official-completion.md): 150 questions scored
+against the recovered official provisional key. Earlier pending/quarantine counts
+and the scanned-paper workaround remain only in dated historical reports; they
+are not the current policy or a live counter. Future paper totals come from their
+own reviewed registers. Do not add reused records or duplicate aliases as extra
+source slots.
 
 ## 2. Keep three decisions separate
 
@@ -45,7 +46,9 @@ Give each held case one main reason and any secondary reasons. Do not call every
 | `source-key-mismatch` | Could a different exam/session/series or reordered option explain the apparent disagreement? | Wrong booklet table or incorrectly labelled mirror |
 | `multiple-or-no-answer` | After faithful reconstruction, are several or no options defensible? | Record the actual surviving options; do not guess the examiner's intention |
 
-These examples describe the current register, not new official adjudications.
+The NDA I examples identify historical research issues, not current holds. When
+the matching official key has been established, retain its answer and record any
+remaining academic issue as a caveat. Do not copy an old hold into a new review.
 
 ## 4. Review procedure
 
@@ -68,13 +71,21 @@ These examples describe the current register, not new official adjudications.
 
 ### Step C — Recover and match official adjudication
 
-Search the official examination page, key/archive, relevant errata or withdrawal notices, then traceable mirrors of official documents.
+Search the official examination page, current key listing, archives, relevant
+errata/withdrawal notices and historical official URLs (including Unicode dash,
+punctuation and filename variants), then traceable mirrors of official documents.
+Log actual attempts and access limitations; one unsuccessful archive search does
+not establish that an official key was never released.
 
 - Inspect the document header and relevant key cell visually. Match the **actual series and question identity**.
 - Record the official letter, displayed letter and exact option-text mapping if order differs. Never infer a global letter conversion from a few apparent matches.
 - Keep provisional keys explicitly provisional. Use the latest applicable official revision while retaining the previous evidence/version.
 - An official dropped cell means `withdrawn`. Lack of an answer or our disagreement does not by itself mean officially withdrawn.
 - A coaching site, majority vote or branded answer table is a research lead, not an official key. Never relabel one as official because its filename says so.
+- Preserve the key bytes/hash, issuer, release date and identity. Read all relevant
+  cells in two distinct passes and compare the transcriptions programmatically.
+  Record every accepted option when the official authority permits more than one;
+  do not choose just one because the runtime currently expects a single letter.
 
 ### Step D — Analyse the question as printed
 
@@ -91,7 +102,11 @@ Record:
 - The exact passage, document section/page, edition/date and how it supports the claim. A primary document's title or a generic related chapter is not enough.
 - Any incomplete access: a snippet, indexed text, inaccessible link or paraphrased reading note must be labelled honestly. It cannot alone settle a disputed qualifier or exception. Obtain the full relevant context before resolving that dispute.
 
-If one answer survives without adding a material assumption, it may advance to a reasoned-verification decision. If multiple/no options survive, or the evidence still does not directly settle the disputed point, keep the case held.
+Where no matching official key is recovered, one answer surviving without adding
+a material assumption may advance to reasoned verification. Multiple/no surviving
+answers or insufficient direct evidence require quarantine. Where the official
+key is matched, this analysis informs a separate caveat rather than replacing
+official grading or claiming the official answer is scientifically indisputable.
 
 ### Step E — Conduct a distinct second pass
 
@@ -99,18 +114,21 @@ If one answer survives without adding a material assumption, it may advance to a
 - Recheck all options, option ordering, source context and the strongest counterargument.
 - Record reviewer identity, date, whether this is a different reviewer or a fresh pass by the same reviewer, and a concrete rationale. A second pass by the same AI must not be described as independent human review.
 - Automation may suggest classifications or flag contradictions. It cannot approve a case by copying a first-pass status, a transcript or a secondary answer table.
-- If the second pass disagrees, leave the item held with both analyses. No tie-breaking by confidence score or majority vote.
+- If the second pass disagrees on source/key identity or on a reasoned answer
+  without an official key, retain both analyses and keep the case held. For a
+  verified applicable official answer, retain its scoring and document the
+  academic disagreement separately. Never decide by confidence or majority vote.
 
 ### Step F — Choose and apply a defensible outcome
 
 | Outcome | Required evidence | New scored tests |
 |---|---|---|
-| `official-final` | Matching final official cell; identity/reproduction passed; no unresolved material publication defect | Eligible |
-| `official-provisional` | Matching provisional official cell; clearly labelled; identity/reproduction passed; no unresolved material publication defect | Eligible under the existing provisional-key policy |
+| `official-final` | Latest applicable final official cell; identity and faithful reproduction passed | Eligible; caveat separate if needed |
+| `official-provisional` | Matching provisional official cell; clearly labelled; identity and faithful reproduction passed | Eligible; provisional label and separate caveat if needed |
 | `reasoned-verified` | No recovered matching official key; one defensible answer; primary evidence, alternatives and second pass documented | Eligible |
 | `withdrawn` | Matching official withdrawal/drop evidence | Excluded |
 | `duplicate` | Same source occurrence already represented; canonical record and alias identified | Alias excluded; canonical assessed independently |
-| `quarantined` | Ambiguity, contradiction, incomplete source/key identity, insufficient direct evidence or a remaining material defect | Excluded |
+| `quarantined` | Incomplete reproduction/source identity, unresolved key mapping, or no unique defensible answer without an official key | Excluded; specify exact reopening evidence |
 
 “Awaiting review” is an unfinished workflow state, not a final verification category. Record an explicit disposition when its review is completed; quarantine is a valid defensible outcome, not a failure to finish.
 
@@ -118,12 +136,19 @@ If one answer survives without adding a material assumption, it may advance to a
 
 - Retain the authentic official answer in the evidence record even if it conflicts with independent reasoning. Do not silently replace it with an editorial answer.
 - Distinguish a source/option mapping mistake from a substantive disagreement before calling a key disputed.
-- If the question is faithful and the apparent conflict is resolved by the documented ordinary model, publish the official answer with a concise explanation of that model.
-- If a **material** defect survives, record the official cell as established answer evidence but retain a quarantined publication decision. Do not use the final-key label to bypass the quality hold.
-- Original ambiguous PYQs can be offered in clearly labelled **unscored review** without changing their scored eligibility. NDA I 2026 now has a separate original-page viewer with browser-local answer recording for all 150 questions. It supplies no score or answer key. It is not a completed structured question-bank import. Any future official-answer/discussion display must keep the official answer and editorial caveat separate.
+- If the question is faithful, publish the authentic official answer with normal
+  grading. Explain the ordinary model where supported and record any surviving
+  academic/wording disagreement as a concise separate caveat. Do not invent a
+  missing condition or an explanation claiming the disagreement is resolved.
+- Missing original content in our import, uncertain source/series identity or
+  unreadable required material still prevents publication until repaired.
+- An unscored scan viewer is not a substitute for completing structured question
+  imports, authentic answers and results. The old NDA I workaround is superseded.
 - A rewritten teaching question is not an exact PYQ. If ever created, it needs a separate editorial identity and must not overwrite the original record or appear as an official question.
 
-The current runtime exposes only the existing combined review status. Until separate answer-evidence/quality fields and caveat presentation are implemented, use `quarantined` for unresolved material defects and store the official cell in the case evidence. This document does not claim that those additional UI fields already exist.
+Record answer evidence and editorial caveats separately in review evidence. The
+current single-answer grading contract must be extended and tested if a selected
+paper contains an official multiple-answer cell; this SOP does not implement it.
 
 ## 6. Worked case: NDA I Q75
 
@@ -131,9 +156,15 @@ The registered force-time graph yields an impulse of 400 N s. For 10 kg, this fi
 
 For example, initial velocities of +10 and +20 m/s in the force direction give final speeds of 50 and 60 m/s respectively. Both are compatible with an initially moving object. Assuming rest merely selects an intended option; it does not repair the original.
 
-**Current decision:** `quarantined` / `missing-condition`.
+**Current decision:** `official-provisional`, accepted answer **D (40 m/s)**,
+from UPSC's matching Series A Q75 cell. The original graph is reproduced and the
+missing-initial-condition observation remains a separate editorial caveat. The
+question is normally scored; it is not currently quarantined. The key's URL,
+hash and two-pass transcription are recorded in the completion report and ledger.
 
-**What can reopen it:** a matching official key/erratum and explicit quality adjudication, or proof that the scanned original contains a missed initial condition. A coaching explanation starting “assuming the body is initially at rest” is not enough.
+Reopen on an official final/revised key or erratum, a source-reproduction issue,
+or new directly applicable evidence. A coaching assumption is not a substitute
+for the official evidence and must not be inserted into the PYQ's wording.
 
 ## 7. Safe application and historical attempts
 
@@ -145,7 +176,9 @@ Before applying any approved change:
 4. Use the shared eligibility projection for new inventory, online and PDF snapshots. Deduplicate canonical IDs across shared topics and sources.
 5. Preserve submitted answers and original saved snapshots. Refresh feedback for key-only corrections; never grade a materially repaired version against an earlier defective snapshot the student actually saw.
 6. Held/withdrawn/duplicate-alias or materially defective historical questions must show **Excluded from score**, with null correctness/answer where appropriate, no denominator penalty, and a concise notice. Do not erase their historical IDs.
-7. Verify that old and mixed attempts remain reviewable and that online/PDF keys agree. Keep the application local until the user separately authorises a push/release.
+7. Verify old/mixed attempts and online/PDF agreement. Follow the master SOP's
+   standing release instruction after all gates pass, unless a later user request
+   explicitly withholds release. Do not request routine per-question approval.
 
 This SOP authorises no retroactive bulk status change. Existing published records requiring a hold must be individually identified, evidenced and applied through that workflow.
 
@@ -169,11 +202,14 @@ Use [the case template](templates/ambiguous-mcq-case.template.json). Nulls/empty
 - Eligibility, grading, old attempts, online/PDF rendering, unique counts and idempotence checks where application changes are made.
 - A reconciliation with mutually exclusive counts: not reviewed, held, verified and deferred/out-of-scope for the stated scope. Never sum existing occurrences as extra source slots.
 
-## 10. What we do next for this paper
+## 10. Close the current paper, not just the exception
 
-1. Review Q101–130, then Q131–150, reusing all existing source IDs and reassessing the Q139/Q146 provenance flags.
-2. Revisit the 11 held cases using this SOP, prioritising evidence gaps separately from defective wording. Keep unresolved ones quarantined.
-3. Process English Q1–50 under NDA GAT English, not as GS and not automatically imported merely because its syllabus exists.
-4. Produce a paper-wide reconciliation distinguishing new clearances, historical reuses, held questions and deferred items. Present the local report/diff; push only on request.
+Finish every numbered section using the master SOP; resolve or explicitly
+quarantine each researched exception without leaving awaiting-review slots.
+Report source accounting, answer dispositions, eligible canonical questions and
+remaining evidence gaps separately. A completed review does not mean every
+question is publishable, and a shorter test must not be advertised as the full
+original scored paper. Do not start an unrelated paper to avoid closing an issue.
 
-Reference state: [current batch report](nda-2026-i-batch-2-review.md) and `content/audits/nda-2026-i-review.json`. The numbers above are a dated snapshot, not a live counter. This SOP and its template are documentation; no held question has been cleared by creating them.
+Use the [release checklist](paper-release-checklist.md) and report template.
+Creating a case or writing this SOP changes no runtime status by itself.

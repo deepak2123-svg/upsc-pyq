@@ -77,15 +77,18 @@ test('all 150 are present in NDA preparation without leaking English or NDA worl
  assert.equal(snapshot.questions.filter(q=>q.figure).length,4);
 });
 
-test('all 150 official answers grade correct and all 150 alternate answers grade incorrect',async()=>{
+test('all 150 official answers grade correct and every one of 450 nonaccepted options grades incorrect',async()=>{
  const ids=paper.questions.map(q=>q.id),correct=Object.fromEntries(paper.questions.map(q=>[q.id,q.answer]));
  const contentRevisions=Object.fromEntries(paper.questions.map(q=>[q.id,questionReview(q.id).contentRevision]));
- const wrong=Object.fromEntries(paper.questions.map(q=>[q.id,q.answer==='A'?'B':'A']));
  const goodResponse=await send('/api/practice/grade',{questionIds:ids,answers:correct,contentRevisions});assert.equal(goodResponse.status,200);
  const good=await goodResponse.json();assert.equal(good.correct,150);assert.equal(good.incorrect,0);assert.equal(good.excluded,0);assert.equal(good.scored,150);
  for(const q of paper.questions){assert.equal(good.feedback[q.id].correctAnswer,key[q.questionNumber]);assert.equal(good.feedback[q.id].correct,true);assert.equal(good.feedback[q.id].disposition,'scored');}
- const badResponse=await send('/api/practice/grade',{questionIds:ids,answers:wrong,contentRevisions});assert.equal(badResponse.status,200);
- const bad=await badResponse.json();assert.equal(bad.correct,0);assert.equal(bad.incorrect,150);assert.equal(bad.excluded,0);
+ for(let alternative=0;alternative<3;alternative++){
+  const wrong=Object.fromEntries(paper.questions.map(q=>[q.id,Object.keys(q.options).filter(option=>option!==q.answer)[alternative]]));
+  const badResponse=await send('/api/practice/grade',{questionIds:ids,answers:wrong,contentRevisions});assert.equal(badResponse.status,200);
+  const bad=await badResponse.json();assert.equal(bad.correct,0);assert.equal(bad.incorrect,150);assert.equal(bad.excluded,0);
+  for(const q of paper.questions){assert.equal(bad.feedback[q.id].correct,false);assert.equal(bad.feedback[q.id].correctAnswer,q.answer);}
+ }
 });
 
 test('Q58 and Q73 official-key corrections invalidate cached feedback without changing selected answers',async()=>{
