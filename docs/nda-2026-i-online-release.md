@@ -47,3 +47,9 @@ No matching official NDA I 2026 GAT answer key was recovered from the official e
 - All deterministic import/review/placement/classification/coverage checks pass; the rendering manifest validates each published page hash and exact 1–150 coverage.
 - React checks: native keyboard controls and labelled selectors, answer-free server decisions, separately versioned browser storage, no grading requests from the original-page recorder, no external PDF dependency to display questions.
 - Existing build chunk-size warning remains. No claim that original-page publication completes the answer audit.
+
+### Cold-production print follow-up
+
+The first production browser run passed the full original-paper recorder and source/equation checks but exposed a diagram-loading race in the printable view. Its automatic print trigger waited for fonts and a fixed 250ms, not image decoding. The print client now waits for every required diagram plus fonts before enabling manual printing or invoking automatic printing. A missing diagram blocks printing with a visible reload message. Two additional browser regressions cover delayed and failed image responses; all seven distinct local browser scenarios have passed. The image-completion assertion now waits for actual readiness rather than sampling immediately after DOM insertion.
+
+Production static-asset checks also confirmed all 24 source-page hashes, all 39 reviewed imports in the NDA inventory, and exclusion of the 11 held IDs. The Vercel app connector required reauthentication; the existing GitHub deployment status and direct public application requests supplied deployment confirmation instead. No production settings, secrets or database data were changed.

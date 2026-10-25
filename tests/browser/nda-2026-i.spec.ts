@@ -60,7 +60,8 @@ test('NDA I second batch preserves three original figures and the redox table in
  await page.goto(`/practice/${snapshot.id}/print`);
  await expect(page.locator('.print-question')).toHaveCount(4);
  await expect(page.locator('.question-figure img')).toHaveCount(3);
- for(const image of await page.locator('.question-figure img').all())expect(await image.evaluate((img:HTMLImageElement)=>img.complete&&img.naturalWidth>0)).toBe(true);
+ await expect(page.getByRole('button',{name:'Print / Save as PDF',exact:true})).toBeEnabled();
+ for(const image of await page.locator('.question-figure img').all())await expect.poll(()=>image.evaluate((img:HTMLImageElement)=>img.complete&&img.naturalWidth>0)).toBe(true);
  await expect(page.locator('[data-question-id="nda-2026-i-90"] .paired-row-table tbody tr')).toHaveCount(4);
  await expect(page.locator('.print-answer-key')).toContainText('‡ Independently verified');
  await page.emulateMedia({media:'print'});

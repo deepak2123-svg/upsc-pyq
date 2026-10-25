@@ -14,7 +14,8 @@ export function PrintPaperClient({ id }: { id: string }) {
   const [payload, setPayload] = useState<PrintPayload | null>();
   const [feedback, setFeedback] = useState<Record<string, AnswerFeedback>>({});
   const [error, setError] = useState("");
-  const printed = useRef(false);
+  const printed = useRef<string | null>(null);
+  const [assetsReadyFor, setAssetsReadyFor] = useState<string | null>(null);
 
   useEffect(() => {
     try {
@@ -32,14 +33,31 @@ export function PrintPaperClient({ id }: { id: string }) {
 
   const keyReady = Boolean(payload && (!payload.includeAnswerKey || payload.snapshot.questions.every((question) => feedback[question.id])));
   useEffect(() => {
-    if (!payload || !keyReady || printed.current) return;
-    printed.current = true;
-    void document.fonts.ready.then(() => window.setTimeout(() => window.print(), 250));
+    if (!payload || !keyReady || printed.current === payload.snapshot.id) return;
+    let cancelled = false;
+    const snapshotId = payload.snapshot.id;
+    const images = [...document.querySelectorAll<HTMLImageElement>('.print-question img')];
+    // A font-only delay is insufficient on a cold CDN: never print a paper
+    // until every required original diagram is downloaded AND decoded.
+    void Promise.all([document.fonts.ready, ...images.map(image => image.decode())])
+      .then(() => {
+        if (cancelled) return;
+        if (images.some(image => !image.complete || !image.naturalWidth)) throw new Error('Required diagram unavailable');
+        setAssetsReadyFor(snapshotId);
+        window.requestAnimationFrame(() => {
+          if (cancelled || printed.current === snapshotId) return;
+          printed.current = snapshotId;
+          window.print();
+        });
+      })
+      .catch(() => { if (!cancelled) setError('A required diagram could not be loaded. Reload this paper before printing; an incomplete paper will not be printed.'); });
+    return () => { cancelled = true; };
   }, [payload, keyReady]);
 
   if (payload === undefined) return <main className="print-paper-status">Preparing your paper…</main>;
   if (!payload) return <main className="print-paper-status"><h1>Paper unavailable</h1><p>{error}</p></main>;
   const { snapshot, includeAnswerKey } = payload;
+  const printReady = keyReady && assetsReadyFor === snapshot.id && !error;
   const duration = isPracticeRecipeV3(snapshot.recipe) ? snapshot.recipe.durationMinutes : null;
   const subjects = [...new Set(snapshot.questions.map((question) => question.subject))].join(" + ");
   const coverage = {
@@ -54,7 +72,7 @@ export function PrintPaperClient({ id }: { id: string }) {
   const answerKeyColumns = [snapshot.questions.slice(0, answerKeySplit), snapshot.questions.slice(answerKeySplit)];
 
   return <main className="print-paper">
-    <div className="print-toolbar"><button type="button" disabled={!keyReady} onClick={() => window.print()}>{keyReady ? "Print / Save as PDF" : "Preparing answer key…"}</button><span>Choose <strong>Save as PDF</strong> and turn off <strong>Headers and footers</strong> in the print dialog.</span></div>
+    <div className="print-toolbar"><button type="button" disabled={!printReady} onClick={() => window.print()}>{error ? "Paper not ready" : printReady ? "Print / Save as PDF" : keyReady ? "Preparing diagrams…" : "Preparing answer key…"}</button><span>Choose <strong>Save as PDF</strong> and turn off <strong>Headers and footers</strong> in the print dialog.</span>{error ? <p role="alert">{error} <button type="button" onClick={() => window.location.reload()}>Reload paper</button></p> : null}</div>
     <header className="print-paper-header">
       <div className="print-title-row"><h1>Previous-Year Questions</h1></div>
       <table className="print-paper-summary" aria-label="Paper summary"><thead><tr><th>Syllabus</th><th>MCQs</th>{PYQ_EXAMS.map((exam) => <th key={exam}>{exam}</th>)}<th>Time</th></tr></thead><tbody><tr><td><strong>{primaryCoverage || subjects || "Selected syllabus"}</strong>{coverage.subparts.length ? <small>{coverage.subparts.join(" · ")}</small> : null}</td><td>{snapshot.questions.length}</td>{PYQ_EXAMS.map((exam) => <td key={exam}>{examCounts[exam] || "—"}</td>)}<td>{duration ? `${duration} min` : "Untimed"}</td></tr></tbody></table>
