@@ -4,14 +4,14 @@
 export type SyllabusSection = readonly [string, readonly (readonly [string, readonly string[]])[]];
 export const defenceWorldHistory: readonly SyllabusSection[] = [
   ['World History',[
-    ['Industrial Revolution',['Conditions in Britain','Inventions and inventors']],
+    ['Industrial Revolution',['Conditions in Britain','Inventions and inventors','Labour movements']],
     ['Russian Revolution',['1905 Revolution','1917 Revolution']],
   ]],
 ];
 export const englishSyllabus: readonly SyllabusSection[] = [
   ['Vocabulary', [
     ['Word meanings', ['Synonyms', 'Antonyms', 'Words in context']],
-    ['Expressions', ['Idioms and phrases', 'One-word substitutions', 'Phrasal verbs']],
+    ['Expressions', ['Idioms and phrases', 'One-word substitutions', 'Phrasal verbs', 'Foreign phrases']],
     ['Usage', ['Confusable words', 'Spelling', 'Collocations']],
   ]],
   ['Grammar', [

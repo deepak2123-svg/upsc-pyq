@@ -54,15 +54,15 @@
     "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-2.pdf",
     "originalPdfSha256":"cc524b288fb4136f50ae648face0bd648a8a0c1f0753e9e8c5130f723cc9a987",
     "coverPage":1,"languages":["Hindi","English"],"reviewedLanguage":"English",
-    "questionPages":[9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47],
-    "keyPdf":"../.tmp/full_reaudit_answer_keys/NDA/2026_II_GAT_provisional.pdf",
+    "questionPages":[2,3,4,5,6,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47],
+    "keyPdf":"public/papers/nda-2026-ii-gat/official-provisional-key.pdf",
     "keySha256":"1d86b52baed1a38607c7203bbccfb3625c78168cf351484bc5b6a45c101d01f3",
     "keyPage":1,"keySeries":"A","keyQuestionCount":150,"keyStatus":"official-provisional","droppedQuestions":[],
     "identityStatus":"cover-key-and-question-identity-reviewed",
     "identityRationale":"Original cover explicitly identifies NDA & NA Examination (II), 2026, Series A, GAT, 150 items. Original English Part B begins at Q51 on page 9 and ends at Q150 on page 47. UPSC-hosted key header independently identifies NDA & NA-II-Exam-2026 (PROVISIONAL KEY), GAT, Series A, 150 total/scoring questions, zero dropped. Document hashes and complete Q51-Q150 cells were checked; identity is not inferred from the filename.",
-    "secondPass":"English GS pages 9-47 and Series A key page 1 checked against the two fixed batches (Q51-Q100 and Q101-Q150). Q84/Q90 retain full paired tables, Q126 both matching lists, and numerical questions retain units and expressions. Key-only caveats for Q56 and Q107 are explicit. The official provisional answer is not silently replaced by independent reasoning. Part A Q1-Q50 is English and excluded from this GS import; this is a scope decision, not answer verification of those items.",
-    "outOfScopeRanges":[{"from":1,"to":50,"reason":"Part A English; outside the approved GS-only collection","evidencePages":[2,3,4,5,6,7]}],
-    "reviewedAt":"2026-10-23"
+    "secondPass":"2026-10-25: all 150 complete questions visually reread by the same AI reviewer in a fresh pass, including English pages 2-7, directions, underlining, paired tables and numerical expressions. Series A key read column-first and row-first with programmatic agreement. Official provisional scoring retained with separate caveats. English is now imported into explicit NDA/CDS preparation; this supersedes the previous GS-only scope accounting. See content/audits/nda-2026-ii-review.json.",
+    "outOfScopeRanges":[],
+    "reviewedAt":"2026-10-25"
   },{
     "exam":"NDA","year":2026,"paper":"I","series":"A","questionCount":150,
     "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",

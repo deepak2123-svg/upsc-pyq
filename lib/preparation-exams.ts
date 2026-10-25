@@ -5,5 +5,5 @@ export function isPreparationExam(value: unknown): value is PreparationExam {
   return typeof value === 'string' && PREPARATION_EXAMS.includes(value as PreparationExam);
 }
 export type PreparationView = { id: string; paper: string; label: string; subjectIds: string[] };
-export const PREPARATION_VERSION = 'preparation-v1';
+export const PREPARATION_VERSION = 'preparation-v1.1-nda-2026-ii';
 export function preparationDraftKey(exam: PreparationExam) { return `upsc-pyq-builder:preparation-v1:${exam}`; }

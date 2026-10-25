@@ -4,6 +4,7 @@ import importPolicy from '../content/prelims-import-review-policy.json' with { t
 import reproductionOverrides from '../content/prelims-reproduction-overrides.json' with { type: 'json' };
 import materialSourceRepairs from '../content/prelims-material-source-repairs.json' with { type: 'json' };
 import officialNdaPaper from '../content/nda-2026-i-official-paper.json' with { type: 'json' };
+import officialNdaIIPaper from '../content/nda-2026-ii-official-paper.json' with { type: 'json' };
 import {prelimsPath,reviewedPrelimsPlacements,PRELIMS_TAXONOMY_VERSION} from './prelims-taxonomy.ts';
 
 const cleared = new Set(['official-final', 'official-provisional', 'reasoned-verified']);
@@ -37,10 +38,11 @@ const reviewedBaseQuestions=legacyQuestions.map(question=>{
 });
 // Approved official-key overlay: raw imports, historical IDs and old snapshots
 // remain immutable. The build validates all 63 expected pre-change hashes.
-const officialById=new Map(officialNdaPaper.questions.map(q=>[q.id,q]));
+const officialQuestions=[...officialNdaPaper.questions,...officialNdaIIPaper.questions];
+const officialById=new Map(officialQuestions.map(q=>[q.id,q]));
 const priorIds=new Set(reviewedBaseQuestions.map(q=>q.id));
 export const combinedQuestions=[...reviewedBaseQuestions.map(question=>{
   const official=officialById.get(question.id);
-  return official?{...question,...official,additionalPaths:question.additionalPaths??official.additionalPaths}:question;
-}),...officialNdaPaper.questions.filter(q=>!priorIds.has(q.id))];
+  return official?{...question,...official,additionalPaths:official.preparationScope==='gs'?(question.additionalPaths??official.additionalPaths):official.additionalPaths}:question;
+}),...officialQuestions.filter(q=>!priorIds.has(q.id))];
 export default { ...historicalBank, questions: combinedQuestions };

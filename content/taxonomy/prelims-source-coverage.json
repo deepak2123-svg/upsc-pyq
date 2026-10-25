@@ -1067,9 +1067,9 @@
       "reviewedLanguage": "English",
       "reviewedSlots": 150,
       "pendingSlots": 0,
-      "verifiedImports": 100,
-      "outOfScope": 50,
-      "verifiedReuses": 0
+      "verifiedImports": 50,
+      "outOfScope": 0,
+      "verifiedReuses": 100
     }
   ],
   "questionSlots": [
@@ -96973,10 +96973,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-1",
       "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q2",
@@ -96985,10 +96986,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-2",
       "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q3",
@@ -96997,10 +96999,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-3",
       "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q4",
@@ -97009,10 +97012,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-4",
       "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q5",
@@ -97021,10 +97025,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-5",
       "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q6",
@@ -97033,10 +97038,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-6",
       "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q7",
@@ -97045,10 +97051,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-7",
       "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q8",
@@ -97057,10 +97064,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-8",
       "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q9",
@@ -97069,10 +97077,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-9",
       "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q10",
@@ -97081,10 +97090,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-10",
       "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q11",
@@ -97093,10 +97103,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-11",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q12",
@@ -97105,10 +97116,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-12",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q13",
@@ -97117,10 +97129,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-13",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q14",
@@ -97129,10 +97142,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-14",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q15",
@@ -97141,10 +97155,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-15",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q16",
@@ -97153,10 +97168,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-16",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q17",
@@ -97165,10 +97181,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-17",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q18",
@@ -97177,10 +97194,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-18",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q19",
@@ -97189,10 +97207,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-19",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q20",
@@ -97201,10 +97220,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-20",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q21",
@@ -97213,10 +97233,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-21",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q22",
@@ -97225,10 +97246,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-22",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q23",
@@ -97237,10 +97259,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-23",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q24",
@@ -97249,10 +97272,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-24",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q25",
@@ -97261,10 +97285,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-25",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q26",
@@ -97273,10 +97298,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-26",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q27",
@@ -97285,10 +97311,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-27",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q28",
@@ -97297,10 +97324,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-28",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q29",
@@ -97309,10 +97337,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-29",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q30",
@@ -97321,10 +97350,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-30",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q31",
@@ -97333,10 +97363,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-31",
+      "reviewedSourcePage": 5,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 5 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q32",
@@ -97345,10 +97376,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-32",
+      "reviewedSourcePage": 5,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 5 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q33",
@@ -97357,10 +97389,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-33",
+      "reviewedSourcePage": 5,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 5 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q34",
@@ -97369,10 +97402,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-34",
+      "reviewedSourcePage": 5,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 5 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q35",
@@ -97381,10 +97415,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-35",
+      "reviewedSourcePage": 5,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 5 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q36",
@@ -97393,10 +97428,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-36",
+      "reviewedSourcePage": 6,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 6 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q37",
@@ -97405,10 +97441,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-37",
+      "reviewedSourcePage": 6,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 6 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q38",
@@ -97417,10 +97454,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-38",
+      "reviewedSourcePage": 6,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 6 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q39",
@@ -97429,10 +97467,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-39",
+      "reviewedSourcePage": 6,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 6 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q40",
@@ -97441,10 +97480,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-40",
+      "reviewedSourcePage": 6,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 6 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q41",
@@ -97453,10 +97493,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-41",
+      "reviewedSourcePage": 6,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 6 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q42",
@@ -97465,10 +97506,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-42",
+      "reviewedSourcePage": 6,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 6 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q43",
@@ -97477,10 +97519,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-43",
+      "reviewedSourcePage": 6,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 6 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q44",
@@ -97489,10 +97532,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-44",
+      "reviewedSourcePage": 7,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 7 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q45",
@@ -97501,10 +97545,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-45",
+      "reviewedSourcePage": 7,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 7 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q46",
@@ -97513,10 +97558,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-46",
+      "reviewedSourcePage": 7,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 7 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q47",
@@ -97525,10 +97571,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-47",
+      "reviewedSourcePage": 7,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 7 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q48",
@@ -97537,10 +97584,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-48",
+      "reviewedSourcePage": 7,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 7 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q49",
@@ -97549,10 +97597,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-49",
+      "reviewedSourcePage": 7,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 7 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q50",
@@ -97561,10 +97610,11 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "out-of-scope",
-      "reviewedSourcePage": 2,
-      "decisionEvidence": "content/prelims-reviewed-papers.json",
-      "note": "Part A English; outside the approved GS-only collection"
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-ii-50",
+      "reviewedSourcePage": 7,
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
+      "note": "Original Series A page 7 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-2/Q51",
@@ -97573,10 +97623,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-51",
       "reviewedSourcePage": 9,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 9 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97586,10 +97636,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-52",
       "reviewedSourcePage": 9,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 9 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97599,10 +97649,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-53",
       "reviewedSourcePage": 9,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 9 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97612,10 +97662,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-54",
       "reviewedSourcePage": 9,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 9 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97625,10 +97675,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-55",
       "reviewedSourcePage": 9,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 9 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97638,10 +97688,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-56",
       "reviewedSourcePage": 11,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 11 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97651,10 +97701,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-57",
       "reviewedSourcePage": 11,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 11 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97664,10 +97714,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-58",
       "reviewedSourcePage": 11,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 11 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97677,10 +97727,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-59",
       "reviewedSourcePage": 11,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 11 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97690,10 +97740,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-60",
       "reviewedSourcePage": 11,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 11 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97703,10 +97753,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-61",
       "reviewedSourcePage": 13,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 13 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97716,10 +97766,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-62",
       "reviewedSourcePage": 13,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 13 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97729,10 +97779,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-63",
       "reviewedSourcePage": 13,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 13 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97742,10 +97792,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-64",
       "reviewedSourcePage": 13,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 13 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97755,10 +97805,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-65",
       "reviewedSourcePage": 13,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 13 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97768,10 +97818,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-66",
       "reviewedSourcePage": 13,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 13 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97781,10 +97831,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-67",
       "reviewedSourcePage": 15,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 15 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97794,10 +97844,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-68",
       "reviewedSourcePage": 15,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 15 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97807,10 +97857,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-69",
       "reviewedSourcePage": 15,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 15 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97820,10 +97870,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-70",
       "reviewedSourcePage": 15,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 15 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97833,10 +97883,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-71",
       "reviewedSourcePage": 17,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 17 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97846,10 +97896,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-72",
       "reviewedSourcePage": 17,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 17 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97859,10 +97909,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-73",
       "reviewedSourcePage": 17,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 17 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97872,10 +97922,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-74",
       "reviewedSourcePage": 17,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 17 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97885,10 +97935,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-75",
       "reviewedSourcePage": 17,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 17 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97898,10 +97948,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-76",
       "reviewedSourcePage": 19,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 19 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97911,10 +97961,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-77",
       "reviewedSourcePage": 19,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 19 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97924,10 +97974,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-78",
       "reviewedSourcePage": 19,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 19 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97937,10 +97987,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-79",
       "reviewedSourcePage": 19,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 19 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97950,10 +98000,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-80",
       "reviewedSourcePage": 19,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 19 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97963,10 +98013,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-81",
       "reviewedSourcePage": 21,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 21 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97976,10 +98026,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-82",
       "reviewedSourcePage": 21,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 21 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -97989,10 +98039,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-83",
       "reviewedSourcePage": 21,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 21 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98002,10 +98052,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-84",
       "reviewedSourcePage": 21,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 21 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98015,10 +98065,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-85",
       "reviewedSourcePage": 23,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 23 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98028,10 +98078,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-86",
       "reviewedSourcePage": 23,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 23 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98041,10 +98091,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-87",
       "reviewedSourcePage": 23,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 23 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98054,10 +98104,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-88",
       "reviewedSourcePage": 23,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 23 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98067,10 +98117,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-89",
       "reviewedSourcePage": 23,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 23 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98080,10 +98130,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-90",
       "reviewedSourcePage": 23,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 23 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98093,10 +98143,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-91",
       "reviewedSourcePage": 25,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 25 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98106,10 +98156,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-92",
       "reviewedSourcePage": 25,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 25 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98119,10 +98169,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-93",
       "reviewedSourcePage": 25,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 25 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98132,10 +98182,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-94",
       "reviewedSourcePage": 25,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 25 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98145,10 +98195,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-95",
       "reviewedSourcePage": 27,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 27 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98158,10 +98208,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-96",
       "reviewedSourcePage": 27,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 27 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98171,10 +98221,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-97",
       "reviewedSourcePage": 27,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 27 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98184,10 +98234,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-98",
       "reviewedSourcePage": 27,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 27 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98197,10 +98247,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-99",
       "reviewedSourcePage": 27,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 27 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98210,10 +98260,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-100",
       "reviewedSourcePage": 27,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 27 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98223,10 +98273,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-101",
       "reviewedSourcePage": 29,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 29 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98236,10 +98286,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-102",
       "reviewedSourcePage": 29,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 29 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98249,10 +98299,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-103",
       "reviewedSourcePage": 29,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 29 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98262,10 +98312,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-104",
       "reviewedSourcePage": 29,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 29 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98275,10 +98325,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-105",
       "reviewedSourcePage": 29,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 29 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98288,10 +98338,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-106",
       "reviewedSourcePage": 31,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 31 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98301,10 +98351,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-107",
       "reviewedSourcePage": 31,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 31 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98314,10 +98364,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-108",
       "reviewedSourcePage": 31,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 31 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98327,10 +98377,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-109",
       "reviewedSourcePage": 31,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 31 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98340,10 +98390,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-110",
       "reviewedSourcePage": 31,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 31 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98353,10 +98403,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-111",
       "reviewedSourcePage": 33,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 33 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98366,10 +98416,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-112",
       "reviewedSourcePage": 33,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 33 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98379,10 +98429,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-113",
       "reviewedSourcePage": 33,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 33 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98392,10 +98442,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-114",
       "reviewedSourcePage": 33,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 33 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98405,10 +98455,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-115",
       "reviewedSourcePage": 33,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 33 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98418,10 +98468,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-116",
       "reviewedSourcePage": 35,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 35 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98431,10 +98481,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-117",
       "reviewedSourcePage": 35,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 35 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98444,10 +98494,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-118",
       "reviewedSourcePage": 35,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 35 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98457,10 +98507,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-119",
       "reviewedSourcePage": 35,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 35 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98470,10 +98520,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-120",
       "reviewedSourcePage": 35,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 35 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98483,10 +98533,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-121",
       "reviewedSourcePage": 37,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 37 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98496,10 +98546,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-122",
       "reviewedSourcePage": 37,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 37 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98509,10 +98559,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-123",
       "reviewedSourcePage": 37,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 37 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98522,10 +98572,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-124",
       "reviewedSourcePage": 37,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 37 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98535,10 +98585,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-125",
       "reviewedSourcePage": 37,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 37 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98548,10 +98598,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-126",
       "reviewedSourcePage": 37,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 37 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98561,10 +98611,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-127",
       "reviewedSourcePage": 39,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 39 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98574,10 +98624,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-128",
       "reviewedSourcePage": 39,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 39 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98587,10 +98637,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-129",
       "reviewedSourcePage": 39,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 39 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98600,10 +98650,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-130",
       "reviewedSourcePage": 39,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 39 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98613,10 +98663,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-131",
       "reviewedSourcePage": 41,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 41 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98626,10 +98676,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-132",
       "reviewedSourcePage": 41,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 41 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98639,10 +98689,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-133",
       "reviewedSourcePage": 41,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 41 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98652,10 +98702,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-134",
       "reviewedSourcePage": 41,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 41 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98665,10 +98715,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-135",
       "reviewedSourcePage": 43,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 43 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98678,10 +98728,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-136",
       "reviewedSourcePage": 43,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 43 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98691,10 +98741,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-137",
       "reviewedSourcePage": 43,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 43 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98704,10 +98754,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-138",
       "reviewedSourcePage": 43,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 43 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98717,10 +98767,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-139",
       "reviewedSourcePage": 43,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 43 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98730,10 +98780,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-140",
       "reviewedSourcePage": 43,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 43 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98743,10 +98793,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-141",
       "reviewedSourcePage": 45,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 45 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98756,10 +98806,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-142",
       "reviewedSourcePage": 45,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 45 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98769,10 +98819,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-143",
       "reviewedSourcePage": 45,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 45 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98782,10 +98832,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-144",
       "reviewedSourcePage": 45,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 45 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98795,10 +98845,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-145",
       "reviewedSourcePage": 45,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 45 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98808,10 +98858,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-146",
       "reviewedSourcePage": 45,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 45 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98821,10 +98871,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-147",
       "reviewedSourcePage": 47,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 47 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98834,10 +98884,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-148",
       "reviewedSourcePage": 47,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 47 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98847,10 +98897,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-149",
       "reviewedSourcePage": 47,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 47 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
@@ -98860,10 +98910,10 @@
       "priorSourcePage": null,
       "priorReconstructionStatus": null,
       "existingStemMatchIds": [],
-      "disposition": "verified-local-import",
+      "disposition": "verified-existing-reuse",
       "reviewedRecordId": "nda-2026-ii-150",
       "reviewedSourcePage": 47,
-      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "decisionEvidence": "content/nda-2026-ii-official-paper.json",
       "note": "Original Series A page 47 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     }
   ]

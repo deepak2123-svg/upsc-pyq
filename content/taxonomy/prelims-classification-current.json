@@ -52503,6 +52503,30 @@
       ]
     },
     {
+      "questionId": "nda-2026-ii-1",
+      "expectedRecordHash": "772011ddf176ea515d05ba8f5ee4cbbe26e70e5eaf6ca02915f96e2cc51a8b98",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Antonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-10",
+      "expectedRecordHash": "d979b08e6bf2cc0107bad58009e8c16fa55ec2081830cebf008c88e160a5447a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Antonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
       "questionId": "nda-2026-ii-100",
       "expectedRecordHash": "d4d7e6a15c1747a9ade7d6e968a400e5628e96fd26d08cd96fbef750e94fa7c5",
       "primaryId": "syllabus:science-technology/biology/plants-and-microorganisms/plant-morphology",
@@ -52663,6 +52687,18 @@
       "tags": [
         "Static"
       ]
+    },
+    {
+      "questionId": "nda-2026-ii-11",
+      "expectedRecordHash": "24502caa04bd06480034d15cd47ef15040f57b91645be4d519d83e7e0fefac42",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Synonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
     },
     {
       "questionId": "nda-2026-ii-110",
@@ -52827,6 +52863,18 @@
       ]
     },
     {
+      "questionId": "nda-2026-ii-12",
+      "expectedRecordHash": "287c73ed2cbfffe4f0bf4089a902585395268d112f2b0101bd0dc776ae3ba27e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Synonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
       "questionId": "nda-2026-ii-120",
       "expectedRecordHash": "d56a41f17f520cd34f305c381761388a04d266c1fc5ac8dee0f6fd1cf07a98e0",
       "primaryId": "syllabus:geography/human-economic-geography/population-geography/population-indicators",
@@ -52877,34 +52925,26 @@
     {
       "questionId": "nda-2026-ii-123",
       "expectedRecordHash": "ccd7f16e9636d584ffd4745cd4706b45309e23f6d2e88c60da9916f8465bcc63",
-      "primaryId": "syllabus:economy/industry-services-infrastructure/industry-and-enterprise/industrial-history-and-development",
-      "additionalIds": [],
-      "status": "approved",
-      "basis": "original-page-and-key-reviewed-import",
-      "rationale": "Industrialisation and historical labour demands belong to the existing industrial-history concept; do not misplace a British movement under Indian nationalist workers.",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified World History for NDA/CDS, not automatically CSE GS.",
+      "rationale": "The complete question tests Luddism in Britain and its labour demands, not Indian industrial policy. Place primarily in defence-exam World History; do not automatically broaden CSE GS applicability.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Separate second-pass check against complete English page 37 and independently transcribed Series A Q123 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
-      },
-      "tags": [
-        "Static"
-      ]
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
     },
     {
       "questionId": "nda-2026-ii-124",
       "expectedRecordHash": "7510d2680cf7db42083289d9681710eaf5261214b77616ffaf7c6e91dc3b30d0",
-      "primaryId": "syllabus:economy/industry-services-infrastructure/industry-and-enterprise/industrial-history-and-development",
-      "additionalIds": [],
-      "status": "approved",
-      "basis": "original-page-and-key-reviewed-import",
-      "rationale": "Historical industrial development and resource co-location; retain the printed blast-furnace chronology proposition.",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified World History for NDA/CDS, not automatically CSE GS.",
+      "rationale": "Coal, iron resources and blast-furnace chronology in Britain test the Industrial Revolution. The specific World History branch is more precise than a general Economy industrial-history leaf; keep explicit NDA/CDS applicability.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Separate second-pass check against complete English page 37 and independently transcribed Series A Q124 cell on key page 1. Negative qualifiers, false assertions, units and option order retained."
-      },
-      "tags": [
-        "Static"
-      ]
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
     },
     {
       "questionId": "nda-2026-ii-125",
@@ -52989,6 +53029,18 @@
       "tags": [
         "Static"
       ]
+    },
+    {
+      "questionId": "nda-2026-ii-13",
+      "expectedRecordHash": "7b310becb31c67fc18f13795bd631a35e21d3bde63e549278b1525d9e42b6b5b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Synonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
     },
     {
       "questionId": "nda-2026-ii-130",
@@ -53153,6 +53205,18 @@
       "tags": [
         "Static"
       ]
+    },
+    {
+      "questionId": "nda-2026-ii-14",
+      "expectedRecordHash": "792edb9f142125581190a25cb1e35b8f86032359070342d98baa7486470868c3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Synonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
     },
     {
       "questionId": "nda-2026-ii-140",
@@ -53327,6 +53391,18 @@
       ]
     },
     {
+      "questionId": "nda-2026-ii-15",
+      "expectedRecordHash": "3898205c6cff3817f45e32d40676384751265b16943bb51460ec082a9cbd5948",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Synonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
       "questionId": "nda-2026-ii-150",
       "expectedRecordHash": "3c946c2bd72053196cc5dcc3e72d81d25f81ad45cd38c9758de950787b0af63d",
       "primaryId": "syllabus:current-affairs/defence-security/defence-cooperation/defence-production",
@@ -53343,6 +53419,474 @@
       "tags": [
         "Event-based"
       ]
+    },
+    {
+      "questionId": "nda-2026-ii-16",
+      "expectedRecordHash": "9ae0588add841020e728b5af2cd698e077e5810955bc89f5addeb18d89fb830e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Foreign phrases, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-17",
+      "expectedRecordHash": "720e739a0324eaff3198b66d4d4d6d1ac698aff37aa42982e05bc5d01ba1ee99",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Foreign phrases, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-18",
+      "expectedRecordHash": "7c47a90b2030228dd14b4868d99f12a0923590409c3465112d33f3770a299f2b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Foreign phrases, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-19",
+      "expectedRecordHash": "94bba97ffb113e3e780d4fe94d2931033922d7d00388d7c1161ed4f65f99d7b6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Foreign phrases, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-2",
+      "expectedRecordHash": "d9e91213ce9d2ab0bd5c7d7d51e6e540e010d6437c72af5305fc9d68f45b6a1c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Antonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-20",
+      "expectedRecordHash": "30169c3cd35c2f34152ab18aeeaf8a450486e19b33fc763d9c102248f93d6f97",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Foreign phrases, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-21",
+      "expectedRecordHash": "bf7e57a3cd0d218b0e1625fe7d5779aa4707434dd4f1d3724e0f056e7b28fe93",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Idioms and phrases, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-22",
+      "expectedRecordHash": "e226b4de66a97b4888160170be671d312462d172b69d1f0275b830bcbe281298",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Idioms and phrases, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-23",
+      "expectedRecordHash": "55200ac8d8cb499c2490f7b445310ac573ccd13ba48ee56256e2593d6a13bd74",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Idioms and phrases, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-24",
+      "expectedRecordHash": "dd220b0c39bcc34b730504f3bafe9429ecbd2b5b0a3af57e812345a1825dba21",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Idioms and phrases, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-25",
+      "expectedRecordHash": "eb0caddb7f93dd71463ccc31e8ae00a8a1b09849003a24002e3505bb6d512d90",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Idioms and phrases, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-26",
+      "expectedRecordHash": "1d7bdd67d4b4744e3836afa89dbad954d4dae49b1e138a17028932171a212709",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Prepositions and conjunctions, within Grammar / Parts of speech. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-27",
+      "expectedRecordHash": "17e5225e2238d01228c410ba1003799aa85cf5add2c5a352344ddf59a796cb74",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Articles and determiners, within Grammar / Parts of speech. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-28",
+      "expectedRecordHash": "6c0e5f1630e6826a9d715a6303c004ce42a077cad6d4e047dda48cb498e5cf44",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Nouns and pronouns, within Grammar / Parts of speech. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-29",
+      "expectedRecordHash": "2232ca12a1be00589be97820b7cd8d16207c5cdcb49eb8471573f91e3b3545b4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Prepositions and conjunctions, within Grammar / Parts of speech. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-3",
+      "expectedRecordHash": "65d827b51bc985c94e2a29d3d7f20fc69fc1767ce051a49e37e67e07e793c89b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Antonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-30",
+      "expectedRecordHash": "f48ca3ded99a97e8562ff9a05b5eef1b1bb940118017f12375c51570502691f2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Prepositions and conjunctions, within Grammar / Parts of speech. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-31",
+      "expectedRecordHash": "de05c8d3ecb6f529a4e354db35b71a4f3a86a404aa204d0be3cffa30209f23b1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Ordering words, within Usage and Sentence Skills / Sentence organisation. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-32",
+      "expectedRecordHash": "ccd8918398cd8e69046c43d90d4dffe142f0f5275acffcf5a281de69f19463ff",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Ordering words, within Usage and Sentence Skills / Sentence organisation. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-33",
+      "expectedRecordHash": "adcca112be5b859adbdcec8b9af6562e5b7a10e3df389584705f756910d363a6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Ordering words, within Usage and Sentence Skills / Sentence organisation. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-34",
+      "expectedRecordHash": "fc913e493cc923e9ddbe1644d30c88d67bee1efbe7b4e498eb43d384feed61ab",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Ordering words, within Usage and Sentence Skills / Sentence organisation. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-35",
+      "expectedRecordHash": "0244e67c0f1aabae15cb018b0935d030006f1a42eea2f88afbee841d2ac11183",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Ordering words, within Usage and Sentence Skills / Sentence organisation. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-36",
+      "expectedRecordHash": "e7a754c712519bf33ad075f97b4f49c9858fc220ef72b35222292274114c6429",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Sentence improvement, within Usage and Sentence Skills / Error correction. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-37",
+      "expectedRecordHash": "519e09c1146d3c3b6c5c21c7c3aa1f6c2c856e275eb3437643300285ffb46ff3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Tenses and aspect, within Grammar / Verbs. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-38",
+      "expectedRecordHash": "075748d5153ffd10d924fa9b7d20c38ed204b386a72cb0e9ed61d3cc7b37f9a9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Sentence improvement, within Usage and Sentence Skills / Error correction. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-39",
+      "expectedRecordHash": "5e2e970f5c59df0f7bfb5655487ef644105c676ef95bf49b1ba971bc9ee7a4fe",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Sentence improvement, within Usage and Sentence Skills / Error correction. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-4",
+      "expectedRecordHash": "c0d9662c307309c20ac39aa0cd2f64509f088b61e005520ad826427ca2059e7e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Antonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-40",
+      "expectedRecordHash": "29c118c0d8e5c792b9ce2a9f579f7a88d2fd543ddc9121e013581a24bc165dcd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Sentence improvement, within Usage and Sentence Skills / Error correction. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-41",
+      "expectedRecordHash": "830af44b1882b5c6b43e130e18abcfe0ad12365d2e91954b9a78fb3b503145b6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Spotting errors, within Usage and Sentence Skills / Error correction. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-42",
+      "expectedRecordHash": "dbe98f18a38bee9e108754c6f8d290f40d837aab5bdf37adfcee4cd3addf9bde",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Spotting errors, within Usage and Sentence Skills / Error correction. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-43",
+      "expectedRecordHash": "e3f382b1a246d4bba6c24d27214aa0ac7b33348c10ce374ba1f4794ae63ca121",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Active and passive voice, within Grammar / Sentence structure. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-44",
+      "expectedRecordHash": "08262eca4a25c99bb364a0e2e1acb45e850b9c4beea5a355f9eb7bf285fb2772",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Active and passive voice, within Grammar / Sentence structure. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-45",
+      "expectedRecordHash": "a8890398fd900fe4cbe60fcb251250c8739982842d37c29c91e948548347ca2c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Direct and indirect speech, within Grammar / Sentence structure. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-46",
+      "expectedRecordHash": "aca31d96017792c615f0fd27cd8c9f19690d50d6bd414d7cb0d0d5ed54456f24",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Direct and indirect speech, within Grammar / Sentence structure. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-47",
+      "expectedRecordHash": "e0925f110d3ea21c886caa2ade236e40f27f28247d9745f8012a6ac09e618dd6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test One-word substitutions, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-48",
+      "expectedRecordHash": "a340fd205374180050100b42d6f3648501e37ba414214495df6b97d8af85bff4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test One-word substitutions, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-49",
+      "expectedRecordHash": "3e0855c5b6f3c036591eb4f82d80ddc3530ce45ed5f2685d8edbd3d9ee1cd5ee",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Phrasal verbs, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-5",
+      "expectedRecordHash": "b68c0b6817dfb295ff80e7fe8fa972169fcf7b2f298fdd121f58dd52c940200c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Antonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-50",
+      "expectedRecordHash": "d2dd3c6dc6e3f0d07b39fc9f8fd57842397e74a214453220aa6c4ad1627e4553",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Phrasal verbs, within Vocabulary / Expressions. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
     },
     {
       "questionId": "nda-2026-ii-51",
@@ -53490,6 +54034,18 @@
       "tags": [
         "Static"
       ]
+    },
+    {
+      "questionId": "nda-2026-ii-6",
+      "expectedRecordHash": "6430b70cb46c8d2f0e104fa502f2f69a3712df910a2954ea1207d10b1b25c0f2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Antonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
     },
     {
       "questionId": "nda-2026-ii-60",
@@ -53650,6 +54206,18 @@
       "tags": [
         "Static"
       ]
+    },
+    {
+      "questionId": "nda-2026-ii-7",
+      "expectedRecordHash": "468073945ced4d692b1f6cb5cc1275d8b24b06372f3222b7c8054a33259232e0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Antonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
     },
     {
       "questionId": "nda-2026-ii-70",
@@ -53814,6 +54382,18 @@
       ]
     },
     {
+      "questionId": "nda-2026-ii-8",
+      "expectedRecordHash": "ff823709083b0a8c5f6512575bb12699ae2ac0084a934563229223e321764aeb",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Antonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
+    },
+    {
       "questionId": "nda-2026-ii-80",
       "expectedRecordHash": "ca7a3aaa1c6b718972d226c0dc8928b6246ab9ece5b4b744d7834a7931de16f8",
       "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/reaction-types",
@@ -53974,6 +54554,18 @@
       "tags": [
         "Static"
       ]
+    },
+    {
+      "questionId": "nda-2026-ii-9",
+      "expectedRecordHash": "c57181dc99992468a1ba0c44378eb586aa57627e6324062865004651b0298985",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete stem and alternatives test Antonyms, within Vocabulary / Word meanings. This language skill is explicitly appropriate to NDA GAT English and CDS English; it is not a GS question.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page reread by the same AI reviewer, not independent human review; all options and classification boundaries rechecked. Official key read column-first and row-first, agreeing for all 150 cells. See the paper review ledger for source pages and review method."
+      }
     },
     {
       "questionId": "nda-2026-ii-90",

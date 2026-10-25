@@ -5,7 +5,8 @@ test('compact source directory filters and paginates every paper without inflati
  await page.goto('/');
  await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Sources',exact:true}).click();
  await expect(page.getByRole('heading',{name:'Added PYQ papers'})).toBeVisible();
- await expect(page.locator('article')).toContainText(`${inventory.totalCount.toLocaleString('en-IN')} available GS questions`);
+ const available=inventory.totalCount+105; // Both complete GAT papers: 100 English + 5 World History.
+ await expect(page.locator('article')).toContainText(`${available.toLocaleString('en-IN')} available questions`);
  const rows=page.locator('.source-paper-card'), next=page.getByRole('button',{name:'Next →',exact:true});
  await expect(rows).toHaveCount(12);
  const identities=new Set<string>();let sum=0;
@@ -18,15 +19,15 @@ test('compact source directory filters and paginates every paper without inflati
   if(await next.isDisabled())break;
   await next.click();
  }while(true);
- expect(sum).toBe(inventory.totalCount);
+ expect(sum).toBe(available);
  await page.getByRole('button',{name:/^NDA\b/}).click();
  await page.getByRole('combobox').nth(0).selectOption('2026');
  const nda=rows.filter({hasText:'2026 · II'});
- await expect(nda).toContainText('100 MCQs');
- await expect(nda).toContainText('Official provisional key');
+ await expect(nda).toContainText('150 MCQs');
+ await expect(nda).toContainText(/official provisional key/i);
  await expect(nda).toContainText('Complete source review');
  await page.getByRole('combobox').nth(1).selectOption('complete');
- await expect(rows).toHaveCount(1);
+ await expect(rows).toHaveCount(2);
  await page.getByRole('combobox').nth(0).selectOption('2025');
  await expect(page.getByText('No added papers match these filters.')).toBeVisible();
  await page.getByRole('button',{name:/^All exams/}).click();
