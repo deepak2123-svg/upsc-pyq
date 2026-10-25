@@ -1,5 +1,9 @@
 import {expect,test,type APIRequestContext} from '@playwright/test';
 
+// Fault injection must intercept the image request itself, not a PWA worker's
+// independent fetch/cache path. Ordinary production flows test the PWA normally.
+test.use({serviceWorkers:'block'});
+
 async function figureSnapshot(request:APIRequestContext){
  const inventory=await(await request.get('/api/pyqs/inventory?preparationExam=NDA')).json();
  const leaf=inventory.nodes.find((n:any)=>n.kind==='subtopic'&&n.questionIdsByExam?.NDA.includes('nda-2026-i-72'));
