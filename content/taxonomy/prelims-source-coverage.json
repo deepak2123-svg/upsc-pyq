@@ -1022,7 +1022,7 @@
       "coverEvidence": {
         "page": 1,
         "registry": "content/prelims-reviewed-papers.json",
-        "observed": "Printed cover explicitly identifies NDA & NA Examination (I), 2026, General Ability Test, Series A and 150 items. The official UPSC exam page links the same 27,246,978-byte question paper. English Part A Q1-Q50 is on pages 2-7; Part B starts at Q51 on page 9. Only the first GS batch Q51-Q70 has been transcribed and reread in this pass. A cached Prepp-branded answer table is not an official key and conflicts with the first three physics derivations; it is not used for clearance."
+        "observed": "Printed cover explicitly identifies NDA & NA Examination (I), 2026, General Ability Test, Series A and 150 items. The official UPSC exam page links the same 27,246,978-byte question paper. English Part A Q1-Q50 is on pages 2-7; Part B starts at Q51 on page 9. Q51-Q100 have now been transcribed and reread in two fixed batches. A cached Prepp-branded answer table is not an official key and conflicts with the first three physics derivations; it is not used for clearance."
       },
       "originalHashMatchesPriorInventory": true,
       "priorSlotCount": 150,
@@ -1035,9 +1035,9 @@
         "English"
       ],
       "reviewedLanguage": "English",
-      "reviewedSlots": 65,
-      "pendingSlots": 85,
-      "verifiedImports": 15,
+      "reviewedSlots": 89,
+      "pendingSlots": 61,
+      "verifiedImports": 39,
       "outOfScope": 50,
       "verifiedReuses": 0
     },
@@ -95846,8 +95846,11 @@
       "priorSourcePage": 15,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-72",
+      "reviewedSourcePage": 15,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 15 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q73",
@@ -95856,8 +95859,11 @@
       "priorSourcePage": 17,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-73",
+      "reviewedSourcePage": 17,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 17 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q74",
@@ -95866,8 +95872,11 @@
       "priorSourcePage": 17,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-74",
+      "reviewedSourcePage": 17,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 17 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q75",
@@ -95886,8 +95895,11 @@
       "priorSourcePage": 19,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-76",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 19 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q77",
@@ -95896,8 +95908,11 @@
       "priorSourcePage": 19,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-77",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 19 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q78",
@@ -95906,8 +95921,11 @@
       "priorSourcePage": 19,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-78",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 19 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q79",
@@ -95916,8 +95934,11 @@
       "priorSourcePage": 19,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-79",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 19 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q80",
@@ -95926,8 +95947,11 @@
       "priorSourcePage": 19,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-80",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 19 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q81",
@@ -95936,8 +95960,11 @@
       "priorSourcePage": 19,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-81",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 19 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q82",
@@ -95946,8 +95973,11 @@
       "priorSourcePage": 21,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-82",
+      "reviewedSourcePage": 21,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 21 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q83",
@@ -95956,8 +95986,11 @@
       "priorSourcePage": 21,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-83",
+      "reviewedSourcePage": 21,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 21 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q84",
@@ -95966,8 +95999,11 @@
       "priorSourcePage": 21,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-84",
+      "reviewedSourcePage": 21,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 21 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q85",
@@ -95996,8 +96032,11 @@
       "priorSourcePage": 23,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-87",
+      "reviewedSourcePage": 23,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 23 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q88",
@@ -96016,8 +96055,11 @@
       "priorSourcePage": 23,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-89",
+      "reviewedSourcePage": 23,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 23 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q90",
@@ -96026,8 +96068,11 @@
       "priorSourcePage": 23,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-90",
+      "reviewedSourcePage": 23,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 23 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q91",
@@ -96036,8 +96081,11 @@
       "priorSourcePage": 25,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-91",
+      "reviewedSourcePage": 25,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 25 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q92",
@@ -96046,8 +96094,11 @@
       "priorSourcePage": 25,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-92",
+      "reviewedSourcePage": 25,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 25 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q93",
@@ -96056,8 +96107,11 @@
       "priorSourcePage": 25,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-93",
+      "reviewedSourcePage": 25,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 25 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q94",
@@ -96066,8 +96120,11 @@
       "priorSourcePage": 25,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-94",
+      "reviewedSourcePage": 25,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 25 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q95",
@@ -96086,8 +96143,11 @@
       "priorSourcePage": 25,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-96",
+      "reviewedSourcePage": 25,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 25 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q97",
@@ -96096,8 +96156,11 @@
       "priorSourcePage": 25,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-97",
+      "reviewedSourcePage": 25,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 25 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q98",
@@ -96106,8 +96169,11 @@
       "priorSourcePage": 27,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-98",
+      "reviewedSourcePage": 27,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 27 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q99",
@@ -96116,8 +96182,11 @@
       "priorSourcePage": 27,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-99",
+      "reviewedSourcePage": 27,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 27 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q100",
@@ -96126,8 +96195,11 @@
       "priorSourcePage": 27,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2026-i-100",
+      "reviewedSourcePage": 27,
+      "decisionEvidence": "content/reviewed-prelims-imports.json",
+      "note": "Original Series A page 27 visually reread; independently verified using hashed primary references and explicit second-pass reasoning. No official key recovered."
     },
     {
       "slotId": "NDA/2026-1/Q101",

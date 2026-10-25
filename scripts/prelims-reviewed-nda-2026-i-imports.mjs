@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import crypto from 'node:crypto';
 import assert from 'node:assert/strict';
 import {nda2026IBatch1} from './prelims-nda-2026-i-review-batch-1.mjs';
+import {nda2026IBatch2Questions,validateNda2026IBatch2Evidence} from './prelims-reviewed-nda-2026-i-batch-2-imports.mjs';
 const hash=value=>crypto.createHash('sha256').update(value).digest('hex');
 export const nda2026IEvidence={
  exam:'NDA',year:2026,paper:'I',series:'A',questionCount:150,
@@ -40,7 +41,7 @@ export const nda2026ISecondPass={
  70:'Reread p15: uniform speed, mass 60 kg, upward force not net force. a=0 and upward drag equals weight. 60×9.8=588 N, C; the stated 2 m/s is not an acceleration.',
 };
 assert.equal(Object.keys(nda2026ISecondPass).length,15);
-export const nda2026IQuestions=nda2026IBatch1.filter(row=>Object.hasOwn(nda2026ISecondPass,row.number)).map(row=>{
+const nda2026IBatch1Questions=nda2026IBatch1.filter(row=>Object.hasOwn(nda2026ISecondPass,row.number)).map(row=>{
  assert.equal(row.caveat,null);assert.ok(row.evidenceIds.length);
  const [subject,head,chapter,subtopic]=row.placement.split('/');
  const references=row.evidenceIds.map(id=>{assert.ok(nda2026IPrimaryEvidence[id]);return nda2026IPrimaryEvidence[id];});
@@ -56,7 +57,9 @@ export const nda2026IQuestions=nda2026IBatch1.filter(row=>Object.hasOwn(nda2026I
    secondPass:nda2026ISecondPass[row.number],reviewedAt:'2026-10-24'},
  };
 });
+export const nda2026IQuestions=[...nda2026IBatch1Questions,...nda2026IBatch2Questions];
 export function validateNda2026IEvidence(){
+ validateNda2026IBatch2Evidence();
  assert.equal(hash(fs.readFileSync(nda2026IEvidence.originalPdf)),nda2026IEvidence.originalPdfSha256);
  for(const resource of Object.values(nda2026IPrimaryEvidence))assert.equal(hash(fs.readFileSync(resource.localFile)),resource.sha256,`Changed primary evidence: ${resource.localFile}`);
 }

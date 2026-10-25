@@ -19256,6 +19256,1561 @@
         "secondPass": "Reread p15: uniform speed, mass 60 kg, upward force not net force. a=0 and upward drag equals weight. 60×9.8=588 N, C; the stated 2 m/s is not an acceleration.",
         "reviewedAt": "2026-10-24"
       }
+    },
+    {
+      "id": "nda-2026-i-72",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Three wires each of length L, cross-sectional area A and resistivity ρ are connected as shown in the figure. These are to be replaced by another wire of same resistivity such that the resistance between points X and Z does not change. If L₁ is the length and A₁ is the cross-sectional area of the new wire, then which one among the following is correct?",
+      "sourceTextHash": "dd4b2a1eca2166ad0a8216806a3b79cc7a5b1ab1c823af14dbfaa52013823e1c",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 72,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Light and Electricity",
+      "subtopic": "Current electricity",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Three wires each of length L, cross-sectional area A and resistivity ρ are connected as shown in the figure. These are to be replaced by another wire of same resistivity such that the resistance between points X and Z does not change. If L₁ is the length and A₁ is the cross-sectional area of the new wire, then which one among the following is correct?"
+      ],
+      "options": {
+        "A": "L₁ = 3L and A₁ = 2A",
+        "B": "L₁ = L and A₁ = A",
+        "C": "L₁ = 2L and A₁ = 3A",
+        "D": "L₁ = 2L and A₁ = 2A"
+      },
+      "answer": "A",
+      "explanation": "Reasoned verification (no matching official key recovered): Each wire has R=ρL/A. The two X–Y wires are parallel, giving R/2; Y–Z adds R in series. The replacement needs L₁/A₁=3L/(2A). A matches; B and D give R, and C gives 2R/3.",
+      "requiresFigure": true,
+      "figureKey": "/figures/nda-2026-i/q72.png",
+      "figureAlt": "Original circuit: two X–Y wires and one Y–Z wire with their printed length and area labels.",
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 72,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 15,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "officialAnswer": null,
+        "displayedAnswer": "A",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "OpenStax University Physics: Resistors in Series and Parallel",
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+            "support": "Series resistances add; parallel reciprocal resistances add. With R=rho L/A the displayed X-Y parallel pair plus Y-Z series wire is 3R/2.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 15, full stem, statements and all options visually reread in a separate pass. Original scan diagram crops preserved; no synthetic redraw.",
+        "figureSha256": "289b45003d1684448d3d4d5e336bf5580c6061f24f1f9a76165c16c4adddfef1",
+        "figureExtractionScript": "scripts/extract-nda-2026-i-figures.py",
+        "classificationRationale": "Tests current electricity within Physics / Light and Electricity. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p15 circuit: two separate equal X-Y branches, then one Y-Z wire. Independently computed 1/(1/R+1/R)+R=1.5R. Checked all length/area ratios; A alone. The original X/Y/Z labels and all three L,A labels are present in the crop.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-73",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "A light ray is falling on a face of an equilateral glass prism as shown in the figure : Which one of the following diagrams correctly shows the complete path of the ray through the glass prism?",
+      "sourceTextHash": "41e45309b4a0f1eeb152eb0731fb87dce59353cc0fc33b7e8806c38809903504",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 73,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Light and Electricity",
+      "subtopic": "Optics",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "A light ray is falling on a face of an equilateral glass prism as shown in the figure :",
+        "Which one of the following diagrams correctly shows the complete path of the ray through the glass prism?"
+      ],
+      "options": {
+        "A": "Diagram (a)",
+        "B": "Diagram (b)",
+        "C": "Diagram (c)",
+        "D": "Diagram (d)"
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): Normal entry causes no first-face deviation. The ray meets the other sloping face at 60° and undergoes total internal reflection for ordinary optical glass, then reaches the base normally and exits straight down. Only diagram (c) preserves the reflection geometry and normal exit; (a)/(b) bend the base-normal ray and (d) transmits at the sloping face.",
+      "requiresFigure": true,
+      "figureKey": "/figures/nda-2026-i/q73.png",
+      "figureAlt": "Original prism reference diagram above the four labelled answer diagrams (a), (b), (c), (d), in reading order.",
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 73,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 17,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/leph201.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Ray Optics and Optical Instruments",
+            "url": "https://ncert.nic.in/textbook/pdf/leph201.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/optics.pdf",
+            "sha256": "5c9570cc9f45cbe8f8d62100ccecd3370f8d8085f57041764bd1940bf467d235",
+            "section": "Reflection, critical angle and prism rays"
+          }
+        ],
+        "reproductionReview": "Complete original English page 17, full stem, statements and all options visually reread in a separate pass. Original scan diagram crops preserved; no synthetic redraw.",
+        "figureSha256": "156664088253a403159d20ec53517e01c0667fa080e74e245201785df5db31e2",
+        "figureExtractionScript": "scripts/extract-nda-2026-i-figures.py",
+        "optionRepresentation": "Four original labelled diagram choices preserved in the source contact sheet; text buttons identify their original letters.",
+        "classificationRationale": "Tests optics within Physics / Light and Electricity. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p17 original reference and all four option diagrams. Reflected direction from the 60-degree incidence is normal to the horizontal base. Original diagram (c), not (d), includes the required sloping-face reflection. Checked crop letters a,b,c,d and preserved option order in a compact contact sheet.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-74",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "A glass slab of refractive index 1·5 is cut in the shape of a parallelepiped ABCD as shown in the figure. Surface BC is polished to form a perfect reflector. Light is incident at surface AB from inside at an angle π/3. Which one of the following is the correct angle ABC (θ) such that the reflected light retraces its path?",
+      "sourceTextHash": "b090f5f65a6d7b721fe5f2d5de920eda161e37a44234e7cb15e1e86dc0e2afb6",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 74,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Physics",
+      "topic": "Light and Electricity",
+      "subtopic": "Optics",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "A glass slab of refractive index 1·5 is cut in the shape of a parallelepiped ABCD as shown in the figure. Surface BC is polished to form a perfect reflector. Light is incident at surface AB from inside at an angle π/3. Which one of the following is the correct angle ABC (θ) such that the reflected light retraces its path?"
+      ],
+      "options": {
+        "A": "π/6",
+        "B": "π/3",
+        "C": "π/4",
+        "D": "5π/12"
+      },
+      "answer": "B",
+      "explanation": "Reasoned verification (no matching official key recovered): At AB, sin(60°)>1/1.5, so total internal reflection occurs. The reflected ray makes 30° with AB. To retrace it at the perfect BC reflector it must meet BC normally, making the interior angle ABC 60°=π/3. Other options do not make BC normal to the reflected ray.",
+      "requiresFigure": true,
+      "figureKey": "/figures/nda-2026-i/q74.png",
+      "figureAlt": "Original parallelepiped ABCD with the marked angle theta and polished BC surface.",
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 74,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 17,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://ncert.nic.in/textbook/pdf/leph201.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "B",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Ray Optics and Optical Instruments",
+            "url": "https://ncert.nic.in/textbook/pdf/leph201.pdf",
+            "localFile": "../.tmp/nda-2026-i-primary-evidence/optics.pdf",
+            "sha256": "5c9570cc9f45cbe8f8d62100ccecd3370f8d8085f57041764bd1940bf467d235",
+            "section": "Reflection, critical angle and prism rays"
+          }
+        ],
+        "reproductionReview": "Complete original English page 17, full stem, statements and all options visually reread in a separate pass. Original scan diagram crops preserved; no synthetic redraw.",
+        "figureSha256": "163a952d27364dbd4662ef9e1b6751684a1ee4d95b25a18dea973c652984a241",
+        "figureExtractionScript": "scripts/extract-nda-2026-i-figures.py",
+        "classificationRationale": "Tests optics within Physics / Light and Electricity. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p17: the angle is incidence from INSIDE AB and n=1.5. Critical angle arcsin(2/3)≈41.81°, less than 60°. Independent normal-reflection construction at BC makes ABC=60°, displayed B. The figure includes all A/B/C/D and theta labels.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-76",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "If x is the number of electrons and y is the number of nucleons present in ³²₁₆S²⁻, then which one of the following is correct?",
+      "sourceTextHash": "b9f64fb81e9b1f5e7a860dad4c2ed70489ac5d37487bac32309a1d201e51c8c9",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 76,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Chemistry",
+      "topic": "Matter and Reactions",
+      "subtopic": "Atomic and molecular structure",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "If x is the number of electrons and y is the number of nucleons present in ³²₁₆S²⁻, then which one of the following is correct?"
+      ],
+      "options": {
+        "A": "x = 14 and y = 32",
+        "B": "x = 16 and y = 30",
+        "C": "x = 18 and y = 32",
+        "D": "x = 18 and y = 30"
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): Atomic number 16 gives 16 protons; charge 2− means 18 electrons. The mass number 32 is the nucleon count, unaffected by ion formation. Only C has both values.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 76,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 19,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "OpenStax Chemistry: Atomic Structure and Symbolism",
+            "url": "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism",
+            "support": "Atomic number counts protons; mass number counts protons and neutrons. An anion has extra electrons equal to the magnitude of its negative charge.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 19, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests atomic and molecular structure within Chemistry / Matter and Reactions. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p19 superscript 32, subscript 16, charge 2 minus. Recounted electrons 16+2=18 and nucleons 32. This is chemistry atomic symbolism, not radioactive decay. C retained.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-77",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Which one of the following forms of carbon is thermodynamically most stable?",
+      "sourceTextHash": "dc125c849cda62bf2e4f42075241e9c4ba8cd9b36ba5855e4624103c02135223",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 77,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Chemistry",
+      "topic": "Materials and Applications",
+      "subtopic": "Carbon compounds",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Which one of the following forms of carbon is thermodynamically most stable?"
+      ],
+      "options": {
+        "A": "Coal",
+        "B": "Graphite",
+        "C": "Diamond",
+        "D": "Fullerene"
+      },
+      "answer": "B",
+      "explanation": "Reasoned verification (no matching official key recovered): At ordinary reference conditions graphite is the stable standard form of carbon. Diamond and fullerene are metastable relative to graphite; coal is a heterogeneous material rather than the pure stable allotrope. The answer is B, not a claim about all pressures and temperatures.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 77,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 19,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://www.ncert.nic.in/pdf/publication/exemplarproblem/classXI/chemistry/keep511.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "B",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Chemistry exemplar, The p-Block Elements",
+            "url": "https://www.ncert.nic.in/pdf/publication/exemplarproblem/classXI/chemistry/keep511.pdf",
+            "retrieval": "indexed primary PDF text",
+            "support": "Question 19 explicitly identifies graphite as the thermodynamically most stable carbon allotrope. Ordinary reference conditions are understood, not all pressures.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 19, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests carbon compounds within Chemistry / Materials and Applications. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p19: thermodynamically most stable, not hardest. Ordinary-condition graphite is the NCERT reference allotrope; diamond hardness is irrelevant. B; no assertion of stability at all pressures.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-78",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Consider the following statements : I. A colloid and a suspension are heterogeneous mixtures. II. Colloids can be separated from the mixture by the process of centrifugation. III. Particles of colloids and suspensions can be seen by naked eye. IV. The aqueous solution of copper sulphate does not show Tyndall effect; however, the mixture of milk and water shows Tyndall effect. Which of the statements given above is/are correct?",
+      "sourceTextHash": "ae58afe9f7552c4b0654b8997326be1876dfa13f7776b57c3699a36b5a2b539d",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 78,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Chemistry",
+      "topic": "Matter and Reactions",
+      "subtopic": "Surface chemistry and adsorption",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Consider the following statements :",
+        "I. A colloid and a suspension are heterogeneous mixtures.",
+        "II. Colloids can be separated from the mixture by the process of centrifugation.",
+        "III. Particles of colloids and suspensions can be seen by naked eye.",
+        "IV. The aqueous solution of copper sulphate does not show Tyndall effect; however, the mixture of milk and water shows Tyndall effect.",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II and III only",
+        "C": "I, II and III",
+        "D": "I, II and IV"
+      },
+      "answer": "D",
+      "explanation": "Reasoned verification (no matching official key recovered): Colloids and suspensions are heterogeneous; centrifugation separates colloidal particles. Individual colloid particles are not naked-eye visible, so III is false. True copper-sulphate solution does not scatter visibly while diluted milk remains colloidal. I, II and IV select D; all other choices omit a true statement or include III.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 78,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 19,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://sathee.iitk.ac.in/ncert-books/class-09/nb-science-09/sci-09-chapter-2-is-matter-around-us-pure/",
+        "officialAnswer": null,
+        "displayedAnswer": "D",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT: Is Matter Around Us Pure, IIT Kanpur SATHEE hosted text",
+            "url": "https://sathee.iitk.ac.in/ncert-books/class-09/nb-science-09/sci-09-chapter-2-is-matter-around-us-pure/",
+            "retrieval": "indexed NCERT chapter text; live redirect not used as evidence",
+            "support": "Colloids and suspensions are heterogeneous. Individual colloid particles are not visible to the naked eye. Centrifugation can separate colloidal particles. Copper sulphate solution is a true solution, while diluted milk remains colloidal.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 19, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests surface chemistry and adsorption within Chemistry / Matter and Reactions. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread four p19 statements and four codes separately. The naked-eye claim in III applies to BOTH colloids and suspensions and is false for colloids. I,II,IV are true; the exact displayed code is D.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-79",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "A non-volatile solid solute may be separated from a solution by which of the following processes? I. Evaporation II. Crystallization Select the correct answer using the code given below.",
+      "sourceTextHash": "1081849641746904b81fd60be1518efc6be98a8f0a7c1ca1f0ddecb1a67f9afe",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 79,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Chemistry",
+      "topic": "Matter and Reactions",
+      "subtopic": "Surface chemistry and adsorption",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "A non-volatile solid solute may be separated from a solution by which of the following processes?",
+        "I. Evaporation",
+        "II. Crystallization",
+        "Select the correct answer using the code given below."
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): Evaporating volatile solvent leaves nonvolatile solute; controlled crystallization also separates solid solute. The stem says may, not that both methods work for every heat-sensitive material. Both possible methods select C.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 79,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 19,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://openstax.org/books/chemistry-2e/pages/10-3-phase-transitions",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "OpenStax Chemistry: Phase Transitions",
+            "url": "https://openstax.org/books/chemistry-2e/pages/10-3-phase-transitions",
+            "support": "Evaporation removes liquid into vapour; solid crystallization separates solid from solution. The question asks whether these methods may be used, not whether they suit every solute.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 19, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests surface chemistry and adsorption within Chemistry / Matter and Reactions. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p19 non-volatile and MAY. Both evaporating solvent and growing crystals can recover solid. Rejected the overly strong interpretation that every nonvolatile solute must tolerate heating. C.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-80",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Which of the following are oxidation reactions? I. Rusting of iron II. Burning of fuel III. Rancidity of oils and fats IV. Browning of fruits Select the correct answer using the code given below.",
+      "sourceTextHash": "856f31c9c5b1e4249f5c6ef7dcd0d11f4c25b163d60d7c78de504a566257c9f4",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 80,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Chemistry",
+      "topic": "Matter and Reactions",
+      "subtopic": "Reaction types",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Which of the following are oxidation reactions?",
+        "I. Rusting of iron",
+        "II. Burning of fuel",
+        "III. Rancidity of oils and fats",
+        "IV. Browning of fruits",
+        "Select the correct answer using the code given below."
+      ],
+      "options": {
+        "A": "I, II and III only",
+        "B": "I, II and IV only",
+        "C": "III and IV only",
+        "D": "I, II, III and IV"
+      },
+      "answer": "D",
+      "explanation": "Reasoned verification (no matching official key recovered): Iron rusting and fuel combustion are oxidation; oxidative rancidity attacks fats, and the ordinary cut-fruit browning intended here is enzyme-catalysed oxidation of phenolics. All four are included in D. The alternatives each omit at least one listed oxidation process.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 80,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 19,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
+        "officialAnswer": null,
+        "displayedAnswer": "D",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "OpenStax Chemistry: Classifying Chemical Reactions",
+            "url": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
+            "support": "Oxidation raises oxidation number; reduction lowers it. The reducing agent is oxidized and the oxidizing agent is reduced. Iron corrosion and fuel combustion are redox processes; oxidation of lipids causes oxidative rancidity.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          },
+          {
+            "title": "University of Florida IFAS: Harvesting and Postharvest Handling of Stonefruits",
+            "url": "https://ask.ifas.ufl.edu/publication/HS1459",
+            "support": "Mixing phenolic substrates and enzymes after loss of cellular compartmentation leads to phenolic oxidation and fruit browning.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 19, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests reaction types within Chemistry / Matter and Reactions. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p19 all four examples; ordinary enzyme-mediated fruit browning is oxidation, unlike nonenzymatic browning mechanisms not named here. Rust/fuel/fat oxidation are also true. Only code D includes all four.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-81",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Consider the following statement : “Acids are substances that dissociate in water to give hydrogen ions H⁺ (aq), and bases are substances that produce hydroxyl ions OH⁻ (aq).” The above statement is based on which one of the following concepts?",
+      "sourceTextHash": "1799f8d09100f22d7a0f60fc007bf2de1312df2a654d6594b27214f82111c650",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 81,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Chemistry",
+      "topic": "Matter and Reactions",
+      "subtopic": "Acids bases and salts",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Consider the following statement :",
+        "“Acids are substances that dissociate in water to give hydrogen ions H⁺ (aq), and bases are substances that produce hydroxyl ions OH⁻ (aq).”",
+        "The above statement is based on which one of the following concepts?"
+      ],
+      "options": {
+        "A": "Brønsted-Lowry concept",
+        "B": "Lewis acid-base concept",
+        "C": "Arrhenius concept",
+        "D": "Conjugate acid-base concept"
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): The aqueous H⁺/OH⁻ definition is Arrhenius. Brønsted–Lowry concerns proton transfer; Lewis concerns electron-pair transfer; conjugate pairs describe the related species after proton transfer. Thus C.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 81,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 19,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://openstax.org/books/chemistry-2e/pages/14-1-bronsted-lowry-acids-and-bases",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "OpenStax Chemistry: Bronsted-Lowry Acids and Bases",
+            "url": "https://openstax.org/books/chemistry-2e/pages/14-1-bronsted-lowry-acids-and-bases",
+            "support": "The historical Arrhenius definition specifies aqueous hydrogen cations for acids and hydroxide anions for bases. Bronsted-Lowry generalizes to proton transfer.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 19, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests acids bases and salts within Chemistry / Matter and Reactions. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread quoted p19 definition, including in water and OH minus. Compared the three acid-base definitions independently. Water-specific ion production is Arrhenius C, not the broader proton-donor or electron-pair model.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-82",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Superphosphate of lime—a phosphate fertilizer—is obtained by the reaction of",
+      "sourceTextHash": "c0f246fbae833369e6c05b48c095d83cc2140ad6850e8ab656f94a31d84a08ad",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 82,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Chemistry",
+      "topic": "Materials and Applications",
+      "subtopic": "Industrial chemistry",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Superphosphate of lime—a phosphate fertilizer—is obtained by the reaction of"
+      ],
+      "options": {
+        "A": "calcium phosphate with sodium hydroxide",
+        "B": "calcium phosphate with sulphuric acid",
+        "C": "calcium phosphate with hydrogen chloride",
+        "D": "calcium phosphate with nitric acid"
+      },
+      "answer": "B",
+      "explanation": "Reasoned verification (no matching official key recovered): Single superphosphate is produced by treating phosphate rock with sulphuric acid, yielding soluble monocalcium phosphate with gypsum. The chloride, nitrate and hydroxide routes are not the stated superphosphate preparation.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 82,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 21,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://www.extension.k-state.edu/historicpublications/pubs/SB169.pdf",
+        "officialAnswer": null,
+        "displayedAnswer": "B",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "Kansas State Agricultural Experiment Station: Fertilizers and their Use, SB169",
+            "url": "https://www.extension.k-state.edu/historicpublications/pubs/SB169.pdf",
+            "retrieval": "indexed primary agricultural bulletin",
+            "support": "Treating calcium phosphate with sulphuric acid produces monocalcium phosphate mixed with calcium sulphate, the superphosphate of commerce. Its printed equation directly distinguishes this route from hydrochloric/nitric acid or sodium hydroxide.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 21, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests industrial chemistry within Chemistry / Materials and Applications. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p21 lime/phosphate fertilizer wording. The agricultural primary bulletin equation Ca3(PO4)2+2H2SO4 yields monocalcium phosphate and gypsum. Among the four reagents only sulphuric acid B is that process.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-83",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "1·7 g of silver nitrate is dissolved in 100 g of water, and 0·585 g of sodium chloride is dissolved in 100 g of water. Both are mixed and a chemical reaction occurs. 1·435 g of silver chloride and 0·85 g of sodium nitrate are formed. Which law of chemical combination is shown by the above reaction?",
+      "sourceTextHash": "7e92939c271587f3b3d57542c604f668310105f9e5ade486fe11f2e11d7c6ce9",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 83,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Chemistry",
+      "topic": "Matter and Reactions",
+      "subtopic": "Reaction types",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "1·7 g of silver nitrate is dissolved in 100 g of water, and 0·585 g of sodium chloride is dissolved in 100 g of water. Both are mixed and a chemical reaction occurs. 1·435 g of silver chloride and 0·85 g of sodium nitrate are formed. Which law of chemical combination is shown by the above reaction?"
+      ],
+      "options": {
+        "A": "Law of multiple proportions",
+        "B": "Law of conservation of mass",
+        "C": "Law of reciprocal proportions",
+        "D": "Law of constant proportions"
+      },
+      "answer": "B",
+      "explanation": "Reasoned verification (no matching official key recovered): The reactant-solute masses sum to 2.285 g and product-solute masses also sum to 2.285 g; the 200 g water is unchanged. Equal total mass before and after demonstrates conservation of mass, not any elemental-composition ratio law.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 83,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 21,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://openstax.org/books/chemistry-2e/pages/2-1-early-ideas-in-atomic-theory",
+        "officialAnswer": null,
+        "displayedAnswer": "B",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "OpenStax Chemistry: Early Ideas in Atomic Theory",
+            "url": "https://openstax.org/books/chemistry-2e/pages/2-1-early-ideas-in-atomic-theory",
+            "support": "The law of conservation of matter requires unchanged total mass in a chemical change. Q83 balances 1.7+0.585=1.435+0.85=2.285 g, excluding unchanged solvent.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 21, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests reaction types within Chemistry / Matter and Reactions. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread all four p21 decimal masses and both 100-g solvent amounts. Sum before 1.700+.585=2.285; after 1.435+.850=2.285. Same 200 g water both sides. B is conservation of total mass, no elemental-ratio inference.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-84",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Which of the following statements is/are correct with regard to Nitrolim? I. It is prepared by heating calcium carbide with nitrogen. II. It decomposes into ammonia in soil. III. It is an NPK fertilizer. IV. It is an organic fertilizer. Select the answer using the code given below.",
+      "sourceTextHash": "01bdd78a0a5071c3e6922f021b7f9132e1a2a423936b8cc7144ce0eed6ea7e96",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 84,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Chemistry",
+      "topic": "Materials and Applications",
+      "subtopic": "Industrial chemistry",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Which of the following statements is/are correct with regard to Nitrolim?",
+        "I. It is prepared by heating calcium carbide with nitrogen.",
+        "II. It decomposes into ammonia in soil.",
+        "III. It is an NPK fertilizer.",
+        "IV. It is an organic fertilizer.",
+        "Select the answer using the code given below."
+      ],
+      "options": {
+        "A": "I and II only",
+        "B": "I, II and III",
+        "C": "IV only",
+        "D": "I, II and IV"
+      },
+      "answer": "A",
+      "explanation": "Reasoned verification (no matching official key recovered): Nitrolim is the calcium-cyanamide/carbon product of CaC₂+N₂→CaCN₂+C. Moist-soil conversion eventually releases ammonia. It is a nitrogenous inorganic fertilizer, not an NPK blend or organic fertilizer. I and II only select A.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 84,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 21,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://cameochemicals.noaa.gov/report?key=CH303",
+        "officialAnswer": null,
+        "displayedAnswer": "A",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NOAA CAMEO Chemicals: Calcium cyanamide",
+            "url": "https://cameochemicals.noaa.gov/report?key=CH303",
+            "support": "Calcium cyanamide is the salt formed by reaction of calcium carbide and nitrogen, with Nitrolim/Nitrolime listed as names. Hydrolysis yields ammonia; balanced net equation CaCN2+3H2O -> CaCO3+2NH3 supports moist-soil conversion. Carbon produced in manufacture does not turn it into an organic fertilizer.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          },
+          {
+            "title": "ISO 8157 fertilizer vocabulary",
+            "url": "https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso%3A8157%3Adis%3Aed-3%3Av1%3Aen",
+            "support": "The inorganic-fertilizer definition specifically lists calcium cyanamide as inorganic by convention. It is a nitrogen product, not a formulated NPK fertilizer.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 21, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests industrial chemistry within Chemistry / Materials and Applications. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread all four p21 Nitrolim statements. CaC2+N2→CaCN2+C verifies I; CaCN2+3H2O→CaCO3+2NH3 independently balances hydrolysis for II. ISO explicitly classifies calcium cyanamide inorganic; there is no P or K nutrient formulation. A, I and II only.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-87",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Consider the following : I. AlCl₃ II. NH₃ III. BF₃ IV. FeCl₃ How many of the above are Lewis acids?",
+      "sourceTextHash": "9a89e8c64f15b5a02e3282c782283b661dbac37f5de4ec42d790dadb838ccee0",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 87,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Chemistry",
+      "topic": "Matter and Reactions",
+      "subtopic": "Acids bases and salts",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Consider the following :",
+        "I. AlCl₃",
+        "II. NH₃",
+        "III. BF₃",
+        "IV. FeCl₃",
+        "How many of the above are Lewis acids?"
+      ],
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "All the four"
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): AlCl₃ and BF₃ accept electron pairs; FeCl₃ also accepts donor pairs in coordination. NH₃ has a donating lone pair and is a Lewis base. Three of the four, C.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 87,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 23,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://openstax.org/books/chemistry-2e/pages/15-2-lewis-acids-and-bases",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "OpenStax Chemistry: Lewis Acids and Bases",
+            "url": "https://openstax.org/books/chemistry-2e/pages/15-2-lewis-acids-and-bases",
+            "support": "Electron-pair acceptors are Lewis acids; donors are bases. BF3 and AlCl3 are electron-deficient acceptors, Fe(III) accepts ligand donor pairs, and NH3 donates its lone pair.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 23, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests acids bases and salts within Chemistry / Matter and Reactions. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p23 formula list: AlCl3/NH3/BF3/FeCl3. Count acceptors 3, exclude ammonia lone-pair donor. Checked that C labels Three, not All four. FeCl3 metal-ion acceptor is included.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-89",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Which of the following is/are the physical test(s) employed for the manufacture of paper? I. Mechanical and strength properties II. Surface properties III. Optical properties IV. Permeability to fluids Select the correct answer using the code given below.",
+      "sourceTextHash": "14cb22a061fb38756f76825ae28b547ece429fec3883117cdecae9746b821d76",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 89,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Chemistry",
+      "topic": "Materials and Applications",
+      "subtopic": "Industrial chemistry",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Which of the following is/are the physical test(s) employed for the manufacture of paper?",
+        "I. Mechanical and strength properties",
+        "II. Surface properties",
+        "III. Optical properties",
+        "IV. Permeability to fluids",
+        "Select the correct answer using the code given below."
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II and III only",
+        "C": "I, II and III only",
+        "D": "I, II, III and IV"
+      },
+      "answer": "D",
+      "explanation": "Reasoned verification (no matching official key recovered): Paper testing includes tensile/bending/bond strength, surface roughness, optical characteristics and resistance/permeance to air and liquid absorption. TAPPI physical-test catalogues include these categories, so all four select D; C incorrectly excludes permeability.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 89,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 23,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://www.tappi.org/Get-Involved/Develop-Standards-Methods/standard-specific-interest-group/physical-properties/",
+        "officialAnswer": null,
+        "displayedAnswer": "D",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "TAPPI physical-property test standards",
+            "url": "https://www.tappi.org/Get-Involved/Develop-Standards-Methods/standard-specific-interest-group/physical-properties/",
+            "support": "The standards catalogue lists surface roughness (T538/T555), internal bond and bending strength (T541/T543/T556), and resistance/air permeance (T536/T547). Thus permeability is not excluded from paper physical testing.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          },
+          {
+            "title": "TAPPI Paper Properties and Testing",
+            "url": "https://www.tappi.org/education/tappi-academy/TAPPI-Academy--eLearning/paper-properties-and-testing/",
+            "support": "The association's own course includes physical tests, optical tests, strength tests and papermaking process testing.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 23, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests industrial chemistry within Chemistry / Materials and Applications. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p23 physical tests, not chemical composition tests. TAPPI has actual methods for surface roughness, internal bond/bending, air resistance/permeance plus optical-test training. Permeability IV is demonstrably a physical test, so only D remains.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-90",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Consider the following pairs of reactions and properties : I. Fe (s) + 2HCl (aq) → FeCl₂ (aq) + H₂ (g) : Fe is reductant II. Zn (s) + CuSO₄ (aq) → ZnSO₄ (aq) + Cu (s) : Cu is being reduced III. Br₂ (l) + 2I⁻ (aq) → 2Br⁻ (aq) + I₂ (s) : Br₂ is reductant IV. CH₄ (g) + 2O₂ (g) → CO₂ (g) + 2H₂O (l) : C atom in CH₄ is oxidized Which of the above pairs are correct?",
+      "sourceTextHash": "067189be0ca5e72fcbf3984921349bbbd38088048574df74c8ed3d6655b4d08c",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 90,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Chemistry",
+      "topic": "Matter and Reactions",
+      "subtopic": "Reaction types",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Consider the following pairs of reactions and properties :",
+        "I. Fe (s) + 2HCl (aq) → FeCl₂ (aq) + H₂ (g) : Fe is reductant",
+        "II. Zn (s) + CuSO₄ (aq) → ZnSO₄ (aq) + Cu (s) : Cu is being reduced",
+        "III. Br₂ (l) + 2I⁻ (aq) → 2Br⁻ (aq) + I₂ (s) : Br₂ is reductant",
+        "IV. CH₄ (g) + 2O₂ (g) → CO₂ (g) + 2H₂O (l) : C atom in CH₄ is oxidized",
+        "Which of the above pairs are correct?"
+      ],
+      "options": {
+        "A": "I and II only",
+        "B": "II, III and IV",
+        "C": "I, II and IV",
+        "D": "I, III and IV"
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): Fe loses electrons and is reductant. Copper goes from +2 to 0, so II is reduction. Br₂ gains electrons and is oxidant, not reductant. Carbon goes from −4 to +4 in combustion. I, II and IV select C; every other code omits a true pair or includes III.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 90,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 23,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "OpenStax Chemistry: Classifying Chemical Reactions",
+            "url": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
+            "support": "Oxidation raises oxidation number; reduction lowers it. The reducing agent is oxidized and the oxidizing agent is reduced. Iron corrosion and fuel combustion are redox processes; oxidation of lipids causes oxidative rancidity.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 23, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests reaction types within Chemistry / Matter and Reactions. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread original p23 two-column reaction/property table. Recomputed oxidation states separately: Fe0→+2, Cu+2→0, Br0→−1, C−4→+4. III wrongly calls the oxidant reductant. Code I,II,IV is C; displayed Cu shorthand retained, not rewritten.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-91",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Which of the following properties of alveoli is/are helpful in gaseous exchange during respiration in human beings? I. The epithelial lining of alveoli is very thin. II. Elastic fibres are present in alveolar wall. III. Wall of alveoli is surrounded by many blood capillaries. Select the correct answer using the code given below.",
+      "sourceTextHash": "dc6af24dba7eb8e11b6fca68af176f8249b8cb578c81c9947ef19d83403a1194",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 91,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Biology",
+      "topic": "Human Physiology",
+      "subtopic": "Respiration",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Which of the following properties of alveoli is/are helpful in gaseous exchange during respiration in human beings?",
+        "I. The epithelial lining of alveoli is very thin.",
+        "II. Elastic fibres are present in alveolar wall.",
+        "III. Wall of alveoli is surrounded by many blood capillaries.",
+        "Select the correct answer using the code given below."
+      ],
+      "options": {
+        "A": "I and II only",
+        "B": "I and III only",
+        "C": "III only",
+        "D": "I, II and III"
+      },
+      "answer": "D",
+      "explanation": "Reasoned verification (no matching official key recovered): Thin epithelium shortens diffusion distance, capillaries maintain blood-gas exchange and elastic walls support inflation/recoil and ventilation of exchange surfaces. The question asks helpful properties, not only direct Fick-law factors, so all three select D.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 91,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 25,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system",
+        "officialAnswer": null,
+        "displayedAnswer": "D",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "OpenStax Anatomy and Physiology: Organs and Structures of the Respiratory System",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system",
+            "support": "Alveolar walls are elastic; the thin type-I epithelium adjoins capillary endothelium to form the respiratory membrane. Bronchi are conducting structures rather than exchange surfaces.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 25, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests respiration within Biology / Human Physiology. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p25 helpful in gaseous exchange rather than only diffusion-barrier thickness. Elastic alveolar walls support inflation/recoil; thin epithelium and capillary supply support diffusion and gradients. All three D, not B which incorrectly discards ventilation support.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-92",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "In which one of the following groups of animals, oestrus cycle is not observed?",
+      "sourceTextHash": "f42efe09b0e686b21dafc21e90b58b9926b818f931bc317cae82bf4a1a0d4153",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 92,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Biology",
+      "topic": "Animal Biology",
+      "subtopic": "Reproductive strategies",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "In which one of the following groups of animals, oestrus cycle is not observed?"
+      ],
+      "options": {
+        "A": "Cows",
+        "B": "Monkeys",
+        "C": "Rats",
+        "D": "Tigers"
+      },
+      "answer": "B",
+      "explanation": "Reasoned verification (no matching official key recovered): The textbook comparison places monkeys among menstrual-cycle primates, unlike the oestrous-cycle examples cows, rats and tigers. The expected group-level answer is monkeys, B; this does not assert that every primate species menstruates.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 92,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 25,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://sathee.iitk.ac.in/sathee-neet/ncert-books/neet-ncert-books/neet-nb-bio-12/bio-12-chapter-1-reproduction-in-organisms-/",
+        "officialAnswer": null,
+        "displayedAnswer": "B",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Reproduction in Organisms, IIT Kanpur SATHEE hosted text",
+            "url": "https://sathee.iitk.ac.in/sathee-neet/ncert-books/neet-ncert-books/neet-nb-bio-12/bio-12-chapter-1-reproduction-in-organisms-/",
+            "retrieval": "indexed NCERT chapter text",
+            "support": "The textbook distinguishes menstrual cycles of monkeys/apes/humans from oestrous cycles of non-primate mammal examples such as cows, rats and tigers. This is the intended group comparison, not a universal claim about all primate species.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 25, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests reproductive strategies within Biology / Animal Biology. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p25 NOT observed and the four animal groups. The textbook group comparison is non-primate oestrus versus monkeys menstrual cycles. B. Did not convert it into the false universal that all primate species menstruate.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-93",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Which one of the following tissues in plants is usually without protoplast and regarded as dead cells?",
+      "sourceTextHash": "f2e0c6e1ca067ba3ec5f385c501e1ab0b4ee5fb52e317cfd3aafe6f6290cbd55",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 93,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Biology",
+      "topic": "Plants and Microorganisms",
+      "subtopic": "Plant tissues",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Which one of the following tissues in plants is usually without protoplast and regarded as dead cells?"
+      ],
+      "options": {
+        "A": "Collenchyma",
+        "B": "Parenchyma",
+        "C": "Sclerenchyma",
+        "D": "Xylem parenchyma"
+      },
+      "answer": "C",
+      "explanation": "Reasoned verification (no matching official key recovered): Mature sclerenchyma cells lose their protoplast and have thick lignified walls. Collenchyma, parenchyma and xylem parenchyma are living tissues. C alone matches usually dead at maturity.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 93,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 25,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://sathee.iitk.ac.in/ncert-books/class-09/nb-science-09/sci-09-chapter-6-tissues/",
+        "officialAnswer": null,
+        "displayedAnswer": "C",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Tissues, IIT Kanpur SATHEE hosted text",
+            "url": "https://sathee.iitk.ac.in/ncert-books/class-09/nb-science-09/sci-09-chapter-6-tissues/",
+            "retrieval": "indexed NCERT chapter text",
+            "support": "Sclerenchyma is ordinarily dead at maturity with lignified walls and absent protoplast. Parenchyma, collenchyma and xylem parenchyma are living.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 25, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests plant tissues within Biology / Plants and Microorganisms. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p25 usually without protoplast. Sclerenchyma is characteristically dead at maturity; xylem PARENCHYMA is living despite other xylem elements being dead. C, not D.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-94",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "In which cell does the first meiotic cell division take place during the process of spermatogenesis?",
+      "sourceTextHash": "1262a781d1d578f2248ff85715d2c5f2477bc6953239ecf99dd8033b72e63437",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 94,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Biology",
+      "topic": "Human Physiology",
+      "subtopic": "Reproduction",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "In which cell does the first meiotic cell division take place during the process of spermatogenesis?"
+      ],
+      "options": {
+        "A": "Spermatogonium",
+        "B": "Primary spermatocyte",
+        "C": "Secondary spermatocyte",
+        "D": "Sertoli cell"
+      },
+      "answer": "B",
+      "explanation": "Reasoned verification (no matching official key recovered): A primary spermatocyte undergoes meiosis I to form secondary spermatocytes. Spermatogonia divide mitotically, secondary spermatocytes undergo meiosis II and Sertoli cells are supporting cells. B.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 94,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 25,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://openstax.org/books/anatomy-and-physiology/pages/27-1-anatomy-and-physiology-of-the-male-reproductive-system",
+        "officialAnswer": null,
+        "displayedAnswer": "B",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "OpenStax Anatomy and Physiology: Male Reproductive System",
+            "url": "https://openstax.org/books/anatomy-and-physiology/pages/27-1-anatomy-and-physiology-of-the-male-reproductive-system",
+            "support": "The primary spermatocyte undergoes meiosis I to generate secondary spermatocytes. The secondary spermatocytes undergo meiosis II; spermatogonia divide mitotically.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 25, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests reproduction within Biology / Human Physiology. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p25 FIRST meiotic division. Primary spermatocyte enters meiosis I; secondary spermatocyte is the meiosis-II precursor. Distinguish spermatogonium mitosis and Sertoli support. B.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-96",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Which part of the plant or flower contributes in the form of false fruit like apple?",
+      "sourceTextHash": "0861be2e34d1549fbe9917e556d204d47c82d3b52319468d5d39beda80aa448f",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 96,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Biology",
+      "topic": "Plants and Microorganisms",
+      "subtopic": "Plant morphology",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Which part of the plant or flower contributes in the form of false fruit like apple?"
+      ],
+      "options": {
+        "A": "Petal",
+        "B": "Sepal",
+        "C": "Stamen",
+        "D": "Thalamus"
+      },
+      "answer": "D",
+      "explanation": "Reasoned verification (no matching official key recovered): In apple the fleshy accessory portion develops from the receptacle/thalamus, not the petals, sepals or stamens. This contribution makes it a false/accessory fruit, D.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 96,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 25,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://sathee.iitk.ac.in/sathee-icar/student-corner/ncert-books/class-12/nb-bio-12/bio-12-chapter-2-sexual-reproduction-in-flowering-plants/",
+        "officialAnswer": null,
+        "displayedAnswer": "D",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Sexual Reproduction in Flowering Plants, IIT Kanpur SATHEE hosted text",
+            "url": "https://sathee.iitk.ac.in/sathee-icar/student-corner/ncert-books/class-12/nb-bio-12/bio-12-chapter-2-sexual-reproduction-in-flowering-plants/",
+            "retrieval": "indexed NCERT chapter text",
+            "support": "The nucellus enclosed by integuments has reserve food. Apple is a false fruit with a thalamus contribution; petals, sepals and stamens are not the relevant fleshy part.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 25, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests plant morphology within Biology / Plants and Microorganisms. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p25 false fruit LIKE APPLE, not all false fruits. Thalamus/receptacle contributes fleshy apple tissue; among petal/sepal/stamen/thalamus only D. No change of botanical term.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-97",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "In which of the following parts of organisms, the process of gaseous exchange during respiration does not take place?",
+      "sourceTextHash": "1dfa45b7fed74c2c7153044ae534dfd3ca7c682bda0179c61de5623f9b6121ea",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 97,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Biology",
+      "topic": "Human Physiology",
+      "subtopic": "Respiration",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "In which of the following parts of organisms, the process of gaseous exchange during respiration does not take place?"
+      ],
+      "options": {
+        "A": "Skin of earthworms",
+        "B": "Bronchi of humans",
+        "C": "Gills of Pila",
+        "D": "Alveoli of humans"
+      },
+      "answer": "B",
+      "explanation": "Reasoned verification (no matching official key recovered): Human bronchi belong to the conducting zone, not the respiratory exchange zone. Earthworm moist skin, Pila gills and human alveoli are respiratory surfaces. B alone names a non-exchange conducting structure.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 97,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 25,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://sathee.iitk.ac.in/ncert-books/ncert-books-theory/class-11/nbt-bio-11/bio-11-chapter-17-breathing-and-exchange-of-gases/",
+        "officialAnswer": null,
+        "displayedAnswer": "B",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Breathing and Exchange of Gases, IIT Kanpur SATHEE hosted text",
+            "url": "https://sathee.iitk.ac.in/ncert-books/ncert-books-theory/class-11/nbt-bio-11/bio-11-chapter-17-breathing-and-exchange-of-gases/",
+            "retrieval": "indexed NCERT chapter text",
+            "support": "Bronchi belong to the conducting part and alveoli to the exchange part. Typical adult tidal volume is about 500 mL, below residual, expiratory reserve and inspiratory reserve volumes.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          },
+          {
+            "title": "NCERT Breathing and Exchange of Gases: respiratory organs",
+            "url": "https://sathee.iitk.ac.in/sathee-icar/student-corner/ncert-books/class-11/nb-bio-11/bio-11-chapter-17-breathing-and-exchange-of-gases/",
+            "retrieval": "indexed NCERT chapter text",
+            "support": "Earthworms exchange gases through moist skin; molluscs use gills and lungs depending on species. Pila has a ctenidium for aquatic exchange; human bronchi are the clearly non-respiratory-zone option.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 25, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests respiration within Biology / Human Physiology. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p25 DOES NOT and Gills of Pila. Bronchi conduct air while alveoli exchange it; moist earthworm skin and the molluscan gill are respiratory surfaces. B. Preserved Pila rather than substituting a different organism.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-98",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Which one of the following parts of an ovule possesses reserve food?",
+      "sourceTextHash": "dd377a33b9bdab2350b75325cc3c4f421109834902af80d825b23ed51300124f",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 98,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Biology",
+      "topic": "Plants and Microorganisms",
+      "subtopic": "Plant morphology",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Which one of the following parts of an ovule possesses reserve food?"
+      ],
+      "options": {
+        "A": "Integument",
+        "B": "Funicle",
+        "C": "Chalaza",
+        "D": "Nucellus"
+      },
+      "answer": "D",
+      "explanation": "Reasoned verification (no matching official key recovered): The nucellus contains reserve food for the developing embryo sac. Integuments are protective coverings, the funicle is the attaching stalk and the chalaza is the basal region. D.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 98,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 27,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://sathee.iitk.ac.in/sathee-icar/student-corner/ncert-books/class-12/nb-bio-12/bio-12-chapter-2-sexual-reproduction-in-flowering-plants/",
+        "officialAnswer": null,
+        "displayedAnswer": "D",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Sexual Reproduction in Flowering Plants, IIT Kanpur SATHEE hosted text",
+            "url": "https://sathee.iitk.ac.in/sathee-icar/student-corner/ncert-books/class-12/nb-bio-12/bio-12-chapter-2-sexual-reproduction-in-flowering-plants/",
+            "retrieval": "indexed NCERT chapter text",
+            "support": "The nucellus enclosed by integuments has reserve food. Apple is a false fruit with a thalamus contribution; petals, sepals and stamens are not the relevant fleshy part.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 27, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests plant morphology within Biology / Plants and Microorganisms. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p27 reserve food in an OVULE. Nucellus is nutritive tissue, contrasted against integument protection, funicle attachment and chalazal position. D, no confusion with postfertilization endosperm absent from options.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-99",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Which one of the following respiratory volumes of human lung is the lowest?",
+      "sourceTextHash": "d9692982f591aaf5e59ca0427dccc317ed83d8936e7da65ba58f9b20d3010c60",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 99,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Biology",
+      "topic": "Human Physiology",
+      "subtopic": "Respiration",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Which one of the following respiratory volumes of human lung is the lowest?"
+      ],
+      "options": {
+        "A": "Residual volume",
+        "B": "Tidal volume",
+        "C": "Inspiratory reserve volume",
+        "D": "Expiratory reserve volume"
+      },
+      "answer": "B",
+      "explanation": "Reasoned verification (no matching official key recovered): Typical adult tidal volume is about 500 mL; residual volume is about 1100–1200 mL, expiratory reserve about 1000–1100 mL and inspiratory reserve about 2500–3000 mL. Tidal volume is lowest among these four, B.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 99,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 27,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://sathee.iitk.ac.in/ncert-books/ncert-books-theory/class-11/nbt-bio-11/bio-11-chapter-17-breathing-and-exchange-of-gases/",
+        "officialAnswer": null,
+        "displayedAnswer": "B",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "NCERT Breathing and Exchange of Gases, IIT Kanpur SATHEE hosted text",
+            "url": "https://sathee.iitk.ac.in/ncert-books/ncert-books-theory/class-11/nbt-bio-11/bio-11-chapter-17-breathing-and-exchange-of-gases/",
+            "retrieval": "indexed NCERT chapter text",
+            "support": "Bronchi belong to the conducting part and alveoli to the exchange part. Typical adult tidal volume is about 500 mL, below residual, expiratory reserve and inspiratory reserve volumes.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 27, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests respiration within Biology / Human Physiology. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p27 VOLUMES, not capacities. Compared ordinary adult representative magnitudes: tidal≈500, ERV≈1000, RV≈1100, IRV≈2500 mL. Tidal B is lowest; no subtraction of volume categories.",
+        "reviewedAt": "2026-10-25"
+      }
+    },
+    {
+      "id": "nda-2026-i-100",
+      "origin": "pyq",
+      "sourceTextLocked": true,
+      "sourceText": "Which one of the following valves guards the opening between the right ventricle and the pulmonary artery?",
+      "sourceTextHash": "0edce3ac548658e6a11d792541cfca28173af4dbdcaa141b8c3fe77c321c8130",
+      "exam": "NDA",
+      "year": 2026,
+      "paper": "I",
+      "questionNumber": 100,
+      "subject": "Science & Technology",
+      "taxonomyHead": "Biology",
+      "topic": "Human Physiology",
+      "subtopic": "Circulation",
+      "difficulty": "Moderate",
+      "promptLines": [
+        "Which one of the following valves guards the opening between the right ventricle and the pulmonary artery?"
+      ],
+      "options": {
+        "A": "Bicuspid valve",
+        "B": "Semilunar valve",
+        "C": "Mitral valve",
+        "D": "Tricuspid valve"
+      },
+      "answer": "B",
+      "explanation": "Reasoned verification (no matching official key recovered): The pulmonary semilunar valve is at the right-ventricle/pulmonary-trunk outlet. Bicuspid/mitral names the left atrioventricular valve; tricuspid is the right atrioventricular valve. B.",
+      "requiresFigure": false,
+      "additionalPaths": [],
+      "classificationTags": [
+        "Static"
+      ],
+      "source": {
+        "dataset": "Reviewed NDA I 2026 GAT imports",
+        "exam": "NDA",
+        "year": 2026,
+        "paper": "I",
+        "questionNumber": 100,
+        "originalPdf": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf",
+        "originalPdfSha256": "1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
+        "originalPage": 27,
+        "bookletSeries": "A",
+        "answerStatus": "reasoned-verified",
+        "answerSource": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+        "officialAnswer": null,
+        "displayedAnswer": "B",
+        "optionsReordered": false,
+        "primaryEvidence": [
+          {
+            "title": "OpenStax Anatomy and Physiology: Heart Anatomy",
+            "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+            "support": "The pulmonary semilunar valve guards the right ventricular outlet to the pulmonary trunk; the tricuspid valve guards the right atrioventricular opening, and mitral/bicuspid names the left atrioventricular valve.",
+            "evidenceNotesFile": "content/audits/nda-2026-i-batch-2-evidence.json",
+            "evidenceNotesSha256": "4f7b05bf1ab0269b3f30e0d4aa626109dbce8adbc7e3953f0a729dbaad40c312"
+          }
+        ],
+        "reproductionReview": "Complete original English page 27, full stem, statements and all options visually reread in a separate pass. No required figure.",
+        "classificationRationale": "Tests circulation within Biology / Human Physiology. Primary placement follows the complete stem and all choices; no incidental cross-subject placement. Science imports are not automatically applicable to CSE.",
+        "secondPass": "Reread p27 RIGHT ventricle to PULMONARY artery. It is the pulmonary semilunar outlet valve, B. Tricuspid would be right atrium→ventricle; bicuspid and mitral are the same left AV valve.",
+        "reviewedAt": "2026-10-25"
+      }
     }
   ],
   "placements": [

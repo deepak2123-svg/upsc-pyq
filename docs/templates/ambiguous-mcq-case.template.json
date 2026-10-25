@@ -1,0 +1,100 @@
+{
+  "templateVersion": 1,
+  "notice": "Documentation template, not an active runtime policy or an approved case. Populate and review before application.",
+  "caseId": null,
+  "canonicalQuestionId": null,
+  "workflowState": "awaiting-review",
+  "sourceIdentity": {
+    "exam": null,
+    "year": null,
+    "session": null,
+    "paper": null,
+    "bookletSeries": null,
+    "printedQuestionNumber": null,
+    "language": null,
+    "pdfPage": null,
+    "originalPdfUrl": null,
+    "originalPdfLocalPath": null,
+    "originalPdfSha256": null
+  },
+  "reproduction": {
+    "decision": "not-reviewed",
+    "promptLines": [],
+    "options": {},
+    "figuresAndTables": [],
+    "completeSourceCompared": false,
+    "sourceTextHash": null,
+    "optionsHash": null,
+    "defectIsInOriginalOrImport": null
+  },
+  "issue": {
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "disputedClaim": null,
+    "whyItChangesTheAnswer": null,
+    "requiredEvidenceToResolve": null
+  },
+  "officialAnswerEvidence": {
+    "status": "not-established",
+    "officialAnswer": null,
+    "displayedAnswer": null,
+    "optionsReordered": null,
+    "optionTextMapping": [],
+    "keyUrl": null,
+    "keyLocalPath": null,
+    "keySha256": null,
+    "keySeries": null,
+    "keyPageAndCell": null,
+    "visuallyMatched": false,
+    "withdrawalOrErratum": null,
+    "searchLog": []
+  },
+  "primaryEvidence": [],
+  "primaryEvidenceEntryFields": [
+    "title", "publisher", "url", "editionOrPublicationDate", "examDateApplicability",
+    "pageSectionOrPassage", "claimSupported", "retrievalMethod", "accessLimitations",
+    "retrievedAt", "originalDocumentHashIfAvailable", "readingNotesHashSeparatelyLabelled"
+  ],
+  "analysis": {
+    "literalInterpretation": null,
+    "ordinaryExamModel": null,
+    "explicitConditions": [],
+    "unstatedAssumptions": [],
+    "optionByOption": [],
+    "counterexamples": [],
+    "survivingOptions": [],
+    "reasonedAnswer": null,
+    "officialAcademicDisagreement": null
+  },
+  "firstReview": { "reviewerId": null, "reviewerKind": null, "date": null, "rationale": null },
+  "secondReview": {
+    "reviewerId": null,
+    "reviewerKind": null,
+    "differentReviewerOrSameReviewerFreshPass": null,
+    "date": null,
+    "sourceReopened": false,
+    "alternativesAndCounterargumentChecked": false,
+    "decision": "pending",
+    "rationale": null
+  },
+  "publicationDecision": {
+    "disposition": null,
+    "eligibleForNewScoredTests": false,
+    "qualityCaveat": null,
+    "historicalScoringAction": "not-applied",
+    "specificReopeningTrigger": null
+  },
+  "application": {
+    "applied": false,
+    "expectedBeforeRecordHash": null,
+    "afterRecordHash": null,
+    "preservedBeforeValues": null,
+    "answerKeyRevisionBefore": null,
+    "answerKeyRevisionAfter": null,
+    "contentRevisionBefore": null,
+    "contentRevisionAfter": null,
+    "canonicalAliasIfDuplicate": null,
+    "testEvidence": [],
+    "releaseApprovalReference": null
+  }
+}

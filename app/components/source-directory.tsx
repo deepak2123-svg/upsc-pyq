@@ -2,6 +2,7 @@
 
 import { useState, useSyncExternalStore, type CSSProperties } from "react";
 import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
+import Link from 'next/link';
 
 export type SourcePaper = { exam: PyqExam; year: number; paper: string; count: number; complete: boolean; provisional: boolean };
 const PAGE_SIZE = 12;
@@ -25,6 +26,7 @@ export function SourceDirectory({ papers }: { papers: SourcePaper[] }) {
       <div className="source-paper-heading"><span className="source-exam-tag">{paper.exam}</span><strong>{paper.year} · {paper.paper}</strong><span>{paper.count} MCQs</span></div>
       <div className="source-paper-status"><span className={paper.complete ? "source-review-complete" : ""}>{paper.complete ? "Complete source review" : "Partial collection"}</span>{paper.provisional ? <span>Provisional key</span> : null}</div>
       {paper.provisional ? <small>Official provisional key · GS Q51–150; English Q1–50 outside scope.</small> : null}
+      {paper.exam==='NDA'&&paper.year===2026&&paper.paper==='I'?<Link href="/papers/nda-2026-i-gat">All 150 original questions · unscored practice →</Link>:null}
     </li>)}</ul>
     {!filtered.length ? <p className="source-empty" role="status">No added papers match these filters.</p> : null}
     <nav className="source-pagination" aria-label="Paper pages"><button type="button" disabled={!interactive || page === 0} onClick={() => setPage(value => value-1)}>← Previous</button><span aria-live="polite">{filtered.length ? page*PAGE_SIZE+1 : 0}–{Math.min((page+1)*PAGE_SIZE,filtered.length)} of {filtered.length}</span><button type="button" disabled={!interactive || page+1 >= pageCount} onClick={() => setPage(value => value+1)}>Next →</button></nav>

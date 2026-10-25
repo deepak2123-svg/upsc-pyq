@@ -120,6 +120,21 @@ function matchingListBlocks(lines: string[]): PracticePromptBlock[] | null {
 /** Only explicit two-column headings and complete sequential paired rows qualify. */
 function pairedRowBlocks(lines: string[]): PracticePromptBlock[] | null {
   if (!lines.some(line => /\bpairs\b|\bcorrectly matched\b/i.test(line))) return null;
+  // NDA I 2026 Series A Q90: the original two-column headings were visually
+  // checked on page 23. Restore layout only; keep stored source text unchanged.
+  if (lines[0] === 'Consider the following pairs of reactions and properties:' && lines.length === 6) {
+    const rows = lines.slice(1, 5).map((line, index) => {
+      const marker = line.match(leadingRomanMarker);
+      const cells = marker?.[3].match(/^(.+?):\s+(.+)$/);
+      return marker && romanValue(marker[1]) === index + 1 && cells
+        ? { marker: `${marker[1]}${marker[2]}`, left: cells[1], right: cells[2] } : null;
+    });
+    if (rows.every(row => row !== null)) return [
+      { kind: 'text', text: lines[0] },
+      { kind: 'pair-table', leftTitle: 'Reactions', rightTitle: 'Properties', rows: rows as {marker:string;left:string;right:string}[] },
+      { kind: 'text', text: lines[5] },
+    ];
+  }
   for (let header = 0; header < lines.length - 2; header += 1) {
     // This legacy heading lost its column gap, not its words. The column split
     // was visually confirmed on CSE 2015 Series A page 6; do not guess others.

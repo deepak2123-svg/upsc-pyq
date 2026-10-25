@@ -1726,3 +1726,32 @@ h3 { font-size: 16px; }
 .compact-setup-footer small { display: block; color: var(--muted); font-size: 11px; }
 .compact-setup .confirm-practice { min-width: 0; min-height: 42px; padding: 12px 18px; }
 @media(max-width:420px) { .compact-setup { padding: 18px; } .compact-source-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+
+/* Original-source practice is separate from the verified, scored catalogue. */
+.original-paper-page { max-width: 1120px; margin: 30px auto; padding: 0 20px 40px; }
+.original-paper-page h1 { font-size: clamp(26px,4vw,38px); margin: 12px 0; }
+.original-paper-page header { margin: 24px 0 16px; }
+.original-paper-notice { border: 1px solid #d9dfed; background: #f1f4fa; padding: 14px; border-radius: 10px; font-size: 14px; line-height: 1.6; }
+.original-paper-practice { border: 1px solid var(--line); background: white; border-radius: 14px; padding: 16px; margin-top: 20px; }
+.original-paper-controls,.original-paper-toolbar,.original-paper-pagination { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+.original-paper-controls { border-bottom: 1px solid var(--line); padding-bottom: 12px; }
+.original-paper-controls span,.original-paper-pagination span,.original-paper-toolbar { font-size: 13px; color: var(--muted); }
+.original-paper-practice button,.original-paper-toolbar select { font: inherit; border: 1px solid var(--line); border-radius: 8px; padding: 9px 12px; background: white; cursor: pointer; }
+.original-paper-practice button:disabled { opacity: .45; cursor: default; }
+.original-paper-practice button:focus-visible,.original-paper-toolbar select:focus-visible { outline: 3px solid #829dff; outline-offset: 3px; }
+.original-paper-toolbar { margin: 12px 0; }
+.original-paper-toolbar label { display: flex; align-items: center; gap: 8px; }
+.original-question-status { font-size: 13px; line-height: 1.5; padding: 10px 12px; background: #f5f6f9; border-radius: 8px; }
+.original-scan { margin: 12px 0; }
+.original-scan img { display: block; width: 100%; height: auto; background: white; }
+.original-scan figcaption { color: var(--muted); font-size: 12px; line-height: 1.5; padding: 10px 0; }
+.original-answer-controls { background: white; display: flex; flex-wrap: wrap; gap: 8px; border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin: 12px 0; }
+.original-answer-controls legend { font-size: 13px; font-weight: 600; padding: 0 6px; background: white; }
+.original-answer-controls button { min-width: 44px; min-height: 44px; }
+.original-answer-controls button[aria-pressed=true] { color: white; background: #2454da; border-color: #2454da; }
+.original-paper-pagination { padding-top: 10px; }
+.original-paper-provenance { margin-top: 20px; font-size: 13px; line-height: 1.6; }
+.original-paper-provenance code { overflow-wrap: anywhere; }
+.original-paper-summary ol { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 8px; padding: 0; list-style: none; }
+.original-paper-summary button { width: 100%; text-align: left; }
+@media(max-width:600px) { .original-paper-page { padding: 0 10px 24px; margin-top: 20px; } .original-paper-practice { padding: 10px; } .original-paper-controls { align-items: flex-start; } .original-paper-controls strong { width: 100%; } .original-paper-pagination span { width: 100%; order: 3; } }

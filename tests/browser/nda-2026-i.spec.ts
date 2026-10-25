@@ -25,9 +25,47 @@ test('NDA I reasoned batch preserves equations in print and remains a partial so
  await expect(page.getByRole('button',{name:/^NDA\b/})).toHaveAttribute('aria-pressed','true');
  await page.getByRole('combobox').nth(0).selectOption('2026');
  const paper=page.locator('.source-paper-card').filter({hasText:'2026 · I'}).filter({hasNotText:'2026 · II'});
- await expect(paper).toContainText('39 MCQs');
+ await expect(paper).toContainText('63 MCQs');
  await expect(paper).toContainText('Partial collection');
  await expect(paper).not.toContainText('Complete source review');
  await page.setViewportSize({width:390,height:844});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+
+test('NDA I second batch preserves three original figures and the redox table in online and print flows',async({page,request})=>{
+ const inventory=await(await request.get('/api/pyqs/inventory?preparationExam=NDA')).json();
+ const wanted=new Set([72,73,74,90].map(n=>`nda-2026-i-${n}`));
+ const leaves=inventory.nodes.filter((n:any)=>n.kind==='subtopic'&&n.questionIdsByExam?.NDA.some((id:string)=>wanted.has(id)));
+ const frozenScopes=leaves.map((n:any)=>({id:n.id,subjectId:n.subjectId,label:n.label,parentId:n.parentId,order:n.order,questionIdsByExam:{CSE:[],CAPF:[],CDS:[],NDA:n.questionIdsByExam.NDA.filter((id:string)=>wanted.has(id))}}));
+ const response=await request.post('/api/practice-snapshots',{data:{version:4,preparationExam:'NDA',taxonomyVersion:inventory.taxonomyVersion,subjectIds:[...new Set(leaves.map((n:any)=>n.subjectId))],paths:leaves.map((n:any)=>({subtopicId:n.id,exams:['NDA']})),frozenScopes,count:'all',order:'newest'}});
+ expect(response.status()).toBe(201);const snapshot=await response.json();expect(snapshot.questions).toHaveLength(4);
+ expect(snapshot.questions.filter((q:any)=>q.figure)).toHaveLength(3);
+ await page.goto('/prepare/NDA');
+ await page.getByRole('group',{name:'GAT section',exact:true}).getByRole('button',{name:'Science',exact:true}).click();
+ await page.getByRole('button',{name:'Add to test: Science & Technology',exact:true}).click();
+ await page.getByRole('button',{name:'Finalise test →',exact:true}).first().click();
+ await page.getByRole('button',{name:'All',exact:true}).click();
+ const started=page.waitForResponse(response=>response.url().endsWith('/api/practice-snapshots')&&response.request().method()==='POST');
+ await page.getByRole('button',{name:'Start test →',exact:true}).click();
+ const live=await(await started).json();
+ const position=live.questions.findIndex((q:any)=>q.id==='nda-2026-i-73')+1;expect(position).toBeGreaterThan(0);
+ await page.getByRole('button',{name:`Question ${position}, not answered`,exact:true}).click();
+ await expect(page.locator('.question-figure img')).toHaveAttribute('src','/figures/nda-2026-i/q73.png');
+ expect((await page.locator('.question-figure img').boundingBox())!.width).toBeGreaterThan(400);
+ await page.screenshot({path:'tmp/nda-2026-i/batch-2-online.png',fullPage:true});
+ await page.evaluate(async({snapshot})=>{
+  sessionStorage.setItem(`upsc-pyq-print:${snapshot.id}`,JSON.stringify({snapshot,includeAnswerKey:true}));
+  window.print=()=>undefined;
+ },{snapshot});
+ await page.goto(`/practice/${snapshot.id}/print`);
+ await expect(page.locator('.print-question')).toHaveCount(4);
+ await expect(page.locator('.question-figure img')).toHaveCount(3);
+ for(const image of await page.locator('.question-figure img').all())expect(await image.evaluate((img:HTMLImageElement)=>img.complete&&img.naturalWidth>0)).toBe(true);
+ await expect(page.locator('[data-question-id="nda-2026-i-90"] .paired-row-table tbody tr')).toHaveCount(4);
+ await expect(page.locator('.print-answer-key')).toContainText('‡ Independently verified');
+ await page.emulateMedia({media:'print'});
+ const large=page.locator('[data-question-id="nda-2026-i-73"] img');
+ expect((await large.boundingBox())!.width).toBeGreaterThan(250);
+ await page.screenshot({path:'tmp/nda-2026-i/batch-2-print.png',fullPage:true});
+ await page.pdf({path:'tmp/nda-2026-i/batch-2-print.pdf',format:'A4',printBackground:true});
 });

@@ -1,0 +1,43 @@
+import {expect,test} from '@playwright/test';
+
+test('complete original NDA paper records all ranges without pretending to grade pending questions',async({page})=>{
+ const errors:string[]=[];
+ page.on('pageerror',error=>errors.push(error.message));
+ await page.goto('/papers/nda-2026-i-gat');
+ await expect(page.getByRole('heading',{name:'NDA I 2026 · GAT',exact:true})).toBeVisible();
+ await expect(page.getByText('Unscored practice.',{exact:true})).toBeVisible();
+ const jump=page.getByRole('combobox',{name:'Go to question'});
+ await expect(jump).toBeEnabled();
+ expect(await jump.locator('option').count()).toBe(150);
+ await expect(page.locator('.original-scan img')).toHaveAttribute('src','/papers/nda-2026-i-gat/page-2.jpg');
+ await page.getByRole('button',{name:'Record B for question 1',exact:true}).click();
+ await expect(page.getByRole('button',{name:'Record B for question 1',exact:true})).toHaveAttribute('aria-pressed','true');
+ await jump.selectOption('59');
+ await expect(page.getByRole('status')).toContainText('Held from scored tests');
+ await expect(page.locator('.original-scan img')).toHaveAttribute('src','/papers/nda-2026-i-gat/page-11.jpg');
+ await jump.selectOption('73');
+ await expect(page.getByRole('status')).toContainText('Reasoned-verified');
+ await expect(page.locator('.original-scan img')).toHaveAttribute('src','/papers/nda-2026-i-gat/page-17.jpg');
+ await jump.selectOption('150');
+ await expect(page.getByRole('status')).toContainText('Awaiting review');
+ await expect(page.locator('.original-scan img')).toHaveAttribute('src','/papers/nda-2026-i-gat/page-43.jpg');
+ await page.getByRole('button',{name:'Record C for question 150',exact:true}).click();
+ await expect(page.getByRole('button',{name:'Next →',exact:true})).toBeDisabled();
+ await page.reload();
+ await expect(jump).toHaveValue('150');
+ await expect(page.getByRole('button',{name:'Record C for question 150',exact:true})).toHaveAttribute('aria-pressed','true');
+ await page.getByRole('button',{name:'Review recorded answers',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Recorded answers — unscored',exact:true})).toBeVisible();
+ await expect(page.getByRole('button',{name:'Q1: B',exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Q1: B',exact:true}).click();
+ await expect(jump).toHaveValue('1');
+ await page.getByRole('button',{name:'Clear answer',exact:true}).click();
+ await expect(page.getByText('1 / 150 answers recorded',{exact:true})).toBeVisible();
+ // No scored-test attempt, grading request or legacy builder draft is created.
+ expect(await page.evaluate(()=>Object.keys(localStorage).filter(key=>key.startsWith('upsc-original-paper:')))).toHaveLength(1);
+ await page.setViewportSize({width:390,height:844});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await expect.poll(()=>page.locator('.original-scan img').evaluate((img:HTMLImageElement)=>img.complete&&img.naturalWidth>0)).toBe(true);
+ await page.screenshot({path:'tmp/nda-2026-i/original-paper-mobile.png',fullPage:true});
+ expect(errors).toEqual([]);
+});
