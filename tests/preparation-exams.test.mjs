@@ -9,6 +9,26 @@ async function fetchApp(path, body) {
 }
 async function inventory(target) { return (await fetchApp(`/api/pyqs/inventory?preparationExam=${target}`)).json(); }
 const sources = ['CSE', 'CAPF', 'CDS', 'NDA'];
+
+test('NDA Science has detailed section-local chapters with immutable concept membership',async()=>{
+ const nda=await inventory('NDA');
+ for(const [label,count] of [['Physics',18],['Chemistry',12],['Biology',17]]){
+  const head=nda.nodes.find(n=>n.kind==='head'&&n.subjectId==='subject:science'&&n.label===label);
+  const chapters=nda.nodes.filter(n=>n.parentId===head.id).sort((a,b)=>a.order-b.order);
+  assert.equal(chapters.length,count);
+  assert.deepEqual(chapters.map(n=>n.order),Array.from({length:count},(_,i)=>i+1));
+  for(const chapter of chapters){const parts=nda.nodes.filter(n=>n.parentId===chapter.id).sort((a,b)=>a.order-b.order);assert.ok(parts.length);assert.deepEqual(parts.map(n=>n.order),Array.from({length:parts.length},(_,i)=>i+1));}
+ }
+ const optics=nda.nodes.find(n=>n.id==='subtopic:science:physics:light-and-electricity:optics');
+ const chapter=nda.nodes.find(n=>n.id===optics.parentId);
+ assert.equal(chapter.label,'Light and Optics');assert.equal(chapter.order,12);
+ assert.ok(optics.questionIdsByExam.NDA.includes('nda-2026-ii-54'));
+ const result=await fetchApp('/api/practice-snapshots',recipe(nda,[optics],'NDA'));
+ assert.equal(result.status,201);const snapshot=await result.json();
+ assert.ok(snapshot.questions.every(q=>q.topic==='Light and Optics'));
+ assert.ok(snapshot.questions.some(q=>q.id==='nda-2026-ii-54'));
+ const cse=await inventory('CSE');assert.ok(cse.nodes.some(n=>n.label==='Light and Electricity'));
+});
 function recipe(data, leaves, exam) {
   return { version: 4, preparationExam: data.preparationExam, taxonomyVersion: data.taxonomyVersion,
     subjectIds: [...new Set(leaves.map(n => n.subjectId))], paths: leaves.map(n => ({ subtopicId: n.id, exams: [exam] })), count: 'all', order: 'newest' };

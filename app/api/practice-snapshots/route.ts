@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import {readFrozenScopes} from '../../../lib/practice-draft-membership';
 import {legacySnapshotQuestionIds} from '../../../lib/legacy-placement-bridge';
 import { questionContentRevision,questionReview } from '../../../lib/question-review';
-import { getPreparationInventory, preparationQuestionIds, getPreparationQuestions } from '../../../lib/preparation-catalog';
+import { getPreparationInventory, preparationQuestionIds, getPreparationQuestions, preparationPathResolver } from '../../../lib/preparation-catalog';
 import { isPreparationExam } from '../../../lib/preparation-exams';
-import { PYQ_EXAMS, getExamQuestions, getQuestionPath, getLegacyQuestionPath, getSubjectPracticeInventory, isPyqExam, pyqQuestions, type PracticeInventoryNode, type PyqExam } from "../../../lib/pyq-catalog";
+import { PYQ_EXAMS, getExamQuestions, getLegacyQuestionPath, getSubjectPracticeInventory, isPyqExam, pyqQuestions, type PracticeInventoryNode, type PyqExam } from "../../../lib/pyq-catalog";
 import type { PracticeFrozenScope, PracticePathSelection, PracticeQuestion, PracticeRecipe, PracticeRecipeV2, PracticeRecipeV3, PracticeRecipeV4, PracticeSnapshot } from "../../../lib/practice-types";
 
 function seededShuffle<T>(items: T[], seed: string) {
@@ -214,8 +214,9 @@ export async function POST(request: Request) {
   if (order === "shuffle") eligible = seededShuffle(eligible, id);
   if (requestedCount !== "all") eligible = eligible.slice(0, requestedCount);
 
+  const resolvePath=preparationPathResolver(preparationExam?getPreparationInventory(preparationExam):undefined);
   const questions: PracticeQuestion[] = eligible.map((question) => {
-    const path = getQuestionPath(question);
+    const path = resolvePath(question);
     return {
       id: question.id,
       exam: question.exam,

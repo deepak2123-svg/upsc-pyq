@@ -1,10 +1,11 @@
-import { getSubjectPracticeInventory, historicalPyqQuestions, type SubjectPracticeInventory, type PracticeInventoryNode, type ExamCounts, type PyqExam } from './pyq-catalog';
+import { getSubjectPracticeInventory, getQuestionPath, historicalPyqQuestions, type PyqQuestion, type SubjectPracticeInventory, type PracticeInventoryNode, type ExamCounts, type PyqExam } from './pyq-catalog';
 import { questionEligible, questionReview } from './question-review';
 import { PREPARATION_VERSION, type PreparationExam, type PreparationView } from './preparation-exams';
 import { englishSyllabus, elementaryMaths, ndaMaths, csatSyllabus, defenceWorldHistory, type SyllabusSection } from './preparation-syllabus';
 import applicability from '../content/preparation-applicability.json' with { type: 'json' };
 import officialNdaPlacements from '../content/nda-2026-i-preparation-placements.json' with {type:'json'};
 import officialNdaIIPlacements from '../content/nda-2026-ii-preparation-placements.json' with {type:'json'};
+import {organiseNdaScience} from './nda-science-syllabus';
 
 export type PreparationInventory = SubjectPracticeInventory & { preparationExam: PreparationExam; preparationViews: PreparationView[] };
 const exams: PyqExam[] = ['CSE', 'CAPF', 'CDS', 'NDA'];
@@ -23,7 +24,7 @@ export function getPreparationInventory(target: PreparationExam): PreparationInv
   const scienceIds = new Set(base.nodes.filter(n => n.subjectId === 'subject:science' && n.kind === 'subtopic')
     .flatMap(n => exams.flatMap(exam => n.questionIdsByExam?.[exam] || [])));
   // Work on fresh arrays: never mutate the legacy catalogue or another target's view.
-  const nodes: PracticeInventoryNode[] = base.nodes.filter(n => !n.legacyOnly).map(n => ({ ...n, examCounts: zero(), questionCount: 0,
+  let nodes: PracticeInventoryNode[] = base.nodes.filter(n => !n.legacyOnly).map(n => ({ ...n, examCounts: zero(), questionCount: 0,
     ...(n.kind === 'subtopic' ? { questionIdsByExam: Object.fromEntries(exams.map(exam => [exam,
       (n.questionIdsByExam?.[exam] || []).filter(id => !scienceIds.has(id) || exam === target || approved.has(`${target}:${id}`))
     ])) as Record<PyqExam, string[]> } : {}) }));
@@ -82,6 +83,7 @@ export function getPreparationInventory(target: PreparationExam): PreparationInv
     const members = leaf.questionIdsByExam![question.exam];
     if (!members.includes(question.id)) members.push(question.id);
   }
+  if(target==='NDA')nodes=organiseNdaScience(nodes);
   const byId = new Map<string, { parentId?: string; examCounts: ExamCounts; questionCount: number }>([...subjects, ...nodes].map(n => [n.id, n]));
   const sets = new Map<string, Record<PyqExam, Set<string>>>();
   for (const leaf of nodes.filter(n => n.kind === 'subtopic')) {
@@ -105,6 +107,20 @@ export function getPreparationInventory(target: PreparationExam): PreparationInv
 
 export function preparationQuestionIds(inventory: SubjectPracticeInventory) {
   return new Set(inventory.nodes.filter(n => n.kind === 'subtopic').flatMap(n => exams.flatMap(exam => n.questionIdsByExam?.[exam] || [])));
+}
+
+/** New snapshots show the selected preparation syllabus, without rewriting any
+ * original record or previously saved attempt. Build the index once per request.
+ */
+export function preparationPathResolver(inventory?:PreparationInventory){
+ const nodes=new Map(inventory?.nodes.map(n=>[n.id,n]));
+ return (question:PyqQuestion)=>{
+  const path=getQuestionPath(question);
+  if(inventory?.preparationExam!=='NDA'||path?.subjectId!=='subject:science')return path;
+  const leaf=nodes.get(path.subtopicId),chapter=leaf?nodes.get(leaf.parentId):undefined;
+  const head=chapter?nodes.get(chapter.parentId):undefined;
+  return leaf&&chapter&&head?{...path,head:head.label,topic:chapter.label,subtopic:leaf.label,headId:head.id,topicId:chapter.id}:path;
+ };
 }
 
 export function getPreparationQuestions(inventory: SubjectPracticeInventory) {
