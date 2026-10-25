@@ -2,6 +2,8 @@
 
 Version 1.0 · 25 October 2026 · Applies to all preparation exams and PYQ sources.
 
+Update: [NDA I 2026 is complete against the recovered official provisional key](nda-2026-i-official-completion.md); previous pending counts in historical reports are superseded. When a matching official key scores a faithfully reproduced question, retain normal official-answer grading and record any editorial disagreement separately. Do not replace its answer with an agent's preference or call a provisional key final. Genuine import defects and official withdrawals retain the historical exclusion safeguards below.
+
 ## 1. Purpose and current position
 
 Publish faithful, defensibly answered questions without penalising students for defective imports or ambiguous originals. Preserve the original question, source identity and historical attempts. An unanswered research question must not become a guessed answer merely to complete a paper.

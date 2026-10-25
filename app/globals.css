@@ -1754,4 +1754,7 @@ h3 { font-size: 16px; }
 .original-paper-provenance code { overflow-wrap: anywhere; }
 .original-paper-summary ol { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 8px; padding: 0; list-style: none; }
 .original-paper-summary button { width: 100%; text-align: left; }
+.official-paper-launcher .original-paper-controls { border: 0; margin-top: 20px; padding: 0; justify-content: flex-start; }
+.official-paper-launcher .original-paper-controls button:first-child { background: #2454da; border-color: #2454da; color: white; font-weight: 600; }
+.official-paper-launcher label { display: flex; gap: 8px; align-items: center; font-size: 14px; }
 @media(max-width:600px) { .original-paper-page { padding: 0 10px 24px; margin-top: 20px; } .original-paper-practice { padding: 10px; } .original-paper-controls { align-items: flex-start; } .original-paper-controls strong { width: 100%; } .original-paper-pagination span { width: 100%; order: 3; } }

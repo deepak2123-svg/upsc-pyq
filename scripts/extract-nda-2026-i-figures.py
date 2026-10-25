@@ -7,7 +7,7 @@ source = Path('C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2026-1.pdf')
 assert hashlib.sha256(source.read_bytes()).hexdigest() == '1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930'
 out = Path('public/figures/nda-2026-i')
 out.mkdir(parents=True, exist_ok=True)
-for number, page, box in [(72, 15, (760, 1128, 1160, 1290)), (73, 17, (120, 280, 610, 1505)), (74, 17, (810, 425, 1115, 600))]:
+for number, page, box in [(72, 15, (760, 1128, 1160, 1290)), (73, 17, (120, 280, 610, 1505)), (74, 17, (810, 425, 1115, 600)), (75, 17, (690, 930, 1195, 1250))]:
     image = Image.open(f'tmp/nda-2026-i/page-{page:02}.jpg')
     assert image.width in range(1280, 1310) and image.height == 1700
     target = out / f'q{number}.png'

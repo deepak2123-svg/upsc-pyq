@@ -61,6 +61,8 @@ export type PracticeQuestion = {
   topic: string;
   subtopic: string;
   promptLines: string[];
+  /** Exact underlined expressions from the original English paper. */
+  underlined?: string[];
   options: Record<string, string>;
   sourceTextHash: string;
   /** Evidence label only; never exposes the accepted answer. */

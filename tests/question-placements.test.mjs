@@ -138,7 +138,7 @@ test('reviewed pilot reuses legacy source identities instead of adding copies', 
   assert.equal(paper.reviewedSlots,100);assert.equal(paper.pendingSlots,0);
   assert.equal(paper.verifiedImports,53);assert.equal(paper.verifiedReuses,47);
   assert.equal(paper.year,2013);assert.equal(paper.series,'A');assert.equal(paper.reviewedLanguage,'English');
-  assert.equal(coverage.papers.filter(row=>row.coverageStatus==='current-source-content-and-key-reviewed').length,4,'Only three complete CSE papers and explicitly reviewed NDA II 2026 are complete');
+  assert.equal(coverage.papers.filter(row=>row.coverageStatus==='current-source-content-and-key-reviewed').length,5,'Three complete CSE papers and both source/key-reviewed NDA 2026 GAT papers are complete');
   const next=coverage.papers.find(row=>row.relativePath==='CSE PYP/2014.pdf');
   assert.equal(next.identityStatus,'cover-key-and-question-identity-reviewed');assert.equal(next.coverageStatus,'current-source-content-and-key-reviewed');
   assert.equal(next.reviewedSlots,100);assert.equal(next.pendingSlots,0);

@@ -102,7 +102,7 @@ function matchingListBlocks(lines: string[]): PracticePromptBlock[] | null {
   const rightText = value.slice(afterSecond, codeStart >= 0 ? afterSecond + codeStart : value.length);
   const romanLeft = /^\s*I[.)]\s/.test(leftText);
   const leftItems = romanLeft ? listItems(leftText, romanMarker, ["I","II","III","IV","V"]) : listItems(leftText, letteredItemMarker, ["A", "B", "C", "D", "E"]);
-  const rightItems = romanLeft ? listItems(rightText, letteredItemMarker, ["A","B","C","D","E"]) : listItems(rightText, numberedMarker, ["1", "2", "3", "4", "5"]);
+  const rightItems = romanLeft ? listItems(rightText, letteredItemMarker, ["A","B","C","D","E"]) : listItems(rightText, numberedMarker, ["1", "2", "3", "4", "5"]) ?? listItems(rightText,romanMarker,["I","II","III","IV","V"]);
   if (!leftItems || !rightItems) return null;
   const introduction = value.slice(0, first.index).trim();
   const trailing = codeStart >= 0 ? value.slice(afterSecond + codeStart).trim() : "";

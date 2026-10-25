@@ -19,6 +19,7 @@ export type PyqQuestion = {
   topic: string;
   subtopic: string;
   promptLines: string[];
+  underlined?: string[];
   options: Record<string, string>;
   answer: string;
   explanation: string;

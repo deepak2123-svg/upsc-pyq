@@ -1,10 +1,11 @@
 import type { AnswerFeedback, LocalAttempt, PracticeRecipe, PracticeReturnPath } from "./practice-types";
 import type { PyqExam } from "./pyq-exams";
 import publishedAnswerKeyRevisions from "../content/answer-key-revisions.json" with { type: "json" };
+import officialNdaKeyRevisions from '../content/nda-2026-i-key-revisions.json' with {type:'json'};
 import { questionExclusion, questionReviewRevision } from './question-review.ts';
 
 /** Bump a question's revision whenever its published key is corrected. No answers are exposed here. */
-const answerKeyRevisions: Readonly<Record<string, number>> = publishedAnswerKeyRevisions;
+const answerKeyRevisions: Readonly<Record<string, number>> = {...publishedAnswerKeyRevisions,...officialNdaKeyRevisions};
 export function answerKeyRevision(questionId: string) { return answerKeyRevisions[questionId] || 0; }
 
 export function safePracticeReturnPath(value: unknown): PracticeReturnPath {

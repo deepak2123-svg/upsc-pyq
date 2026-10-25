@@ -1,5 +1,7 @@
 # NDA I 2026 GAT — first GS batch
 
+Superseded by [the complete official-key import](nda-2026-i-official-completion.md): all 150 questions now have normal scored practice using the recovered UPSC official provisional key. Counts below describe the historical first batch only.
+
 Historical first-batch report. For the 25 October continuation and current totals, see [the Q71–100 report](nda-2026-i-batch-2-review.md).
 
 Review date: 24 October 2026. This is a partial local paper review, not a completed-paper claim or release.

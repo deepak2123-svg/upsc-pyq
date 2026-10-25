@@ -36,7 +36,7 @@ test('three target syllabuses expose the agreed paper structure and bounded empt
   assert.ok(nda.nodes.some(n => n.label === 'Differential Calculus'));
   assert.ok(!cds.nodes.some(n => n.label === 'Differential Calculus'));
   assert.ok(cse.nodes.some(n => n.label === 'Data Interpretation'));
-  assert.equal(nda.subjects.find(n => n.id === 'subject:english').questionCount, 0);
+  assert.equal(nda.subjects.find(n => n.id === 'subject:english').questionCount, 50);
 });
 
 test('CSE science cannot inherit NDA physics, while NDA keeps its own science', async () => {
@@ -73,7 +73,7 @@ test('cross-source GS remains optional and deduplicates shared concepts', async 
 
 test('GS cannot be smuggled into an empty English topic; invalid targets fail closed', async () => {
   const data = await inventory('NDA');
-  const leaf = data.nodes.find(n => n.kind === 'subtopic' && n.subjectId === 'subject:english');
+  const leaf = data.nodes.find(n => n.kind === 'subtopic' && n.subjectId === 'subject:english' && n.questionCount === 0);
   const other = data.nodes.find(n => n.kind === 'subtopic' && n.examCounts.NDA > 0);
   const body = recipe(data, [leaf], 'NDA');
   body.frozenScopes = [{ ...leaf, questionIdsByExam: { CSE: [], CAPF: [], CDS: [], NDA: [other.questionIdsByExam.NDA[0]] } }];

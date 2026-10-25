@@ -1,5 +1,7 @@
 # NDA I 2026 GAT — online availability, not verification completion
 
+Superseded by [the complete official-key import](nda-2026-i-official-completion.md). The matching UPSC official provisional key has been recovered; all 150 questions now use normal scored practice. The unscored substitute described below is no longer the active paper experience.
+
 25 October 2026. This release separates access to the complete original paper from eligibility for scored question-bank tests.
 
 ## What is online

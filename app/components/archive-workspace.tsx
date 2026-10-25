@@ -332,7 +332,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
         {preparationExam === 'NDA' && activeView?.paper === 'GAT' ? <div role="group" aria-label="GAT section">{views.filter(view => view.paper === 'GAT').map(view => <button type="button" key={view.id} disabled={!restored || loading || exporting} aria-pressed={activeView?.id === view.id} onClick={() => changeView(view)}>{view.label}</button>)}</div> : null}
       </div> : null}
       {preparationExam === 'CDS' ? <small>OTA: English + General Knowledge. Mathematics: IMA / INA / AFA.</small> : null}
-      {preparationExam === 'NDA' ? <Link href="/papers/nda-2026-i-gat">NDA I 2026 GAT · all 150 original questions (unscored) →</Link> : null}
+      {preparationExam === 'NDA' ? <Link href="/papers/nda-2026-i-gat">NDA I 2026 GAT · 150 questions · official-key test →</Link> : null}
     </section>
     <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{preparationExam ? `${preparationExam} question library` : initialExam ? `${initialExam} question library` : "Question library"}</h1></div><details className="scope-inventory-info"><summary>{format(libraryCount)} PYQs <span aria-hidden="true">ⓘ</span></summary><p>{preparationExam ? 'Available across compatible sources. Your test starts with your preparation exam only.' : `${format(initialInventory.unmappedCount)} unclassified questions remain in exam archives.`}</p>{preparationExam ? <Link href="/library">Previous saved selections</Link> : null}</details></header>
     <div className={`scope-library-layout explorer-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>

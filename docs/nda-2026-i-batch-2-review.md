@@ -1,5 +1,7 @@
 # NDA I 2026 GAT: Q71–100 continuation
 
+Superseded by [the complete official-key import](nda-2026-i-official-completion.md): all 150 questions are imported and scored using the recovered UPSC official provisional key. This document retains the historical batch decisions, not current pending totals.
+
 Review date: 25 October 2026. Local only; no push or production import.
 
 ## Outcome

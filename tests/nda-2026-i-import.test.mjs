@@ -2,117 +2,111 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
-import {nda2026IQuestions,nda2026ISecondPass,validateNda2026IEvidence} from '../scripts/prelims-reviewed-nda-2026-i-imports.mjs';
-import {nda2026IBatch2SecondPass,nda2026IBatch2Figures} from '../scripts/prelims-reviewed-nda-2026-i-batch-2-imports.mjs';
+import {officialNda2026IKey as key,officialNda2026IKeyEvidence as evidence} from '../scripts/nda-2026-i-official-key.mjs';
 import {combinedQuestions} from '../lib/combined-question-bank.ts';
-import {questionEligible,questionReview} from '../lib/question-review.ts';
+import {questionEligible,questionReview,questionInGsScope} from '../lib/question-review.ts';
+import {answerKeyRevision,hasCompleteFeedback} from '../lib/practice-session.ts';
 import {formatPracticePrompt} from '../lib/practice-prompt.ts';
 const read=file=>JSON.parse(fs.readFileSync(file));
 const hash=v=>crypto.createHash('sha256').update(v).digest('hex');
-const approved=[51,52,53,54,55,56,57,58,61,62,63,65,66,69,70,72,73,74,76,77,78,79,80,81,82,83,84,87,89,90,91,92,93,94,96,97,98,99,100];
-const held=[59,60,64,67,68,71,75,85,86,88,95];
-const secondPass={...nda2026ISecondPass,...nda2026IBatch2SecondPass};
+const paper=read('content/nda-2026-i-official-paper.json');
+async function send(path,body){const {default:worker}=await import('../dist/server/index.js');return worker.fetch(new Request('http://localhost'+path,body?{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}:{}),{ASSETS:{fetch:async()=>new Response('',{status:404})}},{waitUntil(){},passThroughOnException(){}});}
+function recipe(inventory,questions=paper.questions){
+ const wanted=new Set(questions.map(q=>q.id));
+ const leaves=inventory.nodes.filter(n=>n.kind==='subtopic'&&n.questionIdsByExam?.NDA.some(id=>wanted.has(id)));
+ return {version:4,preparationExam:'NDA',taxonomyVersion:inventory.taxonomyVersion,subjectIds:[...new Set(leaves.map(n=>n.subjectId))],paths:leaves.map(n=>({subtopicId:n.id,exams:['NDA']})),frozenScopes:leaves.map(n=>({id:n.id,subjectId:n.subjectId,label:n.label,parentId:n.parentId,order:n.order,questionIdsByExam:{CSE:[],CAPF:[],CDS:[],NDA:n.questionIdsByExam.NDA.filter(id=>wanted.has(id))}})),count:'all',order:'newest',durationMinutes:null};
+}
 
-test('NDA I opening batch clears only independently reasoned, second-pass reviewed occurrences',()=>{
- validateNda2026IEvidence();
- assert.deepEqual(nda2026IQuestions.map(q=>q.questionNumber),approved);
- const imports=read('content/reviewed-prelims-imports.json').questions.filter(q=>q.exam==='NDA'&&q.year===2026&&q.paper==='I');
- assert.deepEqual(imports,nda2026IQuestions);
- const ledger=read('content/taxonomy/prelims-reviewed-placements.json');
- for(const q of imports){
-  assert.equal(questionReview(q.id).status,'reasoned-verified');assert.equal(questionEligible(q.id),true);
-  assert.equal(q.source.officialAnswer,null);assert.equal(q.source.optionsReordered,false);
-  assert.equal(q.sourceTextHash,hash(q.promptLines.join(' ')));
-  assert.match(q.explanation,/no matching official key recovered/);
-  assert.equal(q.source.secondPass,secondPass[q.questionNumber]);
-  assert.ok(q.source.primaryEvidence.length);
+test('official UPSC key is byte-checked and all 150 Series A cells have two matching visual transcriptions',()=>{
+ assert.equal(hash(fs.readFileSync('public'+evidence.asset)),evidence.sha256);
+ assert.match(evidence.url,/^https:\/\/www\.upsc\.gov\.in\/sites\/default\/files\//);
+ assert.match(evidence.url,/%E2%80%93/);
+ assert.equal(evidence.status,'official-provisional');assert.equal(evidence.dropped,0);
+ assert.equal(Object.keys(key).length,150);assert.equal(paper.questions.length,150);
+ assert.equal(new Set(paper.questions.map(q=>q.id)).size,150);
+ for(const q of paper.questions){
+  assert.equal(q.answer,key[q.questionNumber]);assert.equal(q.source.officialAnswer,q.answer);
+  assert.equal(q.source.displayedAnswer,q.answer);assert.equal(q.source.optionsReordered,false);
+  assert.equal(q.source.keySha256,evidence.sha256);assert.equal(q.source.keyPage,1);
+  assert.equal(q.source.bookletSeries,'A');assert.equal(questionReview(q.id).status,'official-provisional');assert.ok(questionEligible(q.id));
+  assert.match(q.explanation,/Official UPSC provisional key/);assert.ok(q.source.secondPass);
   assert.equal(combinedQuestions.filter(row=>row.id===q.id).length,1);
-  assert.equal(ledger.records.find(row=>row.questionId===q.id).status,'approved');
  }
- for(const number of held)assert.ok(!combinedQuestions.some(q=>q.id===`nda-2026-i-${number}`));
+});
+
+test('63 existing IDs and source text survive; 87 genuinely missing occurrences are added once',()=>{
+ const originals=[...read('content/question-bank.json').questions,...read('content/reviewed-prelims-imports.json').questions];
+ assert.equal(Object.keys(paper.baselines).length,63);
+ for(const [id,baseline] of Object.entries(paper.baselines)){
+  const old=originals.find(q=>q.id===id),current=combinedQuestions.find(q=>q.id===id);
+  assert.ok(old&&current);assert.equal(hash(JSON.stringify(old)),baseline.sha256);
+  assert.equal(current.sourceTextHash,old.sourceTextHash);assert.equal(current.sourceText,old.sourceText);
+  assert.deepEqual(current.options,old.options);assert.equal(questionReview(id).contentRevision,baseline.contentRevision);
+ }
+ assert.equal(paper.questions.filter(q=>!paper.baselines[q.id]).length,87);
+ assert.equal(paper.questions.find(q=>q.questionNumber===139).id,'cds-2026-2026-1-139');
+ assert.equal(paper.questions.find(q=>q.questionNumber===146).id,'cds-2026-2026-1-146');
  assert.equal(hash(fs.readFileSync('content/question-bank.json')),'af4f2f71576a84795a0c8b7fac227ff68ad343d75d4d310c7f56990fc801e89d');
 });
 
-test('NDA I source accounting does not turn English exclusions or old records into verified answers',()=>{
- const register=read('content/audits/nda-2026-i-review.json');
- assert.equal(register.records.length,150);assert.equal(new Set(register.records.map(r=>r.questionNumber)).size,150);
- assert.deepEqual(register.counts,{total:150,outOfScope:50,reasonedVerified:39,quarantined:11,pendingCurrentSourceReview:50,existingOccurrences:24});
- assert.equal(register.records.filter(r=>r.disposition==='reasoned-verified').length,39);
- assert.deepEqual(register.records.filter(r=>r.disposition==='quarantined').map(r=>r.questionNumber),held);
- assert.equal(register.records.filter(r=>r.existingId).length,24);
- assert.ok(register.records.filter(r=>r.existingId).every(r=>r.publicationDecisionThisPass==='not-newly-cleared'));
- const coverage=read('content/taxonomy/prelims-source-coverage.json');
- const paper=coverage.papers.find(p=>p.relativePath==='NDA PYP/GAT/2026-1.pdf');
- assert.equal(paper.coverageStatus,'current-source-review-in-progress');
- assert.equal(paper.reviewedSlots,89);assert.equal(paper.pendingSlots,61);
- assert.equal(paper.verifiedImports,39);assert.equal(paper.outOfScope,50);
- const rows=coverage.questionSlots.filter(r=>r.slotId.startsWith('NDA/2026-1/'));
- for(const number of approved){const slot=rows.find(r=>r.printedQuestionNumber===number);assert.match(slot.note,/No official key recovered/);assert.doesNotMatch(slot.note,/official-key page/);}
- for(const number of held)assert.equal(rows.find(r=>r.printedQuestionNumber===number).disposition,'pending-current-source-review');
+test('the complete paper register accounts for every question with no deferred or unscored substitute',()=>{
+ const audit=read('content/audits/nda-2026-i-review.json');
+ assert.equal(audit.status,'complete-official-provisional');
+ assert.deepEqual(audit.counts,{total:150,officialProvisional:150,officialFinal:0,dropped:0,newImports:87,reusedIds:63,english:50,science:50,gs:50});
+ assert.equal(audit.records.length,150);assert.ok(audit.records.every(r=>r.disposition==='official-provisional'));
+ const coverage=read('content/taxonomy/prelims-source-coverage.json').papers.find(p=>p.relativePath==='NDA PYP/GAT/2026-1.pdf');
+ assert.equal(coverage.reviewedSlots,150);assert.equal(coverage.pendingSlots,0);
+ assert.equal(coverage.verifiedImports,87);assert.equal(coverage.verifiedReuses,63);assert.equal(coverage.outOfScope,0);
+ assert.equal(coverage.coverageStatus,'current-source-content-and-key-reviewed');
 });
 
-test('independent physics calculations guard against the rejected secondary answer table',()=>{
- const n=10000,h=Math.PI/(2*n);let integral=0;
- for(let i=0;i<=n;i++){const y=1/Math.sqrt(1-.25*Math.sin(i*h)**2);integral+=y*(i===0||i===n?1:i%2?4:2);}
- const ratio=(2/Math.PI)*h*integral/3;
- assert.ok(Math.abs(ratio-1.073182007)<1e-8);
- assert.equal(nda2026IQuestions.find(q=>q.questionNumber===51).answer,'A');
- assert.ok(Math.abs(Math.acos(-.5)-2*Math.PI/3)<1e-12);
- assert.equal(nda2026IQuestions.find(q=>q.questionNumber===52).answer,'C');
- assert.equal(nda2026IQuestions.find(q=>q.questionNumber===53).answer,'D');
- const waterMass=.005*(2100*20+335000)/(4186*30);
- assert.ok(Math.abs(waterMass-.015)<.0001);
- assert.ok(Math.abs(8**(2/3)-4)<1e-12);
- assert.equal(60*9.8,588);
+test('all 150 are present in NDA preparation without leaking English or NDA world history into CSE GS',async()=>{
+ const nda=await(await send('/api/pyqs/inventory?preparationExam=NDA')).json();
+ const cse=await(await send('/api/pyqs/inventory?preparationExam=CSE')).json();
+ const allIds=new Set(nda.nodes.filter(n=>n.kind==='subtopic').flatMap(n=>n.questionIdsByExam.NDA));
+ const cseIds=new Set(cse.nodes.filter(n=>n.kind==='subtopic').flatMap(n=>Object.values(n.questionIdsByExam).flat()));
+ for(const q of paper.questions){assert.ok(allIds.has(q.id),q.id);if(q.preparationScope!=='gs'||q.subject==='Science & Technology')assert.ok(!cseIds.has(q.id),q.id);}
+ assert.equal(nda.subjects.find(s=>s.id==='subject:english').examCounts.NDA,50);
+ const english=paper.questions.filter(q=>q.subject==='English');assert.equal(english.length,50);
+ assert.ok(english.every(q=>!questionInGsScope(q.id)));
+ const response=await send('/api/practice-snapshots',recipe(nda));assert.equal(response.status,201);
+ const snapshot=await response.json();assert.equal(snapshot.questions.length,150);
+ assert.deepEqual(snapshot.questions.map(q=>q.questionNumber),Array.from({length:150},(_,i)=>i+1));
+ assert.ok(snapshot.questions.every(q=>q.answer===undefined&&q.explanation===undefined&&q.answerKeyStatus==='official-provisional'));
+ assert.deepEqual(snapshot.questions[0].underlined,['allegories']);
+ assert.equal(snapshot.questions.filter(q=>q.figure).length,4);
 });
 
-test('all thirty-nine reasoned imports grade correctly without leaking answers into snapshots',async()=>{
- const {default:worker}=await import('../dist/server/index.js');
- const send=(path,body)=>worker.fetch(new Request('http://localhost'+path,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}),{ASSETS:{fetch:async()=>new Response('',{status:404})}},{waitUntil(){},passThroughOnException(){}});
- const response=await worker.fetch(new Request('http://localhost/api/pyqs/inventory'),{ASSETS:{fetch:async()=>new Response('',{status:404})}},{waitUntil(){},passThroughOnException(){}});
- const inventory=await response.json(),wanted=new Set(nda2026IQuestions.map(q=>q.id));
- const leaves=inventory.nodes.filter(n=>n.kind==='subtopic'&&!n.legacyOnly&&n.questionIdsByExam?.NDA.some(id=>wanted.has(id)));
- const frozenScopes=leaves.map(n=>({id:n.id,subjectId:n.subjectId,label:n.label,parentId:n.parentId,order:n.order,questionIdsByExam:{CSE:[],CAPF:[],CDS:[],NDA:n.questionIdsByExam.NDA.filter(id=>wanted.has(id))}}));
- const created=await send('/api/practice-snapshots',{version:4,taxonomyVersion:inventory.taxonomyVersion,subjectIds:[...new Set(leaves.map(n=>n.subjectId))],paths:leaves.map(n=>({subtopicId:n.id,exams:['NDA']})),frozenScopes,count:'all',order:'newest',durationMinutes:null});
- assert.equal(created.status,201);const snapshot=await created.json();
- assert.deepEqual(snapshot.questions.map(q=>q.id).sort(),[...wanted].sort());
- assert.ok(snapshot.questions.every(q=>q.answer===undefined&&q.explanation===undefined&&q.answerKeyStatus==='reasoned-verified'));
- for(const q of nda2026IQuestions){const checked=await send('/api/practice/check',{questionId:q.id,selectedOption:q.answer,contentRevision:0});assert.equal(checked.status,200);const result=await checked.json();assert.equal(result.correct,true,q.id);assert.match(result.explanation,/Reasoned verification/);}
+test('all 150 official answers grade correct and all 150 alternate answers grade incorrect',async()=>{
+ const ids=paper.questions.map(q=>q.id),correct=Object.fromEntries(paper.questions.map(q=>[q.id,q.answer]));
+ const contentRevisions=Object.fromEntries(paper.questions.map(q=>[q.id,questionReview(q.id).contentRevision]));
+ const wrong=Object.fromEntries(paper.questions.map(q=>[q.id,q.answer==='A'?'B':'A']));
+ const goodResponse=await send('/api/practice/grade',{questionIds:ids,answers:correct,contentRevisions});assert.equal(goodResponse.status,200);
+ const good=await goodResponse.json();assert.equal(good.correct,150);assert.equal(good.incorrect,0);assert.equal(good.excluded,0);assert.equal(good.scored,150);
+ for(const q of paper.questions){assert.equal(good.feedback[q.id].correctAnswer,key[q.questionNumber]);assert.equal(good.feedback[q.id].correct,true);assert.equal(good.feedback[q.id].disposition,'scored');}
+ const badResponse=await send('/api/practice/grade',{questionIds:ids,answers:wrong,contentRevisions});assert.equal(badResponse.status,200);
+ const bad=await badResponse.json();assert.equal(bad.correct,0);assert.equal(bad.incorrect,150);assert.equal(bad.excluded,0);
 });
 
-test('batch two retains original figure bytes, four diagram options and the missing-speed exclusion',()=>{
- for(const [number,figure]of Object.entries(nda2026IBatch2Figures)){
-  const q=nda2026IQuestions.find(q=>q.questionNumber===Number(number));
-  assert.equal(q.requiresFigure,true);assert.equal(hash(fs.readFileSync('public'+q.figureKey)),figure.sha256);
-  assert.equal(q.source.figureSha256,figure.sha256);
+test('Q58 and Q73 official-key corrections invalidate cached feedback without changing selected answers',async()=>{
+ for(const number of [58,73]){
+  const q=paper.questions.find(q=>q.questionNumber===number),baseline=paper.baselines[q.id];
+  assert.equal(q.answer,number===58?'A':'D');assert.equal(baseline.answer,'C');assert.ok(answerKeyRevision(q.id)>0);
+  const attempt={snapshot:{questions:[{...q,contentRevision:0}]},answers:{[q.id]:'C'},feedback:{[q.id]:{correct:true,correctAnswer:'C',answerKeyRevision:0,reviewRevision:baseline.reviewRevision}}};
+  assert.equal(hasCompleteFeedback(attempt),false);
+  const response=await send('/api/practice/grade',{questionIds:[q.id],answers:attempt.answers,contentRevisions:{[q.id]:0}});
+  const result=await response.json();assert.equal(result.feedback[q.id].correct,false);
+  assert.equal(result.feedback[q.id].correctAnswer,q.answer);assert.equal(attempt.answers[q.id],'C');
+  assert.equal(hasCompleteFeedback({...attempt,feedback:result.feedback}),true);
  }
- assert.deepEqual(Object.keys(nda2026IQuestions.find(q=>q.questionNumber===73).options),['A','B','C','D']);
- assert.equal(nda2026IQuestions.find(q=>q.questionNumber===72).answer,'A');
- assert.equal(nda2026IQuestions.find(q=>q.questionNumber===74).answer,'B');
- assert.equal((5*20/2+15*20+5*20/2)/10,40);
- const ledger=read('content/audits/nda-2026-i-review.json');
- assert.match(ledger.records.find(q=>q.questionNumber===75).secondPass.reason,/initial speed/i);
- assert.match(ledger.records.find(q=>q.questionNumber===95).secondPass.reason,/exceptions/);
- const q90=nda2026IQuestions.find(q=>q.questionNumber===90);
- const table=formatPracticePrompt(q90.promptLines).find(block=>block.kind==='pair-table');
- assert.ok(table);assert.equal(table.rows.length,4);assert.equal(table.leftTitle,'Reactions');assert.equal(table.rightTitle,'Properties');
- assert.equal(table.rows[2].right,'Br₂ is reductant');
 });
 
-test('all 150 original source numbers are available without promoting pending questions',()=>{
- const manifest=read('content/nda-2026-i-source-pages.json');
- assert.equal(manifest.mode,'unscored-original-paper');
- assert.equal(manifest.answerVerification,'in-progress');
- assert.equal(manifest.sourcePdfSha256,'1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930');
- assert.deepEqual(manifest.pages.flatMap(page=>Array.from({length:page.last-page.first+1},(_,i)=>page.first+i)),Array.from({length:150},(_,i)=>i+1));
- for(const page of manifest.pages)assert.equal(hash(fs.readFileSync('public'+page.src)),page.sha256);
- const ledger=read('content/audits/nda-2026-i-review.json');
- assert.equal(ledger.onlineAvailability.scoredImportComplete,false);
- assert.equal(ledger.onlineAvailability.originalQuestions,150);
- for(const record of ledger.records){
-  assert.equal(record.onlineOriginal.mode,'unscored-original-paper');
-  const page=manifest.pages.find(page=>page.page===record.onlineOriginal.page);
-  assert.ok(page&&record.questionNumber>=page.first&&record.questionNumber<=page.last);
+test('figures, English pair tables and original matching-list labels survive online/PDF formatting',()=>{
+ for(const number of [72,73,74,75]){const q=paper.questions.find(q=>q.questionNumber===number);assert.equal(hash(fs.readFileSync('public'+q.figureKey)),q.source.figureSha256);}
+ for(const number of [46,47,48,49,90,111,120,121,123,138,139]){
+  const q=paper.questions.find(q=>q.questionNumber===number);assert.ok(formatPracticePrompt(q.promptLines).some(block=>block.kind==='pair-table'),`Q${number} table`);
  }
- assert.equal(nda2026IQuestions.length,39,'An online scan must never silently become a cleared import');
+ const q150=paper.questions.find(q=>q.questionNumber===150);
+ const matching=formatPracticePrompt(q150.promptLines).find(block=>block.kind==='match-table');assert.ok(matching);assert.equal(matching.left.items.length,4);assert.equal(matching.right.items.length,4);assert.equal(matching.right.items[3].label,'IV');
+ for(const number of [58,60,75,88,95]){const q=paper.questions.find(q=>q.questionNumber===number);assert.ok(q.source.editorialCaveat);assert.match(q.explanation,/Editorial caveat:/);}
 });

@@ -3,6 +3,7 @@ import pilotImports from '../content/reviewed-prelims-imports.json' with { type:
 import importPolicy from '../content/prelims-import-review-policy.json' with { type: 'json' };
 import reproductionOverrides from '../content/prelims-reproduction-overrides.json' with { type: 'json' };
 import materialSourceRepairs from '../content/prelims-material-source-repairs.json' with { type: 'json' };
+import officialNdaPaper from '../content/nda-2026-i-official-paper.json' with { type: 'json' };
 import {prelimsPath,reviewedPrelimsPlacements,PRELIMS_TAXONOMY_VERSION} from './prelims-taxonomy.ts';
 
 const cleared = new Set(['official-final', 'official-provisional', 'reasoned-verified']);
@@ -20,7 +21,7 @@ export const legacyQuestions = [...historicalBank.questions.map(question => {
   return placement ? { ...question, subject: placement.subject, topic: placement.topic, subtopic: placement.subtopic, taxonomyHead: placement.taxonomyHead } : question;
 }), ...approvedImports];
 const patches:Record<string,{promptLines:string[];sourceText:string;sourceTextHash:string;options?:{A:string;B:string;C:string;D:string}}>={...reproductionOverrides,...materialSourceRepairs};
-export const combinedQuestions=legacyQuestions.map(question=>{
+const reviewedBaseQuestions=legacyQuestions.map(question=>{
   const patch=patches[question.id];
   const reviewedQuestion=patch?{...question,promptLines:patch.promptLines,sourceText:patch.sourceText,sourceTextHash:patch.sourceTextHash,...(patch.options?{options:patch.options}:{})}:question;
   const placement=reviewedPrelimsPlacements.get(question.id);
@@ -34,4 +35,12 @@ export const combinedQuestions=legacyQuestions.map(question=>{
   });
   return {...reviewedQuestion,subject:primary.subject,topic:primary.chapter,subtopic:primary.subtopic,taxonomyHead:primary.head,taxonomyChapter:primary.chapter,taxonomySubtopic:primary.subtopic,taxonomyId:primary.id,taxonomyVersion:PRELIMS_TAXONOMY_VERSION,additionalPaths};
 });
+// Approved official-key overlay: raw imports, historical IDs and old snapshots
+// remain immutable. The build validates all 63 expected pre-change hashes.
+const officialById=new Map(officialNdaPaper.questions.map(q=>[q.id,q]));
+const priorIds=new Set(reviewedBaseQuestions.map(q=>q.id));
+export const combinedQuestions=[...reviewedBaseQuestions.map(question=>{
+  const official=officialById.get(question.id);
+  return official?{...question,...official,additionalPaths:question.additionalPaths??official.additionalPaths}:question;
+}),...officialNdaPaper.questions.filter(q=>!priorIds.has(q.id))];
 export default { ...historicalBank, questions: combinedQuestions };

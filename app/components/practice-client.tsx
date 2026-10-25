@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { memo, useCallback, useEffect, useRef, useState } from "react";
 import type { Bookmark, LocalAttempt, PracticeQuestion } from "../../lib/practice-types";
 import { deleteBookmark, getAttempt, listBookmarks, putAttempt, saveBookmark } from "../../lib/practice-store";
@@ -50,7 +49,6 @@ const QuestionPalette = memo(function QuestionPalette({ questions, answers, curr
 export function PracticeClient({ id }: { id: string }) {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const reducedMotion = useReducedMotion();
   const [attempt, setAttempt] = useState<LocalAttempt | null>();
   const [busy, setBusy] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
@@ -284,12 +282,13 @@ export function PracticeClient({ id }: { id: string }) {
       </header>
       {error && <div className="practice-save-error" role="alert"><p>{error}</p>{saveFailed && !pendingCompletion.current && <button onClick={() => { const value = current.current; if (value) void saveChange(value); }}>Retry saving</button>}</div>}
       <div className="exam-workspace">
-      <AnimatePresence mode="wait" initial={false}>
-        <motion.article className={`practice-question reading-${readingSize}`} key={question.id} initial={reducedMotion ? false : { opacity: 0, y: 5 }} animate={{ opacity: 1, y: 0 }} exit={reducedMotion ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: reducedMotion ? 0 : .18 }}>
+        {/* Replace the question atomically: an exiting animated question must not
+            retain answer buttons after the palette has moved to another ID. */}
+        <article className={`practice-question reading-${readingSize}`} key={question.id}>
           <div className="question-heading"><div className="question-context"><span className="visually-hidden">Question {attempt.currentIndex + 1} of {attempt.snapshot.questions.length}</span><span className="question-subject-badge">{question.subject}</span>{question.topic ? <span className="question-topic-badge">{question.topic}</span> : null}</div><fieldset className="reading-size" aria-label="Question text size"><legend>Text size</legend>{readingSizes.map((size) => <button key={size.value} type="button" title={size.label} aria-label={size.label} aria-pressed={readingSize === size.value} onClick={() => chooseReadingSize(size.value)}>{size.symbol}</button>)}</fieldset></div>
           <div className="question-copy">
             <div className="question-paper">
-              <PracticePromptView blocks={prompt} className="practice-prompt" figure={question.figure} />
+              <PracticePromptView blocks={prompt} className="practice-prompt" figure={question.figure} underlined={question.underlined} />
               <p className="question-origin"><span style={{ background: PYQ_EXAM_COLORS[question.exam] }} />First appeared: <strong>{sourceLabel}</strong> · Question {question.questionNumber}</p>
               {questionCorrectionNotice(question) && <p className="question-origin">{questionCorrectionNotice(question)}</p>}
             </div>
@@ -308,8 +307,7 @@ export function PracticeClient({ id }: { id: string }) {
           {attempt.status === "completed" && !feedback && <div className="practice-answer-hint" role="status"><p>{gradeError || "Loading your submitted answer sheet…"}</p>{gradeError && <button onClick={() => setGradeRetry((value) => value + 1)}>Retry answers</button>}</div>}
           {feedback && <section className={`answer-feedback ${feedback.disposition === 'excluded' ? 'is-excluded' : !selectedAnswer ? "is-unattempted" : feedback.correct ? "is-correct" : "is-incorrect"}`}><div><strong>{feedback.disposition === 'excluded' ? 'Excluded from score' : !selectedAnswer ? `Unattempted · Correct answer: ${feedback.correctAnswer}` : feedback.correct ? `Correct · Answer ${feedback.correctAnswer}` : `Correct answer: ${feedback.correctAnswer} · Your answer: ${selectedAnswer}`}</strong></div>{feedback.explanation ? <p>{feedback.explanation}</p> : <p className="explanation-unavailable">No published explanation is available for this question.</p>}</section>}
           <nav className="question-navigation" aria-label="Question navigation"><button disabled={busy || Boolean(pendingCompletion.current) || attempt.currentIndex === 0} onClick={() => void navigate(attempt.currentIndex - 1)}>← Previous</button><button className="bookmark-action" onClick={() => void toggleBookmark()}>{bookmarked ? "Saved" : "Save for later"}</button>{attempt.currentIndex < attempt.snapshot.questions.length - 1 ? <button className="next-question" disabled={busy || Boolean(pendingCompletion.current)} onClick={() => void navigate(attempt.currentIndex + 1)}>Save & next →</button> : <button className="next-question" disabled={busy} onClick={() => void finish()}>{attempt.status === "completed" ? "View results" : "Submit test"}</button>}</nav>
-        </motion.article>
-      </AnimatePresence>
+        </article>
         <QuestionPalette questions={attempt.snapshot.questions} answers={attempt.answers} currentIndex={attempt.currentIndex} bookmarkedIds={bookmarkedIds} disabled={busy || Boolean(pendingCompletion.current)} onNavigate={jumpToQuestion} />
       </div>
     </main>

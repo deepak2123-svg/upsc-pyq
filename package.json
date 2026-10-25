@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "build": "node scripts/build-reviewed-question-aliases.mjs --check && node scripts/build-prelims-reproduction-overrides.mjs --check && node scripts/build-reviewed-material-source-repairs.mjs --check && node scripts/publish-nda-2026-i-source-pages.mjs --check && vinext build",
+    "build": "node scripts/build-nda-2026-i-official-paper.mjs --check && node scripts/build-reviewed-question-aliases.mjs --check && node scripts/build-prelims-reproduction-overrides.mjs --check && node scripts/build-reviewed-material-source-repairs.mjs --check && node scripts/publish-nda-2026-i-source-pages.mjs --check && vinext build",
     "start": "vinext start",
     "test": "npm run build && node --test tests/answer-key-audit.test.mjs tests/reviewed-grading.test.mjs tests/question-placements.test.mjs tests/prelims-taxonomy-runtime.test.mjs tests/practice-draft-membership.test.mjs tests/rendered-html.test.mjs tests/taxonomy.test.mjs tests/indian-geography-taxonomy.test.mjs tests/geography-figure-audit.test.mjs tests/practice-selection.test.mjs tests/practice-api.test.mjs tests/practice-session.test.mjs tests/practice-prompt.test.mjs tests/nda-2026-ii-import.test.mjs tests/nda-2026-i-import.test.mjs tests/preparation-exams.test.mjs",
     "test:preparation": "node --test tests/preparation-exams.test.mjs",

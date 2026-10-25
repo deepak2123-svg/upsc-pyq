@@ -13,6 +13,8 @@ const oldBytes = fs.readFileSync(oldPath);
 const old = JSON.parse(oldBytes);
 const bank = JSON.parse(fs.readFileSync('content/question-bank.json')).questions;
 const reviewedPilot = JSON.parse(fs.readFileSync('content/reviewed-prelims-imports.json'));
+const officialNda=JSON.parse(fs.readFileSync('content/nda-2026-i-official-paper.json'));
+const ndaHash=officialNda.questions[0].source.originalPdfSha256;
 const reuseGroups=sourceReuseFiles.map(file=>({...JSON.parse(fs.readFileSync(file)),file}));
 const reproductionOverrides=JSON.parse(fs.readFileSync('content/prelims-reproduction-overrides.json'));
 const materialRepairs=JSON.parse(fs.readFileSync('content/prelims-material-source-repairs.json'));
@@ -73,7 +75,8 @@ const reviewedEntries = [
     return [`${evidence.originalPdfSha256}/${q.questionNumber}`, {id:q.id,disposition:'verified-existing-reuse',page:2,evidence:'content/reviewed-prelims-imports.json'}];
   }),
   ...reuseGroups.flatMap(group=>group.records.map(row=>[`${group.evidence.originalPdfSha256}/${row.questionNumber}`,{id:row.questionId,disposition:row.status,page:row.sourcePage,evidence:group.file}])),
-];
+].filter(([id])=>!id.startsWith(ndaHash+'/'));
+reviewedEntries.push(...officialNda.questions.map(q=>[`${ndaHash}/${q.questionNumber}`,{id:q.id,disposition:Object.hasOwn(officialNda.baselines,q.id)?'verified-existing-reuse':'verified-local-import',page:q.source.originalPage,evidence:'content/nda-2026-i-official-paper.json',verificationMethod:'official-key'}]));
 assert.equal(new Set(reviewedEntries.map(([id])=>id)).size,reviewedEntries.length,'Repeated approved source occurrence');
 const reviewedOccurrences=new Map(reviewedEntries);
 const files = ['../.tmp/full_reaudit_clean_questions.json', '../.tmp/full_reaudit_clean_cds_questions.json', '../.tmp/full_reaudit_clean_nda_questions.json'];
@@ -113,7 +116,7 @@ for (const source of sourceRegister.sources) {
   const completedDecisions=reviewedPaper?Array.from({length:expected},(_,i)=>reviewedOccurrences.get(`${source.sha256}/${i+1}`)).filter(Boolean):[];
   if(reviewedPaper) {
     assert.equal(reviewedPaper.exam,exam);assert.equal(reviewedPaper.questionCount,expected);
-    const evidence=reuseGroups.find(group=>group.evidence.originalPdfSha256===source.sha256)?.evidence
+    const evidence=(source.sha256===ndaHash?{bookletSeries:'A',keySha256:officialNda.evidence.sha256}:null)??reuseGroups.find(group=>group.evidence.originalPdfSha256===source.sha256)?.evidence
       ?? reviewedPilot.questions.find(q=>q.source.originalPdfSha256===source.sha256)?.source;
     assert.ok(evidence);assert.equal(reviewedPaper.series,evidence.series??evidence.bookletSeries);
     if(reviewedPaper.answerVerificationMethod!=='primary-source-reasoning')assert.equal(reviewedPaper.keySha256,evidence.keySha256);

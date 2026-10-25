@@ -10,7 +10,8 @@ export function PwaRegister() {
     // an older application shell alive after a production release.
     void navigator.serviceWorker
       .register("/sw.js", { updateViaCache: "none" })
-      .then((registration) => registration.update());
+      .then((registration) => registration?.update())
+      .catch(() => { /* Practice still works when offline caching is unavailable. */ });
   }, []);
   return null;
 }

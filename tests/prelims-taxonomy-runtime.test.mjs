@@ -64,7 +64,7 @@ test('Economy Current Affairs mirrors every approved economic current-affairs le
   const ids=result.body.questions.map(q=>q.id);
   assert.equal(new Set(ids).size,ids.length);
   assert.equal(ids.length,selectionCounts(sourcePaths,index).matchingCount);
-  assert.equal(data.totalCount,1852,'Shared categories must not duplicate records; NDA I batches add 39 unique GS occurrences');
+  assert.equal(data.totalCount,1886,'Shared categories must not duplicate records; NDA I now adds 73 unique CSE-GS-compatible occurrences');
 });
 
 test('older V4 and V3 scopes retain frozen membership after a question moves to another subject',async()=>{
@@ -121,7 +121,9 @@ test('review ledger checks hashes and separates preserved decisions, fresh passe
   const ledger=JSON.parse(fs.readFileSync('content/taxonomy/prelims-reviewed-placements.json'));
   const bank=JSON.parse(fs.readFileSync('content/question-bank.json')).questions;
   const imports=JSON.parse(fs.readFileSync('content/reviewed-prelims-imports.json')).questions;
-  const byId=new Map([...bank,...imports].map(q=>[q.id,q]));
+  const official=JSON.parse(fs.readFileSync('content/nda-2026-i-official-paper.json')).questions;
+  const oldIds=new Set([...bank,...imports].map(q=>q.id));
+  const byId=new Map([...bank,...imports,...official.filter(q=>!oldIds.has(q.id))].map(q=>[q.id,q]));
   assert.equal(new Set(ledger.records.map(r=>r.questionId)).size,ledger.records.length);
   assert.equal(ledger.pilotSubjects.length,9);
   assert.equal(ledger.records.filter(r=>r.basis==='preserved-physical-v1.2-review').length,362);
@@ -130,7 +132,7 @@ test('review ledger checks hashes and separates preserved decisions, fresh passe
   assert.equal(repaired.materialRepairReviewed,true);
   assert.equal(repaired.answerEligibilityUnchanged,true);
   assert.equal(JSON.parse(fs.readFileSync('content/question-review-policy.json'))['nda-2025-i-86'].status,'quarantined');
-  assert.equal(ledger.records.filter(r=>r.status==='out-of-scope').length,10);
+  assert.equal(ledger.records.filter(r=>r.status==='out-of-scope').length,63);
   for(const r of ledger.records) {
     assert.ok(byId.has(r.questionId));
     assert.equal(crypto.createHash('sha256').update(JSON.stringify(byId.get(r.questionId))).digest('hex'),r.expectedRecordHash,r.questionId);

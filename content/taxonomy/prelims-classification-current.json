@@ -50697,6 +50697,30 @@
       ]
     },
     {
+      "questionId": "nda-2026-i-1",
+      "expectedRecordHash": "cb585879de91c5d57b8046d20ca8e4b58d7dcf1323140d237e73393d3d6647d8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Synonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-10",
+      "expectedRecordHash": "0ae53ca367ef93b8a21930c2304c4c64fd93605f497108b75080cb4c54f2257e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Synonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
       "questionId": "nda-2026-i-100",
       "expectedRecordHash": "3065f05fb950bc333ff3e1310e7d89de9a4f7d1c7f38d4bfbb68fead18cc3bee",
       "primaryId": "syllabus:science-technology/biology/human-physiology/circulation",
@@ -50711,6 +50735,940 @@
       "tags": [
         "Static"
       ]
+    },
+    {
+      "questionId": "nda-2026-i-11",
+      "expectedRecordHash": "06062a580b444e2445b27da05ca8c61332548ad557291040c16dd76031cea6d6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Antonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-12",
+      "expectedRecordHash": "eccbd9ce1f549a22b0bbb0618cb138a9ef22c242ce85ad4ba21ba445cae33c76",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Antonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-121",
+      "expectedRecordHash": "989f1f52a2e17229ca863b7adebdc60712f9be9456116165282fdcf3c9c97818",
+      "primaryId": "syllabus:history/art-culture/literature-and-languages/sanskrit-literature",
+      "additionalIds": [
+        "syllabus:history/art-culture/literature-and-languages/regional-literature"
+      ],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Sanskrit literature within Art & Culture / Literature and Languages; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-122",
+      "expectedRecordHash": "e18970dda8ed9b909c28893639abdb4c55a90928c370eb23db72819a95f2cbb6",
+      "primaryId": "syllabus:history/modern-india-national-movement/european-companies/english-and-french",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests English and French within Modern India & National Movement / European Companies; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-123",
+      "expectedRecordHash": "f7b0741b4617a07aac37137abdca05791d0fc5dc50ec23e6bb418a965d5d38fc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Inventions and inventors within World History / Industrial Revolution; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-124",
+      "expectedRecordHash": "3047068c294875145c0585408fe206cd4f35de2da39df0cb0a3d4cc11fe12248",
+      "primaryId": "syllabus:history/modern-india-national-movement/gandhian-movements/rowlatt-satyagraha",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Rowlatt Satyagraha within Modern India & National Movement / Gandhian Movements; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-125",
+      "expectedRecordHash": "a9ce07aaf366c28461a10c88f6e7790be24bd848fded154a6f584d75f3ce837c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Conditions in Britain within World History / Industrial Revolution; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-126",
+      "expectedRecordHash": "87baffa6568894f9a652dfbcbf8b53abef10a797dac0925356d2015fab3d866e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests 1905 Revolution within World History / Russian Revolution; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-127",
+      "expectedRecordHash": "7152d001ad34f3d609bb34464082139488c27c1c6748d32432b28d47579f8a7f",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-economy/transport-and-communications",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Transport and communications within Modern India & National Movement / Colonial Economy; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-128",
+      "expectedRecordHash": "c028cd862c51e08600911b2de4fab5c6f5f4f5447195d71264bd0342006ff46d",
+      "primaryId": "syllabus:history/ancient-india/indus-valley-civilisation/town-planning",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Town planning within Ancient India / Indus Valley Civilisation; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-129",
+      "expectedRecordHash": "a934d5c4f5bbfcf410b139dc3115d519e6e4a9c06c9842e5e22612c9d17fc7f5",
+      "primaryId": "syllabus:history/ancient-india/jainism-and-philosophical-traditions/sects-and-patronage",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Sects and patronage within Ancient India / Jainism and Philosophical Traditions; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-13",
+      "expectedRecordHash": "53de94bb15350dde37ad5616d8443de5eeb2783141a41b59c0fa0f5560c52240",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Antonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-130",
+      "expectedRecordHash": "4d95f4d8cd87de565a554af00c987b6a6ce667c339bf646b9d0ee9d239722ae9",
+      "primaryId": "syllabus:history/ancient-india/indus-valley-civilisation/crafts-and-technology",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Crafts and technology within Ancient India / Indus Valley Civilisation; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-131",
+      "expectedRecordHash": "c5e1e05f37aa40c158990bf841766e5162001a3ce18917af7ef7a3dfb886fe4c",
+      "primaryId": "syllabus:economy/development/development-policy/planning-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Planning institutions within Development / Development Policy; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-132",
+      "expectedRecordHash": "318079e8ade82e237e44b23a922c5cf8ac8890672981e4dbd072825d595c58e7",
+      "primaryId": "syllabus:polity-governance/institutions/constitutional-and-statutory-bodies/cag",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests CAG within Institutions / Constitutional and Statutory Bodies; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-133",
+      "expectedRecordHash": "af07f6a8728c75d0d8c22706c2eaae5c04b158bbba421068ced2c3ef8a0435e3",
+      "primaryId": "syllabus:polity-governance/institutions/union-executive/president",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests President within Institutions / Union Executive; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-134",
+      "expectedRecordHash": "ed12aece5d0803eb3876a4aee8e645b88921afe33d73eabd695352981b7ce55a",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/salient-features",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Salient features within Constitutional Foundations / Constitutional Structure; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-135",
+      "expectedRecordHash": "6625cf2178d118ec3f7c1f12a7a890265d888a46bb1c7bb3c62ffa43f31c6499",
+      "primaryId": "syllabus:economy/development/development-policy/sustainable-development",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Sustainable development within Development / Development Policy; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-136",
+      "expectedRecordHash": "cbc09aeb6c1fa0417e6539e9c46786e023dba1b9869d7b192d17a9e2375a86e0",
+      "primaryId": "syllabus:polity-governance/institutions/parliament/financial-control",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Financial control within Institutions / Parliament; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-137",
+      "expectedRecordHash": "1b2bb6b2df39ba3cf66f6ac467075a0678ad4764e491f2918fd7afc5626169d9",
+      "primaryId": "syllabus:polity-governance/institutions/parliament/sessions-and-procedures",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Sessions and procedures within Institutions / Parliament; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-138",
+      "expectedRecordHash": "9d38c6d64b4efe75f7dc1bde36a2deacdc43cc93e278def507aed30f09441f75",
+      "primaryId": "syllabus:international-relations-organisations/international-institutions/global-institutions/united-nations-organs",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests United Nations organs within International Institutions / Global Institutions; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-14",
+      "expectedRecordHash": "e2acc0ea46a571b698c00698b4221a1e0a26a2f604c11d4d7920ef566cfa147c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Antonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-140",
+      "expectedRecordHash": "e65dd0b8fb15fa4ccc6b82419d52c592ee8a7575abc0694bd83399ff3cd0e63b",
+      "primaryId": "syllabus:polity-governance/institutions/constitutional-and-statutory-bodies/election-commission",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Election Commission within Institutions / Constitutional and Statutory Bodies; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-141",
+      "expectedRecordHash": "dffa2bf16e981f45169309c2adfefa82c4a2fc326c041b19cff3dc56ede41ec5",
+      "primaryId": "syllabus:current-affairs/defence-security/defence-cooperation/defence-production",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Defence production within Defence & Security / Defence Cooperation; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-142",
+      "expectedRecordHash": "f8b513e235616ba506bececdbc81b10edce786011274ceb4998fb01b8430d0b5",
+      "primaryId": "syllabus:polity-governance/governance/public-policy-and-administration/policy-implementation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Policy implementation within Governance / Public Policy and Administration; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-143",
+      "expectedRecordHash": "872e0925835a75fc57af4f29cbc9f494974e214e44af8ba860d1b3aa4ac1a350",
+      "primaryId": "syllabus:current-affairs/national-affairs/government-initiatives/implementing-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Implementing institutions within National Affairs / Government Initiatives; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-144",
+      "expectedRecordHash": "cc9b03c177b155753a997609df3b5adff6aeec13805c4daf80f52ed2abc907fb",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/culture-and-heritage-recognition/cultural-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Cultural institutions within Sports, Culture & Recognition / Culture and Heritage Recognition; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-147",
+      "expectedRecordHash": "edcf19e476ef0a25d1c6d58c1657016fd884c2613669f6aadeccba2aefbe9380",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/winners-and-records",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Winners and records within Sports, Culture & Recognition / Sports; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-149",
+      "expectedRecordHash": "22f21d36ce7514dad72ce9e0115c99e5f1f702fac72c2d9469408889765be5b0",
+      "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/environmental-reports-and-indices",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Environmental reports and indices within Environment & Geography / Climate and Conservation Developments; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-15",
+      "expectedRecordHash": "d42b85b2acc5b8f0008389afb8bd341a02e7bc4aed2d87ea4a8f5010b5ce6a19",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Antonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-150",
+      "expectedRecordHash": "e90074e4908325473d94afbe657b6b066724825a9e5545dec194a0f9986fa233",
+      "primaryId": "syllabus:current-affairs/international-affairs/agreements-and-cooperation/humanitarian-cooperation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Humanitarian cooperation within International Affairs / Agreements and Cooperation; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-16",
+      "expectedRecordHash": "a2cdf0a8c930032d5e59a42cd55d740eb40249713cec74d38835024607e9b928",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Antonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-17",
+      "expectedRecordHash": "b38188d557b8062587fdc69cd3113cbf0a1d5f842e99e51f3e1510dc3fc0c5b5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Antonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-18",
+      "expectedRecordHash": "ddaf721d2d78bef40cdb61a16dbb21d5ae47912c0855cc23fdaa0766af8e2374",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Antonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-19",
+      "expectedRecordHash": "4c200cea1a890f9a8787d541a0982aeba729f6c2b45875f8a2eeed0dda8f915e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Antonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-2",
+      "expectedRecordHash": "edc9fb451f05bb12ec66906718c674ef1e963794ff0e0d9b78727f5d3939ec49",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Synonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-20",
+      "expectedRecordHash": "1fda304f5ed504394e97e63cff6d2df11f8865654010aac1ea373feb95a1d74e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Antonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-21",
+      "expectedRecordHash": "869d34eaa1de750c2f9f21fba036a584d0b3a328192d22cae82ead875df95d21",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Idioms and phrases within Vocabulary / Expressions; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-22",
+      "expectedRecordHash": "9552b862254566ab0c486b6b18fed7ad9b61e16220ea068aea254c9e10e4773b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Idioms and phrases within Vocabulary / Expressions; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-23",
+      "expectedRecordHash": "ea04660a974796ee8945f3919ad0805596e43631fc85576c81121416022c2516",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Idioms and phrases within Vocabulary / Expressions; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-24",
+      "expectedRecordHash": "ad15a0fb543af318df08c331674bc7dbf4395488e1f776b76328685afa6710b5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Idioms and phrases within Vocabulary / Expressions; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-25",
+      "expectedRecordHash": "80cdb4d7add640a4c0ce932ae9825a7cd281d47a8715e9f8fbdaca626563599c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Idioms and phrases within Vocabulary / Expressions; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-26",
+      "expectedRecordHash": "b1d12b22fe8fe6d913251e41f3ab51c441bf3ce343b61988273a08356bc69a59",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Articles and determiners within Grammar / Parts of speech; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-27",
+      "expectedRecordHash": "4bd2bf2272eb10edc0ab7a6dec8530341bbd0bb188894ca94fae8cf546f7437b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Non-finite verbs within Grammar / Verbs; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-28",
+      "expectedRecordHash": "169bdeeabb3c22abaf8a5ab89e87dc8eea3ce2afac9bc77879319030d8dd747f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Adjectives and adverbs within Grammar / Parts of speech; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-29",
+      "expectedRecordHash": "dce83a4cd50d0f2555a1771b632845b6f1c551c83dfdbaa26394aa978aa3b0cf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Prepositions and conjunctions within Grammar / Parts of speech; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-3",
+      "expectedRecordHash": "27cf156fc86d80c8ce0553696bbf8d21f27cde56a596d901e260929bd9e9d252",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Synonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-30",
+      "expectedRecordHash": "18abd9510383a0b7a0c65f7779edcccf54596fe063e5a29ec8e78ec4d31a662c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Articles and determiners within Grammar / Parts of speech; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-31",
+      "expectedRecordHash": "4cb5636c4667584b745bbf162c734313e55bfd80965f36e7d5bfc223ee2ec1d2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Sentence completion within Usage and Sentence Skills / Sentence organisation; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-32",
+      "expectedRecordHash": "ea40f41f38fd14af52b2989b17c5a2e8f54546950dab829ef828b83086c07949",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Sentence completion within Usage and Sentence Skills / Sentence organisation; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-33",
+      "expectedRecordHash": "b41da0df33c76ec9f8cc370817453b7ee128deae02a38189aeb5d5edb880617b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Sentence completion within Usage and Sentence Skills / Sentence organisation; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-34",
+      "expectedRecordHash": "8b4873457ff29b4154ec6f697d723a2b9be3dc90e87cfb464ffd83fc80883c70",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Sentence completion within Usage and Sentence Skills / Sentence organisation; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-35",
+      "expectedRecordHash": "ada07427ee0980fd62e6b8e912984002ad7d69de8462680ffe75efc1bcd6a63f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Sentence completion within Usage and Sentence Skills / Sentence organisation; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-36",
+      "expectedRecordHash": "92dfd23b725e2a55a83e4e7714b64ca0c8d335e99a6d104fd21b5a0825d2247f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Sentence improvement within Usage and Sentence Skills / Error correction; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-37",
+      "expectedRecordHash": "69e0a2d8f1b29961d5d63e11073baeb18a413cf4d6d894f0415250730290d826",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Tenses and aspect within Grammar / Verbs; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-38",
+      "expectedRecordHash": "0c5c742c21f26550218baffad5e293d32a2605f0479875f36cd2aa4fcd48e1e9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Nouns and pronouns within Grammar / Parts of speech; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-39",
+      "expectedRecordHash": "f1ebb7cea163594c68b7047a49f76c5d86109c5e081c756f0880923d8f1c2670",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Clauses and conjunctions within Grammar / Sentence structure; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-4",
+      "expectedRecordHash": "8f013b6913beaf8c114eb92121cf6f296f427eac82c3843c05e3b67b4c509bdb",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Synonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-40",
+      "expectedRecordHash": "2af648ecca632b3ef4fe1d5fef11760d1292a7297e6bb6a4fcbe14163568be13",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Clauses and conjunctions within Grammar / Sentence structure; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-41",
+      "expectedRecordHash": "15391a907c60144298eefea8fcd7eba9a2a5aa8634e9e2e065a7769d52547f28",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Spotting errors within Usage and Sentence Skills / Error correction; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-42",
+      "expectedRecordHash": "9c8a112dd8802d7df5347c1533bb38963a26187ea99f2bb51a4354e3d00e9308",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Spotting errors within Usage and Sentence Skills / Error correction; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-43",
+      "expectedRecordHash": "7b3cbc20682da62a7b9b961bdb4f2b8ba1f5c345d6905ec6620139b2f50d8c00",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Spotting errors within Usage and Sentence Skills / Error correction; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-44",
+      "expectedRecordHash": "2424e0da486643114e686ff4b6973c3d8846c4203679db01894fe5d39cc7f2c2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Spotting errors within Usage and Sentence Skills / Error correction; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-45",
+      "expectedRecordHash": "53e66d1b22f60b76b15d467c3ac7d8c0a49461b2e5d6f939ce6b4e0d5c733312",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Spotting errors within Usage and Sentence Skills / Error correction; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-46",
+      "expectedRecordHash": "7126538d6bfa2af320107a44761c2f668f4b05845b30b8e1ef629e9706ae5f85",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Active and passive voice within Grammar / Sentence structure; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-47",
+      "expectedRecordHash": "8c425636958f646cf051cb0b213ed63674f8007e7d5a002afa7269910c305ea7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Direct and indirect speech within Grammar / Sentence structure; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-48",
+      "expectedRecordHash": "da0291f00825916958de34393a75d2bcac55d840f07a0a131c70bdddedb46175",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Idioms and phrases within Vocabulary / Expressions; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-49",
+      "expectedRecordHash": "bdadc3bb28e32a4c205a3a951b8555ed2bf22300efd415d80b12fb370f229e73",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests One-word substitutions within Vocabulary / Expressions; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-5",
+      "expectedRecordHash": "66c64e42413f3cb79d150fde31156fa0626fd43accb31348be13568fea16c1ed",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Synonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-50",
+      "expectedRecordHash": "c6e43fa2366f918f24f01c446c48609f53d9458ca67a17f1ebe564e438342f85",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Fill in the blanks within Usage and Sentence Skills / Error correction; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
     },
     {
       "questionId": "nda-2026-i-51",
@@ -50841,6 +51799,50 @@
       ]
     },
     {
+      "questionId": "nda-2026-i-59",
+      "expectedRecordHash": "189b2634c99b0dd2fc1a3b7710f28cf190aae6d260753af0015e0935a107098c",
+      "primaryId": "syllabus:science-technology/physics/mechanics/fluids",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Fluids within Physics / Mechanics; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-6",
+      "expectedRecordHash": "d23a97bf9cd9621117971300430044eff365bafc6a0199be720a20f38aa14ac7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Synonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
+      "questionId": "nda-2026-i-60",
+      "expectedRecordHash": "50da783f6870df8275d9ec8592fc36d67c1cb05879e2d7325ff41847e5ecae81",
+      "primaryId": "syllabus:science-technology/physics/mechanics/work-energy-and-power",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Work energy and power within Physics / Mechanics; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2026-i-61",
       "expectedRecordHash": "32a8d12c18c706e5a61d879949df638572bb9d5c644e7aeebdd532c19d07ff21",
       "primaryId": "syllabus:science-technology/physics/heat-and-waves/temperature-and-heat",
@@ -50889,6 +51891,22 @@
       ]
     },
     {
+      "questionId": "nda-2026-i-64",
+      "expectedRecordHash": "9ed310ef315d5f81ce99cfaacaff06f4608441994276d215416ef843cb5e5295",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/optics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Optics within Physics / Light and Electricity; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2026-i-65",
       "expectedRecordHash": "8b769495095e7d10c157886b5069ed9ac26e84c7897f8c288f36180c9a40a881",
       "primaryId": "syllabus:science-technology/physics/mechanics/work-energy-and-power",
@@ -50921,6 +51939,38 @@
       ]
     },
     {
+      "questionId": "nda-2026-i-67",
+      "expectedRecordHash": "5d784b15ff5bb75a9fa070a4af1931c6b189c6cb5e70543c2455dd6aacd307a3",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/electrostatics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Electrostatics within Physics / Light and Electricity; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-68",
+      "expectedRecordHash": "b2d4028018e22c4142e6036ace343b43b4b67460eba5a9d0c15a50af319f11db",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/optics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Optics within Physics / Light and Electricity; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2026-i-69",
       "expectedRecordHash": "dbf034a6024554af3f98f5b49c6e9c6a3ab702952033f7596d209c10a1f056b5",
       "primaryId": "syllabus:science-technology/physics/light-and-electricity/optics",
@@ -50937,6 +51987,18 @@
       ]
     },
     {
+      "questionId": "nda-2026-i-7",
+      "expectedRecordHash": "df3ca1d53b59add4685c596734f292f196a7662ea58615c6e3bdf9e8237b489b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Synonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
+    },
+    {
       "questionId": "nda-2026-i-70",
       "expectedRecordHash": "6b25e7b6ad7b030bfe133124a403e185022b5d37c7de16eb484c9701b732abcd",
       "primaryId": "syllabus:science-technology/physics/mechanics/force-and-momentum",
@@ -50947,6 +52009,22 @@
       "secondPass": {
         "status": "approved",
         "rationale": "Reread p15: uniform speed, mass 60 kg, upward force not net force. a=0 and upward drag equals weight. 60×9.8=588 N, C; the stated 2 m/s is not an acceleration."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-71",
+      "expectedRecordHash": "6c00b054193a569c856aaaeab9b351fc54b165b72d35508df3dc8c6fa3818805",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/electromagnetic-spectrum",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Electromagnetic spectrum within Physics / Light and Electricity; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
       },
       "tags": [
         "Static"
@@ -50995,6 +52073,22 @@
       "secondPass": {
         "status": "approved",
         "rationale": "Reread p17: the angle is incidence from INSIDE AB and n=1.5. Critical angle arcsin(2/3)≈41.81°, less than 60°. Independent normal-reflection construction at BC makes ABC=60°, displayed B. The figure includes all A/B/C/D and theta labels."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-75",
+      "expectedRecordHash": "808dbba12851b51959f913f19b1ee419aafa4ab308f07348f0b04484e93c0354",
+      "primaryId": "syllabus:science-technology/physics/mechanics/force-and-momentum",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Force and momentum within Physics / Mechanics; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
       },
       "tags": [
         "Static"
@@ -51063,6 +52157,18 @@
       "tags": [
         "Static"
       ]
+    },
+    {
+      "questionId": "nda-2026-i-8",
+      "expectedRecordHash": "15c2dd9bb8759ff091567c4c8cfddd3f8a0ab9f9e819181d29c6d66757343e45",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Synonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
     },
     {
       "questionId": "nda-2026-i-80",
@@ -51145,6 +52251,38 @@
       ]
     },
     {
+      "questionId": "nda-2026-i-85",
+      "expectedRecordHash": "33c2bf0e5d5c1650fbc11b9415284fd3cfb16cdd86fac973d782bab811671b67",
+      "primaryId": "syllabus:science-technology/chemistry/materials-and-applications/industrial-chemistry",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Industrial chemistry within Chemistry / Materials and Applications; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-86",
+      "expectedRecordHash": "086d503816e920c922407ac5945e0d53fca70664c0ae8f48a3558bbf26119dc4",
+      "primaryId": "syllabus:science-technology/chemistry/materials-and-applications/industrial-chemistry",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Industrial chemistry within Chemistry / Materials and Applications; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2026-i-87",
       "expectedRecordHash": "206e36932d0641f3b11437b29a40296f8ce487c558a874f121f883dd88f5e391",
       "primaryId": "syllabus:science-technology/chemistry/matter-and-reactions/acids-bases-and-salts",
@@ -51155,6 +52293,22 @@
       "secondPass": {
         "status": "approved",
         "rationale": "Reread p23 formula list: AlCl3/NH3/BF3/FeCl3. Count acceptors 3, exclude ammonia lone-pair donor. Checked that C labels Three, not All four. FeCl3 metal-ion acceptor is included."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-88",
+      "expectedRecordHash": "a469a546724996117426d891b1e97bd152e51468d2a68d6ecd41c1a6239dce6b",
+      "primaryId": "syllabus:science-technology/chemistry/materials-and-applications/carbon-compounds",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Carbon compounds within Chemistry / Materials and Applications; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
       },
       "tags": [
         "Static"
@@ -51175,6 +52329,18 @@
       "tags": [
         "Static"
       ]
+    },
+    {
+      "questionId": "nda-2026-i-9",
+      "expectedRecordHash": "c8a97dffe9d9a069c9a8f48c09ccc2a68f50677d58b0e047bfe8640f284c98ae",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "The complete task tests Synonyms within Vocabulary / Word meanings; explicit NDA/CDS preparation branch, not automatic CSE applicability.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
+      }
     },
     {
       "questionId": "nda-2026-i-90",
@@ -51251,6 +52417,22 @@
       "secondPass": {
         "status": "approved",
         "rationale": "Reread p25 FIRST meiotic division. Primary spermatocyte enters meiosis I; secondary spermatocyte is the meiosis-II precursor. Distinguish spermatogonium mitosis and Sertoli support. B."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2026-i-95",
+      "expectedRecordHash": "f5d55a1a875328d3bb881fe18efeee73144fb16a551026ba84758806ea502b15",
+      "primaryId": "syllabus:science-technology/biology/cell-and-genetics/cell-structure",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "The complete task tests Cell structure within Biology / Cell and Genetics; existing reviewed GS concept registry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Separate reread of the original source page and all options; official page-1 cell checked in independent column-first and row-first transcriptions, which agree for all 150 numbers."
       },
       "tags": [
         "Static"

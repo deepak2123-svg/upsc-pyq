@@ -62,7 +62,11 @@ const frozenCohort=read('content/taxonomy/prelims-classification-register.json')
 assert.equal(hash(fs.readFileSync('content/question-bank.json','utf8')),frozenCohort.baselineBankSha256,'Historical bank changed; review and migrate the frozen classification baseline explicitly.');
 assert.equal(hash(fs.readFileSync('content/taxonomy/physical-geography-v1.2-review.json','utf8')),'fe554233fa3c3a3d565b435aab5fba67d1852cc2b23f6b488fda6fad4e9f8d7f','Preserved Physical Geography review changed unexpectedly.');
 const imports=read('content/reviewed-prelims-imports.json');
+const completeNda=read('content/nda-2026-i-official-paper.json');
+const originalIds=new Set([...rawBank,...imports.questions].map(q=>q.id));
+const completeNdaNew=completeNda.questions.filter(q=>!originalIds.has(q.id));
 const bank=new Map([...rawBank,...imports.questions].map(q=>[q.id,q]));
+for(const q of completeNdaNew)bank.set(q.id,q);
 const answerReview=read('content/question-review-state.json').records;
 const physical=read('content/taxonomy/physical-geography-v1.2-review.json');
 const pilot=read('content/taxonomy/prelims-classification-pilot.json');
@@ -202,6 +206,11 @@ for(const [id,primary,additional,rationale,secondPass,tags=['Static'],extra={}] 
 }
 for(const question of rawBank.filter(q=>q.subject==='English')) {
   records.set(question.id,{questionId:question.id,expectedRecordHash:hash(question),status:'out-of-scope',basis:'complete-stem-and-options-scope-review',scopeReason:'English language is outside this GS phase.',rationale:'Complete question and options test vocabulary, idiom, grammatical completion or sentence ordering. A reference to a constitution, economy or civil service does not turn the language task into GS.',secondPass:{status:'approved',rationale:'All ten English-labelled records reread in full, including the paragraph-ordering and fill-in-the-blank options. Keep historical grading available; exclude only from new GS selections.'}});
+}
+// Verified preparation-only topics do not silently become CSE GS topics.
+for(const q of completeNdaNew){
+ if(q.preparationScope==='gs')approved(q.id,resolve([q.subject,q.taxonomyHead,q.topic,q.subtopic].join('/')),(q.additionalPaths??[]).map(p=>resolve([p.subject,p.head,p.chapter,p.subtopic].join('/'))), 'official-complete-paper-second-pass',q.source.classificationRationale,q.source.secondPass,q.classificationTags??['Static']);
+ else records.set(q.id,{questionId:q.id,expectedRecordHash:hash(q),status:'out-of-scope',basis:'verified-preparation-only-scope',scopeReason:'Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.',rationale:q.source.classificationRationale,secondPass:{status:'approved',rationale:q.source.secondPass}});
 }
 // Explicit category cross-listing requested by the editor. Existing reviewed
 // Current Affairs placements are retained; no raw question, primary placement,

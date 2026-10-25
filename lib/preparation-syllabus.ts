@@ -2,6 +2,12 @@
  * Stable concept keys can be shared; the exam view selects its appropriate depth.
  */
 export type SyllabusSection = readonly [string, readonly (readonly [string, readonly string[]])[]];
+export const defenceWorldHistory: readonly SyllabusSection[] = [
+  ['World History',[
+    ['Industrial Revolution',['Conditions in Britain','Inventions and inventors']],
+    ['Russian Revolution',['1905 Revolution','1917 Revolution']],
+  ]],
+];
 export const englishSyllabus: readonly SyllabusSection[] = [
   ['Vocabulary', [
     ['Word meanings', ['Synonyms', 'Antonyms', 'Words in context']],

@@ -32,9 +32,9 @@ const pages=ranges.map(([page,first,last])=>{
 assert.deepEqual(pages.flatMap(p=>Array.from({length:p.last-p.first+1},(_,i)=>p.first+i)),Array.from({length:150},(_,i)=>i+1));
 const manifest={version:1,id:'nda-2026-i-gat',exam:'NDA',year:2026,session:'I',paper:'GAT',series:'A',questionCount:150,
  sourceUrl:'https://www.upsc.gov.in/sites/default/files/QP-NDA-NA-I-26-GENERAL-ABILITY-TEST-130426.pdf',sourcePdfSha256:sourceHash,
- mode:'unscored-original-paper',answerVerification:'in-progress',
+ mode:'original-source-reference',answerVerification:'official-provisional',
  reproduction:'Unmodified full-page raster renders from the hash-checked original PDF; includes English directions, underlining, all options, tables and diagrams. Page ranges visually checked against the printed numbering. Image access does not establish answer verification.',pages};
 const bytes=JSON.stringify(manifest,null,2)+'\n';
 if(check)assert.equal(fs.readFileSync(manifestFile,'utf8'),bytes,'Stale published original-page manifest');
 else fs.writeFileSync(manifestFile,bytes);
-console.log(`Original paper: ${pages.length} pages, 150 source questions, unscored; no verification decisions changed.`);
+console.log(`Original source: ${pages.length} pages, 150 questions; official-key grading is checked in the separate paper register.`);

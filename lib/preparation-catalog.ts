@@ -1,8 +1,9 @@
 import { getSubjectPracticeInventory, historicalPyqQuestions, type SubjectPracticeInventory, type PracticeInventoryNode, type ExamCounts, type PyqExam } from './pyq-catalog';
 import { questionEligible, questionReview } from './question-review';
 import { PREPARATION_VERSION, type PreparationExam, type PreparationView } from './preparation-exams';
-import { englishSyllabus, elementaryMaths, ndaMaths, csatSyllabus, type SyllabusSection } from './preparation-syllabus';
+import { englishSyllabus, elementaryMaths, ndaMaths, csatSyllabus, defenceWorldHistory, type SyllabusSection } from './preparation-syllabus';
 import applicability from '../content/preparation-applicability.json' with { type: 'json' };
+import officialNdaPlacements from '../content/nda-2026-i-preparation-placements.json' with {type:'json'};
 
 export type PreparationInventory = SubjectPracticeInventory & { preparationExam: PreparationExam; preparationViews: PreparationView[] };
 const exams: PyqExam[] = ['CSE', 'CAPF', 'CDS', 'NDA'];
@@ -28,7 +29,7 @@ export function getPreparationInventory(target: PreparationExam): PreparationInv
   const subjects = base.subjects.filter(s => !s.legacyOnly).map(s => ({ ...s, examCounts: zero(), questionCount: 0 }));
   function seed(label: string, key: string, sections: readonly SyllabusSection[]) {
     const subjectId = `subject:${key}`;
-    subjects.push({ id: subjectId, label, questionCount: 0, examCounts: zero() });
+    if(!subjects.some(subject=>subject.id===subjectId))subjects.push({ id: subjectId, label, questionCount: 0, examCounts: zero() });
     sections.forEach(([section, chapters], i) => {
       const headId = `head:${key}:${slug(section)}`;
       nodes.push({ id: headId, label: section, kind: 'head', subjectId, parentId: subjectId, order: i + 1, questionCount: 0, examCounts: zero() });
@@ -44,6 +45,7 @@ export function getPreparationInventory(target: PreparationExam): PreparationInv
   const gsIds = subjects.map(s => s.id);
   let views: PreparationView[];
   if (target === 'NDA') {
+    seed('History','history',defenceWorldHistory);
     const maths = seed('Mathematics', 'nda-mathematics', ndaMaths);
     const english = seed('English', 'english', englishSyllabus);
     views = [
@@ -53,6 +55,7 @@ export function getPreparationInventory(target: PreparationExam): PreparationInv
       { id: 'nda-science', paper: 'GAT', label: 'Science', subjectIds: ['subject:science'] },
     ];
   } else if (target === 'CDS') {
+    seed('History','history',defenceWorldHistory);
     const english = seed('English', 'english', englishSyllabus);
     const maths = seed('Elementary Mathematics', 'cds-mathematics', elementaryMaths);
     views = [
@@ -70,7 +73,7 @@ export function getPreparationInventory(target: PreparationExam): PreparationInv
   // Future English/maths/CSAT imports need explicit reviewed concept placements.
   // A historic global "outside GS" decision is not silently removed or promoted.
   const questions = new Map(historicalPyqQuestions.map(q => [q.id, q]));
-  for (const row of applicability.approvedPlacements as ReviewedPlacement[]) {
+  for (const row of [...applicability.approvedPlacements,...officialNdaPlacements] as ReviewedPlacement[]) {
     if (row.target !== target || row.status !== 'approved' || !row.rationale.trim()) continue;
     const question = questions.get(row.questionId);
     const leaf = nodes.find(n => n.kind === 'subtopic' && n.id === row.subtopicId);
