@@ -1,7 +1,7 @@
 # NDA II 2026 GAT — completion and release report
 
-Reviewed 25 October 2026. Source review complete; release verification recorded
-below only after it is performed. This supersedes the earlier GS-only import
+Reviewed 25 October 2026. Source review complete; application release live-verified
+below. This supersedes the earlier GS-only import
 accounting for this paper; it does not approve other NDA papers.
 
 ## Reconciliation
@@ -111,8 +111,33 @@ catalogue expansion is not claimed.
 - React review keeps answer-bearing data server-side; client receives only
   answer-free recipes and title. Section controls wait for hydration.
 
-## Release
+## Release — live verified
 
-Pending commit, push and exact-commit production verification. Do not describe
-this release as live until those checks are recorded. Next paper remains NDA II
-2025; it has not been started.
+Application commit: `b15275df7085ded37ebfe75bf166b6366f56a1c9`, pushed atomically
+to `main` and `codex/pyq-selection-flow` through the existing GitHub workflow.
+GitHub's Vercel commit status reports success. Production deployment record
+`7315243615` reports success for that exact SHA (Preview record is separate).
+
+- [Live scored paper](https://upscpuraan.vercel.app/papers/nda-2026-ii-gat)
+- [Production deployment evidence](https://api.github.com/repos/deepak2123-svg/upsc-pyq/deployments/7315243615/statuses)
+- Production URL for that commit:
+  `https://upscpuraan-7s1k9cgy1-deepakkarnal321-1406s-projects.vercel.app`.
+- Six production browser checks passed without retries: all three exact sections,
+  full-paper answers/reload/submission/results, offline PDF/every answer,
+  preparation targets and source directory counts/mobile display.
+- Separate production API sweep passed: 150 accepted answers, 450 rejected
+  alternatives, zero exclusions; NDA/CSE membership boundaries, 100 NDA English
+  questions and 1,884 global GS questions confirmed.
+- Served official-key SHA-256 equals the reviewed `1d86b52b…01f3` bytes above.
+- Vercel MCP inspection requires reauthentication. Exact-commit deployment
+  identity instead established through public GitHub deployment/status records
+  and live application checks. Runtime log access was unavailable; no claim of
+  a clean platform-wide error log is made.
+- A standalone Node fetch check encountered an `ECONNRESET` while receiving a
+  response body. The same full checks were rerun using bounded Playwright HTTP
+  requests and passed; the six production browser checks also passed. The
+  failed transport run is not counted as successful verification.
+
+This report-only follow-up records the already verified application commit;
+it does not change application data or source-review decisions. Next paper
+remains NDA II 2025; it has not been started.

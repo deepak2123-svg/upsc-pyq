@@ -7,7 +7,7 @@ mean complete. The source register currently inventories 25 local PDFs.
 | Order | Paper | State at 25 October 2026 |
 |---:|---|---|
 | — | NDA I 2026 | Previously completed; regression baseline |
-| 1 | NDA II 2026 | Source review complete; release gates in progress |
+| 1 | NDA II 2026 | Complete and live verified; 150/150 scored, official provisional key |
 | 2 | NDA II 2025 | Next, not started |
 | 3 | NDA I 2025 | Queued |
 | 4–5 | NDA II, I 2024 | Queued individually |
