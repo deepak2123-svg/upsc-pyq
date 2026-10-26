@@ -413,13 +413,26 @@
   .print-answer-key th, .print-answer-key td { padding: 2.2mm 2mm; }
 }
 /* Preparation target and source exams are independent controls. */
-.preparation-navigation { display:flex; align-items:center; flex-wrap:wrap; gap:14px 24px; margin:0 0 22px; padding:14px 18px; background:#fff; border:1px solid #dce1eb; border-radius:14px; }
-.preparation-navigation label { display:flex; align-items:center; gap:12px; font-size:13px; font-weight:600; color:#657087; }
-.preparation-navigation select { padding:9px 32px 9px 12px; color:#171b23; background:#f7f8fc; border:1px solid #dce1eb; border-radius:8px; font:inherit; }
-.preparation-papers { display:flex; flex-wrap:wrap; gap:10px 18px; }
-.preparation-papers [role="group"] { display:flex; flex-wrap:wrap; gap:5px; }
-.preparation-papers button { border:1px solid transparent; border-radius:8px; padding:8px 12px; background:#f4f5f8; color:#58647a; font:inherit; font-size:13px; cursor:pointer; }
-.preparation-papers button[aria-pressed="true"] { background:#edf1ff; color:#2352da; border-color:#b8c8ff; font-weight:700; }
-.preparation-papers button:focus-visible,.preparation-navigation select:focus-visible { outline:2px solid #2452db; outline-offset:3px; }
-.preparation-navigation small { color:#657087; font-size:12px; }
-@media(max-width:640px) { .preparation-navigation { padding:12px; gap:12px; } .preparation-navigation label { width:100%; justify-content:space-between; } .preparation-papers { width:100%; } }
+.preparation-navigation { margin:0 0 22px; }
+.preparation-selector-shell { position:relative; width:100%; max-width:100%; border:1px solid var(--line); border-radius:14px; background:var(--surface); color:var(--ink); }
+.preparation-selector-shell[data-collapsed="true"] { width:max-content; }
+.preparation-selector-options { padding:14px 18px; }
+.preparation-choice-row { display:flex; align-items:center; flex-wrap:wrap; gap:10px 22px; }
+.preparation-choice-label { min-width:82px; color:var(--muted); font-size:12px; }
+.preparation-choice-row [role="group"] { display:flex; flex-wrap:wrap; gap:4px; }
+.preparation-choice-row button { min-height:38px; padding:8px 12px; border:1px solid transparent; border-radius:8px; color:var(--muted); background:transparent; font-size:14px; transition:background-color 160ms ease,color 160ms ease,border-color 160ms ease; }
+.preparation-choice-row button:hover:not(:disabled) { background:var(--paper); color:var(--ink); }
+.preparation-choice-row button[aria-pressed="true"] { background:var(--accent-soft); color:var(--accent); border-color:color-mix(in srgb,var(--accent) 20%,transparent); font-weight:600; }
+.preparation-choice-divider { margin-top:11px; padding-top:11px; border-top:1px solid var(--line); }
+.preparation-selection { display:flex; align-items:center; justify-content:space-between; gap:22px; width:100%; min-height:48px; padding:13px 16px; border:0; border-radius:13px; background:transparent; color:var(--ink); text-align:left; font-size:14px; }
+.preparation-selection:hover:not(:disabled) { background:var(--paper); }
+.preparation-selection-path { display:flex; align-items:center; gap:9px; flex-wrap:wrap; min-width:0; }
+.preparation-selection-path strong { color:var(--accent); font-weight:600; }
+.preparation-selection-separator { color:var(--muted); }
+.preparation-change { display:flex; align-items:center; gap:8px; white-space:nowrap; color:var(--muted); font-size:12px; }
+.preparation-chevron { width:7px; height:7px; border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor; transform:rotate(45deg) translateY(-2px); }
+.preparation-selector-note { display:block; margin-top:12px; color:var(--muted); font-size:12px; }
+.preparation-navigation [hidden] { display:none !important; }
+@media(max-width:640px) { .preparation-selector-options { padding:13px; } .preparation-choice-row { gap:7px; } .preparation-choice-label { width:100%; } .preparation-choice-row [aria-label="Preparing for"] { width:100%; } .preparation-choice-row [aria-label="Preparing for"] button { flex:1; padding:8px; } .preparation-selection { gap:12px; padding:12px 13px; } .preparation-selection-path { gap:5px; } }
+@media(pointer:coarse) { .preparation-navigation button { min-height:44px; } }
+@media(prefers-reduced-motion:reduce) { .preparation-choice-row button { transition:none; } }

@@ -11,7 +11,8 @@ import { addScope, ancestors, buildSelectionIndex, removeScope, restoreVersioned
 import {coalesceCoveredDraftScopes,freezeSelectionMembership,restoreFrozenSelection} from '../../lib/practice-draft-membership';
 import { ScopeFlow } from "./scope-flow";
 import { SyllabusNavigation } from "./syllabus-navigation";
-import { PREPARATION_EXAMS, preparationDraftKey, type PreparationExam, type PreparationView } from '../../lib/preparation-exams';
+import { preparationDraftKey, type PreparationExam, type PreparationView } from '../../lib/preparation-exams';
+import {PreparationSelector} from './preparation-selector';
 
 const COUNTS = [10, 20, 30, 50] as const;
 const DURATIONS = [10, 20, 30, 60, 120] as const;
@@ -323,16 +324,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     } finally { setExporting(false); }
   }
   return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading}>
-    <section className="preparation-navigation" aria-label="Preparation exam and paper">
-      <label>Preparing for<select aria-label="Preparing for" value={preparationExam || ''} disabled={loading || exporting} onChange={event => router.push(`/prepare/${event.target.value}`)}>
-        {!preparationExam ? <option value="" disabled>All PYQ sources</option> : null}
-        {PREPARATION_EXAMS.map(exam => <option key={exam} value={exam}>UPSC {exam}{exam === 'CSE' ? ' Prelims' : ''}</option>)}
-      </select></label>
-      {views ? <div className="preparation-papers"><div role="group" aria-label="Paper">{[...new Set(views.map(view => view.paper))].map(paper => <button type="button" key={paper} disabled={!restored || loading || exporting} aria-pressed={activeView?.paper === paper} onClick={() => changeView(views.find(view => view.paper === paper)!)}>{paper}</button>)}</div>
-        {preparationExam === 'NDA' && activeView?.paper === 'GAT' ? <div role="group" aria-label="GAT section">{views.filter(view => view.paper === 'GAT').map(view => <button type="button" key={view.id} disabled={!restored || loading || exporting} aria-pressed={activeView?.id === view.id} onClick={() => changeView(view)}>{view.label}</button>)}</div> : null}
-      </div> : null}
-      {preparationExam === 'CDS' ? <small>OTA: English + General Knowledge. Mathematics: IMA / INA / AFA.</small> : null}
-    </section>
+    <PreparationSelector exam={preparationExam} views={views} activeView={activeView} disabled={!restored || loading || exporting} onExam={exam=>router.push(`/prepare/${exam}`)} onView={changeView}/>
     <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{preparationExam ? `${preparationExam} question library` : initialExam ? `${initialExam} question library` : "Question library"}</h1></div><details className="scope-inventory-info"><summary>{format(libraryCount)} PYQs <span aria-hidden="true">ⓘ</span></summary><p>{preparationExam ? 'Available across compatible sources. Your test starts with your preparation exam only.' : `${format(initialInventory.unmappedCount)} unclassified questions remain in exam archives.`}</p>{preparationExam ? <Link href="/library">Previous saved selections</Link> : null}</details></header>
     <div className={`scope-library-layout explorer-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
       <h2 className="library-column-label library-column-label-left">Library</h2>

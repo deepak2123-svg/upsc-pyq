@@ -1,14 +1,26 @@
 import { expect, test } from '@playwright/test';
+import type {Page} from '@playwright/test';
+
+async function openSelector(page:Page){
+ const change=page.getByRole('button',{name:'Change preparation selection',exact:true});
+ if(await change.isVisible()){await change.click();await expect(change).toBeHidden();}
+}
+async function changeExam(page:Page,exam:string){
+ await openSelector(page);
+ await page.getByRole('group',{name:'Preparing for',exact:true}).getByRole('button',{name:`UPSC ${exam}`,exact:true}).click();
+ await expect(page).toHaveURL(new RegExp(`/prepare/${exam}`));
+}
 
 test('target selector, separate carts, NDA branches and optional sources', async ({ page }) => {
   await page.goto('/prepare/NDA');
-  await expect(page.getByRole('combobox', { name: 'Preparing for' })).toHaveValue('NDA');
+  await expect(page.getByRole('button', { name: 'UPSC NDA',exact:true })).toHaveAttribute('aria-pressed','true');
   const gat = page.getByRole('group', { name: 'GAT section', exact: true });
   await expect(gat.getByRole('button')).toHaveText(['English', 'GS', 'Science']);
   await gat.getByRole('button', { name: 'English', exact: true }).click();
   await page.getByRole('button', { name: 'Open English', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Open Vocabulary', exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Add entire folder', exact: true })).toBeEnabled();
+  await openSelector(page);
   await gat.getByRole('button', { name: 'Science', exact: true }).click();
   await page.getByRole('button', { name: 'Open Science & Technology', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Open Physics', exact: true })).toBeVisible();
@@ -17,12 +29,13 @@ test('target selector, separate carts, NDA branches and optional sources', async
   const ndaCount = await page.locator('.test-cart-total strong').innerText();
   await expect(page.locator('.scope-source-grid button').filter({ hasText: 'NDA' })).toHaveAttribute('aria-pressed', 'true');
   await expect(page.locator('.scope-source-grid button').filter({ hasText: 'CSE' })).toHaveAttribute('aria-pressed', 'false');
+  await openSelector(page);
   await gat.getByRole('button', { name: 'GS', exact: true }).click();
   await expect(page.locator('.test-cart-total strong')).toHaveText(ndaCount);
-  await page.getByRole('combobox', { name: 'Preparing for' }).selectOption('CSE');
+  await changeExam(page,'CSE');
   await expect(page.getByRole('heading', { name: 'CSE question library' })).toBeVisible();
   await expect(page.locator('.test-cart-total strong')).toHaveText('0');
-  await page.getByRole('combobox', { name: 'Preparing for' }).selectOption('NDA');
+  await changeExam(page,'NDA');
   await expect(page.locator('.test-cart-total strong')).toHaveText(ndaCount);
   await page.reload();
   await expect(page.locator('.test-cart-total strong')).toHaveText(ndaCount);
@@ -40,14 +53,14 @@ test('empty maths and CSAT topics stay browsable, with responsive navigation', a
   await page.getByRole('group', { name: 'Paper', exact: true }).getByRole('button', { name: 'Mathematics', exact: true }).click();
   await page.getByRole('button', { name: 'Open Mathematics', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Open Differential Calculus', exact: true })).toBeVisible();
-  await page.getByRole('combobox', { name: 'Preparing for' }).selectOption('CDS');
+  await changeExam(page,'CDS');
   await expect(page.getByText('OTA: English + General Knowledge. Mathematics: IMA / INA / AFA.')).toBeVisible();
-  await page.getByRole('combobox', { name: 'Preparing for' }).selectOption('CSE');
+  await changeExam(page,'CSE');
   await page.getByRole('button', { name: 'GS Paper II / CSAT', exact: true }).click();
   await page.getByRole('button', { name: 'Open CSAT', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Open Data Interpretation', exact: true })).toBeVisible();
   await page.setViewportSize({ width: 390, height: 844 });
-  await expect(page.getByRole('combobox', { name: 'Preparing for' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Change preparation selection',exact:true })).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.screenshot({ path: 'tmp/preparation-mobile.png', fullPage: true });
 });
