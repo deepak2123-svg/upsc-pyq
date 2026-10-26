@@ -3,6 +3,7 @@ import type { PyqExam } from "./pyq-exams";
 import publishedAnswerKeyRevisions from "../content/answer-key-revisions.json" with { type: "json" };
 import officialNdaKeyRevisions from '../content/nda-2026-i-key-revisions.json' with {type:'json'};
 import { questionExclusion, questionReviewRevision } from './question-review.ts';
+import {feedbackAnswerOptions,feedbackAcceptsOption} from './answer-options.ts';
 
 /** Bump a question's revision whenever its published key is corrected. No answers are exposed here. */
 const answerKeyRevisions: Readonly<Record<string, number>> = {...publishedAnswerKeyRevisions,...officialNdaKeyRevisions};
@@ -70,7 +71,9 @@ export function hasCompleteFeedback(attempt: LocalAttempt) {
     return Boolean(feedback && feedback.disposition !== 'excluded' && typeof feedback.correctAnswer === 'string' && Object.hasOwn(question.options, feedback.correctAnswer)
       && (feedback.reviewRevision ?? 0) === questionReviewRevision(question.id)
       && (feedback.answerKeyRevision ?? 0) === answerKeyRevision(question.id)
-      && feedback.correct === (attempt.answers[question.id] === feedback.correctAnswer));
+      && (!feedback.correctAnswers || (Array.isArray(feedback.correctAnswers) && feedback.correctAnswers.length > 1 && new Set(feedback.correctAnswers).size === feedback.correctAnswers.length && feedback.correctAnswers.includes(feedback.correctAnswer)))
+      && feedbackAnswerOptions(feedback).every(option=>Object.hasOwn(question.options,option))
+      && feedback.correct === feedbackAcceptsOption(feedback,attempt.answers[question.id]));
   });
 }
 
@@ -92,7 +95,9 @@ export async function requestAnswerFeedback(attempt: LocalAttempt): Promise<Reco
     return item && item.disposition !== 'excluded' && typeof item.correct === "boolean" && typeof item.correctAnswer === "string"
       && (item.reviewRevision ?? 0) === questionReviewRevision(question.id)
       && (item.answerKeyRevision ?? 0) === answerKeyRevision(question.id)
-      && Object.hasOwn(question.options, item.correctAnswer) && (item.explanation === null || typeof item.explanation === "string");
+      && Object.hasOwn(question.options, item.correctAnswer)
+      && (!item.correctAnswers||(Array.isArray(item.correctAnswers)&&item.correctAnswers.length>1&&new Set(item.correctAnswers).size===item.correctAnswers.length&&item.correctAnswers.includes(item.correctAnswer)&&item.correctAnswers.every(option=>Object.hasOwn(question.options,option))))
+      && (item.explanation === null || typeof item.explanation === "string");
   })) throw new Error("The answer sheet was incomplete. Your submitted answers are saved; please retry.");
   return feedback;
 }

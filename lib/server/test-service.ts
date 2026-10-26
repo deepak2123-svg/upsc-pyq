@@ -60,6 +60,7 @@ function toSnapshot(row: typeof questions.$inferSelect): QuestionSnapshot {
     promptLines: row.promptLines,
     options: row.options,
     correctOption: row.correctOption,
+    ...(corrected && 'acceptedAnswers' in corrected && Array.isArray(corrected.acceptedAnswers) ? {acceptedOptions: corrected.acceptedAnswers as string[]} : {}),
     explanation: row.explanation,
     eliminationNotes: row.eliminationNotes,
     origin: row.origin,

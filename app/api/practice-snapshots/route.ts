@@ -228,6 +228,7 @@ export async function POST(request: Request) {
       topic: path?.topic || question.taxonomyChapter || question.topic,
       subtopic: path?.subtopic || question.taxonomySubtopic || question.subtopic,
       promptLines: question.promptLines,
+      ...(question.sharedContext?{sharedContext:question.sharedContext}:{}),
       ...(question.underlined?.length?{underlined:question.underlined}:{}),
       options: question.options,
       sourceTextHash: question.sourceTextHash,

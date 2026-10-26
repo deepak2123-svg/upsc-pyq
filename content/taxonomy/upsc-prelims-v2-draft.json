@@ -2068,6 +2068,39 @@
       ]
     },
     {
+      "id": "syllabus:history/medieval-india/sources-and-chronology",
+      "parentId": "syllabus:history/medieval-india",
+      "kind": "chapter",
+      "label": "Sources and Chronology",
+      "order": 8,
+      "includes": [
+        "Foreign accounts"
+      ],
+      "boundary": "Questions testing Sources and Chronology in Medieval India; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
+      "reviewStatus": "editorial-draft"
+    },
+    {
+      "id": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
+      "parentId": "syllabus:history/medieval-india/sources-and-chronology",
+      "kind": "subpart",
+      "label": "Foreign accounts",
+      "order": 1,
+      "includes": [
+        "Travellers to medieval and early-modern India",
+        "Chronology and identification of their accounts"
+      ],
+      "excludes": [
+        "Ancient Greek/Chinese accounts",
+        "Modern tourism",
+        "Literary authorship without an historical-source task"
+      ],
+      "placementRule": "Use for the identity, chronology or source value of medieval/early-modern travellers. Do not force these into Ancient India merely because it already has a sources chapter.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA II 2025 GAT Series A Q83: Ibn Battuta, Nikitin, Monserrate and Peter Mundy"
+      ]
+    },
+    {
       "id": "syllabus:history/modern-india-national-movement",
       "parentId": "syllabus:history",
       "kind": "section",
@@ -11367,7 +11400,8 @@
         "Bonds and yields",
         "Equity",
         "Derivatives",
-        "Financial regulators"
+        "Financial regulators",
+        "Digital assets"
       ],
       "boundary": "Questions testing Financial Markets in Money & Banking; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -11467,6 +11501,27 @@
       ],
       "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
       "editorialExampleStatus": "pending-real-question-pilot"
+    },
+    {
+      "id": "syllabus:economy/money-banking/financial-markets/digital-assets",
+      "parentId": "syllabus:economy/money-banking/financial-markets",
+      "kind": "subpart",
+      "label": "Digital assets",
+      "order": 7,
+      "includes": [
+        "Cryptocurrencies and named crypto assets",
+        "Digital-asset economic identity and financial-market use"
+      ],
+      "excludes": [
+        "Generic programming",
+        "Payment-system infrastructure without an asset task",
+        "A person merely owning cryptocurrency"
+      ],
+      "placementRule": "Use for identifying or comparing digital financial assets. Add the technology placement when blockchain/cryptocurrency identity is materially tested; preserve one canonical MCQ.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA II 2025 GAT Series A Q150: Ethereum, Tether, Solana and Cardano"
+      ]
     },
     {
       "id": "syllabus:economy/money-banking/financial-inclusion",

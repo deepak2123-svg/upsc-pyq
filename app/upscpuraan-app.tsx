@@ -41,6 +41,7 @@ type Question = {
   options: Record<string, string>;
   answer?: string;
   correctOption?: string;
+  acceptedOptions?: string[];
   explanation: string;
   requiresFigure: boolean;
   taxonomyVersion?: string | null;
@@ -85,6 +86,7 @@ function mapServerQuestion(value: Record<string, unknown>): Question {
     options: (value.options as Record<string, string>) ?? {},
     answer: typeof value.correctOption === "string" ? value.correctOption : undefined,
     correctOption: typeof value.correctOption === "string" ? value.correctOption : undefined,
+    acceptedOptions: Array.isArray(value.acceptedOptions) ? value.acceptedOptions.map(String) : undefined,
     explanation: typeof value.explanation === "string" ? value.explanation : "",
     requiresFigure: Boolean(value.requiresFigure),
     taxonomyVersion: typeof value.taxonomyVersion === "string" ? value.taxonomyVersion : null,
@@ -883,7 +885,7 @@ function Results({result, questions, answers, exam, subjects, difficulty, mode, 
           <div className="meta">Question {index + 1} · {questionSourceLabel(question)}</div>
           <div className="solution-prompt">{question.promptLines.map((line, lineIndex) => <p key={`${question.id}-solution-line-${lineIndex}`}>{line}</p>)}</div>
           <div className="solution-options">{Object.entries(question.options).map(([key, value]) => <div key={key}><span>{key}</span>{value}</div>)}</div>
-          <div className="meta">Your answer: {answers[index] ?? "Unattempted"} · {reviewedAnswer(question).exclusionReason ?? `Correct answer: ${reviewedAnswer(question).correctOption ?? "Unavailable"}`}</div>
+          <div className="meta">Your answer: {answers[index] ?? "Unattempted"} · {reviewedAnswer(question).exclusionReason ?? `Correct answer: ${reviewedAnswer(question).acceptedOptions?.join(' / ') ?? reviewedAnswer(question).correctOption ?? "Unavailable"}`}</div>
           <p>{question.explanation || "No editorial explanation has been added yet."}</p>
         </article>)}
       </section>}

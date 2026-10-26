@@ -1,6 +1,19 @@
 {
   "version":1,
   "records":[{
+    "exam":"NDA","year":2025,"paper":"II","series":"A","questionCount":150,
+    "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2025-2.pdf",
+    "originalPdfSha256":"c29b9d5bcaf73ad074a451c6416aa00696f71e6d99d2e2c78e6cc1f4f1228481",
+    "coverPage":1,"languages":["English","Hindi"],"reviewedLanguage":"English",
+    "questionPages":[2,3,4,5,6,7,8,9,10,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49],
+    "keyPdf":"public/papers/nda-2025-ii-gat/official-final-key.pdf",
+    "keySha256":"c997b581dccc26287dfb7746a287ccdbfbdc270c356e835eda7b5641fcfe811f",
+    "keyPage":1,"keySeries":"A","keyQuestionCount":150,"droppedQuestions":[85],
+    "identityStatus":"cover-key-and-question-identity-reviewed",
+    "identityRationale":"Supplied cover identifies NDA & NA Examination (II), 2025, Series A, GAT, 150 items. Direct UPSC final key header and every Series A cell match the reviewed question sequence. Q58 accepts A/B; Q85 is X.",
+    "secondPass":"Complete original English pages reread in a fresh reverse-order pass by the same AI reviewer; full question/key/classification decisions in content/audits/nda-2025-ii-review.json.",
+    "reviewedAt":"2026-10-26"
+  },{
     "exam":"CSE","year":2013,"paper":"GS-I","series":"A","questionCount":100,
     "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/CSE PYP/2013.pdf",
     "originalPdfSha256":"cd9f0fcc9d911af504953efa996cdbd75264579e66f9dbf7da87e6cbb6997330",

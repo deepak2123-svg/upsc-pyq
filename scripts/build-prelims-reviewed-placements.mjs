@@ -64,8 +64,9 @@ assert.equal(hash(fs.readFileSync('content/taxonomy/physical-geography-v1.2-revi
 const imports=read('content/reviewed-prelims-imports.json');
 const completeNda=read('content/nda-2026-i-official-paper.json');
 const completeNdaII=read('content/nda-2026-ii-official-paper.json');
+const completeNda2025II=read('content/nda-2025-ii-official-paper.json');
 const originalIds=new Set([...rawBank,...imports.questions].map(q=>q.id));
-const completeNdaNew=[...completeNda.questions,...completeNdaII.questions].filter(q=>!originalIds.has(q.id));
+const completeNdaNew=[...completeNda.questions,...completeNdaII.questions,...completeNda2025II.questions].filter(q=>!originalIds.has(q.id));
 const bank=new Map([...rawBank,...imports.questions].map(q=>[q.id,q]));
 for(const q of completeNdaNew)bank.set(q.id,q);
 const answerReview=read('content/question-review-state.json').records;
@@ -215,6 +216,11 @@ for(const q of completeNdaNew){
 }
 for(const q of completeNdaII.questions.filter(q=>q.preparationScope==='defence-world-history')){
  records.set(q.id,{questionId:q.id,expectedRecordHash:hash(bank.get(q.id)),status:'out-of-scope',basis:'verified-preparation-only-scope',scopeReason:'Verified World History for NDA/CDS, not automatically CSE GS.',rationale:q.source.classificationRationale,secondPass:{status:'approved',rationale:q.source.secondPass}});
+}
+for(const q of completeNda2025II.questions){
+ const baseline=bank.get(q.id);
+ if(q.preparationScope==='gs')approved(q.id,resolve([q.subject,q.taxonomyHead,q.topic,q.subtopic].join('/')),(q.additionalPaths??[]).map(p=>resolve([p.subject,p.head,p.chapter,p.subtopic].join('/'))),'nda-2025-ii-complete-source-review',q.source.classificationRationale,'Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-ii-review.json.',q.classificationTags);
+ else records.set(q.id,{questionId:q.id,expectedRecordHash:hash(baseline),status:'out-of-scope',basis:'verified-preparation-only-scope',scopeReason:'NDA/CDS English or school Science; not automatically CSE GS.',rationale:q.source.classificationRationale,secondPass:{status:'approved',rationale:'Fresh complete source reread with explicit preparation boundaries; see paper review ledger.'}});
 }
 // Explicit category cross-listing requested by the editor. Existing reviewed
 // Current Affairs placements are retained; no raw question, primary placement,

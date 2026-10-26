@@ -5,12 +5,13 @@ import aliasPolicy from '../content/prelims-question-alias-policy.json' with { t
 import materialRepairPolicy from '../content/prelims-material-source-repair-policy.json' with { type: 'json' };
 import officialNdaPolicy from '../content/nda-2026-i-official-review-policy.json' with {type:'json'};
 import officialNdaIIPolicy from '../content/nda-2026-ii-official-review-policy.json' with {type:'json'};
+import officialNda2025IIPolicy from '../content/nda-2025-ii-official-review-policy.json' with {type:'json'};
 
 export type QuestionReview = {
   status: string; revision: number; contentRevision: number;
   sourceCorrection?: {exam:string;year:number;paper:string;questionNumber:number};
 };
-const officialPolicies={...officialNdaPolicy,...officialNdaIIPolicy};
+const officialPolicies={...officialNdaPolicy,...officialNdaIIPolicy,...officialNda2025IIPolicy};
 const records: Readonly<Record<string, QuestionReview>> = { ...policy, ...importPolicy, ...aliasPolicy, ...materialRepairPolicy, ...officialPolicies };
 const cleared = new Set(['official-final', 'official-provisional', 'reasoned-verified']);
 export function questionReview(id: string) { return records[id]; }

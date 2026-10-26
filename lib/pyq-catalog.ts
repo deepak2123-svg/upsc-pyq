@@ -7,6 +7,7 @@ import { PYQ_EXAMS, type PyqExam } from "./pyq-exams";
 export { PYQ_EXAMS, type PyqExam } from "./pyq-exams";
 
 export type PyqQuestion = {
+  sharedContext?: {id:string;label:string;promptLines:string[]};
   id: string;
   origin: "pyq";
   sourceTextLocked: boolean;
@@ -22,6 +23,7 @@ export type PyqQuestion = {
   underlined?: string[];
   options: Record<string, string>;
   answer: string;
+  acceptedAnswers?: string[];
   explanation: string;
   taxonomyId?: string | null;
   taxonomyHead?: string | null;

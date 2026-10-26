@@ -4,11 +4,11 @@ One complete source paper at a time under `paper-processing-sop.md`.
 Newest first. “Present in a folder” or “some MCQs already imported” does not
 mean complete. The source register currently inventories 25 local PDFs.
 
-| Order | Paper | State at 25 October 2026 |
+| Order | Paper | State at 26 October 2026 |
 |---:|---|---|
 | — | NDA I 2026 | Previously completed; regression baseline |
 | 1 | NDA II 2026 | Complete and live verified; 150/150 scored, official provisional key |
-| 2 | NDA II 2025 | Next, not started |
+| 2 | NDA II 2025 | Source complete and local verified; 149/150 available, official final key; production verification pending |
 | 3 | NDA I 2025 | Queued |
 | 4–5 | NDA II, I 2024 | Queued individually |
 | 6–7 | NDA II, I 2023 | Queued individually |

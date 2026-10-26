@@ -61,6 +61,7 @@ export type PracticeQuestion = {
   topic: string;
   subtopic: string;
   promptLines: string[];
+  sharedContext?: {id:string;label:string;promptLines:string[]};
   /** Exact underlined expressions from the original English paper. */
   underlined?: string[];
   options: Record<string, string>;
@@ -83,6 +84,8 @@ export type PracticeSnapshot = {
 export type AnswerFeedback = {
   correct: boolean | null;
   correctAnswer: string | null;
+  /** Complete official accepted set, supplied only after grading. */
+  correctAnswers?: string[];
   disposition?: 'scored' | 'excluded';
   exclusionReason?: string;
   reviewRevision?: number;

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { historicalPyqQuestions as pyqQuestions } from "../../../../lib/pyq-catalog";
 import { questionExclusion, questionReviewRevision } from '../../../../lib/question-review';
 import { answerKeyRevision } from '../../../../lib/practice-session';
+import {acceptedAnswerOptions} from '../../../../lib/answer-options';
 
 function publishedExplanation(value: string) {
   const explanation = value.trim();
@@ -16,10 +17,12 @@ export async function POST(request: Request) {
   const exclusionReason = questionExclusion(question.id,input.contentRevision??0);
   const revisions = {answerKeyRevision:answerKeyRevision(question.id),reviewRevision:questionReviewRevision(question.id)};
   if (exclusionReason) return NextResponse.json({ disposition: 'excluded', correct: null, correctAnswer: null, exclusionReason, explanation: exclusionReason,...revisions });
+  const accepted=acceptedAnswerOptions(question);
   return NextResponse.json({
     disposition: 'scored',
-    correct: input.selectedOption === question.answer,
+    correct: accepted.includes(input.selectedOption),
     correctAnswer: question.answer,
+    ...(accepted.length>1?{correctAnswers:accepted}:{}),
     explanation: publishedExplanation(question.explanation),
     ...revisions,
   });

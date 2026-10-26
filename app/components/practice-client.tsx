@@ -1,4 +1,5 @@
 "use client";
+import {feedbackAnswerLabel,feedbackAcceptsOption} from '../../lib/answer-options';
 
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -296,7 +297,7 @@ export function PracticeClient({ id }: { id: string }) {
               <div className="practice-options" role="group" aria-label="Answer options" aria-busy={busy}>
                 {Object.entries(question.options).map(([key, value]) => {
                   const isSelected = selectedAnswer === key;
-                  const isCorrect = feedback?.correctAnswer === key;
+                  const isCorrect = feedbackAcceptsOption(feedback,key);
                   const isWrong = Boolean(feedback && feedback.disposition !== 'excluded' && isSelected && !feedback.correct);
                   return <button key={key} aria-pressed={isSelected} className={`${isSelected ? "selected" : ""} ${isCorrect ? "correct" : ""} ${isWrong ? "incorrect" : ""}`} disabled={locked} onClick={() => void answer(key)}><span>{key}</span><strong>{formatPracticeText(value)}</strong>{isCorrect && <em>Correct answer</em>}{isWrong && <em>Your answer</em>}</button>;
                 })}
@@ -305,7 +306,7 @@ export function PracticeClient({ id }: { id: string }) {
             </div>
           </div>
           {attempt.status === "completed" && !feedback && <div className="practice-answer-hint" role="status"><p>{gradeError || "Loading your submitted answer sheet…"}</p>{gradeError && <button onClick={() => setGradeRetry((value) => value + 1)}>Retry answers</button>}</div>}
-          {feedback && <section className={`answer-feedback ${feedback.disposition === 'excluded' ? 'is-excluded' : !selectedAnswer ? "is-unattempted" : feedback.correct ? "is-correct" : "is-incorrect"}`}><div><strong>{feedback.disposition === 'excluded' ? 'Excluded from score' : !selectedAnswer ? `Unattempted · Correct answer: ${feedback.correctAnswer}` : feedback.correct ? `Correct · Answer ${feedback.correctAnswer}` : `Correct answer: ${feedback.correctAnswer} · Your answer: ${selectedAnswer}`}</strong></div>{feedback.explanation ? <p>{feedback.explanation}</p> : <p className="explanation-unavailable">No published explanation is available for this question.</p>}</section>}
+          {feedback && <section className={`answer-feedback ${feedback.disposition === 'excluded' ? 'is-excluded' : !selectedAnswer ? "is-unattempted" : feedback.correct ? "is-correct" : "is-incorrect"}`}><div><strong>{feedback.disposition === 'excluded' ? 'Excluded from score' : !selectedAnswer ? `Unattempted · Correct answer: ${feedbackAnswerLabel(feedback)}` : feedback.correct ? `Correct · Answer ${feedbackAnswerLabel(feedback)}` : `Correct answer: ${feedbackAnswerLabel(feedback)} · Your answer: ${selectedAnswer}`}</strong></div>{feedback.explanation ? <p>{feedback.explanation}</p> : <p className="explanation-unavailable">No published explanation is available for this question.</p>}</section>}
           <nav className="question-navigation" aria-label="Question navigation"><button disabled={busy || Boolean(pendingCompletion.current) || attempt.currentIndex === 0} onClick={() => void navigate(attempt.currentIndex - 1)}>← Previous</button><button className="bookmark-action" onClick={() => void toggleBookmark()}>{bookmarked ? "Saved" : "Save for later"}</button>{attempt.currentIndex < attempt.snapshot.questions.length - 1 ? <button className="next-question" disabled={busy || Boolean(pendingCompletion.current)} onClick={() => void navigate(attempt.currentIndex + 1)}>Save & next →</button> : <button className="next-question" disabled={busy} onClick={() => void finish()}>{attempt.status === "completed" ? "View results" : "Submit test"}</button>}</nav>
         </article>
         <QuestionPalette questions={attempt.snapshot.questions} answers={attempt.answers} currentIndex={attempt.currentIndex} bookmarkedIds={bookmarkedIds} disabled={busy || Boolean(pendingCompletion.current)} onNavigate={jumpToQuestion} />

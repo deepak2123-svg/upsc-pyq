@@ -35,7 +35,8 @@
       "pendingSlots": 0,
       "verifiedImports": 53,
       "outOfScope": 0,
-      "verifiedReuses": 47
+      "verifiedReuses": 47,
+      "withdrawn": 0
     },
     {
       "discoveryId": "pdf:8920775971a7101d3f96fa2f4cf25ee9370ffc55b0997f6f063b54d542d7343b",
@@ -65,7 +66,8 @@
       "pendingSlots": 0,
       "verifiedImports": 51,
       "outOfScope": 0,
-      "verifiedReuses": 49
+      "verifiedReuses": 49,
+      "withdrawn": 0
     },
     {
       "discoveryId": "pdf:cb82d062ee48ab46ef5e8796c3ed3fff4c28cad7e96af4a27dc7e10e62492e17",
@@ -95,7 +97,8 @@
       "pendingSlots": 0,
       "verifiedImports": 62,
       "outOfScope": 0,
-      "verifiedReuses": 38
+      "verifiedReuses": 38,
+      "withdrawn": 0
     },
     {
       "discoveryId": "pdf:9ecc3d665b9a3df9bd6b46b7f5730bbd989574439474a86f75cd072bc07781f3",
@@ -125,7 +128,8 @@
       "pendingSlots": 10,
       "verifiedImports": 61,
       "outOfScope": 0,
-      "verifiedReuses": 29
+      "verifiedReuses": 29,
+      "withdrawn": 0
     },
     {
       "discoveryId": "pdf:fa319c291c1a07ef011b75da47f4a1bd941ca082348f2d1a74c058fc0f226383",
@@ -1005,11 +1009,29 @@
       "expectedQuestionCount": 150,
       "exam": "NDA",
       "paperId": "2025-2",
-      "identityStatus": "prior-hash-matched-identity-needs-current-review",
-      "coverEvidence": null,
+      "identityStatus": "cover-key-and-question-identity-reviewed",
+      "coverEvidence": {
+        "page": 1,
+        "registry": "content/prelims-reviewed-papers.json",
+        "observed": "Supplied cover identifies NDA & NA Examination (II), 2025, Series A, GAT, 150 items. Direct UPSC final key header and every Series A cell match the reviewed question sequence. Q58 accepts A/B; Q85 is X."
+      },
       "originalHashMatchesPriorInventory": true,
       "priorSlotCount": 150,
-      "coverageStatus": "slots-accounted-not-question-content-verified"
+      "coverageStatus": "current-source-content-and-key-reviewed",
+      "year": 2025,
+      "paper": "II",
+      "series": "A",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "reviewedLanguage": "English",
+      "reviewedSlots": 150,
+      "pendingSlots": 0,
+      "verifiedImports": 122,
+      "outOfScope": 0,
+      "verifiedReuses": 27,
+      "withdrawn": 1
     },
     {
       "discoveryId": "pdf:1cbcd118d94cf5068d8e060a49b9e17609b4c2e533eaeaa245da69b6883bc930",
@@ -1039,7 +1061,8 @@
       "pendingSlots": 0,
       "verifiedImports": 87,
       "outOfScope": 0,
-      "verifiedReuses": 63
+      "verifiedReuses": 63,
+      "withdrawn": 0
     },
     {
       "discoveryId": "pdf:cc524b288fb4136f50ae648face0bd648a8a0c1f0753e9e8c5130f723cc9a987",
@@ -1069,7 +1092,8 @@
       "pendingSlots": 0,
       "verifiedImports": 50,
       "outOfScope": 0,
-      "verifiedReuses": 100
+      "verifiedReuses": 100,
+      "withdrawn": 0
     }
   ],
   "questionSlots": [
@@ -93467,8 +93491,11 @@
       "priorSourcePage": 2,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-1",
+      "reviewedSourcePage": 2,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q2",
@@ -93477,8 +93504,11 @@
       "priorSourcePage": 2,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-2",
+      "reviewedSourcePage": 2,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q3",
@@ -93487,8 +93517,11 @@
       "priorSourcePage": 2,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-3",
+      "reviewedSourcePage": 2,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 2 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q4",
@@ -93497,8 +93530,11 @@
       "priorSourcePage": 49,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-4",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q5",
@@ -93507,8 +93543,11 @@
       "priorSourcePage": 3,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-5",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q6",
@@ -93517,8 +93556,11 @@
       "priorSourcePage": 3,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-6",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q7",
@@ -93527,8 +93569,11 @@
       "priorSourcePage": 3,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-7",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q8",
@@ -93537,8 +93582,11 @@
       "priorSourcePage": 3,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-8",
+      "reviewedSourcePage": 3,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 3 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q9",
@@ -93547,8 +93595,11 @@
       "priorSourcePage": 4,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-9",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q10",
@@ -93557,8 +93608,11 @@
       "priorSourcePage": 56,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-10",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q11",
@@ -93567,8 +93621,11 @@
       "priorSourcePage": 4,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-11",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q12",
@@ -93577,8 +93634,11 @@
       "priorSourcePage": 4,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-12",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q13",
@@ -93587,8 +93647,11 @@
       "priorSourcePage": 4,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-13",
+      "reviewedSourcePage": 4,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 4 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q14",
@@ -93597,8 +93660,11 @@
       "priorSourcePage": 5,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-14",
+      "reviewedSourcePage": 5,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 5 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q15",
@@ -93607,8 +93673,11 @@
       "priorSourcePage": 5,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-15",
+      "reviewedSourcePage": 5,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 5 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q16",
@@ -93617,8 +93686,11 @@
       "priorSourcePage": 5,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-16",
+      "reviewedSourcePage": 5,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 5 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q17",
@@ -93627,8 +93699,11 @@
       "priorSourcePage": 5,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-17",
+      "reviewedSourcePage": 5,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 5 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q18",
@@ -93637,8 +93712,11 @@
       "priorSourcePage": 5,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-18",
+      "reviewedSourcePage": 5,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 5 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q19",
@@ -93647,8 +93725,11 @@
       "priorSourcePage": 5,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-19",
+      "reviewedSourcePage": 5,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 5 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q20",
@@ -93657,8 +93738,11 @@
       "priorSourcePage": 5,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-20",
+      "reviewedSourcePage": 5,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 5 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q21",
@@ -93667,8 +93751,11 @@
       "priorSourcePage": 6,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-21",
+      "reviewedSourcePage": 6,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 6 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q22",
@@ -93677,8 +93764,11 @@
       "priorSourcePage": 6,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-22",
+      "reviewedSourcePage": 6,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 6 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q23",
@@ -93687,8 +93777,11 @@
       "priorSourcePage": 6,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-23",
+      "reviewedSourcePage": 6,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 6 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q24",
@@ -93697,8 +93790,11 @@
       "priorSourcePage": 7,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "cds-2025-2025-2-24",
+      "reviewedSourcePage": 7,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 7 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q25",
@@ -93707,8 +93803,11 @@
       "priorSourcePage": 7,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "cds-2025-2025-2-25",
+      "reviewedSourcePage": 7,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 7 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q26",
@@ -93717,8 +93816,11 @@
       "priorSourcePage": 7,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-26",
+      "reviewedSourcePage": 7,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 7 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q27",
@@ -93727,8 +93829,11 @@
       "priorSourcePage": 7,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-27",
+      "reviewedSourcePage": 7,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 7 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q28",
@@ -93737,8 +93842,11 @@
       "priorSourcePage": 8,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-28",
+      "reviewedSourcePage": 8,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 8 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q29",
@@ -93747,8 +93855,11 @@
       "priorSourcePage": 8,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-29",
+      "reviewedSourcePage": 8,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 8 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q30",
@@ -93757,8 +93868,11 @@
       "priorSourcePage": 8,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-30",
+      "reviewedSourcePage": 8,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 8 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q31",
@@ -93767,8 +93881,11 @@
       "priorSourcePage": 8,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-31",
+      "reviewedSourcePage": 8,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 8 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q32",
@@ -93777,8 +93894,11 @@
       "priorSourcePage": 8,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-32",
+      "reviewedSourcePage": 8,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 8 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q33",
@@ -93787,8 +93907,11 @@
       "priorSourcePage": 8,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-33",
+      "reviewedSourcePage": 8,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 8 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q34",
@@ -93797,8 +93920,11 @@
       "priorSourcePage": 8,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-34",
+      "reviewedSourcePage": 8,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 8 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q35",
@@ -93807,8 +93933,11 @@
       "priorSourcePage": 8,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-35",
+      "reviewedSourcePage": 8,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 8 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q36",
@@ -93817,8 +93946,11 @@
       "priorSourcePage": 9,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-36",
+      "reviewedSourcePage": 9,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 9 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q37",
@@ -93827,8 +93959,11 @@
       "priorSourcePage": 9,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-37",
+      "reviewedSourcePage": 9,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 9 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q38",
@@ -93837,8 +93972,11 @@
       "priorSourcePage": 9,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-38",
+      "reviewedSourcePage": 9,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 9 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q39",
@@ -93847,8 +93985,11 @@
       "priorSourcePage": 9,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-39",
+      "reviewedSourcePage": 9,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 9 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q40",
@@ -93857,8 +93998,11 @@
       "priorSourcePage": 9,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-40",
+      "reviewedSourcePage": 9,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 9 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q41",
@@ -93867,8 +94011,11 @@
       "priorSourcePage": 9,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-41",
+      "reviewedSourcePage": 9,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 9 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q42",
@@ -93877,8 +94024,11 @@
       "priorSourcePage": 10,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-42",
+      "reviewedSourcePage": 10,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 10 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q43",
@@ -93887,8 +94037,11 @@
       "priorSourcePage": 10,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-43",
+      "reviewedSourcePage": 10,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 10 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q44",
@@ -93897,8 +94050,11 @@
       "priorSourcePage": 10,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-44",
+      "reviewedSourcePage": 10,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 10 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q45",
@@ -93907,8 +94063,11 @@
       "priorSourcePage": 11,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "cds-2025-2025-2-45",
+      "reviewedSourcePage": 11,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 11 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q46",
@@ -93917,8 +94076,11 @@
       "priorSourcePage": 11,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-46",
+      "reviewedSourcePage": 11,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 11 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q47",
@@ -93927,8 +94089,11 @@
       "priorSourcePage": 11,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-47",
+      "reviewedSourcePage": 11,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 11 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q48",
@@ -93937,8 +94102,11 @@
       "priorSourcePage": 11,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-48",
+      "reviewedSourcePage": 11,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 11 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q49",
@@ -93947,8 +94115,11 @@
       "priorSourcePage": 11,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-49",
+      "reviewedSourcePage": 11,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 11 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q50",
@@ -93957,8 +94128,11 @@
       "priorSourcePage": 11,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-50",
+      "reviewedSourcePage": 11,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 11 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q51",
@@ -93967,8 +94141,11 @@
       "priorSourcePage": 13,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-51",
+      "reviewedSourcePage": 13,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 13 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q52",
@@ -93977,8 +94154,11 @@
       "priorSourcePage": 13,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-52",
+      "reviewedSourcePage": 13,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 13 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q53",
@@ -93987,8 +94167,11 @@
       "priorSourcePage": 13,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-53",
+      "reviewedSourcePage": 13,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 13 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q54",
@@ -93997,8 +94180,11 @@
       "priorSourcePage": 13,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-54",
+      "reviewedSourcePage": 13,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 13 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q55",
@@ -94007,8 +94193,11 @@
       "priorSourcePage": 13,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-55",
+      "reviewedSourcePage": 13,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 13 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q56",
@@ -94017,8 +94206,11 @@
       "priorSourcePage": 13,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-56",
+      "reviewedSourcePage": 13,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 13 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q57",
@@ -94027,8 +94219,11 @@
       "priorSourcePage": 15,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-57",
+      "reviewedSourcePage": 15,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 15 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q58",
@@ -94037,8 +94232,11 @@
       "priorSourcePage": 15,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-58",
+      "reviewedSourcePage": 15,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 15 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q59",
@@ -94047,8 +94245,11 @@
       "priorSourcePage": 15,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-59",
+      "reviewedSourcePage": 15,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 15 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q60",
@@ -94057,8 +94258,11 @@
       "priorSourcePage": 15,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-60",
+      "reviewedSourcePage": 15,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 15 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q61",
@@ -94067,8 +94271,11 @@
       "priorSourcePage": 15,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-61",
+      "reviewedSourcePage": 15,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 15 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q62",
@@ -94077,8 +94284,11 @@
       "priorSourcePage": 15,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-62",
+      "reviewedSourcePage": 15,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 15 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q63",
@@ -94087,8 +94297,11 @@
       "priorSourcePage": 17,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-63",
+      "reviewedSourcePage": 17,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 17 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q64",
@@ -94097,8 +94310,11 @@
       "priorSourcePage": 17,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-64",
+      "reviewedSourcePage": 17,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 17 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q65",
@@ -94107,8 +94323,11 @@
       "priorSourcePage": 17,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-65",
+      "reviewedSourcePage": 17,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 17 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q66",
@@ -94117,8 +94336,11 @@
       "priorSourcePage": 17,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-66",
+      "reviewedSourcePage": 17,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 17 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q67",
@@ -94127,8 +94349,11 @@
       "priorSourcePage": 17,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-67",
+      "reviewedSourcePage": 17,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 17 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q68",
@@ -94137,8 +94362,11 @@
       "priorSourcePage": 17,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-68",
+      "reviewedSourcePage": 17,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 17 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q69",
@@ -94147,8 +94375,11 @@
       "priorSourcePage": 19,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-69",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 19 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q70",
@@ -94157,8 +94388,11 @@
       "priorSourcePage": 18,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-70",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 19 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q71",
@@ -94167,8 +94401,11 @@
       "priorSourcePage": 19,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-71",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 19 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q72",
@@ -94177,8 +94414,11 @@
       "priorSourcePage": 19,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-72",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 19 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q73",
@@ -94187,8 +94427,11 @@
       "priorSourcePage": 19,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-73",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 19 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q74",
@@ -94197,8 +94440,11 @@
       "priorSourcePage": 19,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-74",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 19 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q75",
@@ -94207,8 +94453,11 @@
       "priorSourcePage": 19,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-75",
+      "reviewedSourcePage": 19,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 19 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q76",
@@ -94217,8 +94466,11 @@
       "priorSourcePage": 21,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-76",
+      "reviewedSourcePage": 21,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 21 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q77",
@@ -94227,8 +94479,11 @@
       "priorSourcePage": 21,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-77",
+      "reviewedSourcePage": 21,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 21 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q78",
@@ -94237,8 +94492,11 @@
       "priorSourcePage": 21,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-78",
+      "reviewedSourcePage": 21,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 21 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q79",
@@ -94247,8 +94505,11 @@
       "priorSourcePage": 21,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-79",
+      "reviewedSourcePage": 21,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 21 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q80",
@@ -94257,8 +94518,11 @@
       "priorSourcePage": 21,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-80",
+      "reviewedSourcePage": 21,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 21 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q81",
@@ -94267,8 +94531,11 @@
       "priorSourcePage": 23,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-81",
+      "reviewedSourcePage": 23,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 23 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q82",
@@ -94277,8 +94544,11 @@
       "priorSourcePage": 23,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-82",
+      "reviewedSourcePage": 23,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 23 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q83",
@@ -94287,8 +94557,11 @@
       "priorSourcePage": 23,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-83",
+      "reviewedSourcePage": 23,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 23 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q84",
@@ -94297,8 +94570,11 @@
       "priorSourcePage": 23,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-84",
+      "reviewedSourcePage": 23,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 23 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q85",
@@ -94307,8 +94583,11 @@
       "priorSourcePage": 23,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "withdrawn",
+      "reviewedRecordId": "nda-2025-ii-85",
+      "reviewedSourcePage": 23,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 23 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q86",
@@ -94317,8 +94596,11 @@
       "priorSourcePage": 25,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-86",
+      "reviewedSourcePage": 25,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 25 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q87",
@@ -94327,8 +94609,11 @@
       "priorSourcePage": 25,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-87",
+      "reviewedSourcePage": 25,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 25 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q88",
@@ -94337,8 +94622,11 @@
       "priorSourcePage": 25,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-88",
+      "reviewedSourcePage": 25,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 25 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q89",
@@ -94347,8 +94635,11 @@
       "priorSourcePage": 25,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-89",
+      "reviewedSourcePage": 25,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 25 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q90",
@@ -94357,8 +94648,11 @@
       "priorSourcePage": 25,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-90",
+      "reviewedSourcePage": 25,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 25 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q91",
@@ -94369,8 +94663,11 @@
       "existingStemMatchIds": [
         "cds-2025-2025-2-91"
       ],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "cds-2025-2025-2-91",
+      "reviewedSourcePage": 25,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 25 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q92",
@@ -94379,8 +94676,11 @@
       "priorSourcePage": 27,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-92",
+      "reviewedSourcePage": 27,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 27 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q93",
@@ -94389,8 +94689,11 @@
       "priorSourcePage": 27,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-93",
+      "reviewedSourcePage": 27,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 27 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q94",
@@ -94399,8 +94702,11 @@
       "priorSourcePage": 27,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-94",
+      "reviewedSourcePage": 27,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 27 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q95",
@@ -94409,8 +94715,11 @@
       "priorSourcePage": 27,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-95",
+      "reviewedSourcePage": 27,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 27 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q96",
@@ -94419,8 +94728,11 @@
       "priorSourcePage": 29,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-96",
+      "reviewedSourcePage": 29,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 29 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q97",
@@ -94429,8 +94741,11 @@
       "priorSourcePage": 29,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-97",
+      "reviewedSourcePage": 29,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 29 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q98",
@@ -94439,8 +94754,11 @@
       "priorSourcePage": 29,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-98",
+      "reviewedSourcePage": 29,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 29 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q99",
@@ -94449,8 +94767,11 @@
       "priorSourcePage": 29,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-99",
+      "reviewedSourcePage": 29,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 29 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q100",
@@ -94459,8 +94780,11 @@
       "priorSourcePage": 29,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-100",
+      "reviewedSourcePage": 29,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 29 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q101",
@@ -94469,8 +94793,11 @@
       "priorSourcePage": 29,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-101",
+      "reviewedSourcePage": 29,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 29 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q102",
@@ -94479,8 +94806,11 @@
       "priorSourcePage": 31,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-102",
+      "reviewedSourcePage": 31,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 31 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q103",
@@ -94489,8 +94819,11 @@
       "priorSourcePage": 30,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-103",
+      "reviewedSourcePage": 31,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 31 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q104",
@@ -94499,8 +94832,11 @@
       "priorSourcePage": 31,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-104",
+      "reviewedSourcePage": 31,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 31 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q105",
@@ -94509,8 +94845,11 @@
       "priorSourcePage": 31,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-105",
+      "reviewedSourcePage": 31,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 31 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q106",
@@ -94519,8 +94858,11 @@
       "priorSourcePage": 31,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-106",
+      "reviewedSourcePage": 31,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 31 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q107",
@@ -94529,8 +94871,11 @@
       "priorSourcePage": 33,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-107",
+      "reviewedSourcePage": 33,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 33 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q108",
@@ -94539,8 +94884,11 @@
       "priorSourcePage": 33,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-108",
+      "reviewedSourcePage": 33,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 33 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q109",
@@ -94549,8 +94897,11 @@
       "priorSourcePage": 33,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-109",
+      "reviewedSourcePage": 33,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 33 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q110",
@@ -94559,8 +94910,11 @@
       "priorSourcePage": 33,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-110",
+      "reviewedSourcePage": 33,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 33 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q111",
@@ -94571,8 +94925,11 @@
       "existingStemMatchIds": [
         "nda-2025-ii-111"
       ],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-111",
+      "reviewedSourcePage": 33,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 33 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q112",
@@ -94581,8 +94938,11 @@
       "priorSourcePage": 35,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-112",
+      "reviewedSourcePage": 35,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 35 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q113",
@@ -94591,8 +94951,11 @@
       "priorSourcePage": 35,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-113",
+      "reviewedSourcePage": 35,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 35 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q114",
@@ -94603,8 +94966,11 @@
       "existingStemMatchIds": [
         "nda-2025-ii-114"
       ],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-114",
+      "reviewedSourcePage": 35,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 35 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q115",
@@ -94613,8 +94979,11 @@
       "priorSourcePage": 35,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-115",
+      "reviewedSourcePage": 35,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 35 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q116",
@@ -94623,8 +94992,11 @@
       "priorSourcePage": 37,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-116",
+      "reviewedSourcePage": 37,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 37 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q117",
@@ -94633,8 +95005,11 @@
       "priorSourcePage": 37,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-117",
+      "reviewedSourcePage": 37,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 37 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q118",
@@ -94645,8 +95020,11 @@
       "existingStemMatchIds": [
         "nda-2025-ii-118"
       ],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-118",
+      "reviewedSourcePage": 37,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 37 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q119",
@@ -94655,8 +95033,11 @@
       "priorSourcePage": 37,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-119",
+      "reviewedSourcePage": 37,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 37 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q120",
@@ -94665,8 +95046,11 @@
       "priorSourcePage": 39,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-120",
+      "reviewedSourcePage": 39,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 39 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q121",
@@ -94677,8 +95061,11 @@
       "existingStemMatchIds": [
         "nda-2025-ii-121"
       ],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-121",
+      "reviewedSourcePage": 39,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 39 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q122",
@@ -94687,8 +95074,11 @@
       "priorSourcePage": 39,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-122",
+      "reviewedSourcePage": 39,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 39 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q123",
@@ -94699,8 +95089,11 @@
       "existingStemMatchIds": [
         "nda-2025-ii-123"
       ],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-123",
+      "reviewedSourcePage": 39,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 39 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q124",
@@ -94711,8 +95104,11 @@
       "existingStemMatchIds": [
         "nda-2025-ii-124"
       ],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-124",
+      "reviewedSourcePage": 41,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 41 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q125",
@@ -94723,8 +95119,11 @@
       "existingStemMatchIds": [
         "nda-2025-ii-125"
       ],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-125",
+      "reviewedSourcePage": 41,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 41 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q126",
@@ -94735,8 +95134,11 @@
       "existingStemMatchIds": [
         "nda-2025-ii-126"
       ],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-126",
+      "reviewedSourcePage": 41,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 41 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q127",
@@ -94747,8 +95149,11 @@
       "existingStemMatchIds": [
         "nda-2025-ii-127"
       ],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-127",
+      "reviewedSourcePage": 41,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 41 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q128",
@@ -94757,8 +95162,11 @@
       "priorSourcePage": 41,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-128",
+      "reviewedSourcePage": 41,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 41 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q129",
@@ -94767,8 +95175,11 @@
       "priorSourcePage": 43,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-129",
+      "reviewedSourcePage": 43,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 43 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q130",
@@ -94777,8 +95188,11 @@
       "priorSourcePage": 43,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-130",
+      "reviewedSourcePage": 43,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 43 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q131",
@@ -94787,8 +95201,11 @@
       "priorSourcePage": 43,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-131",
+      "reviewedSourcePage": 43,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 43 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q132",
@@ -94797,8 +95214,11 @@
       "priorSourcePage": 43,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-132",
+      "reviewedSourcePage": 43,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 43 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q133",
@@ -94807,8 +95227,11 @@
       "priorSourcePage": 43,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-133",
+      "reviewedSourcePage": 43,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 43 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q134",
@@ -94817,8 +95240,11 @@
       "priorSourcePage": 43,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-134",
+      "reviewedSourcePage": 43,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 43 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q135",
@@ -94827,8 +95253,11 @@
       "priorSourcePage": 45,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-135",
+      "reviewedSourcePage": 45,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 45 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q136",
@@ -94837,8 +95266,11 @@
       "priorSourcePage": 45,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-136",
+      "reviewedSourcePage": 45,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 45 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q137",
@@ -94847,8 +95279,11 @@
       "priorSourcePage": 45,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-137",
+      "reviewedSourcePage": 45,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 45 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q138",
@@ -94857,8 +95292,11 @@
       "priorSourcePage": 45,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-138",
+      "reviewedSourcePage": 45,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 45 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q139",
@@ -94867,8 +95305,11 @@
       "priorSourcePage": 44,
       "priorReconstructionStatus": "partial",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-139",
+      "reviewedSourcePage": 45,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 45 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q140",
@@ -94877,8 +95318,11 @@
       "priorSourcePage": 45,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-140",
+      "reviewedSourcePage": 45,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 45 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q141",
@@ -94887,8 +95331,11 @@
       "priorSourcePage": 47,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-141",
+      "reviewedSourcePage": 47,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 47 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q142",
@@ -94897,8 +95344,11 @@
       "priorSourcePage": 47,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-142",
+      "reviewedSourcePage": 47,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 47 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q143",
@@ -94907,8 +95357,11 @@
       "priorSourcePage": 47,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-143",
+      "reviewedSourcePage": 47,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 47 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q144",
@@ -94917,8 +95370,11 @@
       "priorSourcePage": 47,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-144",
+      "reviewedSourcePage": 47,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 47 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q145",
@@ -94929,8 +95385,11 @@
       "existingStemMatchIds": [
         "cds-2025-2025-2-145"
       ],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "cds-2025-2025-2-145",
+      "reviewedSourcePage": 47,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 47 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q146",
@@ -94941,8 +95400,11 @@
       "existingStemMatchIds": [
         "nda-2025-ii-146"
       ],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-146",
+      "reviewedSourcePage": 47,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 47 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q147",
@@ -94951,8 +95413,11 @@
       "priorSourcePage": 49,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-147",
+      "reviewedSourcePage": 49,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 49 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q148",
@@ -94961,8 +95426,11 @@
       "priorSourcePage": 49,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-existing-reuse",
+      "reviewedRecordId": "nda-2025-ii-148",
+      "reviewedSourcePage": 49,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 49 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q149",
@@ -94971,8 +95439,11 @@
       "priorSourcePage": 49,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-149",
+      "reviewedSourcePage": 49,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 49 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2025-2/Q150",
@@ -94981,8 +95452,11 @@
       "priorSourcePage": 49,
       "priorReconstructionStatus": "complete",
       "existingStemMatchIds": [],
-      "disposition": "pending-current-source-review",
-      "note": "A prior slot or matching stem is a review lead, not a confirmed booklet-series conversion, correct reproduction, answer verification, or scope decision."
+      "disposition": "verified-local-import",
+      "reviewedRecordId": "nda-2025-ii-150",
+      "reviewedSourcePage": 49,
+      "decisionEvidence": "content/nda-2025-ii-official-paper.json",
+      "note": "Original Series A page 49 and official-key page 1 visually reviewed; retained the existing ID where the occurrence was already represented."
     },
     {
       "slotId": "NDA/2026-1/Q1",

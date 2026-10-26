@@ -20,7 +20,8 @@ Regional Kingdoms|Vijayanagara;Bahmani kingdom;Deccan sultanates;Bengal and Guja
 Mughal Empire|Babur and Humayun;Akbar;Jahangir and Shah Jahan;Aurangzeb;Mansabdari and jagirdari;Revenue administration;Succession and decline
 Marathas and Regional Powers|Shivaji;Peshwas and confederacy;Sikh powers;Mysore;Awadh and Hyderabad
 Medieval Society and Economy|Agrarian relations;Craft production;Trade and towns;Technology;Women and social structures;Village administration
-Bhakti and Sufi Traditions|Alvars and Nayanars;Saguna and nirguna traditions;Saints and compositions;Sufi orders;Institutions and practices;Siddhas and Lingayats`,
+Bhakti and Sufi Traditions|Alvars and Nayanars;Saguna and nirguna traditions;Saints and compositions;Sufi orders;Institutions and practices;Siddhas and Lingayats
+Sources and Chronology|Foreign accounts`,
     'Modern India & National Movement': `European Companies|Portuguese;Dutch and Danish;English and French;Factories and trading networks;Carnatic conflicts
 British Expansion|Bengal conquest;Anglo-Mysore wars;Anglo-Maratha wars;Anglo-Burmese wars;Subsidiary alliance;Annexation policies;Punjab conquest
 Colonial Administration|Company government;Crown rule and proclamations;Civil services;Census and surveys;Army and police;Judiciary;Education policies;Press policies
@@ -91,7 +92,7 @@ National Income|GDP and GVA;Nominal and real measures;Income accounting;Growth a
 Inflation|Price indices;Causes;Distributional effects;Deflation and disinflation;Policy responses`,
     'Money & Banking': `Money and Central Banking|Money functions;Monetary aggregates;RBI functions;Monetary policy;Liquidity instruments;Money demand;Gold mobilisation
 Banking System|Commercial banks;Cooperatives;NBFCs;Prudential norms;NPAs;Deposit insurance;Payments banks;Core banking;Lending rates and benchmarks
-Financial Markets|Money market;Capital market;Bonds and yields;Equity;Derivatives;Financial regulators
+Financial Markets|Money market;Capital market;Bonds and yields;Equity;Derivatives;Financial regulators;Digital assets
 Financial Inclusion|Access and objectives;Payments;Digital finance;Credit access;Business correspondents;Insurance;Pensions`,
     'Public Finance': `Budget and Fiscal Policy|Budget documents;Receipts and expenditure;Deficits;Public debt;Fiscal rules
 Taxation|Direct taxes;Indirect taxes;GST;Tax administration;Tax revenue indicators;Fiscal federalism;International taxation`,

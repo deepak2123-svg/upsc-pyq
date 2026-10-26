@@ -5,6 +5,7 @@ import { englishSyllabus, elementaryMaths, ndaMaths, csatSyllabus, defenceWorldH
 import applicability from '../content/preparation-applicability.json' with { type: 'json' };
 import officialNdaPlacements from '../content/nda-2026-i-preparation-placements.json' with {type:'json'};
 import officialNdaIIPlacements from '../content/nda-2026-ii-preparation-placements.json' with {type:'json'};
+import officialNda2025IIPlacements from '../content/nda-2025-ii-preparation-placements.json' with {type:'json'};
 import {organiseNdaScience} from './nda-science-syllabus';
 
 export type PreparationInventory = SubjectPracticeInventory & { preparationExam: PreparationExam; preparationViews: PreparationView[] };
@@ -75,7 +76,7 @@ export function getPreparationInventory(target: PreparationExam): PreparationInv
   // Future English/maths/CSAT imports need explicit reviewed concept placements.
   // A historic global "outside GS" decision is not silently removed or promoted.
   const questions = new Map(historicalPyqQuestions.map(q => [q.id, q]));
-  for (const row of [...applicability.approvedPlacements,...officialNdaPlacements,...officialNdaIIPlacements] as ReviewedPlacement[]) {
+  for (const row of [...applicability.approvedPlacements,...officialNdaPlacements,...officialNdaIIPlacements,...officialNda2025IIPlacements] as ReviewedPlacement[]) {
     if (row.target !== target || row.status !== 'approved' || !row.rationale.trim()) continue;
     const question = questions.get(row.questionId);
     const leaf = nodes.find(n => n.kind === 'subtopic' && n.id === row.subtopicId);

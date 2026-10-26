@@ -26,8 +26,9 @@ export function SourceDirectory({ papers }: { papers: SourcePaper[] }) {
       <div className="source-paper-heading"><span className="source-exam-tag">{paper.exam}</span><strong>{paper.year} · {paper.paper}</strong><span>{paper.count} MCQs</span></div>
       <div className="source-paper-status"><span className={paper.complete ? "source-review-complete" : ""}>{paper.complete ? "Complete source review" : "Partial collection"}</span>{paper.provisional ? <span>Provisional key</span> : null}</div>
       {paper.exam==='NDA'&&paper.year===2026&&['I','II'].includes(paper.paper)?<><small>Complete GAT · English 50 · Science 50 · GS 50 · official provisional key</small><Link href={`/papers/nda-2026-${paper.paper.toLowerCase()}-gat`}>Start official-key paper →</Link></>:null}
+      {paper.exam==='NDA'&&paper.year===2025&&paper.paper==='II'?<><small>149/150 available · Q85 withdrawn · official final key</small><Link href="/papers/nda-2025-ii-gat">Start official-key paper →</Link></>:null}
     </li>)}</ul>
-    {!filtered.length ? <p className="source-empty" role="status">No added papers match these filters.</p> : null}
+      {!filtered.length ? <p className="source-empty" role="status">No added papers match these filters.</p> : null}
     <nav className="source-pagination" aria-label="Paper pages"><button type="button" disabled={!interactive || page === 0} onClick={() => setPage(value => value-1)}>← Previous</button><span aria-live="polite">{filtered.length ? page*PAGE_SIZE+1 : 0}–{Math.min((page+1)*PAGE_SIZE,filtered.length)} of {filtered.length}</span><button type="button" disabled={!interactive || page+1 >= pageCount} onClick={() => setPage(value => value+1)}>Next →</button></nav>
   </section>;
 }

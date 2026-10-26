@@ -15,7 +15,8 @@ const bank = JSON.parse(fs.readFileSync('content/question-bank.json')).questions
 const reviewedPilot = JSON.parse(fs.readFileSync('content/reviewed-prelims-imports.json'));
 const officialNda=JSON.parse(fs.readFileSync('content/nda-2026-i-official-paper.json'));
 const officialNdaII=JSON.parse(fs.readFileSync('content/nda-2026-ii-official-paper.json'));
-const officialPapers=[officialNda,officialNdaII];
+const officialNda2025II=JSON.parse(fs.readFileSync('content/nda-2025-ii-official-paper.json'));
+const officialPapers=[officialNda,officialNdaII,officialNda2025II];
 const officialByHash=new Map(officialPapers.map(p=>[p.questions[0].source.originalPdfSha256,p]));
 const reuseGroups=sourceReuseFiles.map(file=>({...JSON.parse(fs.readFileSync(file)),file}));
 const reproductionOverrides=JSON.parse(fs.readFileSync('content/prelims-reproduction-overrides.json'));
@@ -78,7 +79,7 @@ const reviewedEntries = [
   }),
   ...reuseGroups.flatMap(group=>group.records.map(row=>[`${group.evidence.originalPdfSha256}/${row.questionNumber}`,{id:row.questionId,disposition:row.status,page:row.sourcePage,evidence:group.file}])),
 ].filter(([id])=>!officialByHash.has(id.split('/')[0]));
-for(const paper of officialPapers)reviewedEntries.push(...paper.questions.map(q=>[`${q.source.originalPdfSha256}/${q.questionNumber}`,{id:q.id,disposition:Object.hasOwn(paper.baselines,q.id)?'verified-existing-reuse':'verified-local-import',page:q.source.originalPage,evidence:`content/nda-2026-${q.paper.toLowerCase()}-official-paper.json`,verificationMethod:'official-key'}]));
+for(const paper of officialPapers)reviewedEntries.push(...paper.questions.map(q=>[`${q.source.originalPdfSha256}/${q.questionNumber}`,{id:q.id,disposition:q.source.answerStatus==='withdrawn'?'withdrawn':Object.hasOwn(paper.baselines,q.id)?'verified-existing-reuse':'verified-local-import',page:q.source.originalPage,evidence:`content/nda-${q.year}-${q.paper.toLowerCase()}-official-paper.json`,verificationMethod:'official-key'}]));
 assert.equal(new Set(reviewedEntries.map(([id])=>id)).size,reviewedEntries.length,'Repeated approved source occurrence');
 const reviewedOccurrences=new Map(reviewedEntries);
 const files = ['../.tmp/full_reaudit_clean_questions.json', '../.tmp/full_reaudit_clean_cds_questions.json', '../.tmp/full_reaudit_clean_nda_questions.json'];
@@ -137,6 +138,7 @@ for (const source of sourceRegister.sources) {
       verifiedImports:completedDecisions.filter(row=>row.disposition==='verified-local-import').length,
       outOfScope:completedDecisions.filter(row=>row.disposition==='out-of-scope').length,
       verifiedReuses:completedDecisions.filter(row=>row.disposition==='verified-existing-reuse').length}:{}),
+    ...(reviewedPaper?{withdrawn:completedDecisions.filter(row=>row.disposition==='withdrawn').length}:{}),
   });
   for (let number = 1; number <= (expected ?? 0); number++) {
     const previous = prior.find(row => row.printed_question_number === number);

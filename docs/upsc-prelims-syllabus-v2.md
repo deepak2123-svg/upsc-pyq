@@ -29,6 +29,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 - **5. Marathas and Regional Powers:** Shivaji; Peshwas and confederacy; Sikh powers; Mysore; Awadh and Hyderabad.
 - **6. Medieval Society and Economy:** Agrarian relations; Craft production; Trade and towns; Technology; Women and social structures; Village administration.
 - **7. Bhakti and Sufi Traditions:** Alvars and Nayanars; Saguna and nirguna traditions; Saints and compositions; Sufi orders; Institutions and practices; Siddhas and Lingayats.
+- **8. Sources and Chronology:** Foreign accounts.
 ### Modern India & National Movement
 
 - **1. European Companies:** Portuguese; Dutch and Danish; English and French; Factories and trading networks; Carnatic conflicts.
@@ -137,7 +138,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 
 - **1. Money and Central Banking:** Money functions; Monetary aggregates; RBI functions; Monetary policy; Liquidity instruments; Money demand; Gold mobilisation.
 - **2. Banking System:** Commercial banks; Cooperatives; NBFCs; Prudential norms; NPAs; Deposit insurance; Payments banks; Core banking; Lending rates and benchmarks.
-- **3. Financial Markets:** Money market; Capital market; Bonds and yields; Equity; Derivatives; Financial regulators.
+- **3. Financial Markets:** Money market; Capital market; Bonds and yields; Equity; Derivatives; Financial regulators; Digital assets.
 - **4. Financial Inclusion:** Access and objectives; Payments; Digital finance; Credit access; Business correspondents; Insurance; Pensions.
 ### Public Finance
 

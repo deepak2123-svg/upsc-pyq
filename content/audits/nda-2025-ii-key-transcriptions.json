@@ -1,0 +1,48 @@
+{
+  "paper": "NDA II 2025 GAT, Series A",
+  "active": false,
+  "authentication": "Direct UPSC PDF recovered 2026-10-26; every Series A cell visually matched to both transcriptions. Original mirror hash retained as separate provenance.",
+  "pdfSha256": "2c5db75e05916797fcec6748d284feacba3fd2230dea32dc4bf65d86bea42722",
+  "reviewer": "AI assistant; two distinct visual passes, not independent human review",
+  "firstPassColumns": [
+    "B A D A A A A B A A A B A B B A A D C A",
+    "B B A D B B A D A C D A A B B B C A D A",
+    "D A C A D A C C B C D B C D B C D A/B A B",
+    "C A D B B A B A B C C A C A A A C B D D",
+    "C C C D X C B D B B D D C B D B B D C C",
+    "C A A B D C C D D C C B D C A C D C B B",
+    "C D B B D D C C D B A A A B B A B C C B",
+    "D C B B C D A C D A"
+  ],
+  "secondPassRows": [
+    "B B D C C C C D",
+    "A B A A C A D C",
+    "D A C D C A B B",
+    "A D A B D B B B",
+    "A B D B X D D C",
+    "A B A A C C D D",
+    "A A C B B C C A",
+    "B D C A D D C C",
+    "A A B B B D D D",
+    "A C C C B C B A",
+    "A D D C D C A",
+    "B A B A D B A",
+    "A A C C C D A",
+    "B B D A B C B",
+    "B B B A D A B",
+    "A B C A B C A",
+    "A C D C B D B",
+    "D A A/B B D C C",
+    "C D A D C B C",
+    "A A B D C B B"
+  ],
+  "exceptions": {
+    "58": [
+      "A",
+      "B"
+    ],
+    "85": "withdrawn"
+  },
+  "secondPassDate": "2026-10-26",
+  "officialPdfSha256": "c997b581dccc26287dfb7746a287ccdbfbdc270c356e835eda7b5641fcfe811f"
+}

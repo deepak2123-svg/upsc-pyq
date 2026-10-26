@@ -3,6 +3,7 @@ import { historicalPyqQuestions as pyqQuestions } from "../../../../lib/pyq-cata
 import { questionExclusion, questionReviewRevision } from '../../../../lib/question-review';
 import type { AnswerFeedback } from "../../../../lib/practice-types";
 import { answerKeyRevision } from "../../../../lib/practice-session";
+import {acceptedAnswerOptions} from '../../../../lib/answer-options';
 
 const questionsById = new Map(pyqQuestions.map((question) => [question.id, question]));
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -44,12 +45,13 @@ export async function POST(request: Request) {
       feedback[id] = { disposition: 'excluded', correct: null, correctAnswer: null, explanation: exclusionReason, exclusionReason, answerKeyRevision: answerKeyRevision(id), reviewRevision: questionReviewRevision(id) };
       continue;
     }
-    const isCorrect = answer === question.answer;
+    const accepted=acceptedAnswerOptions(question);
+    const isCorrect = accepted.includes(answer as string);
     if (answer !== undefined) {
       if (isCorrect) correct += 1;
       else incorrect += 1;
     }
-    feedback[id] = { disposition: 'scored', correct: isCorrect, correctAnswer: question.answer, explanation: publishedExplanation(question.explanation), answerKeyRevision: answerKeyRevision(id), reviewRevision: questionReviewRevision(id) };
+    feedback[id] = { disposition: 'scored', correct: isCorrect, correctAnswer: question.answer, ...(accepted.length>1?{correctAnswers:accepted}:{}), explanation: publishedExplanation(question.explanation), answerKeyRevision: answerKeyRevision(id), reviewRevision: questionReviewRevision(id) };
   }
   return NextResponse.json({ correct, incorrect, excluded, scored: ids.length - excluded, unattempted: ids.length - excluded - correct - incorrect, total: ids.length, feedback });
 }

@@ -64,7 +64,7 @@ test('Economy Current Affairs mirrors every approved economic current-affairs le
   const ids=result.body.questions.map(q=>q.id);
   assert.equal(new Set(ids).size,ids.length);
   assert.equal(ids.length,selectionCounts(sourcePaths,index).matchingCount);
-  assert.equal(data.totalCount,1884,'Shared categories do not duplicate records; two NDA II World History questions are preparation-only');
+  assert.equal(data.totalCount,1909,'Shared categories do not duplicate records; preparation-only English/science and withdrawn records are excluded');
 });
 
 test('older V4 and V3 scopes retain frozen membership after a question moves to another subject',async()=>{
@@ -123,17 +123,18 @@ test('review ledger checks hashes and separates preserved decisions, fresh passe
   const imports=JSON.parse(fs.readFileSync('content/reviewed-prelims-imports.json')).questions;
   const official=JSON.parse(fs.readFileSync('content/nda-2026-i-official-paper.json')).questions;
   official.push(...JSON.parse(fs.readFileSync('content/nda-2026-ii-official-paper.json')).questions);
+  official.push(...JSON.parse(fs.readFileSync('content/nda-2025-ii-official-paper.json')).questions);
   const oldIds=new Set([...bank,...imports].map(q=>q.id));
   const byId=new Map([...bank,...imports,...official.filter(q=>!oldIds.has(q.id))].map(q=>[q.id,q]));
   assert.equal(new Set(ledger.records.map(r=>r.questionId)).size,ledger.records.length);
   assert.equal(ledger.pilotSubjects.length,9);
-  assert.equal(ledger.records.filter(r=>r.basis==='preserved-physical-v1.2-review').length,362);
+  assert.equal(ledger.records.filter(r=>r.basis==='preserved-physical-v1.2-review').length,349,'Thirteen NDA II 2025 physical-geography records now have a fresh complete-paper review');
   const repaired=ledger.records.find(r=>r.questionId==='nda-2025-i-86');
   assert.equal(repaired.status,'approved');
   assert.equal(repaired.materialRepairReviewed,true);
   assert.equal(repaired.answerEligibilityUnchanged,true);
   assert.equal(JSON.parse(fs.readFileSync('content/question-review-policy.json'))['nda-2025-i-86'].status,'quarantined');
-  assert.equal(ledger.records.filter(r=>r.status==='out-of-scope').length,115);
+  assert.equal(ledger.records.filter(r=>r.status==='out-of-scope').length,212);
   for(const r of ledger.records) {
     assert.ok(byId.has(r.questionId));
     assert.equal(crypto.createHash('sha256').update(JSON.stringify(byId.get(r.questionId))).digest('hex'),r.expectedRecordHash,r.questionId);
@@ -451,7 +452,7 @@ test('NDA 2025 placement approvals preserve all six independent answer quarantin
   const bank=JSON.parse(fs.readFileSync('content/question-bank.json')).questions;
   const ledger=JSON.parse(fs.readFileSync('content/taxonomy/prelims-reviewed-placements.json'));
   const byId=new Map(ledger.records.map(row=>[row.questionId,row]));
-  for(const [paper,count]of [['I',13],['II',11]]) {
+  for(const [paper,count]of [['I',13],['II',0]]) {
     assert.ok(bank.filter(q=>q.exam==='NDA'&&q.year===2025&&q.paper===paper).every(q=>['approved','out-of-scope'].includes(byId.get(q.id)?.status)));
     assert.equal(ledger.records.filter(row=>row.editorialBatch===`NDA/2025/${paper}/existing-1`).length,count);
   }
@@ -465,7 +466,10 @@ test('NDA 2025 placement approvals preserve all six independent answer quarantin
   assert.match(byId.get('cds-2025-2025-1-62').primaryId,/five-year-plans$/);
   assert.match(byId.get('cds-2025-2025-2-145').primaryId,/development-programmes$/);
   assert.ok(byId.get('nda-2025-ii-148').tags.includes('Event-based'));
-  assert.ok(byId.get('nda-2025-ii-126').editorialFollowUps.some(row=>row.status==='pending'));
+  assert.equal(byId.get('nda-2025-ii-126').basis,'nda-2025-ii-complete-source-review');
+  const completed=JSON.parse(fs.readFileSync('content/audits/nda-2025-ii-review.json'));
+  assert.equal(completed.reconciliation.awaitingReviewCount,0);
+  assert.equal(completed.reconciliation.dispositionCounts['official-final'],149);
   assert.ok(ledger.records.filter(row=>/^NDA\/2025\//.test(row.editorialBatch||'')).every(row=>row.answerEligibilityUnchanged));
 });
 

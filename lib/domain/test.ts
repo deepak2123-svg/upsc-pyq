@@ -48,6 +48,7 @@ export type QuestionSnapshot = {
   promptLines: string[];
   options: Record<string, string>;
   correctOption: string;
+  acceptedOptions?: string[];
   explanation: string | null;
   eliminationNotes: Record<string, string> | null;
   origin: "pyq" | "generated";
@@ -92,7 +93,9 @@ export function normalizeRecipe(input: Partial<TestRecipe>): TestRecipe {
 }
 
 export function publicSnapshot(snapshot: QuestionSnapshot, revealAnswer: boolean) {
-  const {correctOption: _originalAnswer, ...safe}=snapshot;
+  const {correctOption: _originalAnswer, acceptedOptions:_acceptedOptions, ...safe}=snapshot;
   if(revealAnswer) return {...safe,...reviewedAnswer(snapshot)};
-  return safe;
+  const {explanation:_explanation,eliminationNotes:_eliminationNotes,...unanswered}=safe;
+  const identityFields=new Set(['dataset','exam','year','paper','questionNumber','originalPdfSha256','originalPage','originalPages','bookletSeries','answerStatus']);
+  return {...unanswered,source:Object.fromEntries(Object.entries(snapshot.source).filter(([key])=>identityFields.has(key)))};
 }

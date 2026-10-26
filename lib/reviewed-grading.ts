@@ -1,11 +1,15 @@
 import bank from './combined-question-bank.ts';
 import {questionExclusion,questionReviewRevision} from './question-review.ts';
+import {acceptedAnswerOptions} from './answer-options.ts';
 
 const canonical = new Map(bank.questions.map(q=>[q.id,q]));
-export function reviewedAnswer(question:{id:string;contentRevision?:number;correctOption?:string;answer?:string;explanation?:string|null}) {
+export function reviewedAnswer(question:{id:string;contentRevision?:number;correctOption?:string;answer?:string;explanation?:string|null;acceptedOptions?:string[]}) {
   const exclusionReason=questionExclusion(question.id,question.contentRevision??0);
+  const current=canonical.get(question.id);
+  const accepted=exclusionReason?[]:current?acceptedAnswerOptions(current):question.acceptedOptions??[question.correctOption??question.answer??''];
   return {disposition:exclusionReason?'excluded' as const:'scored' as const,
     correctOption:exclusionReason?null:canonical.get(question.id)?.answer??question.correctOption??question.answer??null,
+    ...(accepted.length>1?{acceptedOptions:accepted}:{}),
     exclusionReason,explanation:exclusionReason??canonical.get(question.id)?.explanation??question.explanation??null,reviewRevision:questionReviewRevision(question.id)};
 }
 
@@ -19,7 +23,7 @@ export function scoreReviewedQuestions(questionList: readonly {id:string;subject
     bucket.total++;
     const answer=answers.get(question.id);
     if(!answer) bucket.unattempted++;
-    else if(answer===review.correctOption) {correctCount++;bucket.correct++;bucket.score+=scoring.marksPerQuestion;}
+    else if((review.acceptedOptions??[review.correctOption]).includes(answer)) {correctCount++;bucket.correct++;bucket.score+=scoring.marksPerQuestion;}
     else {incorrectCount++;bucket.incorrect++;bucket.score-=scoring.negativeMarksPerQuestion;}
   }
   const scoredCount=questionList.length-excludedCount;

@@ -1,14 +1,16 @@
 "use client";
+import {feedbackAnswerLabel} from '../../lib/answer-options';
 
 import { useEffect, useRef, useState } from "react";
 import type { AnswerFeedback, PracticeSnapshot } from "../../lib/practice-types";
 import { isPracticeRecipeV3 } from "../../lib/practice-types";
 import { formatPracticePrompt, formatPracticeText } from "../../lib/practice-prompt";
+import {printPromptLines} from '../../lib/print-shared-context';
 import { PYQ_EXAMS } from "../../lib/pyq-exams";
 import { PracticePromptView } from "./practice-prompt-view";
 
 type PrintPayload = { snapshot: PracticeSnapshot; includeAnswerKey: boolean; paperTitle?: string };
-function keyLabel(feedback?: AnswerFeedback, provisional=false, reasoned=false) { return feedback?.disposition === 'excluded' ? 'Excluded' : `${feedback?.correctAnswer || '—'}${provisional?' †':reasoned?' ‡':''}`; }
+function keyLabel(feedback?: AnswerFeedback, provisional=false, reasoned=false) { return feedback?.disposition === 'excluded' ? 'Excluded' : `${feedbackAnswerLabel(feedback)}${provisional?' †':reasoned?' ‡':''}`; }
 
 export function PrintPaperClient({ id }: { id: string }) {
   const [payload, setPayload] = useState<PrintPayload | null>();
@@ -70,6 +72,7 @@ export function PrintPaperClient({ id }: { id: string }) {
   const examCounts = Object.fromEntries(PYQ_EXAMS.map((exam) => [exam, snapshot.questions.filter((question) => question.exam === exam).length]));
   const answerKeySplit = Math.ceil(snapshot.questions.length / 2);
   const answerKeyColumns = [snapshot.questions.slice(0, answerKeySplit), snapshot.questions.slice(answerKeySplit)];
+  const printedPrompts=printPromptLines(snapshot.questions);
 
   return <main className="print-paper">
     <div className="print-toolbar"><button type="button" disabled={!printReady} onClick={() => window.print()}>{error ? "Paper not ready" : printReady ? "Print / Save as PDF" : keyReady ? "Preparing diagrams…" : "Preparing answer key…"}</button><span>Choose <strong>Save as PDF</strong> and turn off <strong>Headers and footers</strong> in the print dialog.</span>{error ? <p role="alert">{error} <button type="button" onClick={() => window.location.reload()}>Reload paper</button></p> : null}</div>
@@ -77,7 +80,7 @@ export function PrintPaperClient({ id }: { id: string }) {
       <div className="print-title-row"><h1>{payload.paperTitle || 'Previous-Year Questions'}</h1></div>
       <table className="print-paper-summary" aria-label="Paper summary"><thead><tr><th>Syllabus</th><th>MCQs</th>{PYQ_EXAMS.map((exam) => <th key={exam}>{exam}</th>)}<th>Time</th></tr></thead><tbody><tr><td><strong>{primaryCoverage || subjects || "Selected syllabus"}</strong>{!payload.paperTitle && coverage.subparts.length ? <small>{coverage.subparts.join(" · ")}</small> : null}</td><td>{snapshot.questions.length}</td>{PYQ_EXAMS.map((exam) => <td key={exam}>{examCounts[exam] || "—"}</td>)}<td>{duration ? `${duration} min` : "Untimed"}</td></tr></tbody></table>
     </header>
-    <ol className="print-question-list">{snapshot.questions.map((question, index) => <li key={question.id} className={`print-question ${question.figure ? "has-figure" : ""}`} data-question-id={question.id}><div className="print-question-meta"><strong>Question {index + 1}</strong><span>{question.exam} {question.year} · {question.paper} · Q{question.questionNumber}</span></div><PracticePromptView blocks={formatPracticePrompt(question.promptLines)} className="print-question-prompt" figure={question.figure} underlined={question.underlined} /><div className="print-option-list">{Object.entries(question.options).map(([key, option]) => <div key={key} data-option-key={key}><b>{key}.</b><span>{formatPracticeText(option)}</span></div>)}</div></li>)}</ol>
+    <ol className="print-question-list">{snapshot.questions.map((question, index) => <li key={question.id} className={`print-question ${question.figure ? "has-figure" : ""}`} data-question-id={question.id}><div className="print-question-meta"><strong>Question {index + 1}</strong><span>{question.exam} {question.year} · {question.paper} · Q{question.questionNumber}</span></div><PracticePromptView blocks={formatPracticePrompt(printedPrompts.get(question.id)??question.promptLines)} className="print-question-prompt" figure={question.figure} underlined={question.underlined} /><div className="print-option-list">{Object.entries(question.options).map(([key, option]) => <div key={key} data-option-key={key}><b>{key}.</b><span>{formatPracticeText(option)}</span></div>)}</div></li>)}</ol>
     {includeAnswerKey ? <section className="print-answer-key"><h2>Answer key</h2>{snapshot.questions.some(q=>q.answerKeyStatus==='reasoned-verified') ? <p>‡ Independently verified from primary sources; no matching official key recovered.</p> : null}{snapshot.questions.some(q=>q.answerKeyStatus==='official-provisional') ? <p>† Official provisional key; subject to revision.</p> : null}{Object.values(feedback).some(item => item.disposition === 'excluded') && <p>Excluded questions do not count towards the score.</p>}{error ? <p>{error}</p> : <table><thead><tr><th>Q.</th><th>Ans.</th><th>Original source</th><th>Q.</th><th>Ans.</th><th>Original source</th></tr></thead><tbody>{answerKeyColumns[0].map((left, row) => { const right = answerKeyColumns[1][row]; return <tr key={left.id}><td>{row + 1}</td><td>{keyLabel(feedback[left.id],left.answerKeyStatus==='official-provisional',left.answerKeyStatus==='reasoned-verified')}</td><td>{left.exam} {left.year} · {left.paper} · Q{left.questionNumber}</td>{right ? <><td>{answerKeySplit + row + 1}</td><td>{keyLabel(feedback[right.id],right.answerKeyStatus==='official-provisional',right.answerKeyStatus==='reasoned-verified')}</td><td>{right.exam} {right.year} · {right.paper} · Q{right.questionNumber}</td></> : <td colSpan={3} />}</tr>; })}</tbody></table>}</section> : null}
   </main>;
 }

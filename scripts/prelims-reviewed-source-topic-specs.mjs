@@ -1,5 +1,17 @@
 // Concept boundaries established by full original-question review, not keywords.
 export const sourceTopicSpecs = {
+  'History/Medieval India/Sources and Chronology/Foreign accounts': {
+    includes:['Travellers to medieval and early-modern India','Chronology and identification of their accounts'],
+    excludes:['Ancient Greek/Chinese accounts','Modern tourism','Literary authorship without an historical-source task'],
+    placementRule:'Use for the identity, chronology or source value of medieval/early-modern travellers. Do not force these into Ancient India merely because it already has a sources chapter.',
+    representativeQuestions:['NDA II 2025 GAT Series A Q83: Ibn Battuta, Nikitin, Monserrate and Peter Mundy'],
+  },
+  'Economy/Money & Banking/Financial Markets/Digital assets': {
+    includes:['Cryptocurrencies and named crypto assets','Digital-asset economic identity and financial-market use'],
+    excludes:['Generic programming','Payment-system infrastructure without an asset task','A person merely owning cryptocurrency'],
+    placementRule:'Use for identifying or comparing digital financial assets. Add the technology placement when blockchain/cryptocurrency identity is materially tested; preserve one canonical MCQ.',
+    representativeQuestions:['NDA II 2025 GAT Series A Q150: Ethereum, Tether, Solana and Cardano'],
+  },
   'Economy/Industry, Services & Infrastructure/Services and Infrastructure/Energy efficiency': {
     includes:['Appliance energy-efficiency ratings and labelling','Energy conservation programmes and efficient energy use'],
     excludes:['Food safety labels','Electricity mechanisms without an efficiency-policy task','Renewable generation alone','Inferred emissions accounting not tested by the question'],
