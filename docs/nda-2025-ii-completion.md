@@ -1,7 +1,7 @@
 # NDA II 2025 GAT — completion and release record
 
 Reviewed 26 October 2026 under the standing paper-processing SOP.
-State: **local-verified; production release verification pending**.
+State: **complete and production verified**.
 
 ## Source and reconciliation
 
@@ -121,6 +121,27 @@ They are not represented as a passing typecheck. The production build and full
 
 ## Production release
 
-Commit, deployment identity, served asset hash and production flow checks:
-pending until the reviewed local changes are pushed and observed live.
-Do not start NDA I 2025 until these release checks pass.
+Release commit: `317a96cb4b7e52027e73af104d21c3b680586507`, pushed atomically to
+`main` and `codex/pyq-selection-flow`. GitHub Production deployment `7322773091`
+reports success for that exact SHA (not merely the Preview deployment).
+
+Live page: https://upscpuraan.vercel.app/papers/nda-2025-ii-gat
+
+Production checks passed on 26 October 2026:
+
+- All 600 grading decisions: 150 accepted, 446 rejected, four excluded Q85
+  checks. Every response matched the reviewed final key and accepted sets.
+- Served official-key asset SHA-256 matches
+  `c997b581dccc26287dfb7746a287ccdbfbdc270c356e835eda7b5641fcfe811f`.
+- Live inventory membership, source counts and English/Science preparation
+  separation passed; Q85 cannot enter a new scored test.
+- Eight production Playwright checks passed: full online attempt, saved choices
+  after reload, result review, full offline paper and every printed answer,
+  English/Science/GS section launches, numbered Science chapters, preparation
+  selector/source filters and responsive navigation.
+- Production PDF has 17 pages; the text audit again finds all 596 options and
+  all prompt lines, with no missing text.
+
+The completion record and chronology are updated in a following documentation-
+only commit. No question, key, runtime or taxonomy payload is changed by it.
+NDA I 2025 is the next queued paper, not part of this completed release.
