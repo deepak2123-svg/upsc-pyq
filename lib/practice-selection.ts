@@ -257,11 +257,12 @@ export function ancestors(scopeId: string, index: SelectionIndex): ScopeNode[] {
   return result;
 }
 
-/** Stable chapter/subpart numbering within every syllabus section. */
+/** Stable section (NDA maths), chapter and subpart display numbering. */
 export function scopeDisplayNumber(scopeId: string, index: SelectionIndex): string | undefined {
   const path = ancestors(scopeId, index);
   const topic = path.find((node):node is PracticeInventoryNode => node.kind === "topic");
   const node = index.nodesById.get(scopeId);
+  if (node?.kind === 'head' && index.nodesById.get(node.subjectId)?.label === 'Mathematics') return `Section ${node.order}`;
   if (!topic || !node) return undefined;
   if (node.kind === "topic") return `Chapter ${topic.order}`;
   if (node.kind === "subtopic") return `${topic.order}.${node.order}`;

@@ -49,7 +49,6 @@ test('target selector, separate carts, NDA branches and optional sources', async
 test('empty maths and CSAT topics stay browsable, with responsive navigation', async ({ page }) => {
   await page.goto('/prepare/NDA');
   await page.getByRole('group', { name: 'Paper', exact: true }).getByRole('button', { name: 'Mathematics', exact: true }).click();
-  await page.getByRole('button', { name: 'Open Mathematics', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Open Differential Calculus', exact: true })).toBeVisible();
   await changeExam(page,'CDS');
   await expect(page.getByText('OTA: English + General Knowledge. Mathematics: IMA / INA / AFA.')).toBeVisible();
