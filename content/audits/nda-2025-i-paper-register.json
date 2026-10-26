@@ -2295,6 +2295,56 @@
   },
   "release": {
     "reportReference": "docs/nda-2025-i-completion.md",
-    "state": "pending local/runtime/PDF/production gates"
+    "recordReference": "content/audits/nda-2025-i-release.json",
+    "state": "live-verified",
+    "verifiedAt": "2026-10-26",
+    "releaseCommit": "c8112cbe9a6a449b14366e0176cd85ef4e7ef105",
+    "productionDeploymentId": 7331201808,
+    "deploymentEvidence": "https://api.github.com/repos/deepak2123-svg/upsc-pyq/deployments/7331201808/statuses",
+    "deploymentState": "success",
+    "liveUrl": "https://upscpuraan.vercel.app/papers/nda-2025-i-gat",
+    "sourceReviewComplete": true,
+    "sourceQuestionCount": 150,
+    "scoredQuestionCount": 150,
+    "awaitingReviewCount": 0,
+    "localAutomatedTests": {
+      "passed": 196,
+      "failed": 0
+    },
+    "localDistinctBrowserTests": {
+      "passed": 15,
+      "failedAfterDiagnosedReruns": 0
+    },
+    "productionBrowserTests": {
+      "passed": 8,
+      "failed": 0
+    },
+    "productionGrading": {
+      "accepted": 150,
+      "rejected": 450,
+      "excluded": 0
+    },
+    "productionKeySha256": "115854bdc3436903717b3f7cc87b9786aad3d840280e3af30b965b5231872c88",
+    "productionPdf": {
+      "pages": 17,
+      "renderedPagesInspected": 17,
+      "optionTextChecks": 600,
+      "missingText": 0,
+      "printedKeyCellsCompared": 150
+    },
+    "counts": {
+      "globalGs": 1942,
+      "ndaPreparation": 2129,
+      "csePreparation": 1825,
+      "sourceDirectory": 2247,
+      "sourceGroups": 58
+    },
+    "typecheck": {
+      "state": "not-clean",
+      "preexistingDiagnostics": 10,
+      "newDiagnostics": 0
+    },
+    "inspectionLimits": "Deployment identity/success verified through GitHub Production deployment evidence. No authenticated Vercel log, drain or monitoring scan is claimed.",
+    "nextPaper": "NDA II 2024 GAT"
   }
 }

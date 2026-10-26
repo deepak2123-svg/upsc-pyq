@@ -1,7 +1,7 @@
 # NDA I 2025 GAT — completion and release record
 
 Reviewed 26 October 2026 under the standing paper-processing SOP.
-State: **source review and local gates complete; production verification pending**.
+State: **complete and production verified**.
 
 ## Source and reconciliation
 
@@ -115,6 +115,30 @@ prior-paper staging, browser traces and generated QA PDFs are not committed.
 
 ## Production release
 
-Pending: push reviewed changes, confirm exact production commit, exercise all
-600 grading decisions and critical browser/PDF flows, and byte-check the served
-official-key asset. No live claim is made before these gates pass.
+Release commit: `c8112cbe9a6a449b14366e0176cd85ef4e7ef105`, pushed atomically to
+`main` and `codex/pyq-selection-flow`. GitHub Production deployment `7331201808`
+reports success for that exact SHA.
+
+Live page: https://upscpuraan.vercel.app/papers/nda-2025-i-gat
+
+Production checks passed on 26 October 2026:
+
+- All 600 grading decisions matched: 150 accepted, 450 rejected, zero excluded.
+- Served official-key SHA-256 matches the reviewed original bytes above.
+- All 150 appear in NDA; English, school Science and defence World History
+  remain outside automatic CSE GS membership. Counts match the local totals.
+- Eight production browser checks passed: full-paper attempt, saved answers,
+  reload, submission/results/caveat review, full offline PDF and all 150 printed
+  answers, exact English/Science/GS section membership, numbered Science chapters,
+  preparation/source controls, separate carts and mobile navigation.
+- Production PDF is 17 pages, all 600 options/prompt lines present; every page
+  rendered and visually inspected. Production font metrics differ from local
+  rendering but there is no clipping, missing symbol or broken matching table.
+
+The linked machine-readable release record updates the paper register separately
+from immutable source/editorial approval. This follow-up changes only release
+documentation and register generation; question, answer and taxonomy payloads
+remain unchanged. Next queued paper: **NDA II 2024 GAT**.
+
+Deployment evidence uses GitHub's Production status for the intended commit;
+authenticated Vercel runtime logs, drains and monitoring were not inspected.
