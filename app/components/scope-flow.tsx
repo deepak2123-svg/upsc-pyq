@@ -129,7 +129,7 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, visibleSub
             <div className="scope-card-main">
               <div className="scope-card-copy">
                 {displayNumber ? <div className="scope-card-meta"><span className="scope-card-number">{displayNumber}</span></div> : null}
-                <h4><button type="button" className="explorer-folder" disabled={disabled} aria-label={`Open ${node.label}`} onClick={() => onBrowse(node.id)}>{node.label}<span aria-hidden="true">›</span></button></h4>
+                <h4><button type="button" className="explorer-folder" disabled={disabled} aria-label={`Open ${node.label}`} onClick={() => onBrowse(node.id)}>{node.kind === "head" && subjectLabel === "Geography" ? `${node.order}. ` : null}{node.label}<span aria-hidden="true">›</span></button></h4>
                 <p>{countText}</p>
                 {metrics.state !== "none" ? <small className="explorer-added">{metrics.state === "all" ? "Added" : "Partly added"}</small> : null}
               </div>
