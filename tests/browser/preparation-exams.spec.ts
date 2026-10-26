@@ -17,12 +17,10 @@ test('target selector, separate carts, NDA branches and optional sources', async
   const gat = page.getByRole('group', { name: 'GAT section', exact: true });
   await expect(gat.getByRole('button')).toHaveText(['English', 'GS', 'Science']);
   await gat.getByRole('button', { name: 'English', exact: true }).click();
-  await page.getByRole('button', { name: 'Open English', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Open Vocabulary', exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Add entire folder', exact: true })).toBeEnabled();
   await openSelector(page);
   await gat.getByRole('button', { name: 'Science', exact: true }).click();
-  await page.getByRole('button', { name: 'Open Science & Technology', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Open Physics', exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Add entire folder', exact: true }).click();
   await expect(page.locator('.test-cart-total strong')).not.toHaveText('0');

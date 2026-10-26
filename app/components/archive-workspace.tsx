@@ -11,7 +11,7 @@ import { addScope, ancestors, buildSelectionIndex, removeScope, restoreVersioned
 import {coalesceCoveredDraftScopes,freezeSelectionMembership,restoreFrozenSelection} from '../../lib/practice-draft-membership';
 import { ScopeFlow } from "./scope-flow";
 import { SyllabusNavigation } from "./syllabus-navigation";
-import { preparationDraftKey, type PreparationExam, type PreparationView } from '../../lib/preparation-exams';
+import { preparationDraftKey, preparationLandingScope, type PreparationExam, type PreparationView } from '../../lib/preparation-exams';
 import {PreparationSelector} from './preparation-selector';
 
 const COUNTS = [10, 20, 30, 50] as const;
@@ -72,7 +72,6 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const [workingInventory,setWorkingInventory]=useState(initialInventory);
   const baseIndex=useMemo(()=>buildSelectionIndex(initialInventory),[initialInventory]);
   const index = useMemo(() => buildSelectionIndex(workingInventory), [workingInventory]);
-  const libraryCount=useMemo(()=>initialExam?new Set(initialInventory.nodes.filter(node=>node.kind==='subtopic'&&!node.legacyOnly).flatMap(node=>node.questionIdsByExam?.[initialExam]||[])).size:initialInventory.mappedCount,[initialInventory,initialExam]);
   const [paths, setPaths] = useState<SelectionPaths>({});
   const [focusId, setFocusId] = useState<string>();
   const [expandedIds, setExpandedIds] = useState<string[]>([]);
@@ -115,11 +114,13 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }, [syllabusOpen, testPanelOpen]);
 
   useEffect(() => {
+    let restoredViewId=defaultView;
+    let restoredFocusId:string|undefined;
     try {
       const raw = window.sessionStorage.getItem(draftKey);
       if (raw) {
         const draft = JSON.parse(raw);
-        if (views?.some(view => view.id === draft.viewId)) setViewId(draft.viewId);
+        if (views?.some(view => view.id === draft.viewId)) {setViewId(draft.viewId);restoredViewId=draft.viewId;}
         if ([3, 4, 5, 6].includes(draft.version) && (draft.inventoryVersion === initialInventory.version || draft.inventoryVersion === 3 && initialInventory.version === 4)) {
           let savedPaths:SelectionPaths;
           if(draft.version===6) {
@@ -135,6 +136,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
           const savedExpanded = Array.isArray(draft.expandedIds) ? draft.expandedIds.filter((id: unknown): id is string => typeof id === "string" && baseIndex.nodesById.has(id)) : [];
           setExpandedIds(savedExpanded);
           if (typeof draft.focusId === "string" && baseIndex.nodesById.has(draft.focusId)) {
+            restoredFocusId=draft.focusId;
             setFocusId(draft.focusId);
             const currentPath = ancestors(draft.focusId, baseIndex).map((node) => node.id);
             setExpandedIds(currentPath);
@@ -151,15 +153,19 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     } catch { setPaths({});setWorkingInventory(initialInventory);setDraftWarning("Your builder settings could not be restored in this browser. You can still choose a new practice."); }
     const urlScope = new URL(window.location.href).searchParams.get("scope");
     const urlView = new URL(window.location.href).searchParams.get('view');
-    if (views?.some(view => view.id === urlView)) setViewId(urlView!);
+    const requestedView=views?.find(view=>view.id===urlView);
+    if (requestedView) setViewId(requestedView.id);
     const historyEntry = window.history.state?.pyqLibrary;
-    if (urlScope !== null || historyEntry?.draftKey === draftKey) {
-      const locationId = urlScope && baseIndex.nodesById.has(urlScope) ? urlScope : undefined;
-      setFocusId(locationId);
-      setExpandedIds(locationId ? ancestors(locationId, baseIndex).map((node) => node.id) : []);
-    }
+    let locationId=urlScope!==null||historyEntry?.draftKey===draftKey
+      ? (urlScope&&baseIndex.nodesById.has(urlScope)?urlScope:undefined)
+      : restoredFocusId;
+    if(requestedView&&urlScope===null&&locationId&&!requestedView.subjectIds.includes(baseIndex.nodesById.get(locationId)?.subjectId||''))locationId=undefined;
+    const landing=preparationLandingScope(preparationExam,requestedView||views?.find(view=>view.id===restoredViewId));
+    if(!locationId&&landing&&baseIndex.nodesById.has(landing))locationId=landing;
+    setFocusId(locationId);
+    setExpandedIds(locationId?ancestors(locationId,baseIndex).map(node=>node.id):[]);
     setRestored(true);
-  }, [draftKey, initialInventory, baseIndex, initialExam, views]);
+  }, [draftKey, initialInventory, baseIndex, initialExam, views, defaultView, preparationExam]);
   useEffect(() => {
     if (!restored) return;
     const url = new URL(window.location.href);
@@ -192,7 +198,8 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const visibleSubjectIds = activeView?.subjectIds;
   function changeView(view: PreparationView) {
     if (loading || exporting || !restored) return;
-    recordLocation(undefined, view.id); setFocusId(undefined); setExpandedIds([]); setViewId(view.id);
+    const landing=preparationLandingScope(preparationExam,view);
+    recordLocation(landing, view.id); setFocusId(landing); setExpandedIds(landing?ancestors(landing,index).map(node=>node.id):[]); setViewId(view.id);
   }
   const focusPath = current ? ancestors(current.id, index) : [];
   const hasExplicitSelection = selectedIds.length > 0;
@@ -325,7 +332,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
   return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading}>
     <PreparationSelector exam={preparationExam} views={views} activeView={activeView} disabled={!restored || loading || exporting} onExam={exam=>router.push(`/prepare/${exam}`)} onView={changeView}/>
-    <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{preparationExam ? `${preparationExam} question library` : initialExam ? `${initialExam} question library` : "Question library"}</h1></div><details className="scope-inventory-info"><summary>{format(libraryCount)} PYQs <span aria-hidden="true">ⓘ</span></summary><p>{preparationExam ? 'Available across compatible sources. Your test starts with your preparation exam only.' : `${format(initialInventory.unmappedCount)} unclassified questions remain in exam archives.`}</p>{preparationExam ? <Link href="/library">Previous saved selections</Link> : null}</details></header>
+    <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{preparationExam ? `${preparationExam} question library` : initialExam ? `${initialExam} question library` : "Question library"}</h1></div></header>
     <div className={`scope-library-layout explorer-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
       <h2 className="library-column-label library-column-label-left">Library</h2>
       <h2 className="library-column-label library-column-label-middle">{current ? ({subject:"Sections",head:"Chapters",topic:"Subparts",subtopic:"Subpart"} as const)[current.kind] : "Subjects"}</h2>
@@ -334,7 +341,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
         <button type="button" className="scope-syllabus-mobile-toggle" aria-expanded={syllabusOpen} aria-controls="scope-syllabus-content" onClick={() => setSyllabusOpen((open) => !open)}><span>Library</span><strong>{current?.label || "All subjects"}</strong></button>
           <div ref={libraryDrawer} id="scope-syllabus-content" className="scope-syllabus-content" data-mobile-open={syllabusOpen ? "true" : "false"} role={syllabusOpen ? "dialog" : undefined} aria-modal={syllabusOpen || undefined} aria-label={syllabusOpen ? "Library" : undefined}>
             <button type="button" className="explorer-drawer-close" onClick={() => setSyllabusOpen(false)}>Close library ×</button>
-            <SyllabusNavigation index={index} focusPath={focusPath} expandedIds={expandedIds} mappedCount={libraryCount} preferredExam={initialExam} visibleSubjectIds={visibleSubjectIds} disabled={loading || !restored} onBrowse={browse} onBrowseRoot={browseRoot} onToggle={toggleBranch} />
+            <SyllabusNavigation index={index} focusPath={focusPath} expandedIds={expandedIds} preferredExam={initialExam} visibleSubjectIds={visibleSubjectIds} disabled={loading || !restored} onBrowse={browse} onBrowseRoot={browseRoot} onToggle={toggleBranch} />
           </div>
       </aside>
 

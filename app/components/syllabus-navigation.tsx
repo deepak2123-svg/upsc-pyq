@@ -12,7 +12,6 @@ type SyllabusNavigationProps = {
   index: SelectionIndex;
   focusPath: ScopeNode[];
   expandedIds: string[];
-  mappedCount: number;
   preferredExam?: PyqExam;
   visibleSubjectIds?: string[];
   disabled?: boolean;
@@ -31,7 +30,6 @@ export function SyllabusNavigation({
   index,
   focusPath,
   expandedIds,
-  mappedCount,
   preferredExam,
   visibleSubjectIds,
   disabled = false,
@@ -84,7 +82,7 @@ export function SyllabusNavigation({
   return <nav className="scope-syllabus-nav syllabus-split" aria-label="Syllabus">
     <section className="syllabus-context-panel" aria-label="Subject and section">
     <button type="button" className="scope-syllabus-root" aria-label="Subjects" disabled={disabled} aria-current={!activeId ? "location" : undefined} onClick={onBrowseRoot}>
-      <span>{subject ? "← All subjects" : "Subjects"}</span><strong>{format(mappedCount)}</strong>
+      <span>{subject ? "← All subjects" : "Subjects"}</span>
     </button>
     {subject ? <>
       <button type="button" className="syllabus-subject" disabled={disabled} aria-label={subject.label} aria-current={activeId === subject.id ? "location" : undefined} onClick={() => onBrowse(subject.id)}><strong>{subject.label}</strong><span>{format(nodeCount(subject, preferredExam))}</span></button>

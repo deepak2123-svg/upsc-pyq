@@ -1,14 +1,22 @@
 import {expect,test} from '@playwright/test';
+import {readFileSync} from 'node:fs';
 
 test('compact source directory filters and paginates every paper without inflating totals',async({page,request})=>{
  const inventory=await(await request.get('/api/pyqs/inventory')).json();
  await page.goto('/');
  await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Sources',exact:true}).click();
  await expect(page.getByRole('heading',{name:'Added PYQ papers'})).toBeVisible();
- const available=inventory.totalCount+105; // Both complete GAT papers: 100 English + 5 World History.
+ const ids=new Set<string>(inventory.nodes.filter((n:{kind:string;legacyOnly?:boolean})=>n.kind==='subtopic'&&!n.legacyOnly).flatMap((n:{questionIdsByExam:Record<string,string[]>})=>Object.values(n.questionIdsByExam).flat()));
+ for(const paperId of ['nda-2026-i','nda-2026-ii','nda-2025-i','nda-2025-ii']){
+  const paper=JSON.parse(readFileSync(`content/${paperId}-official-paper.json`,'utf8'));
+  const policy=JSON.parse(readFileSync(`content/${paperId}-official-review-policy.json`,'utf8'));
+  for(const q of paper.questions)if(['official-final','official-provisional','reasoned-verified'].includes(policy[q.id].status))ids.add(q.id);
+ }
+ const available=ids.size;
  await expect(page.locator('article')).toContainText(`${available.toLocaleString('en-IN')} available questions`);
  const rows=page.locator('.source-paper-card'), next=page.getByRole('button',{name:'Next →',exact:true});
  await expect(rows).toHaveCount(12);
+ await expect(page.locator('.source-directory').getByRole('link')).toHaveCount(0);
  const identities=new Set<string>();let sum=0;
  do {
   for(const row of await rows.all()){
@@ -29,7 +37,8 @@ test('compact source directory filters and paginates every paper without inflati
  await page.getByRole('combobox').nth(1).selectOption('complete');
  await expect(rows).toHaveCount(2);
  await page.getByRole('combobox').nth(0).selectOption('2025');
- await expect(page.getByText('No added papers match these filters.')).toBeVisible();
+ await expect(rows).toHaveCount(2);
+ await expect(rows.filter({hasText:'2025 · II'})).toContainText('Q85 withdrawn');
  await page.getByRole('button',{name:/^All exams/}).click();
  await page.getByRole('combobox').nth(0).selectOption('all');
  await page.getByRole('combobox').nth(1).selectOption('all');

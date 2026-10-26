@@ -42,7 +42,7 @@ test('NDA I second batch preserves three original figures and the redox table in
  expect(snapshot.questions.filter((q:any)=>q.figure)).toHaveLength(3);
  await page.goto('/prepare/NDA');
  await page.getByRole('group',{name:'GAT section',exact:true}).getByRole('button',{name:'Science',exact:true}).click();
- await page.getByRole('button',{name:'Add to test: Science & Technology',exact:true}).click();
+ await page.getByRole('button',{name:'Add entire folder',exact:true}).click();
  await page.getByRole('button',{name:'Finalise test →',exact:true}).first().click();
  await page.getByRole('button',{name:'All',exact:true}).click();
  const started=page.waitForResponse(response=>response.url().endsWith('/api/practice-snapshots')&&response.request().method()==='POST');

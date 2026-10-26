@@ -13,6 +13,18 @@ async function workerFetch(pathname = "/", init = {}) {
   );
 }
 
+test('Sources is a paper-status directory without whole-paper launch links',async()=>{
+  const response=await workerFetch('/legal/sources');
+  assert.equal(response.status,200);
+  const html=await response.text();
+  assert.match(html,/Added PYQ papers/);
+  assert.match(html,/Complete source review/);
+  assert.match(html,/Provisional key/);
+  assert.match(html,/Q85 withdrawn/);
+  assert.doesNotMatch(html,/Start official-key paper/);
+  assert.doesNotMatch(html,/<a\b[^>]*href="\/papers\/nda-/);
+});
+
 test("server-renders the browse-first official PYQ workspace", async () => {
   const response = await workerFetch();
   assert.equal(response.status, 200);
