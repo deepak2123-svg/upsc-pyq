@@ -1,0 +1,21 @@
+{
+  "paperId": "nda-2025-i-gat",
+  "reviewer": "codex-main",
+  "reviewerKind": "AI",
+  "reviewedAt": "2026-10-26",
+  "originalPdfSha256": "9dfd572ed540e3bdbdcafec0e0d1d123f608cf6b47f0abc3df3993cb9fefeaee",
+  "keyPdfSha256": "115854bdc3436903717b3f7cc87b9786aad3d840280e3af30b965b5231872c88",
+  "reproductionFirstPass": "approved",
+  "reproductionSecondPass": "approved",
+  "firstPassMethod": "Original cover 1 and English instructions 48; complete English pages 2–11; complete Part B English pages 13–43 odd. All 150 stems and 600 options manually read and transcribed. OCR was an unapproved lead and failed to reconstruct several question numbers/tables; it was not the approval source.",
+  "secondPassMethod": "Reopened all original question images in reverse order: 43,41,39,37,35,33,31,29,27,25,23,21,19,17,15,13,11,10,9,8,7,6,5,4,3,2. Compared every stem/statement/option with the manual modules. Same AI reviewer in a fresh pass, not independent human review. No original required diagram occurs in this paper. Matching tables, formulas, underlining and shared passage were explicitly compared.",
+  "classificationSecondPass": "approved",
+  "classificationMethod": "Reread the concept decisions against the full question and every alternative after original reconstruction. Validated existing leaf paths; split sleet/condensation, kept chronology and colonial local-government under bounded new subparts, corrected the industrial-revolution defence leaf, and classified tidal energy by tested concept rather than its position in the source paper. Primary placements remain distinct from source identity and answer verification.",
+  "newSyllabusBoundaries": [
+    "History/Colonial Administration/Local self-government: colonial local boards and Ripon’s resolution, excluding independent India’s 73rd/74th amendments.",
+    "History/Constitutional Developments/Chronology of constitutional politics: comparative national-movement political milestones, excluding unrelated date trivia and ancient/medieval chronology.",
+    "Defence World History/Industrial Revolution/Phases and industries: phases and sectoral changes, excluding individual inventor biographies and labour-movement history. NDA/CDS only, not automatically CSE GS."
+  ],
+  "officialKeyReview": "Direct UPSC four-page final PDF; Series A page 1 header and all 150 cells visually checked column-first then row-first. Programmatic comparison agrees exactly. Zero drops, zero multiple-answer cells. Retain official scoring despite academic disagreement with a printed premise or an answer.",
+  "releaseState": "Source/editorial approval only; runtime, grading, local/browser/PDF and production release gates still required."
+}

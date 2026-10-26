@@ -16,7 +16,8 @@ const reviewedPilot = JSON.parse(fs.readFileSync('content/reviewed-prelims-impor
 const officialNda=JSON.parse(fs.readFileSync('content/nda-2026-i-official-paper.json'));
 const officialNdaII=JSON.parse(fs.readFileSync('content/nda-2026-ii-official-paper.json'));
 const officialNda2025II=JSON.parse(fs.readFileSync('content/nda-2025-ii-official-paper.json'));
-const officialPapers=[officialNda,officialNdaII,officialNda2025II];
+const officialNda2025I=JSON.parse(fs.readFileSync('content/nda-2025-i-official-paper.json'));
+const officialPapers=[officialNda,officialNdaII,officialNda2025II,officialNda2025I];
 const officialByHash=new Map(officialPapers.map(p=>[p.questions[0].source.originalPdfSha256,p]));
 const reuseGroups=sourceReuseFiles.map(file=>({...JSON.parse(fs.readFileSync(file)),file}));
 const reproductionOverrides=JSON.parse(fs.readFileSync('content/prelims-reproduction-overrides.json'));

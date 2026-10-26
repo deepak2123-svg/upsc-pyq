@@ -2347,7 +2347,8 @@
         "Army and police",
         "Judiciary",
         "Education policies",
-        "Press policies"
+        "Press policies",
+        "Local self-government"
       ],
       "boundary": "Questions testing Colonial Administration in Modern India & National Movement; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -2485,6 +2486,27 @@
       ],
       "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
       "editorialExampleStatus": "pending-real-question-pilot"
+    },
+    {
+      "id": "syllabus:history/modern-india-national-movement/colonial-administration/local-self-government",
+      "parentId": "syllabus:history/modern-india-national-movement/colonial-administration",
+      "kind": "subpart",
+      "label": "Local self-government",
+      "order": 9,
+      "includes": [
+        "Colonial municipal and local-board reforms",
+        "Ripon’s 1882 resolution and administrative purpose"
+      ],
+      "excludes": [
+        "Company government as a generic bucket",
+        "Post-independence 73rd/74th constitutional amendments",
+        "A contemporary local-government appointment"
+      ],
+      "placementRule": "Use for historical development of local self-government under colonial administration. Do not imply that an 1882 resolution is an East India Company measure.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA I 2025 GAT Series A Q67: Ripon’s local self-government resolution"
+      ]
     },
     {
       "id": "syllabus:history/modern-india-national-movement/colonial-economy",
@@ -3229,7 +3251,8 @@
         "Act of 1935",
         "Provincial autonomy and ministries",
         "Cripps and Cabinet Mission",
-        "Independence Act"
+        "Independence Act",
+        "Chronology of constitutional politics"
       ],
       "boundary": "Questions testing Constitutional Developments in Modern India & National Movement; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -3361,6 +3384,27 @@
       ],
       "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
       "editorialExampleStatus": "pending-real-question-pilot"
+    },
+    {
+      "id": "syllabus:history/modern-india-national-movement/constitutional-developments/chronology-of-constitutional-politics",
+      "parentId": "syllabus:history/modern-india-national-movement/constitutional-developments",
+      "kind": "subpart",
+      "label": "Chronology of constitutional politics",
+      "order": 9,
+      "includes": [
+        "Comparative chronology of constitutional negotiations and national-movement political developments",
+        "Lucknow Pact, Swaraj Party, Communal Award and Simla Conference"
+      ],
+      "excludes": [
+        "Random date trivia unrelated to constitutional politics",
+        "Pure biographies",
+        "Ancient or medieval event ordering"
+      ],
+      "placementRule": "Use where the whole tested task compares national-movement political milestones spanning several existing act/conference leaves; use the specific act/conference leaf for a single-event task.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA I 2025 GAT Series A Q65: order four national-movement political events"
+      ]
     },
     {
       "id": "syllabus:history/modern-india-national-movement/participation-in-nationalism",

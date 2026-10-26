@@ -4,7 +4,7 @@
 export type SyllabusSection = readonly [string, readonly (readonly [string, readonly string[]])[]];
 export const defenceWorldHistory: readonly SyllabusSection[] = [
   ['World History',[
-    ['Industrial Revolution',['Conditions in Britain','Inventions and inventors','Labour movements']],
+    ['Industrial Revolution',['Conditions in Britain','Inventions and inventors','Labour movements','Phases and industries']],
     ['Russian Revolution',['1905 Revolution','1917 Revolution']],
   ]],
 ];

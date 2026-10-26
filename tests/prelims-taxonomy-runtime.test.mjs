@@ -3,6 +3,7 @@ import {freezeSelectionMembership,restoreFrozenSelection} from '../lib/practice-
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
+import {questionEligible,questionInGsScope,questionReview} from '../lib/question-review.ts';
 import {buildSelectionIndex,restoreVersionedPaths,addScope,removeScope,selectionCounts,scopeDisplayNumber} from '../lib/practice-selection.ts';
 const frozen=JSON.parse(fs.readFileSync('content/taxonomy/prelims-legacy-inventory.json')).inventory;
 async function fetchWorker(url,init={}) {
@@ -64,7 +65,7 @@ test('Economy Current Affairs mirrors every approved economic current-affairs le
   const ids=result.body.questions.map(q=>q.id);
   assert.equal(new Set(ids).size,ids.length);
   assert.equal(ids.length,selectionCounts(sourcePaths,index).matchingCount);
-  assert.equal(data.totalCount,1909,'Shared categories do not duplicate records; preparation-only English/science and withdrawn records are excluded');
+  assert.equal(data.totalCount,1942,'Shared categories do not duplicate records; preparation-only English/science and withdrawn records are excluded');
 });
 
 test('older V4 and V3 scopes retain frozen membership after a question moves to another subject',async()=>{
@@ -85,8 +86,7 @@ test('every saved pre-expansion leaf retains exact membership; migrated and new 
   const data=await inventory();
   const nodes=new Map(data.nodes.map(n=>[n.id,n]));
   const outside=new Set(Object.keys(JSON.parse(fs.readFileSync('content/prelims-gs-scope-policy.json'))));
-  const policy={...JSON.parse(fs.readFileSync('content/question-review-policy.json')),...JSON.parse(fs.readFileSync('content/prelims-question-alias-policy.json'))};
-  const allowed=id=>!outside.has(id)&&(!policy[id]||['official-final','official-provisional','reasoned-verified'].includes(policy[id].status));
+  const allowed=id=>!outside.has(id)&&questionEligible(id)&&questionInGsScope(id);
   for(const old of frozen.nodes.filter(n=>n.kind==='subtopic'))for(const exam of ['CSE','CAPF','CDS','NDA']) {
     const expected=old.questionIdsByExam[exam].filter(allowed).sort();
     const target=nodes.get(data.legacyRestoreAliases[old.id]||old.id);
@@ -113,8 +113,7 @@ test('all current visible leaves produce the unique mapped pool with no held or 
   const ids=result.body.questions.map(q=>q.id);
   assert.equal(new Set(ids).size,ids.length);
   const outside=new Set(Object.keys(JSON.parse(fs.readFileSync('content/prelims-gs-scope-policy.json'))));
-  const review=JSON.parse(fs.readFileSync('content/question-review-policy.json'));
-  assert.ok(ids.every(id=>!outside.has(id)&&(!review[id]||['official-final','official-provisional','reasoned-verified'].includes(review[id].status))));
+  assert.ok(ids.every(id=>!outside.has(id)&&questionEligible(id)&&questionInGsScope(id)));
   assert.ok(result.body.questions.every(q=>!('answer'in q)&&!('correctOption'in q)));
 });
 test('review ledger checks hashes and separates preserved decisions, fresh passes and answer eligibility',()=>{
@@ -124,17 +123,18 @@ test('review ledger checks hashes and separates preserved decisions, fresh passe
   const official=JSON.parse(fs.readFileSync('content/nda-2026-i-official-paper.json')).questions;
   official.push(...JSON.parse(fs.readFileSync('content/nda-2026-ii-official-paper.json')).questions);
   official.push(...JSON.parse(fs.readFileSync('content/nda-2025-ii-official-paper.json')).questions);
+  official.push(...JSON.parse(fs.readFileSync('content/nda-2025-i-official-paper.json')).questions);
   const oldIds=new Set([...bank,...imports].map(q=>q.id));
   const byId=new Map([...bank,...imports,...official.filter(q=>!oldIds.has(q.id))].map(q=>[q.id,q]));
   assert.equal(new Set(ledger.records.map(r=>r.questionId)).size,ledger.records.length);
   assert.equal(ledger.pilotSubjects.length,9);
-  assert.equal(ledger.records.filter(r=>r.basis==='preserved-physical-v1.2-review').length,349,'Thirteen NDA II 2025 physical-geography records now have a fresh complete-paper review');
+  assert.equal(ledger.records.filter(r=>r.basis==='preserved-physical-v1.2-review').length,341,'Both NDA 2025 papers now have fresh complete-paper reviews');
   const repaired=ledger.records.find(r=>r.questionId==='nda-2025-i-86');
   assert.equal(repaired.status,'approved');
-  assert.equal(repaired.materialRepairReviewed,true);
-  assert.equal(repaired.answerEligibilityUnchanged,true);
+  assert.equal(repaired.basis,'nda-2025-complete-source-review');
+  assert.equal(questionReview(repaired.questionId).status,'official-final');
   assert.equal(JSON.parse(fs.readFileSync('content/question-review-policy.json'))['nda-2025-i-86'].status,'quarantined');
-  assert.equal(ledger.records.filter(r=>r.status==='out-of-scope').length,212);
+  assert.equal(ledger.records.filter(r=>r.status==='out-of-scope').length,310);
   for(const r of ledger.records) {
     assert.ok(byId.has(r.questionId));
     assert.equal(crypto.createHash('sha256').update(JSON.stringify(byId.get(r.questionId))).digest('hex'),r.expectedRecordHash,r.questionId);
@@ -448,11 +448,11 @@ test('original cohort has 1519 placement dispositions without claiming source an
   assert.ok(source.questionSlots.some(row=>row.disposition==='pending-current-source-review'));
 });
 
-test('NDA 2025 placement approvals preserve all six independent answer quarantines',()=>{
+test('NDA 2025 complete official reviews clear six former holds without rewriting the historical policy',()=>{
   const bank=JSON.parse(fs.readFileSync('content/question-bank.json')).questions;
   const ledger=JSON.parse(fs.readFileSync('content/taxonomy/prelims-reviewed-placements.json'));
   const byId=new Map(ledger.records.map(row=>[row.questionId,row]));
-  for(const [paper,count]of [['I',13],['II',0]]) {
+  for(const [paper,count]of [['I',0],['II',0]]) {
     assert.ok(bank.filter(q=>q.exam==='NDA'&&q.year===2025&&q.paper===paper).every(q=>['approved','out-of-scope'].includes(byId.get(q.id)?.status)));
     assert.equal(ledger.records.filter(row=>row.editorialBatch===`NDA/2025/${paper}/existing-1`).length,count);
   }
@@ -466,7 +466,11 @@ test('NDA 2025 placement approvals preserve all six independent answer quarantin
   assert.match(byId.get('cds-2025-2025-1-62').primaryId,/five-year-plans$/);
   assert.match(byId.get('cds-2025-2025-2-145').primaryId,/development-programmes$/);
   assert.ok(byId.get('nda-2025-ii-148').tags.includes('Event-based'));
-  assert.equal(byId.get('nda-2025-ii-126').basis,'nda-2025-ii-complete-source-review');
+  assert.equal(byId.get('nda-2025-ii-126').basis,'nda-2025-complete-source-review');
+  const current=JSON.parse(fs.readFileSync('content/nda-2025-i-official-paper.json'));
+  assert.equal(current.questions.length,150);
+  assert.ok(current.questions.every(q=>questionReview(q.id).status==='official-final'));
+  assert.ok(held.every(q=>questionEligible(q.id)),'All six former holds have matching official answers');
   const completed=JSON.parse(fs.readFileSync('content/audits/nda-2025-ii-review.json'));
   assert.equal(completed.reconciliation.awaitingReviewCount,0);
   assert.equal(completed.reconciliation.dispositionCounts['official-final'],149);

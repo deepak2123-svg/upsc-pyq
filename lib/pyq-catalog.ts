@@ -1,7 +1,7 @@
 import questionBank, {legacyQuestions} from "./combined-question-bank";
 import { questionEligible,questionInGsScope } from './question-review';
 import {canonicalSubjectLabel,subjectScopeKey,prelimsPaths,PRELIMS_TAXONOMY_VERSION} from './prelims-taxonomy';
-import {bridgeLegacyPlacements} from './legacy-placement-bridge';
+import {bridgeLegacyPlacements,legacySnapshotQuestionIds} from './legacy-placement-bridge';
 import { historicalPhysicalQuestionSets, historicalPhysicalTargets, slug as taxonomySlug, taxonomyIdForLegacyQuestion, taxonomyIdForQuestion, taxonomyNode } from "./taxonomy";
 import { PYQ_EXAMS, type PyqExam } from "./pyq-exams";
 export { PYQ_EXAMS, type PyqExam } from "./pyq-exams";
@@ -296,8 +296,11 @@ export function getSubjectPracticeInventory(multiPlacement = true): SubjectPract
     const [, oldChapter, oldSubtopic] = oldTaxonomyId.split("/");
     const legacyId = `subtopic:geography:physical-geography:${oldChapter}:${oldSubtopic}`;
     const ancestryUnsafeId = `subtopic:geography:${oldChapter}:${oldSubtopic}`;
-    legacyQuestionSets[legacyId] = questionIds.filter(questionEligible);
-    legacyQuestionSets[ancestryUnsafeId] = questionIds.filter(questionEligible);
+    // Match the V3 snapshot gate: clearing a held question must not broaden an
+    // old implicit membership beyond its frozen historical inventory.
+    const legacyEligible=questionIds.filter(id=>questionEligible(id)&&questionInGsScope(id)&&legacySnapshotQuestionIds.has(id));
+    legacyQuestionSets[legacyId] = legacyEligible;
+    legacyQuestionSets[ancestryUnsafeId] = legacyEligible;
     const targets = historicalPhysicalTargets[oldTaxonomyId] || [];
     const aliases = legacyAliases.get(legacyId) || new Set<string>();
     for (const target of targets) {

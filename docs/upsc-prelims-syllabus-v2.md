@@ -34,14 +34,14 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 
 - **1. European Companies:** Portuguese; Dutch and Danish; English and French; Factories and trading networks; Carnatic conflicts.
 - **2. British Expansion:** Bengal conquest; Anglo-Mysore wars; Anglo-Maratha wars; Anglo-Burmese wars; Subsidiary alliance; Annexation policies; Punjab conquest.
-- **3. Colonial Administration:** Company government; Crown rule and proclamations; Civil services; Census and surveys; Army and police; Judiciary; Education policies; Press policies.
+- **3. Colonial Administration:** Company government; Crown rule and proclamations; Civil services; Census and surveys; Army and police; Judiciary; Education policies; Press policies; Local self-government.
 - **4. Colonial Economy:** Land revenue settlements; Commercialisation of agriculture; Deindustrialisation; Drain of wealth; Economic critics of colonialism; Transport and communications; Famine policies.
 - **5. Social and Religious Reform:** Brahmo and Prarthana Samaj; Arya Samaj; Aligarh movement; Ramakrishna movement; Theosophical movement; Anti-caste movements; Women and reform.
 - **6. Popular Resistance:** Tribal uprisings; Peasant movements; Civil rebellions; Revolt of 1857; Resistance in princely states.
 - **7. Early Nationalism:** Political associations; Congress foundation; Moderates; Extremists; Partition of Bengal; Swadeshi movement.
 - **8. Revolutionary and Overseas Movements:** Revolutionary organisations; Ghadar; Home Rule; Indian diaspora; INA and Subhas Bose.
 - **9. Gandhian Movements:** Early satyagrahas; Rowlatt Satyagraha; Non-Cooperation and Khilafat; Congress sessions and resolutions; Civil Disobedience; Round Table Conferences; Quit India; Constructive programmes.
-- **10. Constitutional Developments:** Acts before 1858; Acts of 1858 to 1909; Act of 1919; Simon Commission and Nehru Report; Act of 1935; Provincial autonomy and ministries; Cripps and Cabinet Mission; Independence Act.
+- **10. Constitutional Developments:** Acts before 1858; Acts of 1858 to 1909; Act of 1919; Simon Commission and Nehru Report; Act of 1935; Provincial autonomy and ministries; Cripps and Cabinet Mission; Independence Act; Chronology of constitutional politics.
 - **11. Participation in Nationalism:** Workers and trade unions; Peasants; Women; Dalit movements; Socialist and communist currents.
 - **12. Independence and Integration:** Partition; Transfer of power; Princely state integration; Constituent Assembly context; Reorganisation background.
 ### Art & Culture

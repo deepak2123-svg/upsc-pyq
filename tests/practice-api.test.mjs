@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import {questionEligible} from '../lib/question-review.ts';
 
 // Reuse the application instance, as production does. A unique import URL per
 // request permanently retains another complete bundled catalogue in ESM cache.
@@ -66,20 +67,19 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 1909);
+  assert.equal(data.totalCount, 1942);
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);
   const byId = new Map([...data.subjects, ...data.nodes].map((node) => [node.id, node]));
   assert.ok(byId.get(geo).questionCount > 900);
   const placementLedger=JSON.parse(await readFile(new URL('../content/taxonomy/prelims-reviewed-placements.json',import.meta.url),'utf8'));
-  const answerPolicy=JSON.parse(await readFile(new URL('../content/question-review-policy.json',import.meta.url),'utf8'));
-  const expectedPhysical=new Set(placementLedger.records.filter(row=>row.status==='approved'&&[row.primaryId,...row.additionalIds].some(id=>id.startsWith('syllabus:geography/physical-geography/'))&&(!answerPolicy[row.questionId]||['official-final','official-provisional','reasoned-verified'].includes(answerPolicy[row.questionId].status))).map(row=>row.questionId));
+  const expectedPhysical=new Set(placementLedger.records.filter(row=>row.status==='approved'&&[row.primaryId,...row.additionalIds].some(id=>id.startsWith('syllabus:geography/physical-geography/'))&&questionEligible(row.questionId)).map(row=>row.questionId));
   assert.equal(byId.get(physical).questionCount, expectedPhysical.size);
   // Other Geography shrinks when reviewed records receive precise subject homes.
   // Its exact count, like every parent, is checked against unique leaf IDs below.
   assert.ok(data.nodes.some(node=>node.kind==='subtopic'&&!node.legacyOnly&&node.id.includes(':world-geography:')&&node.questionIdsByExam.CAPF.includes('capf-2017-i-125')));
-  const expectedFirstChapter=new Set(placementLedger.records.filter(row=>row.status==='approved'&&[row.primaryId,...row.additionalIds].some(id=>id.startsWith('syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/'))&&(!answerPolicy[row.questionId]||['official-final','official-provisional','reasoned-verified'].includes(answerPolicy[row.questionId].status))).map(row=>row.questionId));
+  const expectedFirstChapter=new Set(placementLedger.records.filter(row=>row.status==='approved'&&[row.primaryId,...row.additionalIds].some(id=>id.startsWith('syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/'))&&questionEligible(row.questionId)).map(row=>row.questionId));
   assert.equal(byId.get(firstPhysicalChapter).questionCount,expectedFirstChapter.size);
   assert.equal(byId.get(otherGeomorphology).questionCount, 7);
   assert.equal(byId.get(planets).questionCount, 11);
@@ -876,7 +876,7 @@ test('a reviewed source alias counts once in new tests and remains reviewable wi
 test('held IDs stay gradeable historically without forced answers or penalties', async () => {
   const register = JSON.parse(await readFile(new URL('../content/question-review-state.json', import.meta.url), 'utf8'));
   const known = 'nda-2021-ii-54';
-  const heldIds = register.originalIds.filter(id => ['pending', 'withdrawn', 'quarantined', 'duplicate'].includes(register.records[id].status));
+  const heldIds = register.originalIds.filter(id => !questionEligible(id));
   const ids = [...heldIds, known];
   const result = await grade({ questionIds: ids, answers: Object.fromEntries(ids.map(id => [id, 'A'])) });
   assert.equal(result.response.status, 200);
@@ -927,7 +927,10 @@ test('single-question checks respect restored content revisions and held disposi
   assert.equal(old.body.disposition,'excluded');
   assert.equal(old.body.correctAnswer,null);
   for(const contentRevision of [-1,'1',null,1.5]) assert.equal((await check({questionId:'nda-2015-ii-77',selectedOption:'A',contentRevision})).status,400);
-  const held=await check({questionId:'nda-2025-i-94',selectedOption:'B',contentRevision:0});
+  const cleared=await check({questionId:'nda-2025-i-94',selectedOption:'B',contentRevision:0});
+  assert.equal(cleared.body.disposition,'scored');
+  assert.equal(cleared.body.correct,true);
+  const held=await check({questionId:'cse-2024-gs-i-20',selectedOption:'B',contentRevision:0});
   assert.equal(held.body.disposition,'excluded');
   assert.equal(held.body.correct,null);
 });

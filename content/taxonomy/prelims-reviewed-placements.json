@@ -10598,24 +10598,24 @@
       "questionId": "cds-2025-2025-1-16",
       "expectedRecordHash": "0bf4b68baccd84310fe5169614f4a31c15412ea8adc7f53a5da1063d0e2db49d",
       "status": "out-of-scope",
-      "basis": "complete-stem-and-options-scope-review",
-      "scopeReason": "English language is outside this GS phase.",
-      "rationale": "Complete question and options test vocabulary, idiom, grammatical completion or sentence ordering. A reference to a constitution, economy or civil service does not turn the language task into GS.",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests synonyms using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
       "secondPass": {
         "status": "approved",
-        "rationale": "All ten English-labelled records reread in full, including the paragraph-ordering and fill-in-the-blank options. Keep historical grading available; exclude only from new GS selections."
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
       }
     },
     {
       "questionId": "cds-2025-2025-1-49",
       "expectedRecordHash": "730141767b5df926d51ab5f0c45b5c5f7cf212d1ddf5b6eaaad9e19bed000d27",
       "status": "out-of-scope",
-      "basis": "complete-stem-and-options-scope-review",
-      "scopeReason": "English language is outside this GS phase.",
-      "rationale": "Complete question and options test vocabulary, idiom, grammatical completion or sentence ordering. A reference to a constitution, economy or civil service does not turn the language task into GS.",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests fill in the blanks using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
       "secondPass": {
         "status": "approved",
-        "rationale": "All ten English-labelled records reread in full, including the paragraph-ordering and fill-in-the-blank options. Keep historical grading available; exclude only from new GS selections."
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
       }
     },
     {
@@ -10624,17 +10624,15 @@
       "primaryId": "syllabus:polity-governance/federalism-local-government/local-government/panchayats",
       "additionalIds": [],
       "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four institutional changes are compared for the Seventy-third Amendment.",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Distinguishes the 73rd amendment and rural local government from municipal/other amendments.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: panchayat constitutionalisation is exact; municipal government is a distractor, not a second placement. Preserve the reasoned verification decision."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
         "Static"
-      ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      ]
     },
     {
       "questionId": "cds-2025-2025-1-62",
@@ -10642,17 +10640,15 @@
       "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
       "additionalIds": [],
       "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four Five Year Plans are matched with objectives covering poverty, productivity, justice and inclusive growth.",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Matches four plans to their named objectives; all four correspondences require review.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: plan-objective chronology is primary. Slogans in the matching list do not independently test poverty measurement or present employment policy. Preserve the restored table and options."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
         "Static"
-      ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      ]
     },
     {
       "questionId": "cds-2025-2025-1-69",
@@ -10660,17 +10656,15 @@
       "primaryId": "syllabus:polity-governance/constitutional-foundations/political-concepts/democracy-and-representation",
       "additionalIds": [],
       "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Consent, political equality and a reversed accountability statement are compared as democratic features.",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests democratic accountability/consent or the chronology of universal franchise; read ruled-to-ruler exactly as printed.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: democratic rule is the unifying concept. Keep the ruled-to-ruler wording as a proposed statement, not an editorial correction."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
         "Static"
-      ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      ]
     },
     {
       "questionId": "cds-2025-2025-2-145",
@@ -10680,7 +10674,7 @@
         "syllabus:economy/current-affairs/sectoral-developments/development-programmes"
       ],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies NITI Aayog’s State Support Mission; also available in Economy through the established shared category.",
       "secondPass": {
         "status": "approved",
@@ -10742,7 +10736,7 @@
       "primaryId": "syllabus:international-relations-organisations/regional-groupings/regional-and-plurilateral-forums/brics",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests historical venues of BRICS summits, not a 2025 event date.",
       "secondPass": {
         "status": "approved",
@@ -32733,22 +32727,44 @@
       }
     },
     {
+      "questionId": "nda-2025-i-1",
+      "expectedRecordHash": "5446c4b46e730bd2a8ed80247f3f01b48ec74295569ee24b2abbd8cf540578d3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests explicit information using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-10",
+      "expectedRecordHash": "e2c4b6389aba008899111402d70ff78a446ded58f0eefa3eeba67851493894e8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests correct sentence selection using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
       "questionId": "nda-2025-i-100",
       "expectedRecordHash": "ee3d0ceda1ea4e30b8cb301a54b02b1a3e47869933fdaf8d77e2675677ee5d0e",
       "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
       "additionalIds": [],
       "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four steel plants are compared against collaboration, ore-source and Damodar power/water clues.",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the steel plant from the full historical/raw-material/power bundle; contradictions stay explicit in answer review.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: industrial identification is possible as a placement decision, but the existing inconsistent-clue quarantine remains unchanged. Do not normalise any clue or declare its answer verified."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
         "Static"
-      ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      ]
     },
     {
       "questionId": "nda-2025-i-101",
@@ -32756,292 +32772,317 @@
       "primaryId": "syllabus:geography/indian-geography/industry-and-transport/ports-and-waterways",
       "additionalIds": [],
       "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four ports are compared for pressure relieved by the Vadinar offshore terminal.",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the port relieved by the Vadinar offshore terminal.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: port-terminal network association is primary; no current petroleum price or trade-share statistic is stated."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
         "Static"
-      ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      ]
     },
     {
       "questionId": "nda-2025-i-102",
       "expectedRecordHash": "941f97e8082401d23017042d2813e434c458c3b5b16f343c1c82243feefe1e2c",
       "primaryId": "syllabus:geography/indian-geography/natural-vegetation/vegetation-distribution",
-      "additionalIds": [
-        "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/environmental-reports-and-indices"
-      ],
+      "additionalIds": [],
       "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four Himalayan states are compared by forest-cover percentage in ISFR 2021.",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests state forest-cover percentages in ISFR 2021, not classification of forest types.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: percentage, specified regional comparison and historical report edition are material. Do not substitute absolute forest area or a later report."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
-        "Event-based"
-      ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-103",
+      "expectedRecordHash": "a942723ca3ebfccea6d0634bfcb998f39882adc89ae8e1bd925d0f65873cffda",
+      "primaryId": "syllabus:geography/physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests surface/long-wave propagation as printed.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
     },
     {
       "questionId": "nda-2025-i-104",
       "expectedRecordHash": "9bbc3941571f47a8c3d2bee5ce88101c6267eefecc213b1cb081400ae70bcfd6",
-      "primaryId": "syllabus:geography/physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/sedimentary-rocks",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "volcano",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies water-reworked volcanic ash deposited as tuff, not basalt or a fragment-size term.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes"
-      }
+      "tags": [
+        "Static"
+      ]
     },
     {
       "questionId": "nda-2025-i-105",
       "expectedRecordHash": "bc2afba280effab00a128cb39a8596d03c75f1a056ba8ecde9b002b5ca8dc4c2",
-      "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/composition",
+      "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/evaporation-and-condensation",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "atmosphere-composition",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests factors affecting condensation, not precipitation type.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
-      },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/composition"
-      }
-    },
-    {
-      "questionId": "nda-2025-i-86",
-      "expectedRecordHash": "712569063f8fd67f4216af5938305e99a4f76af7105c8c20f5ba37ce8f06ec3a",
-      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
-      "additionalIds": [],
-      "status": "approved",
-      "basis": "complete-stem-after-material-repair",
-      "rationale": "The repaired stem and all four options ask about meridians, parallels and great circles. The correct concept home is the geographical grid, independently of the unresolved official answer convention.",
-      "secondPass": {
-        "status": "approved",
-        "rationale": "Second pass reread the complete repaired stem: Prime Meridian, Tropic of Cancer and Equator identify the grid subpart, not Earth rotation or seasons. Approve placement only; retain the existing quarantined answer disposition and exclusion from new scored tests."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
         "Static"
-      ],
-      "materialRepairReviewed": true,
-      "answerEligibilityUnchanged": true
+      ]
     },
     {
-      "questionId": "nda-2025-i-87",
-      "expectedRecordHash": "40d02dfb4c1ea46fa3b16f6387c08d0dfdf4c42eebb22837890d706558176da5",
-      "primaryId": "syllabus:geography/physical-geography/interior-of-the-earth/layers-by-composition",
-      "additionalIds": [],
-      "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "composition-layer",
+      "questionId": "nda-2025-i-106",
+      "expectedRecordHash": "9317ec9e56e112e27b5c991fc2ddfcf5d390926e29e9a65a485bc4dcaa6c2d36",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Identifies the substrate reduced to lactate in anaerobic muscle metabolism; original cramps claim is not silently modernised.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
-      },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/interior-of-the-earth/layers-by-composition"
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
       }
     },
     {
-      "questionId": "nda-2025-i-88",
-      "expectedRecordHash": "41f22a7a242f7792167fbab54b9f91c06d220cb3d3b53b307cb6d7af0df996e9",
-      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
-      "additionalIds": [],
-      "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "weathering",
+      "questionId": "nda-2025-i-107",
+      "expectedRecordHash": "bd2e7ef1f63affa13d363af89094c9a477807df98240ab3061fb88144516aaa0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests primary protein sequence or complementary DNA bases.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
-      },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/geomorphic-processes-and-landforms/weathering"
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
       }
     },
     {
-      "questionId": "nda-2025-i-89",
-      "expectedRecordHash": "899885a974fa0b489c7521efc9513096bfee9277e1bf49bb28539723ccc9ba11",
-      "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-currents",
-      "additionalIds": [],
-      "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "ocean-current",
+      "questionId": "nda-2025-i-108",
+      "expectedRecordHash": "e44fc0501c3ac2c8a4fcc709e5b6318aa7dc0e657c509f9033f662010518c520",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Classifies cambium as a lateral meristem.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
-      },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/oceanography/ocean-currents"
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
       }
     },
     {
-      "questionId": "nda-2025-i-90",
-      "expectedRecordHash": "9ad5196c3d35829c03afee2d637d98a3f07e10cdb20449a843a0721bba96fcea",
-      "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/solar-radiation-and-insolation",
-      "additionalIds": [],
-      "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "insolation",
+      "questionId": "nda-2025-i-109",
+      "expectedRecordHash": "d05d0748cb9774fcadc29562ebcda2185b67f65efd2768349a9f7940f613cba0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Identifies oxidation/rancidity in food fats, despite its location amongst biology items.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
-      },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/solar-radiation-and-insolation"
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
       }
     },
     {
-      "questionId": "nda-2025-i-91",
-      "expectedRecordHash": "69f93d2d2f346c9d771493cd87e50f74e6c0478f0ab07c8ec908dd6f4944c483",
-      "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
-      "additionalIds": [],
-      "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "wind-force",
+      "questionId": "nda-2025-i-11",
+      "expectedRecordHash": "73f7f7fba03c9aa3781355d6bc4624858f213f954c1d9c1b88152aabf644a9e0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests confusable words using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
-      },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind"
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
       }
     },
     {
-      "questionId": "nda-2025-i-92",
-      "expectedRecordHash": "8b35fbe3c44d65f4d6beb399f745d9ec561a242e3f13d58a67bb5bb73ea4eed0",
-      "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
-      "additionalIds": [],
-      "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "precipitation",
+      "questionId": "nda-2025-i-110",
+      "expectedRecordHash": "c06ec5fb160a93a466b599e53db32594e0750f90016a65bdedf26575a03ac915",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests primary protein sequence or complementary DNA bases.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
-      },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation"
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
       }
     },
     {
-      "questionId": "nda-2025-i-93",
-      "expectedRecordHash": "7f87622e5d1b741bab3e6fd31c454a0b0c012cf960c6e0f2bf208134610c3806",
-      "primaryId": "syllabus:geography/physical-geography/world-climate-regions-and-the-ko-ppen-classification/warm-temperate-climates",
-      "additionalIds": [],
-      "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four world regions are compared for absence of humid subtropical climate.",
+      "questionId": "nda-2025-i-111",
+      "expectedRecordHash": "bd2886070408cb02bf1547f6f57dd63b65456fc2a0ae80b6b2e4aaf3f9d073c6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Identifies fibrinogen as the clotting protein.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: regional climate classification is exact. Preserve the negative task and existing reasoned answer status."
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-112",
+      "expectedRecordHash": "578a409688b0d4bd80841cd555702312b2dcf6b7fe6d5e83b285f85d42b87210",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Identifies the initial discovery of penicillin, not a recent medical event.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-113",
+      "expectedRecordHash": "bc5d37c034a2a553e2df9e7ae0912698c671c8f6f4e8e8a79688a2629bee44ae",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Identifies malaria’s sex-specific mosquito vector.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-114",
+      "expectedRecordHash": "a43082b1a6c41ca7dea879d326cb8c2fa8f1b4357cb5edc35999f52477602697",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests both disease/pathogen pairs and their reversal.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-115",
+      "expectedRecordHash": "16ac828e75145d25833f59e0d0f4d42620306a5484f8769e0e43607487a479ef",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Identifies vitamin B1’s chemical name.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-116",
+      "expectedRecordHash": "1e9c03b3ab2c8287cce46d5c37b733afd6080bc018b43c4254bf569f6411f241",
+      "primaryId": "syllabus:current-affairs/national-affairs/national-and-state-developments/major-projects",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the building from its six named gates; exact event date is not inferred from exam year.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
         "Static"
-      ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      ]
     },
     {
-      "questionId": "nda-2025-i-94",
-      "expectedRecordHash": "c3ff10df8b318dad927988017a3d1eadec1ac3b857c4418ff8e4c0d5f61b0750",
-      "primaryId": "syllabus:geography/indian-geography/physiographic-divisions/passes-and-peaks",
+      "questionId": "nda-2025-i-117",
+      "expectedRecordHash": "192c227855eff2f05203c8c0af4d3363ed25c67cd5026836ad04552ed90f34d8",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/culture-and-heritage-recognition/heritage-inscriptions",
       "additionalIds": [],
       "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four states are compared for Mahendragiri using a disputed highest-peak description.",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies UNESCO inscription of Garba rather than merely an Indian classical-dance list.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: peak location is classifiable, but the existing source-wording/answer quarantine is not cleared by this decision. Do not repair the superlative or publish it as verified."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
-        "Static"
-      ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+        "Event-based"
+      ]
     },
     {
-      "questionId": "nda-2025-i-95",
-      "expectedRecordHash": "40e9a901b490bee26d59436507d39c9546103476f851f51363e8851aa965c80f",
-      "primaryId": "syllabus:geography/indian-geography/natural-vegetation/forest-types",
+      "questionId": "nda-2025-i-118",
+      "expectedRecordHash": "3fc131d1b9f2d31a2766f4465a457578dd13185f29514091224991dac5bd143a",
+      "primaryId": "syllabus:current-affairs/national-affairs/government-initiatives/implementing-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the ministry responsible for DHARA.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-119",
+      "expectedRecordHash": "08de4b0e4a6cf0a2c3da8d0090d87ab66ae85876dc76520ade37ed1fc61d05de",
+      "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/development-programmes",
       "additionalIds": [
-        "syllabus:geography/indian-geography/natural-vegetation/vegetation-distribution"
+        "syllabus:economy/current-affairs/sectoral-developments/development-programmes"
       ],
       "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Three southern hill groups are compared for Shola forests.",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests PRASHAD’s tourism infrastructure mandate; include the established Economy mirror.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: forest type and regional distribution are material. Preserve the source temperate-forest wording and the separate reasoned key review."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
         "Static"
       ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/development-programmes"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/development-programmes"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
-      "questionId": "nda-2025-i-96",
-      "expectedRecordHash": "e236ffc385e8e694477b6e9a6931ca3bf2ed7fa1685bb6569a75aa7502a8c6a5",
-      "primaryId": "syllabus:geography/indian-geography/mineral-and-energy-resources/resource-mapping",
+      "questionId": "nda-2025-i-12",
+      "expectedRecordHash": "0412c1488fd8ebae552574fbbe33a48d247515a48358206394f088e89158e44e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests confusable words using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-120",
+      "expectedRecordHash": "932672076d7de2ad0c246bfe811cf83f08de7b8ef8799da2182256fe025aaa40",
+      "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
       "additionalIds": [
-        "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
         "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
       ],
       "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four state-pairs are compared for copper production using the Mines Ministry annual report 2023-24.",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies both ASHVINI joint-venture partners; energy-sector event, also meaningful scientific context.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: historical production geography and named report edition are explicit. Do not replace them with later production data."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
         "Event-based"
       ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true,
       "sharedEconomyCurrentAffairs": {
         "sourceIds": [
           "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
@@ -33054,22 +33095,1576 @@
       }
     },
     {
+      "questionId": "nda-2025-i-121",
+      "expectedRecordHash": "769a8144b2fff502946913d2f31f08d27db77e48d7181177e8f4a37f468b3995",
+      "primaryId": "syllabus:current-affairs/science-technology-health/discoveries-and-innovation/technology-applications",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies REJUPAVE’s application or C-Bot’s purpose/developer; not broad defence speculation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-122",
+      "expectedRecordHash": "d2289d7c50fac0cb90eec84dc24b223f37b7a150e95449ff99fc0980751b32cc",
+      "primaryId": "syllabus:current-affairs/science-technology-health/discoveries-and-innovation/technology-applications",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies REJUPAVE’s application or C-Bot’s purpose/developer; not broad defence speculation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-123",
+      "expectedRecordHash": "486faab4f497eff549e28a4d0fb334699f3948b1a2b6344ad6306ae5a2fe039c",
+      "primaryId": "syllabus:current-affairs/defence-security/equipment-and-platforms/defence-technology",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies Kaveri aero-engine and GTRE/DRDO; static defence technology unless an event date is evidenced.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-124",
+      "expectedRecordHash": "b0be96062e4851629d9474a7144c36befc231c771b319f4f0ee9fee6aa636ae0",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/international-awards",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the Nobel Peace Prize recipient from the citation; historic award, not assumed current.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-125",
+      "expectedRecordHash": "cf9f2a6fa719f3f60b79038dc0f32a0722c73983d379e896ecb3ae76199a0a3b",
+      "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions",
+      "additionalIds": [
+        "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+      ],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the issuer of the worker-housing report; also belongs in the corresponding Economy location.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Event-based"
+      ],
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/publishing-institutions"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/publishing-institutions"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-126",
+      "expectedRecordHash": "797c2d7c80acdf3479ae54d710706cda17de84ba6023aac077b984e561d9b717",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests convex-mirror image position, scattering or refraction/light-speed comparison.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-127",
+      "expectedRecordHash": "da43267ebde3065b6abf2bfa87120534f3f93b1c2b9ba8816ba58eafa31040ef",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests potential, Joule heat, resistivity, instrument connection/resistance, or parallel resistance.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-128",
+      "expectedRecordHash": "370681e0aa06845380daf45cf15ba040aff5dec32f44c04c9970ccedac1392ba",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests potential, Joule heat, resistivity, instrument connection/resistance, or parallel resistance.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-129",
+      "expectedRecordHash": "ae97214329f5afaab2c0c310400674a2e15ef9b4ecddea8972755daec61d8878",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests long-solenoid field or the right-hand rule with the original viewing direction.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-13",
+      "expectedRecordHash": "d9890766e51edcf08fb0c2549a0dda67c3375d12033cab3b4bed00e19c3a3411",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests confusable words using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-130",
+      "expectedRecordHash": "cde85eca49544c9ebc5a58334112fe28b82ecb278a730cec17389cb1440cfecc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests kinematics and the original uniform-speed versus acceleration wording; no straight-line condition inserted.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-131",
+      "expectedRecordHash": "86ca26a988ba5c3fe40507002e5910a008131a2336a433233e479592b830b4e3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Matches physical quantities and SI units, derives G’s dimensions, or distinguishes dimensionless strain from stress/force.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-132",
+      "expectedRecordHash": "e90f7bc6e69331d2f80515598c6561cf191b7689604226b55f89cc2f0a54f70d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Compares freely falling unequal masses under the ordinary idealised model.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-133",
+      "expectedRecordHash": "a59ba434740b3ebfb17e9e8f6d4c2b87757d583ba5bc77706037f032bd3950b3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests wave-speed relation or echo reflection.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-134",
+      "expectedRecordHash": "4278e441725edf74d186996dee1d5da156ab3eafa71fb4d14031409626bb0dab",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests the simple-pendulum period ratio and its mass independence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-135",
+      "expectedRecordHash": "c650ec0a68c4fc3eabde03ae3a4e69c5942d5555993f442a34ff51fceaaa09f8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests charge conservation, additivity and quantisation; retain the NOT instruction.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-136",
+      "expectedRecordHash": "5f60832f71f0d6a69275cac69423e576bbbd6c3e0c027bdad02501a575124b02",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests convex-mirror image position, scattering or refraction/light-speed comparison.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-137",
+      "expectedRecordHash": "9bb8bb1c8dbf6bd0de762c48f57401aff9057dae96542274a4540a0009bebd1f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Applies Archimedes’ buoyancy law to the displaced fluid, not the body’s mass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-138",
+      "expectedRecordHash": "36dc1bcb468c1c6c61002833ad6112414a719d7a7b3029b2e0470dfef434bcf8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests potential, Joule heat, resistivity, instrument connection/resistance, or parallel resistance.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-139",
+      "expectedRecordHash": "f7b53953e81c4b1dbbd3b2cf5cef230ac0122f4e4f84bb8e6e46bac34231b91b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Matches physical quantities and SI units, derives G’s dimensions, or distinguishes dimensionless strain from stress/force.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-14",
+      "expectedRecordHash": "eb8e38d5dfd2a914f2df14a1e4b2b0d71758f7cca66f49a223bb7275e1d14883",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests confusable words using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-140",
+      "expectedRecordHash": "e83c8fec1937e685ebdb450c513b56dbcc935970443ef581e1ab0df1170dd74a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Identifies an adiabatic system by absence of heat exchange.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-141",
+      "expectedRecordHash": "2e4f6c1e58ad38b56809c00d1d0b986f6ec644aee6a36af736235a0e2a0f507e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests convex-mirror image position, scattering or refraction/light-speed comparison.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-142",
+      "expectedRecordHash": "6f65436f10ca4bdfc068e822655600ef743f6566f90c8c842d95665d34646e75",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests long-solenoid field or the right-hand rule with the original viewing direction.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-143",
+      "expectedRecordHash": "ce7446173d0c66c4f0d52848f8181ae5c4292cad44388720ee14638d1b4ea21a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests historical discovery of elements; the copper/gold chronology needs direct evidence rather than coaching consensus.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-144",
+      "expectedRecordHash": "9fb957ed1438bceea8cbe53a8f970f0b03470b15bc94e0a4cb807d2e370c9d8b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests convex-mirror image position, scattering or refraction/light-speed comparison.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-145",
+      "expectedRecordHash": "29bf6244fcc171f21598125a81867c5981d95efdb1c13eeb5a2621d3aaf8a65c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests kinematics and the original uniform-speed versus acceleration wording; no straight-line condition inserted.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-146",
+      "expectedRecordHash": "91ca8d389fbafd7cb75290c37df444e789b01823c2311589c96b610ee650f30a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests potential, Joule heat, resistivity, instrument connection/resistance, or parallel resistance.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-147",
+      "expectedRecordHash": "1f05929519be40e3d653e19ac1f0229ffc14ae5cf8b3e8df966544d4a23190a9",
+      "primaryId": "syllabus:environment-ecology/climate-change/climate-responses/mitigation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Classifies tidal energy as non-conventional relative to fossil fuels; it is not a chemical fuel, so do not force it under Chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-148",
+      "expectedRecordHash": "1323d59ce02ebd2f69b4c9d32c46976692bcb232e1df7da5ef07dd5f1966d9da",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests potential, Joule heat, resistivity, instrument connection/resistance, or parallel resistance.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-149",
+      "expectedRecordHash": "c74a824f2d2d024c1ac8814d7b016317ee23eca460ad3f865efc5040fff75b68",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests wave-speed relation or echo reflection.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-15",
+      "expectedRecordHash": "a1dc846b6650bc3a56402a111c10c4a15d0e702d8e6e4ab8bb9875f74669dab0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests confusable words using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-150",
+      "expectedRecordHash": "5a61c25c9192fbd5c96cf2b4db3d3b7bdc39857dc1057ce15ebcf9513f439528",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests kinematics and the original uniform-speed versus acceleration wording; no straight-line condition inserted.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-17",
+      "expectedRecordHash": "4d7d6a35e2394babaaa4344ec1709386d952a6e243db53414a7597a8aae65590",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests synonyms using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-18",
+      "expectedRecordHash": "8e5bcdebcf402af543421e48b75652193aea94e5127324ebf107f1a2c9aa1cea",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests synonyms using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-19",
+      "expectedRecordHash": "8136257052907a3a9815acb395a66383b1a1ec8b95be780931d98a6d7b18ae41",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests synonyms using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-2",
+      "expectedRecordHash": "0c9f5163e2d0c06441430e9c0a04b4087150a4d381ff6b260d3b947c6482e2a3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests explicit information using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-20",
+      "expectedRecordHash": "dd1ea3e0ac54954f51aad263ac1907923d2b1f0d9f1c4fbba16afe10a643e71f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests synonyms using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-21",
+      "expectedRecordHash": "4dfa38dcfa7f6aec0359cd9a5a26b3cfbe25f191fce89c3fe853d1eba7a09c74",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests ordering sentences using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-22",
+      "expectedRecordHash": "3d0758f26b4009d4aa1816acbf4882443b752b36e11e7fa6dba850418b3702e6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests ordering sentences using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-23",
+      "expectedRecordHash": "493c9bc197eea7fdedb5e7fc00e429135298363736a5e93999b65a992c2646d2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests ordering sentences using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-24",
+      "expectedRecordHash": "b20bae2c3e240f265394a6fee9b8af5ac71c445af99a3f54814f185f1d3b03c3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests ordering sentences using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-25",
+      "expectedRecordHash": "93e105feef35957341ae35f2503c9e56271b586e2e157c41ef7ebe9e60d3e932",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests ordering sentences using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-26",
+      "expectedRecordHash": "c47559829cd6a7af213aff7001a3d20b833d0aa631cf1a6f56d3febce46c5624",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests clauses and conjunctions using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-27",
+      "expectedRecordHash": "f296f0f45011f126f8882d79dc335dd1d3c0ce2b84b3ccf7d8de59ddfaadab43",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests clauses and conjunctions using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-28",
+      "expectedRecordHash": "ac659b3bbe2716d61a69c07c4b841cfbdcc2ff3f3facb75333f60437efbaf485",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests clauses and conjunctions using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-29",
+      "expectedRecordHash": "95be945171bec6f26978b0effb1f871ae10e353916f57e5ae92b9a566ccbffe5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests clauses and conjunctions using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-3",
+      "expectedRecordHash": "64a7229accc504401a22af316d05f24ba06203be9a42f0acef64474b8918cc95",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests inference and tone using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-30",
+      "expectedRecordHash": "d989df9fbd86f0e157103246d9ac9544592d738f118a27d26c5e533e27c92d8b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests clauses and conjunctions using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-31",
+      "expectedRecordHash": "4b0d53a710086b332c2ed3e3e0533f758566dcf3128765648e4828bc21d1e771",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests clauses and conjunctions using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-32",
+      "expectedRecordHash": "952f719fedad2254fc4499ae1baaab0e8b1ceaf8ea0fec92d43c8becf5adc75d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests clauses and conjunctions using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-33",
+      "expectedRecordHash": "73e972575fc7e0c336243f329a88634f1c735f8256f4f36cdd66e6fdd8ac33ea",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests clauses and conjunctions using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-34",
+      "expectedRecordHash": "ecfebb7b5aa76b97b6d3db7fd0a87324376c8b5a9fdd804e103fc17f594b21ec",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests clauses and conjunctions using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-35",
+      "expectedRecordHash": "41e2422cc2e6bf5cd067afdfa828dcddeeff87c8c0397cf338ee92fd5f972a71",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests clauses and conjunctions using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-36",
+      "expectedRecordHash": "ddbd29d0a58890db414ba789ddd46569f0ca441a51868138c4d3012b517f8794",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests words in context using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-37",
+      "expectedRecordHash": "ffa858e6a9f8e17b94674347bb62128aded97f3454b0d04d53e8ad23d356dc56",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests words in context using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-38",
+      "expectedRecordHash": "2b07d213694fbb0f3089a052def8f9b5b434034c631631a9b2172a387ce6e2ab",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests words in context using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-39",
+      "expectedRecordHash": "bcd8e247c9e9ffa3a8d635d7f8401ffdd01af0db971667aafd46685c741a880e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests words in context using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-4",
+      "expectedRecordHash": "68c3d7e6d11b7b1da456006d8a9b6c8c4cbd8e5f147a669f282b5cd97e6780b3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests inference and tone using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-40",
+      "expectedRecordHash": "e8860ba90f2ad3fd4413c94f0016cba484f535517306c528b76f77e6349370de",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests words in context using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-41",
+      "expectedRecordHash": "6fb46e95e06c43ab905d160104110f0487471176e555c4209ee89f41d2a779f7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests ordering words using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-42",
+      "expectedRecordHash": "64858d1ac5d7f7b1d6360728b23a8811a3cbbb49f8b0ea1f4d03fc53cfec49f5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests ordering words using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-43",
+      "expectedRecordHash": "2fc2f5dcbcce2f6426a2307c1ad9f13cce2446503931c44fb4a27204b71d1f66",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests ordering words using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-44",
+      "expectedRecordHash": "6bdadc7983f4be5d72bcb351ccc6f7b81fc52b67d751e9b9b910e94968981374",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests ordering words using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-45",
+      "expectedRecordHash": "420a5aa7c2007a58b35526e03b4cbb44d7198f132e46e0fa64714ab3a689ae79",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests ordering words using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-46",
+      "expectedRecordHash": "b1c163e76fe338f254e00939024abadc54ea07abc4677ae01bf96712cd667896",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests fill in the blanks using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-47",
+      "expectedRecordHash": "eb13fe577396c6245edf53c32ad737b074184b0859eb4e3791b30f9f4479a854",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests fill in the blanks using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-48",
+      "expectedRecordHash": "1c15d1a15fff8f56327ddac9086b1cbf2e5dbd2504c5a84bd0b5a27ab7612f6a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests fill in the blanks using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-5",
+      "expectedRecordHash": "01ac2f999675ef8837377f79b63b005ddfecdbdbfba69ec43660af407eb65e00",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests vocabulary in passages using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-50",
+      "expectedRecordHash": "b9de34ba6d95c23ffac846a1a9f2d43b7c5e74ab1d57b79a68e290f0db20c9bf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests fill in the blanks using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-51",
+      "expectedRecordHash": "0ff61c2f63183e93c5b885860873115ebed50242c30c6dd95620a03626cdc60c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Distinguishes chemical/electrical industries of the second industrial revolution from first-revolution industries. Bounded defence-only leaf excludes individual inventor biographies and labour movements.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-52",
+      "expectedRecordHash": "36fc5495c248953c7755f6269773b8f776ef21c8d346c52352dfa2c1dca4fe92",
+      "primaryId": "syllabus:history/ancient-india/indus-valley-civilisation/crafts-and-technology",
+      "additionalIds": [
+        "syllabus:history/art-culture/sculpture-and-iconography/harappan-objects"
+      ],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the actual seal-making material; materially relevant to Harappan art objects as well.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-53",
+      "expectedRecordHash": "35016db8732cabf3e96cb20b5212fafa3447c3c712b913fd1cae8bf1e3e17d67",
+      "primaryId": "syllabus:history/ancient-india/mahajanapadas/republican-states",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies Vajji as an oligarchic polity rather than a monarchy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-54",
+      "expectedRecordHash": "4c99f5c06be545a4fdf16ed01939df4d30a9a2fe28e7aaa17d2b3d908dd07371",
+      "primaryId": "syllabus:history/art-culture/sculpture-and-iconography/buddhist-jain-and-hindu-iconography",
+      "additionalIds": [
+        "syllabus:history/ancient-india/buddhism/life-and-teachings"
+      ],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Distinguishes Buddhist symbolic sculpture from the shalabhanjika motif at Sanchi; the religious symbolism is materially tested.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-55",
+      "expectedRecordHash": "f53e8694070428e2db71caa6a5e59b12c7161a378f7bddd0399ec592bc30c174",
+      "primaryId": "syllabus:history/modern-india-national-movement/gandhian-movements/rowlatt-satyagraha",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the detention-without-trial law from its historical legal purpose.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-56",
+      "expectedRecordHash": "37a98cc3b99745f6747e9f065a5edd6249bab729f2ae70c9cb5ed1edfc905ef1",
+      "primaryId": "syllabus:economy/agriculture/agricultural-economy/land-and-productivity",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests the objective and land redistribution mechanism of Bhoodan, rather than colonial peasant resistance.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-58",
+      "expectedRecordHash": "e8cdc66acd6cd401fb2a85db3269af15853012cf0a8bfde9114da6bf9fcab891",
+      "primaryId": "syllabus:current-affairs/defence-security/internal-and-maritime-security/security-agencies",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the implementing security agency of BHARATPOL; portal/institution knowledge is the tested current development.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-59",
+      "expectedRecordHash": "0fca50ed73fc5c4a3cb8cfbcdb586779cf46c1bfae8edd662109ef8584eba57d",
+      "primaryId": "syllabus:polity-governance/institutions/parliament/composition",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests Rajya Sabha election and membership against the four parliamentary alternatives.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-6",
+      "expectedRecordHash": "5acebccdd7641ee24eb98358252a45634a196b3cde98dfa849a488486855d1bf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests direct and indirect speech using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-60",
+      "expectedRecordHash": "6377ba7d0d7263ca10bf6b851191e24ec914a871097040bd3dc91869e5181f7f",
+      "primaryId": "syllabus:international-relations-organisations/agreements-global-governance/international-cooperation/agreements-and-initiatives-by-mandate",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies a principle absent from Panchsheel; static foreign-policy principles, not an invented current event.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-61",
+      "expectedRecordHash": "1ec9bfd43b426c5b74f00557bc3b53d3faaa1b668dd84a3e12d0732aa3f21553",
+      "primaryId": "syllabus:history/medieval-india/medieval-society-and-economy/agrarian-relations",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests the historical introduction and transmission of maize, not its contemporary crop geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-63",
+      "expectedRecordHash": "492c204ae3e362202dad230e449b4e991fa9de21b35689a5a200670a40bec397",
+      "primaryId": "syllabus:history/medieval-india/bhakti-and-sufi-traditions/saints-and-compositions",
+      "additionalIds": [
+        "syllabus:history/medieval-india/bhakti-and-sufi-traditions/institutions-and-practices"
+      ],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests Shankardeva’s tradition, teachings and institutions; institutions are also materially tested.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-64",
+      "expectedRecordHash": "6df6c488c4afe309de47b12cd82389919a2c1b0e350b3ee1aa98d4a2764c241a",
+      "primaryId": "syllabus:history/modern-india-national-movement/european-companies/factories-and-trading-networks",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the Company factory founded in 1611, not a later presidency foundation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-65",
+      "expectedRecordHash": "9d39a977195e19aeb22afa4ce3488b99c98eb2079768bff2dda7931fa6b3dd33",
+      "primaryId": "syllabus:history/modern-india-national-movement/constitutional-developments/chronology-of-constitutional-politics",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Orders national-movement constitutional/political events, not a single conference date. Bounded new subpart proposal; not activated automatically.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-66",
+      "expectedRecordHash": "3e75a8cd955a3ef9520cddb7d23d27fc0374ccf972e1e381dcddba75badba1ea",
+      "primaryId": "syllabus:history/modern-india-national-movement/constitutional-developments/acts-before-1858",
+      "additionalIds": [
+        "syllabus:history/modern-india-national-movement/colonial-administration/judiciary"
+      ],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the act establishing the Calcutta Supreme Court.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-67",
+      "expectedRecordHash": "1e9ada7aa6377673ba464e316e207a24d55e205c461888006cfe329a238252c0",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-administration/local-self-government",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests Ripon’s 1882 local-government resolution, not Company government. Bounded new subpart proposal excludes post-independence constitutional amendments.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-68",
+      "expectedRecordHash": "eb837402579e649d518df7d5adeaeb48fe4ca5e431ce3487faa46684f48bfac7",
+      "primaryId": "syllabus:history/medieval-india/bhakti-and-sufi-traditions/institutions-and-practices",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Distinguishes a Sufi disciple term from tax, jurisprudence and village-administration terms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-7",
+      "expectedRecordHash": "2601d088dc0ff34db88ed3bea34c8174c6680ffb27d6b2b830bc35964ecb363c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests direct and indirect speech using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-70",
+      "expectedRecordHash": "8168913c2492d18be3951bacf6bcf144813e0e9b487586add9a389e0ac372c10",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/political-concepts/democracy-and-representation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests democratic accountability/consent or the chronology of universal franchise; read ruled-to-ruler exactly as printed.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-71",
+      "expectedRecordHash": "af3bfea5b979d44475212abfc0c8d8997f9767e925f37637ba6c646b157a037e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests soap/detergent micelles, hard water and orientation of hydrophilic versus hydrophobic ends.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-72",
+      "expectedRecordHash": "37e7eb6b85a311c99d4cd289cc67e68626da3358f3a526c772c32c8059cfe606",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests subatomic properties/discovery or the definition and composition of compounds.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-73",
+      "expectedRecordHash": "f8eb8599fb6f077e2901ace60587b198058bff9ecb4976f7a68db11a59790312",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests subatomic properties/discovery or the definition and composition of compounds.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-74",
+      "expectedRecordHash": "bb697b8e679b4fba657d3a8a9126acc75ad591482d14d570365ad8933c20bd9a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests which proposition is absent from Rutherford’s nuclear model.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-75",
+      "expectedRecordHash": "70d5b8fff7c32f40ec503e80957ea63222f08cd59064b1e35a4a09427b8f0f07",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Infers the element’s group from the printed chloride formula and melting-point clue.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-76",
+      "expectedRecordHash": "f9a6dfde80ab78428377a4d06e5735b3ee77625cac2b6cd2354a6d8ae08166b7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests neutral oxides, pH relationships, common salt formulae or the acid-rain pH threshold.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-77",
+      "expectedRecordHash": "3751e048a34850a894fb64142bd560b3d075a087ede2a5be077b114f58d8d9f2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Identifies the chemical species known as dry ice.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-78",
+      "expectedRecordHash": "ce324462b600b11431528f165cbd26ed24cd707a01a36bffbe825c1c5f89f89d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests neutral oxides, pH relationships, common salt formulae or the acid-rain pH threshold.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-79",
+      "expectedRecordHash": "f264979fb6cd8eabcfcdf41efddd0d09e491fbf223843ee153da4ba92672ee87",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Compares each gas amount with its molar mass, particle count and STP molar volume.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-8",
+      "expectedRecordHash": "3e07e13ecac0d57da9f04ebe8509a20f2342eda35f56abdd649b4f83d234edd6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests direct and indirect speech using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-80",
+      "expectedRecordHash": "63789ea31c667feab72ab30a2c62218f989afd79d7777a07ef7c4f2c7bce37dc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests subatomic properties/discovery or the definition and composition of compounds.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-81",
+      "expectedRecordHash": "7baf6fc5623c211e7daf57116344e4e1d088c9aa20c6f9ca5535a01dfe1a7077",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests neutral oxides, pH relationships, common salt formulae or the acid-rain pH threshold.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-82",
+      "expectedRecordHash": "0a88c9214dadba71476044e16922cfa85bae574d5d34946cf71ab70ddc08b46c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Identifies nitrogen dioxide’s dimerisation, not simply an oxidation-state name.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-83",
+      "expectedRecordHash": "03225b30744f9aed2b514f21ded83eac706f728242102116057f6cda9ebf3a49",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests oxidation/reduction by oxygen/hydrogen transfer, including the negative instruction.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-84",
+      "expectedRecordHash": "3351920c47f457bb60708aa18682998a88daf7a798746152a2280abfdc4d5b34",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Matches physical quantities and SI units, derives G’s dimensions, or distinguishes dimensionless strain from stress/force.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-85",
+      "expectedRecordHash": "ddcab6587af01ebf57073fc530d46845cdb1590e142246158cfb7e5baf94d9a6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests neutral oxides, pH relationships, common salt formulae or the acid-rain pH threshold.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-86",
+      "expectedRecordHash": "712569063f8fd67f4216af5938305e99a4f76af7105c8c20f5ba37ce8f06ec3a",
+      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests great circles and the printed meridian/equator distinction; do not silently resolve the original convention issue.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-87",
+      "expectedRecordHash": "40d02dfb4c1ea46fa3b16f6387c08d0dfdf4c42eebb22837890d706558176da5",
+      "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/minerals",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests mineral abundance ordering but source prints Amphibolite; preserve this original rock/mineral problem.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-88",
+      "expectedRecordHash": "41f22a7a242f7792167fbab54b9f91c06d220cb3d3b53b307cb6d7af0df996e9",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the forces causing physical weathering, not agents of deposition.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-89",
+      "expectedRecordHash": "899885a974fa0b489c7521efc9513096bfee9277e1bf49bb28539723ccc9ba11",
+      "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-currents",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Classifies the three named ocean currents as warm/cold.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-9",
+      "expectedRecordHash": "41e52e9ccebd2cdd35134de086bb2b6ab3515c02bbcc14403084d362ef417344",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "NDA/CDS English or school Science; not automatically CSE GS.",
+      "rationale": "Tests correct sentence selection using the complete printed language task. The subject matter of the sentence is not a separate GS placement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh complete source reread with explicit preparation boundaries; see paper review ledger."
+      }
+    },
+    {
+      "questionId": "nda-2025-i-90",
+      "expectedRecordHash": "9ad5196c3d35829c03afee2d637d98a3f07e10cdb20449a843a0721bba96fcea",
+      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Compares solar incidence at named latitudes during northern summer solstice.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-91",
+      "expectedRecordHash": "69f93d2d2f346c9d771493cd87e50f74e6c0478f0ab07c8ec908dd6f4944c483",
+      "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Assesses the Coriolis/pressure-gradient and equatorial-wind statements; original issue stays in answer research.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-92",
+      "expectedRecordHash": "8b35fbe3c44d65f4d6beb399f745d9ec561a242e3f13d58a67bb5bb73ea4eed0",
+      "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests sleet formation and the vertical ordering of warm and freezing air layers.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-93",
+      "expectedRecordHash": "7f87622e5d1b741bab3e6fd31c454a0b0c012cf960c6e0f2bf208134610c3806",
+      "primaryId": "syllabus:geography/physical-geography/world-climate-regions-and-the-ko-ppen-classification/warm-temperate-climates",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the geographical exception to humid subtropical climate distribution within warm temperate climates.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-94",
+      "expectedRecordHash": "c3ff10df8b318dad927988017a3d1eadec1ac3b857c4418ff8e4c0d5f61b0750",
+      "primaryId": "syllabus:geography/indian-geography/physiographic-divisions/passes-and-peaks",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Locates Mahendragiri while preserving the original highest-peak premise for adjudication.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-95",
+      "expectedRecordHash": "40e9a901b490bee26d59436507d39c9546103476f851f51363e8851aa965c80f",
+      "primaryId": "syllabus:geography/indian-geography/natural-vegetation/altitudinal-vegetation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the southern hill ranges with Shola forests, not Himalayan montane vegetation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2025-i-96",
+      "expectedRecordHash": "e236ffc385e8e694477b6e9a6931ca3bf2ed7fa1685bb6569a75aa7502a8c6a5",
+      "primaryId": "syllabus:geography/indian-geography/mineral-and-energy-resources/metallic-minerals",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests copper production in the specifically dated ministry report, not reserves or refining capacity.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2025-i-97",
       "expectedRecordHash": "730691f05c35a198b743384a0adad1da8a57fa03bc87cb210e60331ec1f9e75b",
       "primaryId": "syllabus:geography/indian-geography/mineral-and-energy-resources/petroleum-and-gas",
       "additionalIds": [],
       "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four oil fields are compared for location outside Gujarat.",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Identifies the oilfield outside Gujarat.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: resource-field distribution is primary; no current output ranking or production technology is asked."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
         "Static"
-      ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      ]
     },
     {
       "questionId": "nda-2025-i-98",
@@ -33077,48 +34672,31 @@
       "primaryId": "syllabus:geography/human-economic-geography/resources-and-land-use/land-use",
       "additionalIds": [],
       "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four elapsed-year thresholds are compared for culturable wasteland classification.",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Distinguishes culturable wasteland from current and other fallow periods.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: land-use accounting is the exact task. Preserve the uncultivated threshold and existing reasoned verification."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
         "Static"
-      ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true
+      ]
     },
     {
       "questionId": "nda-2025-i-99",
       "expectedRecordHash": "86875b185ad1d6a530c42ed149a9376afc5499245d6e6afb055fea3cb26b5a7c",
-      "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives",
-      "additionalIds": [
-        "syllabus:economy/agriculture/agricultural-economy/food-security",
-        "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
-      ],
+      "primaryId": "syllabus:economy/agriculture/agricultural-economy/food-security",
+      "additionalIds": [],
       "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four crops are compared for exclusion from NFSM Commercial Crops.",
+      "basis": "nda-2025-complete-source-review",
+      "rationale": "Tests the explicit NFSM commercial-crops component, not all cash crops.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: scheme coverage and agricultural policy are material. Do not infer a launch date or create separate crop-production placements for alternatives."
+        "rationale": "Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-i-review.json."
       },
       "tags": [
-        "Event-based"
-      ],
-      "editorialBatch": "NDA/2025/I/existing-1",
-      "answerEligibilityUnchanged": true,
-      "sharedEconomyCurrentAffairs": {
-        "sourceIds": [
-          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-initiatives"
-        ],
-        "additionalIds": [
-          "syllabus:economy/current-affairs/sectoral-developments/agricultural-initiatives"
-        ],
-        "basis": "editor-requested-shared-category",
-        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
-      }
+        "Static"
+      ]
     },
     {
       "questionId": "nda-2025-ii-1",
@@ -33294,7 +34872,7 @@
       "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Orders the stated latitude zones by their extent.",
       "secondPass": {
         "status": "approved",
@@ -33310,7 +34888,7 @@
       "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/minerals",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests feldspar abundance, appearance and composition; minerals is more specific than crust layers.",
       "secondPass": {
         "status": "approved",
@@ -33326,7 +34904,7 @@
       "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/sedimentary-rocks",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Matches sedimentary rocks to their formation; not volcanoes.",
       "secondPass": {
         "status": "approved",
@@ -33342,7 +34920,7 @@
       "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-floor-relief",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests trenches/subduction or ridge-associated volcanic island chains.",
       "secondPass": {
         "status": "approved",
@@ -33358,7 +34936,7 @@
       "primaryId": "syllabus:geography/physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/earthquakes",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests P- and S-wave shadow zones.",
       "secondPass": {
         "status": "approved",
@@ -33374,7 +34952,7 @@
       "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-floor-relief",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests trenches/subduction or ridge-associated volcanic island chains.",
       "secondPass": {
         "status": "approved",
@@ -33390,7 +34968,7 @@
       "primaryId": "syllabus:geography/physical-geography/oceanography/waves",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests wave height controls and energy transport.",
       "secondPass": {
         "status": "approved",
@@ -33406,7 +34984,7 @@
       "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests soil-forming translocation, eluviation and illuviation in the existing geomorphic-processes soil-development coverage.",
       "secondPass": {
         "status": "approved",
@@ -33422,7 +35000,7 @@
       "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/structure",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests troposphere/tropopause structure and the exact printed lapse-rate claim.",
       "secondPass": {
         "status": "approved",
@@ -33450,7 +35028,7 @@
       "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/solar-radiation-and-insolation",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests the controls of incoming solar radiation.",
       "secondPass": {
         "status": "approved",
@@ -33466,7 +35044,7 @@
       "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/tropical-cyclones",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests conditions for tropical storm formation and intensification, rather than generic wind forces.",
       "secondPass": {
         "status": "approved",
@@ -33482,7 +35060,7 @@
       "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-currents",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests current-driving factors or warm/cold current identity.",
       "secondPass": {
         "status": "approved",
@@ -33498,7 +35076,7 @@
       "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-currents",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests current-driving factors or warm/cold current identity.",
       "secondPass": {
         "status": "approved",
@@ -33514,7 +35092,7 @@
       "primaryId": "syllabus:geography/indian-geography/location-and-extent/neighbours-and-boundaries",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Counts Assam’s international and interstate neighbours.",
       "secondPass": {
         "status": "approved",
@@ -33530,7 +35108,7 @@
       "primaryId": "syllabus:geography/indian-geography/drainage/peninsular-rivers",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies the northernmost named Deccan river basin.",
       "secondPass": {
         "status": "approved",
@@ -33546,7 +35124,7 @@
       "primaryId": "syllabus:geography/indian-geography/soils/properties-and-crops",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests the printed laterite nutrient proposition; preserve official answer and source wording.",
       "secondPass": {
         "status": "approved",
@@ -33562,7 +35140,7 @@
       "primaryId": "syllabus:geography/indian-geography/agriculture-and-irrigation/food-crops",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests bajra/ragi soil requirements and regional cultivation.",
       "secondPass": {
         "status": "approved",
@@ -33578,7 +35156,7 @@
       "primaryId": "syllabus:geography/indian-geography/mineral-and-energy-resources/resource-mapping",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests locations of mineral deposits or mining centres.",
       "secondPass": {
         "status": "approved",
@@ -33594,7 +35172,7 @@
       "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests beneficiaries or state locations of named thermal power stations.",
       "secondPass": {
         "status": "approved",
@@ -33622,7 +35200,7 @@
       "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests beneficiaries or state locations of named thermal power stations.",
       "secondPass": {
         "status": "approved",
@@ -33650,7 +35228,7 @@
       "primaryId": "syllabus:international-relations-organisations/international-institutions/global-institutions/specialised-agencies",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies WMO headquarters; the neighbouring biology questions do not make this biology.",
       "secondPass": {
         "status": "approved",
@@ -33774,7 +35352,7 @@
       "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/sports-institutions",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies Australia’s national men’s hockey team nickname; static, not inferred current news.",
       "secondPass": {
         "status": "approved",
@@ -33790,7 +35368,7 @@
       "primaryId": "syllabus:current-affairs/national-affairs/public-institutions-and-appointments/institutional-changes",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies the institution reaching its 150-year milestone in the explicitly stated 2025.",
       "secondPass": {
         "status": "approved",
@@ -33808,7 +35386,7 @@
         "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests the Jalvahak cargo-promotion initiative, not a naval ship.",
       "secondPass": {
         "status": "approved",
@@ -33836,7 +35414,7 @@
         "syllabus:economy/current-affairs/sectoral-developments/development-programmes"
       ],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests the explicitly dated 2024–25 MGNREGA coverage statistic.",
       "secondPass": {
         "status": "approved",
@@ -33862,7 +35440,7 @@
       "primaryId": "syllabus:geography/indian-geography/mineral-and-energy-resources/resource-mapping",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests locations of mineral deposits or mining centres.",
       "secondPass": {
         "status": "approved",
@@ -33878,7 +35456,7 @@
       "primaryId": "syllabus:current-affairs/sports-culture-recognition/personalities-and-commemorations/significant-days-and-themes",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests National Technology Day’s historical commemoration and an explicitly stated annual theme.",
       "secondPass": {
         "status": "approved",
@@ -33894,7 +35472,7 @@
       "primaryId": "syllabus:current-affairs/environment-geography/species-and-sites-in-news/wetland-recognition",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies the Ramsar additions explicitly dated 2025.",
       "secondPass": {
         "status": "approved",
@@ -33910,7 +35488,7 @@
       "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/winners-and-records",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests Kohli’s cricket records as at the source examination; no event date invented.",
       "secondPass": {
         "status": "approved",
@@ -33940,7 +35518,7 @@
         "syllabus:science-technology/computing-emerging-technologies/digital-foundations/blockchain-and-cryptocurrencies"
       ],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies named crypto financial assets, with a materially relevant technology home; static, not presumed recent news.",
       "secondPass": {
         "status": "approved",
@@ -34712,7 +36290,7 @@
       "primaryId": "syllabus:history/modern-india-national-movement/participation-in-nationalism/peasants",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies the first All India Kisan Sabha session president.",
       "secondPass": {
         "status": "approved",
@@ -34728,7 +36306,7 @@
       "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/anti-caste-movements",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies the founder of the Self-Respect Movement.",
       "secondPass": {
         "status": "approved",
@@ -34744,7 +36322,7 @@
       "primaryId": "syllabus:history/medieval-india/early-medieval-kingdoms/cholas-and-local-administration",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Distinguishes Chola inscriptional land grants by their institutional purpose.",
       "secondPass": {
         "status": "approved",
@@ -34760,7 +36338,7 @@
       "primaryId": "syllabus:history/modern-india-national-movement/revolutionary-and-overseas-movements/home-rule",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests the founding dates and territorial organisation of the Home Rule leagues.",
       "secondPass": {
         "status": "approved",
@@ -34788,7 +36366,7 @@
       "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/women-and-reform",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests Vidyasagar’s reform and educational roles, including the widow-remarriage distractor.",
       "secondPass": {
         "status": "approved",
@@ -34806,7 +36384,7 @@
         "syllabus:history/modern-india-national-movement/social-and-religious-reform/women-and-reform"
       ],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Matches named social reformers with their institutions/texts; all four rows materially tested.",
       "secondPass": {
         "status": "approved",
@@ -34822,7 +36400,7 @@
       "primaryId": "syllabus:history/ancient-india/indus-valley-civilisation/agriculture-and-trade",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies the Harappan canal evidence site.",
       "secondPass": {
         "status": "approved",
@@ -34838,7 +36416,7 @@
       "primaryId": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Orders medieval/early-modern travellers; the reviewed sources chapter avoids mislabelling them as Ancient India.",
       "secondPass": {
         "status": "approved",
@@ -34854,7 +36432,7 @@
       "primaryId": "syllabus:international-relations-organisations/international-institutions/global-institutions/development-institutions",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests Bretton Woods institutional and exchange-rate arrangements.",
       "secondPass": {
         "status": "approved",
@@ -34870,7 +36448,7 @@
       "primaryId": "syllabus:history/ancient-india/sangam-age/chiefdoms-and-kingdoms",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies Senguttuvan; preserve the defective original alternatives and the official dropped cell.",
       "secondPass": {
         "status": "approved",
@@ -34888,7 +36466,7 @@
         "syllabus:history/medieval-india/early-medieval-kingdoms/palas-and-senas"
       ],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies the author of the double-narrative Ramacharita.",
       "secondPass": {
         "status": "approved",
@@ -34904,7 +36482,7 @@
       "primaryId": "syllabus:history/modern-india-national-movement/constitutional-developments/acts-before-1858",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies the act creating the Board of Control.",
       "secondPass": {
         "status": "approved",
@@ -34920,7 +36498,7 @@
       "primaryId": "syllabus:history/medieval-india/marathas-and-regional-powers/sikh-powers",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Identifies the Sikh Guru who founded the Khalsa Panth.",
       "secondPass": {
         "status": "approved",
@@ -34936,7 +36514,7 @@
       "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests the Mahalanobis plan or the annual-plan interval.",
       "secondPass": {
         "status": "approved",
@@ -34964,7 +36542,7 @@
       "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests the Mahalanobis plan or the annual-plan interval.",
       "secondPass": {
         "status": "approved",
@@ -34992,7 +36570,7 @@
       "primaryId": "syllabus:polity-governance/rights-principles/fundamental-rights/availability-of-rights",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Distinguishes enforceable rights from directives and the incorrectly stated education-age range.",
       "secondPass": {
         "status": "approved",
@@ -35008,7 +36586,7 @@
       "primaryId": "syllabus:international-relations-organisations/international-institutions/global-institutions/institutional-mandates",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Tests identifying flags of the named international institutions; a static institutional-identity question.",
       "secondPass": {
         "status": "approved",
@@ -35024,7 +36602,7 @@
       "primaryId": "syllabus:polity-governance/federalism-local-government/local-government/panchayats",
       "additionalIds": [],
       "status": "approved",
-      "basis": "nda-2025-ii-complete-source-review",
+      "basis": "nda-2025-complete-source-review",
       "rationale": "Distinguishes Panchayati Raj decentralisation committees.",
       "secondPass": {
         "status": "approved",

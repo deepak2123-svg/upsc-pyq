@@ -1,0 +1,2300 @@
+{
+  "paperId": "nda-2025-i-gat",
+  "workflowState": "source-review-complete",
+  "sourceIdentity": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2025-1.pdf",
+    "sha256": "9dfd572ed540e3bdbdcafec0e0d1d123f608cf6b47f0abc3df3993cb9fefeaee",
+    "pdfPages": 48,
+    "series": "A",
+    "exam": "NDA",
+    "year": 2025,
+    "session": "I",
+    "paper": "GAT",
+    "expectedNumbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150
+    ]
+  },
+  "expectedQuestionNumbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150
+  ],
+  "questionSlots": [
+    {
+      "printedQuestionNumber": 1,
+      "canonicalQuestionId": "nda-2025-i-1",
+      "sourcePages": [
+        2
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#1"
+    },
+    {
+      "printedQuestionNumber": 2,
+      "canonicalQuestionId": "nda-2025-i-2",
+      "sourcePages": [
+        2
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#2"
+    },
+    {
+      "printedQuestionNumber": 3,
+      "canonicalQuestionId": "nda-2025-i-3",
+      "sourcePages": [
+        2
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#3"
+    },
+    {
+      "printedQuestionNumber": 4,
+      "canonicalQuestionId": "nda-2025-i-4",
+      "sourcePages": [
+        2,
+        3
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#4"
+    },
+    {
+      "printedQuestionNumber": 5,
+      "canonicalQuestionId": "nda-2025-i-5",
+      "sourcePages": [
+        2,
+        3
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#5"
+    },
+    {
+      "printedQuestionNumber": 6,
+      "canonicalQuestionId": "nda-2025-i-6",
+      "sourcePages": [
+        3
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#6"
+    },
+    {
+      "printedQuestionNumber": 7,
+      "canonicalQuestionId": "nda-2025-i-7",
+      "sourcePages": [
+        3
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#7"
+    },
+    {
+      "printedQuestionNumber": 8,
+      "canonicalQuestionId": "nda-2025-i-8",
+      "sourcePages": [
+        3
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#8"
+    },
+    {
+      "printedQuestionNumber": 9,
+      "canonicalQuestionId": "nda-2025-i-9",
+      "sourcePages": [
+        4
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#9"
+    },
+    {
+      "printedQuestionNumber": 10,
+      "canonicalQuestionId": "nda-2025-i-10",
+      "sourcePages": [
+        4
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#10"
+    },
+    {
+      "printedQuestionNumber": 11,
+      "canonicalQuestionId": "nda-2025-i-11",
+      "sourcePages": [
+        4
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#11"
+    },
+    {
+      "printedQuestionNumber": 12,
+      "canonicalQuestionId": "nda-2025-i-12",
+      "sourcePages": [
+        4
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#12"
+    },
+    {
+      "printedQuestionNumber": 13,
+      "canonicalQuestionId": "nda-2025-i-13",
+      "sourcePages": [
+        4
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#13"
+    },
+    {
+      "printedQuestionNumber": 14,
+      "canonicalQuestionId": "nda-2025-i-14",
+      "sourcePages": [
+        5
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#14"
+    },
+    {
+      "printedQuestionNumber": 15,
+      "canonicalQuestionId": "nda-2025-i-15",
+      "sourcePages": [
+        5
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#15"
+    },
+    {
+      "printedQuestionNumber": 16,
+      "canonicalQuestionId": "cds-2025-2025-1-16",
+      "sourcePages": [
+        5
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "0bf4b68baccd84310fe5169614f4a31c15412ea8adc7f53a5da1063d0e2db49d",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#16"
+    },
+    {
+      "printedQuestionNumber": 17,
+      "canonicalQuestionId": "nda-2025-i-17",
+      "sourcePages": [
+        5
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#17"
+    },
+    {
+      "printedQuestionNumber": 18,
+      "canonicalQuestionId": "nda-2025-i-18",
+      "sourcePages": [
+        5
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#18"
+    },
+    {
+      "printedQuestionNumber": 19,
+      "canonicalQuestionId": "nda-2025-i-19",
+      "sourcePages": [
+        5
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#19"
+    },
+    {
+      "printedQuestionNumber": 20,
+      "canonicalQuestionId": "nda-2025-i-20",
+      "sourcePages": [
+        5
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#20"
+    },
+    {
+      "printedQuestionNumber": 21,
+      "canonicalQuestionId": "nda-2025-i-21",
+      "sourcePages": [
+        6
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#21"
+    },
+    {
+      "printedQuestionNumber": 22,
+      "canonicalQuestionId": "nda-2025-i-22",
+      "sourcePages": [
+        6
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#22"
+    },
+    {
+      "printedQuestionNumber": 23,
+      "canonicalQuestionId": "nda-2025-i-23",
+      "sourcePages": [
+        7
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#23"
+    },
+    {
+      "printedQuestionNumber": 24,
+      "canonicalQuestionId": "nda-2025-i-24",
+      "sourcePages": [
+        7
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#24"
+    },
+    {
+      "printedQuestionNumber": 25,
+      "canonicalQuestionId": "nda-2025-i-25",
+      "sourcePages": [
+        7
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#25"
+    },
+    {
+      "printedQuestionNumber": 26,
+      "canonicalQuestionId": "nda-2025-i-26",
+      "sourcePages": [
+        8
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#26"
+    },
+    {
+      "printedQuestionNumber": 27,
+      "canonicalQuestionId": "nda-2025-i-27",
+      "sourcePages": [
+        8
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#27"
+    },
+    {
+      "printedQuestionNumber": 28,
+      "canonicalQuestionId": "nda-2025-i-28",
+      "sourcePages": [
+        8
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#28"
+    },
+    {
+      "printedQuestionNumber": 29,
+      "canonicalQuestionId": "nda-2025-i-29",
+      "sourcePages": [
+        8
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#29"
+    },
+    {
+      "printedQuestionNumber": 30,
+      "canonicalQuestionId": "nda-2025-i-30",
+      "sourcePages": [
+        8
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#30"
+    },
+    {
+      "printedQuestionNumber": 31,
+      "canonicalQuestionId": "nda-2025-i-31",
+      "sourcePages": [
+        8
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#31"
+    },
+    {
+      "printedQuestionNumber": 32,
+      "canonicalQuestionId": "nda-2025-i-32",
+      "sourcePages": [
+        8
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#32"
+    },
+    {
+      "printedQuestionNumber": 33,
+      "canonicalQuestionId": "nda-2025-i-33",
+      "sourcePages": [
+        8
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#33"
+    },
+    {
+      "printedQuestionNumber": 34,
+      "canonicalQuestionId": "nda-2025-i-34",
+      "sourcePages": [
+        9
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#34"
+    },
+    {
+      "printedQuestionNumber": 35,
+      "canonicalQuestionId": "nda-2025-i-35",
+      "sourcePages": [
+        9
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#35"
+    },
+    {
+      "printedQuestionNumber": 36,
+      "canonicalQuestionId": "nda-2025-i-36",
+      "sourcePages": [
+        9
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#36"
+    },
+    {
+      "printedQuestionNumber": 37,
+      "canonicalQuestionId": "nda-2025-i-37",
+      "sourcePages": [
+        9
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#37"
+    },
+    {
+      "printedQuestionNumber": 38,
+      "canonicalQuestionId": "nda-2025-i-38",
+      "sourcePages": [
+        9
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#38"
+    },
+    {
+      "printedQuestionNumber": 39,
+      "canonicalQuestionId": "nda-2025-i-39",
+      "sourcePages": [
+        9
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#39"
+    },
+    {
+      "printedQuestionNumber": 40,
+      "canonicalQuestionId": "nda-2025-i-40",
+      "sourcePages": [
+        9
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#40"
+    },
+    {
+      "printedQuestionNumber": 41,
+      "canonicalQuestionId": "nda-2025-i-41",
+      "sourcePages": [
+        10
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#41"
+    },
+    {
+      "printedQuestionNumber": 42,
+      "canonicalQuestionId": "nda-2025-i-42",
+      "sourcePages": [
+        10
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#42"
+    },
+    {
+      "printedQuestionNumber": 43,
+      "canonicalQuestionId": "nda-2025-i-43",
+      "sourcePages": [
+        10
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#43"
+    },
+    {
+      "printedQuestionNumber": 44,
+      "canonicalQuestionId": "nda-2025-i-44",
+      "sourcePages": [
+        10
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#44"
+    },
+    {
+      "printedQuestionNumber": 45,
+      "canonicalQuestionId": "nda-2025-i-45",
+      "sourcePages": [
+        11
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#45"
+    },
+    {
+      "printedQuestionNumber": 46,
+      "canonicalQuestionId": "nda-2025-i-46",
+      "sourcePages": [
+        11
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#46"
+    },
+    {
+      "printedQuestionNumber": 47,
+      "canonicalQuestionId": "nda-2025-i-47",
+      "sourcePages": [
+        11
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#47"
+    },
+    {
+      "printedQuestionNumber": 48,
+      "canonicalQuestionId": "nda-2025-i-48",
+      "sourcePages": [
+        11
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#48"
+    },
+    {
+      "printedQuestionNumber": 49,
+      "canonicalQuestionId": "cds-2025-2025-1-49",
+      "sourcePages": [
+        11
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "730141767b5df926d51ab5f0c45b5c5f7cf212d1ddf5b6eaaad9e19bed000d27",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#49"
+    },
+    {
+      "printedQuestionNumber": 50,
+      "canonicalQuestionId": "nda-2025-i-50",
+      "sourcePages": [
+        11
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#50"
+    },
+    {
+      "printedQuestionNumber": 51,
+      "canonicalQuestionId": "nda-2025-i-51",
+      "sourcePages": [
+        13
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#51"
+    },
+    {
+      "printedQuestionNumber": 52,
+      "canonicalQuestionId": "nda-2025-i-52",
+      "sourcePages": [
+        13
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#52"
+    },
+    {
+      "printedQuestionNumber": 53,
+      "canonicalQuestionId": "nda-2025-i-53",
+      "sourcePages": [
+        13
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#53"
+    },
+    {
+      "printedQuestionNumber": 54,
+      "canonicalQuestionId": "nda-2025-i-54",
+      "sourcePages": [
+        13
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#54"
+    },
+    {
+      "printedQuestionNumber": 55,
+      "canonicalQuestionId": "nda-2025-i-55",
+      "sourcePages": [
+        13
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#55"
+    },
+    {
+      "printedQuestionNumber": 56,
+      "canonicalQuestionId": "nda-2025-i-56",
+      "sourcePages": [
+        13
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#56"
+    },
+    {
+      "printedQuestionNumber": 57,
+      "canonicalQuestionId": "cds-2025-2025-1-57",
+      "sourcePages": [
+        13
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "234a322655cc455a4abdd9c4a3e9ba2b00d9278b3d2541fe0d09bb3576b4f243",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#57"
+    },
+    {
+      "printedQuestionNumber": 58,
+      "canonicalQuestionId": "nda-2025-i-58",
+      "sourcePages": [
+        15
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#58"
+    },
+    {
+      "printedQuestionNumber": 59,
+      "canonicalQuestionId": "nda-2025-i-59",
+      "sourcePages": [
+        15
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#59"
+    },
+    {
+      "printedQuestionNumber": 60,
+      "canonicalQuestionId": "nda-2025-i-60",
+      "sourcePages": [
+        15
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#60"
+    },
+    {
+      "printedQuestionNumber": 61,
+      "canonicalQuestionId": "nda-2025-i-61",
+      "sourcePages": [
+        15
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#61"
+    },
+    {
+      "printedQuestionNumber": 62,
+      "canonicalQuestionId": "cds-2025-2025-1-62",
+      "sourcePages": [
+        15
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "a16ff17cf189256fa76a445a71e373b8abd2d858dd46664d4b93f4ee9b7c06d1",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#62"
+    },
+    {
+      "printedQuestionNumber": 63,
+      "canonicalQuestionId": "nda-2025-i-63",
+      "sourcePages": [
+        17
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#63"
+    },
+    {
+      "printedQuestionNumber": 64,
+      "canonicalQuestionId": "nda-2025-i-64",
+      "sourcePages": [
+        17
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#64"
+    },
+    {
+      "printedQuestionNumber": 65,
+      "canonicalQuestionId": "nda-2025-i-65",
+      "sourcePages": [
+        17
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#65"
+    },
+    {
+      "printedQuestionNumber": 66,
+      "canonicalQuestionId": "nda-2025-i-66",
+      "sourcePages": [
+        17
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#66"
+    },
+    {
+      "printedQuestionNumber": 67,
+      "canonicalQuestionId": "nda-2025-i-67",
+      "sourcePages": [
+        17
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#67"
+    },
+    {
+      "printedQuestionNumber": 68,
+      "canonicalQuestionId": "nda-2025-i-68",
+      "sourcePages": [
+        19
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#68"
+    },
+    {
+      "printedQuestionNumber": 69,
+      "canonicalQuestionId": "cds-2025-2025-1-69",
+      "sourcePages": [
+        19
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "4ba96d38384271e9e78a6511b8f0a95db613571e24e0d3cdc9c89c0b7db46cef",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#69"
+    },
+    {
+      "printedQuestionNumber": 70,
+      "canonicalQuestionId": "nda-2025-i-70",
+      "sourcePages": [
+        19
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#70"
+    },
+    {
+      "printedQuestionNumber": 71,
+      "canonicalQuestionId": "nda-2025-i-71",
+      "sourcePages": [
+        19
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#71"
+    },
+    {
+      "printedQuestionNumber": 72,
+      "canonicalQuestionId": "nda-2025-i-72",
+      "sourcePages": [
+        19
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#72"
+    },
+    {
+      "printedQuestionNumber": 73,
+      "canonicalQuestionId": "nda-2025-i-73",
+      "sourcePages": [
+        21
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#73"
+    },
+    {
+      "printedQuestionNumber": 74,
+      "canonicalQuestionId": "nda-2025-i-74",
+      "sourcePages": [
+        21
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#74"
+    },
+    {
+      "printedQuestionNumber": 75,
+      "canonicalQuestionId": "nda-2025-i-75",
+      "sourcePages": [
+        21
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#75"
+    },
+    {
+      "printedQuestionNumber": 76,
+      "canonicalQuestionId": "nda-2025-i-76",
+      "sourcePages": [
+        21
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#76"
+    },
+    {
+      "printedQuestionNumber": 77,
+      "canonicalQuestionId": "nda-2025-i-77",
+      "sourcePages": [
+        21
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#77"
+    },
+    {
+      "printedQuestionNumber": 78,
+      "canonicalQuestionId": "nda-2025-i-78",
+      "sourcePages": [
+        21
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#78"
+    },
+    {
+      "printedQuestionNumber": 79,
+      "canonicalQuestionId": "nda-2025-i-79",
+      "sourcePages": [
+        21
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#79"
+    },
+    {
+      "printedQuestionNumber": 80,
+      "canonicalQuestionId": "nda-2025-i-80",
+      "sourcePages": [
+        23
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#80"
+    },
+    {
+      "printedQuestionNumber": 81,
+      "canonicalQuestionId": "nda-2025-i-81",
+      "sourcePages": [
+        23
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#81"
+    },
+    {
+      "printedQuestionNumber": 82,
+      "canonicalQuestionId": "nda-2025-i-82",
+      "sourcePages": [
+        23
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#82"
+    },
+    {
+      "printedQuestionNumber": 83,
+      "canonicalQuestionId": "nda-2025-i-83",
+      "sourcePages": [
+        23
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#83"
+    },
+    {
+      "printedQuestionNumber": 84,
+      "canonicalQuestionId": "nda-2025-i-84",
+      "sourcePages": [
+        23
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#84"
+    },
+    {
+      "printedQuestionNumber": 85,
+      "canonicalQuestionId": "nda-2025-i-85",
+      "sourcePages": [
+        25
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#85"
+    },
+    {
+      "printedQuestionNumber": 86,
+      "canonicalQuestionId": "nda-2025-i-86",
+      "sourcePages": [
+        25
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "712569063f8fd67f4216af5938305e99a4f76af7105c8c20f5ba37ce8f06ec3a",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#86"
+    },
+    {
+      "printedQuestionNumber": 87,
+      "canonicalQuestionId": "nda-2025-i-87",
+      "sourcePages": [
+        25
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "40d02dfb4c1ea46fa3b16f6387c08d0dfdf4c42eebb22837890d706558176da5",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#87"
+    },
+    {
+      "printedQuestionNumber": 88,
+      "canonicalQuestionId": "nda-2025-i-88",
+      "sourcePages": [
+        25
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "41f22a7a242f7792167fbab54b9f91c06d220cb3d3b53b307cb6d7af0df996e9",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#88"
+    },
+    {
+      "printedQuestionNumber": 89,
+      "canonicalQuestionId": "nda-2025-i-89",
+      "sourcePages": [
+        25
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "899885a974fa0b489c7521efc9513096bfee9277e1bf49bb28539723ccc9ba11",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#89"
+    },
+    {
+      "printedQuestionNumber": 90,
+      "canonicalQuestionId": "nda-2025-i-90",
+      "sourcePages": [
+        25
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "9ad5196c3d35829c03afee2d637d98a3f07e10cdb20449a843a0721bba96fcea",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#90"
+    },
+    {
+      "printedQuestionNumber": 91,
+      "canonicalQuestionId": "nda-2025-i-91",
+      "sourcePages": [
+        27
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "69f93d2d2f346c9d771493cd87e50f74e6c0478f0ab07c8ec908dd6f4944c483",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#91"
+    },
+    {
+      "printedQuestionNumber": 92,
+      "canonicalQuestionId": "nda-2025-i-92",
+      "sourcePages": [
+        27
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "8b35fbe3c44d65f4d6beb399f745d9ec561a242e3f13d58a67bb5bb73ea4eed0",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#92"
+    },
+    {
+      "printedQuestionNumber": 93,
+      "canonicalQuestionId": "nda-2025-i-93",
+      "sourcePages": [
+        27
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "7f87622e5d1b741bab3e6fd31c454a0b0c012cf960c6e0f2bf208134610c3806",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#93"
+    },
+    {
+      "printedQuestionNumber": 94,
+      "canonicalQuestionId": "nda-2025-i-94",
+      "sourcePages": [
+        27
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "c3ff10df8b318dad927988017a3d1eadec1ac3b857c4418ff8e4c0d5f61b0750",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#94"
+    },
+    {
+      "printedQuestionNumber": 95,
+      "canonicalQuestionId": "nda-2025-i-95",
+      "sourcePages": [
+        27
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "40e9a901b490bee26d59436507d39c9546103476f851f51363e8851aa965c80f",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#95"
+    },
+    {
+      "printedQuestionNumber": 96,
+      "canonicalQuestionId": "nda-2025-i-96",
+      "sourcePages": [
+        29
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "e236ffc385e8e694477b6e9a6931ca3bf2ed7fa1685bb6569a75aa7502a8c6a5",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#96"
+    },
+    {
+      "printedQuestionNumber": 97,
+      "canonicalQuestionId": "nda-2025-i-97",
+      "sourcePages": [
+        29
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "730691f05c35a198b743384a0adad1da8a57fa03bc87cb210e60331ec1f9e75b",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#97"
+    },
+    {
+      "printedQuestionNumber": 98,
+      "canonicalQuestionId": "nda-2025-i-98",
+      "sourcePages": [
+        29
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "c743a7783c64fb53f325a238b935a421ec99c80f04abba14933db902262f60e2",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#98"
+    },
+    {
+      "printedQuestionNumber": 99,
+      "canonicalQuestionId": "nda-2025-i-99",
+      "sourcePages": [
+        29
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "86875b185ad1d6a530c42ed149a9376afc5499245d6e6afb055fea3cb26b5a7c",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#99"
+    },
+    {
+      "printedQuestionNumber": 100,
+      "canonicalQuestionId": "nda-2025-i-100",
+      "sourcePages": [
+        29
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "ee3d0ceda1ea4e30b8cb301a54b02b1a3e47869933fdaf8d77e2675677ee5d0e",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#100"
+    },
+    {
+      "printedQuestionNumber": 101,
+      "canonicalQuestionId": "nda-2025-i-101",
+      "sourcePages": [
+        29
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "2febd50683bdc7a16ca79fb904ff5c9f90a0d6585c514e7706b41f9e847d6d07",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#101"
+    },
+    {
+      "printedQuestionNumber": 102,
+      "canonicalQuestionId": "nda-2025-i-102",
+      "sourcePages": [
+        29
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "941f97e8082401d23017042d2813e434c458c3b5b16f343c1c82243feefe1e2c",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#102"
+    },
+    {
+      "printedQuestionNumber": 103,
+      "canonicalQuestionId": "nda-2025-i-103",
+      "sourcePages": [
+        31
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#103"
+    },
+    {
+      "printedQuestionNumber": 104,
+      "canonicalQuestionId": "nda-2025-i-104",
+      "sourcePages": [
+        31
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "9bbc3941571f47a8c3d2bee5ce88101c6267eefecc213b1cb081400ae70bcfd6",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#104"
+    },
+    {
+      "printedQuestionNumber": 105,
+      "canonicalQuestionId": "nda-2025-i-105",
+      "sourcePages": [
+        31
+      ],
+      "accountingAction": "reused",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": "bc2afba280effab00a128cb39a8596d03c75f1a056ba8ecde9b002b5ca8dc4c2",
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#105"
+    },
+    {
+      "printedQuestionNumber": 106,
+      "canonicalQuestionId": "nda-2025-i-106",
+      "sourcePages": [
+        31
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#106"
+    },
+    {
+      "printedQuestionNumber": 107,
+      "canonicalQuestionId": "nda-2025-i-107",
+      "sourcePages": [
+        31
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#107"
+    },
+    {
+      "printedQuestionNumber": 108,
+      "canonicalQuestionId": "nda-2025-i-108",
+      "sourcePages": [
+        31
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#108"
+    },
+    {
+      "printedQuestionNumber": 109,
+      "canonicalQuestionId": "nda-2025-i-109",
+      "sourcePages": [
+        33
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#109"
+    },
+    {
+      "printedQuestionNumber": 110,
+      "canonicalQuestionId": "nda-2025-i-110",
+      "sourcePages": [
+        33
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#110"
+    },
+    {
+      "printedQuestionNumber": 111,
+      "canonicalQuestionId": "nda-2025-i-111",
+      "sourcePages": [
+        33
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#111"
+    },
+    {
+      "printedQuestionNumber": 112,
+      "canonicalQuestionId": "nda-2025-i-112",
+      "sourcePages": [
+        33
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#112"
+    },
+    {
+      "printedQuestionNumber": 113,
+      "canonicalQuestionId": "nda-2025-i-113",
+      "sourcePages": [
+        33
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#113"
+    },
+    {
+      "printedQuestionNumber": 114,
+      "canonicalQuestionId": "nda-2025-i-114",
+      "sourcePages": [
+        33
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#114"
+    },
+    {
+      "printedQuestionNumber": 115,
+      "canonicalQuestionId": "nda-2025-i-115",
+      "sourcePages": [
+        33
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#115"
+    },
+    {
+      "printedQuestionNumber": 116,
+      "canonicalQuestionId": "nda-2025-i-116",
+      "sourcePages": [
+        33
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#116"
+    },
+    {
+      "printedQuestionNumber": 117,
+      "canonicalQuestionId": "nda-2025-i-117",
+      "sourcePages": [
+        35
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#117"
+    },
+    {
+      "printedQuestionNumber": 118,
+      "canonicalQuestionId": "nda-2025-i-118",
+      "sourcePages": [
+        35
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#118"
+    },
+    {
+      "printedQuestionNumber": 119,
+      "canonicalQuestionId": "nda-2025-i-119",
+      "sourcePages": [
+        35
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#119"
+    },
+    {
+      "printedQuestionNumber": 120,
+      "canonicalQuestionId": "nda-2025-i-120",
+      "sourcePages": [
+        35
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#120"
+    },
+    {
+      "printedQuestionNumber": 121,
+      "canonicalQuestionId": "nda-2025-i-121",
+      "sourcePages": [
+        35
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#121"
+    },
+    {
+      "printedQuestionNumber": 122,
+      "canonicalQuestionId": "nda-2025-i-122",
+      "sourcePages": [
+        35
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#122"
+    },
+    {
+      "printedQuestionNumber": 123,
+      "canonicalQuestionId": "nda-2025-i-123",
+      "sourcePages": [
+        37
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#123"
+    },
+    {
+      "printedQuestionNumber": 124,
+      "canonicalQuestionId": "nda-2025-i-124",
+      "sourcePages": [
+        37
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#124"
+    },
+    {
+      "printedQuestionNumber": 125,
+      "canonicalQuestionId": "nda-2025-i-125",
+      "sourcePages": [
+        37
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#125"
+    },
+    {
+      "printedQuestionNumber": 126,
+      "canonicalQuestionId": "nda-2025-i-126",
+      "sourcePages": [
+        37
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#126"
+    },
+    {
+      "printedQuestionNumber": 127,
+      "canonicalQuestionId": "nda-2025-i-127",
+      "sourcePages": [
+        37
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#127"
+    },
+    {
+      "printedQuestionNumber": 128,
+      "canonicalQuestionId": "nda-2025-i-128",
+      "sourcePages": [
+        37
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#128"
+    },
+    {
+      "printedQuestionNumber": 129,
+      "canonicalQuestionId": "nda-2025-i-129",
+      "sourcePages": [
+        39
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#129"
+    },
+    {
+      "printedQuestionNumber": 130,
+      "canonicalQuestionId": "nda-2025-i-130",
+      "sourcePages": [
+        39
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#130"
+    },
+    {
+      "printedQuestionNumber": 131,
+      "canonicalQuestionId": "nda-2025-i-131",
+      "sourcePages": [
+        39
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#131"
+    },
+    {
+      "printedQuestionNumber": 132,
+      "canonicalQuestionId": "nda-2025-i-132",
+      "sourcePages": [
+        39
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#132"
+    },
+    {
+      "printedQuestionNumber": 133,
+      "canonicalQuestionId": "nda-2025-i-133",
+      "sourcePages": [
+        39
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#133"
+    },
+    {
+      "printedQuestionNumber": 134,
+      "canonicalQuestionId": "nda-2025-i-134",
+      "sourcePages": [
+        39
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#134"
+    },
+    {
+      "printedQuestionNumber": 135,
+      "canonicalQuestionId": "nda-2025-i-135",
+      "sourcePages": [
+        39
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#135"
+    },
+    {
+      "printedQuestionNumber": 136,
+      "canonicalQuestionId": "nda-2025-i-136",
+      "sourcePages": [
+        39
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#136"
+    },
+    {
+      "printedQuestionNumber": 137,
+      "canonicalQuestionId": "nda-2025-i-137",
+      "sourcePages": [
+        41
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#137"
+    },
+    {
+      "printedQuestionNumber": 138,
+      "canonicalQuestionId": "nda-2025-i-138",
+      "sourcePages": [
+        41
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#138"
+    },
+    {
+      "printedQuestionNumber": 139,
+      "canonicalQuestionId": "nda-2025-i-139",
+      "sourcePages": [
+        41
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#139"
+    },
+    {
+      "printedQuestionNumber": 140,
+      "canonicalQuestionId": "nda-2025-i-140",
+      "sourcePages": [
+        41
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#140"
+    },
+    {
+      "printedQuestionNumber": 141,
+      "canonicalQuestionId": "nda-2025-i-141",
+      "sourcePages": [
+        41
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#141"
+    },
+    {
+      "printedQuestionNumber": 142,
+      "canonicalQuestionId": "nda-2025-i-142",
+      "sourcePages": [
+        41
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#142"
+    },
+    {
+      "printedQuestionNumber": 143,
+      "canonicalQuestionId": "nda-2025-i-143",
+      "sourcePages": [
+        41
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#143"
+    },
+    {
+      "printedQuestionNumber": 144,
+      "canonicalQuestionId": "nda-2025-i-144",
+      "sourcePages": [
+        43
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#144"
+    },
+    {
+      "printedQuestionNumber": 145,
+      "canonicalQuestionId": "nda-2025-i-145",
+      "sourcePages": [
+        43
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#145"
+    },
+    {
+      "printedQuestionNumber": 146,
+      "canonicalQuestionId": "nda-2025-i-146",
+      "sourcePages": [
+        43
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#146"
+    },
+    {
+      "printedQuestionNumber": 147,
+      "canonicalQuestionId": "nda-2025-i-147",
+      "sourcePages": [
+        43
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#147"
+    },
+    {
+      "printedQuestionNumber": 148,
+      "canonicalQuestionId": "nda-2025-i-148",
+      "sourcePages": [
+        43
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#148"
+    },
+    {
+      "printedQuestionNumber": 149,
+      "canonicalQuestionId": "nda-2025-i-149",
+      "sourcePages": [
+        43
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#149"
+    },
+    {
+      "printedQuestionNumber": 150,
+      "canonicalQuestionId": "nda-2025-i-150",
+      "sourcePages": [
+        43
+      ],
+      "accountingAction": "new",
+      "finalDisposition": "official-final",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/audits/nda-2025-i-review.json#150"
+    }
+  ],
+  "reconciliation": {
+    "expected": 150,
+    "newSourceOccurrences": 126,
+    "reusedSourceOccurrences": 24,
+    "unresolvedSourceSlots": 0,
+    "awaitingReviewCount": 0,
+    "dispositionCounts": {
+      "official-final": 150,
+      "official-provisional": 0,
+      "reasoned-verified": 0,
+      "withdrawn": 0,
+      "duplicate": 0,
+      "quarantined": 0
+    },
+    "eligibleUniqueQuestionCount": 150,
+    "sectionTotals": {
+      "english": 50,
+      "science": 49,
+      "gs": 51
+    }
+  },
+  "officialKeySearchLog": [
+    {
+      "url": "https://www.upsc.gov.in/examinations/answer-key",
+      "result": "Current listing returned no NDA key."
+    },
+    {
+      "url": "https://www.upsc.gov.in/examinations/answer-key/archives",
+      "result": "Archive returned only CISF 2026; NDA I 2025 key not recovered. This does not prove nonpublication."
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-131025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDANA-I-2025-GAT-131025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDANA-I-2025-GAT-141025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-141025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDANA-I-2025-GAT-161025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-161025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-151025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDANA-I-2025-GAT-151025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-281025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-171025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDANA-I-2025-GAT-281025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDANA-I-2025-GAT-171025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-141025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-131025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-131025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDA-NA-I-2025-GAT-131025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-161025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-151025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-161025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-I-2025-GAT-131025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-201025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-301025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-281025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-I-2025-GAT-141025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-281025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-211025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://web.archive.org/cdx/search/cdx?url=upsc.gov.in%2Fsites%2Fdefault%2Ffiles%2F%2A2025%2AGAT%2A&output=json&filter=statuscode%3A200&collapse=urlkey",
+      "result": "PowerShell response [] for this hostname pattern; no matching archived key recovered."
+    },
+    {
+      "url": "https://prepp.in/nda-exam/answer-key",
+      "result": "NDA I 2025 linked key is explicitly Centurion Defence Academy; not official authority."
+    },
+    {
+      "url": "https://adhyyan.co.in/wp-content/uploads/2025/11/NDA-1-2025-GAT-A.pdf",
+      "result": "Coaching-branded GAT key. Article calls it official, but PDF has no UPSC final-key authentication; not promoted."
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-221025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-101025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-101025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-221025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-231025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-241025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-241025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-231025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-271025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-291025.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "sha256": "115854bdc3436903717b3f7cc87b9786aad3d840280e3af30b965b5231872c88"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-291025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-271025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-311025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-031125.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-311025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-031125.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-051125.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-041125.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-051125.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-041125.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    }
+  ],
+  "officialKeyDocuments": [
+    {
+      "paperId": "nda-2025-i-gat",
+      "status": "official-final",
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-291025.pdf",
+      "sha256": "115854bdc3436903717b3f7cc87b9786aad3d840280e3af30b965b5231872c88",
+      "issuer": "Union Public Service Commission",
+      "retrievedAt": "2026-10-26",
+      "releasedAt": null,
+      "filenameDate": "2025-10-29",
+      "series": "A",
+      "page": 1,
+      "totalQuestions": 150,
+      "dropped": 0,
+      "scored": 150,
+      "reviewer": "codex-main (AI), two separate visual passes, not independent human review",
+      "firstPassMethod": "Read original Series A page 1 down each question/key column. Every letter checked visually.",
+      "secondPassMethod": "Reopen original rendered page 1 and read across each numbered row. Compare by original question number programmatically.",
+      "authentication": "Direct HTTPS download from www.upsc.gov.in, application/pdf, four pages. Header NDA & NA-I Exam-2025, Series A, Subject GAT, 150 questions, zero dropped, 150 taken for scoring. No release date is inferred solely from filename/PDF metadata. Coaching keys are superseded, not adopted as authority.",
+      "asset": "/papers/nda-2025-i-gat/official-final-key.pdf",
+      "session": "I",
+      "subject": "GAT"
+    }
+  ],
+  "keyTranscription": {
+    "firstPassReference": "content/audits/nda-2025-i-key-transcriptions.json#firstPassColumns",
+    "secondPassReference": "content/audits/nda-2025-i-key-transcriptions.json#secondPassRows",
+    "comparisonResult": "all 150 cells agree; zero drops/multiple answers"
+  },
+  "review": {
+    "paperId": "nda-2025-i-gat",
+    "reviewer": "codex-main",
+    "reviewerKind": "AI",
+    "reviewedAt": "2026-10-26",
+    "originalPdfSha256": "9dfd572ed540e3bdbdcafec0e0d1d123f608cf6b47f0abc3df3993cb9fefeaee",
+    "keyPdfSha256": "115854bdc3436903717b3f7cc87b9786aad3d840280e3af30b965b5231872c88",
+    "reproductionFirstPass": "approved",
+    "reproductionSecondPass": "approved",
+    "firstPassMethod": "Original cover 1 and English instructions 48; complete English pages 2–11; complete Part B English pages 13–43 odd. All 150 stems and 600 options manually read and transcribed. OCR was an unapproved lead and failed to reconstruct several question numbers/tables; it was not the approval source.",
+    "secondPassMethod": "Reopened all original question images in reverse order: 43,41,39,37,35,33,31,29,27,25,23,21,19,17,15,13,11,10,9,8,7,6,5,4,3,2. Compared every stem/statement/option with the manual modules. Same AI reviewer in a fresh pass, not independent human review. No original required diagram occurs in this paper. Matching tables, formulas, underlining and shared passage were explicitly compared.",
+    "classificationSecondPass": "approved",
+    "classificationMethod": "Reread the concept decisions against the full question and every alternative after original reconstruction. Validated existing leaf paths; split sleet/condensation, kept chronology and colonial local-government under bounded new subparts, corrected the industrial-revolution defence leaf, and classified tidal energy by tested concept rather than its position in the source paper. Primary placements remain distinct from source identity and answer verification.",
+    "newSyllabusBoundaries": [
+      "History/Colonial Administration/Local self-government: colonial local boards and Ripon’s resolution, excluding independent India’s 73rd/74th amendments.",
+      "History/Constitutional Developments/Chronology of constitutional politics: comparative national-movement political milestones, excluding unrelated date trivia and ancient/medieval chronology.",
+      "Defence World History/Industrial Revolution/Phases and industries: phases and sectoral changes, excluding individual inventor biographies and labour-movement history. NDA/CDS only, not automatically CSE GS."
+    ],
+    "officialKeyReview": "Direct UPSC four-page final PDF; Series A page 1 header and all 150 cells visually checked column-first then row-first. Programmatic comparison agrees exactly. Zero drops, zero multiple-answer cells. Retain official scoring despite academic disagreement with a printed premise or an answer.",
+    "releaseState": "Source/editorial approval only; runtime, grading, local/browser/PDF and production release gates still required."
+  },
+  "release": {
+    "reportReference": "docs/nda-2025-i-completion.md",
+    "state": "pending local/runtime/PDF/production gates"
+  }
+}

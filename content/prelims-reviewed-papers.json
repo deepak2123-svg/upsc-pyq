@@ -1,6 +1,19 @@
 {
   "version":1,
   "records":[{
+    "exam":"NDA","year":2025,"paper":"I","series":"A","questionCount":150,
+    "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2025-1.pdf",
+    "originalPdfSha256":"9dfd572ed540e3bdbdcafec0e0d1d123f608cf6b47f0abc3df3993cb9fefeaee",
+    "coverPage":1,"languages":["English","Hindi"],"reviewedLanguage":"English",
+    "questionPages":[2,3,4,5,6,7,8,9,10,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43],
+    "keyPdf":"public/papers/nda-2025-i-gat/official-final-key.pdf",
+    "keySha256":"115854bdc3436903717b3f7cc87b9786aad3d840280e3af30b965b5231872c88",
+    "keyPage":1,"keySeries":"A","keyQuestionCount":150,"keyStatus":"official-final","droppedQuestions":[],
+    "identityStatus":"cover-key-and-question-identity-reviewed",
+    "identityRationale":"Original cover and English instructions confirm NDA & NA Examination (I), 2025, Series A, GAT, 150 questions, 600 marks and 150 minutes. Direct UPSC four-page final key header identifies the same exam, series and GAT; 150 total/scored, zero dropped. Every key cell was visually read twice and both transcriptions agree.",
+    "secondPass":"Same AI reviewer freshly compared all 150 original questions/600 options in reverse page order after manual transcription. English directions, common passage, underlined words/fragments, matching tables, Roman source statements and formulas retained. All concepts separately reviewed with explicit NDA/CDS boundaries. Source/answer decisions recorded in content/audits/nda-2025-i-review.json; no independent human review claimed.",
+    "reviewedAt":"2026-10-26"
+  },{
     "exam":"NDA","year":2025,"paper":"II","series":"A","questionCount":150,
     "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2025-2.pdf",
     "originalPdfSha256":"c29b9d5bcaf73ad074a451c6416aa00696f71e6d99d2e2c78e6cc1f4f1228481",

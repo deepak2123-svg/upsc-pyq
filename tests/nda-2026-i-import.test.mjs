@@ -66,7 +66,7 @@ test('all 150 are present in NDA preparation without leaking English or NDA worl
  const allIds=new Set(nda.nodes.filter(n=>n.kind==='subtopic').flatMap(n=>n.questionIdsByExam.NDA));
  const cseIds=new Set(cse.nodes.filter(n=>n.kind==='subtopic').flatMap(n=>Object.values(n.questionIdsByExam).flat()));
  for(const q of paper.questions){assert.ok(allIds.has(q.id),q.id);if(q.preparationScope!=='gs'||q.subject==='Science & Technology')assert.ok(!cseIds.has(q.id),q.id);}
- assert.equal(nda.subjects.find(s=>s.id==='subject:english').examCounts.NDA,150);
+ assert.equal(nda.subjects.find(s=>s.id==='subject:english').examCounts.NDA,200);
  const english=paper.questions.filter(q=>q.subject==='English');assert.equal(english.length,50);
  assert.ok(english.every(q=>!questionInGsScope(q.id)));
  const response=await send('/api/practice-snapshots',recipe(nda));assert.equal(response.status,201);

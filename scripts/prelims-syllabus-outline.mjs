@@ -24,14 +24,14 @@ Bhakti and Sufi Traditions|Alvars and Nayanars;Saguna and nirguna traditions;Sai
 Sources and Chronology|Foreign accounts`,
     'Modern India & National Movement': `European Companies|Portuguese;Dutch and Danish;English and French;Factories and trading networks;Carnatic conflicts
 British Expansion|Bengal conquest;Anglo-Mysore wars;Anglo-Maratha wars;Anglo-Burmese wars;Subsidiary alliance;Annexation policies;Punjab conquest
-Colonial Administration|Company government;Crown rule and proclamations;Civil services;Census and surveys;Army and police;Judiciary;Education policies;Press policies
+Colonial Administration|Company government;Crown rule and proclamations;Civil services;Census and surveys;Army and police;Judiciary;Education policies;Press policies;Local self-government
 Colonial Economy|Land revenue settlements;Commercialisation of agriculture;Deindustrialisation;Drain of wealth;Economic critics of colonialism;Transport and communications;Famine policies
 Social and Religious Reform|Brahmo and Prarthana Samaj;Arya Samaj;Aligarh movement;Ramakrishna movement;Theosophical movement;Anti-caste movements;Women and reform
 Popular Resistance|Tribal uprisings;Peasant movements;Civil rebellions;Revolt of 1857;Resistance in princely states
 Early Nationalism|Political associations;Congress foundation;Moderates;Extremists;Partition of Bengal;Swadeshi movement
 Revolutionary and Overseas Movements|Revolutionary organisations;Ghadar;Home Rule;Indian diaspora;INA and Subhas Bose
 Gandhian Movements|Early satyagrahas;Rowlatt Satyagraha;Non-Cooperation and Khilafat;Congress sessions and resolutions;Civil Disobedience;Round Table Conferences;Quit India;Constructive programmes
-Constitutional Developments|Acts before 1858;Acts of 1858 to 1909;Act of 1919;Simon Commission and Nehru Report;Act of 1935;Provincial autonomy and ministries;Cripps and Cabinet Mission;Independence Act
+Constitutional Developments|Acts before 1858;Acts of 1858 to 1909;Act of 1919;Simon Commission and Nehru Report;Act of 1935;Provincial autonomy and ministries;Cripps and Cabinet Mission;Independence Act;Chronology of constitutional politics
 Participation in Nationalism|Workers and trade unions;Peasants;Women;Dalit movements;Socialist and communist currents
 Independence and Integration|Partition;Transfer of power;Princely state integration;Constituent Assembly context;Reorganisation background`,
     'Art & Culture': `Architecture|Architectural elements;Stupas and monasteries;Rock-cut architecture;Nagara temples;Dravida temples;Vesara and regional temples;Indo-Islamic architecture;Colonial architecture

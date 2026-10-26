@@ -1,5 +1,17 @@
 // Concept boundaries established by full original-question review, not keywords.
 export const sourceTopicSpecs = {
+  'History/Modern India & National Movement/Colonial Administration/Local self-government': {
+    includes:['Colonial municipal and local-board reforms','Ripon’s 1882 resolution and administrative purpose'],
+    excludes:['Company government as a generic bucket','Post-independence 73rd/74th constitutional amendments','A contemporary local-government appointment'],
+    placementRule:'Use for historical development of local self-government under colonial administration. Do not imply that an 1882 resolution is an East India Company measure.',
+    representativeQuestions:['NDA I 2025 GAT Series A Q67: Ripon’s local self-government resolution'],
+  },
+  'History/Modern India & National Movement/Constitutional Developments/Chronology of constitutional politics': {
+    includes:['Comparative chronology of constitutional negotiations and national-movement political developments','Lucknow Pact, Swaraj Party, Communal Award and Simla Conference'],
+    excludes:['Random date trivia unrelated to constitutional politics','Pure biographies','Ancient or medieval event ordering'],
+    placementRule:'Use where the whole tested task compares national-movement political milestones spanning several existing act/conference leaves; use the specific act/conference leaf for a single-event task.',
+    representativeQuestions:['NDA I 2025 GAT Series A Q65: order four national-movement political events'],
+  },
   'History/Medieval India/Sources and Chronology/Foreign accounts': {
     includes:['Travellers to medieval and early-modern India','Chronology and identification of their accounts'],
     excludes:['Ancient Greek/Chinese accounts','Modern tourism','Literary authorship without an historical-source task'],

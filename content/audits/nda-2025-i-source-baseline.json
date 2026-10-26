@@ -1,0 +1,1288 @@
+{
+  "paperId": "nda-2025-i-gat",
+  "notice": "Immutable before-values and reviewed transcription module hashes, not a standalone runtime bank.",
+  "rawBefore": [
+    {
+      "id": "cds-2025-2025-1-16",
+      "sha256": "0bf4b68baccd84310fe5169614f4a31c15412ea8adc7f53a5da1063d0e2db49d",
+      "value": {
+        "id": "cds-2025-2025-1-16",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Select the most appropriate option that is nearest in meaning to the underlined word: proportionate.\nThe Constitution of India ensures proportionate representation from all regions.",
+        "sourceTextHash": "6c5d0ce7cf09d5c5128ae73dd1ae6e1ec77eb7d8551a9d7598f2629c216f04e2",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 16,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://dictionary.cambridge.org/us/dictionary/english/proportional https://www.dictionary.com/browse/proportionate",
+          "rawQuestionText": "The Constitution of India ensures proportionate representation from all regions."
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 16,
+        "subject": "English",
+        "topic": "Vocabulary",
+        "subtopic": "Synonyms",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Select the most appropriate option that is nearest in meaning to the underlined word: proportionate.",
+          "The Constitution of India ensures proportionate representation from all regions."
+        ],
+        "options": {
+          "A": "balanced",
+          "B": "partial",
+          "C": "unlikely",
+          "D": "suffragette"
+        },
+        "answer": "A",
+        "explanation": "Reasoned answer A, not an official-key claim. The dictionary publisher defines proportionate as properly balanced/in due proportion: balanced is the only matching synonym. Partial is incomplete or biased, unlikely concerns probability, suffragette is a person, not this adjective. Second pass confirmed the underlined word and all four printed choices.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2025-2025-1-49",
+      "sha256": "730141767b5df926d51ab5f0c45b5c5f7cf212d1ddf5b6eaaad9e19bed000d27",
+      "value": {
+        "id": "cds-2025-2025-1-49",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The manner in which the demolitions have been carried out _____ scrutiny by the High Court.",
+        "sourceTextHash": "81d38e9fd4093a860d706037d6f9c8ac5ff2da58247603d9352ab65900af8a4a",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 49,
+          "answerStatus": "quarantined",
+          "answerSource": "https://dictionary.cambridge.org/us/grammar/british-grammar/present-simple",
+          "rawQuestionText": "The manner in which the demolitions have been carried out scrutiny by the High Court."
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 49,
+        "subject": "English",
+        "topic": "Grammar",
+        "subtopic": "Fill in the blanks",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The manner in which the demolitions have been carried out _____ scrutiny by the High Court."
+        ],
+        "options": {
+          "A": "was under",
+          "B": "under",
+          "C": "is under",
+          "D": "however under"
+        },
+        "answer": "C",
+        "explanation": "Original blank and choices restored. C is the likely intended present-tense answer, but A also forms a grammatical past-tense main clause; the supplied sentence provides no decisive time reference. B and D lack a finite main verb. No matching official key recovered. Quarantine rather than force a single accepted answer; clearing requires the official A-series Q49 key or an authoritative exam-specific clarification.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2025-2025-1-69",
+      "sha256": "4ba96d38384271e9e78a6511b8f0a95db613571e24e0d3cdc9c89c0b7db46cef",
+      "value": {
+        "id": "cds-2025-2025-1-69",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following features : 1. Consent of the governed 2. Political equality 3. Accountability of the ruled to the ruler Which of the above feature/features outline democratic rule?",
+        "sourceTextHash": "e8333632f413c20f52f7c233ddf323798774324ecf2a870b08902258f93dffa7",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 69,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://ncert.nic.in/textbook/pdf/jess405.pdf",
+          "rawQuestionText": "Consider the following features : I. Consent of the governed 2. Political equality 3. Accountability of the ruled to the ruler Which of the above feature/ features outline democratic rule ?",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "Reasoned A: consent of the governed and political equality describe democratic rule. Statement 3 reverses the democratic accountability relationship: government/rulers answer to citizens, not ruled to ruler. Therefore combinations containing 3 (B/C/D) fail. Second pass compared the exact direction of accountability and each combination."
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "8006834229ad036891dae5a398ab2b824b8c40ca77c81ac25bebfad9b0a98f8e",
+            "series": "A",
+            "page": null,
+            "reasonedAnswer": "A",
+            "method": "primary-source-reasoning"
+          }
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 69,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following features : 1. Consent of the governed 2. Political equality 3. Accountability of the ruled to the ruler Which of the above feature/features outline democratic rule?"
+        ],
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "3 only"
+        },
+        "answer": "A",
+        "explanation": "Reasoned A: consent of the governed and political equality describe democratic rule. Statement 3 reverses the democratic accountability relationship: government/rulers answer to citizens, not ruled to ruler. Therefore combinations containing 3 (B/C/D) fail. Second pass compared the exact direction of accountability and each combination.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2025-2025-1-57",
+      "sha256": "234a322655cc455a4abdd9c4a3e9ba2b00d9278b3d2541fe0d09bb3576b4f243",
+      "value": {
+        "id": "cds-2025-2025-1-57",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Constitution (Seventy-third Amendment) Act provides for",
+        "sourceTextHash": "f619d90477639e335da7996408b9fe5786902a792302234b8525d6a695231b47",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 57,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://www.legislative.gov.in/static/uploads/2025/07/d6e04624ef8b6b869af003909507cfe6.pdf",
+          "rawQuestionText": "The Constitution (Seventy-third Amend- ment) Act provides for"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 57,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "The Constitution (Seventy-third Amendment) Act provides for"
+        ],
+        "options": {
+          "A": "an elaborate system of establishing municipal self-government",
+          "B": "an elaborate system of establishing panchayats as units of self-government",
+          "C": "establishing a Commission for Linguistic Minorities",
+          "D": "the creation of the Jharkhand State"
+        },
+        "answer": "B",
+        "explanation": "Reasoned B: the enacted 73rd Amendment inserts Part IX, The Panchayats, including their constitution and self-government powers. Municipalities are Part IXA/74th Amendment; linguistic minorities and Jharkhand are not objects of this Act. Second pass checked the enacted text against all four printed options.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2025-2025-1-62",
+      "sha256": "a16ff17cf189256fa76a445a71e373b8abd2d858dd46664d4b93f4ee9b7c06d1",
+      "value": {
+        "id": "cds-2025-2025-1-62",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the answer using the code given below the Lists:\nList I (Five Year Plan)\nA. Fifth Five Year Plan\nB. Seventh Five Year Plan\nC. Ninth Five Year Plan\nD. Eleventh Five Year Plan\nList II (Objective)\n1. Towards Faster and More Inclusive Growth\n2. Garibi Hatao (Removal of Poverty)\n3. Food, Work and Productivity\n4. Growth with Social Justice and Equality\nCode: A B C D",
+        "sourceTextHash": "c58d053471703fc667e7d47a816c972d058c2a31016923e54f556e7eb4a9ee03",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 62,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://www.publicationsdivision.nic.in/journals/Journalarchives/Yojana/Yojana-English/1984/October/Yojana_1984_October_pdf.pdf https://niti.gov.in/sites/default/files/2023-08/11th_vol1.pdf",
+          "rawQuestionText": "Match List I with List II and select the answer using the code given below the Lists : List 1 List 11 (Five Year Plan) (Objective)"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 62,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the answer using the code given below the Lists:",
+          "List I (Five Year Plan)",
+          "A. Fifth Five Year Plan",
+          "B. Seventh Five Year Plan",
+          "C. Ninth Five Year Plan",
+          "D. Eleventh Five Year Plan",
+          "List II (Objective)",
+          "1. Towards Faster and More Inclusive Growth",
+          "2. Garibi Hatao (Removal of Poverty)",
+          "3. Food, Work and Productivity",
+          "4. Growth with Social Justice and Equality",
+          "Code: A B C D"
+        ],
+        "options": {
+          "A": "1 4 3 2",
+          "B": "2 3 4 1",
+          "C": "2 4 3 1",
+          "D": "1 3 4 2"
+        },
+        "answer": "B",
+        "explanation": "Reasoned B: the government planning account assigns food/work/productivity to the Seventh Plan (B-3); the Eleventh Plan's own foreword specifies faster and more inclusive growth (D-1). Only displayed B satisfies both independently established matches; A and C fail B-3, D fails D-1. Remaining Fifth-2 and Ninth-4 align with the printed historical objectives. Second pass reconstructed both complete lists and all four codes from original page 15.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-86",
+      "sha256": "712569063f8fd67f4216af5938305e99a4f76af7105c8c20f5ba37ce8f06ec3a",
+      "value": {
+        "id": "nda-2025-i-86",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following lines of Longitude and Latitude: 1. Prime Meridian 2. Tropic of Cancer 3. Equator Which of the above lines is/are a Great Circle?",
+        "sourceTextHash": "aa2bd96025a13d82333a0d0db999571a903c2bf885dcb94e4e7aa65552c67187",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 86,
+          "answerStatus": "quarantined",
+          "answerSource": "https://www.ncert.nic.in/pdf/announcement/otherannouncements/teachersandresearchers/social_science.pdf",
+          "rawQuestionText": "Consider the following lines of Longi- tude and Latitude: 1. Prime Meridian 2. Tropic of Cancer 3. Equator Which of the above lines is/are a Great Circle?"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 86,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following lines of Longitude and Latitude: 1. Prime Meridian 2. Tropic of Cancer 3. Equator Which of the above lines is/are a Great Circle?"
+        ],
+        "options": {
+          "A": "1, 2 and 3",
+          "B": "1 and 2 only",
+          "C": "1 and 3 only",
+          "D": "3 only"
+        },
+        "answer": "C",
+        "explanation": "The prime meridian alone joins the poles as a semicircle; with its opposite meridian it forms a great circle. Equator is a great circle and Tropic of Cancer is not. The printed wording does not distinguish the single prime meridian from the complete meridian circle, so C and D depend on convention. Retain original wording and quarantine pending the exact official Series A key or clarification.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-87",
+      "sha256": "40d02dfb4c1ea46fa3b16f6387c08d0dfdf4c42eebb22837890d706558176da5",
+      "value": {
+        "id": "nda-2025-i-87",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following is the correct ascending order of the given minerals in terms of their presence in the Earth's crust? 1. Amphibolite 2. Mica 3. Pyroxene Select the answer using the code given below:",
+        "sourceTextHash": "d1cbcd7350afa551522cdb1738206630ee928b2832301feda3687437e0442cc9",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 87,
+          "answerStatus": "quarantined",
+          "answerSource": "https://apps.usgs.gov/thesaurus/term-simple.php?code=5.8&thcode=4",
+          "rawQuestionText": "Which of the following is the correct ascending order of the given minerals in terms of their presence in the Earth's crust? 1. Amphibolite 2. Mica 3. Pyroxene Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 87,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which of the following is the correct ascending order of the given minerals in terms of their presence in the Earth's crust? 1. Amphibolite 2. Mica 3. Pyroxene Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "2, 3, 1",
+          "B": "1, 2, 3",
+          "C": "2, 1, 3",
+          "D": "1, 3, 2"
+        },
+        "answer": "C",
+        "explanation": "Original paper actually prints Amphibolite, a metamorphic rock, not the mineral amphibole. The intended mica/amphibole/pyroxene ordering cannot be applied to the printed rock/mineral mixture without silently rewriting it. Keep quarantined until official key/clarification is recovered; do not repair a source-paper error into an unlabelled new question.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-88",
+      "sha256": "41f22a7a242f7792167fbab54b9f91c06d220cb3d3b53b307cb6d7af0df996e9",
+      "value": {
+        "id": "nda-2025-i-88",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following is/are the applied forces in mechanical weathering process? 1. Gravitational force 2. Expansion force 3. Force due to water pressure Select the answer using the code given below:",
+        "sourceTextHash": "bbf3171f9c438c91380b99a2a3266968adc06594e41679701d3fe120c9b9fc1a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 88,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://ncert.nic.in/textbook/pdf/kegy205.pdf",
+          "rawQuestionText": "Which of the following is/are the applied forces in mechanical weathering process? 1. Gravitational force 2. Expansion force 3. Force due to water pressure Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 88,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Weathering & Erosional Processes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which of the following is/are the applied forces in mechanical weathering process? 1. Gravitational force 2. Expansion force 3. Force due to water pressure Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Mechanical weathering uses gravitational stresses, expansion stresses and water pressure. All three listed forces apply, so D; A, B and C each omit at least one valid force. Separate second pass matched the complete three-part list to the textbook, not just the accepted letter.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-89",
+      "sha256": "899885a974fa0b489c7521efc9513096bfee9277e1bf49bb28539723ccc9ba11",
+      "value": {
+        "id": "nda-2025-i-89",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following is/are cold ocean current/currents? 1. Alaska Current 2. North Atlantic Drift 3. West Wind Drift Select the answer using the code given below:",
+        "sourceTextHash": "dc7591f53148093c1a021879b4472657c6bf5f3c7b35e3fdf1acd3c585c35920",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 89,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://ncert.nic.in/textbook/pdf/kegy213.pdf",
+          "rawQuestionText": "Which of the following is/are cold ocean current/currents? 1. Alaska Current 2. North Atlantic Drift 3. West Wind Drift Select the answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "NCERT Figure 13.3 marks Alaska and North Atlantic Drift as warm and southern West Wind Drift as cold. Only statement 3 qualifies, so D. A/B include warm Alaska; C includes warm North Atlantic Drift. Second pass checked the map legend and each named current; this corrects the former A answer."
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "1e9a8f03e5f78e911d1e4429b55f3e362c58acc91dd61a64dc694056c5be9c00",
+            "series": "A",
+            "page": null,
+            "method": "primary-source-reasoning",
+            "reasonedAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 89,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Currents",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which of the following is/are cold ocean current/currents? 1. Alaska Current 2. North Atlantic Drift 3. West Wind Drift Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2",
+          "C": "2 and 3",
+          "D": "3 only"
+        },
+        "answer": "D",
+        "explanation": "NCERT Figure 13.3 marks Alaska and North Atlantic Drift as warm and southern West Wind Drift as cold. Only statement 3 qualifies, so D. A/B include warm Alaska; C includes warm North Atlantic Drift. Second pass checked the map legend and each named current; this corrects the former A answer.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-90",
+      "sha256": "9ad5196c3d35829c03afee2d637d98a3f07e10cdb20449a843a0721bba96fcea",
+      "value": {
+        "id": "nda-2025-i-90",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following latitudes will experience a minimum angle of the Sun's rays when it is Summer Solstice in the Northern Hemisphere?",
+        "sourceTextHash": "3a13b45bf2b951d2de4348ecabd838c7e8f7f11df244f353b8214514d27f4b96",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 90,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://ncert.nic.in/textbook/pdf/kegy208.pdf https://sos.noaa.gov/catalog/datasets/daynight-terminator-hourly/",
+          "rawQuestionText": "Which one of the following latitudes will experience a minimum angle of the Sun's rays when it is Summer Solstice in the Northern Hemisphere?"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 90,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following latitudes will experience a minimum angle of the Sun's rays when it is Summer Solstice in the Northern Hemisphere?"
+        ],
+        "options": {
+          "A": "Arctic Circle",
+          "B": "Equator",
+          "C": "Tropic of Cancer",
+          "D": "Tropic of Capricorn"
+        },
+        "answer": "D",
+        "explanation": "At northern summer solstice the Sun is overhead at 23.5 degrees N. Comparing local-noon solar elevation 90−|latitude−23.5| gives Arctic Circle 47, Equator 66.5, Cancer 90 and Capricorn 43 degrees. Capricorn is smallest: D; all other choices have higher elevation. Second pass independently recalculated all four, using the conventional local-noon interpretation of this latitude question.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-91",
+      "sha256": "69f93d2d2f346c9d771493cd87e50f74e6c0478f0ab07c8ec908dd6f4944c483",
+      "value": {
+        "id": "nda-2025-i-91",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements with reference to Coriolis force is/are correct? 1. Coriolis force acts perpendicular to the pressure gradient force 2. At the equator, the Coriolis force is zero and the wind blows perpendicular to the isobars Select the answer using the code given below:",
+        "sourceTextHash": "0c4af76883a1c51ccaeae330e86da902ac3e322430172d6804728a69cecf5e8d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 91,
+          "answerStatus": "quarantined",
+          "answerSource": "https://ncert.nic.in/textbook/pdf/kegy209.pdf https://www.weather.gov/media/zhu/ZHU_Training_Page/Met_Tutorials/Meteorological_Techniques.pdf",
+          "rawQuestionText": "Which of the following statements with reference to Coriolis force is/are correct? 1. Coriolis force acts perpendicular to the pressure gradient force 2. At the equator, the Coriolis force is zero and the wind blows perpendicular to the isobars Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 91,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Winds & Atmospheric Circulation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements with reference to Coriolis force is/are correct? 1. Coriolis force acts perpendicular to the pressure gradient force 2. At the equator, the Coriolis force is zero and the wind blows perpendicular to the isobars Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "C",
+        "explanation": "NCERT prints the same statement that Coriolis is perpendicular to pressure-gradient force, but also correctly describes their opposing balance in geostrophic wind. Meteorological force balance contradicts the general first statement (Coriolis is perpendicular to velocity). The equatorial second statement is valid in the stated idealization. Textbook C and physical B conflict; retain the source and quarantine pending the official examination decision, rather than silently choosing one.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-92",
+      "sha256": "8b35fbe3c44d65f4d6beb399f745d9ec561a242e3f13d58a67bb5bb73ea4eed0",
+      "value": {
+        "id": "nda-2025-i-92",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements with reference to Sleet is/are correct? 1. Sleet is frozen raindrops and refrozen melted snow-water 2. It occurs when a layer of air with the temperature below freezing point overlies a warm layer near the ground surface Select the answer using the code given below:",
+        "sourceTextHash": "e247431b18cf07f6d624d45f6d0ea04b5de2d0b5188315526906722f86d130c0",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 92,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://www.weather.gov/media/rah/ncema/2015_NCEMA_Winter_Wx_Final.pdf https://ncert.nic.in/textbook/pdf/kegy210.pdf",
+          "rawQuestionText": "Which of the following statements with reference to Sleet is/are correct? 1. Sleet is frozen raindrops and refrozen melted snow-water 2. It occurs when a layer of air with the temperature below freezing point overlies a warm layer near the ground surface Select the answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "Sleet is frozen rain or refrozen melted snow, making statement 1 true. It needs a melting/warm layer aloft and a subfreezing layer near the ground; statement 2 reverses that arrangement. Hence A, not B/C/D. Second pass checked the printed vertical order against NOAA's pre-exam winter-weather diagram as well as NCERT; former C corrected."
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "0ca182439927e0f3314903ade83934dd05027bc35100cec592d6442fc1455588",
+            "series": "A",
+            "page": null,
+            "method": "primary-source-reasoning",
+            "reasonedAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 92,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Rainfall & Precipitation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements with reference to Sleet is/are correct? 1. Sleet is frozen raindrops and refrozen melted snow-water 2. It occurs when a layer of air with the temperature below freezing point overlies a warm layer near the ground surface Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "A",
+        "explanation": "Sleet is frozen rain or refrozen melted snow, making statement 1 true. It needs a melting/warm layer aloft and a subfreezing layer near the ground; statement 2 reverses that arrangement. Hence A, not B/C/D. Second pass checked the printed vertical order against NOAA's pre-exam winter-weather diagram as well as NCERT; former C corrected.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-93",
+      "sha256": "7f87622e5d1b741bab3e6fd31c454a0b0c012cf960c6e0f2bf208134610c3806",
+      "value": {
+        "id": "nda-2025-i-93",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Humid Subtropical Climate is NOT experienced in which one among the following regions?",
+        "sourceTextHash": "fdc3b940c1b4000a5569d8316c151cfb059757b7de17344f672c69caa9cf9c0a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 93,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+          "rawQuestionText": "Humid Subtropical Climate is NOT experienced in which one among the following regions?"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 93,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Temperature & Insolation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Humid Subtropical Climate is NOT experienced in which one among the following regions?"
+        ],
+        "options": {
+          "A": "Coastal South Africa",
+          "B": "East coast of Australia",
+          "C": "South Japan",
+          "D": "South Argentina"
+        },
+        "answer": "D",
+        "explanation": "Humid subtropical climate includes coastal South Africa, eastern Australia and southern Japan. The Argentine occurrence is northeastern, not southern Argentina. D is the exception; A/B/C are listed occurrences. Second pass checked every location and the north/south distinction.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-104",
+      "sha256": "9bbc3941571f47a8c3d2bee5ce88101c6267eefecc213b1cb081400ae70bcfd6",
+      "value": {
+        "id": "nda-2025-i-104",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is formed when volcanic ash is carried by running water and is deposited as a sedimentary layer?",
+        "sourceTextHash": "017492ce755856d0781c818da6b6cb8a9ba4b42db2f7c03cef6c3f75111776ce",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 104,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://www.usgs.gov/publications/sedimentology-subaqueous-volcaniclastic-sediment-gravity-flows-neogene-santa-maria https://www.usgs.gov/media/audio/what-tuff",
+          "rawQuestionText": "Which one of the following is formed when volcanic ash is carried by running water and is deposited as a sedimentary layer?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Ash-rich material reworked and deposited in beds forms tuff/tuffaceous deposits: D. Basalt is solidified mafic lava; lapilli are a fragment-size class, not this consolidated bed; slate is metamorphosed fine sediment. USGS describes subaqueous bedded tuff made from remobilized ash. Second pass checked the water-reworking qualifier and all alternatives; former A corrected."
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "7269a38cff29dbcf680c6e9fc965a7d303558b61d4f306dc3b6ab4bcaaa23046",
+            "series": "A",
+            "page": null,
+            "method": "primary-source-reasoning",
+            "reasonedAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 104,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is formed when volcanic ash is carried by running water and is deposited as a sedimentary layer?"
+        ],
+        "options": {
+          "A": "Basalt",
+          "B": "Lapilli",
+          "C": "Slate",
+          "D": "Tuff"
+        },
+        "answer": "D",
+        "explanation": "Ash-rich material reworked and deposited in beds forms tuff/tuffaceous deposits: D. Basalt is solidified mafic lava; lapilli are a fragment-size class, not this consolidated bed; slate is metamorphosed fine sediment. USGS describes subaqueous bedded tuff made from remobilized ash. Second pass checked the water-reworking qualifier and all alternatives; former A corrected.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-105",
+      "sha256": "bc2afba280effab00a128cb39a8596d03c75f1a056ba8ecde9b002b5ca8dc4c2",
+      "value": {
+        "id": "nda-2025-i-105",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Condensation of water vapour into water is influenced by which of the following factor/factors? 1. Volume of air 2. Humidity 3. Temperature Select the answer using the code given below:",
+        "sourceTextHash": "fa93e6209b06e552739618af21c8e8ac3780cac978ef0c931b38dc73a1f8c9db",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 105,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://ncert.nic.in/textbook/pdf/kegy210.pdf",
+          "rawQuestionText": "Condensation of water vapour into water is influenced by which of the following factor/factors? 1. Volume of air 2. Humidity 3. Temperature Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 105,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Weather Systems & Air Masses",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Condensation of water vapour into water is influenced by which of the following factor/factors? 1. Volume of air 2. Humidity 3. Temperature Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Condensation depends on air volume, humidity and temperature. NCERT describes cooling at constant volume, volume/temperature reduction, and addition of moisture. Thus D; A/B/C are incomplete. Second pass matched each of the three factors to the independent listed conditions.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-94",
+      "sha256": "c3ff10df8b318dad927988017a3d1eadec1ac3b857c4418ff8e4c0d5f61b0750",
+      "value": {
+        "id": "nda-2025-i-94",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Mahendragiri, the highest peak of the Eastern Ghats, is located in which one of the following states?",
+        "sourceTextHash": "c743c43821e79aec141188f2684f13b7035f3288e5caed45688d7e11105833fd",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 94,
+          "answerStatus": "quarantined",
+          "answerSource": "https://gajapati.odisha.gov.in/en/tourism/tourist-places/mahendragiri https://magazines.odisha.gov.in/Orissareview/2020/Nov/engpdf/15-28.pdf",
+          "rawQuestionText": "Mahendragiri, the highest peak of the Eastern Ghats, is located in which one of the following states?"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 94,
+        "subject": "Geography",
+        "topic": "Biodiversity & Protected Areas",
+        "subtopic": "National Parks & Wildlife",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Mahendragiri, the highest peak of the Eastern Ghats, is located in which one of the following states?"
+        ],
+        "options": {
+          "A": "Andhra Pradesh",
+          "B": "Odisha",
+          "C": "Telangana",
+          "D": "Tamil Nadu"
+        },
+        "answer": "B",
+        "explanation": "Mahendragiri is in Odisha, but the printed claim that it is the highest Eastern Ghats peak is false. The district authority gives its height as 1501 m; the state account itself identifies a higher Deomali. B answers the place-name alone but does not validate the full premise. Quarantine until official key/clarification; do not present defective wording as fully verified.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-95",
+      "sha256": "40e9a901b490bee26d59436507d39c9546103476f851f51363e8851aa965c80f",
+      "value": {
+        "id": "nda-2025-i-95",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Temperate forests of South India, known as 'Sholas' are found in which of the following hills? 1. Anaimalai 2. Nilgiris 3. Palani Select the answer using the code given below",
+        "sourceTextHash": "f1ba0ecfb236b99d2519bd66e4d4197186e71634caaf29001363142628bfcd09",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 95,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://ncert.nic.in/textbook/pdf/kegy105.pdf",
+          "rawQuestionText": "Temperate forests of South India, known as 'Sholas' are found in which of the following hills? 1. Anaimalai 2. Nilgiris 3. Palani Select the answer using the code given below"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 95,
+        "subject": "Geography",
+        "topic": "Biodiversity & Protected Areas",
+        "subtopic": "National Parks & Wildlife",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Temperate forests of South India, known as 'Sholas' are found in which of the following hills? 1. Anaimalai 2. Nilgiris 3. Palani Select the answer using the code given below"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "NCERT names Nilgiris, Anaimalai and Palani hills for Sholas. Therefore all three, D; the other combinations each omit a named range. Second pass checked all three original spellings against the source paragraph.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-102",
+      "sha256": "941f97e8082401d23017042d2813e434c458c3b5b16f343c1c82243feefe1e2c",
+      "value": {
+        "id": "nda-2025-i-102",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "As per the India State of Forest Report 2021, which one of the following Himalayan states has the highest percentage of its geographical area under forest?",
+        "sourceTextHash": "6d265bf3caaf5826e8c7bb9257f5714c532229a2b1fcbcca77ba4b1e4292ec66",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 102,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://fsi.nic.in/isfr-2021/chapter-2.pdf",
+          "rawQuestionText": "As per the India State of Forest Report 2021, which one of the following Himalayan states has the highest per- centage of its geographical area under forest?"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 102,
+        "subject": "Geography",
+        "topic": "Location, States & Regional Geography",
+        "subtopic": "Location & Time Difference",
+        "difficulty": "Easy",
+        "promptLines": [
+          "As per the India State of Forest Report 2021, which one of the following Himalayan states has the highest percentage of its geographical area under forest?"
+        ],
+        "options": {
+          "A": "Arunachal Pradesh",
+          "B": "Himachal Pradesh",
+          "C": "Sikkim",
+          "D": "Uttarakhand"
+        },
+        "answer": "A",
+        "explanation": "ISFR 2021 gives forest-area percentages Arunachal 79.33, Himachal 27.73, Sikkim 47.08 and Uttarakhand 45.44. Arunachal is largest: A. Second pass compared percentages, not absolute area or forest-plus-tree cover, and used the requested 2021 report.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-96",
+      "sha256": "e236ffc385e8e694477b6e9a6931ca3bf2ed7fa1685bb6569a75aa7502a8c6a5",
+      "value": {
+        "id": "nda-2025-i-96",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "As per the Annual Report 2023-24 of the Ministry of Mines, Government of India, which of the following states are the major producer of Copper in the country?",
+        "sourceTextHash": "4dccf23aa3b95da567fb0614e094db4ec7b706cd2d52f375d32f9635fc5c2cc5",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 96,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://mines.gov.in/admin/download/66acba735b26c1722595955.pdf",
+          "rawQuestionText": "As per the Annual Report 2023-24 of the Ministry of Mines, Government of India, which of the following states are the major producer of Copper in the country?"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 96,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Ports",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "As per the Annual Report 2023-24 of the Ministry of Mines, Government of India, which of the following states are the major producer of Copper in the country?"
+        ],
+        "options": {
+          "A": "Rajasthan and Gujarat",
+          "B": "Rajasthan and Madhya Pradesh",
+          "C": "Jharkhand and Rajasthan",
+          "D": "Jharkhand and Madhya Pradesh"
+        },
+        "answer": "B",
+        "explanation": "The specified Ministry of Mines Annual Report 2023–24 paragraph 2.20 explicitly identifies Rajasthan and Madhya Pradesh as major copper producers. That is B; the other pairs substitute Gujarat or Jharkhand. Second pass distinguished production in the specified report from reserves and smelter capacity tables.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-97",
+      "sha256": "730691f05c35a198b743384a0adad1da8a57fa03bc87cb210e60331ec1f9e75b",
+      "value": {
+        "id": "nda-2025-i-97",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following is NOT a major oil field located in Gujarat?",
+        "sourceTextHash": "8d25faf8455e49a59553e983c1949c85bfe8e0a8e247025ba750b153258cd05a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 97,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://www.oil-india.com/files/compliance_reports/Moran_Jun24.pdf https://ncert.nic.in/textbook/pdf/legy205.pdf",
+          "rawQuestionText": "Which one among the following is NOT a major oil field located in Gujarat?"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 97,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Oilfields & Refineries",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following is NOT a major oil field located in Gujarat?"
+        ],
+        "options": {
+          "A": "Ankaleshwar",
+          "B": "Kosamba",
+          "C": "Mehsana",
+          "D": "Moran"
+        },
+        "answer": "D",
+        "explanation": "Moran is in Upper Assam, not Gujarat; Oil India's own historical and project records establish its location. Ankaleshwar, Kosamba and Mehsana are Gujarat fields. Therefore D is the exception, not A/B/C. Second pass checked the negative NOT and the operator's pre-exam Moran project geography.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-98",
+      "sha256": "c743a7783c64fb53f325a238b935a421ec99c80f04abba14933db902262f60e2",
+      "value": {
+        "id": "nda-2025-i-98",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "As per the Land Revenue Records, any land is categorized as Culturable Waste-Land if it is left fallow (uncultivated) for more than",
+        "sourceTextHash": "b67c542b2af234404f8d81759dbc402a21b3af4334ad1c85fb610887fde101ab",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 98,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://ncert.nic.in/textbook/pdf/legy203.pdf",
+          "rawQuestionText": "As per the Land Revenue Records, any land is categorized as Culturable Waste-Land if it is left fallow (unculti- vated) for more than"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 98,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "As per the Land Revenue Records, any land is categorized as Culturable Waste-Land if it is left fallow (uncultivated) for more than"
+        ],
+        "options": {
+          "A": "2 years",
+          "B": "3 years",
+          "C": "4 years",
+          "D": "5 years"
+        },
+        "answer": "D",
+        "explanation": "NCERT defines culturable wasteland as fallow for more than five years. Thus D, not two/three/four years. Second pass checked the adjacent current-fallow and other-fallow definitions to avoid confusing the thresholds.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-99",
+      "sha256": "86875b185ad1d6a530c42ed149a9376afc5499245d6e6afb055fea3cb26b5a7c",
+      "value": {
+        "id": "nda-2025-i-99",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following is NOT included in the National Food Security Mission Commercial Crops (NFSM-CC)?",
+        "sourceTextHash": "ed13bd362571d842ef6c9aa5e13ef1780d4a73b4dfbeb0ead6c54d3b95962121",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 99,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://nfsm.gov.in/Guidelines/NFSM12102018.pdf",
+          "rawQuestionText": "Which one among the following is NOT included in the National Food Security Mission Commercial Crops (NFSM-CC)?"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 99,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following is NOT included in the National Food Security Mission Commercial Crops (NFSM-CC)?"
+        ],
+        "options": {
+          "A": "Cotton",
+          "B": "Coffee",
+          "C": "Jute",
+          "D": "Sugar cane"
+        },
+        "answer": "B",
+        "explanation": "NFSM commercial-crop guidelines name cotton, jute and sugarcane. Coffee is not included, making B the NOT choice. A/C/D are the three explicit component crops. Second pass checked the programme's own operational guidelines, not a generic cash-crop list.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-100",
+      "sha256": "ee3d0ceda1ea4e30b8cb301a54b02b1a3e47869933fdaf8d77e2675677ee5d0e",
+      "value": {
+        "id": "nda-2025-i-100",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements with regard to a steel plant: I. It was setup in 1964 with Russian collaboration II. It receives iron ore from the Rourkela region III. Water and Hydel power is supplied by the Damodar Valley Corporation Identify the Steel Plant on the basis of the above facts:",
+        "sourceTextHash": "a2a44ef0f7dde6ce896db08b54783ff128572b5912a3db518818d8b9259845b8",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 100,
+          "answerStatus": "quarantined",
+          "answerSource": "https://sail.co.in/en/right-information-act/brief-manuals/particulars-bokaro-steel-plants-organization-functions-and",
+          "rawQuestionText": "Consider the following statements with regard to a steel plant: I. It was setup in 1964 with Russian collaboration II. It receives iron ore from the Rourkela region III. Water and Hydel power is supplied by the Damodar Valley Corporation Identify the Steel Plant on the basis of the above facts:"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 100,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Power Projects",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements with regard to a steel plant: I. It was setup in 1964 with Russian collaboration II. It receives iron ore from the Rourkela region III. Water and Hydel power is supplied by the Damodar Valley Corporation Identify the Steel Plant on the basis of the above facts:"
+        ],
+        "options": {
+          "A": "Bhilai Steel Plant",
+          "B": "Bokaro Steel Plant",
+          "C": "Rourkela Steel Plant",
+          "D": "Durgapur Steel Plant"
+        },
+        "answer": "B",
+        "explanation": "Bokaro is the intended match, and SAIL confirms company incorporation in 1964, but specifies Soviet agreement in 1965 and construction in 1968. The complete combination also makes an imprecise Rourkela-region ore claim. Insufficient primary evidence for every printed identifying fact: quarantine rather than certify the whole bundle from only one clue. Clear with the exact official key plus an explicit source-premise note, or stronger historical source evidence.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2025-i-101",
+      "sha256": "2febd50683bdc7a16ca79fb904ff5c9f90a0d6585c514e7706b41f9e847d6d07",
+      "value": {
+        "id": "nda-2025-i-101",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "An offshore terminal at Vadinar has been developed to reduce pressure from which of the following major ports in India?",
+        "sourceTextHash": "3485d315efd040b7e13ec6a9644f1bf069f915132ec725c973359b1598f92a44",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2025,
+          "paper": "I",
+          "questionNumber": 101,
+          "answerStatus": "reasoned-verified-primary-sources",
+          "answerSource": "https://sathee.iitk.ac.in/pa/sathee-ssc/student-corner/ncert-books/class-12/geography/india-people-and-economy/chapter-08-international-trade/ https://www.deendayalport.gov.in/wp-content/uploads/2023/08/EcCRZ_CB-13-16_EG-WK-4660-EC-Part-V-350-dated-14-8-23.pdf",
+          "rawQuestionText": "An offshore terminal at Vadinar has been developed to reduce pressure from which of the following major ports in India?"
+        },
+        "exam": "NDA",
+        "year": 2025,
+        "paper": "I",
+        "questionNumber": 101,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Ports",
+        "difficulty": "Easy",
+        "promptLines": [
+          "An offshore terminal at Vadinar has been developed to reduce pressure from which of the following major ports in India?"
+        ],
+        "options": {
+          "A": "Kandla Port",
+          "B": "Cochin Port",
+          "C": "Mormugao Port",
+          "D": "New Mangalore Port"
+        },
+        "answer": "A",
+        "explanation": "The offshore Vadinar terminal relieves Kandla. The NCERT chapter hosted by IIT Kanpur states the relationship directly, and the port authority identifies Vadinar as its offshore oil facility. Cochin, Mormugao and New Mangalore are unrelated alternatives. Second pass checked terminal versus main-port names.",
+        "requiresFigure": false
+      }
+    }
+  ],
+  "sourceInputs": {
+    "scripts/nda-2025-i-english-transcription.mjs": "d00a41c62dd9dc573d85df7b9910e0ed98ba00210a3c9e0eba597433de25d8bb",
+    "scripts/nda-2025-i-part-b-transcription.mjs": "a40a859e7f3869605752578de0864cdaae10bcb5243f7e49bc91e6999a1ad614",
+    "scripts/nda-2025-i-classification.mjs": "5db1ae650390091f58e71520caba09d568ac6b3714cf4c671e77e26b3df8cf0c"
+  },
+  "searchLog": [
+    {
+      "url": "https://www.upsc.gov.in/examinations/answer-key",
+      "result": "Current listing returned no NDA key."
+    },
+    {
+      "url": "https://www.upsc.gov.in/examinations/answer-key/archives",
+      "result": "Archive returned only CISF 2026; NDA I 2025 key not recovered. This does not prove nonpublication."
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-131025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDANA-I-2025-GAT-131025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDANA-I-2025-GAT-141025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-141025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDANA-I-2025-GAT-161025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-161025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-151025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDANA-I-2025-GAT-151025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-281025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-171025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDANA-I-2025-GAT-281025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDANA-I-2025-GAT-171025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-141025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-131025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-131025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/Anskey-NDA-NA-I-2025-GAT-131025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-161025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-151025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-161025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-I-2025-GAT-131025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-201025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-301025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-281025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-I-2025-GAT-141025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-281025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-211025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://web.archive.org/cdx/search/cdx?url=upsc.gov.in%2Fsites%2Fdefault%2Ffiles%2F%2A2025%2AGAT%2A&output=json&filter=statuscode%3A200&collapse=urlkey",
+      "result": "PowerShell response [] for this hostname pattern; no matching archived key recovered."
+    },
+    {
+      "url": "https://prepp.in/nda-exam/answer-key",
+      "result": "NDA I 2025 linked key is explicitly Centurion Defence Academy; not official authority."
+    },
+    {
+      "url": "https://adhyyan.co.in/wp-content/uploads/2025/11/NDA-1-2025-GAT-A.pdf",
+      "result": "Coaching-branded GAT key. Article calls it official, but PDF has no UPSC final-key authentication; not promoted."
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-221025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-101025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-101025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-221025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-231025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-241025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-241025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-231025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-271025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-291025.pdf",
+      "status": 200,
+      "type": "application/pdf",
+      "sha256": "115854bdc3436903717b3f7cc87b9786aad3d840280e3af30b965b5231872c88"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-291025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-271025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-311025.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-031125.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-311025.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-031125.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-051125.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-041125.pdf",
+      "status": 500,
+      "type": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2025-GAT-051125.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2025-GAT-041125.pdf",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    }
+  ]
+}

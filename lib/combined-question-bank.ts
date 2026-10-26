@@ -6,6 +6,7 @@ import materialSourceRepairs from '../content/prelims-material-source-repairs.js
 import officialNdaPaper from '../content/nda-2026-i-official-paper.json' with { type: 'json' };
 import officialNdaIIPaper from '../content/nda-2026-ii-official-paper.json' with { type: 'json' };
 import officialNda2025IIPaper from '../content/nda-2025-ii-official-paper.json' with { type: 'json' };
+import officialNda2025IPaper from '../content/nda-2025-i-official-paper.json' with { type: 'json' };
 import {prelimsPath,reviewedPrelimsPlacements,PRELIMS_TAXONOMY_VERSION} from './prelims-taxonomy.ts';
 
 const cleared = new Set(['official-final', 'official-provisional', 'reasoned-verified']);
@@ -39,7 +40,7 @@ const reviewedBaseQuestions=legacyQuestions.map(question=>{
 });
 // Approved official-key overlay: raw imports, historical IDs and old snapshots
 // remain immutable. The build validates all 63 expected pre-change hashes.
-const officialQuestions=[...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions];
+const officialQuestions=[...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions];
 const officialById=new Map(officialQuestions.map(q=>[q.id,q]));
 const priorIds=new Set(reviewedBaseQuestions.map(q=>q.id));
 export const combinedQuestions=[...reviewedBaseQuestions.map(question=>{
