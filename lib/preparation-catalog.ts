@@ -21,7 +21,30 @@ const approved = new Set((applicability.approvedScienceTransfers as Transfer[])
 /** Question membership, counts and server eligibility all come from this same projection.
  * Source-exam facts and answer/content revisions are never rewritten by a target view.
  */
+// Only static, reviewed build inputs enter this bounded cache: no request/user data.
+// A new deployment/module instance naturally invalidates all three entries.
+const inventoryCache = new Map<PreparationExam, PreparationInventory>();
+function freezeInventory<T>(value:T):T {
+  if(value && typeof value==='object' && !Object.isFrozen(value)) {
+    for(const child of Object.values(value))freezeInventory(child);
+    Object.freeze(value);
+  }
+  return value;
+}
 export function getPreparationInventory(target: PreparationExam): PreparationInventory {
+  const cached=inventoryCache.get(target);
+  if(cached)return cached;
+  const inventory=freezeInventory(buildPreparationInventory(target));
+  inventoryCache.set(target,inventory);
+  return inventory;
+}
+
+/** Explorer does not consume graph edges. Preserve the full API contract separately. */
+export function getPreparationExplorerInventory(target:PreparationExam):PreparationInventory {
+  return {...getPreparationInventory(target),links:[]};
+}
+
+function buildPreparationInventory(target: PreparationExam): PreparationInventory {
   const base = getSubjectPracticeInventory();
   const scienceIds = new Set(base.nodes.filter(n => n.subjectId === 'subject:science' && n.kind === 'subtopic')
     .flatMap(n => exams.flatMap(exam => n.questionIdsByExam?.[exam] || [])));

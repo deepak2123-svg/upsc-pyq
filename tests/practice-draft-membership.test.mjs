@@ -15,6 +15,8 @@ test('unchanged saved memberships retain source choices including zero-source pa
   const inventory=catalogue(),index=buildSelectionIndex(inventory),paths={leaf:[]};
   const saved=freezeSelectionMembership(paths,index);
   const restored=restoreFrozenSelection(inventory,paths,saved);
+  assert.equal(restored.inventory,inventory,'unchanged restoration reuses the immutable inventory');
+  assert.equal(buildSelectionIndex(restored.inventory),index,'panels and restoration share one index');
   assert.deepEqual(restored.paths,paths);
   assert.equal(restored.inventory.nodes.length,inventory.nodes.length);
   assert.deepEqual(saved[0].questionIdsByExam.CAPF,['capf']);

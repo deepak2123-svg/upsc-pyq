@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, useTransition, type CSSProperties } from "react";
 import { useRouter } from "next/navigation";
 import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
 import type { SubjectPracticeInventory } from "../../lib/pyq-catalog";
@@ -65,6 +65,9 @@ function PracticeSetupDialog({ matchingCount, examMetrics, count, order, duratio
 
 export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInventory: SubjectPracticeInventory & { preparationExam?: PreparationExam; preparationViews?: PreparationView[] }; initialExam?: PyqExam }) {
   const router = useRouter();
+  const [switching, startExamTransition] = useTransition();
+  const [requestedExam,setRequestedExam] = useState<PreparationExam>();
+  const prefetchedExams=useRef(new Set<PreparationExam>());
   const preparationExam = initialInventory.preparationExam;
   const views = initialInventory.preparationViews;
   const defaultView = views?.find(view => ['nda-gs', 'cds-gk', 'cse-gs'].includes(view.id))?.id;
@@ -93,6 +96,19 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const libraryDrawer = useRef<HTMLDivElement>(null);
   const testDrawer = useRef<HTMLElement>(null);
   const draftKey = preparationExam ? preparationDraftKey(preparationExam) : "upsc-pyq-builder:v3:" + (initialExam || "all");
+  const prefetchExam=useCallback((exam:PreparationExam)=>{
+    const connection=(navigator as Navigator & {connection?:{saveData?:boolean;effectiveType?:string}}).connection;
+    if(connection?.saveData||['slow-2g','2g'].includes(connection?.effectiveType||''))return;
+    if(exam===preparationExam||prefetchedExams.current.has(exam))return;
+    prefetchedExams.current.add(exam);
+    router.prefetch(`/prepare/${exam}`);
+  },[preparationExam,router]);
+  useEffect(()=>{
+    if(!restored||!preparationExam)return;
+    const timers=(["NDA","CDS","CSE"] as PreparationExam[]).filter(exam=>exam!==preparationExam)
+      .map((exam,i)=>window.setTimeout(()=>prefetchExam(exam),1200+i*1200));
+    return()=>timers.forEach(timer=>window.clearTimeout(timer));
+  },[restored,preparationExam,prefetchExam]);
   useEffect(() => {
     if (!syllabusOpen && !testPanelOpen) return;
     const panel = syllabusOpen ? libraryDrawer.current : testDrawer.current;
@@ -186,11 +202,12 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     window.addEventListener("popstate", restoreLocation);
     return () => window.removeEventListener("popstate", restoreLocation);
   }, [restored, draftKey, baseIndex, focusId, views]);
+  const frozenMembership=useMemo(()=>freezeSelectionMembership(paths,index),[paths,index]);
   useEffect(() => {
     if (!restored) return;
     const minutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
-    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 6, viewId, inventoryVersion: initialInventory.version, taxonomyVersion:initialInventory.taxonomyVersion, frozenScopes:freezeSelectionMembership(paths,index), paths, focusId, expandedIds, enabledExams, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
-  }, [restored, draftKey, viewId, initialInventory.version, initialInventory.taxonomyVersion, index, paths, focusId, expandedIds, enabledExams, count, order, durationChoice, customMinutes]);
+    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 6, viewId, inventoryVersion: initialInventory.version, taxonomyVersion:initialInventory.taxonomyVersion, frozenScopes:frozenMembership, paths, focusId, expandedIds, enabledExams, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
+  }, [restored, draftKey, viewId, initialInventory.version, initialInventory.taxonomyVersion, frozenMembership, paths, focusId, expandedIds, enabledExams, count, order, durationChoice, customMinutes]);
   const totals = useMemo(() => selectionCounts(paths, index), [paths, index]);
   const selectedIds = useMemo(() => selectedScopeIds(paths, index), [paths, index]);
   const current = focusId ? index.nodesById.get(focusId) : undefined;
@@ -330,8 +347,8 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       setError(reason instanceof Error ? reason.message : "The PDF could not be prepared. Please try again.");
     } finally { setExporting(false); }
   }
-  return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading}>
-    <PreparationSelector exam={preparationExam} views={views} activeView={activeView} disabled={!restored || loading || exporting} onExam={exam=>router.push(`/prepare/${exam}`)} onView={changeView}/>
+  return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading||switching}>
+    <PreparationSelector exam={preparationExam} views={views} activeView={activeView} pendingExam={switching?requestedExam:undefined} onPrefetchExam={prefetchExam} disabled={!restored || loading || exporting || switching} onExam={exam=>{setRequestedExam(exam);startExamTransition(()=>router.push(`/prepare/${exam}`));}} onView={changeView}/>
     <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{preparationExam ? `${preparationExam} question library` : initialExam ? `${initialExam} question library` : "Question library"}</h1></div></header>
     <div className={`scope-library-layout explorer-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
       <h2 className="library-column-label library-column-label-left">Library</h2>

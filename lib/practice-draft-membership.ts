@@ -85,7 +85,8 @@ export function restoreFrozenSelection(inventory:SubjectPracticeInventory,rawPat
     paths[id]=exams.filter(exam=>(sources.includes(exam)||paths[id]?.includes(exam))&&questionIdsByExam[exam].length>0);
   }
   if(Object.keys(rawPaths).some(id=>!scopes.some(scope=>scope.id===id)))throw new Error('Saved selection is missing its exact question membership.');
-  return {inventory:{...inventory,nodes:nextNodes},paths,removedCount};
+  const unchanged=nextNodes.length===inventory.nodes.length&&nextNodes.every((node,i)=>node===inventory.nodes[i]);
+  return {inventory:unchanged?inventory:{...inventory,nodes:nextNodes},paths,removedCount};
 }
 
 /** An explicit Add remaining/parent replaces redundant saved subsets, not a second item. */

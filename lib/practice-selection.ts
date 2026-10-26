@@ -37,7 +37,10 @@ const copyPaths = (paths: SelectionPaths): SelectionPaths =>
   Object.fromEntries(Object.entries(paths).map(([id, exams]) => [id, [...exams]]));
 
 /** Build one ordered, ancestry-safe lookup shared by the selector and chart. */
+const selectionIndexes = new WeakMap<SubjectPracticeInventory, SelectionIndex>();
 export function buildSelectionIndex(inventory: SubjectPracticeInventory): SelectionIndex {
+  const cached=selectionIndexes.get(inventory);
+  if(cached)return cached;
   const nodesById = new Map<string, ScopeNode>();
   const childrenById = new Map<string, ScopeNode[]>();
   const leavesById = new Map<string, PracticeInventoryNode[]>();
@@ -80,7 +83,9 @@ export function buildSelectionIndex(inventory: SubjectPracticeInventory): Select
     return leaves;
   }
   for (const id of nodesById.keys()) descend(id);
-  return { nodesById, childrenById, leavesById };
+  const index={ nodesById, childrenById, leavesById };
+  selectionIndexes.set(inventory,index);
+  return index;
 }
 
 /** Exam entry pages never fall back to another examination. */

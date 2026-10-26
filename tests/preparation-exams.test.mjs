@@ -10,6 +10,18 @@ async function fetchApp(path, body) {
 async function inventory(target) { return (await fetchApp(`/api/pyqs/inventory?preparationExam=${target}`)).json(); }
 const sources = ['CSE', 'CAPF', 'CDS', 'NDA'];
 
+test('lean explorer omits graph edges without changing the public inventory contract',async()=>{
+ const full=await inventory('NDA');
+ assert.equal(full.links.length,full.nodes.length);
+ const response=await fetchApp('/prepare/NDA.rsc');
+ assert.equal(response.status,200);
+ const text=await response.text();
+ assert.ok(text.includes('"links":[]'));
+ assert.ok(Buffer.byteLength(text)<800000,'explorer payload must stay below its old 1.06 MB size');
+ const repeat=await inventory('NDA');
+ assert.deepEqual(repeat,full,'rendering must not mutate cached eligibility or membership');
+});
+
 test('NDA Science has detailed section-local chapters with immutable concept membership',async()=>{
  const nda=await inventory('NDA');
  for(const [label,count] of [['Physics',18],['Chemistry',12],['Biology',17]]){
