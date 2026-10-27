@@ -10,7 +10,8 @@ mean complete. The source register currently inventories 25 local PDFs.
 | 1 | NDA II 2026 | Complete and live verified; 150/150 scored, official provisional key |
 | 2 | NDA II 2025 | Complete and live verified; 149/150 scored, official final key; Q85 officially withdrawn; release `317a96c` |
 | 3 | NDA I 2025 | Complete and live verified; 150/150 scored with official final key; release `c8112cb` |
-| 4–5 | NDA II, I 2024 | Queued individually |
+| 4 | NDA II 2024 | 27 October 2026: source/answer/classification review complete for all 150; 136 reasoned-verified, 14 quarantined. No authenticated official key recovered. 116 newly eligible + 20 reused eligible. Release checks in `nda-2024-ii-release.md`; do not advance before production verification. |
+| 5 | NDA I 2024 | Queued |
 | 6–7 | NDA II, I 2023 | Queued individually |
 | 8–9 | NDA II, I 2022 | Queued individually |
 | 10–11 | NDA II, I 2021 | Queued individually |

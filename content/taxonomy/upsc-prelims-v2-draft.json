@@ -2521,7 +2521,8 @@
         "Drain of wealth",
         "Economic critics of colonialism",
         "Transport and communications",
-        "Famine policies"
+        "Famine policies",
+        "Modern industries"
       ],
       "boundary": "Questions testing Colonial Economy in Modern India & National Movement; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -2642,6 +2643,27 @@
       ],
       "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
       "editorialExampleStatus": "pending-real-question-pilot"
+    },
+    {
+      "id": "syllabus:history/modern-india-national-movement/colonial-economy/modern-industries",
+      "parentId": "syllabus:history/modern-india-national-movement/colonial-economy",
+      "kind": "subpart",
+      "label": "Modern industries",
+      "order": 8,
+      "includes": [
+        "Founding and development of modern mills under colonial rule",
+        "Indian industrial entrepreneurs and early factory enterprises"
+      ],
+      "excludes": [
+        "Decline of handicrafts without a modern-enterprise question",
+        "Post-independence industrial policy",
+        "An incidental business name in a nonhistorical question"
+      ],
+      "placementRule": "Use for the history of modern manufacturing enterprises and their founders during colonial rule; do not place factory founding under Deindustrialisation merely because both concern industry.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA II 2024 GAT Series A Q100: founder of the Bombay cotton mill"
+      ]
     },
     {
       "id": "syllabus:history/modern-india-national-movement/social-and-religious-reform",

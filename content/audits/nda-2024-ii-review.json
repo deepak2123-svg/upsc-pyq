@@ -1,0 +1,3677 @@
+{
+  "paperId": "nda-2024-ii-gat",
+  "sourceRegister": "content/audits/nda-2024-ii-paper-register.json",
+  "reconciliation": {
+    "expected": 150,
+    "newSourceOccurrences": 128,
+    "reusedSourceOccurrences": 22,
+    "duplicateAliases": 0,
+    "answerReviewed": 150,
+    "dispositions": {
+      "official-final": 0,
+      "official-provisional": 0,
+      "reasoned-verified": 136,
+      "withdrawn": 0,
+      "duplicate": 0,
+      "quarantined": 14
+    },
+    "eligible": 136,
+    "newlyImportedEligible": 116,
+    "reusedEligible": 20,
+    "sectionTotals": {
+      "english": 46,
+      "science": 43,
+      "gs": 47
+    },
+    "quarantinedNumbers": [
+      16,
+      21,
+      23,
+      24,
+      51,
+      58,
+      68,
+      70,
+      110,
+      117,
+      123,
+      125,
+      139,
+      144
+    ]
+  },
+  "questionSlots": [
+    {
+      "number": 1,
+      "canonicalQuestionId": "nda-2024-ii-1",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#1",
+      "classification": {
+        "primary": "English/Vocabulary/Word meanings/Antonyms",
+        "additional": [],
+        "rationale": "Requires an opposite meaning for the explicitly underlined word; sentence subject matter does not justify a GS placement.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 2,
+      "canonicalQuestionId": "nda-2024-ii-2",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#2",
+      "classification": {
+        "primary": "English/Vocabulary/Word meanings/Antonyms",
+        "additional": [],
+        "rationale": "Requires an opposite meaning for the explicitly underlined word; sentence subject matter does not justify a GS placement.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 3,
+      "canonicalQuestionId": "nda-2024-ii-3",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#3",
+      "classification": {
+        "primary": "English/Vocabulary/Word meanings/Antonyms",
+        "additional": [],
+        "rationale": "Requires an opposite meaning for the explicitly underlined word; sentence subject matter does not justify a GS placement.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 4,
+      "canonicalQuestionId": "nda-2024-ii-4",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#4",
+      "classification": {
+        "primary": "English/Vocabulary/Word meanings/Antonyms",
+        "additional": [],
+        "rationale": "Requires an opposite meaning for the explicitly underlined word; sentence subject matter does not justify a GS placement.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 5,
+      "canonicalQuestionId": "nda-2024-ii-5",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#5",
+      "classification": {
+        "primary": "English/Vocabulary/Word meanings/Antonyms",
+        "additional": [],
+        "rationale": "Requires an opposite meaning for the explicitly underlined word; sentence subject matter does not justify a GS placement.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 6,
+      "canonicalQuestionId": "nda-2024-ii-6",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#6",
+      "classification": {
+        "primary": "English/Comprehension/Cloze passages/Vocabulary in context",
+        "additional": [],
+        "rationale": "Selects the word or connective fitting the complete agricultural selection passage.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2,
+        3
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 7,
+      "canonicalQuestionId": "nda-2024-ii-7",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#7",
+      "classification": {
+        "primary": "English/Comprehension/Cloze passages/Grammar in context",
+        "additional": [],
+        "rationale": "Tests determiner, agreement/passive, conjunction or relative-clause grammar in the shared passage.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2,
+        3
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 8,
+      "canonicalQuestionId": "nda-2024-ii-8",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#8",
+      "classification": {
+        "primary": "English/Comprehension/Cloze passages/Grammar in context",
+        "additional": [],
+        "rationale": "Tests determiner, agreement/passive, conjunction or relative-clause grammar in the shared passage.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2,
+        3
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 9,
+      "canonicalQuestionId": "nda-2024-ii-9",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#9",
+      "classification": {
+        "primary": "English/Comprehension/Cloze passages/Vocabulary in context",
+        "additional": [],
+        "rationale": "Selects the word or connective fitting the complete agricultural selection passage.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2,
+        3
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 10,
+      "canonicalQuestionId": "nda-2024-ii-10",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#10",
+      "classification": {
+        "primary": "English/Comprehension/Cloze passages/Vocabulary in context",
+        "additional": [],
+        "rationale": "Selects the word or connective fitting the complete agricultural selection passage.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2,
+        3
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 11,
+      "canonicalQuestionId": "nda-2024-ii-11",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#11",
+      "classification": {
+        "primary": "English/Comprehension/Cloze passages/Grammar in context",
+        "additional": [],
+        "rationale": "Tests determiner, agreement/passive, conjunction or relative-clause grammar in the shared passage.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2,
+        3
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 12,
+      "canonicalQuestionId": "nda-2024-ii-12",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#12",
+      "classification": {
+        "primary": "English/Comprehension/Cloze passages/Vocabulary in context",
+        "additional": [],
+        "rationale": "Selects the word or connective fitting the complete agricultural selection passage.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2,
+        3
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 13,
+      "canonicalQuestionId": "nda-2024-ii-13",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#13",
+      "classification": {
+        "primary": "English/Comprehension/Cloze passages/Grammar in context",
+        "additional": [],
+        "rationale": "Tests determiner, agreement/passive, conjunction or relative-clause grammar in the shared passage.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2,
+        3
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 14,
+      "canonicalQuestionId": "nda-2024-ii-14",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#14",
+      "classification": {
+        "primary": "English/Comprehension/Cloze passages/Grammar in context",
+        "additional": [],
+        "rationale": "Tests determiner, agreement/passive, conjunction or relative-clause grammar in the shared passage.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2,
+        3
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 15,
+      "canonicalQuestionId": "nda-2024-ii-15",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#15",
+      "classification": {
+        "primary": "English/Comprehension/Cloze passages/Vocabulary in context",
+        "additional": [],
+        "rationale": "Selects the word or connective fitting the complete agricultural selection passage.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        2,
+        3
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 16,
+      "canonicalQuestionId": "nda-2024-ii-16",
+      "accountingAction": "new",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#16",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
+        "additional": [],
+        "rationale": "Chooses a grammatical continuation from the four complete alternatives, not a historical or scientific fact mentioned in a sentence.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        4
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 17,
+      "canonicalQuestionId": "nda-2024-ii-17",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#17",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
+        "additional": [],
+        "rationale": "Chooses a grammatical continuation from the four complete alternatives, not a historical or scientific fact mentioned in a sentence.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        4
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 18,
+      "canonicalQuestionId": "nda-2024-ii-18",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#18",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
+        "additional": [],
+        "rationale": "Chooses a grammatical continuation from the four complete alternatives, not a historical or scientific fact mentioned in a sentence.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        4
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 19,
+      "canonicalQuestionId": "nda-2024-ii-19",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#19",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
+        "additional": [],
+        "rationale": "Chooses a grammatical continuation from the four complete alternatives, not a historical or scientific fact mentioned in a sentence.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        4
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 20,
+      "canonicalQuestionId": "nda-2024-ii-20",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#20",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
+        "additional": [],
+        "rationale": "Chooses a grammatical continuation from the four complete alternatives, not a historical or scientific fact mentioned in a sentence.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        4
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 21,
+      "canonicalQuestionId": "nda-2024-ii-21",
+      "accountingAction": "new",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#21",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
+        "additional": [],
+        "rationale": "Chooses a grammatical continuation from the four complete alternatives, not a historical or scientific fact mentioned in a sentence.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        4
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 22,
+      "canonicalQuestionId": "nda-2024-ii-22",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#22",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
+        "additional": [],
+        "rationale": "Chooses a grammatical continuation from the four complete alternatives, not a historical or scientific fact mentioned in a sentence.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        4
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 23,
+      "canonicalQuestionId": "nda-2024-ii-23",
+      "accountingAction": "new",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#23",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
+        "additional": [],
+        "rationale": "Chooses a grammatical continuation from the four complete alternatives, not a historical or scientific fact mentioned in a sentence.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        4
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 24,
+      "canonicalQuestionId": "nda-2024-ii-24",
+      "accountingAction": "new",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#24",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
+        "additional": [],
+        "rationale": "Chooses a grammatical continuation from the four complete alternatives, not a historical or scientific fact mentioned in a sentence.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        4
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 25,
+      "canonicalQuestionId": "nda-2024-ii-25",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#25",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
+        "additional": [],
+        "rationale": "Chooses a grammatical continuation from the four complete alternatives, not a historical or scientific fact mentioned in a sentence.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        4
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 26,
+      "canonicalQuestionId": "nda-2024-ii-26",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#26",
+      "classification": {
+        "primary": "English/Vocabulary/Expressions/Idioms and phrases",
+        "additional": [],
+        "rationale": "Tests the conventional figurative meaning of the printed idiom.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        5
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 27,
+      "canonicalQuestionId": "nda-2024-ii-27",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#27",
+      "classification": {
+        "primary": "English/Vocabulary/Expressions/Idioms and phrases",
+        "additional": [],
+        "rationale": "Tests the conventional figurative meaning of the printed idiom.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        5
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 28,
+      "canonicalQuestionId": "nda-2024-ii-28",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#28",
+      "classification": {
+        "primary": "English/Vocabulary/Expressions/Idioms and phrases",
+        "additional": [],
+        "rationale": "Tests the conventional figurative meaning of the printed idiom.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        5
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 29,
+      "canonicalQuestionId": "nda-2024-ii-29",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#29",
+      "classification": {
+        "primary": "English/Vocabulary/Expressions/Idioms and phrases",
+        "additional": [],
+        "rationale": "Tests the conventional figurative meaning of the printed idiom.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        5
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 30,
+      "canonicalQuestionId": "cds-2024-2024-2-30",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#30",
+      "classification": {
+        "primary": "English/Vocabulary/Expressions/Idioms and phrases",
+        "additional": [],
+        "rationale": "Tests the conventional figurative meaning of the printed idiom.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        5
+      ],
+      "expectedBeforeRecordHash": "0e8edd863ff81c1c12504a45c58a159b2f3786e891eaf53047ca439c1fe2475e",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 4,
+        "contentRevision": 1,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 31,
+      "canonicalQuestionId": "nda-2024-ii-31",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#31",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Ordering words",
+        "additional": [],
+        "rationale": "Reorders the four labelled P/Q/R/S parts of a single sentence; factual subject matter is incidental.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        5
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 32,
+      "canonicalQuestionId": "nda-2024-ii-32",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#32",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Ordering words",
+        "additional": [],
+        "rationale": "Reorders the four labelled P/Q/R/S parts of a single sentence; factual subject matter is incidental.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        6
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 33,
+      "canonicalQuestionId": "nda-2024-ii-33",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#33",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Ordering words",
+        "additional": [],
+        "rationale": "Reorders the four labelled P/Q/R/S parts of a single sentence; factual subject matter is incidental.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        6
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 34,
+      "canonicalQuestionId": "nda-2024-ii-34",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#34",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Ordering words",
+        "additional": [],
+        "rationale": "Reorders the four labelled P/Q/R/S parts of a single sentence; factual subject matter is incidental.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        6
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 35,
+      "canonicalQuestionId": "nda-2024-ii-35",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#35",
+      "classification": {
+        "primary": "English/Usage and Sentence Skills/Sentence organisation/Ordering words",
+        "additional": [],
+        "rationale": "Reorders the four labelled P/Q/R/S parts of a single sentence; factual subject matter is incidental.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        6
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 36,
+      "canonicalQuestionId": "nda-2024-ii-36",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#36",
+      "classification": {
+        "primary": "English/Grammar/Parts of speech/Nouns and pronouns",
+        "additional": [],
+        "rationale": "Classifies the underlined lexical item in its printed syntactic context.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        7
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 37,
+      "canonicalQuestionId": "nda-2024-ii-37",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#37",
+      "classification": {
+        "primary": "English/Grammar/Parts of speech/Prepositions and conjunctions",
+        "additional": [],
+        "rationale": "Tests since as printed with its following clause; official-key disagreement must remain separate from classification.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        7
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 38,
+      "canonicalQuestionId": "nda-2024-ii-38",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#38",
+      "classification": {
+        "primary": "English/Grammar/Parts of speech/Adjectives and adverbs",
+        "additional": [],
+        "rationale": "Classifies the underlined temporal word now.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        7
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 39,
+      "canonicalQuestionId": "nda-2024-ii-39",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#39",
+      "classification": {
+        "primary": "English/Grammar/Parts of speech/Articles and determiners",
+        "additional": [],
+        "rationale": "Classifies demonstrative that modifying man.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        7
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 40,
+      "canonicalQuestionId": "nda-2024-ii-40",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#40",
+      "classification": {
+        "primary": "English/Grammar/Parts of speech/Nouns and pronouns",
+        "additional": [],
+        "rationale": "Classifies the underlined lexical item in its printed syntactic context.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        7
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 41,
+      "canonicalQuestionId": "nda-2024-ii-41",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#41",
+      "classification": {
+        "primary": "English/Comprehension/Reading passages/Explicit information",
+        "additional": [],
+        "rationale": "Answers from the shared globalisation-of-disease passage, not external medical knowledge.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        7,
+        8
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 42,
+      "canonicalQuestionId": "nda-2024-ii-42",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#42",
+      "classification": {
+        "primary": "English/Comprehension/Reading passages/Explicit information",
+        "additional": [],
+        "rationale": "Answers from the shared globalisation-of-disease passage, not external medical knowledge.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        7,
+        8
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 43,
+      "canonicalQuestionId": "nda-2024-ii-43",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#43",
+      "classification": {
+        "primary": "English/Comprehension/Reading passages/Explicit information",
+        "additional": [],
+        "rationale": "Answers from the shared globalisation-of-disease passage, not external medical knowledge.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        7,
+        8
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 44,
+      "canonicalQuestionId": "nda-2024-ii-44",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#44",
+      "classification": {
+        "primary": "English/Comprehension/Reading passages/Explicit information",
+        "additional": [],
+        "rationale": "Answers from the shared globalisation-of-disease passage, not external medical knowledge.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        7,
+        8
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 45,
+      "canonicalQuestionId": "nda-2024-ii-45",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#45",
+      "classification": {
+        "primary": "English/Comprehension/Reading passages/Vocabulary in passages",
+        "additional": [],
+        "rationale": "Interprets epidemiology in the passage context.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        7,
+        8
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 46,
+      "canonicalQuestionId": "nda-2024-ii-46",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#46",
+      "classification": {
+        "primary": "English/Vocabulary/Word meanings/Synonyms",
+        "additional": [],
+        "rationale": "Selects the nearest meaning of the source-underlined expression.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        9
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 47,
+      "canonicalQuestionId": "nda-2024-ii-47",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#47",
+      "classification": {
+        "primary": "English/Vocabulary/Word meanings/Synonyms",
+        "additional": [],
+        "rationale": "Selects the nearest meaning of the source-underlined expression.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        9
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 48,
+      "canonicalQuestionId": "nda-2024-ii-48",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#48",
+      "classification": {
+        "primary": "English/Vocabulary/Word meanings/Synonyms",
+        "additional": [],
+        "rationale": "Selects the nearest meaning of the source-underlined expression.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        9
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 49,
+      "canonicalQuestionId": "nda-2024-ii-49",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#49",
+      "classification": {
+        "primary": "English/Vocabulary/Word meanings/Synonyms",
+        "additional": [],
+        "rationale": "Selects the nearest meaning of the source-underlined expression.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        9
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 50,
+      "canonicalQuestionId": "nda-2024-ii-50",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#50",
+      "classification": {
+        "primary": "English/Vocabulary/Word meanings/Synonyms",
+        "additional": [],
+        "rationale": "Selects the nearest meaning of the source-underlined expression.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        9
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "english"
+      }
+    },
+    {
+      "number": 51,
+      "canonicalQuestionId": "nda-2024-ii-51",
+      "accountingAction": "new",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#51",
+      "classification": {
+        "primary": "Science & Technology/Biology/Cell and Genetics/Cell structure",
+        "additional": [],
+        "rationale": "Tests lysosomal functions or organelles retaining their own genetic material.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        11
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 52,
+      "canonicalQuestionId": "nda-2024-ii-52",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#52",
+      "classification": {
+        "primary": "Science & Technology/Biology/Cell and Genetics/Cell structure",
+        "additional": [],
+        "rationale": "Tests lysosomal functions or organelles retaining their own genetic material.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        11
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 53,
+      "canonicalQuestionId": "nda-2024-ii-53",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#53",
+      "classification": {
+        "primary": "Science & Technology/Biology/Human Physiology/Muscles and movement",
+        "additional": [],
+        "rationale": "Distinguishes ligaments joining bones and anatomical locations of cartilage.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        11
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 54,
+      "canonicalQuestionId": "nda-2024-ii-54",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#54",
+      "classification": {
+        "primary": "Science & Technology/Biology/Cell and Genetics/Biomolecules",
+        "additional": [],
+        "rationale": "Identifies ATP as the cellular energy carrier.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        11
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 55,
+      "canonicalQuestionId": "nda-2024-ii-55",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#55",
+      "classification": {
+        "primary": "Science & Technology/Biology/Plants and Microorganisms/Plant propagation",
+        "additional": [],
+        "rationale": "Identifies eye-bud vegetative propagation in potato.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        11
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 56,
+      "canonicalQuestionId": "nda-2024-ii-56",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#56",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Matter and Reactions/Atomic and molecular structure",
+        "additional": [],
+        "rationale": "Tests spontaneous particle intermixing (diffusion), not bulk conductance.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        11
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 57,
+      "canonicalQuestionId": "nda-2024-ii-57",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#57",
+      "classification": {
+        "primary": "Science & Technology/Health & Biotechnology/Medical Technologies/Diagnostics",
+        "additional": [],
+        "rationale": "Identifies centrifugation as the laboratory separation technique used for blood testing.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        11
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 58,
+      "canonicalQuestionId": "nda-2024-ii-58",
+      "accountingAction": "new",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#58",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Matter and Reactions/Atomic and molecular structure",
+        "additional": [],
+        "rationale": "Tests molecular atomicity, mole mass, shell capacity or atomic composition; each full alternative set was read.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        13
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 59,
+      "canonicalQuestionId": "nda-2024-ii-59",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#59",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Matter and Reactions/Chemical bonding",
+        "additional": [],
+        "rationale": "Tests ionic charge or elemental valency, rather than an industrial application.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        13
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 60,
+      "canonicalQuestionId": "nda-2024-ii-60",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#60",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Matter and Reactions/Atomic and molecular structure",
+        "additional": [],
+        "rationale": "Tests molecular atomicity, mole mass, shell capacity or atomic composition; each full alternative set was read.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        13
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 61,
+      "canonicalQuestionId": "nda-2024-ii-61",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#61",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Matter and Reactions/Reaction types",
+        "additional": [],
+        "rationale": "Distinguishes photodecomposition, oxidation or a chemical reaction from physical changes.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        13
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 62,
+      "canonicalQuestionId": "nda-2024-ii-62",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#62",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Materials and Applications/Everyday chemicals",
+        "additional": [],
+        "rationale": "Tests paint additives or the nutrient supplied by a fertiliser.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        13
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 63,
+      "canonicalQuestionId": "nda-2024-ii-63",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#63",
+      "classification": {
+        "primary": "Science & Technology/Physics/Light and Electricity/Current electricity",
+        "additional": [],
+        "rationale": "Tests resistor networks, circuit brightness, electrical power cost or AC reversal period; original diagrams are material for 69/72.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        13
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 64,
+      "canonicalQuestionId": "nda-2024-ii-64",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#64",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Fluids",
+        "additional": [],
+        "rationale": "Uses buoyancy/displacement and density; the floating-cubes source diagram is required for 64.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        13
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 65,
+      "canonicalQuestionId": "nda-2024-ii-65",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#65",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Gravitation",
+        "additional": [],
+        "rationale": "Tests orbital apparent weight or mutual planetary gravitational-force equality.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        15
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 66,
+      "canonicalQuestionId": "nda-2024-ii-66",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#66",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Force and momentum",
+        "additional": [],
+        "rationale": "Tests contact forces, lever arrangement, braking force or forces on a skydiver; diagrams required for 71/125.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        15
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 67,
+      "canonicalQuestionId": "nda-2024-ii-67",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#67",
+      "classification": {
+        "primary": "Science & Technology/Physics/Light and Electricity/Optics",
+        "additional": [],
+        "rationale": "Tests original lens rays, mirror-image position, myopia or combined lens power.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        15
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 68,
+      "canonicalQuestionId": "nda-2024-ii-68",
+      "accountingAction": "new",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#68",
+      "classification": {
+        "primary": "Science & Technology/Physics/Light and Electricity/Electrostatics",
+        "additional": [],
+        "rationale": "Tests atmospheric charge separation and discharge, preserving all printed alternatives.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        15
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 69,
+      "canonicalQuestionId": "nda-2024-ii-69",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#69",
+      "classification": {
+        "primary": "Science & Technology/Physics/Light and Electricity/Current electricity",
+        "additional": [],
+        "rationale": "Tests resistor networks, circuit brightness, electrical power cost or AC reversal period; original diagrams are material for 69/72.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        17
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 70,
+      "canonicalQuestionId": "nda-2024-ii-70",
+      "accountingAction": "new",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#70",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Motion",
+        "additional": [],
+        "rationale": "Interprets a skydiver speed-time graph, piecewise accelerated travel or vector displacement.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        17
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 71,
+      "canonicalQuestionId": "nda-2024-ii-71",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#71",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Force and momentum",
+        "additional": [],
+        "rationale": "Tests contact forces, lever arrangement, braking force or forces on a skydiver; diagrams required for 71/125.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        19
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 72,
+      "canonicalQuestionId": "nda-2024-ii-72",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#72",
+      "classification": {
+        "primary": "Science & Technology/Physics/Light and Electricity/Current electricity",
+        "additional": [],
+        "rationale": "Tests resistor networks, circuit brightness, electrical power cost or AC reversal period; original diagrams are material for 69/72.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        19
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 73,
+      "canonicalQuestionId": "nda-2024-ii-73",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#73",
+      "classification": {
+        "primary": "History/Ancient India/Mahajanapadas/Sixteen mahajanapadas",
+        "additional": [],
+        "rationale": "Locates Taxila as a mahajanapada capital.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        19
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 74,
+      "canonicalQuestionId": "nda-2024-ii-74",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#74",
+      "classification": {
+        "primary": "History/Modern India & National Movement/Independence and Integration/Transfer of power",
+        "additional": [],
+        "rationale": "Identifies the final holder of the Governor-General office before abolition.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        19
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 75,
+      "canonicalQuestionId": "nda-2024-ii-75",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#75",
+      "classification": {
+        "primary": "Economy/Development/Development Policy/Planning institutions",
+        "additional": [],
+        "rationale": "Tests the founding mandate of the Planning Commission.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        19
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 76,
+      "canonicalQuestionId": "nda-2024-ii-76",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#76",
+      "classification": {
+        "primary": "Economy/Development/Development Policy/Five Year Plans",
+        "additional": [],
+        "rationale": "Tests plan priorities/models or pre-independence/pre-First-Plan economic proposals.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        21
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 77,
+      "canonicalQuestionId": "nda-2024-ii-77",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#77",
+      "classification": {
+        "primary": "Economy/Development/Development Policy/Five Year Plans",
+        "additional": [],
+        "rationale": "Tests plan priorities/models or pre-independence/pre-First-Plan economic proposals.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        21
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 78,
+      "canonicalQuestionId": "nda-2024-ii-78",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#78",
+      "classification": {
+        "primary": "Geography/Human & Economic Geography/Resources and Land Use/Land use",
+        "additional": [],
+        "rationale": "Distinguishes fallow-duration land-use categories.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        21
+      ],
+      "expectedBeforeRecordHash": "3d0ac9968f13e6150bc5c78cf4d93ad18625b85bd79e824456db1a9d1e52a6ce",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 79,
+      "canonicalQuestionId": "nda-2024-ii-79",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#79",
+      "classification": {
+        "primary": "Geography/Indian Geography/Physiographic Divisions/Islands",
+        "additional": [],
+        "rationale": "Tests island climate, separation channel and population statements.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        21
+      ],
+      "expectedBeforeRecordHash": "288802d46f0d3fa9a83534024f3a701a9d9891ac0594f01a13bc1843e7ec6134",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 80,
+      "canonicalQuestionId": "nda-2024-ii-80",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#80",
+      "classification": {
+        "primary": "Geography/Physical Geography/Atmospheric Pressure, Winds and Circulation/Local Winds",
+        "additional": [],
+        "rationale": "Distinguishes Mediterranean local winds from Harmattan.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        21
+      ],
+      "expectedBeforeRecordHash": "826f2605cce0c66ae5853bb00af37c1024d04d36bd0ae4e4643be027dbe3c7dc",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 81,
+      "canonicalQuestionId": "nda-2024-ii-81",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#81",
+      "classification": {
+        "primary": "Geography/Physical Geography/Oceanography/Distribution of Oceans and Seas",
+        "additional": [],
+        "rationale": "Identifies an enclosed/landlocked named water body.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        21
+      ],
+      "expectedBeforeRecordHash": "361b597e864a440c714c011f1d3d6c901ed7bc0171b30dd47b6fa84f6d5e3f90",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 82,
+      "canonicalQuestionId": "nda-2024-ii-82",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#82",
+      "classification": {
+        "primary": "Geography/Physical Geography/Oceanography/Ocean Currents",
+        "additional": [],
+        "rationale": "Tests direction, ocean basin, temperature and coastal climate of Benguela.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        23
+      ],
+      "expectedBeforeRecordHash": "4e172b27e48142fcef75ec010db2c0c0dc69da3ece55ed34b41fc2da8c040dc3",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 83,
+      "canonicalQuestionId": "nda-2024-ii-83",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#83",
+      "classification": {
+        "primary": "Geography/Physical Geography/Geomorphic Processes and Landforms/Aeolian Landforms",
+        "additional": [],
+        "rationale": "Classifies bolson/playa arid-land geomorphology within the established arid-process subpart.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        23
+      ],
+      "expectedBeforeRecordHash": "ef7be1b372a8578f6fedb42cce3a1e54815f1434a219ea9c3592569c75b08480",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 84,
+      "canonicalQuestionId": "nda-2024-ii-84",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#84",
+      "classification": {
+        "primary": "Science & Technology/Biology/Human Physiology/Nutrition and digestion",
+        "additional": [],
+        "rationale": "Tests vitamin-D deficiency or the complete balanced-diet components.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        23
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 85,
+      "canonicalQuestionId": "nda-2024-ii-85",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#85",
+      "classification": {
+        "primary": "Science & Technology/Biology/Human Physiology/Nutrition and digestion",
+        "additional": [],
+        "rationale": "Tests vitamin-D deficiency or the complete balanced-diet components.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        23
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 86,
+      "canonicalQuestionId": "nda-2024-ii-86",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#86",
+      "classification": {
+        "primary": "Science & Technology/Biology/Human Physiology/Muscles and movement",
+        "additional": [],
+        "rationale": "Distinguishes ligaments joining bones and anatomical locations of cartilage.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        23
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 87,
+      "canonicalQuestionId": "nda-2024-ii-87",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#87",
+      "classification": {
+        "primary": "Science & Technology/Biology/Human Physiology/Excretion",
+        "additional": [],
+        "rationale": "Identifies the nephron structure involved in filtration.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        23
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 88,
+      "canonicalQuestionId": "nda-2024-ii-88",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#88",
+      "classification": {
+        "primary": "Science & Technology/Biology/Animal Biology/Animal diversity",
+        "additional": [],
+        "rationale": "Identifies Porifera as sponges.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        23
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 89,
+      "canonicalQuestionId": "nda-2024-ii-89",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#89",
+      "classification": {
+        "primary": "Science & Technology/Physics/Light and Electricity/Optics",
+        "additional": [],
+        "rationale": "Tests original lens rays, mirror-image position, myopia or combined lens power.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        23
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 90,
+      "canonicalQuestionId": "nda-2024-ii-90",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#90",
+      "classification": {
+        "primary": "Science & Technology/Physics/Light and Electricity/Optics",
+        "additional": [],
+        "rationale": "Tests original lens rays, mirror-image position, myopia or combined lens power.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        25
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 91,
+      "canonicalQuestionId": "nda-2024-ii-91",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#91",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Motion",
+        "additional": [],
+        "rationale": "Interprets a skydiver speed-time graph, piecewise accelerated travel or vector displacement.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        25
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 92,
+      "canonicalQuestionId": "nda-2024-ii-92",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#92",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Fluids",
+        "additional": [],
+        "rationale": "Uses buoyancy/displacement and density; the floating-cubes source diagram is required for 64.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        25
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 93,
+      "canonicalQuestionId": "nda-2024-ii-93",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#93",
+      "classification": {
+        "primary": "Science & Technology/Physics/Light and Electricity/Current electricity",
+        "additional": [],
+        "rationale": "Tests resistor networks, circuit brightness, electrical power cost or AC reversal period; original diagrams are material for 69/72.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        25
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 94,
+      "canonicalQuestionId": "nda-2024-ii-94",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#94",
+      "classification": {
+        "primary": "Science & Technology/Physics/Heat and Waves/Temperature and heat",
+        "additional": [],
+        "rationale": "Tests heat transfer, water density versus temperature or applicability of Newton cooling.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        25
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 95,
+      "canonicalQuestionId": "nda-2024-ii-95",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#95",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Gravitation",
+        "additional": [],
+        "rationale": "Tests orbital apparent weight or mutual planetary gravitational-force equality.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        25
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 96,
+      "canonicalQuestionId": "nda-2024-ii-96",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#96",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Force and momentum",
+        "additional": [],
+        "rationale": "Tests contact forces, lever arrangement, braking force or forces on a skydiver; diagrams required for 71/125.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        27
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 97,
+      "canonicalQuestionId": "nda-2024-ii-97",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#97",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Work energy and power",
+        "additional": [],
+        "rationale": "Uses energy conversion or frictional work; Q123 drop is an answer decision independent of placement.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        27
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 98,
+      "canonicalQuestionId": "nda-2024-ii-98",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#98",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Motion",
+        "additional": [],
+        "rationale": "Interprets a skydiver speed-time graph, piecewise accelerated travel or vector displacement.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        27
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 99,
+      "canonicalQuestionId": "nda-2024-ii-99",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#99",
+      "classification": {
+        "primary": "History/World History/Industrial Revolution/Inventions and inventors",
+        "additional": [],
+        "rationale": "Tests steam-engine innovations and attribution; defence world-history placement, not automatic CSE applicability.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        27
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "defence-world-history"
+      }
+    },
+    {
+      "number": 100,
+      "canonicalQuestionId": "nda-2024-ii-100",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#100",
+      "classification": {
+        "primary": "History/Modern India & National Movement/Colonial Economy/Modern industries",
+        "additional": [],
+        "rationale": "Tests the founder of the Bombay cotton mill commencing production in 1856; bounded new subpart proposal, not approved by this draft.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        27
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 101,
+      "canonicalQuestionId": "nda-2024-ii-101",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#101",
+      "classification": {
+        "primary": "History/Modern India & National Movement/Independence and Integration/Reorganisation background",
+        "additional": [],
+        "rationale": "Tests historical proposals for linguistic state reorganisation.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        27
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 102,
+      "canonicalQuestionId": "nda-2024-ii-102",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#102",
+      "classification": {
+        "primary": "History/Modern India & National Movement/Gandhian Movements/Civil Disobedience",
+        "additional": [],
+        "rationale": "Identifies the Tamil salt-march route.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        29
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 103,
+      "canonicalQuestionId": "nda-2024-ii-103",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#103",
+      "classification": {
+        "primary": "Economy/Agriculture/Agricultural Economy/Land and productivity",
+        "additional": [],
+        "rationale": "Tests the initial Bhoodan land donation and redistributive land-reform history.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        29
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 104,
+      "canonicalQuestionId": "nda-2024-ii-104",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#104",
+      "classification": {
+        "primary": "History/Medieval India/Medieval Society and Economy/Agrarian relations",
+        "additional": [],
+        "rationale": "Tests historical maize transmission routes, not present crop distribution.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        29
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 105,
+      "canonicalQuestionId": "nda-2024-ii-105",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#105",
+      "classification": {
+        "primary": "Geography/Indian Geography/Physiographic Divisions/Himalayan ranges",
+        "additional": [],
+        "rationale": "Matches passes with Himalayan ranges.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        29
+      ],
+      "expectedBeforeRecordHash": "d7dc19e46a69a3a33e88b7522b3a630d12c8327e4ec432f1e06fc8a7779f0d2e",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 106,
+      "canonicalQuestionId": "nda-2024-ii-106",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#106",
+      "classification": {
+        "primary": "Geography/Indian Geography/Soils/Properties and crops",
+        "additional": [],
+        "rationale": "Tests black cotton/laterite soil properties, retaining official-versus-editorial disagreements separately.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        29
+      ],
+      "expectedBeforeRecordHash": "edd3f9b7cb62a7658b9f4f587ff9d07cb3e636af6307dcc15a9cf94e0644935c",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 107,
+      "canonicalQuestionId": "nda-2024-ii-107",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#107",
+      "classification": {
+        "primary": "Geography/Indian Geography/Drainage/River projects",
+        "additional": [],
+        "rationale": "Matches named hydropower projects to states.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        29
+      ],
+      "expectedBeforeRecordHash": "2e768dbf480ca7f9c7cb2e602eff05ca4ea655e57409baf13dd919121de66abd",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 1,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 108,
+      "canonicalQuestionId": "nda-2024-ii-108",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#108",
+      "classification": {
+        "primary": "Geography/Physical Geography/Condensation, Clouds, Precipitation, Air Masses, Fronts and Cyclones/Tropical Cyclones",
+        "additional": [],
+        "rationale": "Matches regional cyclone names to countries.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        31
+      ],
+      "expectedBeforeRecordHash": "2516cd2710f4c0982016da73d94e072b70522cb47ca9bb4f2395ff7a3546dd48",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 109,
+      "canonicalQuestionId": "nda-2024-ii-109",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#109",
+      "classification": {
+        "primary": "Geography/Indian Geography/Drainage/Himalayan rivers",
+        "additional": [],
+        "rationale": "Tests the source, course or antecedence of the named Himalayan rivers.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        31
+      ],
+      "expectedBeforeRecordHash": "a9f81600ee1e34cf7e5b0c0f3f99a54e4663d3a9c976ac52ae163ce5d15b6eae",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 110,
+      "canonicalQuestionId": "nda-2024-ii-110",
+      "accountingAction": "reused",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#110",
+      "classification": {
+        "primary": "Geography/Physical Geography/Rocks and Minerals/Rocks: Overview",
+        "additional": [],
+        "rationale": "Tests a rock’s igneous/metamorphic classification; key disagreement does not justify rewriting granite.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        31
+      ],
+      "expectedBeforeRecordHash": "603be1171bd9b69b6ee831cf5e127e29348b430f814b3da71c1a00f7112edd9c",
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 111,
+      "canonicalQuestionId": "nda-2024-ii-111",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#111",
+      "classification": {
+        "primary": "Geography/Physical Geography/Rocks and Minerals/Minerals",
+        "additional": [],
+        "rationale": "Tests specific mineral occurrence, abundance and solubility alternatives.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        31
+      ],
+      "expectedBeforeRecordHash": "3b14add6a47288a1d577520312b5de30fd9b53b184f5958a8d65d82832d274c2",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 112,
+      "canonicalQuestionId": "nda-2024-ii-112",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#112",
+      "classification": {
+        "primary": "Geography/Physical Geography/Geomorphic Processes and Landforms/Weathering",
+        "additional": [],
+        "rationale": "Distinguishes chemical weathering from thawing.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        31
+      ],
+      "expectedBeforeRecordHash": "da0855f5b6a49ac465338180982021fd3c338c8438984f41d4887e7e47654e60",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 113,
+      "canonicalQuestionId": "nda-2024-ii-113",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#113",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Matter and Reactions/Atomic and molecular structure",
+        "additional": [],
+        "rationale": "Tests molecular atomicity, mole mass, shell capacity or atomic composition; each full alternative set was read.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        31
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 114,
+      "canonicalQuestionId": "nda-2024-ii-114",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#114",
+      "classification": {
+        "primary": "Science & Technology/Physics/Heat and Waves/Temperature and heat",
+        "additional": [],
+        "rationale": "Tests heat transfer, water density versus temperature or applicability of Newton cooling.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        31
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 115,
+      "canonicalQuestionId": "nda-2024-ii-115",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#115",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Matter and Reactions/Chemical bonding",
+        "additional": [],
+        "rationale": "Tests ionic charge or elemental valency, rather than an industrial application.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        33
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 116,
+      "canonicalQuestionId": "nda-2024-ii-116",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#116",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Matter and Reactions/Reaction types",
+        "additional": [],
+        "rationale": "Distinguishes photodecomposition, oxidation or a chemical reaction from physical changes.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        33
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 117,
+      "canonicalQuestionId": "nda-2024-ii-117",
+      "accountingAction": "new",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#117",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Materials and Applications/Everyday chemicals",
+        "additional": [],
+        "rationale": "Tests paint additives or the nutrient supplied by a fertiliser.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        33
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 118,
+      "canonicalQuestionId": "nda-2024-ii-118",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#118",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Matter and Reactions/Atomic and molecular structure",
+        "additional": [],
+        "rationale": "Tests molecular atomicity, mole mass, shell capacity or atomic composition; each full alternative set was read.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        33
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 119,
+      "canonicalQuestionId": "nda-2024-ii-119",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#119",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Materials and Applications/Carbon compounds",
+        "additional": [],
+        "rationale": "Tests elemental composition of diamond.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        33
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 120,
+      "canonicalQuestionId": "nda-2024-ii-120",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#120",
+      "classification": {
+        "primary": "Science & Technology/Chemistry/Matter and Reactions/Reaction types",
+        "additional": [],
+        "rationale": "Distinguishes photodecomposition, oxidation or a chemical reaction from physical changes.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        33
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 121,
+      "canonicalQuestionId": "nda-2024-ii-121",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#121",
+      "classification": {
+        "primary": "Science & Technology/Physics/Light and Electricity/Optics",
+        "additional": [],
+        "rationale": "Tests original lens rays, mirror-image position, myopia or combined lens power.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        33
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 122,
+      "canonicalQuestionId": "nda-2024-ii-122",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#122",
+      "classification": {
+        "primary": "Science & Technology/Physics/Light and Electricity/Current electricity",
+        "additional": [],
+        "rationale": "Tests resistor networks, circuit brightness, electrical power cost or AC reversal period; original diagrams are material for 69/72.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        33
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 123,
+      "canonicalQuestionId": "nda-2024-ii-123",
+      "accountingAction": "new",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#123",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Work energy and power",
+        "additional": [],
+        "rationale": "Uses energy conversion or frictional work; Q123 drop is an answer decision independent of placement.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        33
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 124,
+      "canonicalQuestionId": "nda-2024-ii-124",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#124",
+      "classification": {
+        "primary": "Science & Technology/Physics/Heat and Waves/Temperature and heat",
+        "additional": [],
+        "rationale": "Tests heat transfer, water density versus temperature or applicability of Newton cooling.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        35
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 125,
+      "canonicalQuestionId": "nda-2024-ii-125",
+      "accountingAction": "new",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#125",
+      "classification": {
+        "primary": "Science & Technology/Physics/Mechanics/Force and momentum",
+        "additional": [],
+        "rationale": "Tests contact forces, lever arrangement, braking force or forces on a skydiver; diagrams required for 71/125.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        35
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "science"
+      }
+    },
+    {
+      "number": 126,
+      "canonicalQuestionId": "nda-2024-ii-126",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#126",
+      "classification": {
+        "primary": "History/Medieval India/Regional Kingdoms/Vijayanagara",
+        "additional": [],
+        "rationale": "Tests Vijayanagara ritual sovereignty or a contemporary traveller’s description of its king.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        35
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 127,
+      "canonicalQuestionId": "nda-2024-ii-127",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#127",
+      "classification": {
+        "primary": "History/Medieval India/Regional Kingdoms/Vijayanagara",
+        "additional": [],
+        "rationale": "Tests Vijayanagara ritual sovereignty or a contemporary traveller’s description of its king.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        35
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 128,
+      "canonicalQuestionId": "nda-2024-ii-128",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#128",
+      "classification": {
+        "primary": "Polity & Governance/Elections/Electoral System/Disqualification",
+        "additional": [],
+        "rationale": "Locates constitutional anti-defection provisions.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        35
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 129,
+      "canonicalQuestionId": "nda-2024-ii-129",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#129",
+      "classification": {
+        "primary": "Polity & Governance/Institutions/Union Executive/Attorney General",
+        "additional": [],
+        "rationale": "Tests constitutional legal advice and assisting law officers.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        37
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 130,
+      "canonicalQuestionId": "nda-2024-ii-130",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#130",
+      "classification": {
+        "primary": "Polity & Governance/Institutions/Parliament/Committees",
+        "additional": [],
+        "rationale": "Distinguishes parliamentary financial-committee membership.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        37
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 131,
+      "canonicalQuestionId": "nda-2024-ii-131",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#131",
+      "classification": {
+        "primary": "Polity & Governance/Institutions/Parliament/Legislative process",
+        "additional": [],
+        "rationale": "Tests the Rajya Sabha return deadline for a Money Bill.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        37
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 132,
+      "canonicalQuestionId": "cds-2024-2024-2-132",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#132",
+      "classification": {
+        "primary": "Polity & Governance/Rights & Principles/Fundamental Rights/Reasonable restrictions",
+        "additional": [],
+        "rationale": "Tests the qualified nature of Article 19 freedoms.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        37
+      ],
+      "expectedBeforeRecordHash": "19756bc58f6476589807d2c0d2115c5da019d176aedf5d757e74728ea731ba16",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 4,
+        "contentRevision": 1,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 133,
+      "canonicalQuestionId": "nda-2024-ii-133",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#133",
+      "classification": {
+        "primary": "International Relations & Organisations/Agreements & Global Governance/International Cooperation/Agreements and initiatives by mandate",
+        "additional": [],
+        "rationale": "Distinguishes Panchsheel principles from an unlisted principle.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        37
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 134,
+      "canonicalQuestionId": "nda-2024-ii-134",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#134",
+      "classification": {
+        "primary": "History/Modern India & National Movement/Gandhian Movements/Quit India",
+        "additional": [],
+        "rationale": "Identifies the movement associated with Kanaklata Barua’s sacrifice.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        39
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 135,
+      "canonicalQuestionId": "nda-2024-ii-135",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#135",
+      "classification": {
+        "primary": "Geography/Physical Geography/Atmospheric Pressure, Winds and Circulation/Forces Affecting Wind",
+        "additional": [],
+        "rationale": "Tests latitude dependence of Coriolis magnitude.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        39
+      ],
+      "expectedBeforeRecordHash": "4d628021d4773b62e542422e3918b939fe4638e3ca700d4fc23c7e9c3c43493b",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 136,
+      "canonicalQuestionId": "nda-2024-ii-136",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#136",
+      "classification": {
+        "primary": "Geography/Indian Geography/Location and Extent/Latitudes and longitudes",
+        "additional": [],
+        "rationale": "Tests state positions relative to the overhead-Sun latitude limits.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        39
+      ],
+      "expectedBeforeRecordHash": "34bda44c192c8ba10bf45cc6b62d17b3d2297f13e90b8035b8cf497a2c1f4982",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 137,
+      "canonicalQuestionId": "nda-2024-ii-137",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#137",
+      "classification": {
+        "primary": "Geography/Indian Geography/Drainage/Peninsular rivers",
+        "additional": [],
+        "rationale": "Distinguishes east- and west-flowing peninsular rivers.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        39
+      ],
+      "expectedBeforeRecordHash": "1b90c184c93f100d6222064525d7aa378886bd5c9939a4eab658d76dd95fb665",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 138,
+      "canonicalQuestionId": "nda-2024-ii-138",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#138",
+      "classification": {
+        "primary": "Geography/Indian Geography/Drainage/River tributaries",
+        "additional": [],
+        "rationale": "Matches named tributaries to their parent peninsular rivers.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        39
+      ],
+      "expectedBeforeRecordHash": "11646b64530dc5bddfe1661bfaa37ce35f78b8c0f1006d716d71e591f1580a00",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 139,
+      "canonicalQuestionId": "nda-2024-ii-139",
+      "accountingAction": "reused",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#139",
+      "classification": {
+        "primary": "Geography/Indian Geography/Soils/Properties and crops",
+        "additional": [],
+        "rationale": "Tests black cotton/laterite soil properties, retaining official-versus-editorial disagreements separately.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        39
+      ],
+      "expectedBeforeRecordHash": "3d44876391afbc2f48ef54ea14ce27f36e8fe2d6bab4da8c0d30849e590f06b9",
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 140,
+      "canonicalQuestionId": "nda-2024-ii-140",
+      "accountingAction": "reused",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#140",
+      "classification": {
+        "primary": "Geography/Indian Geography/Drainage/Himalayan rivers",
+        "additional": [],
+        "rationale": "Tests the source, course or antecedence of the named Himalayan rivers.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        41
+      ],
+      "expectedBeforeRecordHash": "fe82bcf42e8ef04f36dc6b962f84cea61018f047f92c83b2b0eaed03e6930c4a",
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 141,
+      "canonicalQuestionId": "nda-2024-ii-141",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#141",
+      "classification": {
+        "primary": "Current Affairs/National Affairs/Government Initiatives/Schemes and missions",
+        "additional": [],
+        "rationale": "Identifies a programme from its motto/campaign; static programme identity, not assumed to be a recent event.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        41
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 142,
+      "canonicalQuestionId": "nda-2024-ii-142",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#142",
+      "classification": {
+        "primary": "Current Affairs/National Affairs/Government Initiatives/Schemes and missions",
+        "additional": [],
+        "rationale": "Identifies a programme from its motto/campaign; static programme identity, not assumed to be a recent event.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        41
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 143,
+      "canonicalQuestionId": "nda-2024-ii-143",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#143",
+      "classification": {
+        "primary": "Current Affairs/Sports, Culture & Recognition/Culture and Heritage Recognition/Heritage inscriptions",
+        "additional": [],
+        "rationale": "Tests UNESCO recognition of Garba and creative-city categories in the stated historical period.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        41
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 144,
+      "canonicalQuestionId": "nda-2024-ii-144",
+      "accountingAction": "new",
+      "disposition": "quarantined",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#144",
+      "classification": {
+        "primary": "Current Affairs/International Affairs/Agreements and Cooperation/Regional initiatives",
+        "additional": [],
+        "rationale": "Identifies the venue of the named 2023 ASEAN-India millet initiative.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        41
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "quarantined",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 145,
+      "canonicalQuestionId": "nda-2024-ii-145",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#145",
+      "classification": {
+        "primary": "Current Affairs/National Affairs/National and State Developments/National milestones",
+        "additional": [],
+        "rationale": "Tests a bundle of dated national/international developments; editorial placement review must decide justified cross-placements.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        41
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 146,
+      "canonicalQuestionId": "nda-2024-ii-146",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#146",
+      "classification": {
+        "primary": "Current Affairs/National Affairs/Government Initiatives/Beneficiaries",
+        "additional": [
+          {
+            "subject": "Social Development",
+            "head": "Education",
+            "chapter": "Education Systems",
+            "subtopic": "Literacy",
+            "taxonomyId": "syllabus:social-development/education/education-systems/literacy"
+          }
+        ],
+        "rationale": "Tests ULLAS adult-education beneficiaries and policy alignment.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        43
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 147,
+      "canonicalQuestionId": "nda-2024-ii-147",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#147",
+      "classification": {
+        "primary": "International Relations & Organisations/Regional Groupings/Regional and Plurilateral Forums/Euro-Atlantic alliances",
+        "additional": [],
+        "rationale": "Tests NATO treaty/institutional membership statements as at the examination date.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        43
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 148,
+      "canonicalQuestionId": "nda-2024-ii-148",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#148",
+      "classification": {
+        "primary": "Current Affairs/International Affairs/Events and Diplomacy/Bilateral developments",
+        "additional": [],
+        "rationale": "Tests the named January 2024 bridge-assistance agreement.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        43
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 149,
+      "canonicalQuestionId": "nda-2024-ii-149",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#149",
+      "classification": {
+        "primary": "Current Affairs/Defence & Security/Exercises and Operations/Participating forces",
+        "additional": [],
+        "rationale": "Distinguishes partner countries of named joint exercises; the question itself gives no event date.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        43
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    },
+    {
+      "number": 150,
+      "canonicalQuestionId": "nda-2024-ii-150",
+      "accountingAction": "new",
+      "disposition": "reasoned-verified",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#150",
+      "classification": {
+        "primary": "Current Affairs/Economy & Development/Economic Reports and Indices/Economic rankings",
+        "additional": [
+          {
+            "subject": "Economy",
+            "head": "Current Affairs",
+            "chapter": "Economic Reports and Indices",
+            "subtopic": "Economic rankings",
+            "taxonomyId": "syllabus:economy/current-affairs/economic-reports-and-indices/economic-rankings"
+          }
+        ],
+        "rationale": "Tests a dated logistics index and maritime summit/vision; Economy mirror required.",
+        "secondPass": "Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.",
+        "approved": true
+      },
+      "sourcePages": [
+        43
+      ],
+      "expectedBeforeRecordHash": null,
+      "revision": {
+        "status": "reasoned-verified",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "gs"
+      }
+    }
+  ],
+  "releaseState": "local-verification-pending"
+}

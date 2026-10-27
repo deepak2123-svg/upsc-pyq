@@ -25,7 +25,7 @@ Sources and Chronology|Foreign accounts`,
     'Modern India & National Movement': `European Companies|Portuguese;Dutch and Danish;English and French;Factories and trading networks;Carnatic conflicts
 British Expansion|Bengal conquest;Anglo-Mysore wars;Anglo-Maratha wars;Anglo-Burmese wars;Subsidiary alliance;Annexation policies;Punjab conquest
 Colonial Administration|Company government;Crown rule and proclamations;Civil services;Census and surveys;Army and police;Judiciary;Education policies;Press policies;Local self-government
-Colonial Economy|Land revenue settlements;Commercialisation of agriculture;Deindustrialisation;Drain of wealth;Economic critics of colonialism;Transport and communications;Famine policies
+Colonial Economy|Land revenue settlements;Commercialisation of agriculture;Deindustrialisation;Drain of wealth;Economic critics of colonialism;Transport and communications;Famine policies;Modern industries
 Social and Religious Reform|Brahmo and Prarthana Samaj;Arya Samaj;Aligarh movement;Ramakrishna movement;Theosophical movement;Anti-caste movements;Women and reform
 Popular Resistance|Tribal uprisings;Peasant movements;Civil rebellions;Revolt of 1857;Resistance in princely states
 Early Nationalism|Political associations;Congress foundation;Moderates;Extremists;Partition of Bengal;Swadeshi movement

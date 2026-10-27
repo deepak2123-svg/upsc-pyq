@@ -1,5 +1,11 @@
 // Concept boundaries established by full original-question review, not keywords.
 export const sourceTopicSpecs = {
+  'History/Modern India & National Movement/Colonial Economy/Modern industries': {
+    includes:['Founding and development of modern mills under colonial rule','Indian industrial entrepreneurs and early factory enterprises'],
+    excludes:['Decline of handicrafts without a modern-enterprise question','Post-independence industrial policy','An incidental business name in a nonhistorical question'],
+    placementRule:'Use for the history of modern manufacturing enterprises and their founders during colonial rule; do not place factory founding under Deindustrialisation merely because both concern industry.',
+    representativeQuestions:['NDA II 2024 GAT Series A Q100: founder of the Bombay cotton mill'],
+  },
   'History/Modern India & National Movement/Colonial Administration/Local self-government': {
     includes:['Colonial municipal and local-board reforms','Ripon’s 1882 resolution and administrative purpose'],
     excludes:['Company government as a generic bucket','Post-independence 73rd/74th constitutional amendments','A contemporary local-government appointment'],

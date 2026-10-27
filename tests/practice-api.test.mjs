@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import {questionEligible} from '../lib/question-review.ts';
+import {questionEligible,questionReview} from '../lib/question-review.ts';
 
 // Reuse the application instance, as production does. A unique import URL per
 // request permanently retains another complete bundled catalogue in ESM cache.
@@ -67,7 +67,7 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 1942);
+  assert.equal(data.totalCount, 1967); // +27 newly GS-eligible, -2 newly quarantined NDA II 2024 records.
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);
@@ -937,14 +937,14 @@ test('single-question checks respect restored content revisions and held disposi
 
 test("every reviewed correction grades the displayed option and rejects the former answer", async () => {
   const ledger = JSON.parse(await readFile(new URL("../content/audits/answer-key-audit.json", import.meta.url), "utf8"));
-  const policy = JSON.parse(await readFile(new URL('../content/question-review-policy.json', import.meta.url), 'utf8'));
   const changed = ledger.rows.filter(row => row.currentAnswer !== row.answerAtAudit);
   assert.ok(changed.length >= 27);
   for (const row of changed) {
-    const contentRevisions = {[row.id]:policy[row.id]?.contentRevision??0};
+    const effectivePolicy=questionReview(row.id);
+    const contentRevisions = {[row.id]:effectivePolicy?.contentRevision??0};
     const accepted = await grade({ questionIds: [row.id], answers: { [row.id]: row.currentAnswer }, contentRevisions });
     assert.equal(accepted.response.status, 200, row.id);
-    if (['withdrawn','quarantined','duplicate','pending'].includes(policy[row.id]?.status)) {
+    if (['withdrawn','quarantined','duplicate','pending'].includes(effectivePolicy?.status)) {
       assert.equal(accepted.body.excluded,1,row.id);
       assert.equal(accepted.body.feedback[row.id].correctAnswer,null,row.id);
       continue;

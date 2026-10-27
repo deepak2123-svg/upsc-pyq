@@ -1,0 +1,33 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {englishEvidence,englishReasoning} from './nda-2024-ii-reasoned-english.mjs';
+import {physicsEvidence,physicsReasoning} from './nda-2024-ii-reasoned-physics.mjs';
+import {scienceEvidence,scienceReasoning} from './nda-2024-ii-reasoned-science.mjs';
+import {gsEvidence,gsReasoning} from './nda-2024-ii-reasoned-gs.mjs';
+import {geographyEvidence,geographyReasoning} from './nda-2024-ii-reasoned-geography.mjs';
+import {historyPolityEvidence,historyPolityReasoning} from './nda-2024-ii-reasoned-history-polity.mjs';
+import {reviewedTranscriptionHashes,secondReviews} from './nda-2024-ii-second-review.mjs';
+for(const [path,expected] of Object.entries(reviewedTranscriptionHashes))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path)).digest('hex'),expected,`Reviewed transcription changed: ${path}`);
+const reviews=new Map(secondReviews.map(row=>[row.number,row]));
+assert.equal(reviews.size,secondReviews.length,'Duplicate second-pass decisions');
+const hash=value=>crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
+const source=JSON.parse(fs.readFileSync('content/staging/nda-2024-ii-source-draft.json','utf8'));
+const key=JSON.parse(fs.readFileSync('content/audits/nda-2024-ii-key-transcriptions.json','utf8')).firstPassColumns.flatMap(line=>line.split(' '));
+const groups=[['english',englishEvidence,englishReasoning],['physics',physicsEvidence,physicsReasoning],['science',scienceEvidence,scienceReasoning],['gs',gsEvidence,gsReasoning],['geography',geographyEvidence,geographyReasoning],['history-polity',historyPolityEvidence,historyPolityReasoning]];
+const questions=groups.flatMap(([group,evidence,rows])=>rows.map(row=>{
+ const question=source.questions.find(q=>q.number===row.number);assert.ok(question);
+ assert.deepEqual(Object.keys(row.optionAnalysis),['A','B','C','D']);
+ for(const ref of row.evidence)assert.ok(evidence[ref],`Unknown source ${group}/${ref}`);
+ const review=reviews.get(row.number);
+ if(review){assert.ok(['reasoned-verified','quarantined'].includes(review.disposition));assert.equal(review.acceptedAnswers.length,review.disposition==='reasoned-verified'?1:0);}
+ const effectiveAnswer=review?(review.acceptedAnswers[0]??null):row.proposedAnswer;
+ return {...row,canonicalQuestionId:question.canonicalQuestionId,sourceQuestionHash:hash({promptLines:question.promptLines,options:question.options,sharedContext:question.sharedContext,figure:question.figure}),evidence:row.evidence.map(ref=>({id:`${group}:${ref}`,...evidence[ref],retrievedAt:'2026-10-27'})),secondPass:review?{...review,reviewer:'codex-main',kind:'AI',date:'2026-10-27',independentHumanReview:false}:null,answerReviewDisposition:review?.disposition??null,effectiveAnswer,candidateScanLetter:key[row.number-1],candidateDisagreement:effectiveAnswer!==null&&effectiveAnswer!==key[row.number-1],status:review?'answer-second-pass-complete':'first-pass-research',eligibleForNewScoredTests:false};
+})).sort((a,b)=>a.number-b.number);
+assert.equal(new Set(questions.map(q=>q.number)).size,questions.length);
+const numbers=new Set(questions.map(q=>q.number));
+const output={paperId:'nda-2024-ii-gat',reviewer:'codex-main (AI)',active:false,notice:'Primary-evidence research checkpoint, not official key authentication or publication approval. Answer-review dispositions are separate from classification, rendering and runtime release approval. Unresolved evidence limitations remain explicit.',progress:{expected:150,firstPassAnalysed:questions.length,secondPassCompleted:reviews.size,secondPassApproved:questions.filter(q=>q.answerReviewDisposition==='reasoned-verified').length,secondPassQuarantined:questions.filter(q=>q.answerReviewDisposition==='quarantined').length,newlyEligible:0,remainingFirstPass:source.questions.filter(q=>!numbers.has(q.number)).map(q=>q.number),remainingSecondPass:questions.filter(q=>!q.secondPass).map(q=>q.number)},questions};
+const bytes=JSON.stringify(output,null,2)+'\n';
+const path='content/audits/nda-2024-ii-reasoned-review.json';
+if(process.argv.includes('--check'))assert.equal(fs.readFileSync(path,'utf8'),bytes);else fs.writeFileSync(path,bytes);
+console.log(JSON.stringify(output.progress));

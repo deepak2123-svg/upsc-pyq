@@ -1,0 +1,66 @@
+{
+  "paperId": "nda-2024-ii-gat",
+  "reviewedAt": "2026-10-27",
+  "reviewer": "codex-main (AI)",
+  "releaseDecision": "withheld",
+  "reason": "The preserved candidate answer-key scan has matching paper/series and two agreeing transcriptions, but its official origin and applicable revision have not been authenticated. No blanket official approval follows from the earlier 20-cell local audit.",
+  "additionalDirectSearches": {
+    "baseUrl": "https://www.upsc.gov.in/sites/default/files/",
+    "result": "HTTP 404 for every listed filename; these are attempted URLs, not asserted official sources",
+    "filenames": [
+      "AnsKey-NDA-NA-II-2024-GAT-220425.pdf",
+      "AnsKey-NDANA-II-2024-GAT-22042025.pdf",
+      "AnsKey-NDA-NA-II-2024-GAT-170425.pdf",
+      "AnsKey-NDA-NA-II-2024-GAT-230425.pdf",
+      "AnsKey-NDANA-II-2024-GAT-210425.pdf",
+      "AnsKey-NDANA-II-2024-GAT-280425.pdf",
+      "AnsKey-NDA-NA-II-2024-GAT-240425.pdf",
+      "NDA-NA-II-2024-GAT-AnsKey-220425.pdf",
+      "NDA_NA_II_EXAM_2024_GAT_Ans_Key.pdf",
+      "NDA_NA_II_EXAM_2024_GAT_Ans_Key_0.pdf",
+      "AnsKey-NDANA-II-2024-GAT-250425.pdf",
+      "AnsKey-NDA-NA-II-2024-GAT-250425.pdf"
+    ]
+  },
+  "archiveSearches": [
+    {
+      "url": "https://archive.org/wayback/available?url=upsc.gov.in/examinations/answer-key&timestamp=20250423",
+      "result": "Returned 20250407140656 snapshot, before the scan creation date; no matching 2024 GAT key link was recovered. The scan creation date is not a release date."
+    },
+    {
+      "url": "https://archive.org/wayback/available?url=upsc.gov.in/examinations/answer-key&timestamp=20250501",
+      "result": "Returned the same 7 April snapshot; fetched its original HTML without finding a 2024 GAT key link."
+    },
+    {
+      "url": "https://archive.org/wayback/available?url=upsc.gov.in/examinations/answer-key&timestamp=20250601",
+      "result": "Returned the same 7 April snapshot. This does not establish that the key was never published."
+    },
+    {
+      "url": "https://web.archive.org/cdx/search/cdx?url=upsc.gov.in/sites/default/files/*2024*GAT*&output=json&filter=statuscode:200&collapse=urlkey",
+      "result": "HTTP 503. The analogous www-host query returned an empty array. Broader filtered query timed out. No source absence conclusion drawn."
+    }
+  ],
+  "secondaryLeads": [
+    {
+      "url": "https://prepp.in/nda-exam/answer-key",
+      "result": "Links via its 2024 page to the candidate scan; did not establish an official-origin chain for that scan."
+    },
+    {
+      "url": "https://defenceexamsgoal.com/nda-previous-year-question-papers/",
+      "result": "2024 II row has a question-paper link but Answer Key is unlinked text; no official key evidence recovered."
+    }
+  ],
+  "remainingWork": [
+    "Authenticate the official key through its issuer or a verifiable archival/mirror chain, or complete per-question primary-evidence fallback and separate review.",
+    "Approve and activate bounded Q100 taxonomy amendment, complete classification signoff and integrate hash-guarded reviewed overlays.",
+    "Run exhaustive grading, historical-compatibility, browser, full PDF and production release gates. These gates have not been run for this staged import."
+  ],
+  "notClaimed": [
+    "No assertion that no official key exists",
+    "No conversion of candidate X at Q123 into an authenticated official withdrawal",
+    "No completed independent answer verification",
+    "No completed paper or production release",
+    "No GitHub push"
+  ],
+  "reopeningEvidence": "A matching UPSC-issued NDA II 2024 GAT answer-key document with an official URL or verifiable provenance chain, including any applicable revisions; otherwise directly applicable primary evidence for each independently adjudicated question."
+}

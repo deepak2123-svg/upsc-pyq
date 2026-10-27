@@ -30,7 +30,7 @@ test('all 150 available to NDA without CSE English or defence World History leak
  const membership=inv=>new Set(inv.nodes.filter(n=>n.kind==='subtopic').flatMap(n=>Object.values(n.questionIdsByExam).flat()));
  const ndaIds=membership(nda),cseIds=membership(cse);
  for(const q of paper.questions){assert.ok(ndaIds.has(q.id),q.id);if(q.preparationScope!=='gs'||q.subject==='Science & Technology')assert.ok(!cseIds.has(q.id),q.id);}
- assert.equal(nda.subjects.find(s=>s.id==='subject:english').examCounts.NDA,200);
+ assert.equal(nda.subjects.find(s=>s.id==='subject:english').examCounts.NDA,246);
  for(const q of paper.questions.filter(q=>q.preparationScope!=='gs'))assert.ok(!questionInGsScope(q.id));
  assert.deepEqual(paper.questions[28].underlined,['in spite']);
  assert.match(paper.questions[28].explanation,/Editorial caveat/);assert.match(paper.questions[42].explanation,/Editorial caveat/);

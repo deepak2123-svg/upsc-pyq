@@ -1,0 +1,35 @@
+{
+  "paperId": "nda-2024-ii-gat",
+  "bookletSeries": "A",
+  "page": 1,
+  "retrievedLocalPath": "../data/nda_answer_sources/answer_keys/2024_II.pdf",
+  "sha256": "9086a5382ac12ea9b266786419d0689b88c15b00ad80d34ca755be3c0ee4ae95",
+  "candidateUrl": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+  "mirrorListing": "https://prepp.in/nda-exam/question%20paper%202024",
+  "authenticationStatus": "candidate mirror; direct official-source provenance/revision check still pending",
+  "reviewer": "codex-main (AI; both passes by the same reviewer)",
+  "reviewedAt": "2026-10-27",
+  "method": "Visual Series A page read column-first, then reopened and read row-first. X retained as printed, not inferred from an unreadable cell.",
+  "firstPassColumns": [
+    "D C B A A A B D A B A D C C B D C A C B",
+    "A A B A D D A C B C B A A D A A D B C A",
+    "A D D A B C A B A B B C B B A C C B A B",
+    "B D C D B D D D D A C B C B C B D C B A",
+    "D A B C A C D C B A A C D C C D A C C D",
+    "A C D B C D A A C D A D A B C C D D C D",
+    "C D X B C C A B C C C C D D C B B B C C",
+    "B B B B B A D D D B"
+  ],
+  "secondPassRows": [
+    "D A A B D A C B", "C A D D A C D B", "B B D C B D X B", "A A A D C B B B",
+    "A D B B A C C B", "A D C D C D C A", "B A A D D A A D", "D C B D C A B D",
+    "A B A D B C C D", "B C B A A D C B", "A B B C A A C", "D A C B C D C",
+    "C A B C D A D", "C D B B C B D", "B A A C C C C", "D A C B D C B",
+    "C D C D A D B", "A B B C C D B", "C C A B C C C", "B A B A D D C"
+  ],
+  "printedDroppedCount": 1,
+  "printedScoringCount": 149,
+  "droppedQuestionNumbers": [123],
+  "multipleAnswerCells": [],
+  "publicationApproved": false
+}

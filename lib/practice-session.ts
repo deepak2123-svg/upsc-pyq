@@ -3,11 +3,12 @@ import type { PyqExam } from "./pyq-exams";
 import publishedAnswerKeyRevisions from "../content/answer-key-revisions.json" with { type: "json" };
 import officialNdaKeyRevisions from '../content/nda-2026-i-key-revisions.json' with {type:'json'};
 import officialNda2025IKeyRevisions from '../content/nda-2025-i-key-revisions.json' with {type:'json'};
+import reviewedNda2024IIKeyRevisions from '../content/nda-2024-ii-key-revisions.json' with {type:'json'};
 import { questionExclusion, questionReviewRevision } from './question-review.ts';
 import {feedbackAnswerOptions,feedbackAcceptsOption} from './answer-options.ts';
 
 /** Bump a question's revision whenever its published key is corrected. No answers are exposed here. */
-const answerKeyRevisions: Readonly<Record<string, number>> = {...publishedAnswerKeyRevisions,...officialNdaKeyRevisions,...officialNda2025IKeyRevisions};
+const answerKeyRevisions: Readonly<Record<string, number>> = {...publishedAnswerKeyRevisions,...officialNdaKeyRevisions,...officialNda2025IKeyRevisions,...reviewedNda2024IIKeyRevisions};
 export function answerKeyRevision(questionId: string) { return answerKeyRevisions[questionId] || 0; }
 
 export function safePracticeReturnPath(value: unknown): PracticeReturnPath {

@@ -1,0 +1,3271 @@
+{
+  "templateVersion": 1,
+  "paperId": "nda-2024-ii-gat",
+  "workflowState": "individual-answer-review-complete-release-checks-pending",
+  "sourceIdentity": {
+    "exam": "NDA",
+    "year": 2024,
+    "session": "II",
+    "paperName": "General Ability Test",
+    "paperNumber": "II (paper number, independently distinguished from session)",
+    "bookletSeries": "A",
+    "language": "Part A English; Part B English and Hindi",
+    "examinationDate": "2024-09-01",
+    "identityEvidence": [
+      "Original cover and English instructions PDF 48: SURN-A-GAT, Series A, 150 questions, 600 marks, 150 minutes.",
+      "UPSC previous-paper listing explicitly identifies NDA II 2024 GAT; question content matches prior source records."
+    ],
+    "originalPdfUrl": "https://www.upsc.gov.in/examinations/previous-question-papers",
+    "originalPdfLocalPath": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2024-2.pdf",
+    "originalPdfSha256": "f29ca30df4cc2a58ab10f0784041075444edf1e3631fbde47e96a05482c7e819",
+    "pdfPageCount": 48,
+    "missingPages": [],
+    "printedToPdfPageMap": "Printed page number equals PDF page index (one-based). Part A English 2–9; Part B English 11–43 odd; Hindi counterparts 10–42 even; rough work 44–47; English instructions 48."
+  },
+  "expectedQuestionCount": 150,
+  "expectedQuestionNumbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150
+  ],
+  "sections": [
+    {
+      "sourceLabel": "Part A — English",
+      "firstPrintedNumber": 1,
+      "lastPrintedNumber": 50,
+      "expected": 50
+    },
+    {
+      "sourceLabel": "Part B",
+      "firstPrintedNumber": 51,
+      "lastPrintedNumber": 150,
+      "expected": 100
+    }
+  ],
+  "questionSlots": [
+    {
+      "printedQuestionNumber": 1,
+      "sourcePages": [
+        2
+      ],
+      "canonicalQuestionId": "nda-2024-ii-1",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#1",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#1"
+    },
+    {
+      "printedQuestionNumber": 2,
+      "sourcePages": [
+        2
+      ],
+      "canonicalQuestionId": "nda-2024-ii-2",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#2",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#2"
+    },
+    {
+      "printedQuestionNumber": 3,
+      "sourcePages": [
+        2
+      ],
+      "canonicalQuestionId": "nda-2024-ii-3",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#3",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#3"
+    },
+    {
+      "printedQuestionNumber": 4,
+      "sourcePages": [
+        2
+      ],
+      "canonicalQuestionId": "nda-2024-ii-4",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#4",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#4"
+    },
+    {
+      "printedQuestionNumber": 5,
+      "sourcePages": [
+        2
+      ],
+      "canonicalQuestionId": "nda-2024-ii-5",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#5",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#5"
+    },
+    {
+      "printedQuestionNumber": 6,
+      "sourcePages": [
+        2,
+        3
+      ],
+      "canonicalQuestionId": "nda-2024-ii-6",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#6",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#6"
+    },
+    {
+      "printedQuestionNumber": 7,
+      "sourcePages": [
+        2,
+        3
+      ],
+      "canonicalQuestionId": "nda-2024-ii-7",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#7",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#7"
+    },
+    {
+      "printedQuestionNumber": 8,
+      "sourcePages": [
+        2,
+        3
+      ],
+      "canonicalQuestionId": "nda-2024-ii-8",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#8",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#8"
+    },
+    {
+      "printedQuestionNumber": 9,
+      "sourcePages": [
+        2,
+        3
+      ],
+      "canonicalQuestionId": "nda-2024-ii-9",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#9",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#9"
+    },
+    {
+      "printedQuestionNumber": 10,
+      "sourcePages": [
+        2,
+        3
+      ],
+      "canonicalQuestionId": "nda-2024-ii-10",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#10",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#10"
+    },
+    {
+      "printedQuestionNumber": 11,
+      "sourcePages": [
+        2,
+        3
+      ],
+      "canonicalQuestionId": "nda-2024-ii-11",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#11",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#11"
+    },
+    {
+      "printedQuestionNumber": 12,
+      "sourcePages": [
+        2,
+        3
+      ],
+      "canonicalQuestionId": "nda-2024-ii-12",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#12",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#12"
+    },
+    {
+      "printedQuestionNumber": 13,
+      "sourcePages": [
+        2,
+        3
+      ],
+      "canonicalQuestionId": "nda-2024-ii-13",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#13",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#13"
+    },
+    {
+      "printedQuestionNumber": 14,
+      "sourcePages": [
+        2,
+        3
+      ],
+      "canonicalQuestionId": "nda-2024-ii-14",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#14",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#14"
+    },
+    {
+      "printedQuestionNumber": 15,
+      "sourcePages": [
+        2,
+        3
+      ],
+      "canonicalQuestionId": "nda-2024-ii-15",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#15",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#15"
+    },
+    {
+      "printedQuestionNumber": 16,
+      "sourcePages": [
+        4
+      ],
+      "canonicalQuestionId": "nda-2024-ii-16",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#16",
+      "finalDisposition": "quarantined",
+      "blocker": "Re-examined suggests as recommends versus indicates. D is the recommendation reading; B can report an inferred earlier action. The instruction says correct alternative and supplies no disambiguating context. Do not invent a unique grammatical verdict.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#16"
+    },
+    {
+      "printedQuestionNumber": 17,
+      "sourcePages": [
+        4
+      ],
+      "canonicalQuestionId": "nda-2024-ii-17",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#17",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#17"
+    },
+    {
+      "printedQuestionNumber": 18,
+      "sourcePages": [
+        4
+      ],
+      "canonicalQuestionId": "nda-2024-ii-18",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#18",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#18"
+    },
+    {
+      "printedQuestionNumber": 19,
+      "sourcePages": [
+        4
+      ],
+      "canonicalQuestionId": "nda-2024-ii-19",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#19",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#19"
+    },
+    {
+      "printedQuestionNumber": 20,
+      "sourcePages": [
+        4
+      ],
+      "canonicalQuestionId": "nda-2024-ii-20",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#20",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#20"
+    },
+    {
+      "printedQuestionNumber": 21,
+      "sourcePages": [
+        4
+      ],
+      "canonicalQuestionId": "nda-2024-ii-21",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#21",
+      "finalDisposition": "quarantined",
+      "blocker": "A is ordinary, but B is a grammatical modal-perfect expectation about a singular indefinite agent. Oddness of wanting juice spilt does not make its grammar impossible. Missing context/official adjudication prevents exclusive approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#21"
+    },
+    {
+      "printedQuestionNumber": 22,
+      "sourcePages": [
+        4
+      ],
+      "canonicalQuestionId": "nda-2024-ii-22",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#22",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#22"
+    },
+    {
+      "printedQuestionNumber": 23,
+      "sourcePages": [
+        4
+      ],
+      "canonicalQuestionId": "nda-2024-ii-23",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#23",
+      "finalDisposition": "quarantined",
+      "blocker": "Both first-person should not (advisability) and would not (hypothetical choice) complete If I were you correctly. The source does not restrict the target to would.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#23"
+    },
+    {
+      "printedQuestionNumber": 24,
+      "sourcePages": [
+        4
+      ],
+      "canonicalQuestionId": "nda-2024-ii-24",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#24",
+      "finalDisposition": "quarantined",
+      "blocker": "Could help is the normal ability wish, but emphatic habitual did help is a grammatical unreal present wish. The correct-alternative instruction lacks context distinguishing them.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#24"
+    },
+    {
+      "printedQuestionNumber": 25,
+      "sourcePages": [
+        4
+      ],
+      "canonicalQuestionId": "nda-2024-ii-25",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#25",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#25"
+    },
+    {
+      "printedQuestionNumber": 26,
+      "sourcePages": [
+        5
+      ],
+      "canonicalQuestionId": "nda-2024-ii-26",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#26",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#26"
+    },
+    {
+      "printedQuestionNumber": 27,
+      "sourcePages": [
+        5
+      ],
+      "canonicalQuestionId": "nda-2024-ii-27",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#27",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#27"
+    },
+    {
+      "printedQuestionNumber": 28,
+      "sourcePages": [
+        5
+      ],
+      "canonicalQuestionId": "nda-2024-ii-28",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#28",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#28"
+    },
+    {
+      "printedQuestionNumber": 29,
+      "sourcePages": [
+        5
+      ],
+      "canonicalQuestionId": "nda-2024-ii-29",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#29",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#29"
+    },
+    {
+      "printedQuestionNumber": 30,
+      "sourcePages": [
+        5
+      ],
+      "canonicalQuestionId": "cds-2024-2024-2-30",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "0e8edd863ff81c1c12504a45c58a159b2f3786e891eaf53047ca439c1fe2475e",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#30",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#30"
+    },
+    {
+      "printedQuestionNumber": 31,
+      "sourcePages": [
+        5
+      ],
+      "canonicalQuestionId": "nda-2024-ii-31",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#31",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#31"
+    },
+    {
+      "printedQuestionNumber": 32,
+      "sourcePages": [
+        6
+      ],
+      "canonicalQuestionId": "nda-2024-ii-32",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#32",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#32"
+    },
+    {
+      "printedQuestionNumber": 33,
+      "sourcePages": [
+        6
+      ],
+      "canonicalQuestionId": "nda-2024-ii-33",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#33",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#33"
+    },
+    {
+      "printedQuestionNumber": 34,
+      "sourcePages": [
+        6
+      ],
+      "canonicalQuestionId": "nda-2024-ii-34",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#34",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#34"
+    },
+    {
+      "printedQuestionNumber": 35,
+      "sourcePages": [
+        6
+      ],
+      "canonicalQuestionId": "nda-2024-ii-35",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#35",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#35"
+    },
+    {
+      "printedQuestionNumber": 36,
+      "sourcePages": [
+        7
+      ],
+      "canonicalQuestionId": "nda-2024-ii-36",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#36",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#36"
+    },
+    {
+      "printedQuestionNumber": 37,
+      "sourcePages": [
+        7
+      ],
+      "canonicalQuestionId": "nda-2024-ii-37",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#37",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#37"
+    },
+    {
+      "printedQuestionNumber": 38,
+      "sourcePages": [
+        7
+      ],
+      "canonicalQuestionId": "nda-2024-ii-38",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#38",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#38"
+    },
+    {
+      "printedQuestionNumber": 39,
+      "sourcePages": [
+        7
+      ],
+      "canonicalQuestionId": "nda-2024-ii-39",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#39",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#39"
+    },
+    {
+      "printedQuestionNumber": 40,
+      "sourcePages": [
+        7
+      ],
+      "canonicalQuestionId": "nda-2024-ii-40",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#40",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#40"
+    },
+    {
+      "printedQuestionNumber": 41,
+      "sourcePages": [
+        7,
+        8
+      ],
+      "canonicalQuestionId": "nda-2024-ii-41",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#41",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#41"
+    },
+    {
+      "printedQuestionNumber": 42,
+      "sourcePages": [
+        7,
+        8
+      ],
+      "canonicalQuestionId": "nda-2024-ii-42",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#42",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#42"
+    },
+    {
+      "printedQuestionNumber": 43,
+      "sourcePages": [
+        7,
+        8
+      ],
+      "canonicalQuestionId": "nda-2024-ii-43",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#43",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#43"
+    },
+    {
+      "printedQuestionNumber": 44,
+      "sourcePages": [
+        7,
+        8
+      ],
+      "canonicalQuestionId": "nda-2024-ii-44",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#44",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#44"
+    },
+    {
+      "printedQuestionNumber": 45,
+      "sourcePages": [
+        7,
+        8
+      ],
+      "canonicalQuestionId": "nda-2024-ii-45",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#45",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#45"
+    },
+    {
+      "printedQuestionNumber": 46,
+      "sourcePages": [
+        9
+      ],
+      "canonicalQuestionId": "nda-2024-ii-46",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#46",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#46"
+    },
+    {
+      "printedQuestionNumber": 47,
+      "sourcePages": [
+        9
+      ],
+      "canonicalQuestionId": "nda-2024-ii-47",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#47",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#47"
+    },
+    {
+      "printedQuestionNumber": 48,
+      "sourcePages": [
+        9
+      ],
+      "canonicalQuestionId": "nda-2024-ii-48",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#48",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#48"
+    },
+    {
+      "printedQuestionNumber": 49,
+      "sourcePages": [
+        9
+      ],
+      "canonicalQuestionId": "nda-2024-ii-49",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#49",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#49"
+    },
+    {
+      "printedQuestionNumber": 50,
+      "sourcePages": [
+        9
+      ],
+      "canonicalQuestionId": "nda-2024-ii-50",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#50",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#50"
+    },
+    {
+      "printedQuestionNumber": 51,
+      "sourcePages": [
+        11
+      ],
+      "canonicalQuestionId": "nda-2024-ii-51",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#51",
+      "finalDisposition": "quarantined",
+      "blocker": "Freshly distinguished digestion after entry from prevention of entry. B is false because lysosomes do not digest all inorganic matter; D is also false because the membrane controls entry. No unique NOT-correct choice survives.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#51"
+    },
+    {
+      "printedQuestionNumber": 52,
+      "sourcePages": [
+        11
+      ],
+      "canonicalQuestionId": "nda-2024-ii-52",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#52",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#52"
+    },
+    {
+      "printedQuestionNumber": 53,
+      "sourcePages": [
+        11
+      ],
+      "canonicalQuestionId": "nda-2024-ii-53",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#53",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#53"
+    },
+    {
+      "printedQuestionNumber": 54,
+      "sourcePages": [
+        11
+      ],
+      "canonicalQuestionId": "nda-2024-ii-54",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#54",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#54"
+    },
+    {
+      "printedQuestionNumber": 55,
+      "sourcePages": [
+        11
+      ],
+      "canonicalQuestionId": "nda-2024-ii-55",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#55",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#55"
+    },
+    {
+      "printedQuestionNumber": 56,
+      "sourcePages": [
+        11
+      ],
+      "canonicalQuestionId": "nda-2024-ii-56",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#56",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#56"
+    },
+    {
+      "printedQuestionNumber": 57,
+      "sourcePages": [
+        11
+      ],
+      "canonicalQuestionId": "nda-2024-ii-57",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#57",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#57"
+    },
+    {
+      "printedQuestionNumber": 58,
+      "sourcePages": [
+        13
+      ],
+      "canonicalQuestionId": "nda-2024-ii-58",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#58",
+      "finalDisposition": "quarantined",
+      "blocker": "Rechecked both elemental allotropes: P4 and S8 are each polyatomic. The stem does not exclude either. A single-answer selection of sulfur cannot be independently justified by pretending phosphorus is diatomic.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#58"
+    },
+    {
+      "printedQuestionNumber": 59,
+      "sourcePages": [
+        13
+      ],
+      "canonicalQuestionId": "nda-2024-ii-59",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#59",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#59"
+    },
+    {
+      "printedQuestionNumber": 60,
+      "sourcePages": [
+        13
+      ],
+      "canonicalQuestionId": "nda-2024-ii-60",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#60",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#60"
+    },
+    {
+      "printedQuestionNumber": 61,
+      "sourcePages": [
+        13
+      ],
+      "canonicalQuestionId": "nda-2024-ii-61",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#61",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#61"
+    },
+    {
+      "printedQuestionNumber": 62,
+      "sourcePages": [
+        13
+      ],
+      "canonicalQuestionId": "nda-2024-ii-62",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#62",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#62"
+    },
+    {
+      "printedQuestionNumber": 63,
+      "sourcePages": [
+        13
+      ],
+      "canonicalQuestionId": "nda-2024-ii-63",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#63",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#63"
+    },
+    {
+      "printedQuestionNumber": 64,
+      "sourcePages": [
+        13
+      ],
+      "canonicalQuestionId": "nda-2024-ii-64",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#64",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#64"
+    },
+    {
+      "printedQuestionNumber": 65,
+      "sourcePages": [
+        15
+      ],
+      "canonicalQuestionId": "nda-2024-ii-65",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#65",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#65"
+    },
+    {
+      "printedQuestionNumber": 66,
+      "sourcePages": [
+        15
+      ],
+      "canonicalQuestionId": "nda-2024-ii-66",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#66",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#66"
+    },
+    {
+      "printedQuestionNumber": 67,
+      "sourcePages": [
+        15
+      ],
+      "canonicalQuestionId": "nda-2024-ii-67",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#67",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#67"
+    },
+    {
+      "printedQuestionNumber": 68,
+      "sourcePages": [
+        15
+      ],
+      "canonicalQuestionId": "nda-2024-ii-68",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#68",
+      "finalDisposition": "quarantined",
+      "blocker": "NOAA confirms that intracloud charge flow (A) is lightning and that induced ground charge (D) is relevant to cloud-ground lightning. The generic causal stem does not select one type; the candidate D is not enough to override this.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#68"
+    },
+    {
+      "printedQuestionNumber": 69,
+      "sourcePages": [
+        17
+      ],
+      "canonicalQuestionId": "nda-2024-ii-69",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#69",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#69"
+    },
+    {
+      "printedQuestionNumber": 70,
+      "sourcePages": [
+        17
+      ],
+      "canonicalQuestionId": "nda-2024-ii-70",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#70",
+      "finalDisposition": "quarantined",
+      "blocker": "Freshly inspected the original four speed graphs. A is the textbook schematic intent but has an initially increasing slope and an almost vertical speed drop; D also allows a smooth acceleration/retardation profile. Without a stated schematic convention or authenticated official adjudication, do not force a unique literal physics answer.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#70"
+    },
+    {
+      "printedQuestionNumber": 71,
+      "sourcePages": [
+        19
+      ],
+      "canonicalQuestionId": "nda-2024-ii-71",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#71",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#71"
+    },
+    {
+      "printedQuestionNumber": 72,
+      "sourcePages": [
+        19
+      ],
+      "canonicalQuestionId": "nda-2024-ii-72",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#72",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#72"
+    },
+    {
+      "printedQuestionNumber": 73,
+      "sourcePages": [
+        19
+      ],
+      "canonicalQuestionId": "nda-2024-ii-73",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#73",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#73"
+    },
+    {
+      "printedQuestionNumber": 74,
+      "sourcePages": [
+        19
+      ],
+      "canonicalQuestionId": "nda-2024-ii-74",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#74",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#74"
+    },
+    {
+      "printedQuestionNumber": 75,
+      "sourcePages": [
+        19
+      ],
+      "canonicalQuestionId": "nda-2024-ii-75",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#75",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#75"
+    },
+    {
+      "printedQuestionNumber": 76,
+      "sourcePages": [
+        21
+      ],
+      "canonicalQuestionId": "nda-2024-ii-76",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#76",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#76"
+    },
+    {
+      "printedQuestionNumber": 77,
+      "sourcePages": [
+        21
+      ],
+      "canonicalQuestionId": "nda-2024-ii-77",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#77",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#77"
+    },
+    {
+      "printedQuestionNumber": 78,
+      "sourcePages": [
+        21
+      ],
+      "canonicalQuestionId": "nda-2024-ii-78",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "3d0ac9968f13e6150bc5c78cf4d93ad18625b85bd79e824456db1a9d1e52a6ce",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#78",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#78"
+    },
+    {
+      "printedQuestionNumber": 79,
+      "sourcePages": [
+        21
+      ],
+      "canonicalQuestionId": "nda-2024-ii-79",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "288802d46f0d3fa9a83534024f3a701a9d9891ac0594f01a13bc1843e7ec6134",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#79",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#79"
+    },
+    {
+      "printedQuestionNumber": 80,
+      "sourcePages": [
+        21
+      ],
+      "canonicalQuestionId": "nda-2024-ii-80",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "826f2605cce0c66ae5853bb00af37c1024d04d36bd0ae4e4643be027dbe3c7dc",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#80",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#80"
+    },
+    {
+      "printedQuestionNumber": 81,
+      "sourcePages": [
+        21
+      ],
+      "canonicalQuestionId": "nda-2024-ii-81",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "361b597e864a440c714c011f1d3d6c901ed7bc0171b30dd47b6fa84f6d5e3f90",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#81",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#81"
+    },
+    {
+      "printedQuestionNumber": 82,
+      "sourcePages": [
+        23
+      ],
+      "canonicalQuestionId": "nda-2024-ii-82",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "4e172b27e48142fcef75ec010db2c0c0dc69da3ece55ed34b41fc2da8c040dc3",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#82",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#82"
+    },
+    {
+      "printedQuestionNumber": 83,
+      "sourcePages": [
+        23
+      ],
+      "canonicalQuestionId": "nda-2024-ii-83",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "ef7be1b372a8578f6fedb42cce3a1e54815f1434a219ea9c3592569c75b08480",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#83",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#83"
+    },
+    {
+      "printedQuestionNumber": 84,
+      "sourcePages": [
+        23
+      ],
+      "canonicalQuestionId": "nda-2024-ii-84",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#84",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#84"
+    },
+    {
+      "printedQuestionNumber": 85,
+      "sourcePages": [
+        23
+      ],
+      "canonicalQuestionId": "nda-2024-ii-85",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#85",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#85"
+    },
+    {
+      "printedQuestionNumber": 86,
+      "sourcePages": [
+        23
+      ],
+      "canonicalQuestionId": "nda-2024-ii-86",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#86",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#86"
+    },
+    {
+      "printedQuestionNumber": 87,
+      "sourcePages": [
+        23
+      ],
+      "canonicalQuestionId": "nda-2024-ii-87",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#87",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#87"
+    },
+    {
+      "printedQuestionNumber": 88,
+      "sourcePages": [
+        23
+      ],
+      "canonicalQuestionId": "nda-2024-ii-88",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#88",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#88"
+    },
+    {
+      "printedQuestionNumber": 89,
+      "sourcePages": [
+        23
+      ],
+      "canonicalQuestionId": "nda-2024-ii-89",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#89",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#89"
+    },
+    {
+      "printedQuestionNumber": 90,
+      "sourcePages": [
+        25
+      ],
+      "canonicalQuestionId": "nda-2024-ii-90",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#90",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#90"
+    },
+    {
+      "printedQuestionNumber": 91,
+      "sourcePages": [
+        25
+      ],
+      "canonicalQuestionId": "nda-2024-ii-91",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#91",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#91"
+    },
+    {
+      "printedQuestionNumber": 92,
+      "sourcePages": [
+        25
+      ],
+      "canonicalQuestionId": "nda-2024-ii-92",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#92",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#92"
+    },
+    {
+      "printedQuestionNumber": 93,
+      "sourcePages": [
+        25
+      ],
+      "canonicalQuestionId": "nda-2024-ii-93",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#93",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#93"
+    },
+    {
+      "printedQuestionNumber": 94,
+      "sourcePages": [
+        25
+      ],
+      "canonicalQuestionId": "nda-2024-ii-94",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#94",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#94"
+    },
+    {
+      "printedQuestionNumber": 95,
+      "sourcePages": [
+        25
+      ],
+      "canonicalQuestionId": "nda-2024-ii-95",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#95",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#95"
+    },
+    {
+      "printedQuestionNumber": 96,
+      "sourcePages": [
+        27
+      ],
+      "canonicalQuestionId": "nda-2024-ii-96",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#96",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#96"
+    },
+    {
+      "printedQuestionNumber": 97,
+      "sourcePages": [
+        27
+      ],
+      "canonicalQuestionId": "nda-2024-ii-97",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#97",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#97"
+    },
+    {
+      "printedQuestionNumber": 98,
+      "sourcePages": [
+        27
+      ],
+      "canonicalQuestionId": "nda-2024-ii-98",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#98",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#98"
+    },
+    {
+      "printedQuestionNumber": 99,
+      "sourcePages": [
+        27
+      ],
+      "canonicalQuestionId": "nda-2024-ii-99",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#99",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#99"
+    },
+    {
+      "printedQuestionNumber": 100,
+      "sourcePages": [
+        27
+      ],
+      "canonicalQuestionId": "nda-2024-ii-100",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#100",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#100"
+    },
+    {
+      "printedQuestionNumber": 101,
+      "sourcePages": [
+        27
+      ],
+      "canonicalQuestionId": "nda-2024-ii-101",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#101",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#101"
+    },
+    {
+      "printedQuestionNumber": 102,
+      "sourcePages": [
+        29
+      ],
+      "canonicalQuestionId": "nda-2024-ii-102",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#102",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#102"
+    },
+    {
+      "printedQuestionNumber": 103,
+      "sourcePages": [
+        29
+      ],
+      "canonicalQuestionId": "nda-2024-ii-103",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#103",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#103"
+    },
+    {
+      "printedQuestionNumber": 104,
+      "sourcePages": [
+        29
+      ],
+      "canonicalQuestionId": "nda-2024-ii-104",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#104",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#104"
+    },
+    {
+      "printedQuestionNumber": 105,
+      "sourcePages": [
+        29
+      ],
+      "canonicalQuestionId": "nda-2024-ii-105",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "d7dc19e46a69a3a33e88b7522b3a630d12c8327e4ec432f1e06fc8a7779f0d2e",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#105",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#105"
+    },
+    {
+      "printedQuestionNumber": 106,
+      "sourcePages": [
+        29
+      ],
+      "canonicalQuestionId": "nda-2024-ii-106",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "edd3f9b7cb62a7658b9f4f587ff9d07cb3e636af6307dcc15a9cf94e0644935c",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#106",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#106"
+    },
+    {
+      "printedQuestionNumber": 107,
+      "sourcePages": [
+        29
+      ],
+      "canonicalQuestionId": "nda-2024-ii-107",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "2e768dbf480ca7f9c7cb2e602eff05ca4ea655e57409baf13dd919121de66abd",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#107",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#107"
+    },
+    {
+      "printedQuestionNumber": 108,
+      "sourcePages": [
+        31
+      ],
+      "canonicalQuestionId": "nda-2024-ii-108",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "2516cd2710f4c0982016da73d94e072b70522cb47ca9bb4f2395ff7a3546dd48",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#108",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#108"
+    },
+    {
+      "printedQuestionNumber": 109,
+      "sourcePages": [
+        31
+      ],
+      "canonicalQuestionId": "nda-2024-ii-109",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "a9f81600ee1e34cf7e5b0c0f3f99a54e4663d3a9c976ac52ae163ce5d15b6eae",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#109",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#109"
+    },
+    {
+      "printedQuestionNumber": 110,
+      "sourcePages": [
+        31
+      ],
+      "canonicalQuestionId": "nda-2024-ii-110",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "603be1171bd9b69b6ee831cf5e127e29348b430f814b3da71c1a00f7112edd9c",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#110",
+      "finalDisposition": "quarantined",
+      "blocker": "Fresh review distinguishes the school text’s dual listing of granite from geological rock identity. Ordinary granite is igneous; metamorphosed granite is generally orthogneiss. The source textbook’s imprecise list is not enough for an unqualified independently verified claim that granite is both. Recover authenticated official D with a caveat, or a precise primary definition resolving the intended classification.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#110"
+    },
+    {
+      "printedQuestionNumber": 111,
+      "sourcePages": [
+        31
+      ],
+      "canonicalQuestionId": "nda-2024-ii-111",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "3b14add6a47288a1d577520312b5de30fd9b53b184f5958a8d65d82832d274c2",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#111",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#111"
+    },
+    {
+      "printedQuestionNumber": 112,
+      "sourcePages": [
+        31
+      ],
+      "canonicalQuestionId": "nda-2024-ii-112",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "da0855f5b6a49ac465338180982021fd3c338c8438984f41d4887e7e47654e60",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#112",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#112"
+    },
+    {
+      "printedQuestionNumber": 113,
+      "sourcePages": [
+        31
+      ],
+      "canonicalQuestionId": "nda-2024-ii-113",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#113",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#113"
+    },
+    {
+      "printedQuestionNumber": 114,
+      "sourcePages": [
+        31
+      ],
+      "canonicalQuestionId": "nda-2024-ii-114",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#114",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#114"
+    },
+    {
+      "printedQuestionNumber": 115,
+      "sourcePages": [
+        33
+      ],
+      "canonicalQuestionId": "nda-2024-ii-115",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#115",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#115"
+    },
+    {
+      "printedQuestionNumber": 116,
+      "sourcePages": [
+        33
+      ],
+      "canonicalQuestionId": "nda-2024-ii-116",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#116",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#116"
+    },
+    {
+      "printedQuestionNumber": 117,
+      "sourcePages": [
+        33
+      ],
+      "canonicalQuestionId": "nda-2024-ii-117",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#117",
+      "finalDisposition": "quarantined",
+      "blocker": "Fresh university nutrient table confirms both urea and bone meal supply nitrogen. Bone meal has 3–4 percent N raw and 1–2 percent steamed. The stem says a source, not the principal or concentrated source, so C and D survive.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#117"
+    },
+    {
+      "printedQuestionNumber": 118,
+      "sourcePages": [
+        33
+      ],
+      "canonicalQuestionId": "nda-2024-ii-118",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#118",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#118"
+    },
+    {
+      "printedQuestionNumber": 119,
+      "sourcePages": [
+        33
+      ],
+      "canonicalQuestionId": "nda-2024-ii-119",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#119",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#119"
+    },
+    {
+      "printedQuestionNumber": 120,
+      "sourcePages": [
+        33
+      ],
+      "canonicalQuestionId": "nda-2024-ii-120",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#120",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#120"
+    },
+    {
+      "printedQuestionNumber": 121,
+      "sourcePages": [
+        33
+      ],
+      "canonicalQuestionId": "nda-2024-ii-121",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#121",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#121"
+    },
+    {
+      "printedQuestionNumber": 122,
+      "sourcePages": [
+        33
+      ],
+      "canonicalQuestionId": "nda-2024-ii-122",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#122",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#122"
+    },
+    {
+      "printedQuestionNumber": 123,
+      "sourcePages": [
+        33
+      ],
+      "canonicalQuestionId": "nda-2024-ii-123",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#123",
+      "finalDisposition": "quarantined",
+      "blocker": "Recomputed initial kinetic energy as 100 J. With ordinary constant kinetic friction over 20 m the force is 5 N, absent from all four options. If variable friction is allowed, an instantaneous magnitude is underdetermined. Candidate X is not authenticated official withdrawal.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#123"
+    },
+    {
+      "printedQuestionNumber": 124,
+      "sourcePages": [
+        35
+      ],
+      "canonicalQuestionId": "nda-2024-ii-124",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#124",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#124"
+    },
+    {
+      "printedQuestionNumber": 125,
+      "sourcePages": [
+        35
+      ],
+      "canonicalQuestionId": "nda-2024-ii-125",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#125",
+      "finalDisposition": "quarantined",
+      "blocker": "Freshly inspected P downward and Q upward on the original skydiver. A correctly identifies weight and air friction; C also correctly describes increased drag immediately on parachute opening at unchanged weight. The printed single-answer question lacks a unique independent choice.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#125"
+    },
+    {
+      "printedQuestionNumber": 126,
+      "sourcePages": [
+        35
+      ],
+      "canonicalQuestionId": "nda-2024-ii-126",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#126",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#126"
+    },
+    {
+      "printedQuestionNumber": 127,
+      "sourcePages": [
+        35
+      ],
+      "canonicalQuestionId": "nda-2024-ii-127",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#127",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#127"
+    },
+    {
+      "printedQuestionNumber": 128,
+      "sourcePages": [
+        35
+      ],
+      "canonicalQuestionId": "nda-2024-ii-128",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#128",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#128"
+    },
+    {
+      "printedQuestionNumber": 129,
+      "sourcePages": [
+        37
+      ],
+      "canonicalQuestionId": "nda-2024-ii-129",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#129",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#129"
+    },
+    {
+      "printedQuestionNumber": 130,
+      "sourcePages": [
+        37
+      ],
+      "canonicalQuestionId": "nda-2024-ii-130",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#130",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#130"
+    },
+    {
+      "printedQuestionNumber": 131,
+      "sourcePages": [
+        37
+      ],
+      "canonicalQuestionId": "nda-2024-ii-131",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#131",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#131"
+    },
+    {
+      "printedQuestionNumber": 132,
+      "sourcePages": [
+        37
+      ],
+      "canonicalQuestionId": "cds-2024-2024-2-132",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "19756bc58f6476589807d2c0d2115c5da019d176aedf5d757e74728ea731ba16",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#132",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#132"
+    },
+    {
+      "printedQuestionNumber": 133,
+      "sourcePages": [
+        37
+      ],
+      "canonicalQuestionId": "nda-2024-ii-133",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#133",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#133"
+    },
+    {
+      "printedQuestionNumber": 134,
+      "sourcePages": [
+        39
+      ],
+      "canonicalQuestionId": "nda-2024-ii-134",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#134",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#134"
+    },
+    {
+      "printedQuestionNumber": 135,
+      "sourcePages": [
+        39
+      ],
+      "canonicalQuestionId": "nda-2024-ii-135",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "4d628021d4773b62e542422e3918b939fe4638e3ca700d4fc23c7e9c3c43493b",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#135",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#135"
+    },
+    {
+      "printedQuestionNumber": 136,
+      "sourcePages": [
+        39
+      ],
+      "canonicalQuestionId": "nda-2024-ii-136",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "34bda44c192c8ba10bf45cc6b62d17b3d2297f13e90b8035b8cf497a2c1f4982",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#136",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#136"
+    },
+    {
+      "printedQuestionNumber": 137,
+      "sourcePages": [
+        39
+      ],
+      "canonicalQuestionId": "nda-2024-ii-137",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "1b90c184c93f100d6222064525d7aa378886bd5c9939a4eab658d76dd95fb665",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#137",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#137"
+    },
+    {
+      "printedQuestionNumber": 138,
+      "sourcePages": [
+        39
+      ],
+      "canonicalQuestionId": "nda-2024-ii-138",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "11646b64530dc5bddfe1661bfaa37ce35f78b8c0f1006d716d71e591f1580a00",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#138",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#138"
+    },
+    {
+      "printedQuestionNumber": 139,
+      "sourcePages": [
+        39
+      ],
+      "canonicalQuestionId": "nda-2024-ii-139",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "3d44876391afbc2f48ef54ea14ce27f36e8fe2d6bab4da8c0d30849e590f06b9",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#139",
+      "finalDisposition": "quarantined",
+      "blocker": "Fresh review finds no primary support for the scan’s potash C. General laterites are leached/nutrient-poor; institutional regional accounts differ on nitrogen and sometimes phosphate. The unspecified appreciable amount cannot be independently resolved to one option. Do not silently substitute a regional answer for the official one.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#139"
+    },
+    {
+      "printedQuestionNumber": 140,
+      "sourcePages": [
+        41
+      ],
+      "canonicalQuestionId": "nda-2024-ii-140",
+      "accountingAction": "reused",
+      "expectedBeforeRecordHash": "fe82bcf42e8ef04f36dc6b962f84cea61018f047f92c83b2b0eaed03e6930c4a",
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#140",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#140"
+    },
+    {
+      "printedQuestionNumber": 141,
+      "sourcePages": [
+        41
+      ],
+      "canonicalQuestionId": "nda-2024-ii-141",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#141",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#141"
+    },
+    {
+      "printedQuestionNumber": 142,
+      "sourcePages": [
+        41
+      ],
+      "canonicalQuestionId": "nda-2024-ii-142",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#142",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#142"
+    },
+    {
+      "printedQuestionNumber": 143,
+      "sourcePages": [
+        41
+      ],
+      "canonicalQuestionId": "nda-2024-ii-143",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#143",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#143"
+    },
+    {
+      "printedQuestionNumber": 144,
+      "sourcePages": [
+        41
+      ],
+      "canonicalQuestionId": "nda-2024-ii-144",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#144",
+      "finalDisposition": "quarantined",
+      "blocker": "Re-read both 2023 organiser releases: Jakarta in November and New Delhi in December have the same festival title and organising Indian Mission. With no month in the stem, both India and Indonesia have direct primary evidence. Authenticated official adjudication is needed for a single scored answer.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#144"
+    },
+    {
+      "printedQuestionNumber": 145,
+      "sourcePages": [
+        41
+      ],
+      "canonicalQuestionId": "nda-2024-ii-145",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#145",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#145"
+    },
+    {
+      "printedQuestionNumber": 146,
+      "sourcePages": [
+        43
+      ],
+      "canonicalQuestionId": "nda-2024-ii-146",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#146",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#146"
+    },
+    {
+      "printedQuestionNumber": 147,
+      "sourcePages": [
+        43
+      ],
+      "canonicalQuestionId": "nda-2024-ii-147",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#147",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#147"
+    },
+    {
+      "printedQuestionNumber": 148,
+      "sourcePages": [
+        43
+      ],
+      "canonicalQuestionId": "nda-2024-ii-148",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#148",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#148"
+    },
+    {
+      "printedQuestionNumber": 149,
+      "sourcePages": [
+        43
+      ],
+      "canonicalQuestionId": "nda-2024-ii-149",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#149",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#149"
+    },
+    {
+      "printedQuestionNumber": 150,
+      "sourcePages": [
+        43
+      ],
+      "canonicalQuestionId": "nda-2024-ii-150",
+      "accountingAction": "new",
+      "expectedBeforeRecordHash": null,
+      "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#150",
+      "finalDisposition": "reasoned-verified",
+      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#150"
+    }
+  ],
+  "duplicateAliases": [],
+  "existingRegisterReferences": [],
+  "officialKeySearchLog": [
+    {
+      "url": "https://www.upsc.gov.in/examinations/answer-key/archives",
+      "result": "Accessible listing returned only CISF 2026. Does not establish absence of an older NDA key."
+    },
+    {
+      "url": "https://upsc.gov.in/examinations/answer-key/archives",
+      "result": "Redirected to homepage."
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-II-2024-GAT-170425.pdf",
+      "result": "HTTP 404 on 2026-10-27; filename variant is a search attempt, not a claimed source URL."
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-II-2024-GAT-160425.pdf",
+      "result": "HTTP 404 on 2026-10-27; filename variant is a search attempt, not a claimed source URL."
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-II-2024-GAT-170425.pdf",
+      "result": "HTTP 404 on 2026-10-27; filename variant is a search attempt, not a claimed source URL."
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/NDA_NA_II_EXAM_2024_GAT_Ans_Key.pdf",
+      "result": "HTTP 404 on 2026-10-27; filename variant is a search attempt, not a claimed source URL."
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-II-2024-GAT-220425.pdf",
+      "result": "HTTP 404 on 2026-10-27; filename variant is a search attempt, not a claimed source URL."
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-II-2024-GAT-230425.pdf",
+      "result": "HTTP 404 on 2026-10-27; filename variant is a search attempt, not a claimed source URL."
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-II-2024-GAT-220425.pdf",
+      "result": "HTTP 404 on 2026-10-27; filename variant is a search attempt, not a claimed source URL."
+    },
+    {
+      "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-II-2024-GAT-240425.pdf",
+      "result": "HTTP 404 on 2026-10-27; filename variant is a search attempt, not a claimed source URL."
+    },
+    {
+      "url": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+      "result": "Preserved four-page scan with A/B/C/D tables, source-matching A header, 150 total/149 scored and Q123 X. Both transcriptions agree. Earlier local review accepted 20 cells; that earlier decision is not blanket approval of all 150."
+    },
+    {
+      "url": "https://prepp.in/nda-exam/question%20paper%202024",
+      "result": "Explicit NDA II 2024 GAT answer-key row links to the candidate scan; not a direct official-origin URL."
+    },
+    {
+      "url": "https://www.pw.live/defence/exams/nda-2-2024-answer-key",
+      "result": "Article explicitly labels its model table unofficial and contains conflicting later answers. Not used as official authority."
+    },
+    {
+      "url": "https://www.defencestudy.com/blog/nda-previous-year-questions-last-10-years-papers-with-answers",
+      "result": "Official-key link is a generic UPSC archive, not paper-specific provenance."
+    }
+  ],
+  "officialKeyDocuments": [
+    {
+      "paperId": "nda-2024-ii-gat",
+      "bookletSeries": "A",
+      "page": 1,
+      "retrievedLocalPath": "../data/nda_answer_sources/answer_keys/2024_II.pdf",
+      "sha256": "9086a5382ac12ea9b266786419d0689b88c15b00ad80d34ca755be3c0ee4ae95",
+      "candidateUrl": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+      "mirrorListing": "https://prepp.in/nda-exam/question%20paper%202024",
+      "authenticationStatus": "candidate mirror; direct official-source provenance/revision check still pending",
+      "reviewer": "codex-main (AI; both passes by the same reviewer)",
+      "reviewedAt": "2026-10-27",
+      "method": "Visual Series A page read column-first, then reopened and read row-first. X retained as printed, not inferred from an unreadable cell.",
+      "printedDroppedCount": 1,
+      "printedScoringCount": 149,
+      "droppedQuestionNumbers": [
+        123
+      ],
+      "multipleAnswerCells": [],
+      "publicationApproved": false,
+      "status": "candidate mirror; not yet authenticated for publication"
+    }
+  ],
+  "keyTranscription": {
+    "firstPassReference": "content/audits/nda-2024-ii-key-transcriptions.json#firstPassColumns",
+    "secondPassReference": "content/audits/nda-2024-ii-key-transcriptions.json#secondPassRows",
+    "comparisonResult": "150 matching cells; Q123 is X; 149 letter cells; no multiple-answer cells observed",
+    "dropAndMultipleAnswerCellsChecked": true
+  },
+  "reconciliation": {
+    "newSourceOccurrences": 128,
+    "reusedSourceOccurrences": 22,
+    "unresolvedSourceSlots": 0,
+    "reproductionFirstPassCount": 150,
+    "reproductionSecondSourcePassCount": 150,
+    "classificationDraftCount": 150,
+    "answerAwaitingReviewCount": 0,
+    "eligibleNewlyPublished": 0,
+    "sourceReviewComplete": true,
+    "answerSecondPassCount": 150,
+    "reasonedVerifiedCount": 136,
+    "quarantinedCount": 14,
+    "eligibleAfterApprovedOverlay": 136,
+    "note": "eligibleNewlyPublished=0 describes this immutable source-only staging artifact, not the reviewed runtime overlay or production release state."
+  },
+  "reviewGateResults": [],
+  "release": {
+    "standingInstruction": "Complete, self-review, test, push and verify; later user restrictions take precedence.",
+    "laterUserRestriction": null,
+    "reportReference": null,
+    "localVerified": false,
+    "remoteAndBranchVerified": false,
+    "commit": null,
+    "deploymentCommit": null,
+    "deploymentState": null,
+    "liveUrl": null,
+    "productionEvidence": [],
+    "liveVerified": false,
+    "blockers": []
+  },
+  "active": false,
+  "review": {
+    "reviewer": "codex-main",
+    "reviewerKind": "AI",
+    "date": "2026-10-27",
+    "firstSourcePass": "All 150 stems/options read from original page renders and transcribed; figures separately cropped and inspected.",
+    "secondSourcePass": "Fresh reverse-page visual comparison completed for all 150 by the same AI reviewer, not an independent human review. Q91 duplicated printed option label retained as an explicit source caveat.",
+    "classificationSecondPass": "2026-10-27: fresh same-AI concept/applicability pass recorded per slot in the runtime review; staged first-pass classifications retained as history.",
+    "figureCropManifest": "content/audits/nda-2024-ii-figure-manifest.json",
+    "requiredFigureNumbers": [
+      64,
+      67,
+      69,
+      70,
+      71,
+      72,
+      125
+    ]
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2024-2024-2-30",
+      "sha256": "0e8edd863ff81c1c12504a45c58a159b2f3786e891eaf53047ca439c1fe2475e",
+      "value": {
+        "id": "cds-2024-2024-2-30",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Select the most appropriate meaning of the idiom/phrase:\nSit on the fence",
+        "sourceTextHash": "0c76c4a8cd1aadc730b977ce278daa77ac713cf87b04925d5770ce9ed84ad867",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 30,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Sit on the fence",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "Original NDA 2024-2 Q30, page 5, visually checked against its complete stem and options; the matching Series A final key accepts C."
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "9086a5382ac12ea9b266786419d0689b88c15b00ad80d34ca755be3c0ee4ae95",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 30,
+        "subject": "English",
+        "topic": "Vocabulary",
+        "subtopic": "Idioms",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Select the most appropriate meaning of the idiom/phrase:",
+          "Sit on the fence"
+        ],
+        "options": {
+          "A": "to make someone suddenly notice you",
+          "B": "to fail completely",
+          "C": "to delay making a decision",
+          "D": "to behave very badly"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2024-2 Q30, page 5, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-78",
+      "sha256": "3d0ac9968f13e6150bc5c78cf4d93ad18625b85bd79e824456db1a9d1e52a6ce",
+      "value": {
+        "id": "nda-2024-ii-78",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Any land that is left fallow for more than five years is termed as",
+        "sourceTextHash": "fa49f08e536e4919cbd42397729c849263752b638de4091f0347f68cc56276f3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 78,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Any land that is left fallow for more than five years is termed as"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 78,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Any land that is left fallow for more than five years is termed as"
+        ],
+        "options": {
+          "A": "Current fallow",
+          "B": "Fallow other than current fallow",
+          "C": "Culturable waste land",
+          "D": "Barren and waste land"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-79",
+      "sha256": "288802d46f0d3fa9a83534024f3a701a9d9891ac0594f01a13bc1843e7ec6134",
+      "value": {
+        "id": "nda-2024-ii-79",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which statement is NOT correct with reference to Andaman and Nicobar Islands?",
+        "sourceTextHash": "1f7ceb2e747c9c1c81571c5522b6c4c2bb6d4fa779a3eeca1e4c2a3a8c5a2aa8",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 79,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which statement is NOT correct with reference to Andaman and Nicobar Islands?"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 79,
+        "subject": "Geography",
+        "topic": "Climate & Monsoon",
+        "subtopic": "Indian Monsoon & Rainfall",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which statement is NOT correct with reference to Andaman and Nicobar Islands?"
+        ],
+        "options": {
+          "A": "Climate is humid, tropical coastal climate",
+          "B": "Maximum rainfall occurs between March and April",
+          "C": "Andaman and Nicobar islands are separated by 10 degree Channel which is 150 Km wide",
+          "D": "Islands are inhabited by Negrito tribes"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-80",
+      "sha256": "826f2605cce0c66ae5853bb00af37c1024d04d36bd0ae4e4643be027dbe3c7dc",
+      "value": {
+        "id": "nda-2024-ii-80",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following local winds is NOT related to Mediterranean Sea?",
+        "sourceTextHash": "2c7332bf63a9b3f73a77b8033d2801e30f92d0a28efa9121c901463f9133f5fa",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 80,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which one among the following local winds is NOT related to Mediterranean Sea?",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Harmattan is the non-Mediterranean wind among the options.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "9086a5382ac12ea9b266786419d0689b88c15b00ad80d34ca755be3c0ee4ae95",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 80,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Winds & Atmospheric Circulation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following local winds is NOT related to Mediterranean Sea?"
+        ],
+        "options": {
+          "A": "Harmattan",
+          "B": "Khamsin",
+          "C": "Sirocco",
+          "D": "Mistral"
+        },
+        "answer": "A",
+        "explanation": "Harmattan is the non-Mediterranean wind among the options.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-81",
+      "sha256": "361b597e864a440c714c011f1d3d6c901ed7bc0171b30dd47b6fa84f6d5e3f90",
+      "value": {
+        "id": "nda-2024-ii-81",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following is a landlocked water body?",
+        "sourceTextHash": "520e9062b34432d652ec4d09aa36230fc9c86986ae5076eb371b372ed4cb6f5f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 81,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which one among the following is a landlocked water body?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "The Caspian is the landlocked water body.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "9086a5382ac12ea9b266786419d0689b88c15b00ad80d34ca755be3c0ee4ae95",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 81,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Biomes & Vegetation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following is a landlocked water body?"
+        ],
+        "options": {
+          "A": "Mediterranean Sea",
+          "B": "Black Sea",
+          "C": "Red Sea",
+          "D": "Caspian Sea ---"
+        },
+        "answer": "D",
+        "explanation": "The Caspian is the landlocked water body.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-82",
+      "sha256": "4e172b27e48142fcef75ec010db2c0c0dc69da3ece55ed34b41fc2da8c040dc3",
+      "value": {
+        "id": "nda-2024-ii-82",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following statements with reference to Benguela current is NOT correct?",
+        "sourceTextHash": "1a30378e40abecea5792e3b16f51f70e5011eca0fa861284f07e2a0da99efab6",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 82,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which one among the following statements with reference to Benguela current is NOT correct?"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 82,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Currents",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following statements with reference to Benguela current is NOT correct?"
+        ],
+        "options": {
+          "A": "It influences the climate of the West coast of North Africa",
+          "B": "It is a cold current",
+          "C": "Its direction is from South to North",
+          "D": "It flows in the Atlantic Ocean"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-83",
+      "sha256": "ef7be1b372a8578f6fedb42cce3a1e54815f1434a219ea9c3592569c75b08480",
+      "value": {
+        "id": "nda-2024-ii-83",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The lowest part of most bolsons is occupied by a landform called playa. Which category of landform formation does it represent?",
+        "sourceTextHash": "f7087a2181f849f8f42f144870f6cab3bb55b717f55e195cf98cdde629436d7d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 83,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "The lowest part of most bolsons is occupied by a landform called playa. Which category of landform formation does it represent?"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 83,
+        "subject": "Geography",
+        "topic": "General Physical Geography",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The lowest part of most bolsons is occupied by a landform called playa. Which category of landform formation does it represent?"
+        ],
+        "options": {
+          "A": "Fluvial landforms",
+          "B": "Arid landforms",
+          "C": "Glacial landforms",
+          "D": "Periglacial landforms"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-105",
+      "sha256": "d7dc19e46a69a3a33e88b7522b3a630d12c8327e4ec432f1e06fc8a7779f0d2e",
+      "value": {
+        "id": "nda-2024-ii-105",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following pairs of Himalayan Passes and the Ranges in which they are located is/are correctly matched? 1. Zoji La - Great Himalayas 2. Banihal Pass - Pir Panjal Range 3. Photu La - Ladakh Range 4. Khardung La - Karakoram Range Select the answer using the code given below:",
+        "sourceTextHash": "b52a0c3670cc9763caf01d3e2a431b7fa90379a1b7b38609ed6a7f11e840ab20",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 105,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which of the following pairs of Himalayan Passes and the Ranges in which they are located is/are correctly matched? 1. Zoji La - Great Himalayas 2. Banihal Pass - Pir Panjal Range 3. Photu La - Ladakh Range 4. Khardung La - Karakoram Range Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 105,
+        "subject": "Geography",
+        "topic": "Physiography & Relief",
+        "subtopic": "Himalayan Passes",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following pairs of Himalayan Passes and the Ranges in which they are located is/are correctly matched? 1. Zoji La - Great Himalayas 2. Banihal Pass - Pir Panjal Range 3. Photu La - Ladakh Range 4. Khardung La - Karakoram Range Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "2 only",
+          "B": "4",
+          "C": "1 and 2 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-106",
+      "sha256": "edd3f9b7cb62a7658b9f4f587ff9d07cb3e636af6307dcc15a9cf94e0644935c",
+      "value": {
+        "id": "nda-2024-ii-106",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following statements with reference to the black cotton soils of India is NOT correct?",
+        "sourceTextHash": "3a74396a104b0e348bd22c15fbec5a7d44486f041b8e2db095ce17c9225bf098",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 106,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which one among the following statements with reference to the black cotton soils of India is NOT correct?"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 106,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Soils & Soil Conservation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one among the following statements with reference to the black cotton soils of India is NOT correct?"
+        ],
+        "options": {
+          "A": "The black cotton soils are also called 'Regur'",
+          "B": "They are highly moisture retentive",
+          "C": "They are rich in lime",
+          "D": "These soils have less clay factor and hence can support a wide variety of crops and vegetables"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-107",
+      "sha256": "2e768dbf480ca7f9c7cb2e602eff05ca4ea655e57409baf13dd919121de66abd",
+      "value": {
+        "id": "nda-2024-ii-107",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Hydroelectric Power Plant) A. Doyang B. Gomuti C. Kapili D. Ranganadi List II (State) 1. Arunachal Pradesh 2. Assam 3. Tripura 4. Nagaland Code:",
+        "sourceTextHash": "77dc9600e8bbe65eafcf0d88e62eb8b1e087f49a4a99ee0ca5775c5a84a58cd4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 107,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Hydroelectric Power Plant) A. Doyang B. Gomuti C. Kapili D. Ranganadi List II (State) 1. Arunachal Pradesh 2. Assam 3. Tripura 4. Nagaland Code:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 107,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Power Projects",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Hydroelectric Power Plant) A. Doyang B. Gomuti C. Kapili D. Ranganadi List II (State) 1. Arunachal Pradesh 2. Assam 3. Tripura 4. Nagaland Code:"
+        ],
+        "options": {
+          "A": "A-4, B-3, C-2, D-1",
+          "B": "A-4, B-2, C-3, D-1",
+          "C": "A-1, B-2, C-4, D-3",
+          "D": "A-1, B-3, C-4, D-2 ---"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-108",
+      "sha256": "2516cd2710f4c0982016da73d94e072b70522cb47ca9bb4f2395ff7a3546dd48",
+      "value": {
+        "id": "nda-2024-ii-108",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Tropical Cyclone) A. Hurricanes B. Willy Willy C. Baguio D. Typhoons List II (Country) 1. China 2. Philippines 3. Australia 4. USA Code:",
+        "sourceTextHash": "47f7f29697cff395699ae1e857c7dbcaeb3e096e6b59c3bb3586877877fade36",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 108,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Tropical Cyclone) A. Hurricanes B. Willy Willy C. Baguio D. Typhoons List II (Country) 1. China 2. Philippines 3. Australia 4. USA Code:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 108,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Cyclones & Pressure Systems",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Tropical Cyclone) A. Hurricanes B. Willy Willy C. Baguio D. Typhoons List II (Country) 1. China 2. Philippines 3. Australia 4. USA Code:"
+        ],
+        "options": {
+          "A": "A-4, B-3, C-2, D-1",
+          "B": "A-1, B-2, C-3, D-4",
+          "C": "A-4, B-2, C-3, D-1",
+          "D": "A-1, B-3, C-2, D-4"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-109",
+      "sha256": "a9f81600ee1e34cf7e5b0c0f3f99a54e4663d3a9c976ac52ae163ce5d15b6eae",
+      "value": {
+        "id": "nda-2024-ii-109",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following facts of the rivers of the Indus system: 1. The Satluj originates in Tibet where it is known as Langchen Khambab 2. The Satluj is a classic example of an antecedent river 3. The Jhelum is the largest tributary of the Indus System Select the answer using the code given below:",
+        "sourceTextHash": "a8b5e20a5c1cfc3f4875fcf33ff8fe88a60ad26621c128d31c1b7f6a1674a84b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 109,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Consider the following facts of the rivers of the Indus system: 1. The Satluj originates in Tibet where it is known as Langchen Khambab 2. The Satluj is a classic example of an antecedent river 3. The Jhelum is the largest tributary of the Indus System Select the answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "Satluj statements 1 and 2 are correct; Jhelum is not the largest Indus tributary.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "9086a5382ac12ea9b266786419d0689b88c15b00ad80d34ca755be3c0ee4ae95",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 109,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following facts of the rivers of the Indus system: 1. The Satluj originates in Tibet where it is known as Langchen Khambab 2. The Satluj is a classic example of an antecedent river 3. The Jhelum is the largest tributary of the Indus System Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "2 only",
+          "B": "3 only",
+          "C": "1 and 2",
+          "D": "2 and 3"
+        },
+        "answer": "C",
+        "explanation": "Satluj statements 1 and 2 are correct; Jhelum is not the largest Indus tributary.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-110",
+      "sha256": "603be1171bd9b69b6ee831cf5e127e29348b430f814b3da71c1a00f7112edd9c",
+      "value": {
+        "id": "nda-2024-ii-110",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is an example of both an igneous as well as a metamorphic rock?",
+        "sourceTextHash": "5e291f68c5e262f600773e8e77a77c61e0d80e71d9b3676e40fdbc4e7b063308",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 110,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which one of the following is an example of both an igneous as well as a metamorphic rock?",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "The official keyed answer is Granite; preserve its distinction from an editorial interpretation.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "9086a5382ac12ea9b266786419d0689b88c15b00ad80d34ca755be3c0ee4ae95",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 110,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is an example of both an igneous as well as a metamorphic rock?"
+        ],
+        "options": {
+          "A": "Gabbro",
+          "B": "Geyserite",
+          "C": "Gneissoid",
+          "D": "Granite"
+        },
+        "answer": "D",
+        "explanation": "The official keyed answer is Granite; preserve its distinction from an editorial interpretation.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-111",
+      "sha256": "3b14add6a47288a1d577520312b5de30fd9b53b184f5958a8d65d82832d274c2",
+      "value": {
+        "id": "nda-2024-ii-111",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is correct?",
+        "sourceTextHash": "e69212979be15e8008cd89a07277e46454c157cef11cd2fde1844847533394ec",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 111,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which one of the following is correct?"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 111,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earth Structure & Folding",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is correct?"
+        ],
+        "options": {
+          "A": "Pyroxene is commonly found in meteorites",
+          "B": "Amphiboles form about 20% of the Earth's crust",
+          "C": "Quartz is soluble in water",
+          "D": "The word 'sedimentary' is derived from the Latin word kelimentum"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-112",
+      "sha256": "da0855f5b6a49ac465338180982021fd3c338c8438984f41d4887e7e47654e60",
+      "value": {
+        "id": "nda-2024-ii-112",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following processes is NOT part of chemical weathering?",
+        "sourceTextHash": "f77dcb7bde5eccf4ca80f575e339d598995dc565f91311905d5e819f3842dd26",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 112,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which one among the following processes is NOT part of chemical weathering?"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 112,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Weathering & Erosional Processes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following processes is NOT part of chemical weathering?"
+        ],
+        "options": {
+          "A": "Solution",
+          "B": "Hydration",
+          "C": "Reduction",
+          "D": "Thawing"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2024-2024-2-132",
+      "sha256": "19756bc58f6476589807d2c0d2115c5da019d176aedf5d757e74728ea731ba16",
+      "value": {
+        "id": "cds-2024-2024-2-132",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements with regard to Article 19(1) of the Constitution of India is/are correct? 1. Freedoms under this Article are not absolute 2. Reasonable restrictions can be imposed on the exercise of freedoms under this Article Select the answer using the code given below:",
+        "sourceTextHash": "c0e17351171a66c7e6ae8321eb78c745482eef9d3ea5d291548d6590d1397e73",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 132,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which of the following statements with regard to Article 19(1) of the Constitution Of India is/ are correct ? I. Freedoms under this Article are not absolute 2. Reasonable restrictions can be imposed• on the exercise of freedoms under this Article Select the answer using the code given below"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 132,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements with regard to Article 19(1) of the Constitution of India is/are correct? 1. Freedoms under this Article are not absolute 2. Reasonable restrictions can be imposed on the exercise of freedoms under this Article Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2024-2 Q132, page 37, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-135",
+      "sha256": "4d628021d4773b62e542422e3918b939fe4638e3ca700d4fc23c7e9c3c43493b",
+      "value": {
+        "id": "nda-2024-ii-135",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Where is the Coriolis Effect the largest?",
+        "sourceTextHash": "e2451586ed48a415f3b0486931b9f132136b24a7ad5e5c88d147238a713459b0",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 135,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Where is the Coriolis Effect the largest?"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 135,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Where is the Coriolis Effect the largest?"
+        ],
+        "options": {
+          "A": "At the Equator",
+          "B": "At the Tropic of Capricorn and Tropic of Cancer",
+          "C": "At the North Pole",
+          "D": "At 45 degree latitude in each hemisphere ---"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-136",
+      "sha256": "34bda44c192c8ba10bf45cc6b62d17b3d2297f13e90b8035b8cf497a2c1f4982",
+      "value": {
+        "id": "nda-2024-ii-136",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In which among the following states in India, the Sun rays are never perpendicular? 1. Bihar 2. Chhattisgarh 3. Manipur 4. Rajasthan Select the answer using the code given below:",
+        "sourceTextHash": "7774559dcbe6da3bc4254d24dbfe4a2973aa13c72d5cd6f7dcd2fa40fb0fffbf",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 136,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "In which among the following states in India, the Sun rays are never perpendicular? 1. Bihar 2. Chhattisgarh 3. Manipur 4. Rajasthan Select the answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "Bihar and Manipur are wholly north of the Tropic of Cancer.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "9086a5382ac12ea9b266786419d0689b88c15b00ad80d34ca755be3c0ee4ae95",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "B"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 136,
+        "subject": "Geography",
+        "topic": "Location, States & Regional Geography",
+        "subtopic": "States & Regional Location",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In which among the following states in India, the Sun rays are never perpendicular? 1. Bihar 2. Chhattisgarh 3. Manipur 4. Rajasthan Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 and 2",
+          "B": "1 and 3",
+          "C": "2 and 3",
+          "D": "2 and 4"
+        },
+        "answer": "B",
+        "explanation": "Bihar and Manipur are wholly north of the Tropic of Cancer.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-137",
+      "sha256": "1b90c184c93f100d6222064525d7aa378886bd5c9939a4eab658d76dd95fb665",
+      "value": {
+        "id": "nda-2024-ii-137",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following is/are east flowing rivers in India? 1. Palar 2. Periyar 3. Pennar 4. Kalinadi Select the answer using the code given below:",
+        "sourceTextHash": "acf85bccddfaedd2d257d2aad4fcc2df845fd9dd1c4d9adf86f18bbd56b6b5e9",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 137,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which of the following is/are east flowing rivers in India? 1. Palar 2. Periyar 3. Pennar 4. Kalinadi Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 137,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which of the following is/are east flowing rivers in India? 1. Palar 2. Periyar 3. Pennar 4. Kalinadi Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 3",
+          "C": "2 and 4",
+          "D": "4 only"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-138",
+      "sha256": "11646b64530dc5bddfe1661bfaa37ce35f78b8c0f1006d716d71e591f1580a00",
+      "value": {
+        "id": "nda-2024-ii-138",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following tributaries is/are correctly matched with the Deccan Rivers? Tributary - River 1. Bhavani - Krishna 2. Kabini - Kaveri 3. Manjra - Godavari 4. Bhima - Mahanadi Select the answer using the code given below:",
+        "sourceTextHash": "f622c691f0fb9208f53fb38e37e4d450f2b76c999cc7a9e0f57ade4b98159f3b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 138,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which of the following tributaries is/are correctly matched with the Deccan Rivers? Tributary - River 1. Bhavani - Krishna 2. Kabini - Kaveri 3. Manjra - Godavari 4. Bhima - Mahanadi Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 138,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which of the following tributaries is/are correctly matched with the Deccan Rivers? Tributary - River 1. Bhavani - Krishna 2. Kabini - Kaveri 3. Manjra - Godavari 4. Bhima - Mahanadi Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 and 2",
+          "B": "2 and 3",
+          "C": "1 and 3",
+          "D": "3 and 4"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-139",
+      "sha256": "3d44876391afbc2f48ef54ea14ce27f36e8fe2d6bab4da8c0d30849e590f06b9",
+      "value": {
+        "id": "nda-2024-ii-139",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is found in appreciable amount in Laterite soil in India?",
+        "sourceTextHash": "7f70006ebc234c60aacdf52cafe1df498b9528a4a62a50c217be79cc9df44ef6",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 139,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Which one of the following is found in appreciable amount in Laterite soil in India?"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 139,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Soils & Soil Conservation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is found in appreciable amount in Laterite soil in India?"
+        ],
+        "options": {
+          "A": "Calcium",
+          "B": "Phosphate",
+          "C": "Potash",
+          "D": "Nitrogen"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-ii-140",
+      "sha256": "fe82bcf42e8ef04f36dc6b962f84cea61018f047f92c83b2b0eaed03e6930c4a",
+      "value": {
+        "id": "nda-2024-ii-140",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements regarding River Brahmaputra: 1. It rises in Tibet, near Lake Mansarovar 2. It takes a \"U\" turn near Namcha Barwa and enters India through a gorge Which of the statements given above is/are correct?",
+        "sourceTextHash": "5110599e8f66531e6ac936e220abf13d527d36b8709e0412feab28b5ca940e3f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "II",
+          "questionNumber": 140,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_NA_II_EXAM_2024_GAT_Ans_Key_eae23a44d6b51d10f4d75fa7cba08f93.pdf",
+          "rawQuestionText": "Consider the following statements regarding River Brahmaputra: 1. It rises in Tibet, near Lake Mansarovar 2. It takes a \"U\" turn near Namcha Barwa and enters India through a gorge Which of the statements given above is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "II",
+        "questionNumber": 140,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements regarding River Brahmaputra: 1. It rises in Tibet, near Lake Mansarovar 2. It takes a \"U\" turn near Namcha Barwa and enters India through a gorge Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2 ---"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ],
+  "sourceInputs": {
+    "scripts/nda-2024-ii-english-transcription.mjs": "325b2a4937ab5c7d8b5265b389484e3bf867d27b1d21877b8c6e1a9049ddda72",
+    "scripts/nda-2024-ii-part-b-transcription.mjs": "70b6c2c994292503577b3a6972d97a29ec45c79104c4d70f413c578ad4d0d28f",
+    "scripts/nda-2024-ii-classification.mjs": "bf9b429ca406cf0a54c6f1598a5d04736dc2f47f4552603f3333cb5dedf4b559",
+    "content/audits/nda-2024-ii-key-transcriptions.json": "dd8b3ebe83998202a2ca7477e5c2c772e7f01f5ffd4453fee8a649ff73d8859c"
+  },
+  "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json",
+  "runtimeReviewReference": "content/audits/nda-2024-ii-review.json"
+}

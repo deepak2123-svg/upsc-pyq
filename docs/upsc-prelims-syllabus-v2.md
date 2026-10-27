@@ -35,7 +35,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 - **1. European Companies:** Portuguese; Dutch and Danish; English and French; Factories and trading networks; Carnatic conflicts.
 - **2. British Expansion:** Bengal conquest; Anglo-Mysore wars; Anglo-Maratha wars; Anglo-Burmese wars; Subsidiary alliance; Annexation policies; Punjab conquest.
 - **3. Colonial Administration:** Company government; Crown rule and proclamations; Civil services; Census and surveys; Army and police; Judiciary; Education policies; Press policies; Local self-government.
-- **4. Colonial Economy:** Land revenue settlements; Commercialisation of agriculture; Deindustrialisation; Drain of wealth; Economic critics of colonialism; Transport and communications; Famine policies.
+- **4. Colonial Economy:** Land revenue settlements; Commercialisation of agriculture; Deindustrialisation; Drain of wealth; Economic critics of colonialism; Transport and communications; Famine policies; Modern industries.
 - **5. Social and Religious Reform:** Brahmo and Prarthana Samaj; Arya Samaj; Aligarh movement; Ramakrishna movement; Theosophical movement; Anti-caste movements; Women and reform.
 - **6. Popular Resistance:** Tribal uprisings; Peasant movements; Civil rebellions; Revolt of 1857; Resistance in princely states.
 - **7. Early Nationalism:** Political associations; Congress foundation; Moderates; Extremists; Partition of Bengal; Swadeshi movement.

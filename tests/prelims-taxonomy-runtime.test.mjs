@@ -65,7 +65,7 @@ test('Economy Current Affairs mirrors every approved economic current-affairs le
   const ids=result.body.questions.map(q=>q.id);
   assert.equal(new Set(ids).size,ids.length);
   assert.equal(ids.length,selectionCounts(sourcePaths,index).matchingCount);
-  assert.equal(data.totalCount,1942,'Shared categories do not duplicate records; preparation-only English/science and withdrawn records are excluded');
+  assert.equal(data.totalCount,1967,'Shared categories do not duplicate records; preparation-only English/science and held records are excluded');
 });
 
 test('older V4 and V3 scopes retain frozen membership after a question moves to another subject',async()=>{

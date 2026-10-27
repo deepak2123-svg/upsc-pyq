@@ -7,7 +7,13 @@ import officialNdaPaper from '../content/nda-2026-i-official-paper.json' with { 
 import officialNdaIIPaper from '../content/nda-2026-ii-official-paper.json' with { type: 'json' };
 import officialNda2025IIPaper from '../content/nda-2025-ii-official-paper.json' with { type: 'json' };
 import officialNda2025IPaper from '../content/nda-2025-i-official-paper.json' with { type: 'json' };
+import reviewedNda2024IIPaper from '../content/nda-2024-ii-reviewed-paper.json' with {type:'json'};
 import {prelimsPath,reviewedPrelimsPlacements,PRELIMS_TAXONOMY_VERSION} from './prelims-taxonomy.ts';
+import type {PyqQuestion} from './pyq-catalog';
+
+// Bound the catalogue's TypeScript shape instead of constructing an exponentially
+// large union from every imported JSON variant. This does not discard runtime fields.
+type BankQuestion=Omit<PyqQuestion,'exam'|'origin'> & {exam:string;origin:string;sourceText:string;source:Record<string,unknown>;preparationScope?:string};
 
 const cleared = new Set(['official-final', 'official-provisional', 'reasoned-verified']);
 const policy: Record<string, {status: string}> = importPolicy;
@@ -24,7 +30,7 @@ export const legacyQuestions = [...historicalBank.questions.map(question => {
   return placement ? { ...question, subject: placement.subject, topic: placement.topic, subtopic: placement.subtopic, taxonomyHead: placement.taxonomyHead } : question;
 }), ...approvedImports];
 const patches:Record<string,{promptLines:string[];sourceText:string;sourceTextHash:string;options?:{A:string;B:string;C:string;D:string}}>={...reproductionOverrides,...materialSourceRepairs};
-const reviewedBaseQuestions=legacyQuestions.map(question=>{
+const reviewedBaseQuestions:BankQuestion[]=legacyQuestions.map(question=>{
   const patch=patches[question.id];
   const reviewedQuestion=patch?{...question,promptLines:patch.promptLines,sourceText:patch.sourceText,sourceTextHash:patch.sourceTextHash,...(patch.options?{options:patch.options}:{})}:question;
   const placement=reviewedPrelimsPlacements.get(question.id);
@@ -38,14 +44,19 @@ const reviewedBaseQuestions=legacyQuestions.map(question=>{
   });
   return {...reviewedQuestion,subject:primary.subject,topic:primary.chapter,subtopic:primary.subtopic,taxonomyHead:primary.head,taxonomyChapter:primary.chapter,taxonomySubtopic:primary.subtopic,taxonomyId:primary.id,taxonomyVersion:PRELIMS_TAXONOMY_VERSION,additionalPaths};
 });
-// Approved official-key overlay: raw imports, historical IDs and old snapshots
-// remain immutable. The build validates all 63 expected pre-change hashes.
-const officialQuestions=[...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions];
+// Approved paper overlays, each retaining its own official/reasoned evidence label.
+// Raw imports, historical IDs and old snapshots remain immutable; builders guard
+// the original records' hashes before applying any paper correction.
+const reviewed2024Ids=new Set(reviewedNda2024IIPaper.questions.map(q=>q.id));
+const officialQuestions:BankQuestion[]=[...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions];
 const officialById=new Map(officialQuestions.map(q=>[q.id,q]));
 const priorIds=new Set(reviewedBaseQuestions.map(q=>q.id));
 export const combinedQuestions=[...reviewedBaseQuestions.map(question=>{
   const official=officialById.get(question.id);
   const priorAdditionalPaths='additionalPaths' in question?question.additionalPaths:undefined;
-  return official?{...question,...official,additionalPaths:official.preparationScope==='gs'?(priorAdditionalPaths??official.additionalPaths):official.additionalPaths}:question;
+  if(!official)return question;
+  const merged={...question,...official};
+  merged.additionalPaths=reviewed2024Ids.has(official.id)?official.additionalPaths:official.preparationScope==='gs'?(priorAdditionalPaths??official.additionalPaths):official.additionalPaths;
+  return merged;
 }),...officialQuestions.filter(q=>!priorIds.has(q.id))];
 export default { ...historicalBank, questions: combinedQuestions };
