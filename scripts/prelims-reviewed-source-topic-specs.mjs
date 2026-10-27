@@ -1,5 +1,17 @@
 // Concept boundaries established by full original-question review, not keywords.
 export const sourceTopicSpecs = {
+  'History/Art & Culture/Living Heritage/Traditional units and measures': {
+    includes:['Historical Indian units of time, length and weight','Traditional prosody measures and their meanings'],
+    excludes:['Contemporary SI conversion exercises','Calendar eras without a measurement-unit task','A passing historical unit in an unrelated narrative'],
+    placementRule:'Use when identifying or matching historical measurement concepts themselves; add another home only for separately tested chronology or literary content.',
+    representativeQuestions:['NDA I 2024 GAT Series A Q92: Muhurta, Raktika, Angula and Pada'],
+  },
+  'Science & Technology/Physics/Modern Physics/Relativity and gravitational waves': {
+    includes:['Special/general relativity at conceptual level','Gravitational-wave predictions and detection principles'],
+    excludes:['Newtonian inverse-square force calculations','Telescope locations without a relativity task','A current announcement alone'],
+    placementRule:'Use for the physical theory or prediction required to interpret the experiment, not merely a named observatory in news. Preparation applicability is reviewed separately.',
+    representativeQuestions:['NDA I 2024 GAT Series A Q131: LIGO and general relativity'],
+  },
   'History/Modern India & National Movement/Colonial Economy/Modern industries': {
     includes:['Founding and development of modern mills under colonial rule','Indian industrial entrepreneurs and early factory enterprises'],
     excludes:['Decline of handicrafts without a modern-enterprise question','Post-independence industrial policy','An incidental business name in a nonhistorical question'],

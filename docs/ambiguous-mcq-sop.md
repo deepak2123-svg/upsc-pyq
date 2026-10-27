@@ -89,6 +89,13 @@ not establish that an official key was never released.
 
 ### Step D — Analyse the question as printed
 
+Apply Steps D and the reasoning part of Step E only when no matching official
+answer is established. Under the user's 27 October 2026 instruction, an official
+UPSC answer settles scoring; routine independent solving, speculative ambiguity
+research and waiting for a future key are not prerequisites. Reproduction and
+two-pass key transcription checks still apply. Existing evidence labels remain
+truthful to the document, including provisional labels where actually printed.
+
 For every material claim, use directly relevant primary documents: original standards/regulator or institution documents, primary-publisher textbooks, research, or the original historical source where appropriate. Use the facts applicable at the examination date.
 
 Create a short decision table for **all options**, including why each alternative fails or remains viable. For statement-code questions, assess every statement before looking up the answer code.

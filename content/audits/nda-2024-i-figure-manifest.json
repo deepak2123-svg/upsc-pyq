@@ -1,0 +1,160 @@
+[
+  {
+    "number": 51,
+    "pdfPage": 10,
+    "printedPage": 11,
+    "relativeBounds": [
+      [
+        0.045,
+        0.195,
+        0.485,
+        0.29
+      ]
+    ],
+    "asset": "/question-figures/nda-2024-i-q51.png",
+    "localCrop": "tmp/nda-2024-i/figures/q51.png",
+    "sha256": "42e9198be36c1bd35ce266fb24555dbe7fac2ece726b67fc7a25242a6a0f7262",
+    "description": "Original infinite resistor network between A and B",
+    "reviewStatus": "approved",
+    "reviewMethod": "Original source and generated crop visually compared, same AI reviewer. Q52 recropped to remove adjacent text; both circuit diagrams and labels retained."
+  },
+  {
+    "number": 52,
+    "pdfPage": 10,
+    "printedPage": 11,
+    "relativeBounds": [
+      [
+        0.085,
+        0.45,
+        0.34,
+        0.547
+      ],
+      [
+        0.085,
+        0.63,
+        0.41,
+        0.718
+      ]
+    ],
+    "asset": "/question-figures/nda-2024-i-q52.png",
+    "localCrop": "tmp/nda-2024-i/figures/q52.png",
+    "sha256": "01f04ce49b2435d027380d019868507c05c7af89e282338f4bc2b1d3998be42b",
+    "description": "Both original circuit diagrams, before and after adding the second battery",
+    "reviewStatus": "approved",
+    "reviewMethod": "Original source and generated crop visually compared, same AI reviewer. Q52 recropped to remove adjacent text; both circuit diagrams and labels retained."
+  },
+  {
+    "number": 54,
+    "pdfPage": 10,
+    "printedPage": 11,
+    "relativeBounds": [
+      [
+        0.535,
+        0.485,
+        0.7,
+        0.88
+      ]
+    ],
+    "asset": "/question-figures/nda-2024-i-q54.png",
+    "localCrop": "tmp/nda-2024-i/figures/q54.png",
+    "sha256": "8cbfc770c353f42441bfbca6a6b7b58bd125dd943d083ccac3978905ee8da17a",
+    "description": "Original four lightning-conductor shape options (a) to (d)",
+    "reviewStatus": "approved",
+    "reviewMethod": "Original source and generated crop visually compared, same AI reviewer. Q52 recropped to remove adjacent text; both circuit diagrams and labels retained."
+  },
+  {
+    "number": 56,
+    "pdfPage": 11,
+    "printedPage": 13,
+    "relativeBounds": [
+      [
+        0.14,
+        0.45,
+        0.3,
+        0.56
+      ]
+    ],
+    "asset": "/question-figures/nda-2024-i-q56.png",
+    "localCrop": "tmp/nda-2024-i/figures/q56.png",
+    "sha256": "abc55385630c9dd512c21046d563b55f2a92bba0058b2dd122fe8c0bb453d2ec",
+    "description": "Original concentric sphere and shell cross-section",
+    "reviewStatus": "approved",
+    "reviewMethod": "Original source and generated crop visually compared, same AI reviewer. Q52 recropped to remove adjacent text; both circuit diagrams and labels retained."
+  },
+  {
+    "number": 89,
+    "pdfPage": 17,
+    "printedPage": 25,
+    "relativeBounds": [
+      [
+        0.62,
+        0.145,
+        0.86,
+        0.37
+      ]
+    ],
+    "asset": "/question-figures/nda-2024-i-q89.png",
+    "localCrop": "tmp/nda-2024-i/figures/q89.png",
+    "sha256": "be1eb2b60bf6ea84d714d75e2388cf2887482d3030db3b718cde436fa5d0dab4",
+    "description": "Original pendulum and identical bob positions A/B, pivot O, bobs X/Y",
+    "reviewStatus": "approved",
+    "reviewMethod": "Original source and generated crop visually compared, same AI reviewer. Q52 recropped to remove adjacent text; both circuit diagrams and labels retained."
+  },
+  {
+    "number": 124,
+    "pdfPage": 23,
+    "printedPage": 37,
+    "relativeBounds": [
+      [
+        0.53,
+        0.64,
+        0.94,
+        0.73
+      ]
+    ],
+    "asset": "/question-figures/nda-2024-i-q124.png",
+    "localCrop": "tmp/nda-2024-i/figures/q124.png",
+    "sha256": "e52f1e6569557b91e5ff178569edd73eb3cfc685f63eb51a38f16afd6467cece",
+    "description": "Original block P with leftward 10 N/15 N and rightward 2 N/F/15 N arrows",
+    "reviewStatus": "approved",
+    "reviewMethod": "Original source and generated crop visually compared, same AI reviewer. Q52 recropped to remove adjacent text; both circuit diagrams and labels retained."
+  },
+  {
+    "number": 126,
+    "pdfPage": 24,
+    "printedPage": 39,
+    "relativeBounds": [
+      [
+        0.065,
+        0.34,
+        0.475,
+        0.515
+      ]
+    ],
+    "asset": "/question-figures/nda-2024-i-q126.png",
+    "localCrop": "tmp/nda-2024-i/figures/q126.png",
+    "sha256": "6886dbfb8034fea7a236a6e02d098c5e71788d019bd2bef5dd84e59338ec3a31",
+    "description": "Original 10 V circuit with 5 Ω side resistors, 10 Ω branches and zero-resistance middle branch",
+    "reviewStatus": "approved",
+    "reviewMethod": "Original source and generated crop visually compared, same AI reviewer. Q52 recropped to remove adjacent text; both circuit diagrams and labels retained."
+  },
+  {
+    "number": 128,
+    "pdfPage": 24,
+    "printedPage": 39,
+    "relativeBounds": [
+      [
+        0.535,
+        0.175,
+        0.87,
+        0.89
+      ]
+    ],
+    "asset": "/question-figures/nda-2024-i-q128.png",
+    "localCrop": "tmp/nda-2024-i/figures/q128.png",
+    "sha256": "834ed804a585168521295c0329400a3d89c56a616b2fda3495c089eaf697a94b",
+    "description": "All four original schematic graph options and their u/v/f axes",
+    "reviewStatus": "approved",
+    "reviewMethod": "Original source and generated crop visually compared, same AI reviewer. Q52 recropped to remove adjacent text; both circuit diagrams and labels retained."
+  }
+]

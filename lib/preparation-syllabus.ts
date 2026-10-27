@@ -6,6 +6,9 @@ export const defenceWorldHistory: readonly SyllabusSection[] = [
   ['World History',[
     ['Industrial Revolution',['Conditions in Britain','Inventions and inventors','Labour movements','Phases and industries']],
     ['Russian Revolution',['1905 Revolution','1917 Revolution']],
+    // Structural industrialisation, urbanisation, secularisation and bureaucracy;
+    // excludes named-inventor recall and Indian constitutional reform chronology.
+    ['Modern Society',['Modernity and social transformation']],
   ]],
 ];
 export const englishSyllabus: readonly SyllabusSection[] = [

@@ -8,12 +8,13 @@ import officialNdaIIPaper from '../content/nda-2026-ii-official-paper.json' with
 import officialNda2025IIPaper from '../content/nda-2025-ii-official-paper.json' with { type: 'json' };
 import officialNda2025IPaper from '../content/nda-2025-i-official-paper.json' with { type: 'json' };
 import reviewedNda2024IIPaper from '../content/nda-2024-ii-reviewed-paper.json' with {type:'json'};
+import officialNda2024IPaper from '../content/nda-2024-i-official-paper.json' with {type:'json'};
 import {prelimsPath,reviewedPrelimsPlacements,PRELIMS_TAXONOMY_VERSION} from './prelims-taxonomy.ts';
 import type {PyqQuestion} from './pyq-catalog';
 
 // Bound the catalogue's TypeScript shape instead of constructing an exponentially
 // large union from every imported JSON variant. This does not discard runtime fields.
-type BankQuestion=Omit<PyqQuestion,'exam'|'origin'> & {exam:string;origin:string;sourceText:string;source:Record<string,unknown>;preparationScope?:string};
+type BankQuestion=Omit<PyqQuestion,'exam'|'origin'> & {exam:string;origin:string;sourceText:string;source:Record<string,unknown>;preparationScope?:string;taxonomyVersion?:string};
 
 const cleared = new Set(['official-final', 'official-provisional', 'reasoned-verified']);
 const policy: Record<string, {status: string}> = importPolicy;
@@ -47,8 +48,8 @@ const reviewedBaseQuestions:BankQuestion[]=legacyQuestions.map(question=>{
 // Approved paper overlays, each retaining its own official/reasoned evidence label.
 // Raw imports, historical IDs and old snapshots remain immutable; builders guard
 // the original records' hashes before applying any paper correction.
-const reviewed2024Ids=new Set(reviewedNda2024IIPaper.questions.map(q=>q.id));
-const officialQuestions:BankQuestion[]=[...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions];
+const reviewed2024Ids=new Set([...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions].map(q=>q.id));
+const officialQuestions:BankQuestion[]=[...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions];
 const officialById=new Map(officialQuestions.map(q=>[q.id,q]));
 const priorIds=new Set(reviewedBaseQuestions.map(q=>q.id));
 export const combinedQuestions=[...reviewedBaseQuestions.map(question=>{

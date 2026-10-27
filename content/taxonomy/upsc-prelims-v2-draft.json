@@ -4373,7 +4373,8 @@
         "Crafts and textiles",
         "Oral traditions",
         "Religious and philosophical traditions",
-        "Cultural landscapes"
+        "Cultural landscapes",
+        "Traditional units and measures"
       ],
       "boundary": "Questions testing Living Heritage in Art & Culture; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -4495,6 +4496,27 @@
       ],
       "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
       "editorialExampleStatus": "pending-real-question-pilot"
+    },
+    {
+      "id": "syllabus:history/art-culture/living-heritage/traditional-units-and-measures",
+      "parentId": "syllabus:history/art-culture/living-heritage",
+      "kind": "subpart",
+      "label": "Traditional units and measures",
+      "order": 8,
+      "includes": [
+        "Historical Indian units of time, length and weight",
+        "Traditional prosody measures and their meanings"
+      ],
+      "excludes": [
+        "Contemporary SI conversion exercises",
+        "Calendar eras without a measurement-unit task",
+        "A passing historical unit in an unrelated narrative"
+      ],
+      "placementRule": "Use when identifying or matching historical measurement concepts themselves; add another home only for separately tested chronology or literary content.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA I 2024 GAT Series A Q92: Muhurta, Raktika, Angula and Pada"
+      ]
     },
     {
       "id": "syllabus:history/art-culture/heritage-preservation",
@@ -15635,7 +15657,8 @@
         "Semiconductors",
         "Measurement and units",
         "Fundamental interactions",
-        "Particle physics"
+        "Particle physics",
+        "Relativity and gravitational waves"
       ],
       "boundary": "Questions testing Modern Physics in Physics; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -15759,6 +15782,27 @@
       "editorialExampleStatus": "source-question-reviewed",
       "representativeQuestions": [
         "CSE 2013 GS-I Series A Q96: the importance of discovering the Higgs boson"
+      ]
+    },
+    {
+      "id": "syllabus:science-technology/physics/modern-physics/relativity-and-gravitational-waves",
+      "parentId": "syllabus:science-technology/physics/modern-physics",
+      "kind": "subpart",
+      "label": "Relativity and gravitational waves",
+      "order": 8,
+      "includes": [
+        "Special/general relativity at conceptual level",
+        "Gravitational-wave predictions and detection principles"
+      ],
+      "excludes": [
+        "Newtonian inverse-square force calculations",
+        "Telescope locations without a relativity task",
+        "A current announcement alone"
+      ],
+      "placementRule": "Use for the physical theory or prediction required to interpret the experiment, not merely a named observatory in news. Preparation applicability is reviewed separately.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA I 2024 GAT Series A Q131: LIGO and general relativity"
       ]
     },
     {

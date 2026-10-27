@@ -18,6 +18,14 @@ reports retain history but do not override this policy or the latest evidence.
 
 Standing defaults:
 
+- User clarification, 27 October 2026: a matched official UPSC key is the final
+  scoring authority for this processing pass. Verify document identity, booklet
+  mapping and cell transcription; do not routinely re-solve officially keyed
+  questions, research speculative alternative answers, or hold them for academic
+  disagreement. Keep the document's actual final/provisional label honest, but
+  do not defer scoring in anticipation of another key. Apply any subsequently
+  supplied official correction explicitly, without background monitoring.
+
 - Preserve original wording, options/order, source identity and canonical IDs.
 - Prefer the latest applicable official final key, then an official provisional
   key. Label provisional evidence honestly; never call a coaching key official.

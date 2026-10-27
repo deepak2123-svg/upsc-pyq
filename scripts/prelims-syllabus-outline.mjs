@@ -40,7 +40,7 @@ Painting|Prehistoric painting;Murals;Mughal miniatures;Rajput and Pahari schools
 Music|Hindustani traditions;Carnatic traditions;Forms and composers;Musical instruments;Folk music
 Dance and Performance|Classical dances;Folk and tribal dances;Theatre;Puppetry;Martial performance traditions;Postures and gestures
 Literature and Languages|Classical languages;Sanskrit literature;Pali and Prakrit;Tamil literature;Persian and Urdu;Regional literature;Scripts and inscriptions
-Living Heritage|Festivals and rituals;Symbols and regalia;Calendars and eras;Crafts and textiles;Oral traditions;Religious and philosophical traditions;Cultural landscapes
+Living Heritage|Festivals and rituals;Symbols and regalia;Calendars and eras;Crafts and textiles;Oral traditions;Religious and philosophical traditions;Cultural landscapes;Traditional units and measures
 Heritage Preservation|Archaeological institutions;Museums and archives;World Heritage criteria;Intangible heritage;Conservation legislation`,
   },
   Geography: {
@@ -125,7 +125,7 @@ Corporate Environmental Responsibility|Environmental claims and greenwashing;ESG
     Physics: `Mechanics|Motion;Force and momentum;Work energy and power;Gravitation;Fluids
 Heat and Waves|Temperature and heat;Thermodynamics;Sound;Wave properties
 Light and Electricity|Optics;Electrostatics;Current electricity;Magnetism;Electromagnetic spectrum
-Modern Physics|Atomic structure;Nuclear physics;Radiation;Semiconductors;Measurement and units;Fundamental interactions;Particle physics`,
+Modern Physics|Atomic structure;Nuclear physics;Radiation;Semiconductors;Measurement and units;Fundamental interactions;Particle physics;Relativity and gravitational waves`,
     Chemistry: `Matter and Reactions|Atomic and molecular structure;Periodic properties;Chemical bonding;Reaction types;Acids bases and salts;Electrochemistry;Surface chemistry and adsorption
 Materials and Applications|Metals and alloys;Metallurgy and ores;Carbon compounds;Polymers;Fuels;Construction materials;Everyday chemicals;Industrial chemistry`,
     Biology: `Cell and Genetics|Cell structure;Biomolecules;Cell division;Heredity;Evolution

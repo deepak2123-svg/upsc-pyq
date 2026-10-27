@@ -52,7 +52,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 - **4. Music:** Hindustani traditions; Carnatic traditions; Forms and composers; Musical instruments; Folk music.
 - **5. Dance and Performance:** Classical dances; Folk and tribal dances; Theatre; Puppetry; Martial performance traditions; Postures and gestures.
 - **6. Literature and Languages:** Classical languages; Sanskrit literature; Pali and Prakrit; Tamil literature; Persian and Urdu; Regional literature; Scripts and inscriptions.
-- **7. Living Heritage:** Festivals and rituals; Symbols and regalia; Calendars and eras; Crafts and textiles; Oral traditions; Religious and philosophical traditions; Cultural landscapes.
+- **7. Living Heritage:** Festivals and rituals; Symbols and regalia; Calendars and eras; Crafts and textiles; Oral traditions; Religious and philosophical traditions; Cultural landscapes; Traditional units and measures.
 - **8. Heritage Preservation:** Archaeological institutions; Museums and archives; World Heritage criteria; Intangible heritage; Conservation legislation.
 ## Geography
 
@@ -201,7 +201,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 - **1. Mechanics:** Motion; Force and momentum; Work energy and power; Gravitation; Fluids.
 - **2. Heat and Waves:** Temperature and heat; Thermodynamics; Sound; Wave properties.
 - **3. Light and Electricity:** Optics; Electrostatics; Current electricity; Magnetism; Electromagnetic spectrum.
-- **4. Modern Physics:** Atomic structure; Nuclear physics; Radiation; Semiconductors; Measurement and units; Fundamental interactions; Particle physics.
+- **4. Modern Physics:** Atomic structure; Nuclear physics; Radiation; Semiconductors; Measurement and units; Fundamental interactions; Particle physics; Relativity and gravitational waves.
 ### Chemistry
 
 - **1. Matter and Reactions:** Atomic and molecular structure; Periodic properties; Chemical bonding; Reaction types; Acids bases and salts; Electrochemistry; Surface chemistry and adsorption.

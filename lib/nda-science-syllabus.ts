@@ -23,7 +23,7 @@ export const ndaScienceChapters:Record<string,readonly Chapter[]>={
   ['Current Electricity',['Current electricity'],['Ohm’s law and resistivity','Circuits','Electrical power']],
   ['Magnetism and Induction',['Magnetism'],['Magnetic forces','Electromagnetic induction','Motors and transformers']],
   ['Electromagnetic Waves',['Electromagnetic spectrum'],['Spectrum and applications']],
-  ['Atomic and Nuclear Physics',['Atomic structure','Nuclear physics','Radiation','Fundamental interactions','Particle physics'],['Radioactivity','Fission and fusion']],
+  ['Atomic and Nuclear Physics',['Atomic structure','Nuclear physics','Radiation','Fundamental interactions','Particle physics','Relativity and gravitational waves'],['Radioactivity','Fission and fusion']],
   ['Electronics',['Semiconductors'],['Diodes and transistors','Logic gates']],
  ],
  Chemistry:[

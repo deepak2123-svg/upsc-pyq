@@ -1,0 +1,1051 @@
+{
+  "paperId": "nda-2024-i-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2024,
+    "session": "I",
+    "paper": "GAT",
+    "paperCode": "RRAN-A-GAT",
+    "series": "A",
+    "language": "English page extract",
+    "examDate": "2024-04-21",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2024-1.pdf",
+    "sha256": "1672d68a9b43bcba608b647852536472aa1c4bc810299faae2f203bc02d5c9f1"
+  },
+  "pdfPageMapping": {
+    "pages": 28,
+    "cover": 1,
+    "english": "PDF 2–9 = printed 2–9",
+    "partB": "PDF 10–28 = printed (2 × PDF page − 9)",
+    "extractCaveat": "Hindi counterpart pages and back instructions are absent; all 150 English numbered questions are present."
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "filenameDate": "2024-11-04",
+    "retrievedAt": "2026-10-27",
+    "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2024-GAT-041124.pdf",
+    "asset": "/papers/nda-2024-i-gat/official-final-key.pdf",
+    "sha256": "b5cfe7945aa5d45ca45d7b0873ed6b24963ffd70b0251577027b166cc8f4236d",
+    "page": 1,
+    "series": "A",
+    "session": "I",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 1,
+    "scored": 149,
+    "authentication": "Direct official www.upsc.gov.in download, HTTP 200 application/pdf, four booklet-series pages; Series A heading and all 150 cells visually read twice. Byte-identical to the earlier stored scan. Filename date is not asserted as an independently established release date."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2024-2024-1-147",
+      "sha256": "9b1bcfe75db86de856eecab65c02ea7027d2604614438df49e410a93acbdb990",
+      "value": {
+        "id": "cds-2024-2024-1-147",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Who among the following is the Chairman of the Committee constituted by the Government of India to examine the issue of holding simultaneous elections in the country and to make recommendations thereon ?",
+        "sourceTextHash": "43def1cfbb6888ba43d2a853c8758ec3360245a7373693e8e893f751a3d81489",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 147,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Who among the following is the Chairman of the Committee constituted by the Government of India to examine the issue of holding simultaneous elections in the country and to make recommendations thereon ?"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 147,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Who among the following is the Chairman of the Committee constituted by the Government of India to examine the issue of holding simultaneous elections in the country and to make recommendations thereon ?"
+        ],
+        "options": {
+          "A": "Union Home Minister Shri Amit Shah",
+          "B": "Chief Justice of India Shri Dhananjaya Yeshwant Chandrachud",
+          "C": "Former President of India Shri Ram Nath Kovind",
+          "D": "Chief Election Commissioner of India Shri Rajiv Kumar"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2024-1 Q147, page 28, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2024-2024-1-144",
+      "sha256": "de9ea70d0b760531b70e63baae7c65cfe86df423573b9deb3844ef2df70cbbb5",
+      "value": {
+        "id": "cds-2024-2024-1-144",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Recently the Ministry of Environment, Forest and Climate Change has submitted three nominations from India for Wetland City Accreditation (WCA) under the Ramsar Convention on Wetlands. Which one among the following cities is not one among them ?",
+        "sourceTextHash": "fa259c17d457129df8b2b7c6394d2cd17b4e590e4b935265634b4d14e4f05b29",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 144,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Recently the Ministry of Environment, Forest and Climate Change has submitted three nominations from India for Wetland City Accreditation (WCA) under the Ramsar Convention on Wetlands. Which one among the following cities is not one among them ?"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 144,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Recently the Ministry of Environment, Forest and Climate Change has submitted three nominations from India for Wetland City Accreditation (WCA) under the Ramsar Convention on Wetlands. Which one among the following cities is not one among them ?"
+        ],
+        "options": {
+          "A": "Indore",
+          "B": "Bhopal",
+          "C": "Udaipur",
+          "D": "Jodhpur"
+        },
+        "answer": "D",
+        "explanation": "Original NDA 2024-1 Q144, page 28, visually checked against its complete stem and options; the matching Series A final key accepts D.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-69",
+      "sha256": "6038dc28464107d9b47a1c242f1b49654c1d77897abbec1ccefc1bc82f8b21b8",
+      "value": {
+        "id": "nda-2024-i-69",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements regarding the International Date Line: 1. It is roughly 180° meridian, which deviates slightly East and West to avoid land areas surrounded by the Atlantic Ocean. 2. The date to the East of this line is (24 hours) earlier than to the West. Which of the statements given above is/are correct?",
+        "sourceTextHash": "c90f078bd279410563229f0c9fcb09787c0ea12c9f28f6a82fc7b44ca6182464",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 69,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Consider the following statements regarding the International Date Line: 1. It is roughly 180° meridian, which deviates slightly East and West to avoid land areas surrounded by the Atlantic Ocean. 2. The date to the East of this line is (24 hours) earlier than to the West. Which of the statements given above is/are correct?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Statement 1 incorrectly places the Date Line in the Atlantic; only statement 2 is correct.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "b5cfe7945aa5d45ca45d7b0873ed6b24963ffd70b0251577027b166cc8f4236d",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "B"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 69,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Earth Motions & Time",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements regarding the International Date Line: 1. It is roughly 180° meridian, which deviates slightly East and West to avoid land areas surrounded by the Atlantic Ocean. 2. The date to the East of this line is (24 hours) earlier than to the West. Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "B",
+        "explanation": "Statement 1 incorrectly places the Date Line in the Atlantic; only statement 2 is correct.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-70",
+      "sha256": "7005fcbeb731e2f3d3f2df63f152200214dc7f7f166c84012fcc71a5db10441c",
+      "value": {
+        "id": "nda-2024-i-70",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding 'aurora' is/are correct? 1. The solar wind upon reaching the Earth's atmosphere is directed towards two magnetic poles and a colourful display of lights is seen in the night sky. 2. The particles interact with the different gases of the atmosphere and each gas glows with a particular colour. 3. In April 2023, aurora was captured in the night sky in India by the Indian Astronomical Observatory at Hanle, Ladakh. Select the answer using the code given below:",
+        "sourceTextHash": "a5a0e3a7f95456423607327b4a4767d2677a3858fc88700ac1d3ce457bfe3c80",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 70,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding 'aurora' is/are correct? 1. The solar wind upon reaching the Earth's atmosphere is directed towards two magnetic poles and a colourful display of lights is seen in the night sky. 2. The particles interact with the different gases of the atmosphere and each gas glows with a particular colour. 3. In April 2023, aurora was captured in the night sky in India by the Indian Astronomical Observatory at Hanle, Ladakh. Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 70,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Winds & Atmospheric Circulation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding 'aurora' is/are correct? 1. The solar wind upon reaching the Earth's atmosphere is directed towards two magnetic poles and a colourful display of lights is seen in the night sky. 2. The particles interact with the different gases of the atmosphere and each gas glows with a particular colour. 3. In April 2023, aurora was captured in the night sky in India by the Indian Astronomical Observatory at Hanle, Ladakh. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-71",
+      "sha256": "0d4b79138e3c7baa70c0d507850fbf41e3c38f6e202ee536be0ea982da2195c3",
+      "value": {
+        "id": "nda-2024-i-71",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding Barchan is/are correct? 1. It is a crescent shaped mound of sand, which is deposited by the wind blowing constantly from one direction in a desert. 2. The windward side has a convex steep slope with maximum height at the centre. 3. Two ends of Barchan are called horns and point opposite to the direction the wind blows. Select the answer using the code given below:",
+        "sourceTextHash": "0b27321d88ee5930bddba4350dd6cf10dd8c2732c508ecf05f060cda30b6dd11",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 71,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding Barchan is/are correct? 1. It is a crescent shaped mound of sand, which is deposited by the wind blowing constantly from one direction in a desert. 2. The windward side has a convex steep slope with maximum height at the centre. 3. Two ends of Barchan are called horns and point opposite to the direction the wind blows. Select the answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Only statement 1: the windward face is gentle and the horns point downwind.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "b5cfe7945aa5d45ca45d7b0873ed6b24963ffd70b0251577027b166cc8f4236d",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 71,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Winds & Atmospheric Circulation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding Barchan is/are correct? 1. It is a crescent shaped mound of sand, which is deposited by the wind blowing constantly from one direction in a desert. 2. The windward side has a convex steep slope with maximum height at the centre. 3. Two ends of Barchan are called horns and point opposite to the direction the wind blows. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "A",
+        "explanation": "Only statement 1: the windward face is gentle and the horns point downwind.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-73",
+      "sha256": "67dce5c09538a30ea09b500b7064756989af92655301e67169133ed506ce91b4",
+      "value": {
+        "id": "nda-2024-i-73",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding clouds is/are correct? 1. Clouds are classified on the basis of altitude and their form. 2. According to altitude they are classified as High, Middle and Low clouds. 3. Stratus, Nimbostratus and Stratocumulus are high clouds. Select the answer using the code given below:",
+        "sourceTextHash": "7cb831bebb54924e81628f959dfd2a9381639c47046aa6eed09dedb68781f082",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 73,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding clouds is/are correct? 1. Clouds are classified on the basis of altitude and their form. 2. According to altitude they are classified as High, Middle and Low clouds. 3. Stratus, Nimbostratus and Stratocumulus are high clouds. Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 73,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Weather Systems & Air Masses",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding clouds is/are correct? 1. Clouds are classified on the basis of altitude and their form. 2. According to altitude they are classified as High, Middle and Low clouds. 3. Stratus, Nimbostratus and Stratocumulus are high clouds. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-74",
+      "sha256": "05ddd5152763f8cdc08a7ac691d899ab4e8df0935ba222d00193bed58e04a2e3",
+      "value": {
+        "id": "nda-2024-i-74",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements regarding 'fronts': 1. The movement of a front causes a slow change in weather in the area over which it moves. 2. Cold fronts are associated with thunderstorms. 3. Warm front is the boundary between an advancing mass of warm air where it is overriding and rising above a mass of colder air. Which of the statements given above is/are correct?",
+        "sourceTextHash": "0cc7b9d792dfcef12f691df402c440407c00b5bf6f20e43143a091c2a3f8fab9",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 74,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Consider the following statements regarding 'fronts': 1. The movement of a front causes a slow change in weather in the area over which it moves. 2. Cold fronts are associated with thunderstorms. 3. Warm front is the boundary between an advancing mass of warm air where it is overriding and rising above a mass of colder air. Which of the statements given above is/are correct?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Cold-front thunderstorms and warm-front overrunning are correct; reject the secondary D and previous A.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "b5cfe7945aa5d45ca45d7b0873ed6b24963ffd70b0251577027b166cc8f4236d",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 74,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Weather Systems & Air Masses",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements regarding 'fronts': 1. The movement of a front causes a slow change in weather in the area over which it moves. 2. Cold fronts are associated with thunderstorms. 3. Warm front is the boundary between an advancing mass of warm air where it is overriding and rising above a mass of colder air. Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "C",
+        "explanation": "Cold-front thunderstorms and warm-front overrunning are correct; reject the secondary D and previous A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-108",
+      "sha256": "c2d747c6d208a0de4e64167a182add2206923ad55ee9e9426fcf500b110fe54a",
+      "value": {
+        "id": "nda-2024-i-108",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding neap tides is/are correct? 1. It occurs every 14-15 days, which coincides with the first and third quarter of the Moon. 2. This tide has a small tidal range because the gravitational forces of the Moon and the Sun are in quadrature. Select the answer using the code given below:",
+        "sourceTextHash": "9d5137e7bc509956aecdd5c6d6547e6e19c0c5cef8ab0ed43bf910784b4f7faa",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 108,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding neap tides is/are correct? 1. It occurs every 14-15 days, which coincides with the first and third quarter of the Moon. 2. This tide has a small tidal range because the gravitational forces of the Moon and the Sun are in quadrature. Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 108,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Tides",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding neap tides is/are correct? 1. It occurs every 14-15 days, which coincides with the first and third quarter of the Moon. 2. This tide has a small tidal range because the gravitational forces of the Moon and the Sun are in quadrature. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-109",
+      "sha256": "89cb696f97bb8a86ce5233d02c9e003dca20e8fd1641dfe26673e16988a4cfe2",
+      "value": {
+        "id": "nda-2024-i-109",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding earthquakes is/are correct? 1. The point on the Earth's surface directly above the focus is called the epicentre of the earthquake. 2. Earthquakes generate Primary and Secondary waves that radiate outward from the earthquake focus. 3. Deep-focus earthquakes are likely to cause more damage than shallow-focus earthquakes. Select the answer using the code given below:",
+        "sourceTextHash": "2927ba6b228ee43491a59191a5fa358f5d89cc3dda249428b318a0551c785d3c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 109,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding earthquakes is/are correct? 1. The point on the Earth's surface directly above the focus is called the epicentre of the earthquake. 2. Earthquakes generate Primary and Secondary waves that radiate outward from the earthquake focus. 3. Deep-focus earthquakes are likely to cause more damage than shallow-focus earthquakes. Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 109,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earthquakes & Seismology",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding earthquakes is/are correct? 1. The point on the Earth's surface directly above the focus is called the epicentre of the earthquake. 2. Earthquakes generate Primary and Secondary waves that radiate outward from the earthquake focus. 3. Deep-focus earthquakes are likely to cause more damage than shallow-focus earthquakes. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-110",
+      "sha256": "627a1c69aeb0750d6fde66292907c0e805f68d38881b3226f35205baf927e485",
+      "value": {
+        "id": "nda-2024-i-110",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding air temperature is/are correct? 1. Air temperature is measured at a standard height of 1.2 m (4.0 feet) above the ground surface. 2. The average rate of temperature decrease with height is termed as the environmental temperature lapse rate. Select the answer using the code given below:",
+        "sourceTextHash": "8a8c5d3bd1e3c28e6591dbd618beefb5a23af69d79902877df682196a883f90f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 110,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding air temperature is/are correct? 1. Air temperature is measured at a standard height of 1.2 m (4.0 feet) above the ground surface. 2. The average rate of temperature decrease with height is termed as the environmental temperature lapse rate. Select the answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "The official key accepts both the stated measurement height and lapse-rate definition.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "b5cfe7945aa5d45ca45d7b0873ed6b24963ffd70b0251577027b166cc8f4236d",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 110,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Temperature & Insolation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding air temperature is/are correct? 1. Air temperature is measured at a standard height of 1.2 m (4.0 feet) above the ground surface. 2. The average rate of temperature decrease with height is termed as the environmental temperature lapse rate. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "C",
+        "explanation": "The official key accepts both the stated measurement height and lapse-rate definition.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-111",
+      "sha256": "2d8e2059626f78c492d71563104c0cb4a37ec17634791143e420ad6f7a8a5248",
+      "value": {
+        "id": "nda-2024-i-111",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding humidity is/are correct? 1. It is a ratio between the actual amount of water vapour present in the atmosphere and the maximum amount it can hold at a given temperature. 2. When the relative humidity is high, more water evaporates from the skin. 3. Higher the air temperature lower the relative humidity of the air. Select the answer using the code given below:",
+        "sourceTextHash": "cb1a1accf52b4263ec66bd05c8d00a59ac2a0ed91ac4d69bf337b06883bb80f3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 111,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding humidity is/are correct? 1. It is a ratio between the actual amount of water vapour present in the atmosphere and the maximum amount it can hold at a given temperature. 2. When the relative humidity is high, more water evaporates from the skin. 3. Higher the air temperature lower the relative humidity of the air. Select the answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Statements 1 and 3 are accepted; high humidity reduces evaporation from skin.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "b5cfe7945aa5d45ca45d7b0873ed6b24963ffd70b0251577027b166cc8f4236d",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 111,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Atmospheric Composition & Structure",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding humidity is/are correct? 1. It is a ratio between the actual amount of water vapour present in the atmosphere and the maximum amount it can hold at a given temperature. 2. When the relative humidity is high, more water evaporates from the skin. 3. Higher the air temperature lower the relative humidity of the air. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "C",
+        "explanation": "Statements 1 and 3 are accepted; high humidity reduces evaporation from skin.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-112",
+      "sha256": "b1e8e11213a4858647657b3c594e46acf91ba28a3b0fb10003c2850f37a7c49d",
+      "value": {
+        "id": "nda-2024-i-112",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding cyclones and anti-cyclones is/are correct? 1. In the Northern Hemisphere, cyclones rotate counter clockwise and anticyclones rotate clockwise. 2. Cyclones are often associated with cloudy or rainy weather, whereas anticyclones are often associated with fair weather. 3. In the Southern Hemisphere, the cyclonic spiral will be clockwise because the Coriolis force acts to the left. Select the answer using the code given below:",
+        "sourceTextHash": "8e5676c710295a2203933c35c4a2c0b08fac4e03bb24405812e48a3b08acbd6b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 112,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding cyclones and anti-cyclones is/are correct? 1. In the Northern Hemisphere, cyclones rotate counter clockwise and anticyclones rotate clockwise. 2. Cyclones are often associated with cloudy or rainy weather, whereas anticyclones are often associated with fair weather. 3. In the Southern Hemisphere, the cyclonic spiral will be clockwise because the Coriolis force acts to the left. Select the answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "All three statements about hemispheric circulation and associated weather are correct.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "b5cfe7945aa5d45ca45d7b0873ed6b24963ffd70b0251577027b166cc8f4236d",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 112,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Cyclones & Pressure Systems",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding cyclones and anti-cyclones is/are correct? 1. In the Northern Hemisphere, cyclones rotate counter clockwise and anticyclones rotate clockwise. 2. Cyclones are often associated with cloudy or rainy weather, whereas anticyclones are often associated with fair weather. 3. In the Southern Hemisphere, the cyclonic spiral will be clockwise because the Coriolis force acts to the left. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "All three statements about hemispheric circulation and associated weather are correct.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-115",
+      "sha256": "6f68fa24bf145c92d07de2b112d5f952420af15cff761b416588b3d1a0105153",
+      "value": {
+        "id": "nda-2024-i-115",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding Earth's internal structure is/are correct? 1. The oceanic crust is heavier than the continental crust. 2. Most of the Earth's internal heat is contained within the mantle. 3. Large convective cells in the crust circulate heat and drive plate-tectonic processes. Select the answer using the code given below:",
+        "sourceTextHash": "898878e5b35378ae9f784185102090ac8b9077c4b5d052d7b1efc34790e3bb63",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 115,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding Earth's internal structure is/are correct? 1. The oceanic crust is heavier than the continental crust. 2. Most of the Earth's internal heat is contained within the mantle. 3. Large convective cells in the crust circulate heat and drive plate-tectonic processes. Select the answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "Statements 1 and 2 are correct; convection is in the mantle, not the crust.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "b5cfe7945aa5d45ca45d7b0873ed6b24963ffd70b0251577027b166cc8f4236d",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "B"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 115,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Plate Tectonics",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding Earth's internal structure is/are correct? 1. The oceanic crust is heavier than the continental crust. 2. Most of the Earth's internal heat is contained within the mantle. 3. Large convective cells in the crust circulate heat and drive plate-tectonic processes. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "3 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "B",
+        "explanation": "Statements 1 and 2 are correct; convection is in the mantle, not the crust.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-117",
+      "sha256": "72c388598473210fde7c9ae7de0b2bc25682aa2421a347de6da03a933f2c26d5",
+      "value": {
+        "id": "nda-2024-i-117",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding the World Climate Types and their relation with Inter Tropical Convergence Zone (ITCZ) is/are correct? 1. Tropical Wet Climate is one of the world's rainiest due to the dominance of the ITCZ over it. 2. Tropical Savanna Climate experiences a distinctive alternation of wet and dry seasons, caused chiefly by the seasonal shift in latitude of the subtropical highs and ITCZ. 3. The Tropical Monsoonal Climate experiences heavy rainfall as a consequence of the nearness of the ITCZ for much of the year. Select the answer using the code given below:",
+        "sourceTextHash": "f681084c90e4619b77231af6dd78d003a8da2f3f1c00ffd27851b9d0fcb1d007",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 117,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding the World Climate Types and their relation with Inter Tropical Convergence Zone (ITCZ) is/are correct? 1. Tropical Wet Climate is one of the world's rainiest due to the dominance of the ITCZ over it. 2. Tropical Savanna Climate experiences a distinctive alternation of wet and dry seasons, caused chiefly by the seasonal shift in latitude of the subtropical highs and ITCZ. 3. The Tropical Monsoonal Climate experiences heavy rainfall as a consequence of the nearness of the ITCZ for much of the year. Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 117,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding the World Climate Types and their relation with Inter Tropical Convergence Zone (ITCZ) is/are correct? 1. Tropical Wet Climate is one of the world's rainiest due to the dominance of the ITCZ over it. 2. Tropical Savanna Climate experiences a distinctive alternation of wet and dry seasons, caused chiefly by the seasonal shift in latitude of the subtropical highs and ITCZ. 3. The Tropical Monsoonal Climate experiences heavy rainfall as a consequence of the nearness of the ITCZ for much of the year. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-118",
+      "sha256": "4eff1ca09445e7e345cf57833745cf48f74b308e0c2988dbf7c1adca9ba6a194",
+      "value": {
+        "id": "nda-2024-i-118",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding tropical cyclones is/are correct? 1. These storms develop during the summer and autumn in every tropical ocean except the South Atlantic and eastern South Pacific Oceans. 2. Tropical cyclones that occur in the North Atlantic and eastern North Pacific Oceans are known as typhoons. 3. Tropical cyclones that occur in the Indian and South Pacific Oceans are called cyclones. Select the answer using the code given below:",
+        "sourceTextHash": "54491d33dc56ac4a96d4ee1bd7de42eef5bb6697cf1bf4677abca18fabac08c9",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 118,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding tropical cyclones is/are correct? 1. These storms develop during the summer and autumn in every tropical ocean except the South Atlantic and eastern South Pacific Oceans. 2. Tropical cyclones that occur in the North Atlantic and eastern North Pacific Oceans are known as typhoons. 3. Tropical cyclones that occur in the Indian and South Pacific Oceans are called cyclones. Select the answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "Statements 1 and 3 are correct; North Atlantic storms are hurricanes, not typhoons.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "b5cfe7945aa5d45ca45d7b0873ed6b24963ffd70b0251577027b166cc8f4236d",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 118,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Floor Relief",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding tropical cyclones is/are correct? 1. These storms develop during the summer and autumn in every tropical ocean except the South Atlantic and eastern South Pacific Oceans. 2. Tropical cyclones that occur in the North Atlantic and eastern North Pacific Oceans are known as typhoons. 3. Tropical cyclones that occur in the Indian and South Pacific Oceans are called cyclones. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "3 only",
+          "B": "1 and 2 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "C",
+        "explanation": "Statements 1 and 3 are correct; North Atlantic storms are hurricanes, not typhoons.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-72",
+      "sha256": "c6f7a4570cb9e61aa6398f30960fd0052b220e3465e42812f5ffb9adaf5a88c9",
+      "value": {
+        "id": "nda-2024-i-72",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding Regur soil is/are correct? 1. It is a light coloured, clayey and fertile soil. 2. It is developed on Deccan basaltic lava under hot and humid conditions. 3. Cotton is extensively cultivated in this soil. Select the answer using the code given below:",
+        "sourceTextHash": "cd3d83e88c78e2b75fb396bd94d18e3b144fd093a3811db7880ed1bf0880f3fc",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 72,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding Regur soil is/are correct? 1. It is a light coloured, clayey and fertile soil. 2. It is developed on Deccan basaltic lava under hot and humid conditions. 3. Cotton is extensively cultivated in this soil. Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 72,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Soils & Soil Conservation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding Regur soil is/are correct? 1. It is a light coloured, clayey and fertile soil. 2. It is developed on Deccan basaltic lava under hot and humid conditions. 3. Cotton is extensively cultivated in this soil. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 and 2",
+          "B": "2 and 3",
+          "C": "2 only",
+          "D": "3 only"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-75",
+      "sha256": "fe462ecd4e41b78b15832dff306ea6b5442de42411dfaaf04fd3358621ad63aa",
+      "value": {
+        "id": "nda-2024-i-75",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements regarding soils: 1. Soils having a very high content of sodium and calcium and pH of more than 7.0 are alkaline soils. 2. Black cotton soil had developed on the Deccan basaltic lava under hot and humid conditions. 3. Laterite soils are characterised by a deep weathered layer from which silica has been leached. Which of the statements given above is/are correct?",
+        "sourceTextHash": "5e7de54fde3fc29b6bc140f0c4ab436863431cf7c457b5168006136cf1fd5774",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 75,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Consider the following statements regarding soils: 1. Soils having a very high content of sodium and calcium and pH of more than 7.0 are alkaline soils. 2. Black cotton soil had developed on the Deccan basaltic lava under hot and humid conditions. 3. Laterite soils are characterised by a deep weathered layer from which silica has been leached. Which of the statements given above is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 75,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Soils & Soil Conservation",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements regarding soils: 1. Soils having a very high content of sodium and calcium and pH of more than 7.0 are alkaline soils. 2. Black cotton soil had developed on the Deccan basaltic lava under hot and humid conditions. 3. Laterite soils are characterised by a deep weathered layer from which silica has been leached. Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-116",
+      "sha256": "35d48b00ba786919905dcc40aba2d1e256c0a3dbcd6f15733feb257cf909cce8",
+      "value": {
+        "id": "nda-2024-i-116",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding the given rivers is/are correct? 1. Tsangpo crosses over into India under the name of Dihang. 2. Godavari has the second largest river basin covering about 10 percent of the area of India. 3. Rivers Chambal and Betwa are the important tributaries of river Ganga which join river Ganga directly in Uttar Pradesh. Select the answer using the code given below:",
+        "sourceTextHash": "c6c08311c20ac83acf4a11f6506e7c3b924736ba5ca27fefff3e8414f4d553e3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 116,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Which of the following statements regarding the given rivers is/are correct? 1. Tsangpo crosses over into India under the name of Dihang. 2. Godavari has the second largest river basin covering about 10 percent of the area of India. 3. Rivers Chambal and Betwa are the important tributaries of river Ganga which join river Ganga directly in Uttar Pradesh. Select the answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 116,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding the given rivers is/are correct? 1. Tsangpo crosses over into India under the name of Dihang. 2. Godavari has the second largest river basin covering about 10 percent of the area of India. 3. Rivers Chambal and Betwa are the important tributaries of river Ganga which join river Ganga directly in Uttar Pradesh. Select the answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-113",
+      "sha256": "a9c651cf01109bb5c7d4023d73a41da9c52cee5b8881ab7b8774bf635fd0aa15",
+      "value": {
+        "id": "nda-2024-i-113",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Identify the sea-port in India on the basis of the given characteristics: 1. It is more than a century old port on the west coast of India. 2. It is a natural harbour protected by a breakwater and also by a mole. 3. A deep draft channel of about 14 metres depth permits large vessels to enter the harbour. Select the correct sea-port from the options given below:",
+        "sourceTextHash": "cbf6beaf7558a6f96cac4831bd954f6f212c609a27e3ca6d1d52b18a695aca58",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 113,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Identify the sea-port in India on the basis of the given characteristics: 1. It is more than a century old port on the west coast of India. 2. It is a natural harbour protected by a breakwater and also by a mole. 3. A deep draft channel of about 14 metres depth permits large vessels to enter the harbour. Select the correct sea-port from the options given below:",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "The official keyed port matching the harbour description is Mormugao.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "b5cfe7945aa5d45ca45d7b0873ed6b24963ffd70b0251577027b166cc8f4236d",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 113,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Ports",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Identify the sea-port in India on the basis of the given characteristics: 1. It is more than a century old port on the west coast of India. 2. It is a natural harbour protected by a breakwater and also by a mole. 3. A deep draft channel of about 14 metres depth permits large vessels to enter the harbour. Select the correct sea-port from the options given below:"
+        ],
+        "options": {
+          "A": "Mormugao Port",
+          "B": "Deendayal Port",
+          "C": "Cochin Port",
+          "D": "Jawaharlal Nehru Port"
+        },
+        "answer": "A",
+        "explanation": "The official keyed port matching the harbour description is Mormugao.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-114",
+      "sha256": "f5775579f37eb8bd0f46e13fd90b2e71c5901f80b1cbab4baf12dfd067f75542",
+      "value": {
+        "id": "nda-2024-i-114",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Identify the Iron and Steel Plant on the basis of the given characteristics: 1. It receives coal from Jharia and iron-ore from Sundargarh and Kendujhar. 2. Power for the electric furnaces is procured from Hirakund. 3. Water is obtained from Koel and Sankh rivers. Select the correct Iron and Steel Plant from the options given below:",
+        "sourceTextHash": "8556b008a8935cbcd451a057820449725d81736ed57953254a3066c959e9d6b7",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 114,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Identify the Iron and Steel Plant on the basis of the given characteristics: 1. It receives coal from Jharia and iron-ore from Sundargarh and Kendujhar. 2. Power for the electric furnaces is procured from Hirakund. 3. Water is obtained from Koel and Sankh rivers. Select the correct Iron and Steel Plant from the options given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 114,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Coalfields",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Identify the Iron and Steel Plant on the basis of the given characteristics: 1. It receives coal from Jharia and iron-ore from Sundargarh and Kendujhar. 2. Power for the electric furnaces is procured from Hirakund. 3. Water is obtained from Koel and Sankh rivers. Select the correct Iron and Steel Plant from the options given below:"
+        ],
+        "options": {
+          "A": "Bhilai Steel Plant",
+          "B": "Durgapur Steel Plant",
+          "C": "Rourkela Steel Plant",
+          "D": "Bokaro Steel Plant"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-76",
+      "sha256": "d21d9ea21451aa8d29f9a11ce32282b2ef0c767c6971234341850501b04e6581",
+      "value": {
+        "id": "nda-2024-i-76",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following characteristics of a grassland: 1. An extensive area of mid latitude grasslands are devoid of trees and shrubs. 2. The climate is characterised by hot summers, cold winters and relatively low rainfall occurring mainly in spring and summer. 3. In humid parts, grasses grow to a meter or more in height. On the basis of the above characteristics, select the correct grassland from the options given below:",
+        "sourceTextHash": "34a7dd608217f09c3d0ceb406ded9a80ccfde2b3ee784e8f3901cb89da943d6d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 76,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Consider the following characteristics of a grassland: 1. An extensive area of mid latitude grasslands are devoid of trees and shrubs. 2. The climate is characterised by hot summers, cold winters and relatively low rainfall occurring mainly in spring and summer. 3. In humid parts, grasses grow to a meter or more in height. On the basis of the above characteristics, select the correct grassland from the options given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 76,
+        "subject": "Environment",
+        "topic": "General Environment & Ecology",
+        "subtopic": "General",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following characteristics of a grassland: 1. An extensive area of mid latitude grasslands are devoid of trees and shrubs. 2. The climate is characterised by hot summers, cold winters and relatively low rainfall occurring mainly in spring and summer. 3. In humid parts, grasses grow to a meter or more in height. On the basis of the above characteristics, select the correct grassland from the options given below:"
+        ],
+        "options": {
+          "A": "Steppes",
+          "B": "Prairies",
+          "C": "Savanna",
+          "D": "Pampas"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2024-i-119",
+      "sha256": "db5bd368cf40a335e20aa4885f085b5a50fe68ce9f8d79c0229c73e7c2df8ea6",
+      "value": {
+        "id": "nda-2024-i-119",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Identify the land biome on the basis of the given characteristics: 1. Their climates are characterised by high rainfall and temperatures that vary from cold to mild. 2. These forests contain primarily deciduous trees - including maple, oak, hickory and beechwood. 3. Raccoons, opossums, bats and squirrels are found in the trees. Select the correct land biome from the options given below:",
+        "sourceTextHash": "9bdd2772581c9db95d0bd374dec3819bd0e926dc6599ee17c19e034ae50bd9fb",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2024,
+          "paper": "I",
+          "questionNumber": 119,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_2024_GAT_Answer_Key_PDF_Apr_21_2024__cafed4c16d840a02ac4882ce77e3c773.pdf",
+          "rawQuestionText": "Identify the land biome on the basis of the given characteristics: 1. Their climates are characterised by high rainfall and temperatures that vary from cold to mild. 2. These forests contain primarily deciduous trees - including maple, oak, hickory and beechwood. 3. Raccoons, opossums, bats and squirrels are found in the trees. Select the correct land biome from the options given below:"
+        },
+        "exam": "NDA",
+        "year": 2024,
+        "paper": "I",
+        "questionNumber": 119,
+        "subject": "Environment",
+        "topic": "General Environment & Ecology",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Identify the land biome on the basis of the given characteristics: 1. Their climates are characterised by high rainfall and temperatures that vary from cold to mild. 2. These forests contain primarily deciduous trees - including maple, oak, hickory and beechwood. 3. Raccoons, opossums, bats and squirrels are found in the trees. Select the correct land biome from the options given below:"
+        ],
+        "options": {
+          "A": "Tropical forest",
+          "B": "Temperate forest",
+          "C": "Boreal forest",
+          "D": "Mediterranean forest"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

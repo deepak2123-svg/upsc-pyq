@@ -1,0 +1,18 @@
+// Records completed visual review, not an OCR-based approval mechanism.
+// Do not rerun to approve changed inputs: the reviewed hashes below are frozen.
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {partB} from './nda-2024-i-part-b-transcription.mjs';
+const hash=v=>crypto.createHash('sha256').update(v).digest('hex');
+const target='content/audits/nda-2024-i-source-signoff.json';
+assert.ok(!fs.existsSync(target),'Signoff already exists; changed sources require renewed review');
+const crops=JSON.parse(fs.readFileSync('tmp/nda-2024-i/figures/manifest.json','utf8'));
+for(const c of crops){c.description=partB.find(q=>q.number===c.number).figure.description;c.reviewStatus='approved';c.reviewMethod='Original source and generated crop visually compared, same AI reviewer. Q52 recropped to remove adjacent text; both circuit diagrams and labels retained.';fs.copyFileSync(c.localCrop,'public'+c.asset);}
+fs.mkdirSync('public/papers/nda-2024-i-gat',{recursive:true});
+fs.copyFileSync('tmp/nda-2024-i/official-key.pdf','public/papers/nda-2024-i-gat/official-final-key.pdf');
+fs.writeFileSync('content/audits/nda-2024-i-figure-manifest.json',JSON.stringify(crops,null,2)+'\n');
+const files=['scripts/nda-2024-i-english-transcription.mjs','scripts/nda-2024-i-part-b-transcription.mjs','scripts/nda-2024-i-classification.mjs'];
+const review={paperId:'nda-2024-i-gat',originalPdfSha256:'1672d68a9b43bcba608b647852536472aa1c4bc810299faae2f203bc02d5c9f1',keyPdfSha256:'b5cfe7945aa5d45ca45d7b0873ed6b24963ffd70b0251577027b166cc8f4236d',reviewedAt:'2026-10-27',reviewerMethod:'Two distinct visual passes by the same AI reviewer; not independent human review.',reviewedQuestionNumbers:Array.from({length:150},(_,i)=>i+1),sourcePagesCompared:Array.from({length:27},(_,i)=>i+2),firstPass:'Forward page-by-page complete transcription of all stems, alternatives, passages, directions and required figures.',reproductionSecondPass:'approved',secondPass:'Reverse-page comparison of every numbered item against rendered source pages, including all statements/options, negatives, superscripts, matching codes, English underlines and shared passages.',secondPassCorrections:[{number:53,field:'options A/B',before:['150 C','1500 C'],after:['1·50 C','150 C'],reason:'Reopened PDF page 10 shows decimal in A and 150 in B; draft corrected before publication.'}],classificationSecondPass:'approved',classificationMethod:'Fresh same-AI review of complete tested tasks and all alternatives. Passage questions remain English; Science/World History transfers only to NDA/CDS, not automatic CSE. Material additional concepts receive separate placements; passing references do not.',classificationBoundariesReviewed:['Q92 traditional units: bounded Art & Culture leaf, not general literature','Q94 modernity: defence World History only; structural social change distinct from a historical event','Q131 general relativity/LIGO: bounded Physics leaf, NDA chapter 17, no automatic CSE transfer','Q139 silk routes: ancient trade plus material geography trade concept','Q143 Finance Commission: Current Affairs plus Polity and Economy mirror','Q145 recurring commemorative date and Q150 authorship remain Static; exam year is not event date'],figureNumbers:crops.map(c=>c.number),reviewedInputHashes:Object.fromEntries(files.map(p=>[p,hash(fs.readFileSync(p))])),officialKeyAuthority:'Matching official key controls scoring; no independent re-solving required. Q101 X is withdrawn.',releaseState:'local-review-approved-not-yet-released'};
+fs.writeFileSync(target,JSON.stringify(review,null,2)+'\n');
+console.log('Recorded completed source/classification passes; copied eight reviewed figures and official key.');

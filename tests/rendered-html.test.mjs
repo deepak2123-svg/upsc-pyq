@@ -66,7 +66,7 @@ test("inventory returns cross-exam subjects and unique official PYQ flows", asyn
   const response = await workerFetch("/api/pyqs/inventory");
   assert.equal(response.status, 200);
   const inventory = await response.json();
-  assert.equal(inventory.totalCount, 1967);
+  assert.equal(inventory.totalCount, 1994);
   assert.equal(inventory.mappedCount + inventory.unmappedCount, inventory.totalCount);
   assert.deepEqual(inventory.subjects.filter(s=>!s.legacyOnly).map((subject) => subject.label), ["Geography", "History", "Polity & Governance", "Economy", "Environment & Ecology", "Science & Technology", "Social Development", "International Relations & Organisations", "Current Affairs"]);
   assert.ok(inventory.nodes.some((node) => node.kind === "topic"));
