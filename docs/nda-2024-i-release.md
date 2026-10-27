@@ -70,7 +70,27 @@ reviewer, not independent human review. Frozen input/source hashes guard approva
 
 ## Release gate
 
-Local checks completed; GitHub push and exact-commit/live verification pending.
-Do not call this live until `check-nda-2024-i-release.mjs` and production browser
-checks pass. No database migration, production import or infrastructure mutation.
-Only the reviewed overlay, assets, supporting classification and tests are released.
+**Live verified**, 27 October 2026. Data commit
+`5c0efdea5d819aaaf748d9205fbb0a336035cbb0` pushed by normal fast-forward to
+main and codex/pyq-selection-flow. GitHub's Vercel status reported success for
+that exact SHA; deployment `et1NWtDtfCZki48jDLbrC4qT35te`, project upscpuraan,
+team deepakkarnal321-1406s-projects. Public app: <https://upscpuraan.vercel.app>.
+
+`node scripts/check-nda-2024-i-release.mjs https://upscpuraan.vercel.app`
+passed: 149 eligible, Q101 absent from new inventories, all 600 option decisions,
+eight served figure hashes, official-key asset SHA-256 and Sources disclosure.
+Production English count is 296. All six production browser scenarios passed,
+including saved answers/reload/results, section membership/mobile, withdrawn
+historical review and required-image failure blocking print.
+
+Production PDF: 20 pages with deployed fonts (local export: 19). All 20 pages
+rendered/visually inspected; all 149 source numbers present, Q101 absent, all
+eight figures decoded and all 149 printed answers compared with the reviewed key.
+
+Vercel connector requires reauthentication. Public GitHub commit status plus
+live API/browser/asset checks establish the release; authenticated runtime logs
+and drains were not available or inspected. No clean-log claim is made.
+
+No database migration/import, infrastructure mutation, credentials change or
+unrelated paper. Only reviewed overlay/assets, supporting classification, tests
+and this report are released. The report follow-up changes no runtime content.
