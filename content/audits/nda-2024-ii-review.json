@@ -3673,5 +3673,6 @@
       }
     }
   ],
-  "releaseState": "local-verification-pending"
+  "releaseState": "approved-runtime-overlay",
+  "releaseReport": "docs/nda-2024-ii-release.md"
 }

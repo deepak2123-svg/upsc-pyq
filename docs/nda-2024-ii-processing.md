@@ -118,3 +118,9 @@ and unresolved official provenance, with no added paper-launch links.
   their original wording; small final answer-key page is an existing print layout.
 - Builder/hash checks, additional regressions and lint/diff results are recorded
   in the release report. Existing global type/lint errors are not called passing.
+
+Production: the same six distinct browser scenarios passed (five together and
+the diagnosed fault test on rerun), all 544 grading decisions and five served
+figure hashes passed. The production-font PDF is **17 pages**, all rendered and
+inspected; source numbers/answers remain identical. See the release report for
+the initial transient failures and deployment identity.

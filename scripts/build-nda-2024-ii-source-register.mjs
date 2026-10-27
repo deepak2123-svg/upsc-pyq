@@ -65,7 +65,8 @@ if(fs.existsSync(answerReviewPath)){
  registry.reconciliation.sourceReviewComplete=review.progress.secondPassCompleted===150;
  registry.reconciliation.eligibleAfterApprovedOverlay=review.progress.secondPassApproved;
  registry.reconciliation.note='eligibleNewlyPublished=0 describes this immutable source-only staging artifact, not the reviewed runtime overlay or production release state.';
- registry.workflowState=review.progress.secondPassCompleted===150?'individual-answer-review-complete-release-checks-pending':'in-progress';
+ registry.workflowState=review.progress.secondPassCompleted===150?'individual-review-complete-deployment-tracked-separately':'in-progress';
+ registry.releaseReport='docs/nda-2024-ii-release.md';
  registry.questionSlots=registry.questionSlots.map(slot=>{
   const decision=review.questions.find(q=>q.number===slot.printedQuestionNumber);
   return {...slot,finalDisposition:decision?.answerReviewDisposition??null,answerReviewReference:`${answerReviewPath}#${slot.printedQuestionNumber}`,blocker:decision?.answerReviewDisposition==='quarantined'?decision.secondPass.note:'Application/PDF and production release checks are separate from answer approval.'};

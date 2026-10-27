@@ -47,17 +47,41 @@ the historical-correction test now uses the effective merged review policy.
 
 ## Deployment gate
 
-State: local gates passed; commit/push/production checks pending at report creation.
-Use the existing GitHub production workflow (main and working branch, fast-forward
-only). Verify exact commit with GitHub deployment status and public endpoints.
-Vercel connector currently requests reauthentication; do not invent authenticated
-deployment/log visibility. No credentials or platform settings were changed.
+State: **data release live-verified** on 27 October 2026.
+Commit `be411a90655bcd7551eb12c3a1308090edcc3b13` pushed to main and
+codex/pyq-selection-flow by normal fast-forward push. GitHub's Vercel context
+reported success for that exact SHA, deployment
+`rviVnoYczLGq6YGmaZ33iZQLPJ9U` in project upscpuraan under
+deepakkarnal321-1406s-projects. Public URL: <https://upscpuraan.vercel.app>.
+The Vercel connector required reauthentication; GitHub status plus public API
+and browser checks supply confirmation. Authenticated runtime error logs/drains
+were not available or inspected; no clean-log/monitoring claim is made. No
+credentials or platform settings changed.
 
 Read-only production verification command:
 
 `node scripts/check-nda-2024-ii-release.mjs https://upscpuraan.vercel.app`
 
-Also rerun the six new browser flows on production, including exported PDF and
-historical review. Official-key asset hash is not applicable: no authenticated
-official asset was published. The five served required-figure hashes must match.
-Do not describe this paper as all 150 scored or official-key verified.
+This command passed twice: 136 eligible IDs, 14 held IDs absent, 544 option
+decisions, three historical exclusions, five served figure hashes and honest
+Sources disclosure. Production English inventory is 246.
+
+All six distinct production browser scenarios passed: full-paper membership,
+rapid answering/reload/submission/mobile, three exact sections, PDF and historical
+Q107/image failure. Five passed in the first run; the last scenario initially
+waited for a pending answer-key request instead of reaching the image-decode
+gate. The image request itself was correctly aborted. A fresh retry then hung
+on an unrelated archive-workspace JS load; the asset separately returned HTTP
+200. The fault test now seeds storage from a light same-origin static page,
+uses DOM-content readiness plus explicit UI assertions, and omits the separately
+tested full key while injecting the image failure. It then restores normal key
+export for historical Q107. The isolated production rerun passed, with no app
+runtime workaround, timeout increase or weakened image/error assertion.
+
+The production PDF has 17 pages with the deployed fonts (local dev export had
+16). Every page was rendered/visually inspected, all five figures present and
+all 136 source numbers found. Every printed answer compared equal to the review.
+Official-key hash is N/A: no authenticated official asset was published.
+This report follow-up changes test isolation and release metadata only; it does
+not change any question, answer, eligibility or figure. Do not describe this
+paper as all 150 scored or official-key verified.

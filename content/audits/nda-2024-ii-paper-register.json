@@ -1,7 +1,7 @@
 {
   "templateVersion": 1,
   "paperId": "nda-2024-ii-gat",
-  "workflowState": "individual-answer-review-complete-release-checks-pending",
+  "workflowState": "individual-review-complete-deployment-tracked-separately",
   "sourceIdentity": {
     "exam": "NDA",
     "year": 2024,
@@ -3267,5 +3267,6 @@
     "content/audits/nda-2024-ii-key-transcriptions.json": "dd8b3ebe83998202a2ca7477e5c2c772e7f01f5ffd4453fee8a649ff73d8859c"
   },
   "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json",
-  "runtimeReviewReference": "content/audits/nda-2024-ii-review.json"
+  "runtimeReviewReference": "content/audits/nda-2024-ii-review.json",
+  "releaseReport": "docs/nda-2024-ii-release.md"
 }
