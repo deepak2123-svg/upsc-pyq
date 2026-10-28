@@ -1,0 +1,1125 @@
+{
+  "paperId": "nda-2021-i-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2021,
+    "session": "I",
+    "paper": "GAT",
+    "paperCode": "FJY-U-GTA",
+    "series": "A",
+    "language": "English page extract",
+    "examDate": "2021-04-18",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2021-1.pdf",
+    "sha256": "0730204c0c25bd47171c7d45a44fbd25ab4bea70289f4d96f372e149098065b9"
+  },
+  "pdfPageMapping": {
+    "pages": 21,
+    "cover": 1,
+    "english": "PDF 2–7 = printed 2–7",
+    "partB": "PDF 8–21 = printed (2 × PDF page − 7)",
+    "extractCaveat": "Hindi counterpart pages and the back-cover English instructions are absent; all 150 English numbered questions are present."
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "filenameDate": "2021-12-23",
+    "retrievedAt": "2026-10-28",
+    "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANA-I-2021-GAT-231221.pdf",
+    "asset": "/papers/nda-2021-i-gat/official-final-key.pdf",
+    "sha256": "5ae0d386c94265caf3237d408a9e068fcfc7431a8d1a1d3ae1a4d1126b4e11ee",
+    "page": 1,
+    "series": "A",
+    "session": "I",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 1,
+    "scored": 149,
+    "authentication": "Direct www.upsc.gov.in HTTPS response, 2784173-byte application/pdf. Page 1 identifies NDA-I-2021, Series A, Subject GAT, 600 marks, one dropped item and 149 items for scoring. The remaining three pages are the corresponding B, C and D series tables."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2021-2021-1-138",
+      "sha256": "3465b6b523307269e86ab90c1d1b36575ab62db3ba971af9a7f9f54332e913a9",
+      "value": {
+        "id": "cds-2021-2021-1-138",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "With regard to the Constitution of India, which one of the following statements is not correct?",
+        "sourceTextHash": "2fe956289c3381fce6099f4b5f97806d960e5816cf42d6d242ff8c92e7fd976c",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 138,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2021_gat_anskey",
+          "rawQuestionText": "With regard to the Constitution of India, which one of the following statements is not correct ?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 138,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "With regard to the Constitution of India, which one of the following statements is not correct?"
+        ],
+        "options": {
+          "A": "The words—Socialist and Secular—were not originally part of the Constitution.",
+          "B": "The Preamble states the objects of the Constitution of India.",
+          "C": "The Preamble is enforceable in a Court of Law.",
+          "D": "A Republic refers to the people as the source of all authority under the Constitution."
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2021-1 Q138, page 20, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2021-2021-1-140",
+      "sha256": "7fbff2241797cd0d5370a40805aaa4f46053a033c1c71dccbd754c55be177493",
+      "value": {
+        "id": "cds-2021-2021-1-140",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is included in Article 51A (Part IV A) of the Constitution of India ?",
+        "sourceTextHash": "4b9cf1d01ddc7d312513f4585fadd70e099309cd54c7d34c55cf1b9e3d382d14",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 140,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following is included in Article 51A (Part IV"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 140,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is included in Article 51A (Part IV A) of the Constitution of India ?"
+        ],
+        "options": {
+          "A": "Fundamental Duties",
+          "B": "Suspension of Fundamental Rights",
+          "C": "Special Powers of Governors",
+          "D": "Writs"
+        },
+        "answer": "A",
+        "explanation": "Original NDA 2021-1 Q140, page 20, visually checked against its complete stem and options; the matching Series A final key accepts A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2021-2021-1-144",
+      "sha256": "980e88a7f6068f943ee84e25396c532a7b8b667f023e985a3570551ae3800a4b",
+      "value": {
+        "id": "cds-2021-2021-1-144",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In the recently concluded elections in December 2020, Faustin-Archange Touadéra has won a second term in office as President of one of the following countries. Identify the country.",
+        "sourceTextHash": "a573b547d16bbf894df82ac83bc4c65f9129f2aad78414311e01fde40f24dce5",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 144,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2021_gat_anskey",
+          "rawQuestionText": "In the recently concluded elections in 147. December 2020, Faustin-Archange Touadéra has won a second term in office as President of one of the following countries. Identify the country."
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 144,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "In the recently concluded elections in December 2020, Faustin-Archange Touadéra has won a second term in office as President of one of the following countries. Identify the country."
+        ],
+        "options": {
+          "A": "Central African Republic",
+          "B": "Republic of South Africa",
+          "C": "Republic Of Ghana",
+          "D": "Republic of Mozambique"
+        },
+        "answer": "A",
+        "explanation": "Original NDA 2021-1 Q144, page 21, visually checked against its complete stem and options; the matching Series A final key accepts A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2021-2021-1-145",
+      "sha256": "5127469bd59856d4f87774e4822fd1ec13c787fe8790087c36b2555b6ad5ba4e",
+      "value": {
+        "id": "cds-2021-2021-1-145",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements is not correct in respect of the 'Legion Of Merit' award ?",
+        "sourceTextHash": "eb7dc33a0f997feb54bf3cee6fcb67968076ff099a155e7a622c223021894a14",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 145,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following statements is not correct in respect of the 'Legion Of Merit' award ?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 145,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements is not correct in respect of the 'Legion Of Merit' award ?"
+        ],
+        "options": {
+          "A": "This award is conferred by the President of the United States of America.",
+          "B": "This award was conferred to the Prime Minister of India in December, 2020.",
+          "C": "This was also awarded to the Prime Minister of Australia, Scott Morrison.",
+          "D": "It is the highest civilian award of the United States of America."
+        },
+        "answer": "D",
+        "explanation": "Original NDA 2021-1 Q145, page 21, visually checked against its complete stem and options; the matching Series A final key accepts D.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2021-2021-1-139",
+      "sha256": "ee6ea5bf2518c2067d14c43aa7df02eb6b1323c4ac72e519d02b3917a686cfc5",
+      "value": {
+        "id": "cds-2021-2021-1-139",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not a power of the Speaker of the Lok Sabha ?",
+        "sourceTextHash": "575a007a96f27f21467280c79b8b49f73e72bb8fb11dbcc97512944109d0b3ed",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 139,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following is not a power of the Speaker of the Lok Sabha ?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 139,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following is not a power of the Speaker of the Lok Sabha ?"
+        ],
+        "options": {
+          "A": "Speaker shall preside over the House of the People.",
+          "B": "Speaker will cast vote in the first instance in the House.",
+          "C": "Speaker will have power to maintain order within the House of the People.",
+          "D": "Speaker can adjourn the House or suspend the meeting till there is a quorum."
+        },
+        "answer": "B",
+        "explanation": "Original NDA 2021-1 Q139, page 20, visually checked against its complete stem and options; the matching Series A final key accepts B.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2021-2021-1-143",
+      "sha256": "19378072936254fd5a000e7329dd25b90a9b86ef79020206d610299f7fb1bd7d",
+      "value": {
+        "id": "cds-2021-2021-1-143",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Tableau of which one of the following States/Union Territory was adjudged best in the Republic Day Parade, 2021 ?",
+        "sourceTextHash": "15d59516a934d20ccb2cef83b504c834690be73642466812b099c7ae970f6d81",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 143,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2021_gat_anskey",
+          "rawQuestionText": "Tableau of which one of the following States/Union Territory was adjudged best in the Republic Day Parade, 2021 ?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 143,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Tableau of which one of the following States/Union Territory was adjudged best in the Republic Day Parade, 2021 ?"
+        ],
+        "options": {
+          "A": "Ladakh",
+          "B": "Uttar Pradesh",
+          "C": "Tripura",
+          "D": "Uttarakhand"
+        },
+        "answer": "B",
+        "explanation": "Original NDA 2021-1 Q143, page 20, visually checked against its complete stem and options; the matching Series A final key accepts B.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-57",
+      "sha256": "ff1c7434e21aca7d0cff1df005979bd805638341d4e281581150c089e46cc3d5",
+      "value": {
+        "id": "nda-2021-i-57",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The composition of gases in exosphere is",
+        "sourceTextHash": "9b3db800ebd2b37baafc2a687e59ad4d8c05050174a054172643242fb9124061",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 57,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "The composition of gases in exosphere is"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 57,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Atmospheric Composition & Structure",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The composition of gases in exosphere is"
+        ],
+        "options": {
+          "A": "Helium and Hydrogen.",
+          "B": "Neon and Oxygen.",
+          "C": "Neon and Hydrogen.",
+          "D": "Helium and Neon."
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-109",
+      "sha256": "77d3d9e48880fe4cb04dc87942e14fe032f23085a8180f37c16caf07a578e1ec",
+      "value": {
+        "id": "nda-2021-i-109",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not a minor plate?",
+        "sourceTextHash": "1c36e92cef1f8f19f9012be54708f01457ac9050b4f15711f966ead93412afc4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 109,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "Which one of the following is not a minor plate?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 109,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Plate Tectonics",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not a minor plate?"
+        ],
+        "options": {
+          "A": "Cocos Plate",
+          "B": "Nazca Plate",
+          "C": "Caroline Plate",
+          "D": "Antarctic Plate"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-110",
+      "sha256": "9d4159253035e608eda7e63301ab4011b75f69c081dc4d8a36e692aa0c9ed71d",
+      "value": {
+        "id": "nda-2021-i-110",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Advantage(s) of tectonic activity in Iceland include(s): 1. Source of natural geothermal energy 2. Creation of new land 3. Attraction of tourists Select the correct answer using the code given below:",
+        "sourceTextHash": "292cc3d75dda72e68b0f5dd80003d4b1a0183b356d4eb7cce13260f483c42828",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 110,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "Advantage(s) of tectonic activity in Iceland include(s): 1. Source of natural geothermal energy 2. Creation of new land 3. Attraction of tourists Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 110,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Plate Tectonics",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Advantage(s) of tectonic activity in Iceland include(s): 1. Source of natural geothermal energy 2. Creation of new land 3. Attraction of tourists Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-111",
+      "sha256": "6522a1056edf76088c07345f06fb09af936e96c69a0a70447391ac4703812875",
+      "value": {
+        "id": "nda-2021-i-111",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The process whereby certain minerals absorb water, expand and change is called as",
+        "sourceTextHash": "598840e507c731eec59eadb29eab4389c40d81d4eaa37c45eb9e0bd029bb8479",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 111,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "The process whereby certain minerals absorb water, expand and change is called as"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 111,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The process whereby certain minerals absorb water, expand and change is called as"
+        ],
+        "options": {
+          "A": "Hydration.",
+          "B": "Oxidation.",
+          "C": "Hydrolysis.",
+          "D": "Carbonation."
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-112",
+      "sha256": "4684d14c6d6306a4c01c4772bd8eb2394a71f685bef6d3ee1c936e4b183a3c66",
+      "value": {
+        "id": "nda-2021-i-112",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the longest Latitude?",
+        "sourceTextHash": "7f0a35d03a3d901a0f719b28627b468bbb6a6e084fc865481e158008ccaf40ac",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 112,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "Which one of the following is the longest Latitude?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 112,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is the longest Latitude?"
+        ],
+        "options": {
+          "A": "90 degree Latitude",
+          "B": "23-5 degree Latitude",
+          "C": "0-0 degree Latitude",
+          "D": "66-5 degree Latitude"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-113",
+      "sha256": "b904dffba5e0077999f6b97e961c12babef474e4915dd786e7e92f092cc1a4da",
+      "value": {
+        "id": "nda-2021-i-113",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "If it is 12.00 Noon in India, on which meridian will it be 7.00 am of the same day?",
+        "sourceTextHash": "712dd18863100d105807da156ad43e5a7367734be6ce2f5222c2f02d8beb76b4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 113,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "If it is 12.00 Noon in India, on which meridian will it be 7.00 am of the same day?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 113,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Easy",
+        "promptLines": [
+          "If it is 12.00 Noon in India, on which meridian will it be 7.00 am of the same day?"
+        ],
+        "options": {
+          "A": "7-5 degree E. Longitude",
+          "B": "7.5 degree W. Longitude",
+          "C": "75 degree E. Longitude",
+          "D": "75 degree W. Longitude"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-119",
+      "sha256": "b0e9a35e8d8ef8fd5ff51649fdd7527069a4402bdf720aac8bb289572e8d1abe",
+      "value": {
+        "id": "nda-2021-i-119",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Basket-of-eggs topography is related to",
+        "sourceTextHash": "3e4346225e868233ecb5733bd45b5b703091a32458ae693ad046a77e93cf1e4d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 119,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "Basket-of-eggs topography is related to"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 119,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Landforms & Geomorphic Agents",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Basket-of-eggs topography is related to"
+        ],
+        "options": {
+          "A": "Drumlins.",
+          "B": "Eskers.",
+          "C": "Cirques.",
+          "D": "Moraines."
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-120",
+      "sha256": "216fb775442faf5574a7e5c223ce18e82185ceb0676b3a2f122f97166741af99",
+      "value": {
+        "id": "nda-2021-i-120",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following planets has the highest density?",
+        "sourceTextHash": "de180187f1646b4edc80ffc6af5d7e601fd9e1efed1d85ab305256d2c139bdb4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 120,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "Which one of the following planets has the highest density?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 120,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Solar System & Universe",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following planets has the highest density?"
+        ],
+        "options": {
+          "A": "Mercury",
+          "B": "Venus",
+          "C": "Jupiter",
+          "D": "Earth"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-121",
+      "sha256": "dda927a3e0ff46564c583c2f2a01d4ddf2a9c26afbeb7817e04609c47d7fd4f8",
+      "value": {
+        "id": "nda-2021-i-121",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Point of Origin of Earthquake Wave is known as",
+        "sourceTextHash": "14136a2b3d53579ac9762ab648e150ea990a5c9b496ff05188e4c87e5e426476",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 121,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "Point of Origin of Earthquake Wave is known as"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 121,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earthquakes & Seismology",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Point of Origin of Earthquake Wave is known as"
+        ],
+        "options": {
+          "A": "Epicentre.",
+          "B": "Focus.",
+          "C": "Photosphere.",
+          "D": "Seismic Zone."
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-122",
+      "sha256": "8e77cd72ec471d3b34c322a8e6fe8136b0e97758a999bb1d619d760511e34daa",
+      "value": {
+        "id": "nda-2021-i-122",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The maximum depth of Lithosphere is found in the",
+        "sourceTextHash": "7ef1bf13837af9eb01939081310d76c79bd901b691a2d2535916102b47a41ad9",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 122,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "The maximum depth of Lithosphere is found in the"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 122,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Floor Relief",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The maximum depth of Lithosphere is found in the"
+        ],
+        "options": {
+          "A": "Pacific Ocean.",
+          "B": "Siberian Plain.",
+          "C": "Patagonian Desert.",
+          "D": "Himalayan Mountains."
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-123",
+      "sha256": "36590038af9fcb124ace05a702d1ba4927f60f1d728750bd71df7afe957febf2",
+      "value": {
+        "id": "nda-2021-i-123",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "A large body of magmatic material that cools in the deeper depth of the Earth's crust and develops in the form of large domes is known as",
+        "sourceTextHash": "2ce50b4234531e7f2b7be0b9b45f026284ddbdd664701cf7af812af7aa2e41a3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 123,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "A large body of magmatic material that cools in the deeper depth of the Earth's crust and develops in the form of large domes is known as"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 123,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "A large body of magmatic material that cools in the deeper depth of the Earth's crust and develops in the form of large domes is known as"
+        ],
+        "options": {
+          "A": "Batholiths.",
+          "B": "Lacoliths.",
+          "C": "Lopoliths.",
+          "D": "Phacoliths."
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-131",
+      "sha256": "565967f0cd45c6cfbd17aa84450b96f97c20f430f37fbb230ce53e72a0ea4fff",
+      "value": {
+        "id": "nda-2021-i-131",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not a form of condensation?",
+        "sourceTextHash": "8fda79f2460d3f48b36594c538ab91a87deb4e106a5ebb5ff8095ea173f2c151",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 131,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "Which one of the following is not a form of condensation?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 131,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Rainfall & Precipitation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not a form of condensation?"
+        ],
+        "options": {
+          "A": "Dew",
+          "B": "Fog",
+          "C": "Frost",
+          "D": "Sleet"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-132",
+      "sha256": "d6ea865a8dfcd105e8aa483c851afae6f3172e4ce7492a85f7a90b5bc62f38af",
+      "value": {
+        "id": "nda-2021-i-132",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following clouds is a rain-bearing cloud?",
+        "sourceTextHash": "39ab8e76d8e36b4091b41fe2d0ca507d442ef8b71bffb09085237e9fb9c8e1b8",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 132,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "Which one of the following clouds is a rain-bearing cloud?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 132,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Rainfall & Precipitation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following clouds is a rain-bearing cloud?"
+        ],
+        "options": {
+          "A": "Cumulus cloud",
+          "B": "Stratus cloud",
+          "C": "Nimbus cloud",
+          "D": "Cirrus cloud"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-108",
+      "sha256": "5c98d013d59626636e375bb85fae7fa8fc5d3a75aac92f7121361200779fb90c",
+      "value": {
+        "id": "nda-2021-i-108",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following rivers is not a tributary of river Brahmaputra?",
+        "sourceTextHash": "0d1b5617c6bf1944292c2ec21e755c39677fd4ad8a06646adb41cdfbc0e0d0b8",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 108,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "Which one of the following rivers is not a tributary of river Brahmaputra?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 108,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following rivers is not a tributary of river Brahmaputra?"
+        ],
+        "options": {
+          "A": "River Manas",
+          "B": "River Kameng",
+          "C": "River Mahananda",
+          "D": "River Subansiri"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-136",
+      "sha256": "bf9506fe1ef8bba814396040064428275f24a7a47b68450651c41f605da15b0f",
+      "value": {
+        "id": "nda-2021-i-136",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The natural vegetation which covers the maximum geographical areas of India is",
+        "sourceTextHash": "056d43f6b2de0b6e565c71514d0b208c37b23b4dee0a64e5d846f4a896183e56",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 136,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "The natural vegetation which covers the maximum geographical areas of India is"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 136,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Forest Cover",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The natural vegetation which covers the maximum geographical areas of India is"
+        ],
+        "options": {
+          "A": "Tropical deciduous forests.",
+          "B": "Tropical thorn forests.",
+          "C": "Montane forests.",
+          "D": "Tropical evergreen forests."
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-137",
+      "sha256": "ad729bc3a79b6f299a1a701aaaf260c62adec54712a61133b5e88c2ef7a57003",
+      "value": {
+        "id": "nda-2021-i-137",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "River Beas, flowing from Himachal and Punjab, joins the river",
+        "sourceTextHash": "2d61910cc1be37326e19fc02bbfe70b5f4f33fe97ea345292cae96bae6cff1a6",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 137,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "River Beas, flowing from Himachal and Punjab, joins the river"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 137,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "River Beas, flowing from Himachal and Punjab, joins the river"
+        ],
+        "options": {
+          "A": "Indus.",
+          "B": "Satluj.",
+          "C": "Chenab.",
+          "D": "Ravi."
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-124",
+      "sha256": "78409c9b3f26f51f75b5bb3d0f59eb23d947e82dd85866ba4a270d1b5508aaef",
+      "value": {
+        "id": "nda-2021-i-124",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following Oil Refineries is not located in Assam?",
+        "sourceTextHash": "5991fdde2201d313575ee746ce0136bc49defa25c0a75d8d7d54e64a4fdeb192",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 124,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "Which one of the following Oil Refineries is not located in Assam?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 124,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Oilfields & Refineries",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following Oil Refineries is not located in Assam?"
+        ],
+        "options": {
+          "A": "Tatipaka",
+          "B": "Numaligarh",
+          "C": "Bongaigaon",
+          "D": "Digboi"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-133",
+      "sha256": "5f4845e8966f3b48ba37d557d04cf1261e3a4991744ea05888229c8d9602de9e",
+      "value": {
+        "id": "nda-2021-i-133",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In which one of the following countries is intensive subsistence agriculture not predominantly practised?",
+        "sourceTextHash": "e6a1a6444842c3d8d608bcce08b3613751d74a7f94a050265eeed699e3f4a483",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 133,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "In which one of the following countries is intensive subsistence agriculture not predominantly practised?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 133,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In which one of the following countries is intensive subsistence agriculture not predominantly practised?"
+        ],
+        "options": {
+          "A": "India",
+          "B": "Japan",
+          "C": "Canada",
+          "D": "Indonesia"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-134",
+      "sha256": "d07c8c97b47e4d34c75e57bbe3d1cf7cb6b68068e420154f39778bb30c8cba28",
+      "value": {
+        "id": "nda-2021-i-134",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Headquarters of South-Eastern Railway is located at",
+        "sourceTextHash": "42a53c1842e7addefb05cb6b43f9bbec5eeb97001539bd5065d221d266ca07e4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 134,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "The Headquarters of South-Eastern Railway is located at"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 134,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Railway Zones",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Headquarters of South-Eastern Railway is located at"
+        ],
+        "options": {
+          "A": "Bilaspur.",
+          "B": "Secunderabad.",
+          "C": "Kolkata.",
+          "D": "Bhubaneswar."
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-135",
+      "sha256": "9c6409baa32ce4d336503ecab7cb7d8d251c58e0dd28f2cf9c552c97b8c42b81",
+      "value": {
+        "id": "nda-2021-i-135",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Bharatmala Pariyojana is related to",
+        "sourceTextHash": "9e85033b3ff687290e52e422a2d2a02bf3a104ecf6fc1cfa3d8d252043724c54",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 135,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "Bharatmala Pariyojana is related to"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 135,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Highways",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Bharatmala Pariyojana is related to"
+        ],
+        "options": {
+          "A": "interlinking of Northern and Southern Indian rivers in a garland shape.",
+          "B": "networks of National Highways in India.",
+          "C": "interlinking of all cities of India through Railways.",
+          "D": "interlinking of all industrial regions of India through pipelines."
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-i-107",
+      "sha256": "475d858650e8b34f72a76757430e79a0bb29dab2d8b48d6b9430bc365281389d",
+      "value": {
+        "id": "nda-2021-i-107",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Keppel Island is completely bleached mainly due to the expansion of",
+        "sourceTextHash": "27c51844dbb1d69273296068e9fea6c6b4837dc9e9700c6a70981eaee4cc920a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "I",
+          "questionNumber": 107,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDANA_I_2021_GAT_231221_3473e3d9ba739ae0177b110da1f1d8af.pdf",
+          "rawQuestionText": "Keppel Island is completely bleached mainly due to the expansion of"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "I",
+        "questionNumber": 107,
+        "subject": "Environment",
+        "topic": "Protected Areas & Biodiversity",
+        "subtopic": "Marine Biodiversity",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Keppel Island is completely bleached mainly due to the expansion of"
+        ],
+        "options": {
+          "A": "Starfish.",
+          "B": "Blue whale.",
+          "C": "Octopus.",
+          "D": "Sea horse."
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

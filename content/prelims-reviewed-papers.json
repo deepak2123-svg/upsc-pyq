@@ -101,5 +101,20 @@
     "secondPass":"Complete English, Science and GS original pages reread; all 150 Series A key cells independently transcribed by columns and by rows and asserted equal. Preserve 63 existing IDs and their source text; add 87 missing records. Q58 and Q73 receive official-key-only corrections with grading revisions; original snapshots and submitted answers stay unchanged. All original figures, including Q75 graph, preserved. Official provisional examination answers and editorial caveats are distinguished. English and defence World History have explicit NDA/CDS locations, not automatic CSE GS applicability.",
     "outOfScopeRanges":[],
     "reviewedAt":"2026-10-25"
+  },{
+    "exam":"NDA","year":2021,"paper":"I","series":"A","questionCount":150,
+    "originalPdf":"C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2021-1.pdf",
+    "originalPdfSha256":"0730204c0c25bd47171c7d45a44fbd25ab4bea70289f4d96f372e149098065b9",
+    "coverPage":1,"languages":["Hindi","English"],"reviewedLanguage":"English",
+    "questionPages":[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],
+    "answerVerificationMethod":"official-final-key","keyStatus":"official-final",
+    "keyPdf":"public/papers/nda-2021-i-gat/official-final-key.pdf",
+    "keySha256":"5ae0d386c94265caf3237d408a9e068fcfc7431a8d1a1d3ae1a4d1126b4e11ee",
+    "keyPage":1,"keySeries":"A","keyQuestionCount":150,"droppedQuestions":[58],
+    "identityStatus":"cover-key-and-question-identity-reviewed",
+    "identityRationale":"Original cover identifies NDA & NA Examination (I), 2021, Series A, General Ability Test, 150 questions, 600 marks and 150 minutes. Direct UPSC final key page 1 independently identifies NDA-I-2021, Series A, GAT, one dropped item and 149 scoring items. Every Series A cell and all numbered source questions were visually checked.",
+    "secondPass":"Same AI reviewer performed a fresh complete page-oriented visual comparison after OCR-assisted transcription, including English underlining, error segments, blanks, statements, formulae and all options. The key was transcribed once by columns and again by rows with programmatic agreement. Classification received a separate full reread; no independent human review is claimed.",
+    "outOfScopeRanges":[],
+    "reviewedAt":"2026-10-28"
   }]
 }

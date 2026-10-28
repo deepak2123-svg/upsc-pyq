@@ -7,7 +7,7 @@ test('compact source directory filters and paginates every paper without inflati
  await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Sources',exact:true}).click();
  await expect(page.getByRole('heading',{name:'Added PYQ papers'})).toBeVisible();
  const ids=new Set<string>(inventory.nodes.filter((n:{kind:string;legacyOnly?:boolean})=>n.kind==='subtopic'&&!n.legacyOnly).flatMap((n:{questionIdsByExam:Record<string,string[]>})=>Object.values(n.questionIdsByExam).flat()));
- for(const paperId of ['nda-2026-i','nda-2026-ii','nda-2025-i','nda-2025-ii','nda-2024-i','nda-2023-ii','nda-2023-i','nda-2022-ii','nda-2022-i','nda-2021-ii']){
+ for(const paperId of ['nda-2026-i','nda-2026-ii','nda-2025-i','nda-2025-ii','nda-2024-i','nda-2023-ii','nda-2023-i','nda-2022-ii','nda-2022-i','nda-2021-ii','nda-2021-i']){
   const paper=JSON.parse(readFileSync(`content/${paperId}-official-paper.json`,'utf8'));
   const policy=JSON.parse(readFileSync(`content/${paperId}-official-review-policy.json`,'utf8'));
   for(const q of paper.questions)if(['official-final','official-provisional','reasoned-verified'].includes(policy[q.id].status))ids.add(q.id);

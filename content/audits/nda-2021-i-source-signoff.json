@@ -1,0 +1,31 @@
+{
+  "paperId": "nda-2021-i-gat",
+  "reviewedAt": "2026-10-28",
+  "reviewer": "Codex same-agent review",
+  "reviewerMethod": "OCR-assisted first transcription from the 21-page Series A scan, followed by a fresh page-oriented visual comparison of every stem, statement, option, direction, underlining and printed number against the rendered source. This is a same-agent second pass, not independent human review.",
+  "classificationMethod": "Concept-specific first placement followed by a fresh complete placement reread, including explicit NDA/CDS versus CSE applicability checks and a second check of every Current Affairs and additional placement.",
+  "originalPdfSha256": "0730204c0c25bd47171c7d45a44fbd25ab4bea70289f4d96f372e149098065b9",
+  "keyPdfSha256": "5ae0d386c94265caf3237d408a9e068fcfc7431a8d1a1d3ae1a4d1126b4e11ee",
+  "reviewedQuestionNumbers": [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+    41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
+    61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80,
+    81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100,
+    101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+    121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140,
+    141, 142, 143, 144, 145, 146, 147, 148, 149, 150
+  ],
+  "reproductionSecondPass": "approved",
+  "classificationSecondPass": "approved",
+  "requiredFigures": [],
+  "sourceDefectsPreserved": [
+    "Q63 option B prints −073° Celsius; it is preserved rather than silently corrected.",
+    "Q78 option B prints IR²; it is preserved exactly as a distractor."
+  ],
+  "materialHistoricalRepairs": [],
+  "reviewedInputHashes": {
+    "scripts/nda-2021-i-transcription.mjs": "9a0c2e1b072934be61b99bca157980dbeb8b2de37e55918d2ba81b2602b085ab",
+    "scripts/nda-2021-i-classification.mjs": "758614f341844b52499eebab9d2c9f7fba21edb53b22219ef0bad6d26b4b089a"
+  }
+}
