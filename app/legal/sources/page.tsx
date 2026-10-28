@@ -11,6 +11,7 @@ import officialNda2025IPaper from '../../../content/nda-2025-i-official-paper.js
 import reviewedNda2024IIPaper from '../../../content/nda-2024-ii-reviewed-paper.json';
 import officialNda2024IPaper from '../../../content/nda-2024-i-official-paper.json';
 import {questionEligible} from '../../../lib/question-review';
+import reviewed2024Audit from '../../../content/audits/nda-2024-ii-review.json';
 
 export const metadata = { title: "Sources — added PYQ papers", description: "Added papers, available GS questions and source-review coverage." };
 export default function SourcesPage() {
@@ -31,9 +32,16 @@ export default function SourcesPage() {
       const reviewed2024=group.exam==='NDA'&&group.year===2024&&group.paper==='II';
       const official2024=group.exam==='NDA'&&group.year===2024&&group.paper==='I';
       const completeNda=group.exam==='NDA'&&[2025,2026].includes(group.year)&&['I','II'].includes(group.paper);
-      return {...group,complete:official2024||reviewed2024||completeNda||source?.coverageStatus === "current-source-content-and-key-reviewed",provisional:group.exam === "NDA" && group.year === 2026 && ['I','II'].includes(group.paper),...(official2024?{reviewNote:'149/150 available · official final key · Q101 withdrawn'}:reviewed2024?{reviewNote:'136/150 available · independently verified · 14 quarantined; official-key provenance unresolved'}:{})};
+      const reviewedNda=official2024||reviewed2024||completeNda;
+      const provisional=group.exam==='NDA'&&group.year===2026&&['I','II'].includes(group.paper);
+      const withdrawnNumbers=official2024?[101]:group.exam==='NDA'&&group.year===2025&&group.paper==='II'?[85]:[];
+      return {...group,complete:reviewedNda||source?.coverageStatus === "current-source-content-and-key-reviewed",provisional,
+        ...(reviewedNda?{expected:150,numberSeries:'A',keyLabel:reviewed2024?'Independently verified':provisional?'Official provisional':'Official final',withdrawnNumbers,
+          heldNumbers:reviewed2024?reviewed2024Audit.questionSlots.filter(q=>q.disposition==='quarantined').map(q=>q.number):[],
+          sectionSummary:reviewed2024?'English 46 · Science 43 · GS 47':official2024?'English 50 · Science 49 · GS 50':group.year===2025&&group.paper==='I'?'English 50 · Science 49 · GS 51':group.year===2025?'English 50 · Science 50 · GS 49':'English 50 · Science 50 · GS 50'}:{}),
+        ...(official2024?{reviewNote:'149/150 available · official final key · Q101 withdrawn'}:reviewed2024?{reviewNote:'136/150 available · independently verified · 14 quarantined; official-key provenance unresolved'}:{})};
     })} />
-    <details className="source-review-notes"><summary>What do the review labels mean?</summary><p><strong>Complete source review</strong> means every numbered question has been accounted for, not that every question is publishable. <strong>Partial collection</strong> means only a subset is currently available. PDFs awaiting import are not listed as added papers.</p><p>Source identities, original wording and option order are preserved. Answer verification and full-paper reproduction review are separate checks. Historical attempts retain their original snapshots; excluded questions do not enter new scored tests.</p></details>
+    <details className="source-review-notes"><summary>What do the review labels mean?</summary><p><strong>Complete source review</strong> means every numbered question has been accounted for, not that every question is publishable. <strong>Partial collection</strong> means only a subset is currently available. PDFs awaiting import are not listed as added papers.</p><p><strong>Held for review</strong> numbers identify questions you can supply with a clearer scan or matching official key. <strong>Officially withdrawn</strong> questions were dropped by UPSC and do not need replacement answers. <strong>Not yet reconciled</strong> means a complete missing-number list has not been established; it does not mean zero missing questions.</p><p>Source identities, original wording and option order are preserved. Answer verification and full-paper reproduction review are separate checks. Historical attempts retain their original snapshots; excluded questions do not enter new scored tests.</p></details>
     <p><Link href="/">← Return to library</Link></p>
   </article></>;
 }

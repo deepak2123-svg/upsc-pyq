@@ -139,15 +139,34 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .source-directory-toolbar label { display: grid; gap: 4px; font-size: 11px; color: var(--muted); }
 .source-directory-toolbar select { max-width: 100%; min-height: 36px; padding: 6px 9px; border: 1px solid var(--line); border-radius: 7px; background: white; color: var(--ink); font: inherit; font-size: 12px; }
 .source-directory-toolbar p { font-size: 12px; margin: 0; white-space: nowrap; }
-.source-directory-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; padding: 0; margin: 0; list-style: none; }
-.source-paper-card { padding: 12px; border: 1px solid var(--line); border-radius: 10px; background: white; min-width: 0; }
-.source-paper-heading { display: flex; gap: 9px; align-items: center; font-size: 13px; }
-.source-paper-heading > span:last-child { margin-left: auto; white-space: nowrap; font-size: 12px; color: var(--muted); }
+.source-table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: white; }
+.source-table-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.source-table { border-collapse: collapse; width: 100%; min-width: 790px; font-size: 12px; text-align: left; }
+.source-table caption { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.source-table thead { background: #f3f5f9; color: var(--muted); }
+.source-table th, .source-table td { padding: 13px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.source-table thead th { font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
+.source-table tbody tr:last-child > * { border-bottom: 0; }
+.source-table tbody tr:hover { background: #fafbfe; }
+.source-table tbody th { min-width: 135px; font-weight: 400; }
+.source-table tbody th > strong { display: inline-block; margin-left: 8px; font-size: 13px; white-space: nowrap; }
+.source-table small { display: block; margin-top: 5px; font-size: 10px; font-weight: 400; color: var(--muted); }
+.source-count { min-width: 142px; font-variant-numeric: tabular-nums; }
+.source-count > strong { font-size: 15px; }
+.source-count > span { color: var(--muted); }
+.source-review-badge { display: inline-block; padding: 3px 7px; background: #f2f4f7; color: #707887; border-radius: 5px; font-size: 10px; white-space: nowrap; }
+.source-review-badge.source-review-complete { color: #13705e; background: #edf8f3; }
+.source-evidence-details { margin-top: 5px; font-size: 10px; color: var(--muted); }
+.source-evidence-details summary { cursor: pointer; }
+.source-evidence-details p { margin: 6px 0 0; max-width: 230px; }
+.source-gaps { min-width: 225px; max-width: 280px; font-variant-numeric: tabular-nums; }
+.source-gaps p { margin: 5px 0 0; font-size: 11px; line-height: 1.65; color: var(--ink); }
+.source-gap-kind { display: block; color: var(--muted); font-size: 10px; }
+.source-held-label { color: #9a570c; font-size: 11px; }
+.source-withdrawn { display: grid; gap: 2px; }
+.source-withdrawn strong { font-size: 10px; color: var(--muted); font-weight: 500; }
+.source-gap-muted { color: var(--muted); font-size: 11px; }
 .source-exam-tag { color: var(--source-color); background: color-mix(in srgb,var(--source-color) 8%,white); border-radius: 5px; padding: 3px 5px; font-size: 10px; font-weight: 750; }
-.source-paper-status { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-.source-paper-status span { color: #707887; background: #f2f4f7; border-radius: 5px; padding: 3px 6px; font-size: 10px; }
-.source-paper-status .source-review-complete { color: #13705e; background: #edf8f3; }
-.source-paper-card > small { display: block; margin-top: 7px; font-size: 10px; color: var(--muted); }
 .source-pagination { display: flex; align-items: center; justify-content: space-between; margin-top: 14px; font-size: 12px; color: var(--muted); }
 .source-pagination button { padding: 8px 12px; border: 1px solid var(--line); border-radius: 7px; background: white; color: var(--ink); }
 .source-pagination button:disabled { opacity: .4; }
@@ -155,8 +174,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .source-review-notes summary { cursor: pointer; color: var(--muted); }
 .sources-page > h1 { margin-bottom: 14px; }
 .sources-page > p { font-size: 13px; margin: 0; }
-@media(max-width:640px) { .source-directory-grid { grid-template-columns: minmax(0,1fr); } .source-directory-toolbar { align-items: start; flex-direction: column; } .source-directory-toolbar > div { width: 100%; } .source-directory-toolbar label { min-width: 0; flex: 1; } }
-.sources-page { max-width: 960px; padding-top: 40px; }
+@media(max-width:640px) { .source-directory-toolbar { align-items: start; flex-direction: column; } .source-directory-toolbar > div { width: 100%; } .source-directory-toolbar label { min-width: 0; flex: 1; } .source-table th, .source-table td { padding: 11px; } }
+.sources-page { max-width: 1160px; padding-top: 40px; }
 .sources-page h1 { font-size: clamp(30px, 5vw, 44px); letter-spacing: -.035em; }
 .sources-list { border: 1px solid #dce1eb; border-radius: 14px; overflow: hidden; background: white; }
 .source-paper { display: flex; justify-content: space-between; gap: 16px; padding: 12px 16px; border-bottom: 1px solid #e7eaf0; }

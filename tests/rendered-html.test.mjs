@@ -19,8 +19,11 @@ test('Sources is a paper-status directory without whole-paper launch links',asyn
   const html=await response.text();
   assert.match(html,/Added PYQ papers/);
   assert.match(html,/Complete source review/);
-  assert.match(html,/Provisional key/);
-  assert.match(html,/Q85 withdrawn/);
+  assert.match(html,/Official provisional/);
+  assert.match(html,/Officially withdrawn/);
+  assert.match(html,/Q85/);
+  assert.match(html,/<table class="source-table"/);
+  assert.match(html,/16, 21, 23, 24, 51, 58, 68, 70, 110, 117, 123, 125, 139, 144/);
   assert.doesNotMatch(html,/Start official-key paper/);
   assert.doesNotMatch(html,/<a\b[^>]*href="\/papers\/nda-/);
 });

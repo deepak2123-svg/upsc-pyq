@@ -31,6 +31,7 @@ test('bare Science/English view URLs start at sections and totals remain on Sour
  const middle=page.locator('.scope-library-browser');
  await page.goto('/prepare/NDA?view=nda-science');await expect(middle.locator('.scope-cards-heading h3')).toHaveText('Science & Technology');
  await page.goto('/prepare/NDA?view=nda-english');await expect(middle.locator('.scope-cards-heading h3')).toHaveText('English');
- await page.goto('/legal/sources');await expect(page.getByText(/2,247 available questions across 58 source papers/)).toBeVisible();
+ // Current six processed NDA papers add English/Science beyond the shared GS inventory.
+ await page.goto('/legal/sources');await expect(page.getByText(/2,489 available questions across 58 source papers/)).toBeVisible();
  await expect(page.locator('.source-directory').getByRole('link')).toHaveCount(0);
 });
