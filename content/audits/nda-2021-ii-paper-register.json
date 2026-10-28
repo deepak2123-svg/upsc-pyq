@@ -1,0 +1,1285 @@
+{
+  "paperId": "nda-2021-ii-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2021,
+    "session": "II",
+    "paper": "GAT",
+    "paperCode": "DFGT-U-GTA",
+    "series": "A",
+    "language": "English page extract",
+    "examDate": null,
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2021-2.pdf",
+    "sha256": "392786e935d3f058441c894feed1ad3549021a899808c661ec55692d4d4807a8"
+  },
+  "pdfPageMapping": {
+    "pages": 22,
+    "cover": 1,
+    "english": "PDF 2–9 = printed 2–9",
+    "partB": "PDF 10–22 = printed (2 × PDF page − 9)",
+    "extractCaveat": "Hindi counterpart pages and back instructions are absent; all 150 English numbered questions are present."
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "filenameDate": "2022-09-14",
+    "retrievedAt": "2026-10-28",
+    "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-II-GAT-2021-140922.pdf",
+    "asset": "/papers/nda-2021-ii-gat/official-final-key.pdf",
+    "sha256": "68cac11b4d0e59bfcbbb8b6a8250a9ede840250aeba0e6a3d3de653210e9e287",
+    "page": 1,
+    "series": "A",
+    "session": "II",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "Direct www.upsc.gov.in HTTPS response application/pdf, 10211920 bytes, four scanned series pages. Page 1 header NDA & NA-II-2021, Series A, GAT, NIL dropped, 150 scoring; Q102 B/C explicitly printed and handwritten clarification."
+  },
+  "sections": [{"label":"English","from":1,"to":50,"pdfPages":[2,3,4,5,6,7,8,9]},{"label":"GS","from":51,"to":100,"pdfPages":[10,11,12,13,14,15,16]},{"label":"Science","from":101,"to":150,"pdfPages":[17,18,19,20,21,22]}],
+  "rawBefore": [
+    {
+      "id": "cds-2021-2021-2-61",
+      "sha256": "691e9dd84b1e7b9533d6d86e9477ae9ea4f98878c305c23b9954ea688d1ca9f1",
+      "value": {
+        "id": "cds-2021-2021-2-61",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not a function of the Constitution of India ?",
+        "sourceTextHash": "85c2dcff70c7997785fe6ff319e00114739344c09611f717a81020001257f80b",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 61,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "the Constitution of India ? To ensure participation of good people",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "Original NDA 2021-2 Q61, page 11, visually checked against its complete stem and options; the matching Series A final key accepts A."
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 61,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not a function of the Constitution of India ?"
+        ],
+        "options": {
+          "A": "To ensure participation of good people in politics",
+          "B": "To guarantee a set of rights to citizens",
+          "C": "To define the power of the different organs of government",
+          "D": "To create conditions for a just society"
+        },
+        "answer": "A",
+        "explanation": "Original NDA 2021-2 Q61, page 11, visually checked against its complete stem and options; the matching Series A final key accepts A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2021-2021-2-68",
+      "sha256": "e7b6a809b6356e15c33880df043b8b40612eead45327154e612483c5638a761e",
+      "value": {
+        "id": "cds-2021-2021-2-68",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not a feature of the Constitution of India ?",
+        "sourceTextHash": "3804a571a05914de88bd3b1fbd54b1de70de6d04f72e9f2e5de42423e374ef2a",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 68,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "the Constitution of India ? It provides a set of basic rules.",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Original NDA 2021-2 Q68, page 12, visually checked against its complete stem and options; the matching Series A final key accepts D."
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 68,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not a feature of the Constitution of India ?"
+        ],
+        "options": {
+          "A": "It provides a set of basic rules.",
+          "B": "It specifies the power. of the Government.",
+          "C": "It is the supreme law of the land.",
+          "D": "It specifies the supremacy of the judiciary."
+        },
+        "answer": "D",
+        "explanation": "Original NDA 2021-2 Q68, page 12, visually checked against its complete stem and options; the matching Series A final key accepts D.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2021-2021-2-58",
+      "sha256": "ffdcf326c92c2cba3839adb978b21d200d907fecab935c8a1a90d4473e3f4a30",
+      "value": {
+        "id": "cds-2021-2021-2-58",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is a non-justiciable right?",
+        "sourceTextHash": "c0cdecfd59f6a3bc7d27fbf5adaad2ad1aaa032d9cd872a96767efb40cf302d7",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 58,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "right ? Right to adequate livelihood",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "Original NDA 2021-2 Q58, page 11, visually checked against its complete stem and options; the matching Series A final key accepts A."
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 58,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is a non-justiciable right?"
+        ],
+        "options": {
+          "A": "Right to adequate livelihood",
+          "B": "Right against exploitation",
+          "C": "Right of accused",
+          "D": "Right to life and personal liberty"
+        },
+        "answer": "A",
+        "explanation": "Original NDA 2021-2 Q58, page 11, visually checked against its complete stem and options; the matching Series A final key accepts A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2021-2021-2-69",
+      "sha256": "0092eda17c69fd56d1cc57f7717d8755e623e4b17c2ca3638dd34c1cfcf58096",
+      "value": {
+        "id": "cds-2021-2021-2-69",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements about the Attorney General of India is not correct?",
+        "sourceTextHash": "098a707ead2ba275df8cc14aa4f12885e85d723930dd9b0d9a0301defdb2aacf",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 69,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following statements about the Attorney General of India is not correct ? He has the right of audience only in the",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "Original NDA 2021-2 Q69, page 12, visually checked against its complete stem and options; the matching Series A final key accepts A."
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 69,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements about the Attorney General of India is not correct?"
+        ],
+        "options": {
+          "A": "He has the right of audience only in the Supreme Court of India.",
+          "B": "He shall receive such remuneration as the President may determine.",
+          "C": "He shall be qualified to be appointed as a Judge of the Supreme Court.",
+          "D": "He shall give advice to the Government of India on all legal matters."
+        },
+        "answer": "A",
+        "explanation": "Original NDA 2021-2 Q69, page 12, visually checked against its complete stem and options; the matching Series A final key accepts A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2021-2021-2-60",
+      "sha256": "87a9cb73073d0c7a0dbcbdb38d927dede86c0335a128cc61cad8ddba8bb5bdc3",
+      "value": {
+        "id": "cds-2021-2021-2-60",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not a part of Fundamental Rights?",
+        "sourceTextHash": "5b3f2739099e988de565a6d8e541680e6ad474a46dd3f3c060198167218e50cf",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 60,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Fundamental Rights ? Right to education"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 60,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not a part of Fundamental Rights?"
+        ],
+        "options": {
+          "A": "Right to education",
+          "B": "Right to establish educational institutions by minorities",
+          "C": "Right to be conferred with titles",
+          "D": "Right against untouchability"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2021-2 Q60, page 11, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-51",
+      "sha256": "a0866de7082e774af4cbba605d8c9eea5f796b3a28b186cc3536cb8582cd8cc0",
+      "value": {
+        "id": "nda-2021-ii-51",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one from among the following planets is largest in size?",
+        "sourceTextHash": "c07b7200341825b42abc486b940fd5129cb3f9366c4fe1f7a8675726eb52cfc8",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 51,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Which one from among the following planets is largest in size?",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "Earth is the largest of the four listed planets.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 51,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Solar System & Universe",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one from among the following planets is largest in size?"
+        ],
+        "options": {
+          "A": "Earth",
+          "B": "Venus",
+          "C": "Mars",
+          "D": "Mercury"
+        },
+        "answer": "A",
+        "explanation": "Earth is the largest of the four listed planets.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-54",
+      "sha256": "fab6ccc1abadaf53fafc30bf8a93496caea0c9dd13cf5568d55ba80ec91d05dd",
+      "value": {
+        "id": "nda-2021-ii-54",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Fine-grained bed of ephemeral lake in a desert is also known as",
+        "sourceTextHash": "80e4f0cd1049c9d9156fce2b161b1207aac8e4a1298881a7098bf7f5d1b9848a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 54,
+          "answerStatus": "set-a-key-crosschecked",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2023/02/nda_2_2021_gat_answer_key-fb8190f7.pdf",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-18",
+            "reason": "The previous imported key was not aligned to this question numbering. The Set A key lists Q54 as A, Playa.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf"
+          },
+          "explanationSource": "https://water.usgs.gov/nwsum/WSP2425/glossary.html",
+          "rawQuestionText": "Fine-grained bed of ephemeral lake in a desert is also known as"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 54,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "River Landforms",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Fine-grained bed of ephemeral lake in a desert is also known as"
+        ],
+        "options": {
+          "A": "Playa",
+          "B": "Oasis",
+          "C": "Drumlin",
+          "D": "Natural levee"
+        },
+        "answer": "A",
+        "explanation": "A playa is the dry bed of a temporary lake in an arid region. Water collects after rainfall and then evaporates, leaving fine sediment and often salts.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-55",
+      "sha256": "b44e61660ef78787927803e46289b111452c8fa23bd9dad6abc93d5d0c09d5e6",
+      "value": {
+        "id": "nda-2021-ii-55",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following factors does not affect the distribution of groundwater?",
+        "sourceTextHash": "8b30d3a4a978bf22cfefb4071e1910173af27bfc48b2adccb27f109fb36a8bd3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 55,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following factors does not affect the distribution of groundwater?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "The keyed exception among the listed groundwater controls is distance from the sea.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 55,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Landforms & Geomorphic Agents",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following factors does not affect the distribution of groundwater?"
+        ],
+        "options": {
+          "A": "Amount of precipitation",
+          "B": "Rate of evaporation",
+          "C": "Ability of the ground surface to allow water to infiltrate into the groundwater system",
+          "D": "Distance from the sea"
+        },
+        "answer": "D",
+        "explanation": "The keyed exception among the listed groundwater controls is distance from the sea.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-63",
+      "sha256": "321641d326f3dbedd55b399c310355cd0f61973e8b5c7cacc82081dbc6f8d8b9",
+      "value": {
+        "id": "nda-2021-ii-63",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Earth's atmosphere is mainly heated by which one of the following?",
+        "sourceTextHash": "8e2a085070c4bdd2eaf1321f66bd1153fd7c4484d983992741e5a396ff77ae8c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 63,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "The Earth's atmosphere is mainly heated by which one of the following?",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "The atmosphere is mainly heated by long-wave terrestrial radiation.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 63,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Atmospheric Composition & Structure",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Earth's atmosphere is mainly heated by which one of the following?"
+        ],
+        "options": {
+          "A": "Short wave solar radiation",
+          "B": "Reflected solar radiation",
+          "C": "Long wave terrestrial radiation",
+          "D": "Scattered solar radiation"
+        },
+        "answer": "C",
+        "explanation": "The atmosphere is mainly heated by long-wave terrestrial radiation.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-64",
+      "sha256": "a59efa25f19f09a2995f53b7c0aa2d2543ef09d19c7379ba0c181a48aa15e0a9",
+      "value": {
+        "id": "nda-2021-ii-64",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the correct sequence of layers as we move from the Earth's surface upwards?",
+        "sourceTextHash": "0730f64edfc8e20e45680f01fa17847e7ea16ed94c598c0ca2ef677b56cf22ab",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 64,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following is the correct sequence of layers as we move from the Earth's surface upwards?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "The upward order is troposphere, stratosphere, mesosphere, thermosphere.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "B"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 64,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Atmospheric Composition & Structure",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following is the correct sequence of layers as we move from the Earth's surface upwards?"
+        ],
+        "options": {
+          "A": "Troposphere, Stratosphere, Thermosphere, Mesosphere",
+          "B": "Troposphere, Stratosphere, Mesosphere, Thermosphere",
+          "C": "Thermosphere, Mesosphere, Stratosphere, Troposphere",
+          "D": "Stratosphere, Mesosphere, Troposphere, Thermosphere"
+        },
+        "answer": "B",
+        "explanation": "The upward order is troposphere, stratosphere, mesosphere, thermosphere.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-65",
+      "sha256": "981a757dcf06b1157b1232cf86c6c40322040040bac805eb709883d6019b10c0",
+      "value": {
+        "id": "nda-2021-ii-65",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not a soil forming factor?",
+        "sourceTextHash": "b71ad942ab44bcdfa2912e4f4db5d424777051c87d925dc27473d1ba4d3b6a2c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 65,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following is not a soil forming factor?",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "Parent material, topography and climate are soil-forming factors; human habitation is the keyed exception.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 65,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Temperature & Insolation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not a soil forming factor?"
+        ],
+        "options": {
+          "A": "Parent material",
+          "B": "Topography",
+          "C": "Climate",
+          "D": "Human habitation"
+        },
+        "answer": "D",
+        "explanation": "Parent material, topography and climate are soil-forming factors; human habitation is the keyed exception.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-66",
+      "sha256": "1ac3e7e693ae79b02fec33d7b9380c94a2d805a68923de9c6d230b48a153a2bc",
+      "value": {
+        "id": "nda-2021-ii-66",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following best describes the Lithosphere?",
+        "sourceTextHash": "ab3b709a5007fd269b965e93afa460e8813b7c103270398b2a9f16ece32d51e3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 66,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following best describes the Lithosphere?",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "The lithosphere comprises the crust and the rigid uppermost mantle.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 66,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earth Structure & Folding",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following best describes the Lithosphere?"
+        ],
+        "options": {
+          "A": "Upper and lower mantle",
+          "B": "Crust and core",
+          "C": "Crust and upper mantle",
+          "D": "Lower mantle and core"
+        },
+        "answer": "C",
+        "explanation": "The lithosphere comprises the crust and the rigid uppermost mantle.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-67",
+      "sha256": "b1facafffc91bf6d0844baa3c779c22a14aec77b5c696fc69843ddd07f8eb056",
+      "value": {
+        "id": "nda-2021-ii-67",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following countries has the maximum time difference from Greenwich Mean Time (GMT)?",
+        "sourceTextHash": "c544856ed954cc40d74e5204a540a71b1b252403c79f098a1855023e2c8e1266",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 67,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+          "rawQuestionText": "Which one of the following countries has the maximum time difference from Greenwich Mean Time (GMT)?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 67,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Earth Motions & Time",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following countries has the maximum time difference from Greenwich Mean Time (GMT)?"
+        ],
+        "options": {
+          "A": "India",
+          "B": "Nepal",
+          "C": "Sri Lanka",
+          "D": "Bhutan"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-77",
+      "sha256": "ff55feb39a83b5e1c7d8ab00d47422269fe23db03e66bc3c5b20d7af1344e7ba",
+      "value": {
+        "id": "nda-2021-ii-77",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the longest parallel of latitude?",
+        "sourceTextHash": "6ca6c0523b960ed63abc2c1dc9c296a10ca0516bc7ecf1009eba982ed0246312",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 77,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following is the longest parallel of latitude?",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "The Equator is the longest parallel.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 77,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is the longest parallel of latitude?"
+        ],
+        "options": {
+          "A": "Tropic of Cancer",
+          "B": "Tropic of Capricorn",
+          "C": "Arctic Circle",
+          "D": "Equator"
+        },
+        "answer": "D",
+        "explanation": "The Equator is the longest parallel.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-78",
+      "sha256": "449d59fbe525fe64487e0bf08f3a068df30df82728ad450641cce47ec52625d0",
+      "value": {
+        "id": "nda-2021-ii-78",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The periodic rise and fall of ocean water in response to gravitational forces is called",
+        "sourceTextHash": "74a41c0ba8914d0bcaf3ffd4db6816b8cc5637b425109136c0cd100d036bcd7e",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 78,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "The periodic rise and fall of ocean water in response to gravitational forces is called",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "The periodic gravitational rise and fall of ocean water is the tide.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 78,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Currents",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The periodic rise and fall of ocean water in response to gravitational forces is called"
+        ],
+        "options": {
+          "A": "Current",
+          "B": "Waves",
+          "C": "Tides",
+          "D": "Tsunami"
+        },
+        "answer": "C",
+        "explanation": "The periodic gravitational rise and fall of ocean water is the tide.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-85",
+      "sha256": "fb5a88f95172d40838b09d628feca3ab9aa4db73515688e3a9e8d82be5ac2b6c",
+      "value": {
+        "id": "nda-2021-ii-85",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following features is the result of erosion and deposition work of a river?",
+        "sourceTextHash": "08f9225dd314bf79ad05bdf675345936eece252843bd719a3717ccbdf4a4803a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 85,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following features is the result of erosion and deposition work of a river?",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "Oxbow lakes develop through meander erosion followed by depositional sealing; levees are depositional.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "B"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 85,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "River Landforms",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following features is the result of erosion and deposition work of a river?"
+        ],
+        "options": {
+          "A": "Pothole",
+          "B": "Oxbow lake",
+          "C": "Levee",
+          "D": "Rapid"
+        },
+        "answer": "B",
+        "explanation": "Oxbow lakes develop through meander erosion followed by depositional sealing; levees are depositional.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-53",
+      "sha256": "65acc396ce16abfbd84cffda2eed737d0f90260e2727ff11e9ad0271a7b19ede",
+      "value": {
+        "id": "nda-2021-ii-53",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is a crater lake in India?",
+        "sourceTextHash": "c66550e6f52e4d1ead05bb7cf2230d5a6903d4a0be1eb517cd607c1a7dfa1785",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 53,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following is a crater lake in India?",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "Lonar is the crater lake among these options.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 53,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is a crater lake in India?"
+        ],
+        "options": {
+          "A": "Lonar Lake",
+          "B": "Sambhar Lake",
+          "C": "Chilika Lake",
+          "D": "Vembanad Lake"
+        },
+        "answer": "A",
+        "explanation": "Lonar is the crater lake among these options.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-74",
+      "sha256": "7094bec586eca142588f3f450c6d6209012ca08f9f306aab5f79a56cc13cdf48",
+      "value": {
+        "id": "nda-2021-ii-74",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Tropic of Cancer does not pass through which one of the following States?",
+        "sourceTextHash": "49cc6ce1ce948ec151f386922ec0f5cbca2f71040e2624fdc193434d12e55780",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 74,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "The Tropic of Cancer does not pass through which one of the following States?",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "The Tropic of Cancer does not pass through Manipur.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 74,
+        "subject": "Geography",
+        "topic": "Location, States & Regional Geography",
+        "subtopic": "Location & Time Difference",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Tropic of Cancer does not pass through which one of the following States?"
+        ],
+        "options": {
+          "A": "Manipur",
+          "B": "West Bengal",
+          "C": "Gujarat",
+          "D": "Jharkhand"
+        },
+        "answer": "A",
+        "explanation": "The Tropic of Cancer does not pass through Manipur.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-84",
+      "sha256": "91a75ef57f1105aa3458d3e8f2d9b6c5196068c8af4d11b1acc5681a5c3be23a",
+      "value": {
+        "id": "nda-2021-ii-84",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the lists: List I (Dam) A. Hirakud B. Panchet C. Kosi D. Ukai List II (State) 1. Gujarat 2. Bihar 3. Odisha 4. Jharkhand Code:",
+        "sourceTextHash": "0480aab5394f04457bf5f72b5ee2a21f7a1178e4234231576fed80d5e7399794",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 84,
+          "answerStatus": "official-mirror-key-option-remapped",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the lists: List I (Dam) A. Hirakud B. Panchet C. Kosi D. Ukai List II (State) 1. Gujarat 2. Bihar 3. Odisha 4. Jharkhand Code:",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Hirakud 3; Panchet 4; Kosi 2; Ukai 1. The bank's option order differs from the original key: original A maps to displayed C.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 84,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the lists: List I (Dam) A. Hirakud B. Panchet C. Kosi D. Ukai List II (State) 1. Gujarat 2. Bihar 3. Odisha 4. Jharkhand Code:"
+        ],
+        "options": {
+          "A": "2 4 1 3",
+          "B": "1 4 2 3",
+          "C": "3 4 2 1",
+          "D": "3 2 4 1"
+        },
+        "answer": "C",
+        "explanation": "Hirakud 3; Panchet 4; Kosi 2; Ukai 1. The bank's option order differs from the original key: original A maps to displayed C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-52",
+      "sha256": "8881bd62353e0451c56c842ff5dd549f075667bb35d04e1c3dc53979773e4f6b",
+      "value": {
+        "id": "nda-2021-ii-52",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the lists: List I (Place) A. Mumbai B. Visakhapatnam C. Chennai D. Kochi List II (Feature) 1. Queen of the Arabian Sea 2. Biggest port of India 3. Land-locked harbour 4. Oldest port on the Eastern Coast Code:",
+        "sourceTextHash": "157e12af289322b624f706f2379384e4f1a2b4c371d726ea2901ea8630cc840d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 52,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the lists: List I (Place) A. Mumbai B. Visakhapatnam C. Chennai D. Kochi List II (Feature) 1. Queen of the Arabian Sea 2. Biggest port of India 3. Land-locked harbour 4. Oldest port on the Eastern Coast Code:",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Mumbai 2; Visakhapatnam 3; Chennai 4; Kochi 1.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "B"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 52,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Ports",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the lists: List I (Place) A. Mumbai B. Visakhapatnam C. Chennai D. Kochi List II (Feature) 1. Queen of the Arabian Sea 2. Biggest port of India 3. Land-locked harbour 4. Oldest port on the Eastern Coast Code:"
+        ],
+        "options": {
+          "A": "2 4 3 1",
+          "B": "2 3 4 1",
+          "C": "1 3 4 2",
+          "D": "1 4 3 2"
+        },
+        "answer": "B",
+        "explanation": "Mumbai 2; Visakhapatnam 3; Chennai 4; Kochi 1.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-75",
+      "sha256": "466bb15d6b73e4d38b07894cc42dde212a7a379a96b63cdd79a31437b23fd418",
+      "value": {
+        "id": "nda-2021-ii-75",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following pairs of crop and product is/are correctly matched? 1. Food crop: Ragi 2. Cash crop: Jute 3. Plantation crop: Coconut Select the correct answer using the code given below:",
+        "sourceTextHash": "9648f57841f37f70f3ceb6d7c47e122e6496696b4a6c017757933ad5d190e4a0",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 75,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Which of the following pairs of crop and product is/are correctly matched? 1. Food crop: Ragi 2. Cash crop: Jute 3. Plantation crop: Coconut Select the correct answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "All three crop-product pairs are correctly matched.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 75,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which of the following pairs of crop and product is/are correctly matched? 1. Food crop: Ragi 2. Cash crop: Jute 3. Plantation crop: Coconut Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "3 only"
+        },
+        "answer": "C",
+        "explanation": "All three crop-product pairs are correctly matched.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-76",
+      "sha256": "54fa0e870ed876688ceb5bab290dea179d2c33ce5f47f372b8b976838ba8dbb9",
+      "value": {
+        "id": "nda-2021-ii-76",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following coalfields is not located in Jharkhand?",
+        "sourceTextHash": "8b3882b532341b7f8e2610a06467c5deb41215e00d3cb57dccec732c4b106b82",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 76,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following coalfields is not located in Jharkhand?",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Umaria coalfield is in Madhya Pradesh, not Jharkhand.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 76,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Coalfields",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following coalfields is not located in Jharkhand?"
+        ],
+        "options": {
+          "A": "Jharia",
+          "B": "Ramgarh",
+          "C": "Deogarh",
+          "D": "Umaria"
+        },
+        "answer": "D",
+        "explanation": "Umaria coalfield is in Madhya Pradesh, not Jharkhand.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-86",
+      "sha256": "80a48f54b0a34238c8af9f1b64f706c5dd56e15e6377d666d13c0b91f01ac269",
+      "value": {
+        "id": "nda-2021-ii-86",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not a feature of agriculture in India?",
+        "sourceTextHash": "5872e620208c37d6802e8b7febec49aebe161a8af4c085189f8eea10b95a81c4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 86,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2021_gat_anskey",
+          "rawQuestionText": "Which one of the following is not a feature of agriculture in India?",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "Predominance of cash crops is not the listed characteristic of Indian agriculture.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d47314f4594daa6bfe2b8088dcce92cf38f0afd4b532471af59e85a44f2cdcba",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 86,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not a feature of agriculture in India?"
+        ],
+        "options": {
+          "A": "Subsistence agriculture",
+          "B": "Pressure of population on agriculture",
+          "C": "Dependence upon Monsoon",
+          "D": "Predominance of cash crops"
+        },
+        "answer": "D",
+        "explanation": "Predominance of cash crops is not the listed characteristic of Indian agriculture.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2021-ii-62",
+      "sha256": "9fe769f8ef4cd1734c30436a73d562d7089cbbdaa188849d9216802665196adc",
+      "value": {
+        "id": "nda-2021-ii-62",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements about biodiversity is not correct?",
+        "sourceTextHash": "0cd469d46e814e42cf9be5bf241da64dd4b313fe87211e9ed42c84ad30e74429",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2021,
+          "paper": "II",
+          "questionNumber": 62,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/86f525118b53ce826a6a429d1d9d1b82.pdf",
+          "rawQuestionText": "Which one of the following statements about biodiversity is not correct?"
+        },
+        "exam": "NDA",
+        "year": 2021,
+        "paper": "II",
+        "questionNumber": 62,
+        "subject": "Environment",
+        "topic": "Protected Areas & Biodiversity",
+        "subtopic": "National Parks and Wildlife Sanctuaries",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements about biodiversity is not correct?"
+        ],
+        "options": {
+          "A": "The term 'biodiversity' was coined by Walter G. Rosen in 1986.",
+          "B": "The term 'biodiversity hotspots' was coined by Norman Myers in 1988.",
+          "C": "The regions having richest biodiversity are called biodiversity 'hotspots'.",
+          "D": "More than 100 hotspots of biodiversity are identified in the world."
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

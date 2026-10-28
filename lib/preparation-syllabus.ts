@@ -10,7 +10,9 @@ export const defenceWorldHistory: readonly SyllabusSection[] = [
     // excludes named-inventor recall and Indian constitutional reform chronology.
     ['Modern Society',['Modernity and social transformation']],
     // Defence-exam world history; no automatic CSE GS transfer.
-    ['French Revolution',['Revolutionary government and the Terror']],
+    // European Enlightenment political authors/texts; excludes Indian philosophy
+    // and colonial Indian constitutional development. Defence targets only.
+    ['French Revolution',['Revolutionary government and the Terror','Enlightenment political thought']],
     ['First World War',['Economic and social consequences']],
     ['Renaissance',['Art and artists']],
     ['Exploration and Conquest',['European overseas expansion']],

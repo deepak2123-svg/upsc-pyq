@@ -24,7 +24,7 @@ test('lean explorer omits graph edges without changing the public inventory cont
 
 test('NDA Science has detailed section-local chapters with immutable concept membership',async()=>{
  const nda=await inventory('NDA');
- for(const [label,count] of [['Physics',18],['Chemistry',12],['Biology',17]]){
+ for(const [label,count] of [['Physics',18],['Chemistry',12],['Biology',18]]){
   const head=nda.nodes.find(n=>n.kind==='head'&&n.subjectId==='subject:science'&&n.label===label);
   const chapters=nda.nodes.filter(n=>n.parentId===head.id).sort((a,b)=>a.order-b.order);
   assert.equal(chapters.length,count);
@@ -68,7 +68,7 @@ test('three target syllabuses expose the agreed paper structure and bounded empt
   assert.ok(nda.nodes.some(n => n.label === 'Differential Calculus'));
   assert.ok(!cds.nodes.some(n => n.label === 'Differential Calculus'));
   assert.ok(cse.nodes.some(n => n.label === 'Data Interpretation'));
-  assert.equal(nda.subjects.find(n => n.id === 'subject:english').questionCount, 496);
+  assert.equal(nda.subjects.find(n => n.id === 'subject:english').questionCount, 546);
 });
 
 test('CSE science cannot inherit NDA physics, while NDA keeps its own science', async () => {

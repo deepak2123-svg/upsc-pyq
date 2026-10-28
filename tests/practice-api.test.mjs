@@ -67,7 +67,7 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 2105); // NDA I 2022 adds 28 new CSE-applicable GS records; world-history Q122 stays NDA/CDS.
+  assert.equal(data.totalCount, 2129); // NDA II 2021 adds 24 new CSE-applicable GS records; two world-history questions stay NDA/CDS.
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);
@@ -75,7 +75,7 @@ test("multi-placement inventory conserves every unique parent and examination co
   assert.ok(byId.get(geo).questionCount > 900);
   const placementLedger=JSON.parse(await readFile(new URL('../content/taxonomy/prelims-reviewed-placements.json',import.meta.url),'utf8'));
   const expectedPhysical=new Set(placementLedger.records.filter(row=>row.status==='approved'&&[row.primaryId,...row.additionalIds].some(id=>id.startsWith('syllabus:geography/physical-geography/'))&&questionEligible(row.questionId)).map(row=>row.questionId));
-  const latestPaper={questions:[...JSON.parse(await readFile(new URL('../content/nda-2022-i-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2022-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-i-official-paper.json',import.meta.url),'utf8')).questions]};
+  const latestPaper={questions:[...JSON.parse(await readFile(new URL('../content/nda-2021-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2022-i-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2022-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-i-official-paper.json',import.meta.url),'utf8')).questions]};
   // The reviewed paper overlay supersedes old placements (not raw records).
   // Q79 geological eras and Q124 Indian soils leave their former Physical homes.
   for(const q of latestPaper.questions){expectedPhysical.delete(q.id);if(questionEligible(q.id)&&[{subject:q.subject,head:q.taxonomyHead},...q.additionalPaths].some(p=>p.subject==='Geography'&&p.head==='Physical Geography'))expectedPhysical.add(q.id);}
@@ -951,6 +951,16 @@ test("every reviewed correction grades the displayed option and rejects the form
   for (const row of changed) {
     const effectivePolicy=questionReview(row.id);
     const contentRevisions = {[row.id]:effectivePolicy?.contentRevision??0};
+    // New source review supersedes the old letter when the old option codes
+    // themselves were defective. Historical snapshots must remain excluded.
+    if(row.id==='nda-2021-ii-84'){
+      const old=await grade({questionIds:[row.id],answers:{[row.id]:row.currentAnswer},contentRevisions:{[row.id]:0}});
+      assert.equal(old.body.excluded,1);assert.equal(old.body.feedback[row.id].correct,null);
+      const repaired=await grade({questionIds:[row.id],answers:{[row.id]:'A'},contentRevisions});
+      assert.equal(repaired.body.correct,1);assert.equal(repaired.body.feedback[row.id].correctAnswer,'A');
+      const prior=await grade({questionIds:[row.id],answers:{[row.id]:'C'},contentRevisions});assert.equal(prior.body.incorrect,1);
+      continue;
+    }
     const accepted = await grade({ questionIds: [row.id], answers: { [row.id]: row.currentAnswer }, contentRevisions });
     assert.equal(accepted.response.status, 200, row.id);
     if (['withdrawn','quarantined','duplicate','pending'].includes(effectivePolicy?.status)) {

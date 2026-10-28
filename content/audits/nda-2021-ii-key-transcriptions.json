@@ -1,0 +1,50 @@
+{
+ "paperId":"nda-2021-ii-gat",
+ "issuer":"Union Public Service Commission",
+ "url":"https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-II-GAT-2021-140922.pdf",
+ "sha256":"68cac11b4d0e59bfcbbb8b6a8250a9ede840250aeba0e6a3d3de653210e9e287",
+ "authentication":"Direct www.upsc.gov.in HTTPS response application/pdf, 10211920 bytes, four scanned series pages. Page 1 header NDA & NA-II-2021, Series A, GAT, NIL dropped, 150 scoring; Q102 B/C explicitly printed and handwritten clarification.",
+ "firstPassMethod":"Codex AI visual column-first transcription of Series A page 1, 28 October 2026.",
+ "firstPassColumns":[
+ "C C D B D D B D A D A B D A D",
+ "B C D A B A C B A D B C A A C",
+ "A B D C D A B B A B D B A C A",
+ "A D C B A A B A A D B A A D C",
+ "A D C B D C D D A D A A D A C",
+ "D D C C C D B C A B D B C C A",
+ "B D A B A C A C C B C B/C D C B",
+ "B D C D B B C B D B D A B A C",
+ "C B C B C C B C A A D C A C B",
+ "A A B B D A D C A A A C B A C"
+ ],
+ "secondPassRows":[
+ "C B A A A D B B C A",
+ "C C B D D D D D B A",
+ "D D D C C C A C C B",
+ "B A C B B C B D B B",
+ "D B D A D C A B C D",
+ "D A A A C D C B C A",
+ "B C B B D B A C B D",
+ "D B B A D C C B C C",
+ "A A A A A A C D A A",
+ "D D B D D B B B A A",
+ "A B D B A D C D D A",
+ "B C B A A B B/C A C C",
+ "D A A A D C D B A B",
+ "A A C D A C C A C A",
+ "D C A C C A B C B C"
+ ],
+ "secondPassMethod":"Fresh row-first visual transcription, same Codex AI reviewer; not independent human review. Q102 accepts B and C; no dropped cells.",
+ "comparisonStatus":"Initial transcriptions agreed but contained three correlated reading errors. Enlarged source-cell review corrected Q84 A, Q85 B, Q86 D in both approved arrays; full enlarged grid reread and programmatic comparison required.",
+ "transcriptionCorrections":[
+ {"number":84,"initialFirstPass":"C","initialSecondPass":"C","approved":"A","method":"Enlarged original key crop, full 150-cell reread after discrepancy against existing records."},
+ {"number":85,"initialFirstPass":"A","initialSecondPass":"A","approved":"B","method":"Enlarged original key crop, full 150-cell reread."},
+ {"number":86,"initialFirstPass":"B","initialSecondPass":"B","approved":"D","method":"Enlarged original key crop, full 150-cell reread."}
+ ],
+ "searchLog":[
+ {"date":"2026-10-28","url":"https://www.upsc.gov.in/examinations/answer-key/archives","result":"Fetched archive lists CISF 2026 only; no matching 2021 row returned."},
+ {"date":"2026-10-28","url":"https://parikshaindex.com/upsc/answer-key/2021/","result":"Historical filename discovery lead links to actual official document; not used as key authority."},
+ {"date":"2026-10-28","url":"https://upsc.gov.in/sites/default/files/AnsKey-NDA-NA-II-GAT-2021-140922.pdf","result":"Bare-host download returned a rendered website document instead of matching key. Rejected after visual header inspection."},
+ {"date":"2026-10-28","url":"https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-II-GAT-2021-140922.pdf","result":"Matching official PDF downloaded and visually authenticated; no newer revision located in indexed search."}
+ ]
+}

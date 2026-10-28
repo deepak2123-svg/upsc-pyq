@@ -7,7 +7,7 @@ test('compact source directory filters and paginates every paper without inflati
  await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Sources',exact:true}).click();
  await expect(page.getByRole('heading',{name:'Added PYQ papers'})).toBeVisible();
  const ids=new Set<string>(inventory.nodes.filter((n:{kind:string;legacyOnly?:boolean})=>n.kind==='subtopic'&&!n.legacyOnly).flatMap((n:{questionIdsByExam:Record<string,string[]>})=>Object.values(n.questionIdsByExam).flat()));
- for(const paperId of ['nda-2026-i','nda-2026-ii','nda-2025-i','nda-2025-ii','nda-2024-i','nda-2023-ii','nda-2023-i','nda-2022-ii','nda-2022-i']){
+ for(const paperId of ['nda-2026-i','nda-2026-ii','nda-2025-i','nda-2025-ii','nda-2024-i','nda-2023-ii','nda-2023-i','nda-2022-ii','nda-2022-i','nda-2021-ii']){
   const paper=JSON.parse(readFileSync(`content/${paperId}-official-paper.json`,'utf8'));
   const policy=JSON.parse(readFileSync(`content/${paperId}-official-review-policy.json`,'utf8'));
   for(const q of paper.questions)if(['official-final','official-provisional','reasoned-verified'].includes(policy[q.id].status))ids.add(q.id);
@@ -73,6 +73,12 @@ test('compact source directory filters and paginates every paper without inflati
  await expect(nda2022I).toContainText('Official final');
  await expect(nda2022I).toContainText('English 50 · Science 50 · GS 50');
  await expect(nda2022I.locator('.source-gaps')).toContainText('None');
+ await page.getByRole('combobox').nth(0).selectOption('2021');
+ const nda2021II=rows.filter({hasText:'2021 · II'});
+ await expect(nda2021II.locator('.source-count')).toContainText('150 / 150');
+ await expect(nda2021II).toContainText('Official final');
+ await expect(nda2021II).toContainText('Q102 B/C accepted');
+ await expect(nda2021II.locator('.source-gaps')).toContainText('None');
  await page.getByRole('combobox').nth(0).selectOption('2024');
  await page.screenshot({path:'tmp/source-directory-desktop.png',fullPage:true});
  await page.getByRole('button',{name:/^All exams/}).click();

@@ -127,12 +127,12 @@ Corporate Environmental Responsibility|Environmental claims and greenwashing;ESG
 Heat and Waves|Temperature and heat;Thermodynamics;Sound;Wave properties
 Light and Electricity|Optics;Electrostatics;Current electricity;Magnetism;Electromagnetic spectrum
 Modern Physics|Atomic structure;Nuclear physics;Radiation;Semiconductors;Measurement and units;Fundamental interactions;Particle physics;Relativity and gravitational waves`,
-    Chemistry: `Matter and Reactions|Atomic and molecular structure;Periodic properties;Chemical bonding;Reaction types;Acids bases and salts;Electrochemistry;Surface chemistry and adsorption
+    Chemistry: `Matter and Reactions|Atomic and molecular structure;Periodic properties;Chemical bonding;Reaction types;Acids bases and salts;Electrochemistry;Surface chemistry and adsorption;Mixtures and separation
 Materials and Applications|Metals and alloys;Metallurgy and ores;Carbon compounds;Polymers;Fuels;Construction materials;Everyday chemicals;Industrial chemistry`,
     Biology: `Cell and Genetics|Cell structure;Biomolecules;Cell division;Heredity;Evolution
 Animal Biology|Animal diversity;Feeding and digestion;Reproductive strategies;Adaptations and behaviour
 Human Physiology|Nutrition and digestion;Respiration;Circulation;Excretion;Muscles and movement;Nervous and endocrine systems;Reproduction
-Plants and Microorganisms|Plant tissues;Plant morphology;Photosynthesis;Transport in plants;Plant nutrition;Plant propagation;Plant diseases;Microorganisms;Biological classification;Plant respiration;Economic uses of plants`,
+Plants and Microorganisms|Plant tissues;Plant morphology;Photosynthesis;Transport in plants;Plant nutrition;Plant propagation;Plant diseases;Microorganisms;Biological classification;Plant respiration;Economic uses of plants;Plant responses and tropisms`,
     'Health & Biotechnology': `Disease and Immunity|Pathogens;Transmission;Vaccines;Immune system;Antimicrobial resistance
 Biotechnology|Genetic engineering;Genome technologies;Gene therapy;Cloning;Stem cells;Biopharmaceuticals;Biosafety;Transcriptomics and bioinformatics
 Medical Technologies|Diagnostics;Devices;Drug development;Public-health technology`,

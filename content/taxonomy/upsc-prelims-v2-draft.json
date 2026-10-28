@@ -15968,7 +15968,8 @@
         "Reaction types",
         "Acids bases and salts",
         "Electrochemistry",
-        "Surface chemistry and adsorption"
+        "Surface chemistry and adsorption",
+        "Mixtures and separation"
       ],
       "boundary": "Questions testing Matter and Reactions in Chemistry; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -16084,6 +16085,28 @@
       ],
       "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
       "editorialExampleStatus": "pending-real-question-pilot"
+    },
+    {
+      "id": "syllabus:science-technology/chemistry/matter-and-reactions/mixtures-and-separation",
+      "parentId": "syllabus:science-technology/chemistry/matter-and-reactions",
+      "kind": "subpart",
+      "label": "Mixtures and separation",
+      "order": 8,
+      "includes": [
+        "Pure substances and mixtures",
+        "Physical separation by sublimation, distillation, filtration and chromatography",
+        "Selecting a separation method from constituent properties"
+      ],
+      "excludes": [
+        "Adsorption or colloidal optical effects without separation",
+        "Chemical reaction stoichiometry",
+        "Industrial fuel policy"
+      ],
+      "placementRule": "Use for mixture character or a separation mechanism. Add a named industrial application only if its process is materially tested.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA II 2021 Series A Q106: anthracene/salt separation"
+      ]
     },
     {
       "id": "syllabus:science-technology/chemistry/materials-and-applications",
@@ -16561,7 +16584,8 @@
         "Microorganisms",
         "Biological classification",
         "Plant respiration",
-        "Economic uses of plants"
+        "Economic uses of plants",
+        "Plant responses and tropisms"
       ],
       "boundary": "Questions testing Plants and Microorganisms in Biology; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -16750,6 +16774,28 @@
       "editorialExampleStatus": "source-question-reviewed",
       "representativeQuestions": [
         "CSE 2014 GS-I Series A Q64: Neem oil and seed applications"
+      ]
+    },
+    {
+      "id": "syllabus:science-technology/biology/plants-and-microorganisms/plant-responses-and-tropisms",
+      "parentId": "syllabus:science-technology/biology/plants-and-microorganisms",
+      "kind": "subpart",
+      "label": "Plant responses and tropisms",
+      "order": 12,
+      "includes": [
+        "Phototropism and gravitropism",
+        "Hydrotropism and chemotropism",
+        "Directional plant growth relative to a stimulus"
+      ],
+      "excludes": [
+        "Photosynthetic chemistry without growth response",
+        "Vascular transport without stimulus response",
+        "Animal reflexes"
+      ],
+      "placementRule": "Use for plant response direction and stimulus, not photosynthesis merely because the organism is a plant.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA II 2021 Series A Q107: negative geotropism of shoots"
       ]
     },
     {

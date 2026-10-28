@@ -13,12 +13,13 @@ import officialNda2023IIPolicy from '../content/nda-2023-ii-official-review-poli
 import officialNda2023IPolicy from '../content/nda-2023-i-official-review-policy.json' with {type:'json'};
 import officialNda2022IIPolicy from '../content/nda-2022-ii-official-review-policy.json' with {type:'json'};
 import officialNda2022IPolicy from '../content/nda-2022-i-official-review-policy.json' with {type:'json'};
+import officialNda2021IIPolicy from '../content/nda-2021-ii-official-review-policy.json' with {type:'json'};
 
 export type QuestionReview = {
   status: string; revision: number; contentRevision: number;
   sourceCorrection?: {exam:string;year:number;paper:string;questionNumber:number};
 };
-const officialPolicies={...officialNdaPolicy,...officialNdaIIPolicy,...officialNda2025IIPolicy,...officialNda2025IPolicy,...reviewedNda2024IIPolicy,...officialNda2024IPolicy,...officialNda2023IIPolicy,...officialNda2023IPolicy,...officialNda2022IIPolicy,...officialNda2022IPolicy};
+const officialPolicies={...officialNdaPolicy,...officialNdaIIPolicy,...officialNda2025IIPolicy,...officialNda2025IPolicy,...reviewedNda2024IIPolicy,...officialNda2024IPolicy,...officialNda2023IIPolicy,...officialNda2023IPolicy,...officialNda2022IIPolicy,...officialNda2022IPolicy,...officialNda2021IIPolicy};
 const records: Readonly<Record<string, QuestionReview>> = { ...policy, ...importPolicy, ...aliasPolicy, ...materialRepairPolicy, ...officialPolicies };
 const cleared = new Set(['official-final', 'official-provisional', 'reasoned-verified']);
 export function questionReview(id: string) { return records[id]; }

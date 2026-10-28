@@ -384,4 +384,16 @@ export const sourceTopicSpecs = {
     placementRule:'Use when the source tests a named species conservation assessment in its examination-date context; retain a relevant static biodiversity placement when risk category knowledge is material.',
     representativeQuestions:['NDA I 2022 Series A Q148: Red Sanders IUCN category'],
   },
+  'Science & Technology/Chemistry/Matter and Reactions/Mixtures and separation': {
+    includes:['Pure substances and mixtures','Physical separation by sublimation, distillation, filtration and chromatography','Selecting a separation method from constituent properties'],
+    excludes:['Adsorption or colloidal optical effects without separation','Chemical reaction stoichiometry','Industrial fuel policy'],
+    placementRule:'Use for mixture character or a separation mechanism. Add a named industrial application only if its process is materially tested.',
+    representativeQuestions:['NDA II 2021 Series A Q106: anthracene/salt separation'],
+  },
+  'Science & Technology/Biology/Plants and Microorganisms/Plant responses and tropisms': {
+    includes:['Phototropism and gravitropism','Hydrotropism and chemotropism','Directional plant growth relative to a stimulus'],
+    excludes:['Photosynthetic chemistry without growth response','Vascular transport without stimulus response','Animal reflexes'],
+    placementRule:'Use for plant response direction and stimulus, not photosynthesis merely because the organism is a plant.',
+    representativeQuestions:['NDA II 2021 Series A Q107: negative geotropism of shoots'],
+  },
 };

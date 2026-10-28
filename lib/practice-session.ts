@@ -9,11 +9,12 @@ import officialNda2023IIKeyRevisions from '../content/nda-2023-ii-key-revisions.
 import officialNda2023IKeyRevisions from '../content/nda-2023-i-key-revisions.json' with {type:'json'};
 import officialNda2022IIKeyRevisions from '../content/nda-2022-ii-key-revisions.json' with {type:'json'};
 import officialNda2022IKeyRevisions from '../content/nda-2022-i-key-revisions.json' with {type:'json'};
+import officialNda2021IIKeyRevisions from '../content/nda-2021-ii-key-revisions.json' with {type:'json'};
 import { questionExclusion, questionReviewRevision } from './question-review.ts';
 import {feedbackAnswerOptions,feedbackAcceptsOption} from './answer-options.ts';
 
 /** Bump a question's revision whenever its published key is corrected. No answers are exposed here. */
-const answerKeyRevisions: Readonly<Record<string, number>> = {...publishedAnswerKeyRevisions,...officialNdaKeyRevisions,...officialNda2025IKeyRevisions,...reviewedNda2024IIKeyRevisions,...officialNda2024IKeyRevisions,...officialNda2023IIKeyRevisions,...officialNda2023IKeyRevisions,...officialNda2022IIKeyRevisions,...officialNda2022IKeyRevisions};
+const answerKeyRevisions: Readonly<Record<string, number>> = {...publishedAnswerKeyRevisions,...officialNdaKeyRevisions,...officialNda2025IKeyRevisions,...reviewedNda2024IIKeyRevisions,...officialNda2024IKeyRevisions,...officialNda2023IIKeyRevisions,...officialNda2023IKeyRevisions,...officialNda2022IIKeyRevisions,...officialNda2022IKeyRevisions,...officialNda2021IIKeyRevisions};
 export function answerKeyRevision(questionId: string) { return answerKeyRevisions[questionId] || 0; }
 
 export function safePracticeReturnPath(value: unknown): PracticeReturnPath {

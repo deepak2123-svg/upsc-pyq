@@ -215,7 +215,7 @@ test("corrected keys invalidate saved feedback without changing submitted answer
     answers: { [id]: "A" }, feedback: { [id]: { correct: false, correctAnswer: "C", explanation: null } },
   }), "submitted", started + 25_000);
   assert.equal(hasCompleteFeedback(saved), false);
-  const corrected = { [id]: { correct: true, correctAnswer: "A", explanation: "A playa is a dry lake bed.", answerKeyRevision: 1 } };
+  const corrected = { [id]: { correct: true, correctAnswer: "A", explanation: "A playa is a dry lake bed.", answerKeyRevision: 1, reviewRevision:questionReviewRevision(id) } };
   t.mock.method(globalThis, "fetch", async () => Response.json({ feedback: corrected }));
   const refreshed = await requestAnswerFeedback(saved);
   assert.equal(hasCompleteFeedback({ ...saved, feedback: refreshed }), true);

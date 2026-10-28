@@ -30,7 +30,7 @@ export const ndaScienceChapters:Record<string,readonly Chapter[]>={
   ['Matter, Atoms and Molecules',['Atomic and molecular structure'],['States of matter','Chemical combination and mole concept','Isotopes']],
   ['Periodic Classification',['Periodic properties'],['Periodic table and trends']],
   ['Chemical Bonding',['Chemical bonding'],['Ionic and covalent bonds','Molecular structure','Hydrogen bonds']],
-  ['Mixtures, Solutions and Colloids',['Surface chemistry and adsorption'],['Solutions and suspensions','Separation methods','Types of colloids']],
+  ['Mixtures, Solutions and Colloids',['Surface chemistry and adsorption','Mixtures and separation'],['Solutions and suspensions','Separation methods','Types of colloids']],
   ['Chemical Reactions',['Reaction types'],['Balancing equations','Oxidation and reduction','Rates and equilibrium']],
   ['Acids, Bases and Salts',['Acids bases and salts'],['Indicators and pH','Neutralisation','Common salts and hydrates']],
   ['Electrochemistry',['Electrochemistry'],['Electrolysis','Cells and corrosion']],
@@ -58,6 +58,7 @@ export const ndaScienceChapters:Record<string,readonly Chapter[]>={
   ['Tissues, Support and Movement',['Muscles and movement'],['Animal tissues','Skeleton and joints']],
   ['Nervous and Endocrine Systems',['Nervous and endocrine systems'],['Brain and sense organs','Hormones and glands']],
   ['Reproduction',['Reproduction','Reproductive strategies'],['Human reproductive systems','Gametogenesis','Animal reproductive strategies']],
+  ['Plant Growth and Responses',['Plant responses and tropisms'],['Growth regulators','Nastic movements']],
  ],
 };
 const slug=(s:string)=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');

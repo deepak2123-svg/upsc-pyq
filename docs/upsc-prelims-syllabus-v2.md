@@ -205,14 +205,14 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 - **4. Modern Physics:** Atomic structure; Nuclear physics; Radiation; Semiconductors; Measurement and units; Fundamental interactions; Particle physics; Relativity and gravitational waves.
 ### Chemistry
 
-- **1. Matter and Reactions:** Atomic and molecular structure; Periodic properties; Chemical bonding; Reaction types; Acids bases and salts; Electrochemistry; Surface chemistry and adsorption.
+- **1. Matter and Reactions:** Atomic and molecular structure; Periodic properties; Chemical bonding; Reaction types; Acids bases and salts; Electrochemistry; Surface chemistry and adsorption; Mixtures and separation.
 - **2. Materials and Applications:** Metals and alloys; Metallurgy and ores; Carbon compounds; Polymers; Fuels; Construction materials; Everyday chemicals; Industrial chemistry.
 ### Biology
 
 - **1. Cell and Genetics:** Cell structure; Biomolecules; Cell division; Heredity; Evolution.
 - **2. Animal Biology:** Animal diversity; Feeding and digestion; Reproductive strategies; Adaptations and behaviour.
 - **3. Human Physiology:** Nutrition and digestion; Respiration; Circulation; Excretion; Muscles and movement; Nervous and endocrine systems; Reproduction.
-- **4. Plants and Microorganisms:** Plant tissues; Plant morphology; Photosynthesis; Transport in plants; Plant nutrition; Plant propagation; Plant diseases; Microorganisms; Biological classification; Plant respiration; Economic uses of plants.
+- **4. Plants and Microorganisms:** Plant tissues; Plant morphology; Photosynthesis; Transport in plants; Plant nutrition; Plant propagation; Plant diseases; Microorganisms; Biological classification; Plant respiration; Economic uses of plants; Plant responses and tropisms.
 ### Health & Biotechnology
 
 - **1. Disease and Immunity:** Pathogens; Transmission; Vaccines; Immune system; Antimicrobial resistance.
