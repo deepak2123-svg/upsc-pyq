@@ -1,0 +1,885 @@
+{
+  "paperId": "nda-2023-ii-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2023,
+    "session": "II",
+    "paper": "GAT",
+    "paperCode": "DFTK-F-TAG",
+    "series": "A",
+    "language": "English page extract",
+    "examDate": null,
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2023-2.pdf",
+    "sha256": "a1203c10476b980b796fe81592b22d1de6708745980737fa3f8ad9181ee261b8"
+  },
+  "pdfPageMapping": {
+    "pages": 26,
+    "cover": 1,
+    "english": "PDF 2–9 = printed 2–9",
+    "partB": "PDF 10–26 = printed (2 × PDF page − 9)",
+    "extractCaveat": "Hindi counterpart pages and back instructions are absent; all 150 English numbered questions are present."
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "filenameDate": "2024-04-10",
+    "retrievedAt": "2026-10-28",
+    "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-II-2023-GAT-100424.pdf",
+    "asset": "/papers/nda-2023-ii-gat/official-final-key.pdf",
+    "sha256": "86ebf4dff8e21fa34552c431966329f3cce9ae67364791558d32c3be7cd01478",
+    "page": 1,
+    "series": "A",
+    "session": "II",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "Downloaded directly from www.upsc.gov.in: HTTP 200 application/pdf, 16869293 bytes, four booklet-series pages. Series A heading and every cell visually checked. Earlier local mirror has a different byte hash (compressed scan), not claimed identical."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2023-2023-2-150",
+      "sha256": "3cb6a0f303a740b2eba5f15e1f8dbddfbc97dced4d52caa0f2cd5e06101e09d7",
+      "value": {
+        "id": "cds-2023-2023-2-150",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "'Sengol', installed in the new Parliament building Of India, was seen as a symbol of the path of service, duty and nation in which Empire of the past ?",
+        "sourceTextHash": "1e8a5c7db363ebe20c12a0bd99f5fc9e2244629f7aaef1724cd29d325d45e8ef",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 150,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2023_gat_anskey",
+          "rawQuestionText": "'Sengol', installed in the new Parliament building Of India, was seen as a symbol of the path of service, duty and nation in which Empire of the past ?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 150,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "'Sengol', installed in the new Parliament building Of India, was seen as a symbol of the path of service, duty and nation in which Empire of the past ?"
+        ],
+        "options": {
+          "A": "Gupta Empire",
+          "B": "Shunga Empire",
+          "C": "Pandyan Empire",
+          "D": "Chola Empire"
+        },
+        "answer": "D",
+        "explanation": "Original NDA 2023-2 Q150, page 26, visually checked against its complete stem and options; the matching Series A final key accepts D.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-78",
+      "sha256": "342269492249648b0fc245c4be3c2dc87a0a642fe57ad09fa9b5502195d8687d",
+      "value": {
+        "id": "nda-2023-ii-78",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the usual unit of measurement for Air Pressure used in India?",
+        "sourceTextHash": "9af82e7ef62cb27c26d6a694506e712efbdde27b325a347f63b7839bcea0844c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 78,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which one of the following is the usual unit of measurement for Air Pressure used in India?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 78,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Pressure & Wind Systems",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is the usual unit of measurement for Air Pressure used in India?"
+        ],
+        "options": {
+          "A": "Centimeter",
+          "B": "Millibar",
+          "C": "Milligram",
+          "D": "Milliliter"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-79",
+      "sha256": "38a99ce231c1470d3c334a802463b12f6a7c20811a647ca6a1ec405e379ec186",
+      "value": {
+        "id": "nda-2023-ii-79",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the oldest era in Geological History determining the age of various rock types?",
+        "sourceTextHash": "25b5e11766708e1a88f1914d136b73c96ecd25d189a6d4834427573611520982",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 79,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which one of the following is the oldest era in Geological History determining the age of various rock types?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 79,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is the oldest era in Geological History determining the age of various rock types?"
+        ],
+        "options": {
+          "A": "Precambrian",
+          "B": "Mesozoic",
+          "C": "Cenozoic",
+          "D": "Paleozoic"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-80",
+      "sha256": "d30655d3eb5939ba4f7a9b760b7ddbc1de2b26c1251fe13a5b192a7e8388cc99",
+      "value": {
+        "id": "nda-2023-ii-80",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "A geographical grid has: 1. Lines that run east to west around the globe to mark latitude 2. Lines that run north to south from north pole to south pole indicate longitude Which of the statements given above is/are correct?",
+        "sourceTextHash": "b4fa59fd3af31a3a001cf758d1b0fa543c53d1ad34dad433681b0b42952069b7",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 80,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "A geographical grid has: 1. Lines that run east to west around the globe to mark latitude 2. Lines that run north to south from north pole to south pole indicate longitude Which of the statements given above is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 80,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "A geographical grid has: 1. Lines that run east to west around the globe to mark latitude 2. Lines that run north to south from north pole to south pole indicate longitude Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-81",
+      "sha256": "9326ea709d9961f50db98cc44a2a1787b993b5d446f9f246e86ec155950112bd",
+      "value": {
+        "id": "nda-2023-ii-81",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In which one of the following layers of the atmosphere all weather phenomenon occur?",
+        "sourceTextHash": "f74f037db7b44b664096d773ab06ab964555213e29398a490c6ac1696819976c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 81,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "In which one of the following layers of the atmosphere all weather phenomenon occur?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 81,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Weather Systems & Air Masses",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In which one of the following layers of the atmosphere all weather phenomenon occur?"
+        ],
+        "options": {
+          "A": "Mesosphere",
+          "B": "Troposphere",
+          "C": "Thermosphere",
+          "D": "Stratosphere"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-123",
+      "sha256": "679a9d75b18ca4caa35ec998a916f6b49acaf461117d508832a58c5a16b183b1",
+      "value": {
+        "id": "nda-2023-ii-123",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is NOT an example of Fold Mountain?",
+        "sourceTextHash": "dcbc0ced9a4be123a62948933320f89ced6f2615b33f66f532c6cbee119383d4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 123,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which one of the following is NOT an example of Fold Mountain?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 123,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is NOT an example of Fold Mountain?"
+        ],
+        "options": {
+          "A": "Mt. Fuji",
+          "B": "Alps",
+          "C": "Andes",
+          "D": "Rockies"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-124",
+      "sha256": "dc6c42d77160e842581ff3e310c39899b8eb373f64e94389ef7cc2de5d08a241",
+      "value": {
+        "id": "nda-2023-ii-124",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is an organic soil?",
+        "sourceTextHash": "d240460513b2f9176158aea47cf8f2662e000990ad001716f0aca63de3c11c58",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 124,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which one of the following is an organic soil?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 124,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Soil-Forming Processes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is an organic soil?"
+        ],
+        "options": {
+          "A": "Aridisols",
+          "B": "Histosols",
+          "C": "Oxisols",
+          "D": "Vertisols"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-126",
+      "sha256": "1335a5206e107363c287fa25cbe083c9fb65986c53fff4afe444cc3a3afab5d9",
+      "value": {
+        "id": "nda-2023-ii-126",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following climatic regions of the world have a typical characteristic of seasonal reversal of wind?",
+        "sourceTextHash": "a61968266d41c5f2f1316424d6e963ec67ac9eeb054d7e0281162b9191d39967",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 126,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which one of the following climatic regions of the world have a typical characteristic of seasonal reversal of wind?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 126,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Winds & Atmospheric Circulation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following climatic regions of the world have a typical characteristic of seasonal reversal of wind?"
+        ],
+        "options": {
+          "A": "British type Climate",
+          "B": "Mediterranean Climate",
+          "C": "China type Climate",
+          "D": "Monsoon Climate"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-82",
+      "sha256": "d9471a815670543c0836b6a18ca8c37780625ad290f48c91de76e59481daa378",
+      "value": {
+        "id": "nda-2023-ii-82",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In which one of the following states 'Roopkund' lake is located?",
+        "sourceTextHash": "b377e4fca591be3ddd9f7f5432b0c0fe775ea5c7884158f508a9c2d224254128",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 82,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "In which one of the following states 'Roopkund' lake is located?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 82,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In which one of the following states 'Roopkund' lake is located?"
+        ],
+        "options": {
+          "A": "Kerala",
+          "B": "Manipur",
+          "C": "Himachal Pradesh",
+          "D": "Uttarakhand"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-102",
+      "sha256": "7972ebe69794d30d85be36ea28bb07917a42a2024b02e8884156db737754e925",
+      "value": {
+        "id": "nda-2023-ii-102",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements is NOT correct?",
+        "sourceTextHash": "4d611db93a8d0aebc5f077f325ff9c8bdeb8c4cdd01e34b47fda17c184f77d58",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 102,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which one of the following statements is NOT correct?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 102,
+        "subject": "Geography",
+        "topic": "Location, States & Regional Geography",
+        "subtopic": "Location & Time Difference",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements is NOT correct?"
+        ],
+        "options": {
+          "A": "Area wise Madhya Pradesh is the fourth largest state in India",
+          "B": "Hornbill festival is celebrated in Nagaland",
+          "C": "Gujarat state contribute 7.9 per cent share to the National GDP",
+          "D": "Telangana is situated in the Deccan plateau in the central stretch of Indian peninsula"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-103",
+      "sha256": "67fc01d4541c615dc39b94d1b23c850920ad1ef3d1a30734146eb6a2dac447bd",
+      "value": {
+        "id": "nda-2023-ii-103",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following soils is ideal for growing cotton?",
+        "sourceTextHash": "49be9b0944d02ca63feea59fed496e8b497eb2f2cb28afe408eeda9f906a0af3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 103,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which one of the following soils is ideal for growing cotton?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 103,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Soils & Soil Conservation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following soils is ideal for growing cotton?"
+        ],
+        "options": {
+          "A": "Regur soil",
+          "B": "Laterite soil",
+          "C": "Desert soil",
+          "D": "Mountainous soil"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-105",
+      "sha256": "a5ef504e8a299e1418fcf67e8ad26f5f3edcb9a71cbd8e3e511bc0658bb682d7",
+      "value": {
+        "id": "nda-2023-ii-105",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements about physical features of India: 1. The southern point of the Peninsular Plateau is formed by the Nilgiri Hills where the Eastern and the Western Ghats meet 2. The Cardamom Hills may be regarded as a continuation of the Eastern Ghats Which of the statements given above is/are correct?",
+        "sourceTextHash": "735f9dccb90e70f91ae9fe67ab6681a05049b8911f5276a4f24a907a5d757ce9",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 105,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Consider the following statements about physical features of India: 1. The southern point of the Peninsular Plateau is formed by the Nilgiri Hills where the Eastern and the Western Ghats meet 2. The Cardamom Hills may be regarded as a continuation of the Eastern Ghats Which of the statements given above is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 105,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements about physical features of India: 1. The southern point of the Peninsular Plateau is formed by the Nilgiri Hills where the Eastern and the Western Ghats meet 2. The Cardamom Hills may be regarded as a continuation of the Eastern Ghats Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-106",
+      "sha256": "7879b4328eaaa94db8d30b5a7bc0e7b6f06f8367df5cb73bf855daf262ecf53a",
+      "value": {
+        "id": "nda-2023-ii-106",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the narrow belt parallel to the Shiwalik foothills where streams and rivers coming from the mountains deposit heavy materials of rocks and boulders?",
+        "sourceTextHash": "f8f481e58694b80b6f32e1aef59d9399b455afb9d3f15af52b77179034981007",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 106,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which one of the following is the narrow belt parallel to the Shiwalik foothills where streams and rivers coming from the mountains deposit heavy materials of rocks and boulders?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 106,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is the narrow belt parallel to the Shiwalik foothills where streams and rivers coming from the mountains deposit heavy materials of rocks and boulders?"
+        ],
+        "options": {
+          "A": "Tarai",
+          "B": "Bhangar",
+          "C": "Bhabar",
+          "D": "Khadar"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-129",
+      "sha256": "c25e33988035adad98d24be3fee53828326ad75ff44955c35f9822c2236cb21f",
+      "value": {
+        "id": "nda-2023-ii-129",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following crops is generally benefitted by the rain caused by western disturbances in India?",
+        "sourceTextHash": "021068d3a47a5a89e2f9ab89a22d0d7dd20618992951e3029dd778b5891cf362",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 129,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which one of the following crops is generally benefitted by the rain caused by western disturbances in India?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 129,
+        "subject": "Geography",
+        "topic": "Climate & Monsoon",
+        "subtopic": "Indian Monsoon & Rainfall",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following crops is generally benefitted by the rain caused by western disturbances in India?"
+        ],
+        "options": {
+          "A": "Rice",
+          "B": "Wheat",
+          "C": "Bajra",
+          "D": "Cotton"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-142",
+      "sha256": "2c64c5a9753613f3d468328e6e492f49f7b739a27047f40b9a1b38efd92f2e5c",
+      "value": {
+        "id": "nda-2023-ii-142",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements about a river: This river originates in the Hindu Kush mountain range and flows into Hamoun wetlands after covering a long stretch of about 1,100 km. There has been serious conflicts between two neighbouring nations regarding the sharing of water from this river. Identify the river from the following:",
+        "sourceTextHash": "be6e2bb4bb195257d95ddeee911d3cd22119dd101ec68695c87e2eee7f0c57b0",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 142,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Consider the following statements about a river: This river originates in the Hindu Kush mountain range and flows into Hamoun wetlands after covering a long stretch of about 1,100 km. There has been serious conflicts between two neighbouring nations regarding the sharing of water from this river. Identify the river from the following:"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 142,
+        "subject": "Geography",
+        "topic": "World Physical Geography",
+        "subtopic": "Rivers & Deltas",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements about a river: This river originates in the Hindu Kush mountain range and flows into Hamoun wetlands after covering a long stretch of about 1,100 km. There has been serious conflicts between two neighbouring nations regarding the sharing of water from this river. Identify the river from the following:"
+        ],
+        "options": {
+          "A": "Mekong",
+          "B": "Tarim",
+          "C": "Indus",
+          "D": "Helmand"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-77",
+      "sha256": "7a387805b7b04d8ac907468e73f6831b316193cd98671a775de471e2a4df3ce4",
+      "value": {
+        "id": "nda-2023-ii-77",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following pairs of mine and mineral is NOT correctly matched?",
+        "sourceTextHash": "4abc2fcb0f1fa411767d82c5a27d219817fc94314072cab312097f19756b07a2",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 77,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which one among the following pairs of mine and mineral is NOT correctly matched?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 77,
+        "subject": "Geography",
+        "topic": "Minerals & Mining",
+        "subtopic": "Mineral Deposits",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following pairs of mine and mineral is NOT correctly matched?"
+        ],
+        "options": {
+          "A": "Bailadila: Iron Ore",
+          "B": "Zawar: Zinc",
+          "C": "Ghatsila: Copper",
+          "D": "Kudremukh: Bauxite"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-107",
+      "sha256": "04322a1d0f76b53c77e17864b4a74c9fa75038c61329985d37796ffb1f03d3bd",
+      "value": {
+        "id": "nda-2023-ii-107",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements about Suez Canal is/are correct? 1. Suez is a man-made navigation canal 2. Suez links Mediterranean Sea and the Red Sea 3. The economic significance of Suez Canal is less than that of Panama Canal Select the correct answer using the code given below:",
+        "sourceTextHash": "242d191715adaf4955973e788affef482f91a07056abb2143f7a5a0b5f384a21",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 107,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which of the following statements about Suez Canal is/are correct? 1. Suez is a man-made navigation canal 2. Suez links Mediterranean Sea and the Red Sea 3. The economic significance of Suez Canal is less than that of Panama Canal Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 107,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements about Suez Canal is/are correct? 1. Suez is a man-made navigation canal 2. Suez links Mediterranean Sea and the Red Sea 3. The economic significance of Suez Canal is less than that of Panama Canal Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-125",
+      "sha256": "74ea711bfbed9c28f56b548841e537825dee4a3130f6d6b7c1b12f18b15b7cc1",
+      "value": {
+        "id": "nda-2023-ii-125",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The North-south and East-west Road Corridors of India cross each other at which of the following cities?",
+        "sourceTextHash": "1ee394219c6c892eea013721e0c82085935f731ff75aa72771f1c3823af90a59",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 125,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "The North-south and East-west Road Corridors of India cross each other at which of the following cities?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 125,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Highways",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The North-south and East-west Road Corridors of India cross each other at which of the following cities?"
+        ],
+        "options": {
+          "A": "Bhopal",
+          "B": "Itarsi",
+          "C": "Gwalior",
+          "D": "Jhansi"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-127",
+      "sha256": "c3270ddef2cdbdd0b9e20248f8cf3047130feb74c35777a87e2afdc6f940de55",
+      "value": {
+        "id": "nda-2023-ii-127",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statement is NOT correct?",
+        "sourceTextHash": "d09310fab5f77cac91abcd09ac55f1d7d3e1f307d1b8554f806961689ad796ff",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 127,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which one of the following statement is NOT correct?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 127,
+        "subject": "Geography",
+        "topic": "Industries",
+        "subtopic": "Industrial Location",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statement is NOT correct?"
+        ],
+        "options": {
+          "A": "Bokaro steel plant is located in Damodar river basin",
+          "B": "Jamshedpur steel plant is located on the confluence of Damodar and Barakar",
+          "C": "Salem steel plant is located on the bank of Kaveri River",
+          "D": "Bhilai steel plant obtains water from Tandula reservoir"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-128",
+      "sha256": "768aec8eff493a52ddb974ca4b0dc6687ee170e7dde6e7a6309c81fff2e8190e",
+      "value": {
+        "id": "nda-2023-ii-128",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "How many of the following pairs of specialized agriculture and its products are correctly matched? 1. Apiculture: Honey 2. Sericulture: Silk 3. Silviculture: Forestry 4. Viticulture: Grapes Select the correct answer using the code given below:",
+        "sourceTextHash": "56269e493e5e35329e5e98adfcb23e3ea37a1c8d843e068c7eefa8412cd8cf6a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 128,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "How many of the following pairs of specialized agriculture and its products are correctly matched? 1. Apiculture: Honey 2. Sericulture: Silk 3. Silviculture: Forestry 4. Viticulture: Grapes Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 128,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "How many of the following pairs of specialized agriculture and its products are correctly matched? 1. Apiculture: Honey 2. Sericulture: Silk 3. Silviculture: Forestry 4. Viticulture: Grapes Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "4",
+          "B": "3",
+          "C": "2",
+          "D": "1"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-ii-130",
+      "sha256": "d7f504f2d2edf626a9af8708ff9384553a814629566aea0954193af08c631aee",
+      "value": {
+        "id": "nda-2023-ii-130",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following pairs of city and industry is NOT correctly matched?",
+        "sourceTextHash": "8d031e9669f5f8b2674c49df087481f4a477b082285482919a8565eabe894080",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "II",
+          "questionNumber": 130,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_2_Answer_Key_2023_GAT_compressed_5afe536e47914b0ba9e3e27cd81eeeae.pdf",
+          "rawQuestionText": "Which one of the following pairs of city and industry is NOT correctly matched?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "II",
+        "questionNumber": 130,
+        "subject": "Geography",
+        "topic": "Industries",
+        "subtopic": "Industrial Location",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following pairs of city and industry is NOT correctly matched?"
+        ],
+        "options": {
+          "A": "Saharanpur: Paper industry",
+          "B": "Chanderi: Cotton textile industry",
+          "C": "Bhadohi: Carpet industry",
+          "D": "Raniganj: Iron and steel industry"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

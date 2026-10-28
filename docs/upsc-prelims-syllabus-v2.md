@@ -20,6 +20,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 - **10. Sangam Age:** Texts and chronology; Chiefdoms and kingdoms; Society and economy; Ports and external contacts.
 - **11. Gupta and Post-Gupta India:** Gupta rulers and administration; Land grants and economy; Learning and science; Harsha; Regional powers.
 - **12. Early Medieval Transitions:** Agrarian expansion; Trade guilds; Landholding and polity; Regional languages; Social change.
+- **13. Kingship and State Formation:** Royal status and legitimacy.
 ### Medieval India
 
 - **1. Early Medieval Kingdoms:** Palas and Senas; Gurjara-Pratiharas; Rashtrakutas; Chalukyas; Pallavas; Cholas and local administration; Historical geography.
@@ -43,7 +44,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 - **9. Gandhian Movements:** Early satyagrahas; Rowlatt Satyagraha; Non-Cooperation and Khilafat; Congress sessions and resolutions; Civil Disobedience; Round Table Conferences; Quit India; Constructive programmes.
 - **10. Constitutional Developments:** Acts before 1858; Acts of 1858 to 1909; Act of 1919; Simon Commission and Nehru Report; Act of 1935; Provincial autonomy and ministries; Cripps and Cabinet Mission; Independence Act; Chronology of constitutional politics.
 - **11. Participation in Nationalism:** Workers and trade unions; Peasants; Women; Dalit movements; Socialist and communist currents.
-- **12. Independence and Integration:** Partition; Transfer of power; Princely state integration; Constituent Assembly context; Reorganisation background.
+- **12. Independence and Integration:** Partition; Transfer of power; Princely state integration; Constituent Assembly context; Reorganisation background; Bhoodan and land reform movements.
 ### Art & Culture
 
 - **1. Architecture:** Architectural elements; Stupas and monasteries; Rock-cut architecture; Nagara temples; Dravida temples; Vesara and regional temples; Indo-Islamic architecture; Colonial architecture.
@@ -85,7 +86,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 ### World Geography
 
 - **1. Continents and Regions:** Asia; Africa; Europe; North America; South America; Oceania; Antarctica.
-- **2. World Physical Features:** Mountains and plateaus; Plains and deserts; Rivers and lakes; Groundwater basins; Seas and straits; Islands and peninsulas.
+- **2. World Physical Features:** Mountains and plateaus; Plains and deserts; Rivers and lakes; Groundwater basins; Seas and straits; Islands and peninsulas; Geological eras.
 - **3. World Resources:** Agricultural regions; Fishing grounds; Mineral belts; Energy regions; Industrial regions; Transport routes.
 - **4. World Mapping:** Countries and capitals; Regions and countries; Borders and enclaves; International rivers; Strategic waterways; Places in news.
 - **5. Cartography and Geospatial Tools:** Map scale and distance; Topographic maps; Map projections; Mapping institutions; Remote sensing and GIS; Geospatial coordinates.

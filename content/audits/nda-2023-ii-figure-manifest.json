@@ -1,0 +1,80 @@
+[
+  {
+    "number": 59,
+    "pdfPage": 11,
+    "printedPage": 13,
+    "relativeBounds": [
+      [
+        0.145,
+        0.57,
+        0.39,
+        0.905
+      ],
+      [
+        0.56,
+        0.06,
+        0.8,
+        0.385
+      ]
+    ],
+    "asset": "/question-figures/nda-2023-ii-q59.png",
+    "sha256": "eea7fbf6256549027ce8ea14da4a1c54f7fdc1ffb451bfc9675f77307b7a421c",
+    "description": "All four original semiconductor I–V graphs, with source option labels and axes",
+    "reviewStatus": "approved",
+    "reviewMethod": "Original source and resulting crop visually compared by the same AI reviewer; all four printed alternatives, labels and axes retained. Q59 combines two original columns without redrawing."
+  },
+  {
+    "number": 109,
+    "pdfPage": 19,
+    "printedPage": 29,
+    "relativeBounds": [
+      [
+        0.135,
+        0.115,
+        0.465,
+        0.535
+      ]
+    ],
+    "asset": "/question-figures/nda-2023-ii-q109.png",
+    "sha256": "7b3e447d34f50565d03f8e59ce29dc966104fb3f69cd0f9e8958a55c0c5b3cb2",
+    "description": "All four original resistor arrangements, with resistance values and X/Y terminals",
+    "reviewStatus": "approved",
+    "reviewMethod": "Original source and resulting crop visually compared by the same AI reviewer; all four printed alternatives, labels and axes retained. Q59 combines two original columns without redrawing."
+  },
+  {
+    "number": 116,
+    "pdfPage": 20,
+    "printedPage": 31,
+    "relativeBounds": [
+      [
+        0.145,
+        0.515,
+        0.285,
+        0.9
+      ]
+    ],
+    "asset": "/question-figures/nda-2023-ii-q116.png",
+    "sha256": "2863dde670310dcefeb665cb4aecbcb5b37f8346be95d62ce358fc6ea62a3662",
+    "description": "All four original Dalton element symbols, retaining printed option labels",
+    "reviewStatus": "approved",
+    "reviewMethod": "Original source and resulting crop visually compared by the same AI reviewer; all four printed alternatives, labels and axes retained. Q59 combines two original columns without redrawing."
+  },
+  {
+    "number": 131,
+    "pdfPage": 23,
+    "printedPage": 37,
+    "relativeBounds": [
+      [
+        0.135,
+        0.175,
+        0.345,
+        0.735
+      ]
+    ],
+    "asset": "/question-figures/nda-2023-ii-q131.png",
+    "sha256": "8d891bdbe6612b1a9fa1b329f428f897b0b47d83302fac403624e9663bce755a",
+    "description": "All four original graphs, preserving the printed distance (m) and time (s) axes",
+    "reviewStatus": "approved",
+    "reviewMethod": "Original source and resulting crop visually compared by the same AI reviewer; all four printed alternatives, labels and axes retained. Q59 combines two original columns without redrawing."
+  }
+]

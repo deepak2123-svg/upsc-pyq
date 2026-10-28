@@ -13,7 +13,8 @@ Mauryan Empire|Sources and chronology;Administration;Ashoka and dhamma;Economy a
 Post-Mauryan States|Indo-Greeks;Shakas and Parthians;Kushanas;Satavahanas;Silk routes and maritime trade;Shungas and Kanvas
 Sangam Age|Texts and chronology;Chiefdoms and kingdoms;Society and economy;Ports and external contacts
 Gupta and Post-Gupta India|Gupta rulers and administration;Land grants and economy;Learning and science;Harsha;Regional powers
-Early Medieval Transitions|Agrarian expansion;Trade guilds;Landholding and polity;Regional languages;Social change`,
+Early Medieval Transitions|Agrarian expansion;Trade guilds;Landholding and polity;Regional languages;Social change
+Kingship and State Formation|Royal status and legitimacy`,
     'Medieval India': `Early Medieval Kingdoms|Palas and Senas;Gurjara-Pratiharas;Rashtrakutas;Chalukyas;Pallavas;Cholas and local administration;Historical geography
 Delhi Sultanate|Slave dynasty;Khaljis;Tughlaqs;Sayyids and Lodis;Administration and iqta;Markets and revenue
 Regional Kingdoms|Vijayanagara;Bahmani kingdom;Deccan sultanates;Bengal and Gujarat;Kashmir;Rajput states
@@ -33,7 +34,7 @@ Revolutionary and Overseas Movements|Revolutionary organisations;Ghadar;Home Rul
 Gandhian Movements|Early satyagrahas;Rowlatt Satyagraha;Non-Cooperation and Khilafat;Congress sessions and resolutions;Civil Disobedience;Round Table Conferences;Quit India;Constructive programmes
 Constitutional Developments|Acts before 1858;Acts of 1858 to 1909;Act of 1919;Simon Commission and Nehru Report;Act of 1935;Provincial autonomy and ministries;Cripps and Cabinet Mission;Independence Act;Chronology of constitutional politics
 Participation in Nationalism|Workers and trade unions;Peasants;Women;Dalit movements;Socialist and communist currents
-Independence and Integration|Partition;Transfer of power;Princely state integration;Constituent Assembly context;Reorganisation background`,
+Independence and Integration|Partition;Transfer of power;Princely state integration;Constituent Assembly context;Reorganisation background;Bhoodan and land reform movements`,
     'Art & Culture': `Architecture|Architectural elements;Stupas and monasteries;Rock-cut architecture;Nagara temples;Dravida temples;Vesara and regional temples;Indo-Islamic architecture;Colonial architecture
 Sculpture and Iconography|Harappan objects;Mauryan sculpture;Gandhara and Mathura;Gupta sculpture;Bronze traditions;Buddhist Jain and Hindu iconography
 Painting|Prehistoric painting;Murals;Mughal miniatures;Rajput and Pahari schools;Deccan painting;Folk and tribal painting;Modern artists
@@ -57,7 +58,7 @@ Mineral and Energy Resources|Metallic minerals;Non-metallic minerals;Atomic mine
 Industry and Transport|Industrial location;Industrial regions;Road and rail networks;Ports and waterways;Pipelines;Trade corridors
 Population and Settlements|Population distribution;Migration;Urbanisation;Rural settlements;Regional disparities`,
     'World Geography': `Continents and Regions|Asia;Africa;Europe;North America;South America;Oceania;Antarctica
-World Physical Features|Mountains and plateaus;Plains and deserts;Rivers and lakes;Groundwater basins;Seas and straits;Islands and peninsulas
+World Physical Features|Mountains and plateaus;Plains and deserts;Rivers and lakes;Groundwater basins;Seas and straits;Islands and peninsulas;Geological eras
 World Resources|Agricultural regions;Fishing grounds;Mineral belts;Energy regions;Industrial regions;Transport routes
 World Mapping|Countries and capitals;Regions and countries;Borders and enclaves;International rivers;Strategic waterways;Places in news
 Cartography and Geospatial Tools|Map scale and distance;Topographic maps;Map projections;Mapping institutions;Remote sensing and GIS;Geospatial coordinates`,

@@ -9,6 +9,9 @@ export const defenceWorldHistory: readonly SyllabusSection[] = [
     // Structural industrialisation, urbanisation, secularisation and bureaucracy;
     // excludes named-inventor recall and Indian constitutional reform chronology.
     ['Modern Society',['Modernity and social transformation']],
+    // Defence-exam world history; no automatic CSE GS transfer.
+    ['French Revolution',['Revolutionary government and the Terror']],
+    ['First World War',['Economic and social consequences']],
   ]],
 ];
 export const englishSyllabus: readonly SyllabusSection[] = [

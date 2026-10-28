@@ -7,7 +7,7 @@ test('compact source directory filters and paginates every paper without inflati
  await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Sources',exact:true}).click();
  await expect(page.getByRole('heading',{name:'Added PYQ papers'})).toBeVisible();
  const ids=new Set<string>(inventory.nodes.filter((n:{kind:string;legacyOnly?:boolean})=>n.kind==='subtopic'&&!n.legacyOnly).flatMap((n:{questionIdsByExam:Record<string,string[]>})=>Object.values(n.questionIdsByExam).flat()));
- for(const paperId of ['nda-2026-i','nda-2026-ii','nda-2025-i','nda-2025-ii','nda-2024-i']){
+ for(const paperId of ['nda-2026-i','nda-2026-ii','nda-2025-i','nda-2025-ii','nda-2024-i','nda-2023-ii']){
   const paper=JSON.parse(readFileSync(`content/${paperId}-official-paper.json`,'utf8'));
   const policy=JSON.parse(readFileSync(`content/${paperId}-official-review-policy.json`,'utf8'));
   for(const q of paper.questions)if(['official-final','official-provisional','reasoned-verified'].includes(policy[q.id].status))ids.add(q.id);
@@ -47,6 +47,13 @@ test('compact source directory filters and paginates every paper without inflati
  await expect(held).toContainText('16, 21, 23, 24, 51, 58, 68, 70, 110, 117, 123, 125, 139, 144');
  await expect(held).not.toContainText('Officially withdrawn');
  await expect(rows.filter({hasText:'2024 · I'}).first()).toContainText('Q101');
+ await page.getByRole('combobox').nth(0).selectOption('2023');
+ const nda2023=rows.filter({hasText:'2023 · II'});
+ await expect(nda2023.locator('.source-count')).toContainText('150 / 150');
+ await expect(nda2023).toContainText('Official final');
+ await expect(nda2023).toContainText('English 50 · Science 50 · GS 50');
+ await expect(nda2023.locator('.source-gaps')).toContainText('None');
+ await page.getByRole('combobox').nth(0).selectOption('2024');
  await page.screenshot({path:'tmp/source-directory-desktop.png',fullPage:true});
  await page.getByRole('button',{name:/^All exams/}).click();
  await page.getByRole('combobox').nth(0).selectOption('all');

@@ -67,7 +67,7 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 1994); // NDA I 2024 adds 27 new CSE-compatible GS records; 22 existing IDs reused.
+  assert.equal(data.totalCount, 2020); // NDA II 2023 adds 26 new CSE-compatible GS records; 21 historical source IDs reused.
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);
@@ -75,11 +75,16 @@ test("multi-placement inventory conserves every unique parent and examination co
   assert.ok(byId.get(geo).questionCount > 900);
   const placementLedger=JSON.parse(await readFile(new URL('../content/taxonomy/prelims-reviewed-placements.json',import.meta.url),'utf8'));
   const expectedPhysical=new Set(placementLedger.records.filter(row=>row.status==='approved'&&[row.primaryId,...row.additionalIds].some(id=>id.startsWith('syllabus:geography/physical-geography/'))&&questionEligible(row.questionId)).map(row=>row.questionId));
+  const latestPaper=JSON.parse(await readFile(new URL('../content/nda-2023-ii-official-paper.json',import.meta.url),'utf8'));
+  // The reviewed paper overlay supersedes old placements (not raw records).
+  // Q79 geological eras and Q124 Indian soils leave their former Physical homes.
+  for(const q of latestPaper.questions){expectedPhysical.delete(q.id);if(questionEligible(q.id)&&[{subject:q.subject,head:q.taxonomyHead},...q.additionalPaths].some(p=>p.subject==='Geography'&&p.head==='Physical Geography'))expectedPhysical.add(q.id);}
   assert.equal(byId.get(physical).questionCount, expectedPhysical.size);
   // Other Geography shrinks when reviewed records receive precise subject homes.
   // Its exact count, like every parent, is checked against unique leaf IDs below.
   assert.ok(data.nodes.some(node=>node.kind==='subtopic'&&!node.legacyOnly&&node.id.includes(':world-geography:')&&node.questionIdsByExam.CAPF.includes('capf-2017-i-125')));
   const expectedFirstChapter=new Set(placementLedger.records.filter(row=>row.status==='approved'&&[row.primaryId,...row.additionalIds].some(id=>id.startsWith('syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/'))&&questionEligible(row.questionId)).map(row=>row.questionId));
+  for(const q of latestPaper.questions){expectedFirstChapter.delete(q.id);if(questionEligible(q.id)&&[{subject:q.subject,head:q.taxonomyHead,chapter:q.topic},...q.additionalPaths].some(p=>p.subject==='Geography'&&p.head==='Physical Geography'&&p.chapter==='Universe, Solar System, Shape and Size of Earth'))expectedFirstChapter.add(q.id);}
   assert.equal(byId.get(firstPhysicalChapter).questionCount,expectedFirstChapter.size);
   assert.equal(byId.get(otherGeomorphology).questionCount, 7);
   assert.equal(byId.get(planets).questionCount, 11);

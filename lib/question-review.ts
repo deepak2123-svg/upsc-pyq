@@ -9,12 +9,13 @@ import officialNda2025IIPolicy from '../content/nda-2025-ii-official-review-poli
 import officialNda2025IPolicy from '../content/nda-2025-i-official-review-policy.json' with {type:'json'};
 import reviewedNda2024IIPolicy from '../content/nda-2024-ii-review-policy.json' with {type:'json'};
 import officialNda2024IPolicy from '../content/nda-2024-i-official-review-policy.json' with {type:'json'};
+import officialNda2023IIPolicy from '../content/nda-2023-ii-official-review-policy.json' with {type:'json'};
 
 export type QuestionReview = {
   status: string; revision: number; contentRevision: number;
   sourceCorrection?: {exam:string;year:number;paper:string;questionNumber:number};
 };
-const officialPolicies={...officialNdaPolicy,...officialNdaIIPolicy,...officialNda2025IIPolicy,...officialNda2025IPolicy,...reviewedNda2024IIPolicy,...officialNda2024IPolicy};
+const officialPolicies={...officialNdaPolicy,...officialNdaIIPolicy,...officialNda2025IIPolicy,...officialNda2025IPolicy,...reviewedNda2024IIPolicy,...officialNda2024IPolicy,...officialNda2023IIPolicy};
 const records: Readonly<Record<string, QuestionReview>> = { ...policy, ...importPolicy, ...aliasPolicy, ...materialRepairPolicy, ...officialPolicies };
 const cleared = new Set(['official-final', 'official-provisional', 'reasoned-verified']);
 export function questionReview(id: string) { return records[id]; }

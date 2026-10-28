@@ -1,5 +1,23 @@
 // Concept boundaries established by full original-question review, not keywords.
 export const sourceTopicSpecs = {
+  'History/Ancient India/Kingship and State Formation/Royal status and legitimacy': {
+    includes:['Divine associations and royal titles in ancient Indian kingship','Territorial claims as expressions of political status'],
+    excludes:['Dynasty-specific succession recall without a legitimacy task','Modern democratic legitimacy','A tax-rate calculation'],
+    placementRule:'Use for comparisons of how ancient kings claimed status across dynasties; add a period/dynasty home only when materially tested.',
+    representativeQuestions:['NDA II 2023 GAT Series A Q72: methods of claiming higher royal status'],
+  },
+  'History/Modern India & National Movement/Independence and Integration/Bhoodan and land reform movements': {
+    includes:['Post-independence Bhoodan and Sarvodaya movements','Leaders, origins and voluntary land redistribution'],
+    excludes:['Colonial land-revenue systems','Current farm input policy','Land title litigation without a movement-history task'],
+    placementRule:'Use for the historical movement and its institutions; add Economy only when redistribution mechanisms or agrarian policy are materially tested.',
+    representativeQuestions:['NDA II 2023 GAT Series A Q136: Sarvodaya, Jayaprakash Narayan and Pochampalli'],
+  },
+  'Geography/World Geography/World Physical Features/Geological eras': {
+    includes:['Relative chronology of global geological eras','Rock-age context and the global geological time scale'],
+    excludes:['Absolute radiometric-age calculations','Historical human dynasties','Mineral distribution without a rock-age task'],
+    placementRule:'Use for global rock-history chronology; retain the established Physical Geography 11-chapter/92-subpart registry unchanged.',
+    representativeQuestions:['NDA II 2023 GAT Series A Q79: oldest geological era'],
+  },
   'History/Art & Culture/Living Heritage/Traditional units and measures': {
     includes:['Historical Indian units of time, length and weight','Traditional prosody measures and their meanings'],
     excludes:['Contemporary SI conversion exercises','Calendar eras without a measurement-unit task','A passing historical unit in an unrelated narrative'],

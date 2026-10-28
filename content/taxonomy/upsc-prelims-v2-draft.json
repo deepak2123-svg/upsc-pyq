@@ -1243,6 +1243,39 @@
       "editorialExampleStatus": "pending-real-question-pilot"
     },
     {
+      "id": "syllabus:history/ancient-india/kingship-and-state-formation",
+      "parentId": "syllabus:history/ancient-india",
+      "kind": "chapter",
+      "label": "Kingship and State Formation",
+      "order": 13,
+      "includes": [
+        "Royal status and legitimacy"
+      ],
+      "boundary": "Questions testing Kingship and State Formation in Ancient India; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
+      "reviewStatus": "editorial-draft"
+    },
+    {
+      "id": "syllabus:history/ancient-india/kingship-and-state-formation/royal-status-and-legitimacy",
+      "parentId": "syllabus:history/ancient-india/kingship-and-state-formation",
+      "kind": "subpart",
+      "label": "Royal status and legitimacy",
+      "order": 1,
+      "includes": [
+        "Divine associations and royal titles in ancient Indian kingship",
+        "Territorial claims as expressions of political status"
+      ],
+      "excludes": [
+        "Dynasty-specific succession recall without a legitimacy task",
+        "Modern democratic legitimacy",
+        "A tax-rate calculation"
+      ],
+      "placementRule": "Use for comparisons of how ancient kings claimed status across dynasties; add a period/dynasty home only when materially tested.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA II 2023 GAT Series A Q72: methods of claiming higher royal status"
+      ]
+    },
+    {
       "id": "syllabus:history/medieval-india",
       "parentId": "syllabus:history",
       "kind": "section",
@@ -3535,7 +3568,8 @@
         "Transfer of power",
         "Princely state integration",
         "Constituent Assembly context",
-        "Reorganisation background"
+        "Reorganisation background",
+        "Bhoodan and land reform movements"
       ],
       "boundary": "Questions testing Independence and Integration in Modern India & National Movement; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -3619,6 +3653,27 @@
       ],
       "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
       "editorialExampleStatus": "pending-real-question-pilot"
+    },
+    {
+      "id": "syllabus:history/modern-india-national-movement/independence-and-integration/bhoodan-and-land-reform-movements",
+      "parentId": "syllabus:history/modern-india-national-movement/independence-and-integration",
+      "kind": "subpart",
+      "label": "Bhoodan and land reform movements",
+      "order": 6,
+      "includes": [
+        "Post-independence Bhoodan and Sarvodaya movements",
+        "Leaders, origins and voluntary land redistribution"
+      ],
+      "excludes": [
+        "Colonial land-revenue systems",
+        "Current farm input policy",
+        "Land title litigation without a movement-history task"
+      ],
+      "placementRule": "Use for the historical movement and its institutions; add Economy only when redistribution mechanisms or agrarian policy are materially tested.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA II 2023 GAT Series A Q136: Sarvodaya, Jayaprakash Narayan and Pochampalli"
+      ]
     },
     {
       "id": "syllabus:history/art-culture",
@@ -7855,7 +7910,8 @@
         "Rivers and lakes",
         "Groundwater basins",
         "Seas and straits",
-        "Islands and peninsulas"
+        "Islands and peninsulas",
+        "Geological eras"
       ],
       "boundary": "Questions testing World Physical Features in World Geography; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -7955,6 +8011,27 @@
       ],
       "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
       "editorialExampleStatus": "pending-real-question-pilot"
+    },
+    {
+      "id": "syllabus:geography/world-geography/world-physical-features/geological-eras",
+      "parentId": "syllabus:geography/world-geography/world-physical-features",
+      "kind": "subpart",
+      "label": "Geological eras",
+      "order": 7,
+      "includes": [
+        "Relative chronology of global geological eras",
+        "Rock-age context and the global geological time scale"
+      ],
+      "excludes": [
+        "Absolute radiometric-age calculations",
+        "Historical human dynasties",
+        "Mineral distribution without a rock-age task"
+      ],
+      "placementRule": "Use for global rock-history chronology; retain the established Physical Geography 11-chapter/92-subpart registry unchanged.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA II 2023 GAT Series A Q79: oldest geological era"
+      ]
     },
     {
       "id": "syllabus:geography/world-geography/world-resources",
