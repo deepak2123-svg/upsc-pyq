@@ -16,7 +16,7 @@ mean complete. The source register currently inventories 25 local PDFs.
 | 7 | NDA I 2023 | Complete and live verified, 28 October 2026: 150/150 official-final; English 50, Science 49, GS 51. Q47 B/D and Q78 A/C accepted. Data release `281feee`; checks in `nda-2023-i-release.md`. |
 | 8 | NDA II 2022 | Complete and live verified, 28 October 2026: 150 official-final; English 50, Science 50, GS 50. 129 new + 21 reused, no missing questions. Data release `37e2377`; 213 automated and seven production browser checks pass. See `nda-2022-ii-release.md`. |
 | 9 | NDA I 2022 | Published, 28 October 2026: 150 official-final; English/Science/GS 50 each; 129 new + 21 reused. Data `9a28677`; 216 automated tests pass; live 600-option/key-hash checks pass. All seven live browser scenarios passed across two runs, with intermittent transport failures explicitly recorded (not a clean single-run suite). See `nda-2022-i-release.md`. |
-| 10 | NDA II 2021 | Local gates complete: 150 official-final, 50 English/GS/Science each; Q102 B/C accepted; Q84 original options restored with historical protection. 126 new + 24 reused; 220 automated/eight browser checks pass. Push/live gates pending; `nda-2021-ii-release.md`. |
+| 10 | NDA II 2021 | Complete and live verified, 28 October 2026: 150 official-final, 50 English/GS/Science each; Q102 B/C accepted; Q84 original options restored with historical protection. 126 new + 24 reused; data `8e1c1de`; 220 automated, 600 live option decisions and all eight production browser checks pass. See `nda-2021-ii-release.md`. |
 | 11 | NDA I 2021 | Next, not started |
 | 12 | 2020 combined I/II local PDF | Confirm actual shared/source identity at intake; do not double-count |
 | 13–14 | NDA II, I 2019 | Queued individually |

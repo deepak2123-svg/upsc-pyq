@@ -90,6 +90,29 @@ scale and asset hash recorded. Shared English directions remain standalone-safe.
 
 ## Release
 
-Local gates complete; scoped push and exact-commit production checks pending.
+Data commit `8e1c1dee31bb392d6659c7764a082d37c5a4cca4` pushed normally to
+`main` and `codex/pyq-selection-flow`. Exact-SHA GitHub Vercel status reports
+success, deployment `4pny6E4knLo7SBDg9jiZ5A4J7T2j`.
 No infrastructure, database migration, force push or unrelated paper included.
+
+Live https://upscpuraan.vercel.app verified on 28 October 2026:
+
+- Read-only release checker passes all 600 option decisions with 150 scored and
+  zero excluded for current snapshots. Both Q102 B/C score correctly; an old
+  Q84 revision-0 snapshot is excluded with null correctness and zero denominator.
+- Official-key bytes and the original Q146 crop match their reviewed hashes.
+- All eight production Chromium scenarios pass in one clean 1.1-minute run:
+  full paper, saved-result refresh, each of three sections, complete PDF answers,
+  missing-image print blocking, and Sources counts/pagination/gap disclosure.
+- Production PDF: all 16 pages rendered and visually inspected, including the
+  four prism diagrams, both matching tables, source labels and B/C answer cell.
+  The production font metrics produce 16 pages versus 15 locally; Q150 continues
+  alone onto paper page 13 before the separate answer key. No missing content or
+  clipping observed; not falsely reported as the same local pagination.
+- Sources reports 3,132 unique available questions across 58 paper identities,
+  NDA II 2021 at 150/150, official final, Q102 B/C, no unavailable numbers.
+  NDA English inventory 546; CSE-compatible inventory 2,129.
+- Platform evidence is exact-commit status plus direct API/assets/browser checks;
+  no claim of inspecting private Vercel runtime logs or database migrations.
+
 Next queued paper: NDA I 2021, not started.
