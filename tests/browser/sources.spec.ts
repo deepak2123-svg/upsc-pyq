@@ -18,6 +18,9 @@ test('compact source directory filters and paginates every paper without inflati
  await expect(page.locator('article')).toContainText(`${available.toLocaleString('en-IN')} available questions`);
  const rows=page.locator('.source-table tbody tr'), next=page.getByRole('button',{name:'Next →',exact:true});
  await expect(rows).toHaveCount(12);
+ // Server-rendered rows precede hydration; disabled controls are intentional.
+ // Wait for readiness before interpreting a disabled Next as the final page.
+ await expect(next).toBeEnabled();
  await expect(page.locator('.source-directory').getByRole('link')).toHaveCount(0);
  const identities=new Set<string>();let sum=0;
  do {
@@ -27,7 +30,9 @@ test('compact source directory filters and paginates every paper without inflati
    sum+=Number(await row.locator('.source-count > strong').innerText());
   }
   if(await next.isDisabled())break;
+  const firstIdentity=await rows.first().getByRole('rowheader').innerText();
   await next.click();
+  await expect(rows.first().getByRole('rowheader')).not.toHaveText(firstIdentity);
  }while(true);
  expect(sum).toBe(available);
  await page.getByRole('button',{name:/^NDA\b/}).click();

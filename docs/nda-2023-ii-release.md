@@ -65,6 +65,24 @@ Local gates passed:
   optional-parent syllabus/catalogue and worker-type errors remain (including
   ignored historical typecheck fixtures). No claim of a clean typecheck is made.
 
-Production verification remains pending until the intended commit is deployed.
+## Production verification
+
+Data commit `dc67135e438dac7dcaa1afe8c1da8a86bf780d62` pushed normally to `main`
+and `codex/pyq-selection-flow`. GitHub's Vercel status for that exact SHA reports
+success, deployment `FF5XgXq4nXEbvZ4JgDxVFN1Fz5Ps`.
+
+Live checks at https://upscpuraan.vercel.app pass: all 150 IDs reachable, 600
+option decisions match the official key, zero exclusions, no inappropriate CSE
+leakage, NDA English inventory 346. Served official-key and four figure hashes
+match the reviewed assets. Sources lists 150/150, official final, no unavailable
+numbers; its 58-paper union reconciles to 2,618 unique available questions.
+
+Production practice/navigation/reload/results, each section and offline export
+checks passed. The Sources check initially treated pre-hydration disabled Next
+as the last page; readiness and row-transition assertions corrected the test
+without relaxing totals. Its production rerun passes all page/filter/count checks.
+No platform log/error-drain inspection is claimed; verification uses exact-commit
+deployment status, public APIs, asset hashes and browser checks.
+
 Machine-readable evidence is in `content/audits/nda-2023-ii-*`; runtime data is a
 deterministic overlay with original-record hash guards. No raw import changes.
