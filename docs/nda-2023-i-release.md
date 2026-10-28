@@ -75,4 +75,28 @@ fragments retained; no shared reading passage or matching-list table occurs here
   example, optional-parent catalogue/syllabus and worker typing errors remain,
   plus ignored historical fixtures. No claim of a clean typecheck is made.
 
-Production release remains pending until exact-commit and live checks complete.
+## Production verification
+
+Data commit `281feee4568f1a82559fce2364bb219e1cfee6ed` pushed normally to
+`main` and `codex/pyq-selection-flow`. Exact-SHA Vercel status reports success,
+deployment `F5Tpss8LGAS5bVhpbLTC1hAogEQG`.
+
+Live https://upscpuraan.vercel.app checks passed: all 150 IDs eligible, zero
+withdrawals/exclusions, all 600 option decisions (including both accepted sets),
+no inappropriate CSE transfer, English inventory 396. Served key PDF and five
+figure hashes match reviewed bytes. Sources reconciles 2,748 questions across
+58 papers; NDA I 2023 shows 150/150 and no unavailable numbers.
+
+All eight production browser scenarios passed across diagnosed reruns. Initial
+runs encountered transport ECONNRESET and load/inventory timeouts; seven scenarios
+passed together on rerun. Required-image blocking then passed in isolation with
+unchanged assertions (7.1 seconds). No content, grading or expected totals were
+relaxed. The read-only release checker now bounds transport-only retries and
+keeps HTTP/assertion/JSON failures fatal; a complete live rerun passed.
+
+Production tests cover full paper and each section, saved alternative-answer
+feedback refresh, reload/results, complete PDF/accepted sets, original required
+image failure blocking, desktop/mobile and Sources filters/pagination. Platform
+runtime logs/drains were not inspected; no error-scan result is invented. Exact
+commit status, public APIs, asset hashes and actual browser flows are the release
+evidence. NDA II 2022 is next in chronology; not started in this paper’s work.
