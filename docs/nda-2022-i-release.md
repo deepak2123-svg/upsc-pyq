@@ -78,6 +78,31 @@ passages; new paper-specific missing-image injection is not applicable.
 
 ## Release
 
-Local gates passed. Push and exact-commit production verification pending.
-Do not advance to NDA II 2021 until deployment and live grading/browser/PDF
-checks pass. No infrastructure, database or force-push change is included.
+Data commit `9a2867759285fded1d20d607b049a22c97f12eff` pushed normally to
+`main` and `codex/pyq-selection-flow`. Exact-SHA Vercel status reports success;
+latest reported deployment `AiZoJGNi6hPChbxMfwQBXWBbLJLK`.
+No infrastructure, database or force-push change is included.
+
+Live https://upscpuraan.vercel.app checked on 28 October 2026:
+
+- Read-only checker passes all 600 option decisions: 150 eligible, zero excluded,
+  English inventory 496, correct source disclosure, no inappropriate CSE leakage,
+  served official-key bytes matching the reviewed SHA-256.
+- Every one of the seven production Chromium scenarios passed at least once
+  across two unchanged bounded runs, **not a clean single-run suite**. First run:
+  six pass; PDF setup times out loading `/prepare/NDA` before export. Trace shows
+  HTTP 200 document but stalled font/CSS/JS requests. Direct checks of CSS,
+  framework JS and affected font then return HTTP 200 in 235–372 ms.
+- Second run: six pass, including complete PDF; GS snapshot transport aborts
+  after receiving HTTP 201 headers, before body completion. The identical GS
+  section scenario passed in the first run. No assertion or timeout was weakened,
+  no application error was silently treated as a pass, and no third retry run
+  was used. Intermittent production transport reliability remains an explicitly
+  recorded caveat; a uniformly green batch is not claimed.
+- Production PDF contains all 150 questions and every answer matches the reviewed
+  key. All 15 exported pages rendered and visually inspected; no clipping or lost
+  symbols observed, including chemistry conditions and English underlines.
+- Sources reports 3,006 unique available questions across 58 papers and NDA I
+  2022 as 150/150, official final, English/Science/GS 50 each, no missing numbers.
+
+Next queued source paper: NDA II 2021. No questions from that paper started here.
