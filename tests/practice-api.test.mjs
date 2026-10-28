@@ -67,7 +67,7 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 2049); // NDA I 2023 adds 29 new CSE-compatible GS records; 20 historical source IDs reused.
+  assert.equal(data.totalCount, 2077); // NDA II 2022 adds 29 new GS records; Q108 moves to standalone Chemistry, net +28 CSE.
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);
@@ -75,7 +75,7 @@ test("multi-placement inventory conserves every unique parent and examination co
   assert.ok(byId.get(geo).questionCount > 900);
   const placementLedger=JSON.parse(await readFile(new URL('../content/taxonomy/prelims-reviewed-placements.json',import.meta.url),'utf8'));
   const expectedPhysical=new Set(placementLedger.records.filter(row=>row.status==='approved'&&[row.primaryId,...row.additionalIds].some(id=>id.startsWith('syllabus:geography/physical-geography/'))&&questionEligible(row.questionId)).map(row=>row.questionId));
-  const latestPaper={questions:[...JSON.parse(await readFile(new URL('../content/nda-2023-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-i-official-paper.json',import.meta.url),'utf8')).questions]};
+  const latestPaper={questions:[...JSON.parse(await readFile(new URL('../content/nda-2022-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-i-official-paper.json',import.meta.url),'utf8')).questions]};
   // The reviewed paper overlay supersedes old placements (not raw records).
   // Q79 geological eras and Q124 Indian soils leave their former Physical homes.
   for(const q of latestPaper.questions){expectedPhysical.delete(q.id);if(questionEligible(q.id)&&[{subject:q.subject,head:q.taxonomyHead},...q.additionalPaths].some(p=>p.subject==='Geography'&&p.head==='Physical Geography'))expectedPhysical.add(q.id);}

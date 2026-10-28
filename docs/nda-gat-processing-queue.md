@@ -14,7 +14,8 @@ mean complete. The source register currently inventories 25 local PDFs.
 | 5 | NDA I 2024 | Complete and live verified, 27 October 2026: 149 official-final + Q101 withdrawn; 50 English, 49 Science, 50 GS. Data release `5c0efde`; 204 automated and six production browser checks pass. See `nda-2024-i-release.md`. |
 | 6 | NDA II 2023 | Complete and live verified, 28 October 2026: 150/150 official-final, 50 each English/Science/GS. 129 new occurrences + 21 reused IDs; no withdrawals. Data release `dc67135`; checks in `nda-2023-ii-release.md`. |
 | 7 | NDA I 2023 | Complete and live verified, 28 October 2026: 150/150 official-final; English 50, Science 49, GS 51. Q47 B/D and Q78 A/C accepted. Data release `281feee`; checks in `nda-2023-i-release.md`. |
-| 8–9 | NDA II, I 2022 | Queued individually |
+| 8 | NDA II 2022 | Local verified, 28 October 2026: 150 official-final; English 50, Science 50, GS 50. 129 new + 21 reused, no missing questions. Release verification in `nda-2022-ii-release.md`. |
+| 9 | NDA I 2022 | Next, not started |
 | 10–11 | NDA II, I 2021 | Queued individually |
 | 12 | 2020 combined I/II local PDF | Confirm actual shared/source identity at intake; do not double-count |
 | 13–14 | NDA II, I 2019 | Queued individually |

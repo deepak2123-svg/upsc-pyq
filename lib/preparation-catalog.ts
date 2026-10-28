@@ -11,6 +11,7 @@ import reviewedNda2024IIPlacements from '../content/nda-2024-ii-preparation-plac
 import officialNda2024IPlacements from '../content/nda-2024-i-preparation-placements.json' with {type:'json'};
 import officialNda2023IIPlacements from '../content/nda-2023-ii-preparation-placements.json' with {type:'json'};
 import officialNda2023IPlacements from '../content/nda-2023-i-preparation-placements.json' with {type:'json'};
+import officialNda2022IIPlacements from '../content/nda-2022-ii-preparation-placements.json' with {type:'json'};
 import {organiseNdaScience} from './nda-science-syllabus';
 
 export type PreparationInventory = SubjectPracticeInventory & { preparationExam: PreparationExam; preparationViews: PreparationView[] };
@@ -104,7 +105,7 @@ function buildPreparationInventory(target: PreparationExam): PreparationInventor
   // Future English/maths/CSAT imports need explicit reviewed concept placements.
   // A historic global "outside GS" decision is not silently removed or promoted.
   const questions = new Map(historicalPyqQuestions.map(q => [q.id, q]));
-  for (const row of [...applicability.approvedPlacements,...officialNdaPlacements,...officialNdaIIPlacements,...officialNda2025IIPlacements,...officialNda2025IPlacements,...reviewedNda2024IIPlacements,...officialNda2024IPlacements,...officialNda2023IIPlacements,...officialNda2023IPlacements] as ReviewedPlacement[]) {
+  for (const row of [...applicability.approvedPlacements,...officialNdaPlacements,...officialNdaIIPlacements,...officialNda2025IIPlacements,...officialNda2025IPlacements,...reviewedNda2024IIPlacements,...officialNda2024IPlacements,...officialNda2023IIPlacements,...officialNda2023IPlacements,...officialNda2022IIPlacements] as ReviewedPlacement[]) {
     if (row.target !== target || row.status !== 'approved' || !row.rationale.trim()) continue;
     const question = questions.get(row.questionId);
     const leaf = nodes.find(n => n.kind === 'subtopic' && n.id === row.subtopicId);

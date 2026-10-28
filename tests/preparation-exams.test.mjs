@@ -68,7 +68,7 @@ test('three target syllabuses expose the agreed paper structure and bounded empt
   assert.ok(nda.nodes.some(n => n.label === 'Differential Calculus'));
   assert.ok(!cds.nodes.some(n => n.label === 'Differential Calculus'));
   assert.ok(cse.nodes.some(n => n.label === 'Data Interpretation'));
-  assert.equal(nda.subjects.find(n => n.id === 'subject:english').questionCount, 396);
+  assert.equal(nda.subjects.find(n => n.id === 'subject:english').questionCount, 446);
 });
 
 test('CSE science cannot inherit NDA physics, while NDA keeps its own science', async () => {

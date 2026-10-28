@@ -1,0 +1,913 @@
+{
+  "paperId": "nda-2022-ii-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2022,
+    "session": "II",
+    "paper": "GAT",
+    "paperCode": "DFRG-U-TAG",
+    "series": "A",
+    "language": "English page extract",
+    "examDate": null,
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2022-2.pdf",
+    "sha256": "796a39da9787b8795b6d44b92c5d3bcddc9693b0f1034266ada38b73298c8404"
+  },
+  "pdfPageMapping": {
+    "pages": 26,
+    "cover": 1,
+    "english": "PDF 2–9 = printed 2–9",
+    "partB": "PDF 10–26 = printed (2 × PDF page − 9)",
+    "extractCaveat": "Hindi counterpart pages and back instructions are absent; all 150 English numbered questions are present."
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "filenameDate": "2023-04-25",
+    "retrievedAt": "2026-10-28",
+    "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDANAII2022-GAT-25042023.pdf",
+    "asset": "/papers/nda-2022-ii-gat/official-final-key.pdf",
+    "sha256": "dd934215fbd23059a584da214404126e219006250fd178846d3b54d8c8632965",
+    "page": 1,
+    "series": "A",
+    "session": "II",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "Retrieved directly from UPSC HTTPS server; 111990 bytes, four scanned series pages. Page 1 header NDA & NA-II-2022, Series A, GAT, 600 marks, NIL dropped, 150 scoring. Older local Prepp key rejected as official evidence."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2022-2022-2-84",
+      "sha256": "a02e0bfeb3d4de05bf7fc57e45ce0177f88e0bf279395da7d870566f58d422f4",
+      "value": {
+        "id": "cds-2022-2022-2-84",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In a recent judgement, the Supreme Court of India directed that every protected forest, national park and wildlife sanctuary across the country should have a mandatory eco-sensitive zone (ESZ) of a minimum of",
+        "sourceTextHash": "f9a63e11fe2248ec22abdf43081e6f02358d0834db844427e266ce275e9b9f31",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 84,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2022_gat_anskey",
+          "rawQuestionText": "In a recent judgement, the Supreme Court of India directed that every protected forest, national park and wildlife sanctuary across the country should have a mandatory eco-sensitive zone (ESZ) of a minimum of"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 84,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "In a recent judgement, the Supreme Court of India directed that every protected forest, national park and wildlife sanctuary across the country should have a mandatory eco-sensitive zone (ESZ) of a minimum of"
+        ],
+        "options": {
+          "A": "1 km starting from their demarcated boundaries",
+          "B": "2 km starting from their demarcated boundaries",
+          "C": "3 km starting from their demarcated boundaries",
+          "D": "5 km starting from their demarcated boundaries"
+        },
+        "answer": "A",
+        "explanation": "Original NDA 2022-2 Q84, page 15, visually checked against its complete stem and options; the matching Series A final key accepts A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2022-2022-2-140",
+      "sha256": "a145d965d235d694caa271c39465dc2090c652b71e89f90a706b532e84152796",
+      "value": {
+        "id": "cds-2022-2022-2-140",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following areas was acquired by the British under the Treaty of Deogaon, 1803?",
+        "sourceTextHash": "8805064329165e4c73adf41848da10930ab6e316c1edacc73baf2f991d806aaa",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 140,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2022_gat_anskey",
+          "rawQuestionText": "Which one of the following areas was acquired by the British under the Treaty of Deogaon, 1803?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 140,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following areas was acquired by the British under the Treaty of Deogaon, 1803?"
+        ],
+        "options": {
+          "A": "Cuttack",
+          "B": "Murshidabad",
+          "C": "Surat",
+          "D": "Calicut"
+        },
+        "answer": "A",
+        "explanation": "Original NDA 2022-2 Q140, page 25, visually checked against its complete stem and options; the matching Series A final key accepts A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-60",
+      "sha256": "7fa44f9fc43d6d77963895503f429321bd241ecdd62cd6c117b9df933978f761",
+      "value": {
+        "id": "nda-2022-ii-60",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements about earthquake waves is not correct?",
+        "sourceTextHash": "feabe0abbd18c19392b74156c6d94031dff749255c68fcfba77a92ae049523bc",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 60,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "Which one of the following statements about earthquake waves is not correct?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 60,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earthquakes & Seismology",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements about earthquake waves is not correct?"
+        ],
+        "options": {
+          "A": "P waves move faster and are the first to arrive at the surface.",
+          "B": "P waves can travel through gaseous, liquid and solid materials.",
+          "C": "Seismographs located beyond 145° from epicentre can record the arrival of P waves.",
+          "D": "P waves have maximum area covered under its shadow zone."
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-91",
+      "sha256": "b684c81765888f3604478e8f6023360e45667efe988148fabef01c3c58016ba2",
+      "value": {
+        "id": "nda-2022-ii-91",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements about metamorphic rocks is not correct?",
+        "sourceTextHash": "b7159b1d551e7747495d0fbc7ad4e6d45f45f7b7915cd67713f3dfe82116d573",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 91,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "Which one of the following statements about metamorphic rocks is not correct?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 91,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements about metamorphic rocks is not correct?"
+        ],
+        "options": {
+          "A": "Due to segregation of minerals into wavy bands or platy surfaces, some metamorphic rocks develop foliations.",
+          "B": "Where the foliations develop into broad mineral bands, the metamorphic rock is extremely hard.",
+          "C": "Where the foliations are moderately thin, the metamorphic rock tends to flake apart.",
+          "D": "Rocks that originally were composed of one dominant mineral are often foliated by metamorphism."
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-92",
+      "sha256": "f72bfdda5b584769cd6ea2919eb1166fd0c122492649a7c805c84213afe6d235",
+      "value": {
+        "id": "nda-2022-ii-92",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following 'discontinuities' separates the Earth's crust from the mantle?",
+        "sourceTextHash": "4e9bda3d1c83ef2d17c08ae1bbc06ee5096e386892c13c2eb18911512f6896f7",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 92,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "Which one of the following 'discontinuities' separates the Earth's crust from the mantle?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 92,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earth Structure & Folding",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following 'discontinuities' separates the Earth's crust from the mantle?"
+        ],
+        "options": {
+          "A": "Gutenberg",
+          "B": "Mohorovicic",
+          "C": "Conrad",
+          "D": "Repetti"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-93",
+      "sha256": "c1486bd1fd99eb55c730c39347e0de95307586929f3ed03edec37764f5369706",
+      "value": {
+        "id": "nda-2022-ii-93",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following cities of the world would represent the greatest linear velocity of rotation of the Earth?",
+        "sourceTextHash": "8e078a360b3247a73f92eb6a96a14e88c723d027f9e76825e41a0df3f8c4e785",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 93,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "Which one of the following cities of the world would represent the greatest linear velocity of rotation of the Earth?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 93,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Earth Motions & Time",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following cities of the world would represent the greatest linear velocity of rotation of the Earth?"
+        ],
+        "options": {
+          "A": "Kampala, Uganda",
+          "B": "St. Petersburg, Russia",
+          "C": "Madrid, Spain",
+          "D": "Stockholm, Sweden"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-94",
+      "sha256": "ca978c81065a32b6cc599efd2ffb6e2e43000510a7fdafd3301403d7ebeb104b",
+      "value": {
+        "id": "nda-2022-ii-94",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "What will happen if you are flying east across the International Date Line?",
+        "sourceTextHash": "681fec39c68a142b5157f0a39f2c821cda354048612a7c6395ed0641040f6d5c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 94,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "What will happen if you are flying east across the International Date Line?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 94,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Earth Motions & Time",
+        "difficulty": "Easy",
+        "promptLines": [
+          "What will happen if you are flying east across the International Date Line?"
+        ],
+        "options": {
+          "A": "You will lose 12 hours",
+          "B": "You will gain 12 hours",
+          "C": "You will gain 24 hours",
+          "D": "You will lose 24 hours"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-96",
+      "sha256": "68dae557b18e77cff45193610cb1fda6f26d44f25499dfed9b04368d32838b49",
+      "value": {
+        "id": "nda-2022-ii-96",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Piecing together the puzzle of geologic time to create and analyze historical maps of the Earth is known as",
+        "sourceTextHash": "f25e212b3f04969d958789e581f6b03b334531ffda845e52593edfae2dab1494",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 96,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2022_gat_anskey",
+          "rawQuestionText": "Piecing together the puzzle of geologic time to create and analyze historical maps of the Earth is known as",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Reconstructing historical maps of Earth is paleogeography.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "11f02c3ac4c2ce468aad4073b00c8563542c2ad9e821ac297e233f6f74230a3f",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 96,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Geological Time & Historical Geography",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Piecing together the puzzle of geologic time to create and analyze historical maps of the Earth is known as"
+        ],
+        "options": {
+          "A": "paleoclimatology",
+          "B": "paleogeomorphology",
+          "C": "paleolithology",
+          "D": "paleogeography"
+        },
+        "answer": "D",
+        "explanation": "Reconstructing historical maps of Earth is paleogeography.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-108",
+      "sha256": "55a6385cba481c56da9cc967b0bd871fd9e298c0111caa5899a661b4c37de389",
+      "value": {
+        "id": "nda-2022-ii-108",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Vapours of sulphur escaping from a volcano often form a crust on the rocks. The process involved is an example of",
+        "sourceTextHash": "d7d847a8994b9e533db3e2f3c733f7a25cf858da36e0d4dacc6b131143160c49",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 108,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "Vapours of sulphur escaping from a volcano often form a crust on the rocks. The process involved is an example of"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 108,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Vapours of sulphur escaping from a volcano often form a crust on the rocks. The process involved is an example of"
+        ],
+        "options": {
+          "A": "condensation",
+          "B": "precipitation",
+          "C": "deposition",
+          "D": "evaporation"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-127",
+      "sha256": "611d268527e63e04706d3b81b3312d7c160d705b6c030390ec6244c36af4039a",
+      "value": {
+        "id": "nda-2022-ii-127",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The formation of 'tors' on small rocky hills is associated with which among the following?",
+        "sourceTextHash": "99a4c7ac3e684bb5bd1746aacb3b231a4a3170a9b851a5eee332ceccdedb14f2",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 127,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "The formation of 'tors' on small rocky hills is associated with which among the following?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 127,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The formation of 'tors' on small rocky hills is associated with which among the following?"
+        ],
+        "options": {
+          "A": "Granite",
+          "B": "Limestone",
+          "C": "Alluvial",
+          "D": "Dolomite"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-128",
+      "sha256": "a9bbc1fe4e9996103e6ac232f352b0f3c816a0a37eab38e7ef2084419dd1827b",
+      "value": {
+        "id": "nda-2022-ii-128",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements about anticyclones: 1. Anticyclones are high pressure systems. 2. Air in the centre of the system must be subsiding. 3. Anticyclones are characterized by converging winds. How many of the above statements is/are correct?",
+        "sourceTextHash": "8a3f28666978233fb7145f9dca29f94179bfaa5f19654a16e73d35108788eeb5",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 128,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2022_gat_anskey",
+          "rawQuestionText": "Consider the following statements about anticyclones: 1. Anticyclones are high pressure systems. 2. Air in the centre of the system must be subsiding. 3. Anticyclones are characterized by converging winds. How many of the above statements is/are correct?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Statements 1 and 2 are correct; anticyclonic surface winds diverge, not converge.",
+            "previousAnswerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "11f02c3ac4c2ce468aad4073b00c8563542c2ad9e821ac297e233f6f74230a3f",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "B"
+          }
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 128,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Cyclones & Pressure Systems",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements about anticyclones: 1. Anticyclones are high pressure systems. 2. Air in the centre of the system must be subsiding. 3. Anticyclones are characterized by converging winds. How many of the above statements is/are correct?"
+        ],
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "None"
+        },
+        "answer": "B",
+        "explanation": "Statements 1 and 2 are correct; anticyclonic surface winds diverge, not converge.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-129",
+      "sha256": "adf66fcf0ae408fc14beb0cf7df73d29c7a966c1fcfc66aa759e18a0f2457ab2",
+      "value": {
+        "id": "nda-2022-ii-129",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements is/are correct? 1. The Earth's crust is brittle in nature. 2. The mean thickness of the oceanic crust is 15 km, whereas that of the continental crust is around 30 km. Select the correct answer using the code given below.",
+        "sourceTextHash": "de9e7f7a386e169300c30d92dff9c3d71ab3857a3c130495acf3e01444d43dce",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 129,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "Which of the following statements is/are correct? 1. The Earth's crust is brittle in nature. 2. The mean thickness of the oceanic crust is 15 km, whereas that of the continental crust is around 30 km. Select the correct answer using the code given below."
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 129,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earth Structure & Folding",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements is/are correct? 1. The Earth's crust is brittle in nature. 2. The mean thickness of the oceanic crust is 15 km, whereas that of the continental crust is around 30 km. Select the correct answer using the code given below."
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-144",
+      "sha256": "12c39ecb1b4210181f7a189746b1cc046065123e53cea67c132690d5e0e38896",
+      "value": {
+        "id": "nda-2022-ii-144",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements: 1. The Sharavati river creates Jog Falls. 2. The Brahmani river is formed by the confluence of the Kosi and Sankh rivers. 3. The Tamraparni is a river of Tirunelveli district of Tamil Nadu. How many of the above statements is/are correct?",
+        "sourceTextHash": "8567b1147a139bdde7c805d9b499ce30f9af17056ad5afc0aef0835a1fb79a81",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 144,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "Consider the following statements: 1. The Sharavati river creates Jog Falls. 2. The Brahmani river is formed by the confluence of the Kosi and Sankh rivers. 3. The Tamraparni is a river of Tirunelveli district of Tamil Nadu. How many of the above statements is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 144,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements: 1. The Sharavati river creates Jog Falls. 2. The Brahmani river is formed by the confluence of the Kosi and Sankh rivers. 3. The Tamraparni is a river of Tirunelveli district of Tamil Nadu. How many of the above statements is/are correct?"
+        ],
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "None"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-57",
+      "sha256": "fdb42ef6e9bf41175143fdcfd32d05be9a8c460810e5841f14df6440fd59dd12",
+      "value": {
+        "id": "nda-2022-ii-57",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The major portion of the Great Artesian Basin in Australia is located in",
+        "sourceTextHash": "a1eabd0e6539a5870f940c59f910d9e9384231b94512f10da752eb59e1e68473",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 57,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "The major portion of the Great Artesian Basin in Australia is located in"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 57,
+        "subject": "Geography",
+        "topic": "World Physical Geography",
+        "subtopic": "Rivers & Deltas",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The major portion of the Great Artesian Basin in Australia is located in"
+        ],
+        "options": {
+          "A": "Western Australia",
+          "B": "Victoria",
+          "C": "Queensland",
+          "D": "Northern Territory"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-95",
+      "sha256": "7577976a223ea5218893ab76fc8656fb8b249d8a6e8dffefd045836c0e7daf01",
+      "value": {
+        "id": "nda-2022-ii-95",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Prime Meridian does not pass through which one of the following African countries?",
+        "sourceTextHash": "d6d21f0d3df15d1b33a85b812fb5747e89ad4f4fcae7a063af3a8538de96408b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 95,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "The Prime Meridian does not pass through which one of the following African countries?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 95,
+        "subject": "Geography",
+        "topic": "World Places & Routes",
+        "subtopic": "Global Coordinates",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Prime Meridian does not pass through which one of the following African countries?"
+        ],
+        "options": {
+          "A": "Morocco",
+          "B": "Algeria",
+          "C": "Mali",
+          "D": "Ghana"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-56",
+      "sha256": "687083c1199ce3b72de06286a534491abef63f7524ac4d4619fd6c92a7478907",
+      "value": {
+        "id": "nda-2022-ii-56",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In India, a cultivable land which is left uncultivated for more than a year but less than five years is labelled as",
+        "sourceTextHash": "3171ef16c382a402cd628bded9cafa79afb5309d9bfe965d4c68bcb8d37358bc",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 56,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "In India, a cultivable land which is left uncultivated for more than a year but less than five years is labelled as"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 56,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In India, a cultivable land which is left uncultivated for more than a year but less than five years is labelled as"
+        ],
+        "options": {
+          "A": "cultivable wasteland",
+          "B": "current fallow",
+          "C": "fallow other than current fallow",
+          "D": "barren and wasteland"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-58",
+      "sha256": "8fe47bcd4fedfd0d4abf07041802c45806cbb89cfe52f201324b359213ef0db2",
+      "value": {
+        "id": "nda-2022-ii-58",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements is/are correct? 1. India has one of the longest navigable inland water networks in the world. 2. Inland waterways presently help in transporting about 25 percent of the total cargo movement. 3. About 111 inland waterways have been declared as National Waterways under the National Waterways Act, 2016. Select the correct answer using the code given below.",
+        "sourceTextHash": "d0a47031ef04221aa26e591e037364d07646653afa3ee87e8a038d09cf75d953",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 58,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "Which of the following statements is/are correct? 1. India has one of the longest navigable inland water networks in the world. 2. Inland waterways presently help in transporting about 25 percent of the total cargo movement. 3. About 111 inland waterways have been declared as National Waterways under the National Waterways Act, 2016. Select the correct answer using the code given below."
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 58,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Water Resources & Waterways",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements is/are correct? 1. India has one of the longest navigable inland water networks in the world. 2. Inland waterways presently help in transporting about 25 percent of the total cargo movement. 3. About 111 inland waterways have been declared as National Waterways under the National Waterways Act, 2016. Select the correct answer using the code given below."
+        ],
+        "options": {
+          "A": "1, 2 and 3",
+          "B": "1 and 2 only",
+          "C": "3 only",
+          "D": "1 and 3 only"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-59",
+      "sha256": "7522c021dc953a0de996213582581797aa67a4254b164172e0003ef0fd2a5ee4",
+      "value": {
+        "id": "nda-2022-ii-59",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Railway Zone) A. East Central B. North Eastern C. Northeast Frontier D. North Western List-II (Headquarters) 1. Gorakhpur 2. Jaipur 3. Hajipur 4. Maligaon Code:",
+        "sourceTextHash": "73b2c2c0981bc28cdc6822553fc0cb4d6c8e835808a0a3949549a61688ac9729",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 59,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Railway Zone) A. East Central B. North Eastern C. Northeast Frontier D. North Western List-II (Headquarters) 1. Gorakhpur 2. Jaipur 3. Hajipur 4. Maligaon Code:"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 59,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Railway Zones",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Railway Zone) A. East Central B. North Eastern C. Northeast Frontier D. North Western List-II (Headquarters) 1. Gorakhpur 2. Jaipur 3. Hajipur 4. Maligaon Code:"
+        ],
+        "options": {
+          "A": "A-3, B-4, C-1, D-2",
+          "B": "A-3, B-1, C-4, D-2",
+          "C": "A-2, B-1, C-4, D-3",
+          "D": "A-2, B-4, C-1, D-3"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-141",
+      "sha256": "d73f3c5b8ef0a40815681f3dbbd225ccd6aadef69c43c57be8d19f32fe7d80e8",
+      "value": {
+        "id": "nda-2022-ii-141",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements: 1. Maharashtra State has the maximum share of national highways (length in kilometres). 2. The nature of terrain and the level of economic development is one of the reasons for the maximum share of national highways in Maharashtra. Which of the statements given above is/are correct?",
+        "sourceTextHash": "489ff6329a49543e2e1f264cb1d1ce83f3d7c5bf7fd986b86098ff4d877c298c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 141,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "Consider the following statements: 1. Maharashtra State has the maximum share of national highways (length in kilometres). 2. The nature of terrain and the level of economic development is one of the reasons for the maximum share of national highways in Maharashtra. Which of the statements given above is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 141,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Highways",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements: 1. Maharashtra State has the maximum share of national highways (length in kilometres). 2. The nature of terrain and the level of economic development is one of the reasons for the maximum share of national highways in Maharashtra. Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-126",
+      "sha256": "ff5721cadfc20dddbb748974a61fbf5d278503a1592ddad0e1cf2549a5ab1698",
+      "value": {
+        "id": "nda-2022-ii-126",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements on computation of density: 1. Physiological density can be computed by dividing the total population by the net cultivable area. 2. Agricultural density can be computed by dividing the total agricultural population by the net cultivable area. 3. Population density can be computed by dividing the total population by the total area. How many of the above statements is/are correct?",
+        "sourceTextHash": "b0077a9cdb78dced712138138aabc64d790d67b86433138e526abcda425c227e",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 126,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "Consider the following statements on computation of density: 1. Physiological density can be computed by dividing the total population by the net cultivable area. 2. Agricultural density can be computed by dividing the total agricultural population by the net cultivable area. 3. Population density can be computed by dividing the total population by the total area. How many of the above statements is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 126,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements on computation of density: 1. Physiological density can be computed by dividing the total population by the net cultivable area. 2. Agricultural density can be computed by dividing the total agricultural population by the net cultivable area. 3. Population density can be computed by dividing the total population by the total area. How many of the above statements is/are correct?"
+        ],
+        "options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "None"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-ii-142",
+      "sha256": "2de9b9ddf50edebfb73a93ba34a35bcbd363e1d893f970945d2363395f10a1f0",
+      "value": {
+        "id": "nda-2022-ii-142",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The activities or services focussed on creation, rearrangement and interpretation of new and existing ideas are referred to as",
+        "sourceTextHash": "aca1e15b0b3f290b32c54ae86e3573af79744484c7a1a7f60f500f8b5a97c7e0",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "II",
+          "questionNumber": 142,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/1056f5237b945fbe1e1356dbefc64bf0.pdf",
+          "rawQuestionText": "The activities or services focussed on creation, rearrangement and interpretation of new and existing ideas are referred to as"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "II",
+        "questionNumber": 142,
+        "subject": "Geography",
+        "topic": "Human Economic Activities",
+        "subtopic": "Types of Economic Activities",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The activities or services focussed on creation, rearrangement and interpretation of new and existing ideas are referred to as"
+        ],
+        "options": {
+          "A": "quaternary activities",
+          "B": "quinary activities",
+          "C": "tertiary activities",
+          "D": "secondary activities"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}
