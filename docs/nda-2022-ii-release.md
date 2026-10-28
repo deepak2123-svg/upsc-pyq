@@ -80,5 +80,25 @@ paper-specific case (existing image-protection regressions remain).
 
 ## Release
 
-Local gates passed; production commit/deployment and direct verification to be
-recorded after normal push. No infrastructure, database or force-push changes.
+Data commit `37e237768e71920a5fffa93453ad07c0d9e2b53a` pushed normally to
+`main` and `codex/pyq-selection-flow`. Exact-SHA Vercel status reports success,
+deployment `HwWsxHHFbM6HiWkR3Ji1HGpRFWra`. No infrastructure, database or
+force-push changes.
+
+Live https://upscpuraan.vercel.app verified on 28 October 2026:
+
+- Read-only release checker passed all 600 option decisions, 150 eligible/zero
+  excluded, no inappropriate CSE leakage, English inventory 446, and served
+  official key hash identical to the reviewed bytes.
+- All seven production Chromium scenarios passed in one 42.1-second run,
+  including full paper, all three sections, saved result refresh, mobile,
+  Sources totals/gaps and complete offline PDF answer comparison.
+- Production PDF again rendered: all 15 pages inspected, matching tables,
+  symbols and English underlining retained; zero required images as in source.
+- Sources reconciles 2,877 available questions across 58 papers. NDA II 2022
+  shows 150/150, Official final, English/Science/GS 50 each, no missing numbers.
+- No authenticated Vercel runtime-log/drain scan was performed; exact-commit
+  GitHub status and direct live application checks are the release evidence.
+
+Source review complete, 150/150 available for scored practice, live verified.
+Next selected paper in chronology: NDA I 2022 GAT, not started here.
