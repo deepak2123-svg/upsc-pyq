@@ -22,7 +22,7 @@ Mughal Empire|Babur and Humayun;Akbar;Jahangir and Shah Jahan;Aurangzeb;Mansabda
 Marathas and Regional Powers|Shivaji;Peshwas and confederacy;Sikh powers;Mysore;Awadh and Hyderabad
 Medieval Society and Economy|Agrarian relations;Craft production;Trade and towns;Technology;Women and social structures;Village administration
 Bhakti and Sufi Traditions|Alvars and Nayanars;Saguna and nirguna traditions;Saints and compositions;Sufi orders;Institutions and practices;Siddhas and Lingayats
-Sources and Chronology|Foreign accounts`,
+Sources and Chronology|Foreign accounts;Literary sources`,
     'Modern India & National Movement': `European Companies|Portuguese;Dutch and Danish;English and French;Factories and trading networks;Carnatic conflicts
 British Expansion|Bengal conquest;Anglo-Mysore wars;Anglo-Maratha wars;Anglo-Burmese wars;Subsidiary alliance;Annexation policies;Punjab conquest
 Colonial Administration|Company government;Crown rule and proclamations;Civil services;Census and surveys;Army and police;Judiciary;Education policies;Press policies;Local self-government
@@ -173,7 +173,7 @@ Finance and Economic Policy|Banking developments;Monetary decisions;Fiscal polic
 Sectoral Developments|Agricultural initiatives;Agricultural trends and statistics;Mineral and energy trends;International economic developments;Industrial developments;Infrastructure projects;Development programmes
 Economic Reports and Indices|Economic rankings;Development reports;Publishing institutions;Indicators and methodology`,
     'Environment & Geography': `Climate and Conservation Developments|Climate negotiations;Conservation initiatives;Environmental policy;Environmental reports and indices
-Species and Sites in News|Species discoveries;Protected-area developments;Wetland recognition;Urban environmental recognition;Habitat developments
+Species and Sites in News|Species discoveries;Species conservation status;Protected-area developments;Wetland recognition;Urban environmental recognition;Habitat developments
 Disasters and Places in News|Disaster events;Geographical discoveries;Geological developments;Significant locations`,
     'Science, Technology & Health': `Space Developments|Launches;Missions;Satellite applications;Space institutions
 Discoveries and Innovation|Scientific discoveries;Technology applications;Digital developments;Scientific achievements

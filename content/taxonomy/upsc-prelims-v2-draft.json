@@ -2128,7 +2128,8 @@
       "label": "Sources and Chronology",
       "order": 8,
       "includes": [
-        "Foreign accounts"
+        "Foreign accounts",
+        "Literary sources"
       ],
       "boundary": "Questions testing Sources and Chronology in Medieval India; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -2152,6 +2153,28 @@
       "editorialExampleStatus": "source-question-reviewed",
       "representativeQuestions": [
         "NDA II 2025 GAT Series A Q83: Ibn Battuta, Nikitin, Monserrate and Peter Mundy"
+      ]
+    },
+    {
+      "id": "syllabus:history/medieval-india/sources-and-chronology/literary-sources",
+      "parentId": "syllabus:history/medieval-india/sources-and-chronology",
+      "kind": "subpart",
+      "label": "Literary sources",
+      "order": 2,
+      "includes": [
+        "Medieval literary and documentary manuals as evidence",
+        "Legal, administrative and epistolary texts",
+        "Dating and identifying purposes of medieval source works"
+      ],
+      "excludes": [
+        "Modern legal institutions",
+        "Ancient texts without medieval context",
+        "Foreign traveller accounts when the traveller is the tested focus"
+      ],
+      "placementRule": "Use for the content, date and historical use of a medieval text. Add a cultural-literature home only when the literary tradition itself is materially tested.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA I 2022 Series A Q126: Lekhapaddhati and legal documents"
       ]
     },
     {
@@ -20496,6 +20519,7 @@
       "order": 2,
       "includes": [
         "Species discoveries",
+        "Species conservation status",
         "Protected-area developments",
         "Wetland recognition",
         "Urban environmental recognition",
@@ -20521,11 +20545,33 @@
       "editorialExampleStatus": "pending-real-question-pilot"
     },
     {
+      "id": "syllabus:current-affairs/environment-geography/species-and-sites-in-news/species-conservation-status",
+      "parentId": "syllabus:current-affairs/environment-geography/species-and-sites-in-news",
+      "kind": "subpart",
+      "label": "Species conservation status",
+      "order": 2,
+      "includes": [
+        "Dated IUCN threat assessments for named species",
+        "Changes to conservation status",
+        "Species risk classifications in news"
+      ],
+      "excludes": [
+        "Discovery of an unnamed new species",
+        "Protected-area boundary changes without species assessment",
+        "Static definitions of risk categories without a news subject"
+      ],
+      "placementRule": "Use when the source tests a named species conservation assessment in its examination-date context; retain a relevant static biodiversity placement when risk category knowledge is material.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA I 2022 Series A Q148: Red Sanders IUCN category"
+      ]
+    },
+    {
       "id": "syllabus:current-affairs/environment-geography/species-and-sites-in-news/protected-area-developments",
       "parentId": "syllabus:current-affairs/environment-geography/species-and-sites-in-news",
       "kind": "subpart",
       "label": "Protected-area developments",
-      "order": 2,
+      "order": 3,
       "includes": [
         "Protected-area developments"
       ],
@@ -20541,7 +20587,7 @@
       "parentId": "syllabus:current-affairs/environment-geography/species-and-sites-in-news",
       "kind": "subpart",
       "label": "Wetland recognition",
-      "order": 3,
+      "order": 4,
       "includes": [
         "Wetland recognition"
       ],
@@ -20557,7 +20603,7 @@
       "parentId": "syllabus:current-affairs/environment-geography/species-and-sites-in-news",
       "kind": "subpart",
       "label": "Urban environmental recognition",
-      "order": 4,
+      "order": 5,
       "includes": [
         "Urban environmental recognition"
       ],
@@ -20573,7 +20619,7 @@
       "parentId": "syllabus:current-affairs/environment-geography/species-and-sites-in-news",
       "kind": "subpart",
       "label": "Habitat developments",
-      "order": 5,
+      "order": 6,
       "includes": [
         "Habitat developments"
       ],

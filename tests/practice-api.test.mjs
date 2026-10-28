@@ -67,7 +67,7 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 2077); // NDA II 2022 adds 29 new GS records; Q108 moves to standalone Chemistry, net +28 CSE.
+  assert.equal(data.totalCount, 2105); // NDA I 2022 adds 28 new CSE-applicable GS records; world-history Q122 stays NDA/CDS.
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);
@@ -75,7 +75,7 @@ test("multi-placement inventory conserves every unique parent and examination co
   assert.ok(byId.get(geo).questionCount > 900);
   const placementLedger=JSON.parse(await readFile(new URL('../content/taxonomy/prelims-reviewed-placements.json',import.meta.url),'utf8'));
   const expectedPhysical=new Set(placementLedger.records.filter(row=>row.status==='approved'&&[row.primaryId,...row.additionalIds].some(id=>id.startsWith('syllabus:geography/physical-geography/'))&&questionEligible(row.questionId)).map(row=>row.questionId));
-  const latestPaper={questions:[...JSON.parse(await readFile(new URL('../content/nda-2022-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-i-official-paper.json',import.meta.url),'utf8')).questions]};
+  const latestPaper={questions:[...JSON.parse(await readFile(new URL('../content/nda-2022-i-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2022-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-i-official-paper.json',import.meta.url),'utf8')).questions]};
   // The reviewed paper overlay supersedes old placements (not raw records).
   // Q79 geological eras and Q124 Indian soils leave their former Physical homes.
   for(const q of latestPaper.questions){expectedPhysical.delete(q.id);if(questionEligible(q.id)&&[{subject:q.subject,head:q.taxonomyHead},...q.additionalPaths].some(p=>p.subject==='Geography'&&p.head==='Physical Geography'))expectedPhysical.add(q.id);}
@@ -87,7 +87,7 @@ test("multi-placement inventory conserves every unique parent and examination co
   for(const q of latestPaper.questions){expectedFirstChapter.delete(q.id);if(questionEligible(q.id)&&[{subject:q.subject,head:q.taxonomyHead,chapter:q.topic},...q.additionalPaths].some(p=>p.subject==='Geography'&&p.head==='Physical Geography'&&p.chapter==='Universe, Solar System, Shape and Size of Earth'))expectedFirstChapter.add(q.id);}
   assert.equal(byId.get(firstPhysicalChapter).questionCount,expectedFirstChapter.size);
   assert.equal(byId.get(otherGeomorphology).questionCount, 7);
-  assert.equal(byId.get(planets).questionCount, 12); // New NDA I 2023 Q121 heliocentric-model occurrence.
+  assert.equal(byId.get(planets).questionCount, 11); // NDA I 2022 Q117 belongs to Rotation and Time, not Planets.
   assert.ok(byId.get(planets).questionIdsByExam.NDA.includes('nda-2026-i-119'),'Fresh terrestrial-planet placement must reach the live leaf');
   assert.ok(data.legacyQuestionSets[oldEarthInterior].length < 41);
   assert.ok(data.legacyAliases[oldEarthInterior].length > 1);
@@ -661,7 +661,11 @@ test("V3 topic and leaf snapshots match exact scoped inventories", async () => {
   assert.equal(response.status, 201);
   assert.equal(body.matchingCount, 10);
   assert.equal(body.questions.length, 10);
-  assert.ok(body.questions.every((question) => question.subtopic === "Planets"));
+  // Historical V3 selection freezes membership, not obsolete classification:
+  // NDA I 2022 Q117 tests rotation and now has its reviewed correct home.
+  const frozenPlanetIds = new Set(Object.values(data.nodes.find(n=>n.id===planets).questionIdsByExam).flat());
+  assert.deepEqual(new Set(body.questions.map(q=>q.id)),frozenPlanetIds);
+  assert.equal(body.questions.find(q=>q.id==='nda-2022-i-117').subtopic,'Rotation and Time');
   assert.ok(body.questions.every((question) => !("answer" in question) && !("explanation" in question)));
   assert.ok(body.questions.every((question) => /^[a-f0-9]{64}$/.test(question.sourceTextHash)));
 });

@@ -13,12 +13,13 @@ import officialNda2024IPaper from '../../../content/nda-2024-i-official-paper.js
 import officialNda2023IIPaper from '../../../content/nda-2023-ii-official-paper.json';
 import officialNda2023IPaper from '../../../content/nda-2023-i-official-paper.json';
 import officialNda2022IIPaper from '../../../content/nda-2022-ii-official-paper.json';
+import officialNda2022IPaper from '../../../content/nda-2022-i-official-paper.json';
 import {questionEligible} from '../../../lib/question-review';
 import reviewed2024Audit from '../../../content/audits/nda-2024-ii-review.json';
 
 export const metadata = { title: "Sources — added PYQ papers", description: "Added papers, available GS questions and source-review coverage." };
 export default function SourcesPage() {
-  const officialIds=new Set([...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions].filter(q=>questionEligible(q.id)).map(q=>q.id));
+  const officialIds=new Set([...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions].filter(q=>questionEligible(q.id)).map(q=>q.id));
   const available=[...new Map([...pyqQuestions,...historicalPyqQuestions.filter(q=>officialIds.has(q.id))].map(q=>[q.id,q])).values()];
   const groups = new Map<string, { exam: PyqExam; year: number; paper: string; count: number }>();
   for (const question of available) {
@@ -36,7 +37,7 @@ export default function SourcesPage() {
       const official2024=group.exam==='NDA'&&group.year===2024&&group.paper==='I';
       const completeNda=group.exam==='NDA'&&[2025,2026].includes(group.year)&&['I','II'].includes(group.paper);
       const official2023=group.exam==='NDA'&&group.year===2023&&['I','II'].includes(group.paper);
-      const official2022=group.exam==='NDA'&&group.year===2022&&group.paper==='II';
+      const official2022=group.exam==='NDA'&&group.year===2022&&['I','II'].includes(group.paper);
       const reviewedNda=official2022||official2023||official2024||reviewed2024||completeNda;
       const provisional=group.exam==='NDA'&&group.year===2026&&['I','II'].includes(group.paper);
       const withdrawnNumbers=official2024?[101]:group.exam==='NDA'&&group.year===2025&&group.paper==='II'?[85]:[];

@@ -1,0 +1,885 @@
+{
+  "paperId": "nda-2022-i-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2022,
+    "session": "I",
+    "paper": "GAT",
+    "paperCode": "SDFR-F-TAG",
+    "series": "A",
+    "language": "English page extract",
+    "examDate": null,
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2022-1.pdf",
+    "sha256": "bbad095a0e5a323aef8f839bd9ac2fbfa9a255c5ba8cd0479a5d17d93d569002"
+  },
+  "pdfPageMapping": {
+    "pages": 26,
+    "cover": 1,
+    "english": "PDF 2–9 = printed 2–9",
+    "partB": "PDF 10–26 = printed (2 × PDF page − 9)",
+    "extractCaveat": "Hindi counterpart pages and back instructions are absent; all 150 English numbered questions are present."
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "filenameDate": "2022-11-25",
+    "retrievedAt": "2026-10-28",
+    "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-I-22-GAT-251122.pdf",
+    "asset": "/papers/nda-2022-i-gat/official-final-key.pdf",
+    "sha256": "2dcd863b5ebb9f3fcb2b03a6733df2581c220f613eb50ecec674f806d359fb81",
+    "page": 1,
+    "series": "A",
+    "session": "I",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "Direct UPSC HTTPS download, 3024543 bytes, four scanned series pages. Series A page 1 header NDA & NA-I-2022, GAT, 600 marks, NIL dropped, 150 scoring."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2022-2022-1-105",
+      "sha256": "55cfa3f9b9eafeced2d29b83768bc4aa1643cefc140d8a28fd24bff6136dadbe",
+      "value": {
+        "id": "cds-2022-2022-1-105",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Who among the following had the shortest span in office as the Prime Minister of India?",
+        "sourceTextHash": "fd7b5bf4885cddcddb1c1a3e60c009b8fbf5b9c0e1f5855843f0434702742351",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 105,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2022_gat_anskey",
+          "rawQuestionText": "Who among the following had the shortest span in office as the Prime Minister of India?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 105,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Who among the following had the shortest span in office as the Prime Minister of India?"
+        ],
+        "options": {
+          "A": "Lal Bahadur Shastri",
+          "B": "Chaudhary Charan Singh",
+          "C": "Chandra Shekhar",
+          "D": "H. D. Deve Gowda"
+        },
+        "answer": "B",
+        "explanation": "Original NDA 2022-1 Q105, page 18, visually checked against its complete stem and options; the matching Series A final key accepts B.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2022-2022-1-147",
+      "sha256": "1e62c057bc4a2fb84f44ed9ba9e06972ac6a9fa7a60a83cf70d633addd26cd96",
+      "value": {
+        "id": "cds-2022-2022-1-147",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Who among the following is the Chairperson of the Goods and Services Tax Council?",
+        "sourceTextHash": "9901fd566c004d7102fc1061ac30ef08e8a45deba5b850c481e5f29b5422e6cf",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 147,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2022_gat_anskey",
+          "rawQuestionText": "Who among the following is the Chairperson of the Goods and Services Tax Council?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 147,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Who among the following is the Chairperson of the Goods and Services Tax Council?"
+        ],
+        "options": {
+          "A": "The Prime Minister of India",
+          "B": "The Union Finance Minister",
+          "C": "The Speaker of the Lok Sabha",
+          "D": "The President of India"
+        },
+        "answer": "B",
+        "explanation": "Original NDA 2022-1 Q147, page 26, visually checked against its complete stem and options; the matching Series A final key accepts B.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2022-2022-1-104",
+      "sha256": "036f524a17d9a182f960f4ec216e46401735cdc7a00dfdb09906736c3870a4a2",
+      "value": {
+        "id": "cds-2022-2022-1-104",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Parliament of India is primarily based on the model of",
+        "sourceTextHash": "1265f5b93c2b13d8ccb18e43768d8c7e51b3898ca0aa56fc16cca509064ea309",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 104,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2022_gat_anskey",
+          "rawQuestionText": "The Parliament of India is primarily based on the model of"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 104,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Parliament of India is primarily based on the model of"
+        ],
+        "options": {
+          "A": "German Parliament",
+          "B": "British Parliament",
+          "C": "American Congress",
+          "D": "French Parliament"
+        },
+        "answer": "B",
+        "explanation": "Original NDA 2022-1 Q104, page 18, visually checked against its complete stem and options; the matching Series A final key accepts B.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2022-2022-1-127",
+      "sha256": "c1c41fe4d1cb712137941e32f6c991a70a50d22c29852e53d6d0e48f7a536a7d",
+      "value": {
+        "id": "cds-2022-2022-1-127",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Nkrumah was one of the five leaders, who comprised the core of the Non-Aligned Movement (NAM). He was the leader of which country in Africa?",
+        "sourceTextHash": "203292d77fbe6e6aa7e763787d1dae11113df1a03c780ac8c50395bc478caf24",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 127,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2022_gat_anskey",
+          "rawQuestionText": "Nkrumah was one of the five leaders, who comprised the core of the Non-Aligned Movement (NAM). He was the leader of which country in Africa?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 127,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Nkrumah was one of the five leaders, who comprised the core of the Non-Aligned Movement (NAM). He was the leader of which country in Africa?"
+        ],
+        "options": {
+          "A": "Nigeria",
+          "B": "Kenya",
+          "C": "Uganda",
+          "D": "Ghana"
+        },
+        "answer": "D",
+        "explanation": "Original NDA 2022-1 Q127, page 23, visually checked against its complete stem and options; the matching Series A final key accepts D.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-107",
+      "sha256": "b1bbce38a182e082f95b568be75c85faca4cb2bb49b1b952adb7ec987679141a",
+      "value": {
+        "id": "nda-2022-i-107",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "According to the Indian Meteorological Department, which of the following is/are the feature/features of cloudburst? 1. Heavy precipitation in short period of time in a limited geographical area 2. It occurs generally during monsoon period and triggers flash flood and landslides Select the correct answer using the code given below.",
+        "sourceTextHash": "642843149cd7f75c7e08481becd24ed7f5b43ae69021bee00caa9fc0a62a7f1c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 107,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "According to the Indian Meteorological Department, which of the following is/are the feature/features of cloudburst? 1. Heavy precipitation in short period of time in a limited geographical area 2. It occurs generally during monsoon period and triggers flash flood and landslides Select the correct answer using the code given below."
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 107,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Weather Systems & Air Masses",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "According to the Indian Meteorological Department, which of the following is/are the feature/features of cloudburst? 1. Heavy precipitation in short period of time in a limited geographical area 2. It occurs generally during monsoon period and triggers flash flood and landslides Select the correct answer using the code given below."
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-108",
+      "sha256": "2b2f8021196d691fcb2a915e858f89ef3536d4cd84e27b0d962435770278f0e6",
+      "value": {
+        "id": "nda-2022-i-108",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In a group discussion on shape and size of the Earth, three students stated the following points: 1. Student 1: The shape of the Earth is basically an oblate spheroid. 2. Student 2: The polar diameter of the Earth is more than the equatorial diameter. 3. Student 3: Bulge along the equatorial region is due to revolution of the Earth. Who among the above students is/are correct?",
+        "sourceTextHash": "4aade6015885312a0c2517a9fe1c9380e592b6f0adfaf78d6248115895338855",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 108,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "In a group discussion on shape and size of the Earth, three students stated the following points: 1. Student 1: The shape of the Earth is basically an oblate spheroid. 2. Student 2: The polar diameter of the Earth is more than the equatorial diameter. 3. Student 3: Bulge along the equatorial region is due to revolution of the Earth. Who among the above students is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 108,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Earth Motions & Time",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "In a group discussion on shape and size of the Earth, three students stated the following points: 1. Student 1: The shape of the Earth is basically an oblate spheroid. 2. Student 2: The polar diameter of the Earth is more than the equatorial diameter. 3. Student 3: Bulge along the equatorial region is due to revolution of the Earth. Who among the above students is/are correct?"
+        ],
+        "options": {
+          "A": "Student 1 only",
+          "B": "Student 1 and Student 2 only",
+          "C": "Student 2 and Student 3 only",
+          "D": "Student 1, Student 2 and Student 3"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-109",
+      "sha256": "b3efe58f2df6db88448b3ea396f9bf1083bd1f2b0401bc35570b74c47812e726",
+      "value": {
+        "id": "nda-2022-i-109",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "While watching news, you hear about a place, of which you had never heard earlier. You want to know more about the place and you want to locate it on the map. Which of the following is/are required for you to be able to locate the place on the map?",
+        "sourceTextHash": "84dfdd9e5b934d93de4b6481f483e0ed2952cb8225db20fa585021ffb295ba94",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 109,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "While watching news, you hear about a place, of which you had never heard earlier. You want to know more about the place and you want to locate it on the map. Which of the following is/are required for you to be able to locate the place on the map?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 109,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "While watching news, you hear about a place, of which you had never heard earlier. You want to know more about the place and you want to locate it on the map. Which of the following is/are required for you to be able to locate the place on the map?"
+        ],
+        "options": {
+          "A": "Only latitude of the place",
+          "B": "Only longitude of the place",
+          "C": "Both longitude and latitude of the place",
+          "D": "Latitude, longitude and altitude of the place"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-110",
+      "sha256": "ed06d1830d298e04000b7ef014eee08861bcecdb6383d15bed41b6666c13aa97",
+      "value": {
+        "id": "nda-2022-i-110",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements with respect to Global Positioning System (GPS) is not correct?",
+        "sourceTextHash": "6401c43653c517a584fdb7d204b3f932d96278071bde2f5d171a7ab4c9326ffa",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 110,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "Which one of the following statements with respect to Global Positioning System (GPS) is not correct?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 110,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "GPS & Location",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements with respect to Global Positioning System (GPS) is not correct?"
+        ],
+        "options": {
+          "A": "It is based on network of satellites orbiting above the Earth.",
+          "B": "It is based on the system of triangulation.",
+          "C": "GPS receivers provide location in terms of latitude, longitude and altitude.",
+          "D": "It provides information exclusively for military operations."
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-117",
+      "sha256": "58542c0a3f32edb2bc9db27e16f473c538e1063185d4ac9812fac900b0c016c0",
+      "value": {
+        "id": "nda-2022-i-117",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Inhabitants are unaware of the speed of rotation of the planet Earth because 1. the angular velocity is constant for each place on the Earth's surface 2. the atmosphere rotates with the Earth 3. there are no nearby objects, either stationary or moving at a rate different from that of the Earth Which of the above is/are the correct explanation(s)?",
+        "sourceTextHash": "c3bbf13b8341eece67dfdead2968dc5f847470acee87e297b9e0898c45395397",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 117,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "Inhabitants are unaware of the speed of rotation of the planet Earth because 1. the angular velocity is constant for each place on the Earth's surface 2. the atmosphere rotates with the Earth 3. there are no nearby objects, either stationary or moving at a rate different from that of the Earth Which of the above is/are the correct explanation(s)?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 117,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Atmospheric Composition & Structure",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Inhabitants are unaware of the speed of rotation of the planet Earth because 1. the angular velocity is constant for each place on the Earth's surface 2. the atmosphere rotates with the Earth 3. there are no nearby objects, either stationary or moving at a rate different from that of the Earth Which of the above is/are the correct explanation(s)?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-118",
+      "sha256": "cb8eebc9f2e9bf7b9180aec4e1942dbcaa4b622f08f06d1e9e5d314914513eaf",
+      "value": {
+        "id": "nda-2022-i-118",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "While travelling to a hilly region, you notice a massive boulder, which was loosened by heavy rains and moved downhill. This has resulted due to which of the following processes? 1. Mass wasting 2. Erosion 3. Weathering Select the correct answer using the code given below.",
+        "sourceTextHash": "8886be47d01025c7fbbab0c53053c83a5651369f39eb85c260575af32f545d0d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 118,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "While travelling to a hilly region, you notice a massive boulder, which was loosened by heavy rains and moved downhill. This has resulted due to which of the following processes? 1. Mass wasting 2. Erosion 3. Weathering Select the correct answer using the code given below."
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 118,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Weathering & Erosional Processes",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "While travelling to a hilly region, you notice a massive boulder, which was loosened by heavy rains and moved downhill. This has resulted due to which of the following processes? 1. Mass wasting 2. Erosion 3. Weathering Select the correct answer using the code given below."
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-119",
+      "sha256": "fef6cb3483645231ab9c0bd446c46bd410169fa1b2cfeed5ae70a861b4760aa5",
+      "value": {
+        "id": "nda-2022-i-119",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements in respect of landslides are correct? 1. These occur only on gentle slopes during rain. 2. They generally occur in clay-rich soil. 3. Earthquakes trigger landslides. Select the correct answer using the code given below.",
+        "sourceTextHash": "d8ee81ce520b07011ad2f4a035e23ae52b97d35fda65d5fd75c6c367248a37cc",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 119,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "Which of the following statements in respect of landslides are correct? 1. These occur only on gentle slopes during rain. 2. They generally occur in clay-rich soil. 3. Earthquakes trigger landslides. Select the correct answer using the code given below."
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 119,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earthquakes & Seismology",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements in respect of landslides are correct? 1. These occur only on gentle slopes during rain. 2. They generally occur in clay-rich soil. 3. Earthquakes trigger landslides. Select the correct answer using the code given below."
+        ],
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1 and 3 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-120",
+      "sha256": "7bf7493bc67241a389fa120049dcd365946e97ac7a90589d6ec659b301bbc370",
+      "value": {
+        "id": "nda-2022-i-120",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following features about a geographical phenomenon: 1. Torrents of snow and ice roaring down a steep mountain side 2. It is hazardous to skiers and mountaineers 3. It involves a mix of falling, rolling, sliding and flowing of materials Which of the following phenomena can be identified with the above features?",
+        "sourceTextHash": "e6dec5818e9f3111488d9cd7752838fe108f5443b7a61db169fff4d50776f6f5",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 120,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "Consider the following features about a geographical phenomenon: 1. Torrents of snow and ice roaring down a steep mountain side 2. It is hazardous to skiers and mountaineers 3. It involves a mix of falling, rolling, sliding and flowing of materials Which of the following phenomena can be identified with the above features?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 120,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following features about a geographical phenomenon: 1. Torrents of snow and ice roaring down a steep mountain side 2. It is hazardous to skiers and mountaineers 3. It involves a mix of falling, rolling, sliding and flowing of materials Which of the following phenomena can be identified with the above features?"
+        ],
+        "options": {
+          "A": "Slump and earthflow",
+          "B": "Avalanche",
+          "C": "Landslide",
+          "D": "Rockslide"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-133",
+      "sha256": "9bd04598972d88a946a32f4e377622d7a4ed870294d24989fcbf416d7997341e",
+      "value": {
+        "id": "nda-2022-i-133",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Snow, sleet and hail are the forms of",
+        "sourceTextHash": "03c335c2f374de5a3b9ebcc816f762d4a959762b5d532da8f320909c367615db",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 133,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "Snow, sleet and hail are the forms of"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 133,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Rainfall & Precipitation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Snow, sleet and hail are the forms of"
+        ],
+        "options": {
+          "A": "precipitation",
+          "B": "condensation",
+          "C": "transpiration",
+          "D": "evaporation"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-134",
+      "sha256": "1d9acafee6a5f4c5fad706cd7059dca537b7d0d451f68b0ddbc378b9b8062142",
+      "value": {
+        "id": "nda-2022-i-134",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is likely to be the most prevalent form of weathering in hot-tropical desert areas?",
+        "sourceTextHash": "fd91673520d39f5a18f437395c14978e412fd11bb356195d3b876f0a3dd79d2f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 134,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "Which one of the following is likely to be the most prevalent form of weathering in hot-tropical desert areas?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 134,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Weathering & Erosional Processes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is likely to be the most prevalent form of weathering in hot-tropical desert areas?"
+        ],
+        "options": {
+          "A": "Mechanical",
+          "B": "Chemical",
+          "C": "Biological",
+          "D": "Leaching"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-138",
+      "sha256": "c9dc322fa4d80bd39a64855fb206c7242b6f63953845cb8f9b30767aa1ea215e",
+      "value": {
+        "id": "nda-2022-i-138",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements: 1. Rocks do not remain in their original form for long and undergo transformation. 2. Transformation of rocks is caused by weathering, erosion and metamorphic action. Which of the statements given above is/are correct?",
+        "sourceTextHash": "77a3b00ac54f9341e674924885fde434d61636518fb6638e49fabb4153d4f412",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 138,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "Consider the following statements: 1. Rocks do not remain in their original form for long and undergo transformation. 2. Transformation of rocks is caused by weathering, erosion and metamorphic action. Which of the statements given above is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 138,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements: 1. Rocks do not remain in their original form for long and undergo transformation. 2. Transformation of rocks is caused by weathering, erosion and metamorphic action. Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-139",
+      "sha256": "315934ec9dae20ac4b6dcb871dabd751b35e1782081fbb865b5572f8e7e31790",
+      "value": {
+        "id": "nda-2022-i-139",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Weathering, mass wasting, erosion and transportation are indicators of which one of the following processes?",
+        "sourceTextHash": "6d7ea4edd37b8805b558b167d0aba140c75e063631fc8e55c5f0786c325711ff",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 139,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "Weathering, mass wasting, erosion and transportation are indicators of which one of the following processes?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 139,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Weathering & Erosional Processes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Weathering, mass wasting, erosion and transportation are indicators of which one of the following processes?"
+        ],
+        "options": {
+          "A": "Denudation",
+          "B": "Endogenetic process",
+          "C": "Diastrophism",
+          "D": "Mountain building"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-136",
+      "sha256": "0c80ad27eaa01eac3a0fa3807fe60c64b9e2a03ab9d952138b7741d07bdaec16",
+      "value": {
+        "id": "nda-2022-i-136",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In India, rigid and stable elevated lands, denuded rocks and series of scarps are the features of which of the following?",
+        "sourceTextHash": "0317e69523d28044349342c2cfebb955209c60831e191b896c5b767491a9fe78",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 136,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "In India, rigid and stable elevated lands, denuded rocks and series of scarps are the features of which of the following?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 136,
+        "subject": "Geography",
+        "topic": "Coastal & Island Geography",
+        "subtopic": "Coasts & Islands",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In India, rigid and stable elevated lands, denuded rocks and series of scarps are the features of which of the following?"
+        ],
+        "options": {
+          "A": "Northern mountains",
+          "B": "Peninsular plateau",
+          "C": "Northern plains",
+          "D": "Coastal plains"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-137",
+      "sha256": "a86639f6c559ad204df708e47b9923c8dc25af96918aef625158a8c62d8ab65f",
+      "value": {
+        "id": "nda-2022-i-137",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "A person had visited a region in India and found trees, such as Khair, Neem, Khejri and Palas. Which one of the following regions is she/he expected to have visited?",
+        "sourceTextHash": "e64140a4944e290784f16ec6b667c7dc9f8e48dd82936756d2889fa9c5669a7a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 137,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "A person had visited a region in India and found trees, such as Khair, Neem, Khejri and Palas. Which one of the following regions is she/he expected to have visited?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 137,
+        "subject": "Geography",
+        "topic": "Coastal & Island Geography",
+        "subtopic": "Coasts & Islands",
+        "difficulty": "Easy",
+        "promptLines": [
+          "A person had visited a region in India and found trees, such as Khair, Neem, Khejri and Palas. Which one of the following regions is she/he expected to have visited?"
+        ],
+        "options": {
+          "A": "Malabar Coast",
+          "B": "Garo Hills",
+          "C": "Sunderban Delta",
+          "D": "Desert Region"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-140",
+      "sha256": "21f9c1819bec34827a41ba24251d64dd7031dea2d83453813c167a75d306d835",
+      "value": {
+        "id": "nda-2022-i-140",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "If you want to observe moraines, eskers and outwash plains, which one of the following Union Territories you may have to visit?",
+        "sourceTextHash": "d23887901edfc041f9788497bb337ba272ac3dfdd2b2a9dd5cbd1d552f5c0028",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 140,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "If you want to observe moraines, eskers and outwash plains, which one of the following Union Territories you may have to visit?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 140,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "If you want to observe moraines, eskers and outwash plains, which one of the following Union Territories you may have to visit?"
+        ],
+        "options": {
+          "A": "Andaman and Nicobar Islands",
+          "B": "Lakshadweep",
+          "C": "Puducherry",
+          "D": "Ladakh"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-146",
+      "sha256": "c938368b54f0fe23928371ebd1222c04037f15f61e6dcbc217260c0c63058e61",
+      "value": {
+        "id": "nda-2022-i-146",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "According to the Forest Survey Report, 2021, area-wise which one of the following States has the largest forest cover in India?",
+        "sourceTextHash": "471cca7d0dced162cd94b22893345b26e7cbb7cae60cf7bf972f20338fb4e2ba",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 146,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "According to the Forest Survey Report, 2021, area-wise which one of the following States has the largest forest cover in India?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 146,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Forest Cover",
+        "difficulty": "Easy",
+        "promptLines": [
+          "According to the Forest Survey Report, 2021, area-wise which one of the following States has the largest forest cover in India?"
+        ],
+        "options": {
+          "A": "Odisha",
+          "B": "Madhya Pradesh",
+          "C": "Arunachal Pradesh",
+          "D": "Chhattisgarh"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2022-i-135",
+      "sha256": "362ca423bd2fe4cfb5530cd9bf8c00b38293d6831faf84f2f088a52a38850c6b",
+      "value": {
+        "id": "nda-2022-i-135",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following cities was the first to attain the status of a 'megacity'?",
+        "sourceTextHash": "85c06d6c3ab0440a8b3db4ae4e77874e4e21a53652e12f5f108dcddba6ffde05",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2022,
+          "paper": "I",
+          "questionNumber": 135,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_I_22_GAT_251122_78a9116ef54a8431f78265e2811434d5.pdf",
+          "rawQuestionText": "Which one of the following cities was the first to attain the status of a 'megacity'?"
+        },
+        "exam": "NDA",
+        "year": 2022,
+        "paper": "I",
+        "questionNumber": 135,
+        "subject": "Geography",
+        "topic": "Human Development & Services",
+        "subtopic": "Service Centres",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following cities was the first to attain the status of a 'megacity'?"
+        ],
+        "options": {
+          "A": "London",
+          "B": "Paris",
+          "C": "New York",
+          "D": "Washington"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

@@ -30,7 +30,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 - **5. Marathas and Regional Powers:** Shivaji; Peshwas and confederacy; Sikh powers; Mysore; Awadh and Hyderabad.
 - **6. Medieval Society and Economy:** Agrarian relations; Craft production; Trade and towns; Technology; Women and social structures; Village administration.
 - **7. Bhakti and Sufi Traditions:** Alvars and Nayanars; Saguna and nirguna traditions; Saints and compositions; Sufi orders; Institutions and practices; Siddhas and Lingayats.
-- **8. Sources and Chronology:** Foreign accounts.
+- **8. Sources and Chronology:** Foreign accounts; Literary sources.
 ### Modern India & National Movement
 
 - **1. European Companies:** Portuguese; Dutch and Danish; English and French; Factories and trading networks; Carnatic conflicts.
@@ -289,7 +289,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 ### Environment & Geography
 
 - **1. Climate and Conservation Developments:** Climate negotiations; Conservation initiatives; Environmental policy; Environmental reports and indices.
-- **2. Species and Sites in News:** Species discoveries; Protected-area developments; Wetland recognition; Urban environmental recognition; Habitat developments.
+- **2. Species and Sites in News:** Species discoveries; Species conservation status; Protected-area developments; Wetland recognition; Urban environmental recognition; Habitat developments.
 - **3. Disasters and Places in News:** Disaster events; Geographical discoveries; Geological developments; Significant locations.
 ### Science, Technology & Health
 

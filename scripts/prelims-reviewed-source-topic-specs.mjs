@@ -372,4 +372,16 @@ export const sourceTopicSpecs = {
     placementRule:'Use for the particle concept and its physical significance. Recent-news framing alone does not make a static concept Event-based; add Current Affairs only when the event is materially tested.',
     representativeQuestions:['CSE 2013 GS-I Series A Q96: the importance of discovering the Higgs boson'],
   },
+  'History/Medieval India/Sources and Chronology/Literary sources': {
+    includes:['Medieval literary and documentary manuals as evidence','Legal, administrative and epistolary texts','Dating and identifying purposes of medieval source works'],
+    excludes:['Modern legal institutions','Ancient texts without medieval context','Foreign traveller accounts when the traveller is the tested focus'],
+    placementRule:'Use for the content, date and historical use of a medieval text. Add a cultural-literature home only when the literary tradition itself is materially tested.',
+    representativeQuestions:['NDA I 2022 Series A Q126: Lekhapaddhati and legal documents'],
+  },
+  'Current Affairs/Environment & Geography/Species and Sites in News/Species conservation status': {
+    includes:['Dated IUCN threat assessments for named species','Changes to conservation status','Species risk classifications in news'],
+    excludes:['Discovery of an unnamed new species','Protected-area boundary changes without species assessment','Static definitions of risk categories without a news subject'],
+    placementRule:'Use when the source tests a named species conservation assessment in its examination-date context; retain a relevant static biodiversity placement when risk category knowledge is material.',
+    representativeQuestions:['NDA I 2022 Series A Q148: Red Sanders IUCN category'],
+  },
 };
