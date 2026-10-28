@@ -1,0 +1,87 @@
+[
+  {
+    "number": 51,
+    "pdfPage": 10,
+    "printedPage": 11,
+    "relativeBounds": [
+      [
+        0.145,
+        0.225,
+        0.29,
+        0.485
+      ]
+    ],
+    "asset": "/question-figures/nda-2023-i-q51.png",
+    "sha256": "a359db4ad8912f51d2cf985e69fda24a220f9ad2890aa8e45ff433114b50f52b",
+    "description": "Original S₁/S₂ spring balances with W₁/W₂ reading arrows and suspended 10 kg mass",
+    "reviewStatus": "approved"
+  },
+  {
+    "number": 54,
+    "pdfPage": 10,
+    "printedPage": 11,
+    "relativeBounds": [
+      [
+        0.54,
+        0.58,
+        0.86,
+        0.755
+      ]
+    ],
+    "asset": "/question-figures/nda-2023-i-q54.png",
+    "sha256": "eb8d69b711ab8661fb9643711b1b3323a8045b4471d709f9a13b8c0eee7dbd05",
+    "description": "Original connected X/Y containers, liquid height h and valve",
+    "reviewStatus": "approved"
+  },
+  {
+    "number": 85,
+    "pdfPage": 14,
+    "printedPage": 19,
+    "relativeBounds": [
+      [
+        0.545,
+        0.56,
+        0.94,
+        0.71
+      ]
+    ],
+    "asset": "/question-figures/nda-2023-i-q85.png",
+    "sha256": "b0801c87febe557eb81d6e46cb1b41d02477bd1449e4fa0343263b0e3ab036cc",
+    "description": "Original concave mirror with rectangle ABCD and f, 2f, 3f distances",
+    "reviewStatus": "approved"
+  },
+  {
+    "number": 86,
+    "pdfPage": 15,
+    "printedPage": 21,
+    "relativeBounds": [
+      [
+        0.105,
+        0.24,
+        0.48,
+        0.41
+      ]
+    ],
+    "asset": "/question-figures/nda-2023-i-q86.png",
+    "sha256": "f6f0ab70491344422743a60c31caf9af50c0b9616eb048b67c36ec66e264661e",
+    "description": "Original perpendicular mirrors XY/YZ, rotated X′YZ′, ray arrows and θ",
+    "reviewStatus": "approved"
+  },
+  {
+    "number": 128,
+    "pdfPage": 21,
+    "printedPage": 33,
+    "relativeBounds": [
+      [
+        0.54,
+        0.12,
+        0.88,
+        0.215
+      ]
+    ],
+    "asset": "/question-figures/nda-2023-i-q128.png",
+    "sha256": "d3c63c39483540fbf9d7096c49db474827c0d9b6d78d6579ebabae8a05dd9a6c",
+    "description": "Original pair of parallel resistors R followed by series R",
+    "reviewStatus": "approved"
+  }
+]

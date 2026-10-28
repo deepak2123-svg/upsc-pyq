@@ -25,7 +25,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 
 - **1. Early Medieval Kingdoms:** Palas and Senas; Gurjara-Pratiharas; Rashtrakutas; Chalukyas; Pallavas; Cholas and local administration; Historical geography.
 - **2. Delhi Sultanate:** Slave dynasty; Khaljis; Tughlaqs; Sayyids and Lodis; Administration and iqta; Markets and revenue.
-- **3. Regional Kingdoms:** Vijayanagara; Bahmani kingdom; Deccan sultanates; Bengal and Gujarat; Kashmir; Rajput states.
+- **3. Regional Kingdoms:** Vijayanagara; Bahmani kingdom; Deccan sultanates; Bengal and Gujarat; Kashmir; Rajput states; Assam and Ahoms.
 - **4. Mughal Empire:** Babur and Humayun; Akbar; Jahangir and Shah Jahan; Aurangzeb; Mansabdari and jagirdari; Revenue administration; Succession and decline.
 - **5. Marathas and Regional Powers:** Shivaji; Peshwas and confederacy; Sikh powers; Mysore; Awadh and Hyderabad.
 - **6. Medieval Society and Economy:** Agrarian relations; Craft production; Trade and towns; Technology; Women and social structures; Village administration.
@@ -86,7 +86,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 ### World Geography
 
 - **1. Continents and Regions:** Asia; Africa; Europe; North America; South America; Oceania; Antarctica.
-- **2. World Physical Features:** Mountains and plateaus; Plains and deserts; Rivers and lakes; Groundwater basins; Seas and straits; Islands and peninsulas; Geological eras.
+- **2. World Physical Features:** Mountains and plateaus; Plains and deserts; Rivers and lakes; Groundwater basins; Seas and straits; Islands and peninsulas; Geological eras; Soil-forming regimes.
 - **3. World Resources:** Agricultural regions; Fishing grounds; Mineral belts; Energy regions; Industrial regions; Transport routes.
 - **4. World Mapping:** Countries and capitals; Regions and countries; Borders and enclaves; International rivers; Strategic waterways; Places in news.
 - **5. Cartography and Geospatial Tools:** Map scale and distance; Topographic maps; Map projections; Mapping institutions; Remote sensing and GIS; Geospatial coordinates.

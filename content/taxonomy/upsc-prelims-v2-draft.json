@@ -1537,7 +1537,8 @@
         "Deccan sultanates",
         "Bengal and Gujarat",
         "Kashmir",
-        "Rajput states"
+        "Rajput states",
+        "Assam and Ahoms"
       ],
       "boundary": "Questions testing Regional Kingdoms in Medieval India; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -1637,6 +1638,26 @@
       ],
       "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
       "editorialExampleStatus": "pending-real-question-pilot"
+    },
+    {
+      "id": "syllabus:history/medieval-india/regional-kingdoms/assam-and-ahoms",
+      "parentId": "syllabus:history/medieval-india/regional-kingdoms",
+      "kind": "subpart",
+      "label": "Assam and Ahoms",
+      "order": 7,
+      "includes": [
+        "Ahom state, commanders and regional conflicts",
+        "Saraighat and regional resistance"
+      ],
+      "excludes": [
+        "Recent Assam state policy",
+        "Unrelated North-East ethnic geography"
+      ],
+      "placementRule": "Use for substantive Ahom polity/history; add modern recognition only when tested.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA I 2023 GAT Series A Q97: Lachit Borphukan and Saraighat"
+      ]
     },
     {
       "id": "syllabus:history/medieval-india/mughal-empire",
@@ -7911,7 +7932,8 @@
         "Groundwater basins",
         "Seas and straits",
         "Islands and peninsulas",
-        "Geological eras"
+        "Geological eras",
+        "Soil-forming regimes"
       ],
       "boundary": "Questions testing World Physical Features in World Geography; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -8031,6 +8053,27 @@
       "editorialExampleStatus": "source-question-reviewed",
       "representativeQuestions": [
         "NDA II 2023 GAT Series A Q79: oldest geological era"
+      ]
+    },
+    {
+      "id": "syllabus:geography/world-geography/world-physical-features/soil-forming-regimes",
+      "parentId": "syllabus:geography/world-geography/world-physical-features",
+      "kind": "subpart",
+      "label": "Soil-forming regimes",
+      "order": 8,
+      "includes": [
+        "Global pedogenic processes and water-balance regimes",
+        "Podsolisation, calcification, laterisation and gleisation"
+      ],
+      "excludes": [
+        "India-only soil mapping",
+        "Fertiliser chemistry",
+        "Seismic processes"
+      ],
+      "placementRule": "Use for global soil-process/climate associations without forcing an India-specific home; preserves established Physical Geography chapter/subpart numbering.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA I 2023 GAT Series A Q62 and Q132: forest pedogenesis and evapotranspiration"
       ]
     },
     {

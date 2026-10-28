@@ -12,6 +12,8 @@ export const defenceWorldHistory: readonly SyllabusSection[] = [
     // Defence-exam world history; no automatic CSE GS transfer.
     ['French Revolution',['Revolutionary government and the Terror']],
     ['First World War',['Economic and social consequences']],
+    ['Renaissance',['Art and artists']],
+    ['Exploration and Conquest',['European overseas expansion']],
   ]],
 ];
 export const englishSyllabus: readonly SyllabusSection[] = [

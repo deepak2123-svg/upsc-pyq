@@ -1,0 +1,845 @@
+{
+  "paperId": "nda-2023-i-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2023,
+    "session": "I",
+    "paper": "GAT",
+    "paperCode": "ASGT-F-ENG",
+    "series": "A",
+    "language": "English page extract",
+    "examDate": null,
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2023-1.pdf",
+    "sha256": "974d6dd6b6e49a6f5bcab3b75a509edd5b76ac5706b07adcbee33e5e3315e13e"
+  },
+  "pdfPageMapping": {
+    "pages": 24,
+    "cover": 1,
+    "english": "PDF 2–9 = printed 2–9",
+    "partB": "PDF 10–24 = printed (2 × PDF page − 9)",
+    "extractCaveat": "Hindi counterpart pages and back instructions are absent; all 150 English numbered questions are present."
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "filenameDate": "2023-11-01",
+    "retrievedAt": "2026-10-28",
+    "url": "https://www.upsc.gov.in/sites/default/files/AnsKey-NDA-NA-I-2023-GAT-011123.pdf",
+    "asset": "/papers/nda-2023-i-gat/official-final-key.pdf",
+    "sha256": "bc62d92e50d26b77b4eb9171cb3b05054a1aa2ada23600984b96956c8ee019d2",
+    "page": 1,
+    "series": "A",
+    "session": "I",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "Direct www.upsc.gov.in download: HTTP 200 application/pdf, four booklet pages. Bytes match the previously stored 155213-byte candidate. Non-www URL redirects to the homepage; it was not used as PDF evidence."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2023-2023-1-141",
+      "sha256": "a986a59967bdf414de735ae1d6d3f348fd4443d81fc77abdc7c9e11b88631383",
+      "value": {
+        "id": "cds-2023-2023-1-141",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Treaty of Yandabo was concluded as part of which one of the following wars ?",
+        "sourceTextHash": "94d1496c918de9a6dae0614e47adaadcc4f06427b73b134dc5268d198c3c6092",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 141,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2023_gat_anskey",
+          "rawQuestionText": "The Treaty of Yandabo was concluded as part of which one of the following wars ?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 141,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Treaty of Yandabo was concluded as part of which one of the following wars ?"
+        ],
+        "options": {
+          "A": "First Anglo-Burmese War",
+          "B": "Second Anglo-Burmese War",
+          "C": "Anglo-Kuki War",
+          "D": "Anglo-Maratha War"
+        },
+        "answer": "A",
+        "explanation": "Original NDA 2023-1 Q141, page 23, visually checked against its complete stem and options; the matching Series A final key accepts A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-57",
+      "sha256": "747511a343af0ec31285302b2abbf63d471c7cf8938bfc942cdcb7294e0ee93b",
+      "value": {
+        "id": "nda-2023-i-57",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not an igneous rock?",
+        "sourceTextHash": "b8d7ab9450fe4835ecaf202137a454cd861eac9f93f5d0693db1eada9480ce18",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 57,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Which one of the following is not an igneous rock?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 57,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not an igneous rock?"
+        ],
+        "options": {
+          "A": "Granite",
+          "B": "Slate",
+          "C": "Basalt",
+          "D": "Gabbro"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-58",
+      "sha256": "e58c1c2db199bae1a11e979b7bf5f4ccd409a2443430e3305b87245680b61bc7",
+      "value": {
+        "id": "nda-2023-i-58",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements is/are correct? 1. Hypocenter is the point on the surface of the Earth, nearest to the focus. 2. Velocity of earthquake waves is higher in denser materials. 3. P waves move faster and are the first to arrive at the surface of the Earth. Select the correct answer using the code given below:",
+        "sourceTextHash": "9e47f9a56c749e9e21295de952be959c189b970cb51c59d98dc4eb461d34568a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 58,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Which of the following statements is/are correct? 1. Hypocenter is the point on the surface of the Earth, nearest to the focus. 2. Velocity of earthquake waves is higher in denser materials. 3. P waves move faster and are the first to arrive at the surface of the Earth. Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 58,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earthquakes & Seismology",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements is/are correct? 1. Hypocenter is the point on the surface of the Earth, nearest to the focus. 2. Velocity of earthquake waves is higher in denser materials. 3. P waves move faster and are the first to arrive at the surface of the Earth. Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 and 2",
+          "B": "2 and 3",
+          "C": "1 and 3",
+          "D": "3 only"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-59",
+      "sha256": "85c230476082cbae84ec31a72e56230ee455c67dba26dbcf21e4ea805f87ac98",
+      "value": {
+        "id": "nda-2023-i-59",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In terms of geological time scale, the quaternary period consists of two epochs. They are:",
+        "sourceTextHash": "19b0ea6fc0c8c3964f60bb7ab703a449a0bcbe3493a825c2e79d9edad9bf35db",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 59,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "In terms of geological time scale, the quaternary period consists of two epochs. They are:"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 59,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Geological Time & Historical Geography",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In terms of geological time scale, the quaternary period consists of two epochs. They are:"
+        ],
+        "options": {
+          "A": "Pleistocene and Pliocene",
+          "B": "Holocene and Pleistocene",
+          "C": "Pleistocene and Miocene",
+          "D": "Holocene and Eocene"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-60",
+      "sha256": "eb2b5252b6cc3ce6ef3c49058481789df55e9fe9fa2d99ba299719e6b8c5b872",
+      "value": {
+        "id": "nda-2023-i-60",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the correct sequence of arrangement of the given planets in descending order of their density (in gm/cm3?",
+        "sourceTextHash": "138b5534b425f739e62d5a1eb9e749c743b466dc02e8f2c5d48226891e27cf9d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 60,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Which one of the following is the correct sequence of arrangement of the given planets in descending order of their density (in gm/cm3?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 60,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Solar System & Universe",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following is the correct sequence of arrangement of the given planets in descending order of their density (in gm/cm3?"
+        ],
+        "options": {
+          "A": "Earth > Jupiter > Venus > Saturn",
+          "B": "Jupiter > Earth > Saturn > Venus",
+          "C": "Earth > Venus > Jupiter > Saturn",
+          "D": "Earth > Venus > Saturn > Jupiter"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-61",
+      "sha256": "ea233b2b2f153d368b07f76afc6a2748977fbf4f53cd812a196e096e0f3d6493",
+      "value": {
+        "id": "nda-2023-i-61",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not a cold current?",
+        "sourceTextHash": "3890be2a909c9019a16941729b491f314ccbf3036005cf67a0c29372e8a96068",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 61,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Which one of the following is not a cold current?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 61,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Currents",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not a cold current?"
+        ],
+        "options": {
+          "A": "Western Australian Current",
+          "B": "Eastern Australian Current",
+          "C": "Benguela Current",
+          "D": "Peru Current"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-62",
+      "sha256": "cdac70d1952ed6dc873932e6649e563362aa11acd178cb74bf50cb394a6d8757",
+      "value": {
+        "id": "nda-2023-i-62",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The process of Podsolization is predominantly found in:",
+        "sourceTextHash": "124241e6c281f2974da2b323331dde5272ed9b7d15ff22514f073e4d1976b054",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 62,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "The process of Podsolization is predominantly found in:"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 62,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Soil-Forming Processes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The process of Podsolization is predominantly found in:"
+        ],
+        "options": {
+          "A": "Equatorial forest",
+          "B": "Monsoon forest",
+          "C": "Taiga forest",
+          "D": "Mediterranean forest"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-93",
+      "sha256": "4d41dc594a851ad153c45ef2bc89cdf02773862901b637cbd342eb0f391389db",
+      "value": {
+        "id": "nda-2023-i-93",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements: 1. Distance between the longitudes becomes zero on North Pole and South Pole. 2. Distance between the longitudes is maximum on the Equator. 3. Number of longitudes is more than number of latitudes. Which of the statements given above is/are correct?",
+        "sourceTextHash": "67a5b1ff598034bb9b355a575cee3abd2f595c9d824ca6c602063afbbdff79cf",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 93,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Consider the following statements: 1. Distance between the longitudes becomes zero on North Pole and South Pole. 2. Distance between the longitudes is maximum on the Equator. 3. Number of longitudes is more than number of latitudes. Which of the statements given above is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 93,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements: 1. Distance between the longitudes becomes zero on North Pole and South Pole. 2. Distance between the longitudes is maximum on the Equator. 3. Number of longitudes is more than number of latitudes. Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-132",
+      "sha256": "743795cbfd97356cfabca37f6f570264ceb7923a7907d0199560bbc24d00b8d1",
+      "value": {
+        "id": "nda-2023-i-132",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In the soil-forming regime, which one of the following occurs in a region where evapotranspiration exceeds precipitation significantly?",
+        "sourceTextHash": "378cbc68ba8f0dce8c88e3e611d2bb20040d0c02db353588cf3f2d0f64f8a8ea",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 132,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "In the soil-forming regime, which one of the following occurs in a region where evapotranspiration exceeds precipitation significantly?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 132,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Soil-Forming Processes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In the soil-forming regime, which one of the following occurs in a region where evapotranspiration exceeds precipitation significantly?"
+        ],
+        "options": {
+          "A": "Calcification",
+          "B": "Laterization",
+          "C": "Podsolization",
+          "D": "Gleization"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-133",
+      "sha256": "acca76f57aac5851741f125637fd18aa60ba96d40bfe9c09e2658677f390e7d0",
+      "value": {
+        "id": "nda-2023-i-133",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is found in the innermost part of the Earth?",
+        "sourceTextHash": "6baf5935b2bd19bc72a19144c5782289614b9493819e53f8480e39853d57be16",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 133,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Which one of the following is found in the innermost part of the Earth?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 133,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earth Structure & Folding",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is found in the innermost part of the Earth?"
+        ],
+        "options": {
+          "A": "Conrad discontinuity",
+          "B": "Moho discontinuity",
+          "C": "Guttenberg discontinuity",
+          "D": "Lehmann discontinuity"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-135",
+      "sha256": "e2bce4ccdfa2a49c52d16171f6d16351fcf5a489065e3fcd77b61bde27130feb",
+      "value": {
+        "id": "nda-2023-i-135",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the lowermost/innermost intrusive igneous rock?",
+        "sourceTextHash": "98af41ebceaeb0048067620efb973e948a2af11902179417c0379aaf4e0cc8bf",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 135,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Which one of the following is the lowermost/innermost intrusive igneous rock?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 135,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is the lowermost/innermost intrusive igneous rock?"
+        ],
+        "options": {
+          "A": "Laccolith",
+          "B": "Batholith",
+          "C": "Lopolith",
+          "D": "Phacolith"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-136",
+      "sha256": "db07e3deef32b3b9c63639da598088a0aa581b31eb5ba1e78b57dd9e686e492e",
+      "value": {
+        "id": "nda-2023-i-136",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "If it is 12 noon in New Delhi, what will be the time in London, UK?",
+        "sourceTextHash": "daa7b9e9fa100a9d30702edfbc941ea2047c1fa3fd55f5a6f2c752882c4ebcd8",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 136,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "If it is 12 noon in New Delhi, what will be the time in London, UK?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 136,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Earth Motions & Time",
+        "difficulty": "Easy",
+        "promptLines": [
+          "If it is 12 noon in New Delhi, what will be the time in London, UK?"
+        ],
+        "options": {
+          "A": "6:30 A.M.",
+          "B": "6:30 P.M.",
+          "C": "5:30 A.M.",
+          "D": "5:30 P.M."
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-137",
+      "sha256": "802a831ae54087a771e0e11fd2261061fb5011faea682b84e3be54464f9a7cc6",
+      "value": {
+        "id": "nda-2023-i-137",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following positions of Sun, Earth and Moon is/are suitable for Spring Tide? 1. SYZYGY Conjunction 2. SYZYGY Opposition 3. Quadrature Select the correct answer using the code given below",
+        "sourceTextHash": "e94ffed614a20985e84fc80dfd9a9ab905885c506189fcd292bc9f5cb33292ef",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 137,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Which of the following positions of Sun, Earth and Moon is/are suitable for Spring Tide? 1. SYZYGY Conjunction 2. SYZYGY Opposition 3. Quadrature Select the correct answer using the code given below"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 137,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Tides",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which of the following positions of Sun, Earth and Moon is/are suitable for Spring Tide? 1. SYZYGY Conjunction 2. SYZYGY Opposition 3. Quadrature Select the correct answer using the code given below"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "1 and 2",
+          "D": "1 and 3"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-96",
+      "sha256": "af0cf1c141bde451de35123df768193e8afbd35ff49453f6dc09464583dfe416",
+      "value": {
+        "id": "nda-2023-i-96",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "According to Koppen's climatic classifications, the Great Northern Plains of India have which one of the following climates?",
+        "sourceTextHash": "e4387e34d1430bbf09afebab8e6c54a113b33d737687a71dbf4a5f492367aca0",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 96,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "According to Koppen's climatic classifications, the Great Northern Plains of India have which one of the following climates?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 96,
+        "subject": "Geography",
+        "topic": "Climate & Monsoon",
+        "subtopic": "Indian Monsoon & Rainfall",
+        "difficulty": "Easy",
+        "promptLines": [
+          "According to Koppen's climatic classifications, the Great Northern Plains of India have which one of the following climates?"
+        ],
+        "options": {
+          "A": "Aw climate",
+          "B": "Cwg climate",
+          "C": "Amw climate",
+          "D": "Dfc climate"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-134",
+      "sha256": "277bc9244099189d0f2fec3ceb430056fe4fc63b7cf2495f7e41404921fbd307",
+      "value": {
+        "id": "nda-2023-i-134",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following tree species is/are found on Himalayas? 1. Oak 2. Rhododendron 3. Rosewood Select the correct answer using the code given below:",
+        "sourceTextHash": "f24adf5d707cd8bb011e9b27ffb1f42cf952001d26fc59864d60a8c7203b6418",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 134,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Which of the following tree species is/are found on Himalayas? 1. Oak 2. Rhododendron 3. Rosewood Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 134,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Natural Vegetation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which of the following tree species is/are found on Himalayas? 1. Oak 2. Rhododendron 3. Rosewood Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 and 3",
+          "C": "1 and 3",
+          "D": "1 and 2"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-92",
+      "sha256": "7f3f822fb6e5e1f4cc9b29cb026d5f9b1e05f7ec9b488cdf21a75ce9bca12f84",
+      "value": {
+        "id": "nda-2023-i-92",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following is the northernmost geographical location?",
+        "sourceTextHash": "e550d5746e5ceaa51a4e6f5cb57c28565ff5793eb0c2c2916dc95f57516ea299",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 92,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Which one among the following is the northernmost geographical location?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 92,
+        "subject": "Geography",
+        "topic": "World Places & Routes",
+        "subtopic": "Global Coordinates",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following is the northernmost geographical location?"
+        ],
+        "options": {
+          "A": "New Delhi",
+          "B": "Kathmandu",
+          "C": "Thimphu",
+          "D": "Dhaka"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-94",
+      "sha256": "402c5cf3654ff2ac43875a12fba6a4551f74999a8b3aadec795514b86fd5e280",
+      "value": {
+        "id": "nda-2023-i-94",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following states is the leading producer of Manganese in India?",
+        "sourceTextHash": "7715a0efc5c0095c298aedc572d14c8e3006f250cece084d126a69b1f1685dc1",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 94,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Which one among the following states is the leading producer of Manganese in India?"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 94,
+        "subject": "Geography",
+        "topic": "Minerals & Mining",
+        "subtopic": "Mineral Deposits",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following states is the leading producer of Manganese in India?"
+        ],
+        "options": {
+          "A": "Madhya Pradesh",
+          "B": "Jharkhand",
+          "C": "Rajasthan",
+          "D": "Karnataka"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-95",
+      "sha256": "6af085fa3b8e5af012317848f5b23bf42d2f58593cafb202e5a99722ec5a3b54",
+      "value": {
+        "id": "nda-2023-i-95",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Mica is mainly used in:",
+        "sourceTextHash": "e5a3e0ecd90a8d033966b5288b1ee47b7776663956bd90c96f4a07e3218e46d7",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 95,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Mica is mainly used in:"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 95,
+        "subject": "Geography",
+        "topic": "Industries",
+        "subtopic": "Industrial Location",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Mica is mainly used in:"
+        ],
+        "options": {
+          "A": "food and beverage industry.",
+          "B": "iron and steel industry.",
+          "C": "aluminium industry.",
+          "D": "electrical and electronic industries."
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-129",
+      "sha256": "76c608ab1253c3ca6597276e9950b9ce4bf7599ae43846037b460a62aa030826",
+      "value": {
+        "id": "nda-2023-i-129",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following scheme(s) is/are included under Bharatmala Pariyojana? 1. Develop the road connectivity to border areas 2. Development of coastal roads 3. Improvement in the efficiency of National Corridors Select the correct answer using the code given below:",
+        "sourceTextHash": "b1c9225877914d931538c89baf2b6701d1338a5b247189f080773f56d65ce6e2",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 129,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Which of the following scheme(s) is/are included under Bharatmala Pariyojana? 1. Develop the road connectivity to border areas 2. Development of coastal roads 3. Improvement in the efficiency of National Corridors Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 129,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Highways",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following scheme(s) is/are included under Bharatmala Pariyojana? 1. Develop the road connectivity to border areas 2. Development of coastal roads 3. Improvement in the efficiency of National Corridors Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "3 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2023-i-130",
+      "sha256": "215d91f7846e588a096c6a1ece5132ebbdf72cfdb352119392390af580abdeba",
+      "value": {
+        "id": "nda-2023-i-130",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Deendayal Port was earlier known as:",
+        "sourceTextHash": "d60b28215c0608365bfeb7921cfe35915077037a42e9c8ba85a3320f54ab66ea",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2023,
+          "paper": "I",
+          "questionNumber": 130,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/NDA_1_Answer_Key_2023_GAT_5ebc5315d2b244ad18d4605378d8a192.pdf",
+          "rawQuestionText": "Deendayal Port was earlier known as:"
+        },
+        "exam": "NDA",
+        "year": 2023,
+        "paper": "I",
+        "questionNumber": 130,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Ports",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Deendayal Port was earlier known as:"
+        ],
+        "options": {
+          "A": "Paradip Port",
+          "B": "Tuticorin Port",
+          "C": "Kandla Port",
+          "D": "Visakhapatnam Port"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

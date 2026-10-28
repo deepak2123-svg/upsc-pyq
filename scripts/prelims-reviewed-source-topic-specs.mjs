@@ -1,5 +1,17 @@
 // Concept boundaries established by full original-question review, not keywords.
 export const sourceTopicSpecs = {
+  'History/Medieval India/Regional Kingdoms/Assam and Ahoms': {
+    includes:['Ahom state, commanders and regional conflicts','Saraighat and regional resistance'],
+    excludes:['Recent Assam state policy','Unrelated North-East ethnic geography'],
+    placementRule:'Use for substantive Ahom polity/history; add modern recognition only when tested.',
+    representativeQuestions:['NDA I 2023 GAT Series A Q97: Lachit Borphukan and Saraighat'],
+  },
+  'Geography/World Geography/World Physical Features/Soil-forming regimes': {
+    includes:['Global pedogenic processes and water-balance regimes','Podsolisation, calcification, laterisation and gleisation'],
+    excludes:['India-only soil mapping','Fertiliser chemistry','Seismic processes'],
+    placementRule:'Use for global soil-process/climate associations without forcing an India-specific home; preserves established Physical Geography chapter/subpart numbering.',
+    representativeQuestions:['NDA I 2023 GAT Series A Q62 and Q132: forest pedogenesis and evapotranspiration'],
+  },
   'History/Ancient India/Kingship and State Formation/Royal status and legitimacy': {
     includes:['Divine associations and royal titles in ancient Indian kingship','Territorial claims as expressions of political status'],
     excludes:['Dynasty-specific succession recall without a legitimacy task','Modern democratic legitimacy','A tax-rate calculation'],

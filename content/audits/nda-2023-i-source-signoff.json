@@ -1,0 +1,20 @@
+{
+  "paperId":"nda-2023-i-gat",
+  "originalPdfSha256":"974d6dd6b6e49a6f5bcab3b75a509edd5b76ac5706b07adcbee33e5e3315e13e",
+  "keyPdfSha256":"bc62d92e50d26b77b4eb9171cb3b05054a1aa2ada23600984b96956c8ee019d2",
+  "reviewedAt":"2026-10-28",
+  "reviewerMethod":"Two distinct visual passes by the same AI reviewer; not independent human review.",
+  "reviewedQuestionNumbers":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150],
+  "reproductionSecondPass":"approved",
+  "classificationSecondPass":"approved",
+  "classificationMethod":"Full stems/options read before concept assignment; fresh review with reverse-page comparison. NDA English and standalone Physics/Chemistry/Biology and defence World History do not automatically enter CSE.",
+  "sourcePasses":[{"order":"PDF 2 through 24","method":"Visual transcription, including underlined English segments and five figures."},{"order":"PDF 24 through 2","method":"Fresh complete comparison against typed stems/options, with classification boundaries reconsidered."}],
+  "nonmaterialHistoricalRepairs":[{"number":60,"reason":"ASCII density exponent 3 restored as superscript ³ and closing parenthesis restored; same density unit and identical options, no semantic alteration."},{"number":137,"reason":"Restored printed Code instruction colon and statement line structure; no word or option change."}],
+  "sourceCaveats":["Official multiple accepted choices Q47 B/D and Q78 A/C retained without selecting one arbitrary answer.","Printed original scientific/historical assertions and missing assumptions remain unchanged; matching official key governs scoring."],
+  "figureReview":"All five generated crops visually compared to original pages; no redraw, labels, rays, forces, heights and resistor values retained.",
+  "reviewedInputHashes":{
+    "scripts/nda-2023-i-english-transcription.mjs":"040be546c3b1126fd1c4451a50c465713fb2ec623879abae4e5a3e408da51ad9",
+    "scripts/nda-2023-i-part-b-transcription.mjs":"15b23fdb012db703e14a943dd1252816b4af5ff318834f625958714c76305fa4",
+    "scripts/nda-2023-i-classification.mjs":"f72bd7acdb813cf7b9d162f7091f9a5acc6bfb24b63f026eadc99f4ea6aa01c2"
+  }
+}

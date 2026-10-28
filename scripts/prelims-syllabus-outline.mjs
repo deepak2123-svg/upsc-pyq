@@ -17,7 +17,7 @@ Early Medieval Transitions|Agrarian expansion;Trade guilds;Landholding and polit
 Kingship and State Formation|Royal status and legitimacy`,
     'Medieval India': `Early Medieval Kingdoms|Palas and Senas;Gurjara-Pratiharas;Rashtrakutas;Chalukyas;Pallavas;Cholas and local administration;Historical geography
 Delhi Sultanate|Slave dynasty;Khaljis;Tughlaqs;Sayyids and Lodis;Administration and iqta;Markets and revenue
-Regional Kingdoms|Vijayanagara;Bahmani kingdom;Deccan sultanates;Bengal and Gujarat;Kashmir;Rajput states
+Regional Kingdoms|Vijayanagara;Bahmani kingdom;Deccan sultanates;Bengal and Gujarat;Kashmir;Rajput states;Assam and Ahoms
 Mughal Empire|Babur and Humayun;Akbar;Jahangir and Shah Jahan;Aurangzeb;Mansabdari and jagirdari;Revenue administration;Succession and decline
 Marathas and Regional Powers|Shivaji;Peshwas and confederacy;Sikh powers;Mysore;Awadh and Hyderabad
 Medieval Society and Economy|Agrarian relations;Craft production;Trade and towns;Technology;Women and social structures;Village administration
@@ -58,7 +58,7 @@ Mineral and Energy Resources|Metallic minerals;Non-metallic minerals;Atomic mine
 Industry and Transport|Industrial location;Industrial regions;Road and rail networks;Ports and waterways;Pipelines;Trade corridors
 Population and Settlements|Population distribution;Migration;Urbanisation;Rural settlements;Regional disparities`,
     'World Geography': `Continents and Regions|Asia;Africa;Europe;North America;South America;Oceania;Antarctica
-World Physical Features|Mountains and plateaus;Plains and deserts;Rivers and lakes;Groundwater basins;Seas and straits;Islands and peninsulas;Geological eras
+World Physical Features|Mountains and plateaus;Plains and deserts;Rivers and lakes;Groundwater basins;Seas and straits;Islands and peninsulas;Geological eras;Soil-forming regimes
 World Resources|Agricultural regions;Fishing grounds;Mineral belts;Energy regions;Industrial regions;Transport routes
 World Mapping|Countries and capitals;Regions and countries;Borders and enclaves;International rivers;Strategic waterways;Places in news
 Cartography and Geospatial Tools|Map scale and distance;Topographic maps;Map projections;Mapping institutions;Remote sensing and GIS;Geospatial coordinates`,
