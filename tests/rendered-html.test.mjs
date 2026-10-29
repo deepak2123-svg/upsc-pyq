@@ -33,7 +33,7 @@ test("server-renders the browse-first official PYQ workspace", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Question library/i);
-  assert.match(html, /Find any PYQ term/);
+  assert.match(html, /Search any PYQ term/);
   assert.match(html, /role="search"/);
   assert.match(html, /UPSC\.PYQ\.Practise/);
   assert.doesNotMatch(html, /UPSCPuraan/);
