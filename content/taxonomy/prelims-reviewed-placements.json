@@ -28800,6 +28800,42 @@
       }
     },
     {
+      "questionId": "nda-2019-ii-1",
+      "expectedRecordHash": "ee6e8dcf0be5f31b3b50661aa7027b98a640070b46cba970c659c79f6f834def",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-10",
+      "expectedRecordHash": "dcf9403538e2933784df8a76789c77baa060da0e75f9b008863a430e154271ef",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-100",
+      "expectedRecordHash": "14d69ac283c0f2e5d45754dd62f23ec20f5d3bc1bce44bc15548f2affb0d162c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests electromagnetic-wave properties.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2019-ii-101",
       "expectedRecordHash": "a3fea79f96adda04491c6a09918961fa45def96c48f465200d92e7c25598cf99",
       "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/minerals",
@@ -28911,6 +28947,90 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/interior-of-the-earth/layers-by-composition"
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-107",
+      "expectedRecordHash": "7dbf80cc06350e12efe2ee98e79747d629569643eb21c6aff4bd479c75906aad",
+      "primaryId": "syllabus:history/modern-india-national-movement/gandhian-movements/early-satyagrahas",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the Ahmedabad labour struggle.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-108",
+      "expectedRecordHash": "4fd854767b669cbe796898954bc44d083ea69d56252379c4db01be0cdb9cd6ce",
+      "primaryId": "syllabus:history/medieval-india/bhakti-and-sufi-traditions/siddhas-and-lingayats",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the Virashaiva tradition.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-109",
+      "expectedRecordHash": "11d00f0713a9e10a35d9205ba7a547e220c721c68ed4695e774d3c2869cd1651",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-administration/company-government",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests Wellesley-era administration.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-11",
+      "expectedRecordHash": "c81f917b9cb2a4cec7380c3b9a2a2d4e30b1aa81c743b913fdb5f905babe41da",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-110",
+      "expectedRecordHash": "7d42e0ba533a0b065669bcd7274588af65ab128cb3ba83e4c1ae1e5f5463decd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Compares Bolshevik and Menshevik party positions.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-111",
+      "expectedRecordHash": "c0dc84176a189210e8d89819f9f34eafaed26bed246bfbc2ad9c68b3b66256af",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests the Continental Congress or independence movement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
       }
     },
     {
@@ -29050,6 +29170,90 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2019-ii-119",
+      "expectedRecordHash": "53d5695fce394dfea78ae487589b3058b95009142e5de605ca9c77a5ed41e2f0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests the Reign of Terror.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-12",
+      "expectedRecordHash": "61e450d0e3b1bb786f2a902ba5fcd249d7b77c217c300451c8b3d7bc3b84fbb7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-120",
+      "expectedRecordHash": "69359c7e49d4ac0925e3a6bbb8511df2d230e7255b2024f6487540608016d1dc",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-administration/civil-services",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the first Indian ICS qualifier.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-121",
+      "expectedRecordHash": "e55c8acd4812dd9b4cc2ae5a465fcb120d2caa7772bb462c461d03b3ee302330",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests why industrialisation began first in England.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-123",
+      "expectedRecordHash": "19acaab9f4fb9dc982e904e29e3bb86f27c77d728766ac5747222507cb6e6e45",
+      "primaryId": "syllabus:history/modern-india-national-movement/independence-and-integration/transfer-of-power",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the first Cabinet’s Education Minister.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-124",
+      "expectedRecordHash": "69385e3992013b7800f2f992d9a6b07dddd6ee8aa904f98f83c12c8c0630f502",
+      "primaryId": "syllabus:history/modern-india-national-movement/popular-resistance/revolt-of-1857",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies an exile death among 1857 figures.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2019-ii-125",
       "expectedRecordHash": "bc7fbba559d6b00778fe6531b4a1f2f78698fd38a1f6e337121dcb4922a368fb",
       "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/ionosphere",
@@ -29068,6 +29272,22 @@
         "status": "rule-reviewed",
         "legacyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/ionosphere"
       }
+    },
+    {
+      "questionId": "nda-2019-ii-126",
+      "expectedRecordHash": "e478b25b4fd66932f24ce051169578b22bf4cab2bb3c5efbdcc054d064d9f9c1",
+      "primaryId": "syllabus:history/art-culture/heritage-preservation/archaeological-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Locates the National Research Laboratory for Conservation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
     },
     {
       "questionId": "nda-2019-ii-127",
@@ -29130,6 +29350,18 @@
       }
     },
     {
+      "questionId": "nda-2019-ii-13",
+      "expectedRecordHash": "da98df1ead2c747c9de0b8f2626ac49a7539796f0a0c94edf274ccc265b65f01",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2019-ii-130",
       "expectedRecordHash": "9a937285c75abb738bc713b0781eeeb2d15427ea3008b79ffb07a35ef252e385",
       "primaryId": "syllabus:geography/physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/plate-tectonics",
@@ -29167,6 +29399,1430 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/interior-of-the-earth/layers-by-mechanical-behaviour"
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-132",
+      "expectedRecordHash": "6b0de45b622fde95e09e0b02a457070f44116eaa2528b1b005e1e6948384543d",
+      "primaryId": "syllabus:economy/development/development-policy/planning-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the Nehru-Mahalanobis development strategy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-133",
+      "expectedRecordHash": "9233a56f37bf793585871c2f0695932ba89ee3176ad31b6b627ca5a6dc24e281",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/schedules",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests Fifth Schedule exclusions.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-134",
+      "expectedRecordHash": "ede87bda8618e08553fa4ad11fa91df2682ff17123f5894d5be404abc7a83feb",
+      "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/arya-samaj",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests Dayanand’s social-reform ideas.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-135",
+      "expectedRecordHash": "7644e3bf285515c2b9119d3e5bc85f51784abffcf723aeb4f3f1f6d8d727e8bd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests the Continental Congress or independence movement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-136",
+      "expectedRecordHash": "34350b39a68f7c2856ede5ff70ca58ff146c5ece1bfa9ab19e0fccaf89b57f8c",
+      "primaryId": "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the first UDAY double-decker express route.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-137",
+      "expectedRecordHash": "958915fc5d1d316fcb16e6b01b9d8bb7039b2e11b17a72fd348ba245c29b1dcb",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/winners-and-records",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies 2019 Rajiv Gandhi Khel Ratna recipients.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-138",
+      "expectedRecordHash": "2d1e63e6972c546c36582bcefd7f7f43109d98dd9adb9230dfd7031526428f1b",
+      "primaryId": "syllabus:current-affairs/national-affairs/government-initiatives/schemes-and-missions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the state associated with a recent betel-leaf GI tag.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-139",
+      "expectedRecordHash": "41209bb8a9677f338e611a58b752dffba43fe19afae31123bda68cecc377389d",
+      "primaryId": "syllabus:current-affairs/national-affairs/government-initiatives/schemes-and-missions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the ministry responsible for SAMARTH.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-14",
+      "expectedRecordHash": "386e94553ad2bdd969d98b5d5a40c5313076b6ef906fc9b00e4d2401a5185f5f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-140",
+      "expectedRecordHash": "49eaaa6b8330649ac77cecc87deb0de632452b1a1d93fdcfcd46ca09dd3f973c",
+      "primaryId": "syllabus:current-affairs/defence-security/internal-and-maritime-security/security-agencies",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the organisation containing CORAS.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-141",
+      "expectedRecordHash": "db5cc9e3fbf85c90e7c7f7fd5806effd971ef5ea7199190ec6f011e0c01f5cb7",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-economy/land-revenue-settlements",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the Ijarah revenue-farming system.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-142",
+      "expectedRecordHash": "ff68f88c7fac57bc60dd1fe0210b51dfdcce005eea566ae14b316d4e34ffdfcc",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/swadeshi-movement",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the National College principal during Swadeshi.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-143",
+      "expectedRecordHash": "cf321010a90d579930e57c11dbd4426532ed31d318eb7481998ff0c61369e50a",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-administration/census-and-surveys",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the surveyor who publicised Vijayanagara ruins.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-144",
+      "expectedRecordHash": "10829823e75b66ce57bc486d9bff10834b069c06e544a67e2054d5274c5957b1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests membership of the Third Coalition.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-145",
+      "expectedRecordHash": "b2a7ecebc643e010f4ec6c6545ff95f16aa1a64a97f4888e247d4facfe66bd7e",
+      "primaryId": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Matches travellers with nationalities.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-146",
+      "expectedRecordHash": "8e7124d2b9a84632df39fcf560bd140240d79bf71131b7d9e118bc178f6febb6",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/personalities-and-commemorations/significant-days-and-themes",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests World Humanitarian Day.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-147",
+      "expectedRecordHash": "7f111aee44f57d894f1c51540a625f821c336696c2b50018069ac042e2fc9a8c",
+      "primaryId": "syllabus:current-affairs/science-technology-health/space-developments/missions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the Chandrayaan-2 lander name.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-148",
+      "expectedRecordHash": "ce12b885ef167da9abcc5c88b4276271a5470e43d25807c2409a4e6f56325fbc",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/civilian-honours",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Counts 2019 Bharat Ratna recipients besides Pranab Mukherjee.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-149",
+      "expectedRecordHash": "c71a58689938716dfa9479a77caa7805917d21d122e4e296c26b33a60549f137",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/winners-and-records",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies Aishwarya Pissay’s sport.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-15",
+      "expectedRecordHash": "c20f2b89120ab2bde1cb592fed376b98f80a8951eceabed409827e048884f7db",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-150",
+      "expectedRecordHash": "7fcf72a0a89dafebdd4dd935502cc3fad606ebf61dad3136cb2426eb0781024e",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/arts-recognition",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the 66th National Film Awards Best Feature Film.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2019-ii-16",
+      "expectedRecordHash": "e54b49040e55a855b01d4fb6837997ebdc309441fea5ef1c49b250df4c895ee0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-17",
+      "expectedRecordHash": "d5dd9b7a4382be744c4a3bd1db39fe12f1ef2a86347ae89590153b047967ba7a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-18",
+      "expectedRecordHash": "0622cbcf739f943d3e7662e3582eda28db5499703a68c1e16603f25e2aaf9942",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-19",
+      "expectedRecordHash": "77a047796b00347a736b0c44eb9fbf3f905b0a7c7841d144816ab6b013c91a3c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-2",
+      "expectedRecordHash": "64b62d6f961f0061f25f1a15692d99498ebb090c78fae53eb01601b8b281a0ec",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-20",
+      "expectedRecordHash": "e4e9cd831549a077d57227f5ec2b3b1030c46f952e523fd85a1374d55858fe3d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-21",
+      "expectedRecordHash": "e5b9d20aac2fea62d5da3e3769a98102cc063ef929c3d6a87d28fe83a4b98464",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-22",
+      "expectedRecordHash": "bcc52dc0322ac313389eca4d18d5aadca3a0aed61c13e6288af3827cb4b5c105",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-23",
+      "expectedRecordHash": "604a500242c86c7e5166fca564fd5355325467d21358ae53e65afcc169b55399",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-24",
+      "expectedRecordHash": "460d3bba60a5e4a337d222368c6fa94cee1dbeefc06e3cd7017a2d0f3479f2b0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-25",
+      "expectedRecordHash": "949a85367abab54e389563f06e255f738afa03f9522cd2b0d581ac340c697df5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-26",
+      "expectedRecordHash": "01d2e7f3e5ca356814042459a4c10a29b67506afd306909b31776426430eef2c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-27",
+      "expectedRecordHash": "3b25334e086f36419b4acbfc503ac0939a06f172b92cf43eaf9dce8bf8aee867",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-28",
+      "expectedRecordHash": "15eb58435d9851eba1db0e382fec7cbdb540774b230d3fe3532408b16970658d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-29",
+      "expectedRecordHash": "b524ff3044a3a39c7da782e670c02fc3b8d6dc90ce8ad8b7ec262ec45c44e1b5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-3",
+      "expectedRecordHash": "4af069626d9b23323ffdc8f2e46737926f517607b162c1009abbf441a82528d3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-30",
+      "expectedRecordHash": "15e437f71f2759e08cd5d898a965ac69f1c4ce4f295c810779c3013c198d85ab",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-31",
+      "expectedRecordHash": "b5928fca3c7f45d81948876052699ebf8a5d40c7d5d2a729d621e2a475b602e3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the meaning of the printed idiom or phrase.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-32",
+      "expectedRecordHash": "57daf34aa7d01a6371496faace3c2ccfd2d52907fa22d955861bc415c6a287ed",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the meaning of the printed idiom or phrase.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-33",
+      "expectedRecordHash": "2e383063505553216cc52615a3404ee82175184dd2b41d597126a8266b65980a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the meaning of the printed idiom or phrase.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-34",
+      "expectedRecordHash": "63cbf89a2c20b8b5971227d3383aff634131caec02f81b7710a2de7c9e37f86d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the meaning of the printed idiom or phrase.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-35",
+      "expectedRecordHash": "b085ee1bb9a87a79136788ab64f24766801de6366788f26bf396544f522a7c20",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the meaning of the printed idiom or phrase.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-36",
+      "expectedRecordHash": "8e18cd7bd76b30d8811a02a1fdfdf744df804a2e762eceb5ebf3c3222542e76a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Orders the printed fragments into a meaningful sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-37",
+      "expectedRecordHash": "5ae7c25df42e28d1dca5e473351739f65b61d6253a21390e693a74b4c3289906",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Orders the printed fragments into a meaningful sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-38",
+      "expectedRecordHash": "4d629c9b02b39c76d72f3fe283f8c4e65c0e3ca8e6cc82bad56961e8018ea217",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Orders the printed fragments into a meaningful sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-39",
+      "expectedRecordHash": "d21e2be25a987ee70bf5d9f261cc8bc2af26a08f7d50260d0ff4c86e2a5ad68c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Orders the printed fragments into a meaningful sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-4",
+      "expectedRecordHash": "c358d87af88358e3712d77f8ec7b145e62134d20dbe9338d5c3fe770d7c57d75",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-40",
+      "expectedRecordHash": "0044badb32181e7e995c4f8d84ce84ef7ab3db6d6535e3f90a21d48893791da5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Orders the printed fragments into a meaningful sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-41",
+      "expectedRecordHash": "d0d109d3fa3795074136489d868185e0a7e927dee28a01de8d6b8a30d3970b75",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Answers from the shared Francis Bacon passage.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-42",
+      "expectedRecordHash": "f22e3c681b4e709ab227d4842352d0dc138a442f01eba407e978d2cdd1f6a1df",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Answers from the shared Francis Bacon passage.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-43",
+      "expectedRecordHash": "2011962f1cbdc46c5570fce753a6dca26a47b46ed1337dbdeeb43b8d7481d5e1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Answers from the shared Francis Bacon passage.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-44",
+      "expectedRecordHash": "89cf910be46fe43264f45b663b0001e2a0abbf56a06a46c6739bfd6379b8a5d9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Answers from the shared Francis Bacon passage.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-45",
+      "expectedRecordHash": "87d88ae1b9f976ecf80bed169065d7f1b45d87d3be4d5c48fb4d34dc2a3ee24d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Answers from the shared Francis Bacon passage.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-46",
+      "expectedRecordHash": "9968c35c95f597e349da2596d5ea3bac811be21bc9936a5753188d0c0b6d610d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the expression that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-47",
+      "expectedRecordHash": "34f0762d0de604bb0b6e0bc138c8cff4f2f01fc884d587237429aa8ec93cd9fe",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the expression that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-48",
+      "expectedRecordHash": "bdf5126b25dd704e3c6457d645d726afc130a758cc2dc571d529267c0741d652",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the expression that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-49",
+      "expectedRecordHash": "126af91fbac325ee59c94862f6189930f3297ad473270828303ac5ff4ed094b5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the expression that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-5",
+      "expectedRecordHash": "608be7a5e068d7d7aec6c3ca235fa08a0b7f63b55b2e7218feab2b04d2035185",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-50",
+      "expectedRecordHash": "d0c62d3a3fe8e8c1240bc30ae33bf3633383ad7d12c86277bacf9cac12df76c9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the expression that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-51",
+      "expectedRecordHash": "cb24ce6908637d72527f28c574c9791bb78f76a65101eb31acf600eec95806dc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Applies kinetic or mechanical energy relations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-52",
+      "expectedRecordHash": "74ebed447e5a0c4f87af105d0a225151cf953b8e6229157b687394857bfac344",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests momentum or centre-of-mass behaviour.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-53",
+      "expectedRecordHash": "1786eb93ff35d44e8632463934dfc5d3bda63285ad6cbf2f174559004ec72ef5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests thermal or solar radiation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-54",
+      "expectedRecordHash": "e1afded96d7c1501acf3da46bb827707b97189e4cd0fc96084f906905ad21e1e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests Ohm’s law, circuit rules, resistance or electrical heating.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-55",
+      "expectedRecordHash": "cd0d99623b97f0bdedc297e25cf70e1baa3d51dd5891492a18004e7a6c0a018e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests momentum or centre-of-mass behaviour.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-56",
+      "expectedRecordHash": "ed226c7c186b18f1ad27d9c1dbe067ac5494f7c0ecaa46fd14e1032f7bae0e1a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Compares mixed oxidation states in compounds.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-57",
+      "expectedRecordHash": "14d4bbd98a94cef94f0b4ef33c0224784aa0af618884098a0a022b37402ae5f6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests glass or cement composition and properties.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-58",
+      "expectedRecordHash": "96d8b5b18f9a832e05779cc3076682e10f303b58ef075ef98b7d3294260b7a78",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests phase change, heat transfer or temperature scales.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-59",
+      "expectedRecordHash": "d11ce2832bc37ac236a7404d95e474596cb7f8d742fa7047bf219aa857171eaf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Compares diamond and graphite.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-6",
+      "expectedRecordHash": "f625d056cc1c6ca304521773163b196a36ce211034a07181b7e3a47718611b22",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-60",
+      "expectedRecordHash": "951657e8178d17a82dcb3087978f9acbf37f347a71a8351fe5169d3bb121d9db",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests glass or cement composition and properties.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-61",
+      "expectedRecordHash": "7f5110a923c3efd9158bb04f289bb5a3c38d8e717f5a42763a6f8052dce4ee6a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests molecular polarity or hydride chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-62",
+      "expectedRecordHash": "5ca228639bd3b05cc8a304e11e2fad7774199635f6c33e0c26cb9de05d0c917c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests soaps and surface-tension cleaning.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-63",
+      "expectedRecordHash": "2e8f1ab28a8433cf2a37e5b43e1f73ec8180f9ad7d3e6a734bbd43b6e7a3b5ad",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests accelerated motion or average velocity.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-64",
+      "expectedRecordHash": "19dbb6bc7e532a99b0673500f8d1df178700d8e3d6cf3bd7e582f03cfe5a7778",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests rotational inertia or inverse-square gravitational force.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-65",
+      "expectedRecordHash": "078a53df991e08c5a114364391f83d386c68bcac82fd167c3fee1692669ea456",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Uses density and relative-density relations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-66",
+      "expectedRecordHash": "f32f2974ed95d2a974866abb8c8ddb15da2cadc6371bb6b57d75838c870aa87f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests accelerated motion or average velocity.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-67",
+      "expectedRecordHash": "7906258cd632bf46df4963db65ab05918b034d5d54ac33d3faddf4cc28d864a8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests Ohm’s law, circuit rules, resistance or electrical heating.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-68",
+      "expectedRecordHash": "07a47e040636538bd288833b49dc698516bde5c5c6f1f6dab82a5aed2cf2a5b3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Compares measurement precision against least count.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-69",
+      "expectedRecordHash": "264235750c3d5ad3f5be8df6a66dca89240d545f49a4b132482e904611ba68ca",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests phase change, heat transfer or temperature scales.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-7",
+      "expectedRecordHash": "010d795960caf331f56233c146a7793988716995c1703c8c4c128fa24e5d70e2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-70",
+      "expectedRecordHash": "50e634d8e9666148a97777a0006b902bc7ef3410953e3294238e095e822b7deb",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests Ohm’s law, circuit rules, resistance or electrical heating.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-71",
+      "expectedRecordHash": "aa8233381a5d2f06ef44fc2a9febaa9f0896287d05410058b22db68960aed1db",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests lenses or total internal reflection.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-72",
+      "expectedRecordHash": "68146de9efee7dcc466063aa8bb3f97327a5ce392332d07bed62639ed46a96d1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests phase change, heat transfer or temperature scales.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-73",
+      "expectedRecordHash": "c0078b124fb705177fe55586bf41933b8778033929ba442fa5f6bf08157e4632",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies calcium-carbonate forms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-74",
+      "expectedRecordHash": "1ab933fc7e56b0538322c64932b8d2f50b3b643570dc7cd7ef9278037de92f0c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests soaps and surface-tension cleaning.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-75",
+      "expectedRecordHash": "c0eb6d5d0d4efbdd764844ff3b53084ec3554026959cf7e13260793d3a5e98d7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Distinguishes a pure substance from mixtures.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-76",
+      "expectedRecordHash": "645354d3cfaee19e5e038ae97910c52a9fe6e31efb084e78488d2b88d0a87218",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests dry ice or monatomic elements.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-77",
+      "expectedRecordHash": "6253c3d22d9f469f88d9dec7991b3e3aba6d9f16c800cff83e6c456ce5c8c34c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests osmosis through a selectively permeable membrane.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-78",
+      "expectedRecordHash": "175de193118f74ca87a29b2b293cbbefdcfa2843489991f7c702303240862710",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classifies blood as connective tissue.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-79",
+      "expectedRecordHash": "34c0746594d868f85bfcb588c3c834e01faaeb685396836e0ffe7b8aa5106c9b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests mitochondrial genetic material.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-8",
+      "expectedRecordHash": "b64565c592665fae0d5001c30098d443dd243c14d041c8d5f9085765d9ee4b8b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-80",
+      "expectedRecordHash": "47dc45cf5678959bb86e61cd2a7c407f646584f992c89a0cc3d74622cfaafb65",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests xylem, sclerenchyma and parenchyma.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-81",
+      "expectedRecordHash": "c85470db34c3d69a7528386b1499de69c699f0ba3001470604b85b1110c95b17",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests embryological characters in taxonomy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-82",
+      "expectedRecordHash": "8521925ccd455c425a4780bfffd53f47f57c229d0b1a63c31193e2173d134e23",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests Ohm’s law, circuit rules, resistance or electrical heating.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-83",
+      "expectedRecordHash": "2a0c51be3278db6f9d6234df7356fe4bc89a9428c7d83fc410fadc49ccf7b0a4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Relates pendulum period to gravitational acceleration.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-84",
+      "expectedRecordHash": "355b3ee0b8df4ff387045c9585f21cabe56fd787cc5ad3c3aac46da16e4434e6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests loudness and ultrasound frequency.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-85",
+      "expectedRecordHash": "11b69bc422ee5d3cdf888578b6b400ceb21ab4a1ce14899d5f690f8dae2d98ab",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests rotational inertia or inverse-square gravitational force.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-86",
+      "expectedRecordHash": "f632844c4129da615065fafc734191467cc26064cc9163ad4aef6524ecba8c0f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests lenses or total internal reflection.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-87",
+      "expectedRecordHash": "193bbf53ae282e319d1ec111cb659a39938e075c43bc4f1f24dad8a1be448f5d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests cathode-ray properties.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-88",
+      "expectedRecordHash": "dda980070a817cafeea5a0e72ba5d7f89751e0c8a1d91ac9ef6b50a40436b89c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests molecular polarity or hydride chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-89",
+      "expectedRecordHash": "c8eed493b17c046129677919e9707950f4dee51d3c6901db95bbe167773180c5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests dry ice or monatomic elements.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-9",
+      "expectedRecordHash": "4f87447e313d7a3eddaa836f83eb462f2d77df9e3a621fc8ee7777380eaeb9d5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the source-underlined word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-90",
+      "expectedRecordHash": "3498d2bd8074adfe6c41563473d54342680b76fe4522be1bc25e46025b5f8e53",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Orders metals by electron-releasing tendency.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-91",
+      "expectedRecordHash": "95e9a9599f45ce8b15a65f7cbd07a1fe65e18b2b3280131b5b535dd2ebf76684",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies methane as the chief biogas constituent.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-92",
+      "expectedRecordHash": "063ec5c908967882d9cc90e2beab3a138207845fdaa14516bb5b3157775fac30",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests thyroxine function.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-93",
+      "expectedRecordHash": "ddce54fef76e501116d999a3c82a0c8c25a4cc1677bad787a533351fe9a85405",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies bacterial disease and virus properties.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-94",
+      "expectedRecordHash": "3dd295faf2c587d859c7528c32ed533bb49d97b2c979d32390bf27bc727d0a64",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies bacterial disease and virus properties.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-95",
+      "expectedRecordHash": "ea0e491d6f5db2207242771470e1f5b6fc90f2659bed7413fd35fbfe16775239",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Links vitamin C deficiency to scurvy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-96",
+      "expectedRecordHash": "51280fd54f559806534d91b3deccb0fb87ff35e5702a4d6d0f3b8dada8e387f2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests loudness and ultrasound frequency.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-97",
+      "expectedRecordHash": "bcf2ac8feeaf369498884e216e43a4f7657192109c8cfa87ffe8dc47bbf3f734",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Applies kinetic or mechanical energy relations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-98",
+      "expectedRecordHash": "85f9315bcb1e134171bd4f8e87c107ebaba50cc198b940c4caafe4792d15f2cb",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests phase change, heat transfer or temperature scales.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-99",
+      "expectedRecordHash": "d222de44d127d87b1dbc3853e4c3f3d517aef170fd4d5d13fd2b03141379c3de",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests thermal or solar radiation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Fresh same-agent page-oriented visual reread of all numbered source pages after secondary-draft correction; not independent human review."
       }
     },
     {

@@ -1,0 +1,843 @@
+{
+  "paperId": "nda-2019-ii-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2019,
+    "session": "II",
+    "paper": "GAT",
+    "paperCode": "BEM-U-TAG",
+    "series": "A",
+    "language": "English",
+    "examDate": "2019-11-17",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2019-2.pdf",
+    "sha256": "e5af4aaeed1122ccde9c643419be63c0ee8ea65491b32713110cf64582659f30"
+  },
+  "pdfPageMapping": {
+    "pages": 22,
+    "cover": 1,
+    "english": "PDF 2–9 = printed 2–9",
+    "partB": "PDF 10–22 = printed odd pages 11–35"
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "retrievedAt": "2026-10-29",
+    "url": "https://ndl.iitkgp.ac.in/document/dW9QdUtvSWNSMmtZUlJ1QlZidkpLQlR4MllCMURTVWdJbGpyVk1JSW5wST0",
+    "asset": "/papers/nda-2019-ii-gat/official-final-key.pdf",
+    "sha256": "09882d43bd328ee6f6af7f745b0f09534172c6f5343f89953cc83b47fa51c58f",
+    "page": 1,
+    "series": "A",
+    "session": "II",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 1,
+    "scored": 149,
+    "authentication": "Preserved scan of the UPSC final answer table, headed NDA & NA-II-2019, Series A, GAT, max marks 600, one item dropped and 149 items for scoring; retrieved through the National Digital Library mirror."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2019-2019-2-122",
+      "sha256": "fe40adba526372ec0d9136aa05b4cf847c83905a77ecbcc53b49e936dd1b165c",
+      "value": {
+        "id": "cds-2019-2019-2-122",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Article 46 of the Constitution of India refers to the promotion of educational and economic interests of",
+        "sourceTextHash": "2691c8cb9259be4088d49fa4894c595f6471e7f3f8385f0f9202f206909e6cd4",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 122,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2019_gat_anskey",
+          "rawQuestionText": "Article 46 of the Constitution of India refers to the promotion of educational and economic interests of"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 122,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Article 46 of the Constitution of India refers to the promotion of educational and economic interests of"
+        ],
+        "options": {
+          "A": "religious minorities.",
+          "B": "Scheduled Castes, Scheduled Tribes and other weaker sections.",
+          "C": "displaced persons from large irrigation projects.",
+          "D": "the economically deprived."
+        },
+        "answer": "B",
+        "explanation": "Original NDA 2019-2 Q122, page 19, visually checked against its complete stem and options; the matching Series A final key accepts B.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-104",
+      "sha256": "1e7fed29e83870f6243e391067ca63351c0c4a68ae9fa3f2378502be8bf74435",
+      "value": {
+        "id": "nda-2019-ii-104",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following ocean currents is a cold current?",
+        "sourceTextHash": "794a63fcb5b628c4f0910a34b9573232be5f5f073053ea4731fb63e8f34a351b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 104,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "Which one of the following ocean currents is a cold current?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 104,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Currents",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following ocean currents is a cold current?"
+        ],
+        "options": {
+          "A": "South Atlantic Drift",
+          "B": "Mozambique Current",
+          "C": "East Australian Current",
+          "D": "Caribbean Current"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-106",
+      "sha256": "7fd622982fa1dd6494a6112a6da07289173cf452d4d210c887f563914d349d6f",
+      "value": {
+        "id": "nda-2019-ii-106",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following hypothesis/theory explains the origin of the universe?",
+        "sourceTextHash": "d6fa4b63e77a85bd4607282085c3ee89cb9c05692846975950cb72f8d7887713",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 106,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "Which one of the following hypothesis/theory explains the origin of the universe?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 106,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Solar System & Universe",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following hypothesis/theory explains the origin of the universe?"
+        ],
+        "options": {
+          "A": "Nebular hypothesis",
+          "B": "Binary theory",
+          "C": "Big Bang theory",
+          "D": "Planetesimal hypothesis"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-113",
+      "sha256": "f93bd7506056afd01285cafa876d31a10b33a811136196dd63ee8df2ef2b4b18",
+      "value": {
+        "id": "nda-2019-ii-113",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following sedimentary rocks is organically formed?",
+        "sourceTextHash": "15528c885521c1b0457433b13e8271fee3e6fd68029a943f1f0c69994dbe92a3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 113,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "Which one of the following sedimentary rocks is organically formed?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 113,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following sedimentary rocks is organically formed?"
+        ],
+        "options": {
+          "A": "Shale",
+          "B": "Chert",
+          "C": "Halite",
+          "D": "Chalk"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-114",
+      "sha256": "79e1eb330a368901caee7ef07e86c20af87b2cdb3ed44c1d2c661397868397e5",
+      "value": {
+        "id": "nda-2019-ii-114",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "According to the Köppen climatic classification, the letter code Cfa denotes",
+        "sourceTextHash": "11c0ee7aef613c03be6049ee3fe954f2417cd9bb93fcda4e7ee89b5b74cb7f3d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 114,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "According to the Köppen climatic classification, the letter code Cfa denotes"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 114,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Climatic Regions & Biomes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "According to the Köppen climatic classification, the letter code Cfa denotes"
+        ],
+        "options": {
+          "A": "Tropical wet climate.",
+          "B": "Humid subtropical climate.",
+          "C": "Tundra climate.",
+          "D": "Tropical wet and dry climate."
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-115",
+      "sha256": "797ead01a8f557b3655ab042a0105d8fd212b227f0a84ff67d90d80acfc5c636",
+      "value": {
+        "id": "nda-2019-ii-115",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In which one of the following folds is the axial plane found to be virtually horizontal?",
+        "sourceTextHash": "6b0b510036f75882a982444cffc54d2fa263b2e6aa3d19e4a68fab3f781b0ebd",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 115,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "In which one of the following folds is the axial plane found to be virtually horizontal?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 115,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earth Structure & Folding",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In which one of the following folds is the axial plane found to be virtually horizontal?"
+        ],
+        "options": {
+          "A": "Isoclinal",
+          "B": "Anticlinal",
+          "C": "Recumbent",
+          "D": "Monoclinal"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-125",
+      "sha256": "bc7fbba559d6b00778fe6531b4a1f2f78698fd38a1f6e337121dcb4922a368fb",
+      "value": {
+        "id": "nda-2019-ii-125",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The normal lapse rate of temperature of Earth's atmosphere drops to 0°C at the",
+        "sourceTextHash": "2bdaf083455441e8376b668a48450d5f685b96d0fdbbf0870ecf5e3439b27d12",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 125,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "The normal lapse rate of temperature of Earth's atmosphere drops to 0°C at the"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 125,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Atmospheric Composition & Structure",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The normal lapse rate of temperature of Earth's atmosphere drops to 0°C at the"
+        ],
+        "options": {
+          "A": "upper part of ionosphere.",
+          "B": "upper boundary of the tropopause.",
+          "C": "lower part of mesosphere.",
+          "D": "upper boundary of stratopause."
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-128",
+      "sha256": "a5f9b54ec1c565ca790f67d81c269e530a85a355eed2b0a11bca6cf1ef6591cb",
+      "value": {
+        "id": "nda-2019-ii-128",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Stalactite, stalagmite and pillars are the depositional landforms of",
+        "sourceTextHash": "e993fc546d3c6535f853f291837eff1eaf8f49a37d18c1399b032781215f5299",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 128,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "Stalactite, stalagmite and pillars are the depositional landforms of"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 128,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Landforms & Geomorphic Agents",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Stalactite, stalagmite and pillars are the depositional landforms of"
+        ],
+        "options": {
+          "A": "running water.",
+          "B": "wind.",
+          "C": "glacier.",
+          "D": "underground water."
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-129",
+      "sha256": "b5e5b21b3f1333df7e4cb79ff4b60362aef00ad27c90b848e105fb72b4c36fce",
+      "value": {
+        "id": "nda-2019-ii-129",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "A deep valley characterized by steep step-like slope is known as",
+        "sourceTextHash": "c51087e55969a177c0f19b49bcc95e4888149693a2dadd0a06267d68d532f3c4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 129,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "A deep valley characterized by steep step-like slope is known as"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 129,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "River Landforms",
+        "difficulty": "Easy",
+        "promptLines": [
+          "A deep valley characterized by steep step-like slope is known as"
+        ],
+        "options": {
+          "A": "U-shaped valley.",
+          "B": "Blind valley.",
+          "C": "Gorge.",
+          "D": "Canyon."
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-130",
+      "sha256": "9a937285c75abb738bc713b0781eeeb2d15427ea3008b79ffb07a35ef252e385",
+      "value": {
+        "id": "nda-2019-ii-130",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is a major plate?",
+        "sourceTextHash": "4c5ddc34b190148a3252853bddea87f147588fac958ac3a13e99579022c90532",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 130,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "Which one of the following is a major plate?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 130,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Plate Tectonics",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is a major plate?"
+        ],
+        "options": {
+          "A": "Pacific Plate",
+          "B": "Cocos Plate",
+          "C": "Arabian Plate",
+          "D": "Philippine Plate"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-131",
+      "sha256": "fc8a0d0906264a7770b6abee8c807c22ca1b31d4533d6bcbb021d49aa5b591ac",
+      "value": {
+        "id": "nda-2019-ii-131",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Lithosphere consists of",
+        "sourceTextHash": "213ac48707e0effef4d077529b4e717454c09c75ba81aedc8f19224ebb90598d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 131,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "Lithosphere consists of"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 131,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earth Structure & Folding",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Lithosphere consists of"
+        ],
+        "options": {
+          "A": "upper and lower mantle.",
+          "B": "crust and core.",
+          "C": "crust and uppermost solid mantle.",
+          "D": "mantle and core."
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-105",
+      "sha256": "b6f994fc12c1ad1d911bccbb84eaee360073f016c8176c1b8c45ba08582b6e2b",
+      "value": {
+        "id": "nda-2019-ii-105",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Paradeep Port is located on the delta of river",
+        "sourceTextHash": "dd23b22163d6abfb40f38bedafdfa7c7c469e26590ca71f7c90963485bab84c3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 105,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "Paradeep Port is located on the delta of river"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 105,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Paradeep Port is located on the delta of river"
+        ],
+        "options": {
+          "A": "Rihand",
+          "B": "Ganga",
+          "C": "Mahanadi",
+          "D": "Baitarani"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-127",
+      "sha256": "ff0eac63b650b670b9e35a0274ac3b7f3bf98c765f98e229d85b78fd687aa366",
+      "value": {
+        "id": "nda-2019-ii-127",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Loktak lake is situated in the State of",
+        "sourceTextHash": "63c2507046f485898e1e2c8a594d0511d97581524c954810a497bd4cdc05645a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 127,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "Loktak lake is situated in the State of"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 127,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Loktak lake is situated in the State of"
+        ],
+        "options": {
+          "A": "Sikkim",
+          "B": "Manipur",
+          "C": "Odisha",
+          "D": "Mizoram"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-103",
+      "sha256": "e3d68be9332325fb2b51186f7a61df744d552fab9021e575552ee052c16228fd",
+      "value": {
+        "id": "nda-2019-ii-103",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The rivers of North-West Europe are good examples of",
+        "sourceTextHash": "69443f3f98174a45630880b3ae101fd9ff330f9ff96b6798351c44dd02f1f00d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 103,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "The rivers of North-West Europe are good examples of"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 103,
+        "subject": "Geography",
+        "topic": "Political Geography",
+        "subtopic": "International Boundaries",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The rivers of North-West Europe are good examples of"
+        ],
+        "options": {
+          "A": "parallel pattern of drainage.",
+          "B": "radial pattern of drainage.",
+          "C": "barbed pattern of drainage.",
+          "D": "trellis pattern of drainage."
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-112",
+      "sha256": "9bd49b54442b77afbf2f683d175fe144a8280cf0361c9fb88bcc18ec7b25d672",
+      "value": {
+        "id": "nda-2019-ii-112",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following land territories of Indonesia is not touched by the Equator?",
+        "sourceTextHash": "1f7db294acec3a376b7120344649e43fb650f69bd4fb06a59bca653028425071",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 112,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "Which one of the following land territories of Indonesia is not touched by the Equator?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 112,
+        "subject": "Geography",
+        "topic": "World Places & Routes",
+        "subtopic": "Global Coordinates",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following land territories of Indonesia is not touched by the Equator?"
+        ],
+        "options": {
+          "A": "Sumatra",
+          "B": "Sulawesi",
+          "C": "Java",
+          "D": "Kalimantan"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-118",
+      "sha256": "e6eddb6e7a06e3a407e669574754bb13e86e154a411753aefd8528732b6bd41d",
+      "value": {
+        "id": "nda-2019-ii-118",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements about the Suez Canal is not correct?",
+        "sourceTextHash": "89af9616c8a34303b379c54cc6495e76079fe9b8e835b5b9e2cff596b1b67e96",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 118,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "Which one of the following statements about the Suez Canal is not correct?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 118,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Biomes & Vegetation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements about the Suez Canal is not correct?"
+        ],
+        "options": {
+          "A": "The Suez Canal was constructed in 1869.",
+          "B": "It links the Mediterranean Sea and the Red Sea.",
+          "C": "It has a six lock system and ships cross the different levels through these locks.",
+          "D": "It has given Europe a new gateway to the Indian Ocean."
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-101",
+      "sha256": "a3fea79f96adda04491c6a09918961fa45def96c48f465200d92e7c25598cf99",
+      "value": {
+        "id": "nda-2019-ii-101",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is a non-metallic mineral?",
+        "sourceTextHash": "2ac5389c479928bbfdb686a031ca487a2d046d567143e424979cd6c7c17ee01d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 101,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "Which one of the following is a non-metallic mineral?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 101,
+        "subject": "Geography",
+        "topic": "Minerals & Mining",
+        "subtopic": "Mineral Deposits",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is a non-metallic mineral?"
+        ],
+        "options": {
+          "A": "Iron",
+          "B": "Mica",
+          "C": "Copper",
+          "D": "Bauxite"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-102",
+      "sha256": "f542ddf123d08916e8ca530889491e159c20fa760b4946228c6b0a5255e65397",
+      "value": {
+        "id": "nda-2019-ii-102",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is a Rabi crop in the Northern States of India?",
+        "sourceTextHash": "20a825b9ff52e8e240f9667304faf5f2cd9fcd5963cbc1674c6e54dc6c34edf5",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 102,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "Which one of the following is a Rabi crop in the Northern States of India?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 102,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is a Rabi crop in the Northern States of India?"
+        ],
+        "options": {
+          "A": "Rice",
+          "B": "Bajra",
+          "C": "Barley",
+          "D": "Ragi"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-117",
+      "sha256": "67ea1dfcbd0616a6f52de49d1d51b7e5fa80f1463aab772fb8b549a52a73cd75",
+      "value": {
+        "id": "nda-2019-ii-117",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Munda language group belongs to which family?",
+        "sourceTextHash": "9da13f5f72fc000c8c13d382f9a9f6dd9b66e554820a94a94abee2f14fe755c2",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 117,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "The Munda language group belongs to which family?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 117,
+        "subject": "Geography",
+        "topic": "Tribes & Cultural Geography",
+        "subtopic": "Tribes and Nomadic Communities",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Munda language group belongs to which family?"
+        ],
+        "options": {
+          "A": "Austric",
+          "B": "Dravidian",
+          "C": "Sino-Tibetan",
+          "D": "Indo-European"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-ii-116",
+      "sha256": "e2b906cf607c7373d5ab6f4220675b745138af5543c09e92b75f3012c41ed3d1",
+      "value": {
+        "id": "nda-2019-ii-116",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "How many Ramsar conservation sites have been enlisted from India so far?",
+        "sourceTextHash": "da0de0462156eb1c1a91c5fc144911c5bdfd58348eed8c6aeff396b950920ba1",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "II",
+          "questionNumber": 116,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/AnsKey_NDA_II_19_GAT_280920_4410578e1f7b3cc8bf530a95df67b02d.pdf",
+          "rawQuestionText": "How many Ramsar conservation sites have been enlisted from India so far?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "II",
+        "questionNumber": 116,
+        "subject": "Environment",
+        "topic": "Protected Areas & Biodiversity",
+        "subtopic": "Wetlands & Ramsar Sites",
+        "difficulty": "Easy",
+        "promptLines": [
+          "How many Ramsar conservation sites have been enlisted from India so far?"
+        ],
+        "options": {
+          "A": "12",
+          "B": "16",
+          "C": "27",
+          "D": "62"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

@@ -14,6 +14,7 @@ export const defenceWorldHistory: readonly SyllabusSection[] = [
     // European Enlightenment political authors/texts; excludes Indian philosophy
     // and colonial Indian constitutional development. Defence targets only.
     ['French Revolution',['Revolutionary government and the Terror','Enlightenment political thought']],
+    ['Napoleonic Era',['Coalitions and wars']],
     ['First World War',['Economic and social consequences']],
     ['Renaissance',['Art and artists']],
     ['Exploration and Conquest',['European overseas expansion']],
