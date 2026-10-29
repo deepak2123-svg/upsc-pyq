@@ -67,7 +67,7 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 2151); // NDA I 2021 adds 22 CSE-applicable GS records; its defence World History question stays NDA/CDS.
+  assert.equal(data.totalCount, 2177); // Complete reviewed NDA papers add only CSE-applicable GS records; English and school Science stay preparation-only.
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);
@@ -958,6 +958,12 @@ test("every reviewed correction grades the displayed option and rejects the form
       assert.equal(old.body.excluded,1);assert.equal(old.body.feedback[row.id].correct,null);
       const repaired=await grade({questionIds:[row.id],answers:{[row.id]:'A'},contentRevisions});
       assert.equal(repaired.body.correct,1);assert.equal(repaired.body.feedback[row.id].correctAnswer,'A');
+      const prior=await grade({questionIds:[row.id],answers:{[row.id]:'C'},contentRevisions});assert.equal(prior.body.incorrect,1);
+      continue;
+    }
+    if(row.id==='nda-2020-i-ii-51'){
+      const repaired=await grade({questionIds:[row.id],answers:{[row.id]:'B'},contentRevisions});
+      assert.equal(repaired.body.correct,1);assert.equal(repaired.body.feedback[row.id].correctAnswer,'B');assert.ok(repaired.body.feedback[row.id].answerKeyRevision>0);
       const prior=await grade({questionIds:[row.id],answers:{[row.id]:'C'},contentRevisions});assert.equal(prior.body.incorrect,1);
       continue;
     }

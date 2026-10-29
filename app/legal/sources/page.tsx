@@ -16,12 +16,13 @@ import officialNda2022IIPaper from '../../../content/nda-2022-ii-official-paper.
 import officialNda2022IPaper from '../../../content/nda-2022-i-official-paper.json';
 import officialNda2021IIPaper from '../../../content/nda-2021-ii-official-paper.json';
 import officialNda2021IPaper from '../../../content/nda-2021-i-official-paper.json';
+import officialNda2020CombinedPaper from '../../../content/nda-2020-i-ii-official-paper.json';
 import {questionEligible} from '../../../lib/question-review';
 import reviewed2024Audit from '../../../content/audits/nda-2024-ii-review.json';
 
 export const metadata = { title: "Sources — added PYQ papers", description: "Added papers, available GS questions and source-review coverage." };
 export default function SourcesPage() {
-  const officialIds=new Set([...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions].filter(q=>questionEligible(q.id)).map(q=>q.id));
+  const officialIds=new Set([...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions,...officialNda2020CombinedPaper.questions].filter(q=>questionEligible(q.id)).map(q=>q.id));
   const available=[...new Map([...pyqQuestions,...historicalPyqQuestions.filter(q=>officialIds.has(q.id))].map(q=>[q.id,q])).values()];
   const groups = new Map<string, { exam: PyqExam; year: number; paper: string; count: number }>();
   for (const question of available) {
@@ -41,14 +42,15 @@ export default function SourcesPage() {
       const official2023=group.exam==='NDA'&&group.year===2023&&['I','II'].includes(group.paper);
       const official2022=group.exam==='NDA'&&group.year===2022&&['I','II'].includes(group.paper);
       const official2021=group.exam==='NDA'&&group.year===2021&&['I','II'].includes(group.paper);
-      const reviewedNda=official2021||official2022||official2023||official2024||reviewed2024||completeNda;
+      const official2020=group.exam==='NDA'&&group.year===2020&&group.paper==='I/II';
+      const reviewedNda=official2020||official2021||official2022||official2023||official2024||reviewed2024||completeNda;
       const provisional=group.exam==='NDA'&&group.year===2026&&['I','II'].includes(group.paper);
-      const withdrawnNumbers=official2024?[101]:group.exam==='NDA'&&group.year===2025&&group.paper==='II'?[85]:group.exam==='NDA'&&group.year===2021&&group.paper==='I'?[58]:[];
+      const withdrawnNumbers=official2020?[70]:official2024?[101]:group.exam==='NDA'&&group.year===2025&&group.paper==='II'?[85]:group.exam==='NDA'&&group.year===2021&&group.paper==='I'?[58]:[];
       return {...group,complete:reviewedNda||source?.coverageStatus === "current-source-content-and-key-reviewed",provisional,
-        ...(reviewedNda?{expected:150,numberSeries:'A',keyLabel:reviewed2024?'Independently verified':provisional?'Official provisional':'Official final',withdrawnNumbers,
+        ...(reviewedNda?{expected:150,numberSeries:official2020?'B':'A',keyLabel:reviewed2024?'Independently verified':provisional?'Official provisional':'Official final',withdrawnNumbers,
           heldNumbers:reviewed2024?reviewed2024Audit.questionSlots.filter(q=>q.disposition==='quarantined').map(q=>q.number):[],
           sectionSummary:reviewed2024?'English 46 · Science 43 · GS 47':official2024?'English 50 · Science 49 · GS 50':(group.year===2025||official2023)&&group.paper==='I'?'English 50 · Science 49 · GS 51':group.year===2025?'English 50 · Science 50 · GS 49':'English 50 · Science 50 · GS 50'}:{}),
-        ...(official2021?{reviewNote:group.paper==='I'?'149/150 available · official final key · Q58 withdrawn · English 50 · Science 49 · GS 50':'150/150 available · official final key · English 50 · Science 50 · GS 50 · Q102 B/C accepted'}:official2022?{reviewNote:'150/150 available · official final key · English 50 · Science 50 · GS 50'}:official2023?{reviewNote:group.paper==='I'?'150/150 available · official final key · English 50 · Science 49 · GS 51 · Q47 B/D and Q78 A/C accepted':'150/150 available · official final key · English 50 · Science 50 · GS 50'}:official2024?{reviewNote:'149/150 available · official final key · Q101 withdrawn'}:reviewed2024?{reviewNote:'136/150 available · independently verified · 14 quarantined; official-key provenance unresolved'}:{})};
+        ...(official2020?{reviewNote:'149/150 available · one combined I & II booklet · Series B official final key · Q70 withdrawn · English 50 · Science 46 · GS 53'}:official2021?{reviewNote:group.paper==='I'?'149/150 available · official final key · Q58 withdrawn · English 50 · Science 49 · GS 50':'150/150 available · official final key · English 50 · Science 50 · GS 50 · Q102 B/C accepted'}:official2022?{reviewNote:'150/150 available · official final key · English 50 · Science 50 · GS 50'}:official2023?{reviewNote:group.paper==='I'?'150/150 available · official final key · English 50 · Science 49 · GS 51 · Q47 B/D and Q78 A/C accepted':'150/150 available · official final key · English 50 · Science 50 · GS 50'}:official2024?{reviewNote:'149/150 available · official final key · Q101 withdrawn'}:reviewed2024?{reviewNote:'136/150 available · independently verified · 14 quarantined; official-key provenance unresolved'}:{})};
     })} />
     <details className="source-review-notes"><summary>What do the review labels mean?</summary><p><strong>Complete source review</strong> means every numbered question has been accounted for, not that every question is publishable. <strong>Partial collection</strong> means only a subset is currently available. PDFs awaiting import are not listed as added papers.</p><p><strong>Held for review</strong> numbers identify questions you can supply with a clearer scan or matching official key. <strong>Officially withdrawn</strong> questions were dropped by UPSC and do not need replacement answers. <strong>Not yet reconciled</strong> means a complete missing-number list has not been established; it does not mean zero missing questions.</p><p>Source identities, original wording and option order are preserved. Answer verification and full-paper reproduction review are separate checks. Historical attempts retain their original snapshots; excluded questions do not enter new scored tests.</p></details>
     <p><Link href="/">← Return to library</Link></p>

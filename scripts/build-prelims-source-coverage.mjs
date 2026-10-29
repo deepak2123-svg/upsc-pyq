@@ -18,7 +18,8 @@ const officialNdaII=JSON.parse(fs.readFileSync('content/nda-2026-ii-official-pap
 const officialNda2025II=JSON.parse(fs.readFileSync('content/nda-2025-ii-official-paper.json'));
 const officialNda2025I=JSON.parse(fs.readFileSync('content/nda-2025-i-official-paper.json'));
 const officialNda2021I=JSON.parse(fs.readFileSync('content/nda-2021-i-official-paper.json'));
-const officialPapers=[officialNda,officialNdaII,officialNda2025II,officialNda2025I,officialNda2021I];
+const officialNda2020Combined=JSON.parse(fs.readFileSync('content/nda-2020-i-ii-official-paper.json'));
+const officialPapers=[officialNda,officialNdaII,officialNda2025II,officialNda2025I,officialNda2021I,officialNda2020Combined];
 const officialByHash=new Map(officialPapers.map(p=>[p.questions[0].source.originalPdfSha256,p]));
 const reuseGroups=sourceReuseFiles.map(file=>({...JSON.parse(fs.readFileSync(file)),file}));
 const reproductionOverrides=JSON.parse(fs.readFileSync('content/prelims-reproduction-overrides.json'));

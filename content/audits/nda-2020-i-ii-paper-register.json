@@ -1,0 +1,1357 @@
+{
+  "paperId": "nda-2020-i-ii-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2020,
+    "session": "I & II combined",
+    "paper": "GAT",
+    "paperCode": "KJU-F-GTA",
+    "series": "B",
+    "language": "English",
+    "examDate": "2020-09-06",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2020-1 and 2.pdf",
+    "sha256": "9d302a9333a2181b4c443af50bb7123cf7c4523dd99362f6325484a451773bda"
+  },
+  "pdfPageMapping": {
+    "pages": 25,
+    "cover": 1,
+    "english": "PDF 2–9 = printed 2–9",
+    "partB": "PDF 10–25 = printed odd pages 11–41",
+    "extractCaveat": "This is the single common GAT booklet issued for the combined NDA & NA (I) and (II) 2020 examination."
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "filenameDate": null,
+    "retrievedAt": "2026-10-29",
+    "url": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_and_ii_2020_gat_anskey",
+    "asset": "/papers/nda-2020-i-ii-gat/official-final-key.pdf",
+    "sha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+    "page": 1,
+    "series": "B",
+    "session": "I & II",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 1,
+    "scored": 149,
+    "authentication": "Preserved official UPSC answer-key scan retrieved through the National Digital Library mirror. The page identifies NDA-I & II-2020, Series B, Subject GAT, 600 marks, one dropped item and 149 items for scoring. Mirror provenance is retained because a direct UPSC key URL was not recovered."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2020-2020-1-and-2-53",
+      "sha256": "a836dfa6dc1f9ef01a7d55bd083e3c81494e111a4637da25ad72b344077dd15f",
+      "value": {
+        "id": "cds-2020-2020-1-and-2-53",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "According to Article 79 of the Constitution of India, which of the following is/are described as a part of the Parliament of India? 1. The House of the People 2. The Council of States 3. The President of India Select the correct answer using the code given below:",
+        "sourceTextHash": "77a533b01c629d0ed7b3df55fa89343a4155d1fcba8aef560820fe95e96b68cd",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 53,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_and_ii_2020_gat_anskey",
+          "rawQuestionText": "According to Article 79 of the Constitution of India, which of the following is/are described as a part of Parliament of India ? I. The House of the People 2. The Council of States 3. The President of India Select the correct answer using the code given below",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Original NDA 2020-1 and 2 Q53, page 10, visually checked against its complete stem and options; the matching Series A final key accepts D."
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 53,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "According to Article 79 of the Constitution of India, which of the following is/are described as a part of the Parliament of India? 1. The House of the People 2. The Council of States 3. The President of India Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Original NDA 2020-1 and 2 Q53, page 10, visually checked against its complete stem and options; the matching Series B final key accepts D.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2020-2020-1-and-2-3",
+      "sha256": "db684e03e306705484c3431c8eeec608c79f4932f89d81ef487a6cd3c624d1e7",
+      "value": {
+        "id": "cds-2020-2020-1-and-2-3",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements with regard to Biosphere Reserve is/are correct? 1. The idea of Biosphere Reserve was initiated by UNESCO in 1973-74 2. There are 18 designated Biosphere Reserves in India 3. All Biosphere Reserves in India have been included in world network of Biosphere Reserves of UNESCO Select the correct answer using the code given below:",
+        "sourceTextHash": "0c4250aa7f1bf8f54ac6d928168ddb9ec0068dde8c4ee43d97541e250ba376a2",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 119,
+          "answerStatus": "duplicate",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_and_ii_2020_gat_anskey",
+          "rawQuestionText": "All Biosphere Reserves in India have been included in world network of Biosphere Reserves of UNESCO Select the correct answer using the code given below",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Legacy Q3 is only statement 3 of actual Series B Q119. Original complete question and options match existing nda-2020-i-ii-119; retain historical ID as excluded duplicate. Official B-series Q119 accepts C."
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 119,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements with regard to Biosphere Reserve is/are correct? 1. The idea of Biosphere Reserve was initiated by UNESCO in 1973-74 2. There are 18 designated Biosphere Reserves in India 3. All Biosphere Reserves in India have been included in world network of Biosphere Reserves of UNESCO Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "1 and 2 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "C",
+        "explanation": "Legacy Q3 is only statement 3 of actual Series B Q119. Original complete question and options match existing nda-2020-i-ii-119; retain historical ID as excluded duplicate. Official B-series Q119 accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2020-2020-1-and-2-102",
+      "sha256": "9668c88787943f7d052c3b74003af5538a0bebaa336310cb667c5e29ec28da74",
+      "value": {
+        "id": "cds-2020-2020-1-and-2-102",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The United Nations Charter was signed by 51 original members of the United Nations in 1945 at the",
+        "sourceTextHash": "8f40a388c9f487276d40dff8e7f26377c9085fb83a602c758a127218183ac9b7",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 102,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_and_ii_2020_gat_anskey",
+          "rawQuestionText": "The United Nations Charter was signed by 51 original members of the United Nations in 1945 at the"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 102,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The United Nations Charter was signed by 51 original members of the United Nations in 1945 at the"
+        ],
+        "options": {
+          "A": "Hague Conference",
+          "B": "London Conference",
+          "C": "San Francisco Conference",
+          "D": "Berlin Conference"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2020-1 and 2 Q102, page 17, visually checked against its complete stem and options; the matching Series B final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-106",
+      "sha256": "ab55e2b17797c59d78a093e748b930a59cb4b168b11a16b0e056c7c59d1241c8",
+      "value": {
+        "id": "nda-2020-i-ii-106",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is NOT a current of Pacific Ocean?",
+        "sourceTextHash": "e64422925bc3fbf737f20dd0e57885bf6f853262dc3f8f62a5cda12d90cc0dcf",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 106,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "Which one of the following is NOT a current of Pacific Ocean?"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 106,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Currents",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is NOT a current of Pacific Ocean?"
+        ],
+        "options": {
+          "A": "Oyashio current",
+          "B": "Alaska current",
+          "C": "Agulhas current",
+          "D": "California current"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-109",
+      "sha256": "ceb9dac1595c165f794ad9c66f2dae4c12239cc3c2e20ed2857b7734f87c8c89",
+      "value": {
+        "id": "nda-2020-i-ii-109",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is a cold local wind?",
+        "sourceTextHash": "2474d5e768bb6be4bb1c7900f7ea5de2f8b614bbe3b07ce94976353acebaed1f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 109,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "Which one of the following is a cold local wind?"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 109,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Winds & Atmospheric Circulation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is a cold local wind?"
+        ],
+        "options": {
+          "A": "Santa Ana",
+          "B": "Chinook",
+          "C": "Mistral",
+          "D": "Loo"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-78",
+      "sha256": "699b6a606787848d40b6d93d1b0c3dee71d2289d66893e0779b3997fddc448bb",
+      "value": {
+        "id": "nda-2020-i-ii-78",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Krishna Raja Sagara Dam/Reservoir is developed on",
+        "sourceTextHash": "1b5ee1bdc666b0c0219db5e681aed1395262535653a82463fc35886f3b30f7fa",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 78,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_n_ii_2020_gat_anskey",
+          "rawQuestionText": "Krishna Raja Sagara Dam/Reservoir is developed on",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Krishna Raja Sagara is on the Kavery (Cauvery).",
+            "previousAnswerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 78,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Krishna Raja Sagara Dam/Reservoir is developed on"
+        ],
+        "options": {
+          "A": "river Krishna",
+          "B": "river Tungabhadra",
+          "C": "river Godavari",
+          "D": "river Kavery"
+        },
+        "answer": "D",
+        "explanation": "Krishna Raja Sagara is on the Kavery (Cauvery).",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-79",
+      "sha256": "275488693f08c1798ca76bff291849e8fc0c211d5b08c3873034bffaecec3401",
+      "value": {
+        "id": "nda-2020-i-ii-79",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following Indian states does NOT share international border with two or more countries?",
+        "sourceTextHash": "3d87f09671311ad70a4d6bfa7c07a6bcc8af52ce18727afdc481044dc6326553",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 79,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_n_ii_2020_gat_anskey",
+          "rawQuestionText": "Which one of the following Indian states does NOT share international border with two or more countries?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Tripura borders Bangladesh only; the other states listed border at least two countries.",
+            "previousAnswerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 79,
+        "subject": "Geography",
+        "topic": "Location, States & Regional Geography",
+        "subtopic": "Location & Time Difference",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following Indian states does NOT share international border with two or more countries?"
+        ],
+        "options": {
+          "A": "Arunachal Pradesh",
+          "B": "Assam",
+          "C": "Mizoram",
+          "D": "Tripura"
+        },
+        "answer": "D",
+        "explanation": "Tripura borders Bangladesh only; the other states listed border at least two countries.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-107",
+      "sha256": "c5217d0e7f5faae6a217c8d0157349dcb99833f1f13bf44e725afec626234249",
+      "value": {
+        "id": "nda-2020-i-ii-107",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The duration of monsoon in India extends for an average period of",
+        "sourceTextHash": "b2e025932cfc9c780ce13eaaefd7a03caae099b15a06747726310865ad7d64b6",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 107,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "The duration of monsoon in India extends for an average period of"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 107,
+        "subject": "Geography",
+        "topic": "Climate & Monsoon",
+        "subtopic": "Indian Monsoon & Rainfall",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The duration of monsoon in India extends for an average period of"
+        ],
+        "options": {
+          "A": "80-140 days",
+          "B": "100-120 days",
+          "C": "90-130 days",
+          "D": "100-140 days"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-118",
+      "sha256": "9b77405e879cbace7e87bd956626451595a662278a73dcc36540a70362cdc0d9",
+      "value": {
+        "id": "nda-2020-i-ii-118",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Bagalihar, Dulhasti and Salal hydro power projects have been developed on which of the following rivers?",
+        "sourceTextHash": "2e85ea0f818565d903976c4c27c541d13091ca815836b56255202a8d8bc326f2",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 118,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_n_ii_2020_gat_anskey",
+          "rawQuestionText": "Bagalihar, Dulhasti and Salal hydro power projects have been developed on which of the following rivers?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "All three named hydroelectric projects are on the Chenab.",
+            "previousAnswerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 118,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Bagalihar, Dulhasti and Salal hydro power projects have been developed on which of the following rivers?"
+        ],
+        "options": {
+          "A": "Chenab and Jhelum",
+          "B": "Chenab and Indus",
+          "C": "Ravi",
+          "D": "Chenab only"
+        },
+        "answer": "D",
+        "explanation": "All three named hydroelectric projects are on the Chenab.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-51",
+      "sha256": "b70b7ba29feeb4b955a3b26169cded8637cb2eb9ea074b96c7e19c6fa15c3ea6",
+      "value": {
+        "id": "nda-2020-i-ii-51",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "New Zealand is considered part of which one of the following island groups?",
+        "sourceTextHash": "cc4227ad618e54e42e20c6e3726d6391852720b99906a75688e7fec903217f7d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 51,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_n_ii_2020_gat_anskey",
+          "rawQuestionText": "New Zealand is considered part of which one of the following island groups?",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "New Zealand is included in Polynesia.",
+            "previousAnswerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 51,
+        "subject": "Geography",
+        "topic": "World Places & Routes",
+        "subtopic": "Islands & Regions",
+        "difficulty": "Easy",
+        "promptLines": [
+          "New Zealand is considered part of which one of the following island groups?"
+        ],
+        "options": {
+          "A": "Micronesia",
+          "B": "Melanesia",
+          "C": "Polynesia",
+          "D": "Hawaii Island chain"
+        },
+        "answer": "C",
+        "explanation": "New Zealand is included in Polynesia.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-64",
+      "sha256": "5268a516de8a2ca760f33c066866ce9bebd344d36003b14bba7c3c7333448550",
+      "value": {
+        "id": "nda-2020-i-ii-64",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following countries is called the 'country of winds'?",
+        "sourceTextHash": "06d463392d7d04abc6c54a8d4deaeb4fd068258ee092e58c018e162616da373b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 64,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_n_ii_2020_gat_anskey",
+          "rawQuestionText": "Which one of the following countries is called the 'country of winds'?",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Denmark is the keyed country of winds.",
+            "previousAnswerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 64,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Local Winds",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following countries is called the 'country of winds'?"
+        ],
+        "options": {
+          "A": "India",
+          "B": "China",
+          "C": "Denmark",
+          "D": "Germany"
+        },
+        "answer": "C",
+        "explanation": "Denmark is the keyed country of winds.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-101",
+      "sha256": "ad4701f2032987fbc15b3a72072fa7b785ed2bbe7e8305602166020aacdeac02",
+      "value": {
+        "id": "nda-2020-i-ii-101",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Panama Canal opened in 1914, links",
+        "sourceTextHash": "269b49681cd4e8fcfd15529d0516e2309ed0edb4db07840dfcd10f811edb12df",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 101,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "The Panama Canal opened in 1914, links"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 101,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Biomes & Vegetation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Panama Canal opened in 1914, links"
+        ],
+        "options": {
+          "A": "Red Sea and Mediterranean Sea",
+          "B": "Atlantic Ocean and Pacific Ocean",
+          "C": "Indian Ocean and Pacific Ocean",
+          "D": "Adriatic Sea and Black Sea"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-108",
+      "sha256": "f2f98cc156d23b704d8165431ec6da6b75866508ff6fdd21e97a330596b63539",
+      "value": {
+        "id": "nda-2020-i-ii-108",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the natural vegetation of South east China?",
+        "sourceTextHash": "e96fdcaed8a0cb76a0b8cad9633fba61555b57c3971de13e5ad2446ce6d45b82",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 108,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "Which one of the following is the natural vegetation of South east China?"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 108,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Biomes & Vegetation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is the natural vegetation of South east China?"
+        ],
+        "options": {
+          "A": "Subtropical broadleaf evergreen forest",
+          "B": "Tropical broadleaf evergreen forest",
+          "C": "Tropical deciduous forest",
+          "D": "Temperate evergreen forest"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-117",
+      "sha256": "90ac1e0a319380fdf05bd67aff85c08fdbb10da0615ed9d3ef3089f95d7588f7",
+      "value": {
+        "id": "nda-2020-i-ii-117",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following mountains lies in between Caspian Sea and Black Sea?",
+        "sourceTextHash": "f0da5d7f9e9d1668993f903d31d4028dfff3e8596a2053be4f7894b1b5b6897a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 117,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_n_ii_2020_gat_anskey",
+          "rawQuestionText": "Which one of the following mountains lies in between Caspian Sea and Black Sea?",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "The Caucasus lies between the Black and Caspian seas.",
+            "previousAnswerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 117,
+        "subject": "Geography",
+        "topic": "World Places & Routes",
+        "subtopic": "Mountain Ranges",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following mountains lies in between Caspian Sea and Black Sea?"
+        ],
+        "options": {
+          "A": "Caucasus",
+          "B": "Carpathians",
+          "C": "Apennine",
+          "D": "Elburz"
+        },
+        "answer": "A",
+        "explanation": "The Caucasus lies between the Black and Caspian seas.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-120",
+      "sha256": "d2d89901770ccf22458d74fe22b38f3b1fbad0f5462e2398779573f7c4585783",
+      "value": {
+        "id": "nda-2020-i-ii-120",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following countries does NOT have direct access to the sea/ocean?",
+        "sourceTextHash": "b7f7cfdb9e61a13f514b6b5b0a6c655ca3424846d8c8f20f2788f32794393b4e",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 120,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_n_ii_2020_gat_anskey",
+          "rawQuestionText": "Which one of the following countries does NOT have direct access to the sea/ocean?",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Armenia has no sea coast; Azerbaijan borders the Caspian Sea.",
+            "previousAnswerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 120,
+        "subject": "Geography",
+        "topic": "World Places & Routes",
+        "subtopic": "Landlocked Countries",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following countries does NOT have direct access to the sea/ocean?"
+        ],
+        "options": {
+          "A": "Syria",
+          "B": "Jordan",
+          "C": "Azerbaijan",
+          "D": "Armenia"
+        },
+        "answer": "D",
+        "explanation": "Armenia has no sea coast; Azerbaijan borders the Caspian Sea.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-76",
+      "sha256": "8f0b6eb7e714420f1fff522b67629943e87746bf73dd93e021dfae466a13ba74",
+      "value": {
+        "id": "nda-2020-i-ii-76",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Deendayal Port is located at",
+        "sourceTextHash": "d86bea4db1a7f40983c21fe8fca838f3501b113da51698d93bd832a4bcec7574",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 76,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "Deendayal Port is located at"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 76,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Ports",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Deendayal Port is located at"
+        ],
+        "options": {
+          "A": "Kerala",
+          "B": "Gujarat",
+          "C": "Maharashtra",
+          "D": "Goa"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-99",
+      "sha256": "7534da3a57998ceb70528eb47fd5093f955f72cb89a2d18f7a824a2ef490c660",
+      "value": {
+        "id": "nda-2020-i-ii-99",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following terms describes the practice of growing two or more crops simultaneously on the same piece of land?",
+        "sourceTextHash": "37e9642cf5cc8f657ca43a26954d48c7d6fdf32e8982fab1f490a0e27dadd8c6",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 99,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "Which one of the following terms describes the practice of growing two or more crops simultaneously on the same piece of land?"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 99,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following terms describes the practice of growing two or more crops simultaneously on the same piece of land?"
+        ],
+        "options": {
+          "A": "Crop rotation",
+          "B": "Mixed cropping",
+          "C": "Intercropping",
+          "D": "Mixed farming"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-103",
+      "sha256": "ea8f1463ad53d7690c03c0caca6f76105f3161fbb64cb909a01ae0d35234e7fb",
+      "value": {
+        "id": "nda-2020-i-ii-103",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Land Revenue Records maintained in India have categorized land-use into",
+        "sourceTextHash": "00c6237915ce234029dc96a1ccec9981517d6017cf7c5b5475ca9061f8a0ee38",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 103,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_n_ii_2020_gat_anskey",
+          "rawQuestionText": "Land Revenue Records maintained in India have categorized land-use into",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "Indian land revenue records use nine land-use categories.",
+            "previousAnswerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "B"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 103,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Land Revenue Records maintained in India have categorized land-use into"
+        ],
+        "options": {
+          "A": "6 categories",
+          "B": "9 categories",
+          "C": "15 categories",
+          "D": "21 categories"
+        },
+        "answer": "B",
+        "explanation": "Indian land revenue records use nine land-use categories.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-104",
+      "sha256": "4bba07369db444aa8c74aedbb31622aba8c88bfd5a48d9f901299b271daee5c6",
+      "value": {
+        "id": "nda-2020-i-ii-104",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Dry land farming in India is largely confined to areas with rainfall less than",
+        "sourceTextHash": "da929a06d256d36fd64283a378495683fa4fc0f7a192cf3ec11f6fd8771fe1a9",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 104,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "Dry land farming in India is largely confined to areas with rainfall less than"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 104,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Dry land farming in India is largely confined to areas with rainfall less than"
+        ],
+        "options": {
+          "A": "100 cm",
+          "B": "85 cm",
+          "C": "80 cm",
+          "D": "75 cm"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-105",
+      "sha256": "913b4c54b91ac9a26c5606e95d0facdc90903d45bb620ffbc87ecbe45e7ad488",
+      "value": {
+        "id": "nda-2020-i-ii-105",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "For an area to be excluded from the drought-prone category, what percentage of its gross cropped area should be under irrigation?",
+        "sourceTextHash": "47364d2bf12e70a31cd99d970c9552286a3995ac10e6329921b2c00696809b0b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 105,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "For an area to be excluded from the drought-prone category, what percentage of its gross cropped area should be under irrigation?"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 105,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "For an area to be excluded from the drought-prone category, what percentage of its gross cropped area should be under irrigation?"
+        ],
+        "options": {
+          "A": "10 per cent or more",
+          "B": "20 per cent or more",
+          "C": "25 per cent or more",
+          "D": "30 per cent or more"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-124",
+      "sha256": "f10cb86840f398acdec7c13e0d4286d0a4ece47e4943f960a3fe7c8c66de6dac",
+      "value": {
+        "id": "nda-2020-i-ii-124",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements is NOT correct?",
+        "sourceTextHash": "4d611db93a8d0aebc5f077f325ff9c8bdeb8c4cdd01e34b47fda17c184f77d58",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 124,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "Which one of the following statements is NOT correct?"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 124,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Oilfields & Refineries",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements is NOT correct?"
+        ],
+        "options": {
+          "A": "Biomass is a renewable source of energy",
+          "B": "Gobar gas is produced when cow-dung, crop residues, vegetable waste and sewage are allowed to decompose in the absence of oxygen",
+          "C": "Biogas generation reduces soil and water pollution",
+          "D": "Heating capacity of biogas is very low"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-80",
+      "sha256": "1b258688e4c30c32161ad5c2e75dc95214f112a550875dcbfaf3f8d66a0496fb",
+      "value": {
+        "id": "nda-2020-i-ii-80",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "According to Census of India, 2011, which one among the following is the least populated state in India?",
+        "sourceTextHash": "038f16e85b8e1e0cae6f149cef426a908c387a475302221e8cdc30dfc61e67d6",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 80,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_n_ii_2020_gat_anskey",
+          "rawQuestionText": "According to Census of India, 2011, which one among the following is the least populated state in India?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Punjab had the smallest population among the four listed states in Census 2011.",
+            "previousAnswerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 80,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Easy",
+        "promptLines": [
+          "According to Census of India, 2011, which one among the following is the least populated state in India?"
+        ],
+        "options": {
+          "A": "Maharashtra",
+          "B": "Madhya Pradesh",
+          "C": "Odisha",
+          "D": "Punjab"
+        },
+        "answer": "D",
+        "explanation": "Punjab had the smallest population among the four listed states in Census 2011.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-81",
+      "sha256": "68209291711183fc268a092027a5d21021d5494669e934672550645fbea2d60b",
+      "value": {
+        "id": "nda-2020-i-ii-81",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The speakers of major Indian languages belong to how many language families?",
+        "sourceTextHash": "a9dd076a2dba59632a8c5390f2c77cf2be86336d50893411698199f11eb58d85",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 81,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "The speakers of major Indian languages belong to how many language families?"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 81,
+        "subject": "Geography",
+        "topic": "Tribes & Cultural Geography",
+        "subtopic": "Tribes and Nomadic Communities",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The speakers of major Indian languages belong to how many language families?"
+        ],
+        "options": {
+          "A": "Two",
+          "B": "Three",
+          "C": "Four",
+          "D": "Six"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-77",
+      "sha256": "536a865cbeb8e8d19bc2d3a705a9ac106b74e06bc363c18cbde7ae1c034f8318",
+      "value": {
+        "id": "nda-2020-i-ii-77",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following cities is associated with Biosafety Protocol to the Convention on Biological Diversity (2000)?",
+        "sourceTextHash": "c84897cdf5e98546465ca4348bbd919f6539ee5d036dd021e0d2fdd11e9e1206",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 77,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "Which one of the following cities is associated with Biosafety Protocol to the Convention on Biological Diversity (2000)?"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 77,
+        "subject": "Polity",
+        "topic": "Environmental Governance",
+        "subtopic": "International Environmental Agreements",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following cities is associated with Biosafety Protocol to the Convention on Biological Diversity (2000)?"
+        ],
+        "options": {
+          "A": "Geneva",
+          "B": "Nairobi",
+          "C": "Cartagena",
+          "D": "Rio de Janeiro"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-116",
+      "sha256": "7beb063ae56ec56196bc15faf87dcde5be02298f3c595f193e8862c9a11205ad",
+      "value": {
+        "id": "nda-2020-i-ii-116",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is a major environmental issue in eastern Canada?",
+        "sourceTextHash": "518b184053245bd5577bb545d5b966daeaa563cc04874533e9f14adb8af384bf",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 116,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_n_ii_2020_gat_anskey",
+          "rawQuestionText": "Which one of the following is a major environmental issue in eastern Canada?",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "Acid precipitation is the listed major environmental issue in eastern Canada.",
+            "previousAnswerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 116,
+        "subject": "Environment",
+        "topic": "Pollution & Climate",
+        "subtopic": "Acid Rain",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is a major environmental issue in eastern Canada?"
+        ],
+        "options": {
+          "A": "Acid precipitation",
+          "B": "Groundwater depletion",
+          "C": "Land degradation",
+          "D": "Desertification"
+        },
+        "answer": "A",
+        "explanation": "Acid precipitation is the listed major environmental issue in eastern Canada.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-119",
+      "sha256": "647489996b1708aa252f1d1a62c65d806d42cdd1722414aa6be02b3270964e5e",
+      "value": {
+        "id": "nda-2020-i-ii-119",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements with regard to Biosphere Reserve is/are correct? 1. The idea of Biosphere Reserve was initiated by UNESCO in 1973-74 2. There are 18 designated Biosphere Reserves in India 3. All Biosphere Reserves in India have been included in world network of Biosphere Reserves of UNESCO Select the correct answer using the code given below:",
+        "sourceTextHash": "0c4250aa7f1bf8f54ac6d928168ddb9ec0068dde8c4ee43d97541e250ba376a2",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 119,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+          "rawQuestionText": "Which of the following statements with regard to Biosphere Reserve is/are correct? 1. The idea of Biosphere Reserve was initiated by UNESCO in 1973-74 2. There are 18 designated Biosphere Reserves in India 3. All Biosphere Reserves in India have been included in world network of Biosphere Reserves of UNESCO Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 119,
+        "subject": "Environment",
+        "topic": "Protected Areas & Biodiversity",
+        "subtopic": "Biosphere Reserves",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements with regard to Biosphere Reserve is/are correct? 1. The idea of Biosphere Reserve was initiated by UNESCO in 1973-74 2. There are 18 designated Biosphere Reserves in India 3. All Biosphere Reserves in India have been included in world network of Biosphere Reserves of UNESCO Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "1 and 2 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-136",
+      "sha256": "12884af0caee7c46cdfec63154504edee8540cba88b13b7dba00f519be7817da",
+      "value": {
+        "id": "nda-2020-i-ii-136",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is NOT a reason of decrease in biodiversity?",
+        "sourceTextHash": "57eb71f16c01497e66a31f396cc4785cc36d0b24651681f0a3965f6f4e4205c4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 136,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_n_ii_2020_gat_anskey",
+          "rawQuestionText": "Which one of the following is NOT a reason of decrease in biodiversity?",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Maintaining sacred groves conserves rather than depletes biodiversity.",
+            "previousAnswerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 136,
+        "subject": "Environment",
+        "topic": "Protected Areas & Biodiversity",
+        "subtopic": "National Parks and Wildlife Sanctuaries",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is NOT a reason of decrease in biodiversity?"
+        ],
+        "options": {
+          "A": "Large scale deforestation",
+          "B": "Exploitation of forest produce",
+          "C": "Maintaining sacred groves",
+          "D": "Encroachment in forest areas"
+        },
+        "answer": "C",
+        "explanation": "Maintaining sacred groves conserves rather than depletes biodiversity.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2020-i-ii-137",
+      "sha256": "e9105093e43acedf1ebedad823d1355cdd72bd9443942787fad8614dde820b48",
+      "value": {
+        "id": "nda-2020-i-ii-137",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is NOT a cause of depletion in groundwater?",
+        "sourceTextHash": "40861f3981beede810dae14cc3a8a5f02c93f92756fd9a4f81e0f0b6b152165a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2020,
+          "paper": "I/II",
+          "questionNumber": 137,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_n_ii_2020_gat_anskey",
+          "rawQuestionText": "Which one of the following is NOT a cause of depletion in groundwater?",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Afforestation is not a cause of groundwater depletion.",
+            "previousAnswerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/09/nda-ii-2020-gat_new-63c6e547.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+            "series": "B",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2020,
+        "paper": "I/II",
+        "questionNumber": 137,
+        "subject": "Environment",
+        "topic": "Pollution & Climate",
+        "subtopic": "Water Stress & Groundwater",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is NOT a cause of depletion in groundwater?"
+        ],
+        "options": {
+          "A": "Afforestation",
+          "B": "Loss of forests",
+          "C": "Excessive pumping of groundwater",
+          "D": "Construction of large scale concrete buildings"
+        },
+        "answer": "A",
+        "explanation": "Afforestation is not a cause of groundwater depletion.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

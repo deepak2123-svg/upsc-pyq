@@ -1,0 +1,34 @@
+{
+  "paperId": "nda-2020-i-ii-gat",
+  "reviewedAt": "2026-10-29",
+  "reviewer": "Codex same-agent review",
+  "reviewerMethod": "Draft transcription from a secondary text layer, followed by a fresh page-oriented visual comparison of all 24 numbered-question pages against the rendered original Series B scan. Stems, statements, options, directions, underlining, printed numbers, mathematical notation and both required figures were checked; this is a same-agent second pass, not independent human review.",
+  "classificationMethod": "Concept-specific first placement followed by a reverse-order placement reread, including explicit NDA/CDS versus CSE applicability checks, dated-current-affairs tagging and checks of every additional placement.",
+  "originalPdfSha256": "9d302a9333a2181b4c443af50bb7123cf7c4523dd99362f6325484a451773bda",
+  "keyPdfSha256": "d1ea9f54927c6a2737d1e927ff97e02eba51594ff9229cc414478a0e8dc3cca9",
+  "reviewedQuestionNumbers": [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+    41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
+    61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80,
+    81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100,
+    101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120,
+    121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140,
+    141, 142, 143, 144, 145, 146, 147, 148, 149, 150
+  ],
+  "reproductionSecondPass": "approved",
+  "classificationSecondPass": "approved",
+  "requiredFigures": [
+    {"questionNumber": 122, "asset": "/figures/nda-2020-i-ii-q122.png", "sha256": "00f1f6b09c88391b003eae90c9d0ac7b0ab7d1e4050eff64a1a255780b91090f"},
+    {"questionNumber": 132, "asset": "/figures/nda-2020-i-ii-q132.png", "sha256": "1f54dacdbbc4a5ef59127425092496008550e5e0ffc80176e642008ee3c06bfa"}
+  ],
+  "sourceDefectsPreserved": [
+    "Q57 prints 42th Amendment; the source wording is preserved.",
+    "Q129 prints 'than connected'; this obvious scan-level spelling was normalized to 'then connected' while the mathematical content and choices remain unchanged."
+  ],
+  "materialHistoricalRepairs": [],
+  "reviewedInputHashes": {
+    "scripts/nda-2020-i-ii-transcription.mjs": "b0f57a5f29e11369f76d941c0f492cc976b0b460e36fdf2fbba78de34edddfb9",
+    "scripts/nda-2020-i-ii-classification.mjs": "66a31eac852d2015119d1811fc5c913c2e513ed3ef18f5055e798bc7b0b5ff99"
+  }
+}
