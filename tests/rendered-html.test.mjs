@@ -33,6 +33,8 @@ test("server-renders the browse-first official PYQ workspace", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Question library/i);
+  assert.match(html, /Find any PYQ term/);
+  assert.match(html, /role="search"/);
   assert.match(html, /UPSC\.PYQ\.Practise/);
   assert.doesNotMatch(html, /UPSCPuraan/);
   assert.match(html, /Subjects/);
@@ -49,6 +51,25 @@ test("server-renders the browse-first official PYQ workspace", async () => {
   assert.match(html, /Bookmarks/);
   assert.match(html, /manifest\.webmanifest/);
   assert.doesNotMatch(html, /UPSC test lab|Guest mode|Sign in with Google/);
+});
+
+test('homepage search returns answer-free matching MCQs and supports option text',async()=>{
+  const response=await workerFetch('/?q=HBrO%E2%82%84');
+  assert.equal(response.status,200);
+  const html=await response.text();
+  assert.match(html,/matching MCQ/);
+  assert.match(html,/Hypobromous acid/);
+  assert.match(html,/HBrO₄/);
+  assert.match(html,/NDA<!-- --> <!-- -->2021/);
+  assert.doesNotMatch(html,/Correct answer|officialAcceptedOptions|"answer"/);
+});
+
+test('homepage search reports no result without weakening the normal library',async()=>{
+  const response=await workerFetch('/?q=term-that-cannot-exist-94721');
+  assert.equal(response.status,200);
+  const html=await response.text();
+  assert.match(html,/No reviewed MCQs match/);
+  assert.match(html,/Question library/i);
 });
 
 test("server-renders an exam archive through the browse-first selector", async () => {
