@@ -1,6 +1,6 @@
 # NDA II 2019 GAT — release report
 
-Prepared for release on 29 October 2026. Series A, BEM-U-TAG, original
+Released and production-verified on 29 October 2026. Series A, BEM-U-TAG, original
 22-page General Ability Test.
 
 ## Accounting and evidence
@@ -33,13 +33,27 @@ scientific notation are preserved.
 
 ## Verification
 
-The release requires the builder check, full automated suite, changed-file
-ESLint, diff validation and the dedicated Chromium paper scenarios to pass.
-After deployment, the same exact-commit release will be checked for all 600
-answer decisions, the answer-free 149-question snapshot, key and figure hashes,
-Sources metadata and production browser scenarios.
+- Production build and all 231 automated tests pass. The focused import suite
+  tests every one of 600 possible answer choices against the official decision.
+- All seven local Chromium scenarios pass: exact 149-question practice and
+  grading, three section projections, historical withdrawal handling, complete
+  print/key rendering and Sources disclosure.
+- Builder `--check`, changed-file ESLint and diff validation pass. ESLint reports
+  four non-blocking existing-style warnings and no errors.
 
 ## Release
 
-Pending commit, deployment and production verification. Next queued source
-paper: NDA I 2019.
+Data commit `25c08296cab51d4c3955c871caf931208343690e` was pushed normally to
+`main` and `codex/pyq-selection-flow`. Exact-commit GitHub Vercel status reports
+success for deployment `FhEg9nW54dZvge3WDAg3hkjQLijw`.
+
+Live [UPSC Puraan](https://upscpuraan.vercel.app) verification passed:
+
+- all 600 grading decisions, 149 eligible and one withdrawn;
+- the exact answer-free 149-question snapshot and its section memberships;
+- exact official-key bytes and Q70 figure asset SHA-256;
+- Sources disclosure of 149/150, official final key and Q119 withdrawn; and
+- all seven production Chromium scenarios in one clean run.
+
+No infrastructure, database migration, force push or unrelated staging draft was
+included. Next queued source paper: NDA I 2019.

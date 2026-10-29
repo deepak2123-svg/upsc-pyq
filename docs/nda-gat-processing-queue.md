@@ -19,7 +19,7 @@ mean complete. The source register currently inventories 25 local PDFs.
 | 10 | NDA II 2021 | Complete and live verified, 28 October 2026: 150 official-final, 50 English/GS/Science each; Q102 B/C accepted; Q84 original options restored with historical protection. 126 new + 24 reused; data `8e1c1de`; 220 automated, 600 live option decisions and all eight production browser checks pass. See `nda-2021-ii-release.md`. |
 | 11 | NDA I 2021 | Complete and live verified, 29 October 2026: 149 official-final + Q58 withdrawn; 123 new + 27 reused. Data `26c5344`; 223 automated, 600 live option decisions and all seven production browser checks pass. See `nda-2021-i-release.md`. |
 | 12 | NDA I & II 2020 combined | Complete and live verified, 29 October 2026: one shared 150-question Series B booklet, 149 official-final + Q70 withdrawn; 123 new + 27 reused, with one preserved duplicate alias. Data `adeafa4`; 228 automated tests, all 600 live option decisions, the 149-question answer-free snapshot and both figure assets pass. See `nda-2020-i-ii-release.md`. |
-| 13 | NDA II 2019 | Processing complete locally, 29 October 2026: 149 official-final + Q119 withdrawn; English 50, Science 50, GS 49. Awaiting release and live verification. |
+| 13 | NDA II 2019 | Complete and live verified, 29 October 2026: 149 official-final + Q119 withdrawn; English 50, Science 50, GS 49. 130 new + 20 reused; data `25c0829`; 231 automated tests, all 600 live option decisions and all seven production browser checks pass. See `nda-2019-ii-release.md`. |
 | 14 | NDA I 2019 | Next; process as a separate paper. |
 | 15–16 | NDA II, I 2018 | Queued individually |
 | 17–18 | NDA II, I 2017 | Queued individually |
