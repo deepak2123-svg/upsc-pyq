@@ -8,4 +8,4 @@
 - Repairs: the final key changes canonical Q51 from C to B; Q53 removes an article absent from the printed source and increments its content revision.
 - Figures: source-derived local assets preserve the Q122 circuit and Q132 magnetic-field diagram.
 - Review: all numbered pages received a page-oriented same-agent visual second pass; key cells were independently transcribed column-first and row-first with agreement.
-- Verification: the production build and all 228 automated tests pass locally, including complete four-choice grading, the exact 149-question NDA inventory and answer-free snapshot checks. Production deployment and live-browser verification are pending the release push.
+- Verification: the production build and all 228 automated tests pass. Commit `adeafa4` deployed successfully on 29 October 2026; production checks passed for all 600 answer decisions, the exact 149-question answer-free snapshot, both figure assets, the 2-scenario homepage search suite and the Sources directory metadata.
