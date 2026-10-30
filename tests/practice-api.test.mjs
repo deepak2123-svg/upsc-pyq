@@ -728,7 +728,7 @@ test("retired V3 Physical Geography leaves retain only eligible historical quest
 });
 
 test("V3 rejects malformed counts rather than coercing or clamping them", async () => {
-  for (const count of [0, -1, 101, 20.5, "20", null, {}, [], true]) {
+  for (const count of [0, -1, 5001, 20.5, "20", null, {}, [], true]) {
     const { response } = await create(recipeFor([{ subtopicId: planets, exams: allExams }], { count }));
     assert.equal(response.status, 400, JSON.stringify(count));
   }

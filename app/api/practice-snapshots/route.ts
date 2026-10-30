@@ -45,8 +45,8 @@ export async function POST(request: Request) {
   if(input.frozenScopes!==undefined&&input.version!==4)return NextResponse.json({error:'Exact question membership requires a V4 recipe.'},{status:400});
 
   const strict = input.version === 3 || input.version === 4;
-  if (strict && input.count !== "all" && (typeof input.count !== "number" || !Number.isInteger(input.count) || input.count < 1 || input.count > 100)) {
-    return NextResponse.json({ error: "Question count must be an integer from 1 to 100, or all." }, { status: 400 });
+  if (strict && input.count !== "all" && (typeof input.count !== "number" || !Number.isInteger(input.count) || input.count < 1 || input.count > 5000)) {
+    return NextResponse.json({ error: "Question count must be a positive whole number, or all." }, { status: 400 });
   }
   if (strict && input.order !== "newest" && input.order !== "shuffle") {
     return NextResponse.json({ error: "Choose newest or shuffle order." }, { status: 400 });

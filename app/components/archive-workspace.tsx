@@ -27,7 +27,7 @@ function SourceChoice({ exam, state, count, available, disabled, onChange }: { e
 function PracticeSetupDialog({ matchingCount, examMetrics, count, order, durationChoice, customMinutes, includeAnswerKey, shortage, validDuration, loading, exporting, canStart, error, onExam, onCount, onOrder, onDuration, onCustomMinutes, onIncludeAnswerKey, onUseAll, onStart, onExport, onCancel }: {
   matchingCount: number; count: number | "all" | null; order: PracticeOrder; durationChoice: string; customMinutes: string; includeAnswerKey: boolean; shortage: boolean; validDuration: boolean; loading: boolean; exporting: boolean; canStart: boolean; error: string;
   examMetrics: Record<PyqExam, { available: number; count: number; state: "none" | "partial" | "all" }>;
-  onExam: (exam: PyqExam) => void; onCount: (value: number | "all") => void; onOrder: (value: PracticeOrder) => void; onDuration: (value: string) => void; onCustomMinutes: (value: string) => void; onIncludeAnswerKey: (value: boolean) => void; onUseAll: () => void; onStart: () => void; onExport: () => void; onCancel: () => void;
+  onExam: (exam: PyqExam) => void; onCount: (value: number | "all" | null) => void; onOrder: (value: PracticeOrder) => void; onDuration: (value: string) => void; onCustomMinutes: (value: string) => void; onIncludeAnswerKey: (value: boolean) => void; onUseAll: () => void; onStart: () => void; onExport: () => void; onCancel: () => void;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const [mode, setMode] = useState<"online" | "pdf">("online");
@@ -47,7 +47,7 @@ function PracticeSetupDialog({ matchingCount, examMetrics, count, order, duratio
         const metric = examMetrics[exam], included = metric.state !== "none";
         return <button type="button" key={exam} className="compact-source" aria-pressed={included} disabled={busy || metric.available === 0} style={{"--exam-color":PYQ_EXAM_COLORS[exam]} as CSSProperties} onClick={() => onExam(exam)}><span><i aria-hidden="true" />{exam} · {format(metric.available)}</span><small>{included ? "Included" : "Excluded"}</small></button>;
       })}</div></fieldset>
-      <fieldset className="compact-count-options" disabled={busy}><legend>Questions</legend><div className="compact-counts">{COUNTS.map(value => <button type="button" key={value} aria-pressed={count === value} onClick={() => onCount(value)}>{value}</button>)}<button type="button" aria-pressed={count === "all"} onClick={() => onCount("all")}>All</button></div></fieldset>
+      <fieldset className="compact-count-options" disabled={busy}><legend>Questions</legend><div className="compact-counts">{COUNTS.map(value => <button type="button" key={value} aria-pressed={count === value} onClick={() => onCount(value)}>{value}</button>)}<label className="compact-custom-count"><span>Custom</span><input aria-label="Custom question count" type="number" inputMode="numeric" min={1} max={matchingCount} step={1} value={typeof count === "number" && !COUNTS.includes(count as typeof COUNTS[number]) ? count : ""} placeholder="No." onChange={event => { const value=Number(event.target.value);onCount(event.target.value!==""&&Number.isInteger(value)&&value>0?value:null); }} /></label><button type="button" aria-pressed={count === "all"} onClick={() => onCount("all")}>All</button></div></fieldset>
       {count === null ? <p className="compact-hint">Choose a question count.</p> : null}
       {shortage ? <div className="scope-shortage" role="alert"><p>Only {format(matchingCount)} questions match.</p><button type="button" disabled={busy} onClick={onUseAll}>Use all {format(matchingCount)} available</button></div> : null}
       <div className="compact-settings">
@@ -157,7 +157,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
             const currentPath = ancestors(draft.focusId, baseIndex).map((node) => node.id);
             setExpandedIds(currentPath);
           }
-          if (draft.version >= 4 && (draft.count === "all" || Number.isInteger(draft.count) && draft.count > 0 && draft.count <= 100)) setCount(draft.count);
+          if (draft.version >= 4 && (draft.count === "all" || Number.isInteger(draft.count) && draft.count > 0 && draft.count <= 5000)) setCount(draft.count);
           if (draft.order === "newest" || draft.order === "shuffle") setOrder(draft.order);
           if (Number.isInteger(draft.durationMinutes) && draft.durationMinutes >= 1 && draft.durationMinutes <= 720) {
             const savedMinutes = String(draft.durationMinutes);
