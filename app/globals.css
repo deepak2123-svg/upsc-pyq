@@ -43,10 +43,13 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .pyq-header-inner { width: min(1720px, calc(100% - 48px)); height: 64px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .pyq-brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: -.025em; }
 .pyq-brand-mark { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 8px; background: var(--ink); color: white; font-size: 10px; letter-spacing: .06em; }
-.pyq-header-search { width: clamp(200px,24vw,340px); height: 34px; margin-left: auto; display: flex; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.pyq-header-search { width: clamp(180px,20vw,300px); height: 32px; margin-left: auto; display: flex; overflow: hidden; border: 1px solid #cfd4dc; border-radius: 999px; background: var(--surface); transition: border-color 120ms ease, box-shadow 120ms ease; }
+.pyq-header-search:focus-within { border-color: #8da6e6; box-shadow: 0 0 0 3px rgba(36,87,214,.1); }
 .pyq-header-search input { min-width: 0; flex: 1; border: 0; padding: 0 11px; background: transparent; color: var(--ink); font-size: 13px; }
 .pyq-header-search input:focus { outline: none; }
-.pyq-header-search button { border: 0; border-left: 1px solid var(--line); padding: 0 12px; background: var(--ink); color: white; font-size: 12px; font-weight: 700; }
+.pyq-header-search button { width: 38px; flex: 0 0 38px; display: grid; place-items: center; border: 0; padding: 0; background: transparent; color: var(--muted); }
+.pyq-header-search button:hover { color: var(--ink); background: #f1f3f5; }
+.pyq-header-search button svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
 .pyq-nav { display: flex; align-items: center; gap: 28px; }
 .pyq-nav a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 550; transition: color 120ms ease; }
 .pyq-nav a:hover { color: var(--ink); }
@@ -103,8 +106,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .pyq-brand > span:last-child { display: none; }
   .pyq-header-inner { gap: 10px; }
   .pyq-header-search { width: auto; min-width: 0; flex: 1; margin-left: 0; }
-  .pyq-header-search button { width: 36px; padding: 0; overflow: hidden; color: transparent; position: relative; }
-  .pyq-header-search button::after { content: '⌕'; position: absolute; inset: 0; display: grid; place-items: center; color: white; font-size: 19px; }
+  .pyq-header-search button { width: 34px; flex-basis: 34px; }
   .pyq-nav { gap: 10px; }
   .pyq-nav a { display: none; }
   .pyq-nav a:first-child { display: inline; }

@@ -9,9 +9,8 @@ export function SiteHeader({searchQuery=""}:{searchQuery?:string}) {
           <span>UPSC.PYQ.Practise</span>
         </Link>
         <form className="pyq-header-search" action="/" method="get" role="search">
-          <label className="sr-only" htmlFor="pyq-term">PYQ term</label>
-          <input id="pyq-term" name="q" type="search" defaultValue={searchQuery} maxLength={160} placeholder="Search any PYQ term" autoComplete="off" />
-          <button type="submit" aria-label="Search PYQs">Search</button>
+          <input id="pyq-term" aria-label="PYQ term" name="q" type="search" defaultValue={searchQuery} maxLength={160} placeholder="Search PYQs" autoComplete="off" />
+          <button type="submit" aria-label="Search PYQs"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg></button>
         </form>
         <nav className="pyq-nav" aria-label="Primary navigation">
           <Link href="/">PYQs</Link>
