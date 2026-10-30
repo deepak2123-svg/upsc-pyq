@@ -29,6 +29,8 @@
 .practice-prompt { display: grid; gap: 10px; font-family: var(--font-reading), Georgia, serif; font-size: var(--question-font-size); font-weight: 450; line-height: 1.58; letter-spacing: -.008em; color: #222a35; }
 .math-vector { position: relative; display: inline-block; padding: 0 .08em; }
 .math-vector::after { content: "→"; position: absolute; left: 0; right: 0; top: -.45em; font: .75em/1 Arial, sans-serif; text-align: center; }
+.math-expression { display: inline-block; margin: 0 .14em; white-space: nowrap; vertical-align: -.12em; }
+.math-expression math { font-family: "Cambria Math", "STIX Two Math", serif; font-size: 1.05em; }
 .practice-prompt > p { margin: 0; }
 .practice-prompt .paper-statement { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 6px; padding-left: 8px; }
 .paper-statement b { font: inherit; font-weight: 600; font-variant-numeric: tabular-nums; }

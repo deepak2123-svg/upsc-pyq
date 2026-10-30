@@ -15,7 +15,8 @@ test('NDA I official-key paper preserves equations and declares its complete sou
  await expect(page.locator('[data-question-id="nda-2026-i-51"]')).toContainText('θ = 60°');
  await expect(page.locator('[data-question-id="nda-2026-i-53"]')).toContainText('(α/2)');
  await expect(page.locator('[data-question-id="nda-2026-i-57"]')).toContainText('√3 t²');
- await expect(page.locator('[data-question-id="nda-2026-i-57"] .math-vector')).toHaveAttribute('aria-label','vector r');
+ await expect(page.locator('[data-question-id="nda-2026-i-57"] .math-expression math')).toBeVisible();
+ await expect(page.locator('[data-question-id="nda-2026-i-57"] .math-expression mover')).toHaveCount(4);
  await expect(page.locator('[data-question-id="nda-2026-i-61"]')).toContainText('−20 °C');
  await expect(page.getByText('† Official provisional key; subject to revision.',{exact:true})).toBeVisible();
  await expect(page.getByText('‡ Independently verified from primary sources; no matching official key recovered.',{exact:true})).toHaveCount(0);
@@ -24,10 +25,10 @@ test('NDA I official-key paper preserves equations and declares its complete sou
  await page.getByRole('button',{name:/^NDA\b/}).click();
  await expect(page.getByRole('button',{name:/^NDA\b/})).toHaveAttribute('aria-pressed','true');
  await page.getByRole('combobox').nth(0).selectOption('2026');
- const paper=page.locator('.source-paper-card').filter({hasText:'2026 · I'}).filter({hasNotText:'2026 · II'});
- await expect(paper).toContainText('150 MCQs');
+ const paper=page.getByRole('row',{name:/NDA 2026 · I GAT/});
+ await expect(paper).toContainText('150 / 150');
  await expect(paper).toContainText('Complete source review');
- await expect(paper).toContainText('official provisional key');
+ await expect(paper).toContainText('Official provisional');
  await page.setViewportSize({width:390,height:844});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
