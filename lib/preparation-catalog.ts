@@ -17,6 +17,7 @@ import officialNda2021IIPlacements from '../content/nda-2021-ii-preparation-plac
 import officialNda2021IPlacements from '../content/nda-2021-i-preparation-placements.json' with {type:'json'};
 import officialNda2020CombinedPlacements from '../content/nda-2020-i-ii-preparation-placements.json' with {type:'json'};
 import officialNda2019IIPlacements from '../content/nda-2019-ii-preparation-placements.json' with {type:'json'};
+import officialNda2019IPlacements from '../content/nda-2019-i-preparation-placements.json' with {type:'json'};
 import {organiseNdaScience} from './nda-science-syllabus';
 
 export type PreparationInventory = SubjectPracticeInventory & { preparationExam: PreparationExam; preparationViews: PreparationView[] };
@@ -110,7 +111,7 @@ function buildPreparationInventory(target: PreparationExam): PreparationInventor
   // Future English/maths/CSAT imports need explicit reviewed concept placements.
   // A historic global "outside GS" decision is not silently removed or promoted.
   const questions = new Map(historicalPyqQuestions.map(q => [q.id, q]));
-  for (const row of [...applicability.approvedPlacements,...officialNdaPlacements,...officialNdaIIPlacements,...officialNda2025IIPlacements,...officialNda2025IPlacements,...reviewedNda2024IIPlacements,...officialNda2024IPlacements,...officialNda2023IIPlacements,...officialNda2023IPlacements,...officialNda2022IIPlacements,...officialNda2022IPlacements,...officialNda2021IIPlacements,...officialNda2021IPlacements,...officialNda2020CombinedPlacements,...officialNda2019IIPlacements] as ReviewedPlacement[]) {
+  for (const row of [...applicability.approvedPlacements,...officialNdaPlacements,...officialNdaIIPlacements,...officialNda2025IIPlacements,...officialNda2025IPlacements,...reviewedNda2024IIPlacements,...officialNda2024IPlacements,...officialNda2023IIPlacements,...officialNda2023IPlacements,...officialNda2022IIPlacements,...officialNda2022IPlacements,...officialNda2021IIPlacements,...officialNda2021IPlacements,...officialNda2020CombinedPlacements,...officialNda2019IIPlacements,...officialNda2019IPlacements] as ReviewedPlacement[]) {
     if (row.target !== target || row.status !== 'approved' || !row.rationale.trim()) continue;
     const question = questions.get(row.questionId);
     const leaf = nodes.find(n => n.kind === 'subtopic' && n.id === row.subtopicId);

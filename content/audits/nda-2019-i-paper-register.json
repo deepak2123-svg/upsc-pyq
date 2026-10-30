@@ -1,0 +1,963 @@
+{
+  "paperId": "nda-2019-i-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2019,
+    "session": "I",
+    "paper": "GAT",
+    "paperCode": "EDF-F-KJU",
+    "series": "A",
+    "language": "English",
+    "examDate": "2019-04-21",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2019-1.pdf",
+    "sha256": "45f375d1b94b6d4db2344ded1201bdd9db5408d003e1ff8c478f332d7fd18b79"
+  },
+  "pdfPageMapping": {
+    "pages": 25,
+    "cover": 1,
+    "english": "PDF 2–9 = printed 2–9",
+    "partB": "PDF 10–25 = printed odd pages 11–41"
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "retrievedAt": "2026-10-30",
+    "url": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2019_gat_anskey",
+    "asset": "/papers/nda-2019-i-gat/official-final-key.pdf",
+    "sha256": "cde328f17e7b4e2961520c6d67527c1535a5495d31e015fea536cf6c9bfae294",
+    "page": 1,
+    "series": "A",
+    "session": "I",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "Preserved scan of the UPSC final answer table, headed NDA&NA-I-2019, Series A, GAT, max marks 600, NIL items dropped and 150 items for scoring; retrieved through the National Digital Library archive."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2019-2019-1-133",
+      "sha256": "af13ba2888b46b52a8c443a10de6ce239d452e2a7e20b4a258ec24fcf9ff0c1a",
+      "value": {
+        "id": "cds-2019-2019-1-133",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Fundamental right guaranteed under which one of the following Articles of the Constitution of India is available only to the citizens of India?",
+        "sourceTextHash": "3c4103928791a2a4a36a4d1d8a3c36e34759450109d8eb3ad47ee0bebf6fc3cc",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 133,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2019_gat_anskey",
+          "rawQuestionText": "Fundamental right guaranteed under which one of the following Articles of the Constitution of India is available only to the citizens oflndia ?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 133,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Fundamental right guaranteed under which one of the following Articles of the Constitution of India is available only to the citizens of India?"
+        ],
+        "options": {
+          "A": "Article 19",
+          "B": "Article 20",
+          "C": "Article 21",
+          "D": "Article 22"
+        },
+        "answer": "A",
+        "explanation": "Original NDA 2019-1 Q133, page 22, visually checked against its complete stem and options; the matching Series A final key accepts A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-56",
+      "sha256": "86dd6a74982f2dfd5349e0dd6d50bdb8652f59795ad42e5f9647e5a4a981a19f",
+      "value": {
+        "id": "nda-2019-i-56",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Spring tides refer to",
+        "sourceTextHash": "b99cd61e3d04c8387a81595ff2a49d89509e9317c270371cac379a1d087c8a0c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 56,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Spring tides refer to"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 56,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Tides",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Spring tides refer to"
+        ],
+        "options": {
+          "A": "greatest difference in the sea level at high and low tides",
+          "B": "lowest difference in the sea level at high and low tides",
+          "C": "no difference in the sea level at high and low tides",
+          "D": "counteraction of gravitational pull of the Sun to that of Moon"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-66",
+      "sha256": "bb9f9daee2ecf24d944c20d516afc4e714158627b2690225739f5bc84c8eac52",
+      "value": {
+        "id": "nda-2019-i-66",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is NOT true in reference to Air mass?",
+        "sourceTextHash": "778df9499ebdb1fa51eb44b0b3e4d60fe048cd59db4798004fcd8a216a746035",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 66,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Which one of the following is NOT true in reference to Air mass?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 66,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Weather Systems & Air Masses",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is NOT true in reference to Air mass?"
+        ],
+        "options": {
+          "A": "Air mass forms either in tropical or in polar region",
+          "B": "Air mass develops on continents as well as over ocean",
+          "C": "Air mass develops in a cyclonic condition",
+          "D": "Air mass changes the weather conditions"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-71",
+      "sha256": "f10f2c6022991486dbadfb741ee63fb4cc84bcd0d491792fc95c795fa12bac90",
+      "value": {
+        "id": "nda-2019-i-71",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "\"Inversion of Rainfall\" is associated with",
+        "sourceTextHash": "09a0a73279447e0cfe2308d6cc590c6d398692a1c9d87d682b3f519767794cbf",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 71,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "\"Inversion of Rainfall\" is associated with"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 71,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Rainfall & Precipitation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "\"Inversion of Rainfall\" is associated with"
+        ],
+        "options": {
+          "A": "Orographic rainfall",
+          "B": "Convectional rainfall",
+          "C": "Cyclonic rainfall (Tropical)",
+          "D": "Cyclonic rainfall (Temperate)"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-91",
+      "sha256": "b4f11f2f6490e25ff28b719429edb7c17fe94f7afb16e2df1400e4baf82d74cb",
+      "value": {
+        "id": "nda-2019-i-91",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following is/are environmental effects of Rotation of the Earth? 1. Daily or diurnal rhythm in daylight and air temperature 2. Flow path of both air and water are turned consistently in a sideward direction 3. The movement of the tides Select the correct answer using the code given below:",
+        "sourceTextHash": "4c8e5fe57398ca745f1a1c3f81601667013b1b9c08f89f51375d4ed77329e77f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 91,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Which of the following is/are environmental effects of Rotation of the Earth? 1. Daily or diurnal rhythm in daylight and air temperature 2. Flow path of both air and water are turned consistently in a sideward direction 3. The movement of the tides Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 91,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Tides",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following is/are environmental effects of Rotation of the Earth? 1. Daily or diurnal rhythm in daylight and air temperature 2. Flow path of both air and water are turned consistently in a sideward direction 3. The movement of the tides Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "3 only"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-104",
+      "sha256": "ed71374448797a60302d8638a1f4a03a6c57fc87065f82de79cde95f10a360d7",
+      "value": {
+        "id": "nda-2019-i-104",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is an example of Salt-Crystal growth?",
+        "sourceTextHash": "553255f9e842c148451c76e989770a8e61c0ad42c782ccac4655fd3d469e6af3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 104,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Which one of the following is an example of Salt-Crystal growth?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 104,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Weathering & Erosional Processes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is an example of Salt-Crystal growth?"
+        ],
+        "options": {
+          "A": "Chemical weathering",
+          "B": "Physical weathering",
+          "C": "Biological weathering",
+          "D": "Bio-chemical weathering"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-106",
+      "sha256": "c64cceea3f3fec5ef02a75c8550bfcd1c38bdab6c686dffa5ca137008a2d1211",
+      "value": {
+        "id": "nda-2019-i-106",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements relating to Richter scale: 1. It was devised in 1935 by Charles F. Richter 2. It describes the quantity of energy released by a single earthquake 3. Richter Scale has no upper limit Which of the statements given above is/are correct?",
+        "sourceTextHash": "5ae94f8c7d3aab5d5b6ae34ae3fa34bec136504ccc8ffaf54ff9ec6e60627f0f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 106,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Consider the following statements relating to Richter scale: 1. It was devised in 1935 by Charles F. Richter 2. It describes the quantity of energy released by a single earthquake 3. Richter Scale has no upper limit Which of the statements given above is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 106,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earthquakes & Seismology",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements relating to Richter scale: 1. It was devised in 1935 by Charles F. Richter 2. It describes the quantity of energy released by a single earthquake 3. Richter Scale has no upper limit Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-107",
+      "sha256": "de1fc54f9c2f871e28612564555c56da6f1a57e1bb30c800b8289d465b2861da",
+      "value": {
+        "id": "nda-2019-i-107",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following ocean currents is NOT a cold ocean current?",
+        "sourceTextHash": "93ea3bbf016527c7ca6deffd42fcceebba1266f813a11b170cc5c263db6dbadb",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 107,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Which one of the following ocean currents is NOT a cold ocean current?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 107,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Currents",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following ocean currents is NOT a cold ocean current?"
+        ],
+        "options": {
+          "A": "Canary current",
+          "B": "California current",
+          "C": "Kuroshio current",
+          "D": "Oyashio current"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-108",
+      "sha256": "70c664d8a73036dd86177a350df28b4914ffecd718b5f1c629a70dc7ef7b4961",
+      "value": {
+        "id": "nda-2019-i-108",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "What is the time gap in occurrence of two successive tides at a given place on the ocean surface?",
+        "sourceTextHash": "a3d8638f1453874a544f21f9acab625702ae8ca96dadff35531438e248786d71",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 108,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "What is the time gap in occurrence of two successive tides at a given place on the ocean surface?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 108,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Tides",
+        "difficulty": "Easy",
+        "promptLines": [
+          "What is the time gap in occurrence of two successive tides at a given place on the ocean surface?"
+        ],
+        "options": {
+          "A": "12 hours",
+          "B": "12 hours 26 minutes",
+          "C": "24 hours",
+          "D": "24 hours 52 minutes"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-123",
+      "sha256": "513450563d533ef1dac98c61738b9837dfe5415aa0c55fa40d52169a7c03420a",
+      "value": {
+        "id": "nda-2019-i-123",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following can be said to be essentially related to 'Polar Front Theory'?",
+        "sourceTextHash": "9c988ceff58c1433a52bf892186b7b62ebcd18b9f1c81eeca641e26cbe9325f7",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 123,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Which one of the following can be said to be essentially related to 'Polar Front Theory'?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 123,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Cyclones & Pressure Systems",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following can be said to be essentially related to 'Polar Front Theory'?"
+        ],
+        "options": {
+          "A": "Anticyclone",
+          "B": "Tropical Cyclone",
+          "C": "Temperate Cyclone",
+          "D": "Inter Tropical Convergence"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-87",
+      "sha256": "c00d5becf46b273a9150df6de803cec3ec72388e329d99cd4bd47b1f3af772bf",
+      "value": {
+        "id": "nda-2019-i-87",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is NOT a west flowing river?",
+        "sourceTextHash": "d7f098af0ed886097fb7178d3244ce0d4f1f824103914a15882b41a28a36508b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 87,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Which one of the following is NOT a west flowing river?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 87,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is NOT a west flowing river?"
+        ],
+        "options": {
+          "A": "Periyar",
+          "B": "Bharatpuzha",
+          "C": "Pamba",
+          "D": "Tamraparni"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-88",
+      "sha256": "1ac497131a79d263626bda502f5d11f83ef31fc8d1714dca140e8d564fbc56e7",
+      "value": {
+        "id": "nda-2019-i-88",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following rivers was earlier known as \"Vitasta\"?",
+        "sourceTextHash": "ff858ee0ed4ebd28afaa00e119cce761d58e1a9f0e73aacb41341252dcded044",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 88,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Which one of the following rivers was earlier known as \"Vitasta\"?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 88,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following rivers was earlier known as \"Vitasta\"?"
+        ],
+        "options": {
+          "A": "Tista",
+          "B": "Jhelum",
+          "C": "Tungabhadra",
+          "D": "Bharatpuzha"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-89",
+      "sha256": "7e1755433545d5ca531f465dcdce617ac992c670bf141a948f7c01973dbbcc02",
+      "value": {
+        "id": "nda-2019-i-89",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "River Sarda drains in the Northern Plains of Uttar Pradesh. Before entering in the Plains, Sarda is known as",
+        "sourceTextHash": "6f70310557a1104fe547f1d9aa9933e81548d417d6855c1376dbda7202b5e503",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 89,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "River Sarda drains in the Northern Plains of Uttar Pradesh. Before entering in the Plains, Sarda is known as"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 89,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "River Sarda drains in the Northern Plains of Uttar Pradesh. Before entering in the Plains, Sarda is known as"
+        ],
+        "options": {
+          "A": "Saraswati",
+          "B": "Bhagirathi",
+          "C": "Kali",
+          "D": "Pindar"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-121",
+      "sha256": "b142c1e7ece4921b2203593adcac0b02f1286e86609641218a3c644b3e6a3359",
+      "value": {
+        "id": "nda-2019-i-121",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Kamarajar Port was commissioned in 2001 to handle thermal coal requirements. It is situated along the coast of which Indian State?",
+        "sourceTextHash": "1d78257d77e0d4ff1804ccca0cb2c7130239a9e2b3a15fd9289d0323f206b328",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 121,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Kamarajar Port was commissioned in 2001 to handle thermal coal requirements. It is situated along the coast of which Indian State?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 121,
+        "subject": "Geography",
+        "topic": "Coastal & Island Geography",
+        "subtopic": "Coasts & Islands",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Kamarajar Port was commissioned in 2001 to handle thermal coal requirements. It is situated along the coast of which Indian State?"
+        ],
+        "options": {
+          "A": "Andhra Pradesh",
+          "B": "Odisha",
+          "C": "Tamil Nadu",
+          "D": "Karnataka"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-122",
+      "sha256": "f923997bdf834e4b9308018280cd968559284e605cf028cd1e5fb79869f13e89",
+      "value": {
+        "id": "nda-2019-i-122",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following Union Territories of India is the smallest in terms of geographical area?",
+        "sourceTextHash": "1defba07c96ee870be9ca0a32948b66d7ba1e5ebf59d06fbcc1688097e14b2ed",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 122,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Which one of the following Union Territories of India is the smallest in terms of geographical area?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 122,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following Union Territories of India is the smallest in terms of geographical area?"
+        ],
+        "options": {
+          "A": "Daman and Diu",
+          "B": "Chandigarh",
+          "C": "Dadra and Nagar Haveli",
+          "D": "Lakshadweep"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-124",
+      "sha256": "efd234589f4fcc89c4b9891e0615ecae7ed911ff4589a75ada5a6ce62da11464",
+      "value": {
+        "id": "nda-2019-i-124",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Brahmaputra and Indus rivers are antecedent rivers. Which one of the following may be the true definition of an antecedent drainage?",
+        "sourceTextHash": "ed84c49f86c8bbfa27b225e843d24b9bbd6cc025d3c1d9a818270c2f27390e7e",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 124,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Brahmaputra and Indus rivers are antecedent rivers. Which one of the following may be the true definition of an antecedent drainage?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 124,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Brahmaputra and Indus rivers are antecedent rivers. Which one of the following may be the true definition of an antecedent drainage?"
+        ],
+        "options": {
+          "A": "Which follows the initial slope of the Himalaya",
+          "B": "Which existed before the Himalayan range came into existence",
+          "C": "Which followed the dip or rock beds of the Himalaya",
+          "D": "Which followed the strikes of rock beds of the Himalaya"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-68",
+      "sha256": "8017c71dc8bb8291ba3a59f1980d072b4776a038ead96f8e7c34d7b6b5f09f9c",
+      "value": {
+        "id": "nda-2019-i-68",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "\"Campos\" and \"Llanos\", Tropical Savanna grasslands are generally found in",
+        "sourceTextHash": "8df4f0871de2a87f5b28ef330706a7b73c6883c04225b3e1cf4bb19e0fb143f1",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 68,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "\"Campos\" and \"Llanos\", Tropical Savanna grasslands are generally found in"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 68,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Biomes & Vegetation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "\"Campos\" and \"Llanos\", Tropical Savanna grasslands are generally found in"
+        ],
+        "options": {
+          "A": "Australia",
+          "B": "Central Africa",
+          "C": "South America",
+          "D": "East Asia"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-70",
+      "sha256": "4bd444f6c20426fdd3a9311d949707c3f05a3716f22abee39bac40f609efa53f",
+      "value": {
+        "id": "nda-2019-i-70",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "\"Shamal\" warm and dry wind is a \"Local\" wind found in",
+        "sourceTextHash": "f45ef235c472fa7fd77a71e237985eb5d9d324f3daf002f34560302257c3bc76",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 70,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "\"Shamal\" warm and dry wind is a \"Local\" wind found in"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 70,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Local Winds",
+        "difficulty": "Easy",
+        "promptLines": [
+          "\"Shamal\" warm and dry wind is a \"Local\" wind found in"
+        ],
+        "options": {
+          "A": "East Asia",
+          "B": "West Coast of Africa",
+          "C": "Sahara of Africa",
+          "D": "Mesopotamia"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-60",
+      "sha256": "c14bfe64b022b8fca6038446dd5a3ed3dc0dd0ae4625713e749d8c0cbe1ca0ae",
+      "value": {
+        "id": "nda-2019-i-60",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following minerals is used as a fuel in nuclear power stations?",
+        "sourceTextHash": "d78987bec0d997d1505fca4776723468182999ec44aff7b781704772b97ad421",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 60,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Which one of the following minerals is used as a fuel in nuclear power stations?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 60,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Power Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following minerals is used as a fuel in nuclear power stations?"
+        ],
+        "options": {
+          "A": "Bauxite",
+          "B": "Quartz",
+          "C": "Feldspar",
+          "D": "Pitchblende"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-67",
+      "sha256": "9479ce34d30c03f7332a0aa1c37d86724f03fe44b637143b9124ae4b9567ff0e",
+      "value": {
+        "id": "nda-2019-i-67",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "National Water Academy, a centre of excellence in training and capacity building in water resource, is located at",
+        "sourceTextHash": "394133c392643f0a5e67f412f75392996307aa2b3ebc50e6399a899b03453075",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 67,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "National Water Academy, a centre of excellence in training and capacity building in water resource, is located at"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 67,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Water Resources & Waterways",
+        "difficulty": "Easy",
+        "promptLines": [
+          "National Water Academy, a centre of excellence in training and capacity building in water resource, is located at"
+        ],
+        "options": {
+          "A": "New Delhi",
+          "B": "Kolkata",
+          "C": "Pune",
+          "D": "Chennai"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-69",
+      "sha256": "527c9de521642e8a65a471bed3d359b9e8699e3f5ec6adce3e15539332b0b7c4",
+      "value": {
+        "id": "nda-2019-i-69",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "\"Viticulture\" is a common feature of which one of the following Australian cities?",
+        "sourceTextHash": "5b1da5505398047d39a723b174f5ca7da5f18cfb1684c1181dfc8db6f4347351",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 69,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "\"Viticulture\" is a common feature of which one of the following Australian cities?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 69,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "\"Viticulture\" is a common feature of which one of the following Australian cities?"
+        ],
+        "options": {
+          "A": "Adelaide",
+          "B": "Darwin",
+          "C": "Hobart",
+          "D": "Brisbane"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-105",
+      "sha256": "86e17c27cd467e04daea13f60b8d4502e7fd7488bb83952d8da5ac6c8d4a4c5f",
+      "value": {
+        "id": "nda-2019-i-105",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the correct sequence of proved coal reserves in the Indian States in decreasing order?",
+        "sourceTextHash": "32ddadc0bd8ee332fadbfecb6c6f51819d8670b0a7999f9e3f3ff5b16b96c962",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 105,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Which one of the following is the correct sequence of proved coal reserves in the Indian States in decreasing order?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 105,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Coalfields",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following is the correct sequence of proved coal reserves in the Indian States in decreasing order?"
+        ],
+        "options": {
+          "A": "Jharkhand, Chhattisgarh, Odisha, West Bengal",
+          "B": "Jharkhand, Odisha, Chhattisgarh, West Bengal",
+          "C": "Odisha, West Bengal, Jharkhand, Chhattisgarh",
+          "D": "Odisha, Chhattisgarh, West Bengal, Jharkhand"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2019-i-55",
+      "sha256": "96724077d676e8adc37df82e1942e59a68e2e1994d010111590e99aaecb75fe2",
+      "value": {
+        "id": "nda-2019-i-55",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following organisms represents the primary consumer category in an ecosystem?",
+        "sourceTextHash": "a9e57887f426905522937a1f0266b35d890e98b131ba5cfad2558402bc79a2c1",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2019,
+          "paper": "I",
+          "questionNumber": 55,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://assets.collegedunia.com/public/image/b6f0a11f502658da9c32e8fa186097cd.pdf",
+          "rawQuestionText": "Which one of the following organisms represents the primary consumer category in an ecosystem?"
+        },
+        "exam": "NDA",
+        "year": 2019,
+        "paper": "I",
+        "questionNumber": 55,
+        "subject": "Environment",
+        "topic": "Ecology Basics",
+        "subtopic": "Ecosystem Structure & Productivity",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following organisms represents the primary consumer category in an ecosystem?"
+        ],
+        "options": {
+          "A": "Caterpillar",
+          "B": "Crabapple tree",
+          "C": "Frog",
+          "D": "Sparrowhawk"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

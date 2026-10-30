@@ -16,6 +16,7 @@ export const defenceWorldHistory: readonly SyllabusSection[] = [
     ['French Revolution',['Revolutionary government and the Terror','Enlightenment political thought']],
     ['Napoleonic Era',['Coalitions and wars']],
     ['First World War',['Economic and social consequences']],
+    ['Cold War',['Containment and non-alignment']],
     ['Renaissance',['Art and artists']],
     ['Exploration and Conquest',['European overseas expansion']],
   ]],

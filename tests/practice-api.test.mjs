@@ -67,7 +67,7 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 2201); // Complete reviewed NDA papers add only CSE-applicable GS records; English and school Science stay preparation-only.
+  assert.equal(data.totalCount, 2226); // Complete reviewed NDA papers add only CSE-applicable GS records; English and school Science stay preparation-only.
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);

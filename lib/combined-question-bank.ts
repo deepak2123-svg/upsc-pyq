@@ -17,6 +17,7 @@ import officialNda2021IIPaper from '../content/nda-2021-ii-official-paper.json' 
 import officialNda2021IPaper from '../content/nda-2021-i-official-paper.json' with {type:'json'};
 import officialNda2020CombinedPaper from '../content/nda-2020-i-ii-official-paper.json' with {type:'json'};
 import officialNda2019IIPaper from '../content/nda-2019-ii-official-paper.json' with {type:'json'};
+import officialNda2019IPaper from '../content/nda-2019-i-official-paper.json' with {type:'json'};
 import {prelimsPath,reviewedPrelimsPlacements,PRELIMS_TAXONOMY_VERSION} from './prelims-taxonomy.ts';
 import type {PyqQuestion} from './pyq-catalog';
 
@@ -56,8 +57,8 @@ const reviewedBaseQuestions:BankQuestion[]=legacyQuestions.map(question=>{
 // Approved paper overlays, each retaining its own official/reasoned evidence label.
 // Raw imports, historical IDs and old snapshots remain immutable; builders guard
 // the original records' hashes before applying any paper correction.
-const freshPlacementIds=new Set([...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions,...officialNda2020CombinedPaper.questions,...officialNda2019IIPaper.questions].map(q=>q.id));
-const officialQuestions:BankQuestion[]=[...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions,...officialNda2020CombinedPaper.questions,...officialNda2019IIPaper.questions];
+const freshPlacementIds=new Set([...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions,...officialNda2020CombinedPaper.questions,...officialNda2019IIPaper.questions,...officialNda2019IPaper.questions].map(q=>q.id));
+const officialQuestions:BankQuestion[]=[...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions,...officialNda2020CombinedPaper.questions,...officialNda2019IIPaper.questions,...officialNda2019IPaper.questions];
 const officialById=new Map(officialQuestions.map(q=>[q.id,q]));
 const priorIds=new Set(reviewedBaseQuestions.map(q=>q.id));
 export const combinedQuestions=[...reviewedBaseQuestions.map(question=>{
