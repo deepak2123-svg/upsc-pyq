@@ -50,6 +50,7 @@ export default function SourcesPage() {
       const provisional=group.exam==='NDA'&&group.year===2026&&['I','II'].includes(group.paper);
       const withdrawnNumbers=official2019&&group.paper==='II'?[119]:official2020?[70]:official2024?[101]:group.exam==='NDA'&&group.year===2025&&group.paper==='II'?[85]:group.exam==='NDA'&&group.year===2021&&group.paper==='I'?[58]:[];
       return {...group,complete:reviewedNda||source?.coverageStatus === "current-source-content-and-key-reviewed",provisional,
+        ...(reviewedNda?{practiceHref:`/papers/nda-${group.year}-${group.paper.toLowerCase().replace('/','-')}-gat`}:{}),
         ...(reviewedNda?{expected:150,numberSeries:official2020?'B':'A',keyLabel:reviewed2024?'Independently verified':provisional?'Official provisional':'Official final',withdrawnNumbers,
           heldNumbers:reviewed2024?reviewed2024Audit.questionSlots.filter(q=>q.disposition==='quarantined').map(q=>q.number):[],
           sectionSummary:reviewed2024?'English 46 · Science 43 · GS 47':official2024?'English 50 · Science 49 · GS 50':official2019&&group.paper==='I'?'English 50 · Science 47 · GS and World History 53':(group.year===2025||official2023)&&group.paper==='I'?'English 50 · Science 49 · GS 51':group.year===2025?'English 50 · Science 50 · GS 49':'English 50 · Science 50 · GS 50'}:{}),

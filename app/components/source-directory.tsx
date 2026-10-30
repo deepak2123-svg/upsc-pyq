@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useSyncExternalStore, type CSSProperties } from "react";
+import Link from "next/link";
 import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
 
-export type SourcePaper = { exam: PyqExam; year: number; paper: string; count: number; complete: boolean; provisional: boolean; reviewNote?:string; expected?:number; keyLabel?:string; heldNumbers?:number[]; withdrawnNumbers?:number[]; sectionSummary?:string; numberSeries?:string };
+export type SourcePaper = { exam: PyqExam; year: number; paper: string; count: number; complete: boolean; provisional: boolean; practiceHref?:string; reviewNote?:string; expected?:number; keyLabel?:string; heldNumbers?:number[]; withdrawnNumbers?:number[]; sectionSummary?:string; numberSeries?:string };
 const PAGE_SIZE = 12;
 const subscribeToReadiness = () => () => {};
 const clientReady = () => true;
@@ -25,7 +26,7 @@ export function SourceDirectory({ papers }: { papers: SourcePaper[] }) {
     <table className="source-table"><caption className="sr-only">Added PYQ papers, available questions, review coverage and unavailable question numbers</caption>
       <thead><tr><th scope="col">Paper</th><th scope="col">Available</th><th scope="col">Source review</th><th scope="col">Answer evidence</th><th scope="col">Unavailable questions</th></tr></thead>
       <tbody>{visible.map(paper=><tr key={`${paper.exam}-${paper.year}-${paper.paper}`} style={{"--source-color":PYQ_EXAM_COLORS[paper.exam]} as CSSProperties}>
-        <th scope="row"><span className="source-exam-tag">{paper.exam}</span><strong>{paper.year} · {paper.paper}</strong><small>{paper.exam==='NDA'?'GAT':paper.exam==='CDS'?'General Knowledge':paper.exam==='CSE'?'GS Paper I':'Paper I'}</small></th>
+        <th scope="row"><span className="source-exam-tag">{paper.exam}</span><strong>{paper.practiceHref?<Link href={paper.practiceHref}>{paper.year} · {paper.paper}</Link>:<>{paper.year} · {paper.paper}</>}</strong><small>{paper.exam==='NDA'?'GAT':paper.exam==='CDS'?'General Knowledge':paper.exam==='CSE'?'GS Paper I':'Paper I'}</small>{paper.practiceHref?<Link className="source-practice-link" href={paper.practiceHref}>Practise full paper →</Link>:null}</th>
         <td className="source-count"><strong>{paper.count}</strong>{paper.expected?<span> / {paper.expected}</span>:<span> MCQs</span>}{paper.sectionSummary?<small>{paper.sectionSummary}</small>:null}</td>
         <td><span className={`source-review-badge ${paper.complete?'source-review-complete':''}`}>{paper.complete?'Complete source review':'Partial collection'}</span></td>
         <td><span>{paper.keyLabel??(paper.provisional?'Official provisional':'Not fully reconciled')}</span>{paper.reviewNote?<details className="source-evidence-details"><summary>Review details</summary><p>{paper.reviewNote}</p></details>:null}</td>

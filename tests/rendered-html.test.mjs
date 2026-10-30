@@ -13,7 +13,7 @@ async function workerFetch(pathname = "/", init = {}) {
   );
 }
 
-test('Sources is a paper-status directory without whole-paper launch links',async()=>{
+test('Sources links reviewed papers to full-paper practice',async()=>{
   const response=await workerFetch('/legal/sources');
   assert.equal(response.status,200);
   const html=await response.text();
@@ -24,8 +24,24 @@ test('Sources is a paper-status directory without whole-paper launch links',asyn
   assert.match(html,/Q85/);
   assert.match(html,/<table class="source-table"/);
   assert.match(html,/16, 21, 23, 24, 51, 58, 68, 70, 110, 117, 123, 125, 139, 144/);
-  assert.doesNotMatch(html,/Start official-key paper/);
-  assert.doesNotMatch(html,/<a\b[^>]*href="\/papers\/nda-/);
+  assert.match(html,/href="\/papers\/nda-2026-i-gat"/);
+  assert.match(html,/Practise full paper/);
+});
+
+test('reviewed historical paper opens the original-order practice launcher',async()=>{
+  const response=await workerFetch('/papers/nda-2019-i-gat');
+  assert.equal(response.status,200);
+  const html=await response.text();
+  assert.match(html,/NDA I 2019 · GAT/);
+  assert.match(html,/150 available \/ 150 source questions/);
+  assert.match(html,/Full GAT/);
+  assert.match(html,/Start 150-question test/);
+  assert.match(html,/Original wording, question numbers and option order are preserved/);
+  const reviewed=await workerFetch('/papers/nda-2024-ii-gat');
+  assert.equal(reviewed.status,200);
+  const reviewedHtml=await reviewed.text();
+  assert.match(reviewedHtml,/136 available \/ 150 source questions/);
+  assert.match(reviewedHtml,/14 held for review/);
 });
 
 test("server-renders the browse-first official PYQ workspace", async () => {

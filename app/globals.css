@@ -179,7 +179,11 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .source-table tbody tr:hover { background: #fafbfe; }
 .source-table tbody th { min-width: 135px; font-weight: 400; }
 .source-table tbody th > strong { display: inline-block; margin-left: 8px; font-size: 13px; white-space: nowrap; }
+.source-table tbody th > strong a { color: var(--ink); text-decoration: none; }
+.source-table tbody th > strong a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 .source-table small { display: block; margin-top: 5px; font-size: 10px; font-weight: 400; color: var(--muted); }
+.source-practice-link { display: inline-block; margin-top: 7px; color: var(--accent); font-size: 10px; font-weight: 750; text-decoration: none; }
+.source-practice-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 .source-count { min-width: 142px; font-variant-numeric: tabular-nums; }
 .source-count > strong { font-size: 15px; }
 .source-count > span { color: var(--muted); }
