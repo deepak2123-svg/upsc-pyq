@@ -1,34 +1,11 @@
 import type { PracticePromptBlock } from "../../lib/practice-prompt";
-
-const reviewedVectorEquation = "r⃗ = √3 t² î + √2 t ĵ + √5 k̂";
-
-function ReviewedVectorEquation() {
-  return <span className="math-expression"><math aria-hidden="true">
-    <mrow><mover accent="true"><mi>r</mi><mo>→</mo></mover><mo>=</mo>
-      <msqrt><mn>3</mn></msqrt><msup><mi>t</mi><mn>2</mn></msup><mover accent="true"><mi>i</mi><mo>^</mo></mover><mo>+</mo>
-      <msqrt><mn>2</mn></msqrt><mi>t</mi><mover accent="true"><mi>j</mi><mo>^</mo></mover><mo>+</mo>
-      <msqrt><mn>5</mn></msqrt><mover accent="true"><mi>k</mi><mo>^</mo></mover>
-    </mrow>
-  </math><span className="visually-hidden">{reviewedVectorEquation}</span></span>;
-}
-
-function VectorText({ value }: { value: string }) {
-  // Preserve source text while drawing combining-vector marks independently of
-  // the reading font, which may not contain U+20D7 (notably in print output).
-  const parts=value.split(reviewedVectorEquation);
-  return <>{parts.flatMap((part,index) => [
-    ...part.split(/([A-Za-z]\u20d7)/u).map((token,tokenIndex) => /^[A-Za-z]\u20d7$/u.test(token)
-      ? <span className="math-vector" aria-label={`vector ${token[0]}`} key={`${index}-${tokenIndex}`}><span aria-hidden="true">{token[0]}</span><span className="visually-hidden" aria-hidden="true">⃗</span></span>
-      : token),
-    ...(index<parts.length-1?[<ReviewedVectorEquation key={`equation-${index}`}/>] : []),
-  ])}</>;
-}
+import {MathText} from './math-text';
 
 function PromptText({value,underlined=[]}:{value:string;underlined?:string[]}){
   const words=underlined.filter(Boolean).toSorted((a,b)=>b.length-a.length);
-  if(!words.length)return <VectorText value={value}/>;
+  if(!words.length)return <MathText value={value}/>;
   const expression=new RegExp(`(${words.map(word=>word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')})`,'g');
-  return <>{value.split(expression).map((part,index)=>words.includes(part)?<u key={index}>{part}</u>:<VectorText key={index} value={part}/>)}</>;
+  return <>{value.split(expression).map((part,index)=>words.includes(part)?<u key={index}><MathText value={part}/></u>:<MathText key={index} value={part}/>)}</>;
 }
 
 export function PracticePromptView({ blocks, className, figure,underlined }: { blocks: PracticePromptBlock[]; className: string; figure?: { src: string; alt: string };underlined?:string[] }) {

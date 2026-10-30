@@ -15,8 +15,8 @@ test('NDA I official-key paper preserves equations and declares its complete sou
  await expect(page.locator('[data-question-id="nda-2026-i-51"]')).toContainText('θ = 60°');
  await expect(page.locator('[data-question-id="nda-2026-i-53"]')).toContainText('(α/2)');
  await expect(page.locator('[data-question-id="nda-2026-i-57"]')).toContainText('√3 t²');
- await expect(page.locator('[data-question-id="nda-2026-i-57"] .math-expression math')).toBeVisible();
- await expect(page.locator('[data-question-id="nda-2026-i-57"] .math-expression mover')).toHaveCount(4);
+ await expect(page.locator('[data-question-id="nda-2026-i-57"] .math-accent math')).toHaveCount(4);
+ await expect(page.locator('[data-question-id="nda-2026-i-57"] .math-accent').first()).toHaveAttribute('aria-label','vector r');
  await expect(page.locator('[data-question-id="nda-2026-i-61"]')).toContainText('−20 °C');
  await expect(page.getByText('† Official provisional key; subject to revision.',{exact:true})).toBeVisible();
  await expect(page.getByText('‡ Independently verified from primary sources; no matching official key recovered.',{exact:true})).toHaveCount(0);

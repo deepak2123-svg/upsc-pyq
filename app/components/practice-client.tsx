@@ -10,6 +10,7 @@ import { attemptClock, attemptReturnPath, completeAttempt, formatPracticeTime, h
 import { formatPracticePrompt, formatPracticeText } from "../../lib/practice-prompt";
 import { PYQ_EXAM_COLORS } from "../../lib/pyq-exams";
 import { PracticePromptView } from "./practice-prompt-view";
+import {MathText} from './math-text';
 import { questionCorrectionNotice } from '../../lib/question-review';
 
 type ReadingSize = "small" | "standard" | "large";
@@ -299,7 +300,7 @@ export function PracticeClient({ id }: { id: string }) {
                   const isSelected = selectedAnswer === key;
                   const isCorrect = feedbackAcceptsOption(feedback,key);
                   const isWrong = Boolean(feedback && feedback.disposition !== 'excluded' && isSelected && !feedback.correct);
-                  return <button key={key} aria-pressed={isSelected} className={`${isSelected ? "selected" : ""} ${isCorrect ? "correct" : ""} ${isWrong ? "incorrect" : ""}`} disabled={locked} onClick={() => void answer(key)}><span>{key}</span><strong>{formatPracticeText(value)}</strong>{isCorrect && <em>Correct answer</em>}{isWrong && <em>Your answer</em>}</button>;
+                  return <button key={key} aria-pressed={isSelected} className={`${isSelected ? "selected" : ""} ${isCorrect ? "correct" : ""} ${isWrong ? "incorrect" : ""}`} disabled={locked} onClick={() => void answer(key)}><span>{key}</span><strong><MathText value={formatPracticeText(value)}/></strong>{isCorrect && <em>Correct answer</em>}{isWrong && <em>Your answer</em>}</button>;
                 })}
               </div>
               {attempt.status === "in_progress" && selectedAnswer ? <div className="practice-answer-hint"><button disabled={locked} onClick={() => void answer(null)}>Clear answer</button></div> : null}

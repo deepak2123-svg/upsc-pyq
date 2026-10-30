@@ -62,6 +62,7 @@ test("prints legacy coordinate notation as conventional paper symbols", () => {
     "15°48′00″ N",
   );
   assert.equal(formatPracticeText(String.raw`\\(180^{\circ}\\) angle`), "180° angle");
+  assert.equal(formatPracticeText(String.raw`\\(\\vec r + \\hat i\\)`), 'r⃗ + î');
 });
 
 test("separates statements even when dates contain numbered punctuation", () => {

@@ -30,6 +30,8 @@ export function formatPracticeText(value: string) {
     .replace(/\^\{\\prime\\prime\}/g, "″")
     .replace(/\^\{\\prime\}/g, "′")
     .replace(/\^\{\\circ\}/g, "°")
+    .replace(/\\{1,2}vec\s*\{?([A-Za-z])\}?/g, "$1⃗")
+    .replace(/\\{1,2}hat\s*\{?([A-Za-z])\}?/g, "$1̂")
     .replace(/\s+([,.;:?!])/g, "$1");
 }
 

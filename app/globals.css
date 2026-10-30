@@ -38,6 +38,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   outline: 3px solid rgba(36, 87, 214, .35);
   outline-offset: 2px;
 }
+.math-accent { display: inline-block; min-width: .7em; white-space: nowrap; vertical-align: -.12em; }
+.math-accent math { font-family: "Cambria Math", "STIX Two Math", serif; font-size: 1.05em; }
 
 .pyq-header { position: sticky; top: 0; z-index: 30; background: rgba(247,247,245,.94); border-bottom: 1px solid var(--line); backdrop-filter: blur(14px); }
 .pyq-header-inner { width: min(1720px, calc(100% - 48px)); height: 64px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
