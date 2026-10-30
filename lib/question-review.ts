@@ -19,12 +19,13 @@ import officialNda2020CombinedPolicy from '../content/nda-2020-i-ii-official-rev
 import officialNda2019IIPolicy from '../content/nda-2019-ii-official-review-policy.json' with {type:'json'};
 import officialNda2019IPolicy from '../content/nda-2019-i-official-review-policy.json' with {type:'json'};
 import officialNda2018IIPolicy from '../content/nda-2018-ii-official-review-policy.json' with {type:'json'};
+import officialNda2018IPolicy from '../content/nda-2018-i-official-review-policy.json' with {type:'json'};
 
 export type QuestionReview = {
   status: string; revision: number; contentRevision: number;
   sourceCorrection?: {exam:string;year:number;paper:string;questionNumber:number};
 };
-const officialPolicies={...officialNdaPolicy,...officialNdaIIPolicy,...officialNda2025IIPolicy,...officialNda2025IPolicy,...reviewedNda2024IIPolicy,...officialNda2024IPolicy,...officialNda2023IIPolicy,...officialNda2023IPolicy,...officialNda2022IIPolicy,...officialNda2022IPolicy,...officialNda2021IIPolicy,...officialNda2021IPolicy,...officialNda2020CombinedPolicy,...officialNda2019IIPolicy,...officialNda2019IPolicy,...officialNda2018IIPolicy};
+const officialPolicies={...officialNdaPolicy,...officialNdaIIPolicy,...officialNda2025IIPolicy,...officialNda2025IPolicy,...reviewedNda2024IIPolicy,...officialNda2024IPolicy,...officialNda2023IIPolicy,...officialNda2023IPolicy,...officialNda2022IIPolicy,...officialNda2022IPolicy,...officialNda2021IIPolicy,...officialNda2021IPolicy,...officialNda2020CombinedPolicy,...officialNda2019IIPolicy,...officialNda2019IPolicy,...officialNda2018IIPolicy,...officialNda2018IPolicy};
 const records: Readonly<Record<string, QuestionReview>> = { ...policy, ...importPolicy, ...aliasPolicy, ...materialRepairPolicy, ...officialPolicies };
 const cleared = new Set(['official-final', 'official-provisional', 'reasoned-verified']);
 export function questionReview(id: string) { return records[id]; }

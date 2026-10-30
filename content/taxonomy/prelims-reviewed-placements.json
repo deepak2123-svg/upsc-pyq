@@ -27636,6 +27636,30 @@
       }
     },
     {
+      "questionId": "nda-2018-i-1",
+      "expectedRecordHash": "764ae32a125b8e163bc92569bf0a34c3eafaf79b7fbbec2c70652eae8b2c9dc0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-10",
+      "expectedRecordHash": "d266e5144d7d41ac98ce5659b7956a0bcb6c87cc7630a06724862dade94ca0e7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2018-i-100",
       "expectedRecordHash": "76ae18842f4dfc1f8efcd6c509dbb994280aaaf3711cc53a99e40662064be409",
       "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/rocks-overview",
@@ -27656,6 +27680,122 @@
       }
     },
     {
+      "questionId": "nda-2018-i-101",
+      "expectedRecordHash": "1e293f0218a495ed7009ed17d2b56783113c8d5f40039f54eb79ccfb7fb35435",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — History and culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-102",
+      "expectedRecordHash": "66fcc4c2926a710dedbd2241b2dece4f466f2582d820490325d89fd72c4b27f9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Mechanics and properties of matter.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-103",
+      "expectedRecordHash": "f9b4660604e7850bb65999c24664dace352a5d48e844d60c99ff20550fab3e96",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — History and culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-104",
+      "expectedRecordHash": "e20851c618d6be54771de75f411e002131606f60ed7e34c945970b77cd7118d8",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — History and culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-105",
+      "expectedRecordHash": "f12bbee8a3f7295e456e3a6b70397d649b1bbfa44d7af4d6d11b2c40fd56a6bd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Optics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-106",
+      "expectedRecordHash": "ccd40acb4d0529f2a2c1e85479bfa9fec216d21a639480373f3b193586f27891",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Acids, bases and salts.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-107",
+      "expectedRecordHash": "aaeb66e415bec713c22d4f59ec71be237e632986892e291b6acf2cd66bb4b96d",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — History and culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-108",
+      "expectedRecordHash": "6fc7aa5cbd64dfb37eaae2aa8cd3bed21a7e4d02b8d1fcfc4ff3e96991ece715",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — History and culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2018-i-109",
       "expectedRecordHash": "4b2c6cac452fc85cb4713d24cf9a587af9bf25cbbb43f98d23c6c668d578d50b",
       "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-floor-relief",
@@ -27673,6 +27813,18 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/oceanography/ocean-floor-relief"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-11",
+      "expectedRecordHash": "0f2e3bc51ae25771c4f2527edec4eaef0ee5f637c51dbf11f2407f0b518ee9ff",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
       }
     },
     {
@@ -27819,6 +27971,390 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2018-i-117",
+      "expectedRecordHash": "d5990fb3cbf3bd3b5dfa96c296b490df169aaa98f1483867307578cda400cdb7",
+      "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/theosophical-movement",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Tribal, Peasant and Civil Uprisings.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-118",
+      "expectedRecordHash": "87479fa3fc5619ca2245722c879a33485a2a419e1e0dabb8944eab118f849740",
+      "primaryId": "syllabus:economy/economic-foundations/core-concepts/markets-and-competition",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Economy — Basic economic mechanisms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-119",
+      "expectedRecordHash": "0f70c5d4806b97b1cfa8bb78e14fe464acbe0e3b175aacd8d63d2be8d70b59da",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Electricity and magnetism.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-12",
+      "expectedRecordHash": "5faebcac7f1315514bc661491ac68dc136332372fb0fec9c0049787873ae5a21",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-120",
+      "expectedRecordHash": "9b977e710c735ea6bae6f5e20ef5b57be88d02c2603350ba21b15f189bf54776",
+      "primaryId": "syllabus:economy/economic-foundations/core-concepts/markets-and-competition",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Economy — Basic economic mechanisms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-121",
+      "expectedRecordHash": "4802e9d3d9cbbef13ed5947aef5249b65f594b4a6965b64f06fcb0fbc80f5fca",
+      "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/theosophical-movement",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Indus–Saraswati Civilization.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-122",
+      "expectedRecordHash": "de4bbcdfdd07ae80f205836708478dacc637eedf329970b2bb3fb1b6e3b85b9a",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-123",
+      "expectedRecordHash": "5076e462717be54560bd8215e3e90cc17ca44f0327acd212dd0efa66fd4253f0",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-124",
+      "expectedRecordHash": "8400ba2b35fc89d08d0c09608ca6db20ff23478ae9917aa68028676a3a4e0fba",
+      "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/theosophical-movement",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Renaissance, Reformation and Enlightenment.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-125",
+      "expectedRecordHash": "6e73b538985104982bc186c3615957d3b8cb7fb36633c80228cf81260070576c",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-126",
+      "expectedRecordHash": "c265de25a5994e4d4d00361a4a2324bc44abc22f56814b55f9c3a1b99877e833",
+      "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/theosophical-movement",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Mughal Rulers, Expansion & Political Developments.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-127",
+      "expectedRecordHash": "5198b773b1826b9236385a2349332d2e36e62318e640113dcef3365b3d22686c",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-128",
+      "expectedRecordHash": "732ef06ee8de535e00a9481c4cad3f006ae70c082bd1b8f63b62b689241faee8",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-129",
+      "expectedRecordHash": "30ff2a510b22994f6e850aadd7b6ec294bde5554a539369b65faf61f717c853d",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Agriculture, Land Settlements & Rural Economy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-13",
+      "expectedRecordHash": "c8ebf261e556fd99f4c5ba4fb375911cc6eb627bda25bed59d91d9ca33bc0c95",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-130",
+      "expectedRecordHash": "c4bae6b1df3476db9f24e0488d7d9f64ff60602aac965a2474bf2f2de32bc220",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-131",
+      "expectedRecordHash": "16fc1c7eb23e51db5905a63a17d88bc14cd4b2533e1ad70568d0f27ad2eef5b9",
+      "primaryId": "syllabus:polity-governance/federalism-local-government/union-state-relations/special-state-provisions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Polity & Governance — Constituent Assembly, Drafting & Adoption.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-132",
+      "expectedRecordHash": "f83117ca57fd91d9a1983a65b1daba7c02cb351bd42ef3223c18950595cd9257",
+      "primaryId": "syllabus:polity-governance/federalism-local-government/union-state-relations/special-state-provisions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Polity & Governance — Constituent Assembly, Drafting & Adoption.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-133",
+      "expectedRecordHash": "2b7ccd3db2ad39c99300c1da1f4469aaf1474924469c6bf05647a0dc425225ad",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-134",
+      "expectedRecordHash": "0da7631b6bd89f20c85c6bad3cc56e7ab48d8fddc2d2908159f420d77cace763",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-135",
+      "expectedRecordHash": "27cc89f4b70d2c55e0e8fe28c6ab5ec6a9ad104778fe638ac73e651253a744cb",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-136",
+      "expectedRecordHash": "aaaaab3392cb46628cf6970ad5b9f3c2e89fca56b1d0a84dac220a9667a0cc7e",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Ancient and Classical Literature.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-139",
+      "expectedRecordHash": "55e5f2c68229ba218b7a7c86c684f46c7959ccc390f34d87696185d72dc4fda2",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-14",
+      "expectedRecordHash": "c1619030fb2ffe77c5602c144143ad71100c26fae220505dda736bbbdc29c9da",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-140",
+      "expectedRecordHash": "bf8257b6e6aeda33c6b49fc1f13969f0ffee08e0b6893d69710d2d2fad3358ab",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/preamble",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Polity & Governance — Preamble, Union and its Territory & Citizenship.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
       "questionId": "nda-2018-i-141",
       "expectedRecordHash": "912ad59f930f80e84fc9c1316bffad21599a4e0475f9aaefa4499e059d9841fb",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
@@ -27847,6 +28383,926 @@
         ],
         "basis": "editor-requested-shared-category",
         "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-142",
+      "expectedRecordHash": "6a20c8c48f4dc76ac8c31c493a94f984c96fa614a3ae2250b5abe40f0fd50646",
+      "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Current Events — Major national and international developments.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-143",
+      "expectedRecordHash": "6f0cb7269d33a70e3621e17c92251c4b0f5a1522ac8d22e326884718430f85bd",
+      "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Current Events — Major national and international developments.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-144",
+      "expectedRecordHash": "4b4a32475dc3fb7ad5240ca0d22345f77d2dabff9e97df0f8efe07865d43c1ed",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/recipients-and-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Current Events — Awards and sports.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-145",
+      "expectedRecordHash": "c9f205be30eb72405aa120b2bf97775899a95efd2baa9a515497357034ce5901",
+      "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Current Events — Defence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-146",
+      "expectedRecordHash": "ffe5492868670fe2c7932b696d265a3183a9ae8ec0feaf2ae95c01ed846a20bb",
+      "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Current Events — Defence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-147",
+      "expectedRecordHash": "3164f267ff762826627e6b1717b53555fa8001d2a2267207ab1148cafb09f1e2",
+      "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Current Events — Defence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-148",
+      "expectedRecordHash": "5057de561e71f0f97ed8a0458a76ba3df7510bb240687967b2f4be532dc6d9c4",
+      "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Current Events — International affairs.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-149",
+      "expectedRecordHash": "efafca82016c576e5b69ef5587da68c88be49b1ed02270adc32183cb5c2675a5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Mechanics and properties of matter.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-15",
+      "expectedRecordHash": "6f0dc74ebaa716c49e8c31a2b2016dee628edb67a4cb165104dcbdc4862f8850",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-150",
+      "expectedRecordHash": "c3a44832981d46b4dd61d428e0f1260d4f9ad98723a5907c1cb09cfcfc542d00",
+      "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Current Events — Space and science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-i-16",
+      "expectedRecordHash": "e3abadb84b679c839b552610b8022554d055295040f7b0ac089155e6e6810bff",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-17",
+      "expectedRecordHash": "30b406633348c42f819326a1b38540352385288993d1bb0934e5ccf9ca022855",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-18",
+      "expectedRecordHash": "27b03254af8b7f88a8cf2fb75c33543973c93f7737b0bbbc33020076d1395f0a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-19",
+      "expectedRecordHash": "7d338dfee9fdea768405ec8f16708e2042ecfac51c89c8e63cd03d7eb716b204",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-2",
+      "expectedRecordHash": "b44da597d883feb8b457d4758b02986f2567e401cb0cdfab53da5120d99381bf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-20",
+      "expectedRecordHash": "1205cf8e8a8aeddedcc1952f5d85fac471bbbbac0c78ee9ec6696c669e6434ed",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-21",
+      "expectedRecordHash": "c7060bdaf64d09a8a29ccb7f0ab69d1fdf53bec7dc881588d76f6e8cad01f7e6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-22",
+      "expectedRecordHash": "1d90efed25b66751553cfb97cf91e9734cb54dfe590d208e315ade37cfad4483",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-23",
+      "expectedRecordHash": "b6de2bb164d504011554e0fe6b23389307725bbc97868e0e7db7d3eb2fc1eef5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-24",
+      "expectedRecordHash": "152ac7595ff0aa22a7ba8a5b40a07282bc852856c626d12c779c18d6889449c9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-25",
+      "expectedRecordHash": "097b7d2935a79fadc78d17e153fc91e555e6203f5c1e5841dfa55db3b07c7a61",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-26",
+      "expectedRecordHash": "dc356a9afc622ec8fc5287c3c4a98fa41e5d7ae01c4630e7eeab94d10bd52eab",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Idioms and Phrases.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-27",
+      "expectedRecordHash": "7ee2843c6cea087629e2ba4396fbb5d326ca763643c3525fa4bc5f14fa734bcc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Idioms and Phrases.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-28",
+      "expectedRecordHash": "173e56ef72300808737b6712a750c1106acf341d1cfc7ed938b74f085463f267",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Idioms and Phrases.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-29",
+      "expectedRecordHash": "bc6501c2e185868c91b953fb7c0e5ec9beb8e9d93280a702d399eebe35c9822a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Idioms and Phrases.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-3",
+      "expectedRecordHash": "d7ea31321aab7216b849cafdd7fb2c59692c92583454e9234e561f3269a8a864",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-30",
+      "expectedRecordHash": "367bae26494a0b20b5b3722a533130f0f37b12711be901c533af2e3691fd0fa7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Idioms and Phrases.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-31",
+      "expectedRecordHash": "bdd79a68ee43da82deda973cf2d957695911123097347b46c8f3f97f174fd396",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Sentences.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-32",
+      "expectedRecordHash": "ecdb68db664db39842c8cdab313d8d185aef6db57b3af809d31cee6d9fc66605",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Sentences.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-33",
+      "expectedRecordHash": "d0631fbaedd9959a29fedd8dfa79700d945013b5c4e1ba29d0cc97805b63ecfa",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Sentences.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-35",
+      "expectedRecordHash": "624e76285a801a1f97d02da26a2d43f9e2434f8185a4f23a5c606743490107ba",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Sentences.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-36",
+      "expectedRecordHash": "3b1d5d6894529d6d83f8ecdf1484561f3554f8c33696a245e1c41c1c39b9aa0d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-37",
+      "expectedRecordHash": "8af89a7580a614595e35c6720d754b17af53bea604e032e8ad899058aee541c0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-38",
+      "expectedRecordHash": "76734351a6b2a200f8dadc9ff24f9945f19dff6cfb7d8e86d9eec12ac45dc7a7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-39",
+      "expectedRecordHash": "8ee7c3c0029ad582e37e900ed16a81b484824ce9c504a0a1e4518607560b67a8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-4",
+      "expectedRecordHash": "fb55095d2c5e4cfa9081ba3a07b85be91acfb5db74d9d7668ca92f6cddd71984",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-40",
+      "expectedRecordHash": "4208ab059ceb3cf0627ce99ad94255c3624bfb3a383ff464c2d86f53147e1688",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-41",
+      "expectedRecordHash": "3cd29d8b73a35a1e63b945585774e4ede7ababcc6e2239f225c72acaaa8d35b5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-42",
+      "expectedRecordHash": "1c325192321696e7f9004fafb00ec8f672d56f31bbaa70092a12781525a7730a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-43",
+      "expectedRecordHash": "85adb6ea956e1080684c743e8352811be0c7513030bb089fc688ed7c9f6fbb75",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-44",
+      "expectedRecordHash": "6504d6b10cff467906255be6008753722651a2c0bdd40c29529b0d9091ccfdf4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-45",
+      "expectedRecordHash": "fe753e3180afc8cbaa8ed3ac879b6c7721e80ff780e77f6ad1b6a6ed38516c67",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-46",
+      "expectedRecordHash": "12afc8ed2be118106061186e644e1723fef37c4ac61a1f8d436f29043c530498",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-47",
+      "expectedRecordHash": "128b87b3a59ee898c8a788efedb474e4b4e03bdf7625be2a5c5bc41732c0de85",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-48",
+      "expectedRecordHash": "b149c949ab77861e38ebdb6f2df9f40453f7e5e70c405cff792faf80ca7b0b31",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-49",
+      "expectedRecordHash": "5bc73700818e3738bb129fa0fcf1aa0a420536c3e102e9e3760261fc5fe0cc06",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-5",
+      "expectedRecordHash": "a454256923267fea1eb87482c1cad2cf02398338f50be0f71c4dae667dafc6cd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-50",
+      "expectedRecordHash": "da61794d390489dad3efe09fdbf0af9cf1d7c7730e1b6fe38bca898c76a7e234",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-51",
+      "expectedRecordHash": "d27867af32f30b4bee743afb7f416ba418b4b975bbfe1ff2fa7d16d71831240e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-52",
+      "expectedRecordHash": "68651d92ca8b332b943ee7917942c019cc2f58afa393fa792df99c6535c5f0fa",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Mechanics and properties of matter.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-53",
+      "expectedRecordHash": "751891ee422ec7e3251813383e26d272fe5e3acf0e2683fd8b8146a860237624",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Mechanics and properties of matter.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-54",
+      "expectedRecordHash": "8ad954a030237a50a86565daacf6ec7d9f8c0dff3a3a413b841b9fd1de5237db",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Mechanics and properties of matter.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-55",
+      "expectedRecordHash": "04b11cd39832aa6fa47f81202dfc587eda69f23910ceefd9134a54e057a2be07",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Electricity and magnetism.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-56",
+      "expectedRecordHash": "aa64cd9c9a7f882b0567bde6af52372d5a047d38cdad4c00050568c47c8c130e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-57",
+      "expectedRecordHash": "37fdb9d3c56ebc9a2979c72b8c1620db1f1c141454e810f285a68d8943ee0b3b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-58",
+      "expectedRecordHash": "924396ed12add9bf7aa749583d3897f5596cc42e05a8b57cccd0a375493ed011",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Mechanics and properties of matter.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-59",
+      "expectedRecordHash": "898fb82176aa9f896339c64b1c93a0f8f8349a545208688dda938ec8d1337a11",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-6",
+      "expectedRecordHash": "7a20048ba365e2276214648d61fcfaeb80771e45ea8732ce4b7300856071ec6d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-60",
+      "expectedRecordHash": "e854ef4d5760b77fd8f3ef3f99d1e31454caacd47a4ace38527a3f707bdb64a2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-61",
+      "expectedRecordHash": "a5a2e576c5425e10c8ef2a329c2a1517be41e010622df2bb1d26cc5ad9c89d10",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-62",
+      "expectedRecordHash": "b0541cdd5f94d2133249464f7d87d79b7773c728ed35c089417de44facd4d81e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Waves and sound.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-63",
+      "expectedRecordHash": "697cc636d06044153506bf9e233f71aa3b9d1a3ff3cd8b96f3bb25521191cdcc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-64",
+      "expectedRecordHash": "91ae3da251ef607a811a70e2b0de4eac95b1ecb1fc435436f41513af07fd49ae",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-65",
+      "expectedRecordHash": "44b4f2955ed5f030e92e47ecad0a97ee3676373db453e0b6c2ac752b45a144ad",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-66",
+      "expectedRecordHash": "4c1f44b708b4b05d01b909bedb0d8f35974f903caccadac2b538e85c297d8ad3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-67",
+      "expectedRecordHash": "5b267df93cc68cefcaf90fe2f86eca56bb09a0d8e1ae1d93d0fc447c2fecad59",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-68",
+      "expectedRecordHash": "92e9cc2cc45d220db1970d721581535984f46939834d93c1745b501a17bdfc0d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-69",
+      "expectedRecordHash": "005fc018dbc9bcec2c2dc179af35402a3b6808bef27b04c2d851cdd99471c6b4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: General Science — Cell biology and genetics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-7",
+      "expectedRecordHash": "c24df7b96ffe7e234dbbfe3aadb5c9233781891b3b5d5bccb85a6f54cbcb51e3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-70",
+      "expectedRecordHash": "57ea95ca5c0b64ba4159197cd9fe227293845c2996fc6a23ab662abb8265e486",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-71",
+      "expectedRecordHash": "eba70df828426cf7b4a803c8f12856a271150ba8f2260067dbd2d771101c8091",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-72",
+      "expectedRecordHash": "f6d0033b805e0df49f421e6ecd6af4b8caba9cbcec4173b65d0e7579aeaa68b0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-73",
+      "expectedRecordHash": "c05292bf158b0a090d7bdff34f2847e3ec3f376a8a38e0054606853f8bc27052",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-74",
+      "expectedRecordHash": "85c86e389f72df949e2b96ec3adf7ea61ea36933e595363992de23d146c96139",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
       }
     },
     {
@@ -27928,6 +29384,210 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2018-i-79",
+      "expectedRecordHash": "da1e2f3f8b657b9aa3dd16afa3d75f2f68d154de056c098d7b984936c2ab98db",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Core chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-8",
+      "expectedRecordHash": "a0d2f6e7b04bc537db46445a8dfc9cdebab7edbad6cd830814f10fd21f6b90da",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-80",
+      "expectedRecordHash": "9d9fe8370130cbb3475a708ce80c33f2b6630aa5c04d08690bfc4ed446614229",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Core chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-81",
+      "expectedRecordHash": "7f01a05af634fccc960e92d4c81e329f276d90576a453d24d3942fc4920ba072",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Core chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-82",
+      "expectedRecordHash": "0dd304c63af12d8e5dc4ac4e65fff81fae4205e89aad2b7b0f99f19a47d33522",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Core chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-83",
+      "expectedRecordHash": "c598116f7595d34e76cddd8ad290c4c5a9651406b48050ace68867cad23e263f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Acids, bases and salts.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-84",
+      "expectedRecordHash": "611843ce5bf5a236fa6fd7bd2326811121648285bc4dd48b807c7ca323ad7b16",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Core chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-85",
+      "expectedRecordHash": "9fe7344d990cd170e379e08c567e27b235a677c3e6bfecc0ccc265ae2e58ea2c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Core chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-86",
+      "expectedRecordHash": "07b07cb1a513131fdb1c3c2b0659fed2c337d444687dc9db9a9fada48433e00e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Acids, bases and salts.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-87",
+      "expectedRecordHash": "cd1d68223cb534d0bdfbb594fe8ad89dd444e56772a92eb09e11e8a695119c10",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Core chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-88",
+      "expectedRecordHash": "d4e76981d6a37d9c652463b8b81edaf77c07ebefc57cedbfa435de84f50d3f93",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Core chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-89",
+      "expectedRecordHash": "ea6185b677e85a3843fecdb5e2e0e3c4b9bfa3ece612e7fa6e2ca996f996582e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: General Science — Cell biology and genetics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-9",
+      "expectedRecordHash": "e6cbf9d2b36baee551b04527069797d16bc6b5cd5cf21b35e4270092549f2987",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-90",
+      "expectedRecordHash": "9fb0b52ad9af91de16dc6888018738e32e433029f1f6b30a61a5956049e62711",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: General Science — Cell biology and genetics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-91",
+      "expectedRecordHash": "2dbc8cdc9daae8947774430028a1ae6a215fbbe04ede7aa44197c63f34ed8886",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: General Science — Human physiology.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-92",
+      "expectedRecordHash": "3218e3806daf1792a225b4a6daaba02d87890939d38d039be05baf779cd4f7eb",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: General Science — Nutrition.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-i-93",
+      "expectedRecordHash": "7ec10f90d98ace994e5a983d334c801a6a8cb35c47e85124e08cb1fbd653528b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Acids, bases and salts.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2018-i-94",
       "expectedRecordHash": "0d9f8f15a328641d02ff5e66354222556dfc0514d0e701042709e918d1325808",
       "primaryId": "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
@@ -27944,6 +29604,22 @@
       ],
       "editorialBatch": "NDA/2018/I/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2018-i-95",
+      "expectedRecordHash": "643d6c4ccdf821344100ef52f8ea2ea13de626cde3cc283085ab8c846e262989",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Roads, Railways & Inland Transport.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by transcript comparison and targeted full-resolution rereads of omitted and ambiguous pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
     },
     {
       "questionId": "nda-2018-i-96",
@@ -28022,6 +29698,30 @@
       }
     },
     {
+      "questionId": "nda-2018-ii-1",
+      "expectedRecordHash": "be2af182ee3e6c7405b6edd6df730dd00c7fc9d6d8be03e10eed1fdb77e9cca9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-10",
+      "expectedRecordHash": "64dde54fc26f476c4e6408f73fc1e742a5d8783a8c87e4b891faaa4be91d0200",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2018-ii-100",
       "expectedRecordHash": "30e90890accbe76001d0536250e3e708b52581a049c3397fd4bf247d0305a7bc",
       "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/thunderstorms-lightning-and-tornadoes",
@@ -28078,6 +29778,174 @@
         "status": "rule-reviewed",
         "legacyId": "physical-geography/rocks-and-minerals/metamorphic-rocks"
       }
+    },
+    {
+      "questionId": "nda-2018-ii-103",
+      "expectedRecordHash": "525e083b6840cca4c01ede78a9dedf335f5b98a5241d73cbdf4103de73639d9c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Acids, bases and salts.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-104",
+      "expectedRecordHash": "630bccd5b02b46fdd177dee60fe50100eba866b34a8d2e6a4eedd589f9ba228a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Chemical reactions and electrochemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-105",
+      "expectedRecordHash": "86ee75aacc2cbc22129eda0dbb1f2e5d19fce53f19278006ed1b2a40ca5c0f85",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — History and culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-106",
+      "expectedRecordHash": "c1238771eb0941a97a91b1bcf170684374f3cb6a5c2485474eec07604b0af31b",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — History and culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-107",
+      "expectedRecordHash": "290770256702869be2e56b99269010f7b976f0d14d92d68194a3ca4a55a38b43",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — History and culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-108",
+      "expectedRecordHash": "e96fef828269a75baba66e1a6f63dbbd6698965d012738a64999792ea7f54fc9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Optics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-109",
+      "expectedRecordHash": "c0c63be5deb061dc2ca1e7cf7d432b29a9fb1b10cd84ef4aa2f7a07fdcab7100",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Optics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-11",
+      "expectedRecordHash": "84c43d0004208751bbc50a73706dd3e4ad1a90269c1005b4fc1cdaaed924e9de",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-110",
+      "expectedRecordHash": "69fa1cf65e2843e497e6a2b20df9c67a706554b7ef5b0a1979a274c43f8851ab",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Optics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-111",
+      "expectedRecordHash": "a630848b9f30fd8760cadade3fe7e8f0740cfd878d1e15cd6af0ae760d133b8c",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/salient-features",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Polity & Governance — Constitution and institutions.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-112",
+      "expectedRecordHash": "a54e68b8f071d75b2b9ba2aaf58f347c7787f884c797b225d45a24387cd18a5f",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/salient-features",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Polity & Governance — Constitution and institutions.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-113",
+      "expectedRecordHash": "c8d175ccb7c654ede5563d951940bea10cdd58b5c27371612d14a42f3d022e92",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/salient-features",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Polity & Governance — Constitution and institutions.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
     },
     {
       "questionId": "nda-2018-ii-114",
@@ -28192,6 +30060,246 @@
       }
     },
     {
+      "questionId": "nda-2018-ii-12",
+      "expectedRecordHash": "0adcb5267cb9fbf387ce8481891c8aa0876c2ec681a650c894a321dc6dc5adb1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-120",
+      "expectedRecordHash": "f2c0a78d62421b1f3b6c63c14ee607c71ed1c4c3b26492120577b5e6ed7df7fd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Optics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-121",
+      "expectedRecordHash": "d8ed6f27262e2473344b06d258f8d13c971ae7fc93ee6389b904238e19c3c1fe",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Optics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-122",
+      "expectedRecordHash": "63b275da0bb1f026a339f38535f2670f2410b2f0b9b4e9d8e2eb04ef14451429",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-123",
+      "expectedRecordHash": "34e0401583f106f8cbe26f3b669296fc761b3b8ca74a06d5f63e26b61f2e6faf",
+      "primaryId": "syllabus:polity-governance/rights-principles/fundamental-rights/equality",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Polity & Governance — Equality, Freedom, Life, Religion & Cultural Rights.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-124",
+      "expectedRecordHash": "3db4af47a992d40c8580463988c4f49ba3585a8edfde52a94d93aa49314343e4",
+      "primaryId": "syllabus:geography/indian-geography/agriculture-and-irrigation/crop-seasons",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Agriculture, Crops & Land Use.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-125",
+      "expectedRecordHash": "81b83371efd12ebac02fddbae93500868de1680394a948127e1c43c4912d4d3b",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-126",
+      "expectedRecordHash": "430fe615c753e219c12e685dfd2e5a41c689b0e5e54698f689c0fe0084b7d5c5",
+      "primaryId": "syllabus:history/medieval-india/bhakti-and-sufi-traditions/saints-and-compositions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Bhakti Traditions.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-127",
+      "expectedRecordHash": "77765cefa26505ef029762a9014a5d9bb2947484869989dc60b60b1ac21cc1a0",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-128",
+      "expectedRecordHash": "01020737a76c9b168d3842b91a27abc8e2af6547c97743a3a0a57de268455f3c",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-129",
+      "expectedRecordHash": "c13398be6a55d7e33325e5976614be08ff8b2700dae967f24628d9d59bdf22be",
+      "primaryId": "syllabus:history/modern-india-national-movement/european-companies/english-and-french",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — European Trading Companies.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-13",
+      "expectedRecordHash": "e11c6e0efb0fc5b0a84e1c0018e1fde30d34de0fec9a0cdf019d4df77ad25c82",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-130",
+      "expectedRecordHash": "a1525a43a389488a0e7ab44e2996a621a3259817bcd1fc24e59eec72466ca142",
+      "primaryId": "syllabus:polity-governance/institutions/constitutional-and-statutory-bodies/regulators",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Polity & Governance — Commissions, Authorities & Regulatory Institutions.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-131",
+      "expectedRecordHash": "40ce6e58f01e8d8f52c6049e308b80a12362eb06cd5be0e10383d67e17e964e4",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Ancient and Classical Literature.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-132",
+      "expectedRecordHash": "910ef8098a1fd55db2dc88c75529bc1191045e37bed5d7558d4745a364ad1d89",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/recipients-and-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Current Events — Awards and sports.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-133",
+      "expectedRecordHash": "0688f3105e260e0d397fe51f2f8b27963be0926078e0c7a929121e5daba1ecbb",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/recipients-and-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Current Events — Awards and sports.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2018-ii-134",
       "expectedRecordHash": "6410576be4b64154a42c9c9198119ecca32790075a7bb0165a9f54b53668abc6",
       "primaryId": "syllabus:geography/world-geography/world-physical-features/islands-and-peninsulas",
@@ -28208,6 +30316,774 @@
       ],
       "editorialBatch": "NDA/2018/II/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2018-ii-135",
+      "expectedRecordHash": "a12b3628c941d5663061a5f733c2effa9b5cc01c41f506689cdff71702ef887e",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-136",
+      "expectedRecordHash": "e3d274c0457293961ac3edbd488bf70c99b2879b0b378c54723c2ab531a90f5a",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-137",
+      "expectedRecordHash": "e844db492635d49600580d28065d8ea56517874bb8fd185e2fb7c1d3ec51e977",
+      "primaryId": "syllabus:history/modern-india-national-movement/gandhian-movements/early-satyagrahas",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Gandhi’s Early Movements.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-138",
+      "expectedRecordHash": "d8235991bdbe38990bfe8d9ce2bc556deb06234aec4c09ccb1a1ec6380f7a00d",
+      "primaryId": "syllabus:polity-governance/institutions/judiciary/supreme-court",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Polity & Governance — Supreme Court, Jurisdiction & Judicial Review.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-139",
+      "expectedRecordHash": "3db01aa050c6ecd8d318d70f67529ac0776ac6f405f3c5c78a265dc283fe50b5",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Physical and Indian geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-14",
+      "expectedRecordHash": "d7603d17183918bea82a4961606efe5b0af4c9f9067579daef97b07eb6a2096f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-140",
+      "expectedRecordHash": "8202aaf3068c27f93dda85bba98affc63640b6bfbc3e94970708f8f4c7cc4c13",
+      "primaryId": "syllabus:polity-governance/rights-principles/directive-principles-and-duties/nature-and-enforceability",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Polity & Governance — Directive Principles of State Policy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-142",
+      "expectedRecordHash": "ae2dfee14b366b94147203d3280ee48e6e33ec9574e678e134174e2f43a8e867",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Agriculture, Land Settlements & Rural Economy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-143",
+      "expectedRecordHash": "74dadfdda143f1bc075f38a7d746c4d787d4d2ad8da0b64546833fe7aa2d58cd",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Groundwater, Irrigation, Floods & Water Management.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-144",
+      "expectedRecordHash": "0ec84c137c0c2b873d412dd655937e33116daaab6dc5e32c0d8e3ba91bdde936",
+      "primaryId": "syllabus:polity-governance/institutions/constitutional-and-statutory-bodies/regulators",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Polity & Governance — Commissions, Authorities & Regulatory Institutions.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-145",
+      "expectedRecordHash": "0c821420b8feeddd680dc8a89122adb19e4bb35a4d9a667b5733f3bb07968c2c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: General Science — Human physiology.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-146",
+      "expectedRecordHash": "8f3bbbaac9273e02d455005fc34821cbcddcbbec0ba98d35fbcdb6c5d04994c5",
+      "primaryId": "syllabus:current-affairs/national-affairs/public-institutions-and-appointments/administrative-appointments",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Current Events — Appointments and government initiatives.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-147",
+      "expectedRecordHash": "46b0ab60c3379db8b201a3945fdc96c9a4518bd246e20171c28801ed9d9f94e2",
+      "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/theosophical-movement",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Reform Movements and Organisations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-148",
+      "expectedRecordHash": "818d14c2b98955b4571b0c94d04c2a1b8455110321c896d6882ab739ab9bb218",
+      "primaryId": "syllabus:polity-governance/federalism-local-government/union-state-relations/special-state-provisions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Polity & Governance — Special Provisions for States and Constitutional Regions.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-15",
+      "expectedRecordHash": "31da3042ae5eeb8ff4f637f5729f09882b283342a7696ed253cb3e8021b3857a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-150",
+      "expectedRecordHash": "1a5076109ee4269d68c2bd03b8bf2255d6b9d998599f1f7286feb8441bf2ab3f",
+      "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Current Events — Major national and international developments.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-16",
+      "expectedRecordHash": "f03735803186f9807d86c79363205205c2fd21eff21c95db04c86c96345bffcc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-17",
+      "expectedRecordHash": "3a9388e16cbb7a526e53d73fa27a38a4bbf5a9ccbdb9f938ba520f8084a003d3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-18",
+      "expectedRecordHash": "999b58e15b15efe20e48d7daaa8cd95ff878446722659f0ca7bebab1f08cd737",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-19",
+      "expectedRecordHash": "abce3e08fd7cb18c056823a6c409c83bf56955cebee838f24b8c7f453c18a77a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-2",
+      "expectedRecordHash": "88f35205a209a8ca65f881acf0a920c0dd42156af99014e0b6195ec14dc1ec84",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-20",
+      "expectedRecordHash": "b792876de8208abdb62befde9b14609ebd791c3e8b6bf85bdeed15c02d3b4ef4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-21",
+      "expectedRecordHash": "703bd67e1adc53dcac7057e773b669fe6c3e0d847cc8dc1c6bd6ac6d7dc063bf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-22",
+      "expectedRecordHash": "ee8513f498f6b40872cecc5fca03d2f3d88655bb5862dfe09eeb9e12c5584162",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-23",
+      "expectedRecordHash": "e084ecda4700ef43d2061171882b5fafc506c905b3842df8152e056a632b5c3d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-24",
+      "expectedRecordHash": "8ab97e0b80d60afac2c3cfb57c228411915dd70485e65cb5d62ec35fa2bca92f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-25",
+      "expectedRecordHash": "6277123299ffde6384b6efd0d662967d59de69d791d3a0e9cec3ed72b998645a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Reading Comprehension.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-26",
+      "expectedRecordHash": "b1a9e8ca96bdd472d20ad0a54e0a16bb75f23118d030fa491707779cbc90b242",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-27",
+      "expectedRecordHash": "7b7e33312178d86dea9a9cf24b0c4f159c9bde722db3fb6fbb502e1138753aae",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-28",
+      "expectedRecordHash": "c386ee82afc39b38b3353b76f07fa7c8478f7a6fc894b03ab592cfdf43de1de6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-29",
+      "expectedRecordHash": "bdfb20630c34094e24235c79135c2e8d0827339128ab5f916ca70c518a7a4a54",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-3",
+      "expectedRecordHash": "a1ca38aeea0e7ef07d380ed9a1c07d744ae49e048a55612197db5ecd834a9fa8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-30",
+      "expectedRecordHash": "4821c360f69307cce896a199f0416e4dd45e6b361767a51cbe822bb96f10b0e8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-31",
+      "expectedRecordHash": "6275fde0c1cc02a5c3f57ae9c89f8c21eb4dc54983acf2ab583036da28052adc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-32",
+      "expectedRecordHash": "830ad0f303e3b54e35d5bbf3b1ddef921d3c96ec79b0f181dda77a324d10f7fb",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-33",
+      "expectedRecordHash": "5374a6cefed53403ec02f4a1a176430d34bc19bd5187a2a9bc0d75448cb9a798",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-34",
+      "expectedRecordHash": "8c50222244a1d521cab0d3dfcc826ae906a7f307bf55315286b9c7b40056605b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-35",
+      "expectedRecordHash": "098eea2ceeb6ed89013c2fafd2d79c0b8c182add91168af28b473b62e9b2eff6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-36",
+      "expectedRecordHash": "56317d16f8e2ec2dbd1b450a651c8cbfc749b20748fc015e2a451581fa3cdce2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Idioms and Phrases.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-37",
+      "expectedRecordHash": "90a9eed126e1027e2723b132a00b52ba58707c013a073b1b035c5204c67dde09",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Idioms and Phrases.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-38",
+      "expectedRecordHash": "ab43ada4ef321e42909c86e6f200c8fadfd2f186887673ee914dd0a3abbee46e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Idioms and Phrases.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-39",
+      "expectedRecordHash": "2e27b8416a273606c29b4db13cee958f7c45d7c70ce8e7e2b5764fde73a098b3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Idioms and Phrases.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-4",
+      "expectedRecordHash": "e12b6825d3180dd17b6520bcd0ef7cc84e98b834e4e5e45b736758e04c943437",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-40",
+      "expectedRecordHash": "6a91cc0f1b2f1586e1a1c1088b5cb3781c6d36ed97e724b9d3b48e890c943024",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Idioms and Phrases.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-41",
+      "expectedRecordHash": "32696ea5d9384ab72deaabea9762c76087ed2a1e0a792c783d3fba4e228fbd59",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-42",
+      "expectedRecordHash": "1dbc7c7fc2a92379e82d33b10bbb8c7ed64fde0c5b025457130e5f62e3a0d1fd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-43",
+      "expectedRecordHash": "f6e189a00c91f0f14ff1323d35fafcba07bce86481c5810efa4b956bc1d4a5b1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-44",
+      "expectedRecordHash": "a55bcd35b19f2fbf72ca2cfd559eac8cd0e7368a5e355f94b4589d90e54b29d3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-45",
+      "expectedRecordHash": "528ab2e550e4173ee0cca7f5940962fe90811f53aa21703435fa618a381df2c1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-46",
+      "expectedRecordHash": "2113f902652763ab62f1e8f7c57f047b51297ffde7e1ea5e729542f01bd9bea4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-47",
+      "expectedRecordHash": "e3172833a34da454e6afed4b52399c986a040b68d4328d21e45cacda8f5297bb",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-48",
+      "expectedRecordHash": "010a0256494c93ea128d937a6877f44e87edac153cf5cfd9ffbd4d4fd780fc86",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-49",
+      "expectedRecordHash": "8dea180ce97d2d8231277455e180c2510ee0f5df79b1b95d98159cace593ab4f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-5",
+      "expectedRecordHash": "7db08b0dfaf06120d439587eaa60746dad67ef406d755b61239a0f654d5676a6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-50",
+      "expectedRecordHash": "d863696919769de9d121ceabac48f5b75d1f144bb513326a3db12dce7723bdd1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-51",
+      "expectedRecordHash": "61a744fdc214b3301bebb72b795e212fa0d994767d4b0f65a0d35c6d14d6e3b7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Waves and sound.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-52",
+      "expectedRecordHash": "68db53751cb54c71a937dce7d7cbe45ac17083ea212929c1a76fb79fd5f7c6a7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Waves and sound.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-53",
+      "expectedRecordHash": "a34053abf8b973720ecab68103a9404bb10a31f7f8d586a088a9de75763c3c8d",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Administrative, Judicial and Revenue Systems.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2018-ii-54",
+      "expectedRecordHash": "4003baf85cc19532b4e602eefef075977b6213c79f8da6612accf0992e3fa8ed",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: History, Freedom Movement & Culture — Classical, Miniature, Folk and Regional Painting.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
     },
     {
       "questionId": "nda-2018-ii-55",
@@ -28250,6 +31126,222 @@
       }
     },
     {
+      "questionId": "nda-2018-ii-57",
+      "expectedRecordHash": "4f476ba299785ee91ba1dbd4866bffd1127b55cdbd9c4b8c75c6e8affd5954cf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: General Science — Cell biology and genetics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-58",
+      "expectedRecordHash": "d43833a0b2f31e275de44b1a836296488f43cadde50732e6b6143a71a9bc4084",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-59",
+      "expectedRecordHash": "153b55b7d138cf10cc7a0b42208545091f716e3fe78ea111bc78c5978a8f4121",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-6",
+      "expectedRecordHash": "350ed82001d9102abb5bde7f150f3ceea931af29019d6df18d1c1d260c575ed8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-60",
+      "expectedRecordHash": "8719239fd2f20c8127a5b61918ff630f6f590c29c25da88af673aef9bf41cda6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-61",
+      "expectedRecordHash": "2fe97814794f51e90495191687c4cc9a24ddff57feae83514ace2c63ae290c34",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: General Science — Disease and immunity.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-62",
+      "expectedRecordHash": "44417ea9cd34f98478d8cc32c275b950249cca1d40cf4b527e4914ea08788baa",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-63",
+      "expectedRecordHash": "34bb749c5e42c433c6d32b3320bd78c893a537f4c3acb2e192473f83ee2b48fd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-64",
+      "expectedRecordHash": "2daa7af113f406e9033fe6ae56c46b566524dd34177fd88268cc181c77c3fd90",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-65",
+      "expectedRecordHash": "ddbe073b8f1da2da41a30dda5f38c42b8079c02ea75b09c73bfb454dd0f9f30f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-66",
+      "expectedRecordHash": "81d0ce17e51921560d2380e2be1ac21b8afdb17994e86b9e0550ab0be66c5b6c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Waves and sound.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-67",
+      "expectedRecordHash": "790b57169e7f94c0fb3456c7f3ee8c2856bca06d1613336c5b386c5b1fd2dfdf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Waves and sound.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-68",
+      "expectedRecordHash": "f3d0454a6862fa61f585e8b3a0e1dbe94c07743f09eac8631714b2c13efbde85",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Electricity and magnetism.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-69",
+      "expectedRecordHash": "2bbfb5b87198fdedba2abaff22c05622dd00cdfb5463f3b5b8e910c5033181c8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Heat and thermodynamics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-7",
+      "expectedRecordHash": "d643b4ec0a4871f88229ed3dcddbb54a2250602ec1b1cb2c47fe71026b09f511",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-70",
+      "expectedRecordHash": "eabfbaa0c4496a6bda200d6db8a0a739add948aa88a41050064717f7b000fd56",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-71",
+      "expectedRecordHash": "e93a9ac4b7a21f96ec9a70b1bb5c12afd8e2a2019cabd6ca6c34117136f99cbe",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-72",
+      "expectedRecordHash": "d316dc46c91fa19cf33cfd4b238621731a1fcd669eabfcdda09de479f19d6af7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Core physics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2018-ii-73",
       "expectedRecordHash": "de7493a8b3d334a7f6daa261c85a5d8f655717e2a9a6c7a94179142226ba9194",
       "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
@@ -28286,6 +31378,22 @@
       ],
       "editorialBatch": "NDA/2018/II/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2018-ii-75",
+      "expectedRecordHash": "aec3dd37241a8222367f51585c85cfb41bdc1d0d2e2591727bf24ce03d336be2",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — Biodiversity, Species & Habitat Conservation.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
     },
     {
       "questionId": "nda-2018-ii-76",
@@ -28326,6 +31434,262 @@
         "status": "rule-reviewed",
         "legacyId": "physical-geography/oceanography/salinity"
       }
+    },
+    {
+      "questionId": "nda-2018-ii-78",
+      "expectedRecordHash": "cc429f86c7a4a809e96a4a4493e1f46ce722ecdb9a404ead0834a6d3cb3bde82",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Core chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-79",
+      "expectedRecordHash": "a83fd40e17e79bac13b29ce17c80c0ed58ad9bde486176ca6078cb9cbb977214",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Chemical reactions and electrochemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-8",
+      "expectedRecordHash": "fff47a75d29c5738a1fb7cd9033de29301b5bd6d816a8f709746841f60577862",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-80",
+      "expectedRecordHash": "1d2a92bbf2d7bf6b897d77b99337edaf7b7f1af3ee17eb913be292e3be63db2e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Acids, bases and salts.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-81",
+      "expectedRecordHash": "3235d5c33c1c41fd2d61cd7fb0e40f3a1f376a8cd816cbdef74afc09442d1a73",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Acids, bases and salts.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-82",
+      "expectedRecordHash": "bb7e93fbf3517ad2a5380353387087bae4a1aeff23dcfe5db4c8a77adfa1c0e0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Core chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-83",
+      "expectedRecordHash": "fed6aee94c96b99ac1310cc5430c50bdd6fc4dcd7f73469e3beb58ff0d3d2fe9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Acids, bases and salts.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-84",
+      "expectedRecordHash": "9a310597179559a27d726121738be87f20f1b8059f08ddf15aa7f49da83d5388",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: General Science — Human physiology.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-85",
+      "expectedRecordHash": "f92304f6fe5c4de7bc867f755f35ed7ff03aa60928ab988a1b7293bdf8c58469",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Acids, bases and salts.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-86",
+      "expectedRecordHash": "6b22d721b8091d0b09d6c882cb5a966004d9e054725c9380f1b94042ed661ae2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Electricity and magnetism.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-87",
+      "expectedRecordHash": "2d9e50965c03c3f2d50044db9328c74222f1d8cce17900e78eed5646b47dc911",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Core chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-88",
+      "expectedRecordHash": "ca4498aaa9df048f508eb71f4c6628fe86008e4f42ae09f97367b2ac8c42986a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Electricity and magnetism.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-89",
+      "expectedRecordHash": "64959f34655a92ee44f0464a1a74705dbb8ea525836ff65d68b295e7cba60dd8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Chemistry — Core chemistry.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-9",
+      "expectedRecordHash": "63dacf3a4f750e079587468bd3e40bc2ea41ba017b20740d65f6fc8a361c83b4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-90",
+      "expectedRecordHash": "9ba261b5a36cffd5c13f93ec0d1e02897137cb7b2027b4c11466a6d7cc15c0c1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Optics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-91",
+      "expectedRecordHash": "bdf02693c268e14eb05406bd7b332d329552b80b9bb9d521ba35ec86d9cb51ad",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Mechanics and properties of matter.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-92",
+      "expectedRecordHash": "87983aee8c2d67c7c591fb0000a8aacf126c54867538619b3be21277ff0e963c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: General Science — General biology and applied science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-93",
+      "expectedRecordHash": "97df6e9a8a3e8c20913979ee607e4df000ef2f30377ac0fca2e0f1c6db20bbb7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: General Science — General biology and applied science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-94",
+      "expectedRecordHash": "d87210bc3e4d373f418c456bdad9988265f87b138a51a72b3eeceeeb62d3f49e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Optics.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-95",
+      "expectedRecordHash": "f74d5522acdeb7a88507ffa446b822fbde1d162d4726a939ef2046915379d5b6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: Physics — Mechanics and properties of matter.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-96",
+      "expectedRecordHash": "a993f58154c76829ca0a89412cc5a8642b729a23b8a399b307cecd7e82febc02",
+      "primaryId": "syllabus:geography/indian-geography/drainage/peninsular-rivers",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-taxonomy second pass: Geography & Environment — River Systems, Lakes, Dams & River-Valley Projects.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
     },
     {
       "questionId": "nda-2018-ii-97",

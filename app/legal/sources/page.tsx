@@ -20,12 +20,13 @@ import officialNda2020CombinedPaper from '../../../content/nda-2020-i-ii-officia
 import officialNda2019IIPaper from '../../../content/nda-2019-ii-official-paper.json';
 import officialNda2019IPaper from '../../../content/nda-2019-i-official-paper.json';
 import officialNda2018IIPaper from '../../../content/nda-2018-ii-official-paper.json';
+import officialNda2018IPaper from '../../../content/nda-2018-i-official-paper.json';
 import {questionEligible} from '../../../lib/question-review';
 import reviewed2024Audit from '../../../content/audits/nda-2024-ii-review.json';
 
 export const metadata = { title: "Sources — added PYQ papers", description: "Added papers, available GS questions and source-review coverage." };
 export default function SourcesPage() {
-  const officialIds=new Set([...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions,...officialNda2020CombinedPaper.questions,...officialNda2019IIPaper.questions,...officialNda2019IPaper.questions,...officialNda2018IIPaper.questions].filter(q=>questionEligible(q.id)).map(q=>q.id));
+  const officialIds=new Set([...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions,...officialNda2020CombinedPaper.questions,...officialNda2019IIPaper.questions,...officialNda2019IPaper.questions,...officialNda2018IIPaper.questions,...officialNda2018IPaper.questions].filter(q=>questionEligible(q.id)).map(q=>q.id));
   const available=[...new Map([...pyqQuestions,...historicalPyqQuestions.filter(q=>officialIds.has(q.id))].map(q=>[q.id,q])).values()];
   const groups = new Map<string, { exam: PyqExam; year: number; paper: string; count: number }>();
   for (const question of available) {
@@ -47,7 +48,7 @@ export default function SourcesPage() {
       const official2021=group.exam==='NDA'&&group.year===2021&&['I','II'].includes(group.paper);
       const official2020=group.exam==='NDA'&&group.year===2020&&group.paper==='I/II';
       const official2019=group.exam==='NDA'&&group.year===2019&&['I','II'].includes(group.paper);
-      const official2018=group.exam==='NDA'&&group.year===2018&&group.paper==='II';
+      const official2018=group.exam==='NDA'&&group.year===2018&&['I','II'].includes(group.paper);
       const reviewedNda=official2018||official2019||official2020||official2021||official2022||official2023||official2024||reviewed2024||completeNda;
       const provisional=group.exam==='NDA'&&group.year===2026&&['I','II'].includes(group.paper);
       const withdrawnNumbers=official2019&&group.paper==='II'?[119]:official2020?[70]:official2024?[101]:group.exam==='NDA'&&group.year===2025&&group.paper==='II'?[85]:group.exam==='NDA'&&group.year===2021&&group.paper==='I'?[58]:[];

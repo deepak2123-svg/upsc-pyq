@@ -1,0 +1,929 @@
+{
+  "paperId": "nda-2018-i-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2018,
+    "session": "I",
+    "paper": "GAT",
+    "paperCode": "SRCY-U-ADN",
+    "series": "A",
+    "language": "English",
+    "examDate": "2018-04-22",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2018-1_series_a.pdf",
+    "sha256": "658d6dbc2f4c7d11e09c2f68cced9fba06a4d65a8bbc6a691313561113053198"
+  },
+  "pdfPageMapping": {
+    "pages": 48,
+    "cover": 48,
+    "english": "PDF/printed pages 2–11",
+    "partB": "English questions on printed odd pages 13–43"
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "retrievedAt": "2026-10-31",
+    "url": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2018_gat_anskey",
+    "asset": "/papers/nda-2018-i-gat/official-final-key.pdf",
+    "sha256": "be3c9a7c2cc57ce3b42904dfa576fe185dd4258782c244bd890c3e1b4e7db25b",
+    "page": 1,
+    "series": "A",
+    "session": "II",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "UPSC NDA/NA I 2018 GAT Series A final answer-key table, preserved through the National Digital Library record; the rendered header identifies NDA-I-2018, Series A, GAT, 150 items and NIL dropped."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2018-2018-1-137",
+      "sha256": "0d65616f9dd531145f59de0016ab3d61a912e121ae6a8ccdb395932e5b0fcbd2",
+      "value": {
+        "id": "cds-2018-2018-1-137",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following about the Parliament of India is NOT correct?",
+        "sourceTextHash": "f3ceed6da4449367824155a95d5e8827e60bfd704595f6ccd1dd408dfa130ec4",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 137,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2018_gat_anskey",
+          "rawQuestionText": "Which one of the following about the Parliament of India is NOT correct ?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 137,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following about the Parliament of India is NOT correct?"
+        ],
+        "options": {
+          "A": "The Parliament consists of the President, the Lok Sabha and the Rajya Sabha",
+          "B": "There are no nominated members in the Lok Sabha",
+          "C": "The Rajya Sabha cannot be dissolved",
+          "D": "Some members of the Rajya Sabha are nominated by the President"
+        },
+        "answer": "B",
+        "explanation": "Original NDA 2018-1 Q137, page 24, visually checked against its complete stem and options; the matching Series A final key accepts B.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2018-2018-1-138",
+      "sha256": "44435590728a286060eae2cd43e00780a9dd6f2f3b93e2434ea60a98ac18aada",
+      "value": {
+        "id": "cds-2018-2018-1-138",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements with regard to the Comptroller and Auditor General (CAG) of India is NOT correct?",
+        "sourceTextHash": "1f963c25f6aa5a1e6d2b7c4f034a0b5ac190846bbd3e775741c173e09ef081cc",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 138,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2018_gat_anskey",
+          "rawQuestionText": "Which one of the following statements with regard to the Comptroller and Auditor General (CAG) of India is NOT correct ?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 138,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements with regard to the Comptroller and Auditor General (CAG) of India is NOT correct?"
+        ],
+        "options": {
+          "A": "He is appointed by the president of India",
+          "B": "He can be removed from office in the same way as the judge of the Supreme court Of India.",
+          "C": "The CAG is eligible for further office under the Government of India after he has ceased to hold his office",
+          "D": "The salary of the CAG is charged upon the Consolidated fund of India"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2018-1 Q138, page 24, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2018-2018-1-34",
+      "sha256": "adc06f121e0db98b7beb5d9775af9b99e10241733ffe891c82f4a2fd166b6423",
+      "value": {
+        "id": "cds-2018-2018-1-34",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "S1: The Indian Civil Service gradually developed into one of the most efficient and powerful civil services in the world.\nS6: though these qualities obviously served British, and not Indian interests.\nP: and often participated in the making of policy\nQ: independence, integrity and hard work\nR: They developed certain traditions of\nS: Its members exercised vast power\nThe proper sequence should be",
+        "sourceTextHash": "feed1394f4a060e40c299b902da6617693e9d48c61dee7237ff319924a1a505d",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 34,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2018_gat_anskey",
+          "rawQuestionText": "SI ; The Indian Civil Service gradually developed into one of the most efficient and powerful civil services in the world. S6: though these qualities obviously served British, and not Indian interests. and often participated in the making of policy Q : independence, integrity and hard work They developed certain traditions of Its members exercised vast power The proper sequence should be"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 34,
+        "subject": "English",
+        "topic": "Comprehension",
+        "subtopic": "Sentence rearrangement",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "S1: The Indian Civil Service gradually developed into one of the most efficient and powerful civil services in the world.",
+          "S6: though these qualities obviously served British, and not Indian interests.",
+          "P: and often participated in the making of policy",
+          "Q: independence, integrity and hard work",
+          "R: They developed certain traditions of",
+          "S: Its members exercised vast power",
+          "The proper sequence should be"
+        ],
+        "options": {
+          "A": "P Q R S",
+          "B": "Q R S P",
+          "C": "R S Q P",
+          "D": "S P R Q"
+        },
+        "answer": "D",
+        "explanation": "Original NDA 2018-1 Q34, page 6, visually checked against its complete stem and options; the matching Series A final key accepts D.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-76",
+      "sha256": "2e5dc765cfb467d0ff2c93754521dc9064ca74491f16e2570dd04755cef1c2f7",
+      "value": {
+        "id": "nda-2018-i-76",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements about Roaring Forties: 1. They are strong Westerly winds found in the oceans of Southern Hemisphere. 2. The strong east to west air currents are caused by the combination of air being displaced from the Equator towards the South Pole and the earth’s rotation and abundance of landmasses to serve as wind breaks. Which of the statements given above is/are correct?",
+        "sourceTextHash": "baff2f955083cc0a1435e8a8d73d8d1cba9194938ecb3dc8b1d650e2b352ff21",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 76,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Consider the following statements about Roaring Forties: 1. They are strong Westerly winds found in the oceans of Southern Hemisphere. 2. The strong east to west air currents are caused by the combination of air being displaced from the Equator towards the South Pole and the earth’s rotation and abundance of landmasses to serve as wind breaks. Which of the statements given above is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 76,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Winds & Atmospheric Circulation",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements about Roaring Forties: 1. They are strong Westerly winds found in the oceans of Southern Hemisphere. 2. The strong east to west air currents are caused by the combination of air being displaced from the Equator towards the South Pole and the earth’s rotation and abundance of landmasses to serve as wind breaks. Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-77",
+      "sha256": "25ea7ec5383dcd8159866dc692353f9d757a934f8446e54a6e5b2609893c44d4",
+      "value": {
+        "id": "nda-2018-i-77",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements: 1. The doldrums is a low pressure area around Equator where the prevailing winds are calm. 2. Chinook is a hot and dry wind that blows in winter and therefore raises the temperature in a short time. Which of the statements given above is/are correct?",
+        "sourceTextHash": "2730a868d37ecec3fcaad08a3421b991635094ab5d72e89783ba9fba5e9a5d05",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 77,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Consider the following statements: 1. The doldrums is a low pressure area around Equator where the prevailing winds are calm. 2. Chinook is a hot and dry wind that blows in winter and therefore raises the temperature in a short time. Which of the statements given above is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 77,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Winds & Atmospheric Circulation",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements: 1. The doldrums is a low pressure area around Equator where the prevailing winds are calm. 2. Chinook is a hot and dry wind that blows in winter and therefore raises the temperature in a short time. Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-98",
+      "sha256": "81a6214c56157a0bade850d87ddeda08b449cba23ae246a8cf970c2c44d06844",
+      "value": {
+        "id": "nda-2018-i-98",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is NOT a coastal depositional feature?",
+        "sourceTextHash": "b39b2c17b810177a640af5f207e73573f2f021f590dbb735b3463487405a9360",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 98,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which one of the following is NOT a coastal depositional feature?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 98,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Coastal Landforms",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is NOT a coastal depositional feature?"
+        ],
+        "options": {
+          "A": "Tombolo",
+          "B": "Sand bar",
+          "C": "Stack",
+          "D": "Spit"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-99",
+      "sha256": "ac9350d87ba9d00de6d53f9dfddaf37889381310efabb6e1920f13e2ee097b26",
+      "value": {
+        "id": "nda-2018-i-99",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following is/are coastal erosional feature(s)? 1. Notch 2. Sea Arch 3. Cliff 4. Hook Select the correct answer using the code given below:",
+        "sourceTextHash": "704f2c531eae0613f79867f11939e8956325f8326dfb055d5a796a588fa515b4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 99,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which of the following is/are coastal erosional feature(s)? 1. Notch 2. Sea Arch 3. Cliff 4. Hook Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 99,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Coastal Landforms",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which of the following is/are coastal erosional feature(s)? 1. Notch 2. Sea Arch 3. Cliff 4. Hook Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1, 2 and 3",
+          "B": "2, 3 and 4",
+          "C": "2 and 3 only",
+          "D": "1 only"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-100",
+      "sha256": "76ae18842f4dfc1f8efcd6c509dbb994280aaaf3711cc53a99e40662064be409",
+      "value": {
+        "id": "nda-2018-i-100",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Chemical weathering of rocks is much greater in a place with",
+        "sourceTextHash": "92d89a1dde428064eff2d7b65744f5ead3b9e9a9a97b965258372f303f4f6099",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 100,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Chemical weathering of rocks is much greater in a place with"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 100,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Chemical weathering of rocks is much greater in a place with"
+        ],
+        "options": {
+          "A": "cold and dry climate",
+          "B": "hot and humid climate",
+          "C": "hot and dry climate",
+          "D": "cold and humid climate"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-109",
+      "sha256": "4b2c6cac452fc85cb4713d24cf9a587af9bf25cbbb43f98d23c6c668d578d50b",
+      "value": {
+        "id": "nda-2018-i-109",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements about Ring of Fire is/are correct? 1. It is a zone of convergence plate boundaries 2. It is an active seismic and volcanic zone 3. It is associated with deep trench Select the correct answer using the code given below:",
+        "sourceTextHash": "2535f2049bc4b1f1e352bc5324d76529e1587b419ce7de6f354132e322c6093e",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 109,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which of the following statements about Ring of Fire is/are correct? 1. It is a zone of convergence plate boundaries 2. It is an active seismic and volcanic zone 3. It is associated with deep trench Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 109,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Floor Relief",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements about Ring of Fire is/are correct? 1. It is a zone of convergence plate boundaries 2. It is an active seismic and volcanic zone 3. It is associated with deep trench Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-96",
+      "sha256": "249b9d031b854ec00fb03736080277519a300f999ddb39498f4a75c2788aa378",
+      "value": {
+        "id": "nda-2018-i-96",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is NOT a tributary of Indus River?",
+        "sourceTextHash": "096bc5461105ed429054f02d2bdc209c37c2ca508f8f30ddfad35d2237b63c46",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 96,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which one of the following is NOT a tributary of Indus River?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 96,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is NOT a tributary of Indus River?"
+        ],
+        "options": {
+          "A": "Beas",
+          "B": "Ravi",
+          "C": "Chenab",
+          "D": "Tawi"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-97",
+      "sha256": "18356231b7b11d1b3bae34f46ac51cad3aa8e1380a82ce6e6ef8e0940bc251c8",
+      "value": {
+        "id": "nda-2018-i-97",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following is the largest tiger reserve of India in terms of area of the core/critical tiger habitat?",
+        "sourceTextHash": "e53c7eecf4e9ab2dc52a1811d12a88b77cdebd224316d47a7b7b7b2882492f00",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 97,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which one among the following is the largest tiger reserve of India in terms of area of the core/critical tiger habitat?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 97,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following is the largest tiger reserve of India in terms of area of the core/critical tiger habitat?"
+        ],
+        "options": {
+          "A": "Manas",
+          "B": "Pakke",
+          "C": "Nagarjunasagar Srisailam",
+          "D": "Periyar"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-110",
+      "sha256": "6de7cc61bd82fba3dd986504615893b21501f69723c0fb7520abfb91801526f9",
+      "value": {
+        "id": "nda-2018-i-110",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following Himalayan vegetation species is found between the altitudes of 1800 to 2600 metres?",
+        "sourceTextHash": "97f7c831d3301ce5e49a4df1478d6ebdd02a2efe6d49749af6d97da81b8c9942",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 110,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which one of the following Himalayan vegetation species is found between the altitudes of 1800 to 2600 metres?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 110,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Natural Vegetation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following Himalayan vegetation species is found between the altitudes of 1800 to 2600 metres?"
+        ],
+        "options": {
+          "A": "Saal",
+          "B": "Chir",
+          "C": "Spruce",
+          "D": "Deodar"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-111",
+      "sha256": "af65c3653ca030370a8ade6602fd3ee15353321d77415c65d7d21ee2be106615",
+      "value": {
+        "id": "nda-2018-i-111",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following rivers is NOT a tributary of river Cauvery?",
+        "sourceTextHash": "6a3519dc03ae7eec25a37e12f8237f14e8c8d609e62a3ed90ad2409a87f59c46",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 111,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which one of the following rivers is NOT a tributary of river Cauvery?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 111,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following rivers is NOT a tributary of river Cauvery?"
+        ],
+        "options": {
+          "A": "Hemavati",
+          "B": "Arkavati",
+          "C": "Indravati",
+          "D": "Amravati"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-78",
+      "sha256": "2d1f0bfef3f4906a14567cf4ddc373b59e0204d821e11b56b765001a7c059bfe",
+      "value": {
+        "id": "nda-2018-i-78",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the driest desert of the world?",
+        "sourceTextHash": "b691946c8f580c96e0c0f757babbefd5de3452e236bd425169a769a50cac8425",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 78,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which one of the following is the driest desert of the world?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 78,
+        "subject": "Geography",
+        "topic": "World Physical Geography",
+        "subtopic": "Deserts & Dry Regions",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is the driest desert of the world?"
+        ],
+        "options": {
+          "A": "Atacama",
+          "B": "Gobi",
+          "C": "Sahara",
+          "D": "Kalahari"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-114",
+      "sha256": "0fe9d2331116f0d913e7dafd0c89523c8b9ee487c995278bb2a4a538fa50c6e5",
+      "value": {
+        "id": "nda-2018-i-114",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is a local wind that blows out from Siberia?",
+        "sourceTextHash": "f5a66d4c6862be3b32ca0a150ee910d350a645f377b97fcb581a6de9a9745414",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 114,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which one of the following is a local wind that blows out from Siberia?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 114,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Local Winds",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is a local wind that blows out from Siberia?"
+        ],
+        "options": {
+          "A": "Bora",
+          "B": "Purga",
+          "C": "Mistral",
+          "D": "Blizzard"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-94",
+      "sha256": "0d9f8f15a328641d02ff5e66354222556dfc0514d0e701042709e918d1325808",
+      "value": {
+        "id": "nda-2018-i-94",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In which one of the following places, Headquarters of a Railway Zone is located?",
+        "sourceTextHash": "331684c085894cf9ed1c542f901e533467922561ddd95c69244da3a143a639e3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 94,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "In which one of the following places, Headquarters of a Railway Zone is located?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 94,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Railway Zones",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In which one of the following places, Headquarters of a Railway Zone is located?"
+        ],
+        "options": {
+          "A": "Kanpur",
+          "B": "Lucknow",
+          "C": "Hajipur",
+          "D": "New Jalpaiguri"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-112",
+      "sha256": "5bc9ddc76a1c590e98705dd355ad72dc261101d15d886cb2a1d036194df0dd10",
+      "value": {
+        "id": "nda-2018-i-112",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following conditions is/are essential for tea cultivation? 1. Tropical and sub-tropical climate 2. Heavy rainfall ranging from 150 cm to 250 cm 3. Soil should contain good amount of lime Select the correct answer using the code given below:",
+        "sourceTextHash": "6521ff1f44d4bbddd431518ab9a3e4eef0bd5407c297fd7969c7f6e3bd7b5fd7",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 112,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which of the following conditions is/are essential for tea cultivation? 1. Tropical and sub-tropical climate 2. Heavy rainfall ranging from 150 cm to 250 cm 3. Soil should contain good amount of lime Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 112,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Oilfields & Refineries",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following conditions is/are essential for tea cultivation? 1. Tropical and sub-tropical climate 2. Heavy rainfall ranging from 150 cm to 250 cm 3. Soil should contain good amount of lime Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1, 2 and 3",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1 only"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-113",
+      "sha256": "49e11705140d27b7a83870f575667f751e88cf17c9c3f8ae040460f985d393fd",
+      "value": {
+        "id": "nda-2018-i-113",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Bharatmala Project is related to",
+        "sourceTextHash": "a56ddc4bd4ec3d749e22d3dfc88b9bcf6d01fa29f60abfa3e8d3be09a1d0c01d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 113,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Bharatmala Project is related to"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 113,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Highways",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Bharatmala Project is related to"
+        ],
+        "options": {
+          "A": "Improving road connectivity",
+          "B": "Interlinking ports and railways",
+          "C": "Interlinking of rivers",
+          "D": "Interlinking major cities with gas pipelines"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-115",
+      "sha256": "72c204472446e77eca2d5931fa6a9330e9c9c7634aecbff46b6832a1212ac664",
+      "value": {
+        "id": "nda-2018-i-115",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following centres is NOT known for iron and steel industry?",
+        "sourceTextHash": "1dfb2e339cea1c83d8cda90dfc40640071d696671c34a04c9e60619a40fc1bc7",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 115,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which one of the following centres is NOT known for iron and steel industry?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 115,
+        "subject": "Geography",
+        "topic": "Industries",
+        "subtopic": "Industrial Location",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following centres is NOT known for iron and steel industry?"
+        ],
+        "options": {
+          "A": "Bhadravati",
+          "B": "Salem",
+          "C": "Vishakhapatnam",
+          "D": "Renukoot"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-116",
+      "sha256": "ec681ae83232e8bf5fa343e7333c7051b8da41d8530509123e7712d72fdbeb0c",
+      "value": {
+        "id": "nda-2018-i-116",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following are essential prerequisites for establishment of a thermal power station? 1. Availability of fossil fuels 2. Proximity to a river, lake or sea 3. Good transport network 4. Proximity to an urban centre Select the correct answer using the code given below:",
+        "sourceTextHash": "1bbee35f718990fe6c8d0421d75b5394a6d96be47c13a0e7df0837826e173b3f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 116,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which of the following are essential prerequisites for establishment of a thermal power station? 1. Availability of fossil fuels 2. Proximity to a river, lake or sea 3. Good transport network 4. Proximity to an urban centre Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 116,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Power Projects",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following are essential prerequisites for establishment of a thermal power station? 1. Availability of fossil fuels 2. Proximity to a river, lake or sea 3. Good transport network 4. Proximity to an urban centre Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1, 2 and 3",
+          "B": "2 and 4",
+          "C": "2 and 3 only",
+          "D": "1 and 3 only"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-141",
+      "sha256": "912ad59f930f80e84fc9c1316bffad21599a4e0475f9aaefa4499e059d9841fb",
+      "value": {
+        "id": "nda-2018-i-141",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements regarding construction of Rohtang tunnel is NOT correct?",
+        "sourceTextHash": "d86581ac2ab1bf4990d4f3c5f7170c6cb4c0eb97c65bf497ffe2b1ed0695a4a1",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 141,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which of the following statements regarding construction of Rohtang tunnel is NOT correct?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 141,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Tunnels & Border Roads",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements regarding construction of Rohtang tunnel is NOT correct?"
+        ],
+        "options": {
+          "A": "It is located at an altitude of 5,000 feet",
+          "B": "It will provide all-year connectivity to Lahaul and Spiti Valley",
+          "C": "The tunnel is being built by the Border Roads Organization",
+          "D": "It will reduce the length of the Leh-Manali highway by approximately 50 km"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-i-75",
+      "sha256": "185d0c36b202fa045a97db23930b3db8b347fe3fe9e347a27a0c75781c2d8c78",
+      "value": {
+        "id": "nda-2018-i-75",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following Union Territories has the highest female literacy rate?",
+        "sourceTextHash": "7d333ac7bf3a5af8f6dff805083c8cfced0f90708f27818ed04f22ace61ee3b5",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "I",
+          "questionNumber": 75,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/95151b3d5b4866a16973da61b94f70bc.pdf",
+          "rawQuestionText": "Which one of the following Union Territories has the highest female literacy rate?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "I",
+        "questionNumber": 75,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following Union Territories has the highest female literacy rate?"
+        ],
+        "options": {
+          "A": "Chandigarh",
+          "B": "Lakshadweep",
+          "C": "Andaman and Nicobar Islands",
+          "D": "Puducherry"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

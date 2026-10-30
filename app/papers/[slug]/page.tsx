@@ -5,6 +5,7 @@ import {OfficialPaperLauncher} from '../../components/official-paper-launcher';
 import nda2019I from '../../../content/nda-2019-i-official-paper.json';
 import nda2019II from '../../../content/nda-2019-ii-official-paper.json';
 import nda2018II from '../../../content/nda-2018-ii-official-paper.json';
+import nda2018I from '../../../content/nda-2018-i-official-paper.json';
 import nda2020 from '../../../content/nda-2020-i-ii-official-paper.json';
 import nda2021I from '../../../content/nda-2021-i-official-paper.json';
 import nda2021II from '../../../content/nda-2021-ii-official-paper.json';
@@ -22,6 +23,7 @@ type PaperQuestion={id:string;questionNumber:number;preparationScope:string};
 type PaperData={paperId:string;questions:PaperQuestion[];evidence?:{status:string;series?:string;url?:string;asset?:string;sha256?:string}};
 const papers:Record<string,{data:PaperData;title:string;summary:string;notice:string}>={
  'nda-2018-ii-gat':{data:nda2018II,title:'NDA II 2018 · GAT',summary:'150 available / 150 source questions · English 50 · Science 44 · GS 56',notice:'All 150 questions are scored against the official final Series A key.'},
+ 'nda-2018-i-gat':{data:nda2018I,title:'NDA I 2018 · GAT',summary:'150 available / 150 source questions · English 50 · Science 44 · GS 56',notice:'All 150 questions are scored against the official final Series A key.'},
  'nda-2019-i-gat':{data:nda2019I,title:'NDA I 2019 · GAT',summary:'150 available / 150 source questions · English 50 · Science 47 · GS and World History 53',notice:'All 150 questions are scored against the official final key.'},
  'nda-2019-ii-gat':{data:nda2019II,title:'NDA II 2019 · GAT',summary:'149 available / 150 source questions · Q119 officially withdrawn',notice:'Q119 was withdrawn by UPSC and is omitted; the other 149 questions are scored against the official final key.'},
  'nda-2020-i-ii-gat':{data:nda2020,title:'NDA I & II 2020 · GAT',summary:'149 available / 150 source questions · Q70 officially withdrawn',notice:'This combined I & II paper uses Series B. Q70 was withdrawn by UPSC and is omitted.'},
