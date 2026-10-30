@@ -1,0 +1,26 @@
+{
+  "issuer": "Union Public Service Commission",
+  "url": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2018_gat_anskey",
+  "retrievedAt": "2026-10-30",
+  "sha256": "fa39449a6cb1ebe58ff8834f4d1c0206f47075eda3c9edc6884d9c795948d42d",
+  "authentication": "UPSC NDA/NA II 2018 GAT Series A final answer-key table, preserved through the National Digital Library record; the rendered header identifies NDA-II-2018, Series A, GAT, 150 items and NIL dropped.",
+  "firstPassColumns": [
+    "C B D B C A B B C B C D D C B",
+    "C B C A C C B A D C C B A A C",
+    "A C B B A B A C D C D C B A B",
+    "A C D D A B A B C B A A B A C",
+    "A B D C B C D A C B A B B D C",
+    "D B C A D D A D A A B D B C B",
+    "B C B D C B C D D C B C C C B",
+    "A C A D A C B A C A D C C D C",
+    "A C C D A C C D B A C D B A B",
+    "C C C B C B B C C B A C D C B"
+  ],
+  "secondPassRows": [
+    "C C A A A D B A A C", "B B C C B B C C C C", "D C B D D C B A C C",
+    "B A B D C A D D D B", "C C A A B D C A A C", "A C B B C D B C C B",
+    "B B A A D A C B C B", "B A C B A D D A D C", "C D D C C A D C B C",
+    "B C C B B A C A A B", "C C D A A B B D C A", "D B C A B D C C D C",
+    "D A B B B B C C B D", "C A A A D C C D A C", "B C B C C B B C B B"
+  ]
+}

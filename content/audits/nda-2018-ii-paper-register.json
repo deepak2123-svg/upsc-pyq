@@ -1,0 +1,885 @@
+{
+  "paperId": "nda-2018-ii-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2018,
+    "session": "II",
+    "paper": "GAT",
+    "paperCode": "YPL-U-AVJ",
+    "series": "A",
+    "language": "English",
+    "examDate": "2018-09-09",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2018-2_series_a.pdf",
+    "sha256": "388d61af120f621257831f15c708378e0e1665e54a5c149db85c6b9ebf5c4cf7"
+  },
+  "pdfPageMapping": {
+    "pages": 48,
+    "cover": 48,
+    "english": "PDF/printed pages 2–11",
+    "partB": "English questions on printed odd pages 13–43"
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "retrievedAt": "2026-10-30",
+    "url": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2018_gat_anskey",
+    "asset": "/papers/nda-2018-ii-gat/official-final-key.pdf",
+    "sha256": "fa39449a6cb1ebe58ff8834f4d1c0206f47075eda3c9edc6884d9c795948d42d",
+    "page": 1,
+    "series": "A",
+    "session": "II",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "UPSC NDA/NA II 2018 GAT Series A final answer-key table, preserved through the National Digital Library record; the rendered header identifies NDA-II-2018, Series A, GAT, 150 items and NIL dropped."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2018-2018-2-141",
+      "sha256": "414081c0f4e28d08541b19f60de336972848250e22e383fd62bce14bf1f790bf",
+      "value": {
+        "id": "cds-2018-2018-2-141",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The word ‘socialist’ was inserted into the Preamble to the Constitution of India through which one of the following Amendment Acts?",
+        "sourceTextHash": "15304a65aad086d8922ac02160e3d39247a2583942638fbfc8a7c49c0d5ded05",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 141,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2018_gat_anskey",
+          "rawQuestionText": "The word •socialist' was inserted into thc Preamble to the Constitution Of India through which one of the following Amendment Acts?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 141,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The word ‘socialist’ was inserted into the Preamble to the Constitution of India through which one of the following Amendment Acts?"
+        ],
+        "options": {
+          "A": "41 st Amendment Act",
+          "B": "42 nd Amendment Act",
+          "C": "43 rd Amendment Act",
+          "D": "44 th Amendment Act"
+        },
+        "answer": "B",
+        "explanation": "Original NDA 2018-2 Q141, page 26, visually checked against its complete stem and options; the matching Series A final key accepts B.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2018-2018-2-149",
+      "sha256": "bc11da6a89b70696e4d77fe5fee6bd6f35902319dd6732cf787b97c9dbc1ed96",
+      "value": {
+        "id": "cds-2018-2018-2-149",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Theosophical Society was led by",
+        "sourceTextHash": "651ac19eccfc46d1d4fbfc6616b2950fd9259aa7be5ccad0891e734d0eb8bd70",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 149,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2018_gat_anskey",
+          "rawQuestionText": "The Theosophical Society was led by"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 149,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Theosophical Society was led by"
+        ],
+        "options": {
+          "A": "A. O. Hume",
+          "B": "Arthur Griffith",
+          "C": "Annie Besant",
+          "D": "Lord Dufferin"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2018-2 Q149, page 27, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-56",
+      "sha256": "d2a20bb4590669fc78b1de67b2956c8215a986c9655e7710933c9ffdc155e9aa",
+      "value": {
+        "id": "nda-2018-ii-56",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I: Geostrophic wind blows above a height of 600 metres, parallel to the isobars. Statement II: Geostrophic wind is the horizontal wind velocity, in which the Coriolis force balances the horizontal pressure force. Code:",
+        "sourceTextHash": "37a4fe7e8034931714ccaca873d72c4f77756518a154a7509b636600e48580ed",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 56,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Statement I: Geostrophic wind blows above a height of 600 metres, parallel to the isobars. Statement II: Geostrophic wind is the horizontal wind velocity, in which the Coriolis force balances the horizontal pressure force. Code:"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 56,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Winds & Atmospheric Circulation",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I: Geostrophic wind blows above a height of 600 metres, parallel to the isobars.",
+          "Statement II: Geostrophic wind is the horizontal wind velocity, in which the Coriolis force balances the horizontal pressure force. Code:"
+        ],
+        "options": {
+          "A": "Both the statements are individually true and Statement II is the correct explanation of Statement I",
+          "B": "Both the statements are individually true but Statement II is not the correct explanation of Statement I",
+          "C": "Statement I is true but Statement II is false",
+          "D": "Statement I is false but Statement II is true"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-76",
+      "sha256": "50b15e307e03916e6574d1cf5534ab9d7f7f98b5c4db5e0910d66344d81d138c",
+      "value": {
+        "id": "nda-2018-ii-76",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements about temperature is correct?",
+        "sourceTextHash": "ec511edb6e1251411ab7ba7b2d717c2bfce786bd6175624cce755e61cc2c7d77",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 76,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Which one of the following statements about temperature is correct?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 76,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Atmospheric Composition & Structure",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements about temperature is correct?"
+        ],
+        "options": {
+          "A": "Temperature decreases with height in the stratosphere.",
+          "B": "Temperature is constant at different heights in the stratosphere.",
+          "C": "Temperature increases with height in the troposphere at an average rate of 6·5°C per kilometre.",
+          "D": "Temperature decreases with height in the troposphere at an average rate of 6·4°C per kilometre."
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-77",
+      "sha256": "8753a41dd78d08ee7776759c0ab1b9e02c0b377589d930210e53a5250774e94e",
+      "value": {
+        "id": "nda-2018-ii-77",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is known as a zone of sharp salinity change in the vertical section of ocean?",
+        "sourceTextHash": "1af8a42e0f8c37f20b171bc0e0cb0a4c8982876471617b24fa1ba441704a5e82",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 77,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Which one of the following is known as a zone of sharp salinity change in the vertical section of ocean?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 77,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Salinity",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is known as a zone of sharp salinity change in the vertical section of ocean?"
+        ],
+        "options": {
+          "A": "Thermocline",
+          "B": "Halocline",
+          "C": "Photic zone",
+          "D": "Pycnocline"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-100",
+      "sha256": "30e90890accbe76001d0536250e3e708b52581a049c3397fd4bf247d0305a7bc",
+      "value": {
+        "id": "nda-2018-ii-100",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following types of cloud is characterized by continuous precipitation?",
+        "sourceTextHash": "9eb0f61ad9353e53464fed16d13770251da6781e5d7c27f8c2d1b3324c14e1da",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 100,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Which one of the following types of cloud is characterized by continuous precipitation?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 100,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Weather Systems & Air Masses",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following types of cloud is characterized by continuous precipitation?"
+        ],
+        "options": {
+          "A": "Cirrocumulus",
+          "B": "Cumulus",
+          "C": "Nimbostratus",
+          "D": "Cumulonimbus"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-102",
+      "sha256": "94b8b4608ba9a13cf84517b28602a652355e4c7b076166f5aad1572c8410b9f3",
+      "value": {
+        "id": "nda-2018-ii-102",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not an agent of metamorphism?",
+        "sourceTextHash": "ba543b741a6b72bdad4c63dc0ca04aefe243bf35b82f28370546fcb26c861dbb",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 102,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Which one of the following is not an agent of metamorphism?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 102,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not an agent of metamorphism?"
+        ],
+        "options": {
+          "A": "Heat",
+          "B": "Compression",
+          "C": "Decomposition",
+          "D": "Solution"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-115",
+      "sha256": "5fc0184f3e17dd88556d9a51e773f9a370fa1900d1a2c7fe8861e318becb8f9d",
+      "value": {
+        "id": "nda-2018-ii-115",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Koppen's Climatic Type) A. Tropical wet B. Mid-latitude desert C. Mediterranean D. Humid continental List-II (Letter Code) 1. Af 2. Cs 3. Df 4. BWk Code:",
+        "sourceTextHash": "4117400cb124d4a0996a94e03b63a849eb166bbedeb6cda1b61d3fb44681e8d0",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 115,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Koppen's Climatic Type) A. Tropical wet B. Mid-latitude desert C. Mediterranean D. Humid continental List-II (Letter Code) 1. Af 2. Cs 3. Df 4. BWk Code:"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 115,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Koppen's Climatic Type) A. Tropical wet B. Mid-latitude desert C. Mediterranean D. Humid continental List-II (Letter Code) 1. Af 2. Cs 3. Df 4. BWk Code:"
+        ],
+        "options": {
+          "A": "A-1; B-4; C-2; D-3",
+          "B": "A-1; B-2; C-4; D-3",
+          "C": "A-3; B-2; C-4; D-1",
+          "D": "A-3; B-4; C-2; D-1"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-119",
+      "sha256": "8d161b43b549c4bd6fedbe031b8dde5f1360381c29e7694889bf763a25c719da",
+      "value": {
+        "id": "nda-2018-ii-119",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not a process of chemical weathering?",
+        "sourceTextHash": "8f714aedfa9853026493af78710f61a15708005bcfd696e0615c202e45fb84cc",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 119,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Which one of the following is not a process of chemical weathering?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 119,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Weathering & Erosional Processes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not a process of chemical weathering?"
+        ],
+        "options": {
+          "A": "Solution",
+          "B": "Carbonation",
+          "C": "Oxidation",
+          "D": "Exfoliation"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-73",
+      "sha256": "de7493a8b3d334a7f6daa261c85a5d8f655717e2a9a6c7a94179142226ba9194",
+      "value": {
+        "id": "nda-2018-ii-73",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following places of India: 1. Itanagar 2. Imphal 3. Agartala 4. Aizawl Which one of the following is the correct chronological order of the above places in terms of sunrise time?",
+        "sourceTextHash": "82786f954c0b61ba778229bc0c934f07aaa9dd8c4af7b5b4c902285a5905c934",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 73,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Consider the following places of India: 1. Itanagar 2. Imphal 3. Agartala 4. Aizawl Which one of the following is the correct chronological order of the above places in terms of sunrise time?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 73,
+        "subject": "Geography",
+        "topic": "Location, States & Regional Geography",
+        "subtopic": "Location & Time Difference",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following places of India: 1. Itanagar 2. Imphal 3. Agartala 4. Aizawl Which one of the following is the correct chronological order of the above places in terms of sunrise time?"
+        ],
+        "options": {
+          "A": "3-2-1-4",
+          "B": "2-1-4-3",
+          "C": "1-4-3-2",
+          "D": "4-3-2-1"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-74",
+      "sha256": "aeae11a1756479533cf3d172d24978d5e181905752314769855894910a8d7d1d",
+      "value": {
+        "id": "nda-2018-ii-74",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is known as uplands of delta region?",
+        "sourceTextHash": "7163eca98b9348a3d1909c8c3a44e8fe323f1fe3833cf03c02c763bfa8876213",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 74,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Which one of the following is known as uplands of delta region?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 74,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is known as uplands of delta region?"
+        ],
+        "options": {
+          "A": "Bef",
+          "B": "Bils",
+          "C": "Peh",
+          "D": "Chars"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-98",
+      "sha256": "9c70fa30bbd863375e22c4e2e295893c9d4cba978df98e53e1229270c122bd01",
+      "value": {
+        "id": "nda-2018-ii-98",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "‘Majuli’, the river island, is located in which one of the following rivers?",
+        "sourceTextHash": "56f928138ca6ba250527c3096cbe142ec8c10dca65975f7f0b314fe93c7daf7d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 98,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "‘Majuli’, the river island, is located in which one of the following rivers?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 98,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "‘Majuli’, the river island, is located in which one of the following rivers?"
+        ],
+        "options": {
+          "A": "Jamuna",
+          "B": "Padma",
+          "C": "Ganga",
+          "D": "Brahmaputra"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-97",
+      "sha256": "8f81caf056e236c1ceebc7b77b4c220cae1382d066331927656207ec6f4e1394",
+      "value": {
+        "id": "nda-2018-ii-97",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Local Wind) A. Yamo B. Black Roller C. Bise D. Haboob List-II (Place) 1. Sudan 2. France 3. Japan 4. North America Code:",
+        "sourceTextHash": "74cd35d637a63a0ad653e873d0a57426e075687b47559dfd0da6572b9b3a984c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 97,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Local Wind) A. Yamo B. Black Roller C. Bise D. Haboob List-II (Place) 1. Sudan 2. France 3. Japan 4. North America Code:"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 97,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Local Winds",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Local Wind) A. Yamo B. Black Roller C. Bise D. Haboob List-II (Place) 1. Sudan 2. France 3. Japan 4. North America Code:"
+        ],
+        "options": {
+          "A": "A-1; B-4; C-2; D-3",
+          "B": "A-1; B-2; C-4; D-3",
+          "C": "A-3; B-4; C-2; D-1",
+          "D": "A-3; B-2; C-4; D-1"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-118",
+      "sha256": "8ff1c7856baa7d6b31e94f4a094da983b5bebf4014407837fb4826f5bc894f04",
+      "value": {
+        "id": "nda-2018-ii-118",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Steppe (temperate continental) climate is not experienced in which one of the following places?",
+        "sourceTextHash": "14da7db0dad1e8101120fc8a1d956168108e1450ad9fb8123d7161a33d37822a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 118,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Steppe (temperate continental) climate is not experienced in which one of the following places?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 118,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Biomes & Vegetation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Steppe (temperate continental) climate is not experienced in which one of the following places?"
+        ],
+        "options": {
+          "A": "Pretoria",
+          "B": "Saskatchewan",
+          "C": "Perth",
+          "D": "Buenos Aires"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-134",
+      "sha256": "6410576be4b64154a42c9c9198119ecca32790075a7bb0165a9f54b53668abc6",
+      "value": {
+        "id": "nda-2018-ii-134",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Sentosa island, which was in news recently, is located in",
+        "sourceTextHash": "802542c38539aba002ec7370a02baee17a3602a4dddc08a6e7625a9aa0b539fb",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 134,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Sentosa island, which was in news recently, is located in"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 134,
+        "subject": "Geography",
+        "topic": "World Places & Routes",
+        "subtopic": "Islands & Regions",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Sentosa island, which was in news recently, is located in"
+        ],
+        "options": {
+          "A": "Singapore",
+          "B": "China",
+          "C": "Australia",
+          "D": "Sri Lanka"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-101",
+      "sha256": "5a4ea2695e813caf508afb6db5869a437145f3c263266b74d34a6ef4eb52032e",
+      "value": {
+        "id": "nda-2018-ii-101",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Major Port) A. Kolkata B. Mormugao C. Visakhapatnam D. Paradip List-II (Location) 1. Landlocked area 2. In the delta region 3. On the riverside 4. On the entrance of the estuary Code:",
+        "sourceTextHash": "e4319f7bf71f39bfc177c9582e2f9f92756159ef01ffd0b334d1b03ae307a197",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 101,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Major Port) A. Kolkata B. Mormugao C. Visakhapatnam D. Paradip List-II (Location) 1. Landlocked area 2. In the delta region 3. On the riverside 4. On the entrance of the estuary Code:"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 101,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Ports",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Major Port) A. Kolkata B. Mormugao C. Visakhapatnam D. Paradip List-II (Location) 1. Landlocked area 2. In the delta region 3. On the riverside 4. On the entrance of the estuary Code:"
+        ],
+        "options": {
+          "A": "A-3; B-1; C-4; D-2",
+          "B": "A-3; B-4; C-1; D-2",
+          "C": "A-2; B-4; C-1; D-3",
+          "D": "A-2; B-1; C-4; D-3"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-116",
+      "sha256": "7d3ec8aef4c0c99e07dc3034bb2d8e28e4ce997f47e38fca625d46b9b276c01f",
+      "value": {
+        "id": "nda-2018-ii-116",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-1 (Railway Zone) A. West Central B. South East Central C. East Central D. North Eastern List-II (Headquarters) 1. Jabalpur 2. Gorakhpur 3. Bilaspur 4. Hajipur Code:",
+        "sourceTextHash": "d01096fc8e6aa2912666c820e2b0282626f0838c0aab781bb356077e075bf4aa",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 116,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-1 (Railway Zone) A. West Central B. South East Central C. East Central D. North Eastern List-II (Headquarters) 1. Jabalpur 2. Gorakhpur 3. Bilaspur 4. Hajipur Code:"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 116,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Railway Zones",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List-I with List-II and select the correct answer using the code given below the Lists: List-1 (Railway Zone) A. West Central B. South East Central C. East Central D. North Eastern List-II (Headquarters) 1. Jabalpur 2. Gorakhpur 3. Bilaspur 4. Hajipur Code:"
+        ],
+        "options": {
+          "A": "A-2; B-3; C-4; D-1",
+          "B": "A-1; B-4; C-3; D-2",
+          "C": "A-2; B-4; C-3; D-1",
+          "D": "A-1; B-3; C-4; D-2"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-99",
+      "sha256": "6192486e32382f0708b4210c810006337310aef1ac5fa4daf7173f8638e7ddc3",
+      "value": {
+        "id": "nda-2018-ii-99",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following Indian States has recorded negative growth of population as per Census 2011?",
+        "sourceTextHash": "91f7628f5c115d1c0071d19ef39eb5b179dc5cc0b1925d567e1b6b8da1a236ee",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 99,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Which one of the following Indian States has recorded negative growth of population as per Census 2011?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 99,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following Indian States has recorded negative growth of population as per Census 2011?"
+        ],
+        "options": {
+          "A": "Manipur",
+          "B": "Mizoram",
+          "C": "Tripura",
+          "D": "Nagaland"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-117",
+      "sha256": "27d4b31cf1da9e29cee7170853f06c7fe782023710f3f45ee67856afd9aa3dd2",
+      "value": {
+        "id": "nda-2018-ii-117",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the correct descending order of Indian States in terms of sex ratio as per Census 2011?",
+        "sourceTextHash": "9889399916546927ec5fa14c0d594de20513486034b83729fc7727ddbbdd7e6b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 117,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Which one of the following is the correct descending order of Indian States in terms of sex ratio as per Census 2011?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 117,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is the correct descending order of Indian States in terms of sex ratio as per Census 2011?"
+        ],
+        "options": {
+          "A": "Mizoram-Manipur-Tripura-Meghalaya",
+          "B": "Tripura-Manipur-Meghalaya-Mizoram",
+          "C": "Meghalaya-Manipur-Mizoram-Tripura",
+          "D": "Manipur-Meghalaya-Tripura-Mizoram"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-55",
+      "sha256": "e26523387698b883ae82bdacf4d8429831bf91616dfd8dae194de2058d66c1a4",
+      "value": {
+        "id": "nda-2018-ii-55",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement 1: Phytoplankton produce most of the organic carbon in the ocean. Statement II: Algae are produced in the cold water biome. Code:",
+        "sourceTextHash": "c8cd1336703c87a9acaad1078a21ad5f7e67f2dbbd8551aa420475f1da86c6b3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 55,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Statement 1: Phytoplankton produce most of the organic carbon in the ocean. Statement II: Algae are produced in the cold water biome. Code:"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 55,
+        "subject": "Environment",
+        "topic": "Ecology Basics",
+        "subtopic": "Ecosystem Structure & Productivity",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Statement 1: Phytoplankton produce most of the organic carbon in the ocean.",
+          "Statement II: Algae are produced in the cold water biome. Code:"
+        ],
+        "options": {
+          "A": "Both the statements are individually true and Statement II is the correct explanation of Statement I",
+          "B": "Both the statements are individually true but Statement II is not the correct explanation of Statement I",
+          "C": "Statement I is true but Statement II is false",
+          "D": "Statement I is false but Statement II is true"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2018-ii-114",
+      "sha256": "f4e418470214a904b732edd78e62c078d2a9bee5f465f8f4361546a5ed5552ca",
+      "value": {
+        "id": "nda-2018-ii-114",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following greenhouse gases is in largest concentration in the atmosphere?",
+        "sourceTextHash": "d70e84d68c3b06e89115ae60388e7cc5db2e52da105958a4c8b5846ef19dec82",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2018,
+          "paper": "II",
+          "questionNumber": 114,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/91d94d69f6b71b0ab8a5a377c2f78056.pdf",
+          "rawQuestionText": "Which one of the following greenhouse gases is in largest concentration in the atmosphere?"
+        },
+        "exam": "NDA",
+        "year": 2018,
+        "paper": "II",
+        "questionNumber": 114,
+        "subject": "Environment",
+        "topic": "Pollution & Climate",
+        "subtopic": "Carbon Emissions",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following greenhouse gases is in largest concentration in the atmosphere?"
+        ],
+        "options": {
+          "A": "Chlorofluorocarbon",
+          "B": "Nitrous oxide",
+          "C": "Carbon dioxide",
+          "D": "Methane"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}
