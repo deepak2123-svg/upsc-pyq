@@ -37,7 +37,7 @@ export default function SourcesPage() {
   }
   return <><SiteHeader /><article className="public-article sources-page">
     <div className="eyebrow">Sources</div><h1>Added PYQ papers</h1>
-    <p>{available.length.toLocaleString("en-IN")} available questions across {groups.size} source papers. NDA I and II 2026 and NDA I 2025 each include all 150 GAT questions across English, Science and GS. NDA II 2025 has 149 available of 150 source questions; Q85 was officially dropped. NDA II 2024 has 136 independently verified questions; 14 remain quarantined after individual review. Counts exclude held, withdrawn and duplicate records.</p>
+    <p>{available.length.toLocaleString("en-IN")} available questions across {groups.size} source papers.</p>
     <SourceDirectory papers={[...groups.values()].sort((a,b) => b.year-a.year || a.exam.localeCompare(b.exam) || a.paper.localeCompare(b.paper)).map(group => {
       const source = coverage.papers.find(paper => paper.exam === group.exam && "year" in paper && paper.year === group.year && "paper" in paper && paper.paper === group.paper);
       const reviewed2024=group.exam==='NDA'&&group.year===2024&&group.paper==='II';
