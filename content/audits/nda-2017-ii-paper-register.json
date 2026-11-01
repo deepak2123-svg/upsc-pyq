@@ -1,0 +1,963 @@
+{
+  "paperId": "nda-2017-ii-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2017,
+    "session": "II",
+    "paper": "GAT",
+    "paperCode": "ADU-F-LXT",
+    "series": "A",
+    "language": "English",
+    "examDate": "2017-09-10",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2017-2_series_a.pdf",
+    "sha256": "de2d60d746bed16fc43ea7983c14117a35f245f12bfe947de70f33176e5d579d"
+  },
+  "pdfPageMapping": {
+    "pages": 44,
+    "cover": 44,
+    "english": "PDF/printed pages 2–10",
+    "partB": "English questions on printed odd pages 11–43"
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "retrievedAt": "2026-11-01",
+    "url": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2017_gat_anskey",
+    "asset": "/papers/nda-2017-ii-gat/official-final-key.pdf",
+    "sha256": "d1ef82de91498211c36bf33fe338229edcd570cda7fa866c5b682870c40be299",
+    "page": 1,
+    "series": "A",
+    "session": "II",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "UPSC NDA/NA II 2017 GAT Series A final answer-key table preserved through the National Digital Library record; the rendered header identifies Series A, GAT, 150 scored items and NIL dropped."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2017-2017-2-52",
+      "sha256": "dcbc4b48a1c155d80d2fa4e4120f8e975aafd206284028078ab6b3c5626e0baf",
+      "value": {
+        "id": "cds-2017-2017-2-52",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not a subject that has been devolved to the Panchayati Raj Institutions by the 11th Schedule of the Constitution of India?",
+        "sourceTextHash": "ccdc176659430a5a7f717d48f1a8f15ff09a1ead2c832868a4a3aaafdf170cd0",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 52,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2017_gat_anskey",
+          "rawQuestionText": "Which one of the following is not a subject that has been devolved to the Panchayati Raj Institutions by the 11th Schedule of the Constitution of India ?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 52,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following is not a subject that has been devolved to the Panchayati Raj Institutions by the 11th Schedule of the Constitution of India?"
+        ],
+        "options": {
+          "A": "Non-conventional energy resources",
+          "B": "Roads",
+          "C": "Higher education",
+          "D": "Libraries"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2017-2 Q52, page 10, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2017-2017-2-87",
+      "sha256": "70661e9490d5c1449eca714bc1dd9b45a560edc3714b373fa822cb3404920edb",
+      "value": {
+        "id": "cds-2017-2017-2-87",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Who among the following can attend the meetings of both houses of Parliament while not being a member of either House?",
+        "sourceTextHash": "10eb958d5ab9665351d0d2847ac7e77b02627bcbd605d66e25960fa77aa6a42b",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 87,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2017_gat_anskey",
+          "rawQuestionText": "Who among the following can attend the meetings of both Houses Of Parliament while not being a member of either House ?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 87,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Who among the following can attend the meetings of both houses of Parliament while not being a member of either House?"
+        ],
+        "options": {
+          "A": "The Solicitor General of India",
+          "B": "The Vice-president of India",
+          "C": "The Comptroller and auditor General of India",
+          "D": "The Attorney General of India"
+        },
+        "answer": "D",
+        "explanation": "Original NDA 2017-2 Q87, page 18, visually checked against its complete stem and options; the matching Series A final key accepts D.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2017-2017-2-96",
+      "sha256": "131403335b434b43a6a181685b6a4013e0bf6ca510d2d458077f1fd9435c1617",
+      "value": {
+        "id": "cds-2017-2017-2-96",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Who among the following is the Chairman of the Interdisciplinary Committee constituted recently by the Government of India to examine framework for virtual currencies?",
+        "sourceTextHash": "099285407c0edc666874bfb6f9fee32855bf4064b52c90d338fee9f96f04c002",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 96,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2017_gat_anskey",
+          "rawQuestionText": "Who among the following is the Chairman of 100. the Interdisciplinary Committee constituted recently by the Government of India to examine framework for virtual currencies ?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 96,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Who among the following is the Chairman of the Interdisciplinary Committee constituted recently by the Government of India to examine framework for virtual currencies?"
+        ],
+        "options": {
+          "A": "Secretary, Department of Financial Services",
+          "B": "Special Secretary, Department of Revenue.",
+          "C": "Special Secretary, Department of Economic Affairs",
+          "D": "Deputy Governor, Reserve Bank of India"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2017-2 Q96, page 22, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-57",
+      "sha256": "2cd1dac2ef932735d3cd524f65d179237f444bbb41d720725cafc90f53e4ea24",
+      "value": {
+        "id": "nda-2017-ii-57",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Mariana Trench is located in the ocean floor of",
+        "sourceTextHash": "72b0bf45f693e0799fc69ceeb62ac495d02c06932451fd6bf7dc0d089f9f5a4d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 57,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Mariana Trench is located in the ocean floor of"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 57,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Floor Relief",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Mariana Trench is located in the ocean floor of"
+        ],
+        "options": {
+          "A": "Southern Atlantic Ocean",
+          "B": "Western Pacific Ocean",
+          "C": "Eastern Pacific Ocean",
+          "D": "Northern Atlantic Ocean"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-98",
+      "sha256": "d10f920dc0515c0b6e91b5e7492edea215f277e8523a788bbcba2a74122dfbd9",
+      "value": {
+        "id": "nda-2017-ii-98",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The shortest day length that occurs in the Northern hemisphere is on",
+        "sourceTextHash": "db9c9c01bc1335e8921fb658e82a04fc043ce45814599c2e56e316b6c0627887",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 98,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "The shortest day length that occurs in the Northern hemisphere is on"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 98,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Earth-Sun Relations & Seasons",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The shortest day length that occurs in the Northern hemisphere is on"
+        ],
+        "options": {
+          "A": "21st March",
+          "B": "23rd September",
+          "C": "22nd November",
+          "D": "22nd December"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-117",
+      "sha256": "307cb1280eaf27369f912138a4dc5c355eb39cc1868ef3a6030fe9907e022c00",
+      "value": {
+        "id": "nda-2017-ii-117",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following gases is placed second in respect of abundance in the Earth’s atmosphere?",
+        "sourceTextHash": "f1f0612247a42fbc23b163f92ad464908c40b1958d7463bb2e568218609a3834",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 117,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Which one of the following gases is placed second in respect of abundance in the Earth’s atmosphere?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 117,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Atmospheric Composition & Structure",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following gases is placed second in respect of abundance in the Earth’s atmosphere?"
+        ],
+        "options": {
+          "A": "Oxygen",
+          "B": "Hydrogen",
+          "C": "Nitrogen",
+          "D": "Carbon dioxide"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-125",
+      "sha256": "affa7539ce8b9eb428b3aa7f968245e7dfa5bd2d283be7ad20ea8dc8adede88c",
+      "value": {
+        "id": "nda-2017-ii-125",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "A rainbow is produced due to which one of the following phenomena?",
+        "sourceTextHash": "68a8da267662115498158c0a8cf46457c9ede21198fef43014a463386538fada",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 125,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "A rainbow is produced due to which one of the following phenomena?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 125,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Rainfall & Precipitation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "A rainbow is produced due to which one of the following phenomena?"
+        ],
+        "options": {
+          "A": "Dispersion of light",
+          "B": "Interference of light",
+          "C": "Diffraction of light",
+          "D": "Scattering of light by atmospheric dust"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-145",
+      "sha256": "a9b2e8dc5193f70360f5331be5090edef84d72c724bab5b6362d059fd8acf08e",
+      "value": {
+        "id": "nda-2017-ii-145",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not an igneous rock?",
+        "sourceTextHash": "b8d7ab9450fe4835ecaf202137a454cd861eac9f93f5d0693db1eada9480ce18",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 145,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Which one of the following is not an igneous rock?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 145,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not an igneous rock?"
+        ],
+        "options": {
+          "A": "Gabbro",
+          "B": "Granite",
+          "C": "Dolomite",
+          "D": "Basalt"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-146",
+      "sha256": "30485fdd05599ebb0e85c19d9f71c2f3185e207cf7af0342ee706f8b846da48e",
+      "value": {
+        "id": "nda-2017-ii-146",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Coriolis effect is the result of",
+        "sourceTextHash": "c4503668fb9632c3887cda3a745a0eef30a1847046ec384b052c1ef38b2ff972",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 146,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "The Coriolis effect is the result of"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 146,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Winds & Atmospheric Circulation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Coriolis effect is the result of"
+        ],
+        "options": {
+          "A": "Pressure gradient",
+          "B": "Earth’s axis of inclination",
+          "C": "Earth’s rotation",
+          "D": "Earth’s revolution"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-149",
+      "sha256": "7705bf7a6d435589f1f8dd8a9086b3a6ad938025cbec4a31e958d8ea969f4bc4",
+      "value": {
+        "id": "nda-2017-ii-149",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following characteristics of a tropical cyclone: 1. A warm sea temperature of > 26°C 2. High relative humidity of atmosphere at a height of > 700 m 3. Atmospheric instability The above mentioned characteristics are associated with which one of the following cycles of its development?",
+        "sourceTextHash": "72f45e01fc5bc10bb5ebe376c1a14fd10c67da6b38112a56d26d53876f413476",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 149,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Consider the following characteristics of a tropical cyclone: 1. A warm sea temperature of > 26°C 2. High relative humidity of atmosphere at a height of > 700 m 3. Atmospheric instability The above mentioned characteristics are associated with which one of the following cycles of its development?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 149,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Cyclones & Pressure Systems",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following characteristics of a tropical cyclone: 1. A warm sea temperature of > 26°C 2. High relative humidity of atmosphere at a height of > 700 m 3. Atmospheric instability The above mentioned characteristics are associated with which one of the following cycles of its development?"
+        ],
+        "options": {
+          "A": "Formulation and initial stage",
+          "B": "Modification stage",
+          "C": "Full maturity",
+          "D": "Decay"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-59",
+      "sha256": "1328cb038fcf308a5a404b6deb65855207ef8868b70a962063ba37dc50868c43",
+      "value": {
+        "id": "nda-2017-ii-59",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Rudraprayag is situated at the confluence of rivers Alaknanda and",
+        "sourceTextHash": "6d16636d89b73adb535ae44adb3865154261fefdff19752dfa536a0b8813d525",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 59,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Rudraprayag is situated at the confluence of rivers Alaknanda and"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 59,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Rudraprayag is situated at the confluence of rivers Alaknanda and"
+        ],
+        "options": {
+          "A": "Bhagirathi",
+          "B": "Mandakini",
+          "C": "Nandakini",
+          "D": "Dhauliganga"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-60",
+      "sha256": "b61668672fe7d210076cf751049f97702033dc764bffa9de28659cb44f548d22",
+      "value": {
+        "id": "nda-2017-ii-60",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Arrange the following Indian cities according to their locations from west to east: 1. Bilaspur 2. Jodhpur 3. Bhopal 4. Ranchi Select the correct answer using the code given below:",
+        "sourceTextHash": "88753dcb59689825e3d7fbdfcedf3195241ea5a2ec90ed65192a69b71812b7c3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 60,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Arrange the following Indian cities according to their locations from west to east: 1. Bilaspur 2. Jodhpur 3. Bhopal 4. Ranchi Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 60,
+        "subject": "Geography",
+        "topic": "Location, States & Regional Geography",
+        "subtopic": "Location & Time Difference",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Arrange the following Indian cities according to their locations from west to east: 1. Bilaspur 2. Jodhpur 3. Bhopal 4. Ranchi Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "3-2-1-4",
+          "B": "2-3-1-4",
+          "C": "4-1-2-3",
+          "D": "2-1-3-4"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-61",
+      "sha256": "47ec607ee99311a6762eefac1aa56829315cacaf56e30caf27d58aa227e9d2c0",
+      "value": {
+        "id": "nda-2017-ii-61",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Kashmir region receives additional amount of precipitation during the winter brought by",
+        "sourceTextHash": "2c82028ae4ae4fe1362427047896aa34629277f9c66d2e8235a7204207e99a2c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 61,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "The Kashmir region receives additional amount of precipitation during the winter brought by"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 61,
+        "subject": "Geography",
+        "topic": "Climate & Monsoon",
+        "subtopic": "Indian Monsoon & Rainfall",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Kashmir region receives additional amount of precipitation during the winter brought by"
+        ],
+        "options": {
+          "A": "South-west Monsoon",
+          "B": "Western Disturbances",
+          "C": "Retreating Monsoon",
+          "D": "Temperate Cyclone"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-100",
+      "sha256": "094330878342d7e9311c5af86fade7743bf427f879ddf4347d57417033978e83",
+      "value": {
+        "id": "nda-2017-ii-100",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In India, maximum amount of rainfall is received from",
+        "sourceTextHash": "81f014e02dd566838b469c5a89ca6cac0bf67979bfdaf00a894222c9f0567d9a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 100,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "In India, maximum amount of rainfall is received from"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 100,
+        "subject": "Geography",
+        "topic": "Climate & Monsoon",
+        "subtopic": "Indian Monsoon & Rainfall",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In India, maximum amount of rainfall is received from"
+        ],
+        "options": {
+          "A": "Western Disturbances",
+          "B": "North-east Monsoon",
+          "C": "South-west Monsoon",
+          "D": "Retreating Monsoon"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-141",
+      "sha256": "767c2810f4d71ecd2d9fd62306de6954e1b8f367074a0e103ce834a05ea47462",
+      "value": {
+        "id": "nda-2017-ii-141",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Sunrise in eastern Arunachal Pradesh would be about how many hours before the sunrise in western Gujarat?",
+        "sourceTextHash": "f72cbd05943a8d2eb04781d9f35f56c685c5904c1ac839b8387865bbf0c3af0b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 141,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Sunrise in eastern Arunachal Pradesh would be about how many hours before the sunrise in western Gujarat?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 141,
+        "subject": "Geography",
+        "topic": "Location, States & Regional Geography",
+        "subtopic": "Location & Time Difference",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Sunrise in eastern Arunachal Pradesh would be about how many hours before the sunrise in western Gujarat?"
+        ],
+        "options": {
+          "A": "One hour",
+          "B": "Two hours",
+          "C": "Three hours",
+          "D": "Four hours"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-142",
+      "sha256": "61e28ca41dd7c229c75404366565ea81ab684a76f04582a23b155f727bcf09a1",
+      "value": {
+        "id": "nda-2017-ii-142",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following States of India in terms of percentage of forest area in relation to the total area of the State: 1. Karnataka 2. Odisha 3. Kerala 4. Andhra Pradesh Which one of the following is the correct descending order?",
+        "sourceTextHash": "a842dd642003064ee9a8cd5d4419d8552721cf26f0faa2c5f81e15695b7b4e69",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 142,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Consider the following States of India in terms of percentage of forest area in relation to the total area of the State: 1. Karnataka 2. Odisha 3. Kerala 4. Andhra Pradesh Which one of the following is the correct descending order?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 142,
+        "subject": "Geography",
+        "topic": "Location, States & Regional Geography",
+        "subtopic": "States & Regional Location",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following States of India in terms of percentage of forest area in relation to the total area of the State: 1. Karnataka 2. Odisha 3. Kerala 4. Andhra Pradesh Which one of the following is the correct descending order?"
+        ],
+        "options": {
+          "A": "1-2-4-3",
+          "B": "3-1-2-4",
+          "C": "3-2-1-4",
+          "D": "2-3-1-4"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-143",
+      "sha256": "d410c24d3a23c2f39c33a8f26f2d6b1988ce7f9afb2c4b4b7a0f5b965b75c757",
+      "value": {
+        "id": "nda-2017-ii-143",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following States in India has the longest coastline?",
+        "sourceTextHash": "3abc999867ea5abfad0091b4a9f2cd5a37552f9d334938d923e988437f3a14b4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 143,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Which one of the following States in India has the longest coastline?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 143,
+        "subject": "Geography",
+        "topic": "Coastal & Island Geography",
+        "subtopic": "Coasts & Islands",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following States in India has the longest coastline?"
+        ],
+        "options": {
+          "A": "Odisha",
+          "B": "Tamil Nadu",
+          "C": "Karnataka",
+          "D": "West Bengal"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-144",
+      "sha256": "beaa804e6da822b4b9645abe5af8a2c7b573ce3eea71e9696d409c8c3c9ef867",
+      "value": {
+        "id": "nda-2017-ii-144",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following States in India has the largest area under forest cover?",
+        "sourceTextHash": "3b7a96aa9ce345c2e21166d761a0512becf4226f5a53ff61003cf861f0ef50e3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 144,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Which one of the following States in India has the largest area under forest cover?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 144,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Forest Cover",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following States in India has the largest area under forest cover?"
+        ],
+        "options": {
+          "A": "Maharashtra",
+          "B": "Chhattisgarh",
+          "C": "Madhya Pradesh",
+          "D": "Andhra Pradesh"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-148",
+      "sha256": "62356b68f8796b24dc83027779ec7c6c50acf4cac95e1f5011a904109bf14470",
+      "value": {
+        "id": "nda-2017-ii-148",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following pairs of rivers and tributaries is not correctly matched?",
+        "sourceTextHash": "6b5db4299cd5212ea2f7d2995ea8c55f0401d0b4fb8320cfaa1fec992ddc40b8",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 148,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Which one of the following pairs of rivers and tributaries is not correctly matched?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 148,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following pairs of rivers and tributaries is not correctly matched?"
+        ],
+        "options": {
+          "A": "Godavari: Indravati",
+          "B": "Ganga: Penganga",
+          "C": "Krishna: Bhima",
+          "D": "Luni: Sukri"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-58",
+      "sha256": "1319c6ca5fa7fcb6637f916d31e511f188f2ea73f918e61ff02475cbb5630032",
+      "value": {
+        "id": "nda-2017-ii-58",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Taklamakan Desert is situated in",
+        "sourceTextHash": "ff7c9a3c28de9b3e834b6bad89c4290c427adaa5e175fd2d998c55f48d39c0cf",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 58,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Taklamakan Desert is situated in"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 58,
+        "subject": "Geography",
+        "topic": "World Physical Geography",
+        "subtopic": "Deserts & Dry Regions",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Taklamakan Desert is situated in"
+        ],
+        "options": {
+          "A": "Western Asia",
+          "B": "Southern fringe of Sahara in Africa",
+          "C": "South America",
+          "D": "Central Asia"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-147",
+      "sha256": "7511a97452ef9f5b8ff014138408b5af9768c381dfc89977b0d35800d042f5d9",
+      "value": {
+        "id": "nda-2017-ii-147",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Where is Mekong Delta located?",
+        "sourceTextHash": "ee63532c990300773f74a4bb9ee9356c4e71b8ab679d6a592e147f0073fd1487",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 147,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Where is Mekong Delta located?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 147,
+        "subject": "Geography",
+        "topic": "World Physical Geography",
+        "subtopic": "Rivers & Deltas",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Where is Mekong Delta located?"
+        ],
+        "options": {
+          "A": "Thailand",
+          "B": "Cambodia",
+          "C": "Myanmar",
+          "D": "Vietnam"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-62",
+      "sha256": "a693261f3a5b8e2118f60f5c85d8bac048dc109e87b2f267132ae6af20a7140e",
+      "value": {
+        "id": "nda-2017-ii-62",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which part of India has the Kalakot tertiary coal field?",
+        "sourceTextHash": "3d00ef7c99a5fc2dca0f2ff47cd6af414cf38130094a2a29ea9ffa25a1abbd9d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 62,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Which part of India has the Kalakot tertiary coal field?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 62,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Coalfields",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which part of India has the Kalakot tertiary coal field?"
+        ],
+        "options": {
+          "A": "Brahmaputra river basin of Assam",
+          "B": "Damodar river basin of Jharkhand and West Bengal",
+          "C": "Himalayan mountain region",
+          "D": "Cardamom hills in Kerala"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-ii-101",
+      "sha256": "812bbf3c0465b911931995c6628856f952cd770b59318c70d29a5eca8a3490d0",
+      "value": {
+        "id": "nda-2017-ii-101",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which set of the following biosphere reserves in India is included in the World Network of Biosphere Reserves?",
+        "sourceTextHash": "5013a3a8bd499bbc0d6adfb959e24bc410d435ce947717065e22857420fa388c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "II",
+          "questionNumber": 101,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/a6254aab289ceb992b28b8d67733f463.pdf",
+          "rawQuestionText": "Which set of the following biosphere reserves in India is included in the World Network of Biosphere Reserves?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "II",
+        "questionNumber": 101,
+        "subject": "Environment",
+        "topic": "Protected Areas & Biodiversity",
+        "subtopic": "Biosphere Reserves",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which set of the following biosphere reserves in India is included in the World Network of Biosphere Reserves?"
+        ],
+        "options": {
+          "A": "Gulf of Mannar, Nokrek, Panchmarhi and Simlipal",
+          "B": "Gulf of Mannar, Kanchanjunga, Nokrek and Seshachalam",
+          "C": "Nilgiri, Nokrek, Panchmarhi and Panna",
+          "D": "Nilgiri, Nokrek, Panchmarhi and Seshachalam"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

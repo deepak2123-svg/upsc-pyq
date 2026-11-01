@@ -27258,6 +27258,30 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2017-ii-1",
+      "expectedRecordHash": "b47a3145b4e16bbb530480a508fb379ea1808b19e7757f8f9d38535f053bae1d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-10",
+      "expectedRecordHash": "cba85c692e593993534b386bb0fcbba23c135019fc84d9990fdc013752ee2fd4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2017-ii-100",
       "expectedRecordHash": "094330878342d7e9311c5af86fade7743bf427f879ddf4347d57417033978e83",
       "primaryId": "syllabus:geography/indian-geography/climate-and-monsoon/monsoon-mechanisms",
@@ -27296,6 +27320,198 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2017-ii-102",
+      "expectedRecordHash": "7a44bc1f089f04187eeb25935c1f049a3056d0406333a55a4a5b0a586512aef8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-103",
+      "expectedRecordHash": "a44eea91d501a9ef1f4045864dd0f8b91f9c4cf4641f038a2f4add4d3cf2bdc8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-104",
+      "expectedRecordHash": "5e9e5773a2377a166a90bc4e3013d90d57217be8ebed4e4a397eccd3ba328a97",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-105",
+      "expectedRecordHash": "a008b603c05639069bae26461d9b6ac66af27e97494f5f81402675344187844b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-106",
+      "expectedRecordHash": "8e28538ee05a9eaebb6a4e3be7491315c8fa3f1d176dd673d7f9785a5b0e1310",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-107",
+      "expectedRecordHash": "ddc0f5f57440bd3e6c700bed3c11ad2e109ed3a26049db7aef696ff9568d3c1d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-108",
+      "expectedRecordHash": "b2f626efe15a1b82e486a39d8a90defcb6ffd9ab64c24b90b58a423241cef4b9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-109",
+      "expectedRecordHash": "6bc11158ab97303cd30c77075b55c4de752753fc8edab420cbb2ab454aab9880",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-11",
+      "expectedRecordHash": "5517836a4e50d26abd2a59ebf98feb94e90cf2fd26b31919dfe4319ae2839aff",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-110",
+      "expectedRecordHash": "e833d8856314633602bab96dc8bff90dfe6bb321bc1f7c1fd9da566926364b55",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-111",
+      "expectedRecordHash": "ba377be30cdbf554fdb52e820c92ced1265ebac5c2dfaca62c8bc6a0c2a097cd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-112",
+      "expectedRecordHash": "ccb83e94a71ded68b0d74289a8a3341235c12e2c2d889b5917eae8506440247c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-113",
+      "expectedRecordHash": "7e8efceaae4f6f0c95fd0c477621fb136fb1239b00d1cbc14ba86062776e1dad",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-114",
+      "expectedRecordHash": "01cc874db2b364851432563e46cbee3e30298aea9445834addf949a1afc50148",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-115",
+      "expectedRecordHash": "e7435879237a23f39bca9ff366782dd0e0558e26becf990c6b9f87183eadaaa5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-116",
+      "expectedRecordHash": "0601d144edd00f3f3965fd8b1099962e134d71e3922e271f45d1eac4f7a9bd3b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2017-ii-117",
       "expectedRecordHash": "307cb1280eaf27369f912138a4dc5c355eb39cc1868ef3a6030fe9907e022c00",
       "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/composition",
@@ -27316,6 +27532,118 @@
       }
     },
     {
+      "questionId": "nda-2017-ii-118",
+      "expectedRecordHash": "47105f9b9ab9a660c2e93d309bf35377ee298d0d1876db298bb8c221953cd294",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-119",
+      "expectedRecordHash": "a96319cfc4a0482268f6e914ed859df7af7b31bb8fd6afe84ecb80d9cde10db5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-12",
+      "expectedRecordHash": "4dafeb0f0cf0ea537d09ae9efea060173ef7f0ee77835ba4376d6fefc5dc204a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-120",
+      "expectedRecordHash": "4bf74e9e889b7671f41ceddabc9bc06e58752da5ea3346ec0899c9c1ac0b1cb8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-121",
+      "expectedRecordHash": "223d48154f70a71ecd68d226742ba3370428b17d6749a43180a83d07e2c878e9",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-122",
+      "expectedRecordHash": "81ad44700927313f6e2ca5cb72dc946f1100359098089a4307a1711a5d87e035",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-123",
+      "expectedRecordHash": "f6904966ec1d23a1a889260ba3ea25a823c2e5ec532da2bafe1ffd033635981c",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-124",
+      "expectedRecordHash": "c5efb26ada6e39dbca66304cea7742164d82f7126ef43ecddef441de311ce6ec",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2017-ii-125",
       "expectedRecordHash": "affa7539ce8b9eb428b3aa7f968245e7dfa5bd2d283be7ad20ea8dc8adede88c",
       "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/scattering-reflection-and-albedo",
@@ -27333,6 +27661,242 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/scattering-reflection-and-albedo"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-126",
+      "expectedRecordHash": "1b673abc66de63f565ad4efc66b0df3d39cb8348afb9183bc448e26b74c823ab",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-127",
+      "expectedRecordHash": "2e9e80f5d39b5644c89df8154c4a804b9e8fed2ebc23ac917550b2107b0ee56e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-128",
+      "expectedRecordHash": "fa6a21f5508055a477f7107777689b481ed8b08f47cbe30cdc5e8fd257aaf2a2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-129",
+      "expectedRecordHash": "55dfd0c311aa98ece8f9d65a6271dacf00f421dfca32611c1de5152c33a1b859",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-13",
+      "expectedRecordHash": "ed65db5225d8b3c74eb1807e38a633db27f93833f92731a48ef6e951ab49cc0a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-130",
+      "expectedRecordHash": "dbcfeb7c381aacfbdd82e46582b5cc4114242f376a90287386a2296e8a800e44",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-131",
+      "expectedRecordHash": "036ab96b84c519cdd55549c3aeba5d1c196075e3888ccede4e682a46c353dcd9",
+      "primaryId": "syllabus:economy/economic-foundations/core-concepts/markets-and-competition",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Economy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-132",
+      "expectedRecordHash": "bf2a29f017d6f23be02dd6699d63829f6d92141e8034b6cb5711688cb229c960",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/recipients-and-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Sports & Current Affairs.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-133",
+      "expectedRecordHash": "b03dbb6be4f16a1f1ebbbbb240fffd8bbab4fb866353696731b9fc02333f47a6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-134",
+      "expectedRecordHash": "ccfb038c6bcd74059a8fd00aedf62ee1e762bbd553ae1a0c07c2877aaacec1ea",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-135",
+      "expectedRecordHash": "8cb60709d1149f609e9223c84c834c957d8705d9892b0592be882bf700a890e3",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-136",
+      "expectedRecordHash": "562fc01ff9962c6d57f865c54e5a85a85cc38553bee2e324ad4ac6d4999e6fe9",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/salient-features",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Polity & Governance.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-137",
+      "expectedRecordHash": "e3ace738a96624157de5db699ad239fa57a5ff700624c03059791b0b53383603",
+      "primaryId": "syllabus:polity-governance/institutions/constitutional-and-statutory-bodies/regulators",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Polity & Governance.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-138",
+      "expectedRecordHash": "406b4f686f83f1e1ffe7938d52d9a3b66c7742a0d3ceeac828b77c744e665987",
+      "primaryId": "syllabus:environment-ecology/pollution/pollutants-and-impacts/air-pollution",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Environment & Ecology.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-139",
+      "expectedRecordHash": "c82af4e3aa5cb34f0544188f8b79ca83a7b31e77587a6c16bd7c20c24195317f",
+      "primaryId": "syllabus:environment-ecology/pollution/pollutants-and-impacts/air-pollution",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Environment & Ecology.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-14",
+      "expectedRecordHash": "36070c96f094e1f1aa365fd8359dd38cb70480ff0568c87e101c6dd68bea0f8a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-140",
+      "expectedRecordHash": "392afffbea85fedce4c68aa17dba838cb920af0702ae056498c5f472775c023a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
       }
     },
     {
@@ -27506,6 +28070,582 @@
       }
     },
     {
+      "questionId": "nda-2017-ii-15",
+      "expectedRecordHash": "cbd7c0dca39f9e83a4b54e8deb4913c437b1da1fcb92849ccdf4e70cef3e71f7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-150",
+      "expectedRecordHash": "bf2b738120afcba3f1ab59705ca9bcda03cd48ecf386985c0f61cfefdae9b1dd",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-16",
+      "expectedRecordHash": "c55a0fe15e1713318126865b1858a03aeebba95a43a64758321ba84b884dd04c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-17",
+      "expectedRecordHash": "1c7e2cf4cad244ec97cb798fa44f7002274a0d7895d96b63d5d8eb3336679667",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-18",
+      "expectedRecordHash": "39554f8283a9523c85fc2d175b516b13997993466859953f2b92228f8186650d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-19",
+      "expectedRecordHash": "95665436c3c641d62fad517962cda4e366c178c8c41ce26c78cf6fc735a9bcfc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-2",
+      "expectedRecordHash": "9c47013762387dac7d996c3c55afb4d82bd1ea4ee99f056b41a696db460ed045",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-20",
+      "expectedRecordHash": "5f239b94636d46eb9fd4988a4df706497d0a768af3b573f076b55c351dc8fb5d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Antonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-21",
+      "expectedRecordHash": "e3709c41449380e6f30ef3d0922ab856abcd95f1a42fec9c3ce1c04b903b48d9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-22",
+      "expectedRecordHash": "d3b7909e78f0f3d73b8710420b552e2093d3753921777a40f27693733c0f0548",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-23",
+      "expectedRecordHash": "95c91fdcb640f17f2b1491cb9164a0c4f13927fe7303a964b6da06144d9e3ea8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-24",
+      "expectedRecordHash": "ffdc1f4043becffcf141af7f007c0279d1db18136d33299fc95e83d187282b0e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-25",
+      "expectedRecordHash": "3b4670835a621e32b0382a0fe8b59e614e745da63434b607bc1cc03b42f93686",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-26",
+      "expectedRecordHash": "3c9c11c5e9323e0d382a48d963496d5719c130ca8d2b74d08cf428b67486ff3d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-27",
+      "expectedRecordHash": "54de2f7db0a80e61bcc3d0a9a72ec1f1b68a6e026bcfece2dd61232ad37b84a3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-28",
+      "expectedRecordHash": "5c55124431b233b203fa744c8339b6b56d6240657669b4e7f10361471d24f7e5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-29",
+      "expectedRecordHash": "466f9354de40ef19f3ee4568b8c1939ac9bce05796aad911f90a244dd2df7506",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-3",
+      "expectedRecordHash": "59e14a69b88cc5841157147a806aa5b74f1fdaef3687dfd8b8bd0e67cfe0dabe",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-30",
+      "expectedRecordHash": "f2e945b6816e29f61705e28f86ea68118a6c5c41b57ef22e03a1e854cb202a7d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Cloze / Selecting Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-31",
+      "expectedRecordHash": "1d110376e72da311825b231e403cade29608873d4a1696c1bd7480707beebcd4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-32",
+      "expectedRecordHash": "6e0cb2a6971967bfc16da467afcea5be995ea280bf61db6fc42bfbdeaf7f7129",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-33",
+      "expectedRecordHash": "d779784e99345c1d5bdbf558b8cd0be0747d8481b1e3a3a5e39c0c0c3cc72d5a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-34",
+      "expectedRecordHash": "49e314a78f558e06d8b7fb333f13f46a5eab5da58c45d080b1e6dd0137d76808",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-35",
+      "expectedRecordHash": "abc2638decbc18cd5f29a0538bb1c993ce061dd5191e3bd9e0e56922e64ee333",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Ordering of Words.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-36",
+      "expectedRecordHash": "5fbe399b193f6f3fd01cbeb679e4de7c8daea1fd21de74988edf97449f55e835",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-37",
+      "expectedRecordHash": "83b8efd3c5440359f3060f962d269c6eeeb99a8242ad8001f7d354e6460ba11f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-38",
+      "expectedRecordHash": "095dbae5c7de6a385c679a39b4d6a0cbee27064258dc1fa11e8b02efea72cf20",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-39",
+      "expectedRecordHash": "ee8baa95ca3f58ef61f96f02bae1ae56a002900d827cfed5f1108ed6e02cae8c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-4",
+      "expectedRecordHash": "74c044d909b148ed2a492e5049e250188cfb88f8a86d0015a526f71829e6e812",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-40",
+      "expectedRecordHash": "7c59f8cba96e455cb7d784428cf406ed2c65a40419f3fa1bae935fed1d05eba6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Spotting Errors.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-41",
+      "expectedRecordHash": "f8dd316fdbc6c472ad58b68dd6b99ba7fee51fc33833e9152b115a9a2ea54173",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-42",
+      "expectedRecordHash": "2eb7b5e0f2c2c3b8834947ffeebbb80cc3683a7cc691a3a37cb52612b856a01b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-43",
+      "expectedRecordHash": "ac492b4ab983fe18f08eadc24c9b78ce677191b656bf1c5633169b73de20764f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-44",
+      "expectedRecordHash": "373d043b231d88e9b103a6717ebec1362ef2ec60c590be2e499f6908692c04d7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-45",
+      "expectedRecordHash": "77fb40b5449e2cd1091e41ed105d82b96c133c9ea15352352f6f9c7aa2de4ea5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-46",
+      "expectedRecordHash": "4bf1c240d7874d3d6afd5585c946348d3b3fcc0385d61959480a06a1d9a62f71",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-47",
+      "expectedRecordHash": "683540260e48870a745e0ed3fa64a4675fdcbc861e71af01224d1b2a449aceff",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-48",
+      "expectedRecordHash": "090eee48fdb2f817d994c4029bed38fd92e8cf9a6ea02f58b8a97323f59ef2e6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-49",
+      "expectedRecordHash": "0bf79406b78f4f895a613f64739fe75df12c6827736e2bcd59471e7468bdecae",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-5",
+      "expectedRecordHash": "4b9c50509a6d2f460d17dce3ac62c8d4ea756caea99964bbe9612f5785f8b700",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-50",
+      "expectedRecordHash": "9a694bce342cb39192c5b221cae4ae534c37a3a698c843636ed608902a4892ab",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Fill in the Blanks.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-51",
+      "expectedRecordHash": "cd221e1d9e32b2507a17cee57370be9b446da2ff1fa9a29b8a05a0824bcf0735",
+      "primaryId": "syllabus:economy/economic-foundations/core-concepts/markets-and-competition",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Economy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-53",
+      "expectedRecordHash": "e39114b617075cadb8b6a998fb4663dcd2baa3369cf8d2f8c3ef7ef4df08c164",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-54",
+      "expectedRecordHash": "70d6c4419c836a88c593b7c3c246c43560ceb98051dfd2dcf2840f5835eaf688",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-55",
+      "expectedRecordHash": "d9d4a2b38358333c81412ecd2ffd04888d9049b78e4423956a20979836186e5f",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-56",
+      "expectedRecordHash": "95cc9f7a97a7cf49e2059556cd976112fe681fa7f138e413bbbc4e391112f9e8",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2017-ii-57",
       "expectedRecordHash": "2cd1dac2ef932735d3cd524f65d179237f444bbb41d720725cafc90f53e4ea24",
       "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-floor-relief",
@@ -27562,6 +28702,18 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2017-ii-6",
+      "expectedRecordHash": "6d67e6abd85291dca9bb2cf37383d817d4f9c29e63fe7cbb2ee11e3eb29f1264",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2017-ii-60",
       "expectedRecordHash": "b61668672fe7d210076cf751049f97702033dc764bffa9de28659cb44f548d22",
       "primaryId": "syllabus:geography/indian-geography/location-and-extent/regional-place-mapping",
@@ -27616,6 +28768,478 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2017-ii-63",
+      "expectedRecordHash": "28bc9dbdbfe77604809e650e857d2d6668558951dd8cf62f48df7d63d0ddb799",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-64",
+      "expectedRecordHash": "21a149e40bb5a6209a62ed26c2c6418d4a9cbf6829c718795250e2de4e167b39",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-65",
+      "expectedRecordHash": "2ea537388ae5eb29b6f166dc1b0be52fff18613f4191e4f5811e6b3ff19e51c4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-66",
+      "expectedRecordHash": "2bee87525567512c011024a6ada5ccf45e18f284230f0bbe47ec1d679317cfb6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-67",
+      "expectedRecordHash": "2eb611d2afa4cb18bcbcbf58c090a02024f1ca1187f14f04f82f15c83b1efde9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-68",
+      "expectedRecordHash": "88de519e5d254abfa03deee9c238c955c1961191626e6a6ef8c6cad78d747854",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-69",
+      "expectedRecordHash": "49c8e96772f5f4fbd415ca5e8d625c47a6a8f286dd601c7eb3f792bb318561f9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-7",
+      "expectedRecordHash": "4c0df489dca1b1049cd2ba0650baaada5ded56102c3d91b2deb6884f613a42b2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-70",
+      "expectedRecordHash": "8c988624df83ab71360aca796b1d54401959578625b83e02d84a9e91cbfdde0d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-71",
+      "expectedRecordHash": "7e0bf8d3f451265012d5528a9fb5ef661140d6499963c2af796c7943f7a6b3fc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-72",
+      "expectedRecordHash": "c23306db32349f676db9a95a962d80cd2489e0c27b3b500c6c1580b15324c916",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-73",
+      "expectedRecordHash": "2772076774b3510b546bf308403b380f28c0334b25dba91be99f4bf817f69f08",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-74",
+      "expectedRecordHash": "a4a2ff82b53876ebaf7d8686be06f731e2d7d6a7361c443cc05452502b322990",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-75",
+      "expectedRecordHash": "b3b5cede27d01aeb6d8caedfa3dbdb188da8d1cdf0ead2f0a935b0909d3a0bdf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-76",
+      "expectedRecordHash": "ae2f59d316d82732734b7fe7c1dc19dc9fcff48e864aaea008bcd37b97f55d01",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-77",
+      "expectedRecordHash": "b52ceb91701251b0c035cc4142d71aa9610ef9fa89b0c69d90d1497cd862b802",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-78",
+      "expectedRecordHash": "f44098ef22dbfd74629ed4293c6a6091bee0335a7824546caedbedd148818158",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-79",
+      "expectedRecordHash": "1fce0db08110f2c5ca3f3ef68a62f4f2c7bdbc6aae372bc17b74aff9929cccb4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: Science & Tech.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-8",
+      "expectedRecordHash": "8547d976fe817f9e08a04ef912dfcb44302633e01e7bbecd01b8c7f4db63d9c6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-80",
+      "expectedRecordHash": "575d818240af7c9ef4123deadafd722737649856362c4e48d006b8f87ab16b04",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-81",
+      "expectedRecordHash": "263aa07df5dd917227102884c45dc2b2fec4648be0eb4747b557c16b1cc65e1f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-82",
+      "expectedRecordHash": "9069ac31aeb1ef4958e2a4055a304844dfd92543a394421954959a04fec490a5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-83",
+      "expectedRecordHash": "75ca88f377a0d9ee9760c07f0b250d7224506a39a6f7bd1f5b2c1a3a6478e2c1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-84",
+      "expectedRecordHash": "f2e54198faa288b34a67d15dd2d846a25f43865b7b79a7eb449d371b2c0eee52",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-85",
+      "expectedRecordHash": "6d102a95a01458da9d2287e3af228be2ac72caedf477de9163f0b512a38eb0da",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-tag and taxonomy second pass: General Science.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-86",
+      "expectedRecordHash": "74cf95ef768eb18a75cb5fc33ff08f225b724b30585c7305fc48954a9491106f",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-88",
+      "expectedRecordHash": "8ee80c022a81f2afd2e1ef0bf68b53fedf321e878e460da7798b44e5d92c8d6e",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-89",
+      "expectedRecordHash": "afbe9bd1c7dc24e6bff3cc0b318eb4cbfa50d89f5e4e763d8789c3d41108f226",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-9",
+      "expectedRecordHash": "1f9c37b3b97e3dbedb21be8c196e7d98b92567b406848240ddab21cdcc26fd9f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Source-taxonomy second pass: English — Synonyms.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-90",
+      "expectedRecordHash": "cbebf6ad17ce4654593a89b88ae068902003302385368fd0cfe39b8d3dd13fb4",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-91",
+      "expectedRecordHash": "c0d9e572024adcdf9a90de8033b7928886773df4667dfdfc9796dde2a1e04aaf",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: History & Culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-92",
+      "expectedRecordHash": "b9a33a633f7aa9b839a8a109ff5e82a8ed58f0cc37a624ce156dd56e3f04b1f8",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/recipients-and-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Sports & Current Affairs.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-93",
+      "expectedRecordHash": "5a0c73fcb41df6053dea91432259441e1c9c640fcd257235fdcfb28aa50f81dc",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Geography.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-94",
+      "expectedRecordHash": "7a27b9d14cdc94bff753fb2178b58dd359fcde50662a29ab9f918a366fe27f6d",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/recipients-and-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Sports & Current Affairs.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-95",
+      "expectedRecordHash": "ea88d0c4788377dc925e8ceddc4bc8274db45a47299dc275acb595696ce329ec",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/recipients-and-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Int’l Relations & Defence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2017-ii-97",
+      "expectedRecordHash": "7843790e53a16c5560c1d7e272c2023ef16b369017a5e65884d696e7793350fe",
+      "primaryId": "syllabus:economy/economic-foundations/core-concepts/markets-and-competition",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Economy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2017-ii-98",
       "expectedRecordHash": "d10f920dc0515c0b6e91b5e7492edea215f277e8523a788bbcba2a74122dfbd9",
       "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
@@ -27634,6 +29258,22 @@
         "status": "rule-reviewed",
         "legacyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons"
       }
+    },
+    {
+      "questionId": "nda-2017-ii-99",
+      "expectedRecordHash": "7be77bd36d4a9cbc65b1f428819ee6b3db303c79fbe780317da968ade5b74606",
+      "primaryId": "syllabus:economy/economic-foundations/core-concepts/markets-and-competition",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Source-tag and taxonomy second pass: Economy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
     },
     {
       "questionId": "nda-2018-i-1",
