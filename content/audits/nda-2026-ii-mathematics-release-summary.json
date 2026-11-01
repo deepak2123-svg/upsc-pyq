@@ -1,0 +1,48 @@
+{
+  "paperId": "nda-2026-ii-mathematics",
+  "identifiedPaper": "NDA & NA Examination (II), 2026 - Paper I Mathematics - Series A",
+  "expected": 120,
+  "available": 120,
+  "newRecords": 120,
+  "reusedRecords": 0,
+  "keyStatus": "official-provisional",
+  "questionPaperSha256": "d13465126ccb065122dc8f36a203d2fdddebc3aa8e17f1dc4d42f45e3fe72158",
+  "keySha256": "66ecb1bd8bb29216c690b461f9d803f9a9aee93f6028152f3cd65a80da8e1fb8",
+  "figuresRequired": 0,
+  "formulaOrContentDefectsResolved": [],
+  "requiresReview": [],
+  "chapterTotals": [
+    {
+      "chapter": "trigonometry",
+      "count": 15
+    },
+    {
+      "chapter": "matrices-and-determinants",
+      "count": 11
+    },
+    {
+      "chapter": "algebra",
+      "count": 25
+    },
+    {
+      "chapter": "analytical-geometry",
+      "count": 15
+    },
+    {
+      "chapter": "vector-algebra",
+      "count": 5
+    },
+    {
+      "chapter": "integral-calculus-and-differential-equations",
+      "count": 11
+    },
+    {
+      "chapter": "differential-calculus",
+      "count": 18
+    },
+    {
+      "chapter": "statistics-and-probability",
+      "count": 20
+    }
+  ]
+}

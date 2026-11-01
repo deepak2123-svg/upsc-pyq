@@ -16,6 +16,7 @@ import nda2023I from '../../../content/nda-2023-i-official-paper.json';
 import nda2023II from '../../../content/nda-2023-ii-official-paper.json';
 import nda2024I from '../../../content/nda-2024-i-official-paper.json';
 import nda2024II from '../../../content/nda-2024-ii-reviewed-paper.json';
+import nda2026IIMathematics from '../../../content/nda-2026-ii-mathematics-official-paper.json';
 import {getPreparationInventory} from '../../../lib/preparation-catalog';
 import {questionEligible} from '../../../lib/question-review';
 import type {PracticeRecipeV4} from '../../../lib/practice-types';
@@ -23,6 +24,7 @@ import type {PracticeRecipeV4} from '../../../lib/practice-types';
 type PaperQuestion={id:string;questionNumber:number;preparationScope:string};
 type PaperData={paperId:string;questions:PaperQuestion[];evidence?:{status:string;series?:string;url?:string;asset?:string;sha256?:string}};
 const papers:Record<string,{data:PaperData;title:string;summary:string;notice:string}>={
+ 'nda-2026-ii-mathematics':{data:nda2026IIMathematics,title:'NDA II 2026 · Mathematics',summary:'120 available / 120 source questions · Paper I · Series A',notice:'All 120 questions are scored against the official provisional Series A Mathematics key.'},
  'nda-2018-ii-gat':{data:nda2018II,title:'NDA II 2018 · GAT',summary:'150 available / 150 source questions · English 50 · Science 44 · GS 56',notice:'All 150 questions are scored against the official final Series A key.'},
  'nda-2018-i-gat':{data:nda2018I,title:'NDA I 2018 · GAT',summary:'150 available / 150 source questions · English 50 · Science 44 · GS 56',notice:'All 150 questions are scored against the official final Series A key.'},
  'nda-2017-ii-gat':{data:nda2017II,title:'NDA II 2017 · GAT',summary:'150 available / 150 source questions · English 50 · Science 51 · GS 49',notice:'All 150 questions are scored against the official final Series A key.'},
@@ -46,7 +48,8 @@ export default async function PastPaperPage({params}:{params:Promise<{slug:strin
  const paper=papers[(await params).slug];
  if(!paper)notFound();
  const inventory=getPreparationInventory('NDA');
- const choices=[['Full GAT',null],['English','english'],['Science','science'],['GS','gs']].flatMap(([label,scope])=>{
+ const mathematics=paper.data.paperId==='nda-2026-ii-mathematics';
+ const choices=(mathematics?[['Full Mathematics',null]]:[['Full GAT',null],['English','english'],['Science','science'],['GS','gs']]).flatMap(([label,scope])=>{
   const wanted=new Set(paper.data.questions.filter(q=>(!scope||(scope==='gs'?['gs','defence-world-history'].includes(q.preparationScope):q.preparationScope===scope))&&questionEligible(q.id)).map(q=>q.id));
   if(!wanted.size)return [];
   const leaves=inventory.nodes.filter(node=>node.kind==='subtopic'&&node.questionIdsByExam?.NDA.some(id=>wanted.has(id)));
@@ -56,11 +59,11 @@ export default async function PastPaperPage({params}:{params:Promise<{slug:strin
   return [{label:label!,count:wanted.size,recipe}];
  });
  const evidence=paper.data.evidence;
- const official=evidence?.status==='official-final';
+ const official=evidence?.status==='official-final', provisional=evidence?.status==='official-provisional';
  return <><SiteHeader/><main className="original-paper-page"><Link href="/legal/sources">← All source papers</Link>
-  <header><div className="eyebrow">{official?'Official UPSC final key':'Independently verified'}{evidence?.series?` · Series ${evidence.series}`:''}</div><h1>{paper.title}</h1><p>{paper.summary}</p></header>
+  <header><div className="eyebrow">{official?'Official UPSC final key':provisional?'Official UPSC provisional key':'Independently verified'}{evidence?.series?` · Series ${evidence.series}`:''}</div><h1>{paper.title}</h1><p>{paper.summary}</p></header>
   <p className="original-paper-notice">{paper.notice} Original wording, question numbers and option order are preserved.</p>
-  <OfficialPaperLauncher choices={choices} paperTitle={paper.title}/>
-  <details className="original-paper-provenance"><summary>Source and answer evidence</summary><p>{official?'The available questions use the preserved official UPSC final answer key.':'Available questions were retained only after individual review; unresolved items remain quarantined.'}</p>{evidence?.url?<p><a href={evidence.url} target="_blank" rel="noreferrer">Answer evidence</a>{evidence.asset?<> · <a href={evidence.asset} target="_blank" rel="noreferrer">Preserved copy</a></>:null}</p>:null}{evidence?.sha256?<p>Key SHA-256: <code>{evidence.sha256}</code></p>:null}</details>
+  <OfficialPaperLauncher choices={choices} paperTitle={paper.title} timeLimitLabel={mathematics?'Mathematics':'GAT'}/>
+  <details className="original-paper-provenance"><summary>Source and answer evidence</summary><p>{official?'The available questions use the preserved official UPSC final answer key.':provisional?'The available questions use the preserved official UPSC provisional answer key.':'Available questions were retained only after individual review; unresolved items remain quarantined.'}</p>{evidence?.url?<p><a href={evidence.url} target="_blank" rel="noreferrer">Answer evidence</a>{evidence.asset?<> · <a href={evidence.asset} target="_blank" rel="noreferrer">Preserved copy</a></>:null}</p>:null}{evidence?.sha256?<p>Key SHA-256: <code>{evidence.sha256}</code></p>:null}</details>
  </main></>;
 }

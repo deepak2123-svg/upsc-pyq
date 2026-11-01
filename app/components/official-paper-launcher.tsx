@@ -4,7 +4,7 @@ import {useRouter} from 'next/navigation';
 import {createLocalAttempt} from '../../lib/practice-store';
 import type {PracticeRecipeV4,PracticeSnapshot} from '../../lib/practice-types';
 
-export function OfficialPaperLauncher({choices,paperTitle='NDA I 2026 · GAT'}:{choices:{label:string;count:number;recipe:PracticeRecipeV4}[];paperTitle?:string}){
+export function OfficialPaperLauncher({choices,paperTitle='NDA I 2026 · GAT',timeLimitLabel='GAT'}:{choices:{label:string;count:number;recipe:PracticeRecipeV4}[];paperTitle?:string;timeLimitLabel?:string}){
  const router=useRouter();
  const [selected,setSelected]=useState(0);
  const [timed,setTimed]=useState(false);
@@ -30,7 +30,7 @@ export function OfficialPaperLauncher({choices,paperTitle='NDA I 2026 · GAT'}:{
  return <section className="original-paper-practice official-paper-launcher" aria-label="Official-key paper setup">
   <div role="group" aria-label="Choose paper section" className="compact-counts">{choices.map((item,index)=><button type="button" key={item.label} disabled={busy||!ready} aria-pressed={selected===index} onClick={()=>setSelected(index)}>{item.label} · {item.count}</button>)}</div>
   <p>{choice.count} questions · original order · correct/incorrect feedback and result sheet</p>
-  <label><input type="checkbox" disabled={busy} checked={timed} onChange={event=>setTimed(event.target.checked)}/> Use the 150-minute GAT time limit</label>
+  <label><input type="checkbox" disabled={busy} checked={timed} onChange={event=>setTimed(event.target.checked)}/> Use the 150-minute {timeLimitLabel} time limit</label>
   <div className="original-paper-controls"><button type="button" disabled={busy||!ready} onClick={()=>void start()}>{busy?'Preparing…':`Start ${choice.count}-question test →`}</button><button type="button" disabled={busy||!ready} onClick={()=>void start(true)}>Offline - PDF paper</button></div>
   {error?<p role="alert">{error}</p>:null}
  </section>;

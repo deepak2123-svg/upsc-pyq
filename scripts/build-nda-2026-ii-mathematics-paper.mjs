@@ -1,0 +1,87 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+
+const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const hash=v=>crypto.createHash('sha256').update(typeof v==='string'||Buffer.isBuffer(v)?v:JSON.stringify(v)).digest('hex');
+const output=(p,v)=>{const b=JSON.stringify(v,null,2)+'\n';if(process.argv.includes('--check'))assert.equal(fs.readFileSync(p,'utf8'),b,p);else fs.writeFileSync(p,b);};
+const sourcePath='content/staging/nda-2026-ii-maths-source-transcript.json';
+const source=read(sourcePath), rows=source.questions;
+const paperId='nda-2026-ii-mathematics', reviewedAt='2026-11-01';
+const questionPaper={
+ url:'https://www.upsc.gov.in/sites/default/files/QP-NDANA-II-26-MATHEMATICS-140926.pdf',
+ asset:'/papers/nda-2026-ii-mathematics/official-question-paper.pdf',
+ sha256:'d13465126ccb065122dc8f36a203d2fdddebc3aa8e17f1dc4d42f45e3fe72158',pages:48,
+};
+const evidence={
+ status:'official-provisional',issuer:'Union Public Service Commission',releasedAt:'2026-09-16',retrievedAt:reviewedAt,
+ url:'https://www.upsc.gov.in/sites/default/files/ProvAnsKey-Math-NDANA-II-26-160926_2.pdf',
+ asset:'/papers/nda-2026-ii-mathematics/official-provisional-key.pdf',
+ sha256:'66ecb1bd8bb29216c690b461f9d803f9a9aee93f6028152f3cd65a80da8e1fb8',page:1,series:'A',session:'II',paper:'I',subject:'Mathematics',totalQuestions:120,dropped:0,scored:120,
+ visualReview:'The preserved UPSC PDF identifies NDA & NA Examination II 2026, provisional key, Paper I Mathematics, Series A, 120 questions, zero dropped and 120 scored. Series A was read column-first and row-first; both transcriptions agree.',
+ searchLog:[
+  {date:reviewedAt,url:'https://www.upsc.gov.in/examinations/answer-key',result:'Current official answer-key route checked; no later final or revised Mathematics key was recovered during this release pass.'},
+  {date:reviewedAt,url:'https://www.upsc.gov.in/sites/default/files/ProvAnsKey-Math-NDANA-II-26-160926_2.pdf',result:'Official document identity and filename preserved from the supplied UPSC PDF; the current site route returned HTML, so the byte-identical local copy is the release evidence.'},
+ ],
+};
+
+const keyColumns=['ADCABABABDCCCAC','CDBCBBCBCCCCDAD','CABCCDADBDBABBC','BCAACABDCCABBAC','BAABBCBCDCDDABA','BAACABDBDBCCCCB','BDCACCAACDBBBBD','DBDABCDCBBBCAAC'];
+const keyRows=['ACCBBBBD','DDACAADB','CBBAAACD','ACCABCAA','BBCCBACB','ABDACBCC','BCABBDAD','ABDDCBAC','BCBCDDCB','DCDCCBDB','CCBADCBB','CCABDCBC','CDBBACBA','AABABCBA','CDCCABDC'];
+const officialKey=keyColumns.flatMap(v=>[...v]);
+for(let r=0;r<15;r++)for(let c=0;c<8;c++)assert.equal(keyColumns[c][r],keyRows[r][c],`key reread Q${15*c+r+1}`);
+
+const L={
+ heights:'subtopic:nda-mathematics:trigonometry:applications:heights-and-distances', triangles:'subtopic:nda-mathematics:trigonometry:applications:properties-of-triangles',
+ identities:'subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities', compound:'subtopic:nda-mathematics:trigonometry:angles-and-functions:compound-and-multiple-angles', inverseTrig:'subtopic:nda-mathematics:trigonometry:angles-and-functions:inverse-trigonometric-functions', angles:'subtopic:nda-mathematics:trigonometry:angles-and-functions:angle-measures',
+ matrixOps:'subtopic:nda-mathematics:matrices-and-determinants:matrices:types-and-operations', determinants:'subtopic:nda-mathematics:matrices-and-determinants:matrices:determinants', adjoint:'subtopic:nda-mathematics:matrices-and-determinants:matrices:adjoint-and-inverse', systems:'subtopic:nda-mathematics:matrices-and-determinants:matrices:systems-of-linear-equations',
+ sets:'subtopic:nda-mathematics:algebra:foundations:sets-and-venn-diagrams', relations:'subtopic:nda-mathematics:algebra:foundations:relations', complex:'subtopic:nda-mathematics:algebra:foundations:real-and-complex-numbers', binary:'subtopic:nda-mathematics:algebra:foundations:binary-numbers',
+ quadratic:'subtopic:nda-mathematics:algebra:equations-and-sequences:quadratic-equations', inequalities:'subtopic:nda-mathematics:algebra:equations-and-sequences:inequalities', progressions:'subtopic:nda-mathematics:algebra:equations-and-sequences:arithmetic-geometric-and-harmonic-progressions', permutations:'subtopic:nda-mathematics:algebra:counting-and-expansion:permutations-and-combinations', binomial:'subtopic:nda-mathematics:algebra:counting-and-expansion:binomial-theorem', logarithms:'subtopic:nda-mathematics:algebra:counting-and-expansion:logarithms',
+ coordinates2d:'subtopic:nda-mathematics:analytical-geometry:two-dimensions:cartesian-coordinates', lines2d:'subtopic:nda-mathematics:analytical-geometry:two-dimensions:straight-lines', circles:'subtopic:nda-mathematics:analytical-geometry:two-dimensions:circles', conics:'subtopic:nda-mathematics:analytical-geometry:two-dimensions:parabola-ellipse-and-hyperbola',
+ distance3d:'subtopic:nda-mathematics:analytical-geometry:three-dimensions:coordinates-and-distance', directions3d:'subtopic:nda-mathematics:analytical-geometry:three-dimensions:direction-cosines-and-ratios', planes3d:'subtopic:nda-mathematics:analytical-geometry:three-dimensions:lines-and-planes',
+ vectorComponents:'subtopic:nda-mathematics:vector-algebra:vectors:components-and-magnitude', dot:'subtopic:nda-mathematics:vector-algebra:vectors:dot-product', cross:'subtopic:nda-mathematics:vector-algebra:vectors:cross-product', vectorGeometry:'subtopic:nda-mathematics:vector-algebra:vectors:geometrical-applications',
+ standardIntegral:'subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:standard-integrals', substitution:'subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:substitution', definite:'subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:definite-integrals-and-areas',
+ diffOrder:'subtopic:nda-mathematics:integral-calculus-and-differential-equations:differential-equations:order-and-degree', diffFormation:'subtopic:nda-mathematics:integral-calculus-and-differential-equations:differential-equations:formation', diffFirst:'subtopic:nda-mathematics:integral-calculus-and-differential-equations:differential-equations:first-order-equations',
+ domain:'subtopic:nda-mathematics:differential-calculus:functions-and-limits:domain-and-range', inverseFunctions:'subtopic:nda-mathematics:differential-calculus:functions-and-limits:composite-and-inverse-functions', limits:'subtopic:nda-mathematics:differential-calculus:functions-and-limits:limits', continuity:'subtopic:nda-mathematics:differential-calculus:functions-and-limits:continuity', derivatives:'subtopic:nda-mathematics:differential-calculus:differentiation:derivatives-and-rules', increasing:'subtopic:nda-mathematics:differential-calculus:differentiation:increasing-and-decreasing-functions', extrema:'subtopic:nda-mathematics:differential-calculus:differentiation:maxima-and-minima',
+ central:'subtopic:nda-mathematics:statistics-and-probability:statistics:central-tendency', variance:'subtopic:nda-mathematics:statistics-and-probability:statistics:variance-and-standard-deviation', regression:'subtopic:nda-mathematics:statistics-and-probability:statistics:correlation-and-regression', events:'subtopic:nda-mathematics:statistics-and-probability:probability:events-and-sample-spaces', rules:'subtopic:nda-mathematics:statistics-and-probability:probability:addition-and-multiplication-rules', conditional:'subtopic:nda-mathematics:statistics-and-probability:probability:conditional-probability', random:'subtopic:nda-mathematics:statistics-and-probability:probability:random-variables-and-binomial-distribution',
+};
+const primary={}; const set=(nums,leaf)=>nums.forEach(n=>primary[n]=leaf), range=(a,b)=>Array.from({length:b-a+1},(_,i)=>a+i);
+set([1,2],L.heights);set([3,5,6],L.triangles);set([4,9,10,12],L.identities);set([7,8,11],L.compound);set([13,14],L.inverseTrig);set([15],L.angles);
+set([16,20,22],L.adjoint);set([17,18,19,21],L.matrixOps);set([23,44,49,100],L.relations);set([24,25],L.permutations);set([26,34,35,36,45],L.complex);set([27,28,29],L.quadratic);set([30,31,32,33],L.progressions);set([37,38],L.determinants);set([39],L.systems);set([40],L.matrixOps);set([41],L.binary);set([42,43],L.binomial);set([46,47,48],L.sets);set([50],L.inequalities);
+set([51],L.circles);set([52,54,55,56,57,58,59],L.lines2d);set([53,60],L.conics);set([61,63],L.distance3d);set([62],L.directions3d);set([64,65],L.planes3d);set([66,69],L.cross);set([67,70],L.dot);set([68],L.vectorComponents);
+set([71],L.substitution);set([72,73],L.standardIntegral);set([74,75,76,77],L.definite);set([78,98],L.diffFirst);set([79],L.diffFormation);set([80],L.diffOrder);set([81],L.domain);set([82,84,87,88],L.limits);set([83,86],L.continuity);set([85,91,92,93,94],L.derivatives);set([89,90],L.domain);set([95,96],L.extrema);set([97],L.increasing);set([99],L.inverseFunctions);
+set([101,102,110],L.variance);set([103],L.random);set([104,108],L.regression);set([105,111,118,119,120],L.events);set([106,112,113,115],L.rules);set([107,109,114],L.conditional);set([116,117],L.central);
+const additional={81:[L.logarithms],95:[L.triangles],105:[L.permutations],116:[L.rules],117:[L.rules],118:[L.permutations],119:[L.permutations],120:[L.permutations]};
+assert.deepEqual(Object.keys(primary).map(Number).sort((a,b)=>a-b),range(1,120));
+const leafLabels=Object.fromEntries(Object.entries(L).map(([name,id])=>[id,name.replace(/([A-Z])/g,' $1').toLowerCase()]));
+const pathParts=id=>id.replace(/^subtopic:nda-mathematics:/,'').split(':');
+
+assert.equal(source.paper.exam,'NDA');assert.equal(source.paper.year,2026);assert.equal(source.paper.session,'II');assert.equal(source.paper.subject,'Mathematics');assert.equal(source.paper.bookletSeries,'A');assert.equal(source.paper.paperCode,'TFDD-A-HTM');
+assert.deepEqual(rows.map(q=>q.number),range(1,120));assert.ok(rows.every(q=>Object.keys(q.options).join('')==='ABCD'));
+assert.equal(hash(fs.readFileSync('public'+questionPaper.asset)),questionPaper.sha256);assert.equal(hash(fs.readFileSync('public'+evidence.asset)),evidence.sha256);assert.equal(hash(fs.readFileSync(sourcePath)), 'ed4e183963944f7b3b65c3c0c95ca406360fb67c505c4784bd3ad964ba82bd11');
+assert.deepEqual(rows.map(q=>q.answer),officialKey);
+
+const questions=rows.map(row=>{
+ const id=`nda-2026-ii-maths-${row.number}`, promptLines=row.promptLines, sourceText=promptLines.join('\n'), accepted=[officialKey[row.number-1]], leaf=primary[row.number], parts=pathParts(leaf), extra=additional[row.number]??[];
+ return {id,origin:'pyq',sourceTextLocked:true,sourceText,sourceTextHash:hash(sourceText),exam:'NDA',year:2026,paper:'II Mathematics',questionNumber:row.number,subject:'Mathematics',topic:parts[1],subtopic:parts[2],taxonomyHead:parts[0],taxonomyChapter:parts[1],taxonomySubtopic:parts[2],taxonomyId:null,taxonomyVersion:'nda-mathematics-v1',difficulty:'Moderate',promptLines,options:row.options,answer:accepted[0],explanation:`Official UPSC provisional key, Series A Q${row.number}: ${accepted[0]} (${row.options[accepted[0]]}).`,requiresFigure:false,figureKey:null,figureAlt:null,additionalPaths:extra.map(value=>{const p=pathParts(value);return{subject:'Mathematics',head:p[0],chapter:p[1],subtopic:p[2],taxonomyId:null};}),preparationScope:'maths',classificationTags:['Static'],source:{dataset:'Complete NDA II 2026 Mathematics, official provisional key',exam:'NDA',year:2026,session:'II',paper:'I Mathematics',questionNumber:row.number,questionPaperUrl:questionPaper.url,originalPdf:questionPaper.asset,originalPdfSha256:questionPaper.sha256,originalPage:row.pdfPage,originalPages:[row.pdfPage],printedPage:row.printedPage,bookletSeries:'A',paperCode:'TFDD-A-HTM',examDate:'2026-09-13',answerStatus:'official-provisional',answerSource:evidence.url,keySha256:evidence.sha256,keyPage:1,officialAcceptedOptions:accepted,displayedAcceptedOptions:accepted,optionsReordered:false,classificationRationale:`The solution directly tests ${leafLabels[leaf]}; this is the most specific existing NDA Mathematics leaf.`,classificationConfidence:'high',secondPass:'Fresh source and concept reread by the same AI agent; not independent human review.',reviewedAt}};
+});
+const policy=Object.fromEntries(questions.map(q=>[q.id,{status:'official-provisional',revision:1,contentRevision:0,preparationScope:'maths'}]));
+const placements=questions.flatMap(q=>[{questionId:q.id,target:'NDA',status:'approved',subtopicId:primary[q.questionNumber],rationale:q.source.classificationRationale,confidence:'high',secondPass:q.source.secondPass},...(additional[q.questionNumber]??[]).map(subtopicId=>({questionId:q.id,target:'NDA',status:'approved',subtopicId,rationale:`Secondary placement is independently useful because the solution also materially tests ${leafLabels[subtopicId]}.`,confidence:'high',secondPass:q.source.secondPass}))]);
+const keyAudit={paperId,issuer:evidence.issuer,status:evidence.status,series:'A',subject:'Mathematics',sha256:evidence.sha256,firstPassColumns:keyColumns,secondPassRows:keyRows,mismatches:[],dropped:[],multipleAnswers:[],reviewedAt,reviewerMethod:'Two fresh visual readings of the Series A grid by the same AI agent, column-first and row-first; not independent human review.'};
+const register={templateVersion:1,paperId,workflowState:'source-review-complete',identity:{exam:'NDA',year:2026,session:'II',paper:'I Mathematics',paperCode:'TFDD-A-HTM',series:'A',language:'English/Hindi bilingual booklet; English transcript used',examDate:'2026-09-13',expected:120},questionPaper,key:evidence,pdfPageMapping:{pages:48,cover:1,questions:'English questions on printed/PDF odd pages 3-43; facing even pages carry Hindi; pages 44-47 are rough work; page 48 repeats instructions/cover.'},expectedQuestionNumbers:range(1,120),sourceTranscript:{path:sourcePath,sha256:hash(fs.readFileSync(sourcePath))},questionSlots:questions.map(q=>({number:q.questionNumber,accountingAction:'new',canonicalQuestionId:q.id,status:'reviewed'}))};
+const signoff={paperId,reviewedAt,reviewer:'Codex AI agent',reviewerMethod:'First full visual comparison against the supplied Series A scan followed by a fresh page-by-page reread; same AI agent, not independent human review.',classificationMethod:'Question-by-question concept pass against the existing NDA Mathematics syllabus, followed by a fresh placement reread by the same AI agent.',originalPdfSha256:questionPaper.sha256,keyPdfSha256:evidence.sha256,sourceTranscriptSha256:register.sourceTranscript.sha256,reviewedQuestionNumbers:range(1,120),figureQuestionNumbers:[],formulaOrContentDefectsResolved:[],unresolvedDefects:[]};
+const reconciliation={expected:120,newSourceOccurrences:120,reusedSourceOccurrences:0,duplicateAliases:0,awaitingReviewCount:0,dispositionCounts:{'official-final':0,'official-provisional':120,'reasoned-verified':0,withdrawn:0,duplicate:0,quarantined:0},eligibleUniqueQuestionCount:120,sectionTotals:{mathematics:120},correctedExistingKeys:[],materialHistoricalRepairs:[]};
+const ledger={paperId,register:'content/audits/nda-2026-ii-mathematics-paper-register.json',evidence,signoff,reconciliation,questionSlots:questions.map(q=>({number:q.questionNumber,canonicalQuestionId:q.id,accountingAction:'new',disposition:'official-provisional',reproduction:{approved:true,sourceTextHash:q.sourceTextHash,optionsHash:hash(q.options),sourcePages:q.source.originalPages,printedPage:q.source.printedPage,requiresFigure:false},classification:{primaryId:primary[q.questionNumber],additionalIds:additional[q.questionNumber]??[],rationale:q.source.classificationRationale,confidence:'high',secondPass:q.source.secondPass},answerEvidence:{keyPage:1,officialAcceptedOptions:q.source.officialAcceptedOptions,displayedAcceptedOptions:q.source.displayedAcceptedOptions,optionTexts:q.source.officialAcceptedOptions.map(a=>q.options[a]),twoPassAudit:'content/audits/nda-2026-ii-mathematics-key-transcriptions.json'},revision:policy[q.id]}))};
+const report={paperId,identifiedPaper:'NDA & NA Examination (II), 2026 - Paper I Mathematics - Series A',expected:120,available:120,newRecords:120,reusedRecords:0,keyStatus:'official-provisional',questionPaperSha256:questionPaper.sha256,keySha256:evidence.sha256,figuresRequired:0,formulaOrContentDefectsResolved:[],requiresReview:[],chapterTotals:Object.entries(questions.reduce((a,q)=>(a[q.taxonomyHead]=(a[q.taxonomyHead]??0)+1,a),{})).map(([chapter,count])=>({chapter,count}))};
+for(const [file,value] of [
+ ['content/nda-2026-ii-mathematics-official-paper.json',{version:1,paperId,evidence,questionPaper,baselines:{},questions}],
+ ['content/nda-2026-ii-mathematics-official-review-policy.json',policy],
+ ['content/nda-2026-ii-mathematics-key-revisions.json',{}],
+ ['content/nda-2026-ii-mathematics-preparation-placements.json',placements],
+ ['content/audits/nda-2026-ii-mathematics-key-transcriptions.json',keyAudit],
+ ['content/audits/nda-2026-ii-mathematics-paper-register.json',register],
+ ['content/audits/nda-2026-ii-mathematics-source-signoff.json',signoff],
+ ['content/audits/nda-2026-ii-mathematics-review.json',ledger],
+ ['content/audits/nda-2026-ii-mathematics-classification-report.json',questions.map(q=>({questionNumber:q.questionNumber,canonicalQuestionId:q.id,primaryId:primary[q.questionNumber],additionalIds:additional[q.questionNumber]??[],reason:q.source.classificationRationale,confidence:'high',reviewStatus:'approved'}))],
+ ['content/audits/nda-2026-ii-mathematics-release-summary.json',report],
+])output(file,value);
+console.log(JSON.stringify(reconciliation));
