@@ -1,0 +1,930 @@
+{
+  "paperId": "nda-2016-ii-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2016,
+    "session": "II",
+    "paper": "GAT",
+    "paperCode": "ADN-S-FST",
+    "series": "A",
+    "language": "English",
+    "examDate": "2016-09-18",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-2_series_a.pdf",
+    "sha256": "ac364d8f03499633855b663b6c7bba00880417787aecb2c86f64744dddef4d36"
+  },
+  "pdfPageMapping": {
+    "pages": 48,
+    "cover": 48,
+    "english": "PDF/printed pages 2–16",
+    "partB": "PDF/printed pages 17–47"
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "retrievedAt": "2026-11-02",
+    "url": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2016_gat_anskey",
+    "asset": "/papers/nda-2016-ii-gat/official-final-key.pdf",
+    "sha256": "2833ca55a87ff30f7d1e5b44152e5e645e30a134570bc7e83365b8ecf2848d19",
+    "page": 1,
+    "series": "A",
+    "session": "II",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "UPSC NDA/NA II 2016 GAT Series A final answer-key table; the rendered header identifies Series A, GAT, 150 scored items and NIL dropped."
+  },
+  "rawBefore": [
+    {
+      "id": "nda-2016-ii-52",
+      "sha256": "ef1065a9af27d06c2f0083b5b0b8e34287ce4c0037b66aa216771bc553ab0b02",
+      "value": {
+        "id": "nda-2016-ii-52",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement 1: Ozone is a tri-atomic molecule of oxygen. Statement II: Ozone is concentrated mainly in stratosphere.",
+        "sourceTextHash": "cff0de52aae5492a70d69167010895deb87cff894701762b59da3eda6f9949bd",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 52,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "Statement 1: Ozone is a tri-atomic molecule of oxygen. Statement II: Ozone is concentrated mainly in stratosphere."
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 52,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Atmospheric Composition & Structure",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Statement 1: Ozone is a tri-atomic molecule of oxygen.",
+          "Statement II: Ozone is concentrated mainly in stratosphere."
+        ],
+        "options": {
+          "A": "Both the statements are individually true and Statement II is the correct explanation of Statement I",
+          "B": "Both the statements are individually true but Statement II is not the correct explanation of Statement I",
+          "C": "Statement I is true but Statement II is false",
+          "D": "Statement I is false but Statement II is true"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-91",
+      "sha256": "62145109a459d211033031e04a6bd14b8321979301b74607f44ba73a20a2ad19",
+      "value": {
+        "id": "nda-2016-ii-91",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements concerning Mediterranean climatic region are correct? 1. It is found in the latitude range 30° to 45° northern and southern hemisphere 2. Mediterranean climate experiences extreme temperature conditions 3. In Mediterranean climate, rainfall occurs mainly during summer season 4. In Mediterranean climate, rainfall is mainly due to Westerlies Select the correct answer using the code given below:",
+        "sourceTextHash": "8bdf42652306f4c07ec2b5aa77bb80839feccf8129d40a5032616e47cfb5ad38",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 91,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2016_gat_anskey",
+          "rawQuestionText": "Which of the following statements concerning Mediterranean climatic region are correct? 1. It is found in the latitude range 30° to 45° northern and southern hemisphere 2. Mediterranean climate experiences extreme temperature conditions 3. In Mediterranean climate, rainfall occurs mainly during summer season 4. In Mediterranean climate, rainfall is mainly due to Westerlies Select the correct answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Mediterranean regions have mild seasonality and winter rain; only statements 1 and 4 are correct.",
+            "previousAnswerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "2833ca55a87ff30f7d1e5b44152e5e645e30a134570bc7e83365b8ecf2848d19",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "B"
+          }
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 91,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements concerning Mediterranean climatic region are correct? 1. It is found in the latitude range 30° to 45° northern and southern hemisphere 2. Mediterranean climate experiences extreme temperature conditions 3. In Mediterranean climate, rainfall occurs mainly during summer season 4. In Mediterranean climate, rainfall is mainly due to Westerlies Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1, 2 and 4",
+          "B": "1 and 4 only",
+          "C": "1, 2 and 3",
+          "D": "3 and 4"
+        },
+        "answer": "B",
+        "explanation": "Mediterranean regions have mild seasonality and winter rain; only statements 1 and 4 are correct.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-138",
+      "sha256": "6eb141578599f1d8ec3bda4b8735934fb1fd14f84119cefc134e8fa0db33be9c",
+      "value": {
+        "id": "nda-2016-ii-138",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Geomorphic Agent) A. Ground water B. Running water C. Glacier D. Wind List II (Feature) 1. Plunge pool 2. Horns 3. Playas 4. Lapies Code: A B C D",
+        "sourceTextHash": "bf843ca83e5446e432d449ca25deac19bcf10db0ef3502664048cd2c5f5446ea",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 138,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Geomorphic Agent) A. Ground water B. Running water C. Glacier D. Wind List II (Feature) 1. Plunge pool 2. Horns 3. Playas 4. Lapies Code: A B C D"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 138,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Karst Landforms",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Geomorphic Agent) A. Ground water B. Running water C. Glacier D. Wind List II (Feature) 1. Plunge pool 2. Horns 3. Playas 4. Lapies Code: A B C D"
+        ],
+        "options": {
+          "A": "4 1 2 3",
+          "B": "3 2 1 4",
+          "C": "3 1 2 4",
+          "D": "4 2 1 3"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-139",
+      "sha256": "9d959c57b19d08651ad4a56a7fc2f6f11a3ea185ca0450b6803994a36e0be278",
+      "value": {
+        "id": "nda-2016-ii-139",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements concerning temperature is/are correct? 1. In winter season isotherms in Northern Hemisphere are more or less circular on continents 2. Isotherms are parallel to latitude in Southern Hemisphere in oceans 3. Minimum temperature during winter is recorded in Northern Canada Select the correct answer using the code given below:",
+        "sourceTextHash": "355abcd69ad3481eaee43956c7b4589cadd06d3550f88e3125ea6c918792b3ee",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 139,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2016_gat_anskey",
+          "rawQuestionText": "Which of the following statements concerning temperature is/are correct? 1. In winter season isotherms in Northern Hemisphere are more or less circular on continents 2. Isotherms are parallel to latitude in Southern Hemisphere in oceans 3. Minimum temperature during winter is recorded in Northern Canada Select the correct answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "Statements 1 and 2 are accepted; winter's coldest temperatures are not in northern Canada.",
+            "previousAnswerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "2833ca55a87ff30f7d1e5b44152e5e645e30a134570bc7e83365b8ecf2848d19",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 139,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements concerning temperature is/are correct? 1. In winter season isotherms in Northern Hemisphere are more or less circular on continents 2. Isotherms are parallel to latitude in Southern Hemisphere in oceans 3. Minimum temperature during winter is recorded in Northern Canada Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "2 only"
+        },
+        "answer": "A",
+        "explanation": "Statements 1 and 2 are accepted; winter's coldest temperatures are not in northern Canada.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-51",
+      "sha256": "a512834dba857dba9488b7f3ee43cafbe8498c38c65ec19d2be34db745f7081d",
+      "value": {
+        "id": "nda-2016-ii-51",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I: Variability of annual rainfall is very high in western part of Rajasthan. Statement II: Average annual rainfall is extremely low in western Rajasthan.",
+        "sourceTextHash": "efc2c6dde4a515796b63f549f9148b8c3a87340b1b292585b5c07171c33786cc",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 51,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "Statement I: Variability of annual rainfall is very high in western part of Rajasthan. Statement II: Average annual rainfall is extremely low in western Rajasthan."
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 51,
+        "subject": "Geography",
+        "topic": "Climate & Monsoon",
+        "subtopic": "Indian Monsoon & Rainfall",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I: Variability of annual rainfall is very high in western part of Rajasthan.",
+          "Statement II: Average annual rainfall is extremely low in western Rajasthan."
+        ],
+        "options": {
+          "A": "Both the statements are individually true and Statement II is the correct explanation of Statement I",
+          "B": "Both the statements are individually true but Statement II is not the correct explanation of Statement I",
+          "C": "Statement I is true but Statement II is false",
+          "D": "Statement I is false but Statement II is true"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-53",
+      "sha256": "eea06d2b6e55cc95071ed8e52f4b858003a8318dc542b877461839e5d7b82d44",
+      "value": {
+        "id": "nda-2016-ii-53",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I The laterite soils develop in areas with high temperature and high rainfall. Statement II: Laterite soils are the result of intense leaching process.",
+        "sourceTextHash": "0a1aab4d67f17ac9457a56195d7be13b527dc485dd269e38c684730b81b570ec",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 53,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "Statement I The laterite soils develop in areas with high temperature and high rainfall. Statement II: Laterite soils are the result of intense leaching process."
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 53,
+        "subject": "Geography",
+        "topic": "Climate & Monsoon",
+        "subtopic": "Indian Monsoon & Rainfall",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I The laterite soils develop in areas with high temperature and high rainfall.",
+          "Statement II: Laterite soils are the result of intense leaching process."
+        ],
+        "options": {
+          "A": "Both the statements are individually true and Statement II is the correct explanation of Statement I",
+          "B": "Both the statements are individually true but Statement II is not the correct explanation of Statement I",
+          "C": "Statement I is true but Statement II is false",
+          "D": "Statement I is false but Statement II is true"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-58",
+      "sha256": "365df4952d1ac1332a5c22ecf63cdfb3fc915fe315ef70916d1e0e3a371e3382",
+      "value": {
+        "id": "nda-2016-ii-58",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following pairs of a river and its tributary is not correctly matched?",
+        "sourceTextHash": "343b61a7f5e137c8932d1c06d84a059b8be58a703d9ccffeded595da4457313c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 58,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "Which one of the following pairs of a river and its tributary is not correctly matched?"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 58,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following pairs of a river and its tributary is not correctly matched?"
+        ],
+        "options": {
+          "A": "Godavari: Wainganga",
+          "B": "Cauvery: Bhavani",
+          "C": "Narmada: Amaravati",
+          "D": "Krishna: Bhima"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-67",
+      "sha256": "e261ab6809ab87242b85cd7cd73e7ad5fa05c8e34702a6b5bc3e949886ce0f35",
+      "value": {
+        "id": "nda-2016-ii-67",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements about cactus: 1. The leaves are reduced to spines. 2. The stem does the photosynthesis. Which of the statements given above is/are correct?",
+        "sourceTextHash": "f95bcd22ae246c4f491a95d3c111798119368a35526741caf8371595650f849c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 67,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2016_gat_anskey",
+          "rawQuestionText": "Consider the following statements about cactus: 1. The leaves are reduced to spines. 2. The stem does the photosynthesis. Which of the statements given above is/are correct?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Both cactus statements are correct: leaves are spines and the green stem photosynthesizes.",
+            "previousAnswerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "2833ca55a87ff30f7d1e5b44152e5e645e30a134570bc7e83365b8ecf2848d19",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 67,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Natural Vegetation",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements about cactus: 1. The leaves are reduced to spines. 2. The stem does the photosynthesis. Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "C",
+        "explanation": "Both cactus statements are correct: leaves are spines and the green stem photosynthesizes.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-92",
+      "sha256": "6c9b7fabeae8d2d42090b6911eeca439b197a40f2435f256494eea64ae0cede5",
+      "value": {
+        "id": "nda-2016-ii-92",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Arrange the following states in decreasing order of their total area under forest cover: 1. Jharkhand 2. Chhattisgarh 3. Arunachal Pradesh 4. Madhya Pradesh Select the correct answer using the code given below:",
+        "sourceTextHash": "1c7c0ab1628878fff5b9f8e3a5325a3dc733ab4ac5aa9479f1c34ef82607d730",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 92,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "Arrange the following states in decreasing order of their total area under forest cover: 1. Jharkhand 2. Chhattisgarh 3. Arunachal Pradesh 4. Madhya Pradesh Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 92,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Forest Cover",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Arrange the following states in decreasing order of their total area under forest cover: 1. Jharkhand 2. Chhattisgarh 3. Arunachal Pradesh 4. Madhya Pradesh Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "4-3-2-1",
+          "B": "4-2-3-1",
+          "C": "3-4-1-2",
+          "D": "2-1-3-4"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-57",
+      "sha256": "aff48cfc9d18f0885e5f40e85ec47c4afa01b227d9cdafb255dbbc46028938aa",
+      "value": {
+        "id": "nda-2016-ii-57",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "'Sahel' region of Sahara desert is associated with",
+        "sourceTextHash": "7f0f33d18a9f9dae0f8e2c74eef41569d1e7c4845ddadef33fc02730bcdbe0c7",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 57,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "'Sahel' region of Sahara desert is associated with"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 57,
+        "subject": "Geography",
+        "topic": "World Physical Geography",
+        "subtopic": "Deserts & Dry Regions",
+        "difficulty": "Easy",
+        "promptLines": [
+          "'Sahel' region of Sahara desert is associated with"
+        ],
+        "options": {
+          "A": "core area of Sahara desert",
+          "B": "southern moving edge of Sahara desert",
+          "C": "northern fringe of Sahara desert bordering Mediterranean sea",
+          "D": "another name of Sahara desert"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-59",
+      "sha256": "1af0acb243e1edf4f9b58998643269b5d242347e269abba778bb5aabbeaeac03",
+      "value": {
+        "id": "nda-2016-ii-59",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In which one of the following countries, the Mediterranean type of Biome is found?",
+        "sourceTextHash": "3f39b7ac8e978f1c1ca34565aeee82f6dd4aea3ebd07d124f22f7b5fe3da44cb",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 59,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "In which one of the following countries, the Mediterranean type of Biome is found?"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 59,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Biomes & Vegetation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In which one of the following countries, the Mediterranean type of Biome is found?"
+        ],
+        "options": {
+          "A": "Chile",
+          "B": "Kenya",
+          "C": "Argentina",
+          "D": "Bolivia"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-140",
+      "sha256": "c9c4422355d484ed64017f2e912964674db6e1a26067d1b333c75706c9d3c961",
+      "value": {
+        "id": "nda-2016-ii-140",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statement(s) concerning natural regions of the world is/are correct? 1. Equatorial climatic regions have less urbanization 2. Mediterranean climatic regions have high level of urbanization 3. Equatorial climatic regions have high concentration of human population 4. Mediterranean climatic regions practice plantation farming Select the correct answer using the code given below:",
+        "sourceTextHash": "b72d33d33cf25312785a25145608408c0236285beb5ef3bd8a5bd1e9bd759ec2",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 140,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2016_gat_anskey",
+          "rawQuestionText": "Which of the following statement(s) concerning natural regions of the world is/are correct? 1. Equatorial climatic regions have less urbanization 2. Mediterranean climatic regions have high level of urbanization 3. Equatorial climatic regions have high concentration of human population 4. Mediterranean climatic regions practice plantation farming Select the correct answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Only statements 1 and 2 are correct: equatorial regions have relatively low urbanization and Mediterranean regions high urbanization.",
+            "previousAnswerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "2833ca55a87ff30f7d1e5b44152e5e645e30a134570bc7e83365b8ecf2848d19",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 140,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Biomes & Vegetation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statement(s) concerning natural regions of the world is/are correct? 1. Equatorial climatic regions have less urbanization 2. Mediterranean climatic regions have high level of urbanization 3. Equatorial climatic regions have high concentration of human population 4. Mediterranean climatic regions practice plantation farming Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1, 2 and 3",
+          "C": "2 and 4",
+          "D": "1 only"
+        },
+        "answer": "A",
+        "explanation": "Only statements 1 and 2 are correct: equatorial regions have relatively low urbanization and Mediterranean regions high urbanization.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-126",
+      "sha256": "02e045f7fc6f8ecae2f8c80dd1ebdd180123b09f43074b6b97890a1f78ec04f6",
+      "value": {
+        "id": "nda-2016-ii-126",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Ultra mega power project at different stages of development) A. Sasan B. Mundra C. Tilaiya D. Krishnapattam List II (State) 1. Gujarat 2. Madhya Pradesh 3. Andhra Pradesh 4. Jharkhand Code: A B C D",
+        "sourceTextHash": "e3f9dbebc189d5571d0fab47a2dc61b649bffa4092ee65f692958f61d7fbed3b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 126,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Ultra mega power project at different stages of development) A. Sasan B. Mundra C. Tilaiya D. Krishnapattam List II (State) 1. Gujarat 2. Madhya Pradesh 3. Andhra Pradesh 4. Jharkhand Code: A B C D"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 126,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Power Projects",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Ultra mega power project at different stages of development) A. Sasan B. Mundra C. Tilaiya D. Krishnapattam List II (State) 1. Gujarat 2. Madhya Pradesh 3. Andhra Pradesh 4. Jharkhand Code: A B C D"
+        ],
+        "options": {
+          "A": "2 4 1 3",
+          "B": "3 4 1 2",
+          "C": "2 1 4 3",
+          "D": "3 1 4 2"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-137",
+      "sha256": "924d52d27c782ce6ee8611b399838230bd64d70b3c73cad605c3b373d51ad1f0",
+      "value": {
+        "id": "nda-2016-ii-137",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the correct descending order of countries in terms of per capita availability of arable land?",
+        "sourceTextHash": "55fdebb741cce9bd49b7c4edcf546cd2c024a0062bc36a2f7e2aab63c038451d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 137,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "Which one of the following is the correct descending order of countries in terms of per capita availability of arable land?"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 137,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is the correct descending order of countries in terms of per capita availability of arable land?"
+        ],
+        "options": {
+          "A": "India China - Brazil",
+          "B": "China Brazil - India",
+          "C": "Brazil-China - India",
+          "D": "Brazil-India - China"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-60",
+      "sha256": "5841cc0a799f5eeb891dfd60feeeea7212231adf22991e4d4b61fee3c4659946",
+      "value": {
+        "id": "nda-2016-ii-60",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Arrange the following states in order of their decreasing population size as per the census 2011: 1. West Bengal 2. Bihar 3. Maharashtra 4. Andhra Pradesh Select the correct answer using the code given below:",
+        "sourceTextHash": "a9f644c11724ec86fafa6e80de9cc0cc5a71b49cdea14e49f96597373615106e",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 60,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "Arrange the following states in order of their decreasing population size as per the census 2011: 1. West Bengal 2. Bihar 3. Maharashtra 4. Andhra Pradesh Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 60,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Arrange the following states in order of their decreasing population size as per the census 2011: 1. West Bengal 2. Bihar 3. Maharashtra 4. Andhra Pradesh Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "2-3-1-4",
+          "B": "3-2-1-4",
+          "C": "1-4-3-2",
+          "D": "3-1-4-2"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-93",
+      "sha256": "a624e5d781933e6c6b9ef0220a7667743c8b0b86682a692b63daac4d045a9ca5",
+      "value": {
+        "id": "nda-2016-ii-93",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements concerning Scheduled Castes (SC) population in India are correct? 1. The highest percentage of SC population out of the total population of the state is found in Punjab 2. Bihar is the second largest state in respect of total SC population in India 3. Uttar Pradesh has the highest number of SC population in India 4. Among the Indian states, the lowest percentage of SC population out of the total population of the state is found in Goa Select the correct answer using the code given below:",
+        "sourceTextHash": "435802cf1df513d7051879b9635b2af3c473a795dc19bff67fce9c425fd72e9a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 93,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "Which of the following statements concerning Scheduled Castes (SC) population in India are correct? 1. The highest percentage of SC population out of the total population of the state is found in Punjab 2. Bihar is the second largest state in respect of total SC population in India 3. Uttar Pradesh has the highest number of SC population in India 4. Among the Indian states, the lowest percentage of SC population out of the total population of the state is found in Goa Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 93,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements concerning Scheduled Castes (SC) population in India are correct? 1. The highest percentage of SC population out of the total population of the state is found in Punjab 2. Bihar is the second largest state in respect of total SC population in India 3. Uttar Pradesh has the highest number of SC population in India 4. Among the Indian states, the lowest percentage of SC population out of the total population of the state is found in Goa Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1, 2 and 3",
+          "B": "1 and 3 only",
+          "C": "2 and 4 only",
+          "D": "1, 2 and 4"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-129",
+      "sha256": "418b245737c4fe8265a528be04a518ed7f03899e697e13a45c49ae0f4d8e9452",
+      "value": {
+        "id": "nda-2016-ii-129",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "As per census 2011, which one of the following states has the highest number of inhabitated villages?",
+        "sourceTextHash": "50b9dd377b46dbe0e45c4843be71fb73828c1813c7d41cb04006417f5608c248",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 129,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "As per census 2011, which one of the following states has the highest number of inhabitated villages?"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 129,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Easy",
+        "promptLines": [
+          "As per census 2011, which one of the following states has the highest number of inhabitated villages?"
+        ],
+        "options": {
+          "A": "Uttar Pradesh",
+          "B": "Odisha",
+          "C": "Rajasthan",
+          "D": "Maharashtra"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-136",
+      "sha256": "0efbebe15443b1923afb4d5025f7e305c289e4a30cde6eb8e1cd13b0ccba587e",
+      "value": {
+        "id": "nda-2016-ii-136",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements with regard to coverage rate of Aadhar cards during 2015 is/are correct? 1. The coverage rate of Aadhar cards in western India is quite high and it is above 90 per cent in Gujarat 2. The coverage rate of Aadhar cards is the highest in southern India and it is almost 100 per cent in the states of Telangana and Andhra Pradesh 3. The penetration of Aadhar cards has been very low in north-eastern part of India and it is the lowest in Assam and Meghalaya Select the correct answer using the code given below:",
+        "sourceTextHash": "43a999742d994b1c69f0517a22a9cba469db4d39060e200f5932aac24b848683",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 136,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2016_gat_anskey",
+          "rawQuestionText": "Which of the following statements with regard to coverage rate of Aadhar cards during 2015 is/are correct? 1. The coverage rate of Aadhar cards in western India is quite high and it is above 90 per cent in Gujarat 2. The coverage rate of Aadhar cards is the highest in southern India and it is almost 100 per cent in the states of Telangana and Andhra Pradesh 3. The penetration of Aadhar cards has been very low in north-eastern part of India and it is the lowest in Assam and Meghalaya Select the correct answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "The official key accepts Aadhaar coverage statements 2 and 3, not statement 1.",
+            "previousAnswerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "2833ca55a87ff30f7d1e5b44152e5e645e30a134570bc7e83365b8ecf2848d19",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 136,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements with regard to coverage rate of Aadhar cards during 2015 is/are correct? 1. The coverage rate of Aadhar cards in western India is quite high and it is above 90 per cent in Gujarat 2. The coverage rate of Aadhar cards is the highest in southern India and it is almost 100 per cent in the states of Telangana and Andhra Pradesh 3. The penetration of Aadhar cards has been very low in north-eastern part of India and it is the lowest in Assam and Meghalaya Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "2 only",
+          "B": "1 and 3 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "C",
+        "explanation": "The official key accepts Aadhaar coverage statements 2 and 3, not statement 1.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-70",
+      "sha256": "1d2cc43c8f30787a7d35dcfddaa256f45a674e75437965b75d8f4cdf8ff3d880",
+      "value": {
+        "id": "nda-2016-ii-70",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "With reference to biodiversity, which of the following statements is/are correct? 1. Species richness and high degree of endemism are important criteria for identifying biodiversity hot spots. 2. Species diversity is highest in the tropics and decreases down the poles. 3. Biodiversity conservation may be in situ as well as ex situ. Select the correct answer using the code given below:",
+        "sourceTextHash": "d59ccbb056e45980ce287db1420a18487e183c242775246e153802f7af3b1d70",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 70,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2016_gat_anskey",
+          "rawQuestionText": "With reference to biodiversity, which of the following statements is/are correct? 1. Species richness and high degree of endemism are important criteria for identifying biodiversity hot spots. 2. Species diversity is highest in the tropics and decreases down the poles. 3. Biodiversity conservation may be in situ as well as ex situ. Select the correct answer using the code given below:",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "All three biodiversity statements are correct.",
+            "previousAnswerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+            "previousAnswerStatus": "imported_from_answer_key"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "2833ca55a87ff30f7d1e5b44152e5e645e30a134570bc7e83365b8ecf2848d19",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 70,
+        "subject": "Environment",
+        "topic": "Protected Areas & Biodiversity",
+        "subtopic": "National Parks and Wildlife Sanctuaries",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "With reference to biodiversity, which of the following statements is/are correct? 1. Species richness and high degree of endemism are important criteria for identifying biodiversity hot spots. 2. Species diversity is highest in the tropics and decreases down the poles. 3. Biodiversity conservation may be in situ as well as ex situ. Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3",
+          "D": "1 and 3 only"
+        },
+        "answer": "C",
+        "explanation": "All three biodiversity statements are correct.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-ii-128",
+      "sha256": "b0db539443b2496df94d02eb4a0a2fd6399dcf629c612657547b08e6069fa03b",
+      "value": {
+        "id": "nda-2016-ii-128",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following sectors is the largest contributor to carbon dioxide emissions from fuel consumption in India?",
+        "sourceTextHash": "80674335af7d8f3c317767d4cef90a4f384a4f6d88b03b8fef4953de837be968",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "II",
+          "questionNumber": 128,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://uploads.sarvgyan.com/2015/12/NDA-II-Answer-key-2016-GA.pdf",
+          "rawQuestionText": "Which one of the following sectors is the largest contributor to carbon dioxide emissions from fuel consumption in India?"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "II",
+        "questionNumber": 128,
+        "subject": "Environment",
+        "topic": "Pollution & Climate",
+        "subtopic": "Carbon Emissions",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following sectors is the largest contributor to carbon dioxide emissions from fuel consumption in India?"
+        ],
+        "options": {
+          "A": "Electricity and heat production",
+          "B": "Transport",
+          "C": "Manufacturing industries and constructions",
+          "D": "Others"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

@@ -67,7 +67,7 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 2355); // Complete reviewed NDA papers add only CSE-applicable GS records; English and school Science stay preparation-only.
+  assert.equal(data.totalCount, 2385); // Complete reviewed NDA papers add only CSE-applicable GS records; English and school Science stay preparation-only.
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);
@@ -77,6 +77,7 @@ test("multi-placement inventory conserves every unique parent and examination co
   const expectedPhysical=new Set(placementLedger.records.filter(row=>row.status==='approved'&&[row.primaryId,...row.additionalIds].some(id=>id.startsWith('syllabus:geography/physical-geography/'))&&questionEligible(row.questionId)).map(row=>row.questionId));
   const latestPaper={questions:[...JSON.parse(await readFile(new URL('../content/nda-2017-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2018-i-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2018-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2019-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2021-i-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2021-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2022-i-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2022-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-i-official-paper.json',import.meta.url),'utf8')).questions]};
   latestPaper.questions.unshift(...JSON.parse(await readFile(new URL('../content/nda-2017-i-official-paper.json',import.meta.url),'utf8')).questions);
+  latestPaper.questions.unshift(...JSON.parse(await readFile(new URL('../content/nda-2016-ii-official-paper.json',import.meta.url),'utf8')).questions);
   // The reviewed paper overlay supersedes old placements (not raw records).
   // Q79 geological eras and Q124 Indian soils leave their former Physical homes.
   for(const q of latestPaper.questions){expectedPhysical.delete(q.id);if(questionEligible(q.id)&&[{subject:q.subject,head:q.taxonomyHead},...q.additionalPaths].some(p=>p.subject==='Geography'&&p.head==='Physical Geography'))expectedPhysical.add(q.id);}
@@ -630,7 +631,7 @@ test('V4 History overlap retains each canonical question once while V3 semantics
   const data = await inventory();
   const leaves = data.nodes.filter(node => node.kind === 'subtopic' && node.subjectId === 'subject:history'&&!node.legacyOnly&&node.questionIdsByExam.CSE.includes('cse-2013-gs-i-4'));
   assert.equal(leaves.length, 2);
-  assert.deepEqual(leaves.map(leaf=>leaf.questionCount).sort((a,b)=>a-b),[2,3]);
+  assert.deepEqual(leaves.map(leaf=>leaf.questionCount).sort((a,b)=>a-b),[2,4]);
   const recipe = { version: 4, taxonomyVersion:data.taxonomyVersion, subjectIds: ['subject:history'], paths: leaves.map(leaf => ({subtopicId:leaf.id, exams:['CSE']})), count:'all', order:'newest', durationMinutes:30 };
   const {response, body} = await create(recipe);
   assert.equal(response.status,201);
