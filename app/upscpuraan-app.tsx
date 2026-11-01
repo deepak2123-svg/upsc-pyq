@@ -7,6 +7,7 @@ import {reviewedAnswer,scoreReviewedQuestions} from '../lib/reviewed-grading';
 import { signInWithGoogle, signOut } from "../lib/auth/client";
 import { getSupabaseBrowser } from "../lib/supabase/client";
 import { TAXONOMY_VERSION, chapterSubtopicIds, taxonomyGroupsForSubjects, taxonomyIdForQuestion, taxonomyNode, taxonomyNodesForSubjects } from "../lib/taxonomy";
+import { MathText } from "./components/math-text";
 
 type Screen = "dashboard" | "builder" | "attempts" | "attempt" | "results" | "admin" | "legal";
 type Mode = "Exam" | "Practice";
@@ -811,17 +812,17 @@ function Attempt({ exam, mode, questions: qs, current, answers, review, revealed
         <section className="card question-card">
           <div className="q-meta"><span>Question {current+1} of {qs.length}</span><span className="question-source">{q.subject} · {sourceLabel}</span></div>
           <div className="prompt-lines">
-            {q.promptLines.map((line, index) => <p className={/^Statement\s/i.test(line) ? "statement-line" : ""} key={`${q.id}-line-${index}`}>{line}</p>)}
+            {q.promptLines.map((line, index) => <p className={/^Statement\s/i.test(line) ? "statement-line" : ""} key={`${q.id}-line-${index}`}><MathText value={line}/></p>)}
           </div>
           <div className="options">
             {Object.entries(q.options).map(([key,value]) => {
               let className = answers[current]===key ? "option selected" : "option";
               if (showAnswer && key===q.answer) className += " correct";
               if (showAnswer && answers[current]===key && key!==q.answer) className += " incorrect";
-              return <button key={key} className={className} onClick={()=>answerQuestion(key)} disabled={showAnswer}><span className="option-key">{key}</span><span>{value}</span></button>;
+              return <button key={key} className={className} onClick={()=>answerQuestion(key)} disabled={showAnswer}><span className="option-key">{key}</span><span><MathText value={value}/></span></button>;
             })}
           </div>
-          {showAnswer && <div className="explanation"><strong>{answers[current]===q.answer ? "Correct." : `Correct answer: ${q.answer}.`}</strong><br />{q.explanation}</div>}
+          {showAnswer && <div className="explanation"><strong>{answers[current]===q.answer ? "Correct." : `Correct answer: ${q.answer}.`}</strong><br /><MathText value={q.explanation}/></div>}
           <div className="test-actions" style={{marginTop:22}}>
             <button className="secondary" onClick={()=>navigate(current-1)} disabled={current===0}>← Previous</button>
             <button className="quiet" onClick={toggleReview}>{review.includes(current)?"Remove review":"Mark for review"}</button>
@@ -883,10 +884,10 @@ function Results({result, questions, answers, exam, subjects, difficulty, mode, 
         <h2>Solutions</h2>
         {questions.map((question, index) => <article className="solution-row" key={question.id}>
           <div className="meta">Question {index + 1} · {questionSourceLabel(question)}</div>
-          <div className="solution-prompt">{question.promptLines.map((line, lineIndex) => <p key={`${question.id}-solution-line-${lineIndex}`}>{line}</p>)}</div>
-          <div className="solution-options">{Object.entries(question.options).map(([key, value]) => <div key={key}><span>{key}</span>{value}</div>)}</div>
+          <div className="solution-prompt">{question.promptLines.map((line, lineIndex) => <p key={`${question.id}-solution-line-${lineIndex}`}><MathText value={line}/></p>)}</div>
+          <div className="solution-options">{Object.entries(question.options).map(([key, value]) => <div key={key}><span>{key}</span><MathText value={value}/></div>)}</div>
           <div className="meta">Your answer: {answers[index] ?? "Unattempted"} · {reviewedAnswer(question).exclusionReason ?? `Correct answer: ${reviewedAnswer(question).acceptedOptions?.join(' / ') ?? reviewedAnswer(question).correctOption ?? "Unavailable"}`}</div>
-          <p>{question.explanation || "No editorial explanation has been added yet."}</p>
+          <p><MathText value={question.explanation || "No editorial explanation has been added yet."}/></p>
         </article>)}
       </section>}
       <div className="section-head"><h2>Subject breakdown</h2><span className="meta">Accuracy</span></div>

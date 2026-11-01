@@ -24,7 +24,10 @@ function romanValue(value: string) {
 
 /** Convert the limited TeX notation found in legacy imports for display. */
 export function formatPracticeText(value: string) {
-  return value
+  // Older imports escaped TeX delimiters twice and were intentionally stored
+  // as display-ready Unicode. Preserve that established conversion while
+  // leaving correctly delimited TeX intact for the shared KaTeX renderer.
+  if (/\\\\(?:\(|\[)/.test(value)) return value
     .replace(/\\{1,2}\(/g, "")
     .replace(/\\{1,2}\)/g, "")
     .replace(/\^\{\\prime\\prime\}/g, "″")
@@ -32,6 +35,8 @@ export function formatPracticeText(value: string) {
     .replace(/\^\{\\circ\}/g, "°")
     .replace(/\\{1,2}vec\s*\{?([A-Za-z])\}?/g, "$1⃗")
     .replace(/\\{1,2}hat\s*\{?([A-Za-z])\}?/g, "$1̂")
+    .replace(/\s+([,.;:?!])/g, "$1");
+  return value
     .replace(/\s+([,.;:?!])/g, "$1");
 }
 

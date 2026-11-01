@@ -10,6 +10,13 @@ test('NDA II 2026 Mathematics launches the complete original-order paper',async(
  await page.getByRole('button',{name:'Start 120-question test →'}).click();
  await expect(page).toHaveURL(/\/practice\/[^/]+$/);
  await expect(page.getByText(/Question 1 of 120/).first()).toBeVisible();
+ const question=page.locator('.practice-question');
+ expect(await question.locator('.katex').count()).toBeGreaterThan(0);
+ await expect(question.locator('.katex').first()).toBeVisible();
+ await question.getByRole('button',{name:'Save & next →'}).click();
+ await expect(page.getByText(/Question 2 of 120/).first()).toBeVisible();
+ expect(await question.locator('.katex').count()).toBeGreaterThan(0);
+ await expect(question.locator('.katex').first()).toBeVisible();
 });
 
 test('Sources lists the clickable 120-question Mathematics paper',async({page})=>{

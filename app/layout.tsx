@@ -4,6 +4,7 @@ import "./globals.css";
 import "./scope-flow-redesign.css";
 import "./practice-builder.css";
 import "./practice-experience.css";
+import "katex/dist/katex.min.css";
 import { PwaRegister } from "./pwa-register";
 
 const inter = Inter({

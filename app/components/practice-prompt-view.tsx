@@ -18,7 +18,7 @@ export function PracticePromptView({ blocks, className, figure,underlined }: { b
           <caption>Pairs to assess</caption>
           <thead><tr><th scope="col">{block.leftTitle}</th><th scope="col">{block.rightTitle}</th></tr></thead>
           <tbody>{block.rows.map(row => <tr key={row.marker}>
-            <td><b>{row.marker}</b><span>{row.left}</span></td><td>{row.right}</td>
+            <td><b>{row.marker}</b><span><MathText value={row.left}/></span></td><td><MathText value={row.right}/></td>
           </tr>)}</tbody>
         </table>
       </div>;
@@ -34,8 +34,8 @@ export function PracticePromptView({ blocks, className, figure,underlined }: { b
             const left = block.left.items[rowIndex];
             const right = block.right.items[rowIndex];
             return <tr key={rowIndex}>
-              <td>{left ? <><b>{left.label}.</b><span>{left.text}</span></> : null}</td>
-              <td>{right ? <><b>{right.label}.</b><span>{right.text}</span></> : null}</td>
+              <td>{left ? <><b>{left.label}.</b><span><MathText value={left.text}/></span></> : null}</td>
+              <td>{right ? <><b>{right.label}.</b><span><MathText value={right.text}/></span></> : null}</td>
             </tr>;
           })}</tbody>
         </table>
