@@ -1,0 +1,844 @@
+{
+  "paperId": "nda-2017-i-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2017,
+    "session": "I",
+    "paper": "GAT",
+    "paperCode": "GRS-U-EDF",
+    "series": "A",
+    "language": "English",
+    "examDate": "2017-04-23",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2017-1_series_a.pdf",
+    "sha256": "8c9211dd08012c628d8c8d9da4754907b4a4e298bbd06df477f55adcdfe8783e"
+  },
+  "pdfPageMapping": {
+    "pages": 48,
+    "cover": 48,
+    "english": "PDF/printed pages 2–10",
+    "partB": "English questions on printed odd pages 13–47"
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "retrievedAt": "2026-11-01",
+    "url": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2017_gat_anskey",
+    "asset": "/papers/nda-2017-i-gat/official-final-key.pdf",
+    "sha256": "592d1396da0d52a9f60a114edb35692d95ea1b28be7d0efe4257670e7590007d",
+    "page": 1,
+    "series": "A",
+    "session": "I",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "UPSC NDA/NA I 2017 GAT Series A final answer-key table; the rendered header identifies Series A, GAT, 150 scored items and NIL dropped."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2017-2017-1-18",
+      "sha256": "6e332d3612deff47e374332552c740d18aeddc89d580f764c54b36f0f547114e",
+      "value": {
+        "id": "cds-2017-2017-1-18",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Select the word or group of words that is most similar in meaning to the underlined word: indiscriminately.\nThe police fired indiscriminately at the crowd, killing many innocent women and children.",
+        "sourceTextHash": "84c9caf3e7ec2323a496629a0c787c2f3f34fcb500e43b2a3b2be64edbc06c5f",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 18,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2017_gat_anskey",
+          "rawQuestionText": "The police fired indiscriminately at the crowd, killing many innocent women and children."
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 18,
+        "subject": "English",
+        "topic": "Vocabulary",
+        "subtopic": "Synonyms",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Select the word or group of words that is most similar in meaning to the underlined word: indiscriminately.",
+          "The police fired indiscriminately at the crowd, killing many innocent women and children."
+        ],
+        "options": {
+          "A": "continuously",
+          "B": "without distinguishing",
+          "C": "foolishly",
+          "D": "rapidly"
+        },
+        "answer": "B",
+        "explanation": "Original NDA 2017-1 Q18, page 3, visually checked against its complete stem and options; the matching Series A final key accepts B.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2017-2017-1-75",
+      "sha256": "94ef58f3dc83f7194565860dea25a0c9910941fcfe6224dd659c8e382df7e37c",
+      "value": {
+        "id": "cds-2017-2017-1-75",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following was the venue of 2nd BRICS Youth Summit of the Ministers, Officials and Youth Delegations?",
+        "sourceTextHash": "ca185170796acfdf4a717a8022eda3efe018d994022088256148cf54d9f1dac0",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 75,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2017_gat_anskey",
+          "rawQuestionText": "venue of 2nd BRICS Youth Summit of the Ministers, Officials and Youth Delegations ?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 75,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following was the venue of 2nd BRICS Youth Summit of the Ministers, Officials and Youth Delegations?"
+        ],
+        "options": {
+          "A": "New Delhi",
+          "B": "Mumbai",
+          "C": "Shillong",
+          "D": "Guwahati"
+        },
+        "answer": "D",
+        "explanation": "Original NDA 2017-1 Q75, page 17, visually checked against its complete stem and options; the matching Series A final key accepts D.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-101",
+      "sha256": "d443729664efb25e18638f24b090be17d47af98d9cad351a937c44c243f0f7ec",
+      "value": {
+        "id": "nda-2017-i-101",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following are correct with regard to Indian Monsoonal Rainfall? 1. Largely governed by the topographical features 2. Regional and seasonal variation in the distribution of rainfall 3. Heavy downpour resulting in considerable runoff 4. Beginning and end of rain is regular and on time Select the correct answer using the code given below:",
+        "sourceTextHash": "027e16059b1dce08c3f1288ef62b4df54b35d66b277da8ec7e1d601dbd4bae4f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 101,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Which of the following are correct with regard to Indian Monsoonal Rainfall? 1. Largely governed by the topographical features 2. Regional and seasonal variation in the distribution of rainfall 3. Heavy downpour resulting in considerable runoff 4. Beginning and end of rain is regular and on time Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 101,
+        "subject": "Geography",
+        "topic": "Climate & Monsoon",
+        "subtopic": "Indian Monsoon & Rainfall",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following are correct with regard to Indian Monsoonal Rainfall? 1. Largely governed by the topographical features 2. Regional and seasonal variation in the distribution of rainfall 3. Heavy downpour resulting in considerable runoff 4. Beginning and end of rain is regular and on time Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 and 2 only",
+          "B": "1, 2 and 3",
+          "C": "3 and 4 only",
+          "D": "2, 3 and 4"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-102",
+      "sha256": "f2e48b1e105dfba41a3393ec67e15797e83c89866c79e8137f3cce601e3794a1",
+      "value": {
+        "id": "nda-2017-i-102",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Type of climate) A. Monsoon with Short Dry Season (Amw) B. Cold Humid Winter with Short Summer (Dfc) C. Monsoon with Dry Winter (Cwg) D. Monsoon with Dry Summer (As) List II (State) 1. Uttar Pradesh and Bihar 2. Tamil Nadu Coast 3. Arunachal Pradesh 4. Kerala and Karnataka Coast Code:",
+        "sourceTextHash": "db9c0d1f8b8aa38c8042ab02514d8f2a4413c74da1b388882b5dfb81d7136ff4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 102,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Type of climate) A. Monsoon with Short Dry Season (Amw) B. Cold Humid Winter with Short Summer (Dfc) C. Monsoon with Dry Winter (Cwg) D. Monsoon with Dry Summer (As) List II (State) 1. Uttar Pradesh and Bihar 2. Tamil Nadu Coast 3. Arunachal Pradesh 4. Kerala and Karnataka Coast Code:"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 102,
+        "subject": "Geography",
+        "topic": "Climate & Monsoon",
+        "subtopic": "Indian Monsoon & Rainfall",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Type of climate) A. Monsoon with Short Dry Season (Amw) B. Cold Humid Winter with Short Summer (Dfc) C. Monsoon with Dry Winter (Cwg) D. Monsoon with Dry Summer (As) List II (State) 1. Uttar Pradesh and Bihar 2. Tamil Nadu Coast 3. Arunachal Pradesh 4. Kerala and Karnataka Coast Code:"
+        ],
+        "options": {
+          "A": "A-4, B-3, C-1, D-2",
+          "B": "A-4, B-1, C-2, D-3",
+          "C": "A-2, B-1, C-4, D-3",
+          "D": "A-2, B-3, C-1, D-4"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-103",
+      "sha256": "f5e3b4688ee0c29f01134e81d2e88d48d1be19bd40114d6d3670ca1baac64109",
+      "value": {
+        "id": "nda-2017-i-103",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following Himalayan rivers does NOT originate from across the Himalayas?",
+        "sourceTextHash": "0e82d3780f3a2c754d6fe66e1ef404cc78a580baea37d11c81a69801505d155f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 103,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Which one of the following Himalayan rivers does NOT originate from across the Himalayas?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 103,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following Himalayan rivers does NOT originate from across the Himalayas?"
+        ],
+        "options": {
+          "A": "Indus",
+          "B": "Satluj",
+          "C": "Ganga",
+          "D": "Brahmaputra"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-116",
+      "sha256": "4ce27594a4d48e609d570492f92e77218119e20b9dc835f3635cdc465de87d70",
+      "value": {
+        "id": "nda-2017-i-116",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following are the major coral reef areas of India? 1. Gulf of Kachchh 2. Gulf of Mannar 3. Lakshadweep 4. Andaman and Nicobar Islands Select the correct answer using the code given below:",
+        "sourceTextHash": "5a4fad0eedf8883d20bfc89354fe1437d91218db87bfb5b6f9a78b2d44725d35",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 116,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Which of the following are the major coral reef areas of India? 1. Gulf of Kachchh 2. Gulf of Mannar 3. Lakshadweep 4. Andaman and Nicobar Islands Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 116,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which of the following are the major coral reef areas of India? 1. Gulf of Kachchh 2. Gulf of Mannar 3. Lakshadweep 4. Andaman and Nicobar Islands Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 and 3 only",
+          "B": "2 and 4 only",
+          "C": "1, 2 and 3 only",
+          "D": "1, 2, 3 and 4"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-69",
+      "sha256": "4ff35d944467518f32cb7b5011caa2fe2c180fb47cebabd40f94fcdc8ffcf834",
+      "value": {
+        "id": "nda-2017-i-69",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Headquarters of the World Meteorological Organization is located in",
+        "sourceTextHash": "9277d1cc6d5dc63513eda34443bd9b3c76341e4028e6b70b0e03c2fd47514c10",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 69,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Headquarters of the World Meteorological Organization is located in"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 69,
+        "subject": "Geography",
+        "topic": "World Places & Institutions",
+        "subtopic": "International Organizations",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Headquarters of the World Meteorological Organization is located in"
+        ],
+        "options": {
+          "A": "Washington",
+          "B": "Geneva",
+          "C": "Moscow",
+          "D": "London"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-70",
+      "sha256": "307ec68292285732c5c93ff967bf5a55bb2e85f2c09920b7f0a91a895e4b3825",
+      "value": {
+        "id": "nda-2017-i-70",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Industry) A. Petrochemical B. Aircraft C. Machine tools D. Cotton textiles List II (Place) 1. Coimbatore 2. Pinjore 3. Bengaluru 4. Bongaigaon Code:",
+        "sourceTextHash": "48214833ef2bb0197a338534b577d77f5c84ae6805d3bb93e875a6817a47675e",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 70,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Industry) A. Petrochemical B. Aircraft C. Machine tools D. Cotton textiles List II (Place) 1. Coimbatore 2. Pinjore 3. Bengaluru 4. Bongaigaon Code:"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 70,
+        "subject": "Geography",
+        "topic": "Industries",
+        "subtopic": "Industrial Location",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Industry) A. Petrochemical B. Aircraft C. Machine tools D. Cotton textiles List II (Place) 1. Coimbatore 2. Pinjore 3. Bengaluru 4. Bongaigaon Code:"
+        ],
+        "options": {
+          "A": "A-4, B-3, C-2, D-1",
+          "B": "A-4, B-2, C-3, D-1",
+          "C": "A-1, B-2, C-3, D-4",
+          "D": "A-1, B-3, C-2, D-4"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-71",
+      "sha256": "914fcb9dc56a99518210fc384f5b7b987cf7d83ef5cd3a7bed1f1cc92a77a1bc",
+      "value": {
+        "id": "nda-2017-i-71",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements pertaining to Coffee plantation in India: 1. Need warm and moist climate with a spell of dry weather during the ripening period 2. Rolling fields having good drainage 3. Strong sunshine over hilly slopes exceeding temperature 35°C 4. Karnataka is the leading producer in India Which of the statements given above are correct?",
+        "sourceTextHash": "365a040205bf738cace5a0836a0ba0a9f2792d1cef824a2f546db8a2ca5ab7ca",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 71,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Consider the following statements pertaining to Coffee plantation in India: 1. Need warm and moist climate with a spell of dry weather during the ripening period 2. Rolling fields having good drainage 3. Strong sunshine over hilly slopes exceeding temperature 35°C 4. Karnataka is the leading producer in India Which of the statements given above are correct?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 71,
+        "subject": "Geography",
+        "topic": "Agriculture & Resources",
+        "subtopic": "Agriculture and Land Resources",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements pertaining to Coffee plantation in India: 1. Need warm and moist climate with a spell of dry weather during the ripening period 2. Rolling fields having good drainage 3. Strong sunshine over hilly slopes exceeding temperature 35°C 4. Karnataka is the leading producer in India Which of the statements given above are correct?"
+        ],
+        "options": {
+          "A": "1 and 4 only",
+          "B": "1, 2 and 3",
+          "C": "3 and 4",
+          "D": "1, 2 and 4"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-99",
+      "sha256": "2d85ad74978578346f62bb330f381d82542554bb34d3fb7753a6f2ff9fbeeaf2",
+      "value": {
+        "id": "nda-2017-i-99",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Mineral) A. Manganese B. Gypsum C. Limestone D. Magnesite List II (Leading State) 1. Uttarakhand 2. Karnataka 3. Rajasthan 4. Odisha Code:",
+        "sourceTextHash": "2ae376909fee575d0eb94ab42438d2402c4f1d9fe4e2743bd1e23020af8ecec4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 99,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Mineral) A. Manganese B. Gypsum C. Limestone D. Magnesite List II (Leading State) 1. Uttarakhand 2. Karnataka 3. Rajasthan 4. Odisha Code:"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 99,
+        "subject": "Geography",
+        "topic": "Minerals & Mining",
+        "subtopic": "Mineral Deposits",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Mineral) A. Manganese B. Gypsum C. Limestone D. Magnesite List II (Leading State) 1. Uttarakhand 2. Karnataka 3. Rajasthan 4. Odisha Code:"
+        ],
+        "options": {
+          "A": "A-1, B-3, C-2, D-4",
+          "B": "A-1, B-2, C-3, D-4",
+          "C": "A-4, B-2, C-3, D-1",
+          "D": "A-4, B-3, C-2, D-1"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-104",
+      "sha256": "d7aafa16290cc2c6f7b35c1d6db44e8847542d35982cf9c1b3cce3e51dae2dc1",
+      "value": {
+        "id": "nda-2017-i-104",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Headquarters of Eastern Railway Zone of Indian Railway is located at",
+        "sourceTextHash": "695b6e76bbb8fbe34f275c0a738f578cc14cdc0db9ff75803d14a79edab88011",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 104,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "The Headquarters of Eastern Railway Zone of Indian Railway is located at"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 104,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Railway Zones",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Headquarters of Eastern Railway Zone of Indian Railway is located at"
+        ],
+        "options": {
+          "A": "Bhubaneswar",
+          "B": "Kolkata",
+          "C": "Hajipur",
+          "D": "Guwahati"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-115",
+      "sha256": "79c32a214a9115e38c517ea3cdb2e8c3f8b8d3823ae9d6a1b9ced3f7ad7324c1",
+      "value": {
+        "id": "nda-2017-i-115",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Place) A. Lakwa B. Malanjkhand C. Kalakot D. Zawar List II (Mineral) 1. Copper 2. Petroleum 3. Zinc 4. Coal Code:",
+        "sourceTextHash": "934aade7655c94447eaf9ee4e47e50d8568a12951da3cdd6d8f5f8c5fb3a820e",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 115,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Place) A. Lakwa B. Malanjkhand C. Kalakot D. Zawar List II (Mineral) 1. Copper 2. Petroleum 3. Zinc 4. Coal Code:"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 115,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Coalfields",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Place) A. Lakwa B. Malanjkhand C. Kalakot D. Zawar List II (Mineral) 1. Copper 2. Petroleum 3. Zinc 4. Coal Code:"
+        ],
+        "options": {
+          "A": "A-3, B-4, C-1, D-2",
+          "B": "A-3, B-1, C-4, D-2",
+          "C": "A-2, B-1, C-4, D-3",
+          "D": "A-2, B-4, C-1, D-3"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-117",
+      "sha256": "b00afecb2610cc4f2786a292abcb1b0a15f61d05bfefe20e994cd6e9cd6714f5",
+      "value": {
+        "id": "nda-2017-i-117",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following regions is/are NOT known for cotton-textile industry? 1. Mumbai - Pune region 2. Madurai Coimbatore region 3. Dhanbad Jamshedpur region 4. Indore Ujjain region Select the correct answer using the code given below:",
+        "sourceTextHash": "aeff005b05aa36583692022cb726a0e8ca31c13499ef54655c649f6587b1274a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 117,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Which of the following regions is/are NOT known for cotton-textile industry? 1. Mumbai - Pune region 2. Madurai Coimbatore region 3. Dhanbad Jamshedpur region 4. Indore Ujjain region Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 117,
+        "subject": "Geography",
+        "topic": "Industries",
+        "subtopic": "Industrial Location",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following regions is/are NOT known for cotton-textile industry? 1. Mumbai - Pune region 2. Madurai Coimbatore region 3. Dhanbad Jamshedpur region 4. Indore Ujjain region Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 and 3",
+          "B": "2 and 3",
+          "C": "1, 2 and 4",
+          "D": "3 only"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-118",
+      "sha256": "7c6149556381912283991bb484dd62b2f626c08a003aec58ba0890d02f1fba09",
+      "value": {
+        "id": "nda-2017-i-118",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following States does NOT have the Headquarters of any Railway Zone?",
+        "sourceTextHash": "11b868f9d5ea18788a2f8bde893a4561a133bc27115dd8218528ab7e7fcf9473",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 118,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Which one of the following States does NOT have the Headquarters of any Railway Zone?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 118,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Railway Zones",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following States does NOT have the Headquarters of any Railway Zone?"
+        ],
+        "options": {
+          "A": "Jharkhand",
+          "B": "Chhattisgarh",
+          "C": "Odisha",
+          "D": "Bihar"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-138",
+      "sha256": "571cf7c4cdfc85bc9e21ca28d1b1d122b3c165f6df574fc759ba7c7966ee6c57",
+      "value": {
+        "id": "nda-2017-i-138",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following sections of the Golden Quadrilateral Highway in India is the longest in terms of route distance?",
+        "sourceTextHash": "2d7af76d0f335dc9ac32561ad540d0c0c752eca7ddd10ee31adc4d85b3e4324f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 138,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Which one of the following sections of the Golden Quadrilateral Highway in India is the longest in terms of route distance?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 138,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Highways",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following sections of the Golden Quadrilateral Highway in India is the longest in terms of route distance?"
+        ],
+        "options": {
+          "A": "Delhi-Kolkata",
+          "B": "Kolkata Chennai",
+          "C": "Chennai Mumbai",
+          "D": "Mumbai - Delhi"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-139",
+      "sha256": "8971286566c538b59f2a2cc975d05fa386e5c30a9826b4d3c642bc8994c70543",
+      "value": {
+        "id": "nda-2017-i-139",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Classification of resources) A. Basic inexhaustible resource B. Conventional non-renewable resource C. Non-conventional renewable resource D. Non-conventional non-renewable resource List II (Example) 1. Hydel power 2. Coal 3. Solar energy 4. Natural gas Code:",
+        "sourceTextHash": "16645b30abb4182f12b2826024f774cad5da2ed4212dce242f0521c3df828911",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 139,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Classification of resources) A. Basic inexhaustible resource B. Conventional non-renewable resource C. Non-conventional renewable resource D. Non-conventional non-renewable resource List II (Example) 1. Hydel power 2. Coal 3. Solar energy 4. Natural gas Code:"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 139,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Coalfields",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Classification of resources) A. Basic inexhaustible resource B. Conventional non-renewable resource C. Non-conventional renewable resource D. Non-conventional non-renewable resource List II (Example) 1. Hydel power 2. Coal 3. Solar energy 4. Natural gas Code:"
+        ],
+        "options": {
+          "A": "A-3, B-2, C-1, D-4",
+          "B": "A-3, B-1, C-2, D-4",
+          "C": "A-4, B-1, C-2, D-3",
+          "D": "A-4, B-2, C-1, D-3"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-140",
+      "sha256": "7404cf136288a511b88f2ad8a3d963d135fee864e077a1694b3a770b2e318f9a",
+      "value": {
+        "id": "nda-2017-i-140",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Mineral deposit) A. Gypsum B. Graphite C. Fluorspar D. Nickel List II (State) 1. Odisha 2. Gujarat 3. Arunachal Pradesh 4. Rajasthan Code:",
+        "sourceTextHash": "030afc9ac5222d066cba680ecd227a89d99989ee70d614c2b250dc8bfd451c45",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 140,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Mineral deposit) A. Gypsum B. Graphite C. Fluorspar D. Nickel List II (State) 1. Odisha 2. Gujarat 3. Arunachal Pradesh 4. Rajasthan Code:"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 140,
+        "subject": "Geography",
+        "topic": "Minerals & Mining",
+        "subtopic": "Mineral Deposits",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Mineral deposit) A. Gypsum B. Graphite C. Fluorspar D. Nickel List II (State) 1. Odisha 2. Gujarat 3. Arunachal Pradesh 4. Rajasthan Code:"
+        ],
+        "options": {
+          "A": "A-1, B-3, C-2, D-4",
+          "B": "A-1, B-2, C-3, D-4",
+          "C": "A-4, B-3, C-2, D-1",
+          "D": "A-4, B-2, C-3, D-1"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-68",
+      "sha256": "2fcef158175563c56bc861e7b79fe793102c8712655e6a84b520af1b915ded22",
+      "value": {
+        "id": "nda-2017-i-68",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "According to the Census 2011, the density of population in which one among the following States is the lowest?",
+        "sourceTextHash": "6714b0aee7191ee46dc1fe046e5fd09ad14dd71c88683de15f2ab49697851617",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 68,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "According to the Census 2011, the density of population in which one among the following States is the lowest?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 68,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Easy",
+        "promptLines": [
+          "According to the Census 2011, the density of population in which one among the following States is the lowest?"
+        ],
+        "options": {
+          "A": "Sikkim",
+          "B": "Nagaland",
+          "C": "Manipur",
+          "D": "Mizoram"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-141",
+      "sha256": "e68b182af806abb923e658d3b9a7ab0fed15086f52198d35512e2747498dd9e9",
+      "value": {
+        "id": "nda-2017-i-141",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following pairs of Tribe and State is NOT correctly matched?",
+        "sourceTextHash": "8469a43099b7805a6d287e0c2b1729fb954e04fc48159619ed5230830b87e89a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 141,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Which one of the following pairs of Tribe and State is NOT correctly matched?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 141,
+        "subject": "Geography",
+        "topic": "Tribes & Cultural Geography",
+        "subtopic": "Tribes and Nomadic Communities",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following pairs of Tribe and State is NOT correctly matched?"
+        ],
+        "options": {
+          "A": "Tharu: Madhya Pradesh",
+          "B": "Adi: Arunachal Pradesh",
+          "C": "Irula: Kerala",
+          "D": "Shaharia: Rajasthan"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2017-i-144",
+      "sha256": "bd39d0781dc6322dea1ced48e0c0c4663fd8e66b021887ab6d64356667dee1d7",
+      "value": {
+        "id": "nda-2017-i-144",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following Indian States: 1. Bihar 2. Rajasthan 3. Jammu and Kashmir 4. Haryana Which one of the following is the correct ascending order of the above States on the basis of percentage of State’s population to total population of India (based on census 2011)?",
+        "sourceTextHash": "21e706e911fa15d6a4e778d79b318071979459064942f7c2b5e9a4874b871bbc",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2017,
+          "paper": "I",
+          "questionNumber": 144,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/4f7fe1735a2422f4d8a1c70e941adadd.pdf",
+          "rawQuestionText": "Consider the following Indian States: 1. Bihar 2. Rajasthan 3. Jammu and Kashmir 4. Haryana Which one of the following is the correct ascending order of the above States on the basis of percentage of State’s population to total population of India (based on census 2011)?"
+        },
+        "exam": "NDA",
+        "year": 2017,
+        "paper": "I",
+        "questionNumber": 144,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following Indian States: 1. Bihar 2. Rajasthan 3. Jammu and Kashmir 4. Haryana Which one of the following is the correct ascending order of the above States on the basis of percentage of State’s population to total population of India (based on census 2011)?"
+        ],
+        "options": {
+          "A": "3-4-1-2",
+          "B": "4-2-1-3",
+          "C": "3-4-2-1",
+          "D": "2-3-4-1"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}
