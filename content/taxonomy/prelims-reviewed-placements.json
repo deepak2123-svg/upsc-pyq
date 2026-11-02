@@ -25694,6 +25694,42 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2015-ii-1",
+      "expectedRecordHash": "0bfeb21f0c79c96e2a5545260080a787c54dd3da9ef8e37a98f00772f396b7e1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-40).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-10",
+      "expectedRecordHash": "2aa5d777592c236a5eaab5d6f772e6b4e6781d9dc81164831d7d104ddfe65b46",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-44).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-100",
+      "expectedRecordHash": "83908a21f88a0d3d9dc5c358a317565328307d7f27e54a90723dd24aa25b0265",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2025-i-142).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2015-ii-101",
       "expectedRecordHash": "e8e2e3eccf80bca56307553d27ffed45beb83b0be8e05b8737f3bc46c333e2ae",
       "primaryId": "syllabus:geography/physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/folding-faulting-and-mountain-building",
@@ -25734,6 +25770,42 @@
       }
     },
     {
+      "questionId": "nda-2015-ii-103",
+      "expectedRecordHash": "20039294a3ad5dbcd599fc7fade829e3b6fa477c9e764ccabe3262f02a396f97",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2019-ii-91).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-104",
+      "expectedRecordHash": "c64d407a5a267902f265a9cce363b3f31048fce3e8df5d420b3f2d35e3930f3d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-123).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-105",
+      "expectedRecordHash": "4c862736bc1fa9e7a0b27d6e69d0d068658731fe01e25a851f567d7a0ef163e5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-95).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2015-ii-106",
       "expectedRecordHash": "f6676a6efc2ac906a4a6e6924884e435ed3be03d7dfa2f900e2ec4ac60dba82b",
       "primaryId": "syllabus:geography/physical-geography/world-climate-regions-and-the-ko-ppen-classification/classification-of-climates",
@@ -25750,6 +25822,66 @@
       ],
       "editorialBatch": "NDA/2015/II/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2015-ii-107",
+      "expectedRecordHash": "f3ecf15f2c724b3f86437ce4040e9bb1b8926cc98f665fef3433069299ce6090",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2025-ii-103).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-108",
+      "expectedRecordHash": "34667cf9f8e8e1fbbc6cf1a05d21d601a9e7db0d82e9b882c1cce2514f850187",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-99).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-109",
+      "expectedRecordHash": "dfc9294d3185033964862be75ada530ad5b3a5d5d89102a49114e34744c35d05",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2025-i-133).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-11",
+      "expectedRecordHash": "ede58a2328827a57a9ce52824e225d127b6d8abe0708daa3073f110a0e06d43b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-31).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-110",
+      "expectedRecordHash": "03e8aefbc6a730e40f1631b12f5c1def43b644e2f92ef88737cbe270f24c9d36",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-108).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
     },
     {
       "questionId": "nda-2015-ii-111",
@@ -25769,6 +25901,54 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/air-masses"
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-112",
+      "expectedRecordHash": "2f944ced00ce41ee7690bd3ba921110fec6259dbac0594c07579d2bc014aba40",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-ii-54).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-113",
+      "expectedRecordHash": "8c74975398be79a8c9454b6526d59daacf7e2bb7273e250a50afa2a13788a487",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-112).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-114",
+      "expectedRecordHash": "5fafc64fbc7c2b5dc88b685d9d4dcc3cbbb073923139924a038c429db1938fca",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-86).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-115",
+      "expectedRecordHash": "b7229b8232ca65045b945aa769be25e8ee10eb37b0318e3a37a9324cfbe92746",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2021-ii-120).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
       }
     },
     {
@@ -25792,6 +25972,54 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2015-ii-117",
+      "expectedRecordHash": "4e97a1db98d5ec21d06c7c44d70431943f1df47581a7a5c08d7dd7726fcf46fb",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-i-106).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-118",
+      "expectedRecordHash": "8b0f851c21fac33b235d8925ddbc8f0210d4cf0935174cc9891f71290d4b3887",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2019-ii-61).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-119",
+      "expectedRecordHash": "0400d7d730a1163d3869d206e5f1ebb948eed996ac143e507a2e041390b1c729",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-103).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-12",
+      "expectedRecordHash": "248a48de9084883f5c4da3ea30265291b8e4f18c4fe363ebed804306390b06a1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2025-ii-6).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2015-ii-120",
       "expectedRecordHash": "c527ce43ac998ae561c443e286e85d06e99806f02956469193db2177a031e841",
       "primaryId": "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/shape-and-size-of-earth",
@@ -25812,6 +26040,38 @@
       }
     },
     {
+      "questionId": "nda-2015-ii-121",
+      "expectedRecordHash": "a5317b20d0636e4842bb3338945e2ad2454b8ac8a22f9f3794ae40f222f2baac",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/preamble",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (cds-2018-2018-2-141).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-122",
+      "expectedRecordHash": "2eb0a30d0bb864065108badc9bdb55a9302ceadf1ebe601bf4a5c1ec7bf0bbea",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-economy/drain-of-wealth",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-91).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2015-ii-123",
       "expectedRecordHash": "95b9902720f623daf4ffd445183a3a463ebb802304aa04ea294ffc7c624c841c",
       "primaryId": "syllabus:geography/human-economic-geography/transport-and-trade/international-trade-patterns",
@@ -25828,6 +26088,926 @@
       ],
       "editorialBatch": "NDA/2015/II/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2015-ii-124",
+      "expectedRecordHash": "1513cc2ea5188270913893de81f0bd1e99d36f41b1caffcc2d8e9e664b5bc2cd",
+      "primaryId": "syllabus:polity-governance/federalism-local-government/local-government/municipalities",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-ii-138).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-125",
+      "expectedRecordHash": "3c1261cbf72e9a6b07f00c168bd329bcbf2d8ce121c6b211138d6da8fb546134",
+      "primaryId": "syllabus:history/modern-india-national-movement/british-expansion/subsidiary-alliance",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-114).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-126",
+      "expectedRecordHash": "2db342406fc5b25a859161db117d43ef7844fd5ccdeb56312aab9a3eb8002f50",
+      "primaryId": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2022-ii-124).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-127",
+      "expectedRecordHash": "63303b61eea1881df46d01e61cd933c2343db049141187b377c79181259bc3e8",
+      "primaryId": "syllabus:economy/development/development-policy/planning-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-81).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-129",
+      "expectedRecordHash": "2f55131266dee288c93887d55369eb4cd7aea6f25477bdd4af14ce48bddbc615",
+      "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-i-146).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-13",
+      "expectedRecordHash": "3fd76d65dd017f2e55fc175aea9fec1a2c678dc5501d8ed642a9ac0ebf37a873",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-50).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-130",
+      "expectedRecordHash": "3dadb6fd07ea4777085a7b8d23d74fb80a0926f23b8aab6032a1ba27ca7e95df",
+      "primaryId": "syllabus:history/modern-india-national-movement/gandhian-movements/civil-disobedience",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-131).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-131",
+      "expectedRecordHash": "f9a3f2cd5542041c5e078640df37628a739bbcc863211374596dbff95b291c70",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-99).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-132",
+      "expectedRecordHash": "363c9d90d5b33388d05212b5bb193efbf2928004c8b976c8aec15f421b3ef45f",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/schedules",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (cds-2016-2016-1-121).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-133",
+      "expectedRecordHash": "dd301ef09509eb71c939d281c7398fb613fe36b2eb5fadab5e3e5071ac75b862",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-administration/company-government",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-i-81).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-134",
+      "expectedRecordHash": "8d08ed60b725288f7bda426398d616da5489bed868ae2f996d2f5d23269eb5b1",
+      "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/solar-radiation-and-insolation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2025-ii-120).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-135",
+      "expectedRecordHash": "28bf807020fbd467019f34a644a8e87b34643bd612356e49737064c62300f66b",
+      "primaryId": "syllabus:history/medieval-india/regional-kingdoms/vijayanagara",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2022-ii-120).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-137",
+      "expectedRecordHash": "97916e94ee7b76e7fe16c6f59cbf277b42d9f177473aa2195b5c3a6fba0d48bb",
+      "primaryId": "syllabus:polity-governance/institutions/parliament/sessions-and-procedures",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2026-i-137).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-138",
+      "expectedRecordHash": "70550a7ecf26d0e9ed0516f706bde7ed461fdb8fbcda66b3ba8a805ce88d1923",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/preamble",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-i-140).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-139",
+      "expectedRecordHash": "fca405a8c03c53b92f89143b5a3409d2beb9f7efce8e43c4ce63a7e3f57373ca",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-116).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-14",
+      "expectedRecordHash": "85ebaf3b79ee273b4e1ea96fb55a183cd9e6b0a73b8a431b41fa5419c8129e1c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-28).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-140",
+      "expectedRecordHash": "7638152927169f0ab3754cebd9703ec2ab0d918138baff2467a03af9d28ce6dc",
+      "primaryId": "syllabus:history/medieval-india/mughal-empire/akbar",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-137).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-141",
+      "expectedRecordHash": "b4b739f1c6349bebe60b13c4ae1fdecc5df2582d79e73e5e9641c3c6fb7e5b0c",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-i-127).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-142",
+      "expectedRecordHash": "c5f7c3dab8098d5c11548b4912ebcc6037836c8fcfa1abfeee869d31761ba0f3",
+      "primaryId": "syllabus:geography/world-geography/world-mapping/countries-and-capitals",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-i-92).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-143",
+      "expectedRecordHash": "714778af674b98ed84e10210e7092d94ebbd321b37374bc4024c573728a9648c",
+      "primaryId": "syllabus:history/art-culture/literature-and-languages/sanskrit-literature",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-135).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-144",
+      "expectedRecordHash": "9e419c634b9b664a8ac24bdf18736b70f782e957ad7fc000b00ec883d85c37d4",
+      "primaryId": "syllabus:history/modern-india-national-movement/constitutional-developments/simon-commission-and-nehru-report",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-59).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-145",
+      "expectedRecordHash": "ac1906525af7ec0d7a46b9fbc2e8fd73b8a718d743c4bbdea66ce2c9548fc3c8",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/schedules",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2019-ii-133).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-146",
+      "expectedRecordHash": "738e6f690893e83d8020bba0b766eba91caf2b3d336e8db2c64eabe087f19f08",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-139).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-147",
+      "expectedRecordHash": "9d75257a3dc0633db993b65173550db764aa8549ccb0133ebfb8734a18fd1d3d",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/books-and-authors/authors-and-works",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-150).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-148",
+      "expectedRecordHash": "c9136843aefb574874e228719adddf0e72b2780f4b8c20bc2ba04b4003452fcc",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/recipients-and-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-94).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-149",
+      "expectedRecordHash": "119d26902e60f94e21f9407732d2a4f6c8240ac6d0a4c1fc69619f7e8388a4a8",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/winners-and-records",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2021-ii-91).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-15",
+      "expectedRecordHash": "a8d6165c540b5d5ee227c59ea60fe27e195d946ea050078d44018565c29af844",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-i-4).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-150",
+      "expectedRecordHash": "43dbc9d4a6aa302876e0bfbb59e2955b8cd608c0edce06576ab7ff0678eb5944",
+      "primaryId": "syllabus:geography/indian-geography/drainage/lakes-and-wetlands",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-ii-82).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-ii-16",
+      "expectedRecordHash": "edfee990e5a3df3b587af3d86db4dfe4073c2d10613bc2011bd8c163f21501b8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-22).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-17",
+      "expectedRecordHash": "b3878ba52173a11484450fcad4d4abf56740080af70556870f3b3a30005aceca",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-44).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-18",
+      "expectedRecordHash": "7ebd4e6fe1b2644b86a30a4e875e08e7486576c0d97c6330af66c70b65447892",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-46).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-19",
+      "expectedRecordHash": "59bec521e7aa9ab00d2baf81d3ec572f6fcf0cd43b9b4231ae3c49e0646cb068",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-31).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-2",
+      "expectedRecordHash": "3dfd2b605ba1a51cfa5fe646c6e2a45a9809fb7f514a2263656e70e392d20821",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-49).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-20",
+      "expectedRecordHash": "4a36d87018ed5cddd2ca7343751a5134bc3df7f1de48655adf86ba66ea041c80",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-i-24).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-21",
+      "expectedRecordHash": "a107c1b5f154f1a9e4de832fd6f662523c10eb50658fd4eb69563d0fc7d49ac6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-15).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-22",
+      "expectedRecordHash": "0e6e6a6cd9b0c887ee11671fb127e5550cd5713edcc6932bccebeec1604afc6d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-37).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-23",
+      "expectedRecordHash": "86bad64a9540fdb9f0e858544e02533a5420bdc5b64d3e50ec1ece5f0851268a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-i-13).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-24",
+      "expectedRecordHash": "7c9bd4ac081c266d57f16f52bd98dcdf2737d3047a63034541151ccd8cd42255",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-49).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-25",
+      "expectedRecordHash": "747836418fe68a6e9c6692545568d7941ee19757213cd23cafabefeb8076373d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-i-2).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-26",
+      "expectedRecordHash": "3cbffc5bb2bc9f2d4a1c82808fb49a653a00abd368e1afc8aba96065c35fb3ec",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-20).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-27",
+      "expectedRecordHash": "64d59d8223845dc10475bc03d545c9e8d703d429f6127c730702da4cc2784f11",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-20).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-28",
+      "expectedRecordHash": "b1c9668383c80e4ddafac2536885a759ea4f6000e2daa55471c52d78884fa7ea",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-28).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-29",
+      "expectedRecordHash": "325f076b1a71fe60dfdedcca64e1206c82cb6f4946f78c71e35fb9f902594c92",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-33).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-3",
+      "expectedRecordHash": "00ee34eb3a2b0d67ba59a4a92d8d6e2d1ae4674af3df5a79c159dde9db9e164d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-25).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-30",
+      "expectedRecordHash": "d5c5ded19a54aae6e29586fe26b7d1aae91899bbe8fda713cb041faea545ad73",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-43).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-31",
+      "expectedRecordHash": "5723cbd34c5d3e03c41a94a2a09ac865f86ddf62d3ccf3e2ff3817fad4b350e5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-i-21).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-32",
+      "expectedRecordHash": "88372ecbd3587df98f6b3591525a12270b877eeb1db37f566b2b50537fec4714",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-i-30).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-33",
+      "expectedRecordHash": "9fc96993957bbc62c6a800f961317a6ab47ea8467d3558bcaf7ade98d3ab994c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-50).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-34",
+      "expectedRecordHash": "273b5c6fb558fc656231ff7a39416b14ee0447dba62d112ee35f83cadafd4fe1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-45).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-35",
+      "expectedRecordHash": "ba624e8550a2721a2c734812da4af4f18004115e5d8733b9059e84e48e0df688",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-24).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-36",
+      "expectedRecordHash": "f869e46a26f3b37984ce72e2ebecd52d0fc1b7f9daf57fb8d604c3a518adba99",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-45).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-37",
+      "expectedRecordHash": "0737c98bb119de5ab7b22cbbe6c2ee2568673410cf1132a7e713414c734e4919",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-42).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-39",
+      "expectedRecordHash": "f140dd9c8351c6ef651aae32cfa6cbf4ff0ba9ece95f1f9d6f4f83b11eb081b7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-43).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-4",
+      "expectedRecordHash": "f0065852c7e612a22f8abbe8a7c7ef90195362a0d79b6017f2283b5d2d4b438f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-22).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-40",
+      "expectedRecordHash": "d238b84b56aa3fca1a67441f26cda274090a82af488239507e0fe8ab7dd1a2c3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-31).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-42",
+      "expectedRecordHash": "3d7f873e35b5f7e199647cc074f00ea373c51dea2e7f57c07bae77557cf968c1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-2).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-43",
+      "expectedRecordHash": "d7c72ff758d8f2d7e85aff2c2256420900b966599d841cfdc65d6d1326476b76",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-32).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-44",
+      "expectedRecordHash": "a7e06e2ceb03acf04e7fcc8ad594cc8e054d8ec98a38f27e375daf0bfd6456ef",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-31).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-45",
+      "expectedRecordHash": "7ff62dd1e7242f250bcb1bb025c4f0f27bf1057cd7a175ef9d84118a4792bac3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-31).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-46",
+      "expectedRecordHash": "e78b0b09e2f68d7900dc7bb6ef5ec48f57b5c932ce5a2fb2b2eda30d9094570a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-7).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-47",
+      "expectedRecordHash": "6f5499a469d7b4c707ccd64bea08f396abc0ca36f341bc81be0f06be1e47bc29",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-34).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-48",
+      "expectedRecordHash": "718054dac7255e8b93ebb20c9f96427968116c0579a1cb540e7238fd81a684ba",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-31).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-49",
+      "expectedRecordHash": "18a8a3a033354923be22f2b8cd94d0d8592314aa7b9a3bb9504aa31f4ae611c8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-i-23).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-5",
+      "expectedRecordHash": "e050acc6948a87c2c12fd9cb40b8d0d673d69b9db10606adce2c88c1cd01cf43",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-47).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-50",
+      "expectedRecordHash": "396f99bcb2c26aef6034b5e7ea7727ab36b83e382fc09399ecab04fee16d7f7b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-5).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-51",
+      "expectedRecordHash": "f84ce204594c7889dc4f1b51823baa52ccd5d2895baa900cbdca6169f75e93d1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-i-55).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-52",
+      "expectedRecordHash": "01271ce2dc76473c835458a94c701bc1de9d905ed429f0ad133c949d55cc905c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2019-ii-85).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-53",
+      "expectedRecordHash": "6580faa5f52cbddd9959435ca55b7f6efe95c6fc8c613058b8e3e091b19f1d19",
+      "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-54).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
     },
     {
       "questionId": "nda-2015-ii-54",
@@ -25850,6 +27030,54 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2015-ii-55",
+      "expectedRecordHash": "3ef965d147717c1efe4ca485dace7f97f83dd6cf3b04c158b8b59108de35ac4d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-i-88).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-56",
+      "expectedRecordHash": "2fffbf4eeb0428934040e9f12614b9a31ea4f5b6f772ae1073b6ab800336b629",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2025-i-106).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-57",
+      "expectedRecordHash": "bc8d89be99d4bc8170141f20e8c4d4efed1a8200fcb01d75e636e121c433b1dd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-89).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-58",
+      "expectedRecordHash": "1012761b5222be2c5bda50d39277c41e38117848ca5298686c72ec9d408e88b7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2019-i-77).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2015-ii-59",
       "expectedRecordHash": "1b88fe746e74b271bedf3a5f7a55b45558cb80e8ce129505e2e1caef7112f4b3",
       "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
@@ -25868,6 +27096,18 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2015-ii-6",
+      "expectedRecordHash": "066abaeea12bed1010a97d00586a82ac2bedfcfd65a4bc0a017ca0e8bc54f334",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-42).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2015-ii-60",
       "expectedRecordHash": "0e7d04162be6d8cfe4a69044bac0dac870b2f78fe1bdfa3499cbc1cb86a6c00c",
       "primaryId": "syllabus:geography/indian-geography/industry-and-transport/ports-and-waterways",
@@ -25884,6 +27124,42 @@
       ],
       "editorialBatch": "NDA/2015/II/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2015-ii-61",
+      "expectedRecordHash": "58bc922a2324ce4fca3958f380c48c73785a5add7f26287674c827eb71d1a5f0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-98).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-62",
+      "expectedRecordHash": "d4bab45683248238bf3ee9597cb9ede62598237d20c04add6ea2b397a3868941",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-ii-93).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-63",
+      "expectedRecordHash": "f7d808bb8b6f9ecda155b631fe044fd9391c15d94e49ea0b5847f01364a6e435",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2019-ii-53).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
     },
     {
       "questionId": "nda-2015-ii-64",
@@ -25906,6 +27182,42 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2015-ii-65",
+      "expectedRecordHash": "a484e430deeeb3b3326a065fac56f72fdd12b85c3b0f9055b57fb55ca3a0f52a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-133).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-66",
+      "expectedRecordHash": "2c568a5154629a8d73362d01ee0639cc9b967bd5efb43077075af7258ff7903b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2025-ii-59).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-67",
+      "expectedRecordHash": "16ed4a12859d87dfd23ecce0cb0a11d1fbce1a67e6d22822722420bf7ff29cf0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-110).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2015-ii-68",
       "expectedRecordHash": "00696fad3161d9aee55a5dca4b0a0589fa008cf661a1ea7adbd29c5c31039552",
       "primaryId": "syllabus:geography/indian-geography/mineral-and-energy-resources/petroleum-and-gas",
@@ -25922,6 +27234,42 @@
       ],
       "editorialBatch": "NDA/2015/II/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2015-ii-69",
+      "expectedRecordHash": "d65f69927267f68dff499f900083c96d095e65f10ecbda2d807704d2631d1728",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-65).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-7",
+      "expectedRecordHash": "f655731d38a6f6d6e81c59eb43277d273687378ff9188d7132a253f6ff67c9be",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-42).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-70",
+      "expectedRecordHash": "69a9cb1d1a822c670a96d81d391aec0bf9862e38c4641a2a2760c4298fb7c705",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2019-ii-63).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
     },
     {
       "questionId": "nda-2015-ii-71",
@@ -25942,6 +27290,54 @@
       ],
       "editorialBatch": "NDA/2015/II/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2015-ii-72",
+      "expectedRecordHash": "353e947653905751ef2b8243d45db9363e67196b10ee26cda1d97a0e810c9b68",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-87).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-73",
+      "expectedRecordHash": "f32774df92808c8755e82173a27bffb084d8658333650f55abe43ec3773e8138",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-i-90).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-74",
+      "expectedRecordHash": "315ad316f694efda90f7355e5ae6c79cd9c2817bee4a6df270913b12ad660251",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-113).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-75",
+      "expectedRecordHash": "f5afd8c5a8b2e8e9adb44eb6b430b3013d77997556672896b94feca3e4472e6f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-109).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
     },
     {
       "questionId": "nda-2015-ii-76",
@@ -25984,6 +27380,78 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2015-ii-78",
+      "expectedRecordHash": "c3b1e3a6262edd99bf64359669a6171f5f2e8636431e7b39f81627f802feed95",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2021-i-85).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-79",
+      "expectedRecordHash": "7c0974656b0fa9e096b8e8a2b66494652ae31e43a67f46eec6be6990c681aae0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-i-58).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-8",
+      "expectedRecordHash": "7cb7e523b9187391aa2d330cdf8dcba644c1d07c9bee13c1fa2e12ee343f9d38",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-44).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-80",
+      "expectedRecordHash": "327aa21821530607d822fcb91ba4d5077e7eaf1465b9e1d59bb3a3fdc71eddc7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-99).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-81",
+      "expectedRecordHash": "d00de1526f60a7f8ea7292cab5afed7fbd3b96269d84e03eaef346f8e7e9218c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-111).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-82",
+      "expectedRecordHash": "b83f739c13167c3b821db378e242dcd6662950d0ff23c4d84ab53e8b1d6fcb29",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2025-i-150).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2015-ii-83",
       "expectedRecordHash": "551ff5f6c2a69263af202ca4734552a0b7ab8ca5b8cceb68530e03950b403f2e",
       "primaryId": "syllabus:geography/indian-geography/natural-vegetation/forest-types",
@@ -26022,6 +27490,54 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2015-ii-85",
+      "expectedRecordHash": "14ba9cb42aee756ae80d7f078e6cbd054201fcc71a710456cd5b4db074589d0c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-92).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-86",
+      "expectedRecordHash": "478b49efa0ce7824c000bfc731097d57447a4847f78e8c89c1b6ee246eac67b1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-103).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-87",
+      "expectedRecordHash": "d76423e32d94125fe52077cf72d7fbada6d2e7f32e842e583dca2b44f7165a32",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-i-71).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-88",
+      "expectedRecordHash": "46d7fbe625f9f9beb58d75d021dd11409d251dce3b0c42742ff9aadada0d68c6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-82).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2015-ii-89",
       "expectedRecordHash": "b1635a66688cbcda26772a672847f0565640d0d4a181301074194982c81e7154",
       "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/groundwater-and-karst-landforms",
@@ -26042,22 +27558,66 @@
       }
     },
     {
-      "questionId": "nda-2015-ii-90",
-      "expectedRecordHash": "5c5696dd7e5edfa66402224aaa552a0d394beb12524ce2cc2e1fd4649fc448dd",
-      "primaryId": "syllabus:environment-ecology/ecology-ecosystems/ecological-principles/organisation-levels",
-      "additionalIds": [],
-      "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four sequences are compared for increasing biosphere organisational levels.",
+      "questionId": "nda-2015-ii-9",
+      "expectedRecordHash": "bebd20f9a34995eed08e417b49a41253d2b6e0bc1bf88ceb5cc7f98207f16df5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-47).",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: ecological hierarchy is primary. Do not insert missing intermediate levels or repair option punctuation without an original-source check."
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-90",
+      "expectedRecordHash": "5c5696dd7e5edfa66402224aaa552a0d394beb12524ce2cc2e1fd4649fc448dd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified school Science for NDA/CDS; outside CSE GS.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-79).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
       },
-      "tags": [
-        "Static"
-      ],
       "editorialBatch": "NDA/2015/II/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2015-ii-91",
+      "expectedRecordHash": "16610f45596a20e028e492e52f43fbbe6e0e66fa49192876ac8851224d013f3b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-102).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-92",
+      "expectedRecordHash": "fa32a7c65aaab798551c7ae639a15ca4df48cb185df7b8cc9bda708f03e9de32",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2021-ii-108).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-93",
+      "expectedRecordHash": "f026adc0185eaf70825316635b387a8fd1d636e4706ca846c75731efbfcadb3b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-i-127).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
     },
     {
       "questionId": "nda-2015-ii-94",
@@ -26080,6 +27640,30 @@
       }
     },
     {
+      "questionId": "nda-2015-ii-95",
+      "expectedRecordHash": "1a09433cab7f3ba937c1fb141fd3115fb89de1416590a5e954f041749c5ea65d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-140).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-96",
+      "expectedRecordHash": "057dfdb130ec89fd4ab1094402c19e2f468158b0d35bba6f642344a6debc7c59",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-70).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2015-ii-97",
       "expectedRecordHash": "b0fc8ff78faea6e71ebe8a4999344d55838644b2d9b3130a8f66066496114651",
       "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/temperature-distribution",
@@ -26097,6 +27681,30 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/temperature-distribution"
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-98",
+      "expectedRecordHash": "4c240b24860ea130342b2a6fe8329a711e1d26430b54f3563ea8185f54836008",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-i-85).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-99",
+      "expectedRecordHash": "4fa5d652ed23217c07ae6913e6462bb60ff13e2755de9f4634a38434e30221b1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2016-ii-132).",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
       }
     },
     {

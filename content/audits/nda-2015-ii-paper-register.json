@@ -1,0 +1,1043 @@
+{
+  "paperId": "nda-2015-ii-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2015,
+    "session": "II",
+    "paper": "GAT",
+    "paperCode": "B-QGC-O-JBU",
+    "series": "A",
+    "language": "English",
+    "examDate": "2015-09-27",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2015-2_series_a.pdf",
+    "sha256": "80a9dea947218c693dbb82d7381af4f9f3d971cccf2ca340a5f2b81c89309583"
+  },
+  "pdfPageMapping": {
+    "pages": 32,
+    "cover": 32,
+    "english": "PDF/printed pages 1–5",
+    "partB": "PDF pages 6–28 (alternating English/Hindi leaves)"
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "retrievedAt": "2026-11-03",
+    "url": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2015_gat_anskey",
+    "asset": "/papers/nda-2015-ii-gat/official-final-key.pdf",
+    "sha256": "f2983a8fe3109d00a8602fa69ade4dc82a6dfccbc5e978328ef53931097761c6",
+    "page": 1,
+    "series": "A",
+    "session": "II",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "UPSC NDA/NA II 2015 GAT Series A final answer-key table; the rendered header identifies Series A, GAT, 150 scored items and NIL dropped."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2015-2015-2-128",
+      "sha256": "a71847afe374f3df06ce91c3d1f5336077c65bdeab7b0fdc2b3c0752cad9c3c4",
+      "value": {
+        "id": "cds-2015-2015-2-128",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "An emergency under Article 352 of the Constitution of India can be declared only during",
+        "sourceTextHash": "f7bc72f8c7eff383e9ccbc8a394f7e01638c5cd11f6e5c509d5dcad740fe705d",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 128,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2015_gat_anskey",
+          "rawQuestionText": "Constitution of India can be declared only during"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 128,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "An emergency under Article 352 of the Constitution of India can be declared only during"
+        ],
+        "options": {
+          "A": "War, external aggression or internal disturbance.",
+          "B": "War, external aggression or armed rebellion.",
+          "C": "Failure of Constitutional Machinery in the State.",
+          "D": "Financial instability in the country."
+        },
+        "answer": "B",
+        "explanation": "Original NDA 2015-2 Q128, page 22, visually checked against its complete stem and options; the matching Series A final key accepts B.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2015-2015-2-136",
+      "sha256": "d405c93fb4397239965eca322370aac8fb25a34114cb92826c0388a24efbe840",
+      "value": {
+        "id": "cds-2015-2015-2-136",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The 'Basic Structure Doctrine' was enunciated by the Supreme Court during the",
+        "sourceTextHash": "6d3ce5adb8f8a6db29e830eeed9034942e1b450d00ba646d7d532755ef5d064e",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 136,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2015_gat_anskey",
+          "rawQuestionText": "The 'Basic Structure Doctrine' was enunciated by the Supreme Court during the"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 136,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "The 'Basic Structure Doctrine' was enunciated by the Supreme Court during the"
+        ],
+        "options": {
+          "A": "Golak Nath case",
+          "B": "Maneka Gandhi case",
+          "C": "Kesavananda Bharati case",
+          "D": "S R Bommai case"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2015-2 Q136, page 24, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2015-2015-2-41",
+      "sha256": "c165276a14ccd7909d4a4bb4ed8797714b411f5819afd70e4eb3e5d70f0c0f95",
+      "value": {
+        "id": "cds-2015-2015-2-41",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "According to _____ sources, the Chief Minister did not consult his Cabinet Members on this issue.",
+        "sourceTextHash": "567a6e6f8ebc7b5992634a4837be561bef857d55e71c4adb4f898408a434ffb8",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 41,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2015_gat_anskey",
+          "rawQuestionText": "According to sources, the Chief Minister did his Cabinet Members on this issue."
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 41,
+        "subject": "English",
+        "topic": "Vocabulary",
+        "subtopic": "Fill in the blanks",
+        "difficulty": "Easy",
+        "promptLines": [
+          "According to _____ sources, the Chief Minister did not consult his Cabinet Members on this issue."
+        ],
+        "options": {
+          "A": "intelligent",
+          "B": "simple",
+          "C": "reliable",
+          "D": "fundamental"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2015-2 Q41, page 5, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2015-2015-2-38",
+      "sha256": "14aaa18034679d72d777f84dc5a85189c3459592611f1a546015c28d29b58f7c",
+      "value": {
+        "id": "cds-2015-2015-2-38",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "There was _____ competition for electoral seats.",
+        "sourceTextHash": "6e7df542160c8273474a00d421b8f400a5abe0cb09a8f971c29d1af80370406a",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 38,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2015_gat_anskey",
+          "rawQuestionText": "There was competition for electoral seats."
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 38,
+        "subject": "English",
+        "topic": "Vocabulary",
+        "subtopic": "Fill in the blanks",
+        "difficulty": "Easy",
+        "promptLines": [
+          "There was _____ competition for electoral seats."
+        ],
+        "options": {
+          "A": "diligent",
+          "B": "rapid",
+          "C": "cut-throat",
+          "D": "sparse"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2015-2 Q38, page 5, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-89",
+      "sha256": "b1635a66688cbcda26772a672847f0565640d0d4a181301074194982c81e7154",
+      "value": {
+        "id": "nda-2015-ii-89",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following combinations of stalactites and stalagmites occurrences is correct?",
+        "sourceTextHash": "0a01d55fde0af488caebc428c2ff6f331855478aafcc07f9548291d741efee7a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 89,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following combinations of stalactites and stalagmites occurrences is correct?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 89,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Karst Landforms",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following combinations of stalactites and stalagmites occurrences is correct?"
+        ],
+        "options": {
+          "A": "Stalactites hang as icicles of different diameters and stalagmites hang from the floor of the caves",
+          "B": "Stalactites hang as icicles of different diameters and stalagmites rise up from the floor of the caves",
+          "C": "Stalactites rise up from the floor of the caves and stalagmites hang as icicles of different diameters",
+          "D": "Stalactites hang as icicles of different diameters and stalagmites also hang as icicles of different diameters"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-94",
+      "sha256": "15ab1fdf00c46a3e1f56c33b0c59bb519045403bc70d1f7eca51b2c7b43cbd6c",
+      "value": {
+        "id": "nda-2015-ii-94",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following describes the Lithosphere?",
+        "sourceTextHash": "5b7bcd565a9d65c115b4ea75b1dd3bc3f71a3bb44756682e5fa87f068602b010",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 94,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following describes the Lithosphere?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 94,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earth Structure & Folding",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following describes the Lithosphere?"
+        ],
+        "options": {
+          "A": "Upper and lower mantle",
+          "B": "Crust and upper mantle",
+          "C": "Crust and core",
+          "D": "Mantle and core"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-97",
+      "sha256": "b0fc8ff78faea6e71ebe8a4999344d55838644b2d9b3130a8f66066496114651",
+      "value": {
+        "id": "nda-2015-ii-97",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements is not correct?",
+        "sourceTextHash": "35547759692a9ff98ed4b90c7afaa0be6855f1827ad652289c24ccb156de3811",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 97,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following statements is not correct?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 97,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Temperature & Insolation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements is not correct?"
+        ],
+        "options": {
+          "A": "Temperatures decrease from the equator to poles",
+          "B": "Temperatures in equatorial regions change substantially from January to July",
+          "C": "Large land masses located in the subarctic and arctic zones develop centres of extremely low temperatures in winter",
+          "D": "Highlands are always colder than surrounding low lands"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-101",
+      "sha256": "e8e2e3eccf80bca56307553d27ffed45beb83b0be8e05b8737f3bc46c333e2ae",
+      "value": {
+        "id": "nda-2015-ii-101",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "An up fold in rock is:",
+        "sourceTextHash": "a8cb9b118fff6a2d4e69409eb9ca665704082c9ffd621a137fab37b2fa51187b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 101,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "An up fold in rock is:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 101,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "An up fold in rock is:"
+        ],
+        "options": {
+          "A": "graben",
+          "B": "horse",
+          "C": "anticline",
+          "D": "syncline"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-102",
+      "sha256": "ff108e405c30bdb333f74d896e113bbfbdedeef390b6183391c5fa9b7cfb3247",
+      "value": {
+        "id": "nda-2015-ii-102",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following gases is found in highest quantity in Exosphere?",
+        "sourceTextHash": "b2760eb5f5aad06ba3142af1ce76574aa9281b6b0a73fdaaccb304d07e2fd0a4",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 102,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following gases is found in highest quantity in Exosphere?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 102,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Atmospheric Composition & Structure",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following gases is found in highest quantity in Exosphere?"
+        ],
+        "options": {
+          "A": "Hydrogen",
+          "B": "Helium",
+          "C": "Nitrogen",
+          "D": "Oxygen"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-106",
+      "sha256": "f6676a6efc2ac906a4a6e6924884e435ed3be03d7dfa2f900e2ec4ac60dba82b",
+      "value": {
+        "id": "nda-2015-ii-106",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Low-Latitude Climate) A. Wet Equatorial B. Monsoon and trade wind coastal C. Wetdry -tropical D. Dry tropical List II (Characteristic) 1. Uniform temperatures, mean near 27°C 2. Marked temperature cycle with very high temperature before the rainy season 3. Temperatures show an annual cycle with high temperature in the high-Sun season 4. Strong temperature cycle, with intense temperature during high-Sun season Code:",
+        "sourceTextHash": "d886aa9cda1609a94bba1e6c775731ca6e684a1451def9f249112060331db78d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 106,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Low-Latitude Climate) A. Wet Equatorial B. Monsoon and trade wind coastal C. Wetdry -tropical D. Dry tropical List II (Characteristic) 1. Uniform temperatures, mean near 27°C 2. Marked temperature cycle with very high temperature before the rainy season 3. Temperatures show an annual cycle with high temperature in the high-Sun season 4. Strong temperature cycle, with intense temperature during high-Sun season Code:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 106,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Low-Latitude Climate) A. Wet Equatorial B. Monsoon and trade wind coastal C. Wetdry -tropical D. Dry tropical List II (Characteristic) 1. Uniform temperatures, mean near 27°C 2. Marked temperature cycle with very high temperature before the rainy season 3. Temperatures show an annual cycle with high temperature in the high-Sun season 4. Strong temperature cycle, with intense temperature during high-Sun season Code:"
+        ],
+        "options": {
+          "A": "A-2, B-3, C-4, D-1",
+          "B": "A-1, B-4, C-2, D-3",
+          "C": "A-2, B-1, C-4, D-3",
+          "D": "A-1, B-2, C-4, D-3"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-111",
+      "sha256": "6a6df64963418164bd334f9358b45c094ee811dd88a81c3dc8cca2fa798fe170",
+      "value": {
+        "id": "nda-2015-ii-111",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following pairs of properties of typical air masses is correct?",
+        "sourceTextHash": "415ab35f1db16daa72f1eaa5fc483a8bdfb6c55a6b084c21ab0e43bf0a21e9fd",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 111,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following pairs of properties of typical air masses is correct?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 111,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Weather Systems & Air Masses",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following pairs of properties of typical air masses is correct?"
+        ],
+        "options": {
+          "A": "Air Mass: Maritime Equatorial; Source Region: Warm oceans in the equatorial zone",
+          "B": "Air Mass: Maritime Polar; Source Region: Warm oceans in the tropical zone",
+          "C": "Air Mass: Continental Tropical; Source Region: Less warm oceans in the tropical zone",
+          "D": "Air Mass: Continental Polar; Source Region: Moist oceans in the polar zone"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-120",
+      "sha256": "c527ce43ac998ae561c443e286e85d06e99806f02956469193db2177a031e841",
+      "value": {
+        "id": "nda-2015-ii-120",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "According to the Geo-scientists, the shape of the earth is: 1. round 2. spherical 3. close to that of a sphere 4. an oblate ellipsoid Select the correct answer using the code given below:",
+        "sourceTextHash": "6ca452b28bd3049fbf5b11efb9221ad1f863ef8297ceca6d7370c3de97262407",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 120,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "According to the Geo-scientists, the shape of the earth is: 1. round 2. spherical 3. close to that of a sphere 4. an oblate ellipsoid Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 120,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Shape & Size of Earth",
+        "difficulty": "Easy",
+        "promptLines": [
+          "According to the Geo-scientists, the shape of the earth is: 1. round 2. spherical 3. close to that of a sphere 4. an oblate ellipsoid Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "2, 3 and 4",
+          "B": "1, 2 and 3",
+          "C": "1 and 2 only",
+          "D": "3 and 4 only"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-71",
+      "sha256": "bf83f9384ac8a794ecad82dbe27c46e5f02adcaff4fd744ec12c059a8822c77c",
+      "value": {
+        "id": "nda-2015-ii-71",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The IST meridian 82½°E passes through a number of States in India. Which one of the following sets of States is correct in this respect?",
+        "sourceTextHash": "4313ed0759dfd96a42f826f75bd4836b48430ba8826ddd088b0cfced3387e9be",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 71,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "The IST meridian 82½°E passes through a number of States in India. Which one of the following sets of States is correct in this respect?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 71,
+        "subject": "Geography",
+        "topic": "Location, States & Regional Geography",
+        "subtopic": "Indian Standard Meridian",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "The IST meridian 82½°E passes through a number of States in India. Which one of the following sets of States is correct in this respect?"
+        ],
+        "options": {
+          "A": "Uttarakhand, Uttar Pradesh, Chhatisgarh and Andhra Pradesh",
+          "B": "Uttar Pradesh, Jharkhand, Chhatisgarh and Odisha",
+          "C": "Uttarakhand, Uttar Pradesh, Madhya Pradesh and Chhatisgarh",
+          "D": "Uttar Pradesh, Odisha, Andhra Pradesh and Chhatisgarh"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-83",
+      "sha256": "551ff5f6c2a69263af202ca4734552a0b7ab8ca5b8cceb68530e03950b403f2e",
+      "value": {
+        "id": "nda-2015-ii-83",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Place) A. Western Ghats B. Himachal Pradesh C. Haryana and Punjab D. Chhotanagpur Plateau List II (Normal vegetation type) 1. Tropical Moist Deciduous 2. Tropical Evergreen 3. Himalayan Moist Forest 4. Tropical Thorny Forest Code:",
+        "sourceTextHash": "3c322068cfd1876e007ce74535df4e7e8550e1639e305f8fe1296a5d7dde3079",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 83,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Place) A. Western Ghats B. Himachal Pradesh C. Haryana and Punjab D. Chhotanagpur Plateau List II (Normal vegetation type) 1. Tropical Moist Deciduous 2. Tropical Evergreen 3. Himalayan Moist Forest 4. Tropical Thorny Forest Code:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 83,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Forest Cover",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Place) A. Western Ghats B. Himachal Pradesh C. Haryana and Punjab D. Chhotanagpur Plateau List II (Normal vegetation type) 1. Tropical Moist Deciduous 2. Tropical Evergreen 3. Himalayan Moist Forest 4. Tropical Thorny Forest Code:"
+        ],
+        "options": {
+          "A": "A-2, B-3, C-4, D-1",
+          "B": "A-1, B-4, C-3, D-2",
+          "C": "A-2, B-4, C-1, D-3",
+          "D": "A-1, B-3, C-2, D-4"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-84",
+      "sha256": "6797ebaf2baca3e24a90677fe9ea9edb124e8585b1ece4929b059513133f48c8",
+      "value": {
+        "id": "nda-2015-ii-84",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The term 'Regur' is used to mean:",
+        "sourceTextHash": "dc9b79ee3c6f3369fa780a0b4e2a536cb591813251fa702fffd736a6334e1785",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 84,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "The term 'Regur' is used to mean:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 84,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Soils & Soil Conservation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The term 'Regur' is used to mean:"
+        ],
+        "options": {
+          "A": "Laterite soil",
+          "B": "Deltaic soil",
+          "C": "Red soil",
+          "D": "Black cotton soil"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-116",
+      "sha256": "425ce95d8f3eeb52eac2624a3aeef8d604291d5bcbec0860e7a1caf942ca833e",
+      "value": {
+        "id": "nda-2015-ii-116",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements is not correct?",
+        "sourceTextHash": "35547759692a9ff98ed4b90c7afaa0be6855f1827ad652289c24ccb156de3811",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 116,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following statements is not correct?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 116,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Soils & Soil Conservation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following statements is not correct?"
+        ],
+        "options": {
+          "A": "Application of lime makes the soil acidic",
+          "B": "High acidity in soil is typical of humid climate",
+          "C": "Increasing soil acidity results in declining soil fertility",
+          "D": "Arid climate is characterized by alkaline soil"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-54",
+      "sha256": "aa4bde594d9d68019e9de1b92a1cd48eb491e0d8d5693f2ea07db66bebe4016e",
+      "value": {
+        "id": "nda-2015-ii-54",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following sea routes is the shortest from point to point?",
+        "sourceTextHash": "f82ae34a118f90881ed920000b497008c15ac8181d4010fcb43a9e999edae5ee",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 54,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following sea routes is the shortest from point to point?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 54,
+        "subject": "Geography",
+        "topic": "World Places & Routes",
+        "subtopic": "Sea Routes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following sea routes is the shortest from point to point?"
+        ],
+        "options": {
+          "A": "Kolkata to Yangoon",
+          "B": "Kolkata to Chennai",
+          "C": "Chennai to Port Blair",
+          "D": "Mumbai to Colombo"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-59",
+      "sha256": "1b88fe746e74b271bedf3a5f7a55b45558cb80e8ce129505e2e1caef7112f4b3",
+      "value": {
+        "id": "nda-2015-ii-59",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Manufacturing site) A. Ludhiana B. Kanpur C. Varanasi D. Vijayawada List II (Industry) 1. Auto parts 2. Woollen garments 3. Leather 4. Handloom Code:",
+        "sourceTextHash": "1dd9040963db8687f620ad268a3cb70370861dd84b461fa659d8cdf8d0a29bcc",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 59,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Manufacturing site) A. Ludhiana B. Kanpur C. Varanasi D. Vijayawada List II (Industry) 1. Auto parts 2. Woollen garments 3. Leather 4. Handloom Code:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 59,
+        "subject": "Geography",
+        "topic": "Industries",
+        "subtopic": "Industrial Location",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Manufacturing site) A. Ludhiana B. Kanpur C. Varanasi D. Vijayawada List II (Industry) 1. Auto parts 2. Woollen garments 3. Leather 4. Handloom Code:"
+        ],
+        "options": {
+          "A": "A-1, B-4, C-3, D-2",
+          "B": "A-2, B-3, C-4, D-1",
+          "C": "A-2, B-4, C-3, D-1",
+          "D": "A-1, B-4, C-2, D-3"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-60",
+      "sha256": "0e7d04162be6d8cfe4a69044bac0dac870b2f78fe1bdfa3499cbc1cb86a6c00c",
+      "value": {
+        "id": "nda-2015-ii-60",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not a sea port?",
+        "sourceTextHash": "33e0b446ac166a7846f370c1f674e29d3943f36a3341c2e6df1706f408c54364",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 60,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following is not a sea port?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 60,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Ports",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not a sea port?"
+        ],
+        "options": {
+          "A": "Paradeep",
+          "B": "Haldia",
+          "C": "Diamond Harbour",
+          "D": "Dhamra"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-68",
+      "sha256": "00696fad3161d9aee55a5dca4b0a0589fa008cf661a1ea7adbd29c5c31039552",
+      "value": {
+        "id": "nda-2015-ii-68",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Identify the place that is not an oil field:",
+        "sourceTextHash": "207fb740674d616a4b2d2b0f5121f01abf4dd74e98975944ccc4f143b942d3f5",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 68,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Identify the place that is not an oil field:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 68,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Oilfields & Refineries",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Identify the place that is not an oil field:"
+        ],
+        "options": {
+          "A": "Naharkatiya",
+          "B": "Kalol",
+          "C": "Ledo",
+          "D": "Ankleshwar"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-76",
+      "sha256": "27d6dd7eae7658067ac6215da78c0dd10bbc3ed83321fb83ec940d456908c172",
+      "value": {
+        "id": "nda-2015-ii-76",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following places is not an iron-ore mining area?",
+        "sourceTextHash": "a7cab7ba4b99907ea878cc5a36ffe1b3ff2a1ff70ad46625d202e5f8cc4681e3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 76,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one among the following places is not an iron-ore mining area?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 76,
+        "subject": "Geography",
+        "topic": "Minerals & Mining",
+        "subtopic": "Mineral Deposits",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following places is not an iron-ore mining area?"
+        ],
+        "options": {
+          "A": "Badampahar",
+          "B": "Zawar",
+          "C": "Bailadila",
+          "D": "Anantpur"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-123",
+      "sha256": "95b9902720f623daf4ffd445183a3a463ebb802304aa04ea294ffc7c624c841c",
+      "value": {
+        "id": "nda-2015-ii-123",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following continents accounts for the maximum share in exports from India?",
+        "sourceTextHash": "07375442c7b55d44e509b7b386c1c0ea58ce19ce54dd0b35dab7408e7947102a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 123,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following continents accounts for the maximum share in exports from India?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 123,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Ports",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following continents accounts for the maximum share in exports from India?"
+        ],
+        "options": {
+          "A": "Asia",
+          "B": "Europe",
+          "C": "Africa",
+          "D": "North America"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-64",
+      "sha256": "7261784617ddc5f843ff7f48bd86eb761ce0e3406dbe6cc58c06e06b03694987",
+      "value": {
+        "id": "nda-2015-ii-64",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Manas National Park is situated in the State of:",
+        "sourceTextHash": "27aa1ed64b2529fdc0f4b419936c3a902d351a8efd6fb7dfb4606e2f70762aab",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 64,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "The Manas National Park is situated in the State of:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 64,
+        "subject": "Environment",
+        "topic": "Protected Areas & Biodiversity",
+        "subtopic": "National Parks and Wildlife Sanctuaries",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Manas National Park is situated in the State of:"
+        ],
+        "options": {
+          "A": "Madhya Pradesh",
+          "B": "Jharkhand",
+          "C": "Assam",
+          "D": "West Bengal"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-77",
+      "sha256": "75fa1141506e6cacf1b3ed31a988fd9e1937a501f14f64882963327b46aab5fc",
+      "value": {
+        "id": "nda-2015-ii-77",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Forest Conservation Type) A. National Park B. Sanctuary C. Biosphere Reserve D. Tiger Reserve List II (Place) 1. Dudhwa 2. Bhitarkanika 3. Chilka 4. Nokrek Code:",
+        "sourceTextHash": "6a49d212cefc455b4dd625e8ca7d1a9390c9777923b2c69372486a5697c4adf3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 77,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2015_gat_anskey",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Forest Conservation Type) A. National Park B. Sanctuary C. Biosphere Reserve D. Tiger Reserve List II (Place) 1. Dudhwa 2. Bhitarkanika 3. Chilka 4. Nokrek Code:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 77,
+        "subject": "Environment",
+        "topic": "Protected Areas & Biodiversity",
+        "subtopic": "Biosphere Reserves",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Forest Conservation Type) A. National Park B. Sanctuary C. Biosphere Reserve D. Tiger Reserve List II (Place) 1. Dudhwa 2. Bhitarkanika 3. Chilka 4. Nokrek Code:"
+        ],
+        "options": {
+          "A": "A-2, B-3, C-4, D-1",
+          "B": "A-1, B-4, C-3, D-2",
+          "C": "A-2, B-4, C-3, D-1",
+          "D": "A-1, B-3, C-4, D-2"
+        },
+        "answer": "A",
+        "explanation": "Original printed page 12 gives option A as 2, 3, 4, 1. The Series A final key accepts A. Restore the option, not a different answer letter.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-ii-90",
+      "sha256": "5c5696dd7e5edfa66402224aaa552a0d394beb12524ce2cc2e1fd4649fc448dd",
+      "value": {
+        "id": "nda-2015-ii-90",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the correct sequence about various levels of organization of Biosphere?",
+        "sourceTextHash": "70cccc3c0d7c7bf830b9a69cd6b27e71d0b05bc6e68278b9bd54da992600a8cd",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "II",
+          "questionNumber": 90,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-II-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following is the correct sequence about various levels of organization of Biosphere?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "II",
+        "questionNumber": 90,
+        "subject": "Environment",
+        "topic": "Ecology Basics",
+        "subtopic": "Levels of Biological Organization",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following is the correct sequence about various levels of organization of Biosphere?"
+        ],
+        "options": {
+          "A": "Eco system-Biosphere-Community-Population",
+          "B": "Population - Organism - Eco system Biosphere",
+          "C": "Organism - Community - Population - Biosphere",
+          "D": "Organism - Population - Eco system Biosphere"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

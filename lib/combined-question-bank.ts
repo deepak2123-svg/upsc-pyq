@@ -9,6 +9,7 @@ import officialNdaIIMathematicsPaper from '../content/nda-2026-ii-mathematics-of
 import officialNda2017IPaper from '../content/nda-2017-i-official-paper.json' with { type: 'json' };
 import officialNda2016IPaper from '../content/nda-2016-i-official-paper.json' with { type: 'json' };
 import officialNda2016IIPaper from '../content/nda-2016-ii-official-paper.json' with { type: 'json' };
+import officialNda2015IIPaper from '../content/nda-2015-ii-official-paper.json' with { type: 'json' };
 import officialNda2025IIPaper from '../content/nda-2025-ii-official-paper.json' with { type: 'json' };
 import officialNda2025IPaper from '../content/nda-2025-i-official-paper.json' with { type: 'json' };
 import reviewedNda2024IIPaper from '../content/nda-2024-ii-reviewed-paper.json' with {type:'json'};
@@ -65,15 +66,19 @@ const reviewedBaseQuestions:BankQuestion[]=legacyQuestions.map(question=>{
 // Raw imports, historical IDs and old snapshots remain immutable; builders guard
 // the original records' hashes before applying any paper correction.
 const freshPlacementIds=new Set([...officialNdaIIMathematicsPaper.questions,...officialNda2016IIPaper.questions,...officialNda2017IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions,...officialNda2020CombinedPaper.questions,...officialNda2019IIPaper.questions,...officialNda2019IPaper.questions,...officialNda2018IIPaper.questions,...officialNda2018IPaper.questions,...officialNda2017IIPaper.questions].map(q=>q.id));
-const officialQuestions:BankQuestion[]=[...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNdaIIMathematicsPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions,...officialNda2020CombinedPaper.questions,...officialNda2019IIPaper.questions,...officialNda2019IPaper.questions,...officialNda2018IIPaper.questions,...officialNda2018IPaper.questions,...officialNda2017IIPaper.questions,...officialNda2017IPaper.questions,...officialNda2016IPaper.questions,...officialNda2016IIPaper.questions];
+const officialQuestions:BankQuestion[]=[...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNdaIIMathematicsPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions,...officialNda2020CombinedPaper.questions,...officialNda2019IIPaper.questions,...officialNda2019IPaper.questions,...officialNda2018IIPaper.questions,...officialNda2018IPaper.questions,...officialNda2017IIPaper.questions,...officialNda2017IPaper.questions,...officialNda2016IPaper.questions,...officialNda2016IIPaper.questions,...officialNda2015IIPaper.questions];
 const officialById=new Map(officialQuestions.map(q=>[q.id,q]));
 const priorIds=new Set(reviewedBaseQuestions.map(q=>q.id));
 export const combinedQuestions=[...reviewedBaseQuestions.map(question=>{
   const official=officialById.get(question.id);
   const priorAdditionalPaths='additionalPaths' in question?question.additionalPaths:undefined;
+  const priorPrimaryId=reviewedPrelimsPlacements.get(question.id)?.primaryId;
+  const priorPrimary=priorPrimaryId?prelimsPath(priorPrimaryId):undefined;
+  const preservedPaths=[...(priorAdditionalPaths??[]),...(priorPrimary?[{subject:priorPrimary.subject,head:priorPrimary.head,chapter:priorPrimary.chapter,subtopic:priorPrimary.subtopic,taxonomyId:priorPrimary.id}]:[])];
   if(!official)return question;
   const merged={...question,...official};
-  merged.additionalPaths=freshPlacementIds.has(official.id)?official.additionalPaths:official.preparationScope==='gs'?(priorAdditionalPaths??official.additionalPaths):official.additionalPaths;
+  if(official.year===2015&&official.paper==='II'&&official.preparationScope==='gs')Object.assign(merged,{subject:question.subject,topic:question.topic,subtopic:question.subtopic,taxonomyHead:question.taxonomyHead,taxonomyChapter:question.taxonomyChapter,taxonomySubtopic:question.taxonomySubtopic,taxonomyId:question.taxonomyId,taxonomyVersion:question.taxonomyVersion});
+  merged.additionalPaths=freshPlacementIds.has(official.id)?official.additionalPaths:official.preparationScope==='gs'?(preservedPaths.length?preservedPaths:official.additionalPaths):official.additionalPaths;
   return merged;
 }),...officialQuestions.filter(q=>!priorIds.has(q.id))];
 export default { ...historicalBank, questions: combinedQuestions };

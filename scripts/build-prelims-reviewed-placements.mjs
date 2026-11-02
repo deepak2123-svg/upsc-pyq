@@ -72,8 +72,9 @@ const completeNda2019I=read('content/nda-2019-i-official-paper.json');
 const completeNda2018II=read('content/nda-2018-ii-official-paper.json');
 const completeNda2018I=read('content/nda-2018-i-official-paper.json');
 const completeNda2017II=read('content/nda-2017-ii-official-paper.json');
+const completeNda2015II=read('content/nda-2015-ii-official-paper.json');
 const originalIds=new Set([...rawBank,...imports.questions].map(q=>q.id));
-const completeNdaNew=[...completeNda.questions,...completeNdaII.questions,...completeNda2025II.questions,...completeNda2025I.questions,...completeNda2020Combined.questions,...completeNda2019II.questions,...completeNda2019I.questions,...completeNda2018II.questions,...completeNda2018I.questions,...completeNda2017II.questions].filter(q=>!originalIds.has(q.id));
+const completeNdaNew=[...completeNda.questions,...completeNdaII.questions,...completeNda2025II.questions,...completeNda2025I.questions,...completeNda2020Combined.questions,...completeNda2019II.questions,...completeNda2019I.questions,...completeNda2018II.questions,...completeNda2018I.questions,...completeNda2017II.questions,...completeNda2015II.questions].filter(q=>!originalIds.has(q.id));
 const bank=new Map([...rawBank,...imports.questions].map(q=>[q.id,q]));
 for(const q of completeNdaNew)bank.set(q.id,q);
 const answerReview=read('content/question-review-state.json').records;
@@ -224,6 +225,7 @@ for(const q of completeNdaNew){
 for(const q of completeNdaII.questions.filter(q=>q.preparationScope==='defence-world-history')){
  records.set(q.id,{questionId:q.id,expectedRecordHash:hash(bank.get(q.id)),status:'out-of-scope',basis:'verified-preparation-only-scope',scopeReason:'Verified World History for NDA/CDS, not automatically CSE GS.',rationale:q.source.classificationRationale,secondPass:{status:'approved',rationale:q.source.secondPass}});
 }
+for(const q of completeNda2015II.questions.filter(q=>q.id==='nda-2015-ii-90'))records.set(q.id,{questionId:q.id,expectedRecordHash:hash(bank.get(q.id)),status:'out-of-scope',basis:'verified-preparation-only-scope',scopeReason:'Verified school Science for NDA/CDS; outside CSE GS.',rationale:q.source.classificationRationale,secondPass:{status:'approved',rationale:q.source.secondPass},editorialBatch:'NDA/2015/II/existing-1',answerEligibilityUnchanged:true});
 for(const q of [...completeNda2025II.questions,...completeNda2025I.questions]){
  const baseline=bank.get(q.id);
  if(q.preparationScope==='gs')approved(q.id,resolve([q.subject,q.taxonomyHead,q.topic,q.subtopic].join('/')),(q.additionalPaths??[]).map(p=>resolve([p.subject,p.head,p.chapter,p.subtopic].join('/'))),'nda-2025-complete-source-review',q.source.classificationRationale,`Fresh original-page second pass and reviewed concept boundaries; see content/audits/nda-2025-${q.paper.toLowerCase()}-review.json.`,q.classificationTags);

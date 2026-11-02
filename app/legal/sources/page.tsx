@@ -10,6 +10,7 @@ import officialNdaIIMathematicsPaper from '../../../content/nda-2026-ii-mathemat
 import officialNda2017IPaper from '../../../content/nda-2017-i-official-paper.json';
 import officialNda2016IPaper from '../../../content/nda-2016-i-official-paper.json';
 import officialNda2016IIPaper from '../../../content/nda-2016-ii-official-paper.json';
+import officialNda2015IIPaper from '../../../content/nda-2015-ii-official-paper.json';
 import officialNda2025IIPaper from '../../../content/nda-2025-ii-official-paper.json';
 import officialNda2025IPaper from '../../../content/nda-2025-i-official-paper.json';
 import reviewedNda2024IIPaper from '../../../content/nda-2024-ii-reviewed-paper.json';
@@ -31,7 +32,7 @@ import reviewed2024Audit from '../../../content/audits/nda-2024-ii-review.json';
 
 export const metadata = { title: "Sources — added PYQ papers", description: "Added papers, available GS questions and source-review coverage." };
 export default function SourcesPage() {
-  const officialIds=new Set([...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNdaIIMathematicsPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions,...officialNda2020CombinedPaper.questions,...officialNda2019IIPaper.questions,...officialNda2019IPaper.questions,...officialNda2018IIPaper.questions,...officialNda2018IPaper.questions,...officialNda2017IIPaper.questions,...officialNda2017IPaper.questions,...officialNda2016IPaper.questions,...officialNda2016IIPaper.questions].filter(q=>questionEligible(q.id)).map(q=>q.id));
+  const officialIds=new Set([...officialNdaPaper.questions,...officialNdaIIPaper.questions,...officialNdaIIMathematicsPaper.questions,...officialNda2025IIPaper.questions,...officialNda2025IPaper.questions,...reviewedNda2024IIPaper.questions,...officialNda2024IPaper.questions,...officialNda2023IIPaper.questions,...officialNda2023IPaper.questions,...officialNda2022IIPaper.questions,...officialNda2022IPaper.questions,...officialNda2021IIPaper.questions,...officialNda2021IPaper.questions,...officialNda2020CombinedPaper.questions,...officialNda2019IIPaper.questions,...officialNda2019IPaper.questions,...officialNda2018IIPaper.questions,...officialNda2018IPaper.questions,...officialNda2017IIPaper.questions,...officialNda2017IPaper.questions,...officialNda2016IPaper.questions,...officialNda2016IIPaper.questions,...officialNda2015IIPaper.questions].filter(q=>questionEligible(q.id)).map(q=>q.id));
   const available=[...new Map([...pyqQuestions,...historicalPyqQuestions.filter(q=>officialIds.has(q.id))].map(q=>[q.id,q])).values()];
   const groups = new Map<string, { exam: PyqExam; year: number; paper: string; count: number }>();
   for (const question of available) {
@@ -56,8 +57,9 @@ export default function SourcesPage() {
       const official2018=group.exam==='NDA'&&group.year===2018&&['I','II'].includes(group.paper);
       const official2017=group.exam==='NDA'&&group.year===2017&&['I','II'].includes(group.paper);
       const official2016=group.exam==='NDA'&&group.year===2016&&['I','II'].includes(group.paper);
+      const official2015=group.exam==='NDA'&&group.year===2015&&group.paper==='II';
       const mathematics2026=group.exam==='NDA'&&group.year===2026&&group.paper==='II Mathematics';
-      const reviewedNda=mathematics2026||official2016||official2017||official2018||official2019||official2020||official2021||official2022||official2023||official2024||reviewed2024||completeNda;
+      const reviewedNda=mathematics2026||official2015||official2016||official2017||official2018||official2019||official2020||official2021||official2022||official2023||official2024||reviewed2024||completeNda;
       const provisional=group.exam==='NDA'&&group.year===2026&&(['I','II'].includes(group.paper)||mathematics2026);
       const withdrawnNumbers=official2019&&group.paper==='II'?[119]:official2020?[70]:official2024?[101]:group.exam==='NDA'&&group.year===2025&&group.paper==='II'?[85]:group.exam==='NDA'&&group.year===2021&&group.paper==='I'?[58]:[];
       return {...group,complete:reviewedNda||source?.coverageStatus === "current-source-content-and-key-reviewed",provisional,
