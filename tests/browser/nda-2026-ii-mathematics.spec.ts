@@ -11,6 +11,8 @@ test('NDA II 2026 Mathematics launches the complete original-order paper',async(
  await expect(page).toHaveURL(/\/practice\/[^/]+$/);
  await expect(page.getByText(/Question 1 of 120/).first()).toBeVisible();
  const question=page.locator('.practice-question');
+ await expect(question.locator('.question-origin').first()).toHaveText(/First appeared: NDA · II Mathematics · 2026$/);
+ await expect(question.locator('.question-origin').first()).not.toContainText('Question 1');
  expect(await question.locator('.katex').count()).toBeGreaterThan(0);
  await expect(question.locator('.katex').first()).toBeVisible();
  await question.getByRole('button',{name:'Save & next →'}).click();

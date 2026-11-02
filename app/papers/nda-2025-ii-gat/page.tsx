@@ -14,7 +14,7 @@ export default function OfficialNda2025IIPaper(){
   const leaves=inventory.nodes.filter(n=>n.kind==='subtopic'&&n.questionIdsByExam?.NDA.some(id=>wanted.has(id)));
   const covered=new Set(leaves.flatMap(n=>n.questionIdsByExam!.NDA.filter(id=>wanted.has(id))));
   if(covered.size!==wanted.size)throw new Error(`Incomplete NDA II 2025: ${label}, ${covered.size}/${wanted.size}`);
-  const recipe:PracticeRecipeV4={version:4,preparationExam:'NDA',taxonomyVersion:inventory.taxonomyVersion,subjectIds:[...new Set(leaves.map(n=>n.subjectId))],paths:leaves.map(n=>({subtopicId:n.id,exams:['NDA']})),frozenScopes:leaves.map(n=>({id:n.id,subjectId:n.subjectId,label:n.label,parentId:n.parentId,order:n.order,questionIdsByExam:{CSE:[],CAPF:[],CDS:[],NDA:n.questionIdsByExam!.NDA.filter(id=>wanted.has(id))}})),count:'all',order:'newest',durationMinutes:150};
+  const recipe:PracticeRecipeV4={version:4,preparationExam:'NDA',...(!scope?{sourcePaperId:official.paperId}:{}),taxonomyVersion:inventory.taxonomyVersion,subjectIds:[...new Set(leaves.map(n=>n.subjectId))],paths:leaves.map(n=>({subtopicId:n.id,exams:['NDA']})),frozenScopes:leaves.map(n=>({id:n.id,subjectId:n.subjectId,label:n.label,parentId:n.parentId,order:n.order,questionIdsByExam:{CSE:[],CAPF:[],CDS:[],NDA:n.questionIdsByExam!.NDA.filter(id=>wanted.has(id))}})),count:'all',order:'newest',durationMinutes:150};
   return {label:label!,count:wanted.size,recipe};
  });
  const dropped=official.questions.find(q=>q.questionNumber===85)!;
