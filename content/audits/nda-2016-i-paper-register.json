@@ -1,0 +1,1047 @@
+{
+  "paperId": "nda-2016-i-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2016,
+    "session": "I",
+    "paper": "GAT",
+    "paperCode": "B-OEBA-P-LEW",
+    "series": "A",
+    "language": "English",
+    "examDate": "2016-04-17",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
+    "sha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8"
+  },
+  "pdfPageMapping": {
+    "pages": 44,
+    "cover": 44,
+    "english": "PDF/printed pages 2–15",
+    "partB": "PDF/printed pages 16–43"
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "retrievedAt": "2026-11-02",
+    "url": "https://upsc.gov.in/examinations/answer-key/archives",
+    "asset": "/papers/nda-2016-i-gat/official-final-key.pdf",
+    "sha256": "71d756e6de6bb89c511e513edbd799f3c69b076529d6ebb9618ce25c751b7619",
+    "page": 1,
+    "series": "A",
+    "session": "I",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "UPSC NDA/NA I 2016 GAT Series A final answer-key table; the rendered header identifies Series A, GAT, 150 scored items and NIL dropped."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2016-2016-1-121",
+      "sha256": "60af9e11d7d034814c441d6a5378f57389e20e982f497cfb36c927955c63d8fa",
+      "value": {
+        "id": "cds-2016-2016-1-121",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following pairs of the Schedule in the Constitution of India and its Content is not correctly matched?",
+        "sourceTextHash": "9e0010a8b067b8ee9bd350d04bdc0229c79fd7f70e8393bf94bf4e9732addc07",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 121,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2016_gat_anskey",
+          "rawQuestionText": "Which one of the following pairs of the Schedule in the Constitution of India and its Content is not correctly matched ? Schedule Content"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 121,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following pairs of the Schedule in the Constitution of India and its Content is not correctly matched?"
+        ],
+        "options": {
+          "A": "Eighth Schedule : Languages",
+          "B": "Second Schedule : The forms of oaths and affirmations",
+          "C": "Fourth Schedule : Allocation of seats in the Council of States",
+          "D": "Tenth Schedule : Provisions as to disqualification on the ground of defection"
+        },
+        "answer": "B",
+        "explanation": "Original NDA 2016-1 Q121, page 28, visually checked against its complete stem and options; the matching Series A final key accepts B.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2016-2016-1-138",
+      "sha256": "7356149d027d3d47fe4ae838a332de7b736f00375fb47ccd71667f216964f31b",
+      "value": {
+        "id": "cds-2016-2016-1-138",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "After a ban on unscientific coal mining and transportation of coal in this region by the National Green Tribunal, many of those engaged in the activity have been switching to turmeric farming for their livelihood. The region referred above is",
+        "sourceTextHash": "143f5831734b04e380e5152f5a748a817b5a8aaebe42b86b522f18af5340ef4c",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 138,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2016_gat_anskey",
+          "rawQuestionText": "transportation of coal in this region by the National Green Tribunal, many of those engaged in the activity have been switching to turmeric farming for their livelihood. The region referred above is"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 138,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "After a ban on unscientific coal mining and transportation of coal in this region by the National Green Tribunal, many of those engaged in the activity have been switching to turmeric farming for their livelihood. The region referred above is"
+        ],
+        "options": {
+          "A": "Jaintia Hills, Meghalaya",
+          "B": "Koriya, Chhattisgarh",
+          "C": "Angul, Odisha",
+          "D": "Bardhaman, West Bengal"
+        },
+        "answer": "A",
+        "explanation": "Original NDA 2016-1 Q138, page 34, visually checked against its complete stem and options; the matching Series A final key accepts A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-52",
+      "sha256": "d45d3c062185908a2d5223b86b9b0913245a4f2f96d155552bd5406ec64f5c3c",
+      "value": {
+        "id": "nda-2016-i-52",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I: There is high salinity in Red Sea. Statement II: Rate of evaporation is high in Red Sea.",
+        "sourceTextHash": "4a101e2045fec227939733c0144138765e0b21b811748f0d9d2ce42120fdd40b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 52,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Statement I: There is high salinity in Red Sea. Statement II: Rate of evaporation is high in Red Sea."
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 52,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Salinity",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I: There is high salinity in Red Sea.",
+          "Statement II: Rate of evaporation is high in Red Sea."
+        ],
+        "options": {
+          "A": "Both the Statements are individually true and Statement II is the correct explanation of Statement I.",
+          "B": "Both the Statements are individually true but Statement II is not the correct explanation of Statement I.",
+          "C": "Statement I is true but Statement II is false.",
+          "D": "Statement I is false but Statement II is true."
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-53",
+      "sha256": "a4c64fa987ae8c7e8104c56f80e36f2f0648c0ba4318dd1f3107da86d2606645",
+      "value": {
+        "id": "nda-2016-i-53",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I: Volcanic eruption is accompanied by earthquakes. Statement II: Volcanoes erupt water vapours and dust particles in the atmosphere.",
+        "sourceTextHash": "c24f659016640fca8976fc5adbbf52cb8bbb948ebe7c38579e89b59c635a89e2",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 53,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Statement I: Volcanic eruption is accompanied by earthquakes. Statement II: Volcanoes erupt water vapours and dust particles in the atmosphere."
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 53,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Earthquakes & Seismology",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I: Volcanic eruption is accompanied by earthquakes.",
+          "Statement II: Volcanoes erupt water vapours and dust particles in the atmosphere."
+        ],
+        "options": {
+          "A": "Both the Statements are individually true and Statement II is the correct explanation of Statement I.",
+          "B": "Both the Statements are individually true but Statement II is not the correct explanation of Statement I.",
+          "C": "Statement I is true but Statement II is false.",
+          "D": "Statement I is false but Statement II is true."
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-70",
+      "sha256": "b5b044aaf984d76b7769249ebd431a7a388f31cf1f3e038aa0d9e2a91fbe6e96",
+      "value": {
+        "id": "nda-2016-i-70",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "During solar eclipse",
+        "sourceTextHash": "b4de857e77c8db40d14f4b7c12d78b4a13f3bc860eba42bf9f283c04b381598f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 70,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "During solar eclipse"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 70,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Solar System & Eclipses",
+        "difficulty": "Easy",
+        "promptLines": [
+          "During solar eclipse"
+        ],
+        "options": {
+          "A": "the earth comes in between the sun and the moon.",
+          "B": "the moon comes in between the sun and the earth.",
+          "C": "the moon comes exactly halfway between the earth and the sun.",
+          "D": "the sun comes in between the earth and the moon."
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-86",
+      "sha256": "e09ed79c9916104ec6bfa3b97a76e9ca284728af37d969e88ad36e8bc370f82a",
+      "value": {
+        "id": "nda-2016-i-86",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The brightness of a star depends on its",
+        "sourceTextHash": "ca2de62542d5576e26b9307e1306258d519cfd5859536f7b29d1c7966a710e7b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 86,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "The brightness of a star depends on its"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 86,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Temperature & Insolation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The brightness of a star depends on its"
+        ],
+        "options": {
+          "A": "size and temperature only",
+          "B": "size and distance from the earth",
+          "C": "size, temperature and mass",
+          "D": "size, temperature and distance from the earth"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-91",
+      "sha256": "b69f67171affa7a10632c41ee3f78cefa271e66acf948d41add9bd3c0410b34e",
+      "value": {
+        "id": "nda-2016-i-91",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements in the context of northern hemisphere is/are correct? 1. Vernal equinox occurs on March 21. 2. Summer solstice occurs on December 22. 3. Autumnal equinox occurs on September 23. 4. Winter solstice occurs on June 21. Select the correct answer using the code given below:",
+        "sourceTextHash": "28e2329906d4b322864a4bb2e9c07270398c51f0aae48f4165e36681a9361878",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 91,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Which of the following statements in the context of northern hemisphere is/are correct? 1. Vernal equinox occurs on March 21. 2. Summer solstice occurs on December 22. 3. Autumnal equinox occurs on September 23. 4. Winter solstice occurs on June 21. Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 91,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Earth-Sun Relations & Seasons",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements in the context of northern hemisphere is/are correct? 1. Vernal equinox occurs on March 21. 2. Summer solstice occurs on December 22. 3. Autumnal equinox occurs on September 23. 4. Winter solstice occurs on June 21. Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 3 only",
+          "C": "2 and 4 only",
+          "D": "1, 2 and 3 only"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-98",
+      "sha256": "865dc4958159096a1b670fb734772a391550ee56c57e1da796df9568517a6fe6",
+      "value": {
+        "id": "nda-2016-i-98",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Spruce and Cedar are tree varieties of",
+        "sourceTextHash": "d5af0ae8368e8ceecea075034bf802cb71d2d357d9838e970bbe19b7710828d6",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 98,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Spruce and Cedar are tree varieties of"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 98,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Climatic Regions & Biomes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Spruce and Cedar are tree varieties of"
+        ],
+        "options": {
+          "A": "Equatorial forest",
+          "B": "Temperate coniferous forest",
+          "C": "Monsoon forest",
+          "D": "Temperate deciduous forest"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-67",
+      "sha256": "88d83b2bc9de38c6c2f26922a0c8d5cdf3e9bdb705a00bd2a9638eb5a02b9492",
+      "value": {
+        "id": "nda-2016-i-67",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In India, glacial terraces known as 'Karewas' are found in",
+        "sourceTextHash": "2da52b01653c31e5f6d6f5e1192305ced22c5c598432e63410e3d021fa833675",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 67,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "In India, glacial terraces known as 'Karewas' are found in"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 67,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In India, glacial terraces known as 'Karewas' are found in"
+        ],
+        "options": {
+          "A": "Sapt Kosi Valley",
+          "B": "Jhelum Valley",
+          "C": "Alakananda Valley",
+          "D": "Teesta Valley"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-68",
+      "sha256": "ba5829ad4e186250fb61aa17f360c126dd81b3eed0528f635f46bffb1120d119",
+      "value": {
+        "id": "nda-2016-i-68",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Structurally, the Meghalaya region is a part of",
+        "sourceTextHash": "b754419886e26cd2ece3043010984d8bb0d69c6bf5db1caba1b6a9c121eb5502",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 68,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Structurally, the Meghalaya region is a part of"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 68,
+        "subject": "Geography",
+        "topic": "Physiography & Relief",
+        "subtopic": "Indian Physiographic Regions",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Structurally, the Meghalaya region is a part of"
+        ],
+        "options": {
+          "A": "Shiwalik Range",
+          "B": "Deccan Plateau",
+          "C": "Greater Himalaya",
+          "D": "Aravalli Range"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-75",
+      "sha256": "82a38168a2973ce98ca6e58d6f3baf8fca3df50c6e66ace5a0ffb91a31684ec9",
+      "value": {
+        "id": "nda-2016-i-75",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Nagarjuna Sagar Project is located on which one of the following rivers?",
+        "sourceTextHash": "0daa91e820920adf1d89c5b4a92db7f10c6511f303a3207576b81d41889f441b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 75,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "The Nagarjuna Sagar Project is located on which one of the following rivers?"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 75,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Nagarjuna Sagar Project is located on which one of the following rivers?"
+        ],
+        "options": {
+          "A": "Godavari",
+          "B": "Krishna",
+          "C": "Kavery",
+          "D": "Mahanadi"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-76",
+      "sha256": "ef47076d6e24f4818d513fe7756ed31b2381dba08a59a9ac00599532b3e1c094",
+      "value": {
+        "id": "nda-2016-i-76",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements: 1. Rajmahal highlands consist of lava flow deposits. 2. Bundelkhand gneiss belong to the oldest Achaean rocks of India. Which of the statements given above is/are correct?",
+        "sourceTextHash": "6433ad142bedce701e63d50a8ab2cf70a7f7854c4694557353556e7190b850e5",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 76,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Consider the following statements: 1. Rajmahal highlands consist of lava flow deposits. 2. Bundelkhand gneiss belong to the oldest Achaean rocks of India. Which of the statements given above is/are correct?"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 76,
+        "subject": "Geography",
+        "topic": "Physiography & Relief",
+        "subtopic": "Peninsular Geology",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements: 1. Rajmahal highlands consist of lava flow deposits. 2. Bundelkhand gneiss belong to the oldest Achaean rocks of India. Which of the statements given above is/are correct?"
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-83",
+      "sha256": "dcad0c537d2a9e3febcf4f0e5ce28c2ed2307ec06e1f8700e038b845eb0967ab",
+      "value": {
+        "id": "nda-2016-i-83",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which organisation prepares the topographical maps of India?",
+        "sourceTextHash": "82aac6f454ea86432994698e9ab725408fa801a836eba96394cebb217fa323f9",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 83,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Which organisation prepares the topographical maps of India?"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 83,
+        "subject": "Geography",
+        "topic": "Location, States & Regional Geography",
+        "subtopic": "Mapping Agencies",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which organisation prepares the topographical maps of India?"
+        ],
+        "options": {
+          "A": "Geological Survey of India",
+          "B": "Archaeological Survey of India",
+          "C": "Survey of India",
+          "D": "National Atlas and Thematic Mapping Organisation"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-90",
+      "sha256": "28a55ec89a96d1a496cfa5131c6bbbf5f595b6319f8322a96cb5d521b2d5af69",
+      "value": {
+        "id": "nda-2016-i-90",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Amarkantak Hills is the source of which of the following rivers? 1. Narmada 2. Mahanadi 3. Tapti 4. Son Select the correct answer using the code given below:",
+        "sourceTextHash": "7a3bfe5e7b224c56d458aed207028e83077c31a3823d3fa6cd761cd7e5977a96",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 90,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "The Amarkantak Hills is the source of which of the following rivers? 1. Narmada 2. Mahanadi 3. Tapti 4. Son Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 90,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Amarkantak Hills is the source of which of the following rivers? 1. Narmada 2. Mahanadi 3. Tapti 4. Son Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 only",
+          "C": "1, 3 and 4 only",
+          "D": "1, 2 and 4 only"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-99",
+      "sha256": "f5edcb1dafcc53f589efde463449cf1b5034ccc3238c0822ec22afdb7b519bef",
+      "value": {
+        "id": "nda-2016-i-99",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "'Sal' tree is a",
+        "sourceTextHash": "833fc778535053b5ff0b71936a4e43c6c75b0b69d63198cffb147aae60700b42",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 99,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "'Sal' tree is a"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 99,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Natural Vegetation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "'Sal' tree is a"
+        ],
+        "options": {
+          "A": "Tropical evergreen tree",
+          "B": "Tropical semi-evergreen tree",
+          "C": "Dry deciduous tree",
+          "D": "Moist deciduous tree"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-107",
+      "sha256": "d018cd8a9bb35896673ec570da242b016f1363b9f691dfa4ac69495f5f6dee91",
+      "value": {
+        "id": "nda-2016-i-107",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Deserts, fertile plains and moderately forested mountains are the characteristic features of which one of the following regions of India?",
+        "sourceTextHash": "1aa54c9448548f6896217ed7b4cebb3787b952a50f5e29502af190a34eb7149c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 107,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Deserts, fertile plains and moderately forested mountains are the characteristic features of which one of the following regions of India?"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 107,
+        "subject": "Geography",
+        "topic": "Coastal & Island Geography",
+        "subtopic": "Coasts & Islands",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Deserts, fertile plains and moderately forested mountains are the characteristic features of which one of the following regions of India?"
+        ],
+        "options": {
+          "A": "South-Western border along Arabian Sea",
+          "B": "Coromandel Coast",
+          "C": "North-Eastern Frontier",
+          "D": "North-Western India"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-113",
+      "sha256": "ad2e5339276bb4005ea112ef4e9ce3904576403ad28621d71b5b900fcf2fda25",
+      "value": {
+        "id": "nda-2016-i-113",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In Thar region, the shifting sand dunes are locally known as",
+        "sourceTextHash": "c236ec84ae58669ad312b42953ac5d792662f5417b195b7fad4d1e74103df2f0",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 113,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "In Thar region, the shifting sand dunes are locally known as"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 113,
+        "subject": "Geography",
+        "topic": "Physiography & Relief",
+        "subtopic": "Desert Landforms",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In Thar region, the shifting sand dunes are locally known as"
+        ],
+        "options": {
+          "A": "Dhrian",
+          "B": "Daurs",
+          "C": "Dhoros",
+          "D": "Dhaya"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-116",
+      "sha256": "58f929ac4ea3891993cf525310771f512eba2393acfab2a21db7c86f2e46500b",
+      "value": {
+        "id": "nda-2016-i-116",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following pairs is/are correctly matched? (National Park) (Famous for) 1. Ranthambhore: Tiger 2. Periyar: Elephant 3. Manas: Lion 4. Gir: Rhinoceros Select the correct answer using the code given below:",
+        "sourceTextHash": "80834a04eb6b1ac38589cb1ff3f8f9024e1a5aa43d19fb8fe438bdefc0bbbc19",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 116,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Which of the following pairs is/are correctly matched? (National Park) (Famous for) 1. Ranthambhore: Tiger 2. Periyar: Elephant 3. Manas: Lion 4. Gir: Rhinoceros Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 116,
+        "subject": "Geography",
+        "topic": "Biodiversity & Protected Areas",
+        "subtopic": "National Parks & Wildlife",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following pairs is/are correctly matched? (National Park) (Famous for) 1. Ranthambhore: Tiger 2. Periyar: Elephant 3. Manas: Lion 4. Gir: Rhinoceros Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "1, 2 and 3 only",
+          "B": "1 and 2 only.",
+          "C": "1 and 4 only",
+          "D": "2 only"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-119",
+      "sha256": "c332d687dc46141a4b177a7de9d292ddac4a5eb43133ade29563899d1c6711d4",
+      "value": {
+        "id": "nda-2016-i-119",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Jelep La pass is located in",
+        "sourceTextHash": "03e5d7714f3f5bfb4031678976235ce404f2ae0f0ce0bbb73c97bd2891e7eea7",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 119,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Jelep La pass is located in"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 119,
+        "subject": "Geography",
+        "topic": "Physiography & Relief",
+        "subtopic": "Himalayan Passes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Jelep La pass is located in"
+        ],
+        "options": {
+          "A": "Punjab Himalaya",
+          "B": "Sikkim Himalaya",
+          "C": "Kumaon Himalaya",
+          "D": "Kashmir Himalaya"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-84",
+      "sha256": "70ba5630f5b3ddab5ce9eda13e5db0afe4aa588ddd5e6090aba65fbcbb55fe37",
+      "value": {
+        "id": "nda-2016-i-84",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is not an international boundary line?",
+        "sourceTextHash": "f57dcf11f38e158686ec08eacfa016a0df0b4265b60af39bfe93498062db7263",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 84,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Which one of the following is not an international boundary line?"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 84,
+        "subject": "Geography",
+        "topic": "Political Geography",
+        "subtopic": "International Boundaries",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is not an international boundary line?"
+        ],
+        "options": {
+          "A": "Dresden Line",
+          "B": "Durand Line",
+          "C": "Maginot Line",
+          "D": "38th Parallel"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-54",
+      "sha256": "74d4dd98d1630bb3d574983134191c3f955ae25f599e82b3554bd36aaf9fcb6b",
+      "value": {
+        "id": "nda-2016-i-54",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I: Plantation farming has mostly been practised in humid tropics. Statement II: The soil of humid tropics is highly fertile.",
+        "sourceTextHash": "ab33524284a7b3a1a088ced38dd200cdff08a6fb533bc8bfdd7c1cf4713dfb0f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 54,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Statement I: Plantation farming has mostly been practised in humid tropics. Statement II: The soil of humid tropics is highly fertile."
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 54,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Oilfields & Refineries",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I: Plantation farming has mostly been practised in humid tropics.",
+          "Statement II: The soil of humid tropics is highly fertile."
+        ],
+        "options": {
+          "A": "Both the Statements are individually true and Statement II is the correct explanation of Statement I.",
+          "B": "Both the Statements are individually true but Statement II is not the correct explanation of Statement I.",
+          "C": "Statement I is true but Statement II is false.",
+          "D": "Statement I is false but Statement II is true."
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-106",
+      "sha256": "96f114af3bdd7f7cccfd70a0ab46c96c5e09ceb4e9df16dd72e622b68b61dbf2",
+      "value": {
+        "id": "nda-2016-i-106",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Areas which are engines for economic growth supported by quality infrastructure and complemented by an attractive fiscal package are known as",
+        "sourceTextHash": "6b07754139a32eab6e252456c63b9e82e0e1916271f8d4e84755da53377fc013",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 106,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Areas which are engines for economic growth supported by quality infrastructure and complemented by an attractive fiscal package are known as"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 106,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Ports",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Areas which are engines for economic growth supported by quality infrastructure and complemented by an attractive fiscal package are known as"
+        ],
+        "options": {
+          "A": "Export Processing Zones",
+          "B": "Duty Free Tariff Zones",
+          "C": "Special Economic Zones",
+          "D": "Technology Parks"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-138",
+      "sha256": "8aba7a170646c93322fb3e0d95e35f7a50e8224060c928465d31628cb14b2cae",
+      "value": {
+        "id": "nda-2016-i-138",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "After a ban on unscientific coal mining and transportation of coal in this region by the National Green Tribunal, many of those engaged in the activity have been switching to turmeric farming for their livelihood. The region referred above is",
+        "sourceTextHash": "143f5831734b04e380e5152f5a748a817b5a8aaebe42b86b522f18af5340ef4c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 138,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "After a ban on unscientific coal mining and transportation of coal in this region by the National Green Tribunal, many of those engaged in the activity have been switching to turmeric farming for their livelihood. The region referred above is"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 138,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Coalfields",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "After a ban on unscientific coal mining and transportation of coal in this region by the National Green Tribunal, many of those engaged in the activity have been switching to turmeric farming for their livelihood. The region referred above is"
+        ],
+        "options": {
+          "A": "Jaintia Hills, Meghalaya",
+          "B": "Koriya, Chhattisgarh",
+          "C": "Angul, Odisha",
+          "D": "Bardhaman, West Bengal"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-55",
+      "sha256": "434c8d66495cab52357629859d4620eca3045a3af871c9a9a03dd24468cb85b6",
+      "value": {
+        "id": "nda-2016-i-55",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I: India has wide variation in population density. Statement II: Factors like agricultural productivity and history of settlements have greatly influenced the population density pattern in India.",
+        "sourceTextHash": "4e951c551530e447e0f2142da070eadf05d5f11e667a4ada308e7cf1bf807d61",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 55,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Statement I: India has wide variation in population density. Statement II: Factors like agricultural productivity and history of settlements have greatly influenced the population density pattern in India."
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 55,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I: India has wide variation in population density.",
+          "Statement II: Factors like agricultural productivity and history of settlements have greatly influenced the population density pattern in India."
+        ],
+        "options": {
+          "A": "Both the Statements are individually true and Statement II is the correct explanation of Statement I.",
+          "B": "Both the Statements are individually true but Statement II is not the correct explanation of Statement I.",
+          "C": "Statement I is true but Statement II is false.",
+          "D": "Statement I is false but Statement II is true."
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2016-i-61",
+      "sha256": "2b22b9842a4aa7d7bebec0f552b82f49954dcc2b5f956a0d9d4fcdacd0b092ff",
+      "value": {
+        "id": "nda-2016-i-61",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Arrange the following centres of AIIMS from East to West: 1. Rishikesh 2. New Delhi 3. Patna 4. Bhubaneswar Select the correct answer using the code given below:",
+        "sourceTextHash": "f28e93793ca149482aef72931ffd168b1927289d1b06a336b5b8d2ae052a7670",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2016,
+          "paper": "I",
+          "questionNumber": 61,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://cdn-images.prepp.in/public/image/201701311485862125ANSKEY_GAT_NDA_I_2016_fba106934fe0f50350433d64d79486ff.pdf",
+          "rawQuestionText": "Arrange the following centres of AIIMS from East to West: 1. Rishikesh 2. New Delhi 3. Patna 4. Bhubaneswar Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2016,
+        "paper": "I",
+        "questionNumber": 61,
+        "subject": "Geography",
+        "topic": "Human Development & Services",
+        "subtopic": "Service Centres",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Arrange the following centres of AIIMS from East to West: 1. Rishikesh 2. New Delhi 3. Patna 4. Bhubaneswar Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "4-3-1-2",
+          "B": "4-1-3-2",
+          "C": "3-4-2-1",
+          "D": "3-2-1-4."
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

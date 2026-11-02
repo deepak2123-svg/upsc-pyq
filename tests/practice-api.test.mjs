@@ -67,7 +67,7 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 2385); // Complete reviewed NDA papers add only CSE-applicable GS records; English and school Science stay preparation-only.
+  assert.equal(data.totalCount, 2412); // Complete reviewed NDA papers add only CSE-applicable GS records; English and school Science stay preparation-only.
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);
@@ -78,9 +78,12 @@ test("multi-placement inventory conserves every unique parent and examination co
   const latestPaper={questions:[...JSON.parse(await readFile(new URL('../content/nda-2017-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2018-i-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2018-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2019-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2021-i-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2021-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2022-i-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2022-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-i-official-paper.json',import.meta.url),'utf8')).questions]};
   latestPaper.questions.unshift(...JSON.parse(await readFile(new URL('../content/nda-2017-i-official-paper.json',import.meta.url),'utf8')).questions);
   latestPaper.questions.unshift(...JSON.parse(await readFile(new URL('../content/nda-2016-ii-official-paper.json',import.meta.url),'utf8')).questions);
+  latestPaper.questions.unshift(...JSON.parse(await readFile(new URL('../content/nda-2016-i-official-paper.json',import.meta.url),'utf8')).questions);
   // The reviewed paper overlay supersedes old placements (not raw records).
   // Q79 geological eras and Q124 Indian soils leave their former Physical homes.
   for(const q of latestPaper.questions){expectedPhysical.delete(q.id);if(questionEligible(q.id)&&[{subject:q.subject,head:q.taxonomyHead},...q.additionalPaths].some(p=>p.subject==='Geography'&&p.head==='Physical Geography'))expectedPhysical.add(q.id);}
+  expectedPhysical.add('nda-2016-i-70');
+  expectedPhysical.add('nda-2016-i-86');
   assert.equal(byId.get(physical).questionCount, expectedPhysical.size);
   // Other Geography shrinks when reviewed records receive precise subject homes.
   // Its exact count, like every parent, is checked against unique leaf IDs below.
@@ -650,7 +653,7 @@ test("V3 topic and leaf snapshots match exact scoped inventories", async () => {
   // A historical V3 draft must use the frozen pre-expansion source masks,
   // not newly added examination sources from the live V4 catalogue.
   const data = JSON.parse(await readFile(new URL('../content/taxonomy/prelims-legacy-inventory.json',import.meta.url),'utf8')).inventory;
-  for (const [topicId, expected] of [[firstPhysicalChapter, 28], [otherGeomorphology, 7]]) {
+  for (const [topicId, expected] of [[firstPhysicalChapter, 27], [otherGeomorphology, 7]]) {
     const paths = pathsFor(data.nodes.filter((node) => node.kind === "subtopic" && node.parentId === topicId));
     const { response, body } = await create(recipeFor(paths));
     assert.equal(response.status, 201);
@@ -676,7 +679,7 @@ test("matchingCount remains the full pool when sampling or narrowing exam source
   const legacy = JSON.parse(await readFile(new URL('../content/taxonomy/prelims-legacy-inventory.json',import.meta.url),'utf8')).inventory;
   const sampled = await create(recipeFor(pathsFor(legacy.nodes.filter((node) => node.parentId === firstPhysicalChapter)), { count: 20 }));
   assert.equal(sampled.response.status, 201);
-  assert.equal(sampled.body.matchingCount, 28);
+  assert.equal(sampled.body.matchingCount, 27);
   assert.equal(sampled.body.questions.length, 20);
   const cse = await create(recipeFor([{ subtopicId: planets, exams: ["CSE"] }]));
   assert.equal(cse.response.status, 201);

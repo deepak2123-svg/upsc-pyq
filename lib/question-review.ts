@@ -7,6 +7,7 @@ import officialNdaPolicy from '../content/nda-2026-i-official-review-policy.json
 import officialNdaIIPolicy from '../content/nda-2026-ii-official-review-policy.json' with {type:'json'};
 import officialNdaIIMathematicsPolicy from '../content/nda-2026-ii-mathematics-official-review-policy.json' with {type:'json'};
 import officialNda2017IPolicy from '../content/nda-2017-i-official-review-policy.json' with {type:'json'};
+import officialNda2016IPolicy from '../content/nda-2016-i-official-review-policy.json' with {type:'json'};
 import officialNda2016IIPolicy from '../content/nda-2016-ii-official-review-policy.json' with {type:'json'};
 import officialNda2025IIPolicy from '../content/nda-2025-ii-official-review-policy.json' with {type:'json'};
 import officialNda2025IPolicy from '../content/nda-2025-i-official-review-policy.json' with {type:'json'};
@@ -29,7 +30,7 @@ export type QuestionReview = {
   status: string; revision: number; contentRevision: number;
   sourceCorrection?: {exam:string;year:number;paper:string;questionNumber:number};
 };
-const officialPolicies={...officialNdaPolicy,...officialNdaIIPolicy,...officialNdaIIMathematicsPolicy,...officialNda2025IIPolicy,...officialNda2025IPolicy,...reviewedNda2024IIPolicy,...officialNda2024IPolicy,...officialNda2023IIPolicy,...officialNda2023IPolicy,...officialNda2022IIPolicy,...officialNda2022IPolicy,...officialNda2021IIPolicy,...officialNda2021IPolicy,...officialNda2020CombinedPolicy,...officialNda2019IIPolicy,...officialNda2019IPolicy,...officialNda2018IIPolicy,...officialNda2018IPolicy,...officialNda2017IIPolicy,...officialNda2017IPolicy,...officialNda2016IIPolicy};
+const officialPolicies={...officialNdaPolicy,...officialNdaIIPolicy,...officialNdaIIMathematicsPolicy,...officialNda2025IIPolicy,...officialNda2025IPolicy,...reviewedNda2024IIPolicy,...officialNda2024IPolicy,...officialNda2023IIPolicy,...officialNda2023IPolicy,...officialNda2022IIPolicy,...officialNda2022IPolicy,...officialNda2021IIPolicy,...officialNda2021IPolicy,...officialNda2020CombinedPolicy,...officialNda2019IIPolicy,...officialNda2019IPolicy,...officialNda2018IIPolicy,...officialNda2018IPolicy,...officialNda2017IIPolicy,...officialNda2017IPolicy,...officialNda2016IPolicy,...officialNda2016IIPolicy};
 const records: Readonly<Record<string, QuestionReview>> = { ...policy, ...importPolicy, ...aliasPolicy, ...materialRepairPolicy, ...officialPolicies };
 const cleared = new Set(['official-final', 'official-provisional', 'reasoned-verified']);
 export function questionReview(id: string) { return records[id]; }
