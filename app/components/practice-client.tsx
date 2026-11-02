@@ -274,7 +274,6 @@ export function PracticeClient({ id }: { id: string }) {
   const timerValue = isTimed && attempt.status !== "completed" ? clock.remainingSeconds! : clock.elapsedSeconds;
   const prompt = formatPracticePrompt(question.promptLines);
   const sourceLabel = `${question.exam} · ${question.paper} · ${question.year}`;
-  const fullSourcePaper = 'version' in attempt.snapshot.recipe && attempt.snapshot.recipe.version===4 && Boolean(attempt.snapshot.recipe.sourcePaperId);
   return (
     <main className="practice-shell exam-experience">
       <header className="practice-topbar">
@@ -292,7 +291,7 @@ export function PracticeClient({ id }: { id: string }) {
           <div className="question-copy">
             <div className="question-paper">
               <PracticePromptView blocks={prompt} className="practice-prompt" figure={question.figure} underlined={question.underlined} />
-              <p className="question-origin"><span style={{ background: PYQ_EXAM_COLORS[question.exam] }} />First appeared: <strong>{sourceLabel}</strong>{fullSourcePaper?null:<> · Question {question.questionNumber}</>}</p>
+              <p className="question-origin"><span style={{ background: PYQ_EXAM_COLORS[question.exam] }} />First appeared: <strong>{sourceLabel}</strong></p>
               {questionCorrectionNotice(question) && <p className="question-origin">{questionCorrectionNotice(question)}</p>}
             </div>
             <div className="practice-choice-panel">

@@ -61,7 +61,7 @@ export default async function PastPaperPage({params}:{params:Promise<{slug:strin
   const leaves=inventory.nodes.filter(node=>node.kind==='subtopic'&&node.questionIdsByExam?.NDA.some(id=>wanted.has(id)));
   const covered=new Set(leaves.flatMap(node=>node.questionIdsByExam!.NDA.filter(id=>wanted.has(id))));
   if(covered.size!==wanted.size)throw new Error(`Incomplete ${paper.title}: ${label}, ${covered.size}/${wanted.size}`);
-  const recipe:PracticeRecipeV4={version:4,preparationExam:'NDA',...(!scope?{sourcePaperId:paper.data.paperId}:{}),taxonomyVersion:inventory.taxonomyVersion,subjectIds:[...new Set(leaves.map(node=>node.subjectId))],paths:leaves.map(node=>({subtopicId:node.id,exams:['NDA']})),frozenScopes:leaves.map(node=>({id:node.id,subjectId:node.subjectId,label:node.label,parentId:node.parentId,order:node.order,questionIdsByExam:{CSE:[],CAPF:[],CDS:[],NDA:node.questionIdsByExam!.NDA.filter(id=>wanted.has(id))}})),count:'all',order:'newest',durationMinutes:150};
+  const recipe:PracticeRecipeV4={version:4,preparationExam:'NDA',taxonomyVersion:inventory.taxonomyVersion,subjectIds:[...new Set(leaves.map(node=>node.subjectId))],paths:leaves.map(node=>({subtopicId:node.id,exams:['NDA']})),frozenScopes:leaves.map(node=>({id:node.id,subjectId:node.subjectId,label:node.label,parentId:node.parentId,order:node.order,questionIdsByExam:{CSE:[],CAPF:[],CDS:[],NDA:node.questionIdsByExam!.NDA.filter(id=>wanted.has(id))}})),count:'all',order:'newest',durationMinutes:150};
   return [{label:label!,count:wanted.size,recipe}];
  });
  const evidence=paper.data.evidence;

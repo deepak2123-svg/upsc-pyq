@@ -43,7 +43,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Choose a supported practice recipe version." }, { status: 400 });
   }
   if(input.frozenScopes!==undefined&&input.version!==4)return NextResponse.json({error:'Exact question membership requires a V4 recipe.'},{status:400});
-  if(input.sourcePaperId!==undefined&&(input.version!==4||typeof input.sourcePaperId!=='string'||!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(input.sourcePaperId)))return NextResponse.json({error:'Choose a valid source paper.'},{status:400});
 
   const strict = input.version === 3 || input.version === 4;
   if (strict && input.count !== "all" && (typeof input.count !== "number" || !Number.isInteger(input.count) || input.count < 1 || input.count > 5000)) {
@@ -184,7 +183,7 @@ export async function POST(request: Request) {
       exams: PYQ_EXAMS.filter((exam) => exams.has(exam)),
     }));
     recipe = strict
-      ? { version: input.version === 4 ? 4 : 3, ...(input.version===4?{taxonomyVersion:inventory.taxonomyVersion,...(preparationExam?{preparationExam}:{}),...(input.frozenScopes!==undefined?{frozenScopes}:{}),...(typeof input.sourcePaperId==='string'?{sourcePaperId:input.sourcePaperId}:{})}:{}), subjectIds, paths, count: requestedCount, order, durationMinutes: typeof input.durationMinutes === "number" ? input.durationMinutes : null } satisfies PracticeRecipeV3 | PracticeRecipeV4
+      ? { version: input.version === 4 ? 4 : 3, ...(input.version===4?{taxonomyVersion:inventory.taxonomyVersion,...(preparationExam?{preparationExam}:{}),...(input.frozenScopes!==undefined?{frozenScopes}:{} )}:{}), subjectIds, paths, count: requestedCount, order, durationMinutes: typeof input.durationMinutes === "number" ? input.durationMinutes : null } satisfies PracticeRecipeV3 | PracticeRecipeV4
       : { version: 2, subjectIds, paths, count: requestedCount, order } satisfies PracticeRecipeV2;
   } else {
     if (!isPyqExam(input.exam)) return NextResponse.json({ error: "Choose a valid examination." }, { status: 400 });
