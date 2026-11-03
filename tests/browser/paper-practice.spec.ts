@@ -6,6 +6,7 @@ test('whole-paper practice keeps term and subject selections exact',async({page}
  await expect(page.locator('.source-year-matrix')).toHaveCount(0);
  await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Practice Papers'}).click();
  await expect(page).toHaveURL('/papers');
+ await expect(page.getByRole('button',{name:'2026',exact:true})).toBeVisible();
  await expect(page.getByRole('button',{name:'NDA II · Mathematics 2026, 120 questions, not selected'})).toBeVisible();
  expect(errors).toEqual([]);
  await page.getByRole('button',{name:'NDA II · Mathematics 2026, 120 questions, not selected'}).click();
