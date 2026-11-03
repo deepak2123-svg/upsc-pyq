@@ -9,6 +9,7 @@ test('whole-paper practice keeps term and subject selections exact',async({page}
  await expect(page.getByRole('button',{name:'2026',exact:true})).toBeVisible();
  const gridBox=await page.locator('.paper-year-matrix').boundingBox(),cartBox=await page.locator('.paper-selection-bar').boundingBox();
  expect(gridBox&&cartBox&&cartBox.x>=gridBox.x+gridBox.width).toBeTruthy();
+ expect(gridBox?.y).toBeLessThan(320);
  await expect(page.getByRole('button',{name:'NDA II · Mathematics 2026, 120 questions, not selected'})).toBeVisible();
  expect(errors).toEqual([]);
  await page.getByRole('button',{name:'NDA II · Mathematics 2026, 120 questions, not selected'}).click();
