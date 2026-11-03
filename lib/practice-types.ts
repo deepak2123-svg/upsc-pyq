@@ -39,7 +39,7 @@ export type PracticeFrozenScope = {
   order:number;
   questionIdsByExam:Record<PyqExam,string[]>;
 };
-export type PracticeRecipeV4 = Omit<PracticeRecipeV3, 'version'> & { version: 4; taxonomyVersion?:string; frozenScopes?:PracticeFrozenScope[]; preparationExam?: PreparationExam };
+export type PracticeRecipeV4 = Omit<PracticeRecipeV3, 'version'> & { version: 4; taxonomyVersion?:string; frozenScopes?:PracticeFrozenScope[]; preparationExam?: PreparationExam; yearsByExam?: Partial<Record<PyqExam, number[]>> };
 export type PracticeRecipe = LegacyPracticeRecipe | PracticeRecipeV2 | PracticeRecipeV3 | PracticeRecipeV4;
 
 export function isPracticeRecipeV2(recipe: PracticeRecipe): recipe is PracticeRecipeV2 {

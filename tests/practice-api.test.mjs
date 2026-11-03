@@ -691,6 +691,19 @@ test("matchingCount remains the full pool when sampling or narrowing exam source
   assert.equal(unavailableCount.body.available, 2);
 });
 
+test("V4 recipes restrict every selected exam to explicit years", async () => {
+  const data = await inventory();
+  const leaf = data.nodes.find(node => node.kind === "subtopic" && !node.legacyOnly && node.questionIdsByExam.NDA.length > 1);
+  const years = [...new Set(leaf.questionIdsByExam.NDA.map(id => data.questionYearsById[id]))].sort((a,b)=>a-b);
+  const year = years.at(-1);
+  const expected = leaf.questionIdsByExam.NDA.filter(id => data.questionYearsById[id] === year).length;
+  const {response,body}=await create(recipeFor([{subtopicId:leaf.id,exams:["NDA"]}],{version:4,taxonomyVersion:data.taxonomyVersion,subjectIds:[leaf.subjectId],yearsByExam:{NDA:[year]}}));
+  assert.equal(response.status,201);
+  assert.equal(body.matchingCount,expected);
+  assert.ok(body.questions.every(question=>question.exam==="NDA"&&question.year===year));
+  assert.deepEqual(body.recipe.yearsByExam.NDA,[year]);
+});
+
 test("mixed subjects and duplicate paths use a unique union of question records", async () => {
   const data = await inventory();
   const selectedSubjects = [geo, "subject:environment"];

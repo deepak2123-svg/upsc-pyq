@@ -5,7 +5,7 @@ import Link from "next/link";
 import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
 
 export type SourcePaper = { exam: PyqExam; year: number; paper: string; count: number; complete: boolean; provisional: boolean; practiceHref?:string; reviewNote?:string; expected?:number; keyLabel?:string; heldNumbers?:number[]; withdrawnNumbers?:number[]; sectionSummary?:string; numberSeries?:string };
-const PAGE_SIZE = 12;
+const PAGE_SIZE = 50;
 const subscribeToReadiness = () => () => {};
 const clientReady = () => true;
 const serverReady = () => false;

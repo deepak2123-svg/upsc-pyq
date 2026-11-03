@@ -4,10 +4,10 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition, type CSSProperties } from "react";
 import { useRouter } from "next/navigation";
 import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
-import type { SubjectPracticeInventory } from "../../lib/pyq-catalog";
+import type { PracticeInventoryNode, SubjectPracticeInventory } from "../../lib/pyq-catalog";
 import type { PracticeOrder, PracticeRecipeV3, PracticeRecipeV4, PracticeSnapshot } from "../../lib/practice-types";
 import { createLocalAttempt } from "../../lib/practice-store";
-import { addScope, ancestors, buildSelectionIndex, removeScope, restoreVersionedPaths, scopeDisplayNumber, selectedScopeIds, selectionCounts, setScopeExam, type SelectionPaths } from "../../lib/practice-selection";
+import { addScope, ancestors, buildSelectionIndex, removeScope, restoreVersionedPaths, scopeDisplayNumber, selectedScopeIds, selectionCounts, selectionCountsByYears, setScopeExam, type SelectionPaths } from "../../lib/practice-selection";
 import {coalesceCoveredDraftScopes,freezeSelectionMembership,restoreFrozenSelection} from '../../lib/practice-draft-membership';
 import { ScopeFlow } from "./scope-flow";
 import { SyllabusNavigation } from "./syllabus-navigation";
@@ -17,11 +17,12 @@ import {PreparationSelector} from './preparation-selector';
 const COUNTS = [10, 20, 30, 50] as const;
 const DURATIONS = [10, 20, 30, 60, 120] as const;
 const format = (value: number) => value.toLocaleString("en-IN");
+type YearsByExam = Record<PyqExam, number[]>;
 
-function SourceChoice({ exam, state, count, available, disabled, onChange }: { exam: PyqExam; state: "none" | "partial" | "all"; count: number; available: number; disabled: boolean; onChange: () => void }) {
-  return <button type="button" aria-pressed={state !== "none"} title={`${exam}: ${format(available)} available in added parts`} disabled={disabled} className={"scope-source " + state} style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} onClick={onChange}>
-    <i className="source-chip-dot" aria-hidden="true" /><span>{exam}</span><strong>{format(state === "none" ? 0 : count)}</strong>
-  </button>;
+function SourceYearMatrix({ years, selected, counts, disabled, onCell, onExam, onYear, onQuick }: { years:number[]; selected:YearsByExam; counts:Record<PyqExam,Record<number,number>>; disabled:boolean; onCell:(exam:PyqExam,year:number,enabled:boolean)=>void; onExam:(exam:PyqExam)=>void; onYear:(year:number)=>void; onQuick:(mode:"all"|"five"|"ten"|"clear")=>void }) {
+  const paint=useRef<{enabled:boolean;active:boolean}>({enabled:false,active:false});
+  useEffect(()=>{const stop=()=>{paint.current.active=false;};window.addEventListener("pointerup",stop);return()=>window.removeEventListener("pointerup",stop);},[]);
+  return <section className="source-year-matrix" aria-labelledby="source-year-title"><div className="source-year-heading"><div><h3 id="source-year-title">Exams and years</h3><p>Choose whole rows or individual years.</p></div><div className="source-year-quick" aria-label="Quick year selections"><span>Quick</span><button type="button" onClick={()=>onQuick("all")}>All</button><button type="button" onClick={()=>onQuick("five")}>Last 5</button><button type="button" onClick={()=>onQuick("ten")}>Last 10</button><button type="button" onClick={()=>onQuick("clear")}>Clear</button></div></div><div className="source-year-scroll" role="region" aria-label="Exam and year selection grid"><div className="source-year-grid" style={{"--year-columns":years.length} as CSSProperties}><span className="source-year-corner" />{years.map(year=><button type="button" className="source-year-column" key={year} disabled={disabled} aria-label={`Toggle ${year} for every exam`} onClick={()=>onYear(year)}>{String(year).slice(-2)}</button>)}{PYQ_EXAMS.map(exam=><div className="source-year-row" key={exam} style={{"--exam-color":PYQ_EXAM_COLORS[exam]} as CSSProperties}><button type="button" className="source-year-exam" disabled={disabled} aria-pressed={selected[exam].length>0} onClick={()=>onExam(exam)}><i aria-hidden="true">✓</i><strong>{exam}</strong></button>{years.map(year=>{const active=selected[exam].includes(year),count=counts[exam][year]||0;return <button type="button" key={year} className="source-year-cell" disabled={disabled||count===0} aria-pressed={active&&count>0} aria-label={`${exam} ${year}, ${format(count)} questions, ${active?"included":"excluded"}`} onPointerDown={event=>{if(event.pointerType!=="mouse"||event.button===0){paint.current={active:true,enabled:!active};onCell(exam,year,!active);}}} onPointerEnter={()=>{if(paint.current.active)onCell(exam,year,paint.current.enabled);}} onClick={event=>{if(event.detail===0)onCell(exam,year,!active);}}>{format(count)}</button>})}</div>)}</div></div></section>;
 }
 
 function PracticeSetupDialog({ matchingCount, examMetrics, count, order, durationChoice, customMinutes, includeAnswerKey, shortage, validDuration, loading, exporting, canStart, error, onExam, onCount, onOrder, onDuration, onCustomMinutes, onIncludeAnswerKey, onUseAll, onStart, onExport, onCancel }: {
@@ -79,6 +80,11 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const [focusId, setFocusId] = useState<string>();
   const [expandedIds, setExpandedIds] = useState<string[]>([]);
   const [enabledExams, setEnabledExams] = useState<PyqExam[]>(preparationExam ? [preparationExam] : initialExam ? [initialExam] : [...PYQ_EXAMS]);
+  const availableYearsByExam=useMemo(()=>Object.fromEntries(PYQ_EXAMS.map(exam=>{
+    const ids=new Set(initialInventory.nodes.filter(node=>node.kind==="subtopic").flatMap(node=>node.questionIdsByExam?.[exam]||[]));
+    return [exam,[...new Set([...ids].map(id=>initialInventory.questionYearsById[id]).filter(Number.isInteger))].sort((a,b)=>a-b)];
+  })) as YearsByExam,[initialInventory]);
+  const [selectedYearsByExam,setSelectedYearsByExam]=useState<YearsByExam>(()=>Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,(!preparationExam&&!initialExam||exam===(preparationExam||initialExam))?[...availableYearsByExam[exam]]:[]])) as YearsByExam);
   const [count, setCount] = useState<number | "all" | null>(null);
   const [order, setOrder] = useState<PracticeOrder>("newest");
   const [durationChoice, setDurationChoice] = useState("untimed");
@@ -159,6 +165,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
           }
           if (draft.version >= 4 && (draft.count === "all" || Number.isInteger(draft.count) && draft.count > 0 && draft.count <= 5000)) setCount(draft.count);
           if (draft.order === "newest" || draft.order === "shuffle") setOrder(draft.order);
+          if(draft.yearsByExam&&typeof draft.yearsByExam==="object")setSelectedYearsByExam(Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,availableYearsByExam[exam].filter(year=>Array.isArray(draft.yearsByExam[exam])&&draft.yearsByExam[exam].includes(year))])) as YearsByExam);
           if (Number.isInteger(draft.durationMinutes) && draft.durationMinutes >= 1 && draft.durationMinutes <= 720) {
             const savedMinutes = String(draft.durationMinutes);
             setDurationChoice(DURATIONS.some((minutes) => minutes === draft.durationMinutes) ? savedMinutes : "custom");
@@ -181,7 +188,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     setFocusId(locationId);
     setExpandedIds(locationId?ancestors(locationId,baseIndex).map(node=>node.id):[]);
     setRestored(true);
-  }, [draftKey, initialInventory, baseIndex, initialExam, views, defaultView, preparationExam]);
+  }, [draftKey, initialInventory, baseIndex, initialExam, views, defaultView, preparationExam, availableYearsByExam]);
   useEffect(() => {
     if (!restored) return;
     const url = new URL(window.location.href);
@@ -206,9 +213,9 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   useEffect(() => {
     if (!restored) return;
     const minutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
-    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 6, viewId, inventoryVersion: initialInventory.version, taxonomyVersion:initialInventory.taxonomyVersion, frozenScopes:frozenMembership, paths, focusId, expandedIds, enabledExams, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
-  }, [restored, draftKey, viewId, initialInventory.version, initialInventory.taxonomyVersion, frozenMembership, paths, focusId, expandedIds, enabledExams, count, order, durationChoice, customMinutes]);
-  const totals = useMemo(() => selectionCounts(paths, index), [paths, index]);
+    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 6, viewId, inventoryVersion: initialInventory.version, taxonomyVersion:initialInventory.taxonomyVersion, frozenScopes:frozenMembership, paths, focusId, expandedIds, enabledExams, yearsByExam:selectedYearsByExam, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
+  }, [restored, draftKey, viewId, initialInventory.version, initialInventory.taxonomyVersion, frozenMembership, paths, focusId, expandedIds, enabledExams, selectedYearsByExam, count, order, durationChoice, customMinutes]);
+  const totals = useMemo(() => selectionCountsByYears(paths,index,workingInventory.questionYearsById,selectedYearsByExam), [paths,index,workingInventory.questionYearsById,selectedYearsByExam]);
   const selectedIds = useMemo(() => selectedScopeIds(paths, index), [paths, index]);
   const current = focusId ? index.nodesById.get(focusId) : undefined;
   const activeView = (current && views?.find(view => view.subjectIds.includes(current.subjectId))) || views?.find(view => view.id === viewId) || views?.[0];
@@ -221,15 +228,16 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const focusPath = current ? ancestors(current.id, index) : [];
   const hasExplicitSelection = selectedIds.length > 0;
   const summaryPaths = paths;
-  const summaryTotals = useMemo(() => selectionCounts(summaryPaths, index), [summaryPaths, index]);
+  const summaryTotals = useMemo(() => selectionCountsByYears(summaryPaths,index,workingInventory.questionYearsById,selectedYearsByExam), [summaryPaths,index,workingInventory.questionYearsById,selectedYearsByExam]);
   const summaryActionLabel = "Finalise test →";
-  const sourceLeaves = [...index.nodesById.values()].filter((node) => node.kind === "subtopic" && Object.hasOwn(summaryPaths, node.id));
-  const sourceMetrics = Object.fromEntries(PYQ_EXAMS.map((exam) => {
-    const eligible = sourceLeaves.filter((leaf) => leaf.examCounts[exam] > 0);
-    const enabled = eligible.filter((leaf) => summaryPaths[leaf.id]?.includes(exam));
-    const available = selectionCounts(Object.fromEntries(eligible.map(leaf => [leaf.id, [exam]])), index).examTotals[exam];
-    return [exam, { available, count: summaryTotals.examTotals[exam], state: (enabled.length === 0 ? "none" : enabled.length === eligible.length ? "all" : "partial") as "none" | "partial" | "all" }];
-  })) as Record<PyqExam, { available: number; count: number; state: "none" | "partial" | "all" }>;
+  const sourceLeaves = [...index.nodesById.values()].filter((node):node is PracticeInventoryNode => node.kind === "subtopic" && Object.hasOwn(summaryPaths, node.id));
+  const matrixYears=[...new Set(PYQ_EXAMS.flatMap(exam=>availableYearsByExam[exam]))].sort((a,b)=>a-b);
+  const matrixLeaves=sourceLeaves.length?sourceLeaves:[...index.nodesById.values()].filter((node):node is PracticeInventoryNode=>node.kind==="subtopic"&&!node.legacyOnly);
+  const sourceYearCounts=Object.fromEntries(PYQ_EXAMS.map(exam=>{
+    const ids=new Set(matrixLeaves.flatMap(leaf=>sourceLeaves.length&&!summaryPaths[leaf.id]?.includes(exam)?[]:leaf.questionIdsByExam?.[exam]||[]));
+    const counts=Object.fromEntries(matrixYears.map(year=>[year,[...ids].filter(id=>workingInventory.questionYearsById[id]===year).length]));
+    return [exam,counts];
+  })) as Record<PyqExam,Record<number,number>>;
   const allSourceLeaves = [...index.nodesById.values()].filter((node) => node.kind === "subtopic" && Object.hasOwn(paths, node.id));
   const setupSourceMetrics = Object.fromEntries(PYQ_EXAMS.map((exam) => {
     const eligible = allSourceLeaves.filter((leaf) => leaf.examCounts[exam] > 0);
@@ -246,8 +254,31 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     if (loading || !restored) return;
     const enabled = !enabledExams.includes(exam);
     setEnabledExams((existing) => enabled ? [...existing, exam] : existing.filter((item) => item !== exam));
+    setSelectedYearsByExam(existing=>({...existing,[exam]:enabled?[...availableYearsByExam[exam]]:[]}));
     setPaths((existing) => Object.keys(existing).reduce((updated, id) => setScopeExam(updated, id, exam, enabled, index), existing));
     setError(""); setNotice("");
+  }
+  function setYearCell(exam:PyqExam,year:number,enabled:boolean){
+    if(loading||!restored||!availableYearsByExam[exam].includes(year))return;
+    setSelectedYearsByExam(existing=>{
+      const years=enabled?[...new Set([...existing[exam],year])].sort((a,b)=>a-b):existing[exam].filter(value=>value!==year);
+      setEnabledExams(active=>years.length?[...new Set([...active,exam])]:active.filter(value=>value!==exam));
+      return {...existing,[exam]:years};
+    });
+    if(enabled&&!enabledExams.includes(exam))setPaths(existing=>Object.keys(existing).reduce((updated,id)=>setScopeExam(updated,id,exam,true,index),existing));
+    setError("");setNotice("");
+  }
+  function toggleYearColumn(year:number){
+    const eligible=PYQ_EXAMS.filter(exam=>availableYearsByExam[exam].includes(year)&&(!initialExam||exam===initialExam));
+    const enable=eligible.some(exam=>!selectedYearsByExam[exam].includes(year));
+    for(const exam of eligible)setYearCell(exam,year,enable);
+  }
+  function quickYears(mode:"all"|"five"|"ten"|"clear"){
+    const recent=mode==="five"?matrixYears.slice(-5):mode==="ten"?matrixYears.slice(-10):matrixYears;
+    const next=Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,mode==="clear"||initialExam&&exam!==initialExam?[]:availableYearsByExam[exam].filter(year=>recent.includes(year))])) as YearsByExam;
+    setSelectedYearsByExam(next);setEnabledExams(PYQ_EXAMS.filter(exam=>next[exam].length));
+    setPaths(existing=>Object.keys(existing).reduce((updated,id)=>PYQ_EXAMS.reduce((value,exam)=>setScopeExam(value,id,exam,next[exam].length>0,index),updated),existing));
+    setError("");setNotice("");
   }
   function toggleSetupSource(exam: PyqExam) {
     if (exporting) return;
@@ -313,7 +344,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   async function createSnapshot() {
     if (count === null || practiceCount === null) return;
     const enabledPaths=Object.fromEntries(Object.entries(paths).filter(([,exams])=>exams.length));
-    const recipe: PracticeRecipeV3 | PracticeRecipeV4 = { version: initialInventory.version, ...(initialInventory.version===4?{taxonomyVersion:initialInventory.taxonomyVersion,frozenScopes:freezeSelectionMembership(enabledPaths,index), ...(preparationExam ? {preparationExam} : {})}:{}), subjectIds: totals.subjectIds, paths: Object.entries(enabledPaths).map(([subtopicId, exams]) => ({ subtopicId, exams: [...exams] })), count, order, durationMinutes };
+    const recipe: PracticeRecipeV3 | PracticeRecipeV4 = { version: initialInventory.version, ...(initialInventory.version===4?{taxonomyVersion:initialInventory.taxonomyVersion,frozenScopes:freezeSelectionMembership(enabledPaths,index),yearsByExam:selectedYearsByExam, ...(preparationExam ? {preparationExam} : {})}:{}), subjectIds: totals.subjectIds, paths: Object.entries(enabledPaths).map(([subtopicId, exams]) => ({ subtopicId, exams: [...exams] })), count, order, durationMinutes };
     const response = await fetch("/api/practice-snapshots", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(recipe) });
     const snapshot = await response.json() as PracticeSnapshot & { error?: string };
     if (!response.ok) throw new Error(snapshot.error || "The paper could not be prepared. Please try again.");
@@ -350,6 +381,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading||switching}>
     <PreparationSelector exam={preparationExam} views={views} activeView={activeView} pendingExam={switching?requestedExam:undefined} onPrefetchExam={prefetchExam} disabled={!restored || loading || exporting || switching} onExam={exam=>{setRequestedExam(exam);startExamTransition(()=>router.push(`/prepare/${exam}`));}} onView={changeView}/>
     <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{preparationExam ? `${preparationExam} question library` : initialExam ? `${initialExam} question library` : "Question library"}</h1></div></header>
+    <SourceYearMatrix years={matrixYears} selected={selectedYearsByExam} counts={sourceYearCounts} disabled={loading||!restored} onCell={setYearCell} onExam={toggleSource} onYear={toggleYearColumn} onQuick={quickYears} />
     <div className={`scope-library-layout explorer-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
       <h2 className="library-column-label library-column-label-left">Library</h2>
       <h2 className="library-column-label library-column-label-middle">{current ? ({subject:"Sections",head:"Chapters",topic:"Subparts",subtopic:"Subpart"} as const)[current.kind] : "Subjects"}</h2>
@@ -371,12 +403,11 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       <aside ref={testDrawer} className="selection-dock scope-dock scope-test-summary" data-mobile-open={testPanelOpen} role={testPanelOpen ? "dialog" : undefined} aria-modal={testPanelOpen || undefined} aria-labelledby="practice-summary-title">
         <div className="scope-dock-body"><div className="explorer-test-heading"><button type="button" className="explorer-drawer-close" onClick={() => setTestPanelOpen(false)}>Close ×</button>{hasExplicitSelection ? <button type="button" className="explorer-clear" disabled={loading} onClick={clearSelection}>Clear all</button> : null}</div>
           <div className="scope-test-context" data-testid="test-scope-label"><strong>{hasExplicitSelection ? `${selectedIds.length} added ${selectedIds.length === 1 ? "part" : "parts"}` : "No questions added"}</strong></div>
-          <section className="scope-sources explorer-sources" aria-labelledby="scope-sources-title"><h3 className="visually-hidden" id="scope-sources-title">Exam sources</h3><div className="scope-source-grid">{PYQ_EXAMS.map((exam) => <SourceChoice key={exam} exam={exam} count={sourceMetrics[exam].count} available={sourceMetrics[exam].available} state={enabledExams.includes(exam) ? "all" : "none"} disabled={loading || !restored || !!initialExam && initialExam !== exam} onChange={() => toggleSource(exam)} />)}</div></section>
           {hasExplicitSelection ? <ul className="explorer-test-items">{selectedIds.map((id) => {
             const node = index.nodesById.get(id)!;
             const context = ancestors(id, index).slice(0, -1).map((parent) => parent.label).join(" › ");
             const leaves = index.leavesById.get(id) || [];
-            const metric = selectionCounts(Object.fromEntries(leaves.filter(leaf => Object.hasOwn(paths, leaf.id)).map(leaf => [leaf.id, paths[leaf.id]])), index);
+            const metric = selectionCountsByYears(Object.fromEntries(leaves.filter(leaf => Object.hasOwn(paths, leaf.id)).map(leaf => [leaf.id, paths[leaf.id]])),index,workingInventory.questionYearsById,selectedYearsByExam);
             return <li key={id}><div><strong>{scopeDisplayNumber(id, index)} {node.label}</strong>{context ? <small className="test-item-path">{context}</small> : null}</div><div className="test-item-actions"><span>{format(metric.matchingCount)} MCQs</span><button type="button" disabled={loading} aria-label={`Remove ${node.label} from test`} onClick={() => remove(id)}>Remove</button></div></li>;
           })}</ul> : null}
           {totals.subjectIds.length > 0 && totals.matchingCount === 0 ? <p className="scope-shortage">No questions match the enabled exam sources. Re-enable a source or choose another scope.</p> : null}

@@ -76,38 +76,26 @@ async function storedAttempt(page: Page, id: string) {
 test.beforeEach(async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "Question library" })).toBeVisible();
-  await page.waitForFunction(() => sessionStorage.getItem("upsc-pyq-builder:v3:all") !== null);
+  await page.waitForFunction(() => Object.keys(sessionStorage).some(key => key.startsWith("upsc-pyq-builder:")));
 });
 
-test("sources live in the test panel with four honest exam colors", async ({ page, request }, testInfo) => {
-  await choose(page, "Geography");
-  await expect(page.locator(".scope-dock .scope-sources")).toHaveCount(1);
-  await expect(page.locator(".scope-workspace .scope-sources")).toHaveCount(1);
+test("exam-year matrix filters counts with honest source colors", async ({ page }, testInfo) => {
+  await page.getByRole("button", { name: "Add to test: Geography", exact:true }).click();
+  const matrix=page.locator('.source-year-matrix');
+  await expect(matrix).toBeVisible();
   await expect(page.locator(".scope-card-grid")).toBeVisible();
   await expect(page.locator(".scope-cards")).not.toContainText("↗");
-  const inventory = await (await request.get("/api/pyqs/inventory")).json();
-  const geo = inventory.subjects.find((subject: { id: string }) => subject.id === GEO);
-  const sourceRail = page.locator(".scope-test-summary .scope-sources");
-  for (const exam of EXAMS) {
-    await expect(sourceRail).toContainText(exam);
-    await expect(sourceRail.getByRole("button", { name: new RegExp(`^${exam}\\b`) })).toHaveAttribute("aria-pressed", "true");
-    const sources = page.locator(`.scope-card-source-counts span[data-exam="${exam}"]`);
-    expect(await sources.count()).toBeGreaterThan(0);
-    const values = await sources.allTextContents();
-    // Shared MCQs can legitimately occur in multiple displayed sections.
-    expect(values.reduce((sum, value) => sum + Number(value.match(/[\d,]+$/)?.[0].replaceAll(",", "") || 0), 0)).toBeGreaterThanOrEqual(geo.examCounts[exam]);
-    for(const card of await page.locator('.scope-card').all()) {
-      const id=await card.getAttribute('data-scope-id');
-      const node=inventory.nodes.find((node:{id:string})=>node.id===id);
-      const value=await card.locator(`.scope-card-source-counts span[data-exam="${exam}"]`).textContent();
-      expect(Number(value?.match(/[\d,]+$/)?.[0].replaceAll(',', '')||0)).toBe(node.examCounts[exam]);
-    }
-    const colors = await sources.locator("i").evaluateAll((dots) => dots.map((dot) => (dot as HTMLElement).style.getPropertyValue("--exam-color")));
-    expect(colors.every((color) => color === COLORS[exam as keyof typeof COLORS])).toBe(true);
+  for (const [examIndex,exam] of EXAMS.entries()) {
+    await expect(matrix.getByRole("button", { name: exam, exact:true })).toHaveAttribute("aria-pressed", exam==="CSE"?"true":"false");
+    const color = await matrix.locator('.source-year-row').nth(examIndex).evaluate(row=>(row as HTMLElement).style.getPropertyValue('--exam-color'));
+    expect(color).toBe(COLORS[exam as keyof typeof COLORS]);
   }
   const cardOrder = await page.locator(".scope-card").evaluateAll((cards) => cards.map((card) => (card as HTMLElement).dataset.scopeId));
-  await sourceRail.getByRole("button", { name: /^NDA\b/ }).click();
-  await expect(page.getByTestId("matching-count").locator("strong")).toHaveText((geo.questionCount - geo.examCounts.NDA).toLocaleString("en-IN"));
+  const before=Number((await page.getByTestId("matching-count").locator("strong").innerText()).replaceAll(',',''));
+  const cseCount=(await matrix.locator('.source-year-row').nth(0).locator('.source-year-cell[aria-pressed=true]:not(:disabled)').allTextContents()).reduce((sum,value)=>sum+Number(value.replaceAll(',','')),0);
+  expect(cseCount).toBe(before);
+  await matrix.getByRole("button", { name: "CSE", exact:true }).click();
+  await expect(page.getByTestId("matching-count").locator("strong")).toHaveText("0");
   expect(await page.locator(".scope-card").evaluateAll((cards) => cards.map((card) => (card as HTMLElement).dataset.scopeId))).toEqual(cardOrder);
   await page.locator(".scope-library-layout").evaluate((layout) => {
     window.scrollTo(0, layout.getBoundingClientRect().top + window.scrollY - 100);
@@ -119,6 +107,12 @@ test("sources live in the test panel with four honest exam colors", async ({ pag
   expect(button!.y + button!.height).toBeLessThanOrEqual(page.viewportSize()!.height + 3);
   await page.locator(".scope-dock-body").evaluate((body) => { body.scrollTop = body.scrollHeight; });
   await expect(setupButton).toBeInViewport();
+  await page.setViewportSize({width:390,height:844});
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  const yearScroll=matrix.getByRole('region',{name:'Exam and year selection grid'});
+  expect(await yearScroll.evaluate(element=>element.scrollWidth>element.clientWidth)).toBe(true);
+  await yearScroll.evaluate(element=>{element.scrollLeft=element.scrollWidth;});
+  await expect(matrix.getByRole('button',{name:'CSE',exact:true})).toBeVisible();
   await page.screenshot({ path: testInfo.outputPath("practice-dock.png"), fullPage: false });
 });
 
@@ -166,6 +160,9 @@ test("test duration defaults to untimed and survives draft reload and snapshot c
   const textSize = page.getByRole("group", { name: "Question text size" });
   await expect(textSize.getByRole("button", { name: "Default question text" })).toHaveAttribute("aria-pressed", "true");
   const defaultSize = await page.locator(".practice-question .practice-prompt").evaluate((element) => parseFloat(getComputedStyle(element).fontSize));
+  expect(defaultSize).toBe(18);
+  await textSize.getByRole("button", { name: "Small question text" }).click();
+  expect(await page.locator(".practice-question .practice-prompt").evaluate((element) => parseFloat(getComputedStyle(element).fontSize))).toBeLessThan(defaultSize);
   await textSize.getByRole("button", { name: "Large question text" }).click();
   expect(await page.locator(".practice-question .practice-prompt").evaluate((element) => parseFloat(getComputedStyle(element).fontSize))).toBeGreaterThan(defaultSize);
   await page.reload();

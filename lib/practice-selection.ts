@@ -199,6 +199,30 @@ export function selectionCounts(paths: SelectionPaths, index: SelectionIndex): {
   };
 }
 
+export function selectionCountsByYears(
+  paths: SelectionPaths,
+  index: SelectionIndex,
+  questionYearsById: Record<string, number>,
+  yearsByExam: Partial<Record<PyqExam, number[]>>,
+) {
+  const allowed = Object.fromEntries(EXAMS.map(exam => [exam, new Set(yearsByExam[exam] || [])])) as Record<PyqExam, Set<number>>;
+  const examTotals = emptyCounts();
+  const idsByExam = Object.fromEntries(EXAMS.map(exam => [exam, new Set<string>()])) as Record<PyqExam, Set<string>>;
+  const subjects = new Set<string>();
+  let leafCount = 0;
+  for (const [id, exams] of Object.entries(paths)) {
+    const leaf = index.nodesById.get(id);
+    if (!leaf || leaf.kind !== "subtopic") continue;
+    subjects.add(leaf.subjectId); leafCount += 1;
+    for (const exam of exams) for (const questionId of leaf.questionIdsByExam?.[exam] || []) {
+      if (allowed[exam].has(questionYearsById[questionId])) idsByExam[exam].add(questionId);
+    }
+  }
+  for (const exam of EXAMS) examTotals[exam] = idsByExam[exam].size;
+  const subjectIds = [...index.nodesById.values()].filter(node => node.kind === "subject" && subjects.has(node.id)).map(node => node.id);
+  return { matchingCount: EXAMS.reduce((sum, exam) => sum + examTotals[exam], 0), examTotals, subjectIds, leafCount };
+}
+
 export function scopeMetrics(scopeId: string, paths: SelectionPaths, index: SelectionIndex): {
   availableCount: number;
   selectedCount: number;

@@ -1527,6 +1527,27 @@ h3 { font-size: 16px; }
 .test-item-exams i { width: 6px; height: 6px; border-radius: 50%; background: var(--exam-color); }
 .scope-test-summary .test-cart-total { display: flex; align-items: baseline; gap: 9px; margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--line); }
 .scope-test-summary .test-cart-total strong { font-size: 32px; }
+.source-year-matrix { margin: 18px 0 24px; padding: 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.source-year-heading { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+.source-year-heading h3 { margin: 0; font-size: 15px; }
+.source-year-heading p { margin: 3px 0 0; color: var(--muted); font-size: 11px; }
+.source-year-quick { display: flex; align-items: center; gap: 5px; }
+.source-year-quick span { color: var(--muted); font-size: 10px; }
+.source-year-quick button { min-height: 30px; padding: 5px 9px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); font-size: 10px; }
+.source-year-scroll { max-width: 100%; overflow-x: auto; padding-bottom: 3px; }
+.source-year-grid { display: grid; grid-template-columns: 118px repeat(var(--year-columns), minmax(58px, 1fr)); gap: 5px; min-width: calc(123px + var(--year-columns) * 63px); }
+.source-year-row { display: contents; }
+.source-year-column { min-height: 30px; border: 0; background: transparent; color: var(--muted); font-size: 11px; font-weight: 650; }
+.source-year-exam, .source-year-cell { min-height: 42px; border: 1px solid color-mix(in srgb, var(--exam-color) 60%, var(--line)); border-radius: 7px; }
+.source-year-exam { display: flex; align-items: center; gap: 8px; padding: 6px 9px; background: color-mix(in srgb, var(--exam-color) 8%, var(--surface)); color: var(--ink); text-align: left; }
+.source-year-exam i { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--exam-color); color: #151923; font-size: 12px; font-style: normal; }
+.source-year-exam strong { font-size: 12px; }
+.source-year-exam[aria-pressed=false] { opacity: .55; background: var(--surface); }
+.source-year-cell { background: color-mix(in srgb, var(--exam-color) 11%, var(--surface)); color: var(--ink); font-size: 11px; font-variant-numeric: tabular-nums; }
+.source-year-cell[aria-pressed=true] { border-color: var(--exam-color); background: color-mix(in srgb, var(--exam-color) 31%, var(--surface)); box-shadow: inset 0 0 0 1px var(--exam-color); }
+.source-year-cell:disabled { opacity: .32; }
+.source-year-cell:focus-visible, .source-year-exam:focus-visible, .source-year-column:focus-visible { outline: 3px solid color-mix(in srgb, var(--exam-color, #2757d3) 30%, white); outline-offset: 1px; }
+@media(max-width:700px) { .source-year-matrix { margin: 12px 0 18px; padding: 12px; } .source-year-heading { align-items: stretch; flex-direction: column; } .source-year-quick { display: grid; grid-template-columns: auto repeat(4,1fr); } .source-year-grid { grid-template-columns: 92px repeat(var(--year-columns),54px); } .source-year-exam { position: sticky; left: 0; z-index: 2; } }
 .explorer-sources.scope-sources { display: grid; gap: 10px; padding: 16px 0 0; margin: 16px 0 0; border: 0; border-top: 1px solid var(--line); border-radius: 0; background: transparent; }
 .explorer-sources .scope-source-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .explorer-sources .scope-source { display: grid; gap: 6px; padding: 10px; border: 1px solid var(--line); border-left: 3px solid var(--exam-color); border-radius: 8px; min-width: 0; background: #fafbfc; }

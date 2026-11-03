@@ -17,10 +17,11 @@ test('compact source directory filters and paginates every paper without inflati
  const available=ids.size;
  await expect(page.locator('article')).toContainText(`${available.toLocaleString('en-IN')} available questions`);
  const rows=page.locator('.source-table tbody tr'), next=page.getByRole('button',{name:'Next →',exact:true});
- await expect(rows).toHaveCount(12);
+ const paperCount=Number((await page.locator('.source-directory-toolbar > p').innerText()).split(' ')[0]);
+ await expect(rows).toHaveCount(Math.min(50,paperCount));
  // Server-rendered rows precede hydration; disabled controls are intentional.
- // Wait for readiness before interpreting a disabled Next as the final page.
- await expect(next).toBeEnabled();
+ await expect(page.locator('.source-pagination')).toContainText(`1–${Math.min(50,paperCount)} of ${paperCount}`);
+ if(paperCount>50)await expect(next).toBeEnabled();else await expect(next).toBeDisabled();
  await expect(page.locator('.source-directory').getByRole('link')).toHaveCount(0);
  const identities=new Set<string>();let sum=0;
  do {
@@ -36,6 +37,10 @@ test('compact source directory filters and paginates every paper without inflati
  }while(true);
  expect(sum).toBe(available);
  await page.getByRole('button',{name:/^NDA\b/}).click();
+ const ndaCount=Number((await page.locator('.source-directory-toolbar > p').innerText()).split(' ')[0]);
+ await expect(rows).toHaveCount(ndaCount);
+ await expect(page.locator('.source-pagination')).toContainText(`1–${ndaCount} of ${ndaCount}`);
+ await expect(next).toBeDisabled();
  await page.getByRole('combobox').nth(0).selectOption('2026');
  const nda=rows.filter({hasText:'2026 · II'});
  await expect(nda.locator('.source-count')).toContainText('150 / 150');
@@ -84,7 +89,7 @@ test('compact source directory filters and paginates every paper without inflati
  await page.getByRole('button',{name:/^All exams/}).click();
  await page.getByRole('combobox').nth(0).selectOption('all');
  await page.getByRole('combobox').nth(1).selectOption('all');
- await expect(rows).toHaveCount(12);
+ await expect(rows).toHaveCount(Math.min(50,paperCount));
  await page.setViewportSize({width:390,height:844});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.screenshot({path:'tmp/source-directory-mobile.png',fullPage:true});

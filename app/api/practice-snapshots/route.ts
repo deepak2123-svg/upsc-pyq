@@ -61,11 +61,22 @@ export async function POST(request: Request) {
     : Math.max(1, Math.min(100, Number(input.count) || 10));
   let recipe: PracticeRecipe;
   let eligible = [] as typeof pyqQuestions;
+  let selectedYearsByExam: Partial<Record<PyqExam, number[]>> | undefined;
 
   if (input.version === 2 || input.version === 3 || input.version === 4) {
     const inventory = preparationExam ? getPreparationInventory(preparationExam) : getSubjectPracticeInventory(input.version === 4);
     const preparationIds = preparationExam ? preparationQuestionIds(inventory) : undefined;
     const questionPool = preparationExam ? getPreparationQuestions(inventory) : pyqQuestions;
+    if (input.yearsByExam !== undefined) {
+      if (input.version !== 4 || !isRecord(input.yearsByExam)) return NextResponse.json({ error: "Choose valid exam years with a V4 recipe." }, { status: 400 });
+      selectedYearsByExam = {};
+      for (const exam of PYQ_EXAMS) {
+        const value = input.yearsByExam[exam];
+        if (value === undefined) continue;
+        if (!Array.isArray(value) || value.some(year => !Number.isInteger(year) || Number(year) < 1900 || Number(year) > 2100)) return NextResponse.json({ error: "Choose valid examination years." }, { status: 400 });
+        selectedYearsByExam[exam] = [...new Set(value as number[])].sort((a, b) => a - b);
+      }
+    }
     const preparationSubjectIds = new Map<string, Set<string>>();
     if (preparationExam) for (const leaf of inventory.nodes) if (leaf.kind === 'subtopic') {
       const ids = preparationSubjectIds.get(leaf.subjectId) || new Set<string>();
@@ -172,6 +183,7 @@ export async function POST(request: Request) {
     if(input.version===4)for(const [id,exams]of pathExams)for(const exam of exams)for(const questionId of (frozenById.get(id)?.questionIdsByExam[exam]||subtopics.get(id)?.questionIdsByExam?.[exam]||[]))selectedIds.add(questionId);
     eligible = questionPool.filter((question) => {
       if (preparationIds && !preparationIds.has(question.id)) return false;
+      if (selectedYearsByExam && !(selectedYearsByExam[question.exam] || []).includes(question.year)) return false;
       if(input.version===3&&!legacySnapshotQuestionIds.has(question.id))return false;
       const path = getLegacyQuestionPath(question);
       if (input.version===4?selectedIds.has(question.id):Boolean(path&&pathExams.get(path.subtopicId)?.has(question.exam))) return true;
@@ -183,7 +195,7 @@ export async function POST(request: Request) {
       exams: PYQ_EXAMS.filter((exam) => exams.has(exam)),
     }));
     recipe = strict
-      ? { version: input.version === 4 ? 4 : 3, ...(input.version===4?{taxonomyVersion:inventory.taxonomyVersion,...(preparationExam?{preparationExam}:{}),...(input.frozenScopes!==undefined?{frozenScopes}:{} )}:{}), subjectIds, paths, count: requestedCount, order, durationMinutes: typeof input.durationMinutes === "number" ? input.durationMinutes : null } satisfies PracticeRecipeV3 | PracticeRecipeV4
+      ? { version: input.version === 4 ? 4 : 3, ...(input.version===4?{taxonomyVersion:inventory.taxonomyVersion,...(preparationExam?{preparationExam}:{}),...(input.frozenScopes!==undefined?{frozenScopes}:{}),...(selectedYearsByExam?{yearsByExam:selectedYearsByExam}:{} )}:{}), subjectIds, paths, count: requestedCount, order, durationMinutes: typeof input.durationMinutes === "number" ? input.durationMinutes : null } satisfies PracticeRecipeV3 | PracticeRecipeV4
       : { version: 2, subjectIds, paths, count: requestedCount, order } satisfies PracticeRecipeV2;
   } else {
     if (!isPyqExam(input.exam)) return NextResponse.json({ error: "Choose a valid examination." }, { status: 400 });
