@@ -7,6 +7,8 @@ test('whole-paper practice keeps term and subject selections exact',async({page}
  await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Practice Papers'}).click();
  await expect(page).toHaveURL('/papers');
  await expect(page.getByRole('button',{name:'2026',exact:true})).toBeVisible();
+ const gridBox=await page.locator('.paper-year-matrix').boundingBox(),cartBox=await page.locator('.paper-selection-bar').boundingBox();
+ expect(gridBox&&cartBox&&cartBox.x>=gridBox.x+gridBox.width).toBeTruthy();
  await expect(page.getByRole('button',{name:'NDA II · Mathematics 2026, 120 questions, not selected'})).toBeVisible();
  expect(errors).toEqual([]);
  await page.getByRole('button',{name:'NDA II · Mathematics 2026, 120 questions, not selected'}).click();
@@ -28,5 +30,6 @@ test('paper grid lists all CDS subjects for both terms',async({page})=>{
  for(const label of ['CDS I · English','CDS I · General Knowledge','CDS I · Elementary Mathematics','CDS II · English','CDS II · General Knowledge','CDS II · Elementary Mathematics'])await expect(page.getByRole('button',{name:label,exact:true})).toBeVisible();
  await page.setViewportSize({width:390,height:844});
  await expect(page.locator('.source-year-scroll')).toBeVisible();
+ await expect(page.locator('.paper-selection-bar')).toHaveCSS('position','static');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });

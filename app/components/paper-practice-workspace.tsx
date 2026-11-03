@@ -59,7 +59,7 @@ export function PaperPracticeWorkspace({ rows, years }: { rows: PaperPracticeRow
 
   return <main className="pyq-page paper-practice-page">
     <header className="paper-practice-title"><p className="pyq-kicker">Whole-paper practice</p><h1>Practice previous papers</h1><p>Select one paper or combine several papers. Every question comes only from the paper cells you choose.</p></header>
-    <section className="source-year-matrix paper-year-matrix" aria-labelledby="paper-grid-title">
+    <div className="paper-practice-layout"><section className="source-year-matrix paper-year-matrix" aria-labelledby="paper-grid-title">
       <div className="source-year-heading"><div><h2 id="paper-grid-title">Choose papers</h2><p>NDA and CDS attempts and subjects are kept separate.</p></div><div className="source-year-quick"><span>Quick</span><button disabled={!ready} onClick={() => quick(years)}>All</button><button disabled={!ready} onClick={() => quick(years.slice(-5))}>Last 5</button><button disabled={!ready} onClick={() => quick(years.slice(-10))}>Last 10</button><button disabled={!ready} onClick={() => setSelected([])}>Clear</button></div></div>
       <div className="source-year-scroll" role="region" aria-label="Previous paper selection grid">
         <div className="paper-grouped-grid" style={{ '--year-columns': years.length } as CSSProperties}>
@@ -78,6 +78,6 @@ export function PaperPracticeWorkspace({ rows, years }: { rows: PaperPracticeRow
         </div>
       </div>
     </section>
-    <aside className="paper-selection-bar"><div><strong>{selected.length} {selected.length === 1 ? 'paper' : 'papers'} selected</strong><span>{total.toLocaleString('en-IN')} questions</span></div><button disabled={!ready || !selected.length || loading} onClick={() => void start()}>{loading ? 'Preparing…' : 'Practice selected papers →'}</button>{error ? <p role="alert">{error}</p> : null}</aside>
+    <aside className="paper-selection-bar" aria-label="Selected papers"><div><strong>{selected.length} {selected.length === 1 ? 'paper' : 'papers'} selected</strong><span>{total.toLocaleString('en-IN')} questions</span></div><button disabled={!ready || !selected.length || loading} onClick={() => void start()}>{loading ? 'Preparing…' : 'Practice selected papers →'}</button>{error ? <p role="alert">{error}</p> : null}</aside></div>
   </main>;
 }
