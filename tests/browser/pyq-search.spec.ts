@@ -3,6 +3,12 @@ import {expect,test} from '@playwright/test';
 test('searches reviewed PYQ stems and option text without exposing answers',async({page})=>{
  await page.goto('/');const search=page.getByRole('search');await search.getByLabel('PYQ term').fill('HBrO₄');await search.getByRole('button',{name:'Search'}).click();
  await expect(page).toHaveURL(/\?q=HBrO/);await expect(page.getByText('1 matching MCQ',{exact:true})).toBeVisible();const card=page.locator('.pyq-search-card');await expect(card).toHaveCount(1);await expect(card).toContainText('Hypobromous acid');await expect(card).toContainText('HBrO₄');await expect(card).not.toContainText('Correct answer');
+ await expect(card.getByText('Syllabus location')).toBeVisible();
+ await card.getByRole('radio',{name:/HBrO₄/}).click();
+ await card.getByRole('button',{name:'Check answer'}).click();
+ await expect(card.getByRole('status')).toContainText(/Correct|Incorrect/);
+ const location=card.getByRole('link',{name:/Open .* in the NDA syllabus/});
+ await expect(location).toHaveAttribute('href',/\/prepare\/NDA\?scope=/);
  await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
 

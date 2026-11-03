@@ -22,6 +22,7 @@ export function PaperPracticeWorkspace({ rows, years }: { rows: PaperPracticeRow
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [ready, setReady] = useState(false);
+  const displayYears = useMemo(() => [...years].sort((a, b) => b - a), [years]);
   useEffect(() => setReady(true), []);
 
   const groups = useMemo(() => {
@@ -58,20 +59,20 @@ export function PaperPracticeWorkspace({ rows, years }: { rows: PaperPracticeRow
   }, 0);
 
   return <main className="pyq-page paper-practice-page">
-    <header className="paper-practice-title"><p className="pyq-kicker">Whole-paper practice</p><h1>Practice previous papers</h1><p>Select one paper or combine several papers. Every question comes only from the paper cells you choose.</p></header>
+    <header className="paper-practice-title"><p className="pyq-kicker">Whole-paper practice</p><h1>Practice official papers</h1><p>Select one paper or combine several papers. Every question comes only from the paper cells you choose.</p></header>
     <div className="paper-practice-layout"><section className="source-year-matrix paper-year-matrix" aria-labelledby="paper-grid-title">
-      <div className="source-year-heading"><div><h2 id="paper-grid-title">Choose papers</h2><p>NDA and CDS attempts and subjects are kept separate.</p></div><div className="source-year-quick"><span>Quick</span><button disabled={!ready} onClick={() => quick(years)}>All</button><button disabled={!ready} onClick={() => quick(years.slice(-5))}>Last 5</button><button disabled={!ready} onClick={() => quick(years.slice(-10))}>Last 10</button><button disabled={!ready} onClick={() => setSelected([])}>Clear</button></div></div>
+      <div className="source-year-heading"><div><h2 id="paper-grid-title">Paper bank</h2></div><div className="source-year-quick"><span>Quick</span><button disabled={!ready} onClick={() => quick(years)}>All</button><button disabled={!ready} onClick={() => quick(years.slice(-5))}>Last 5</button><button disabled={!ready} onClick={() => quick(years.slice(-10))}>Last 10</button><button disabled={!ready} onClick={() => setSelected([])}>Clear</button></div></div>
       <div className="source-year-scroll" role="region" aria-label="Previous paper selection grid">
         <div className="paper-grouped-grid" style={{ '--year-columns': years.length } as CSSProperties}>
           <span className="paper-column-heading">Exam</span><span className="paper-column-heading">Attempt</span><span className="paper-column-heading">Paper</span>
-          {years.map(year => <button key={year} disabled={!ready} className="source-year-column" onClick={() => { const keys = rows.filter(row => row.counts[year] > 0).map(row => `${row.id}:${year}`); const enable = keys.some(key => !selected.includes(key)); setSelected(current => enable ? [...new Set([...current, ...keys])] : current.filter(key => !keys.includes(key))); }}>{year}</button>)}
+          {displayYears.map(year => <button key={year} disabled={!ready} className="source-year-column" onClick={() => { const keys = rows.filter(row => row.counts[year] > 0).map(row => `${row.id}:${year}`); const enable = keys.some(key => !selected.includes(key)); setSelected(current => enable ? [...new Set([...current, ...keys])] : current.filter(key => !keys.includes(key))); }}>{year}</button>)}
           {groups.map(exam => <div className="paper-exam-group" key={exam.exam} style={{ '--exam-color': exam.color } as CSSProperties}>
             <div className="paper-merged-exam" style={{ gridRow: `span ${exam.attempts.reduce((sum, item) => sum + item.rows.length, 0)}` }}><i aria-hidden="true" /> <strong>{exam.exam}</strong></div>
             {exam.attempts.map(attempt => <div className="paper-attempt-group" key={`${exam.exam}-${attempt.attempt}`}>
               <div className="paper-merged-attempt" style={{ gridRow: `span ${attempt.rows.length}` }}><strong>{attempt.attempt}</strong></div>
               {attempt.rows.map(row => <div className="paper-grid-row" key={row.id}>
                 <button disabled={!ready} className="paper-row-label" aria-label={row.label} aria-pressed={rowKeys(row).some(key => selected.includes(key))} onClick={() => { const keys = rowKeys(row); const enable = keys.some(key => !selected.includes(key)); setSelected(current => enable ? [...new Set([...current, ...keys])] : current.filter(key => !keys.includes(key))); }}><strong>{row.paper}</strong></button>
-                {years.map(year => { const key = `${row.id}:${year}`, count = row.counts[year] || 0, active = selected.includes(key); return <button key={year} disabled={!ready || !count || loading} className="source-year-cell" aria-pressed={active} aria-label={`${row.label} ${year}, ${count} questions, ${active ? 'selected' : 'not selected'}`} onClick={() => toggle(key)}>{count}</button>; })}
+                {displayYears.map(year => { const key = `${row.id}:${year}`, count = row.counts[year] || 0, active = selected.includes(key); return <button key={year} disabled={!ready || !count || loading} className="source-year-cell" aria-pressed={active} aria-label={`${row.label} ${year}, ${count} questions, ${active ? 'selected' : 'not selected'}`} onClick={() => toggle(key)}>{count}</button>; })}
               </div>)}
             </div>)}
           </div>)}

@@ -84,11 +84,22 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .pyq-search-card header { display: flex; justify-content: space-between; gap: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
 .pyq-search-card header span { font-weight: 750; }
 .pyq-search-card header small { color: var(--muted); text-align: right; }
+.pyq-search-syllabus { display: flex; max-width: 56%; flex-direction: column; align-items: flex-end; gap: 3px; color: var(--ink); text-align: right; text-decoration: none; }
+.pyq-search-syllabus strong { color: var(--accent); font-size: 12px; line-height: 1.4; }
+.pyq-search-syllabus:hover strong { text-decoration: underline; }
 .pyq-search-prompt { margin: 18px 0; line-height: 1.55; }
 .pyq-search-prompt p { margin: 6px 0; }
-.pyq-search-options { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px 18px; }
-.pyq-search-options li { display: grid; grid-template-columns: 28px minmax(0,1fr); gap: 8px; align-items: start; padding: 9px 0; border-top: 1px solid #edf0f3; line-height: 1.45; }
+.pyq-search-options { padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px 12px; }
+.pyq-search-options>button { display: grid; grid-template-columns: 28px minmax(0,1fr); gap: 8px; align-items: start; padding: 10px; border: 1px solid #edf0f3; border-radius: 9px; background: var(--surface); color: var(--ink); line-height: 1.45; text-align: left; }
+.pyq-search-options>button:hover:not(:disabled) { border-color: #aebde7; background: #f7f9ff; }
+.pyq-search-options>button[aria-checked="true"] { border-color: var(--accent); background: var(--accent-soft); box-shadow: 0 0 0 1px var(--accent); }
 .pyq-search-options strong { width: 24px; height: 24px; display: grid; place-items: center; border-radius: 6px; background: var(--accent-soft); color: var(--accent); font-size: 12px; }
+.pyq-search-actions { display: flex; align-items: center; gap: 14px; margin-top: 16px; }
+.pyq-search-actions>button { min-height: 38px; padding: 8px 16px; border: 0; border-radius: 8px; background: var(--accent); color: white; font-weight: 750; }
+.pyq-search-actions>button:disabled { opacity: .45; }
+.pyq-search-actions p { margin: 0; font-size: 13px; line-height: 1.45; }
+.pyq-search-actions .is-correct { color: #067647; }
+.pyq-search-actions .is-incorrect, .pyq-search-actions [role="alert"] { color: #b42318; }
 
 @media (max-width: 700px) {
   .pyq-header-inner, .pyq-page { width: min(100% - 28px, 1120px); }
@@ -105,6 +116,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .pyq-search-options { grid-template-columns: 1fr; }
   .pyq-search-card header { flex-direction: column; gap: 5px; }
   .pyq-search-card header small { text-align: left; }
+  .pyq-search-syllabus { max-width: none; align-items: flex-start; text-align: left; }
+  .pyq-search-actions { align-items: stretch; flex-direction: column; }
 }
 
 @media (max-width: 430px) {

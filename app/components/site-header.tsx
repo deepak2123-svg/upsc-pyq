@@ -13,7 +13,7 @@ export function SiteHeader({searchQuery=""}:{searchQuery?:string}) {
           <button type="submit" aria-label="Search PYQs"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg></button>
         </form>
         <nav className="pyq-nav" aria-label="Primary navigation">
-          <Link href="/papers">Practice Papers</Link>
+          <Link href="/papers">Practice Official Papers</Link>
           <Link href="/attempts">Attempts</Link>
           <Link href="/bookmarks">Bookmarks</Link>
           <Link href="/legal/sources">Sources</Link>

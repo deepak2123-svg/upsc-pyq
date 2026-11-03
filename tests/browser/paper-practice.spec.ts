@@ -4,8 +4,11 @@ test('whole-paper practice keeps term and subject selections exact',async({page}
  const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));
  await page.goto('/');
  await expect(page.locator('.source-year-matrix')).toHaveCount(0);
- await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Practice Papers'}).click();
+ await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Practice Official Papers'}).click();
  await expect(page).toHaveURL('/papers');
+ await expect(page.getByRole('heading',{name:'Paper bank'})).toBeVisible();
+ const years=await page.locator('.source-year-column').allTextContents();
+ expect(years.slice(0,3)).toEqual(['2026','2025','2024']);
  await expect(page.getByRole('button',{name:'2026',exact:true})).toBeVisible();
  const gridBox=await page.locator('.paper-year-matrix').boundingBox(),cartBox=await page.locator('.paper-selection-bar').boundingBox();
  expect(gridBox&&cartBox&&cartBox.x>=gridBox.x+gridBox.width).toBeTruthy();
