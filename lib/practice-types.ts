@@ -40,14 +40,15 @@ export type PracticeFrozenScope = {
   questionIdsByExam:Record<PyqExam,string[]>;
 };
 export type PracticeRecipeV4 = Omit<PracticeRecipeV3, 'version'> & { version: 4; taxonomyVersion?:string; frozenScopes?:PracticeFrozenScope[]; preparationExam?: PreparationExam; yearsByExam?: Partial<Record<PyqExam, number[]>> };
-export type PracticeRecipe = LegacyPracticeRecipe | PracticeRecipeV2 | PracticeRecipeV3 | PracticeRecipeV4;
+export type PracticeRecipeV5 = { version:5; paperKeys:string[]; count:'all'; order:PracticeOrder; durationMinutes?:number|null };
+export type PracticeRecipe = LegacyPracticeRecipe | PracticeRecipeV2 | PracticeRecipeV3 | PracticeRecipeV4 | PracticeRecipeV5;
 
 export function isPracticeRecipeV2(recipe: PracticeRecipe): recipe is PracticeRecipeV2 {
   return "version" in recipe && recipe.version === 2;
 }
 
-export function isPracticeRecipeV3(recipe: PracticeRecipe): recipe is PracticeRecipeV3 | PracticeRecipeV4 {
-  return "version" in recipe && (recipe.version === 3 || recipe.version === 4);
+export function isPracticeRecipeV3(recipe: PracticeRecipe): recipe is PracticeRecipeV3 | PracticeRecipeV4 | PracticeRecipeV5 {
+  return "version" in recipe && (recipe.version === 3 || recipe.version === 4 || recipe.version === 5);
 }
 
 export type PracticeQuestion = {
@@ -109,7 +110,7 @@ export type LocalAttempt = {
   completionReason?: "submitted" | "time_expired";
   returnPath?: PracticeReturnPath;
 };
-export type PracticeReturnPath = '/' | '/library' | `/exams/${PyqExam}` | `/prepare/${PreparationExam}`;
+export type PracticeReturnPath = '/' | '/library' | '/papers' | `/exams/${PyqExam}` | `/prepare/${PreparationExam}`;
 
 export type Bookmark = {
   questionId: string;

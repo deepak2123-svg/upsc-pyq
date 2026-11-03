@@ -20,19 +20,20 @@ export function answerKeyRevision(questionId: string) { return answerKeyRevision
 export function safePracticeReturnPath(value: unknown): PracticeReturnPath {
   if (typeof value === "string" && value.trim() === value && /^\/exams\/(CSE|CAPF|CDS|NDA)$/.test(value)) return value as `/exams/${PyqExam}`;
   if (typeof value === 'string' && /^\/prepare\/(CSE|CDS|NDA)$/.test(value)) return value as PracticeReturnPath;
-  if (value === '/library') return '/library';
+  if (value === '/library' || value === '/papers') return value;
   return "/";
 }
 
 export function attemptReturnPath(attempt: LocalAttempt): PracticeReturnPath {
   if (attempt.returnPath !== undefined) return safePracticeReturnPath(attempt.returnPath);
   const recipe = attempt.snapshot.recipe;
+  if ('version' in recipe && recipe.version === 5) return '/papers';
   if ('version' in recipe && recipe.version === 4 && recipe.preparationExam) return safePracticeReturnPath(`/prepare/${recipe.preparationExam}`);
   return "exam" in recipe ? safePracticeReturnPath(`/exams/${recipe.exam}`) : "/";
 }
 
 export function practiceDurationMinutes(recipe: PracticeRecipe): number | null {
-  if (!("version" in recipe) || recipe.version !== 3 && recipe.version !== 4) return null;
+  if (!("version" in recipe) || recipe.version !== 3 && recipe.version !== 4 && recipe.version !== 5) return null;
   const duration = recipe.durationMinutes;
   return typeof duration === "number" && Number.isInteger(duration) && duration >= 1 && duration <= 720 ? duration : null;
 }

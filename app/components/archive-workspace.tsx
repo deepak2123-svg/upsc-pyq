@@ -381,7 +381,6 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading||switching}>
     <PreparationSelector exam={preparationExam} views={views} activeView={activeView} pendingExam={switching?requestedExam:undefined} onPrefetchExam={prefetchExam} disabled={!restored || loading || exporting || switching} onExam={exam=>{setRequestedExam(exam);startExamTransition(()=>router.push(`/prepare/${exam}`));}} onView={changeView}/>
     <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{preparationExam ? `${preparationExam} question library` : initialExam ? `${initialExam} question library` : "Question library"}</h1></div></header>
-    <SourceYearMatrix years={matrixYears} selected={selectedYearsByExam} counts={sourceYearCounts} disabled={loading||!restored} onCell={setYearCell} onExam={toggleSource} onYear={toggleYearColumn} onQuick={quickYears} />
     <div className={`scope-library-layout explorer-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
       <h2 className="library-column-label library-column-label-left">Library</h2>
       <h2 className="library-column-label library-column-label-middle">{current ? ({subject:"Sections",head:"Chapters",topic:"Subparts",subtopic:"Subpart"} as const)[current.kind] : "Subjects"}</h2>

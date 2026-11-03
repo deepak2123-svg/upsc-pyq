@@ -5,7 +5,8 @@ import { questionContentRevision,questionReview } from '../../../lib/question-re
 import { getPreparationInventory, preparationQuestionIds, getPreparationQuestions, preparationPathResolver } from '../../../lib/preparation-catalog';
 import { isPreparationExam } from '../../../lib/preparation-exams';
 import { PYQ_EXAMS, getExamQuestions, getLegacyQuestionPath, getSubjectPracticeInventory, isPyqExam, pyqQuestions, type PracticeInventoryNode, type PyqExam } from "../../../lib/pyq-catalog";
-import type { PracticeFrozenScope, PracticePathSelection, PracticeQuestion, PracticeRecipe, PracticeRecipeV2, PracticeRecipeV3, PracticeRecipeV4, PracticeSnapshot } from "../../../lib/practice-types";
+import {isPaperPracticeKey,resolvePaperKeys} from '../../../lib/paper-practice-catalog';
+import type { PracticeFrozenScope, PracticePathSelection, PracticeQuestion, PracticeRecipe, PracticeRecipeV2, PracticeRecipeV3, PracticeRecipeV4, PracticeRecipeV5, PracticeSnapshot } from "../../../lib/practice-types";
 
 function seededShuffle<T>(items: T[], seed: string) {
   let state = [...seed].reduce((value, character) => Math.imul(value ^ character.charCodeAt(0), 2654435761), 2166136261) >>> 0;
@@ -39,12 +40,12 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Choose a valid preparation exam with a V4 recipe.' }, { status: 400 });
   }
   const preparationExam = isPreparationExam(input.preparationExam) ? input.preparationExam : undefined;
-  if ("version" in input && input.version !== 2 && input.version !== 3 && input.version !== 4) {
+  if ("version" in input && input.version !== 2 && input.version !== 3 && input.version !== 4 && input.version !== 5) {
     return NextResponse.json({ error: "Choose a supported practice recipe version." }, { status: 400 });
   }
   if(input.frozenScopes!==undefined&&input.version!==4)return NextResponse.json({error:'Exact question membership requires a V4 recipe.'},{status:400});
 
-  const strict = input.version === 3 || input.version === 4;
+  const strict = input.version === 3 || input.version === 4 || input.version === 5;
   if (strict && input.count !== "all" && (typeof input.count !== "number" || !Number.isInteger(input.count) || input.count < 1 || input.count > 5000)) {
     return NextResponse.json({ error: "Question count must be a positive whole number, or all." }, { status: 400 });
   }
@@ -63,7 +64,12 @@ export async function POST(request: Request) {
   let eligible = [] as typeof pyqQuestions;
   let selectedYearsByExam: Partial<Record<PyqExam, number[]>> | undefined;
 
-  if (input.version === 2 || input.version === 3 || input.version === 4) {
+  if(input.version===5){
+    if(!Array.isArray(input.paperKeys)||!input.paperKeys.length||input.paperKeys.some(key=>typeof key!=='string'||!isPaperPracticeKey(key)))return NextResponse.json({error:'Choose at least one valid previous paper.'},{status:400});
+    eligible=resolvePaperKeys(input.paperKeys as string[]);
+    if(!eligible.length)return NextResponse.json({error:'No eligible questions are available in the selected papers.'},{status:409});
+    recipe={version:5,paperKeys:[...new Set(input.paperKeys as string[])],count:'all',order,durationMinutes:typeof input.durationMinutes==='number'?input.durationMinutes:null} satisfies PracticeRecipeV5;
+  } else if (input.version === 2 || input.version === 3 || input.version === 4) {
     const inventory = preparationExam ? getPreparationInventory(preparationExam) : getSubjectPracticeInventory(input.version === 4);
     const preparationIds = preparationExam ? preparationQuestionIds(inventory) : undefined;
     const questionPool = preparationExam ? getPreparationQuestions(inventory) : pyqQuestions;

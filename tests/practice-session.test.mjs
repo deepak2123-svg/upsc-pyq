@@ -11,10 +11,12 @@ const started = Date.parse("2026-10-11T12:00:00.000Z");
 test('preparation return paths remain local and preserve the target exam', () => {
   assert.equal(safePracticeReturnPath('/prepare/NDA'), '/prepare/NDA');
   assert.equal(safePracticeReturnPath('/prepare/CSE'), '/prepare/CSE');
+  assert.equal(safePracticeReturnPath('/papers'), '/papers');
   assert.equal(safePracticeReturnPath('/prepare/CAPF'), '/');
   assert.equal(safePracticeReturnPath('//example.com/prepare/NDA'), '/');
   assert.equal(safePracticeReturnPath('/prepare/NDA?redirect=https://example.com'), '/');
   assert.equal(attemptReturnPath({ snapshot: { recipe: { version: 4, preparationExam: 'CDS' } } }), '/prepare/CDS');
+  assert.equal(attemptReturnPath({ snapshot: { recipe: { version: 5, paperKeys: ['NDA:II:GAT:2026'], count: 'all', order: 'newest' } } }), '/papers');
 });
 const recipe = { version: 3, subjectIds: ["subject:geography"], paths: [], count: 2, order: "newest", durationMinutes: 1 };
 
