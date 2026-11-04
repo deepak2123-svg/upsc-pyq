@@ -13,6 +13,7 @@ export function PracticePromptView({ blocks, className, figure,underlined }: { b
     {blocks.map((block, index) => {
       if (block.kind === "statement") return <p className="paper-statement" key={index}><b>{block.marker}</b><span><PromptText value={block.text} underlined={underlined}/></span></p>;
       if (block.kind === "text") return <p key={index}><PromptText value={block.text} underlined={underlined}/></p>;
+      if (block.kind === "error-line") return <div className="paper-error-line" key={index}>{block.segments.map(segment=><span className="paper-error-segment" key={segment.marker}><span><PromptText value={segment.text} underlined={underlined}/></span><b>{segment.marker}</b></span>)}</div>;
       if (block.kind === "pair-table") return <div className="matching-list-scroll" key={index}>
         <table className="matching-list-table paired-row-table">
           <caption>Pairs to assess</caption>

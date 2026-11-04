@@ -1,6 +1,7 @@
 export type PracticePromptBlock =
   | { kind: "text"; text: string }
   | { kind: "statement"; marker: string; text: string }
+  | { kind: "error-line"; segments: { marker: string; text: string }[] }
   | { kind: "pair-table"; leftTitle: string; rightTitle: string; rows: { marker: string; left: string; right: string }[] }
   | {
     kind: "match-table";
@@ -16,10 +17,29 @@ const leadingRomanMarker = /^\s*(I|II|III|IV|V|VI|VII|VIII|IX|X)([.)])\s+(.+)$/i
 const listOneMarker = /\bList\s*[-–—]?\s*(?:I|1)\s*\(([^)]*)\)/i;
 const listTwoMarker = /\bList\s*[-–—]?\s*(?:II|2)\s*\(([^)]*)\)/i;
 const letteredItemMarker = /(?<!\S)([A-Z])[.)]\s+/g;
+const errorMarker = /^\(([a-z])\)$/i;
 
 function romanValue(value: string) {
   const numerals: Record<string, number> = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10 };
   return numerals[value.toUpperCase()];
+}
+
+/**
+ * Spot-the-error papers print one continuous sentence with (a), (b), (c)
+ * directly below the corresponding underlined fragments. Some transcripts
+ * preserve that geometry as alternating text and marker lines. Restore only
+ * that explicit sequence; the locked source wording remains untouched.
+ */
+function errorLineBlock(lines: string[]): PracticePromptBlock | null {
+  if (lines.length < 4 || lines.length % 2 !== 0) return null;
+  const segments: { marker: string; text: string }[] = [];
+  for (let index = 0; index < lines.length; index += 2) {
+    const match = lines[index + 1]?.match(errorMarker);
+    const expected = String.fromCharCode(97 + index / 2);
+    if (!lines[index] || !match || match[1].toLowerCase() !== expected) return null;
+    segments.push({ marker: `(${match[1].toLowerCase()})`, text: lines[index] });
+  }
+  return segments.length >= 2 ? { kind: "error-line", segments } : null;
 }
 
 /** Convert the limited TeX notation found in legacy imports for display. */
@@ -178,6 +198,8 @@ function pairedRowBlocks(lines: string[]): PracticePromptBlock[] | null {
  */
 export function formatPracticePrompt(lines: string[]): PracticePromptBlock[] {
   const cleanLines = lines.map((line) => formatPracticeText(line).trim()).filter(Boolean);
+  const errorLine = errorLineBlock(cleanLines);
+  if (errorLine) return [errorLine];
   const matchingLists = matchingListBlocks(cleanLines);
   if (matchingLists) return matchingLists;
   const pairedRows = pairedRowBlocks(cleanLines);

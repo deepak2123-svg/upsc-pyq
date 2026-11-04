@@ -73,3 +73,18 @@ test("separates statements even when dates contain numbered punctuation", () => 
   assert.deepEqual(blocks.filter((block) => block.kind === "statement").map((block) => block.marker), ["1.", "2.", "3.", "4."]);
   assert.equal(blocks[1].text, "Vernal equinox occurs on March 21.");
 });
+
+test("restores spot-the-error fragments as one labelled sentence without changing source text", () => {
+  const question=JSON.parse(fs.readFileSync('content/nda-2015-i-official-paper.json')).questions.find(q=>q.id==='nda-2015-i-3');
+  const before=JSON.stringify(question.promptLines);
+  const blocks=formatPracticePrompt(question.promptLines);
+  assert.equal(blocks.length,1);
+  assert.equal(blocks[0].kind,'error-line');
+  assert.deepEqual(blocks[0].segments.map(segment=>segment.marker),['(a)','(b)','(c)']);
+  assert.deepEqual(blocks[0].segments.map(segment=>segment.text),[
+    'Since it was his first election campaign, the candidate was confused;',
+    'none could clearly understand',
+    'either the principles he stood for or the benefits he promised.',
+  ]);
+  assert.equal(JSON.stringify(question.promptLines),before);
+});
