@@ -1,0 +1,763 @@
+{
+  "paperId": "nda-2015-i-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2015,
+    "session": "I",
+    "paper": "GAT",
+    "paperCode": "B-PFCA-O-JCV",
+    "series": "A",
+    "language": "English",
+    "examDate": "2015-04-19",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2015-1.pdf",
+    "sha256": "f68821fec2a570815749daefa5f86547323dcc9cd30a7909037d2c235a9e2182"
+  },
+  "pdfPageMapping": {
+    "pages": 48,
+    "cover": 1,
+    "english": "PDF pages 2–9",
+    "partB": "PDF pages 10–44 (alternating English/Hindi leaves)"
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "retrievedAt": "2026-11-04",
+    "url": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2015_gat_anskey",
+    "asset": "/papers/nda-2015-i-gat/official-final-key.pdf",
+    "sha256": "3fb5cd20439edbe51659988ea4f70682f6b2f2ad1c187d2801e5cca262b0c76c",
+    "page": 1,
+    "series": "A",
+    "session": "I",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 1,
+    "scored": 149,
+    "authentication": "UPSC NDA/NA I 2015 GAT Series A final answer-key table; the rendered header identifies GAT, 150 items, 149 scored items and one dropped item (Q60)."
+  },
+  "rawBefore": [
+    {
+      "id": "nda-2015-i-75",
+      "sha256": "cb1a44d007cdafcbfbdba59e6fb467b5ecb968af37e9420c5551e0a6b8ce6727",
+      "value": {
+        "id": "nda-2015-i-75",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Rain shadow effect is associated with",
+        "sourceTextHash": "e5fae025c8c07ca197934c0fb1e0dd106fc5a2515fab37b4483059e7e20975d0",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 75,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Rain shadow effect is associated with"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 75,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Rainfall & Precipitation",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Rain shadow effect is associated with"
+        ],
+        "options": {
+          "A": "Cyclonic rainfall",
+          "B": "Orographic rainfall",
+          "C": "Convectional rainfall",
+          "D": "Frontal rainfall"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-87",
+      "sha256": "90d8bbd2447c2ecdad245a03743b3e28aad6edbafa3cbec0012bd5beb6df0f09",
+      "value": {
+        "id": "nda-2015-i-87",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "To a perpendicular to the plane of ecliptic, Earth's axis of rotation makes an angle of 23½ degrees. Had this angle been zero degree, which one among the following would result?",
+        "sourceTextHash": "2ae496654f8e17aa64cbbafc478f4c1fe869e9ab79d40a5f741f0e56ab3f3088",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 87,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "To a perpendicular to the plane of ecliptic, Earth's axis of rotation makes an angle of 23½ degrees. Had this angle been zero degree, which one among the following would result?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 87,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Earth-Sun Relations & Seasons",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "To a perpendicular to the plane of ecliptic, Earth's axis of rotation makes an angle of 23½ degrees. Had this angle been zero degree, which one among the following would result?"
+        ],
+        "options": {
+          "A": "There would have been no season",
+          "B": "The length of day and night would have been the same throughout the year",
+          "C": "The length of the day and night would have been the same all over the earth",
+          "D": "All of the above"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-100",
+      "sha256": "1dc7e36dc74522613c5a2ca64ac264b2eda0664f24c52a6a851580c4cc8bcf8f",
+      "value": {
+        "id": "nda-2015-i-100",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The luxuriant growth of natural vegetation in tropical rainforest is due to 1. fertile soil. 2. hot and wet climate throughout the year. 3. intense sunlight for photosynthesis. 4. seasonal change to facilitate nutrient absorption.",
+        "sourceTextHash": "07bc09aed261ec190fac04355468abd0c2e9f59048793b7901f53ede82cde454",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 100,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "The luxuriant growth of natural vegetation in tropical rainforest is due to 1. fertile soil. 2. hot and wet climate throughout the year. 3. intense sunlight for photosynthesis. 4. seasonal change to facilitate nutrient absorption."
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 100,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Rainfall & Precipitation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "The luxuriant growth of natural vegetation in tropical rainforest is due to 1. fertile soil. 2. hot and wet climate throughout the year. 3. intense sunlight for photosynthesis. 4. seasonal change to facilitate nutrient absorption."
+        ],
+        "options": {
+          "A": "1 and 4 only",
+          "B": "2 and 3 only",
+          "C": "1, 2 and 3 only",
+          "D": "1, 2, 3 and 4"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-110",
+      "sha256": "d94c53db82ee56d27e9fe64069cf8e6e30fa0c881a89b01161c19bbec2a61549",
+      "value": {
+        "id": "nda-2015-i-110",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following weather conditions indicates a sudden fall in barometer reading?",
+        "sourceTextHash": "e5dd5d475ff94d7e44053a1c3845f7e1b3dbeab4f870794db75ed25273e39af1",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 110,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following weather conditions indicates a sudden fall in barometer reading?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 110,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Weather Systems & Air Masses",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following weather conditions indicates a sudden fall in barometer reading?"
+        ],
+        "options": {
+          "A": "Stormy weather",
+          "B": "Calm weather",
+          "C": "Cold and dry weather",
+          "D": "Hot and sunny weather"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-111",
+      "sha256": "0772ddb6bd4d016c781111e8deec2495b8255733bfbda55be168133eb556332d",
+      "value": {
+        "id": "nda-2015-i-111",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Island) A. Continental island B. Coral island C. Volcanic island D. Mountain island List II (Location) 1. Mauritius 2. Madagascar 3. Andaman and Nicobar islands 4. Maldives Code:",
+        "sourceTextHash": "f3d3d8f78dcd54c187e10923d15235c3907c5568c3fa49715d47a902ec40fce7",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 111,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Island) A. Continental island B. Coral island C. Volcanic island D. Mountain island List II (Location) 1. Mauritius 2. Madagascar 3. Andaman and Nicobar islands 4. Maldives Code:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 111,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Atmospheric Composition & Structure",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Island) A. Continental island B. Coral island C. Volcanic island D. Mountain island List II (Location) 1. Mauritius 2. Madagascar 3. Andaman and Nicobar islands 4. Maldives Code:"
+        ],
+        "options": {
+          "A": "A-2, B-4, C-1, D-3",
+          "B": "A-2, B-1, C-4, D-3",
+          "C": "A-3, B-1, C-4, D-2",
+          "D": "A-3, B-4, C-1, D-2"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-113",
+      "sha256": "e3cf75d3f5559359e842470dfdea697c9307f80e6e430c13128be8b27ca871f8",
+      "value": {
+        "id": "nda-2015-i-113",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Cloud) A. Cirrus B. Stratus C. Nimbus D. Cumulus List II (Characteristic) 1. Rain giving 2. Feathery appearance 3. Vertically growing 4. Horizontally spreading Code:",
+        "sourceTextHash": "447d59230bc46ccbddd582943586632bc81a0ba416f2fa0c6ed048b6ce427e00",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 113,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Cloud) A. Cirrus B. Stratus C. Nimbus D. Cumulus List II (Characteristic) 1. Rain giving 2. Feathery appearance 3. Vertically growing 4. Horizontally spreading Code:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 113,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Rainfall & Precipitation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Cloud) A. Cirrus B. Stratus C. Nimbus D. Cumulus List II (Characteristic) 1. Rain giving 2. Feathery appearance 3. Vertically growing 4. Horizontally spreading Code:"
+        ],
+        "options": {
+          "A": "A-3, B-1, C-4, D-2",
+          "B": "A-3, B-4, C-1, D-2",
+          "C": "A-2, B-4, C-1, D-3",
+          "D": "A-2, B-1, C-4, D-3"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-66",
+      "sha256": "eb78f6aa3618f9e2e9acff286e78ba85816038478c4e6f4db7d7e498935cc876",
+      "value": {
+        "id": "nda-2015-i-66",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The newly formed state of Telengana is surrounded by",
+        "sourceTextHash": "04079634b2a780ba0a916fe5effae21c9823598f2b0b8a0ca30012a3366cd303",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 66,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "The newly formed state of Telengana is surrounded by"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 66,
+        "subject": "Geography",
+        "topic": "Location, States & Regional Geography",
+        "subtopic": "States & Regional Location",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The newly formed state of Telengana is surrounded by"
+        ],
+        "options": {
+          "A": "5 States",
+          "B": "4 States",
+          "C": "6 States",
+          "D": "3 States"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-85",
+      "sha256": "6e42a87af4a8e0ca1447ca35951f207eca25135427fa1b4098c084fcfcb6f972",
+      "value": {
+        "id": "nda-2015-i-85",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following Indian states has the highest proportion of area under forest cover?",
+        "sourceTextHash": "1ee73213f9a8edae92f83bd6d34348f9f1d7a4837dec4e323150a49609367e64",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 85,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following Indian states has the highest proportion of area under forest cover?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 85,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Forest Cover",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following Indian states has the highest proportion of area under forest cover?"
+        ],
+        "options": {
+          "A": "Madhya Pradesh",
+          "B": "Sikkim",
+          "C": "Meghalaya",
+          "D": "Mizoram"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-109",
+      "sha256": "343be750bcbde6ec6b2fbd884047b53f48f0332d140ecaa969116e3709c63400",
+      "value": {
+        "id": "nda-2015-i-109",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements with regard to the western coastal plain of India are correct? 1. It is a narrow belt. 2. It is an example of submerged coastal plain. 3. It provides natural conditions for development of ports. 4. It has well developed deltas. Select the correct answer using the code given below",
+        "sourceTextHash": "2a89a1b6fda6e7307d5289dc0974cecf92acad8e58898be771851d3ced051c6f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 109,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which of the following statements with regard to the western coastal plain of India are correct? 1. It is a narrow belt. 2. It is an example of submerged coastal plain. 3. It provides natural conditions for development of ports. 4. It has well developed deltas. Select the correct answer using the code given below"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 109,
+        "subject": "Geography",
+        "topic": "Coastal & Island Geography",
+        "subtopic": "Coasts & Islands",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements with regard to the western coastal plain of India are correct? 1. It is a narrow belt. 2. It is an example of submerged coastal plain. 3. It provides natural conditions for development of ports. 4. It has well developed deltas. Select the correct answer using the code given below"
+        ],
+        "options": {
+          "A": "1, 2 and 3 only",
+          "B": "1 and 2 only",
+          "C": "1, 2, 3 and 4",
+          "D": "3 and 4 only"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-108",
+      "sha256": "c558f4a4d17edd6cc3eac531563d2f937e43084fb36a5f3768a3adb88c123ee9",
+      "value": {
+        "id": "nda-2015-i-108",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Region) A. Selvas B. Savannas C. Taiga D. Tundra List II (Vegetation) 1. Conifers 2. Mosses and Lichens 3. Epiphytes 4. Grasses and trees Code:",
+        "sourceTextHash": "2b6826f3f7aff56ac72b731808d90b0a8a3d02521b20d5e8884b4dd070925a3f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 108,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Region) A. Selvas B. Savannas C. Taiga D. Tundra List II (Vegetation) 1. Conifers 2. Mosses and Lichens 3. Epiphytes 4. Grasses and trees Code:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 108,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Biomes & Vegetation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Region) A. Selvas B. Savannas C. Taiga D. Tundra List II (Vegetation) 1. Conifers 2. Mosses and Lichens 3. Epiphytes 4. Grasses and trees Code:"
+        ],
+        "options": {
+          "A": "A-4, B-1, C-2, D-3",
+          "B": "A-3, B-2, C-1, D-4",
+          "C": "A-3, B-4, C-1, D-2",
+          "D": "A-4, B-2, C-1, D-3"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-64",
+      "sha256": "aa21c4a1f66f427a22803bb71093e186ad53e20dd35e00c605b2b6166d210961",
+      "value": {
+        "id": "nda-2015-i-64",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following statements is not correct?",
+        "sourceTextHash": "35547759692a9ff98ed4b90c7afaa0be6855f1827ad652289c24ccb156de3811",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 64,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following statements is not correct?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 64,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Power Projects",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following statements is not correct?"
+        ],
+        "options": {
+          "A": "Kerala is the largest producer of natural rubber in India",
+          "B": "Neyveli is an important thermal power generating area of Tamil Nadu",
+          "C": "Ratnagiri Bauxite mining area is located in Karnataka",
+          "D": "Assam is the largest tea producing state in India"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-65",
+      "sha256": "752409541de6ea2cbd686ee9ba7c3f4e7a3bdf29c40059d442b994eda755b90d",
+      "value": {
+        "id": "nda-2015-i-65",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Paper industry centre) A. Kamptee B. Rajahmundry C. Shahdol D. Belagola List II (State) 1. Karnataka 2. Maharashtra 3. Andhra Pradesh 4. Madhya Pradesh Code:",
+        "sourceTextHash": "e8473e57c25f7e1dbcdf714be36c54bd0555970f18458367acb342c8ad5f8de3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 65,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Paper industry centre) A. Kamptee B. Rajahmundry C. Shahdol D. Belagola List II (State) 1. Karnataka 2. Maharashtra 3. Andhra Pradesh 4. Madhya Pradesh Code:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 65,
+        "subject": "Geography",
+        "topic": "Industries",
+        "subtopic": "Industrial Location",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Paper industry centre) A. Kamptee B. Rajahmundry C. Shahdol D. Belagola List II (State) 1. Karnataka 2. Maharashtra 3. Andhra Pradesh 4. Madhya Pradesh Code:"
+        ],
+        "options": {
+          "A": "A-1, B-4, C-3, D-2",
+          "B": "A-2, B-3, C-4, D-1",
+          "C": "A-1, B-3, C-4, D-2",
+          "D": "A-2, B-4, C-3, D-1"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-76",
+      "sha256": "e8ef923faf0b1eca5fe127f49e0a84b4a703b2d52ad7fd1418850caa947f29d9",
+      "value": {
+        "id": "nda-2015-i-76",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Place) A. Jabalpur B. Bengaluru C. Mathura D. Ballarpur List II (Industry) 1. Petro-chemical industry 2. IT industry 3. Paper industry 4. Automobile industry Code:",
+        "sourceTextHash": "cc980d7ccea2c2a46503772116a7ba1a7dc84777441b1560e956012b3d2aef91",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 76,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Place) A. Jabalpur B. Bengaluru C. Mathura D. Ballarpur List II (Industry) 1. Petro-chemical industry 2. IT industry 3. Paper industry 4. Automobile industry Code:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 76,
+        "subject": "Geography",
+        "topic": "Industries",
+        "subtopic": "Industrial Location",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (Place) A. Jabalpur B. Bengaluru C. Mathura D. Ballarpur List II (Industry) 1. Petro-chemical industry 2. IT industry 3. Paper industry 4. Automobile industry Code:"
+        ],
+        "options": {
+          "A": "A-4, B-1, C-2, D-3",
+          "B": "A-3, B-2, C-1, D-4",
+          "C": "A-4, B-2, C-1, D-3",
+          "D": "A-3, B-1, C-2, D-4"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-77",
+      "sha256": "0591c842321062203baa638ced7ee2e31988a8534b964c39e89b51206973022e",
+      "value": {
+        "id": "nda-2015-i-77",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following irrigation canals is the most important in terms of area coverage in Haryana?",
+        "sourceTextHash": "7fccc1e1edb4359bf8d8b9cae8e49b268799d16d855c486bb6c74296c03761f8",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 77,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Which one of the following irrigation canals is the most important in terms of area coverage in Haryana?"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 77,
+        "subject": "Geography",
+        "topic": "Transport & Infrastructure",
+        "subtopic": "Ports",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following irrigation canals is the most important in terms of area coverage in Haryana?"
+        ],
+        "options": {
+          "A": "Bhakra canal",
+          "B": "The Western Yamuna canal",
+          "C": "Jawaharlal Nehru canal",
+          "D": "Gurgaon canal"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-98",
+      "sha256": "0b703f48da1ea6d3022d4e2fda10d1f417f20d437768d3dec0df16e14b4cdadd",
+      "value": {
+        "id": "nda-2015-i-98",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "'Yakuts' are the nomadic herders of",
+        "sourceTextHash": "883defcdc9f91c9cb87fda58d56dd0eaa29919c0a5bd1ab0385dfe8dc2342d4b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 98,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "'Yakuts' are the nomadic herders of"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 98,
+        "subject": "Geography",
+        "topic": "Tribes & Cultural Geography",
+        "subtopic": "Tribes and Nomadic Communities",
+        "difficulty": "Easy",
+        "promptLines": [
+          "'Yakuts' are the nomadic herders of"
+        ],
+        "options": {
+          "A": "Gobi",
+          "B": "Sahara",
+          "C": "Tundra",
+          "D": "Kalahari"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-114",
+      "sha256": "324d26b6561eaa8abde57f147cb18a5adcb3a457ad7f8241c952fdb1e575314c",
+      "value": {
+        "id": "nda-2015-i-114",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The concept of demographic transition provides a model for",
+        "sourceTextHash": "232aacbfcbad1104b8b448f14f2f6dc9f5f84cb16400389af479447115b04b57",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 114,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "The concept of demographic transition provides a model for"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 114,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "The concept of demographic transition provides a model for"
+        ],
+        "options": {
+          "A": "analyzing government responses to changing pattern of population growth",
+          "B": "explaining major patterns of global population movement throughout the history",
+          "C": "analyzing spatial variations in the distribution, growth and movement of population over time",
+          "D": "examining the relationship between economic development and natural population change"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-86",
+      "sha256": "430567ed24610ade677cdcdd31fb14694ffc1a31278f1240b0843746603af95c",
+      "value": {
+        "id": "nda-2015-i-86",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (National Park/ Wildlife Sanctuary) A. Chandra Prabha B. Silent Valley C. Valley of flowers D. Indravati List II (State) 1. Uttarakhand 2. Chhattisgarh 3. Uttar Pradesh 4. Kerala Code:",
+        "sourceTextHash": "af4d137e6a2c0be0ce2b8d67fa049e2d72a3d9bbc484725b37cedd425cd0d540",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 86,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "Match List I with List II and select the correct answer using the code given below the Lists: List I (National Park/ Wildlife Sanctuary) A. Chandra Prabha B. Silent Valley C. Valley of flowers D. Indravati List II (State) 1. Uttarakhand 2. Chhattisgarh 3. Uttar Pradesh 4. Kerala Code:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 86,
+        "subject": "Environment",
+        "topic": "Protected Areas & Biodiversity",
+        "subtopic": "National Parks and Wildlife Sanctuaries",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List I with List II and select the correct answer using the code given below the Lists: List I (National Park/ Wildlife Sanctuary) A. Chandra Prabha B. Silent Valley C. Valley of flowers D. Indravati List II (State) 1. Uttarakhand 2. Chhattisgarh 3. Uttar Pradesh 4. Kerala Code:"
+        ],
+        "options": {
+          "A": "A-2, B-1, C-4, D-3",
+          "B": "A-3, B-4, C-1, D-2",
+          "C": "A-2, B-4, C-1, D-3",
+          "D": "A-3, B-1, C-4, D-2"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2015-i-99",
+      "sha256": "d18d7dfb89def694dc9410f48b59220bc6d5de77c8665ae96f51422f5f826287",
+      "value": {
+        "id": "nda-2015-i-99",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "A farmer in a semi-arid area claims that his farming practice is very environment friendly. Which of the following practices on his farm can justify his claim? 1. Planting a tree belt. 2. Practising crop rotation. 3. Carrying out a large scale irrigation system. 4. Using organic fertilizers. Select the correct answer using the code given below:",
+        "sourceTextHash": "3aab6fcbca2d78e91e934a4eabd30fa705394f85c848d9337c6235824af1319f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2015,
+          "paper": "I",
+          "questionNumber": 99,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://iasexamportal.com/sites/default/files/Answer-Key-UPSC-NDA-NA-Examination-I-2015-General-Ability-Test.pdf",
+          "rawQuestionText": "A farmer in a semi-arid area claims that his farming practice is very environment friendly. Which of the following practices on his farm can justify his claim? 1. Planting a tree belt. 2. Practising crop rotation. 3. Carrying out a large scale irrigation system. 4. Using organic fertilizers. Select the correct answer using the code given below:"
+        },
+        "exam": "NDA",
+        "year": 2015,
+        "paper": "I",
+        "questionNumber": 99,
+        "subject": "Environment",
+        "topic": "Conservation & Sustainable Practices",
+        "subtopic": "Sustainable Agriculture",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "A farmer in a semi-arid area claims that his farming practice is very environment friendly. Which of the following practices on his farm can justify his claim? 1. Planting a tree belt. 2. Practising crop rotation. 3. Carrying out a large scale irrigation system. 4. Using organic fertilizers. Select the correct answer using the code given below:"
+        ],
+        "options": {
+          "A": "3 and 4 only",
+          "B": "1, 2 and 4",
+          "C": "1, 3 and 4",
+          "D": "1 and 2 only"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

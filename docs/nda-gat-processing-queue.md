@@ -22,10 +22,13 @@ mean complete. The source register currently inventories 25 local PDFs.
 | 13 | NDA II 2019 | Complete and live verified, 29 October 2026: 149 official-final + Q119 withdrawn; English 50, Science 50, GS 49. 130 new + 20 reused; data `25c0829`; 231 automated tests, all 600 live option decisions and all seven production browser checks pass. See `nda-2019-ii-release.md`. |
 | 14 | NDA I 2019 | Complete: 150/150 official-final; 127 new + 23 reused. Data release `6593902`. |
 | 15 | NDA II 2018 | Complete locally, 30 October 2026: 150/150 official-final; English 50, Science 44, GS 56. 129 new + 21 reused; two source figures retained. See `nda-2018-ii-release.md`. |
-| 16 | NDA I 2018 | Next; process as a separate paper. |
-| 17–18 | NDA II, I 2017 | Queued individually |
-| 19–20 | NDA II, I 2016 | Queued individually |
-| 21–22 | NDA II, I 2015 | Queued individually |
+| 16 | NDA I 2018 | Complete; 150/150 official-final. Data release `e9e8120`. |
+| 17 | NDA II 2017 | Complete; 150/150 official-final. Data release `22d52a8`. |
+| 18 | NDA I 2017 | Complete; 150/150 official-final. Data release `3615d40`. |
+| 19 | NDA II 2016 | Complete; 150/150 official-final. Data release `e3e5b97`. |
+| 20 | NDA I 2016 | Complete; 150/150 official-final. Data release `7d2064d`. |
+| 21 | NDA II 2015 | Complete; 150/150 official-final. Data release `6acd0fc`. |
+| 22 | NDA I 2015 | Complete locally, 4 November 2026: 149 scored with the official final key; Q60 officially dropped; 132 new occurrences + 18 reused. Release pending live verification. |
 | 23–24 | NDA II, I 2014 | Queued individually |
 
 Queued records may already have partial imports or old slot accounting. Every

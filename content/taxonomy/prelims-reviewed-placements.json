@@ -25345,6 +25345,30 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2015-i-1",
+      "expectedRecordHash": "b54e3fb178496214f669aa11e6c4fc0bf24229bb3277c84744c0fea3070fa0ac",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-10",
+      "expectedRecordHash": "959b36774a78a62ff766bb0f057c29a9fe3c35605d4523842dc701800b97bf22",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2015-i-100",
       "expectedRecordHash": "1dc7e36dc74522613c5a2ca64ac264b2eda0664f24c52a6a851580c4cc8bcf8f",
       "primaryId": "syllabus:environment-ecology/ecology-ecosystems/ecosystems/forests",
@@ -25363,6 +25387,94 @@
       ],
       "editorialBatch": "NDA/2015/I/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2015-i-101",
+      "expectedRecordHash": "06279c719b35f06e830b5252b3a2ca521d5952e27052a165a69766d2719242ba",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-102",
+      "expectedRecordHash": "ccd7f46dbee00c8fc4e4ca2efec1f49353f6e3c1cfca9981e197141305a0d97c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-103",
+      "expectedRecordHash": "acfe10074f7247dc70ec7828161687c4e6115ba5adeab74dba9411ed80ef33b6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-104",
+      "expectedRecordHash": "e67bd913c2dbc88e0d8ce4c00a142a96a8d7f5ce4e07ffb8998f54c54937da1e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-105",
+      "expectedRecordHash": "d8ee77ac9f6e24d57145c113ad2e9504b6daf271b32cab559b95818bce814c68",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-106",
+      "expectedRecordHash": "921ebe3afa43a38680bf25c7f2d0046933b5658f4263f10a16a1460d42b9b9f6",
+      "primaryId": "syllabus:environment-ecology/climate-change/climate-science/greenhouse-gases",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-107",
+      "expectedRecordHash": "1076891683fc25d8c9be927919d1e3eea923628d651663663e57323d9232e8df",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
     },
     {
       "questionId": "nda-2015-i-108",
@@ -25401,6 +25513,18 @@
       ],
       "editorialBatch": "NDA/2015/I/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2015-i-11",
+      "expectedRecordHash": "2fa6a92fc7e67640a3c00023dcd3dc06528236088979f5866223281487152cce",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
     },
     {
       "questionId": "nda-2015-i-110",
@@ -25443,6 +25567,22 @@
       }
     },
     {
+      "questionId": "nda-2015-i-112",
+      "expectedRecordHash": "8a800762c7d7d428af8ce72358d3b246f28aef7b8fd05475de7065b75cfbd428",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
       "questionId": "nda-2015-i-113",
       "expectedRecordHash": "e3cf75d3f5559359e842470dfdea697c9307f80e6e430c13128be8b27ca871f8",
       "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
@@ -25481,6 +25621,1230 @@
       ],
       "editorialBatch": "NDA/2015/I/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2015-i-115",
+      "expectedRecordHash": "55035fe3b25a8a3664c0ac8e4af2a33e827d43e6a3cdc3f4fb5d532361bbd864",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-116",
+      "expectedRecordHash": "8803f03c09437e87f87621551c0449622657f7bea2f6f960e89163fee2a3c098",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-117",
+      "expectedRecordHash": "f40514ed9a9413ed38b99f69d82ae6849c20c90b77904be4bc1d5556bb2906dc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-118",
+      "expectedRecordHash": "50662c5b36d503ae0e0f9aec4cb67671af984564a147ba41ac48044744f34736",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-119",
+      "expectedRecordHash": "abf6cc57e43a6dae1621c877c943f5742a7b33b4865cd857d80c1d3d511dbeab",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-12",
+      "expectedRecordHash": "5c30893479b0dadef844774b8513aee8641e45963b123a7066975aebbf1d3a85",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-120",
+      "expectedRecordHash": "ea6d1040826ac45a695305874e4105bed37f8f0cccb6222970db8f137c3f117a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-121",
+      "expectedRecordHash": "f25ac5eeb6a221c1aa273c149509c53a0fd8ef835b4adfc12c6e62f421745a1e",
+      "primaryId": "syllabus:current-affairs/science-technology-health/space-developments/missions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-122",
+      "expectedRecordHash": "2e4169db2d037f9d156096a61661826e098454c44f9ce961f8b1c3f46a7d46d2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-123",
+      "expectedRecordHash": "9942ac3e50071ad65dd73020764142026782a3ea6d3c1b392fe2f2838393ef88",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/recipients-and-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-124",
+      "expectedRecordHash": "b64c352f747b7f7d87b4f6236e08d449ff34fc0db4b016186da59a576d4a9749",
+      "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/climate-negotiations",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-125",
+      "expectedRecordHash": "0b37d249abe0101c875df3e22c00dc628c0733ceb784f4a1f63552e3c1104405",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/books-and-authors/books-in-news",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-126",
+      "expectedRecordHash": "350c758821213b2ccfd88db1b59a076569d76618fe1fd55f514b9b4195d4ed3f",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/winners-and-records",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-127",
+      "expectedRecordHash": "f10ed8cdc8f5ca0b08276e673600df06afdd3e45608ceaf5eaa4b71bd33bf0cf",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/arts-recognition",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-128",
+      "expectedRecordHash": "993ecf48271fb3b6916161d3e4aaaebabfd8469954751201316b002d6ca61ab8",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/arts-recognition",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-129",
+      "expectedRecordHash": "9092c6814d54783de20b2f4821ae2b8125502e3aec6006e194e9d73c55d295fc",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/winners-and-records",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-13",
+      "expectedRecordHash": "a2a57b0972c2a98970547413f9b7b55a9823300448445420644ebe8b51cfe916",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-130",
+      "expectedRecordHash": "0d27dec8950e8c65a1146df9445b371895cb2dbd09f62d7bc5f9770c5bfe9a6d",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/literary-awards",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-131",
+      "expectedRecordHash": "a8d7aeef05e529a18c9ef052a60414bb72ab0b05e8c617bd5e0e56934dd2985f",
+      "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-132",
+      "expectedRecordHash": "fa68beffd01c5804f293a282f3f4b2b102eba2ae45df3ea4f76dca79a879a71c",
+      "primaryId": "syllabus:history/ancient-india/indus-valley-civilisation/crafts-and-technology",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-133",
+      "expectedRecordHash": "26bc57da06a20739956d6c5b8e6e54db1a005157d3530754b777ac70e5d01bd7",
+      "primaryId": "syllabus:history/ancient-india/mauryan-empire/inscriptions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-134",
+      "expectedRecordHash": "a92890154d0d2676353c67115c4a2cd135119eb1bfc54e1dde827dad8a3a4a1e",
+      "primaryId": "syllabus:history/ancient-india/mahajanapadas/sixteen-mahajanapadas",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-135",
+      "expectedRecordHash": "16c47f21d96a960ca8da67448817b3a520aeb64ceb444577c0d62a93552cb7ed",
+      "primaryId": "syllabus:history/ancient-india/jainism-and-philosophical-traditions/ajivikas",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-136",
+      "expectedRecordHash": "bafda077f9fd15254932ee1aecb7080e9b5aa685a858928e417c0a99921bf9fc",
+      "primaryId": "syllabus:history/medieval-india/medieval-society-and-economy/technology",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-137",
+      "expectedRecordHash": "f8ebaed64921565162fe0d9729c228e5dd07b210ced75da94d6cd2c6eaa544bd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-138",
+      "expectedRecordHash": "f1a3746622fe6fa575a81c41775839aec1037bdcb31824718b49090b81228299",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-139",
+      "expectedRecordHash": "a0b6f8bb3f9e7247f824323dea1d5de6f01b921fcd4c09712ac030773d941a64",
+      "primaryId": "syllabus:history/modern-india-national-movement/revolutionary-and-overseas-movements/revolutionary-organisations",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-14",
+      "expectedRecordHash": "7b78183d4654a91ca4218c5f495a7839927a643b95a5e5901a5afe3058262ff0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-140",
+      "expectedRecordHash": "2dc42b6f65e828261bb03b6a01d2d09b295688092dbccd83f4c91d1c96d7d2ad",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/congress-foundation",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-141",
+      "expectedRecordHash": "0bfc040d50d4899662fe9bd4ac5d1f332e5477e0b251d4d65df21caf1856dbed",
+      "primaryId": "syllabus:history/modern-india-national-movement/revolutionary-and-overseas-movements/revolutionary-organisations",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-142",
+      "expectedRecordHash": "6f9134715d2f1a1d220eb897d3a7039fa25934bdb80f230fc93be14b66212e59",
+      "primaryId": "syllabus:polity-governance/rights-principles/fundamental-rights/availability-of-rights",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-143",
+      "expectedRecordHash": "843f3ee02c480b98e6e1e380b57f30197ac002a1b6f9bc800f8c25ae5dbe5f01",
+      "primaryId": "syllabus:history/modern-india-national-movement/gandhian-movements/constructive-programmes",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-144",
+      "expectedRecordHash": "2bd90b0c755c802e8f4fd6fe6dcf896afa1e98cfe379ee49aba23bf63298d800",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/schedules",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-145",
+      "expectedRecordHash": "b54a4d89d4982178d762766e9bc156cb309e9d45ed9cff70e5c15fd2a05dd178",
+      "primaryId": "syllabus:history/modern-india-national-movement/independence-and-integration/bhoodan-and-land-reform-movements",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-146",
+      "expectedRecordHash": "f41798d7c3ac25a3053cdc800f080d6e475165f958693a069fb81879286e62cf",
+      "primaryId": "syllabus:history/modern-india-national-movement/independence-and-integration/bhoodan-and-land-reform-movements",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-147",
+      "expectedRecordHash": "a9945f001f50797411fb6796e2f68463608815e4a4b66df62437b8309f2a359d",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/amendment-and-basic-structure",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-148",
+      "expectedRecordHash": "8270f210dc3ae866754287790d794f92f826bb57e4655252ceabf7f69379d248",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/amendment-and-basic-structure",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-149",
+      "expectedRecordHash": "123c38a1e9bb113964576f34a779f33f24d5f7cc4d6bce0248909e5ee7a8b118",
+      "primaryId": "syllabus:polity-governance/rights-principles/directive-principles-and-duties/fundamental-duties",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-15",
+      "expectedRecordHash": "804b6d9cea9a17f1e59aad5694c829298320d3526a36e6c5280f9d6b614f58af",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-150",
+      "expectedRecordHash": "6a61f90b4ff187358e68c418137a16d0117d7bf2d9ba442c4513c50a586f1bce",
+      "primaryId": "syllabus:polity-governance/federalism-local-government/local-government/panchayats",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2015-i-16",
+      "expectedRecordHash": "e4de762c0600c6514b484b25c1260f8fd49e4362959680bf8c3f735f148898c1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-17",
+      "expectedRecordHash": "cbee2ccdc7baf0065cb4b4b6bcfcd03e65cfa71638efadb38744ce24ff9447ed",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-18",
+      "expectedRecordHash": "a158edf622daf982e721f0639fdcb129d5f8bdff88378f6ab847ba14c609970c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-19",
+      "expectedRecordHash": "7afc49bc35d2d64dff05b6205a5743ad8affed6642e1585cd73dea81ec52cadd",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-2",
+      "expectedRecordHash": "f38780b6ac3302c2f70a70aa62c9fff181e21a460c32d50afd3a06dc46240265",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-20",
+      "expectedRecordHash": "9bde8525e28fd6ab1184a2ee3942bbf6e3dbd278538e7a5b791da60a788133f3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-21",
+      "expectedRecordHash": "5ca9c519742964aa9c62d8ead406aee802e196f082e104cf8c307008938e5e56",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-22",
+      "expectedRecordHash": "07ede15d2933dabb434590db378d8b2ffae712dd3fecdd98132ab5079388d62a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-23",
+      "expectedRecordHash": "e8449bb6b403422b6d01e2de7e8883eaa49beae61b63bd45c65615477b55885e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-24",
+      "expectedRecordHash": "600576300a68f2f3c8d7d9bb875780b51483c6b2a556b9e0c1b4d6a6e1b5157d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-25",
+      "expectedRecordHash": "dff2ae4bd99270b7ad0af728e7a84c50eea64f94309dc3ddaf0ba8395c8eafbf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-26",
+      "expectedRecordHash": "d45c70f5eb3d081d9b9eda45af4477a265ead4905edf6e91e681a681bd40d596",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-27",
+      "expectedRecordHash": "ffd359f062aec49418953190d67ed025e270bd1db4522542d53a011b13dd3bd1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-28",
+      "expectedRecordHash": "58858364b6f63a2528e43256ea6bcc06744461a5707989e451b1e1440d408750",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-29",
+      "expectedRecordHash": "d8f651a9f4c39a459edab4990b528de78a0fa3b1afc0fb0771fabcd19687c868",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-3",
+      "expectedRecordHash": "f84067747c83eb4d3a470e23ed9571b683e670a1487ed072672c5f41d1cc61e7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-30",
+      "expectedRecordHash": "ca33ab39bd777e3487594ba6d6c42c22725c9a546ec7a250ad0ff2a3c1973590",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-31",
+      "expectedRecordHash": "4ae162ab51a4144eb15db2a350a617c79ec16a62168a61f0423462e4988e4123",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-32",
+      "expectedRecordHash": "baf52f8dc58ca6f0b4a6790bb4b897ad0ab558452d7c32cfe54233df1d318087",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-33",
+      "expectedRecordHash": "d680c1cbc0cd8dac5665da99d433236ec87da2865aa69910317d7fd842f7ac72",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-34",
+      "expectedRecordHash": "e38f61b0754b9215367f711e5326b0b555da069da3587905eb5937c20623b262",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-35",
+      "expectedRecordHash": "f6d34176d487d59b10f0f23569553687b7a04da4bcc47a55dbaed9c34621644c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-36",
+      "expectedRecordHash": "493c72f30c0edae29d7b3437c78a2d7c5f64e296e8c9c2c55b481697002c9e3e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-37",
+      "expectedRecordHash": "381d83006ca72cdbb32da35eb21b1f9dcc1025f8c7c67c7ad376df32c2078c97",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-38",
+      "expectedRecordHash": "0fae58078f39fed810394b76a0861266c6f995d2578944fef26ebc5079c9b5c6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-39",
+      "expectedRecordHash": "1ef36e86c77a6a90eca9f116b03cd17d48d6122e0b8eea8eae9a3afed70b11ab",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-4",
+      "expectedRecordHash": "f4c69ccb03e7917d10ea63f4a1878d000131caf00f7aad6a8636f0fb4e69e7e0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-40",
+      "expectedRecordHash": "2d41f49a49f3a3e9d7eb17e898f43b30a2352e0629d82fc647ac19f364791315",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-41",
+      "expectedRecordHash": "500daa6ef817c9b4a67c8aba7d6a7a036f03306c5c729ce5ad5e76723f92f446",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-42",
+      "expectedRecordHash": "d453119b7aa65879156137e578e0b4ae20c077e7a1e0691eb4289c68b185f6f1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-43",
+      "expectedRecordHash": "b91de9872cba73cfa89acb25b9e679ae7cd0e00c273d41472eb43a2c6a36f214",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-44",
+      "expectedRecordHash": "c6e68f430a32432111908350160d406562cddf022b6949c0dfb70a48ba6ad7f0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-45",
+      "expectedRecordHash": "4348517eb565037a7cafcb5129f943492a0f51257eccc7cdccaec81e4b8bf30e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-46",
+      "expectedRecordHash": "1482896443e3a9653dc220fda8dd9f0628d9b2aa2cf3ed57119829e3f9426087",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-47",
+      "expectedRecordHash": "1683919f6b5986f9d33f0704a1f407a338117786752f072afe9cd7cbc1231a6b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-48",
+      "expectedRecordHash": "29399bf8ad1fbf7f7cb023293fcaa970790b2de185dd71817a397f1c384d99c8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-49",
+      "expectedRecordHash": "47cdbfd6a9d380548597197fc4afba75b1120903e6389c9a6396ac02864e4b65",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-5",
+      "expectedRecordHash": "8d7ccca35c64ba989ba48e38e86d4c48ac9f4154a834b61c7e9f3742b556b7df",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-50",
+      "expectedRecordHash": "61213843263cfd5815903a11c10ebd73c56371632d22f6180d37aa879b93fd83",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-51",
+      "expectedRecordHash": "349034357949625fc24867ac999cfcd37439cb6be10f94ac0f037377a4608f6b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-52",
+      "expectedRecordHash": "8b087085c0624340d3a9e2544634d25753c429e30a97b87d58c441c3cb1cee6c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-53",
+      "expectedRecordHash": "fe65b83fe2b60c158c30258e7675cd61a9a4a33ef26fdf09ca70f0ff56fc8dcc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-54",
+      "expectedRecordHash": "3bf3c608f99a4abb884a961960b12e016833d330ece729dc2a3f1877aab569a1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-55",
+      "expectedRecordHash": "5099c06395ca3120c2b979218731297396680d25ef51cfbc4dda0b39ce655d53",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-56",
+      "expectedRecordHash": "142f317252be69c63cc157154b9f89c23343f80448239037a37e0e8e99dd6814",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-57",
+      "expectedRecordHash": "3038d9934f260927d48e313578121f9c3bd7c47db07cce278038e501706fb8e1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-58",
+      "expectedRecordHash": "ad4b52ca80a61f47ada82a956430cec7972e8c79f18a0e76d7e99067f233befc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-59",
+      "expectedRecordHash": "9849f632385e276c931aa09fa02114f8ded6d2cf7e08c78dc07d54a0d6d1974d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-6",
+      "expectedRecordHash": "56017404e178421b49cef16cdecb5c816340092b33fa05734d29f224a5dc18bb",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-60",
+      "expectedRecordHash": "52f6fc4c83ce5a3e031ead871aafa795b2ff5fccc0869875ed841603f0479c9e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-61",
+      "expectedRecordHash": "fbf13235153424532e70586e598a481f0be851994f1cdbdd1bc47326cd2afccb",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-62",
+      "expectedRecordHash": "c39601893ca88dab4d9e5209d03d4d6e1f923fb72b5e8b49dfda177db6ad6702",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-63",
+      "expectedRecordHash": "466599894ea3e9d124f131a9a91604927f215b45a7b573a036558622fdddeefe",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
     },
     {
       "questionId": "nda-2015-i-64",
@@ -25541,6 +26905,114 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2015-i-67",
+      "expectedRecordHash": "a92e9c3eaeeb06752f72bf92542556055fd6180e7e7d022f987eafc1dc60a39f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-68",
+      "expectedRecordHash": "5a529492ac105612f36ab712cdee6b52e9f06a9adf2d1bb45489591a89f0efab",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-69",
+      "expectedRecordHash": "c56810b70d0dfb061092feb76c0bf8dcb813d32d8de27a920de13981cd5221fb",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-7",
+      "expectedRecordHash": "d2e082b60fc4dcad2b6c2bcc4cbfb8d9fc4bb9241d7e311fde6432aad4f2f480",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-70",
+      "expectedRecordHash": "aad8ad39b746a0829154c2faf15d9bcd34a8c03c75b04c4dabc202b946d379f0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-71",
+      "expectedRecordHash": "ae4246a60114a3b7b3b6dfd4df6c04d21845f72d872ae012aff4d055354ae275",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-72",
+      "expectedRecordHash": "d34308446163ad89f839536dec36ad967dcfd75839957640d2251ac35cb5249a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-73",
+      "expectedRecordHash": "0c21ffb4c77199fabbfe431f9d9420ae00437f9dbcc633a64f2b87255038c10c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-74",
+      "expectedRecordHash": "ecda692075b96b84d367d4a09df739ed1a41b44246360823817d23b627239d4a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
       "questionId": "nda-2015-i-75",
       "expectedRecordHash": "cb1a44d007cdafcbfbdba59e6fb467b5ecb968af37e9420c5551e0a6b8ce6727",
       "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
@@ -25595,6 +27067,102 @@
       ],
       "editorialBatch": "NDA/2015/I/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2015-i-78",
+      "expectedRecordHash": "8bb5b0f64fd2e1aa7643551a2e9775881dfc94a78b7ffcbedb24ffbcc1b46e88",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-79",
+      "expectedRecordHash": "5da159473ef76bf599b1f06df3b3a7011856abbe1b95d4fe4fd0a84e64fc63ce",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-8",
+      "expectedRecordHash": "ca10dceb06fe569d2c6fccd8a23c50af437c7e3a1893f31fe33b29d9ffadec7c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-80",
+      "expectedRecordHash": "c1a69dc0690acb8fc3f6b1333045d1546cc8c880fa649ecf99bbbda76c7806a8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-81",
+      "expectedRecordHash": "70dbfb17627d8adccd35e40606c62cf3d1c6a28091f1627f385652e9608505f8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-82",
+      "expectedRecordHash": "9c84117314ceba96cc4967318c9bdd8aa6a1c833d883ae8d5c2f08904ed0616c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-83",
+      "expectedRecordHash": "ab8a24c095094b9a5b5ec4a4fea872734ddaa4c71238f39a7ca9ee4f0b6dfe7d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-84",
+      "expectedRecordHash": "18961366a2dc6c4feeee47cd3fac3c055c587e5867d0735eaeaa5325ee58e4e9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
     },
     {
       "questionId": "nda-2015-i-85",
@@ -25654,6 +27222,142 @@
         "status": "rule-reviewed",
         "legacyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons"
       }
+    },
+    {
+      "questionId": "nda-2015-i-88",
+      "expectedRecordHash": "5d254be411c323cb5887bd22455fcb43995bf5a24f8307447fdff8a16a76bbaf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-89",
+      "expectedRecordHash": "813ab204a38082d7a31a1ac16ab5d750320e5d5f386a2a80bf4d00637a8da4af",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-9",
+      "expectedRecordHash": "65d63dd90119036c72d960d95b9bc489b4ac570afc80e84faeca84f3b7302685",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from the reviewed English section directions and source task type.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-90",
+      "expectedRecordHash": "dcddb43903a187fd7d4eb83cb1b98188ae5da76e3ea38cd20ec8a9041d36dd5c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-91",
+      "expectedRecordHash": "8f5bdf3967295e1a65d11531d9386f062ee5d0375bce92db6b58d897e3a2333e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-92",
+      "expectedRecordHash": "c0b0db56cdcdb3903fd7208af41dc1b7cb53ce9a50b389a1c953866c88fc511a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-93",
+      "expectedRecordHash": "4f73e267e20b5df7ec8a317d43d889570188209c0b776ada5b774daf86da7921",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-94",
+      "expectedRecordHash": "d3e47c4b911118fbaf8999261612a86dc626c1348112d889af34a4f6b5404c1f",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-95",
+      "expectedRecordHash": "5f3c776eae727e3ccca3b4afb1db96588610efe5bd4f2f705e3df878e90443c3",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-96",
+      "expectedRecordHash": "52ba21fae795ce77fe3cb9987cf69eb066ca8f63990c532a8607bcd5dc43d5ac",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      }
+    },
+    {
+      "questionId": "nda-2015-i-97",
+      "expectedRecordHash": "1700c76d4424f61e0049f871056fbb98127a3d73f9012b25e1ba2ba6e11a0d6a",
+      "primaryId": "syllabus:geography/human-economic-geography/resources-and-land-use/agricultural-systems",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Classified from complete source stem and all four options during the paper-specific second pass.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review."
+      },
+      "tags": [
+        "Static"
+      ]
     },
     {
       "questionId": "nda-2015-i-98",

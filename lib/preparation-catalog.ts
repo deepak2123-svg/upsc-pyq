@@ -10,6 +10,7 @@ import officialNda2017IPlacements from '../content/nda-2017-i-preparation-placem
 import officialNda2016IPlacements from '../content/nda-2016-i-preparation-placements.json' with {type:'json'};
 import officialNda2016IIPlacements from '../content/nda-2016-ii-preparation-placements.json' with {type:'json'};
 import officialNda2015IIPlacements from '../content/nda-2015-ii-preparation-placements.json' with {type:'json'};
+import officialNda2015IPlacements from '../content/nda-2015-i-preparation-placements.json' with {type:'json'};
 import officialNda2025IIPlacements from '../content/nda-2025-ii-preparation-placements.json' with {type:'json'};
 import officialNda2025IPlacements from '../content/nda-2025-i-preparation-placements.json' with {type:'json'};
 import reviewedNda2024IIPlacements from '../content/nda-2024-ii-preparation-placements.json' with {type:'json'};
@@ -119,7 +120,7 @@ function buildPreparationInventory(target: PreparationExam): PreparationInventor
   // Future English/maths/CSAT imports need explicit reviewed concept placements.
   // A historic global "outside GS" decision is not silently removed or promoted.
   const questions = new Map(historicalPyqQuestions.map(q => [q.id, q]));
-  for (const row of [...applicability.approvedPlacements,...officialNdaPlacements,...officialNdaIIPlacements,...officialNdaIIMathematicsPlacements,...officialNda2025IIPlacements,...officialNda2025IPlacements,...reviewedNda2024IIPlacements,...officialNda2024IPlacements,...officialNda2023IIPlacements,...officialNda2023IPlacements,...officialNda2022IIPlacements,...officialNda2022IPlacements,...officialNda2021IIPlacements,...officialNda2021IPlacements,...officialNda2020CombinedPlacements,...officialNda2019IIPlacements,...officialNda2019IPlacements,...officialNda2018IIPlacements,...officialNda2018IPlacements,...officialNda2017IIPlacements,...officialNda2017IPlacements,...officialNda2016IPlacements,...officialNda2016IIPlacements,...officialNda2015IIPlacements] as ReviewedPlacement[]) {
+  for (const row of [...applicability.approvedPlacements,...officialNdaPlacements,...officialNdaIIPlacements,...officialNdaIIMathematicsPlacements,...officialNda2025IIPlacements,...officialNda2025IPlacements,...reviewedNda2024IIPlacements,...officialNda2024IPlacements,...officialNda2023IIPlacements,...officialNda2023IPlacements,...officialNda2022IIPlacements,...officialNda2022IPlacements,...officialNda2021IIPlacements,...officialNda2021IPlacements,...officialNda2020CombinedPlacements,...officialNda2019IIPlacements,...officialNda2019IPlacements,...officialNda2018IIPlacements,...officialNda2018IPlacements,...officialNda2017IIPlacements,...officialNda2017IPlacements,...officialNda2016IPlacements,...officialNda2016IIPlacements,...officialNda2015IIPlacements,...officialNda2015IPlacements] as ReviewedPlacement[]) {
     if (row.target !== target || row.status !== 'approved' || !row.rationale.trim()) continue;
     const question = questions.get(row.questionId);
     const leaf = nodes.find(n => n.kind === 'subtopic' && n.id === row.subtopicId);

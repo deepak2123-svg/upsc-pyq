@@ -1,0 +1,36 @@
+{
+  "issuer": "Union Public Service Commission",
+  "url": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2015_gat_anskey",
+  "retrievedAt": "2026-11-04",
+  "sha256": "3fb5cd20439edbe51659988ea4f70682f6b2f2ad1c187d2801e5cca262b0c76c",
+  "authentication": "UPSC NDA/NA I 2015 GAT Series A final answer-key table; the rendered header identifies GAT, 150 items, 149 scored items and one dropped item (Q60).",
+  "firstPassColumns": [
+    "A A D C B B B B B C C A C C A",
+    "B C B A B C A D C B B D C A B",
+    "D A B B C C B A C B B A A C C",
+    "C A C B C A A A C C A A C A X",
+    "C D B C B A A D C D B B A C B",
+    "C B D B A C B D C D B A A B D",
+    "A C A C B D C C B B D D C D C",
+    "B C C A A A B C D A C A B B B",
+    "C D B D B D C B C C B D D C B",
+    "D D B A B D C A B A D A D D C"
+  ],
+  "secondPassRows": [
+    "A B D C C C A B C D",
+    "A C A A D B C C D D",
+    "D B B C B D A C B B",
+    "C A B B C B C A D A",
+    "B B C C B A B A B B",
+    "B C C A A C D A D D",
+    "B A B A A B C B C C",
+    "B D A A D D C C B A",
+    "B C C C C C B D C B",
+    "C B B C D D B A C A",
+    "C B B A B B D C B D",
+    "A D A A B A D A D A",
+    "C C A C A A C B D D",
+    "C A C A C B D B C D",
+    "A B C X B D C B B C"
+  ]
+}

@@ -65,7 +65,7 @@ test('Economy Current Affairs mirrors every approved economic current-affairs le
   const ids=result.body.questions.map(q=>q.id);
   assert.equal(new Set(ids).size,ids.length);
   assert.equal(ids.length,selectionCounts(sourcePaths,index).matchingCount);
-  assert.equal(data.totalCount,2439,'Shared categories do not duplicate records; preparation-only English/science and held records are excluded');
+  assert.equal(data.totalCount,2469,'Shared categories do not duplicate records; preparation-only English/science and held records are excluded');
 });
 
 test('older V4 and V3 scopes retain frozen membership after a question moves to another subject',async()=>{
@@ -131,6 +131,7 @@ test('review ledger checks hashes and separates preserved decisions, fresh passe
   official.push(...JSON.parse(fs.readFileSync('content/nda-2018-ii-official-paper.json')).questions);
   official.push(...JSON.parse(fs.readFileSync('content/nda-2017-ii-official-paper.json')).questions);
   official.push(...JSON.parse(fs.readFileSync('content/nda-2015-ii-official-paper.json')).questions);
+  official.push(...JSON.parse(fs.readFileSync('content/nda-2015-i-official-paper.json')).questions);
   const oldIds=new Set([...bank,...imports].map(q=>q.id));
   const byId=new Map([...bank,...imports,...official.filter(q=>!oldIds.has(q.id))].map(q=>[q.id,q]));
   assert.equal(new Set(ledger.records.map(r=>r.questionId)).size,ledger.records.length);
@@ -141,7 +142,7 @@ test('review ledger checks hashes and separates preserved decisions, fresh passe
   assert.equal(repaired.basis,'nda-2025-complete-source-review');
   assert.equal(questionReview(repaired.questionId).status,'official-final');
   assert.equal(JSON.parse(fs.readFileSync('content/question-review-policy.json'))['nda-2025-i-86'].status,'quarantined');
-  assert.equal(ledger.records.filter(r=>r.status==='out-of-scope').length,997);
+  assert.equal(ledger.records.filter(r=>r.status==='out-of-scope').length,1099);
   for(const r of ledger.records) {
     assert.ok(byId.has(r.questionId));
     assert.equal(crypto.createHash('sha256').update(JSON.stringify(byId.get(r.questionId))).digest('hex'),r.expectedRecordHash,r.questionId);

@@ -104,7 +104,7 @@ test("inventory returns cross-exam subjects and unique official PYQ flows", asyn
   const response = await workerFetch("/api/pyqs/inventory");
   assert.equal(response.status, 200);
   const inventory = await response.json();
-  assert.equal(inventory.totalCount, 2439);
+  assert.equal(inventory.totalCount, 2469);
   assert.equal(inventory.mappedCount + inventory.unmappedCount, inventory.totalCount);
   assert.deepEqual(inventory.subjects.filter(s=>!s.legacyOnly).map((subject) => subject.label), ["Geography", "History", "Polity & Governance", "Economy", "Environment & Ecology", "Science & Technology", "Social Development", "International Relations & Organisations", "Current Affairs"]);
   assert.ok(inventory.nodes.some((node) => node.kind === "topic"));
@@ -231,7 +231,7 @@ test("ships exact, locked source records and the local-only PWA model", async ()
   assert.match(archiveSource, /ScopeFlow/);
   assert.match(archiveSource, /SyllabusNavigation/);
   assert.doesNotMatch(archiveSource, /scope-breadcrumbs/);
-  assert.match(archiveSource, /scope-sources/);
+  assert.match(archiveSource, /source-year-matrix/);
   assert.match(archiveSource, /matchingCount/);
   assert.match(localStoreSource, /openDB/);
   assert.match(localStoreSource, /attempts/);
