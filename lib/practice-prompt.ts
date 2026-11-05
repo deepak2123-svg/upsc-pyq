@@ -2,6 +2,7 @@ export type PracticePromptBlock =
   | { kind: "text"; text: string }
   | { kind: "statement"; marker: string; text: string }
   | { kind: "error-line"; segments: { marker: string; text: string }[] }
+  | { kind: "word-order"; segments: { marker: string; text: string }[] }
   | { kind: "pair-table"; leftTitle: string; rightTitle: string; rows: { marker: string; left: string; right: string }[] }
   | {
     kind: "match-table";
@@ -19,6 +20,8 @@ const listTwoMarker = /\bList\s*[-–—]?\s*(?:II|2)\s*\(([^)]*)\)/i;
 const letteredItemMarker = /(?<!\S)([A-Z])[.)]\s+/g;
 const errorMarker = /^\(([a-z])\)$/i;
 const inlineErrorMarker = /\(([a-d])\)/gi;
+const inlineWordOrderMarker = /\(([PQRS])\)/g;
+const leadingWordOrderMarker = /^([PQRS])\s*:\s*(.+)$/;
 
 function romanValue(value: string) {
   const numerals: Record<string, number> = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10 };
@@ -69,6 +72,24 @@ function inlineErrorLineBlock(lines: string[]): PracticePromptBlock | null {
   if (line.slice(start).trim() || segments.some(segment => !segment.text)) return null;
   if (segments.at(-1)?.marker === "(d)" && /^no\s+error\.?$/i.test(segments.at(-1)!.text)) segments.pop();
   return segments.length >= 3 ? { kind: "error-line", segments } : null;
+}
+
+/** Restore the underlined P/Q/R/S strips used by ordering-of-words items. */
+function wordOrderBlocks(lines: string[]): PracticePromptBlock[] | null {
+  const labelled=lines.map(line=>line.match(leadingWordOrderMarker));
+  const first=labelled.findIndex(match=>match?.[1]==='P');
+  if(first>=0&&['P','Q','R','S'].every((label,index)=>labelled[first+index]?.[1]===label)) {
+    const segments=labelled.slice(first,first+4).map(match=>({marker:match![1],text:match![2].trim()}));
+    return [...lines.slice(0,first).map(text=>({kind:'text' as const,text})),{kind:'word-order' as const,segments},...lines.slice(first+4).map(text=>({kind:'text' as const,text}))];
+  }
+  if(lines.length!==1)return null;
+  const line=lines[0],matches=[...line.matchAll(inlineWordOrderMarker)];
+  if(matches.length!==4||!matches.every((match,index)=>match[1]==='PQRS'[index]))return null;
+  let start=0;
+  const segments=matches.map(match=>{const text=line.slice(start,match.index).trim();start=match.index!+match[0].length;return{marker:match[1],text};});
+  if(segments.some(segment=>!segment.text))return null;
+  const trailing=line.slice(start).trim();
+  return [{kind:'word-order',segments},...(trailing?[{kind:'text' as const,text:trailing.replace(/^[.:;\s]+/,'')}]:[])];
 }
 
 /** Convert the limited TeX notation found in legacy imports for display. */
@@ -231,6 +252,8 @@ export function formatPracticePrompt(lines: string[]): PracticePromptBlock[] {
   if (errorLine) return [errorLine];
   const inlineErrorLine = inlineErrorLineBlock(cleanLines);
   if (inlineErrorLine) return [inlineErrorLine];
+  const wordOrder = wordOrderBlocks(cleanLines);
+  if (wordOrder) return wordOrder;
   const matchingLists = matchingListBlocks(cleanLines);
   if (matchingLists) return matchingLists;
   const pairedRows = pairedRowBlocks(cleanLines);

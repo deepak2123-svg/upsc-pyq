@@ -180,7 +180,7 @@
     "reviewerMethod": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including source-render checks for formulas and both figures; the official key was transcribed independently in column and row orientations; not independent human review.",
     "classificationMethod": "Complete-stem and all-options paper-specific taxonomy pass by the same agent; not independent human review.",
     "reviewedInputHashes": {
-      "scripts/nda-2015-i-transcription.mjs": "6c124ea57275dbeb1572800bc5d5f7483c7bb69d2dca66c567177e79bb16ccfe",
+      "scripts/nda-2015-i-transcription.mjs": "1a98601c571cb2e28321e2064823d452a19090ae28e08840f25102e02aeb70ec",
       "scripts/nda-2015-i-classification.mjs": "d5f677a977fffad167868f849a61f357a20861b629402c86d6654291834c6c26"
     }
   },
@@ -966,7 +966,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "eb4e28b923b8d9f7dfc231a46cda7d2b79763f3d9afa71443e3aa2a9178d2938",
+        "sourceTextHash": "1fc3f8551ee3d115fc793778ea7f0d3f18e855deca3c3ca866a828b56d86b94d",
         "optionsHash": "665e8199659391f43e8e54656959d68f6f85d15b87a93f22cd163e842cd79999",
         "sourcePages": [
           4
@@ -1066,7 +1066,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "dd1e1f3cae6531a354778dce79a76efac2c46db4c1d1ff880db01bdf394f3d6f",
+        "sourceTextHash": "43709fc12746f4d03b660745de551898c6fe537d79822c799e42cb35d57b6c8a",
         "optionsHash": "82e98167fb74cd462d14e1cdaf159032385078feba0270ec5bcf8abd6cceeee1",
         "sourcePages": [
           4
@@ -1116,7 +1116,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "e85537bef81ee002888bd0ada6ef7047fda0f6f680178d85efea15764ddcbbe0",
+        "sourceTextHash": "eb542c7a2384782c2993583113239a911e03c4c0afe3d5f1e929541f21566cd7",
         "optionsHash": "32a454daf3112b9a613e96cce01868a823aab1b5ce056f51b94551eb4cacc45f",
         "sourcePages": [
           4
@@ -1166,7 +1166,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "24ce6c1e2fffcfd095eeafeb077d43f7e0c38c238ae2b1a6c89283333a043f1a",
+        "sourceTextHash": "eafd0c584e3f1519a0c919c9a6c5b1efa6a35aadfcdd875274e1cb00d4597b0c",
         "optionsHash": "58da75492255a4e888b55af769248202d09e4574fd95707dd5510f46c501b62a",
         "sourcePages": [
           4
@@ -1216,7 +1216,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "c87bafc12a6d82ee7187c1707a6943e082b9c5c2be1ac5f34c1e21be28d147d4",
+        "sourceTextHash": "72f2f86aaccd6ee6beeaff2f8755191a15feefda09d4d8f4db297f6b21c922df",
         "optionsHash": "26c4b3c2dcae9548ce92ba84bc6db2b816ae8554d9e52bd5dc3c39d79fbac8f4",
         "sourcePages": [
           4
@@ -1266,7 +1266,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "2daf479ee971a263f0e0bc3315c7cdb93aec2edf83fbac9f2f62419f4138b018",
+        "sourceTextHash": "bb947dcb0ce56011cc15ca7c2e13b7baa45d6095f66211f8c3eecba6b5058891",
         "optionsHash": "ca67cb2435e4aac844b2e0939e52fbac078e19b7135f1172c34fc9ee0bd9cbb2",
         "sourcePages": [
           4
@@ -1316,7 +1316,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "aac4310d33b3f5bcba5ee36ff3c69c9124df061ebadb6a18582f1a4e244a8f12",
+        "sourceTextHash": "678334f98e36759b005028605a8f0626a7b690a8e9998b1c3a4d2144885379f7",
         "optionsHash": "c3745d042f9c9b07ef49e97ecbe417f49d20ddbe59fa9635aa6f82986bcf56a9",
         "sourcePages": [
           4
@@ -1366,7 +1366,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "837ba04200fa852f4928efcde9d785dcf0a3e6928b807e6ea765b6e83597b4a8",
+        "sourceTextHash": "eb756b8d54c1206f637a8e78d4c1e82abf1552228edae6342b1fad65383ef8d1",
         "optionsHash": "f32febcf4d02dc480b90df03f40bb83a8d556ae4f87e8da55ae82bafaf8ce3e1",
         "sourcePages": [
           5
@@ -1416,7 +1416,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "0ed009da01bb6c8832ce66c9e7bbe20e81314b35e6acf97200c57b40556174f4",
+        "sourceTextHash": "78a0dd5cb310965be3786f25c8ca2758b7bbe05aff8112dffed5668552640fd7",
         "optionsHash": "2a1d88d95cc806b78eb266d372e7d70efaef2270fe5edfdec32a19c582fb8f44",
         "sourcePages": [
           5
@@ -1466,7 +1466,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "678f4940517108724569f0a19fbeb0f072dd610c7708b1950762e39300d04133",
+        "sourceTextHash": "fe88258c84f7929606755b749b9ce378836c6f70d650c908951c1dd95727d8d5",
         "optionsHash": "a57539465f16fd95923d55b2aa645ad794c78eac308199a0ba58971ece864914",
         "sourcePages": [
           5
@@ -1516,7 +1516,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "ec58d58990bb3048b5c049f261e46176d5dcaf18380fa3c5b41b98c473c1df67",
+        "sourceTextHash": "2efd61bd739d08134ce1db19f636ff9b842e3ee37fb9936265a6ef331bc2cc6c",
         "optionsHash": "4f3cb876e9a93d77b40c982a6f341ffaf076b5935db70d04fd2a505e2d1ec07f",
         "sourcePages": [
           5
@@ -1566,7 +1566,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "c51c677f1cf7b29909adc319195419e8da43f701179e84c409fb790fd140c48a",
+        "sourceTextHash": "742328da29fbb9f7d2265f01f98c57512513654394386ee6d326667dc7386294",
         "optionsHash": "e81a4e80deccb4bc1be3aada6add72f5f7a5d91dc9f1351d7f0bc492b6b25896",
         "sourcePages": [
           5
@@ -1616,7 +1616,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "a85b4cd40e6d05c645e3b6b7fc4de3361a4984ff6d82616c68215d5fb7278467",
+        "sourceTextHash": "4a0ee1e97c2cf2506908436196b17866ba7ed2fee4a47e52d94e3f4cf6e1b82e",
         "optionsHash": "f0d2ed4827eb8738b8b4296a9cf52e0ae8776b238e87a5d596785c4a3cc5bd34",
         "sourcePages": [
           5
@@ -1666,7 +1666,7 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "f005e9a4b3504a811efdafdbc1a1881f5a41a8b751c5a340498f196a4ae8f0b8",
+        "sourceTextHash": "d39c25f3f96d9a03c9b6c3b0f288a49ce33c3405f6451c5c9134c341f9b73c21",
         "optionsHash": "eac2bfd62a5a1c04d8019ad741979b70351607d6540a923aaf75e2024293c123",
         "sourcePages": [
           5

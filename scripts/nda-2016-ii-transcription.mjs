@@ -1,5 +1,6 @@
 // Secondary transcript checked against the archived Series A scan; official answers come only from the preserved key.
 export const directions=[];
+export const reviewedUnderlined={38:['in spite of he was poor'],39:['should to'],40:['listening to me'],41:['also'],42:['stationeries'],43:['for'],44:['painted'],45:['prepare'],46:['one another'],47:['did something'],48:['would have helped'],49:['for'],50:['which']};
 export const questions=[
   {
     "number": 1,

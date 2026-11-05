@@ -1,5 +1,6 @@
 // Secondary transcript checked against the archived Series A scan; official answers come only from the preserved key.
 export const directions=[];
+export const reviewedUnderlined={21:['but for'],22:['rather than'],23:['secretly'],24:['tell'],25:['look it after'],26:['in their home'],27:['ran'],28:['cut a sad figure'],29:['spectacles'],30:['avail']};
 export const questions=[
   {
     "number": 1,

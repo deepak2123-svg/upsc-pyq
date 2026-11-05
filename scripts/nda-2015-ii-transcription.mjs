@@ -1,4 +1,5 @@
 export const directions = [];
+export const reviewedUnderlined = {1:['Had she been hungry'],2:['Until you don’t finish the work'],3:['cut off'],4:["I’d rather not talk about"],5:['I did sleep'],6:['will buy'],7:['saved'],8:['arrange the car'],9:['had he reached'],10:['by the sweeping majority'],26:['garrulous'],27:['fortitude'],28:['tacit'],29:['meagre'],30:['exhilarated'],31:['concealed'],32:['denounced'],33:['skeptical'],34:['coherent'],35:['altruistic']};
 
 export const questions = [
   {

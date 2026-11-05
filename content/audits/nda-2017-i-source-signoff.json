@@ -160,7 +160,7 @@
   "reviewerMethod": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
   "classificationMethod": "Source-taxonomy concept and target-applicability pass by the same agent; not independent human review.",
   "reviewedInputHashes": {
-    "scripts/nda-2017-i-transcription.mjs": "3202348eb5ea7c65f76cfedaf017ffafbe575439fee64f39606f8678aa84ebbb",
+    "scripts/nda-2017-i-transcription.mjs": "64aa95089386f47572c724d10f884b300840d6368cdd54eadc346eed28808d76",
     "scripts/nda-2017-i-classification.mjs": "0cff0d98ecae405d4dbbc68ed218081e3c54fe46d2f0e09d136d509241b7dcab"
   }
 }

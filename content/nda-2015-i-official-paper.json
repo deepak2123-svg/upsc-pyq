@@ -1243,8 +1243,8 @@
       "id": "nda-2015-i-16",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Although India is still\nby far\na poor country, it can become rich if its natural and human resources are fully utilised.",
-      "sourceTextHash": "eb4e28b923b8d9f7dfc231a46cda7d2b79763f3d9afa71443e3aa2a9178d2938",
+      "sourceText": "Although India is still by far a poor country, it can become rich if its natural and human resources are fully utilised.",
+      "sourceTextHash": "1fc3f8551ee3d115fc793778ea7f0d3f18e855deca3c3ca866a828b56d86b94d",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -1259,9 +1259,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Although India is still",
-        "by far",
-        "a poor country, it can become rich if its natural and human resources are fully utilised."
+        "Although India is still by far a poor country, it can become rich if its natural and human resources are fully utilised."
       ],
       "options": {
         "A": "few and far between",
@@ -1276,7 +1274,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "by far"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1345,7 +1345,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "The more they earn, more they spend."
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1383,8 +1385,8 @@
       "id": "nda-2015-i-18",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "But in all these cases conversion from one scale to another is easy because scales\nhave well-formulated.",
-      "sourceTextHash": "dd1e1f3cae6531a354778dce79a76efac2c46db4c1d1ff880db01bdf394f3d6f",
+      "sourceText": "But in all these cases conversion from one scale to another is easy because scales have well-formulated.",
+      "sourceTextHash": "43709fc12746f4d03b660745de551898c6fe537d79822c799e42cb35d57b6c8a",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -1399,8 +1401,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "But in all these cases conversion from one scale to another is easy because scales",
-        "have well-formulated."
+        "But in all these cases conversion from one scale to another is easy because scales have well-formulated."
       ],
       "options": {
         "A": "can be well-formulated",
@@ -1415,7 +1416,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "have well-formulated"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1453,8 +1456,8 @@
       "id": "nda-2015-i-19",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Five years ago on this date, I\nam sitting\nin a small Japanese car, driving across Poland towards Berlin.",
-      "sourceTextHash": "e85537bef81ee002888bd0ada6ef7047fda0f6f680178d85efea15764ddcbbe0",
+      "sourceText": "Five years ago on this date, I am sitting in a small Japanese car, driving across Poland towards Berlin.",
+      "sourceTextHash": "eb542c7a2384782c2993583113239a911e03c4c0afe3d5f1e929541f21566cd7",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -1469,9 +1472,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Five years ago on this date, I",
-        "am sitting",
-        "in a small Japanese car, driving across Poland towards Berlin."
+        "Five years ago on this date, I am sitting in a small Japanese car, driving across Poland towards Berlin."
       ],
       "options": {
         "A": "was sitting",
@@ -1486,7 +1487,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "am sitting in"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1524,8 +1527,8 @@
       "id": "nda-2015-i-20",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "The old man felled some trees in the garden with\nhardly no effort\nat all.",
-      "sourceTextHash": "24ce6c1e2fffcfd095eeafeb077d43f7e0c38c238ae2b1a6c89283333a043f1a",
+      "sourceText": "The old man felled some trees in the garden with hardly no effort at all.",
+      "sourceTextHash": "eafd0c584e3f1519a0c919c9a6c5b1efa6a35aadfcdd875274e1cb00d4597b0c",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -1540,9 +1543,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "The old man felled some trees in the garden with",
-        "hardly no effort",
-        "at all."
+        "The old man felled some trees in the garden with hardly no effort at all."
       ],
       "options": {
         "A": "hard effort",
@@ -1557,7 +1558,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "hardly no effort"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1595,8 +1598,8 @@
       "id": "nda-2015-i-21",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "She says she’s already paid me back, but I can’t remember, so I’ll have\nto take her word.",
-      "sourceTextHash": "c87bafc12a6d82ee7187c1707a6943e082b9c5c2be1ac5f34c1e21be28d147d4",
+      "sourceText": "She says she’s already paid me back, but I can’t remember, so I’ll have to take her word.",
+      "sourceTextHash": "72f2f86aaccd6ee6beeaff2f8755191a15feefda09d4d8f4db297f6b21c922df",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -1611,8 +1614,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "She says she’s already paid me back, but I can’t remember, so I’ll have",
-        "to take her word."
+        "She says she’s already paid me back, but I can’t remember, so I’ll have to take her word."
       ],
       "options": {
         "A": "to take her word true",
@@ -1627,7 +1629,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "to take her word"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1665,8 +1669,8 @@
       "id": "nda-2015-i-22",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "The workers are\nhell bent at getting\nwhat is due to them.",
-      "sourceTextHash": "2daf479ee971a263f0e0bc3315c7cdb93aec2edf83fbac9f2f62419f4138b018",
+      "sourceText": "The workers are hell bent at getting what is due to them.",
+      "sourceTextHash": "bb947dcb0ce56011cc15ca7c2e13b7baa45d6095f66211f8c3eecba6b5058891",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -1681,9 +1685,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "The workers are",
-        "hell bent at getting",
-        "what is due to them."
+        "The workers are hell bent at getting what is due to them."
       ],
       "options": {
         "A": "hell bent on getting",
@@ -1698,7 +1700,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "hell bent at getting"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1736,8 +1740,8 @@
       "id": "nda-2015-i-23",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "You are warned\nagainst committing\nthe same mistake again.",
-      "sourceTextHash": "aac4310d33b3f5bcba5ee36ff3c69c9124df061ebadb6a18582f1a4e244a8f12",
+      "sourceText": "You are warned against committing the same mistake again.",
+      "sourceTextHash": "678334f98e36759b005028605a8f0626a7b690a8e9998b1c3a4d2144885379f7",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -1752,9 +1756,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "You are warned",
-        "against committing",
-        "the same mistake again."
+        "You are warned against committing the same mistake again."
       ],
       "options": {
         "A": "to commit",
@@ -1769,7 +1771,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "against committing"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1807,8 +1811,8 @@
       "id": "nda-2015-i-24",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "While we would like\nthat all Indian children\nto go to school, we need to ponder why they do not.",
-      "sourceTextHash": "837ba04200fa852f4928efcde9d785dcf0a3e6928b807e6ea765b6e83597b4a8",
+      "sourceText": "While we would like that all Indian children to go to school, we need to ponder why they do not.",
+      "sourceTextHash": "eb756b8d54c1206f637a8e78d4c1e82abf1552228edae6342b1fad65383ef8d1",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -1823,9 +1827,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "While we would like",
-        "that all Indian children",
-        "to go to school, we need to ponder why they do not."
+        "While we would like that all Indian children to go to school, we need to ponder why they do not."
       ],
       "options": {
         "A": "that all the Indian children",
@@ -1840,7 +1842,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "that all Indian children"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1878,8 +1882,8 @@
       "id": "nda-2015-i-25",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Due to these reasons\nwe are all in favour of universal compulsory education.",
-      "sourceTextHash": "0ed009da01bb6c8832ce66c9e7bbe20e81314b35e6acf97200c57b40556174f4",
+      "sourceText": "Due to these reasons we are all in favour of universal compulsory education.",
+      "sourceTextHash": "78a0dd5cb310965be3786f25c8ca2758b7bbe05aff8112dffed5668552640fd7",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -1894,8 +1898,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Due to these reasons",
-        "we are all in favour of universal compulsory education."
+        "Due to these reasons we are all in favour of universal compulsory education."
       ],
       "options": {
         "A": "Out of these reasons",
@@ -1910,7 +1913,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "Due to these reasons"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1948,8 +1953,8 @@
       "id": "nda-2015-i-26",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "When it was feared that the serfs might go too far and gain their freedom from serfdom, the Protestant leaders joined the princes\nat crushing\nthem.",
-      "sourceTextHash": "678f4940517108724569f0a19fbeb0f072dd610c7708b1950762e39300d04133",
+      "sourceText": "When it was feared that the serfs might go too far and gain their freedom from serfdom, the Protestant leaders joined the princes at crushing them.",
+      "sourceTextHash": "fe88258c84f7929606755b749b9ce378836c6f70d650c908951c1dd95727d8d5",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -1964,9 +1969,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "When it was feared that the serfs might go too far and gain their freedom from serfdom, the Protestant leaders joined the princes",
-        "at crushing",
-        "them."
+        "When it was feared that the serfs might go too far and gain their freedom from serfdom, the Protestant leaders joined the princes at crushing them."
       ],
       "options": {
         "A": "into crushing",
@@ -1981,7 +1984,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "at crushing"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2019,8 +2024,8 @@
       "id": "nda-2015-i-27",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "In India, today many of our intellectuals still talk in terms of the French revolution and the Rights of Man, not appreciating that\nmuch has happened\nsince then.",
-      "sourceTextHash": "ec58d58990bb3048b5c049f261e46176d5dcaf18380fa3c5b41b98c473c1df67",
+      "sourceText": "In India, today many of our intellectuals still talk in terms of the French revolution and the Rights of Man, not appreciating that much has happened since then.",
+      "sourceTextHash": "2efd61bd739d08134ce1db19f636ff9b842e3ee37fb9936265a6ef331bc2cc6c",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -2035,9 +2040,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "In India, today many of our intellectuals still talk in terms of the French revolution and the Rights of Man, not appreciating that",
-        "much has happened",
-        "since then."
+        "In India, today many of our intellectuals still talk in terms of the French revolution and the Rights of Man, not appreciating that much has happened since then."
       ],
       "options": {
         "A": "much has been happening",
@@ -2052,7 +2055,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "much has happened"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2090,8 +2095,8 @@
       "id": "nda-2015-i-28",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Taxpayers\nare to\nbe conscious of their privileges.",
-      "sourceTextHash": "c51c677f1cf7b29909adc319195419e8da43f701179e84c409fb790fd140c48a",
+      "sourceText": "Taxpayers are to be conscious of their privileges.",
+      "sourceTextHash": "742328da29fbb9f7d2265f01f98c57512513654394386ee6d326667dc7386294",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -2106,9 +2111,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Taxpayers",
-        "are to",
-        "be conscious of their privileges."
+        "Taxpayers are to be conscious of their privileges."
       ],
       "options": {
         "A": "have to",
@@ -2123,7 +2126,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "are to"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2161,8 +2166,8 @@
       "id": "nda-2015-i-29",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "I would have waited for you at the station if I\nknew\nthat you would come.",
-      "sourceTextHash": "a85b4cd40e6d05c645e3b6b7fc4de3361a4984ff6d82616c68215d5fb7278467",
+      "sourceText": "I would have waited for you at the station if I knew that you would come.",
+      "sourceTextHash": "4a0ee1e97c2cf2506908436196b17866ba7ed2fee4a47e52d94e3f4cf6e1b82e",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -2177,9 +2182,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "I would have waited for you at the station if I",
-        "knew",
-        "that you would come."
+        "I would have waited for you at the station if I knew that you would come."
       ],
       "options": {
         "A": "had known",
@@ -2194,7 +2197,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "knew"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2232,8 +2237,8 @@
       "id": "nda-2015-i-30",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "No one could explain how a calm and balanced person like him could\npenetrate\nsuch a mindless act on his friends.",
-      "sourceTextHash": "f005e9a4b3504a811efdafdbc1a1881f5a41a8b751c5a340498f196a4ae8f0b8",
+      "sourceText": "No one could explain how a calm and balanced person like him could penetrate such a mindless act on his friends.",
+      "sourceTextHash": "d39c25f3f96d9a03c9b6c3b0f288a49ce33c3405f6451c5c9134c341f9b73c21",
       "exam": "NDA",
       "year": 2015,
       "paper": "I",
@@ -2248,9 +2253,7 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "No one could explain how a calm and balanced person like him could",
-        "penetrate",
-        "such a mindless act on his friends."
+        "No one could explain how a calm and balanced person like him could penetrate such a mindless act on his friends."
       ],
       "options": {
         "A": "perpetuate",
@@ -2265,7 +2268,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "penetrate"
+      ],
       "classificationTags": [
         "Static"
       ],

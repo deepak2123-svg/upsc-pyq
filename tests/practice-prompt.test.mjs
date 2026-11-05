@@ -116,3 +116,30 @@ test("inline error formatting is conservative and preserves ordinary option-like
     {kind:'text',text:'Choose (a) Alpha (b) Beta (c) Gamma'},
   ]);
 });
+
+test('restores ordering-of-words fragments with paper-style P Q R S labels',()=>{
+  const inline=formatPracticePrompt(['His uncle for success in life, (P) always advised his son, (Q) who was a self-made man (R) to depend on his own efforts (S) The proper sequence should be:']);
+  assert.equal(inline[0].kind,'word-order');
+  assert.deepEqual(inline[0].segments.map(segment=>segment.marker),['P','Q','R','S']);
+  assert.equal(inline[0].segments[0].text,'His uncle for success in life,');
+  assert.equal(inline[1].text,'The proper sequence should be:');
+  const labelled=formatPracticePrompt(['Directions','P : participate in the function','Q : many of the people who had come to','R : the auditorium was over-crowded','S : could not find a seat because']);
+  assert.equal(labelled[1].kind,'word-order');
+  assert.deepEqual(labelled[1].segments.map(segment=>segment.text),['participate in the function','many of the people who had come to','the auditorium was over-crowded','could not find a seat because']);
+});
+
+test('completed NDA sentence-improvement items retain every source-reviewed underline',()=>{
+  const files=['nda-2014-ii','nda-2015-i','nda-2015-ii','nda-2016-ii','nda-2017-i'];
+  let checked=0;
+  for(const id of files){
+    const paper=JSON.parse(fs.readFileSync(`content/${id}-official-paper.json`));
+    for(const question of paper.questions){
+      if(!/^no improvement\.?$/i.test(String(question.options?.D??'').trim()))continue;
+      assert.ok(question.underlined?.length,question.id);
+      const prompt=question.promptLines.join(' ');
+      for(const span of question.underlined)assert.ok(prompt.includes(span),`${question.id}: ${span}`);
+      checked+=1;
+    }
+  }
+  assert.equal(checked,58);
+});

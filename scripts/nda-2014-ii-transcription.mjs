@@ -1,4 +1,5 @@
 export const directions = [];
+export const reviewedUnderlined = {41:['broke through'],42:['have reached'],43:['looked'],44:['towards'],45:['got'],46:['off'],47:['have worked'],48:['joining'],49:['is wanting'],50:['finished']};
 
 export const questions = [
   {
