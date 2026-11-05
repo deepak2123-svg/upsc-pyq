@@ -74,6 +74,31 @@ test("separates statements even when dates contain numbered punctuation", () => 
   assert.equal(blocks[1].text, "Vernal equinox occurs on March 21.");
 });
 
+test('starts Statement I and Statement II on separate paper lines throughout the corpus',()=>{
+  const files=fs.readdirSync('content').filter(file=>file.endsWith('-official-paper.json'));
+  let checked=0;
+  for(const file of files){
+    const paper=JSON.parse(fs.readFileSync(`content/${file}`));
+    for(const question of paper.questions??[]){
+      const text=(question.promptLines??[]).join(' ');
+      if(!/\bStatement\s*[-–—]?\s*I\s*:/i.test(text)||!/\bStatement\s*[-–—]?\s*II\s*:/i.test(text))continue;
+      const statements=formatPracticePrompt(question.promptLines,{options:question.options}).filter(block=>block.kind==='statement');
+      assert.deepEqual(statements.slice(0,2).map(block=>block.marker),['Statement I:','Statement II:'],question.id);
+      assert.ok(statements[0].text&&statements[1].text,question.id);
+      checked+=1;
+    }
+  }
+  assert.ok(checked>=20,'the corpus gate must retain all paired Statement I/II questions');
+
+  const paper=JSON.parse(fs.readFileSync('content/nda-2016-ii-official-paper.json'));
+  const question=paper.questions.find(question=>question.promptLines?.some(line=>line.includes('Too much salt content')));
+  const statements=formatPracticePrompt(question.promptLines,{options:question.options}).filter(block=>block.kind==='statement');
+  assert.deepEqual(statements.map(({marker,text})=>({marker,text})),[
+    {marker:'Statement I:',text:'Too much salt content in diet could be one of the reasons for kidney failure.'},
+    {marker:'Statement II:',text:'High salt may cause high blood pressure.'},
+  ]);
+});
+
 test("restores spot-the-error fragments as one labelled sentence without changing source text", () => {
   const question=JSON.parse(fs.readFileSync('content/nda-2015-i-official-paper.json')).questions.find(q=>q.id==='nda-2015-i-3');
   const before=JSON.stringify(question.promptLines);

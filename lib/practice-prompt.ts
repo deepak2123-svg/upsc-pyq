@@ -22,6 +22,7 @@ const errorMarker = /^\(([a-z])\)$/i;
 const inlineErrorMarker = /\(([a-d])\)/gi;
 const inlineWordOrderMarker = /\(([PQRS])\)/g;
 const leadingWordOrderMarker = /^([PQRS])\s*[.:]\s*(.+)$/;
+const labelledStatementMarker = /\bStatement\s*[-–—]?\s*(I|II)\s*:\s*/gi;
 const errorDirections = /(?:underlined parts? label|spot the error|sentence (?:is )?given in (?:three|four) parts|find out which part .* error)/i;
 const wordOrderDirections = /(?:parts? .*jumbled|jumbled parts?|proper sequence|rearrange .* parts?)/i;
 
@@ -154,6 +155,26 @@ function sentenceOrderBlocks(lines:string[]):PracticePromptBlock[]|null{
     });
   }
   return blocks.some(block=>block.kind==='statement'&&block.marker==='P')?blocks:null;
+}
+
+/** Keep paired Statement I / Statement II assertions on separate paper lines. */
+function labelledStatementBlocks(lines:string[]):PracticePromptBlock[]|null{
+  const value=lines.join(' ').replace(/\s+/g,' ').trim();
+  const matches=[...value.matchAll(labelledStatementMarker)];
+  if(matches.length!==2||matches[0][1].toUpperCase()!=='I'||matches[1][1].toUpperCase()!=='II')return null;
+  const introduction=value.slice(0,matches[0].index).trim();
+  const first=value.slice(matches[0].index!+matches[0][0].length,matches[1].index).trim();
+  let second=value.slice(matches[1].index!+matches[1][0].length).trim();
+  if(!first||!second)return null;
+  const instructionAt=second.search(instructionMarker);
+  const instruction=instructionAt>=0?second.slice(instructionAt).trim():'';
+  if(instructionAt>=0)second=second.slice(0,instructionAt).trim();
+  return [
+    ...(introduction?[{kind:'text' as const,text:introduction}]:[]),
+    {kind:'statement',marker:'Statement I:',text:first},
+    {kind:'statement',marker:'Statement II:',text:second},
+    ...(instruction?[{kind:'text' as const,text:instruction}]:[]),
+  ];
 }
 
 /** Convert the limited TeX notation found in legacy imports for display. */
@@ -318,6 +339,8 @@ export function formatPracticePrompt(lines: string[],meta?:{options?:Record<stri
   if (errorLine) return [errorLine];
   const inlineErrorLine = inlineErrorLineBlock(cleanLines);
   if (inlineErrorLine) return [inlineErrorLine];
+  const labelledStatements=labelledStatementBlocks(cleanLines);
+  if(labelledStatements)return labelledStatements;
   const sentenceOrder=sentenceOrderBlocks(cleanLines);
   if(sentenceOrder)return sentenceOrder;
   const wordOrder = wordOrderBlocks(cleanLines,meta?.options);
