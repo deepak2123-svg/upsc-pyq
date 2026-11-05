@@ -4,7 +4,7 @@
 
 This is the permanent standard for reproducing previous-year MCQs in the attempt view, result review and printable PDF. The objective is faithful presentation of the official paper, not editorial rewriting.
 
-Version 2.0 · 25 October 2026. Use within the [standing paper-processing
+Version 2.1 · 5 November 2026. Use within the [standing paper-processing
 SOP](paper-processing-sop.md). Answer adjudication follows the
 [exception SOP](ambiguous-mcq-sop.md); release follows the
 [paper checklist](paper-release-checklist.md).
@@ -48,6 +48,12 @@ Apply these rules in order. The same formatter must be used online, in results a
 - Preserve the exact underlined expression, blank position, punctuation and
   error-identification segments. Underlining is question data, not decoration
   inferred from an answer or an explanation.
+- Spot-the-error sentences must reproduce the printed relationship between each
+  sentence fragment and its lowercase marker. Whether an import stores these as
+  alternating lines or as one flattened `fragment (a) fragment (b) ...` line,
+  render the fragments as one sentence with each fragment underlined and its
+  marker centred directly below it. `No error` remains the `(d)` answer choice;
+  never leave `(a)`, `(b)` and `(c)` as unexplained choices beside flat prose.
 - Preserve paired-word rows and their original option/column relationship.
 - Keep shared passages and directions linked to their source question range.
   Each question retains its own canonical/source number and must include or
@@ -106,6 +112,9 @@ Apply these rules in order. The same formatter must be used online, in results a
 - Answer-key question numbers still map to the unchanged source question IDs.
 - Roman right-hand matching labels, underlining, paired-word tables, shared
   passages and mathematical notation survive online, results and PDF views.
+- Every completed source paper containing marker-only spot-the-error choices is
+  corpus-checked through the shared formatter; adding a future paper adds its
+  records to this gate automatically.
 - Original figures load/decode before printing; missing or delayed figures do
   not produce an incomplete automatic or manual print.
 

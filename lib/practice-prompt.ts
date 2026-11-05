@@ -18,6 +18,7 @@ const listOneMarker = /\bList\s*[-–—]?\s*(?:I|1)\s*\(([^)]*)\)/i;
 const listTwoMarker = /\bList\s*[-–—]?\s*(?:II|2)\s*\(([^)]*)\)/i;
 const letteredItemMarker = /(?<!\S)([A-Z])[.)]\s+/g;
 const errorMarker = /^\(([a-z])\)$/i;
+const inlineErrorMarker = /\(([a-d])\)/gi;
 
 function romanValue(value: string) {
   const numerals: Record<string, number> = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10 };
@@ -40,6 +41,34 @@ function errorLineBlock(lines: string[]): PracticePromptBlock | null {
     segments.push({ marker: `(${match[1].toLowerCase()})`, text: lines[index] });
   }
   return segments.length >= 2 ? { kind: "error-line", segments } : null;
+}
+
+/**
+ * Older source transcripts place each spot-the-error marker after the printed
+ * fragment on one flattened line: "first fragment (a) second fragment (b)…".
+ * Reconstruct the paper geometry for every such record at display time.  The
+ * source text remains locked and unchanged, and a terminal "No error (d)" is
+ * left to the answer options just as it is in the printed paper.
+ */
+function inlineErrorLineBlock(lines: string[]): PracticePromptBlock | null {
+  if (lines.length !== 1) return null;
+  const line = lines[0];
+  const matches = [...line.matchAll(inlineErrorMarker)];
+  if (matches.length < 3 || matches.length > 4) return null;
+  if (!matches.every((match, index) => match[1].toLowerCase() === String.fromCharCode(97 + index))) return null;
+  // A marker at the beginning describes a following option; these paper
+  // markers instead sit below (and therefore after) their sentence fragment.
+  if (!line.slice(0, matches[0].index).trim()) return null;
+
+  let start = 0;
+  const segments = matches.map(match => {
+    const text = line.slice(start, match.index).trim();
+    start = match.index! + match[0].length;
+    return { marker: `(${match[1].toLowerCase()})`, text };
+  });
+  if (line.slice(start).trim() || segments.some(segment => !segment.text)) return null;
+  if (segments.at(-1)?.marker === "(d)" && /^no\s+error\.?$/i.test(segments.at(-1)!.text)) segments.pop();
+  return segments.length >= 3 ? { kind: "error-line", segments } : null;
 }
 
 /** Convert the limited TeX notation found in legacy imports for display. */
@@ -200,6 +229,8 @@ export function formatPracticePrompt(lines: string[]): PracticePromptBlock[] {
   const cleanLines = lines.map((line) => formatPracticeText(line).trim()).filter(Boolean);
   const errorLine = errorLineBlock(cleanLines);
   if (errorLine) return [errorLine];
+  const inlineErrorLine = inlineErrorLineBlock(cleanLines);
+  if (inlineErrorLine) return [inlineErrorLine];
   const matchingLists = matchingListBlocks(cleanLines);
   if (matchingLists) return matchingLists;
   const pairedRows = pairedRowBlocks(cleanLines);

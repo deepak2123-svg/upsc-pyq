@@ -88,3 +88,31 @@ test("restores spot-the-error fragments as one labelled sentence without changin
   ]);
   assert.equal(JSON.stringify(question.promptLines),before);
 });
+
+test("restores flattened inline spot-the-error fragments for every completed source paper", () => {
+  const files=fs.readdirSync('content').filter(file=>file.endsWith('-official-paper.json'));
+  let checked=0;
+  for(const file of files) {
+    const paper=JSON.parse(fs.readFileSync(`content/${file}`));
+    for(const question of paper.questions??[]) {
+      const line=(question.promptLines??[]).join(' ');
+      const markerOptions=Object.values(question.options??{}).filter(value=>/^\([abc]\)$/i.test(String(value).trim()));
+      if(markerOptions.length!==3 || !/\(a\).*\(b\).*\(c\)/i.test(line))continue;
+      const before=JSON.stringify(question);
+      const blocks=formatPracticePrompt(question.promptLines);
+      assert.equal(blocks.length,1,question.id);
+      assert.equal(blocks[0].kind,'error-line',question.id);
+      assert.deepEqual(blocks[0].segments.map(segment=>segment.marker),['(a)','(b)','(c)'],question.id);
+      assert.ok(blocks[0].segments.every(segment=>segment.text&&!/\([a-d]\)/i.test(segment.text)),question.id);
+      assert.equal(JSON.stringify(question),before,question.id);
+      checked+=1;
+    }
+  }
+  assert.ok(checked>=34,'the corpus gate must retain all currently completed inline error-spotting records');
+});
+
+test("inline error formatting is conservative and preserves ordinary option-like prose",()=>{
+  assert.deepEqual(formatPracticePrompt(['Choose (a) Alpha (b) Beta (c) Gamma']),[
+    {kind:'text',text:'Choose (a) Alpha (b) Beta (c) Gamma'},
+  ]);
+});
