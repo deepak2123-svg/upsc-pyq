@@ -180,7 +180,7 @@
     "reviewerMethod": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
     "classificationMethod": "Source-scope and closest reviewed taxonomy analogue pass by the same agent; not independent human review.",
     "reviewedInputHashes": {
-      "scripts/nda-2015-ii-transcription.mjs": "1d83a97f8505fb32911ce95de13964266aa20c21188382ea2c13459b43ea2456",
+      "scripts/nda-2015-ii-transcription.mjs": "f7be9ec028a988565fa30e17312b1d77202ccf9a3aaff0f16d861a646cc15e50",
       "scripts/nda-2015-ii-classification.mjs": "7eebd7906557807cbbb19fd6b7af5c693e05a9018e624cb441f5e6a75c28c942"
     }
   },
@@ -2278,7 +2278,7 @@
       "reproduction": {
         "approved": true,
         "sourceTextHash": "be8801121daf7b8d14a2a504558ef6596915584086e7c1b3fc241a3099642dae",
-        "optionsHash": "6354836f1f94ea32e8784127433ca090d45a64ed7d01744bef152c17de7e8a27",
+        "optionsHash": "86f4cfcd962cff09cef4d9e03fbc2e10e3fd845200da192c96c0cf3570a6671d",
         "sourcePages": [
           5
         ],
@@ -2310,7 +2310,7 @@
           "B"
         ],
         "optionTexts": [
-          "(b)"
+          "John is ill"
         ]
       },
       "revision": {
@@ -2328,7 +2328,7 @@
       "reproduction": {
         "approved": true,
         "sourceTextHash": "8f25fe3122ead1754e7e7a9e947e9ec05ecc75be7ff707dba7b9518919a5e965",
-        "optionsHash": "6354836f1f94ea32e8784127433ca090d45a64ed7d01744bef152c17de7e8a27",
+        "optionsHash": "34cc8f7defade09ef1cce373993a57edcfa34e972f0b4743eaceefb181394854",
         "sourcePages": [
           5
         ],
@@ -2360,7 +2360,7 @@
           "C"
         ],
         "optionTexts": [
-          "(c)"
+          "I shall find a job."
         ]
       },
       "revision": {
@@ -2378,7 +2378,7 @@
       "reproduction": {
         "approved": true,
         "sourceTextHash": "dee431cd5404e6ad56b1f84f8055d9228495ba4b382f91447988452d4fd983c5",
-        "optionsHash": "6354836f1f94ea32e8784127433ca090d45a64ed7d01744bef152c17de7e8a27",
+        "optionsHash": "16d312155079e88362bea3861c82d6424dab2fb91b163c061eae4499746ce504",
         "sourcePages": [
           5
         ],
@@ -2410,7 +2410,7 @@
           "B"
         ],
         "optionTexts": [
-          "(b)"
+          "he is owning"
         ]
       },
       "revision": {
@@ -2428,7 +2428,7 @@
       "reproduction": {
         "approved": true,
         "sourceTextHash": "b9ed06d52ed4030224c3102483b433488d3141815b5ca4d5047185a0aa24c0bf",
-        "optionsHash": "6354836f1f94ea32e8784127433ca090d45a64ed7d01744bef152c17de7e8a27",
+        "optionsHash": "1b58df86b10470b9b2cb5bad02c80f891119b7c22daeffd1bebf8c6393bb29b9",
         "sourcePages": [
           5
         ],
@@ -2460,7 +2460,7 @@
           "C"
         ],
         "optionTexts": [
-          "(c)"
+          "a bad weather."
         ]
       },
       "revision": {
@@ -2478,7 +2478,7 @@
       "reproduction": {
         "approved": true,
         "sourceTextHash": "7e3f054db87427d87bbb4ba026ee01c4115f88928e2eeff4b80e772e2692bb87",
-        "optionsHash": "6354836f1f94ea32e8784127433ca090d45a64ed7d01744bef152c17de7e8a27",
+        "optionsHash": "ed839daba5e87e8689cba44a72369d4cd6747735e2879d7af2d3d1960467ec8e",
         "sourcePages": [
           5
         ],
@@ -2510,7 +2510,7 @@
           "B"
         ],
         "optionTexts": [
-          "(b)"
+          "were useful"
         ]
       },
       "revision": {
@@ -2528,7 +2528,7 @@
       "reproduction": {
         "approved": true,
         "sourceTextHash": "20b2a5374e3097550493ec28070291f7f991c84d5a01c074a2dad25755b1d0db",
-        "optionsHash": "6354836f1f94ea32e8784127433ca090d45a64ed7d01744bef152c17de7e8a27",
+        "optionsHash": "92745dc28793cb5100b8db5925162a1108363065628af220fc6fa3bb3870bb69",
         "sourcePages": [
           5
         ],
@@ -2560,7 +2560,7 @@
           "A"
         ],
         "optionTexts": [
-          "(a)"
+          "Little he realized"
         ]
       },
       "revision": {
@@ -2578,7 +2578,7 @@
       "reproduction": {
         "approved": true,
         "sourceTextHash": "2e4ac1c8e88a4bfe32dea056e7eabc9433b83c835ceb800e2094f7e80d959218",
-        "optionsHash": "6354836f1f94ea32e8784127433ca090d45a64ed7d01744bef152c17de7e8a27",
+        "optionsHash": "dae0118bdd829997b96f175e9e64f39670449ebaf8d0cf5b97e6dc4d1a1e148d",
         "sourcePages": [
           5
         ],
@@ -2610,7 +2610,7 @@
           "C"
         ],
         "optionTexts": [
-          "(c)"
+          "juvenile mind."
         ]
       },
       "revision": {
@@ -2628,7 +2628,7 @@
       "reproduction": {
         "approved": true,
         "sourceTextHash": "57cc142331dcee843d052e414ad958ce75646a695418547f6020313a93615d31",
-        "optionsHash": "6354836f1f94ea32e8784127433ca090d45a64ed7d01744bef152c17de7e8a27",
+        "optionsHash": "cd2555e257223b21568291fdad208cf50ba0fa9f852aace56d087e6e932e3642",
         "sourcePages": [
           5
         ],
@@ -2660,7 +2660,7 @@
           "B"
         ],
         "optionTexts": [
-          "(b)"
+          "are important to dispel"
         ]
       },
       "revision": {
@@ -2678,7 +2678,7 @@
       "reproduction": {
         "approved": true,
         "sourceTextHash": "5ea16b2b1fe851103efc21a7a6b3db39a6dad8b03a9a50f8006722410fe2a380",
-        "optionsHash": "6354836f1f94ea32e8784127433ca090d45a64ed7d01744bef152c17de7e8a27",
+        "optionsHash": "b6fa7a28303d771f08ed6f369da76d9310bd497f5f48f4781280da00607de991",
         "sourcePages": [
           5
         ],
@@ -2710,7 +2710,7 @@
           "C"
         ],
         "optionTexts": [
-          "(c)"
+          "isn't it?"
         ]
       },
       "revision": {

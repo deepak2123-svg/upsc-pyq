@@ -108,7 +108,30 @@ test("restores flattened inline spot-the-error fragments for every completed sou
       checked+=1;
     }
   }
-  assert.ok(checked>=34,'the corpus gate must retain all currently completed inline error-spotting records');
+  assert.ok(checked>=25,'the corpus gate must retain all remaining marker-only inline error-spotting records');
+});
+
+test('NDA II 2015 Q42-Q50 retain the exact printed error fragments',()=>{
+  const paper=JSON.parse(fs.readFileSync('content/nda-2015-ii-official-paper.json'));
+  const expected={
+    42:['I am told','John is ill','since Monday.'],
+    43:['I shall leave school','as soon as','I shall find a job.'],
+    44:['He is a rich man:','he is owning','a number of buildings in Bombay.'],
+    45:['We were able to make it','in spite of','a bad weather.'],
+    46:['Neither of the two letters of credit','were useful','when he needed it.'],
+    47:['Little he realized',"that he wouldn't live",'to see his grandson married.'],
+    48:['A difficult syllabus','is supposed to hurt','juvenile mind.'],
+    49:['The voice of sanity and patriotism','are important to dispel','the prevailing confusion.'],
+    50:['You were going to explain','your late arrival,',"isn't it?"],
+  };
+  for(const [number,fragments] of Object.entries(expected)){
+    const question=paper.questions.find(question=>question.questionNumber===Number(number));
+    assert.ok(question,`Q${number}`);
+    assert.deepEqual(['A','B','C'].map(key=>question.options[key]),fragments,question.id);
+    const blocks=formatPracticePrompt(question.promptLines,{options:question.options});
+    assert.equal(blocks[0].kind,'error-line',question.id);
+    assert.deepEqual(blocks[0].segments.map(segment=>segment.text),fragments,question.id);
+  }
 });
 
 test("inline error formatting is conservative and preserves ordinary option-like prose",()=>{

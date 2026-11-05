@@ -623,9 +623,9 @@ export const questions = [
       "I am told (a) John is ill (b) since Monday. (c)"
     ],
     "options": {
-      "A": "(a)",
-      "B": "(b)",
-      "C": "(c)",
+      "A": "I am told",
+      "B": "John is ill",
+      "C": "since Monday.",
       "D": "No error"
     },
     "page": 5,
@@ -638,9 +638,9 @@ export const questions = [
       "I shall leave school (a) as soon as (b) I shall find a job. (c)"
     ],
     "options": {
-      "A": "(a)",
-      "B": "(b)",
-      "C": "(c)",
+      "A": "I shall leave school",
+      "B": "as soon as",
+      "C": "I shall find a job.",
       "D": "No error"
     },
     "page": 5,
@@ -653,9 +653,9 @@ export const questions = [
       "He is a rich man: (a) he is owning (b) a number of buildings in Bombay. (c)"
     ],
     "options": {
-      "A": "(a)",
-      "B": "(b)",
-      "C": "(c)",
+      "A": "He is a rich man:",
+      "B": "he is owning",
+      "C": "a number of buildings in Bombay.",
       "D": "No error"
     },
     "page": 5,
@@ -668,9 +668,9 @@ export const questions = [
       "We were able to make it (a) in spite of (b) a bad weather. (c)"
     ],
     "options": {
-      "A": "(a)",
-      "B": "(b)",
-      "C": "(c)",
+      "A": "We were able to make it",
+      "B": "in spite of",
+      "C": "a bad weather.",
       "D": "No error"
     },
     "page": 5,
@@ -683,9 +683,9 @@ export const questions = [
       "Neither of the two letters of credit (a) were useful (b) when he needed it. (c)"
     ],
     "options": {
-      "A": "(a)",
-      "B": "(b)",
-      "C": "(c)",
+      "A": "Neither of the two letters of credit",
+      "B": "were useful",
+      "C": "when he needed it.",
       "D": "No error"
     },
     "page": 5,
@@ -698,9 +698,9 @@ export const questions = [
       "Little he realized (a) that he wouldn't live (b) to see his grandson married. (c)"
     ],
     "options": {
-      "A": "(a)",
-      "B": "(b)",
-      "C": "(c)",
+      "A": "Little he realized",
+      "B": "that he wouldn't live",
+      "C": "to see his grandson married.",
       "D": "No error"
     },
     "page": 5,
@@ -713,9 +713,9 @@ export const questions = [
       "A difficult syllabus (a) is supposed to hurt (b) juvenile mind. (c)"
     ],
     "options": {
-      "A": "(a)",
-      "B": "(b)",
-      "C": "(c)",
+      "A": "A difficult syllabus",
+      "B": "is supposed to hurt",
+      "C": "juvenile mind.",
       "D": "No error"
     },
     "page": 5,
@@ -728,9 +728,9 @@ export const questions = [
       "The voice of sanity and patriotism (a) are important to dispel (b) the prevailing confusion. (c)"
     ],
     "options": {
-      "A": "(a)",
-      "B": "(b)",
-      "C": "(c)",
+      "A": "The voice of sanity and patriotism",
+      "B": "are important to dispel",
+      "C": "the prevailing confusion.",
       "D": "No error"
     },
     "page": 5,
@@ -743,9 +743,9 @@ export const questions = [
       "You were going to explain (a) your late arrival, (b) isn't it? (c)"
     ],
     "options": {
-      "A": "(a)",
-      "B": "(b)",
-      "C": "(c)",
+      "A": "You were going to explain",
+      "B": "your late arrival,",
+      "C": "isn't it?",
       "D": "No error"
     },
     "page": 5,
