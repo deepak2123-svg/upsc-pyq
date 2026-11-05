@@ -800,6 +800,8 @@ h3 { font-size: 16px; }
 .result-breakdown > div > span:nth-child(2) { color: var(--muted); text-align: right; }
 .result-breakdown > div > div { height: 4px; background: #e7e9ed; }
 .result-breakdown i { display: block; height: 100%; background: var(--accent); }
+.result-paper-performance .result-performance-source-row { background: color-mix(in srgb,var(--accent) 5%,var(--surface)); }
+.result-paper-performance .result-performance-source-row th { font-weight: 800; }
 .result-review { display: grid; }
 .result-review > a { min-height: 76px; display: grid; grid-template-columns: 32px minmax(0, 1fr) 90px; align-items: center; gap: 18px; border-top: 1px solid var(--line); color: var(--ink); text-decoration: none; }
 .result-review > a > span { color: var(--muted); font-size: 12px; }

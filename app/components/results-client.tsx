@@ -39,8 +39,8 @@ function dateLabel(value?: string) {
   return date && Number.isFinite(date.getTime()) ? date.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" }) : "Not recorded";
 }
 
-function PerformanceTable({ label, rows, ready, source = false }: { label: string; rows: [string, Performance][]; ready: boolean; source?: boolean }) {
-  return <><p className="result-scroll-hint">Swipe to view all columns.</p><div className="result-table-scroll"><table className="result-performance-table" aria-label={label}><thead><tr><th scope="col">{source ? "Exam source" : "Subject / topic"}</th><th scope="col">Total</th><th scope="col">Answered</th><th scope="col">Correct</th><th scope="col">Incorrect</th><th scope="col">Unattempted</th><th scope="col">Accuracy</th></tr></thead><tbody>{rows.map(([name, value]) => <tr key={name}><th scope="row">{source ? <span className="result-exam-label" style={{ color: PYQ_EXAM_COLORS[name as keyof typeof PYQ_EXAM_COLORS] }}>{name}</span> : name}</th><td>{value.total}</td><td>{value.answered}</td><td>{ready ? value.correct : "—"}</td><td>{ready ? value.incorrect : "—"}</td><td>{value.unattempted}</td><td>{ready ? accuracy(value) : "—"}</td></tr>)}</tbody></table></div></>;
+function PerformanceTable({ label, rows, ready, source = false, mixed = false }: { label: string; rows: [string, Performance][]; ready: boolean; source?: boolean; mixed?: boolean }) {
+  return <><p className="result-scroll-hint">Swipe to view all columns.</p><div className="result-table-scroll"><table className="result-performance-table" aria-label={label}><thead><tr><th scope="col">{mixed ? "Exam source / subject and topic" : source ? "Exam source" : "Subject / topic"}</th><th scope="col">Total</th><th scope="col">Answered</th><th scope="col">Correct</th><th scope="col">Incorrect</th><th scope="col">Unattempted</th><th scope="col">Accuracy</th></tr></thead><tbody>{rows.map(([name, value]) => {const exam=PYQ_EXAMS.includes(name as typeof PYQ_EXAMS[number]);return <tr key={name} className={mixed&&exam?'result-performance-source-row':undefined}><th scope="row">{source||exam ? <span className="result-exam-label" style={{ color: PYQ_EXAM_COLORS[name as keyof typeof PYQ_EXAM_COLORS] }}>{name}</span> : name}</th><td>{value.total}</td><td>{value.answered}</td><td>{ready ? value.correct : "—"}</td><td>{ready ? value.incorrect : "—"}</td><td>{value.unattempted}</td><td>{ready ? accuracy(value) : "—"}</td></tr>;})}</tbody></table></div></>;
 }
 
 export function ResultsClient({ id }: { id: string }) {
@@ -119,6 +119,7 @@ export function ResultsClient({ id }: { id: string }) {
   const duration = practiceDurationMinutes(attempt.snapshot.recipe);
   const subjects = [...new Set(attempt.snapshot.questions.map((question) => question.subject))].join(" + ");
   const completed = attempt.completionReason === "time_expired" ? "Time expired" : "Submitted";
+  const wholePaperResult = 'version' in attempt.snapshot.recipe && attempt.snapshot.recipe.version === 5;
   return (
     <main className="results-page pyq-page exam-results">
       <Link className="back-link result-no-print" href="/attempts">← Attempts</Link>
@@ -133,8 +134,7 @@ export function ResultsClient({ id }: { id: string }) {
         <div className="result-actions result-no-print"><button disabled={retaking} onClick={() => void retake()}>{retaking ? "Starting…" : "Retake selection"}</button><button className="result-print-button" disabled={!ready} onClick={() => window.print()}>Print result sheet</button><Link href="/">Choose new PYQs</Link></div>
         {actionError && <p className="result-action-error result-no-print" role="alert">{actionError}</p>}
       </section>
-      <section className="result-breakdown"><h2>Performance by exam source</h2><PerformanceTable label="Exam source performance" rows={stats.byExam} ready={ready} source /></section>
-      <section className="result-breakdown"><h2>Performance by subject and topic</h2><PerformanceTable label="Subject and topic performance" rows={stats.byTopic} ready={ready} /></section>
+      {wholePaperResult ? <section className="result-breakdown result-paper-performance"><h2>Performance breakdown</h2><PerformanceTable label="Paper performance breakdown" rows={[...stats.byExam,...stats.byTopic]} ready={ready} mixed /></section> : <><section className="result-breakdown"><h2>Performance by exam source</h2><PerformanceTable label="Exam source performance" rows={stats.byExam} ready={ready} source /></section><section className="result-breakdown"><h2>Performance by subject and topic</h2><PerformanceTable label="Subject and topic performance" rows={stats.byTopic} ready={ready} /></section></>}
       <section className="result-answer-sheet result-combined-review"><h2>Answers and question review</h2><p>Compare your answers with the official key. Select any question to open its full paper view, options and explanation.</p><p className="result-scroll-hint">Swipe to view all columns.</p><div className="result-table-scroll"><table aria-label="Answer sheet" data-testid="answer-sheet"><thead><tr><th scope="col">No.</th><th scope="col">Source / topic</th><th scope="col">Your answer</th><th scope="col">Correct answer</th><th scope="col">Result</th></tr></thead><tbody>{attempt.snapshot.questions.map((question, index) => {
         const feedback = ready ? attempt.feedback[question.id] : undefined;
         const selected = attempt.answers[question.id];
