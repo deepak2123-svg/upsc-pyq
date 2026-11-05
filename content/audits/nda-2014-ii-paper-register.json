@@ -1,0 +1,918 @@
+{
+  "paperId": "nda-2014-ii-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2014,
+    "session": "II",
+    "paper": "GAT",
+    "paperCode": "B-OEBB-N-HBS",
+    "series": "A",
+    "language": "English",
+    "examDate": "2014-09-28",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Desktop/KIS NDA/PYP/NDA PYP/GAT/2014-2.pdf",
+    "sha256": "091cdbd6607f1870c707b11243d0937c3b97cc7ca38c6ec961ba55d2411e7921"
+  },
+  "pdfPageMapping": {
+    "pages": 48,
+    "cover": 1,
+    "english": "PDF pages 2–9",
+    "partB": "PDF pages 10–44 (alternating English/Hindi leaves)"
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "retrievedAt": "2026-11-04",
+    "url": "https://web.archive.org/web/20150725234131id_/http://upsc.gov.in:80/exams/answerkeys/2014/NDA_II_2014_Gat0001.pdf",
+    "asset": "/papers/nda-2014-ii-gat/official-final-key.pdf",
+    "sha256": "9c044e2835b5f0fd1b874207ba162eda4505205441b41de15b5dbe22f4527bff",
+    "page": 1,
+    "series": "A",
+    "session": "II",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 0,
+    "scored": 150,
+    "authentication": "Archived UPSC NDA/NA II 2014 General Ability Test final answer-key table; Series A lists 150 scored items and NIL dropped."
+  },
+  "rawBefore": [
+    {
+      "id": "nda-2014-ii-51",
+      "sha256": "a1359b73dcc69193dd4a288d1776d93558d9016bcd4fd7d8e5b24977e81e69d5",
+      "value": {
+        "id": "nda-2014-ii-51",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I: Grand Banks are one of the major fishing grounds of the world due to the presence of a vast continental shelf. Statement II: Planktons grow in the shallow waters.",
+        "sourceTextHash": "5ed3108ee39d8c2f38dfa66497fe306fff4b08ea8536abed7c31467961f85930",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 51,
+          "answerStatus": "imported_from_scribd_text_mirror",
+          "answerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+          "rawQuestionText": "Statement I: Grand Banks are one of the major fishing grounds of the world due to the presence of a vast continental shelf. Statement II: Planktons grow in the shallow waters."
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 51,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Continental Shelves & Fishing Grounds",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I: Grand Banks are one of the major fishing grounds of the world due to the presence of a vast continental shelf.",
+          "Statement II: Planktons grow in the shallow waters."
+        ],
+        "options": {
+          "A": "Both the statements are individually true and Statement II is the correct explanation of Statement I",
+          "B": "Both the statements are individually true but Statement II is not the correct explanation of Statement I",
+          "C": "Statement I is true but Statement II is false",
+          "D": "Statement I is false but Statement II is true"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-58",
+      "sha256": "f5488c0581a6bc10688496390390f169b5e6cd81304b94bc489a59d9d1d80d4e",
+      "value": {
+        "id": "nda-2014-ii-58",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements is/are correct? 1. The tropical cyclones of China Sea are called typhoons. 2. The tropical cyclones of the West Indies are called tornadoes. 3. The tropical cyclones of Australia are called willy-willies. 4. Formation of an anticyclone results in stormy weather condition. Select the correct answer using the code given below.",
+        "sourceTextHash": "e5f097a9b21775bb3ec2f64e7ec20177b73371ee05ba6a7980c767af0097bbb8",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 58,
+          "answerStatus": "imported_from_scribd_text_mirror",
+          "answerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+          "rawQuestionText": "Which of the following statements is/are correct? 1. The tropical cyclones of China Sea are called typhoons. 2. The tropical cyclones of the West Indies are called tornadoes. 3. The tropical cyclones of Australia are called willy-willies. 4. Formation of an anticyclone results in stormy weather condition. Select the correct answer using the code given below."
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 58,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Cyclones & Pressure Systems",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements is/are correct? 1. The tropical cyclones of China Sea are called typhoons. 2. The tropical cyclones of the West Indies are called tornadoes. 3. The tropical cyclones of Australia are called willy-willies. 4. Formation of an anticyclone results in stormy weather condition. Select the correct answer using the code given below."
+        ],
+        "options": {
+          "A": "1, 2, 3 and 4",
+          "B": "1, 2 and 4 only",
+          "C": "1 and 3 only",
+          "D": "3 only"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-71",
+      "sha256": "ad12a1bd1485b8bd66be918303e97311f5a160a8bcd63b89a63319f84413d96b",
+      "value": {
+        "id": "nda-2014-ii-71",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "If a news is broadcast from London at 1:45 p.m. on Monday, at what time and on what day it will be heard at Dhaka ( 90° E)?",
+        "sourceTextHash": "44d29c5a7ad170c6d359a5810538e0c51cf58f134f622d55ac6eeebf24fab1bc",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 71,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2014_gat_anskey",
+          "rawQuestionText": "If a news is broadcast from London at 1:45 p.m. on Monday, at what time and on what day it will be heard at Dhaka ( 90° E)?",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "90 degrees east is six hours ahead: Monday 7:45 p.m.",
+            "previousAnswerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+            "previousAnswerStatus": "imported_from_scribd_text_mirror"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "0fd6a29f754c4ebbcfafc7074e482881302865fe5f11c44211be3e11c0b0df8a",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 71,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Earth Motions & Time",
+        "difficulty": "Easy",
+        "promptLines": [
+          "If a news is broadcast from London at 1:45 p.m. on Monday, at what time and on what day it will be heard at Dhaka ( 90° E)?"
+        ],
+        "options": {
+          "A": "Monday 7:45 p.m.",
+          "B": "Monday 7:45 a.m.",
+          "C": "Tuesday 7:45 p.m.",
+          "D": "Sunday 7:45 a.m."
+        },
+        "answer": "A",
+        "explanation": "90 degrees east is six hours ahead: Monday 7:45 p.m.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-75",
+      "sha256": "1c246f76c98b2529dedadaa9736e7b519eb131d2f47184f1437acf4fdc4d9073",
+      "value": {
+        "id": "nda-2014-ii-75",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Geographical feature) A. Cirque B. Yardang C. Barkhan D. Drumlin List-II (Type of geographic process) 1. Erosional feature of wind 2. Depositional feature of glacier 3. Depositional feature of wind 4. Erosional feature of glacier",
+        "sourceTextHash": "6057e20488707538b1ce2abf42a7ec9b6abd36e8f43421874c5c532131907901",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 75,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2014_gat_anskey",
+          "rawQuestionText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Geographical feature) A. Cirque B. Yardang C. Barkhan D. Drumlin List-II (Type of geographic process) 1. Erosional feature of wind 2. Depositional feature of glacier 3. Depositional feature of wind 4. Erosional feature of glacier",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Cirque: glacier erosion (4); yardang: wind erosion (1); barkhan: wind deposition (3); drumlin: glacier deposition (2).",
+            "previousAnswerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+            "previousAnswerStatus": "imported_from_scribd_text_mirror"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "0fd6a29f754c4ebbcfafc7074e482881302865fe5f11c44211be3e11c0b0df8a",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 75,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Weathering & Erosional Processes",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Geographical feature) A. Cirque B. Yardang C. Barkhan D. Drumlin List-II (Type of geographic process) 1. Erosional feature of wind 2. Depositional feature of glacier 3. Depositional feature of wind 4. Erosional feature of glacier"
+        ],
+        "options": {
+          "A": "A-4, B-1, C-3, D-2",
+          "B": "A-4, B-3, C-1, D-2",
+          "C": "A-2, B-3, C-1, D-4",
+          "D": "A-2, B-1, C-4, D-3"
+        },
+        "answer": "A",
+        "explanation": "Cirque: glacier erosion (4); yardang: wind erosion (1); barkhan: wind deposition (3); drumlin: glacier deposition (2).",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-79",
+      "sha256": "3e5295380457818600a06c6a91deb00b1ef116470ab4ff5607508dc2969320b6",
+      "value": {
+        "id": "nda-2014-ii-79",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "A topographical map with scale 1: 50000 indicates 1 cm to",
+        "sourceTextHash": "310b71a83048ed765d7d4f7cdda172fe2a26b58332fd1391703ad50e91140088",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 79,
+          "answerStatus": "imported_from_scribd_text_mirror",
+          "answerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+          "rawQuestionText": "A topographical map with scale 1: 50000 indicates 1 cm to"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 79,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Map Scale",
+        "difficulty": "Easy",
+        "promptLines": [
+          "A topographical map with scale 1: 50000 indicates 1 cm to"
+        ],
+        "options": {
+          "A": "50 km",
+          "B": "500 m",
+          "C": "50 m",
+          "D": "5 km"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-83",
+      "sha256": "3aa6ec6c4d34f5d4c8a30878ed255b9b2212b4840e3140eb9aa46d0c518cfaeb",
+      "value": {
+        "id": "nda-2014-ii-83",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Quartzite is metamorphosed from",
+        "sourceTextHash": "0b06085fb5af14aeb074d1610e475474495c424da69ff4958d7901078f895db9",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 83,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2014_gat_anskey",
+          "rawQuestionText": "Quartzite is metamorphosed from",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Quartzite forms by metamorphism of sandstone.",
+            "previousAnswerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+            "previousAnswerStatus": "imported_from_scribd_text_mirror"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "0fd6a29f754c4ebbcfafc7074e482881302865fe5f11c44211be3e11c0b0df8a",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 83,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Quartzite is metamorphosed from"
+        ],
+        "options": {
+          "A": "limestone",
+          "B": "plutonic rock",
+          "C": "sandstone",
+          "D": "shale"
+        },
+        "answer": "C",
+        "explanation": "Quartzite forms by metamorphism of sandstone.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-87",
+      "sha256": "be486653995ca8e5611fa47b603f0e94495058b398b465d9062ae63c876542de",
+      "value": {
+        "id": "nda-2014-ii-87",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The permanent wind that blows from the horse latitude to the equatorial region is known as",
+        "sourceTextHash": "bc0e4d7624cc1973663873c6b08e7e7c08af1d3107dd3a21be36e3fea4f8b9e3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 87,
+          "answerStatus": "imported_from_scribd_text_mirror",
+          "answerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+          "rawQuestionText": "The permanent wind that blows from the horse latitude to the equatorial region is known as"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 87,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "Latitude and Longitude",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The permanent wind that blows from the horse latitude to the equatorial region is known as"
+        ],
+        "options": {
+          "A": "westerly",
+          "B": "trade wind",
+          "C": "doldrum",
+          "D": "easterly"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-91",
+      "sha256": "0f1806aefea6198201b6836a1a0096b502b7108b8169084858fbedc8e912148b",
+      "value": {
+        "id": "nda-2014-ii-91",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is a warm ocean current?",
+        "sourceTextHash": "f5f1f78ec747371ea7ee1840febcb6fcabb12e6e39cc92b8080ff410b8d23a2b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 91,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2014_gat_anskey",
+          "rawQuestionText": "Which one of the following is a warm ocean current?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Kuroshio is warm; the other listed currents are cold.",
+            "previousAnswerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+            "previousAnswerStatus": "imported_from_scribd_text_mirror"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "0fd6a29f754c4ebbcfafc7074e482881302865fe5f11c44211be3e11c0b0df8a",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "B"
+          }
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 91,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Ocean Currents",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following is a warm ocean current?"
+        ],
+        "options": {
+          "A": "Labrador current",
+          "B": "Kuroshio current",
+          "C": "Peru current",
+          "D": "Benguela current"
+        },
+        "answer": "B",
+        "explanation": "Kuroshio is warm; the other listed currents are cold.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-101",
+      "sha256": "ba6f099cfa362b58502d56b09eadb26c2da3e42f80b72adce630b0d858cfc740",
+      "value": {
+        "id": "nda-2014-ii-101",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "In the term GIS, 'G' stands for",
+        "sourceTextHash": "b087ad2526862d18326e21647469da1d254b4cf98daf6ab33b20121de281c9b0",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 101,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2014_gat_anskey",
+          "rawQuestionText": "In the term GIS, 'G' stands for",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "GIS stands for Geographic Information System.",
+            "previousAnswerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+            "previousAnswerStatus": "imported_from_scribd_text_mirror"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "0fd6a29f754c4ebbcfafc7074e482881302865fe5f11c44211be3e11c0b0df8a",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "B"
+          }
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 101,
+        "subject": "Geography",
+        "topic": "Maps, Cartography & Geospatial",
+        "subtopic": "GIS",
+        "difficulty": "Easy",
+        "promptLines": [
+          "In the term GIS, 'G' stands for"
+        ],
+        "options": {
+          "A": "Global",
+          "B": "Geographic",
+          "C": "Goodness",
+          "D": "Geological"
+        },
+        "answer": "B",
+        "explanation": "GIS stands for Geographic Information System.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-107",
+      "sha256": "e9a1893926f5c8ed368f49224e2e4757419a9ceeb19248ea955ee582be44243b",
+      "value": {
+        "id": "nda-2014-ii-107",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Movements of tides are mostly determined by",
+        "sourceTextHash": "09df1ce886fbc2fda755e87bedd615957fd6d30ad310e5e5b16ee2e1bf475a1d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 107,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2014_gat_anskey",
+          "rawQuestionText": "Movements of tides are mostly determined by",
+          "answerCorrection": {
+            "previousAnswer": "D",
+            "correctedAt": "2026-10-19",
+            "reason": "Of the supplied options, Earth's rotation is the official keyed answer for tidal movement.",
+            "previousAnswerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+            "previousAnswerStatus": "imported_from_scribd_text_mirror"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "0fd6a29f754c4ebbcfafc7074e482881302865fe5f11c44211be3e11c0b0df8a",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 107,
+        "subject": "Geography",
+        "topic": "Oceanography",
+        "subtopic": "Tides",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Movements of tides are mostly determined by"
+        ],
+        "options": {
+          "A": "albedo effect",
+          "B": "wind velocity",
+          "C": "rotation of the Earth",
+          "D": "revolution of the Earth"
+        },
+        "answer": "C",
+        "explanation": "Of the supplied options, Earth's rotation is the official keyed answer for tidal movement.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-113",
+      "sha256": "70e91f647b4a90a7e2fbb475963a77d28d219b5bc5b1479c1633b21f2eecc986",
+      "value": {
+        "id": "nda-2014-ii-113",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following sequences is correct for rainfall?",
+        "sourceTextHash": "a2992d3288328891ff5b98fa6d16fa067c8ed864a005484f16ee1fae3540d6f8",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 113,
+          "answerStatus": "imported_from_scribd_text_mirror",
+          "answerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+          "rawQuestionText": "Which of the following sequences is correct for rainfall?"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 113,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Rainfall & Precipitation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following sequences is correct for rainfall?"
+        ],
+        "options": {
+          "A": "Slow ascent of air -> slow condensation -> heavy downpour",
+          "B": "Rapid ascent of air -> large raindrops -> heavy downpour",
+          "C": "Pressure decreased -> air compressed -> heavy downpour",
+          "D": "Descent of air -> air warmed -> heavy downpour"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-117",
+      "sha256": "20d0f728a338ca265eea323f74d7b4106b07c23cf9c307db07f8e580b1202372",
+      "value": {
+        "id": "nda-2014-ii-117",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "If the length of the Equator is about 40000 km and the velocity of rotation is about 1700 km per hour, what would be the velocity of rotation at the Pole?",
+        "sourceTextHash": "e6816ac42fc18ffffe3cf3d32f7f427bbd1a29c5a422ad99822b7e8500c7ab95",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 117,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2014_gat_anskey",
+          "rawQuestionText": "If the length of the Equator is about 40000 km and the velocity of rotation is about 1700 km per hour, what would be the velocity of rotation at the Pole?",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "Linear rotational velocity is zero at the Pole.",
+            "previousAnswerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+            "previousAnswerStatus": "imported_from_scribd_text_mirror"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "0fd6a29f754c4ebbcfafc7074e482881302865fe5f11c44211be3e11c0b0df8a",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "A"
+          }
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 117,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Earth Motions & Time",
+        "difficulty": "Easy",
+        "promptLines": [
+          "If the length of the Equator is about 40000 km and the velocity of rotation is about 1700 km per hour, what would be the velocity of rotation at the Pole?"
+        ],
+        "options": {
+          "A": "Zero",
+          "B": "850 km/hr",
+          "C": "1700 km/hr",
+          "D": "3400 km/hr"
+        },
+        "answer": "A",
+        "explanation": "Linear rotational velocity is zero at the Pole.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-95",
+      "sha256": "573aa6768739d3575c5b0e59b96b1d50bc5dedb252ba8627e1a221b18b48da3a",
+      "value": {
+        "id": "nda-2014-ii-95",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The place located at the confluence of Alaknanda and Bhagirathi rivers is",
+        "sourceTextHash": "d402dacccb5f10fc7a299782cf35620b46871ab65646c98d78ec5590981b720b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 95,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2014_gat_anskey",
+          "rawQuestionText": "The place located at the confluence of Alaknanda and Bhagirathi rivers is",
+          "answerCorrection": {
+            "previousAnswer": "C",
+            "correctedAt": "2026-10-19",
+            "reason": "Alaknanda and Bhagirathi join at Devprayag.",
+            "previousAnswerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+            "previousAnswerStatus": "imported_from_scribd_text_mirror"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "0fd6a29f754c4ebbcfafc7074e482881302865fe5f11c44211be3e11c0b0df8a",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "D"
+          }
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 95,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The place located at the confluence of Alaknanda and Bhagirathi rivers is"
+        ],
+        "options": {
+          "A": "Badrinath",
+          "B": "Rishikesh",
+          "C": "Rudraprayag",
+          "D": "Devprayag"
+        },
+        "answer": "D",
+        "explanation": "Alaknanda and Bhagirathi join at Devprayag.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-63",
+      "sha256": "6ced74206644276370ce8635a7390cbbd7b1ff9b563375547927ba3e6614558d",
+      "value": {
+        "id": "nda-2014-ii-63",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Rotterdam of Netherlands is largely famous for",
+        "sourceTextHash": "9e77fdf52727e05880b29cd7cfd39185bf759a5618a8a3096efc1142f60bce4b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 63,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2014_gat_anskey",
+          "rawQuestionText": "Rotterdam of Netherlands is largely famous for",
+          "answerCorrection": {
+            "previousAnswer": "B",
+            "correctedAt": "2026-10-19",
+            "reason": "Rotterdam is famous for shipbuilding among the listed industries.",
+            "previousAnswerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+            "previousAnswerStatus": "imported_from_scribd_text_mirror"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "0fd6a29f754c4ebbcfafc7074e482881302865fe5f11c44211be3e11c0b0df8a",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 63,
+        "subject": "Geography",
+        "topic": "Industries",
+        "subtopic": "Industrial Location",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Rotterdam of Netherlands is largely famous for"
+        ],
+        "options": {
+          "A": "textiles",
+          "B": "dairying",
+          "C": "shipbuilding",
+          "D": "paper industry"
+        },
+        "answer": "C",
+        "explanation": "Rotterdam is famous for shipbuilding among the listed industries.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-98",
+      "sha256": "a335aac91ba12d10b13056da33c89842de6ae2126c8048c6d1f405b38d7a364e",
+      "value": {
+        "id": "nda-2014-ii-98",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following pairs of power projects is not correctly matched?",
+        "sourceTextHash": "c00c79e67217db95e5254b884343c41f4917111727ca296d7328623832acea1f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 98,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2014_gat_anskey",
+          "rawQuestionText": "Which one of the following pairs of power projects is not correctly matched?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Neyveli is associated with thermal power, not hydropower.",
+            "previousAnswerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+            "previousAnswerStatus": "imported_from_scribd_text_mirror"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "0fd6a29f754c4ebbcfafc7074e482881302865fe5f11c44211be3e11c0b0df8a",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "B"
+          }
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 98,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Power Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one of the following pairs of power projects is not correctly matched?"
+        ],
+        "options": {
+          "A": "Papanasam-Hydropower",
+          "B": "Neyveli-Hydropower",
+          "C": "Ukai-Thermal power",
+          "D": "Rana Pratap Sagar-Hydropower"
+        },
+        "answer": "B",
+        "explanation": "Neyveli is associated with thermal power, not hydropower.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-104",
+      "sha256": "136395e71e845c40af056de2211b6e59d51bba28b00d04ca7dcf4d32ebe347dc",
+      "value": {
+        "id": "nda-2014-ii-104",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one of the following is the correct sequence of oil refineries in India in respect of their time of establishment (starting from the earliest)?",
+        "sourceTextHash": "b7864f0b40093a5a28813bb92e099bba1917e0b3bf954b92152edda55daa77bf",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 104,
+          "answerStatus": "imported_from_scribd_text_mirror",
+          "answerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+          "rawQuestionText": "Which one of the following is the correct sequence of oil refineries in India in respect of their time of establishment (starting from the earliest)?"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 104,
+        "subject": "Geography",
+        "topic": "Energy & Power Resources",
+        "subtopic": "Oilfields & Refineries",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one of the following is the correct sequence of oil refineries in India in respect of their time of establishment (starting from the earliest)?"
+        ],
+        "options": {
+          "A": "Barauni-Haldia -Guwahati-Mathura",
+          "B": "Barauni-Mathura -Guwahati-Haldia",
+          "C": "Guwahati-Haldia -Mathura-Barauni",
+          "D": "Guwahati-Barauni -Haldia-Mathura"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-115",
+      "sha256": "358f9254e3cec5180e0b23c45de28ac15045bef49250bf411e1b380917efdc9d",
+      "value": {
+        "id": "nda-2014-ii-115",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "What would be the total population at the end of the year if population at the beginning of the year is 5000 and population changed during the year is birth 250, death 60, immigration 30 and emigration 15?",
+        "sourceTextHash": "9320e9bcc177b9e73e9efca9aa80e3e0f71d6dcd6faede48017f3ab2e6ab1b8e",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 115,
+          "answerStatus": "imported_from_scribd_text_mirror",
+          "answerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+          "rawQuestionText": "What would be the total population at the end of the year if population at the beginning of the year is 5000 and population changed during the year is birth 250, death 60, immigration 30 and emigration 15?"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 115,
+        "subject": "Geography",
+        "topic": "Population & Demography",
+        "subtopic": "Census and Population Distribution",
+        "difficulty": "Easy",
+        "promptLines": [
+          "What would be the total population at the end of the year if population at the beginning of the year is 5000 and population changed during the year is birth 250, death 60, immigration 30 and emigration 15?"
+        ],
+        "options": {
+          "A": "5205",
+          "B": "5235",
+          "C": "5310",
+          "D": "5180"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-ii-86",
+      "sha256": "3248235e61b4d7e2223602d9389d888d14411b439662f548f4e7f551f94c6262",
+      "value": {
+        "id": "nda-2014-ii-86",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following groups of plants can be used as indicators of SO2 pollution of air?",
+        "sourceTextHash": "a1cb37949c924379c4af37e77902206d558b1470f727f775ffdffaa5024a4ec1",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "II",
+          "questionNumber": 86,
+          "answerStatus": "official-mirror-key-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/ii_2014_gat_anskey",
+          "rawQuestionText": "Which of the following groups of plants can be used as indicators of SO2 pollution of air?",
+          "answerCorrection": {
+            "previousAnswer": "A",
+            "correctedAt": "2026-10-19",
+            "reason": "Lichens are the listed indicators of sulphur dioxide pollution.",
+            "previousAnswerSource": "https://www.scribd.com/doc/251021511/Cavalier-NDA-GAT-Answer-Key",
+            "previousAnswerStatus": "imported_from_scribd_text_mirror"
+          },
+          "answerAudit": {
+            "date": "2026-10-19",
+            "evidenceSha256": "0fd6a29f754c4ebbcfafc7074e482881302865fe5f11c44211be3e11c0b0df8a",
+            "series": "A",
+            "page": 1,
+            "originalKeyAnswer": "C"
+          }
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "II",
+        "questionNumber": 86,
+        "subject": "Environment",
+        "topic": "Pollution & Climate",
+        "subtopic": "Air Pollution",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which of the following groups of plants can be used as indicators of SO2 pollution of air?"
+        ],
+        "options": {
+          "A": "Ferns",
+          "B": "Mentha",
+          "C": "Lichens",
+          "D": "Hornworts"
+        },
+        "answer": "C",
+        "explanation": "Lichens are the listed indicators of sulphur dioxide pollution.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

@@ -29,7 +29,8 @@ mean complete. The source register currently inventories 25 local PDFs.
 | 20 | NDA I 2016 | Complete; 150/150 official-final. Data release `7d2064d`. |
 | 21 | NDA II 2015 | Complete; 150/150 official-final. Data release `6acd0fc`. |
 | 22 | NDA I 2015 | Complete locally, 4 November 2026: 149 scored with the official final key; Q60 officially dropped; 132 new occurrences + 18 reused. Release pending live verification. |
-| 23–24 | NDA II, I 2014 | Queued individually |
+| 23 | NDA II 2014 | Complete, 5 November 2026: 150/150 official-final; English 50, Science 49, GS and World History 51. 132 new occurrences + 18 reused; one source graph retained. Full release verification passed. |
+| 24 | NDA I 2014 | Next in queue |
 
 Queued records may already have partial imports or old slot accounting. Every
 paper still needs the full source/reproduction/classification/key/release gates;

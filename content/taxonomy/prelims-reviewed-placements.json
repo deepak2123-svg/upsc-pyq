@@ -24991,6 +24991,42 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2014-ii-1",
+      "expectedRecordHash": "2ff21feba71d4cda9cba97f6a1112163157667c3da4d9ddddbbc9c2ba8322dcc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-10",
+      "expectedRecordHash": "d504a9368fa91b8984557baeb6c74eb825c3d95bdda3526011ce881a50b8be70",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-100",
+      "expectedRecordHash": "7213bb9949e674283be279d8a55f4285f6c047d7fa4eddc9080989fcd2b567bf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Uses electrons, atomic numbers or neutrons.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
       "questionId": "nda-2014-ii-101",
       "expectedRecordHash": "ba6f099cfa362b58502d56b09eadb26c2da3e42f80b72adce630b0d858cfc740",
       "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
@@ -25008,6 +25044,30 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes"
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-102",
+      "expectedRecordHash": "d8ff5adbf28f77c98bc9e7d8d9518c0b59f14b5d331d1e8d7d9ce958d585133a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests phase change or an adiabatic process.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-103",
+      "expectedRecordHash": "d38b56652b60cf4c6688aa75cf878dca4fa653f998093be3148169719d41df94",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Uses molar or atomic-mass composition.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
       }
     },
     {
@@ -25029,6 +25089,30 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2014-ii-105",
+      "expectedRecordHash": "dc5c961ab2a649e9bf7ec589c445c63e29f6f43e026874dd680cef7561c50a58",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests domestic supply or active circuit components.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-106",
+      "expectedRecordHash": "1d1387bf06a9928ee7cbc75463d3ac15d31c7468dfa3bea16f6540c0573986a6",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Uses electrons, atomic numbers or neutrons.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
       "questionId": "nda-2014-ii-107",
       "expectedRecordHash": "e9a1893926f5c8ed368f49224e2e4757419a9ceeb19248ea955ee582be44243b",
       "primaryId": "syllabus:geography/physical-geography/oceanography/tides",
@@ -25046,6 +25130,82 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/oceanography/tides"
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-108",
+      "expectedRecordHash": "3cd39d8ef5e800a740b761abc7755aa7ae3e3f755ede6bd289b0803aed63aa39",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests heat capacity, vaporisation or temperature scales.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-109",
+      "expectedRecordHash": "0126351d2de14de6e7d0a496b7bc27d0ee8d8038f6ae0a74e964941e4c855b60",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests soap, paints or other everyday chemical uses.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-11",
+      "expectedRecordHash": "e1e3839b74b353d10260e9855a14ef6d7362c17e53ab971547502f3833e537e8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-110",
+      "expectedRecordHash": "88a298111338ac00f91b9523ef79e53801eff739b81b91534150ba34925e7493",
+      "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-regions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Matches textile industries to production centres.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-111",
+      "expectedRecordHash": "ae8cf7abc05dedf44deed9d72a10695876440f6e311d83b1081bbd04f3d57576",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Uses capillarity or density of liquids.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-112",
+      "expectedRecordHash": "ca69ed7b8391794ba466c1b882419045abd43366a7ab274ee1980957c5886412",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Balances or interprets a chemical reaction.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
       }
     },
     {
@@ -25069,6 +25229,18 @@
       }
     },
     {
+      "questionId": "nda-2014-ii-114",
+      "expectedRecordHash": "1c820ba3d3cb8151117bca0ac785564f66cb385b08b766f7fd99744648e0f27e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests microwave heating.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
       "questionId": "nda-2014-ii-115",
       "expectedRecordHash": "358f9254e3cec5180e0b23c45de28ac15045bef49250bf411e1b380917efdc9d",
       "primaryId": "syllabus:social-development/population/demography-and-development/population-measures",
@@ -25089,6 +25261,18 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2014-ii-116",
+      "expectedRecordHash": "b8b8e7872d3591501d7a099ed4d88c0ca491188cbb9cb6ea16152e30994aec50",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Applies force, momentum, acceleration or impulse relations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
       "questionId": "nda-2014-ii-117",
       "expectedRecordHash": "20d0f728a338ca265eea323f74d7b4106b07c23cf9c307db07f8e580b1202372",
       "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
@@ -25106,6 +25290,1010 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time"
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-118",
+      "expectedRecordHash": "7e73aedfc2342165b9d5562c1be8cf38eadee49931ed98d77129ac6213fbe74b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Applies motion-time or projectile-motion relations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-119",
+      "expectedRecordHash": "35ee2b44d15b95d1deff97afbece77e4ec1dfaabb05b12045c017d60deb5fdd0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests charge motion, cyclotron behaviour or electric fields.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-12",
+      "expectedRecordHash": "f202e2c148d3ffe9699ee3265f9ac16e70b62cd73d71b9802193861b77c2f136",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-120",
+      "expectedRecordHash": "0cc43cf35180c703ec9b42421511e24da0c487738d6f134ef38b1fade3687270",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests charge motion, cyclotron behaviour or electric fields.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-121",
+      "expectedRecordHash": "0b9a6375193492091acb97a50dea625c13dbb6c3f3a7d8a1a630727b0d1aa4b0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Uses capillarity or density of liquids.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-122",
+      "expectedRecordHash": "859eca8a643e2368d2e43c9cbdcb2a088bc5e532a389d663df8400544bdac7f7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Applies force, momentum, acceleration or impulse relations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-123",
+      "expectedRecordHash": "54cc2e9561ca3895af6b844fa54506651fd3596415665dcf351cdc836b3a897c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Applies force, momentum, acceleration or impulse relations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-124",
+      "expectedRecordHash": "c395c2fdf1ff0df29b402242ff2e900e5640a24214b62d8b67a32bc900bc62e6",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/winners-and-records",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the 2014 Thomas and Uber Cup results.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-125",
+      "expectedRecordHash": "d18cb9c31c5f5e0868e700eaae15fe4d9f93457d1b1254454dcc3d759c10c462",
+      "primaryId": "syllabus:current-affairs/science-technology-health/discoveries-and-innovation/technology-applications",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the Drishti runway-visibility system.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-126",
+      "expectedRecordHash": "7b52df89de6ed3fdd82c5e642f27571f2e36522c1e7dd9676cc4ee0df18cf6e8",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/personalities-and-commemorations/notable-contributions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies Malavath Poorna’s mountaineering achievement.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-127",
+      "expectedRecordHash": "989226fee0200b954758ea2c92b745499ddfcee23b57fcca3117842b00e8221a",
+      "primaryId": "syllabus:economy/external-sector/trade-and-exchange-rates/foreign-investment",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the leading source of India’s FDI in 2013–14.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-128",
+      "expectedRecordHash": "c228f119095d7e813551844b6b48f68a3334240a9198e9f181765f8ee0a7d91f",
+      "primaryId": "syllabus:current-affairs/defence-security/exercises-and-operations/military-exercises",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests bilateral military exercises involving India.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-129",
+      "expectedRecordHash": "afa4feb1377f6eeee9d83d07b234ef57db9b1f526d483bef48a04441851437ae",
+      "primaryId": "syllabus:current-affairs/national-affairs/government-initiatives/schemes-and-missions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the Mobile Seva governance initiative.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-13",
+      "expectedRecordHash": "33c05a9f714ca9baf2a55c1c16e4058e2dc3fb57f85227cf4bae900aa686301a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-130",
+      "expectedRecordHash": "1bc44286db43ebb14e81bfe29ec99a6592e3730d80e3eda1634bd1b0c91486bc",
+      "primaryId": "syllabus:current-affairs/defence-security/equipment-and-platforms/missiles",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the range and capability of Prithvi-II.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-131",
+      "expectedRecordHash": "589a699ce9a7722db02aa86e3a7635d5387c1c8b81dddfa85bfec23cf388c6ba",
+      "primaryId": "syllabus:science-technology/space/space-programmes/navigation-systems",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the design and purpose of IRNSS.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-132",
+      "expectedRecordHash": "baf294ca3c3327870c955be6162eaac18c9f4a195862ea3edda4687de17fbaff",
+      "primaryId": "syllabus:current-affairs/defence-security/armed-forces-and-institutions/training-institutions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests foreign-cadet participation at the NDA.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-133",
+      "expectedRecordHash": "34dd9a0996b80d84afdbf5206aee18aa3159b7d256d32614c242225aaf85c970",
+      "primaryId": "syllabus:current-affairs/defence-security/exercises-and-operations/military-exercises",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests bilateral military exercises involving India.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-134",
+      "expectedRecordHash": "f98ff065a0be64c97e8463da659a9eeef0d2a17f0594ddf6b46c1a9a7206cdd6",
+      "primaryId": "syllabus:history/ancient-india/buddhism/schools-and-sects",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies a thinker associated with Mahayana Buddhism.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-135",
+      "expectedRecordHash": "a4c2ac198b875781487c2795ef6257e38d975893e05822c14076133df7c888d9",
+      "primaryId": "syllabus:history/ancient-india/indus-valley-civilisation/chronology-and-sites",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the spread and scale of Harappan culture.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-136",
+      "expectedRecordHash": "fc8a93220e78b3e1ec16289c8e8bb2388ff8fc7a570dbb3a7aea94c7ce71058a",
+      "primaryId": "syllabus:history/ancient-india/sources-and-chronology/foreign-accounts",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies Megasthenes.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-137",
+      "expectedRecordHash": "92ab5f4ad9a5637adae83633418fc6c2590b1a888b6e613fbabce8c3c051f8c1",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-economy/commercialisation-of-agriculture",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests India’s colonial export economy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-138",
+      "expectedRecordHash": "3b6bd69532c65b2b67db30efc00a4f0a1ebb697b11b50d163b24cc749102be7d",
+      "primaryId": "syllabus:history/medieval-india/bhakti-and-sufi-traditions/saints-and-compositions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Orders Bhakti-Sufi poet-saints chronologically.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-139",
+      "expectedRecordHash": "a64f3d6eb14a9c3108dea6dbb97c1f37926a6a9891878785f2f9a050775becff",
+      "primaryId": "syllabus:history/modern-india-national-movement/european-companies/factories-and-trading-networks",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests pre-British trade at Surat.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-14",
+      "expectedRecordHash": "14592905564191da1be4ca4bc9d18748cdf80a66c19550858ad932b12246248e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-140",
+      "expectedRecordHash": "20804f01978e3edbacfd4a8393d5e72ca5ba4df1e815f0b34f141a815cb5aae8",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-administration/company-government",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the object of the Factory Act of 1891.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-141",
+      "expectedRecordHash": "34769b830221871b50cf2b7d5b89d9f74edb913e50e827573dcd629933babb99",
+      "primaryId": "syllabus:polity-governance/institutions/parliament/presiding-officers",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies the Vice-President as ex-officio Rajya Sabha Chairman.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-142",
+      "expectedRecordHash": "1b20b2ef59e280be82188279f1c95d9bac1a8c21e8ab0fbfeb97d83aa99426f7",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/making-of-the-constitution/constituent-assembly",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests membership of the Drafting Committee.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-143",
+      "expectedRecordHash": "aaa9d5a2765ec7b68c0a9078bb24143270db1e7df0067bc8b7dfe239b4d81313",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests the Big Four at the Congress of Vienna.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-144",
+      "expectedRecordHash": "5e419990716cd662ff75346c3dc649214461e92d3d4258fa9c205cceea927f34",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests colonial resistance before American independence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-145",
+      "expectedRecordHash": "84eb12846e5109e3b2d8f36beac824a698b5bf4a93a9b2ef115eb46b3b70dd8a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests colonial resistance before American independence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-146",
+      "expectedRecordHash": "a78b3c78a33de996c9a3f73b51dd4be8b172a8b688b3ca8c5edb2e7b8cdef21e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the ruler at the start of the Bolshevik Revolution.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-147",
+      "expectedRecordHash": "368e64304496704c9391e806be286deed52d49ca7e8be2f242020d9ce8e438f9",
+      "primaryId": "syllabus:polity-governance/rights-principles/directive-principles-and-duties/fundamental-duties",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Distinguishes Fundamental Duties from other constitutional directives.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-148",
+      "expectedRecordHash": "72fa7423653d255eff350b1a0fd2836ce8b62b57902878cc897df8f5d238bd96",
+      "primaryId": "syllabus:polity-governance/institutions/parliament/legislative-process",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the purpose of a joint sitting.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-149",
+      "expectedRecordHash": "4e41a77edfdfa36a87cae16c5d6325c1f7e2d0ab90d59019d0b9670adbb306f2",
+      "primaryId": "syllabus:polity-governance/federalism-local-government/union-state-relations/emergency-provisions",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests constitutional emergency powers of the President.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-15",
+      "expectedRecordHash": "70c8d3c9df359e88a42aa2f863adb9e665ec8b98bb9ec867b24ad47ebe4ab8a1",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-150",
+      "expectedRecordHash": "735a4ee11cdf05aa48f327a704106a43614cdec3c338cf9cc105f2b17ff6163b",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-economy/land-revenue-settlements",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the operation of Permanent Settlement in Bengal.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Event-based"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-16",
+      "expectedRecordHash": "a02fe0c502c2bdadfe0af3609ee34d20dc6af217944dd239741ce985e7a5f9bc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-17",
+      "expectedRecordHash": "5506ef0b988bcbda83870b240c86ce7917e3752d73bfea72e9546f74d100fb50",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-18",
+      "expectedRecordHash": "73c5f305157e85cb0e53dd09a58deec3dce077efcba039e7224a0bb0bfa8e630",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-19",
+      "expectedRecordHash": "83a1eb75263b4a648bd10c8f93d58985e0126e0b19b40e7f7d97acf4bab506ba",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-2",
+      "expectedRecordHash": "2ef5275e243b736d08771ee1d5487285a7c4a5e8b16d405fb047e81f0a9b042d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-20",
+      "expectedRecordHash": "105b2fefd0617b6657744a025db723af91c8b1301e1301ab81aa0d9f72457f0c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the nearest meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-21",
+      "expectedRecordHash": "1c00c084d3ee1eb57ad7a58414c9063752571b5a701bf8ef82555e83850845de",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-22",
+      "expectedRecordHash": "e54d79d908dd7496ab9d50b647376c641d0179a80ae07372841f9d3f7cdc8e2a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-23",
+      "expectedRecordHash": "a2388205c9f5a4d049673559dd6e01f67219f02daa0396aa8b209b90cfd657d9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-24",
+      "expectedRecordHash": "c9a8982a4f67240f6fdd5a6560468a74813e25aa53ac24bcfa2f9a3af7447829",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-25",
+      "expectedRecordHash": "4e1fb997f0acadf906e52bb9a60c852501cc91e9ee5f1f9ec2f8f3a51c2fe3e4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-26",
+      "expectedRecordHash": "c8a0d290d50927322ddd89bc3844dfe4169478192b901809cbbbb1ec11eb3d91",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-27",
+      "expectedRecordHash": "2c6f8b68407ff6036fbfe555bff0fc2ff32df2741711530099d79232455c2e46",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-28",
+      "expectedRecordHash": "4766ed710944d6debfa46a693abb945cd46423e87a8b6b8cdc4e7dab8a752cec",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-29",
+      "expectedRecordHash": "3d18a9cb088369f6f9ba7c647f4f3346cb882dda3323db09e1c02af0140e607a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-3",
+      "expectedRecordHash": "825d6cf06cca52d0e43b07876ae405637e163f57d4cbfe40cfc3c94693361a63",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-30",
+      "expectedRecordHash": "8ed1004459e8eef403a7cd5c7208cf0c6ac32a71698508d9d9d10b5255d23862",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Selects the opposite meaning of the printed word.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-31",
+      "expectedRecordHash": "4e1c39aa7f2ca9d9189eca4abfeff909904ebfc7ec188ff72dbf22404b6ccc13",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the word that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-32",
+      "expectedRecordHash": "52af336fe90b5feb4c43a9f9378b835ee8c26164349be7a22444ed0746404fe0",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the word that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-33",
+      "expectedRecordHash": "29d0533a2c0197605391ec10e01b1fda575ea2b95d03d5d0965408ceb1a93dbc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the word that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-34",
+      "expectedRecordHash": "7f49f395bd0f1099db2c98127134a69d702e9969cea38655c0d09dfd16923a65",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the word that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-35",
+      "expectedRecordHash": "b73f060e36b94e14ab727e711f61f7ef435b0838cc5b67b9bf85eaef4d556aea",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the word that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-36",
+      "expectedRecordHash": "7e7d6d0a8e27f6267ae417c67e131877e97bdc4309780af0301cc6d9f6ee26c5",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the word that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-37",
+      "expectedRecordHash": "c682435614310f2dc4866ec6c675c44550e87fa699900c0fdf031a6be8783daf",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the word that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-38",
+      "expectedRecordHash": "877f2b87b335d9125baba013c05a63872d8cf9f4e25af871fd19f398ad61b464",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the word that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-39",
+      "expectedRecordHash": "176e50ca3780262b349af3b3aa6be2229c1409cfce6d080845ffd09e83258b5b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the word that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-4",
+      "expectedRecordHash": "a669a77c38fe001f1d39fb0da8e7bbff89237b7b3701a54b06830d70003b71ad",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-40",
+      "expectedRecordHash": "155214ce32315deb2e2c3ee981922fb54ea5ac9ecf80b43d409fb9594b99789a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the word that completes the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-41",
+      "expectedRecordHash": "fac33d1c9a16bd4564609eac9e1cf8606d6a229467d6d402b0ef7bc67a116253",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the best improvement for the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-42",
+      "expectedRecordHash": "724433f98c161b84a39061e6fc1145d9a54c7cdf625922e95b7ae5c8c2b67518",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the best improvement for the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-43",
+      "expectedRecordHash": "e252b1de0bc7e9c8bb28a6dddadd80cf9708f2deec2b7a66a8f4eaa5e1914c83",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the best improvement for the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-44",
+      "expectedRecordHash": "bbe7a6b20fe7a90cbfbff474fd491dd619a47d0157026e00ea48d32182395057",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the best improvement for the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-45",
+      "expectedRecordHash": "245cd31d3f265f5331e6993561270021bad613971fdc8816f2479e8218c9d39e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the best improvement for the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-46",
+      "expectedRecordHash": "9e46fc3ed3694360267aaa8a1600bf15a8f6be5934e386078e753c1b47b48839",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the best improvement for the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-47",
+      "expectedRecordHash": "f029cb8d6435b244c7605a004f1b10c7da463350d9c58f4da90061f3f533e3dc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the best improvement for the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-48",
+      "expectedRecordHash": "2876d6bf48666ddbde354b40d183f0fe8dfeb1f89cc64045a96cd983141eff41",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the best improvement for the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-49",
+      "expectedRecordHash": "1cbf60db7aed9f78bc98a70d3b23a518ace6c31b91f11b403043d4c0a961ff4e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the best improvement for the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-5",
+      "expectedRecordHash": "f859c043a5aa86dc967e48a03808d935c17a0e07198541eaf32e8e220c774e44",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-50",
+      "expectedRecordHash": "010ddd289416b073ce4f45780b24d6c6fd98c1497b62adc0318ce07671fc251d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Chooses the best improvement for the printed sentence.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
       }
     },
     {
@@ -25129,6 +26317,90 @@
       }
     },
     {
+      "questionId": "nda-2014-ii-52",
+      "expectedRecordHash": "6f67cd65f6e53ee349c26fcea79569dabc7d0fb69f7d2fa79310e868b830193d",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests the cell as the fundamental unit of life.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-53",
+      "expectedRecordHash": "3071312164c0417906f048d3cc3f839ee57cf911c5bcd7ddefc87653b03ae88b",
+      "primaryId": "syllabus:history/ancient-india/post-mauryan-states/kushanas",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests Kushana coinage.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-54",
+      "expectedRecordHash": "f9059b82cc6b2286229fe99a19ec084a912bf60db63fb6012e1af3c6beed97d6",
+      "primaryId": "syllabus:history/medieval-india/mughal-empire/succession-and-decline",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests Jahandar Shah and Farrukhsiyar.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-55",
+      "expectedRecordHash": "a234ea27fa566dd1a60c2e80f0b9f056c04a97e4b169f6d337b55d2d0e784d9a",
+      "primaryId": "syllabus:history/modern-india-national-movement/constitutional-developments/acts-before-1858",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Tests the purpose and effect of Pitt’s India Act.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-56",
+      "expectedRecordHash": "fc0face652403fe88ea22eababd4fda3a37d2360218123fcd52834bda6cab941",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests paired magnetic poles.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-57",
+      "expectedRecordHash": "af95a1e2f1aa6c1b04647e28348e31f5c80283b4426649f574fcf22e5730e8e7",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Applies force, momentum, acceleration or impulse relations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
       "questionId": "nda-2014-ii-58",
       "expectedRecordHash": "f5488c0581a6bc10688496390390f169b5e6cd81304b94bc489a59d9d1d80d4e",
       "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/tropical-cyclones",
@@ -25146,6 +26418,70 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/tropical-cyclones"
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-59",
+      "expectedRecordHash": "9d4255d39a4cfa1577cc9bc1146475cb2197e61006cec72cc495441b4bbfad85",
+      "primaryId": "syllabus:international-relations-organisations/regional-groupings/regional-and-plurilateral-forums/regional-economic-blocs",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Identifies ASEAN membership.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-6",
+      "expectedRecordHash": "4f0025ce1981a06a530b8963020f56565deb5765c8979c88d3426b5569bc6f85",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-60",
+      "expectedRecordHash": "2cebd5adb7647b6bbf51642d7dce00907777460fdce34b7c5516bcab62c56fa4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests heat capacity, vaporisation or temperature scales.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-61",
+      "expectedRecordHash": "fde4a44d530d5590b1f49cad26424960884a808e14a6a0d2fd3cd3c618f06fa2",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Balances or interprets a chemical reaction.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-62",
+      "expectedRecordHash": "3441eb95de536b598b08fa705a4541e7b077e4bfff86b4e854b60c9b7bf5e591",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests cell division in growth and tissue repair.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
       }
     },
     {
@@ -25167,6 +26503,106 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2014-ii-64",
+      "expectedRecordHash": "e2b7e4c0d37beab5b01bef33eaa1bd2688af6101b7e5f541b8126e0bc3176de4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Applies motion-time or projectile-motion relations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-65",
+      "expectedRecordHash": "7ab85e0b8a7a9266768cde4635738a77e0db90ae4afa8a065ae92108324a6f20",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Uses molar or atomic-mass composition.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-66",
+      "expectedRecordHash": "04f9d4d75cfed328497e2249e1704a066343cf84aae9b9ed9f27bb345183b67e",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests liver function in human physiology.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-67",
+      "expectedRecordHash": "f83c4807f931e76c9304b45d02ddf2a613ae41606b25c9b7ac27f4fbdc54b752",
+      "primaryId": "syllabus:economy/economic-foundations/core-concepts/sectors-of-economic-activity",
+      "additionalIds": [],
+      "status": "approved",
+      "basis": "official-complete-paper-second-pass",
+      "rationale": "Orders economic sectors by contribution to GDP.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      },
+      "tags": [
+        "Static"
+      ]
+    },
+    {
+      "questionId": "nda-2014-ii-68",
+      "expectedRecordHash": "9a033ade68e973e52a2c25a4c242fbd3c58cee6cd890cc0b8cc1f65f5de84e8b",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests charge motion, cyclotron behaviour or electric fields.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-69",
+      "expectedRecordHash": "be86a4f82ad5741b8a39418ecc5060666e08dff282d82a55eae248a47d65c741",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Balances or interprets a chemical reaction.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-7",
+      "expectedRecordHash": "4f43eeb7ea42c573832b4a69af186eabc8b28b791181165c66251060b2368656",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-70",
+      "expectedRecordHash": "db1640048e968269d4d121ec21d725961f5ccab864cc921780628fe8628e461c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the female reproductive system.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
       "questionId": "nda-2014-ii-71",
       "expectedRecordHash": "ad12a1bd1485b8bd66be918303e97311f5a160a8bcd63b89a63319f84413d96b",
       "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
@@ -25184,6 +26620,42 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time"
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-72",
+      "expectedRecordHash": "71a582a4498bdc9b8f74e6c2bb102a318f3aaa1cb5271b8029d6f941ddc50d9c",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests domestic supply or active circuit components.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-73",
+      "expectedRecordHash": "8ab67c8bf447ebe8dd818880935f031b0f1417afcb6baa8da9851357907c381a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests soap, paints or other everyday chemical uses.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-74",
+      "expectedRecordHash": "64f00acbf90a6f09250a132723af16b3affc42f71d1c89ddc9d4ce7b43ee6779",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Classifies a cold-blooded animal.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
       }
     },
     {
@@ -25207,6 +26679,42 @@
       }
     },
     {
+      "questionId": "nda-2014-ii-76",
+      "expectedRecordHash": "4e5dc1bac0fd21fddccf4fff8c909ad52353aed944ac952ec6359b14279fdbd9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests refraction, interference, dispersion or optical materials.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-77",
+      "expectedRecordHash": "7e6b307482d367cc289275e3ea9d6fad94d93016f1ca35013165094d6eb86787",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies a gas using combustion behaviour.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-78",
+      "expectedRecordHash": "834a92229ca33abb388ccaf0c8496fc40645f61df472279816012ebd9fa6d949",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the organism causing leprosy.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
       "questionId": "nda-2014-ii-79",
       "expectedRecordHash": "3e5295380457818600a06c6a91deb00b1ef116470ab4ff5607508dc2969320b6",
       "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
@@ -25227,6 +26735,54 @@
       }
     },
     {
+      "questionId": "nda-2014-ii-8",
+      "expectedRecordHash": "460c3683c8b55cac9ff9c3f323c6c5a8b05a679f1275e60011c6d7886c61bc58",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-80",
+      "expectedRecordHash": "025a732415429641d0fd2854e67ad3c9d26154a1d560959b3b0a51ffa111b795",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests refraction, interference, dispersion or optical materials.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-81",
+      "expectedRecordHash": "d22043bc279527e9988fef0d091d8ce05927ce96121f97c7ab883af6d31142a8",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Uses electrons, atomic numbers or neutrons.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-82",
+      "expectedRecordHash": "536cf6daa914b1975a1f3cb12cd67bb372a55ff340173eb55a47d9943e410dad",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies a plant hormone.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
       "questionId": "nda-2014-ii-83",
       "expectedRecordHash": "3aa6ec6c4d34f5d4c8a30878ed255b9b2212b4840e3140eb9aa46d0c518cfaeb",
       "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/sedimentary-rocks",
@@ -25244,6 +26800,30 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/rocks-and-minerals/sedimentary-rocks"
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-84",
+      "expectedRecordHash": "af2128d111a0ed125f3e72d31092f82ed741de858046dbde1124e0767f0d6faa",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests refraction, interference, dispersion or optical materials.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-85",
+      "expectedRecordHash": "d1c3c780cc4ca28b56e09db4b4b95165e1c9102054b0f5b793cc0ab6502a4cad",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests heat capacity, vaporisation or temperature scales.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
       }
     },
     {
@@ -25287,6 +26867,54 @@
       }
     },
     {
+      "questionId": "nda-2014-ii-88",
+      "expectedRecordHash": "6d78cc4b34315c84b16976b6ca6ee2bb193f57fbe2b3bf427a6717db70935324",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Applies force, momentum, acceleration or impulse relations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-89",
+      "expectedRecordHash": "0440f08165aa813e07476e2f12958af95d8dad9531582a309538228e57af1caa",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests refraction, interference, dispersion or optical materials.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-9",
+      "expectedRecordHash": "e1aa546de82a2d49117a504e8875b50ebb5a2c8fc709b08425c21f2b43c8f616",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies the erroneous printed segment or No error.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-90",
+      "expectedRecordHash": "70fdf2482a5fd7be3d2793bbac105fe22eeef932d67906206506dc916a3a0c46",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Identifies organelles absent from animal cells.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
       "questionId": "nda-2014-ii-91",
       "expectedRecordHash": "0f1806aefea6198201b6836a1a0096b502b7108b8169084858fbedc8e912148b",
       "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-currents",
@@ -25304,6 +26932,42 @@
         "version": "upsc-geography-v1.2",
         "status": "rule-reviewed",
         "legacyId": "physical-geography/oceanography/ocean-currents"
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-92",
+      "expectedRecordHash": "d64f9fd762cd82a10ff5fef5699d9f849a38543635e93401531b1e49e343fc34",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Applies force, momentum, acceleration or impulse relations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-93",
+      "expectedRecordHash": "a8f5f5722e98cacea4e948bafb7bde292cb28b5f7b62f4e8abccc27272517eb4",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests soap, paints or other everyday chemical uses.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-94",
+      "expectedRecordHash": "9d22749f5f94ac848a16624076ed33d87483a5fbf27d8e765ea125be7bbf6bde",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Compares food macromolecules as energy sources.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
       }
     },
     {
@@ -25325,6 +26989,30 @@
       "answerEligibilityUnchanged": true
     },
     {
+      "questionId": "nda-2014-ii-96",
+      "expectedRecordHash": "01121efbc29a5daa463c257d139fd3bf4b7fca1d2ea0fe6ccf1ec1de30b830dc",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests refraction, interference, dispersion or optical materials.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-97",
+      "expectedRecordHash": "5303d5fdf9385825dae0a33075eea3e11cf9ef42fe43ad02ac487ac055a9bf2a",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Tests phase change or an adiabatic process.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
+    },
+    {
       "questionId": "nda-2014-ii-98",
       "expectedRecordHash": "a335aac91ba12d10b13056da33c89842de6ae2126c8048c6d1f405b38d7a364e",
       "primaryId": "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy",
@@ -25343,6 +27031,18 @@
       ],
       "editorialBatch": "NDA/2014/II/existing-1",
       "answerEligibilityUnchanged": true
+    },
+    {
+      "questionId": "nda-2014-ii-99",
+      "expectedRecordHash": "f5771b78dddcead4ddf10df4f7bd3ec5361cf3f88e9b220cd206f9748d396ac9",
+      "status": "out-of-scope",
+      "basis": "verified-preparation-only-scope",
+      "scopeReason": "Verified for NDA/CDS preparation; outside the CSE GS syllabus projection.",
+      "rationale": "Applies force, momentum, acceleration or impulse relations.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Question text and options were mapped to all 150 Series A source positions, checked against the scanned booklet, and reconciled with a complete secondary transcription."
+      }
     },
     {
       "questionId": "nda-2015-i-1",
