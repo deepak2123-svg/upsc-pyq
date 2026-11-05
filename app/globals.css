@@ -1589,6 +1589,13 @@ h3 { font-size: 16px; }
 .paper-cart-heading button { border: 0; background: transparent; color: var(--accent); font-size: 11px; font-weight: 700; }
 .paper-cart-body { display: flex; flex: 1; flex-direction: column; gap: 7px; padding: 18px; }
 .paper-cart-body span, .paper-cart-footer span { color: var(--muted); font-size: 12px; }
+.paper-cart-items { display: grid; gap: 0; max-height: 310px; padding: 0; margin: 6px 0 0; overflow-y: auto; list-style: none; }
+.paper-cart-items li { display: grid; grid-template-columns: 7px minmax(0,1fr) auto; align-items: start; gap: 9px; padding: 11px 0; border-top: 1px solid var(--line); }
+.paper-cart-items li>i { width: 7px; height: 7px; margin-top: 5px; border-radius: 50%; background: var(--exam-color); }
+.paper-cart-items li>div { display: grid; min-width: 0; gap: 3px; }
+.paper-cart-items li>div>strong { font-size: 12px; line-height: 1.35; }
+.paper-cart-items li>div>span { line-height: 1.35; }
+.paper-cart-items li>button { padding: 2px 0 2px 6px; border: 0; background: transparent; color: var(--accent); font-size: 10px; font-weight: 700; }
 .paper-cart-footer { display: grid; gap: 14px; padding: 16px 18px 18px; border-top: 1px solid var(--line); }
 .paper-cart-footer div { display: flex; flex-direction: column; gap: 1px; }
 .paper-cart-footer div strong { font-size: 24px; }

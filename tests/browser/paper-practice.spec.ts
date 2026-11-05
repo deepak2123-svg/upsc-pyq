@@ -22,8 +22,12 @@ test('whole-paper practice keeps term and subject selections exact',async({page}
  expect(errors).toEqual([]);
  await page.getByRole('button',{name:'NDA II · Mathematics 2026, 120 questions, not selected'}).click();
  await expect(page.getByRole('button',{name:'NDA II · Mathematics 2026, 120 questions, selected'})).toBeVisible();
+ await expect(page.locator('.paper-cart-items')).toContainText('NDA 2026 · Attempt II');
+ await expect(page.locator('.paper-cart-items')).toContainText('Mathematics · 120 MCQs');
+ await expect(page.getByRole('button',{name:'Remove NDA 2026 Attempt II Mathematics'})).toBeVisible();
  await expect(page.getByRole('button',{name:'Start selected paper →'})).toBeEnabled();
  await page.getByRole('button',{name:'NDA II · GAT 2026, 150 questions, not selected'}).click();
+ await expect(page.locator('.paper-cart-items')).toContainText('GAT · 150 MCQs');
  await expect(page.locator('.paper-cart-footer')).toContainText('270');
  await expect(page.locator('.paper-cart-footer')).toContainText('questions');
  await expect(startButton).toBeEnabled();

@@ -57,6 +57,11 @@ export function PaperPracticeWorkspace({ rows, years }: { rows: PaperPracticeRow
     const row = rows.find(item => key.startsWith(`${item.id}:`));
     return sum + (row?.counts[year] || 0);
   }, 0);
+  const selectedPapers = selected.flatMap(key => {
+    const year = Number(key.split(':').at(-1));
+    const row = rows.map(displayRow).find(item => key === `${item.id}:${year}`);
+    return row ? [{ key, year, row, count: row.counts[year] || 0 }] : [];
+  }).sort((a, b) => b.year - a.year || a.row.exam.localeCompare(b.row.exam) || a.row.paper.localeCompare(b.row.paper));
 
   return <main className="pyq-page paper-practice-page">
     <header className="paper-practice-title"><p className="pyq-kicker">Whole-paper practice</p><h1>Practice official papers</h1><p>Select one paper or combine several papers. Every question comes only from the paper cells you choose.</p></header>
@@ -79,6 +84,6 @@ export function PaperPracticeWorkspace({ rows, years }: { rows: PaperPracticeRow
         </div>
       </div>
     </section>
-    <aside className="paper-selection-bar" aria-label="Selected papers"><header className="paper-cart-heading"><h2>Practice cart</h2>{selected.length ? <button type="button" disabled={loading} onClick={() => setSelected([])}>Clear all</button> : null}</header><div className="paper-cart-body"><strong>{selected.length ? `${selected.length} selected ${selected.length === 1 ? 'paper' : 'papers'}` : 'No papers selected'}</strong><span>Select one or more paper-year cells from the table.</span></div><footer className="paper-cart-footer"><div><strong>{total.toLocaleString('en-IN')}</strong><span>questions</span></div><button disabled={!ready || !selected.length || loading} onClick={() => void start()}>{loading ? 'Preparing…' : selected.length === 1 ? 'Start selected paper →' : 'Start selected papers →'}</button></footer>{error ? <p role="alert">{error}</p> : null}</aside></div>
+    <aside className="paper-selection-bar" aria-label="Selected papers"><header className="paper-cart-heading"><h2>Practice cart</h2>{selected.length ? <button type="button" disabled={loading} onClick={() => setSelected([])}>Clear all</button> : null}</header><div className="paper-cart-body"><strong>{selected.length ? `${selected.length} selected ${selected.length === 1 ? 'paper' : 'papers'}` : 'No papers selected'}</strong>{selectedPapers.length ? <ul className="paper-cart-items">{selectedPapers.map(item => <li key={item.key} style={{'--exam-color':item.row.color} as CSSProperties}><i aria-hidden="true"/><div><strong>{item.row.exam} {item.year}{item.row.attempt !== '—' ? ` · Attempt ${item.row.attempt}` : ''}</strong><span>{item.row.paper} · {item.count.toLocaleString('en-IN')} MCQs</span></div><button type="button" disabled={loading} aria-label={`Remove ${item.row.exam} ${item.year} ${item.row.attempt !== '—' ? `Attempt ${item.row.attempt} ` : ''}${item.row.paper}`} onClick={() => toggle(item.key)}>Remove</button></li>)}</ul>:<span>Select one or more paper-year cells from the table.</span>}</div><footer className="paper-cart-footer"><div><strong>{total.toLocaleString('en-IN')}</strong><span>questions</span></div><button disabled={!ready || !selected.length || loading} onClick={() => void start()}>{loading ? 'Preparing…' : selected.length === 1 ? 'Start selected paper →' : 'Start selected papers →'}</button></footer>{error ? <p role="alert">{error}</p> : null}</aside></div>
   </main>;
 }
