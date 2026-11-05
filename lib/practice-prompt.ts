@@ -21,7 +21,9 @@ const letteredItemMarker = /(?<!\S)([A-Z])[.)]\s+/g;
 const errorMarker = /^\(([a-z])\)$/i;
 const inlineErrorMarker = /\(([a-d])\)/gi;
 const inlineWordOrderMarker = /\(([PQRS])\)/g;
-const leadingWordOrderMarker = /^([PQRS])\s*:\s*(.+)$/;
+const leadingWordOrderMarker = /^([PQRS])\s*[.:]\s*(.+)$/;
+const errorDirections = /(?:underlined parts? label|spot the error|sentence (?:is )?given in (?:three|four) parts|find out which part .* error)/i;
+const wordOrderDirections = /(?:parts? .*jumbled|jumbled parts?|proper sequence|rearrange .* parts?)/i;
 
 function romanValue(value: string) {
   const numerals: Record<string, number> = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10 };
@@ -75,21 +77,83 @@ function inlineErrorLineBlock(lines: string[]): PracticePromptBlock | null {
 }
 
 /** Restore the underlined P/Q/R/S strips used by ordering-of-words items. */
-function wordOrderBlocks(lines: string[]): PracticePromptBlock[] | null {
+function wordOrderBlocks(lines: string[],options?:Record<string,string>): PracticePromptBlock[] | null {
+  const optionValues=Object.values(options??{});
+  if(optionValues.length!==4||!optionValues.every(value=>/^[PQRS](?:\s*[-–—]?\s*[PQRS]){3}$/i.test(value.trim())))return null;
+  if(!wordOrderDirections.test(lines.join(' '))||lines.some(line=>/^S[16]\s*:/i.test(line)))return null;
   const labelled=lines.map(line=>line.match(leadingWordOrderMarker));
   const first=labelled.findIndex(match=>match?.[1]==='P');
   if(first>=0&&['P','Q','R','S'].every((label,index)=>labelled[first+index]?.[1]===label)) {
     const segments=labelled.slice(first,first+4).map(match=>({marker:match![1],text:match![2].trim()}));
     return [...lines.slice(0,first).map(text=>({kind:'text' as const,text})),{kind:'word-order' as const,segments},...lines.slice(first+4).map(text=>({kind:'text' as const,text}))];
   }
-  if(lines.length!==1)return null;
-  const line=lines[0],matches=[...line.matchAll(inlineWordOrderMarker)];
+  const candidateIndex=lines.findIndex(line=>[...line.matchAll(/(?:\(([PQRS])\)|\s([PQRS])[.:]\s+|\b([PQRS])\s*:\s*)/g)].length>=4);
+  if(candidateIndex<0)return null;
+  const line=lines[candidateIndex],prefix=lines.filter((_,index)=>index!==candidateIndex).map(text=>({kind:'text' as const,text}));
+  const quoted=[...line.matchAll(/\b([PQRS])\s*:\s*"([^"]+)"/g)];
+  if(quoted.length===4&&quoted.every((match,index)=>match[1]==='PQRS'[index])){
+    const introduction=line.slice(0,line.search(/\bwith parts?\b/i)).replace(/[,\s]+$/,'').trim();
+    return [...prefix,...(introduction?[{kind:'text' as const,text:introduction}]:[]),{kind:'word-order',segments:quoted.map(match=>({marker:match[1],text:match[2].trim()}))}];
+  }
+  const prefixed=[...line.matchAll(/\b([PQRS])\s*:\s*/g)];
+  if(prefixed.length===4&&prefixed.every((match,index)=>match[1]==='PQRS'[index])){
+    const introduction=line.slice(0,prefixed[0].index).trim();
+    const segments=prefixed.map((match,index)=>({marker:match[1],text:line.slice(match.index!+match[0].length,prefixed[index+1]?.index??line.length).trim()}));
+    const instructionAt=segments[3].text.search(/\s+(?:Arrange|The (?:correct|proper) sequence)/i);
+    const instruction=instructionAt>=0?segments[3].text.slice(instructionAt).trim():'';
+    if(instructionAt>=0)segments[3].text=segments[3].text.slice(0,instructionAt).trim();
+    return [...prefix,...(introduction?[{kind:'text' as const,text:introduction}]:[]),{kind:'word-order',segments},...(instruction?[{kind:'text' as const,text:instruction}]:[])];
+  }
+  const dotted=[...line.matchAll(/\s([PQRS])[.:]\s+/g)];
+  if(dotted.length===4&&dotted.every((match,index)=>match[1]==='PQRS'[index])){
+    let start=0;
+    const segments=dotted.map(match=>{const text=line.slice(start,match.index).trim();start=match.index!+match[0].length;return{marker:match[1],text};});
+    let trailing=line.slice(start).trim();
+    const lastInstruction=segments[3].text.search(/\s+(?:The )?(?:correct|proper) sequence should be/i);
+    let instruction='';
+    const trailingInstruction=trailing.search(/\s+(?:The )?(?:correct|proper) sequence should be/i);
+    if(trailingInstruction>=0){instruction=trailing.slice(trailingInstruction).trim();trailing=trailing.slice(0,trailingInstruction).trim();}
+    if(lastInstruction>=0){instruction=segments[3].text.slice(lastInstruction).trim();segments[3].text=segments[3].text.slice(0,lastInstruction).trim();}
+    return [...prefix,{kind:'word-order',segments},...(trailing?[{kind:'text' as const,text:trailing}]:[]),...(instruction?[{kind:'text' as const,text:instruction}]:[])];
+  }
+  const matches=[...line.matchAll(inlineWordOrderMarker)];
   if(matches.length!==4||!matches.every((match,index)=>match[1]==='PQRS'[index]))return null;
   let start=0;
   const segments=matches.map(match=>{const text=line.slice(start,match.index).trim();start=match.index!+match[0].length;return{marker:match[1],text};});
   if(segments.some(segment=>!segment.text))return null;
   const trailing=line.slice(start).trim();
-  return [{kind:'word-order',segments},...(trailing?[{kind:'text' as const,text:trailing.replace(/^[.:;\s]+/,'')}]:[])];
+  return [...prefix,{kind:'word-order',segments},...(trailing?[{kind:'text' as const,text:trailing.replace(/^[.:;\s]+/,'')}]:[])];
+}
+
+function optionErrorLineBlocks(lines:string[],options?:Record<string,string>):PracticePromptBlock[]|null{
+  if(!options)return null;
+  const entries=Object.entries(options).filter(([key])=>/^[A-D]$/.test(key));
+  if(entries.length!==4)return null;
+  const noError=entries.findIndex(([,value])=>/^no\s+error\.?$/i.test(value.trim()));
+  if(noError<0&&!errorDirections.test(lines.join(' ')))return null;
+  const fragmentEntries=noError>=0?entries.slice(0,noError):entries;
+  if(fragmentEntries.length<3||fragmentEntries.length>4)return null;
+  const segments=fragmentEntries.map(([key,text])=>({marker:`(${key.toLowerCase()})`,text:text.trim()}));
+  if(segments.some(segment=>!segment.text))return null;
+  const directions=lines.filter(line=>errorDirections.test(line));
+  return [...directions.map(text=>({kind:'text' as const,text})),{kind:'error-line',segments}];
+}
+
+function sentenceOrderBlocks(lines:string[]):PracticePromptBlock[]|null{
+  if(!lines.join(' ').match(/\bS1\s*:/i)||!lines.join(' ').match(/\bS6\s*:/i))return null;
+  const marker=/\b(S1|S6|P|Q|R|S)\s*:\s*/g;
+  const blocks:PracticePromptBlock[]=[];
+  for(const line of lines){
+    const matches=[...line.matchAll(marker)];
+    if(!matches.length){blocks.push({kind:'text',text:line});continue;}
+    const intro=line.slice(0,matches[0].index).trim();
+    if(intro)blocks.push({kind:'text',text:intro});
+    matches.forEach((match,index)=>{
+      const text=line.slice(match.index!+match[0].length,matches[index+1]?.index??line.length).trim();
+      if(text)blocks.push({kind:'statement',marker:match[1].toUpperCase(),text});
+    });
+  }
+  return blocks.some(block=>block.kind==='statement'&&block.marker==='P')?blocks:null;
 }
 
 /** Convert the limited TeX notation found in legacy imports for display. */
@@ -246,13 +310,17 @@ function pairedRowBlocks(lines: string[]): PracticePromptBlock[] | null {
  * It only restructures a sequential list beginning at 1, so years, quantities,
  * and other isolated numbers remain untouched.
  */
-export function formatPracticePrompt(lines: string[]): PracticePromptBlock[] {
+export function formatPracticePrompt(lines: string[],meta?:{options?:Record<string,string>}): PracticePromptBlock[] {
   const cleanLines = lines.map((line) => formatPracticeText(line).trim()).filter(Boolean);
+  const optionErrorLine=optionErrorLineBlocks(cleanLines,meta?.options);
+  if(optionErrorLine)return optionErrorLine;
   const errorLine = errorLineBlock(cleanLines);
   if (errorLine) return [errorLine];
   const inlineErrorLine = inlineErrorLineBlock(cleanLines);
   if (inlineErrorLine) return [inlineErrorLine];
-  const wordOrder = wordOrderBlocks(cleanLines);
+  const sentenceOrder=sentenceOrderBlocks(cleanLines);
+  if(sentenceOrder)return sentenceOrder;
+  const wordOrder = wordOrderBlocks(cleanLines,meta?.options);
   if (wordOrder) return wordOrder;
   const matchingLists = matchingListBlocks(cleanLines);
   if (matchingLists) return matchingLists;

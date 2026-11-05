@@ -1,5 +1,5 @@
 export const directions = [];
-export const reviewedUnderlined = {41:['broke through'],42:['have reached'],43:['looked'],44:['towards'],45:['got'],46:['off'],47:['have worked'],48:['joining'],49:['is wanting'],50:['finished']};
+export const reviewedUnderlined = {11:['amity'],12:['extinct'],13:['proselytise'],14:['preposterous'],15:['callous'],16:['verdict'],17:['corroborated'],18:['sane'],19:['credible'],20:['hazardous'],21:['applauded'],22:['material'],23:['friendly'],24:['intelligent'],25:['reluctant'],26:['abandoned'],27:['abounds'],28:['Adversity'],29:['affluence'],30:['squandering'],41:['broke through'],42:['have reached'],43:['looked'],44:['towards'],45:['got'],46:['off'],47:['have worked'],48:['joining'],49:['is wanting'],50:['finished']};
 
 export const questions = [
   {

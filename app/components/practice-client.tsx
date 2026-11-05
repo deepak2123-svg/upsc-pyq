@@ -272,7 +272,7 @@ export function PracticeClient({ id }: { id: string }) {
   const locked = busy || saveFailed || Boolean(pendingCompletion.current) || clock.expired || attempt.status === "completed";
   const isTimed = clock.remainingSeconds !== null;
   const timerValue = isTimed && attempt.status !== "completed" ? clock.remainingSeconds! : clock.elapsedSeconds;
-  const prompt = formatPracticePrompt(question.promptLines);
+  const prompt = formatPracticePrompt(question.promptLines,{options:question.options});
   const sourceLabel = `${question.exam} · ${question.paper} · ${question.year}`;
   return (
     <main className="practice-shell exam-experience">

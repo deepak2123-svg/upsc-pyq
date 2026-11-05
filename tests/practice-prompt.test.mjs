@@ -118,12 +118,13 @@ test("inline error formatting is conservative and preserves ordinary option-like
 });
 
 test('restores ordering-of-words fragments with paper-style P Q R S labels',()=>{
-  const inline=formatPracticePrompt(['His uncle for success in life, (P) always advised his son, (Q) who was a self-made man (R) to depend on his own efforts (S) The proper sequence should be:']);
+  const sequenceOptions={A:'PQRS',B:'QPRS',C:'RQPS',D:'SRQP'};
+  const inline=formatPracticePrompt(['His uncle for success in life, (P) always advised his son, (Q) who was a self-made man (R) to depend on his own efforts (S) The proper sequence should be:'],{options:sequenceOptions});
   assert.equal(inline[0].kind,'word-order');
   assert.deepEqual(inline[0].segments.map(segment=>segment.marker),['P','Q','R','S']);
   assert.equal(inline[0].segments[0].text,'His uncle for success in life,');
   assert.equal(inline[1].text,'The proper sequence should be:');
-  const labelled=formatPracticePrompt(['Directions','P : participate in the function','Q : many of the people who had come to','R : the auditorium was over-crowded','S : could not find a seat because']);
+  const labelled=formatPracticePrompt(['The following parts are jumbled. Select the proper sequence.','P : participate in the function','Q : many of the people who had come to','R : the auditorium was over-crowded','S : could not find a seat because'],{options:sequenceOptions});
   assert.equal(labelled[1].kind,'word-order');
   assert.deepEqual(labelled[1].segments.map(segment=>segment.text),['participate in the function','many of the people who had come to','the auditorium was over-crowded','could not find a seat because']);
 });
@@ -142,4 +143,72 @@ test('completed NDA sentence-improvement items retain every source-reviewed unde
     }
   }
   assert.equal(checked,58);
+});
+
+test('every completed error-spotting record reconstructs its printed labelled fragments',()=>{
+  let checked=0;
+  for(const file of fs.readdirSync('content').filter(file=>file.endsWith('-official-paper.json'))){
+    const paper=JSON.parse(fs.readFileSync(`content/${file}`));
+    for(const question of paper.questions??[]){
+      const directions=question.promptLines.join(' ');
+      const noError=/^no\s+error\.?$/i.test(String(question.options?.D??'').trim());
+      const fourParts=/underlined parts? label|sentence (?:is )?given in (?:three|four) parts/i.test(directions);
+      if(!noError&&!fourParts)continue;
+      const block=formatPracticePrompt(question.promptLines,{options:question.options}).find(block=>block.kind==='error-line');
+      assert.ok(block,question.id);
+      assert.ok(block.segments.length===3||block.segments.length===4,question.id);
+      assert.deepEqual(block.segments.map(segment=>segment.text),Object.values(question.options).slice(0,block.segments.length),question.id);
+      checked+=1;
+    }
+  }
+  assert.ok(checked>=166);
+});
+
+test('every completed ordering-of-words record reconstructs four paper strips',()=>{
+  let checked=0;
+  for(const file of fs.readdirSync('content').filter(file=>file.endsWith('-official-paper.json'))){
+    const paper=JSON.parse(fs.readFileSync(`content/${file}`));
+    for(const question of paper.questions??[]){
+      const sequences=Object.values(question.options??{}).map(value=>String(value).replace(/[^PQRS]/g,''));
+      const prompt=question.promptLines.join(' ');
+      if(sequences.length!==4||!sequences.every(value=>value.length===4)||!/jumbled|proper sequence|rearrange/i.test(prompt)||/S1\s*:/i.test(prompt))continue;
+      const block=formatPracticePrompt(question.promptLines,{options:question.options}).find(block=>block.kind==='word-order');
+      assert.ok(block,question.id);
+      assert.deepEqual(block.segments.map(segment=>segment.marker),['P','Q','R','S'],question.id);
+      assert.ok(block.segments.every(segment=>segment.text),question.id);
+      checked+=1;
+    }
+  }
+  assert.ok(checked>=100);
+});
+
+test('whole-sentence ordering keeps S1 S6 and P Q R S as labelled statements, not underlined strips',()=>{
+  let checked=0;
+  for(const file of fs.readdirSync('content').filter(file=>file.endsWith('-official-paper.json'))){
+    const paper=JSON.parse(fs.readFileSync(`content/${file}`));
+    for(const question of paper.questions??[]){
+      const prompt=question.promptLines.join(' ');
+      if(!/S1\s*:/i.test(prompt)||!/S6\s*:/i.test(prompt))continue;
+      const blocks=formatPracticePrompt(question.promptLines,{options:question.options});
+      const markers=blocks.filter(block=>block.kind==='statement').map(block=>block.marker);
+      for(const marker of ['S1','S6','P','Q','R','S'])assert.ok(markers.includes(marker),`${question.id}: ${marker}`);
+      assert.ok(!blocks.some(block=>block.kind==='word-order'),question.id);
+      checked+=1;
+    }
+  }
+  assert.ok(checked>=18);
+});
+
+test('reviewed vocabulary and improvement underlines point to visible source text',()=>{
+  let checked=0;
+  for(const file of fs.readdirSync('content').filter(file=>file.endsWith('-official-paper.json'))){
+    const paper=JSON.parse(fs.readFileSync(`content/${file}`));
+    for(const question of paper.questions??[]){
+      for(const span of question.underlined??[]){
+        assert.ok(question.promptLines.some(line=>line.includes(span))||Object.values(question.options).includes(span),`${question.id}: ${span}`);
+        checked+=1;
+      }
+    }
+  }
+  assert.ok(checked>=570);
 });

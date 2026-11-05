@@ -821,7 +821,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "deft"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -890,7 +892,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "urbane"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -959,7 +963,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "timidity"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1028,7 +1034,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "mammoth"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1097,7 +1105,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "engrossed"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1166,7 +1176,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "preceding"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1235,7 +1247,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "shrewd"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1304,7 +1318,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "severe"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1373,7 +1389,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "Cumulatively"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1442,7 +1460,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "conspicuous"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1894,8 +1914,8 @@
       "id": "nda-2016-i-26",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "The Election Commission recognizes political party as a national party if 1. it secures at least six percent of the total valid votes polled in four or more States in a general election to the Lok Sabha or to the State Legislative Assemblies. 2. it wins at least four seats in a general election to the Lok Sabha from any State or States. Select the correct answer using the code given below:",
-      "sourceTextHash": "c669d654df6ef24c79e8ba23f08eeee3ef8de8d65ce48d1323fa5e522823751e",
+      "sourceText": "Had I not taken ill, I would have sent you my research paper much earlier.",
+      "sourceTextHash": "280b965cf7a7f6fdec73474b9b7e00657f0767927f4ced87aba318a02c266123",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -1910,22 +1930,26 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "The Election Commission recognizes political party as a national party if 1. it secures at least six percent of the total valid votes polled in four or more States in a general election to the Lok Sabha or to the State Legislative Assemblies. 2. it wins at least four seats in a general election to the Lok Sabha from any State or States. Select the correct answer using the code given below:"
+        "Had I not taken ill, I would have sent you my research paper much earlier."
       ],
       "options": {
-        "A": "1 only",
-        "B": "2 only",
-        "C": "Both 1 and 2",
-        "D": "Neither 1 nor 2"
+        "A": "Had I not taken ill,",
+        "B": "I would have sent you my research paper",
+        "C": "much earlier.",
+        "D": "No error."
       },
       "answer": "A",
-      "explanation": "Official UPSC final key, Series A Q26: A (1 only).",
+      "explanation": "Official UPSC final key, Series A Q26: A (Had I not taken ill,).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "Had I not taken ill,",
+        "I would have sent you my research paper",
+        "much earlier."
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -1937,11 +1961,11 @@
         "questionNumber": 26,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 8,
+        "originalPage": 5,
         "originalPages": [
-          8
+          5
         ],
-        "printedPage": 8,
+        "printedPage": 5,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -1963,8 +1987,8 @@
       "id": "nda-2016-i-27",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which one of the following is not a feature of the Nehru-Mahalanobis model of development strategy?",
-      "sourceTextHash": "05ee6cf5100e441afdd905c20968d803a9bb009152c89d7ecca2f6a998f48a44",
+      "sourceText": "The barn owl helps the farmer by destroying rats which could, if left unchecked, do a lot of damage to the crops.",
+      "sourceTextHash": "c6225ee4d1faf0bffb0217375d39c31f1f74a732493ea6959df579a272cf42ff",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -1979,22 +2003,26 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which one of the following is not a feature of the Nehru-Mahalanobis model of development strategy?"
+        "The barn owl helps the farmer by destroying rats which could, if left unchecked, do a lot of damage to the crops."
       ],
       "options": {
-        "A": "Development of capital goods industries",
-        "B": "Major involvement of the State in the economy",
-        "C": "Industrial deregulation and disinvestment in the public sector",
-        "D": "Enhancing the scope and importance of the public sector"
+        "A": "The barn owl helps the farmer",
+        "B": "by destroying rats which could, if left unchecked, do a lot of",
+        "C": "damage to the crops.",
+        "D": "No error."
       },
       "answer": "A",
-      "explanation": "Official UPSC final key, Series A Q27: A (Development of capital goods industries).",
+      "explanation": "Official UPSC final key, Series A Q27: A (The barn owl helps the farmer).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "The barn owl helps the farmer",
+        "by destroying rats which could, if left unchecked, do a lot of",
+        "damage to the crops."
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2006,11 +2034,11 @@
         "questionNumber": 27,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 8,
+        "originalPage": 5,
         "originalPages": [
-          8
+          5
         ],
-        "printedPage": 8,
+        "printedPage": 5,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2032,8 +2060,8 @@
       "id": "nda-2016-i-28",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which of the following best explains the stated broad vision and aspirations of the Twelfth Five Year Plan (2012 – 2017)?",
-      "sourceTextHash": "20bca274b09235fd514a9b61c5105d8cf6c1cb38c7fb1ffc35d027f4eed43a1a",
+      "sourceText": "He had gone home three weeks ago and was expected back yesterday, but he has not come yet.",
+      "sourceTextHash": "e328e923a7f88b76379d6aa712b34fa46b8672301869899b3a799d2cf4e5fc50",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2048,22 +2076,26 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which of the following best explains the stated broad vision and aspirations of the Twelfth Five Year Plan (2012 – 2017)?"
+        "He had gone home three weeks ago and was expected back yesterday, but he has not come yet."
       ],
       "options": {
-        "A": "Faster, Sustainable and More Inclusive Growth",
-        "B": "Modernisation of Industries and Strengthening Infrastructure",
-        "C": "Enhancing Agricultural and Rural Incomes",
-        "D": "Checking Inflation and Strengthening non-economic variables like Nutritional Requirements, Health and Family Planning"
+        "A": "He had gone home three weeks ago",
+        "B": "and was expected back yesterday,",
+        "C": "but he has not come yet.",
+        "D": "No error."
       },
       "answer": "D",
-      "explanation": "Official UPSC final key, Series A Q28: D (Checking Inflation and Strengthening non-economic variables like Nutritional Requirements, Health and Family Planning).",
+      "explanation": "Official UPSC final key, Series A Q28: D (No error.).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "He had gone home three weeks ago",
+        "and was expected back yesterday,",
+        "but he has not come yet."
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2075,11 +2107,11 @@
         "questionNumber": 28,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 8,
+        "originalPage": 5,
         "originalPages": [
-          8
+          5
         ],
-        "printedPage": 8,
+        "printedPage": 5,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2101,8 +2133,8 @@
       "id": "nda-2016-i-29",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Nabhah Sprsam Diptam is the motto of",
-      "sourceTextHash": "2c3e800eddcb6be2d12c18a2f89a5f4f7aca29beae6efd9b2d29e5e50056f896",
+      "sourceText": "We must sympathize for others in their troubles.",
+      "sourceTextHash": "5c08a3683037481e7a83dc80fae1bf9cbe4ccb1e1cbb790f101f1b8d3fb1d228",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2117,22 +2149,26 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Nabhah Sprsam Diptam is the motto of"
+        "We must sympathize for others in their troubles."
       ],
       "options": {
-        "A": "Central Industrial Security Force",
-        "B": "Indian Air Force",
-        "C": "ISRO",
-        "D": "Indian Navy"
+        "A": "We must sympathize",
+        "B": "for others",
+        "C": "in their troubles.",
+        "D": "No error."
       },
       "answer": "B",
-      "explanation": "Official UPSC final key, Series A Q29: B (Indian Air Force).",
+      "explanation": "Official UPSC final key, Series A Q29: B (for others).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "We must sympathize",
+        "for others",
+        "in their troubles."
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2144,11 +2180,11 @@
         "questionNumber": 29,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 10,
+        "originalPage": 5,
         "originalPages": [
-          10
+          5
         ],
-        "printedPage": 10,
+        "printedPage": 5,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2170,8 +2206,8 @@
       "id": "nda-2016-i-30",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Consider the following statements: 1. The Amendment procedure has been provided in Article 368 of the Constitution of India. 2. The consent of the States is mandatory for all Amendments to the Constitution of India. Which of the statements given above is/are correct?",
-      "sourceTextHash": "a32e5b1c8011820d71c424706adcc7431435dd845e666343ea1ebbe9d300ef68",
+      "sourceText": "The scientists in America are trying for long to discover the genes responsible for ageing.",
+      "sourceTextHash": "1b1e4e8a438f0ea69098d980032174394a499bef3e5c2e95a6b45bd3e290bf59",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2186,22 +2222,26 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Consider the following statements: 1. The Amendment procedure has been provided in Article 368 of the Constitution of India. 2. The consent of the States is mandatory for all Amendments to the Constitution of India. Which of the statements given above is/are correct?"
+        "The scientists in America are trying for long to discover the genes responsible for ageing."
       ],
       "options": {
-        "A": "1 only",
-        "B": "2 only",
-        "C": "Both 1 and 2",
-        "D": "Neither 1 nor 2"
+        "A": "The scientists in America",
+        "B": "are trying for long",
+        "C": "to discover the genes responsible for ageing.",
+        "D": "No error."
       },
       "answer": "B",
-      "explanation": "Official UPSC final key, Series A Q30: B (2 only).",
+      "explanation": "Official UPSC final key, Series A Q30: B (are trying for long).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "The scientists in America",
+        "are trying for long",
+        "to discover the genes responsible for ageing."
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2213,11 +2253,11 @@
         "questionNumber": 30,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 10,
+        "originalPage": 5,
         "originalPages": [
-          10
+          5
         ],
-        "printedPage": 10,
+        "printedPage": 5,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2239,8 +2279,8 @@
       "id": "nda-2016-i-31",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which of the following statements relating to the Comptroller and Auditor General (CAG) of India is/are correct? 1. The CAG can attend the sitting of the Committee on Public Accounts. 2. The CAG can attend the sitting of Lok Sabha and Rajya Sabha. 3. The jurisdiction of CAG is co-extensive with powers of the Union Government. Select the correct answer using the code given below:",
-      "sourceTextHash": "4b2db871ddeb7b3f8fdf1ee22dffa6b1ef0f32029f53d779c1e61d6bc603b6f6",
+      "sourceText": "When he heard the rhetorical speech of the leader, he was carried along by his enthusiasm.",
+      "sourceTextHash": "4828e3090c094e30d57efa10771b3eed74a0eb68c2be96fdc033bb166997264a",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2255,22 +2295,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which of the following statements relating to the Comptroller and Auditor General (CAG) of India is/are correct? 1. The CAG can attend the sitting of the Committee on Public Accounts. 2. The CAG can attend the sitting of Lok Sabha and Rajya Sabha. 3. The jurisdiction of CAG is co-extensive with powers of the Union Government. Select the correct answer using the code given below:"
+        "When he heard the rhetorical speech of the leader, he was carried along by his enthusiasm."
       ],
       "options": {
-        "A": "1 only",
-        "B": "2 and 3 only",
-        "C": "1 and 2 only",
-        "D": "1, 2 and 3"
+        "A": "carried aloft",
+        "B": "carried down",
+        "C": "carried away",
+        "D": "No improvement"
       },
       "answer": "C",
-      "explanation": "Official UPSC final key, Series A Q31: C (1 and 2 only).",
+      "explanation": "Official UPSC final key, Series A Q31: C (carried away).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "carried along"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2282,11 +2324,11 @@
         "questionNumber": 31,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 10,
+        "originalPage": 6,
         "originalPages": [
-          10
+          6
         ],
-        "printedPage": 10,
+        "printedPage": 6,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2308,8 +2350,8 @@
       "id": "nda-2016-i-32",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which of the following statements relating to election as the President of India is/are correct? 1. A person above the age of thirty-five years is eligible for election as the President of India. 2. The President of India is eligible for re-election for more than one term. 3. A person is not eligible for election as the President of India if the person holds and office of profit. Select the correct answer using the code given below:",
-      "sourceTextHash": "88af39a7a6931bcb31eadefc3e5dc29a0a5baf4c57ff548e3821a521f58f60a9",
+      "sourceText": "After the heavy rains last week, the water in the lake raised another two feet.",
+      "sourceTextHash": "9c6b1daacdb3bc54aa57e32e8c962511983962405e1b8cfb9dc6c1b91612878d",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2324,22 +2366,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which of the following statements relating to election as the President of India is/are correct? 1. A person above the age of thirty-five years is eligible for election as the President of India. 2. The President of India is eligible for re-election for more than one term. 3. A person is not eligible for election as the President of India if the person holds and office of profit. Select the correct answer using the code given below:"
+        "After the heavy rains last week, the water in the lake raised another two feet."
       ],
       "options": {
-        "A": "1 and 2 only",
-        "B": "2 only",
-        "C": "1, 2 and 3",
-        "D": "3 only"
+        "A": "rose another two feet",
+        "B": "arisen another two feet",
+        "C": "would raise another two feet",
+        "D": "No improvement"
       },
       "answer": "A",
-      "explanation": "Official UPSC final key, Series A Q32: A (1 and 2 only).",
+      "explanation": "Official UPSC final key, Series A Q32: A (rose another two feet).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "raised another two feet"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2351,11 +2395,11 @@
         "questionNumber": 32,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 10,
+        "originalPage": 6,
         "originalPages": [
-          10
+          6
         ],
-        "printedPage": 10,
+        "printedPage": 6,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2377,8 +2421,8 @@
       "id": "nda-2016-i-33",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which one of the following nations adopted its first democratic Constitution in September 2015?",
-      "sourceTextHash": "27ea5923cf12fa7ef938a0965d30384675c3ef318ba8da6dbe09bbaf4a0524a2",
+      "sourceText": "One can live and work in a town without being aware of the daily march of the sun across the sky without never seeing the moon and stars.",
+      "sourceTextHash": "13876566951df538eb4a7b9a63f8ce03bd2fae00217f7f34fa68ca95f2f48265",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2393,22 +2437,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which one of the following nations adopted its first democratic Constitution in September 2015?"
+        "One can live and work in a town without being aware of the daily march of the sun across the sky without never seeing the moon and stars."
       ],
       "options": {
-        "A": "Bhutan",
-        "B": "Myanmar",
-        "C": "Nepal",
-        "D": "Singapore"
+        "A": "seldom",
+        "B": "hardly",
+        "C": "ever",
+        "D": "No improvement"
       },
       "answer": "C",
-      "explanation": "Official UPSC final key, Series A Q33: C (Nepal).",
+      "explanation": "Official UPSC final key, Series A Q33: C (ever).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "never"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2420,11 +2466,11 @@
         "questionNumber": 33,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 10,
+        "originalPage": 6,
         "originalPages": [
-          10
+          6
         ],
-        "printedPage": 10,
+        "printedPage": 6,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2446,8 +2492,8 @@
       "id": "nda-2016-i-34",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Who among the following was defeated by Novak Djokovic in the final of the US Open Tennis Tournament Men’s Singles event (2015)?",
-      "sourceTextHash": "48a16f6db872dc2a8bdc7dea72d81206bcdcbda1c35a44c82630e87ad3bdbf2b",
+      "sourceText": "Applications of those who are graduates will be considered.",
+      "sourceTextHash": "3fc7e2a2658e69fec8f7f31e4bb9e37b9d6eea5508b5b3ff39c82d289b024b56",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2462,22 +2508,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Who among the following was defeated by Novak Djokovic in the final of the US Open Tennis Tournament Men’s Singles event (2015)?"
+        "Applications of those who are graduates will be considered."
       ],
       "options": {
-        "A": "Tommy Robredo",
-        "B": "Fabio Fognini",
-        "C": "Roger Federer",
-        "D": "Pablo Cuevas"
+        "A": "whom are graduates",
+        "B": "whose are graduates",
+        "C": "whom are only graduates",
+        "D": "No improvement"
       },
       "answer": "D",
-      "explanation": "Official UPSC final key, Series A Q34: D (Pablo Cuevas).",
+      "explanation": "Official UPSC final key, Series A Q34: D (No improvement).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "who are graduates"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2489,11 +2537,11 @@
         "questionNumber": 34,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 10,
+        "originalPage": 6,
         "originalPages": [
-          10
+          6
         ],
-        "printedPage": 10,
+        "printedPage": 6,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2515,8 +2563,8 @@
       "id": "nda-2016-i-35",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "The citizens of India do not have which one of the following Fundamental Rights?",
-      "sourceTextHash": "cd303c872785668921c07b8a9c7ceecb118509a07e40bbd4342db59a1587a46d",
+      "sourceText": "It is raining heavily all through this week.",
+      "sourceTextHash": "967c90c37f69c24f47594a1ebabd872a2cfdd80c32b20e32911f26a69a6888fc",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2531,22 +2579,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "The citizens of India do not have which one of the following Fundamental Rights?"
+        "It is raining heavily all through this week."
       ],
       "options": {
-        "A": "Right to reside and settle in any part of India",
-        "B": "Right to acquire, hold and dispose of property",
-        "C": "Right to practice any profession",
-        "D": "Right to form co-operative societies"
+        "A": "has rained",
+        "B": "rains",
+        "C": "rained",
+        "D": "No improvement"
       },
       "answer": "A",
-      "explanation": "Official UPSC final key, Series A Q35: A (Right to reside and settle in any part of India).",
+      "explanation": "Official UPSC final key, Series A Q35: A (has rained).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "is raining heavily"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2558,11 +2608,11 @@
         "questionNumber": 35,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 10,
+        "originalPage": 6,
         "originalPages": [
-          10
+          6
         ],
-        "printedPage": 10,
+        "printedPage": 6,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2584,8 +2634,8 @@
       "id": "nda-2016-i-36",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which one among the following Acts for the first time allowed Indians, at least theoretically, entry to higher posts in British Indian administration?",
-      "sourceTextHash": "cf96368c82ac2c659bb051e8a0287ec91329be07fc5d225a8d596b61fe152178",
+      "sourceText": "The sparrow took no notice about the bread.",
+      "sourceTextHash": "285e2678653c55e29a0d12f138f7fc1d47aab3a7044a586fb76baabdf8319cbf",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2600,22 +2650,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which one among the following Acts for the first time allowed Indians, at least theoretically, entry to higher posts in British Indian administration?"
+        "The sparrow took no notice about the bread."
       ],
       "options": {
-        "A": "Charter Act, 1813",
-        "B": "Charter Act, 1833",
-        "C": "Charles Wood’s Education Despatch, 1854",
-        "D": "Indian Councils Act, 1861"
+        "A": "notice of",
+        "B": "notice from",
+        "C": "notice to",
+        "D": "No improvement"
       },
       "answer": "A",
-      "explanation": "Official UPSC final key, Series A Q36: A (Charter Act, 1813).",
+      "explanation": "Official UPSC final key, Series A Q36: A (notice of).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "notice about"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2627,11 +2679,11 @@
         "questionNumber": 36,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 12,
+        "originalPage": 6,
         "originalPages": [
-          12
+          6
         ],
-        "printedPage": 12,
+        "printedPage": 6,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2653,8 +2705,8 @@
       "id": "nda-2016-i-37",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Consider the following statements about Rashtrakuta kings: 1. They were ardent patrons of Shaivism and did not support other forms of religion. 2. They promoted only Sanskrit scholars and gave them large grants. Which of the statements given above is/are correct?",
-      "sourceTextHash": "7aa638ff4c423b6ff0f7d96dba47fd1601f1d49d7d61d5dbbbe690d345d43dc6",
+      "sourceText": "As he spoke about his achievements, his high claims amused us.",
+      "sourceTextHash": "86262409bc1241abba7be9077bf77e359a3c13e85cc429b0a7b8a54e78864d0b",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2669,22 +2721,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Consider the following statements about Rashtrakuta kings: 1. They were ardent patrons of Shaivism and did not support other forms of religion. 2. They promoted only Sanskrit scholars and gave them large grants. Which of the statements given above is/are correct?"
+        "As he spoke about his achievements, his high claims amused us."
       ],
       "options": {
-        "A": "1 only",
-        "B": "2 only",
-        "C": "Both 1 and 2",
-        "D": "Neither 1 nor 2"
+        "A": "big",
+        "B": "tall",
+        "C": "long",
+        "D": "No improvement"
       },
       "answer": "B",
-      "explanation": "Official UPSC final key, Series A Q37: B (2 only).",
+      "explanation": "Official UPSC final key, Series A Q37: B (tall).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "high"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2696,11 +2750,11 @@
         "questionNumber": 37,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 12,
+        "originalPage": 6,
         "originalPages": [
-          12
+          6
         ],
-        "printedPage": 12,
+        "printedPage": 6,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2722,8 +2776,8 @@
       "id": "nda-2016-i-38",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "After a ban on unscientific coal mining and transportation of coal in this region by the National Green Tribunal, many of those engaged in the activity have been switching to turmeric farming for their livelihood. The region referred above is",
-      "sourceTextHash": "143f5831734b04e380e5152f5a748a817b5a8aaebe42b86b522f18af5340ef4c",
+      "sourceText": "We ought to stand for what is right.",
+      "sourceTextHash": "cd04e520ae6ccc7ac1151b34245a596ec24fae077c2305c86fe4af6fdf4ee217",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2738,22 +2792,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "After a ban on unscientific coal mining and transportation of coal in this region by the National Green Tribunal, many of those engaged in the activity have been switching to turmeric farming for their livelihood. The region referred above is"
+        "We ought to stand for what is right."
       ],
       "options": {
-        "A": "Jaintia Hills, Meghalaya",
-        "B": "Koriya, Chhattisgarh",
-        "C": "Angul, Odisha",
-        "D": "Bardhaman, West Bengal"
+        "A": "stand at",
+        "B": "stand on",
+        "C": "stand up",
+        "D": "No improvement"
       },
       "answer": "C",
-      "explanation": "Official UPSC final key, Series A Q38: C (Angul, Odisha).",
+      "explanation": "Official UPSC final key, Series A Q38: C (stand up).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "stand for"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2765,11 +2821,11 @@
         "questionNumber": 38,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 12,
+        "originalPage": 6,
         "originalPages": [
-          12
+          6
         ],
-        "printedPage": 12,
+        "printedPage": 6,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2791,8 +2847,8 @@
       "id": "nda-2016-i-39",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which of the following statements about the first act of the Revolt of 1857 is/are true? 1. It occurred in Meerut when two sepoys stole a superior officer’s rifle. 2. It began when the Rani of Jhansi declared war on the British. 3. It began when Mangal Pandey fired at a European officer in Meerut. 4. It began when Mangal Pandey fired at a European officer in Barrackpore. Select the correct answer using the code given below:",
-      "sourceTextHash": "9a5b6babad661e43c11bb4cb8a661e8991cf5c978e4ae4653de278bc8be112bc",
+      "sourceText": "He enjoys to tell stories to children.",
+      "sourceTextHash": "ef0860b6f38ba1fadcac387e877ded199d96ceb2d530ac4257b9ee0f6bb15bd3",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2807,22 +2863,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which of the following statements about the first act of the Revolt of 1857 is/are true? 1. It occurred in Meerut when two sepoys stole a superior officer’s rifle. 2. It began when the Rani of Jhansi declared war on the British. 3. It began when Mangal Pandey fired at a European officer in Meerut. 4. It began when Mangal Pandey fired at a European officer in Barrackpore. Select the correct answer using the code given below:"
+        "He enjoys to tell stories to children."
       ],
       "options": {
-        "A": "2 only",
-        "B": "1, 2 and 3 only",
-        "C": "4 only",
-        "D": "1 and 4 only"
+        "A": "how to tell stories",
+        "B": "telling stories",
+        "C": "to narrate stories",
+        "D": "No improvement"
       },
       "answer": "B",
-      "explanation": "Official UPSC final key, Series A Q39: B (1, 2 and 3 only).",
+      "explanation": "Official UPSC final key, Series A Q39: B (telling stories).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "to tell stories"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2834,11 +2892,11 @@
         "questionNumber": 39,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 12,
+        "originalPage": 6,
         "originalPages": [
-          12
+          6
         ],
-        "printedPage": 12,
+        "printedPage": 6,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2860,8 +2918,8 @@
       "id": "nda-2016-i-40",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which of the following statements about Gandhiji’s Hind Swaraj written in 1909 is/are true? 1. Hind Swaraj offers a civilizational concept of the Indian nation. 2. Hind Swaraj states that Parliamentary democracy was necessary for the amelioration of the sufferings of Indians. 3. Hind Swaraj argues that Industrial capitalism was responsible for the immorality of society. Select the correct answer using the code given below:",
-      "sourceTextHash": "dbe75c84deda4d7f7177800a9812659cfa6711b5fb24a54f0d1d9525de2e9791",
+      "sourceText": "In a few minutes’ time, when the clock strikes six, I would be waiting here for an hour.",
+      "sourceTextHash": "2e960d53aad83493e88217f8d267cfd9c03d40fddbc0337e4669d3ae5b3ac348",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2876,22 +2934,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which of the following statements about Gandhiji’s Hind Swaraj written in 1909 is/are true? 1. Hind Swaraj offers a civilizational concept of the Indian nation. 2. Hind Swaraj states that Parliamentary democracy was necessary for the amelioration of the sufferings of Indians. 3. Hind Swaraj argues that Industrial capitalism was responsible for the immorality of society. Select the correct answer using the code given below:"
+        "In a few minutes’ time, when the clock strikes six, I would be waiting here for an hour."
       ],
       "options": {
-        "A": "3 only",
-        "B": "1, 2 and 3",
-        "C": "1 and 3 only",
-        "D": "1 only"
+        "A": "shall be waiting on",
+        "B": "shall have been waiting",
+        "C": "shall wait",
+        "D": "No improvement"
       },
       "answer": "B",
-      "explanation": "Official UPSC final key, Series A Q40: B (1, 2 and 3).",
+      "explanation": "Official UPSC final key, Series A Q40: B (shall have been waiting).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "would be waiting here"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2903,11 +2963,11 @@
         "questionNumber": 40,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 12,
+        "originalPage": 6,
         "originalPages": [
-          12
+          6
         ],
-        "printedPage": 12,
+        "printedPage": 6,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2929,8 +2989,8 @@
       "id": "nda-2016-i-41",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Division of labour often involves 1. specialized economic activity. 2. highly distinct productive roles. 3. involving everyone in many of the same activities. 4. individuals engage in only a single activity and are dependent on others to meet their various need. Select the correct answer using the code given below:",
-      "sourceTextHash": "41492ca84c8b5f2377fe62d6f8c98cb1588adc5c9573a142fc9abdcf7a091fb9",
+      "sourceText": "Suddenly there was a bright flash, followed by a deafening explosion.",
+      "sourceTextHash": "ea79e821072369a41f3a4cf4cf7596448987ad38510a79970a257879fd799c91",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -2945,22 +3005,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Division of labour often involves 1. specialized economic activity. 2. highly distinct productive roles. 3. involving everyone in many of the same activities. 4. individuals engage in only a single activity and are dependent on others to meet their various need. Select the correct answer using the code given below:"
+        "Suddenly there was a bright flash, followed by a deafening explosion."
       ],
       "options": {
-        "A": "1, 3 and 4 only",
-        "B": "1, 2 and 4 only",
-        "C": "3 only",
-        "D": "2 and 4 only"
+        "A": "dangerous",
+        "B": "terrifying",
+        "C": "mild",
+        "D": "very loud"
       },
       "answer": "D",
-      "explanation": "Official UPSC final key, Series A Q41: D (2 and 4 only).",
+      "explanation": "Official UPSC final key, Series A Q41: D (very loud).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "deafening"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -2972,11 +3034,11 @@
         "questionNumber": 41,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 12,
+        "originalPage": 7,
         "originalPages": [
-          12
+          7
         ],
-        "printedPage": 12,
+        "printedPage": 7,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -2998,8 +3060,8 @@
       "id": "nda-2016-i-42",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Who among the following is/was associated with ‘Maharashtra Andhashraddha Nirmoolan Samiti’?",
-      "sourceTextHash": "78c7c08b16949c17806265445deaa5ee2f846ac4a607918fa3c661dd52d7e789",
+      "sourceText": "He showed exemplary courage during the crisis.",
+      "sourceTextHash": "0383aef8bceb1f2646eb3e92a45ad488ff582c51c46d3726347228fdc8e4f454",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -3014,22 +3076,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Who among the following is/was associated with ‘Maharashtra Andhashraddha Nirmoolan Samiti’?"
+        "He showed exemplary courage during the crisis."
       ],
       "options": {
-        "A": "Chandi Prasad Bhatt",
-        "B": "Narendra Dabholkar",
-        "C": "G.D. Agrawal",
-        "D": "Kailash Satyarthi"
+        "A": "usual",
+        "B": "durable",
+        "C": "commendable",
+        "D": "some"
       },
       "answer": "C",
-      "explanation": "Official UPSC final key, Series A Q42: C (G.D. Agrawal).",
+      "explanation": "Official UPSC final key, Series A Q42: C (commendable).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "exemplary"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -3041,11 +3105,11 @@
         "questionNumber": 42,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 12,
+        "originalPage": 7,
         "originalPages": [
-          12
+          7
         ],
-        "printedPage": 12,
+        "printedPage": 7,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -3067,8 +3131,8 @@
       "id": "nda-2016-i-43",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Consider the following statements: 1. Warren Hastings set up the Calcutta Madrassa for the study and teaching of Muslim law related subjects. 2. Jonathan Duncan started a Sanskrit College at Varanasi for the study of Hindu law and philosophy. Which of the statements given above is/are correct?",
-      "sourceTextHash": "f6be783ffdbf741f8c6178179b5786cf20fc6a1b4efeaf769cd73db4ddde8b7e",
+      "sourceText": "When the new teacher entered the classroom, he found the pupils restive.",
+      "sourceTextHash": "e8f1d5274fac472b312794294d2d49879e5a0db6e0cf565d57c43f1793a74d89",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -3083,22 +3147,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Consider the following statements: 1. Warren Hastings set up the Calcutta Madrassa for the study and teaching of Muslim law related subjects. 2. Jonathan Duncan started a Sanskrit College at Varanasi for the study of Hindu law and philosophy. Which of the statements given above is/are correct?"
+        "When the new teacher entered the classroom, he found the pupils restive."
       ],
       "options": {
-        "A": "1 only",
-        "B": "2 only",
-        "C": "Both 1 and 2",
-        "D": "Neither 1 nor 2"
+        "A": "at rest",
+        "B": "idle",
+        "C": "quiet",
+        "D": "impatient"
       },
       "answer": "D",
-      "explanation": "Official UPSC final key, Series A Q43: D (Neither 1 nor 2).",
+      "explanation": "Official UPSC final key, Series A Q43: D (impatient).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "restive"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -3110,11 +3176,11 @@
         "questionNumber": 43,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 14,
+        "originalPage": 7,
         "originalPages": [
-          14
+          7
         ],
-        "printedPage": 14,
+        "printedPage": 7,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -3136,8 +3202,8 @@
       "id": "nda-2016-i-44",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Consider the following statements about Sufism in India. 1. Pilgrimage called ziyarat to tombs of Sufi saints is an important feature. 2. The most influential group of Sufis in India were the Chishtis. Which of the statements given above is/are correct?",
-      "sourceTextHash": "213947a7694e8cb897aae1d5fc6a1ae23599cc70be0398d3495594aa2d98eca1",
+      "sourceText": "There is no dearth of talent in this country.",
+      "sourceTextHash": "385a353c38b8896078f5e7927677e7aa0da170ca92422f51e2149dc44d184f1e",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -3152,22 +3218,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Consider the following statements about Sufism in India. 1. Pilgrimage called ziyarat to tombs of Sufi saints is an important feature. 2. The most influential group of Sufis in India were the Chishtis. Which of the statements given above is/are correct?"
+        "There is no dearth of talent in this country."
       ],
       "options": {
-        "A": "1 only",
-        "B": "2 only",
-        "C": "Both 1 and 2",
-        "D": "Neither 1 nor 2"
+        "A": "scarcity",
+        "B": "availability",
+        "C": "plenty",
+        "D": "absence"
       },
       "answer": "A",
-      "explanation": "Official UPSC final key, Series A Q44: A (1 only).",
+      "explanation": "Official UPSC final key, Series A Q44: A (scarcity).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "dearth"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -3179,11 +3247,11 @@
         "questionNumber": 44,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 14,
+        "originalPage": 7,
         "originalPages": [
-          14
+          7
         ],
-        "printedPage": 14,
+        "printedPage": 7,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -3205,8 +3273,8 @@
       "id": "nda-2016-i-45",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which of the following thinkers and movements influenced the development of Gandhiji’s political ideas? 1. Henry David Thoreau 2. John Ruskin 3. John Milton 4. Jainism Select the correct answer using the code given below:",
-      "sourceTextHash": "30df6e6e38a3e36e6a6008d6c2f5695561dbd7d97a77c1463d6f2910751b8b21",
+      "sourceText": "The servants retired to their quarters.",
+      "sourceTextHash": "0cca07f69c09c8182fcd289b2a1c4f926fa1964bfd910575e2e170c64f01696c",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -3221,22 +3289,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which of the following thinkers and movements influenced the development of Gandhiji’s political ideas? 1. Henry David Thoreau 2. John Ruskin 3. John Milton 4. Jainism Select the correct answer using the code given below:"
+        "The servants retired to their quarters."
       ],
       "options": {
-        "A": "1 only",
-        "B": "1, 2 and 3 only",
-        "C": "1, 2 and 4 only",
-        "D": "2 and 4 only"
+        "A": "entered",
+        "B": "went away",
+        "C": "ran away",
+        "D": "mobilised"
       },
       "answer": "B",
-      "explanation": "Official UPSC final key, Series A Q45: B (1, 2 and 3 only).",
+      "explanation": "Official UPSC final key, Series A Q45: B (went away).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "retired"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -3248,11 +3318,11 @@
         "questionNumber": 45,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 14,
+        "originalPage": 7,
         "originalPages": [
-          14
+          7
         ],
-        "printedPage": 14,
+        "printedPage": 7,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -3274,8 +3344,8 @@
       "id": "nda-2016-i-46",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Consider the following statements: 1. The Arthashastra is the first Indian text to define a State. 2. The main concerns of the Arthashastra are theoretical issues like the origins of the state. Which of the statements given above is/are correct?",
-      "sourceTextHash": "948b3ed14a38fe237aff139ff26f5ab574a03618c3e5903b0aa4f9e324b5019a",
+      "sourceText": "The navy gave tactical support to the marines.",
+      "sourceTextHash": "cb294b31857a07996f9b3b2de0e1212a296c7fd1faca8f2d7267324280afdb1d",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -3290,22 +3360,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Consider the following statements: 1. The Arthashastra is the first Indian text to define a State. 2. The main concerns of the Arthashastra are theoretical issues like the origins of the state. Which of the statements given above is/are correct?"
+        "The navy gave tactical support to the marines."
       ],
       "options": {
-        "A": "1 only",
-        "B": "2 only",
-        "C": "Both 1 and 2",
-        "D": "Neither 1 nor 2"
+        "A": "sensitive",
+        "B": "strategic",
+        "C": "immediate",
+        "D": "expert"
       },
       "answer": "B",
-      "explanation": "Official UPSC final key, Series A Q46: B (2 only).",
+      "explanation": "Official UPSC final key, Series A Q46: B (strategic).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "tactical"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -3317,11 +3389,11 @@
         "questionNumber": 46,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 14,
+        "originalPage": 7,
         "originalPages": [
-          14
+          7
         ],
-        "printedPage": 14,
+        "printedPage": 7,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -3343,8 +3415,8 @@
       "id": "nda-2016-i-47",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which of the following is/are not FDI policy change(s) after 2010? 1. Permission of 100 percent FDI in automotive sector 2. Permitting foreign airlines to make FDI up to 49 percent 3. Permission of up to 51 percent FDI under the government approval route in multi-brand retailing, subject to specified conditions 4. Amendment of policy on FDI in single-brand product retail trading for aligning with global practices Select the correct answer using the code given below:",
-      "sourceTextHash": "f1255e142053ebc22a34f4322c3b363c87b85c578c11f857c117a13c8549a7cc",
+      "sourceText": "A genius tends to deviate from the routine way of thinking.",
+      "sourceTextHash": "20ff9871feb6ffe60bd9f41a7cb84c937dda3dd475a3eb3992be17764e28e75d",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -3359,22 +3431,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which of the following is/are not FDI policy change(s) after 2010? 1. Permission of 100 percent FDI in automotive sector 2. Permitting foreign airlines to make FDI up to 49 percent 3. Permission of up to 51 percent FDI under the government approval route in multi-brand retailing, subject to specified conditions 4. Amendment of policy on FDI in single-brand product retail trading for aligning with global practices Select the correct answer using the code given below:"
+        "A genius tends to deviate from the routine way of thinking."
       ],
       "options": {
-        "A": "1 only",
-        "B": "2 and 4 only",
-        "C": "1 and 2 only",
-        "D": "1, 2 and 3 only"
+        "A": "dispute",
+        "B": "disagree",
+        "C": "distinguish",
+        "D": "differ"
       },
       "answer": "D",
-      "explanation": "Official UPSC final key, Series A Q47: D (1, 2 and 3 only).",
+      "explanation": "Official UPSC final key, Series A Q47: D (differ).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "deviate"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -3386,11 +3460,11 @@
         "questionNumber": 47,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 14,
+        "originalPage": 7,
         "originalPages": [
-          14
+          7
         ],
-        "printedPage": 14,
+        "printedPage": 7,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -3412,8 +3486,8 @@
       "id": "nda-2016-i-48",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which of the following is/are the component/components of the Integrated Power Development Scheme launched by the Government of India recently? 1. Strengthening of sub-transmission and distribution networks in the urban areas 2. Metering of distribution transformers/feeders/consumers in the rural areas Select the correct answer using the code given below:",
-      "sourceTextHash": "d358ae983dc43eab639615d768324fa4a44822380110d431371d96424e074310",
+      "sourceText": "He was greatly debilitated by an attack of influenza.",
+      "sourceTextHash": "7810c2998b557b7d02429021d0fd97756f53f0997b5939c4f4029047c7f20916",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -3428,22 +3502,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which of the following is/are the component/components of the Integrated Power Development Scheme launched by the Government of India recently? 1. Strengthening of sub-transmission and distribution networks in the urban areas 2. Metering of distribution transformers/feeders/consumers in the rural areas Select the correct answer using the code given below:"
+        "He was greatly debilitated by an attack of influenza."
       ],
       "options": {
-        "A": "1 only",
-        "B": "2 only",
-        "C": "Both 1 and 2",
-        "D": "Neither 1 nor 2"
+        "A": "depressed",
+        "B": "weakened",
+        "C": "worried",
+        "D": "defeated"
       },
       "answer": "B",
-      "explanation": "Official UPSC final key, Series A Q48: B (2 only).",
+      "explanation": "Official UPSC final key, Series A Q48: B (weakened).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "debilitated"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -3455,11 +3531,11 @@
         "questionNumber": 48,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 14,
+        "originalPage": 7,
         "originalPages": [
-          14
+          7
         ],
-        "printedPage": 14,
+        "printedPage": 7,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -3481,8 +3557,8 @@
       "id": "nda-2016-i-49",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which of the following statements about Brahmo Samaj is/are correct? 1. The Brahmo Marriage Act of 1872 allowed inter-caste and widow re-marriage only if the contracting parties declared themselves to be non-Hindus. 2. Keshub Chandra Sen arranged the marriage of his minor daughter with the Maharaja of Burdwan. 3. Keshub Chandra Sen’s followers broke away to form the Naba Brahmo Samaj. 4. The Brahmo Samaj grew from a small elite group to a mass movement in the 19th century. Select the correct answer using the code given below:",
-      "sourceTextHash": "95a64ee02f5347a1982430cb0ef5b15083d2bcb11ba4f6c8d3fa5f1971cdbe7f",
+      "sourceText": "His efforts at helping the poor are laudable.",
+      "sourceTextHash": "4d8fea31c7c0ea456852905912d87a30edd8d1872e15cc40043ae8ca79734bf9",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -3497,22 +3573,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which of the following statements about Brahmo Samaj is/are correct? 1. The Brahmo Marriage Act of 1872 allowed inter-caste and widow re-marriage only if the contracting parties declared themselves to be non-Hindus. 2. Keshub Chandra Sen arranged the marriage of his minor daughter with the Maharaja of Burdwan. 3. Keshub Chandra Sen’s followers broke away to form the Naba Brahmo Samaj. 4. The Brahmo Samaj grew from a small elite group to a mass movement in the 19th century. Select the correct answer using the code given below:"
+        "His efforts at helping the poor are laudable."
       ],
       "options": {
-        "A": "1 only",
-        "B": "1 and 2 only",
-        "C": "2 and 3 only",
-        "D": "1, 2, 3 and 4"
+        "A": "welcome",
+        "B": "sincere",
+        "C": "good",
+        "D": "praiseworthy"
       },
       "answer": "D",
-      "explanation": "Official UPSC final key, Series A Q49: D (1, 2, 3 and 4).",
+      "explanation": "Official UPSC final key, Series A Q49: D (praiseworthy).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "laudable"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -3524,11 +3602,11 @@
         "questionNumber": 49,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 14,
+        "originalPage": 7,
         "originalPages": [
-          14
+          7
         ],
-        "printedPage": 14,
+        "printedPage": 7,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",
@@ -3550,8 +3628,8 @@
       "id": "nda-2016-i-50",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Which of the following statements about the aims of the United Nations is/are true? 1. To foster a mutual appreciation of each others’ culture and literature among nations 2. To achieve international co-operation in solving problems of an economic, social, cultural, or humanitarian character 3. To foster relations between scholars and academics in different countries 4. To organize international conferences Select the correct answer using the code given below:",
-      "sourceTextHash": "c66dd4124c9510eb664748ad667dbbf0b227bb5ce230c0a28e027a36fb5e30e2",
+      "sourceText": "His conduct brought him reproach from all quarters.",
+      "sourceTextHash": "ccd8895ccc2e64ee77eac6cf58838b343b6b889eee23df2bee543f6ebb1abb2b",
       "exam": "NDA",
       "year": 2016,
       "paper": "I",
@@ -3566,22 +3644,24 @@
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
-        "Which of the following statements about the aims of the United Nations is/are true? 1. To foster a mutual appreciation of each others’ culture and literature among nations 2. To achieve international co-operation in solving problems of an economic, social, cultural, or humanitarian character 3. To foster relations between scholars and academics in different countries 4. To organize international conferences Select the correct answer using the code given below:"
+        "His conduct brought him reproach from all quarters."
       ],
       "options": {
-        "A": "1 only",
-        "B": "1, 2 and 4 only",
-        "C": "2 only",
-        "D": "1, 2 and 3 only"
+        "A": "rebuke",
+        "B": "sympathy",
+        "C": "indifference",
+        "D": "remorse"
       },
       "answer": "A",
-      "explanation": "Official UPSC final key, Series A Q50: A (1 only).",
+      "explanation": "Official UPSC final key, Series A Q50: A (rebuke).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "reproach"
+      ],
       "classificationTags": [
         "Static"
       ],
@@ -3593,11 +3673,11 @@
         "questionNumber": 50,
         "originalPdf": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2016-1_series_a.pdf",
         "originalPdfSha256": "94b54372cafc6064f4b5266ef121774e4f329715715dc9b9e9cfcb58d62609b8",
-        "originalPage": 16,
+        "originalPage": 7,
         "originalPages": [
-          16
+          7
         ],
-        "printedPage": 16,
+        "printedPage": 7,
         "bookletSeries": "A",
         "answerStatus": "official-final",
         "answerSource": "https://upsc.gov.in/examinations/answer-key/archives",

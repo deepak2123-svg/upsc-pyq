@@ -180,7 +180,7 @@
     "reviewerMethod": "Same-agent comparison of the structured secondary transcript against the archived Series A source, including direct inspection of diagram questions, with the official key transcribed independently in two orientations; not independent human review.",
     "classificationMethod": "Source-taxonomy concept and target-applicability pass by the same agent; not independent human review.",
     "reviewedInputHashes": {
-      "scripts/nda-2016-i-transcription.mjs": "9d9f4d206ae09709069e37389d9dd80d55ae3dcd388d4c668c1fcb65c0f668b1",
+      "scripts/nda-2016-i-transcription.mjs": "4f01c8dc8168ba5290c83a0b7d173809a5168ece21b9516bf58259851ee0c7c3",
       "scripts/nda-2016-i-classification.mjs": "018ff06aa67092a4555c13f77bd231b9e98ed55e3d98cc61c6be5fefede80f8d"
     }
   },
@@ -1465,12 +1465,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "c669d654df6ef24c79e8ba23f08eeee3ef8de8d65ce48d1323fa5e522823751e",
-        "optionsHash": "223b62d9384fef4f346f99555dfc8af0fe3252cf608627061fdf5a288416b2d0",
+        "sourceTextHash": "280b965cf7a7f6fdec73474b9b7e00657f0767927f4ced87aba318a02c266123",
+        "optionsHash": "52d71ec1336638caae27cbe0c194472f95b6b627ba8a6f29849242dbde871819",
         "sourcePages": [
-          8
+          5
         ],
-        "printedPage": 8
+        "printedPage": 5
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Spotting errors",
@@ -1498,7 +1498,7 @@
           "A"
         ],
         "optionTexts": [
-          "1 only"
+          "Had I not taken ill,"
         ]
       },
       "revision": {
@@ -1515,12 +1515,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "05ee6cf5100e441afdd905c20968d803a9bb009152c89d7ecca2f6a998f48a44",
-        "optionsHash": "c336085e72769da914032f1d3201712f699b500d1760a0fa817c4559e00e7aba",
+        "sourceTextHash": "c6225ee4d1faf0bffb0217375d39c31f1f74a732493ea6959df579a272cf42ff",
+        "optionsHash": "471dac4d0facac8eb2a80be6a7e50cba96f684f6fc8de1c1039d2d083e275c64",
         "sourcePages": [
-          8
+          5
         ],
-        "printedPage": 8
+        "printedPage": 5
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Spotting errors",
@@ -1548,7 +1548,7 @@
           "A"
         ],
         "optionTexts": [
-          "Development of capital goods industries"
+          "The barn owl helps the farmer"
         ]
       },
       "revision": {
@@ -1565,12 +1565,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "20bca274b09235fd514a9b61c5105d8cf6c1cb38c7fb1ffc35d027f4eed43a1a",
-        "optionsHash": "dbaf7ec8abfb8377732e350939ec28c0870a223c3f0af490f2e8d0d6e3df5250",
+        "sourceTextHash": "e328e923a7f88b76379d6aa712b34fa46b8672301869899b3a799d2cf4e5fc50",
+        "optionsHash": "7401d517aac629c1941025fb312799f9dad02b5a1080fd481ae87107fbde71c4",
         "sourcePages": [
-          8
+          5
         ],
-        "printedPage": 8
+        "printedPage": 5
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Spotting errors",
@@ -1598,7 +1598,7 @@
           "D"
         ],
         "optionTexts": [
-          "Checking Inflation and Strengthening non-economic variables like Nutritional Requirements, Health and Family Planning"
+          "No error."
         ]
       },
       "revision": {
@@ -1615,12 +1615,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "2c3e800eddcb6be2d12c18a2f89a5f4f7aca29beae6efd9b2d29e5e50056f896",
-        "optionsHash": "2dccc9b1c8f38aaa543d9a70fb328b17741201119752ec5a12d1bdd8b85fe129",
+        "sourceTextHash": "5c08a3683037481e7a83dc80fae1bf9cbe4ccb1e1cbb790f101f1b8d3fb1d228",
+        "optionsHash": "dbedc9439df9610a1df20d61e7ed403f37d5a6cfcee44ef103afc0845b910da3",
         "sourcePages": [
-          10
+          5
         ],
-        "printedPage": 10
+        "printedPage": 5
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Spotting errors",
@@ -1648,7 +1648,7 @@
           "B"
         ],
         "optionTexts": [
-          "Indian Air Force"
+          "for others"
         ]
       },
       "revision": {
@@ -1665,12 +1665,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "a32e5b1c8011820d71c424706adcc7431435dd845e666343ea1ebbe9d300ef68",
-        "optionsHash": "223b62d9384fef4f346f99555dfc8af0fe3252cf608627061fdf5a288416b2d0",
+        "sourceTextHash": "1b1e4e8a438f0ea69098d980032174394a499bef3e5c2e95a6b45bd3e290bf59",
+        "optionsHash": "fd9b59a5d5736173d4be7e9565f58c4f1f0a866e25f38f5cfc47949e7cb66294",
         "sourcePages": [
-          10
+          5
         ],
-        "printedPage": 10
+        "printedPage": 5
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Spotting errors",
@@ -1698,7 +1698,7 @@
           "B"
         ],
         "optionTexts": [
-          "2 only"
+          "are trying for long"
         ]
       },
       "revision": {
@@ -1715,12 +1715,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "4b2db871ddeb7b3f8fdf1ee22dffa6b1ef0f32029f53d779c1e61d6bc603b6f6",
-        "optionsHash": "4656814680bbbe45bc52500fa44316fe880668a40907751e5a783d3265c5a306",
+        "sourceTextHash": "4828e3090c094e30d57efa10771b3eed74a0eb68c2be96fdc033bb166997264a",
+        "optionsHash": "5e3897479f9fa1ea267a4d8a931d5a035be18390268b69e7aa89712466811dca",
         "sourcePages": [
-          10
+          6
         ],
-        "printedPage": 10
+        "printedPage": 6
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Sentence improvement",
@@ -1748,7 +1748,7 @@
           "C"
         ],
         "optionTexts": [
-          "1 and 2 only"
+          "carried away"
         ]
       },
       "revision": {
@@ -1765,12 +1765,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "88af39a7a6931bcb31eadefc3e5dc29a0a5baf4c57ff548e3821a521f58f60a9",
-        "optionsHash": "72faa0a00ad82296c8556ec96d429e9912506233e865df9ae5c09e1655dd94cd",
+        "sourceTextHash": "9c6b1daacdb3bc54aa57e32e8c962511983962405e1b8cfb9dc6c1b91612878d",
+        "optionsHash": "2f892d9e39bda2201103889a9e020a5d0a7c22b79a5be40eabe42010af976630",
         "sourcePages": [
-          10
+          6
         ],
-        "printedPage": 10
+        "printedPage": 6
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Sentence improvement",
@@ -1798,7 +1798,7 @@
           "A"
         ],
         "optionTexts": [
-          "1 and 2 only"
+          "rose another two feet"
         ]
       },
       "revision": {
@@ -1815,12 +1815,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "27ea5923cf12fa7ef938a0965d30384675c3ef318ba8da6dbe09bbaf4a0524a2",
-        "optionsHash": "600382c3d70a4da36737f330d058c974545fd8da7529c224b9b6aa4c5c669b48",
+        "sourceTextHash": "13876566951df538eb4a7b9a63f8ce03bd2fae00217f7f34fa68ca95f2f48265",
+        "optionsHash": "c51f1eb5378abca37315d3f7cbfbc9a9fda28bf3b5dc2255c7d33b77cf5fb277",
         "sourcePages": [
-          10
+          6
         ],
-        "printedPage": 10
+        "printedPage": 6
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Sentence improvement",
@@ -1848,7 +1848,7 @@
           "C"
         ],
         "optionTexts": [
-          "Nepal"
+          "ever"
         ]
       },
       "revision": {
@@ -1865,12 +1865,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "48a16f6db872dc2a8bdc7dea72d81206bcdcbda1c35a44c82630e87ad3bdbf2b",
-        "optionsHash": "3213ded9bef4e3bde7b1be1434ac0c08f78fcb7b03260914666aeb2a38ac5b5d",
+        "sourceTextHash": "3fc7e2a2658e69fec8f7f31e4bb9e37b9d6eea5508b5b3ff39c82d289b024b56",
+        "optionsHash": "db5c86774b371242ac39cc3c80efb4ca24435131e5bd198f103c570503982909",
         "sourcePages": [
-          10
+          6
         ],
-        "printedPage": 10
+        "printedPage": 6
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Sentence improvement",
@@ -1898,7 +1898,7 @@
           "D"
         ],
         "optionTexts": [
-          "Pablo Cuevas"
+          "No improvement"
         ]
       },
       "revision": {
@@ -1915,12 +1915,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "cd303c872785668921c07b8a9c7ceecb118509a07e40bbd4342db59a1587a46d",
-        "optionsHash": "7434b3d3c5e75cb4bf54a7c169f36271478f89ec2ed145511c9ca5737a296e0c",
+        "sourceTextHash": "967c90c37f69c24f47594a1ebabd872a2cfdd80c32b20e32911f26a69a6888fc",
+        "optionsHash": "3812b40c69aef77db73983093500319de326074a331c952dc1440f0b62416e4f",
         "sourcePages": [
-          10
+          6
         ],
-        "printedPage": 10
+        "printedPage": 6
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Sentence improvement",
@@ -1948,7 +1948,7 @@
           "A"
         ],
         "optionTexts": [
-          "Right to reside and settle in any part of India"
+          "has rained"
         ]
       },
       "revision": {
@@ -1965,12 +1965,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "cf96368c82ac2c659bb051e8a0287ec91329be07fc5d225a8d596b61fe152178",
-        "optionsHash": "44df0cd5076a9a46b39f6dd07bc32636cd6f299dcd64e0db566d1176a4af0b07",
+        "sourceTextHash": "285e2678653c55e29a0d12f138f7fc1d47aab3a7044a586fb76baabdf8319cbf",
+        "optionsHash": "5ac9fe24f5c729ed56701345072e39990ee9c672b08bcc829a631f55152db628",
         "sourcePages": [
-          12
+          6
         ],
-        "printedPage": 12
+        "printedPage": 6
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Sentence improvement",
@@ -1998,7 +1998,7 @@
           "A"
         ],
         "optionTexts": [
-          "Charter Act, 1813"
+          "notice of"
         ]
       },
       "revision": {
@@ -2015,12 +2015,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "7aa638ff4c423b6ff0f7d96dba47fd1601f1d49d7d61d5dbbbe690d345d43dc6",
-        "optionsHash": "223b62d9384fef4f346f99555dfc8af0fe3252cf608627061fdf5a288416b2d0",
+        "sourceTextHash": "86262409bc1241abba7be9077bf77e359a3c13e85cc429b0a7b8a54e78864d0b",
+        "optionsHash": "3f8b0ca8c09c42de38e2af746fa58561607a015d5eda65510f857f92629c3683",
         "sourcePages": [
-          12
+          6
         ],
-        "printedPage": 12
+        "printedPage": 6
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Sentence improvement",
@@ -2048,7 +2048,7 @@
           "B"
         ],
         "optionTexts": [
-          "2 only"
+          "tall"
         ]
       },
       "revision": {
@@ -2065,12 +2065,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "143f5831734b04e380e5152f5a748a817b5a8aaebe42b86b522f18af5340ef4c",
-        "optionsHash": "ab9aa5e073b85a79ec88aa2249ea4792e044ceb95bcaf1154e4d85a55a25efe8",
+        "sourceTextHash": "cd04e520ae6ccc7ac1151b34245a596ec24fae077c2305c86fe4af6fdf4ee217",
+        "optionsHash": "1dfdee05e2034661e053320cfe23850a5f01f72734297f8a38c471170fc2d5b3",
         "sourcePages": [
-          12
+          6
         ],
-        "printedPage": 12
+        "printedPage": 6
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Sentence improvement",
@@ -2098,7 +2098,7 @@
           "C"
         ],
         "optionTexts": [
-          "Angul, Odisha"
+          "stand up"
         ]
       },
       "revision": {
@@ -2115,12 +2115,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "9a5b6babad661e43c11bb4cb8a661e8991cf5c978e4ae4653de278bc8be112bc",
-        "optionsHash": "37ebeedb501fb1dc31c92353dd8bfa6c446a5b64d3fc3dcff38a0a3eaa25dab9",
+        "sourceTextHash": "ef0860b6f38ba1fadcac387e877ded199d96ceb2d530ac4257b9ee0f6bb15bd3",
+        "optionsHash": "0b58b47c5bf20884756509611866f4159d8de7b0fc24ec9aefa0bcd3b10a111f",
         "sourcePages": [
-          12
+          6
         ],
-        "printedPage": 12
+        "printedPage": 6
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Sentence improvement",
@@ -2148,7 +2148,7 @@
           "B"
         ],
         "optionTexts": [
-          "1, 2 and 3 only"
+          "telling stories"
         ]
       },
       "revision": {
@@ -2165,12 +2165,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "dbe75c84deda4d7f7177800a9812659cfa6711b5fb24a54f0d1d9525de2e9791",
-        "optionsHash": "3647209d0584a266b1025c87f6d7d0b72d2a63ff0267dcb5b5b630bdc4c31d9d",
+        "sourceTextHash": "2e960d53aad83493e88217f8d267cfd9c03d40fddbc0337e4669d3ae5b3ac348",
+        "optionsHash": "70043b33cf1cbdb9070a82fba75cc9abd21a6022e8997061e1c77bb984b2cb73",
         "sourcePages": [
-          12
+          6
         ],
-        "printedPage": 12
+        "printedPage": 6
       },
       "classification": {
         "primary": "English/Usage and Sentence Skills/Error correction/Sentence improvement",
@@ -2198,7 +2198,7 @@
           "B"
         ],
         "optionTexts": [
-          "1, 2 and 3"
+          "shall have been waiting"
         ]
       },
       "revision": {
@@ -2215,12 +2215,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "41492ca84c8b5f2377fe62d6f8c98cb1588adc5c9573a142fc9abdcf7a091fb9",
-        "optionsHash": "2b70d344e9edd62f4f0f46d27c1f777c69b3ea6ce3638e7c6d6fb9c48eaa9fe3",
+        "sourceTextHash": "ea79e821072369a41f3a4cf4cf7596448987ad38510a79970a257879fd799c91",
+        "optionsHash": "0bee5b0c872b59176243de6b7d8cdfbeb741ffd03e0c333311470f4bc9511337",
         "sourcePages": [
-          12
+          7
         ],
-        "printedPage": 12
+        "printedPage": 7
       },
       "classification": {
         "primary": "English/Vocabulary/Word meanings/Synonyms",
@@ -2248,7 +2248,7 @@
           "D"
         ],
         "optionTexts": [
-          "2 and 4 only"
+          "very loud"
         ]
       },
       "revision": {
@@ -2265,12 +2265,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "78c7c08b16949c17806265445deaa5ee2f846ac4a607918fa3c661dd52d7e789",
-        "optionsHash": "8a2855af3a6f87f6e0ef80c9a0ef6b9343ee9cd24133b57dfaa69f76441d2254",
+        "sourceTextHash": "0383aef8bceb1f2646eb3e92a45ad488ff582c51c46d3726347228fdc8e4f454",
+        "optionsHash": "5bb0a6873df5df8705c749b4a0c833f4eab9ac7e43e8eea4f85b6360d10b7525",
         "sourcePages": [
-          12
+          7
         ],
-        "printedPage": 12
+        "printedPage": 7
       },
       "classification": {
         "primary": "English/Vocabulary/Word meanings/Synonyms",
@@ -2298,7 +2298,7 @@
           "C"
         ],
         "optionTexts": [
-          "G.D. Agrawal"
+          "commendable"
         ]
       },
       "revision": {
@@ -2315,12 +2315,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "f6be783ffdbf741f8c6178179b5786cf20fc6a1b4efeaf769cd73db4ddde8b7e",
-        "optionsHash": "223b62d9384fef4f346f99555dfc8af0fe3252cf608627061fdf5a288416b2d0",
+        "sourceTextHash": "e8f1d5274fac472b312794294d2d49879e5a0db6e0cf565d57c43f1793a74d89",
+        "optionsHash": "4510737dc870a16189d7b385b3491b299b912075375ae78360538b0fa5257ace",
         "sourcePages": [
-          14
+          7
         ],
-        "printedPage": 14
+        "printedPage": 7
       },
       "classification": {
         "primary": "English/Vocabulary/Word meanings/Synonyms",
@@ -2348,7 +2348,7 @@
           "D"
         ],
         "optionTexts": [
-          "Neither 1 nor 2"
+          "impatient"
         ]
       },
       "revision": {
@@ -2365,12 +2365,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "213947a7694e8cb897aae1d5fc6a1ae23599cc70be0398d3495594aa2d98eca1",
-        "optionsHash": "223b62d9384fef4f346f99555dfc8af0fe3252cf608627061fdf5a288416b2d0",
+        "sourceTextHash": "385a353c38b8896078f5e7927677e7aa0da170ca92422f51e2149dc44d184f1e",
+        "optionsHash": "2e053605357b0fe223d17bbe6b514777e010bcf19d7e876ea80a4fb4041cb0ae",
         "sourcePages": [
-          14
+          7
         ],
-        "printedPage": 14
+        "printedPage": 7
       },
       "classification": {
         "primary": "English/Vocabulary/Word meanings/Synonyms",
@@ -2398,7 +2398,7 @@
           "A"
         ],
         "optionTexts": [
-          "1 only"
+          "scarcity"
         ]
       },
       "revision": {
@@ -2415,12 +2415,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "30df6e6e38a3e36e6a6008d6c2f5695561dbd7d97a77c1463d6f2910751b8b21",
-        "optionsHash": "4b053006fd0f14efd892baebdcf331c5b969b253aef19c12c9efd1b2602832b6",
+        "sourceTextHash": "0cca07f69c09c8182fcd289b2a1c4f926fa1964bfd910575e2e170c64f01696c",
+        "optionsHash": "3d06dc99e7d6ee39cc95b69182d41005a571d878234873fe4448ba39d5c449a6",
         "sourcePages": [
-          14
+          7
         ],
-        "printedPage": 14
+        "printedPage": 7
       },
       "classification": {
         "primary": "English/Vocabulary/Word meanings/Synonyms",
@@ -2448,7 +2448,7 @@
           "B"
         ],
         "optionTexts": [
-          "1, 2 and 3 only"
+          "went away"
         ]
       },
       "revision": {
@@ -2465,12 +2465,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "948b3ed14a38fe237aff139ff26f5ab574a03618c3e5903b0aa4f9e324b5019a",
-        "optionsHash": "223b62d9384fef4f346f99555dfc8af0fe3252cf608627061fdf5a288416b2d0",
+        "sourceTextHash": "cb294b31857a07996f9b3b2de0e1212a296c7fd1faca8f2d7267324280afdb1d",
+        "optionsHash": "3c8a8c50e318870a2736a762d6127851d53ac68832aa1a20d50c5421b03f9ab0",
         "sourcePages": [
-          14
+          7
         ],
-        "printedPage": 14
+        "printedPage": 7
       },
       "classification": {
         "primary": "English/Vocabulary/Word meanings/Synonyms",
@@ -2498,7 +2498,7 @@
           "B"
         ],
         "optionTexts": [
-          "2 only"
+          "strategic"
         ]
       },
       "revision": {
@@ -2515,12 +2515,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "f1255e142053ebc22a34f4322c3b363c87b85c578c11f857c117a13c8549a7cc",
-        "optionsHash": "cf204d283f1e7d139e81f2b8da7e53b334e7890b4226e22663dff170835da0cb",
+        "sourceTextHash": "20ff9871feb6ffe60bd9f41a7cb84c937dda3dd475a3eb3992be17764e28e75d",
+        "optionsHash": "78805ef5ee65d0302ae0a305214b257e485f93c73fb526ed4817431d160cd641",
         "sourcePages": [
-          14
+          7
         ],
-        "printedPage": 14
+        "printedPage": 7
       },
       "classification": {
         "primary": "English/Vocabulary/Word meanings/Synonyms",
@@ -2548,7 +2548,7 @@
           "D"
         ],
         "optionTexts": [
-          "1, 2 and 3 only"
+          "differ"
         ]
       },
       "revision": {
@@ -2565,12 +2565,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "d358ae983dc43eab639615d768324fa4a44822380110d431371d96424e074310",
-        "optionsHash": "223b62d9384fef4f346f99555dfc8af0fe3252cf608627061fdf5a288416b2d0",
+        "sourceTextHash": "7810c2998b557b7d02429021d0fd97756f53f0997b5939c4f4029047c7f20916",
+        "optionsHash": "dbd465baeac5667ca45cf1ebe87b6c441dca33f984c332236f3f85eb7ed744ed",
         "sourcePages": [
-          14
+          7
         ],
-        "printedPage": 14
+        "printedPage": 7
       },
       "classification": {
         "primary": "English/Vocabulary/Word meanings/Synonyms",
@@ -2598,7 +2598,7 @@
           "B"
         ],
         "optionTexts": [
-          "2 only"
+          "weakened"
         ]
       },
       "revision": {
@@ -2615,12 +2615,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "95a64ee02f5347a1982430cb0ef5b15083d2bcb11ba4f6c8d3fa5f1971cdbe7f",
-        "optionsHash": "4fece1e3ec6abab349f4542b00811ff30d4e87f8f886b9b79ffbc7f77fbbf909",
+        "sourceTextHash": "4d8fea31c7c0ea456852905912d87a30edd8d1872e15cc40043ae8ca79734bf9",
+        "optionsHash": "6d561b95e7be91fee202a8d5100ddba5dae2ffdd417e304d919a729dbb03585f",
         "sourcePages": [
-          14
+          7
         ],
-        "printedPage": 14
+        "printedPage": 7
       },
       "classification": {
         "primary": "English/Vocabulary/Word meanings/Synonyms",
@@ -2648,7 +2648,7 @@
           "D"
         ],
         "optionTexts": [
-          "1, 2, 3 and 4"
+          "praiseworthy"
         ]
       },
       "revision": {
@@ -2665,12 +2665,12 @@
       "disposition": "official-final",
       "reproduction": {
         "approved": true,
-        "sourceTextHash": "c66dd4124c9510eb664748ad667dbbf0b227bb5ce230c0a28e027a36fb5e30e2",
-        "optionsHash": "0ec7133750944e695182cf8437092ee35891c2a4d434390c0d65b49b96a2a02e",
+        "sourceTextHash": "ccd8895ccc2e64ee77eac6cf58838b343b6b889eee23df2bee543f6ebb1abb2b",
+        "optionsHash": "84bee97281a5bfe80c777628a0b531142120d11ef29dfc59aa148036b33ee013",
         "sourcePages": [
-          16
+          7
         ],
-        "printedPage": 16
+        "printedPage": 7
       },
       "classification": {
         "primary": "English/Vocabulary/Word meanings/Synonyms",
@@ -2698,7 +2698,7 @@
           "A"
         ],
         "optionTexts": [
-          "1 only"
+          "rebuke"
         ]
       },
       "revision": {

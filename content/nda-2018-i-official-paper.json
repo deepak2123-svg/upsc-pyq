@@ -157,8 +157,8 @@
       "id": "nda-2018-i-1",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nThe country's economy must be geared to wartime requirements. (Find the antonym of 'geared to')",
-      "sourceTextHash": "681571acd5148cba3f18f8fbc7e9c269e80bec0882d6ca83d4d26cd68125d655",
+      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nThe country's economy must be geared to wartime requirements.",
+      "sourceTextHash": "af0799598027799b10c004b490a99f7cdc6678acfed70568c1c078654c1fd795",
       "exam": "NDA",
       "year": 2018,
       "paper": "I",
@@ -174,7 +174,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.",
-        "The country's economy must be geared to wartime requirements. (Find the antonym of 'geared to')"
+        "The country's economy must be geared to wartime requirements."
       ],
       "options": {
         "A": "subordinated to",
@@ -189,7 +189,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "geared to"
+      ],
       "sharedContext": {
         "id": "nda-2018-i-context-1-20",
         "label": "Instructions",
@@ -234,8 +236,8 @@
       "id": "nda-2018-i-2",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nWhy does fire attract insects? (Find the antonym of 'attract')",
-      "sourceTextHash": "7638b75c83dfc2f326cbe9ada8d33d6a36e9a172eb426b1f8f8859b3c4efdf1f",
+      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nWhy does fire attract insects?",
+      "sourceTextHash": "06762988fac88f95fa36f84e72054b539b89397a644ac8dd466bc280295938cb",
       "exam": "NDA",
       "year": 2018,
       "paper": "I",
@@ -251,7 +253,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.",
-        "Why does fire attract insects? (Find the antonym of 'attract')"
+        "Why does fire attract insects?"
       ],
       "options": {
         "A": "discharge",
@@ -266,7 +268,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "attract"
+      ],
       "sharedContext": {
         "id": "nda-2018-i-context-1-20",
         "label": "Instructions",
@@ -311,8 +315,8 @@
       "id": "nda-2018-i-3",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nThe party was excellent, and I would like to thank all the people concerned. (Find the antonym of 'concerned')",
-      "sourceTextHash": "dcb8b948d5b455b19dc9632efaab9656d1c0f1b756d00f5cad1e12eb6467d61b",
+      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nThe party was excellent, and I would like to thank all the people concerned.",
+      "sourceTextHash": "a7aba47bd8e6758469b4f23233dd39cf869f0ffe8f1569337f6bd9cb3d254a03",
       "exam": "NDA",
       "year": 2018,
       "paper": "I",
@@ -328,7 +332,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.",
-        "The party was excellent, and I would like to thank all the people concerned. (Find the antonym of 'concerned')"
+        "The party was excellent, and I would like to thank all the people concerned."
       ],
       "options": {
         "A": "cared",
@@ -343,7 +347,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "concerned"
+      ],
       "sharedContext": {
         "id": "nda-2018-i-context-1-20",
         "label": "Instructions",
@@ -388,8 +394,8 @@
       "id": "nda-2018-i-4",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nHe is very serious by temperament. (Find the antonym of 'serious')",
-      "sourceTextHash": "a007d01c793ae1b3366cae0eccd3cd98a8f3b5b7e8fb566e56a3e56d3211e6b8",
+      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nHe is very serious by temperament.",
+      "sourceTextHash": "052f64ca886acd612021f3b9c4ec18521f7c918c6a2b4ba613bf41a16a52e56e",
       "exam": "NDA",
       "year": 2018,
       "paper": "I",
@@ -405,7 +411,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.",
-        "He is very serious by temperament. (Find the antonym of 'serious')"
+        "He is very serious by temperament."
       ],
       "options": {
         "A": "grave",
@@ -420,7 +426,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "serious"
+      ],
       "sharedContext": {
         "id": "nda-2018-i-context-1-20",
         "label": "Instructions",
@@ -465,8 +473,8 @@
       "id": "nda-2018-i-5",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nThere are a few miscellaneous items to discuss in this meeting. (Find the antonym of 'miscellaneous')",
-      "sourceTextHash": "120774ef3cf90080372bb0db4fb49c02a6bdb4cbff598b5ab9f8bbc155755d4e",
+      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nThere are a few miscellaneous items to discuss in this meeting.",
+      "sourceTextHash": "408f6b5a2fd286f240d5991902635a7695571f3587a0390a821e92089990ba8b",
       "exam": "NDA",
       "year": 2018,
       "paper": "I",
@@ -482,7 +490,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.",
-        "There are a few miscellaneous items to discuss in this meeting. (Find the antonym of 'miscellaneous')"
+        "There are a few miscellaneous items to discuss in this meeting."
       ],
       "options": {
         "A": "pure",
@@ -497,7 +505,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "miscellaneous"
+      ],
       "sharedContext": {
         "id": "nda-2018-i-context-1-20",
         "label": "Instructions",
@@ -542,8 +552,8 @@
       "id": "nda-2018-i-6",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nDue to the postal strike, the outgoing mail got delayed. (Find the antonym of 'outgoing')",
-      "sourceTextHash": "d83d738515a1d0ecf4c05b3bdb829081520217bcc4d24d0d2ed4b59bdb9dc398",
+      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nDue to the postal strike, the outgoing mail got delayed.",
+      "sourceTextHash": "847088342b99fed51b457b0414628507af36a44741bb2d445bf6e30222ee8700",
       "exam": "NDA",
       "year": 2018,
       "paper": "I",
@@ -559,7 +569,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.",
-        "Due to the postal strike, the outgoing mail got delayed. (Find the antonym of 'outgoing')"
+        "Due to the postal strike, the outgoing mail got delayed."
       ],
       "options": {
         "A": "urgent",
@@ -574,7 +584,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "outgoing"
+      ],
       "sharedContext": {
         "id": "nda-2018-i-context-1-20",
         "label": "Instructions",
@@ -619,8 +631,8 @@
       "id": "nda-2018-i-7",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nHe had a fine ear for music. (Find the antonym of 'fine')",
-      "sourceTextHash": "12448c22286a6617bffd0cdb5a4c3783965c44c8fb66ee18d79a72834f3e9e05",
+      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nHe had a fine ear for music.",
+      "sourceTextHash": "8505f22aa2c6efce9aa5b7716121e04e59c9e9ec672c05641db1cf96dfd2de9c",
       "exam": "NDA",
       "year": 2018,
       "paper": "I",
@@ -636,7 +648,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.",
-        "He had a fine ear for music. (Find the antonym of 'fine')"
+        "He had a fine ear for music."
       ],
       "options": {
         "A": "small",
@@ -651,7 +663,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "fine"
+      ],
       "sharedContext": {
         "id": "nda-2018-i-context-1-20",
         "label": "Instructions",
@@ -696,8 +710,8 @@
       "id": "nda-2018-i-8",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nThere is no likeness between him and his brother. (Find the antonym of 'likeness')",
-      "sourceTextHash": "6d3d756eedd7fd1415995db79e6c7aadbecb36c5520c1ecb9c9630aa8ec5f749",
+      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nThere is no likeness between him and his brother.",
+      "sourceTextHash": "e4ba3b36d0f7e8d985c48fb108599655989f0f4e83468744cc7583c24db4f2c5",
       "exam": "NDA",
       "year": 2018,
       "paper": "I",
@@ -713,7 +727,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.",
-        "There is no likeness between him and his brother. (Find the antonym of 'likeness')"
+        "There is no likeness between him and his brother."
       ],
       "options": {
         "A": "unlikeliness",
@@ -728,7 +742,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "likeness"
+      ],
       "sharedContext": {
         "id": "nda-2018-i-context-1-20",
         "label": "Instructions",
@@ -773,8 +789,8 @@
       "id": "nda-2018-i-9",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nCultural diversity in the workplace is good for business. (Find the antonym of 'diversity')",
-      "sourceTextHash": "200c5b191fc3137c6fb1150c28ae48a9fd5a1233c6fd6be4252a3b941590777d",
+      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nCultural diversity in the workplace is good for business.",
+      "sourceTextHash": "a35962970d4cbc231d6824db9478cdf2f82d4939ab6a64e73615426038ddd539",
       "exam": "NDA",
       "year": 2018,
       "paper": "I",
@@ -790,7 +806,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.",
-        "Cultural diversity in the workplace is good for business. (Find the antonym of 'diversity')"
+        "Cultural diversity in the workplace is good for business."
       ],
       "options": {
         "A": "uniformity",
@@ -805,7 +821,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "diversity"
+      ],
       "sharedContext": {
         "id": "nda-2018-i-context-1-20",
         "label": "Instructions",
@@ -850,8 +868,8 @@
       "id": "nda-2018-i-10",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nThe company was liquidated within five years. (Find the antonym of 'liquidated')",
-      "sourceTextHash": "f3bdf6d259461c4769f7a37613e67a88422b11516fffccea12ca7bc4d9898c8b",
+      "sourceText": "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.\nThe company was liquidated within five years.",
+      "sourceTextHash": "fd31f6ddfe3fe619b916b654448f42b28c6813c9d3f3463d5f311ed525e98da2",
       "exam": "NDA",
       "year": 2018,
       "paper": "I",
@@ -867,7 +885,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Each item consists of a sentence with an underlined word followed by four words or groups of words. Select the word or group of words that is opposite in meaning to the underlined word and mark your response in the Answer Sheet accordingly.",
-        "The company was liquidated within five years. (Find the antonym of 'liquidated')"
+        "The company was liquidated within five years."
       ],
       "options": {
         "A": "bankrupt",
@@ -882,7 +900,9 @@
       "figureAlt": null,
       "additionalPaths": [],
       "preparationScope": "english",
-      "underlined": [],
+      "underlined": [
+        "liquidated"
+      ],
       "sharedContext": {
         "id": "nda-2018-i-context-1-20",
         "label": "Instructions",
@@ -1730,9 +1750,9 @@
       "additionalPaths": [],
       "preparationScope": "english",
       "underlined": [
-        "A",
-        "B",
-        "C"
+        "The politician lost face in his constituency",
+        "when he broke the pre-election promises",
+        "he made to his people."
       ],
       "sharedContext": {
         "id": "nda-2018-i-context-21-25",
@@ -1811,9 +1831,9 @@
       "additionalPaths": [],
       "preparationScope": "english",
       "underlined": [
-        "A",
-        "B",
-        "C"
+        "At the request of the Defence Attorney",
+        "the jury were called",
+        "and their individual verdicts were recorded."
       ],
       "sharedContext": {
         "id": "nda-2018-i-context-21-25",
@@ -1892,9 +1912,9 @@
       "additionalPaths": [],
       "preparationScope": "english",
       "underlined": [
-        "A",
-        "B",
-        "C"
+        "Frank Lloyd Wright has been acclaimed",
+        "by colleagues",
+        "as the greater of all modern architects"
       ],
       "sharedContext": {
         "id": "nda-2018-i-context-21-25",
@@ -1973,9 +1993,9 @@
       "additionalPaths": [],
       "preparationScope": "english",
       "underlined": [
-        "A",
-        "B",
-        "C"
+        "In my younger days",
+        "I could run four miles",
+        "at a stretch."
       ],
       "sharedContext": {
         "id": "nda-2018-i-context-21-25",
@@ -2054,9 +2074,9 @@
       "additionalPaths": [],
       "preparationScope": "english",
       "underlined": [
-        "A",
-        "B",
-        "C"
+        "The owner",
+        "as well as his servants",
+        "is honest."
       ],
       "sharedContext": {
         "id": "nda-2018-i-context-21-25",

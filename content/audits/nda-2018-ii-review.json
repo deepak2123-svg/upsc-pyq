@@ -180,7 +180,7 @@
     "reviewerMethod": "Same-agent page-oriented review of the Series A scan, supported by OCR comparison and targeted full-resolution rereads of ambiguous and figure-bearing pages; not independent human review.",
     "classificationMethod": "Fresh source-taxonomy concept and target-applicability pass by the same agent; not independent human review.",
     "reviewedInputHashes": {
-      "scripts/nda-2018-ii-transcription.mjs": "afbd75ad49bd48d8d059d7587dcfd65b795d8c6565443f415c99d141e07ae967",
+      "scripts/nda-2018-ii-transcription.mjs": "0d8507ec7dca6d576c3b225234ad2db3ac5f778ceb7354673c635425c42bc01a",
       "scripts/nda-2018-ii-classification.mjs": "2a2874be73b0504927cdfd23711c640acec0c1951223ec885aa61d18758389bb"
     }
   },

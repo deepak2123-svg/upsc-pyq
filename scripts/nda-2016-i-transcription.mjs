@@ -1,4 +1,32 @@
 // Secondary transcript checked against the archived Series A scan; official answers come only from the preserved key.
+export const reviewedUnderlined={10:['deft'],11:['urbane'],12:['timidity'],13:['mammoth'],14:['engrossed'],15:['preceding'],16:['shrewd'],17:['severe'],18:['Cumulatively'],19:['conspicuous']};
+export const reviewedQuestionRepairs={
+26:{number:26,promptLines:['Had I not taken ill, I would have sent you my research paper much earlier.'],options:{A:'Had I not taken ill,',B:'I would have sent you my research paper',C:'much earlier.',D:'No error.'},underlined:['Had I not taken ill,','I would have sent you my research paper','much earlier.'],page:5,hasImage:false},
+27:{number:27,promptLines:['The barn owl helps the farmer by destroying rats which could, if left unchecked, do a lot of damage to the crops.'],options:{A:'The barn owl helps the farmer',B:'by destroying rats which could, if left unchecked, do a lot of',C:'damage to the crops.',D:'No error.'},underlined:['The barn owl helps the farmer','by destroying rats which could, if left unchecked, do a lot of','damage to the crops.'],page:5,hasImage:false},
+28:{number:28,promptLines:['He had gone home three weeks ago and was expected back yesterday, but he has not come yet.'],options:{A:'He had gone home three weeks ago',B:'and was expected back yesterday,',C:'but he has not come yet.',D:'No error.'},underlined:['He had gone home three weeks ago','and was expected back yesterday,','but he has not come yet.'],page:5,hasImage:false},
+29:{number:29,promptLines:['We must sympathize for others in their troubles.'],options:{A:'We must sympathize',B:'for others',C:'in their troubles.',D:'No error.'},underlined:['We must sympathize','for others','in their troubles.'],page:5,hasImage:false},
+30:{number:30,promptLines:['The scientists in America are trying for long to discover the genes responsible for ageing.'],options:{A:'The scientists in America',B:'are trying for long',C:'to discover the genes responsible for ageing.',D:'No error.'},underlined:['The scientists in America','are trying for long','to discover the genes responsible for ageing.'],page:5,hasImage:false},
+31:{number:31,promptLines:['When he heard the rhetorical speech of the leader, he was carried along by his enthusiasm.'],options:{A:'carried aloft',B:'carried down',C:'carried away',D:'No improvement'},underlined:['carried along'],page:6,hasImage:false},
+32:{number:32,promptLines:['After the heavy rains last week, the water in the lake raised another two feet.'],options:{A:'rose another two feet',B:'arisen another two feet',C:'would raise another two feet',D:'No improvement'},underlined:['raised another two feet'],page:6,hasImage:false},
+33:{number:33,promptLines:['One can live and work in a town without being aware of the daily march of the sun across the sky without never seeing the moon and stars.'],options:{A:'seldom',B:'hardly',C:'ever',D:'No improvement'},underlined:['never'],page:6,hasImage:false},
+34:{number:34,promptLines:['Applications of those who are graduates will be considered.'],options:{A:'whom are graduates',B:'whose are graduates',C:'whom are only graduates',D:'No improvement'},underlined:['who are graduates'],page:6,hasImage:false},
+35:{number:35,promptLines:['It is raining heavily all through this week.'],options:{A:'has rained',B:'rains',C:'rained',D:'No improvement'},underlined:['is raining heavily'],page:6,hasImage:false},
+36:{number:36,promptLines:['The sparrow took no notice about the bread.'],options:{A:'notice of',B:'notice from',C:'notice to',D:'No improvement'},underlined:['notice about'],page:6,hasImage:false},
+37:{number:37,promptLines:['As he spoke about his achievements, his high claims amused us.'],options:{A:'big',B:'tall',C:'long',D:'No improvement'},underlined:['high'],page:6,hasImage:false},
+38:{number:38,promptLines:['We ought to stand for what is right.'],options:{A:'stand at',B:'stand on',C:'stand up',D:'No improvement'},underlined:['stand for'],page:6,hasImage:false},
+39:{number:39,promptLines:['He enjoys to tell stories to children.'],options:{A:'how to tell stories',B:'telling stories',C:'to narrate stories',D:'No improvement'},underlined:['to tell stories'],page:6,hasImage:false},
+40:{number:40,promptLines:["In a few minutes’ time, when the clock strikes six, I would be waiting here for an hour."],options:{A:'shall be waiting on',B:'shall have been waiting',C:'shall wait',D:'No improvement'},underlined:['would be waiting here'],page:6,hasImage:false},
+41:{number:41,promptLines:['Suddenly there was a bright flash, followed by a deafening explosion.'],options:{A:'dangerous',B:'terrifying',C:'mild',D:'very loud'},underlined:['deafening'],page:7,hasImage:false},
+42:{number:42,promptLines:['He showed exemplary courage during the crisis.'],options:{A:'usual',B:'durable',C:'commendable',D:'some'},underlined:['exemplary'],page:7,hasImage:false},
+43:{number:43,promptLines:['When the new teacher entered the classroom, he found the pupils restive.'],options:{A:'at rest',B:'idle',C:'quiet',D:'impatient'},underlined:['restive'],page:7,hasImage:false},
+44:{number:44,promptLines:['There is no dearth of talent in this country.'],options:{A:'scarcity',B:'availability',C:'plenty',D:'absence'},underlined:['dearth'],page:7,hasImage:false},
+45:{number:45,promptLines:['The servants retired to their quarters.'],options:{A:'entered',B:'went away',C:'ran away',D:'mobilised'},underlined:['retired'],page:7,hasImage:false},
+46:{number:46,promptLines:['The navy gave tactical support to the marines.'],options:{A:'sensitive',B:'strategic',C:'immediate',D:'expert'},underlined:['tactical'],page:7,hasImage:false},
+47:{number:47,promptLines:['A genius tends to deviate from the routine way of thinking.'],options:{A:'dispute',B:'disagree',C:'distinguish',D:'differ'},underlined:['deviate'],page:7,hasImage:false},
+48:{number:48,promptLines:['He was greatly debilitated by an attack of influenza.'],options:{A:'depressed',B:'weakened',C:'worried',D:'defeated'},underlined:['debilitated'],page:7,hasImage:false},
+49:{number:49,promptLines:['His efforts at helping the poor are laudable.'],options:{A:'welcome',B:'sincere',C:'good',D:'praiseworthy'},underlined:['laudable'],page:7,hasImage:false},
+50:{number:50,promptLines:['His conduct brought him reproach from all quarters.'],options:{A:'rebuke',B:'sympathy',C:'indifference',D:'remorse'},underlined:['reproach'],page:7,hasImage:false},
+};
 export const directions=[];
 export const questions=[
   {

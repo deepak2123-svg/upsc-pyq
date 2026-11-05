@@ -1,4 +1,5 @@
 // Secondary transcript checked against the archived Series A scan; official answers come only from the preserved key.
+export const reviewedUnderlined={1:['wound up'],2:['alive to'],3:['intimidate'],4:['drastic'],5:['meticulous'],6:['minute'],7:['repeal'],8:['maiden'],9:['exhausted'],10:['counterfeit'],11:['run down'],12:['violence'],13:['generous'],14:['idle'],15:['unjust'],16:['delight'],17:['concerned'],18:['confident'],19:['carried on'],20:['indigenous']};
 export const directions=[
   {
     "from": 1,

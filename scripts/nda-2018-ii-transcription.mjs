@@ -1,4 +1,5 @@
 // Drafted from a secondary transcript; publication approval requires both visual passes against the Series A scan.
+export const reviewedUnderlined={6:['massive'],7:['convictions'],8:['timid'],9:['stubborn'],10:['provocative'],11:['spoil'],12:['biased'],13:['orthodox'],14:['Permit'],15:['brave']};
 export const directions=[
   {
     "from": 1,
