@@ -67,7 +67,7 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 2498); // Complete reviewed NDA papers add only CSE-applicable GS records; English and school Science stay preparation-only.
+  assert.equal(data.totalCount, 2522); // Complete reviewed NDA papers add only CSE-applicable GS records; English and school Science stay preparation-only.
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);
@@ -76,6 +76,7 @@ test("multi-placement inventory conserves every unique parent and examination co
   const placementLedger=JSON.parse(await readFile(new URL('../content/taxonomy/prelims-reviewed-placements.json',import.meta.url),'utf8'));
   const expectedPhysical=new Set(placementLedger.records.filter(row=>row.status==='approved'&&[row.primaryId,...row.additionalIds].some(id=>id.startsWith('syllabus:geography/physical-geography/'))&&questionEligible(row.questionId)).map(row=>row.questionId));
   const latestPaper={questions:[...JSON.parse(await readFile(new URL('../content/nda-2017-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2018-i-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2018-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2019-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2021-i-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2021-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2022-i-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2022-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-ii-official-paper.json',import.meta.url),'utf8')).questions,...JSON.parse(await readFile(new URL('../content/nda-2023-i-official-paper.json',import.meta.url),'utf8')).questions]};
+  latestPaper.questions.unshift(...JSON.parse(await readFile(new URL('../content/nda-2014-i-official-paper.json',import.meta.url),'utf8')).questions);
   latestPaper.questions.unshift(...JSON.parse(await readFile(new URL('../content/nda-2014-ii-official-paper.json',import.meta.url),'utf8')).questions);
   latestPaper.questions.unshift(...JSON.parse(await readFile(new URL('../content/nda-2017-i-official-paper.json',import.meta.url),'utf8')).questions);
   latestPaper.questions.unshift(...JSON.parse(await readFile(new URL('../content/nda-2016-ii-official-paper.json',import.meta.url),'utf8')).questions);

@@ -1,0 +1,1048 @@
+{
+  "paperId": "nda-2014-i-gat",
+  "identity": {
+    "exam": "NDA",
+    "year": 2014,
+    "session": "I",
+    "paper": "GAT",
+    "paperCode": "B-MCZA-N-FZS/47A",
+    "series": "A",
+    "language": "English",
+    "examDate": "2014-04-20",
+    "expected": 150
+  },
+  "original": {
+    "path": "C:/Users/iamdj/Documents/Book PYP/.tmp/full_reaudit_reference/NDA/2014-1_series_a.pdf",
+    "sha256": "516c644afa1228d7122b0f8e245b6fb6bc92606402b7c9302d04a9e945b0d967"
+  },
+  "pdfPageMapping": {
+    "pages": 48,
+    "cover": 1,
+    "english": "PDF pages 2–11",
+    "partB": "PDF pages 12–46 (alternating English/Hindi leaves)"
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": null,
+    "retrievedAt": "2026-11-06",
+    "url": "https://iasexamportal.com/nda-na/download-answer-keys-exam-i-2014",
+    "asset": "/papers/nda-2014-i-gat/official-final-key.pdf",
+    "sha256": "f9a8194cdb01df4496e27946990ed06e8eb0d3cd702c1636397e41c98854eefd",
+    "page": 1,
+    "series": "A",
+    "session": "I",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "dropped": 1,
+    "scored": 149,
+    "authentication": "UPSC NDA/NA I 2014 General Ability Test final answer-key table preserved from the official document; Series A lists 150 items, 149 scored and Q150 marked X (dropped)."
+  },
+  "rawBefore": [
+    {
+      "id": "cds-2014-2014-1-149",
+      "sha256": "d32cd1b4adcbfa10a82ce79a167bcfcaa635ad845972783998078222a35671f0",
+      "value": {
+        "id": "cds-2014-2014-1-149",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Under which of the following Acts is the National Population Register being created?",
+        "sourceTextHash": "d8571e8f3f540595b3f39514281c69c853dabda3ce281d1e3b75a8b72fbdb5d5",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 149,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2014_gat_anskey",
+          "rawQuestionText": "Under which of the following Acts is the National Population Register being created?"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 149,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Under which of the following Acts is the National Population Register being created?"
+        ],
+        "options": {
+          "A": "The Citizenship Act of India, 1955 as amended in 2004",
+          "B": "The Census Act, 1948",
+          "C": "The UID Act, 2010",
+          "D": "None of the above"
+        },
+        "answer": "A",
+        "explanation": "Original NDA 2014-1 Q149, page 44, visually checked against its complete stem and options; the matching Series A final key accepts A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2014-2014-1-72",
+      "sha256": "c813b3fa0670beaa92dfaa390839e447e2b09ab4b6ea955ed558b8c41a7bb8af",
+      "value": {
+        "id": "cds-2014-2014-1-72",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following statements are true for the Fundamental Right to Life and Personal Liberty as guaranteed under Article 21 of the Constitution of India? 1. The Right is available to citizens as well as aliens. 2. It covers protection against arbitrary executive and legislative action. 3. It includes the right to live with human dignity. 4. It can be taken away according to the procedure established by law. Select the correct answer using the code given below.",
+        "sourceTextHash": "0d9861d6f5e72255e350b1be7b9442a607a6275f0a74a0b4acfc4fcafcc4cf7c",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 72,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2014_gat_anskey",
+          "rawQuestionText": "Which of the following statements are true for thc Fundamental Right to Life and Personal Liberty as guaranteed under Article 21 of the Constitution of India? The Right is available to I. citizens as well as aliens. It covers protection against 2. arbitrary executive and legislative action. It includes the right to live with 3. human dignity. It can be taken away according 4. to the procedure established by law. Select the correct answer using the code given below."
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 72,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following statements are true for the Fundamental Right to Life and Personal Liberty as guaranteed under Article 21 of the Constitution of India? 1. The Right is available to citizens as well as aliens. 2. It covers protection against arbitrary executive and legislative action. 3. It includes the right to live with human dignity. 4. It can be taken away according to the procedure established by law. Select the correct answer using the code given below."
+        ],
+        "options": {
+          "A": "1, 2 and 3 only",
+          "B": "2, 3 and 4 only",
+          "C": "1, 2, 3 and 4",
+          "D": "1 and 4 only"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2014-1 Q72, page 20, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2014-2014-1-147",
+      "sha256": "95b9f314b90c229eb55c07cfa3f3163d99c141ef648a807ff80182eb761fe52b",
+      "value": {
+        "id": "cds-2014-2014-1-147",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Constitution of India guarantees the Fundamental Right to Freedom of Religion to all its citizens. Which among the following is not true for this Right?",
+        "sourceTextHash": "104f045cbb183ed679da43b184106755c4f582f88bd5a061f874ec6dd12d94f8",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 147,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2014_gat_anskey",
+          "rawQuestionText": "The Constitution Of India guarantees the Fundamental Right to Freedom of Religion to all its citizens. Which among the following is not true for this Right?"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 147,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "The Constitution of India guarantees the Fundamental Right to Freedom of Religion to all its citizens. Which among the following is not true for this Right?"
+        ],
+        "options": {
+          "A": "It gives freedom of conscience and freedom to profess, practice and propagate any religion",
+          "B": "It gives freedom to establish and maintain institution for religious and charitable purposes",
+          "C": "The Right is subject to public order, morality. and health",
+          "D": "The State cannot make any law which abrogates this Right for citizens"
+        },
+        "answer": "D",
+        "explanation": "Original NDA 2014-1 Q147, page 44, visually checked against its complete stem and options; the matching Series A final key accepts D.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2014-2014-1-148",
+      "sha256": "19bbf441df599c9b1b41a64e9c3d92c41cb408704811d026b4520d6471bf346f",
+      "value": {
+        "id": "cds-2014-2014-1-148",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act, 1989 may be seen as giving effect to which of the following Fundamental Rights? 1. Equality before the Law 2. Right against Discrimination 3. Abolition of Untouchability 4. Right to Freedom of Religion Select the correct answer using the code given below.",
+        "sourceTextHash": "2b99fec911c50bc02fcc656d44b21b683b5cb1c214eb7daaf07ce6a37bd66547",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 148,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2014_gat_anskey",
+          "rawQuestionText": "The Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act, 1989 may be seen as giving effect to which of the following Fundamental Rights? Equality before the Law 1. 2. Right against Discrimination 3. Abolition of Untouchability 4. Right to Freedom of Religion Select the correct answer using the code $ven below."
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 148,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "The Scheduled Castes and Scheduled Tribes (Prevention of Atrocities) Act, 1989 may be seen as giving effect to which of the following Fundamental Rights? 1. Equality before the Law 2. Right against Discrimination 3. Abolition of Untouchability 4. Right to Freedom of Religion Select the correct answer using the code given below."
+        ],
+        "options": {
+          "A": "1, 2 and 3 only",
+          "B": "2 and 3 only",
+          "C": "2, 3 and 4 only",
+          "D": "1, 2, 3 and 4"
+        },
+        "answer": "A",
+        "explanation": "Original NDA 2014-1 Q148, page 44, visually checked against its complete stem and options; the matching Series A final key accepts A.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "cds-2014-2014-1-146",
+      "sha256": "b4abd9dcb427b3cb9670e6036cf937c59c075d7430093a6743d7156e29eb8e06",
+      "value": {
+        "id": "cds-2014-2014-1-146",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following is not a characteristic of a federal system?",
+        "sourceTextHash": "7fc66edc8c03a3450241a6e2e50d32d279ae8f12477d00f0e15ae0202afff25b",
+        "source": {
+          "dataset": "CDS Polity verified baseline",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 146,
+          "answerStatus": "official-final-key-and-reproduction-reviewed",
+          "answerSource": "http://www.ndl.gov.in/cd_document/upsc_nda_na/upsc-nda-na/i_2014_gat_anskey",
+          "rawQuestionText": "Which one among the following is not a characteristic of a federal system? There are two distinct levels of"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 146,
+        "subject": "General Studies",
+        "topic": "General",
+        "subtopic": "General",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which one among the following is not a characteristic of a federal system?"
+        ],
+        "options": {
+          "A": "There are two distinct levels of government",
+          "B": "The responsibilities and powers of each level of government are clearly defined in a written Constitution",
+          "C": "There is no separation of powers between the legislative and executive branches of government",
+          "D": "A Supreme Court is entrusted with the responsibility of interpreting these provisions and arbitrating in matters of dispute"
+        },
+        "answer": "C",
+        "explanation": "Original NDA 2014-1 Q146, page 42, visually checked against its complete stem and options; the matching Series A final key accepts C.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-76",
+      "sha256": "c9268fae8d5e7922eb04ed4eac6d4346859d45807c430c81e2dc6e32ce3fef3e",
+      "value": {
+        "id": "nda-2014-i-76",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I: Minerals are formed by slow cooling of the magma. Statement II: Very small crystals are formed when lava cools quickly on the surface.",
+        "sourceTextHash": "569bfb483a885ab4fa5eadad9a6be22a344638cad9da8caebf7428fe60252e03",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 76,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Statement I: Minerals are formed by slow cooling of the magma. Statement II: Very small crystals are formed when lava cools quickly on the surface."
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 76,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I: Minerals are formed by slow cooling of the magma.",
+          "Statement II: Very small crystals are formed when lava cools quickly on the surface."
+        ],
+        "options": {
+          "A": "Both the statements are individually true and Statement II is the correct explanation of Statement I",
+          "B": "Both the statements are individually true but Statement II is not the correct explanation of Statement I",
+          "C": "Statement I is true but Statement II is false",
+          "D": "Statement I is false but Statement II is true"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-78",
+      "sha256": "a963a0e3b1da4b106c4327a2dc531e50588b211566347151223f51a86c78d7bb",
+      "value": {
+        "id": "nda-2014-i-78",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I: The hills with dense vegetation cover do not experience heavy soil erosion. Statement II: The vegetation cover helps infiltration of rainwater and binding of soils.",
+        "sourceTextHash": "6014f502a94d4fe3e305c4ca5ad477bd6f4bfd39cb6920b85dc62f19c954cca9",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 78,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Statement I: The hills with dense vegetation cover do not experience heavy soil erosion. Statement II: The vegetation cover helps infiltration of rainwater and binding of soils."
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 78,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Weathering & Erosional Processes",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I: The hills with dense vegetation cover do not experience heavy soil erosion.",
+          "Statement II: The vegetation cover helps infiltration of rainwater and binding of soils."
+        ],
+        "options": {
+          "A": "Both the statements are individually true and Statement II is the correct explanation of Statement I",
+          "B": "Both the statements are individually true but Statement II is not the correct explanation of Statement I",
+          "C": "Statement I is true but Statement II is false",
+          "D": "Statement I is false but Statement II is true"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-79",
+      "sha256": "ee973f34de034fbce432e1e368e76a5e113875c20999c55bee61c4b5dd299035",
+      "value": {
+        "id": "nda-2014-i-79",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I: The decrease of air temperature with increasing altitudes in the atmosphere is called the vertical temperature gradient. Statement II: In Troposphere, air temperature decreases with increasing altitude due to radiation from the Earth.",
+        "sourceTextHash": "e633fa531c6875a09ae2d8d9dd1b29ce1fea21518f9ef6f7cbd1252c3252718b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 79,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Statement I: The decrease of air temperature with increasing altitudes in the atmosphere is called the vertical temperature gradient. Statement II: In Troposphere, air temperature decreases with increasing altitude due to radiation from the Earth."
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 79,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Atmospheric Composition & Structure",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I: The decrease of air temperature with increasing altitudes in the atmosphere is called the vertical temperature gradient.",
+          "Statement II: In Troposphere, air temperature decreases with increasing altitude due to radiation from the Earth."
+        ],
+        "options": {
+          "A": "Both the statements are individually true and Statement II is the correct explanation of Statement I",
+          "B": "Both the statements are individually true but Statement II is not the correct explanation of Statement I",
+          "C": "Statement I is true but Statement II is false",
+          "D": "Statement I is false but Statement II is true"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-80",
+      "sha256": "09bd1c51dd91e48681c98c9631b9612eac6281d9a7c9c5c13c5407df7ac2fa15",
+      "value": {
+        "id": "nda-2014-i-80",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I: Chemical weathering processes are found more active in hot and humid environment. Statement II: High temperature and rainfall help in the process of decomposition of rocks.",
+        "sourceTextHash": "4cf471f194e7ae887036c76697b313251451c7a070cd0cc285729b7eeee831e0",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 80,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Statement I: Chemical weathering processes are found more active in hot and humid environment. Statement II: High temperature and rainfall help in the process of decomposition of rocks."
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 80,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I: Chemical weathering processes are found more active in hot and humid environment.",
+          "Statement II: High temperature and rainfall help in the process of decomposition of rocks."
+        ],
+        "options": {
+          "A": "Both the statements are individually true and Statement II is the correct explanation of Statement I",
+          "B": "Both the statements are individually true but Statement II is not the correct explanation of Statement I",
+          "C": "Statement I is true but Statement II is false",
+          "D": "Statement I is false but Statement II is true"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-94",
+      "sha256": "bf1e75cc34436eec5771144eee4468b36a4844cc63d5a26388b844f9ab4e2844",
+      "value": {
+        "id": "nda-2014-i-94",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The summer and winter seasons in a year are caused by",
+        "sourceTextHash": "40fec9ba3916b894d9559d3a504922ee4bf1d160e1f5ae85c85db3fb17da8f75",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 94,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "The summer and winter seasons in a year are caused by"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 94,
+        "subject": "Geography",
+        "topic": "Earth & Universe",
+        "subtopic": "Earth-Sun Relations & Seasons",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "The summer and winter seasons in a year are caused by"
+        ],
+        "options": {
+          "A": "aphelion (farthest) and perihelion (nearest) positions of the Earth from the Sun during the annual revolution",
+          "B": "rotation of the Earth on its axis",
+          "C": "variation in solar insolation",
+          "D": "revolution of the Earth on its inclined axis"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-103",
+      "sha256": "bfacffaeeee86c665b4f213a47fac0631c3ce8a5c3d4770e97ffd0105fda81b4",
+      "value": {
+        "id": "nda-2014-i-103",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following surface winds: 1. Doldrums 2. Trade winds 3. Westerlies 4. Polar winds Which one among the following is the idealized global pattern of these winds from the Equator to the Pole?",
+        "sourceTextHash": "f94426702792a265c84b50d7d67e2ba203d26790c1cb62643d67a386a7d1cd77",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 103,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Consider the following surface winds: 1. Doldrums 2. Trade winds 3. Westerlies 4. Polar winds Which one among the following is the idealized global pattern of these winds from the Equator to the Pole?"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 103,
+        "subject": "Geography",
+        "topic": "Climatology",
+        "subtopic": "Winds & Atmospheric Circulation",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following surface winds: 1. Doldrums 2. Trade winds 3. Westerlies 4. Polar winds Which one among the following is the idealized global pattern of these winds from the Equator to the Pole?"
+        ],
+        "options": {
+          "A": "1-2-3-4",
+          "B": "1-3-2-4",
+          "C": "2-1-4-3",
+          "D": "3-1-2-4"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-111",
+      "sha256": "bfc9a763a8b81669667330f4c3c8ab8d312f28f2ec97ad2a8c105bc3f19c5274",
+      "value": {
+        "id": "nda-2014-i-111",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Consider the following statements: 1. Crystallization is a form of mechanical weathering. 2. Hydration causes granular disintegration. 3. Frost action is synonymous with freeze-thaw action. Which of the statements given above are correct?",
+        "sourceTextHash": "a78f93f2cdf99f491cbea46a28064b25260f3961b103edcc39abe7c16e826d2e",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 111,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Consider the following statements: 1. Crystallization is a form of mechanical weathering. 2. Hydration causes granular disintegration. 3. Frost action is synonymous with freeze-thaw action. Which of the statements given above are correct?"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 111,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Weathering & Erosional Processes",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Consider the following statements: 1. Crystallization is a form of mechanical weathering. 2. Hydration causes granular disintegration. 3. Frost action is synonymous with freeze-thaw action. Which of the statements given above are correct?"
+        ],
+        "options": {
+          "A": "1 and 2 only",
+          "B": "2 and 3 only",
+          "C": "1 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-126",
+      "sha256": "5c036ad9fd385bf3bdf413491159f1871bb9e443fff930c0f46a7e0b5a447380",
+      "value": {
+        "id": "nda-2014-i-126",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "What is the correct sequence from the smallest to the largest grain of the following types of clastic rocks?",
+        "sourceTextHash": "64777937dff151e755536f2b3e84e4c375fdad633c966220bb9a127ccc4fb31d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 126,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "What is the correct sequence from the smallest to the largest grain of the following types of clastic rocks?"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 126,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "What is the correct sequence from the smallest to the largest grain of the following types of clastic rocks?"
+        ],
+        "options": {
+          "A": "Shale, sandstone, conglomerate, siltstone",
+          "B": "Shale, siltstone, sandstone, conglomerate",
+          "C": "Conglomerate, sandstone, shale, siltstone",
+          "D": "Sandstone, siltstone, conglomerate, shale"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-143",
+      "sha256": "75b7966c200ac6cf84d37b0c9c0c208f23bcab01fa2e254a1dc9e30d6c51b457",
+      "value": {
+        "id": "nda-2014-i-143",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Why is hydrolysis an effective form of chemical decomposition of bedrock in humid tropics? 1. Humid tropics experience high temperature and humidity. 2. There is high diurnal range in temperature. Select the correct answer using the code given below.",
+        "sourceTextHash": "684c4490858d734b28a29911310ace9c372bd70099d4a21f8e260e4b902b577d",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 143,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Why is hydrolysis an effective form of chemical decomposition of bedrock in humid tropics? 1. Humid tropics experience high temperature and humidity. 2. There is high diurnal range in temperature. Select the correct answer using the code given below."
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 143,
+        "subject": "Geography",
+        "topic": "Geomorphology & Earth Structure",
+        "subtopic": "Rocks & Minerals",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Why is hydrolysis an effective form of chemical decomposition of bedrock in humid tropics? 1. Humid tropics experience high temperature and humidity. 2. There is high diurnal range in temperature. Select the correct answer using the code given below."
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "2 only",
+          "C": "Both 1 and 2",
+          "D": "Neither 1 nor 2"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-77",
+      "sha256": "ee5aca8c41e8b624bf8600aed8dde03cdd8ba850ef6bafa58f1c3b1c4416ec3e",
+      "value": {
+        "id": "nda-2014-i-77",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Statement I: The Kullu Valley in Himachal Pradesh receives copious snowfall during winter. Statement II: The Kullu Valley receives moisture-bearing wind of the Western Disturbances during winter.",
+        "sourceTextHash": "397c04ae0781dd4b8b322896d08b2fc4e45e7073d42a19964ba12d742aeb9142",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 77,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Statement I: The Kullu Valley in Himachal Pradesh receives copious snowfall during winter. Statement II: The Kullu Valley receives moisture-bearing wind of the Western Disturbances during winter."
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 77,
+        "subject": "Geography",
+        "topic": "Climate & Monsoon",
+        "subtopic": "Indian Monsoon & Rainfall",
+        "difficulty": "Hard",
+        "promptLines": [
+          "Statement I: The Kullu Valley in Himachal Pradesh receives copious snowfall during winter.",
+          "Statement II: The Kullu Valley receives moisture-bearing wind of the Western Disturbances during winter."
+        ],
+        "options": {
+          "A": "Both the statements are individually true and Statement II is the correct explanation of Statement I",
+          "B": "Both the statements are individually true but Statement II is not the correct explanation of Statement I",
+          "C": "Statement I is true but Statement II is false",
+          "D": "Statement I is false but Statement II is true"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-98",
+      "sha256": "676478fc1190552cb8f58ceecaaeb249169fcfd00b565312e2161e1d42e66436",
+      "value": {
+        "id": "nda-2014-i-98",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following is the coral group of islands of India?",
+        "sourceTextHash": "7ad2596f0064bc678b3d3faba2a9d85e060f1c4f49c08d31c6432a3e04b0f80b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 98,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Which one among the following is the coral group of islands of India?"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 98,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following is the coral group of islands of India?"
+        ],
+        "options": {
+          "A": "Andaman",
+          "B": "Nicobar",
+          "C": "Minicoy",
+          "D": "Lakshadweep"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-107",
+      "sha256": "0a6541934b652e120f3b0a35657722a8d92d1c8ba8192d86f7389be3a58b5aa6",
+      "value": {
+        "id": "nda-2014-i-107",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Taungup Pass is a mountain corridor connecting India with",
+        "sourceTextHash": "42aa1046cb54703ccf3f378b3248396d9ee0b85d9ccdc3793d1e2ec1270467cb",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 107,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Taungup Pass is a mountain corridor connecting India with"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 107,
+        "subject": "Geography",
+        "topic": "Physiography & Relief",
+        "subtopic": "Himalayan Passes",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Taungup Pass is a mountain corridor connecting India with"
+        ],
+        "options": {
+          "A": "Afghanistan",
+          "B": "China",
+          "C": "Pakistan",
+          "D": "Myanmar"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-116",
+      "sha256": "8213e39e9c6df89f378e0edeb17487b09e4d9b7b5e6a618b16e502280daf77bb",
+      "value": {
+        "id": "nda-2014-i-116",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Considering the locations of mountains in India, which one among the following is in right sequence from south to north?",
+        "sourceTextHash": "f1df8ea8bc6bcca2fadc7c9ba87fba11d9a886a600b087a6b54ca3ef70d7a85f",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 116,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Considering the locations of mountains in India, which one among the following is in right sequence from south to north?"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 116,
+        "subject": "Geography",
+        "topic": "Biodiversity & Protected Areas",
+        "subtopic": "National Parks & Wildlife",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Considering the locations of mountains in India, which one among the following is in right sequence from south to north?"
+        ],
+        "options": {
+          "A": "Doddabetta, Kailash, Dhaulagiri, Vindhyachal",
+          "B": "Doddabetta, Vindhyachal, Dhaulagiri, Kailash",
+          "C": "Dhaulagiri, Kailash, Doddabetta, Vindhyachal",
+          "D": "Dhaulagiri, Vindhyachal, Doddabetta, Kailash"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-121",
+      "sha256": "c9c9ade9cbdd8e7970b00e5f70f47e63f85a1a3882d77626d9b83f15ac78ca71",
+      "value": {
+        "id": "nda-2014-i-121",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which one among the following lakes is situated on the west coast of India?",
+        "sourceTextHash": "f5d600c4bbf466534f1d7a0078235bf2760344c0ce37cc2526bb6493fa331100",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 121,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Which one among the following lakes is situated on the west coast of India?"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 121,
+        "subject": "Geography",
+        "topic": "Drainage & Water Resources",
+        "subtopic": "Rivers, Lakes & River Projects",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Which one among the following lakes is situated on the west coast of India?"
+        ],
+        "options": {
+          "A": "Chilika",
+          "B": "Ashtamudi",
+          "C": "Pulicat",
+          "D": "Kolleru"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-138",
+      "sha256": "cfa469d387e0098fa920599627e3d30166d09da564cce5567ed655b3c64f4c91",
+      "value": {
+        "id": "nda-2014-i-138",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Which of the following is/are the most likely cause/causes of sheet-flood found in western part of Rajasthan? 1. Scanty rainfall 2. Sudden high intensity rain 3. Loose sandy soil with scanty vegetation Select the correct answer using the code given below.",
+        "sourceTextHash": "4decad8c92e41fa35e693b3dc055eb238ac5edcae31adadaa0558448ad3a7cc3",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 138,
+          "answerStatus": "manual_transcription_from_answer_key_render",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Which of the following is/are the most likely cause/causes of sheet-flood found in western part of Rajasthan? 1. Scanty rainfall 2. Sudden high intensity rain 3. Loose sandy soil with scanty vegetation Select the correct answer using the code given below."
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 138,
+        "subject": "Geography",
+        "topic": "Climate & Monsoon",
+        "subtopic": "Indian Monsoon & Rainfall",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Which of the following is/are the most likely cause/causes of sheet-flood found in western part of Rajasthan? 1. Scanty rainfall 2. Sudden high intensity rain 3. Loose sandy soil with scanty vegetation Select the correct answer using the code given below."
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-139",
+      "sha256": "e800e45308d19ecd1ea892c12d3e27889668c5ee19711621cd8ee1661a44a25d",
+      "value": {
+        "id": "nda-2014-i-139",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Mulching, an agronomic measure of soil conservation, is very effective because it 1. protects soil from gully erosion 2. protects soil from sheetwash and wind erosion 3. helps soil to retain moisture and nutrients Select the correct answer using the code given below.",
+        "sourceTextHash": "3081d2a8bc59a2612156beb4c4bb8a4b3314417ab01fe71a9d261a945f45b49b",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 139,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Mulching, an agronomic measure of soil conservation, is very effective because it 1. protects soil from gully erosion 2. protects soil from sheetwash and wind erosion 3. helps soil to retain moisture and nutrients Select the correct answer using the code given below."
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 139,
+        "subject": "Geography",
+        "topic": "Soils, Natural Vegetation & Forests",
+        "subtopic": "Soils & Soil Conservation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Mulching, an agronomic measure of soil conservation, is very effective because it 1. protects soil from gully erosion 2. protects soil from sheetwash and wind erosion 3. helps soil to retain moisture and nutrients Select the correct answer using the code given below."
+        ],
+        "options": {
+          "A": "1 only",
+          "B": "1 and 2 only",
+          "C": "2 and 3 only",
+          "D": "1, 2 and 3"
+        },
+        "answer": "C",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-130",
+      "sha256": "15bf1b59351a097b7ea25c2693ad9a8061878a15e499628456bcde7bf07c77b3",
+      "value": {
+        "id": "nda-2014-i-130",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "The Faroe is a group of islands lying in the Atlantic Ocean between Scotland and Iceland. This island group is also known as",
+        "sourceTextHash": "ddbd0dbe10ec4f8c41e5cc583cc6d31f09d6f76cc48d22fe64ed750d6a18ea6c",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 130,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "The Faroe is a group of islands lying in the Atlantic Ocean between Scotland and Iceland. This island group is also known as"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 130,
+        "subject": "Geography",
+        "topic": "World Places & Routes",
+        "subtopic": "Islands & Regions",
+        "difficulty": "Easy",
+        "promptLines": [
+          "The Faroe is a group of islands lying in the Atlantic Ocean between Scotland and Iceland. This island group is also known as"
+        ],
+        "options": {
+          "A": "Island of Sheep",
+          "B": "Island of Goats",
+          "C": "Island of Cows",
+          "D": "Island of Buffaloes"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-135",
+      "sha256": "258fd39e8494f9fd3bdb973e1ee3cddbf16bcf21068c6d7171a48e2da23c4400",
+      "value": {
+        "id": "nda-2014-i-135",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Region) A. Selvas B. Savanna C. Tundra D. Monsoon land List-II (Characteristic vegetation) 1. Tropophytes 2. Mosses and lichens 3. Epiphytes 4. Grasses and trees",
+        "sourceTextHash": "b469923fe92668660fd186caea6979f87fca24968e114893d57643ad0f3fa140",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 135,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Region) A. Selvas B. Savanna C. Tundra D. Monsoon land List-II (Characteristic vegetation) 1. Tropophytes 2. Mosses and lichens 3. Epiphytes 4. Grasses and trees"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 135,
+        "subject": "Geography",
+        "topic": "World Natural Regions",
+        "subtopic": "Biomes & Vegetation",
+        "difficulty": "Moderate",
+        "promptLines": [
+          "Match List-I with List-II and select the correct answer using the code given below the Lists: List-I (Region) A. Selvas B. Savanna C. Tundra D. Monsoon land List-II (Characteristic vegetation) 1. Tropophytes 2. Mosses and lichens 3. Epiphytes 4. Grasses and trees"
+        ],
+        "options": {
+          "A": "A-3, B-2, C-4, D-1",
+          "B": "A-1, B-4, C-2, D-3",
+          "C": "A-1, B-2, C-4, D-3",
+          "D": "A-3, B-4, C-2, D-1"
+        },
+        "answer": "D",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-112",
+      "sha256": "d34d6ac821d2f5316e85a1db5c3841cf6985a2fa3ce00677de8eb5cfcbb86005",
+      "value": {
+        "id": "nda-2014-i-112",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Lapland is a cultural region largely within the Arctic Circle in the north of the Scandinavian Peninsula. Who inhabited the Lapland?",
+        "sourceTextHash": "2d426f9a05deef4559eef391d52397df92a013bad00d76cc244626088779c017",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 112,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Lapland is a cultural region largely within the Arctic Circle in the north of the Scandinavian Peninsula. Who inhabited the Lapland?"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 112,
+        "subject": "Geography",
+        "topic": "Tribes & Cultural Geography",
+        "subtopic": "Tribes and Nomadic Communities",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Lapland is a cultural region largely within the Arctic Circle in the north of the Scandinavian Peninsula. Who inhabited the Lapland?"
+        ],
+        "options": {
+          "A": "Sami people",
+          "B": "Padaung people",
+          "C": "Hamar people",
+          "D": "Himba people"
+        },
+        "answer": "A",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    },
+    {
+      "id": "nda-2014-i-132",
+      "sha256": "32e303b2a33240890311e49dfd73d80b91825ed99fa73d7a31593cf7027dd8d1",
+      "value": {
+        "id": "nda-2014-i-132",
+        "origin": "pyq",
+        "sourceTextLocked": true,
+        "sourceText": "Tuareg is a pastoral nomad living in the desert of",
+        "sourceTextHash": "3f397b762bf49ff125b0148bd784ac364dc0f2286f34deaa2a221e5113f1900a",
+        "source": {
+          "dataset": "NDA GAT verified answer-key bank",
+          "year": 2014,
+          "paper": "I",
+          "questionNumber": 132,
+          "answerStatus": "imported_from_answer_key",
+          "answerSource": "https://blogmedia.testbook.com/blog/wp-content/uploads/2020/04/nda-general-ability-test-answers-2014-i-950de527.pdf",
+          "rawQuestionText": "Tuareg is a pastoral nomad living in the desert of"
+        },
+        "exam": "NDA",
+        "year": 2014,
+        "paper": "I",
+        "questionNumber": 132,
+        "subject": "Geography",
+        "topic": "Tribes & Cultural Geography",
+        "subtopic": "Tribes and Nomadic Communities",
+        "difficulty": "Easy",
+        "promptLines": [
+          "Tuareg is a pastoral nomad living in the desert of"
+        ],
+        "options": {
+          "A": "Kalahari",
+          "B": "Sahara",
+          "C": "Arabia",
+          "D": "Patagonia"
+        },
+        "answer": "B",
+        "explanation": "Explanation pending editorial review.",
+        "requiresFigure": false
+      }
+    }
+  ]
+}

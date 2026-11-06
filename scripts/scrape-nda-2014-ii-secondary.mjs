@@ -1,8 +1,11 @@
 import fs from 'node:fs';
 
 const base = 'https://questions.examside.com';
-const paperPath = '/past-years/year-wise/defence/nda/nda-general-ability-28-september-2014';
-const source = fs.readFileSync('tmp/pdfs/nda-2014-ii/examside.html', 'utf8');
+const paperSlug = process.argv[2] ?? 'nda-general-ability-28-september-2014';
+const workspace = process.argv[3] ?? 'nda-2014-ii';
+const allowMissingSecondaryAnswers = process.argv.includes('--allow-missing-secondary-answers');
+const paperPath = `/past-years/year-wise/defence/nda/${paperSlug}`;
+const source = fs.readFileSync(`tmp/pdfs/${workspace}/examside.html`, 'utf8');
 
 const decode = (value) => value
   .replace(/&nbsp;/g, ' ')
@@ -76,7 +79,7 @@ for (const [href, html] of htmlByHref) {
       answer,
       explanation,
     };
-    if (optionMatches.length === 4) questions.set(qid, record);
+    if (optionMatches.length >= 3 && optionMatches.length <= 4) questions.set(qid, record);
   }
 }
 
@@ -97,6 +100,10 @@ async function answerWorker() {
     });
     const result = await response.json();
     if (result.status !== 'success' || result.err_code !== 0 || !Array.isArray(result.corrects) || result.corrects.length !== 1) {
+      if (allowMissingSecondaryAnswers) {
+        question.answer = '';
+        continue;
+      }
       throw new Error(`Could not resolve answer for ${question.qid}`);
     }
     question.answer = 'ABCD'[result.corrects[0]];
@@ -104,8 +111,8 @@ async function answerWorker() {
 }
 await Promise.all(Array.from({ length: 8 }, answerWorker));
 
-fs.writeFileSync('tmp/pdfs/nda-2014-ii/secondary.json', `${JSON.stringify({ paperPath, subjects, questions: output }, null, 2)}\n`);
-if (output.length !== 150 || output.some((question) => !question.answer)) {
+fs.writeFileSync(`tmp/pdfs/${workspace}/secondary.json`, `${JSON.stringify({ paperPath, subjects, questions: output }, null, 2)}\n`);
+if (output.length !== 150 || (!allowMissingSecondaryAnswers && output.some((question) => !question.answer))) {
   throw new Error(`Expected 150 answered questions, got ${output.length} records and ${output.filter((question) => question.answer).length} answers`);
 }
 console.log(`Captured ${output.length} complete secondary records.`);

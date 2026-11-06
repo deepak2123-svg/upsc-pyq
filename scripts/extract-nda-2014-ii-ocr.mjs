@@ -3,11 +3,14 @@ import { spawnSync } from 'node:child_process';
 import sharp from 'sharp';
 
 const tesseract = 'C:/Program Files/Tesseract-OCR/tesseract.exe';
-const pages = Array.from({ length: 18 }, (_, index) => 14 + index * 2);
+const workspace = process.argv[2] ?? 'nda-2014-ii';
+const firstPage = Number(process.argv[3] ?? 14);
+const pageCount = Number(process.argv[4] ?? 18);
+const pages = Array.from({ length: pageCount }, (_, index) => firstPage + index * 2);
 const records = [];
 
 for (const page of pages) {
-  const image = `tmp/pdfs/nda-2014-ii/page-${String(page).padStart(2, '0')}.png`;
+  const image = `tmp/pdfs/${workspace}/page-${String(page).padStart(2, '0')}.png`;
   const metadata = await sharp(image).metadata();
   const tsv = spawnSync(tesseract, [image, 'stdout', '-l', 'eng', '--psm', '3', 'tsv'], { encoding: 'utf8' });
   if (tsv.status !== 0) throw new Error(tsv.stderr);
@@ -30,5 +33,5 @@ for (const page of pages) {
   }
 }
 
-fs.writeFileSync('tmp/pdfs/nda-2014-ii/question-crops.json', `${JSON.stringify(records, null, 2)}\n`);
+fs.writeFileSync(`tmp/pdfs/${workspace}/question-crops.json`, `${JSON.stringify(records, null, 2)}\n`);
 console.log(`Extracted ${records.length} numbered crops covering ${new Set(records.map((record) => record.number)).size} source numbers.`);
