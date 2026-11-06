@@ -1,19 +1,20 @@
 /* A quiet reading surface; exam colours identify provenance, not correctness. */
 .exam-experience { --exam-text: #202733; background: #f4f6f8; color: var(--exam-text); }
-.exam-experience .practice-topbar { width: min(1760px, calc(100% - 32px)); height: 68px; grid-template-columns: 72px minmax(190px,1fr) auto auto 88px; gap: 20px; }
+.exam-experience .practice-topbar { position:relative; width: min(1760px, calc(100% - 32px)); height: 76px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
 .exam-experience .practice-topbar > a { font-size: 14px; }
-.practice-paper-title { display:grid; gap:2px; min-width:0; }
+.practice-paper-title { position:absolute; left:50%; transform:translateX(-50%); display:grid; gap:3px; min-width:0; max-width:min(620px,48vw); text-align:center; }
 .practice-paper-title strong { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:15px; font-weight:720; }
 .practice-paper-title small { color:#687386; font-size:10px; }
+.practice-topbar-actions { display:flex; align-items:center; justify-content:flex-end; gap:10px; margin-left:auto; }
 .exam-experience .practice-session-title strong { font-size: 14px; font-weight: 680; letter-spacing: -.015em; }
 .exam-experience .practice-session-title small { font-size: 11px; margin-top: 2px; }
 .exam-experience .practice-topbar button { min-height: 38px; padding: 8px 15px; font-size: 13px; font-weight: 650; }
-.practice-timer { display: grid; gap: 3px; text-align: right; }
+.practice-timer { min-width:100px; display:grid; gap:2px; padding:8px 12px; border:1px solid #d8dee8; border-radius:10px; background:#fff; text-align:center; box-shadow:0 3px 12px rgb(29 42 61 / 4%); }
 .practice-timer small { font-size: 11px; color: #586375; }
 .exam-experience .practice-timer time { font-size: 17px; font-weight: 650; letter-spacing: .02em; }
 .practice-timer.is-low time { color: #a33d13; }
 .exam-experience .practice-progress { height: 3px; }
-.exam-workspace { width: min(1760px, calc(100% - 32px)); margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) 520px; gap: 18px; align-items: start; }
+.exam-workspace { width: min(1760px, calc(100% - 32px)); margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) 450px; gap: 18px; align-items: start; }
 .exam-experience .practice-question { width: 100%; min-width: 0; margin-top: 22px; padding: 22px 24px 24px; box-sizing: border-box; border: 1px solid #dce1e8; border-radius: 14px; background: #fff; box-shadow: 0 8px 28px rgb(29 42 61 / 4%); }
 .exam-experience .question-heading { justify-content: space-between; align-items: center; font-size: 11px; gap: 16px; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid #e5e9ef; color: #647084; }
 .question-context { display: flex; align-items: center; gap: 9px; min-width: 0; }
@@ -272,7 +273,7 @@
 
 /* Reading-first online paper: question on the left, navigation on the right. */
 .exam-experience .practice-topbar, .exam-workspace { width: min(1760px,calc(100% - 32px)); }
-.exam-workspace { grid-template-columns: minmax(0,1fr) 520px; gap: 18px; padding-bottom: 24px; }
+.exam-workspace { grid-template-columns: minmax(0,1fr) 450px; gap: 18px; padding-bottom: 24px; }
 .exam-experience .practice-question { grid-column: 1; grid-row: 1; margin-top: 16px; padding: 18px 20px; border-radius: 14px; }
 .exam-experience .question-copy { display: block; }
 .exam-experience .question-heading { padding-bottom: 0; border-bottom: 0; margin-bottom: 16px; }
@@ -302,7 +303,7 @@
 .exam-experience .palette-legend { display: flex; flex-wrap: wrap; gap: 8px 12px; border: 0; padding: 0; margin: 12px 0; font-size: 11px; }
 .exam-experience .palette-legend i { width: 12px; height: 12px; border: 0; border-radius: 4px; }
 .exam-experience .palette-grid { grid-template-columns: repeat(10,minmax(0,1fr)); gap: 6px; margin: 8px 0 0; }
-.exam-experience .palette-grid button { min-height: 36px; font-size: 13px; border: 0; border-radius: 9px; }
+.exam-experience .palette-grid button { aspect-ratio:auto; height:34px; min-height:34px; font-size:12px; border:0; border-radius:8px; }
 .exam-experience .palette-grid button.unanswered, .exam-experience .palette-legend i.unanswered { background: #e7eaf3; color: #4b576c; }
 .exam-experience .palette-grid button.answered, .exam-experience .palette-legend i.answered { background: #198c5a; color: white; }
 .exam-experience .palette-grid button.saved:not(.answered), .exam-experience .palette-legend i.saved { background: #ffbb32; color: #553d00; }
@@ -315,9 +316,7 @@
   .exam-experience .palette-grid { grid-template-columns: repeat(10,minmax(0,1fr)); }
 }
 @media (max-width: 959px) {
-  .exam-experience .practice-topbar { grid-template-columns:60px minmax(0,1fr) auto 76px; }
-  .practice-paper-title { grid-column:2; }
-  .practice-session-title { display:none; }
+  .practice-paper-title { position:static; transform:none; max-width:46vw; margin:auto; }
   .exam-workspace { display: flex; flex-direction: column; }
   .exam-experience .question-palette { order: -1; width: 100%; margin-top: 18px; }
   .exam-experience .practice-question { margin-top: 0; }
@@ -325,9 +324,11 @@
 }
 @media (max-width: 599px) {
   .exam-experience .practice-topbar, .exam-workspace { width: calc(100% - 28px); }
-  .exam-experience .practice-topbar { grid-template-columns:44px minmax(0,1fr) auto 65px; }
+  .exam-experience .practice-topbar { min-height:70px; }
   .practice-paper-title strong { font-size:12px; }
   .practice-paper-title small { display:none; }
+  .practice-timer { min-width:72px; padding:6px 8px; }
+  .practice-topbar-actions { gap:6px; }
   .exam-experience .practice-question { padding: 16px 14px; border-radius: 12px; }
   .exam-experience .question-heading { gap: 10px; margin-bottom: 16px; }
   .question-context .question-subject-badge, .question-context .question-topic-badge { padding: 5px 9px; font-size: 10px; }

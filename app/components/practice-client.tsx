@@ -39,8 +39,14 @@ function officialPaperTitle(questions: PracticeQuestion[]) {
   if (!first) return "Official paper";
   const singleSource = questions.every((question) => question.exam === first.exam && question.year === first.year && question.paper === first.paper);
   if (!singleSource) return "Combined official papers";
-  const paperName = questions.every((question) => question.subject === "Mathematics") ? "Mathematics" : first.exam === "NDA" ? "GAT" : first.subject;
-  return `${first.exam} · ${paperName} ${first.paper} · ${first.year}`;
+  const mathematics = questions.every((question) => question.subject === "Mathematics");
+  if (first.exam === "NDA") return `NDA · ${mathematics ? "Mathematics" : "GAT"} ${first.paper} · ${first.year}`;
+  if (first.exam === "CDS") {
+    const paperName = mathematics ? "Elementary Mathematics" : questions.every((question) => question.subject === "English") ? "English" : "General Knowledge";
+    return `CDS ${first.paper} · ${paperName} · ${first.year}`;
+  }
+  if (first.exam === "CAPF") return `CAPF · Paper ${first.paper} · ${first.year}`;
+  return `CSE · General Studies · ${first.year}`;
 }
 
 function isOfficialPaperSession(attempt: LocalAttempt) {
@@ -318,7 +324,6 @@ export function PracticeClient({ id }: { id: string }) {
   if (attempt === undefined) return <main className="practice-loading" aria-busy="true"><div /><div /><div /></main>;
   if (!attempt || !question) return <main className="practice-missing"><p className="pyq-kicker">Local practice</p><h1>This session is not on this device.</h1><p>{error || "Practice history is stored only in this browser."}</p><Link href="/">Return to PYQs</Link></main>;
 
-  const answered = attempt.snapshot.questions.filter((item) => Boolean(attempt.answers[item.id])).length;
   const clock = attemptClock(attempt, now);
   const locked = busy || saveFailed || Boolean(pendingCompletion.current) || clock.expired || attempt.status === "completed";
   const isTimed = clock.remainingSeconds !== null;
@@ -332,9 +337,7 @@ export function PracticeClient({ id }: { id: string }) {
       <header className="practice-topbar">
         <Link href={attemptReturnPath(attempt)} aria-label="Exit test" onClick={(event) => { if (busy || saveFailed || pendingCompletion.current) { event.preventDefault(); setError("Save your latest progress before leaving this page."); } }}>← Exit</Link>
         <span className="practice-paper-title">{officialPaper ? <><strong>{officialPaperTitle(attempt.snapshot.questions)}</strong><small>Official paper practice</small></> : <><strong>Practice session</strong><small>Thematic MCQs</small></>}</span>
-        <span className="practice-session-title"><strong>Question {attempt.currentIndex + 1} of {attempt.snapshot.questions.length}</strong><small aria-live="polite" aria-atomic="true">{answered} answered</small></span>
-        <div className={`practice-timer ${isTimed && timerValue <= 60 && attempt.status !== "completed" ? "is-low" : ""}`}><small>{isTimed && attempt.status !== "completed" ? "Time left" : "Elapsed"}</small><time aria-label={`${isTimed && attempt.status !== "completed" ? "Time remaining" : "Elapsed time"} ${formatPracticeTime(timerValue)}`}>{formatPracticeTime(timerValue)}</time></div>
-        <button disabled={busy} onClick={() => void finish()}>{busy ? "Saving…" : attempt.status === "completed" ? "Results" : pendingCompletion.current ? "Retry saving" : "Finish"}</button>
+        <div className="practice-topbar-actions"><div className={`practice-timer ${isTimed && timerValue <= 60 && attempt.status !== "completed" ? "is-low" : ""}`}><small>{isTimed && attempt.status !== "completed" ? "Time left" : "Elapsed time"}</small><time aria-label={`${isTimed && attempt.status !== "completed" ? "Time remaining" : "Elapsed time"} ${formatPracticeTime(timerValue)}`}>{formatPracticeTime(timerValue)}</time></div><button disabled={busy} onClick={() => void finish()}>{busy ? "Saving…" : attempt.status === "completed" ? "Results" : pendingCompletion.current ? "Retry saving" : "Finish"}</button></div>
       </header>
       {error && <div className="practice-save-error" role="alert"><p>{error}</p>{saveFailed && !pendingCompletion.current && <button onClick={() => { const value = current.current; if (value) void saveChange(value); }}>Retry saving</button>}</div>}
       <div className="exam-workspace">
@@ -364,7 +367,7 @@ export function PracticeClient({ id }: { id: string }) {
           {feedback && <section className={`answer-feedback ${feedback.disposition === 'excluded' ? 'is-excluded' : !selectedAnswer ? "is-unattempted" : feedback.correct ? "is-correct" : "is-incorrect"}`}><div><strong>{feedback.disposition === 'excluded' ? 'Excluded from score' : !selectedAnswer ? `Unattempted · Correct answer: ${feedbackAnswerLabel(feedback)}` : feedback.correct ? `Correct · Answer ${feedbackAnswerLabel(feedback)}` : `Correct answer: ${feedbackAnswerLabel(feedback)} · Your answer: ${selectedAnswer}`}</strong></div>{feedback.explanation ? <p><MathText value={feedback.explanation}/></p> : <p className="explanation-unavailable">No published explanation is available for this question.</p>}</section>}
           <nav className="question-navigation" aria-label="Question navigation"><button disabled={busy || Boolean(pendingCompletion.current) || attempt.currentIndex === 0} onClick={() => void navigate(attempt.currentIndex - 1)}>← Previous</button><button className="bookmark-action" onClick={() => void toggleBookmark()}>{bookmarked ? "Saved" : "Save for later"}</button>{attempt.currentIndex < attempt.snapshot.questions.length - 1 ? <button className="next-question" disabled={busy || Boolean(pendingCompletion.current)} onClick={() => void navigate(attempt.currentIndex + 1)}>Save & next →</button> : <button className="next-question" disabled={busy} onClick={() => void finish()}>{attempt.status === "completed" ? "View results" : "Submit test"}</button>}</nav>
         </article>
-        <QuestionPalette questions={attempt.snapshot.questions} answers={attempt.answers} currentIndex={attempt.currentIndex} bookmarkedIds={bookmarkedIds} disabled={busy || Boolean(pendingCompletion.current)} sectioned={officialPaper} sectionElapsedSeconds={attempt.sectionElapsedSeconds || {}} onNavigate={jumpToQuestion} />
+        <QuestionPalette questions={attempt.snapshot.questions} answers={attempt.answers} currentIndex={attempt.currentIndex} bookmarkedIds={bookmarkedIds} disabled={busy || Boolean(pendingCompletion.current)} sectioned={officialPaper && question.exam === "NDA" && !attempt.snapshot.questions.every((item) => item.subject === "Mathematics")} sectionElapsedSeconds={attempt.sectionElapsedSeconds || {}} onNavigate={jumpToQuestion} />
       </div>
     </main>
   );

@@ -37,9 +37,7 @@ export function PaperPracticeWorkspace({ rows, years }: { rows: PaperPracticeRow
     return result;
   }, [rows]);
 
-  const toggle = (key: string) => setSelected(current => current.includes(key) ? current.filter(value => value !== key) : [...current, key]);
-  const rowKeys = (row: PaperPracticeRow) => years.filter(year => row.counts[year] > 0).map(year => `${row.id}:${year}`);
-  const quick = (wanted: number[]) => setSelected(rows.flatMap(row => wanted.filter(year => row.counts[year] > 0).map(year => `${row.id}:${year}`)));
+  const toggle = (key: string) => setSelected(current => current[0] === key ? [] : [key]);
 
   async function start() {
     setLoading(true); setError('');
@@ -62,21 +60,23 @@ export function PaperPracticeWorkspace({ rows, years }: { rows: PaperPracticeRow
     const row = rows.map(displayRow).find(item => key === `${item.id}:${year}`);
     return row ? [{ key, year, row, count: row.counts[year] || 0 }] : [];
   }).sort((a, b) => b.year - a.year || a.row.exam.localeCompare(b.row.exam) || a.row.paper.localeCompare(b.row.paper));
+  const expectedQuestions = (row: DisplayRow) => row.exam === 'NDA' ? (/mathemat/i.test(row.paper) ? 120 : 150) : row.exam === 'CDS' ? (/mathemat/i.test(row.paper) ? 100 : 120) : row.exam === 'CAPF' ? 125 : 100;
+  const dropped = selectedPapers[0] ? Math.max(0, expectedQuestions(selectedPapers[0].row) - selectedPapers[0].count) : 0;
 
   return <main className="pyq-page paper-practice-page">
-    <header className="paper-practice-title"><p className="pyq-kicker">Whole-paper practice</p><h1>Practice official papers</h1><p>Select one paper or combine several papers. Every question comes only from the paper cells you choose.</p></header>
+    <header className="paper-practice-title"><p className="pyq-kicker">Whole-paper practice</p><h1>Practice official papers</h1><p>Select one official paper. Every question comes only from that paper.</p></header>
     <div className="paper-practice-layout"><section className="source-year-matrix paper-year-matrix" aria-labelledby="paper-grid-title">
-      <div className="source-year-heading"><div><h2 id="paper-grid-title">Paper bank</h2></div><div className="source-year-quick"><span>Quick</span><button disabled={!ready} onClick={() => quick(years)}>All</button><button disabled={!ready} onClick={() => quick(years.slice(-5))}>Last 5</button><button disabled={!ready} onClick={() => quick(years.slice(-10))}>Last 10</button><button disabled={!ready} onClick={() => setSelected([])}>Clear</button></div></div>
+      <div className="source-year-heading"><div><h2 id="paper-grid-title">Paper bank</h2></div>{selected.length ? <button className="paper-grid-clear" disabled={!ready || loading} onClick={() => setSelected([])}>Clear selection</button> : null}</div>
       <div className="source-year-scroll" role="region" aria-label="Previous paper selection grid">
         <div className="paper-grouped-grid" style={{ '--year-columns': years.length } as CSSProperties}>
           <span className="paper-column-heading">Exam</span><span className="paper-column-heading">Attempt</span><span className="paper-column-heading">Paper</span>
-          {displayYears.map(year => <button key={year} disabled={!ready} className="source-year-column" onClick={() => { const keys = rows.filter(row => row.counts[year] > 0).map(row => `${row.id}:${year}`); const enable = keys.some(key => !selected.includes(key)); setSelected(current => enable ? [...new Set([...current, ...keys])] : current.filter(key => !keys.includes(key))); }}>{year}</button>)}
+          {displayYears.map(year => <span key={year} className="source-year-column">{year}</span>)}
           {groups.map(exam => <div className="paper-exam-group" key={exam.exam} style={{ '--exam-color': exam.color } as CSSProperties}>
             <div className="paper-merged-exam" style={{ gridRow: `span ${exam.attempts.reduce((sum, item) => sum + item.rows.length, 0)}` }}><i aria-hidden="true" /> <strong>{exam.exam}</strong></div>
             {exam.attempts.map(attempt => <div className="paper-attempt-group" key={`${exam.exam}-${attempt.attempt}`}>
               <div className="paper-merged-attempt" style={{ gridRow: `span ${attempt.rows.length}` }}><strong>{attempt.attempt}</strong></div>
               {attempt.rows.map(row => <div className="paper-grid-row" key={row.id}>
-                <button disabled={!ready} className="paper-row-label" aria-label={row.label} aria-pressed={rowKeys(row).some(key => selected.includes(key))} onClick={() => { const keys = rowKeys(row); const enable = keys.some(key => !selected.includes(key)); setSelected(current => enable ? [...new Set([...current, ...keys])] : current.filter(key => !keys.includes(key))); }}><strong>{row.paper}</strong></button>
+                <div className="paper-row-label"><strong>{row.paper}</strong></div>
                 {displayYears.map(year => { const key = `${row.id}:${year}`, count = row.counts[year] || 0, active = selected.includes(key); return <button key={year} disabled={!ready || !count || loading} className="source-year-cell" aria-pressed={active} aria-label={`${row.label} ${year}, ${count} questions, ${active ? 'selected' : 'not selected'}`} onClick={() => toggle(key)}>{count}</button>; })}
               </div>)}
             </div>)}
@@ -84,6 +84,6 @@ export function PaperPracticeWorkspace({ rows, years }: { rows: PaperPracticeRow
         </div>
       </div>
     </section>
-    <aside className="paper-selection-bar" aria-label="Selected papers"><header className="paper-cart-heading"><h2>Practice cart</h2>{selected.length ? <button type="button" disabled={loading} onClick={() => setSelected([])}>Clear all</button> : null}</header><div className="paper-cart-body"><strong>{selected.length ? `${selected.length} selected ${selected.length === 1 ? 'paper' : 'papers'}` : 'No papers selected'}</strong>{selectedPapers.length ? <ul className="paper-cart-items">{selectedPapers.map(item => <li key={item.key} style={{'--exam-color':item.row.color} as CSSProperties}><i aria-hidden="true"/><div><strong>{item.row.exam} {item.year}{item.row.attempt !== '—' ? ` · Attempt ${item.row.attempt}` : ''}</strong><span>{item.row.paper} · {item.count.toLocaleString('en-IN')} MCQs</span></div><button type="button" disabled={loading} aria-label={`Remove ${item.row.exam} ${item.year} ${item.row.attempt !== '—' ? `Attempt ${item.row.attempt} ` : ''}${item.row.paper}`} onClick={() => toggle(item.key)}>Remove</button></li>)}</ul>:<span>Select one or more paper-year cells from the table.</span>}</div><footer className="paper-cart-footer"><div><strong>{total.toLocaleString('en-IN')}</strong><span>questions</span></div><button disabled={!ready || !selected.length || loading} onClick={() => void start()}>{loading ? 'Preparing…' : selected.length === 1 ? 'Start selected paper →' : 'Start selected papers →'}</button></footer>{error ? <p role="alert">{error}</p> : null}</aside></div>
+    <aside className="paper-selection-bar" aria-label="Selected paper"><header className="paper-cart-heading"><h2>Practice paper</h2>{selected.length ? <button type="button" disabled={loading} onClick={() => setSelected([])}>Clear</button> : null}</header><div className="paper-cart-body"><strong>{selected.length ? 'Selected paper' : 'No paper selected'}</strong>{selectedPapers.length ? <ul className="paper-cart-items">{selectedPapers.map(item => <li key={item.key} style={{'--exam-color':item.row.color} as CSSProperties}><i aria-hidden="true"/><div><strong>{item.row.exam} {item.year}{item.row.attempt !== '—' ? ` · Attempt ${item.row.attempt}` : ''}</strong><span>{item.row.paper} · {item.count.toLocaleString('en-IN')} MCQs</span></div><button type="button" disabled={loading} aria-label={`Remove ${item.row.exam} ${item.year} ${item.row.attempt !== '—' ? `Attempt ${item.row.attempt} ` : ''}${item.row.paper}`} onClick={() => toggle(item.key)}>Remove</button></li>)}</ul>:<span>Select one paper-year cell from the table.</span>}{selected.length ? <p className={`paper-cart-availability ${dropped ? 'has-dropped' : ''}`}>{dropped ? <><strong>{dropped} {dropped === 1 ? 'question is' : 'questions are'} dropped</strong><span>This practice will contain the {total.toLocaleString('en-IN')} currently available questions.</span></> : <><strong>Complete paper available</strong><span>All {total.toLocaleString('en-IN')} questions are included.</span></>}</p> : null}</div><footer className="paper-cart-footer"><div><strong>{total.toLocaleString('en-IN')}</strong><span>questions in this practice</span></div><button disabled={!ready || !selected.length || loading} onClick={() => void start()}>{loading ? 'Preparing…' : 'Start selected paper →'}</button></footer>{error ? <p role="alert">{error}</p> : null}</aside></div>
   </main>;
 }

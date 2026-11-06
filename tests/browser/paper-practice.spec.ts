@@ -9,17 +9,20 @@ test('whole-paper practice keeps term and subject selections exact',async({page}
  await expect(page.getByRole('heading',{name:'Paper bank'})).toBeVisible();
  const years=await page.locator('.source-year-column').allTextContents();
  expect(years.slice(0,3)).toEqual(['2026','2025','2024']);
- await expect(page.getByRole('button',{name:'2026',exact:true})).toBeVisible();
+ await expect(page.locator('.source-year-column',{hasText:'2026'})).toBeVisible();
  const gridBox=await page.locator('.paper-year-matrix').boundingBox(),cartBox=await page.locator('.paper-selection-bar').boundingBox();
  expect(gridBox&&cartBox&&cartBox.x>=gridBox.x+gridBox.width).toBeTruthy();
  expect(gridBox?.y).toBeLessThan(320);
  expect(await page.locator('.source-year-scroll').evaluate(element=>element.scrollWidth<=element.clientWidth+1)).toBe(true);
- const startButton=page.getByRole('button',{name:'Start selected papers →'});
+ const startButton=page.getByRole('button',{name:'Start selected paper →'});
  await expect(startButton).toBeVisible();
  await expect(startButton).toBeDisabled();
  await expect(startButton).toHaveCSS('background-color','rgb(36, 87, 214)');
  await expect(page.getByRole('button',{name:'NDA II · Mathematics 2026, 120 questions, not selected'})).toBeVisible();
  expect(errors).toEqual([]);
+ await page.getByRole('button',{name:'CAPF · Paper I 2019, 22 questions, not selected'}).click();
+ await expect(page.locator('.paper-cart-availability')).toContainText('103 questions are dropped');
+ await expect(page.locator('.paper-cart-availability')).toContainText('22 currently available questions');
  await page.getByRole('button',{name:'NDA II · Mathematics 2026, 120 questions, not selected'}).click();
  await expect(page.getByRole('button',{name:'NDA II · Mathematics 2026, 120 questions, selected'})).toBeVisible();
  await expect(page.locator('.paper-cart-items')).toContainText('NDA 2026 · Attempt II');
@@ -28,14 +31,16 @@ test('whole-paper practice keeps term and subject selections exact',async({page}
  await expect(page.getByRole('button',{name:'Start selected paper →'})).toBeEnabled();
  await page.getByRole('button',{name:'NDA II · GAT 2026, 150 questions, not selected'}).click();
  await expect(page.locator('.paper-cart-items')).toContainText('GAT · 150 MCQs');
- await expect(page.locator('.paper-cart-footer')).toContainText('270');
+ await expect(page.locator('.paper-cart-items')).not.toContainText('Mathematics');
+ await expect(page.locator('.paper-cart-footer')).toContainText('150');
  await expect(page.locator('.paper-cart-footer')).toContainText('questions');
+ await expect(page.locator('.paper-cart-availability')).toContainText('Complete paper available');
  await expect(startButton).toBeEnabled();
  const response=page.waitForResponse(value=>value.url().endsWith('/api/practice-snapshots')&&value.request().method()==='POST');
  await startButton.click();
  const snapshot=await (await response).json();
  expect(snapshot.recipe.version).toBe(5);
- expect(snapshot.questions).toHaveLength(270);
+ expect(snapshot.questions).toHaveLength(150);
  expect(new Set(snapshot.questions.map((question:{year:number})=>question.year))).toEqual(new Set([2026]));
  expect(new Set(snapshot.questions.map((question:{exam:string})=>question.exam))).toEqual(new Set(['NDA']));
  await expect(page).toHaveURL(/\/practice\//);
@@ -47,15 +52,27 @@ test('whole-paper practice keeps term and subject selections exact',async({page}
  await expect(page.getByRole('heading',{name:'Performance by subject and topic',exact:true})).toHaveCount(0);
  const performance=page.getByRole('table',{name:'Paper performance breakdown',exact:true});
  await expect(performance).toContainText('NDA');
- await expect(performance).toContainText('Mathematics');
+ await expect(performance).toContainText('English');
  await expect(page.getByRole('heading',{name:'Answers and question review',exact:true})).toBeVisible();
 });
 
 test('paper grid lists all CDS subjects for both terms',async({page})=>{
  await page.goto('/papers');
- for(const label of ['CDS I · English','CDS I · General Knowledge','CDS I · Elementary Mathematics','CDS II · English','CDS II · General Knowledge','CDS II · Elementary Mathematics'])await expect(page.getByRole('button',{name:label,exact:true})).toBeVisible();
+ for(const label of ['English','General Knowledge','Elementary Mathematics'])await expect(page.locator('.paper-row-label',{hasText:label})).toHaveCount(2);
  await page.setViewportSize({width:390,height:844});
  await expect(page.locator('.source-year-scroll')).toBeVisible();
  await expect(page.locator('.paper-selection-bar')).toHaveCSS('position','static');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+
+test('short official papers use a compact ten-column navigator and centred paper heading',async({page})=>{
+ await page.setViewportSize({width:1600,height:900});
+ await page.goto('/papers');
+ await page.getByRole('button',{name:'CAPF · Paper I 2019, 22 questions, not selected'}).click();
+ await page.getByRole('button',{name:'Start selected paper →'}).click();
+ await expect(page.locator('.practice-paper-title')).toContainText('CAPF · Paper I · 2019');
+ await expect(page.locator('.practice-session-title')).toHaveCount(0);
+ await expect(page.locator('.palette-section')).toHaveCount(0);
+ await expect.poll(()=>page.locator('.palette-grid').evaluate(element=>getComputedStyle(element).gridTemplateColumns.split(' ').length)).toBe(10);
+ await expect(page.locator('.practice-timer')).toHaveCSS('border-top-style','solid');
 });
