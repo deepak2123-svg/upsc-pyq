@@ -102,6 +102,9 @@
 .exam-experience .practice-topbar button:disabled, .exam-results button:disabled { opacity: .5; cursor: wait; }
 
 .exam-results { width: min(1240px, calc(100% - 64px)); padding-bottom: 72px; }
+.result-page-nav { display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:54px; margin-bottom:18px; padding-bottom:14px; border-bottom:1px solid #e0e5ec; }
+.result-page-nav .pyq-brand { flex:0 0 auto; }
+.result-page-nav .back-link { margin:0; }
 .exam-results .result-summary { padding-bottom: 30px; border-bottom-color: #d8dfe8; }
 .result-sheet-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
 .exam-results .result-summary h1 { margin: 8px 0; font-size: clamp(32px, 4vw, 48px); letter-spacing: -.045em; line-height: 1.15; }
@@ -249,6 +252,7 @@
   .exam-experience .question-navigation button { padding-inline: 12px; }
   .practice-save-error { width: calc(100% - 28px); }
   .exam-results { width: calc(100% - 32px); }
+  .result-page-nav { min-height:48px; margin-bottom:14px; }
   .result-sheet-heading { gap: 12px; }
   .result-completion-reason { font-size: 10px; padding: 6px 8px; }
   .result-session-details { padding: 15px; gap: 18px 12px; }

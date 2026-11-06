@@ -47,6 +47,7 @@ test('whole-paper practice keeps term and subject selections exact',async({page}
  const graded=page.waitForResponse(value=>value.url().endsWith('/api/practice/grade')&&value.request().method()==='POST');
  await page.getByRole('button',{name:'Finish',exact:true}).click();
  expect((await graded).status()).toBe(200);
+ await expect(page.getByRole('link',{name:'UPSC.PYQ.Practise home',exact:true})).toHaveAttribute('href','/');
  await expect(page.getByRole('heading',{name:'Performance breakdown',exact:true})).toBeVisible();
  await expect(page.getByRole('heading',{name:'Performance by exam source',exact:true})).toHaveCount(0);
  await expect(page.getByRole('heading',{name:'Performance by subject and topic',exact:true})).toHaveCount(0);

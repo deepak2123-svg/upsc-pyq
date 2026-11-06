@@ -122,7 +122,7 @@ export function ResultsClient({ id }: { id: string }) {
   const wholePaperResult = 'version' in attempt.snapshot.recipe && attempt.snapshot.recipe.version === 5;
   return (
     <main className="results-page pyq-page exam-results">
-      <Link className="back-link result-no-print" href="/attempts">← Attempts</Link>
+      <header className="result-page-nav result-no-print"><Link className="pyq-brand" href="/" aria-label="UPSC.PYQ.Practise home"><span className="pyq-brand-mark" aria-hidden="true">PYQ</span><span>UPSC.PYQ.Practise</span></Link><Link className="back-link" href="/attempts">← Attempts</Link></header>
       <section className="result-summary">
         <div className="result-sheet-heading"><div><p className="pyq-kicker">Practice complete</p><h1>Result sheet</h1><p>{subjects || "Official PYQs"}</p></div><span className="result-completion-reason">{completed}</span></div>
         <dl className="result-session-details"><div><dt>Completed</dt><dd>{dateLabel(attempt.completedAt)}</dd></div><div><dt>Time taken</dt><dd>{formatPracticeTime(attempt.elapsedSeconds)}</dd></div><div><dt>Time limit</dt><dd>{duration === null ? "Untimed" : `${duration} minutes`}</dd></div><div><dt>Attempt ID</dt><dd>{attempt.id}</dd></div></dl>
