@@ -334,11 +334,11 @@ export function PracticeClient({ id }: { id: string }) {
   const singleOfficialPaper = officialPaper && attempt.snapshot.questions.every((item) => item.exam === question.exam && item.year === question.year && item.paper === question.paper);
   return (
     <main className="practice-shell exam-experience">
-      <header className="practice-topbar">
-        <Link href={attemptReturnPath(attempt)} aria-label="Exit test" onClick={(event) => { if (busy || saveFailed || pendingCompletion.current) { event.preventDefault(); setError("Save your latest progress before leaving this page."); } }}>← Exit</Link>
+      <div className="practice-header-shell"><header className="practice-topbar">
+        <Link href={attemptReturnPath(attempt)} aria-label="Exit test" onClick={(event) => { if (busy || saveFailed || pendingCompletion.current) { event.preventDefault(); setError("Save your latest progress before leaving this page."); } }}><span aria-hidden="true">‹</span> Exit</Link>
         <span className="practice-paper-title">{officialPaper ? <><strong>{officialPaperTitle(attempt.snapshot.questions)}</strong><small>Official paper practice</small></> : <><strong>Practice session</strong><small>Thematic MCQs</small></>}</span>
-        <div className="practice-topbar-actions"><div className={`practice-timer ${isTimed && timerValue <= 60 && attempt.status !== "completed" ? "is-low" : ""}`}><small>{isTimed && attempt.status !== "completed" ? "Time left" : "Elapsed time"}</small><time aria-label={`${isTimed && attempt.status !== "completed" ? "Time remaining" : "Elapsed time"} ${formatPracticeTime(timerValue)}`}>{formatPracticeTime(timerValue)}</time></div><button disabled={busy} onClick={() => void finish()}>{busy ? "Saving…" : attempt.status === "completed" ? "Results" : pendingCompletion.current ? "Retry saving" : "Finish"}</button></div>
-      </header>
+        <div className="practice-topbar-actions"><div className={`practice-timer ${isTimed && timerValue <= 60 && attempt.status !== "completed" ? "is-low" : ""}`}><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M12 10v4l2 1M9 3h6M12 3v3"/></svg><time aria-label={`${isTimed && attempt.status !== "completed" ? "Time remaining" : "Elapsed time"} ${formatPracticeTime(timerValue)}`}>{formatPracticeTime(timerValue)}</time></div><button className="finish-practice" disabled={busy} onClick={() => void finish()}>{busy ? "Saving…" : attempt.status === "completed" ? "Results" : pendingCompletion.current ? "Retry saving" : "Finish"}</button></div>
+      </header><div className="practice-progress" aria-hidden="true"><span style={{width:`${((attempt.currentIndex + 1) / attempt.snapshot.questions.length) * 100}%`}} /></div></div>
       {error && <div className="practice-save-error" role="alert"><p>{error}</p>{saveFailed && !pendingCompletion.current && <button onClick={() => { const value = current.current; if (value) void saveChange(value); }}>Retry saving</button>}</div>}
       <div className="exam-workspace">
         {/* Replace the question atomically: an exiting animated question must not

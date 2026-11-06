@@ -75,5 +75,9 @@ test('short official papers use a compact ten-column navigator and centred paper
  await expect(page.locator('.practice-session-title')).toHaveCount(0);
  await expect(page.locator('.palette-section')).toHaveCount(0);
  await expect.poll(()=>page.locator('.palette-grid').evaluate(element=>getComputedStyle(element).gridTemplateColumns.split(' ').length)).toBe(10);
- await expect(page.locator('.practice-timer')).toHaveCSS('border-top-style','solid');
+ await expect(page.locator('.practice-timer svg')).toBeVisible();
+ await expect(page.getByRole('button',{name:'Finish',exact:true})).toHaveCSS('background-color','rgb(224, 0, 0)');
+ await expect(page.locator('.practice-progress')).toBeVisible();
+ const titleBox=await page.locator('.practice-paper-title').boundingBox();
+ expect(titleBox&&Math.abs(titleBox.x+titleBox.width/2-800)).toBeLessThan(3);
 });
