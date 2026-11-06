@@ -18,7 +18,7 @@ assert.equal(archivedDecisionByNumber.size,14);
 assert.equal(archivedKey.visualIdentityReview.totalQuestions,150);
 assert.equal(archivedKey.visualIdentityReview.questionsDropped,1);
 assert.equal(archivedKey.visualIdentityReview.questionsTakenForScoring,149);
-assert.equal(hash(fs.readFileSync('../data/nda_answer_sources/answer_keys/2024_II.pdf')),archivedKey.archivedScanSha256);
+assert.equal(hash(fs.readFileSync('public/papers/nda-2024-ii-gat/archived-final-key.pdf')),archivedKey.archivedScanSha256);
 const raw=[...read('content/question-bank.json').questions,...read('content/reviewed-prelims-imports.json').questions];
 const before=new Map(register.rawBefore.map(b=>[b.id,b]));
 for(const b of before.values()){assert.equal(hash(b.value),b.sha256);assert.equal(hash(raw.find(q=>q.id===b.id)),b.sha256,`Original record changed: ${b.id}`);}
