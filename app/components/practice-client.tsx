@@ -21,12 +21,44 @@ const readingSizes: { value: ReadingSize; label: string; symbol: string }[] = [
   { value: "large", label: "Large question text", symbol: "A+" },
 ];
 
-const QuestionPalette = memo(function QuestionPalette({ questions, answers, currentIndex, bookmarkedIds, disabled, onNavigate }: {
+function paperSection(question: PracticeQuestion) {
+  if (question.exam === "NDA") {
+    if (question.subject === "Mathematics") return "Mathematics";
+    if (question.subject === "English") return "English";
+    if (/science|physics|chemistry|biology/i.test(question.subject)) return "Science";
+    return "General Studies";
+  }
+  if (question.section?.trim()) return question.section.trim();
+  if (question.subject === "English") return "English";
+  if (/science|physics|chemistry|biology/i.test(question.subject)) return "Science";
+  return "General Studies";
+}
+
+function officialPaperTitle(questions: PracticeQuestion[]) {
+  const first = questions[0];
+  if (!first) return "Official paper";
+  const singleSource = questions.every((question) => question.exam === first.exam && question.year === first.year && question.paper === first.paper);
+  if (!singleSource) return "Combined official papers";
+  const paperName = questions.every((question) => question.subject === "Mathematics") ? "Mathematics" : first.exam === "NDA" ? "GAT" : first.subject;
+  return `${first.exam} · ${paperName} ${first.paper} · ${first.year}`;
+}
+
+function isOfficialPaperSession(attempt: LocalAttempt) {
+  const recipe = attempt.snapshot.recipe;
+  if ("version" in recipe && recipe.version === 5) return true;
+  const first = attempt.snapshot.questions[0];
+  const singleSource = Boolean(first) && attempt.snapshot.questions.every((question) => question.exam === first.exam && question.year === first.year && question.paper === first.paper);
+  return singleSource && "version" in recipe && recipe.version === 4 && Boolean(recipe.frozenScopes?.length);
+}
+
+const QuestionPalette = memo(function QuestionPalette({ questions, answers, currentIndex, bookmarkedIds, disabled, sectioned, sectionElapsedSeconds, onNavigate }: {
   questions: PracticeQuestion[];
   answers: Record<string, string>;
   currentIndex: number;
   bookmarkedIds: Set<string>;
   disabled: boolean;
+  sectioned: boolean;
+  sectionElapsedSeconds: Record<string, number>;
   onNavigate: (index: number) => void;
 }) {
   const [open, setOpen] = useState(false);
@@ -35,15 +67,23 @@ const QuestionPalette = memo(function QuestionPalette({ questions, answers, curr
     <div className="palette-heading"><div><strong>Questions</strong><span>{answered}/{questions.length} answered</span></div><button type="button" className="palette-toggle" aria-expanded={open} aria-controls="question-palette-body" onClick={() => setOpen((value) => !value)}>{open ? "Hide numbers" : "Show all numbers"}</button></div>
     <div className="palette-body" id="question-palette-body">
       <div className="palette-legend" aria-label="Question status legend"><span><i className="current" />Current</span><span><i className="answered" />Answered</span><span><i className="saved" />Saved</span><span><i className="unanswered" />Not answered</span></div>
-      <div className="palette-grid">
+      {sectioned ? Array.from(new Set(questions.map(paperSection))).sort((a,b)=>["English","Science","General Studies","Mathematics"].indexOf(a)-["English","Science","General Studies","Mathematics"].indexOf(b)).map((section) => <section className="palette-section" key={section} aria-label={`${section} questions`}>
+        <div className="palette-section-heading"><strong>{section}</strong><span>{formatPracticeTime(sectionElapsedSeconds[section] || 0)}</span></div>
+        <div className="palette-grid">{questions.map((item, index) => ({ item, index })).filter(({ item }) => paperSection(item) === section).map(({ item, index }) => {
+          const isCurrent = index === currentIndex;
+          const isAnswered = Boolean(answers[item.id]);
+          const isSaved = bookmarkedIds.has(item.id);
+          const state = [isCurrent ? "current" : "", isAnswered ? "answered" : "unanswered", isSaved ? "saved" : ""].filter(Boolean).join(" ");
+          return <button key={item.id} type="button" className={state} aria-current={isCurrent ? "step" : undefined} aria-label={`Question ${index + 1}, ${isAnswered ? "answered" : "not answered"}${isSaved ? ", saved" : ""}`} disabled={disabled} onClick={() => onNavigate(index)}>{index + 1}</button>;
+        })}</div>
+      </section>) : <div className="palette-grid">
         {questions.map((item, index) => {
           const isCurrent = index === currentIndex;
           const isAnswered = Boolean(answers[item.id]);
           const isSaved = bookmarkedIds.has(item.id);
           const state = [isCurrent ? "current" : "", isAnswered ? "answered" : "unanswered", isSaved ? "saved" : ""].filter(Boolean).join(" ");
           return <button key={item.id} type="button" className={state} aria-current={isCurrent ? "step" : undefined} aria-label={`Question ${index + 1}, ${isAnswered ? "answered" : "not answered"}${isSaved ? ", saved" : ""}`} disabled={disabled} onClick={() => onNavigate(index)}>{index + 1}</button>;
-        })}
-      </div>
+        })}</div>}
     </div>
   </aside>;
 });
@@ -66,6 +106,7 @@ export function PracticeClient({ id }: { id: string }) {
   const submitting = useRef(false);
   const expiryTried = useRef(false);
   const pendingCompletion = useRef<LocalAttempt | null>(null);
+  const lastSectionTick = useRef<number | null>(null);
   const queryIndex = searchParams.get("q");
 
   useEffect(() => {
@@ -103,6 +144,7 @@ export function PracticeClient({ id }: { id: string }) {
     setError("");
     setGradeError("");
     setSaveFailed(false);
+    lastSectionTick.current = Date.now();
     void getAttempt(id).then((stored) => {
       if (!active) return;
       current.current = stored || null;
@@ -168,7 +210,16 @@ export function PracticeClient({ id }: { id: string }) {
       }
       ticks += 1;
       const elapsedSeconds = value.timingMode === "wall_clock" ? clock.elapsedSeconds : value.elapsedSeconds + 1;
-      const next = { ...value, elapsedSeconds };
+      const previousTick = lastSectionTick.current ?? timestamp - 1000;
+      const sectionSeconds = Math.max(0, Math.min(5, Math.round((timestamp - previousTick) / 1000)));
+      lastSectionTick.current = timestamp;
+      const officialSession = isOfficialPaperSession(value);
+      const activeQuestion = value.snapshot.questions[value.currentIndex];
+      const section = activeQuestion ? paperSection(activeQuestion) : "Paper";
+      const sectionElapsedSeconds = officialSession
+        ? { ...(value.sectionElapsedSeconds || {}), [section]: (value.sectionElapsedSeconds?.[section] || 0) + sectionSeconds }
+        : value.sectionElapsedSeconds;
+      const next = { ...value, elapsedSeconds, sectionElapsedSeconds };
       showAttempt(next);
       if (ticks % 5 === 0) void persist(next).catch(() => {
         setSaveFailed(true);
@@ -274,10 +325,13 @@ export function PracticeClient({ id }: { id: string }) {
   const timerValue = isTimed && attempt.status !== "completed" ? clock.remainingSeconds! : clock.elapsedSeconds;
   const prompt = formatPracticePrompt(question.promptLines,{options:question.options});
   const sourceLabel = `${question.exam} · ${question.paper} · ${question.year}`;
+  const officialPaper = isOfficialPaperSession(attempt);
+  const singleOfficialPaper = officialPaper && attempt.snapshot.questions.every((item) => item.exam === question.exam && item.year === question.year && item.paper === question.paper);
   return (
     <main className="practice-shell exam-experience">
       <header className="practice-topbar">
         <Link href={attemptReturnPath(attempt)} aria-label="Exit test" onClick={(event) => { if (busy || saveFailed || pendingCompletion.current) { event.preventDefault(); setError("Save your latest progress before leaving this page."); } }}>← Exit</Link>
+        <span className="practice-paper-title">{officialPaper ? <><strong>{officialPaperTitle(attempt.snapshot.questions)}</strong><small>Official paper practice</small></> : <><strong>Practice session</strong><small>Thematic MCQs</small></>}</span>
         <span className="practice-session-title"><strong>Question {attempt.currentIndex + 1} of {attempt.snapshot.questions.length}</strong><small aria-live="polite" aria-atomic="true">{answered} answered</small></span>
         <div className={`practice-timer ${isTimed && timerValue <= 60 && attempt.status !== "completed" ? "is-low" : ""}`}><small>{isTimed && attempt.status !== "completed" ? "Time left" : "Elapsed"}</small><time aria-label={`${isTimed && attempt.status !== "completed" ? "Time remaining" : "Elapsed time"} ${formatPracticeTime(timerValue)}`}>{formatPracticeTime(timerValue)}</time></div>
         <button disabled={busy} onClick={() => void finish()}>{busy ? "Saving…" : attempt.status === "completed" ? "Results" : pendingCompletion.current ? "Retry saving" : "Finish"}</button>
@@ -291,7 +345,7 @@ export function PracticeClient({ id }: { id: string }) {
           <div className="question-copy">
             <div className="question-paper">
               <PracticePromptView blocks={prompt} className="practice-prompt" figure={question.figure} underlined={question.underlined} />
-              <p className="question-origin"><span style={{ background: PYQ_EXAM_COLORS[question.exam] }} />First appeared: <strong>{sourceLabel}</strong></p>
+              {!singleOfficialPaper && <p className="question-origin"><span style={{ background: PYQ_EXAM_COLORS[question.exam] }} />First appeared: <strong>{sourceLabel}</strong></p>}
               {questionCorrectionNotice(question) && <p className="question-origin">{questionCorrectionNotice(question)}</p>}
             </div>
             <div className="practice-choice-panel">
@@ -310,7 +364,7 @@ export function PracticeClient({ id }: { id: string }) {
           {feedback && <section className={`answer-feedback ${feedback.disposition === 'excluded' ? 'is-excluded' : !selectedAnswer ? "is-unattempted" : feedback.correct ? "is-correct" : "is-incorrect"}`}><div><strong>{feedback.disposition === 'excluded' ? 'Excluded from score' : !selectedAnswer ? `Unattempted · Correct answer: ${feedbackAnswerLabel(feedback)}` : feedback.correct ? `Correct · Answer ${feedbackAnswerLabel(feedback)}` : `Correct answer: ${feedbackAnswerLabel(feedback)} · Your answer: ${selectedAnswer}`}</strong></div>{feedback.explanation ? <p><MathText value={feedback.explanation}/></p> : <p className="explanation-unavailable">No published explanation is available for this question.</p>}</section>}
           <nav className="question-navigation" aria-label="Question navigation"><button disabled={busy || Boolean(pendingCompletion.current) || attempt.currentIndex === 0} onClick={() => void navigate(attempt.currentIndex - 1)}>← Previous</button><button className="bookmark-action" onClick={() => void toggleBookmark()}>{bookmarked ? "Saved" : "Save for later"}</button>{attempt.currentIndex < attempt.snapshot.questions.length - 1 ? <button className="next-question" disabled={busy || Boolean(pendingCompletion.current)} onClick={() => void navigate(attempt.currentIndex + 1)}>Save & next →</button> : <button className="next-question" disabled={busy} onClick={() => void finish()}>{attempt.status === "completed" ? "View results" : "Submit test"}</button>}</nav>
         </article>
-        <QuestionPalette questions={attempt.snapshot.questions} answers={attempt.answers} currentIndex={attempt.currentIndex} bookmarkedIds={bookmarkedIds} disabled={busy || Boolean(pendingCompletion.current)} onNavigate={jumpToQuestion} />
+        <QuestionPalette questions={attempt.snapshot.questions} answers={attempt.answers} currentIndex={attempt.currentIndex} bookmarkedIds={bookmarkedIds} disabled={busy || Boolean(pendingCompletion.current)} sectioned={officialPaper} sectionElapsedSeconds={attempt.sectionElapsedSeconds || {}} onNavigate={jumpToQuestion} />
       </div>
     </main>
   );

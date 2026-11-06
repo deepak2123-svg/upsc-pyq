@@ -102,6 +102,8 @@ export type LocalAttempt = {
   answers: Record<string, string>;
   feedback: Record<string, AnswerFeedback>;
   elapsedSeconds: number;
+  /** Time spent in each visible paper section, keyed by its section label. */
+  sectionElapsedSeconds?: Record<string, number>;
   startedAt: string;
   updatedAt: string;
   completedAt?: string;

@@ -27,3 +27,15 @@ test('spot-the-error geometry is faithful in online practice and printable paper
   await expect(printed.locator('.paper-error-segment > b')).toHaveText(['(a)','(b)','(c)']);
   await paper.close();
 });
+
+test('official paper practice uses one paper heading and a ten-column section navigator',async({page})=>{
+  await page.setViewportSize({width:1920,height:1080});
+  await page.goto('/papers/nda-2014-ii-gat');
+  await page.getByRole('button',{name:'Start 150-question test →',exact:true}).click();
+
+  await expect(page.locator('.practice-paper-title')).toContainText('NDA · GAT II · 2014');
+  await expect(page.locator('.question-origin')).toHaveCount(0);
+  await expect(page.locator('.palette-section')).toHaveCount(3);
+  await expect(page.locator('.palette-section-heading strong')).toHaveText(['English','Science','General Studies']);
+  await expect.poll(()=>page.locator('.palette-grid').first().evaluate(element=>getComputedStyle(element).gridTemplateColumns.split(' ').length)).toBe(10);
+});
