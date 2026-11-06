@@ -20,7 +20,13 @@ test('compact setup keeps sources explicit, validates timing and starts the sele
  for(const exam of ['CAPF','CDS','NDA'])await sources.filter({hasText:exam}).click();
  await expect(dialog.getByRole('button',{name:'Start test →',exact:true})).toBeDisabled();
  await cse.click();
- await dialog.getByLabel('Custom question count',{exact:true}).fill('17');
+ const customCount=dialog.getByLabel('Custom question count',{exact:true});
+ const customControl=dialog.locator('.compact-custom-count');
+ const customBox=await customControl.boundingBox();
+ expect(customBox?.width).toBeGreaterThanOrEqual(120);
+ expect(customBox?.height).toBe(38);
+ await expect(customControl).toContainText('Custom');
+ await customCount.fill('17');
  await expect(dialog.locator('.compact-setup-footer')).toContainText('17');
  await dialog.getByRole('group',{name:'Questions',exact:true}).getByRole('button',{name:'10',exact:true}).click();
  await dialog.getByLabel('Time limit',{exact:true}).selectOption('custom');
