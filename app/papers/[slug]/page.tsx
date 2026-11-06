@@ -50,7 +50,7 @@ const papers:Record<string,{data:PaperData;title:string;summary:string;notice:st
  'nda-2023-i-gat':{data:nda2023I,title:'NDA I 2023 · GAT',summary:'150 available / 150 source questions · English 50 · Science 49 · GS 51',notice:'All 150 questions are scored against the official final key; alternative accepted answers are honoured.'},
  'nda-2023-ii-gat':{data:nda2023II,title:'NDA II 2023 · GAT',summary:'150 available / 150 source questions',notice:'All 150 questions are scored against the official final key.'},
  'nda-2024-i-gat':{data:nda2024I,title:'NDA I 2024 · GAT',summary:'149 available / 150 source questions · Q101 officially withdrawn',notice:'Q101 was withdrawn by UPSC and is omitted; the other 149 questions are scored against the official final key.'},
- 'nda-2024-ii-gat':{data:nda2024II,title:'NDA II 2024 · GAT',summary:'136 available / 150 source questions · 14 held for review',notice:'This practice paper contains the 136 independently verified questions. The 14 quarantined questions are omitted and do not enter scoring.'},
+ 'nda-2024-ii-gat':{data:nda2024II,title:'NDA II 2024 · GAT',summary:'149 available / 150 source questions · Q123 withdrawn',notice:'The complete archived Series A key marks Q123 withdrawn; the other 149 questions are available for scored practice.'},
 };
 
 export function generateStaticParams(){return Object.keys(papers).map(slug=>({slug}));}
@@ -71,11 +71,11 @@ export default async function PastPaperPage({params}:{params:Promise<{slug:strin
   return [{label:label!,count:wanted.size,recipe}];
  });
  const evidence=paper.data.evidence;
- const official=evidence?.status==='official-final', provisional=evidence?.status==='official-provisional';
+ const official=evidence?.status==='official-final', provisional=evidence?.status==='official-provisional', archived=evidence?.status==='archived-final-key';
  return <><SiteHeader/><main className="original-paper-page"><Link href="/legal/sources">← All source papers</Link>
-  <header><div className="eyebrow">{official?'Official UPSC final key':provisional?'Official UPSC provisional key':'Independently verified'}{evidence?.series?` · Series ${evidence.series}`:''}</div><h1>{paper.title}</h1><p>{paper.summary}</p></header>
+  <header><div className="eyebrow">{official?'Official UPSC final key':provisional?'Official UPSC provisional key':archived?'Archived final key':'Independently verified'}{evidence?.series?` · Series ${evidence.series}`:''}</div><h1>{paper.title}</h1><p>{paper.summary}</p></header>
   <p className="original-paper-notice">{paper.notice} Original wording, question numbers and option order are preserved.</p>
   <OfficialPaperLauncher choices={choices} paperTitle={paper.title} timeLimitLabel={mathematics?'Mathematics':'GAT'}/>
-  <details className="original-paper-provenance"><summary>Source and answer evidence</summary><p>{official?'The available questions use the preserved official UPSC final answer key.':provisional?'The available questions use the preserved official UPSC provisional answer key.':'Available questions were retained only after individual review; unresolved items remain quarantined.'}</p>{evidence?.url?<p><a href={evidence.url} target="_blank" rel="noreferrer">Answer evidence</a>{evidence.asset?<> · <a href={evidence.asset} target="_blank" rel="noreferrer">Preserved copy</a></>:null}</p>:null}{evidence?.sha256?<p>Key SHA-256: <code>{evidence.sha256}</code></p>:null}</details>
+  <details className="original-paper-provenance"><summary>Source and answer evidence</summary><p>{official?'The available questions use the preserved official UPSC final answer key.':provisional?'The available questions use the preserved official UPSC provisional answer key.':archived?'The complete post-examination key scan covers all four booklet series, records 149 scored questions and marks one withdrawal. Its original issuer URL was not recovered, so it is labelled as an archived final key.':'Available questions were retained after individual review.'}</p>{evidence?.url||evidence?.asset?<p>{evidence.url?<a href={evidence.url} target="_blank" rel="noreferrer">Answer evidence</a>:null}{evidence.url&&evidence.asset?' · ':null}{evidence.asset?<a href={evidence.asset} target="_blank" rel="noreferrer">Preserved copy</a>:null}</p>:null}{evidence?.sha256?<p>Key SHA-256: <code>{evidence.sha256}</code></p>:null}</details>
  </main></>;
 }

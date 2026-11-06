@@ -16,26 +16,30 @@ async function save(page:Page,snapshot:any,status='in_progress',answers={},inclu
   sessionStorage.setItem(`upsc-pyq-print:${snapshot.id}`,JSON.stringify({snapshot,includeAnswerKey,paperTitle:'NDA II 2024 GAT · independently verified selection'}));
  },{snapshot,status,answers,includeAnswerKey});
 }
-test('136 cleared questions: answer, rapid navigation, reload, submission and mobile results',async({page})=>{
+test('149 available questions: answer, rapid navigation, reload, submission and mobile results',async({page})=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/prepare/NDA');const snapshot=await snapshotFor(page);await save(page,snapshot);await page.goto(`/practice/${snapshot.id}`);
  const answer=async(letter:string)=>page.getByRole('group',{name:'Answer options',exact:true}).getByRole('button',{name:new RegExp(`^${letter}\\b`)}).click();
  await answer(paper.questions.find(q=>q.id===snapshot.questions[0].id)!.answer);
  for(const n of [10,30,70]){await page.getByRole('button',{name:`Question ${n}, not answered`,exact:true}).click();await answer(paper.questions.find(q=>q.id===snapshot.questions[n-1].id)!.answer);}
- await page.reload();await expect(page.locator('.question-heading')).toContainText('Question 70 of 136');
- const graded=page.waitForResponse(r=>r.url().endsWith('/api/practice/grade'));await page.getByRole('button',{name:'Finish',exact:true}).click();const result=await(await graded).json();expect(result.correct).toBe(4);expect(result.incorrect).toBe(0);expect(result.scored).toBe(136);expect(result.excluded).toBe(0);
- await expect(page.getByRole('heading',{name:'Result sheet',exact:true})).toBeVisible();await expect(page.getByRole('table',{name:'Answer sheet',exact:true}).getByRole('row')).toHaveCount(137);
+ await page.reload();await expect(page.locator('.question-heading')).toContainText('Question 70 of 149');
+ const graded=page.waitForResponse(r=>r.url().endsWith('/api/practice/grade'));await page.getByRole('button',{name:'Finish',exact:true}).click();const result=await(await graded).json();expect(result.correct).toBe(4);expect(result.incorrect).toBe(0);expect(result.scored).toBe(149);expect(result.excluded).toBe(0);
+ await expect(page.getByRole('heading',{name:'Result sheet',exact:true})).toBeVisible();await expect(page.getByRole('table',{name:'Answer sheet',exact:true}).getByRole('row')).toHaveCount(150);
  await page.reload();await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([]);
 });
-for(const [scope,count] of [['english',46],['science',43],['gs',47]] as const)test(`${scope}: exact section membership and mobile practice`,async({page})=>{
+for(const [scope,count] of [['english',50],['science',49],['gs',50]] as const)test(`${scope}: exact section membership and mobile practice`,async({page})=>{
  await page.goto('/prepare/NDA');const snapshot=await snapshotFor(page,scope);expect(snapshot.questions).toHaveLength(count);await save(page,snapshot);await page.setViewportSize({width:390,height:844});await page.goto(`/practice/${snapshot.id}`);await expect(page.locator('.question-heading')).toContainText(`Question 1 of ${count}`);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
-test('offline print preserves all 136 answers, five figures, English layout and matching tables',async({page},testInfo)=>{
+test('offline print preserves all 149 answers, seven figures, English layout and matching tables',async({page},testInfo)=>{
  await page.addInitScript(()=>{window.print=()=>{};});await page.goto('/prepare/NDA');const snapshot=await snapshotFor(page);await save(page,snapshot);await page.goto(`/practice/${snapshot.id}/print`);
- await expect(page.getByRole('button',{name:'Print / Save as PDF',exact:true})).toBeEnabled();await expect(page.locator('.print-question')).toHaveCount(136);await expect(page.locator('.print-question img')).toHaveCount(5);
+ await expect(page.getByRole('button',{name:'Print / Save as PDF',exact:true})).toBeEnabled();await expect(page.locator('.print-question')).toHaveCount(149);await expect(page.locator('.print-question img')).toHaveCount(7);
  expect(await page.locator('.print-question img').evaluateAll(imgs=>imgs.every(img=>(img as HTMLImageElement).complete&&(img as HTMLImageElement).naturalWidth>0))).toBe(true);
  const q107=paper.questions.find(q=>q.questionNumber===107)!;await expect(page.locator(`[data-question-id="${q107.id}"] table`)).toBeVisible();await expect(page.locator('.print-question u').first()).toBeVisible();
- const rows=page.locator('.print-answer-key tbody tr');await expect(rows).toHaveCount(68);
-  for(let i=0;i<68;i++){const cells=rows.nth(i).locator('td');for(const [offset,cell] of [[0,1],[68,4]]){const q=snapshot.questions[i+offset];await expect(cells.nth(cell)).toHaveText(`${paper.questions.find(r=>r.id===q.id)!.answer} ‡`);}}
+ const rows=page.locator('.print-answer-key tbody tr');await expect(rows).toHaveCount(75);
+ for(let i=0;i<75;i++){
+  const cells=rows.nth(i).locator('td');
+  const left=snapshot.questions[i];await expect(cells.nth(1)).toHaveText(`${paper.questions.find(r=>r.id===left.id)!.answer} ‡`);
+  const right=snapshot.questions[i+75];if(right)await expect(cells.nth(4)).toHaveText(`${paper.questions.find(r=>r.id===right.id)!.answer} ‡`);
+ }
  await page.pdf({path:testInfo.outputPath('nda-2024-ii-reviewed.pdf'),format:'A4',printBackground:true});await page.screenshot({path:testInfo.outputPath('print.png'),fullPage:true});
 });
 test.describe('missing-asset fault injection',()=>{

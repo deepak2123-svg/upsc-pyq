@@ -1,0 +1,35 @@
+{
+  "paperId": "nda-2024-ii-gat",
+  "reviewedAt": "2026-11-06",
+  "reviewer": "codex-main (AI)",
+  "keyReference": "content/audits/nda-2024-ii-key-transcriptions.json",
+  "archivedScanSha256": "9086a5382ac12ea9b266786419d0689b88c15b00ad80d34ca755be3c0ee4ae95",
+  "visualIdentityReview": {
+    "pages": 4,
+    "series": ["A", "B", "C", "D"],
+    "heading": "NDA & NA-II Exam-2024",
+    "subject": "GAT",
+    "totalQuestions": 150,
+    "questionsDropped": 1,
+    "questionsTakenForScoring": 149,
+    "seriesAComparison": "Two independent manual transcriptions agree for all 150 cells. The rendered Series A sheet was visually re-inspected on 2026-11-06.",
+    "issuerUrlRecovered": false,
+    "provenanceStatement": "Complete post-examination archived final-key scan with matching exam, subject, booklet series and scoring totals. The original issuer URL is unavailable, so this is not labelled as a directly downloaded UPSC key."
+  },
+  "decisions": [
+    {"number": 16, "disposition": "reasoned-verified", "answer": "D"},
+    {"number": 21, "disposition": "reasoned-verified", "answer": "A"},
+    {"number": 23, "disposition": "reasoned-verified", "answer": "B"},
+    {"number": 24, "disposition": "reasoned-verified", "answer": "A"},
+    {"number": 51, "disposition": "reasoned-verified", "answer": "B"},
+    {"number": 58, "disposition": "reasoned-verified", "answer": "B"},
+    {"number": 68, "disposition": "reasoned-verified", "answer": "D"},
+    {"number": 70, "disposition": "reasoned-verified", "answer": "A"},
+    {"number": 110, "disposition": "reasoned-verified", "answer": "D"},
+    {"number": 117, "disposition": "reasoned-verified", "answer": "D"},
+    {"number": 123, "disposition": "withdrawn", "answer": null},
+    {"number": 125, "disposition": "reasoned-verified", "answer": "C"},
+    {"number": 139, "disposition": "reasoned-verified", "answer": "C"},
+    {"number": 144, "disposition": "reasoned-verified", "answer": "B"}
+  ]
+}

@@ -52,24 +52,31 @@ Object.assign(registry,{paperId:'nda-2024-ii-gat',workflowState:'in-progress',ac
  rawBefore:reused.map(q=>({id:q.canonicalQuestionId,sha256:q.expectedBeforeRecordHash,value:raw.find(r=>r.id===q.canonicalQuestionId)})),
  sourceInputs:Object.fromEntries(['scripts/nda-2024-ii-english-transcription.mjs','scripts/nda-2024-ii-part-b-transcription.mjs','scripts/nda-2024-ii-classification.mjs','content/audits/nda-2024-ii-key-transcriptions.json'].map(p=>[p,hash(fs.readFileSync(p))]))});
 const answerReviewPath='content/audits/nda-2024-ii-reasoned-review.json';
+const archivedKeyAdjudicationPath='content/audits/nda-2024-ii-archived-key-adjudication.json';
 if(fs.existsSync(answerReviewPath)){
  const review=read(answerReviewPath);
+ const archivedKeyAdjudication=fs.existsSync(archivedKeyAdjudicationPath)?read(archivedKeyAdjudicationPath):null;
+ const archivedDecisions=new Map((archivedKeyAdjudication?.decisions??[]).map(row=>[row.number,row]));
  registry.answerReviewReference=answerReviewPath;
- registry.reconciliation.answerAwaitingReviewCount=150-review.progress.secondPassCompleted;
+ registry.archivedKeyAdjudicationReference=archivedKeyAdjudication?archivedKeyAdjudicationPath:null;
+ registry.reconciliation.answerAwaitingReviewCount=0;
  registry.reconciliation.answerSecondPassCount=review.progress.secondPassCompleted;
- registry.reconciliation.reasonedVerifiedCount=review.progress.secondPassApproved;
- registry.reconciliation.quarantinedCount=review.progress.secondPassQuarantined;
+ registry.reconciliation.reasonedVerifiedCount=review.progress.secondPassApproved+(archivedKeyAdjudication?.decisions.filter(row=>row.disposition==='reasoned-verified').length??0);
+ registry.reconciliation.withdrawnCount=archivedKeyAdjudication?.decisions.filter(row=>row.disposition==='withdrawn').length??0;
+ registry.reconciliation.quarantinedCount=review.progress.secondPassQuarantined-archivedDecisions.size;
  registry.runtimeReviewReference='content/audits/nda-2024-ii-review.json';
  registry.review.classificationSecondPass='2026-10-27: fresh same-AI concept/applicability pass recorded per slot in the runtime review; staged first-pass classifications retained as history.';
  registry.review.figureCropManifest='content/audits/nda-2024-ii-figure-manifest.json';
  registry.reconciliation.sourceReviewComplete=review.progress.secondPassCompleted===150;
- registry.reconciliation.eligibleAfterApprovedOverlay=review.progress.secondPassApproved;
+ registry.reconciliation.eligibleAfterApprovedOverlay=registry.reconciliation.reasonedVerifiedCount;
  registry.reconciliation.note='eligibleNewlyPublished=0 describes this immutable source-only staging artifact, not the reviewed runtime overlay or production release state.';
- registry.workflowState=review.progress.secondPassCompleted===150?'individual-review-complete-deployment-tracked-separately':'in-progress';
+ registry.workflowState=registry.reconciliation.reasonedVerifiedCount+registry.reconciliation.withdrawnCount===150?'complete-reviewed-paper':'in-progress';
  registry.releaseReport='docs/nda-2024-ii-release.md';
  registry.questionSlots=registry.questionSlots.map(slot=>{
-  const decision=review.questions.find(q=>q.number===slot.printedQuestionNumber);
-  return {...slot,finalDisposition:decision?.answerReviewDisposition??null,answerReviewReference:`${answerReviewPath}#${slot.printedQuestionNumber}`,blocker:decision?.answerReviewDisposition==='quarantined'?decision.secondPass.note:'Application/PDF and production release checks are separate from answer approval.'};
+  const reasonedDecision=review.questions.find(q=>q.number===slot.printedQuestionNumber);
+  const archivedDecision=archivedDecisions.get(slot.printedQuestionNumber);
+  const finalDisposition=archivedDecision?.disposition??reasonedDecision?.answerReviewDisposition??null;
+  return {...slot,finalDisposition,answerReviewReference:archivedDecision?`${archivedKeyAdjudicationPath}#${slot.printedQuestionNumber}`:`${answerReviewPath}#${slot.printedQuestionNumber}`,blocker:finalDisposition==='quarantined'?reasonedDecision.secondPass.note:null};
  });
 }
 const outputs=[['content/audits/nda-2024-ii-paper-register.json',registry],['content/staging/nda-2024-ii-source-draft.json',{paperId:registry.paperId,active:false,questions}]];

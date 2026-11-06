@@ -1,6 +1,7 @@
 {
   "paperId": "nda-2024-ii-gat",
   "sourceRegister": "content/audits/nda-2024-ii-paper-register.json",
+  "archivedKeyAdjudication": "content/audits/nda-2024-ii-archived-key-adjudication.json",
   "reconciliation": {
     "expected": 150,
     "newSourceOccurrences": 128,
@@ -10,35 +11,23 @@
     "dispositions": {
       "official-final": 0,
       "official-provisional": 0,
-      "reasoned-verified": 136,
-      "withdrawn": 0,
+      "reasoned-verified": 149,
+      "withdrawn": 1,
       "duplicate": 0,
-      "quarantined": 14
+      "quarantined": 0
     },
-    "eligible": 136,
-    "newlyImportedEligible": 116,
-    "reusedEligible": 20,
+    "eligible": 149,
+    "newlyImportedEligible": 127,
+    "reusedEligible": 22,
     "sectionTotals": {
-      "english": 46,
-      "science": 43,
-      "gs": 47
+      "english": 50,
+      "science": 49,
+      "gs": 50
     },
-    "quarantinedNumbers": [
-      16,
-      21,
-      23,
-      24,
-      51,
-      58,
-      68,
-      70,
-      110,
-      117,
-      123,
-      125,
-      139,
-      144
-    ]
+    "withdrawnNumbers": [
+      123
+    ],
+    "quarantinedNumbers": []
   },
   "questionSlots": [
     {
@@ -415,7 +404,7 @@
       "number": 16,
       "canonicalQuestionId": "nda-2024-ii-16",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#16",
       "classification": {
         "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
@@ -429,7 +418,7 @@
       ],
       "expectedBeforeRecordHash": null,
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "english"
@@ -535,7 +524,7 @@
       "number": 21,
       "canonicalQuestionId": "nda-2024-ii-21",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#21",
       "classification": {
         "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
@@ -549,7 +538,7 @@
       ],
       "expectedBeforeRecordHash": null,
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "english"
@@ -583,7 +572,7 @@
       "number": 23,
       "canonicalQuestionId": "nda-2024-ii-23",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#23",
       "classification": {
         "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
@@ -597,7 +586,7 @@
       ],
       "expectedBeforeRecordHash": null,
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "english"
@@ -607,7 +596,7 @@
       "number": 24,
       "canonicalQuestionId": "nda-2024-ii-24",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#24",
       "classification": {
         "primary": "English/Usage and Sentence Skills/Sentence organisation/Sentence completion",
@@ -621,7 +610,7 @@
       ],
       "expectedBeforeRecordHash": null,
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "english"
@@ -1260,7 +1249,7 @@
       "number": 51,
       "canonicalQuestionId": "nda-2024-ii-51",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#51",
       "classification": {
         "primary": "Science & Technology/Biology/Cell and Genetics/Cell structure",
@@ -1274,7 +1263,7 @@
       ],
       "expectedBeforeRecordHash": null,
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "science"
@@ -1428,7 +1417,7 @@
       "number": 58,
       "canonicalQuestionId": "nda-2024-ii-58",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#58",
       "classification": {
         "primary": "Science & Technology/Chemistry/Matter and Reactions/Atomic and molecular structure",
@@ -1442,7 +1431,7 @@
       ],
       "expectedBeforeRecordHash": null,
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "science"
@@ -1668,7 +1657,7 @@
       "number": 68,
       "canonicalQuestionId": "nda-2024-ii-68",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#68",
       "classification": {
         "primary": "Science & Technology/Physics/Light and Electricity/Electrostatics",
@@ -1682,7 +1671,7 @@
       ],
       "expectedBeforeRecordHash": null,
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "science"
@@ -1716,7 +1705,7 @@
       "number": 70,
       "canonicalQuestionId": "nda-2024-ii-70",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#70",
       "classification": {
         "primary": "Science & Technology/Physics/Mechanics/Motion",
@@ -1730,7 +1719,7 @@
       ],
       "expectedBeforeRecordHash": null,
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "science"
@@ -2676,7 +2665,7 @@
       "number": 110,
       "canonicalQuestionId": "nda-2024-ii-110",
       "accountingAction": "reused",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#110",
       "classification": {
         "primary": "Geography/Physical Geography/Rocks and Minerals/Rocks: Overview",
@@ -2690,7 +2679,7 @@
       ],
       "expectedBeforeRecordHash": "603be1171bd9b69b6ee831cf5e127e29348b430f814b3da71c1a00f7112edd9c",
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "gs"
@@ -2844,7 +2833,7 @@
       "number": 117,
       "canonicalQuestionId": "nda-2024-ii-117",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#117",
       "classification": {
         "primary": "Science & Technology/Chemistry/Materials and Applications/Everyday chemicals",
@@ -2858,7 +2847,7 @@
       ],
       "expectedBeforeRecordHash": null,
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "science"
@@ -2988,7 +2977,7 @@
       "number": 123,
       "canonicalQuestionId": "nda-2024-ii-123",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "withdrawn",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#123",
       "classification": {
         "primary": "Science & Technology/Physics/Mechanics/Work energy and power",
@@ -3002,7 +2991,7 @@
       ],
       "expectedBeforeRecordHash": null,
       "revision": {
-        "status": "quarantined",
+        "status": "withdrawn",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "science"
@@ -3036,7 +3025,7 @@
       "number": 125,
       "canonicalQuestionId": "nda-2024-ii-125",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#125",
       "classification": {
         "primary": "Science & Technology/Physics/Mechanics/Force and momentum",
@@ -3050,7 +3039,7 @@
       ],
       "expectedBeforeRecordHash": null,
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "science"
@@ -3372,7 +3361,7 @@
       "number": 139,
       "canonicalQuestionId": "nda-2024-ii-139",
       "accountingAction": "reused",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#139",
       "classification": {
         "primary": "Geography/Indian Geography/Soils/Properties and crops",
@@ -3386,7 +3375,7 @@
       ],
       "expectedBeforeRecordHash": "3d44876391afbc2f48ef54ea14ce27f36e8fe2d6bab4da8c0d30849e590f06b9",
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "gs"
@@ -3492,7 +3481,7 @@
       "number": 144,
       "canonicalQuestionId": "nda-2024-ii-144",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#144",
       "classification": {
         "primary": "Current Affairs/International Affairs/Agreements and Cooperation/Regional initiatives",
@@ -3506,7 +3495,7 @@
       ],
       "expectedBeforeRecordHash": null,
       "revision": {
-        "status": "quarantined",
+        "status": "reasoned-verified",
         "revision": 1,
         "contentRevision": 0,
         "preparationScope": "gs"
@@ -3673,6 +3662,6 @@
       }
     }
   ],
-  "releaseState": "approved-runtime-overlay",
+  "releaseState": "complete-reviewed-runtime-overlay",
   "releaseReport": "docs/nda-2024-ii-release.md"
 }

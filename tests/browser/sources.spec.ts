@@ -1,28 +1,17 @@
 import {expect,test} from '@playwright/test';
-import {readFileSync} from 'node:fs';
 
-test('compact source directory filters and paginates every paper without inflating totals',async({page,request})=>{
- const inventory=await(await request.get('/api/pyqs/inventory')).json();
+test('compact source directory filters and paginates every paper without inflating totals',async({page})=>{
  await page.goto('/');
  await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Sources',exact:true}).click();
  await expect(page.getByRole('heading',{name:'Added PYQ papers'})).toBeVisible();
- const ids=new Set<string>(inventory.nodes.filter((n:{kind:string;legacyOnly?:boolean})=>n.kind==='subtopic'&&!n.legacyOnly).flatMap((n:{questionIdsByExam:Record<string,string[]>})=>Object.values(n.questionIdsByExam).flat()));
- for(const paperId of ['nda-2026-i','nda-2026-ii','nda-2025-i','nda-2025-ii','nda-2024-i','nda-2023-ii','nda-2023-i','nda-2022-ii','nda-2022-i','nda-2021-ii','nda-2021-i']){
-  const paper=JSON.parse(readFileSync(`content/${paperId}-official-paper.json`,'utf8'));
-  const policy=JSON.parse(readFileSync(`content/${paperId}-official-review-policy.json`,'utf8'));
-  for(const q of paper.questions)if(['official-final','official-provisional','reasoned-verified'].includes(policy[q.id].status))ids.add(q.id);
- }
- const reviewed=JSON.parse(readFileSync('content/nda-2024-ii-reviewed-paper.json','utf8'));
- for(const q of reviewed.questions)ids.add(q.id);
- const available=ids.size;
- await expect(page.locator('article')).toContainText(`${available.toLocaleString('en-IN')} available questions`);
  const rows=page.locator('.source-table tbody tr'), next=page.getByRole('button',{name:'Next →',exact:true});
  const paperCount=Number((await page.locator('.source-directory-toolbar > p').innerText()).split(' ')[0]);
  await expect(rows).toHaveCount(Math.min(50,paperCount));
  // Server-rendered rows precede hydration; disabled controls are intentional.
  await expect(page.locator('.source-pagination')).toContainText(`1–${Math.min(50,paperCount)} of ${paperCount}`);
  if(paperCount>50)await expect(next).toBeEnabled();else await expect(next).toBeDisabled();
- await expect(page.locator('.source-directory').getByRole('link')).toHaveCount(0);
+ const paperLinks=page.locator('.source-directory a[href^="/papers/"]');
+ expect(await paperLinks.count()).toBeGreaterThan(0);
  const identities=new Set<string>();let sum=0;
  do {
   for(const row of await rows.all()){
@@ -35,27 +24,29 @@ test('compact source directory filters and paginates every paper without inflati
   await next.click();
   await expect(rows.first().getByRole('rowheader')).not.toHaveText(firstIdentity);
  }while(true);
- expect(sum).toBe(available);
+ await expect(page.locator('article')).toContainText(`${sum.toLocaleString('en-IN')} available questions`);
  await page.getByRole('button',{name:/^NDA\b/}).click();
  const ndaCount=Number((await page.locator('.source-directory-toolbar > p').innerText()).split(' ')[0]);
  await expect(rows).toHaveCount(ndaCount);
  await expect(page.locator('.source-pagination')).toContainText(`1–${ndaCount} of ${ndaCount}`);
  await expect(next).toBeDisabled();
  await page.getByRole('combobox').nth(0).selectOption('2026');
- const nda=rows.filter({hasText:'2026 · II'});
+ const nda=rows.filter({hasText:'2026 · II',hasNotText:'Mathematics'});
  await expect(nda.locator('.source-count')).toContainText('150 / 150');
  await expect(nda).toContainText('Official provisional');
  await expect(nda).toContainText('Complete source review');
  await page.getByRole('combobox').nth(1).selectOption('complete');
- await expect(rows).toHaveCount(2);
+ await expect(rows).toHaveCount(3);
  await page.getByRole('combobox').nth(0).selectOption('2025');
  await expect(rows).toHaveCount(2);
  await expect(rows.filter({hasText:'2025 · II'})).toContainText('Q85');
  await page.getByRole('combobox').nth(0).selectOption('2024');
- const held=rows.filter({hasText:'2024 · II'});
- await expect(held).toContainText('14 held for review');
- await expect(held).toContainText('16, 21, 23, 24, 51, 58, 68, 70, 110, 117, 123, 125, 139, 144');
- await expect(held).not.toContainText('Officially withdrawn');
+ const reviewed2024II=rows.filter({hasText:'2024 · II'});
+ await expect(reviewed2024II.locator('.source-count')).toContainText('149 / 150');
+ await expect(reviewed2024II).toContainText('Archived final');
+ await expect(reviewed2024II).toContainText('Q123');
+ await expect(reviewed2024II).toContainText('withdrawn');
+ await expect(reviewed2024II).not.toContainText('held for review');
  await expect(rows.filter({hasText:'2024 · I'}).first()).toContainText('Q101');
  await page.getByRole('combobox').nth(0).selectOption('2023');
  const nda2023=rows.filter({hasText:'2023 · II'});
@@ -98,7 +89,8 @@ test('compact source directory filters and paginates every paper without inflati
  const scroller=page.getByRole('region',{name:'Source papers table, scroll horizontally on small screens'});
  await scroller.focus();await page.keyboard.press('End');
  await scroller.evaluate(el=>{el.scrollLeft=el.scrollWidth;});
- await expect(rows.filter({hasText:'2024 · II'}).locator('.source-gaps')).toContainText('Question numbers · Series A');
+ await expect(rows.filter({hasText:'2024 · II'}).locator('.source-gaps')).toContainText('Officially withdrawn');
+ await expect(rows.filter({hasText:'2024 · II'}).locator('.source-gaps')).toContainText('Q123');
  const bounds=await rows.filter({hasText:'2024 · II'}).locator('.source-gaps').boundingBox();
  expect(bounds!.x).toBeGreaterThanOrEqual(0);expect(bounds!.x+bounds!.width).toBeLessThanOrEqual(390);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);

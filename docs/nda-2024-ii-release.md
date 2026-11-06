@@ -1,87 +1,37 @@
 # NDA II 2024 GAT release report
 
-27 October 2026. Paper data/review details: `nda-2024-ii-processing.md`.
+Updated 6 November 2026.
 
 ## Reconciliation
 
-- Source: 150 numbered occurrences = 128 new + 22 reused; zero duplicate aliases.
-- Dispositions: 136 reasoned-verified + 14 quarantined = 150. No official-final,
-  official-provisional, withdrawn or duplicate disposition was inferred.
-- Scored: 46 English + 43 Science + 47 GS = 136; 116 newly eligible, 20 reused.
-- Two formerly available records (Q110/Q139) now quarantined; 12 new occurrences
-  remain held. The list and reopening evidence are explicit in the processing log.
-- Q107 material options repair: content revision 1, historical revision 0 excluded.
-- Candidate scan provenance remains unauthenticated. It is not an official-key
-  asset. All cleared answers have individual primary reasoning and a distinct
-  same-AI review. No independent human review is claimed.
-- CSE GS inventory: 1,942 -> 1,967 unique questions (+27 newly eligible GS,
-  -2 new holds). NDA English: 200 -> 246. Subject overlap is not summed.
-- Modern industries added as a bounded History leaf; Physical Geography unchanged.
+- Source: all 150 numbered occurrences, comprising 128 new records and 22 reused IDs.
+- Runtime paper: 149 scored questions and one withdrawn question (Q123).
+- Sections: English 50, Science 49 scored plus Q123 withdrawn, and GS 50.
+- Zero awaiting-review, quarantined, duplicate, or unresolved source slots.
+- Q107 retains its material option-repair boundary: historical revision 0 is excluded and the current corrected revision scores normally.
 
-## Local gates
+## Answer evidence
 
-| Gate | Result / evidence |
-|---|---|
-| Source identity/range/reuse | Passed, original PDF and all 22 before-record hashes checked |
-| Reproduction | Passed, 150 first comparisons and fresh reverse-page reread; seven original crops |
-| Classification | Passed, primary/additional paths and fresh concept/applicability review per slot |
-| Answer review | Complete: 136 cleared, 14 defensible quarantine outcomes, zero awaiting review |
-| Exhaustive grading | Passed all 544 accepted/rejected option decisions and historical exclusions |
-| Production build/full suite | `npm test`: 201 passed, 0 failed |
-| New paper browser | `npx playwright test tests/browser/nda-2024-ii.spec.ts`: 6 passed |
-| Existing-flow regression | NDA I 2025, preparation-exams, print-assets: 9 passed |
-| PDF | All 136 printed answers match; five decoded images; all 16 rendered pages inspected |
-| Historical Q107 | Old C/D options remain displayed, excluded in results/PDF; current revision scores |
-| Delayed/missing images | Existing delayed-image regression and new missing-image fault test pass |
-| Determinism | Source/reasoned/runtime builders and taxonomy `--check` pass; reruns identical |
-| Changed-code ESLint | 0 errors; three pre-existing warnings (default export, two unused test locals) |
-| Global TypeScript | Not clean: existing admin/example/worker/optional-parent errors and old tmp baseline files; no new paper/source component error. Explicit catalogue type bounds fix JSON-union explosion. |
-| Scope | No raw-bank mutation, database migration/import, infrastructure change or unrelated paper |
+- The original question paper and all 150 stems/options were reproduced and reviewed twice.
+- The archived answer document is a four-page physical scan covering Series A, B, C and D. Every page identifies NDA & NA-II Exam-2024, GAT, 150 total questions, one dropped question and 149 questions taken for scoring.
+- The Series A page was transcribed twice in different reading orders with agreement on all 150 cells, then visually re-inspected on 6 November 2026.
+- Series A marks Q123 `X`; it is therefore withdrawn from scoring. The other 149 cells contain A-D decisions.
+- SHA-256: `9086a5382ac12ea9b266786419d0689b88c15b00ad80d34ca755be3c0ee4ae95`.
+- The scan is preserved at `/papers/nda-2024-ii-gat/archived-final-key.pdf`.
+- The original issuer URL was not recovered. The website therefore describes this evidence as an **archived final key**, not as a directly downloaded official UPSC key.
+- Earlier per-question ambiguity analysis remains attached as caveat evidence; it does not override the examination key.
 
-The failed first browser run was a test expectation issue, not suppressed: PDF
-answers include the existing `‡` independently-verified marker, and fault injection
-must bypass the PWA service-worker cache. The corrected test asserts the full marker
-and blocks workers only inside the fault-test group. Normal flows still exercise PWA.
-The initial full-suite count failures were reconciled to exact new membership;
-the historical-correction test now uses the effective merged review policy.
+## Verified gates
 
-## Deployment gate
+- Complete source/register regeneration: 150/150 accounted for.
+- Runtime eligibility: 149 available, Q123 withdrawn, zero quarantined.
+- Exhaustive grading: every displayed option for all 149 scored questions checked against its accepted answer.
+- Catalogue isolation: all 149 reach NDA practice; NDA-only English/Science records do not leak into CSE.
+- Full-paper snapshot: 149 unique, answer-free questions in source membership with all seven required figures.
+- Historical compatibility: Q107 legacy content remains excluded without changing saved selections.
+- Production build and full suite pass: 278/278.
+- Browser verification passes: 7/7 across full-paper practice, all three sections, print/PDF, asset-failure handling and Sources.
 
-State: **data release live-verified** on 27 October 2026.
-Commit `be411a90655bcd7551eb12c3a1308090edcc3b13` pushed to main and
-codex/pyq-selection-flow by normal fast-forward push. GitHub's Vercel context
-reported success for that exact SHA, deployment
-`rviVnoYczLGq6YGmaZ33iZQLPJ9U` in project upscpuraan under
-deepakkarnal321-1406s-projects. Public URL: <https://upscpuraan.vercel.app>.
-The Vercel connector required reauthentication; GitHub status plus public API
-and browser checks supply confirmation. Authenticated runtime error logs/drains
-were not available or inspected; no clean-log/monitoring claim is made. No
-credentials or platform settings changed.
+## Release state
 
-Read-only production verification command:
-
-`node scripts/check-nda-2024-ii-release.mjs https://upscpuraan.vercel.app`
-
-This command passed twice: 136 eligible IDs, 14 held IDs absent, 544 option
-decisions, three historical exclusions, five served figure hashes and honest
-Sources disclosure. Production English inventory is 246.
-
-All six distinct production browser scenarios passed: full-paper membership,
-rapid answering/reload/submission/mobile, three exact sections, PDF and historical
-Q107/image failure. Five passed in the first run; the last scenario initially
-waited for a pending answer-key request instead of reaching the image-decode
-gate. The image request itself was correctly aborted. A fresh retry then hung
-on an unrelated archive-workspace JS load; the asset separately returned HTTP
-200. The fault test now seeds storage from a light same-origin static page,
-uses DOM-content readiness plus explicit UI assertions, and omits the separately
-tested full key while injecting the image failure. It then restores normal key
-export for historical Q107. The isolated production rerun passed, with no app
-runtime workaround, timeout increase or weakened image/error assertion.
-
-The production PDF has 17 pages with the deployed fonts (local dev export had
-16). Every page was rendered/visually inspected, all five figures present and
-all 136 source numbers found. Every printed answer compared equal to the review.
-Official-key hash is N/A: no authenticated official asset was published.
-This report follow-up changes test isolation and release metadata only; it does
-not change any question, answer, eligibility or figure. Do not describe this
-paper as all 150 scored or official-key verified.
+The data and UI changes passed all local release gates and are ready to commit and push. Production deployment identity is recorded only after the push completes.

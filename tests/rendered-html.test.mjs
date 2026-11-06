@@ -38,8 +38,9 @@ test('reviewed historical paper opens the original-order practice launcher',asyn
   const reviewed=await workerFetch('/papers/nda-2024-ii-gat');
   assert.equal(reviewed.status,200);
   const reviewedHtml=await reviewed.text();
-  assert.match(reviewedHtml,/136 available \/ 150 source questions/);
-  assert.match(reviewedHtml,/14 held for review/);
+  assert.match(reviewedHtml,/149 available \/ 150 source questions/);
+  assert.match(reviewedHtml,/Q123 withdrawn/);
+  assert.match(reviewedHtml,/Archived final key/);
 });
 
 test("server-renders the browse-first official PYQ workspace", async () => {
@@ -104,7 +105,7 @@ test("inventory returns cross-exam subjects and unique official PYQ flows", asyn
   const response = await workerFetch("/api/pyqs/inventory");
   assert.equal(response.status, 200);
   const inventory = await response.json();
-  assert.equal(inventory.totalCount, 2522);
+  assert.equal(inventory.totalCount, 2525);
   assert.equal(inventory.mappedCount + inventory.unmappedCount, inventory.totalCount);
   assert.deepEqual(inventory.subjects.filter(s=>!s.legacyOnly).map((subject) => subject.label), ["Geography", "History", "Polity & Governance", "Economy", "Environment & Ecology", "Science & Technology", "Social Development", "International Relations & Organisations", "Current Affairs"]);
   assert.ok(inventory.nodes.some((node) => node.kind === "topic"));

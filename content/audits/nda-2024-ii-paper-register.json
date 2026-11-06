@@ -1,7 +1,7 @@
 {
   "templateVersion": 1,
   "paperId": "nda-2024-ii-gat",
-  "workflowState": "individual-review-complete-deployment-tracked-separately",
+  "workflowState": "complete-reviewed-paper",
   "sourceIdentity": {
     "exam": "NDA",
     "year": 2024,
@@ -200,7 +200,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#1",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#1"
     },
     {
@@ -213,7 +213,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#2",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#2"
     },
     {
@@ -226,7 +226,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#3",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#3"
     },
     {
@@ -239,7 +239,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#4",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#4"
     },
     {
@@ -252,7 +252,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#5",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#5"
     },
     {
@@ -266,7 +266,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#6",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#6"
     },
     {
@@ -280,7 +280,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#7",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#7"
     },
     {
@@ -294,7 +294,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#8",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#8"
     },
     {
@@ -308,7 +308,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#9",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#9"
     },
     {
@@ -322,7 +322,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#10",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#10"
     },
     {
@@ -336,7 +336,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#11",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#11"
     },
     {
@@ -350,7 +350,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#12",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#12"
     },
     {
@@ -364,7 +364,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#13",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#13"
     },
     {
@@ -378,7 +378,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#14",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#14"
     },
     {
@@ -392,7 +392,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#15",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#15"
     },
     {
@@ -404,9 +404,9 @@
       "accountingAction": "new",
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#16",
-      "finalDisposition": "quarantined",
-      "blocker": "Re-examined suggests as recommends versus indicates. D is the recommendation reading; B can report an inferred earlier action. The instruction says correct alternative and supplies no disambiguating context. Do not invent a unique grammatical verdict.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#16"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#16"
     },
     {
       "printedQuestionNumber": 17,
@@ -418,7 +418,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#17",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#17"
     },
     {
@@ -431,7 +431,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#18",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#18"
     },
     {
@@ -444,7 +444,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#19",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#19"
     },
     {
@@ -457,7 +457,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#20",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#20"
     },
     {
@@ -469,9 +469,9 @@
       "accountingAction": "new",
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#21",
-      "finalDisposition": "quarantined",
-      "blocker": "A is ordinary, but B is a grammatical modal-perfect expectation about a singular indefinite agent. Oddness of wanting juice spilt does not make its grammar impossible. Missing context/official adjudication prevents exclusive approval.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#21"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#21"
     },
     {
       "printedQuestionNumber": 22,
@@ -483,7 +483,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#22",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#22"
     },
     {
@@ -495,9 +495,9 @@
       "accountingAction": "new",
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#23",
-      "finalDisposition": "quarantined",
-      "blocker": "Both first-person should not (advisability) and would not (hypothetical choice) complete If I were you correctly. The source does not restrict the target to would.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#23"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#23"
     },
     {
       "printedQuestionNumber": 24,
@@ -508,9 +508,9 @@
       "accountingAction": "new",
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#24",
-      "finalDisposition": "quarantined",
-      "blocker": "Could help is the normal ability wish, but emphatic habitual did help is a grammatical unreal present wish. The correct-alternative instruction lacks context distinguishing them.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#24"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#24"
     },
     {
       "printedQuestionNumber": 25,
@@ -522,7 +522,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#25",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#25"
     },
     {
@@ -535,7 +535,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#26",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#26"
     },
     {
@@ -548,7 +548,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#27",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#27"
     },
     {
@@ -561,7 +561,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#28",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#28"
     },
     {
@@ -574,7 +574,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#29",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#29"
     },
     {
@@ -587,7 +587,7 @@
       "expectedBeforeRecordHash": "0e8edd863ff81c1c12504a45c58a159b2f3786e891eaf53047ca439c1fe2475e",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#30",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#30"
     },
     {
@@ -600,7 +600,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#31",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#31"
     },
     {
@@ -613,7 +613,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#32",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#32"
     },
     {
@@ -626,7 +626,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#33",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#33"
     },
     {
@@ -639,7 +639,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#34",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#34"
     },
     {
@@ -652,7 +652,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#35",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#35"
     },
     {
@@ -665,7 +665,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#36",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#36"
     },
     {
@@ -678,7 +678,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#37",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#37"
     },
     {
@@ -691,7 +691,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#38",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#38"
     },
     {
@@ -704,7 +704,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#39",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#39"
     },
     {
@@ -717,7 +717,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#40",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#40"
     },
     {
@@ -731,7 +731,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#41",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#41"
     },
     {
@@ -745,7 +745,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#42",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#42"
     },
     {
@@ -759,7 +759,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#43",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#43"
     },
     {
@@ -773,7 +773,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#44",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#44"
     },
     {
@@ -787,7 +787,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#45",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#45"
     },
     {
@@ -800,7 +800,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#46",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#46"
     },
     {
@@ -813,7 +813,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#47",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#47"
     },
     {
@@ -826,7 +826,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#48",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#48"
     },
     {
@@ -839,7 +839,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#49",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#49"
     },
     {
@@ -852,7 +852,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#50",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#50"
     },
     {
@@ -864,9 +864,9 @@
       "accountingAction": "new",
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#51",
-      "finalDisposition": "quarantined",
-      "blocker": "Freshly distinguished digestion after entry from prevention of entry. B is false because lysosomes do not digest all inorganic matter; D is also false because the membrane controls entry. No unique NOT-correct choice survives.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#51"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#51"
     },
     {
       "printedQuestionNumber": 52,
@@ -878,7 +878,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#52",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#52"
     },
     {
@@ -891,7 +891,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#53",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#53"
     },
     {
@@ -904,7 +904,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#54",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#54"
     },
     {
@@ -917,7 +917,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#55",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#55"
     },
     {
@@ -930,7 +930,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#56",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#56"
     },
     {
@@ -943,7 +943,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#57",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#57"
     },
     {
@@ -955,9 +955,9 @@
       "accountingAction": "new",
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#58",
-      "finalDisposition": "quarantined",
-      "blocker": "Rechecked both elemental allotropes: P4 and S8 are each polyatomic. The stem does not exclude either. A single-answer selection of sulfur cannot be independently justified by pretending phosphorus is diatomic.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#58"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#58"
     },
     {
       "printedQuestionNumber": 59,
@@ -969,7 +969,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#59",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#59"
     },
     {
@@ -982,7 +982,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#60",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#60"
     },
     {
@@ -995,7 +995,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#61",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#61"
     },
     {
@@ -1008,7 +1008,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#62",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#62"
     },
     {
@@ -1021,7 +1021,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#63",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#63"
     },
     {
@@ -1034,7 +1034,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#64",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#64"
     },
     {
@@ -1047,7 +1047,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#65",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#65"
     },
     {
@@ -1060,7 +1060,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#66",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#66"
     },
     {
@@ -1073,7 +1073,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#67",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#67"
     },
     {
@@ -1085,9 +1085,9 @@
       "accountingAction": "new",
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#68",
-      "finalDisposition": "quarantined",
-      "blocker": "NOAA confirms that intracloud charge flow (A) is lightning and that induced ground charge (D) is relevant to cloud-ground lightning. The generic causal stem does not select one type; the candidate D is not enough to override this.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#68"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#68"
     },
     {
       "printedQuestionNumber": 69,
@@ -1099,7 +1099,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#69",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#69"
     },
     {
@@ -1111,9 +1111,9 @@
       "accountingAction": "new",
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#70",
-      "finalDisposition": "quarantined",
-      "blocker": "Freshly inspected the original four speed graphs. A is the textbook schematic intent but has an initially increasing slope and an almost vertical speed drop; D also allows a smooth acceleration/retardation profile. Without a stated schematic convention or authenticated official adjudication, do not force a unique literal physics answer.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#70"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#70"
     },
     {
       "printedQuestionNumber": 71,
@@ -1125,7 +1125,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#71",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#71"
     },
     {
@@ -1138,7 +1138,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#72",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#72"
     },
     {
@@ -1151,7 +1151,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#73",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#73"
     },
     {
@@ -1164,7 +1164,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#74",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#74"
     },
     {
@@ -1177,7 +1177,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#75",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#75"
     },
     {
@@ -1190,7 +1190,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#76",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#76"
     },
     {
@@ -1203,7 +1203,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#77",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#77"
     },
     {
@@ -1216,7 +1216,7 @@
       "expectedBeforeRecordHash": "3d0ac9968f13e6150bc5c78cf4d93ad18625b85bd79e824456db1a9d1e52a6ce",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#78",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#78"
     },
     {
@@ -1229,7 +1229,7 @@
       "expectedBeforeRecordHash": "288802d46f0d3fa9a83534024f3a701a9d9891ac0594f01a13bc1843e7ec6134",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#79",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#79"
     },
     {
@@ -1242,7 +1242,7 @@
       "expectedBeforeRecordHash": "826f2605cce0c66ae5853bb00af37c1024d04d36bd0ae4e4643be027dbe3c7dc",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#80",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#80"
     },
     {
@@ -1255,7 +1255,7 @@
       "expectedBeforeRecordHash": "361b597e864a440c714c011f1d3d6c901ed7bc0171b30dd47b6fa84f6d5e3f90",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#81",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#81"
     },
     {
@@ -1268,7 +1268,7 @@
       "expectedBeforeRecordHash": "4e172b27e48142fcef75ec010db2c0c0dc69da3ece55ed34b41fc2da8c040dc3",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#82",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#82"
     },
     {
@@ -1281,7 +1281,7 @@
       "expectedBeforeRecordHash": "ef7be1b372a8578f6fedb42cce3a1e54815f1434a219ea9c3592569c75b08480",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#83",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#83"
     },
     {
@@ -1294,7 +1294,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#84",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#84"
     },
     {
@@ -1307,7 +1307,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#85",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#85"
     },
     {
@@ -1320,7 +1320,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#86",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#86"
     },
     {
@@ -1333,7 +1333,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#87",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#87"
     },
     {
@@ -1346,7 +1346,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#88",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#88"
     },
     {
@@ -1359,7 +1359,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#89",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#89"
     },
     {
@@ -1372,7 +1372,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#90",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#90"
     },
     {
@@ -1385,7 +1385,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#91",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#91"
     },
     {
@@ -1398,7 +1398,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#92",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#92"
     },
     {
@@ -1411,7 +1411,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#93",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#93"
     },
     {
@@ -1424,7 +1424,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#94",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#94"
     },
     {
@@ -1437,7 +1437,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#95",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#95"
     },
     {
@@ -1450,7 +1450,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#96",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#96"
     },
     {
@@ -1463,7 +1463,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#97",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#97"
     },
     {
@@ -1476,7 +1476,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#98",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#98"
     },
     {
@@ -1489,7 +1489,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#99",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#99"
     },
     {
@@ -1502,7 +1502,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#100",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#100"
     },
     {
@@ -1515,7 +1515,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#101",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#101"
     },
     {
@@ -1528,7 +1528,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#102",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#102"
     },
     {
@@ -1541,7 +1541,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#103",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#103"
     },
     {
@@ -1554,7 +1554,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#104",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#104"
     },
     {
@@ -1567,7 +1567,7 @@
       "expectedBeforeRecordHash": "d7dc19e46a69a3a33e88b7522b3a630d12c8327e4ec432f1e06fc8a7779f0d2e",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#105",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#105"
     },
     {
@@ -1580,7 +1580,7 @@
       "expectedBeforeRecordHash": "edd3f9b7cb62a7658b9f4f587ff9d07cb3e636af6307dcc15a9cf94e0644935c",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#106",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#106"
     },
     {
@@ -1593,7 +1593,7 @@
       "expectedBeforeRecordHash": "2e768dbf480ca7f9c7cb2e602eff05ca4ea655e57409baf13dd919121de66abd",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#107",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#107"
     },
     {
@@ -1606,7 +1606,7 @@
       "expectedBeforeRecordHash": "2516cd2710f4c0982016da73d94e072b70522cb47ca9bb4f2395ff7a3546dd48",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#108",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#108"
     },
     {
@@ -1619,7 +1619,7 @@
       "expectedBeforeRecordHash": "a9f81600ee1e34cf7e5b0c0f3f99a54e4663d3a9c976ac52ae163ce5d15b6eae",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#109",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#109"
     },
     {
@@ -1631,9 +1631,9 @@
       "accountingAction": "reused",
       "expectedBeforeRecordHash": "603be1171bd9b69b6ee831cf5e127e29348b430f814b3da71c1a00f7112edd9c",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#110",
-      "finalDisposition": "quarantined",
-      "blocker": "Fresh review distinguishes the school text’s dual listing of granite from geological rock identity. Ordinary granite is igneous; metamorphosed granite is generally orthogneiss. The source textbook’s imprecise list is not enough for an unqualified independently verified claim that granite is both. Recover authenticated official D with a caveat, or a precise primary definition resolving the intended classification.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#110"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#110"
     },
     {
       "printedQuestionNumber": 111,
@@ -1645,7 +1645,7 @@
       "expectedBeforeRecordHash": "3b14add6a47288a1d577520312b5de30fd9b53b184f5958a8d65d82832d274c2",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#111",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#111"
     },
     {
@@ -1658,7 +1658,7 @@
       "expectedBeforeRecordHash": "da0855f5b6a49ac465338180982021fd3c338c8438984f41d4887e7e47654e60",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#112",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#112"
     },
     {
@@ -1671,7 +1671,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#113",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#113"
     },
     {
@@ -1684,7 +1684,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#114",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#114"
     },
     {
@@ -1697,7 +1697,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#115",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#115"
     },
     {
@@ -1710,7 +1710,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#116",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#116"
     },
     {
@@ -1722,9 +1722,9 @@
       "accountingAction": "new",
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#117",
-      "finalDisposition": "quarantined",
-      "blocker": "Fresh university nutrient table confirms both urea and bone meal supply nitrogen. Bone meal has 3–4 percent N raw and 1–2 percent steamed. The stem says a source, not the principal or concentrated source, so C and D survive.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#117"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#117"
     },
     {
       "printedQuestionNumber": 118,
@@ -1736,7 +1736,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#118",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#118"
     },
     {
@@ -1749,7 +1749,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#119",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#119"
     },
     {
@@ -1762,7 +1762,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#120",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#120"
     },
     {
@@ -1775,7 +1775,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#121",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#121"
     },
     {
@@ -1788,7 +1788,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#122",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#122"
     },
     {
@@ -1800,9 +1800,9 @@
       "accountingAction": "new",
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#123",
-      "finalDisposition": "quarantined",
-      "blocker": "Recomputed initial kinetic energy as 100 J. With ordinary constant kinetic friction over 20 m the force is 5 N, absent from all four options. If variable friction is allowed, an instantaneous magnitude is underdetermined. Candidate X is not authenticated official withdrawal.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#123"
+      "finalDisposition": "withdrawn",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#123"
     },
     {
       "printedQuestionNumber": 124,
@@ -1814,7 +1814,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#124",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#124"
     },
     {
@@ -1826,9 +1826,9 @@
       "accountingAction": "new",
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#125",
-      "finalDisposition": "quarantined",
-      "blocker": "Freshly inspected P downward and Q upward on the original skydiver. A correctly identifies weight and air friction; C also correctly describes increased drag immediately on parachute opening at unchanged weight. The printed single-answer question lacks a unique independent choice.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#125"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#125"
     },
     {
       "printedQuestionNumber": 126,
@@ -1840,7 +1840,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#126",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#126"
     },
     {
@@ -1853,7 +1853,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#127",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#127"
     },
     {
@@ -1866,7 +1866,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#128",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#128"
     },
     {
@@ -1879,7 +1879,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#129",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#129"
     },
     {
@@ -1892,7 +1892,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#130",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#130"
     },
     {
@@ -1905,7 +1905,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#131",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#131"
     },
     {
@@ -1918,7 +1918,7 @@
       "expectedBeforeRecordHash": "19756bc58f6476589807d2c0d2115c5da019d176aedf5d757e74728ea731ba16",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#132",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#132"
     },
     {
@@ -1931,7 +1931,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#133",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#133"
     },
     {
@@ -1944,7 +1944,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#134",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#134"
     },
     {
@@ -1957,7 +1957,7 @@
       "expectedBeforeRecordHash": "4d628021d4773b62e542422e3918b939fe4638e3ca700d4fc23c7e9c3c43493b",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#135",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#135"
     },
     {
@@ -1970,7 +1970,7 @@
       "expectedBeforeRecordHash": "34bda44c192c8ba10bf45cc6b62d17b3d2297f13e90b8035b8cf497a2c1f4982",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#136",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#136"
     },
     {
@@ -1983,7 +1983,7 @@
       "expectedBeforeRecordHash": "1b90c184c93f100d6222064525d7aa378886bd5c9939a4eab658d76dd95fb665",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#137",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#137"
     },
     {
@@ -1996,7 +1996,7 @@
       "expectedBeforeRecordHash": "11646b64530dc5bddfe1661bfaa37ce35f78b8c0f1006d716d71e591f1580a00",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#138",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#138"
     },
     {
@@ -2008,9 +2008,9 @@
       "accountingAction": "reused",
       "expectedBeforeRecordHash": "3d44876391afbc2f48ef54ea14ce27f36e8fe2d6bab4da8c0d30849e590f06b9",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#139",
-      "finalDisposition": "quarantined",
-      "blocker": "Fresh review finds no primary support for the scan’s potash C. General laterites are leached/nutrient-poor; institutional regional accounts differ on nitrogen and sometimes phosphate. The unspecified appreciable amount cannot be independently resolved to one option. Do not silently substitute a regional answer for the official one.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#139"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#139"
     },
     {
       "printedQuestionNumber": 140,
@@ -2022,7 +2022,7 @@
       "expectedBeforeRecordHash": "fe82bcf42e8ef04f36dc6b962f84cea61018f047f92c83b2b0eaed03e6930c4a",
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#140",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#140"
     },
     {
@@ -2035,7 +2035,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#141",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#141"
     },
     {
@@ -2048,7 +2048,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#142",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#142"
     },
     {
@@ -2061,7 +2061,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#143",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#143"
     },
     {
@@ -2073,9 +2073,9 @@
       "accountingAction": "new",
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#144",
-      "finalDisposition": "quarantined",
-      "blocker": "Re-read both 2023 organiser releases: Jakarta in November and New Delhi in December have the same festival title and organising Indian Mission. With no month in the stem, both India and Indonesia have direct primary evidence. Authenticated official adjudication is needed for a single scored answer.",
-      "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#144"
+      "finalDisposition": "reasoned-verified",
+      "blocker": null,
+      "answerReviewReference": "content/audits/nda-2024-ii-archived-key-adjudication.json#144"
     },
     {
       "printedQuestionNumber": 145,
@@ -2087,7 +2087,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#145",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#145"
     },
     {
@@ -2100,7 +2100,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#146",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#146"
     },
     {
@@ -2113,7 +2113,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#147",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#147"
     },
     {
@@ -2126,7 +2126,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#148",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#148"
     },
     {
@@ -2139,7 +2139,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#149",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#149"
     },
     {
@@ -2152,7 +2152,7 @@
       "expectedBeforeRecordHash": null,
       "questionReviewReference": "content/staging/nda-2024-ii-source-draft.json#150",
       "finalDisposition": "reasoned-verified",
-      "blocker": "Application/PDF and production release checks are separate from answer approval.",
+      "blocker": null,
       "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json#150"
     }
   ],
@@ -2256,9 +2256,10 @@
     "eligibleNewlyPublished": 0,
     "sourceReviewComplete": true,
     "answerSecondPassCount": 150,
-    "reasonedVerifiedCount": 136,
-    "quarantinedCount": 14,
-    "eligibleAfterApprovedOverlay": 136,
+    "reasonedVerifiedCount": 149,
+    "withdrawnCount": 1,
+    "quarantinedCount": 0,
+    "eligibleAfterApprovedOverlay": 149,
     "note": "eligibleNewlyPublished=0 describes this immutable source-only staging artifact, not the reviewed runtime overlay or production release state."
   },
   "reviewGateResults": [],
@@ -3267,6 +3268,7 @@
     "content/audits/nda-2024-ii-key-transcriptions.json": "dd8b3ebe83998202a2ca7477e5c2c772e7f01f5ffd4453fee8a649ff73d8859c"
   },
   "answerReviewReference": "content/audits/nda-2024-ii-reasoned-review.json",
+  "archivedKeyAdjudicationReference": "content/audits/nda-2024-ii-archived-key-adjudication.json",
   "runtimeReviewReference": "content/audits/nda-2024-ii-review.json",
   "releaseReport": "docs/nda-2024-ii-release.md"
 }

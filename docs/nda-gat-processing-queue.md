@@ -10,7 +10,7 @@ mean complete. The source register currently inventories 25 local PDFs.
 | 1 | NDA II 2026 | Complete and live verified; 150/150 scored, official provisional key |
 | 2 | NDA II 2025 | Complete and live verified; 149/150 scored, official final key; Q85 officially withdrawn; release `317a96c` |
 | 3 | NDA I 2025 | Complete and live verified; 150/150 scored with official final key; release `c8112cb` |
-| 4 | NDA II 2024 | Live verified, 27 October 2026: 150 source dispositions; 136 reasoned-verified, 14 quarantined. No authenticated official key recovered. 116 newly eligible + 20 reused eligible. Data release `be411a9`; checks in `nda-2024-ii-release.md`. |
+| 4 | NDA II 2024 | Complete: all 150 source slots processed; 149 available and Q123 withdrawn, using the preserved archived final Series A key. Zero quarantined. 127 newly eligible + 22 reused eligible. Checks in `nda-2024-ii-release.md`. |
 | 5 | NDA I 2024 | Complete and live verified, 27 October 2026: 149 official-final + Q101 withdrawn; 50 English, 49 Science, 50 GS. Data release `5c0efde`; 204 automated and six production browser checks pass. See `nda-2024-i-release.md`. |
 | 6 | NDA II 2023 | Complete and live verified, 28 October 2026: 150/150 official-final, 50 each English/Science/GS. 129 new occurrences + 21 reused IDs; no withdrawals. Data release `dc67135`; checks in `nda-2023-ii-release.md`. |
 | 7 | NDA I 2023 | Complete and live verified, 28 October 2026: 150/150 official-final; English 50, Science 49, GS 51. Q47 B/D and Q78 A/C accepted. Data release `281feee`; checks in `nda-2023-i-release.md`. |

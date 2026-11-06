@@ -8,10 +8,17 @@ const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const draft=read('content/staging/nda-2024-ii-source-draft.json');
 const register=read('content/audits/nda-2024-ii-paper-register.json');
 const reviews=read('content/audits/nda-2024-ii-reasoned-review.json');
+const archivedKey=read('content/audits/nda-2024-ii-archived-key-adjudication.json');
 assert.equal(reviews.progress.secondPassCompleted,150);
 assert.equal(reviews.progress.remainingSecondPass.length,0);
 assert.equal(reviews.progress.secondPassApproved,136);
 const reviewByNumber=new Map(reviews.questions.map(q=>[q.number,q]));
+const archivedDecisionByNumber=new Map(archivedKey.decisions.map(q=>[q.number,q]));
+assert.equal(archivedDecisionByNumber.size,14);
+assert.equal(archivedKey.visualIdentityReview.totalQuestions,150);
+assert.equal(archivedKey.visualIdentityReview.questionsDropped,1);
+assert.equal(archivedKey.visualIdentityReview.questionsTakenForScoring,149);
+assert.equal(hash(fs.readFileSync('../data/nda_answer_sources/answer_keys/2024_II.pdf')),archivedKey.archivedScanSha256);
 const raw=[...read('content/question-bank.json').questions,...read('content/reviewed-prelims-imports.json').questions];
 const before=new Map(register.rawBefore.map(b=>[b.id,b]));
 for(const b of before.values()){assert.equal(hash(b.value),b.sha256);assert.equal(hash(raw.find(q=>q.id===b.id)),b.sha256,`Original record changed: ${b.id}`);}
@@ -41,8 +48,11 @@ for(const row of draft.questions){
    assert.equal(old.options[letter],repairs[letter][0]);assert.equal(row.options[letter],repairs[letter][1]);
   }else assert.equal(norm(old.options[letter]),norm(row.options[letter]),`Material option repair requires separate review: Q${n}/${letter}`);
  }
- const status=review.answerReviewDisposition;
- assert.ok(['reasoned-verified','quarantined'].includes(status));
+ const archivedDecision=archivedDecisionByNumber.get(n);
+ const status=archivedDecision?.disposition??review.answerReviewDisposition;
+ const effectiveAnswer=archivedDecision?.answer??review.effectiveAnswer;
+ assert.ok(['reasoned-verified','withdrawn'].includes(status));
+ if(archivedDecision)assert.equal(archivedDecision.answer,review.candidateScanLetter==='X'?null:review.candidateScanLetter);
  const revision={status,revision:(prior?.revision??0)+1,contentRevision:(prior?.contentRevision??0)+(n===107?1:0),preparationScope:c.scope};
  policy[row.canonicalQuestionId]=revision;
  if(old)baselines[old.id]={sha256:hash(old),answer:old.answer,reviewRevision:prior?.revision??0,contentRevision:prior?.contentRevision??0};
@@ -55,21 +65,24 @@ for(const row of draft.questions){
  const slot={number:n,canonicalQuestionId:row.canonicalQuestionId,accountingAction:row.accountingAction,disposition:status,answerReviewReference:`content/audits/nda-2024-ii-reasoned-review.json#${n}`,classification:{primary:c.path,additional:additionalPaths,rationale:c.rationale,secondPass:'Same AI reviewer fresh concept review: complete tested task, not incidental wording; target applicability reviewed separately.',approved:true},sourcePages:row.sourcePages,expectedBeforeRecordHash:row.expectedBeforeRecordHash,revision};
  slots.push(slot);
  if(status!=='reasoned-verified')continue;
- assert.ok(/^[ABCD]$/.test(review.effectiveAnswer));
+ assert.ok(/^[ABCD]$/.test(effectiveAnswer));
  const context=row.sharedContext?.promptLines??[];
  const promptLines=[...context,...row.promptLines],sourceText=promptLines.join('\n');
  const figure=figureByNumber.get(n);assert.equal(Boolean(row.figure),Boolean(figure));
  const caveat=review.strongestCounterargument;
- const explanation=`Independently verified (primary-source reasoning; not an authenticated official key): ${review.effectiveAnswer} (${row.options[review.effectiveAnswer]}). ${review.secondPass.note}`;
- const q={...old,id:row.canonicalQuestionId,origin:'pyq',sourceTextLocked:true,sourceText,sourceTextHash:hash(sourceText),exam:'NDA',year:2024,paper:'II',questionNumber:n,subject,topic:chapter,subtopic:subpart,taxonomyHead:head,taxonomyChapter:chapter,taxonomySubtopic:subpart,taxonomyId:paths.get(c.path)??null,taxonomyVersion:registry.version,difficulty:old?.difficulty??'Moderate',promptLines,options:row.options,answer:review.effectiveAnswer,explanation,requiresFigure:Boolean(figure),figureKey:figure?.asset??null,figureAlt:figure?.description??null,additionalPaths,preparationScope:c.scope,underlined:row.underlined??[],...(row.sharedContext?{sharedContext:row.sharedContext}:{}),classificationTags:[[143,144,145,146,147,148,150].includes(n)?'Event-based':'Static'],source:{...old?.source,dataset:'NDA II 2024 GAT, individual primary-source review',exam:'NDA',year:2024,paper:'II',questionNumber:n,originalPdf:register.sourceIdentity.originalPdfLocalPath,originalPdfSha256:register.sourceIdentity.originalPdfSha256,originalPage:row.page,originalPages:row.sourcePages,bookletSeries:'A',answerStatus:'reasoned-verified',answerEvidence:slot.answerReviewReference,primaryEvidence:[...review.evidence,...review.secondPass.extraEvidence],candidateKeyAuthenticated:false,optionsReordered:false,classificationRationale:c.rationale,secondPass:'Fresh pass by the same AI reviewer; not independent human review',reviewedAt:'2026-10-27',...(caveat?{firstPassCaution:caveat}:{}),...(row.sourceCaveat?{sourceCaveat:row.sourceCaveat}:{}),...(row.originalOptionLabels?{originalOptionLabels:row.originalOptionLabels}:{}),...(figure?{figureSha256:figure.sha256}:{} )}};
+ const explanation=archivedDecision
+  ? `Archived final-key decision: ${effectiveAnswer} (${row.options[effectiveAnswer]}). The complete Series A scan records 149 scored questions and one withdrawal. ${review.secondPass.note}`
+  : `Independently verified (primary-source reasoning): ${effectiveAnswer} (${row.options[effectiveAnswer]}). ${review.secondPass.note}`;
+ const q={...old,id:row.canonicalQuestionId,origin:'pyq',sourceTextLocked:true,sourceText,sourceTextHash:hash(sourceText),exam:'NDA',year:2024,paper:'II',questionNumber:n,subject,topic:chapter,subtopic:subpart,taxonomyHead:head,taxonomyChapter:chapter,taxonomySubtopic:subpart,taxonomyId:paths.get(c.path)??null,taxonomyVersion:registry.version,difficulty:old?.difficulty??'Moderate',promptLines,options:row.options,answer:effectiveAnswer,explanation,requiresFigure:Boolean(figure),figureKey:figure?.asset??null,figureAlt:figure?.description??null,additionalPaths,preparationScope:c.scope,underlined:row.underlined??[],...(row.sharedContext?{sharedContext:row.sharedContext}:{}),classificationTags:[[143,144,145,146,147,148,150].includes(n)?'Event-based':'Static'],source:{...old?.source,dataset:'NDA II 2024 GAT, complete archived-key adjudication',exam:'NDA',year:2024,paper:'II',questionNumber:n,originalPdf:register.sourceIdentity.originalPdfLocalPath,originalPdfSha256:register.sourceIdentity.originalPdfSha256,originalPage:row.page,originalPages:row.sourcePages,bookletSeries:'A',answerStatus:archivedDecision?'archived-final-key':'reasoned-verified',answerEvidence:archivedDecision?'content/audits/nda-2024-ii-archived-key-adjudication.json':slot.answerReviewReference,primaryEvidence:[...review.evidence,...review.secondPass.extraEvidence],candidateKeyAuthenticated:false,archivedKeyIdentityVerified:Boolean(archivedDecision),archivedKeySha256:archivedDecision?archivedKey.archivedScanSha256:undefined,optionsReordered:false,classificationRationale:c.rationale,secondPass:'Fresh pass by the same AI reviewer; archived key independently transcribed twice and visually re-inspected',reviewedAt:archivedDecision?archivedKey.reviewedAt:'2026-10-27',...(caveat?{firstPassCaution:caveat}:{}),...(row.sourceCaveat?{sourceCaveat:row.sourceCaveat}:{}),...(row.originalOptionLabels?{originalOptionLabels:row.originalOptionLabels}:{}),...(figure?{figureSha256:figure.sha256}:{} )}};
  if(old&&old.answer!==q.answer)keyRevisions[q.id]=(oldKeyRevisions[q.id]??0)+1;
  questions.push(q);
 }
-assert.equal(questions.length,136);assert.equal(slots.length,150);
-assert.equal(questions.filter(q=>q.preparationScope==='english').length,46);
-assert.equal(questions.filter(q=>q.preparationScope==='science').length,43);
+assert.equal(questions.length,149);assert.equal(slots.length,150);
+assert.equal(questions.filter(q=>q.preparationScope==='english').length,50);
+assert.equal(questions.filter(q=>q.preparationScope==='science').length,49);
 const placements=questions.filter(q=>q.preparationScope!=='gs').flatMap(q=>['NDA','CDS'].map(target=>({questionId:q.id,target,status:'approved',subtopicId:`subtopic:${q.subject==='Science & Technology'?'science':slug(q.subject)}:${slug(q.taxonomyHead)}:${slug(q.topic)}:${slug(q.subtopic)}`,rationale:q.source.classificationRationale,secondPass:'Fresh same-AI concept/applicability review, source examination retained; no automatic CSE science transfer.'})));
-const reconciliation={expected:150,newSourceOccurrences:128,reusedSourceOccurrences:22,duplicateAliases:0,answerReviewed:150,dispositions:{'official-final':0,'official-provisional':0,'reasoned-verified':136,withdrawn:0,duplicate:0,quarantined:14},eligible:136,newlyImportedEligible:questions.filter(q=>!before.has(q.id)).length,reusedEligible:questions.filter(q=>before.has(q.id)).length,sectionTotals:{english:46,science:43,gs:47},quarantinedNumbers:slots.filter(q=>q.disposition==='quarantined').map(q=>q.number)};
-const outputs=[['content/nda-2024-ii-reviewed-paper.json',{version:1,paperId:'nda-2024-ii-gat',evidenceStatus:'Individual primary-source reasoning, fresh second pass; candidate official-key scan remains unauthenticated',baselines,questions}],['content/nda-2024-ii-review-policy.json',policy],['content/nda-2024-ii-key-revisions.json',keyRevisions],['content/nda-2024-ii-preparation-placements.json',placements],['content/audits/nda-2024-ii-review.json',{paperId:'nda-2024-ii-gat',sourceRegister:'content/audits/nda-2024-ii-paper-register.json',reconciliation,questionSlots:slots,releaseState:'approved-runtime-overlay',releaseReport:'docs/nda-2024-ii-release.md'}]];
+const reconciliation={expected:150,newSourceOccurrences:128,reusedSourceOccurrences:22,duplicateAliases:0,answerReviewed:150,dispositions:{'official-final':0,'official-provisional':0,'reasoned-verified':149,withdrawn:1,duplicate:0,quarantined:0},eligible:149,newlyImportedEligible:questions.filter(q=>!before.has(q.id)).length,reusedEligible:questions.filter(q=>before.has(q.id)).length,sectionTotals:{english:50,science:49,gs:50},withdrawnNumbers:slots.filter(q=>q.disposition==='withdrawn').map(q=>q.number),quarantinedNumbers:[]};
+const evidence={status:'archived-final-key',series:'A',asset:'/papers/nda-2024-ii-gat/archived-final-key.pdf',sha256:archivedKey.archivedScanSha256,issuerUrlRecovered:false};
+const outputs=[['content/nda-2024-ii-reviewed-paper.json',{version:2,paperId:'nda-2024-ii-gat',evidenceStatus:'All 150 source slots adjudicated: 136 primary-source reasoned decisions, 13 complete archived final-key decisions and one archived-key withdrawal',archivedKeyAdjudication:'content/audits/nda-2024-ii-archived-key-adjudication.json',evidence,baselines,questions}],['content/nda-2024-ii-review-policy.json',policy],['content/nda-2024-ii-key-revisions.json',keyRevisions],['content/nda-2024-ii-preparation-placements.json',placements],['content/audits/nda-2024-ii-review.json',{paperId:'nda-2024-ii-gat',sourceRegister:'content/audits/nda-2024-ii-paper-register.json',archivedKeyAdjudication:'content/audits/nda-2024-ii-archived-key-adjudication.json',reconciliation,questionSlots:slots,releaseState:'complete-reviewed-runtime-overlay',releaseReport:'docs/nda-2024-ii-release.md'}]];
 for(const [path,value] of outputs){const bytes=JSON.stringify(value,null,2)+'\n';if(process.argv.includes('--check'))assert.equal(fs.readFileSync(path,'utf8'),bytes);else fs.writeFileSync(path,bytes);}
 console.log(JSON.stringify(reconciliation));
