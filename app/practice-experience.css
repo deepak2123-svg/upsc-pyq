@@ -1,6 +1,6 @@
 /* A quiet reading surface; exam colours identify provenance, not correctness. */
 .exam-experience { --exam-text: #202733; background: #f4f6f8; color: var(--exam-text); }
-.practice-header-shell { border-top:2px solid #171717; background:#fff; box-shadow:0 1px 0 #dfe3e9; }
+.practice-header-shell { position:sticky; top:0; z-index:50; border-top:2px solid #171717; background:#fff; box-shadow:0 1px 0 #dfe3e9; }
 .exam-experience .practice-topbar { position:relative; width: min(1760px, calc(100% - 32px)); height: 96px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
 .exam-experience .practice-topbar > a { display:inline-flex; align-items:center; gap:9px; min-height:56px; padding:0 20px; border:1px solid #d4d9e2; border-radius:13px; background:#fff; color:#111827; font-size:15px; font-weight:650; }
 .exam-experience .practice-topbar > a span { font-size:28px; line-height:0; font-weight:350; transform:translateY(-1px); }
@@ -57,7 +57,7 @@
 .question-origin { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; margin: 18px 0 0; padding-top: 13px; border-top: 1px solid #e2e6ec; color: #657084; font-size: 11px; line-height: 1.5; }
 .question-origin > span { width: 8px; height: 8px; margin-right: 3px; border-radius: 50%; }
 .question-origin strong { color: #303947; font-weight: 650; }
-.question-palette { position: sticky; top: 16px; max-height: calc(100dvh - 32px); overflow: auto; margin-top: 22px; padding: 14px; background: #fff; border: 1px solid #d9dfe8; border-radius: 12px; box-shadow: 0 6px 20px rgb(29 42 61 / 4%); scrollbar-width: thin; }
+.question-palette { position: sticky; top: 118px; max-height: calc(100dvh - 134px); overflow: auto; margin-top: 22px; padding: 14px; background: #fff; border: 1px solid #d9dfe8; border-radius: 12px; box-shadow: 0 6px 20px rgb(29 42 61 / 4%); scrollbar-width: thin; }
 .palette-heading { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-bottom: 11px; border-bottom: 1px solid #e4e8ee; }
 .palette-heading > div { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; width: 100%; }
 .palette-heading strong { font-size: 13px; }

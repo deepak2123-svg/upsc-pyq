@@ -80,4 +80,6 @@ test('short official papers use a compact ten-column navigator and centred paper
  await expect(page.locator('.practice-progress')).toBeVisible();
  const titleBox=await page.locator('.practice-paper-title').boundingBox();
  expect(titleBox&&Math.abs(titleBox.x+titleBox.width/2-800)).toBeLessThan(3);
+ await page.evaluate(()=>scrollTo(0,document.documentElement.scrollHeight));
+ await expect.poll(()=>page.locator('.practice-header-shell').evaluate(element=>Math.round(element.getBoundingClientRect().top))).toBe(0);
 });
