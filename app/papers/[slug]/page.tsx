@@ -12,6 +12,7 @@ import nda2016I from '../../../content/nda-2016-i-official-paper.json';
 import nda2016II from '../../../content/nda-2016-ii-official-paper.json';
 import nda2015II from '../../../content/nda-2015-ii-official-paper.json';
 import nda2015I from '../../../content/nda-2015-i-official-paper.json';
+import nda2014I from '../../../content/nda-2014-i-official-paper.json';
 import nda2014II from '../../../content/nda-2014-ii-official-paper.json';
 import nda2020 from '../../../content/nda-2020-i-ii-official-paper.json';
 import nda2021I from '../../../content/nda-2021-i-official-paper.json';
@@ -41,6 +42,7 @@ const papers:Record<string,{data:PaperData;title:string;summary:string;notice:st
  'nda-2016-ii-gat':{data:nda2016II,title:'NDA II 2016 · GAT',summary:'150 available / 150 source questions · English 50 · Science 50 · GS 50',notice:'All 150 questions are scored against the official final Series A key.'},
  'nda-2015-ii-gat':{data:nda2015II,title:'NDA II 2015 · GAT',summary:'150 available / 150 source questions · English 50 · Science 50 · GS 50',notice:'All 150 questions are scored against the official final Series A key.'},
  'nda-2015-i-gat':{data:nda2015I,title:'NDA I 2015 · GAT',summary:'149 available / 150 source questions · English 50 · Science 49 · GS and World History 50',notice:'Q60 was withdrawn in the official final Series A key; the other 149 questions are scored.'},
+ 'nda-2014-i-gat':{data:nda2014I,title:'NDA I 2014 · GAT',summary:'149 available / 150 source questions · English 50 · Science 50 · GS 49',notice:'Q150 was withdrawn in the official final Series A key; the other 149 questions are scored.'},
  'nda-2014-ii-gat':{data:nda2014II,title:'NDA II 2014 · GAT',summary:'150 available / 150 source questions · English 50 · Science 49 · GS and World History 51',notice:'All 150 questions are scored against the archived official final Series A key.'},
  'nda-2019-i-gat':{data:nda2019I,title:'NDA I 2019 · GAT',summary:'150 available / 150 source questions · English 50 · Science 47 · GS and World History 53',notice:'All 150 questions are scored against the official final key.'},
  'nda-2019-ii-gat':{data:nda2019II,title:'NDA II 2019 · GAT',summary:'149 available / 150 source questions · Q119 officially withdrawn',notice:'Q119 was withdrawn by UPSC and is omitted; the other 149 questions are scored against the official final key.'},

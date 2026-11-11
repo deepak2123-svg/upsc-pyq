@@ -21,17 +21,21 @@ mean complete. The source register currently inventories 25 local PDFs.
 | 12 | NDA I & II 2020 combined | Complete and live verified, 29 October 2026: one shared 150-question Series B booklet, 149 official-final + Q70 withdrawn; 123 new + 27 reused, with one preserved duplicate alias. Data `adeafa4`; 228 automated tests, all 600 live option decisions, the 149-question answer-free snapshot and both figure assets pass. See `nda-2020-i-ii-release.md`. |
 | 13 | NDA II 2019 | Complete and live verified, 29 October 2026: 149 official-final + Q119 withdrawn; English 50, Science 50, GS 49. 130 new + 20 reused; data `25c0829`; 231 automated tests, all 600 live option decisions and all seven production browser checks pass. See `nda-2019-ii-release.md`. |
 | 14 | NDA I 2019 | Complete: 150/150 official-final; 127 new + 23 reused. Data release `6593902`. |
-| 15 | NDA II 2018 | Complete locally, 30 October 2026: 150/150 official-final; English 50, Science 44, GS 56. 129 new + 21 reused; two source figures retained. See `nda-2018-ii-release.md`. |
+| 15 | NDA II 2018 | Complete and included in the final 25-paper release audit, 11 November 2026: 150/150 official-final; English 50, Science 44, GS 56. 129 new + 21 reused; two source figures retained. See `nda-2018-ii-release.md`. |
 | 16 | NDA I 2018 | Complete; 150/150 official-final. Data release `e9e8120`. |
 | 17 | NDA II 2017 | Complete; 150/150 official-final. Data release `22d52a8`. |
 | 18 | NDA I 2017 | Complete; 150/150 official-final. Data release `3615d40`. |
 | 19 | NDA II 2016 | Complete; 150/150 official-final. Data release `e3e5b97`. |
 | 20 | NDA I 2016 | Complete; 150/150 official-final. Data release `7d2064d`. |
 | 21 | NDA II 2015 | Complete; 150/150 official-final. Data release `6acd0fc`. |
-| 22 | NDA I 2015 | Complete locally, 4 November 2026: 149 scored with the official final key; Q60 officially dropped; 132 new occurrences + 18 reused. Release pending live verification. |
+| 22 | NDA I 2015 | Complete and included in the final 25-paper release audit, 11 November 2026: 149 scored with the official final key; Q60 officially dropped; 132 new occurrences + 18 reused. |
 | 23 | NDA II 2014 | Complete, 5 November 2026: 150/150 official-final; English 50, Science 49, GS and World History 51. 132 new occurrences + 18 reused; one source graph retained. Full release verification passed. |
-| 24 | NDA I 2014 | Next in queue |
+| 24 | NDA I 2014 | Complete, 11 November 2026: all 150 source slots accounted for; 149 available and Q150 officially withdrawn; English 50, Science 50, GS 49. Added to Sources and the original-paper launcher during the final audit. |
 
 Queued records may already have partial imports or old slot accounting. Every
 paper still needs the full source/reproduction/classification/key/release gates;
 no prior subset is automatically promoted. Do not advance while a release fails.
+
+All 25 inventoried NDA GAT paper sets have now completed processing. The
+collection-wide release gate and its results are recorded in
+`nda-gat-production-audit.md`.
