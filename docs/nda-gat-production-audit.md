@@ -47,7 +47,8 @@ launches.
 - Production build: passed locally on 11 November 2026.
 - Collection-wide browser gate: 26/26 passed in one uninterrupted run (2.9 minutes).
 - Full repository regression suite: 278/278 passed with zero failures.
-- Public production deployment and live rerun: pending.
+- Public production revision `0bbbe23`: 26/26 browser scenarios passed against
+  `https://upscpuraan.vercel.app` in one uninterrupted run (6.9 minutes).
 
-The remaining pending line must be replaced with the deployed revision and live
-result before the audit is considered closed.
+The audit is closed. Any later change to a reviewed GAT paper, its launcher,
+print/PDF output or Sources registration must pass this collection-wide gate.
