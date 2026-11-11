@@ -1,0 +1,2940 @@
+{
+  "paper": {
+    "exam": "NDA",
+    "year": 2026,
+    "session": "I",
+    "subject": "Mathematics",
+    "bookletSeries": "A",
+    "paperCode": "NPSS-A-HMT",
+    "examDate": "",
+    "totalQuestions": 120
+  },
+  "questions": [
+    {
+      "number": 1,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "promptLines": [
+        "Let \\(p\\), \\(q\\) and \\(r\\) be three unequal numbers such that \\(p\\), \\(q\\) and \\(r\\) are in AP. If \\((q - p)\\), \\((r - q)\\) and \\(p\\) are in GP, then \\((p + q) : (q + r) : (r + p)\\) equals"
+      ],
+      "options": {
+        "A": "\\(1 : 2 : 3\\)",
+        "B": "\\(3 : 4 : 5\\)",
+        "C": "\\(3 : 5 : 4\\)",
+        "D": "\\(1 : 3 : 2\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 2,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "promptLines": [
+        "If \\(p\\), \\(g_1\\), \\(g_2\\) and \\(q\\) are in GP and \\(m\\) is the arithmetic mean of \\(p\\) and \\(q\\), then",
+        "\\[\\dfrac{g_1^2}{g_2} + \\dfrac{g_2^2}{g_1}\\]",
+        "is equal to"
+      ],
+      "options": {
+        "A": "\\(m\\)",
+        "B": "\\(2m\\)",
+        "C": "\\(1\\)",
+        "D": "\\(\\dfrac{1}{2}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 3,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "promptLines": [
+        "Consider the following inequalities :",
+        "I. \\(1 + 4i > 3 + 2i\\)",
+        "II. \\(2 + 3i < 3 + 4i\\)",
+        "III. \\(4 + 3i > 3 + 4i\\)",
+        "where \\(i = \\sqrt{-1}\\)",
+        "How many of the above are valid ?"
+      ],
+      "options": {
+        "A": "None",
+        "B": "One",
+        "C": "Two",
+        "D": "All the three"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 4,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "promptLines": [
+        "Let \\(Z_1\\) and \\(Z_2\\) be complex numbers such that \\(\\dfrac{3Z_1}{4Z_2}\\) is purely imaginary.",
+        "What is \\(\\left|\\dfrac{Z_1 + Z_2}{Z_1 - Z_2}\\right|\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(2\\)",
+        "B": "\\(\\dfrac{3}{2}\\)",
+        "C": "\\(\\dfrac{5}{4}\\)",
+        "D": "\\(1\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 5,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "promptLines": [
+        "If \\(\\alpha\\), \\(\\beta\\), \\(\\gamma\\) are cube roots of \\(-8\\), then what is \\(\\dfrac{\\alpha^2 p^2 + \\beta^2 q^2 + \\gamma^2 r^2}{\\beta^2 p^2 + \\gamma^2 q^2 + \\alpha^2 r^2}\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{\\gamma}{\\alpha}\\)",
+        "B": "\\(\\dfrac{\\gamma}{\\beta}\\)",
+        "C": "\\(\\dfrac{2\\gamma}{\\alpha}\\)",
+        "D": "\\(\\dfrac{2\\gamma}{\\beta}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 6,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "promptLines": [
+        "The sum of the first \\(n\\) terms of an AP is \\(3n^2 + 5n\\). If the \\(m^{\\text{th}}\\) term of the AP is 68, then what is the value of \\(m\\) ?"
+      ],
+      "options": {
+        "A": "\\(9\\)",
+        "B": "\\(10\\)",
+        "C": "\\(11\\)",
+        "D": "\\(12\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 7,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "A set \\(S\\) contains \\((2n + 1)\\) elements. If the number of subsets of \\(S\\) which contain at most \\(n\\) elements is 1024, then what is the value of \\(n\\) ?"
+      ],
+      "options": {
+        "A": "\\(10\\)",
+        "B": "\\(8\\)",
+        "C": "\\(6\\)",
+        "D": "\\(5\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 8,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "What is the maximum number of points of intersection of 5 circles ?"
+      ],
+      "options": {
+        "A": "\\(10\\)",
+        "B": "\\(15\\)",
+        "C": "\\(20\\)",
+        "D": "\\(25\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 9,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "What is the greatest value of \\(r\\) satisfying the inequality \\({}^{15}C_{r+1} > 2 \\times {}^{15}C_r\\) ?"
+      ],
+      "options": {
+        "A": "\\(2\\)",
+        "B": "\\(3\\)",
+        "C": "\\(4\\)",
+        "D": "\\(5\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 10,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "If \\(n = {}^{m}C_2\\) then what is \\({}^{n}C_2\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\({}^{m+1}C_4\\)",
+        "B": "\\(2 \\times {}^{m+1}C_4\\)",
+        "C": "\\(3 \\times {}^{m+1}C_4\\)",
+        "D": "\\({}^{m+2}C_4\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "The superscript before the second C is small and printed ambiguously; read as n.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 11,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "If the highest degree coefficient is equal to 1, then what is the total number of quadratic equations which are unchanged on squaring their roots ?"
+      ],
+      "options": {
+        "A": "\\(6\\)",
+        "B": "\\(4\\)",
+        "C": "\\(2\\)",
+        "D": "None"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 12,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "Let \\(\\alpha\\) and \\(\\beta\\) be the roots of the quadratic equation \\(x^2 - 2bx + c^2 = 0\\) where \\(b\\), \\(c\\) are positive real numbers. Let \\(A\\) be the arithmetic mean of \\(\\alpha\\) and \\(\\beta\\); and \\(G\\) be the geometric mean of \\(\\alpha\\) and \\(\\beta\\). What are the roots of the quadratic equation \\(x^2 - (b + c)\\,x + bc = 0\\) ?"
+      ],
+      "options": {
+        "A": "\\(A\\), \\(G\\)",
+        "B": "\\(2A\\), \\(G\\)",
+        "C": "\\(A\\), \\(2G\\)",
+        "D": "\\(2A\\), \\(2G\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 13,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "If",
+        "\\(1 - \\log_{10} 2 = \\log_{10}(5^x + 4^x + 3^x + 2^x + 1)\\), then what is a value of \\(x\\) ?"
+      ],
+      "options": {
+        "A": "\\(10\\)",
+        "B": "\\(5\\)",
+        "C": "\\(1\\)",
+        "D": "\\(0\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 14,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "promptLines": [
+        "Let \\(f(x) = \\begin{vmatrix} 3x^2 & \\cos x & -\\sin x \\\\ 6 & -1 & 0 \\\\ q & q^2 & q^3 \\end{vmatrix}\\)",
+        "where \\(q\\) is any constant, then what is",
+        "\\(\\dfrac{d^2}{dx^2}(f(x))\\) at \\(x = 0\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "\\(0\\)",
+        "C": "\\(1\\)",
+        "D": "\\(q\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 15,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "promptLines": [
+        "If \\(\\begin{vmatrix} a - b & p - q & x - y \\\\ b - c & q - r & y - z \\\\ c - a & r - p & z - x \\end{vmatrix} = k \\begin{vmatrix} a & b & c \\\\ p & q & r \\\\ x & y & z \\end{vmatrix}\\),",
+        "then what is the value of \\(k\\) ?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "\\(0\\)",
+        "C": "\\(\\dfrac{1}{2}\\)",
+        "D": "\\(1\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 16,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "promptLines": [
+        "If \\(p\\), \\(q\\), \\(r\\) are the cube roots of unity, then what is",
+        "\\[\\begin{vmatrix} p^2 + q^2 & r^2 & r^2 \\\\ p^2 & q^2 + r^2 & p^2 \\\\ q^2 & q^2 & r^2 + p^2 \\end{vmatrix}\\]",
+        "equal to ?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "\\(0\\)",
+        "C": "\\(1\\)",
+        "D": "\\(4\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 17,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "promptLines": [
+        "If \\(A\\) is a square matrix such that \\(|A| = -2\\), then \\(|AA^T|\\), where \\(A^T\\) is the transpose of \\(A\\), is equal to"
+      ],
+      "options": {
+        "A": "\\(-4\\)",
+        "B": "\\(1\\)",
+        "C": "\\(2\\)",
+        "D": "\\(4\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 18,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "promptLines": [
+        "Consider the following statements :",
+        "I. If \\(n \\times n\\) \\((n > 1)\\) matrix is symmetric, then its inverse is also a symmetric matrix.",
+        "II. If \\(n \\times n\\) \\((n > 1)\\) matrix is singular, then its adjoint is also a singular matrix.",
+        "Which of the statements given above is/are correct ?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 19,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "promptLines": [
+        "If \\(M = \\begin{bmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 2 \\end{bmatrix}\\), then what is the value of \\(|M|\\,|\\mathrm{adj}M|\\) ?"
+      ],
+      "options": {
+        "A": "\\(8\\)",
+        "B": "\\(64\\)",
+        "C": "\\(256\\)",
+        "D": "\\(512\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 20,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "promptLines": [
+        "If \\(M_k = \\begin{bmatrix} k & k - 1 \\\\ k - 1 & k \\end{bmatrix}\\) where \\(k\\) is a natural number, then what is",
+        "\\(|M_1| + |M_2| + |M_3| + \\ldots + |M_{50}|\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(50\\)",
+        "B": "\\(1250\\)",
+        "C": "\\(2500\\)",
+        "D": "\\(5000\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 21,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "promptLines": [
+        "If \\(M^T\\) is the transpose of a \\(2 \\times 2\\) matrix \\(M\\), then which of the following is/are correct ?",
+        "I. \\(|M + M^T| = |M| + |M^T|\\) if \\(M\\) is symmetric.",
+        "II. \\(|M + M^T| = 0\\) if \\(M\\) is anti-symmetric.",
+        "Select the answer using the code given below :"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 22,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "promptLines": [
+        "If \\(M\\) is a square matrix such that \\(M^3 = M\\), then how many values of \\(|M|\\) are possible ?"
+      ],
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 23,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "promptLines": [
+        "Let \\(p = (x + y + z)\\) and \\(q = xyz\\). If \\(\\begin{vmatrix} x & 1 & 1 \\\\ 1 & y & 1 \\\\ 1 & 1 & z \\end{vmatrix}\\) is positive, then which one of the following is correct ?"
+      ],
+      "options": {
+        "A": "\\(q > p\\)",
+        "B": "\\(q + 1 > p\\)",
+        "C": "\\(q + 2 > p\\)",
+        "D": "\\(q + 2 \\geq p\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 24,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "promptLines": [
+        "What is",
+        "\\((((A \\cap B) \\cup (A - B)) - ((A \\cap B) \\cup (B - A))) \\cup A\\)",
+        "equal to ?"
+      ],
+      "options": {
+        "A": "\\(\\varphi\\)",
+        "B": "\\(A\\)",
+        "C": "\\(B\\)",
+        "D": "\\(A \\cup B\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 25,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "promptLines": [
+        "Let \\(A\\) and \\(B\\) be two sets. For some set \\(C\\), both \\(A \\cap C\\) and \\(B \\cap C\\) are empty sets and \\(A \\cup C = B \\cup C\\). Which of the following is/are true ?",
+        "I. \\(C = \\varphi\\)",
+        "II. \\(A = B\\)",
+        "III. \\(A \\cup B = C\\)",
+        "Select the answer using the code given below :"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "I and II only",
+        "D": "I, II and III"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 26,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "promptLines": [
+        "If \\(2 \\sec 4\\beta = \\tan 2\\alpha + \\cot 2\\alpha\\), then which one of the following is a possible value of \\((\\alpha + \\beta)\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{\\pi}{2}\\)",
+        "B": "\\(\\dfrac{\\pi}{4}\\)",
+        "C": "\\(\\dfrac{\\pi}{6}\\)",
+        "D": "\\(\\dfrac{\\pi}{8}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 27,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "promptLines": [
+        "If \\(\\alpha\\) and \\(\\beta\\) are complementary angles such that \\(\\alpha - \\beta = \\dfrac{\\pi}{6}\\) and \\(m \\tan\\beta = n \\tan\\alpha\\), then what is \\(\\left(\\dfrac{m + n}{m - n}\\right)\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(2\\)",
+        "B": "\\(\\dfrac{2}{\\sqrt{3}}\\)",
+        "C": "\\(1\\)",
+        "D": "\\(\\dfrac{1}{\\sqrt{3}}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 28,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "promptLines": [
+        "If \\(x = \\sec\\theta - \\tan\\theta\\) and \\(y = \\mathrm{cosec}\\,\\theta + \\cot\\theta\\),",
+        "then which one of the following is correct ?"
+      ],
+      "options": {
+        "A": "\\(x + y - xy - 1 = 0\\)",
+        "B": "\\(x - y + xy + 1 = 0\\)",
+        "C": "\\(x + y + xy - 1 = 0\\)",
+        "D": "\\(x - y + xy - 1 = 0\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 29,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "promptLines": [
+        "If \\(\\cos\\theta = \\dfrac{1}{3}\\), then what is the value of",
+        "\\(\\sin\\left(\\dfrac{\\theta}{2}\\right)\\sin\\left(\\dfrac{3\\theta}{2}\\right)\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{5}{9}\\)",
+        "B": "\\(\\dfrac{7}{9}\\)",
+        "C": "\\(\\dfrac{10}{9}\\)",
+        "D": "\\(\\dfrac{11}{9}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 30,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "promptLines": [
+        "\\(\\cos x + \\sqrt{3}\\sin x\\) is maximum when \\(x\\) is equal to"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{\\pi}{2}\\)",
+        "B": "\\(\\dfrac{\\pi}{3}\\)",
+        "C": "\\(\\dfrac{\\pi}{4}\\)",
+        "D": "\\(\\dfrac{\\pi}{6}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 31,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "promptLines": [
+        "If \\(\\theta\\) lies in the fourth quadrant and \\(3\\cot\\theta + 4 = 0\\), then what is the value of \\(\\sin 2\\theta + \\cos 2\\theta\\) ?"
+      ],
+      "options": {
+        "A": "\\(-\\dfrac{31}{25}\\)",
+        "B": "\\(-\\dfrac{17}{25}\\)",
+        "C": "\\(0\\)",
+        "D": "\\(1\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 32,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "promptLines": [
+        "If \\(\\cos\\alpha + \\cos\\beta = 0 = \\sin\\alpha + \\sin\\beta\\), \\(\\alpha \\neq \\beta\\) then what is a value of \\(\\cos 2\\alpha + \\cos 2\\beta + 2\\cos(\\alpha + \\beta)\\) ?"
+      ],
+      "options": {
+        "A": "\\(0\\)",
+        "B": "\\(1\\)",
+        "C": "\\(2\\)",
+        "D": "\\(4\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 33,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "promptLines": [
+        "In a triangle \\(ABC\\), \\(\\sin A = \\cos B + \\cos C\\)",
+        "then what is \\(\\tan\\left(\\dfrac{B}{2}\\right) + \\cot\\left(\\dfrac{B}{2}\\right)\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(1\\)",
+        "B": "\\(\\sqrt{2}\\)",
+        "C": "\\(\\sqrt{3}\\)",
+        "D": "\\(2\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 34,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "promptLines": [
+        "Consider the following in respect of inverse circular functions :",
+        "I. \\(\\sin^{-1}(-x) = -\\sin^{-1}x\\)",
+        "II. \\(\\cos^{-1}(-x) = \\cos^{-1}x\\)",
+        "III. \\(\\tan^{-1}(-x) = \\pi - \\tan^{-1}x\\)",
+        "IV. \\(\\cot^{-1}(-x) = \\pi - \\cot^{-1}x\\)",
+        "How many of the above are correct ?"
+      ],
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "All the four"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 35,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "promptLines": [
+        "What is \\(\\tan\\left[2\\tan^{-1}\\dfrac{1}{2} - \\dfrac{\\pi}{4}\\right]\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(-7\\)",
+        "B": "\\(0\\)",
+        "C": "\\(\\dfrac{1}{5}\\)",
+        "D": "\\(\\dfrac{1}{7}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 36,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "promptLines": [
+        "The angles \\(A\\), \\(B\\) and \\(C\\) of a triangle are in the ratio \\(1 : 1 : 4\\). If the longest side of the triangle is 3 units, then what is the perimeter of the triangle ?"
+      ],
+      "options": {
+        "A": "\\(3 + \\sqrt{3}\\) units",
+        "B": "\\(3 + 2\\sqrt{3}\\) units",
+        "C": "\\(3 + 3\\sqrt{3}\\) units",
+        "D": "\\(6 + \\sqrt{3}\\) units"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 37,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "promptLines": [
+        "In a triangle \\(ABC\\), if \\(a\\), \\(b\\) and \\(c\\) are the lengths of the sides opposite to the angles \\(A\\), \\(B\\) and \\(C\\) respectively, then what is \\(\\dfrac{\\sin(A - B)}{\\sin(A + B)}\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{a^2}{a^2 - b^2}\\)",
+        "B": "\\(\\dfrac{a^2}{a^2 + b^2}\\)",
+        "C": "\\(\\dfrac{a^2 - b^2}{c^2}\\)",
+        "D": "\\(\\dfrac{a^2 - b^2}{b^2}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 38,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "What is the smallest positive \\(x\\) satisfying \\(\\log_{\\sin x}\\cos x + \\log_{\\cos x}\\sin x = 2\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{\\pi}{2}\\)",
+        "B": "\\(\\dfrac{\\pi}{3}\\)",
+        "C": "\\(\\dfrac{\\pi}{4}\\)",
+        "D": "\\(\\dfrac{\\pi}{6}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 39,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "A plane is observed to be approaching the airport. It is at a distance of 10 km from the point of observation and makes an angle of elevation of \\(67\\cdot 5^\\circ\\). What is the height of the plane above the ground ?"
+      ],
+      "options": {
+        "A": "\\(10\\sqrt{2 + \\sqrt{2}}\\) km",
+        "B": "\\(10\\sqrt{2 - \\sqrt{2}}\\) km",
+        "C": "\\(5\\sqrt{2 + \\sqrt{2}}\\) km",
+        "D": "\\(5\\sqrt{2 - \\sqrt{2}}\\) km"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 40,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "What is the length of the chord of a unit circle which subtends at the centre of the circle an angle of \\(45^\\circ\\) ?"
+      ],
+      "options": {
+        "A": "\\(2\\sqrt{2 + \\sqrt{2}}\\) units",
+        "B": "\\(2\\sqrt{2 - \\sqrt{2}}\\) units",
+        "C": "\\(\\sqrt{2 + \\sqrt{2}}\\) units",
+        "D": "\\(\\sqrt{2 - \\sqrt{2}}\\) units"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 41,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "Let \\(R\\) be a relation on the set \\(N\\) of natural numbers defined by",
+        "\\(R = \\{(x, y) : x, y \\in N \\text{ and } x = y^3\\}\\).",
+        "Which of the following statements is/are correct ?",
+        "I. \\(R\\) is symmetric relation",
+        "II. \\(R\\) is transitive relation",
+        "Select the answer using the code given below :"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 42,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "For a given \\(k\\), what is the minimum value of \\(x^2 + kx + k^2\\) ?"
+      ],
+      "options": {
+        "A": "\\(0\\)",
+        "B": "\\(\\dfrac{k^2}{4}\\)",
+        "C": "\\(\\dfrac{3k^2}{4}\\)",
+        "D": "\\(\\dfrac{k^2}{2}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 43,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "Consider the following statements :",
+        "I. \\(\\sqrt{x} + x + 1 = 0\\) has two irrational roots.",
+        "II. \\(5\\sqrt{x} - x - 4 = 0\\) has two rational roots.",
+        "Which of the statements given above is/are correct ?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 44,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "promptLines": [
+        "How many numbers greater than 1000 can be formed using the digits 0, 1, 2 and 3 (repetition of digits is not allowed) ?"
+      ],
+      "options": {
+        "A": "\\(24\\)",
+        "B": "\\(18\\)",
+        "C": "\\(15\\)",
+        "D": "\\(12\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 45,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "promptLines": [
+        "If \\(p^{\\text{th}}\\) term of an AP is \\(k\\), then what is the sum of \\(p^{\\text{th}}\\) term, \\((p + q)^{\\text{th}}\\) term and \\((p - q)^{\\text{th}}\\) term of the AP ?"
+      ],
+      "options": {
+        "A": "\\(2k\\)",
+        "B": "\\(3k\\)",
+        "C": "\\(4k\\)",
+        "D": "\\(5k\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 46,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "promptLines": [
+        "For the next five (05) items that follow :",
+        "Let \\(u\\) be a positive integer and \\(f\\) be a real number lying between 0 and 1.",
+        "Further, \\((\\sqrt{2} + 1)^{10} = u + f\\) and",
+        "\\((\\sqrt{2} - 1)^{10} = v\\)",
+        "Consider the following statements :",
+        "I. \\((u + v + f)\\) is an integer.",
+        "II. \\((f + v)\\) is an integer.",
+        "Which of the statements given above is/are correct ?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 47,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "promptLines": [
+        "For the next five (05) items that follow :",
+        "Let \\(u\\) be a positive integer and \\(f\\) be a real number lying between 0 and 1.",
+        "Further, \\((\\sqrt{2} + 1)^{10} = u + f\\) and",
+        "\\((\\sqrt{2} - 1)^{10} = v\\)",
+        "What is the multiplicative inverse of \\((\\sqrt{2} + 1)^{20}\\) ?"
+      ],
+      "options": {
+        "A": "\\(v\\)",
+        "B": "\\(v^2 - 1\\)",
+        "C": "\\(v^2\\)",
+        "D": "\\(v^2 + 1\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 48,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "promptLines": [
+        "For the next five (05) items that follow :",
+        "Let \\(u\\) be a positive integer and \\(f\\) be a real number lying between 0 and 1.",
+        "Further, \\((\\sqrt{2} + 1)^{10} = u + f\\) and",
+        "\\((\\sqrt{2} - 1)^{10} = v\\)",
+        "What is the value of \\((v + f)\\) ?"
+      ],
+      "options": {
+        "A": "\\(2\\)",
+        "B": "\\(1\\)",
+        "C": "\\(0\\cdot 5\\)",
+        "D": "\\(0\\cdot 25\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 49,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "promptLines": [
+        "For the next five (05) items that follow :",
+        "Let \\(u\\) be a positive integer and \\(f\\) be a real number lying between 0 and 1.",
+        "Further, \\((\\sqrt{2} + 1)^{10} = u + f\\) and",
+        "\\((\\sqrt{2} - 1)^{10} = v\\)",
+        "What is the value of \\(u\\) ?"
+      ],
+      "options": {
+        "A": "\\(9725\\)",
+        "B": "\\(6971\\)",
+        "C": "\\(6726\\)",
+        "D": "\\(6725\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 50,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "promptLines": [
+        "For the next five (05) items that follow :",
+        "Let \\(u\\) be a positive integer and \\(f\\) be a real number lying between 0 and 1.",
+        "Further, \\((\\sqrt{2} + 1)^{10} = u + f\\) and",
+        "\\((\\sqrt{2} - 1)^{10} = v\\)",
+        "What is the value of \\(uv\\) ?"
+      ],
+      "options": {
+        "A": "\\(1\\)",
+        "B": "\\(2\\)",
+        "C": "\\(0 < uv < 1\\)",
+        "D": "\\(1 < uv < 2\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 51,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "The equation of a straight line which passes through the origin and makes an angle \\(\\alpha\\) \\((0 \\leq \\alpha \\leq 90^\\circ)\\) with the line",
+        "\\(L : x + \\sqrt{3}\\,y + 3\\sqrt{3} = 0\\) is \\(x - \\sqrt{3}\\,y = 0\\).",
+        "What is the value of \\(\\alpha\\) ?"
+      ],
+      "options": {
+        "A": "\\(30^\\circ\\)",
+        "B": "\\(45^\\circ\\)",
+        "C": "\\(60^\\circ\\)",
+        "D": "\\(90^\\circ\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 52,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "The equation of a straight line which passes through the origin and makes an angle \\(\\alpha\\) \\((0 \\leq \\alpha \\leq 90^\\circ)\\) with the line",
+        "\\(L : x + \\sqrt{3}\\,y + 3\\sqrt{3} = 0\\) is \\(x - \\sqrt{3}\\,y = 0\\).",
+        "What is the angle made by the line \\(L\\) with positive direction of \\(y\\)-axis ?"
+      ],
+      "options": {
+        "A": "\\(30^\\circ\\)",
+        "B": "\\(45^\\circ\\)",
+        "C": "\\(60^\\circ\\)",
+        "D": "\\(90^\\circ\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 53,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "\\(P(-2, -3, 5)\\), \\(Q(4, -1, 5)\\), \\(R(6, -4, 8)\\) and \\(S(2, -6, 10)\\) are four points.",
+        "Consider the following statements :",
+        "I. \\(PQ\\) is parallel to \\(RS\\).",
+        "II. \\(PR\\) is perpendicular to \\(QS\\).",
+        "Which of the statements given above is/are correct ?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 54,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "\\(P(-2, -3, 5)\\), \\(Q(4, -1, 5)\\), \\(R(6, -4, 8)\\) and \\(S(2, -6, 10)\\) are four points.",
+        "What is \\((PQ^2 + 2QS^2 - 2PR^2)\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "\\(0\\)",
+        "C": "\\(1\\)",
+        "D": "\\(2\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 55,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "A line \\(L\\) passing through the point \\((-1, 2, -3)\\) is perpendicular to the plane \\(P\\) given by \\(2x + 3y + z + 5 = 0\\).",
+        "What is the equation of the line \\(L\\) ?"
+      ],
+      "options": {
+        "A": "\\(1 - x = y + 2 = 3 - z\\)",
+        "B": "\\(-(x + 1) = y - 2 = z + 3\\)",
+        "C": "\\(3x + 3 = 2y - 4 = 6z + 18\\)",
+        "D": "\\(3x - 3 = 2y + 4 = 6z - 18\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 56,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "A line \\(L\\) passing through the point \\((-1, 2, -3)\\) is perpendicular to the plane \\(P\\) given by \\(2x + 3y + z + 5 = 0\\).",
+        "What are the direction ratios of a line \\(M\\) parallel to the plane \\(P\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\langle -3, 2, 1 \\rangle\\)",
+        "B": "\\(\\langle 3, 2, -6 \\rangle\\)",
+        "C": "\\(\\langle 1, 3, 2 \\rangle\\)",
+        "D": "\\(\\langle 2, 2, -10 \\rangle\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 57,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(X(a, p)\\), \\(Y(b, q)\\) and \\(Z(c, r)\\) be the points such that \\(a\\), \\(b\\) and \\(c\\) are in AP.",
+        "If \\(p\\), \\(q\\) and \\(r\\) are in AP, then the points \\(X\\), \\(Y\\) and \\(Z\\) are"
+      ],
+      "options": {
+        "A": "on a straight line",
+        "B": "on a circle",
+        "C": "on a parabola",
+        "D": "the vertices of a triangle"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 58,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(X(a, p)\\), \\(Y(b, q)\\) and \\(Z(c, r)\\) be the points such that \\(a\\), \\(b\\) and \\(c\\) are in AP.",
+        "If \\(p\\), \\(q\\) and \\(r\\) are not in AP and \\(b = c\\), then the line joining the points \\(X\\), \\(Y\\) and \\(Z\\) is parallel to"
+      ],
+      "options": {
+        "A": "\\(y\\)-axis",
+        "B": "\\(x\\)-axis",
+        "C": "\\(y = x\\)",
+        "D": "\\(y = -x\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 59,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Consider the points \\(A(0, 2)\\), \\(B(2, 3)\\), \\(C(4, 5)\\) and \\(D(0, k)\\).",
+        "If the points lie on a circle, then what is/are the possible value(s) of \\(k\\) ?"
+      ],
+      "options": {
+        "A": "\\(2\\) only",
+        "B": "\\(5\\) only",
+        "C": "\\(2, 17\\)",
+        "D": "\\(5, 17\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 60,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Consider the points \\(A(0, 2)\\), \\(B(2, 3)\\), \\(C(4, 5)\\) and \\(D(0, k)\\).",
+        "If a circle is drawn through \\(A\\), \\(B\\) and \\(D\\), then what is the diameter of the circle ?"
+      ],
+      "options": {
+        "A": "\\(3\\sqrt{10}\\)",
+        "B": "\\(5\\sqrt{10}\\)",
+        "C": "\\(3\\sqrt{12}\\)",
+        "D": "\\(5\\sqrt{12}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 61,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "The foci of the ellipse",
+        "\\(px^2 + 16y^2 = 16p\\)",
+        "and the foci of the hyperbola",
+        "\\(25(81x^2 - 144y^2) = 11664\\)",
+        "coincide (assume \\(p < 16\\)).",
+        "What is the value of \\(p\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\sqrt{7}\\)",
+        "B": "\\(3\\)",
+        "C": "\\(7\\)",
+        "D": "\\(9\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 62,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "The foci of the ellipse",
+        "\\(px^2 + 16y^2 = 16p\\)",
+        "and the foci of the hyperbola",
+        "\\(25(81x^2 - 144y^2) = 11664\\)",
+        "coincide (assume \\(p < 16\\)).",
+        "What is the difference between the eccentricities of the hyperbola and the ellipse ?"
+      ],
+      "options": {
+        "A": "\\(0\\cdot 5\\)",
+        "B": "\\(0\\cdot 75\\)",
+        "C": "\\(1\\cdot 0\\)",
+        "D": "\\(1\\cdot 25\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 63,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "The equation of the sphere \\(S\\) is",
+        "\\(x^2 + y^2 + z^2 - 4x - 6y - 12z + k = 0\\).",
+        "What is the radius of the sphere passing through origin and concentric with the sphere \\(S\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{7}{2}\\)",
+        "B": "\\(5\\)",
+        "C": "\\(7\\)",
+        "D": "Cannot be determined due to insufficient data"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 64,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "The equation of the sphere \\(S\\) is",
+        "\\(x^2 + y^2 + z^2 - 4x - 6y - 12z + k = 0\\).",
+        "If the radius of the sphere \\(S\\) is 8 units, what is the value of \\(k\\) ?"
+      ],
+      "options": {
+        "A": "\\(-15\\)",
+        "B": "\\(7\\)",
+        "C": "\\(10\\)",
+        "D": "\\(15\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 65,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(\\vec{a}\\), \\(\\vec{b}\\), \\(\\vec{c}\\), \\(\\vec{a} + \\vec{b}\\), \\(\\vec{b} + \\vec{c}\\), \\(\\vec{a} + \\vec{b} + \\vec{c}\\) be unit vectors.",
+        "What is the angle between \\(\\vec{a}\\) and \\(\\vec{b}\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{\\pi}{6}\\)",
+        "B": "\\(\\dfrac{\\pi}{4}\\)",
+        "C": "\\(\\dfrac{\\pi}{2}\\)",
+        "D": "\\(\\dfrac{2\\pi}{3}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 66,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(\\vec{a}\\), \\(\\vec{b}\\), \\(\\vec{c}\\), \\(\\vec{a} + \\vec{b}\\), \\(\\vec{b} + \\vec{c}\\), \\(\\vec{a} + \\vec{b} + \\vec{c}\\) be unit vectors.",
+        "What is the angle between \\(\\vec{a}\\) and \\(\\vec{c}\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{\\pi}{6}\\)",
+        "B": "\\(\\dfrac{\\pi}{4}\\)",
+        "C": "\\(\\dfrac{\\pi}{2}\\)",
+        "D": "\\(\\dfrac{2\\pi}{3}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 67,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(\\vec{a} \\times \\vec{b} = \\vec{c}\\) and \\(\\vec{b} \\times \\vec{c} = \\vec{a}\\)",
+        "Consider the following statements :",
+        "I. \\(\\vec{a}, \\vec{b}, \\vec{c}\\) are orthogonal in pairs.",
+        "II. \\(\\vec{a}, \\vec{b}, \\vec{c}\\) are unit vectors.",
+        "Which of the statements given above is/are correct ?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 68,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(\\vec{a} \\times \\vec{b} = \\vec{c}\\) and \\(\\vec{b} \\times \\vec{c} = \\vec{a}\\)",
+        "Consider the following statements :",
+        "I. \\((\\vec{a} \\times \\vec{b}) \\cdot \\vec{c} + (\\vec{b} \\times \\vec{c}) \\cdot \\vec{a} = (\\vec{c} \\times \\vec{a}) \\cdot \\vec{b}\\)",
+        "II. \\(\\{(\\vec{a} \\times \\vec{b}) \\times (\\vec{b} \\times \\vec{c})\\} \\cdot \\vec{b} = 1\\)",
+        "Which of the statements given above is/are correct ?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 69,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(\\vec{a}, \\vec{b}, \\vec{c}\\) be unit vectors. Further, \\(\\vec{a}\\) is perpendicular to \\(\\vec{b}\\); \\(\\vec{c}\\) makes an angle \\(\\dfrac{\\pi}{3}\\) with both \\(\\vec{a}\\) and \\(\\vec{b}\\); and",
+        "\\(\\vec{c} = p\\vec{a} + q\\vec{b} + r(\\vec{a} \\times \\vec{b})\\).",
+        "What is the value of \\((p + q)\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{1}{2}\\)",
+        "B": "\\(1\\)",
+        "C": "\\(\\dfrac{3}{2}\\)",
+        "D": "\\(2\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 70,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(\\vec{a}, \\vec{b}, \\vec{c}\\) be unit vectors. Further, \\(\\vec{a}\\) is perpendicular to \\(\\vec{b}\\); \\(\\vec{c}\\) makes an angle \\(\\dfrac{\\pi}{3}\\) with both \\(\\vec{a}\\) and \\(\\vec{b}\\); and",
+        "\\(\\vec{c} = p\\vec{a} + q\\vec{b} + r(\\vec{a} \\times \\vec{b})\\).",
+        "What is the value of \\(r^2\\) ?"
+      ],
+      "options": {
+        "A": "\\(4\\)",
+        "B": "\\(2\\)",
+        "C": "\\(1\\)",
+        "D": "\\(\\dfrac{1}{2}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 71,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "promptLines": [
+        "If \\(f(x)\\) is differentiable at \\(x = a\\), then consider the following statements :",
+        "I. \\(f(x)\\) is continuous at \\(x = a\\)",
+        "II. \\(\\lim_{x \\to a} f(x) = f(a)\\)",
+        "Which of the statements given above is/are correct ?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 72,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "promptLines": [
+        "What is \\(\\lim_{x \\to 1} \\dfrac{x^{(n^2 - 1)} - 1}{x^{(n + 1)} - 1}\\) equal to, where \\(n > 1\\) is a natural number ?"
+      ],
+      "options": {
+        "A": "\\(0\\)",
+        "B": "\\(1\\)",
+        "C": "\\(n - 1\\)",
+        "D": "\\(n + 1\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 73,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "promptLines": [
+        "What is \\(\\lim_{x \\to 0} \\dfrac{10^{\\sin x} - 1}{\\tan x}\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(0\\)",
+        "B": "\\(1\\)",
+        "C": "\\(\\ln 10\\)",
+        "D": "\\(\\log_{10} e\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 74,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "promptLines": [
+        "What is the derivative of \\(\\dfrac{x}{|x|}\\) with respect to \\(x\\), where \\(x < 0\\) ?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "\\(0\\)",
+        "C": "\\(1\\)",
+        "D": "\\(x\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 75,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "promptLines": [
+        "Consider the following statements in respect of the function \\(f(x) = x\\) in the interval \\((-1, 1)\\) :",
+        "I. The function attains maximum value.",
+        "II. The function attains minimum value.",
+        "Which of the statements given above is/are correct ?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 76,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "promptLines": [
+        "If \\(\\sqrt[4]{y} = x + \\sqrt{x^2 + 4}\\), then what is \\(\\sqrt{x^2 + 4}\\,\\dfrac{dy}{dx}\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{y}{4}\\)",
+        "B": "\\(y\\)",
+        "C": "\\(2y\\)",
+        "D": "\\(4y\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 77,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "promptLines": [
+        "What is the length of the longest interval in which the function \\(f(x) = 2\\cos^2 x - 1\\) is decreasing ?"
+      ],
+      "options": {
+        "A": "\\(2\\pi\\)",
+        "B": "\\(\\pi\\)",
+        "C": "\\(\\dfrac{\\pi}{2}\\)",
+        "D": "\\(\\dfrac{\\pi}{4}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 78,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "promptLines": [
+        "If \\(A\\) and \\(B\\) are acute angles such that \\(2A + 2B = \\pi\\), then what is the maximum value of \\(\\sin A.\\sin B\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{1}{2}\\)",
+        "B": "\\(\\dfrac{1}{4}\\)",
+        "C": "\\(\\dfrac{\\sqrt{3}}{4}\\)",
+        "D": "\\(1\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 79,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "promptLines": [
+        "What is the solution of the differential equation",
+        "\\(\\cos\\left(\\dfrac{dy}{dx}\\right) = p\\) when \\(y(0) = q\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\cos\\left(\\dfrac{y - q}{x}\\right) = p\\)",
+        "B": "\\(\\cos\\left(\\dfrac{y - p}{x}\\right) = q\\)",
+        "C": "\\(\\cos^{-1}\\left(\\dfrac{y - q}{x}\\right) = p\\)",
+        "D": "\\(\\cos^{-1}\\left(\\dfrac{y - p}{x}\\right) = q\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 80,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "promptLines": [
+        "If \\(2f(x) + f(1 - x) = x\\), then \\(f(x)\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(x - 1\\)",
+        "B": "\\(x - \\left(\\dfrac{1}{3}\\right)\\)",
+        "C": "\\(2x\\)",
+        "D": "\\(2x - 1\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 81,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\((e^y)^x - y = 0\\), where \\(y\\) is a function of \\(x\\) whose domain is \\((0, 10]\\).",
+        "What is \\(\\dfrac{dy}{dx}\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{y}{1 - xy}\\)",
+        "B": "\\(\\dfrac{y}{1 + xy}\\)",
+        "C": "\\(\\dfrac{y^2}{1 - xy}\\)",
+        "D": "\\(\\dfrac{y^2}{1 + xy}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 82,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\((e^y)^x - y = 0\\), where \\(y\\) is a function of \\(x\\) whose domain is \\((0, 10]\\).",
+        "What is \\(\\dfrac{dy}{dx}\\) equal to, given that \\(y = y_0\\) when \\(x = 1\\) ?"
+      ],
+      "options": {
+        "A": "\\(-\\dfrac{y_0}{1 + e^{y_0}}\\)",
+        "B": "\\(-\\dfrac{y_0 e^{y_0}}{1 + e^{y_0}}\\)",
+        "C": "\\(\\dfrac{y_0 e^{y_0}}{1 + e^{y_0}}\\)",
+        "D": "\\(\\dfrac{y_0 e^{y_0}}{1 - e^{y_0}}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 83,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(\\displaystyle\\int_0^{\\pi/2} \\dfrac{a\\sin x + b\\cos x}{(a + b)(\\sin x + \\cos x)}\\,dx = k\\)",
+        "What is the value of \\(k\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{\\pi}{4}\\)",
+        "B": "\\(\\dfrac{\\pi}{2}\\)",
+        "C": "\\(\\pi\\)",
+        "D": "\\(2\\pi\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 84,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(\\displaystyle\\int_0^{\\pi/2} \\dfrac{a\\sin x + b\\cos x}{(a + b)(\\sin x + \\cos x)}\\,dx = k\\)",
+        "What is \\(\\displaystyle\\int_0^{\\pi/2} \\dfrac{a\\cos x + b\\sin x}{\\sin x + \\cos x}\\,dx\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(k\\)",
+        "B": "\\(2k\\)",
+        "C": "\\(k(a + b)\\)",
+        "D": "\\(\\dfrac{k}{a + b}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 85,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(S\\) and \\(T\\) be the sets where",
+        "\\(f(x) = \\dfrac{x^3}{3} - \\dfrac{5x^2}{2} + 6x + 7\\) decreases and increases respectively.",
+        "What is \\(T\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(\\{x \\leq 2\\} \\cup \\{x \\geq 3\\}\\)",
+        "B": "\\(\\{x < 2\\} \\cup \\{x > 3\\}\\)",
+        "C": "\\((2, 3)\\)",
+        "D": "\\([2, 3]\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 86,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(S\\) and \\(T\\) be the sets where",
+        "\\(f(x) = \\dfrac{x^3}{3} - \\dfrac{5x^2}{2} + 6x + 7\\) decreases and increases respectively.",
+        "What is \\(S\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(\\{x \\leq 2\\} \\cup \\{x \\geq 3\\}\\)",
+        "B": "\\(\\{x < 2\\} \\cup \\{x > 3\\}\\)",
+        "C": "\\((2, 3)\\)",
+        "D": "\\([2, 3]\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 87,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(k\\) be the area between the curve \\(y = \\sin x\\) and \\(x\\)-axis in the interval \\(\\left[0, \\dfrac{\\pi}{4}\\right]\\)",
+        "What is the area between the curve \\(y = \\sin x\\) and the \\(x\\)-axis in the interval \\(\\left[\\dfrac{\\pi}{4}, \\dfrac{\\pi}{2}\\right]\\) ?"
+      ],
+      "options": {
+        "A": "\\(k\\)",
+        "B": "\\(1 - k\\)",
+        "C": "\\(\\dfrac{(\\pi - k)}{2}\\)",
+        "D": "\\(\\dfrac{(\\pi - 2k)}{2}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 88,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(k\\) be the area between the curve \\(y = \\sin x\\) and \\(x\\)-axis in the interval \\(\\left[0, \\dfrac{\\pi}{4}\\right]\\)",
+        "What is the area between the curve \\(y = \\cos x\\) and the \\(x\\)-axis in the interval \\(\\left[\\dfrac{\\pi}{4}, \\dfrac{\\pi}{2}\\right]\\) ?"
+      ],
+      "options": {
+        "A": "\\(k\\)",
+        "B": "\\(1 - k\\)",
+        "C": "\\(\\dfrac{(\\pi - k)}{2}\\)",
+        "D": "\\(\\dfrac{(\\pi - 2k)}{2}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 89,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Consider the curves \\(y = x^2\\) and \\(y = 2|x|\\).",
+        "What is the number of points of intersection of the curves ?"
+      ],
+      "options": {
+        "A": "\\(4\\)",
+        "B": "\\(3\\)",
+        "C": "\\(2\\)",
+        "D": "None"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 90,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Consider the curves \\(y = x^2\\) and \\(y = 2|x|\\).",
+        "What is the area bounded by the curves, the lines \\(x = 0\\) and \\(x = 1\\) ?"
+      ],
+      "options": {
+        "A": "\\(1\\) square unit",
+        "B": "\\(\\dfrac{2}{3}\\) square unit",
+        "C": "\\(\\dfrac{1}{2}\\) square unit",
+        "D": "\\(\\dfrac{1}{3}\\) square unit"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 91,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let",
+        "\\(\\displaystyle\\int \\dfrac{\\sin\\theta\\,d\\theta}{(2 + \\cos\\theta)(3 + 4\\cos\\theta)} =\\)",
+        "\\(A\\ln|2 + \\cos\\theta| + B\\ln|3 + 4\\cos\\theta|\\)",
+        "What is the value of \\(A\\) ?"
+      ],
+      "options": {
+        "A": "\\(-\\dfrac{2}{5}\\)",
+        "B": "\\(-\\dfrac{1}{5}\\)",
+        "C": "\\(\\dfrac{1}{5}\\)",
+        "D": "\\(\\dfrac{2}{5}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 92,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let",
+        "\\(\\displaystyle\\int \\dfrac{\\sin\\theta\\,d\\theta}{(2 + \\cos\\theta)(3 + 4\\cos\\theta)} =\\)",
+        "\\(A\\ln|2 + \\cos\\theta| + B\\ln|3 + 4\\cos\\theta|\\)",
+        "What is the value of \\(B\\) ?"
+      ],
+      "options": {
+        "A": "\\(-\\dfrac{2}{5}\\)",
+        "B": "\\(-\\dfrac{1}{5}\\)",
+        "C": "\\(\\dfrac{1}{5}\\)",
+        "D": "\\(\\dfrac{2}{5}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 93,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let",
+        "\\(f(x) = \\sin x\\) and \\(g(x) - f(x) = f(4 - x)\\).",
+        "What is \\(\\displaystyle\\int_0^4 \\dfrac{f(x)}{g(x)}\\,dx\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(0\\)",
+        "B": "\\(1\\)",
+        "C": "\\(2\\)",
+        "D": "\\(4\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 94,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let",
+        "\\(f(x) = \\sin x\\) and \\(g(x) - f(x) = f(4 - x)\\).",
+        "What is \\(\\displaystyle\\int_0^4 \\dfrac{f(4 - x)}{g(4 - x)}\\,dx\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(0\\)",
+        "B": "\\(1\\)",
+        "C": "\\(2\\)",
+        "D": "\\(4\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 95,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(f(x) = \\begin{cases} ax(x - 1), & x < 1 \\\\ x - 1, & 1 \\leq x \\leq 3 \\\\ px^2 + qx + 2, & x > 3 \\end{cases}\\)",
+        "Given that \\(f(x)\\) is continuous for all \\(x\\) but not differentiable at \\(x = 1\\). Further \\(f'(x)\\) is continuous at \\(x = 3\\).",
+        "What is the value of \\(p\\) ?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "\\(-\\dfrac{1}{3}\\)",
+        "C": "\\(\\dfrac{1}{3}\\)",
+        "D": "\\(1\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 96,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(f(x) = \\begin{cases} ax(x - 1), & x < 1 \\\\ x - 1, & 1 \\leq x \\leq 3 \\\\ px^2 + qx + 2, & x > 3 \\end{cases}\\)",
+        "Given that \\(f(x)\\) is continuous for all \\(x\\) but not differentiable at \\(x = 1\\). Further \\(f'(x)\\) is continuous at \\(x = 3\\).",
+        "What is the value of \\(q\\) ?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "\\(-\\dfrac{1}{3}\\)",
+        "C": "\\(\\dfrac{1}{3}\\)",
+        "D": "\\(1\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 97,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Consider the differential equation",
+        "\\(e^{x + y}\\dfrac{dy}{dx} = e^{x - y}\\) :",
+        "What is \\(\\dfrac{d^2y}{dx^2}\\left(\\dfrac{dx}{dy}\\right)^2\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(-2\\)",
+        "B": "\\(-1\\)",
+        "C": "\\(0\\)",
+        "D": "\\(2\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 98,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Consider the differential equation",
+        "\\(e^{x + y}\\dfrac{dy}{dx} = e^{x - y}\\) :",
+        "What is the solution of the differential equation with \\(y(0) = 0\\) ?"
+      ],
+      "options": {
+        "A": "\\(y = \\ln(2x + 1)\\)",
+        "B": "\\(y = \\ln(2x - 1)\\)",
+        "C": "\\(2y = \\ln(2x + 1)\\)",
+        "D": "\\(2y = \\ln(2x - 1)\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 99,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(f(x) = \\tan(x^2)\\) and",
+        "\\(g(x) = x|x|\\) for \\(|x| < \\sqrt{\\dfrac{\\pi}{2}}\\).",
+        "If \\(p(x) = f(x)g(x)\\), then which of the following statements is/are correct ?",
+        "I. \\(p(x)\\) is continuous at \\(x = 0\\).",
+        "II. \\(p(x)\\) is differentiable at \\(x = 0\\).",
+        "Select the answer using the code given below :"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 100,
+      "pdfPage": 37,
+      "printedPage": 37,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Let \\(f(x) = \\tan(x^2)\\) and",
+        "\\(g(x) = x|x|\\) for \\(|x| < \\sqrt{\\dfrac{\\pi}{2}}\\).",
+        "If \\(q(x) = f \\circ g(x)\\), then which of the following statements is/are correct ?",
+        "I. \\(q(x)\\) is continuous at \\(x = 0\\).",
+        "II. \\(q(x)\\) is differentiable at \\(x = 0\\).",
+        "Select the answer using the code given below :"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 101,
+      "pdfPage": 37,
+      "printedPage": 37,
+      "promptLines": [
+        "For the next five (05) items that follow :",
+        "A 4-digit number is selected at random formed by using the digits 0, 1, 2, 3 and 4 (where repetition of digits is not allowed).",
+        "What is the probability that the number selected is divisible by 2 ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{5}{8}\\)",
+        "B": "\\(\\dfrac{3}{8}\\)",
+        "C": "\\(\\dfrac{1}{8}\\)",
+        "D": "\\(\\dfrac{5}{24}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 102,
+      "pdfPage": 37,
+      "printedPage": 37,
+      "promptLines": [
+        "For the next five (05) items that follow :",
+        "A 4-digit number is selected at random formed by using the digits 0, 1, 2, 3 and 4 (where repetition of digits is not allowed).",
+        "What is the probability that the number selected is divisible by 3 ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{9}{28}\\)",
+        "B": "\\(\\dfrac{3}{8}\\)",
+        "C": "\\(\\dfrac{3}{16}\\)",
+        "D": "\\(\\dfrac{8}{25}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 103,
+      "pdfPage": 37,
+      "printedPage": 37,
+      "promptLines": [
+        "For the next five (05) items that follow :",
+        "A 4-digit number is selected at random formed by using the digits 0, 1, 2, 3 and 4 (where repetition of digits is not allowed).",
+        "What is the probability that the number selected is divisible by 4 ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{1}{2}\\)",
+        "B": "\\(\\dfrac{7}{16}\\)",
+        "C": "\\(\\dfrac{9}{16}\\)",
+        "D": "\\(\\dfrac{5}{16}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 104,
+      "pdfPage": 37,
+      "printedPage": 37,
+      "promptLines": [
+        "For the next five (05) items that follow :",
+        "A 4-digit number is selected at random formed by using the digits 0, 1, 2, 3 and 4 (where repetition of digits is not allowed).",
+        "What is the probability that the number selected is divisible by 6 ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{7}{48}\\)",
+        "B": "\\(\\dfrac{2}{3}\\)",
+        "C": "\\(\\dfrac{1}{4}\\)",
+        "D": "\\(\\dfrac{3}{8}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 105,
+      "pdfPage": 39,
+      "printedPage": 39,
+      "promptLines": [
+        "For the next five (05) items that follow :",
+        "A 4-digit number is selected at random formed by using the digits 0, 1, 2, 3 and 4 (where repetition of digits is not allowed).",
+        "What is the probability that the number selected does not contain zero at any position ?"
+      ],
+      "options": {
+        "A": "\\(0\\cdot 12\\)",
+        "B": "\\(0\\cdot 25\\)",
+        "C": "\\(0\\cdot 375\\)",
+        "D": "\\(0\\cdot 45\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 106,
+      "pdfPage": 39,
+      "printedPage": 39,
+      "promptLines": [
+        "For the next three (03) items that follow :",
+        "Let \\(A\\), \\(B\\), \\(C\\) and \\(D\\) be mutually exclusive and exhaustive events and",
+        "\\(\\dfrac{P(A)}{2} = \\dfrac{P(B)}{3} = \\dfrac{P(C)}{5} = \\dfrac{P(D)}{8}\\).",
+        "What is \\(P(A) + P(B) + P(C)\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{5}{9}\\)",
+        "B": "\\(\\dfrac{1}{18}\\)",
+        "C": "\\(\\dfrac{2}{21}\\)",
+        "D": "\\(\\dfrac{7}{13}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 107,
+      "pdfPage": 39,
+      "printedPage": 39,
+      "promptLines": [
+        "For the next three (03) items that follow :",
+        "Let \\(A\\), \\(B\\), \\(C\\) and \\(D\\) be mutually exclusive and exhaustive events and",
+        "\\(\\dfrac{P(A)}{2} = \\dfrac{P(B)}{3} = \\dfrac{P(C)}{5} = \\dfrac{P(D)}{8}\\).",
+        "What is \\(\\dfrac{[2P(A) + 3P(B)]}{[4P(C) + 5P(D)]}\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{13}{18}\\)",
+        "B": "\\(\\dfrac{13}{60}\\)",
+        "C": "\\(\\dfrac{4}{21}\\)",
+        "D": "\\(\\dfrac{5}{28}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 108,
+      "pdfPage": 39,
+      "printedPage": 39,
+      "promptLines": [
+        "For the next three (03) items that follow :",
+        "Let \\(A\\), \\(B\\), \\(C\\) and \\(D\\) be mutually exclusive and exhaustive events and",
+        "\\(\\dfrac{P(A)}{2} = \\dfrac{P(B)}{3} = \\dfrac{P(C)}{5} = \\dfrac{P(D)}{8}\\).",
+        "If \\(G\\) is the geometric mean of \\(P(A)\\), \\(P(B)\\), \\(P(C)\\) and \\(P(D)\\), then what is \\(9G\\) equal to ?"
+      ],
+      "options": {
+        "A": "\\(17^{\\frac{1}{4}}\\)",
+        "B": "\\(15^{\\frac{1}{4}}\\)",
+        "C": "\\(13^{\\frac{1}{4}}\\)",
+        "D": "\\(11^{\\frac{1}{4}}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 109,
+      "pdfPage": 39,
+      "printedPage": 39,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Four dice are rolled.",
+        "What is the probability that getting a total of the numbers on the dice is 6 ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{1}{216}\\)",
+        "B": "\\(\\dfrac{1}{324}\\)",
+        "C": "\\(\\dfrac{5}{648}\\)",
+        "D": "\\(\\dfrac{7}{648}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 110,
+      "pdfPage": 41,
+      "printedPage": 41,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "Four dice are rolled.",
+        "What is the probability that getting a total of the numbers on the dice is at least 23 ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{1}{1296}\\)",
+        "B": "\\(\\dfrac{1}{432}\\)",
+        "C": "\\(\\dfrac{1}{324}\\)",
+        "D": "\\(\\dfrac{5}{1296}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 111,
+      "pdfPage": 41,
+      "printedPage": 41,
+      "promptLines": [
+        "Let two lines of regression be \\(x + y + 11 = 0\\) and \\(2x + 3y + 4 = 0\\) for some data. What is the value of correlation coefficient between \\(x\\) and \\(y\\) ?"
+      ],
+      "options": {
+        "A": "\\(-\\sqrt{\\dfrac{2}{3}}\\)",
+        "B": "\\(-\\sqrt{\\dfrac{1}{6}}\\)",
+        "C": "\\(\\sqrt{\\dfrac{2}{3}}\\)",
+        "D": "\\(\\sqrt{\\dfrac{1}{6}}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 112,
+      "pdfPage": 41,
+      "printedPage": 41,
+      "promptLines": [
+        "If the mean of 20 observations, namely \\(x_1, x_2, x_3, \\ldots, x_{20}\\) is \\(1\\cdot 414\\), then what is the value of \\(\\sum_{i=1}^{20} 100(2x_i + 4)\\) ?"
+      ],
+      "options": {
+        "A": "\\(24168\\)",
+        "B": "\\(20828\\)",
+        "C": "\\(15248\\)",
+        "D": "\\(13656\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 113,
+      "pdfPage": 41,
+      "printedPage": 41,
+      "promptLines": [
+        "In an entrance test there are multiple choice questions. There are four options for each question, of which only one is correct. The probability that a student knows the answer to a question is 90%. If he gets the correct answer to a question, then what is the probability that he was guessing ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{37}{40}\\)",
+        "B": "\\(\\dfrac{36}{37}\\)",
+        "C": "\\(\\dfrac{1}{37}\\)",
+        "D": "\\(\\dfrac{1}{40}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 114,
+      "pdfPage": 41,
+      "printedPage": 41,
+      "promptLines": [
+        "Consider the following statements in respect of the events \\(A, B, C\\) :",
+        "I. \\((A \\cup B \\cup C) \\cap (\\overline{A} \\cap \\overline{B} \\cap \\overline{C})\\) is an impossible event.",
+        "II. \\((A \\cap B \\cap C) \\cap (\\overline{A} \\cup \\overline{B} \\cup \\overline{C})\\) is a possible event.",
+        "Which of the statements given above is/are correct ?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 115,
+      "pdfPage": 43,
+      "printedPage": 43,
+      "promptLines": [
+        "The standard deviation of 100 observations is 10. If 5 is multiplied to each of the observations, then what is the new standard deviation ?"
+      ],
+      "options": {
+        "A": "\\(20\\)",
+        "B": "\\(25\\)",
+        "C": "\\(40\\)",
+        "D": "\\(50\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 116,
+      "pdfPage": 43,
+      "printedPage": 43,
+      "promptLines": [
+        "For a Binomial distribution with mean 6 and standard deviation \\(\\sqrt{2}\\), what is the value of \\(P(X = 0)\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\left(\\dfrac{1}{3}\\right)^9\\)",
+        "B": "\\(\\left(\\dfrac{2}{3}\\right)^9\\)",
+        "C": "\\(\\dfrac{1}{3}\\left(\\dfrac{2}{3}\\right)^8\\)",
+        "D": "\\(\\dfrac{2}{3}\\left(\\dfrac{1}{3}\\right)^8\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 117,
+      "pdfPage": 43,
+      "printedPage": 43,
+      "promptLines": [
+        "If the random variable \\(X\\) has mean 3 and standard deviation 5, then what is the variance of the random variable \\(Y = 2X - 5\\) ?"
+      ],
+      "options": {
+        "A": "\\(15\\)",
+        "B": "\\(40\\)",
+        "C": "\\(45\\)",
+        "D": "\\(100\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 118,
+      "pdfPage": 43,
+      "printedPage": 43,
+      "promptLines": [
+        "Three events \\(A\\), \\(B\\) and \\(C\\) are such that \\(A\\) and \\(B\\) are disjoint, \\(A\\) and \\(C\\) are independent, \\(B\\) and \\(C\\) are independent. If \\(4P(A) = 2P(B) = P(C)\\) and \\(P(A \\cup B \\cup C) = 5P(A)\\), then what is the value of \\(P(C)\\) ?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{5}{6}\\)",
+        "B": "\\(\\dfrac{1}{3}\\)",
+        "C": "\\(\\dfrac{1}{6}\\)",
+        "D": "\\(\\dfrac{2}{3}\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 119,
+      "pdfPage": 43,
+      "printedPage": 43,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "The frequency distribution of marks obtained by 100 students in a certain subject is given below :",
+        "What is the mean deviation about the arithmetic mean ?"
+      ],
+      "options": {
+        "A": "\\(5\\cdot 5\\)",
+        "B": "\\(6\\)",
+        "C": "\\(6\\cdot 5\\)",
+        "D": "\\(8\\)"
+      },
+      "answer": null,
+      "requiresFigure": true,
+      "figureFile": "nda-2026-i-maths-q119.png",
+      "figureAlt": "Frequency distribution table: Marks 0-10, 10-20, 20-30, 30-40; No. of students 10, 20, f, 40.",
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "The stem includes a table; see the cropped figure image.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 120,
+      "pdfPage": 43,
+      "printedPage": 43,
+      "promptLines": [
+        "For the next two (02) items that follow :",
+        "The frequency distribution of marks obtained by 100 students in a certain subject is given below :",
+        "What is the standard deviation ?"
+      ],
+      "options": {
+        "A": "\\(8\\cdot 5\\)",
+        "B": "\\(9\\)",
+        "C": "\\(9\\cdot 5\\)",
+        "D": "\\(10\\)"
+      },
+      "answer": null,
+      "requiresFigure": true,
+      "figureFile": "nda-2026-i-maths-q120.png",
+      "figureAlt": "Frequency distribution table: Marks 0-10, 10-20, 20-30, 30-40; No. of students 10, 20, f, 40.",
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "The stem includes a table; see the cropped figure image.",
+        "Answer key for this paper was not provided; answer left null."
+      ],
+      "confidence": "high"
+    }
+  ]
+}

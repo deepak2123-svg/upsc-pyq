@@ -23,6 +23,7 @@ import nda2023II from '../../../content/nda-2023-ii-official-paper.json';
 import nda2024I from '../../../content/nda-2024-i-official-paper.json';
 import nda2024II from '../../../content/nda-2024-ii-reviewed-paper.json';
 import nda2026IIMathematics from '../../../content/nda-2026-ii-mathematics-official-paper.json';
+import nda2026IMathematics from '../../../content/nda-2026-i-mathematics-official-paper.json';
 import {getPreparationInventory} from '../../../lib/preparation-catalog';
 import {questionEligible} from '../../../lib/question-review';
 import type {PracticeRecipeV4} from '../../../lib/practice-types';
@@ -30,6 +31,7 @@ import type {PracticeRecipeV4} from '../../../lib/practice-types';
 type PaperQuestion={id:string;questionNumber:number;preparationScope:string};
 type PaperData={paperId:string;questions:PaperQuestion[];evidence?:{status:string;series?:string;url?:string;asset?:string;sha256?:string}};
 const papers:Record<string,{data:PaperData;title:string;summary:string;notice:string}>={
+ 'nda-2026-i-mathematics':{data:nda2026IMathematics,title:'NDA I 2026 · Mathematics',summary:'120 available / 120 source questions · Paper I · Series A',notice:'All 120 questions are scored against the official provisional Series A Mathematics key.'},
  'nda-2026-ii-mathematics':{data:nda2026IIMathematics,title:'NDA II 2026 · Mathematics',summary:'120 available / 120 source questions · Paper I · Series A',notice:'All 120 questions are scored against the official provisional Series A Mathematics key.'},
  'nda-2018-ii-gat':{data:nda2018II,title:'NDA II 2018 · GAT',summary:'150 available / 150 source questions · English 50 · Science 44 · GS 56',notice:'All 150 questions are scored against the official final Series A key.'},
  'nda-2018-i-gat':{data:nda2018I,title:'NDA I 2018 · GAT',summary:'150 available / 150 source questions · English 50 · Science 44 · GS 56',notice:'All 150 questions are scored against the official final Series A key.'},
@@ -60,7 +62,7 @@ export default async function PastPaperPage({params}:{params:Promise<{slug:strin
  const paper=papers[(await params).slug];
  if(!paper)notFound();
  const inventory=getPreparationInventory('NDA');
- const mathematics=paper.data.paperId==='nda-2026-ii-mathematics';
+ const mathematics=paper.data.paperId.endsWith('-mathematics');
  const choices=(mathematics?[['Full Mathematics',null]]:[['Full GAT',null],['English','english'],['Science','science'],['GS','gs']]).flatMap(([label,scope])=>{
   const wanted=new Set(paper.data.questions.filter(q=>(!scope||(scope==='gs'?['gs','defence-world-history'].includes(q.preparationScope):q.preparationScope===scope))&&questionEligible(q.id)).map(q=>q.id));
   if(!wanted.size)return [];

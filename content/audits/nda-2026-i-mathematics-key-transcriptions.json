@@ -1,0 +1,40 @@
+{
+  "paperId": "nda-2026-i-mathematics",
+  "issuer": "Union Public Service Commission",
+  "status": "official-provisional",
+  "series": "A",
+  "subject": "Mathematics",
+  "sha256": "42cd97cbf0b6c41ecbd9485459078ee22e2dd5fdf9e80c0aa48e3d38cd995d65",
+  "firstPassColumns": [
+    "CBADBCDCCCBADBB",
+    "DDCDCBCCBBDABAB",
+    "BADBDBCCCDDCBBB",
+    "CCBDCCCDBCDAACB",
+    "CACADCCBBDCCCBD",
+    "DCAABCDACBCBABB",
+    "CBCCCAACCCABDCB",
+    "ABBCDADCADADDDD"
+  ],
+  "secondPassRows": [
+    "CDBCCDCA",
+    "BDACACBB",
+    "ACDBCACB",
+    "DDBDAACC",
+    "BCDCDBCD",
+    "CBBCCCAA",
+    "DCCCCDAD",
+    "CCCDBACC",
+    "CBCBBCCA",
+    "CBDCDBCD",
+    "BDDDCCAA",
+    "AACACBBD",
+    "DBBACADD",
+    "BABCBBCD",
+    "BBBBDBBD"
+  ],
+  "mismatches": [],
+  "dropped": [],
+  "multipleAnswers": [],
+  "reviewedAt": "2026-11-11",
+  "reviewerMethod": "Two fresh visual readings of the Series A grid by the same AI agent, column-first and row-first; not independent human review."
+}
