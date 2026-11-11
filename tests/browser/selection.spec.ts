@@ -240,6 +240,7 @@ test("a saved practice finishes, retakes with its version-3 recipe and restores 
   await expect(page.locator(".question-heading")).toContainText("Question 1 of 10");
   const firstUrl = page.url();
   await page.getByRole("button", { name: "Finish", exact: true }).click();
+  await page.getByRole("button", { name: "Finish and view results", exact: true }).click();
   await expect(page.getByText("Practice complete", { exact: true })).toBeVisible();
   const retake = snapshotResponse(page);
   await page.getByRole("button", { name: "Retake selection", exact: true }).click();
@@ -364,6 +365,7 @@ test("a previously saved version-2 attempt resumes and retakes through its legac
   await page.goto(`/practice/${snapshot.id}`);
   await expect(page.locator(".question-heading")).toContainText("Question 1 of 10");
   await page.getByRole("button", { name: "Finish", exact: true }).click();
+  await page.getByRole("button", { name: "Finish and view results", exact: true }).click();
   await expect(page.getByText("Practice complete", { exact: true })).toBeVisible();
   const retake = snapshotResponse(page);
   await page.getByRole("button", { name: "Retake selection", exact: true }).click();

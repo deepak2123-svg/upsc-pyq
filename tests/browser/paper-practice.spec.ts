@@ -46,15 +46,15 @@ test('whole-paper practice keeps term and subject selections exact',async({page}
  await expect(page).toHaveURL(/\/practice\//);
  const graded=page.waitForResponse(value=>value.url().endsWith('/api/practice/grade')&&value.request().method()==='POST');
  await page.getByRole('button',{name:'Finish',exact:true}).click();
+ await expect(page.getByRole('dialog',{name:'Finish this test?',exact:true})).toContainText('150 will remain unattempted');
+ await page.getByRole('button',{name:'Finish and view results',exact:true}).click();
  expect((await graded).status()).toBe(200);
  await expect(page.getByRole('link',{name:'UPSC.PYQ.Practise home',exact:true})).toHaveAttribute('href','/');
- await expect(page.getByRole('heading',{name:'Performance breakdown',exact:true})).toBeVisible();
- await expect(page.getByRole('heading',{name:'Performance by exam source',exact:true})).toHaveCount(0);
- await expect(page.getByRole('heading',{name:'Performance by subject and topic',exact:true})).toHaveCount(0);
- const performance=page.getByRole('table',{name:'Paper performance breakdown',exact:true});
- await expect(performance).toContainText('NDA');
- await expect(performance).toContainText('English');
- await expect(page.getByRole('heading',{name:'Answers and question review',exact:true})).toBeVisible();
+ await expect(page.getByRole('heading',{name:'Performance breakdown',exact:true})).toHaveCount(0);
+ await expect(page.getByRole('heading',{name:'Answer key and score',exact:true})).toBeVisible();
+ const answerSheet=page.getByRole('table',{name:'Answer sheet',exact:true});
+ await expect(answerSheet.getByRole('columnheader',{name:'Marks',exact:true})).toBeVisible();
+ await expect(page.locator('.result-final-score')).toContainText('Final score');
 });
 
 test('paper grid lists all CDS subjects for both terms',async({page})=>{
@@ -77,7 +77,8 @@ test('short official papers use a compact ten-column navigator and centred paper
  await expect.poll(()=>page.locator('.palette-grid').evaluate(element=>getComputedStyle(element).gridTemplateColumns.split(' ').length)).toBe(10);
  await expect(page.locator('.practice-timer svg')).toBeVisible();
  await expect(page.getByRole('button',{name:'Finish',exact:true})).toHaveCSS('background-color','rgb(224, 0, 0)');
- await expect(page.locator('.practice-progress')).toBeVisible();
+ expect((await page.locator('.practice-topbar').boundingBox())?.height).toBeLessThanOrEqual(76);
+ await expect(page.locator('.practice-progress')).toHaveCount(0);
  const titleBox=await page.locator('.practice-paper-title').boundingBox();
  expect(titleBox&&Math.abs(titleBox.x+titleBox.width/2-800)).toBeLessThan(3);
  await page.evaluate(()=>scrollTo(0,document.documentElement.scrollHeight));

@@ -106,6 +106,7 @@ export function PracticeClient({ id }: { id: string }) {
   const [gradeError, setGradeError] = useState("");
   const [gradeRetry, setGradeRetry] = useState(0);
   const [saveFailed, setSaveFailed] = useState(false);
+  const [confirmingFinish, setConfirmingFinish] = useState(false);
   const [now, setNow] = useState(() => Date.now());
   const current = useRef<LocalAttempt | null>(null);
   const writes = useRef<Promise<void>>(Promise.resolve());
@@ -150,6 +151,7 @@ export function PracticeClient({ id }: { id: string }) {
     setError("");
     setGradeError("");
     setSaveFailed(false);
+    setConfirmingFinish(false);
     lastSectionTick.current = Date.now();
     void getAttempt(id).then((stored) => {
       if (!active) return;
@@ -332,13 +334,19 @@ export function PracticeClient({ id }: { id: string }) {
   const sourceLabel = `${question.exam} · ${question.paper} · ${question.year}`;
   const officialPaper = isOfficialPaperSession(attempt);
   const singleOfficialPaper = officialPaper && attempt.snapshot.questions.every((item) => item.exam === question.exam && item.year === question.year && item.paper === question.paper);
+  const answeredCount = attempt.snapshot.questions.reduce((total, item) => total + Number(Boolean(attempt.answers[item.id])), 0);
+  const requestFinish = () => {
+    if (attempt.status === "completed" || pendingCompletion.current) { void finish(); return; }
+    setConfirmingFinish(true);
+  };
   return (
     <main className="practice-shell exam-experience">
       <div className="practice-header-shell"><header className="practice-topbar">
         <Link href={attemptReturnPath(attempt)} aria-label="Exit test" onClick={(event) => { if (busy || saveFailed || pendingCompletion.current) { event.preventDefault(); setError("Save your latest progress before leaving this page."); } }}><span aria-hidden="true">‹</span> Exit</Link>
         <span className="practice-paper-title">{officialPaper ? <><strong>{officialPaperTitle(attempt.snapshot.questions)}</strong><small>Official paper practice</small></> : <><strong>Practice session</strong><small>Thematic MCQs</small></>}</span>
-        <div className="practice-topbar-actions"><div className={`practice-timer ${isTimed && timerValue <= 60 && attempt.status !== "completed" ? "is-low" : ""}`}><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M12 10v4l2 1M9 3h6M12 3v3"/></svg><time aria-label={`${isTimed && attempt.status !== "completed" ? "Time remaining" : "Elapsed time"} ${formatPracticeTime(timerValue)}`}>{formatPracticeTime(timerValue)}</time></div><button className="finish-practice" disabled={busy} onClick={() => void finish()}>{busy ? "Saving…" : attempt.status === "completed" ? "Results" : pendingCompletion.current ? "Retry saving" : "Finish"}</button></div>
-      </header><div className="practice-progress" aria-hidden="true"><span style={{width:`${((attempt.currentIndex + 1) / attempt.snapshot.questions.length) * 100}%`}} /></div></div>
+        <div className="practice-topbar-actions"><div className={`practice-timer ${isTimed && timerValue <= 60 && attempt.status !== "completed" ? "is-low" : ""}`}><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M12 10v4l2 1M9 3h6M12 3v3"/></svg><time aria-label={`${isTimed && attempt.status !== "completed" ? "Time remaining" : "Elapsed time"} ${formatPracticeTime(timerValue)}`}>{formatPracticeTime(timerValue)}</time></div><button className={`finish-practice ${attempt.status === "completed" ? "view-results" : ""}`} disabled={busy} onClick={requestFinish}>{busy ? "Saving…" : attempt.status === "completed" ? "View results" : pendingCompletion.current ? "Retry saving" : "Finish"}</button></div>
+      </header></div>
+      {confirmingFinish && <div className="finish-confirm-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setConfirmingFinish(false); }}><section className="finish-confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="finish-confirm-title"><p className="pyq-kicker">Submit practice</p><h2 id="finish-confirm-title">Finish this test?</h2><p>You have answered <strong>{answeredCount}</strong> of <strong>{attempt.snapshot.questions.length}</strong> questions. {attempt.snapshot.questions.length - answeredCount > 0 ? `${attempt.snapshot.questions.length - answeredCount} will remain unattempted.` : "Every question has an answer."}</p><div><button type="button" onClick={() => setConfirmingFinish(false)}>Continue test</button><button type="button" className="confirm-finish" onClick={() => { setConfirmingFinish(false); void finish(); }}>Finish and view results</button></div></section></div>}
       {error && <div className="practice-save-error" role="alert"><p>{error}</p>{saveFailed && !pendingCompletion.current && <button onClick={() => { const value = current.current; if (value) void saveChange(value); }}>Retry saving</button>}</div>}
       <div className="exam-workspace">
         {/* Replace the question atomically: an exiting animated question must not
@@ -365,7 +373,7 @@ export function PracticeClient({ id }: { id: string }) {
           </div>
           {attempt.status === "completed" && !feedback && <div className="practice-answer-hint" role="status"><p>{gradeError || "Loading your submitted answer sheet…"}</p>{gradeError && <button onClick={() => setGradeRetry((value) => value + 1)}>Retry answers</button>}</div>}
           {feedback && <section className={`answer-feedback ${feedback.disposition === 'excluded' ? 'is-excluded' : !selectedAnswer ? "is-unattempted" : feedback.correct ? "is-correct" : "is-incorrect"}`}><div><strong>{feedback.disposition === 'excluded' ? 'Excluded from score' : !selectedAnswer ? `Unattempted · Correct answer: ${feedbackAnswerLabel(feedback)}` : feedback.correct ? `Correct · Answer ${feedbackAnswerLabel(feedback)}` : `Correct answer: ${feedbackAnswerLabel(feedback)} · Your answer: ${selectedAnswer}`}</strong></div>{feedback.explanation ? <p><MathText value={feedback.explanation}/></p> : <p className="explanation-unavailable">No published explanation is available for this question.</p>}</section>}
-          <nav className="question-navigation" aria-label="Question navigation"><button disabled={busy || Boolean(pendingCompletion.current) || attempt.currentIndex === 0} onClick={() => void navigate(attempt.currentIndex - 1)}>← Previous</button><button className="bookmark-action" onClick={() => void toggleBookmark()}>{bookmarked ? "Saved" : "Save for later"}</button>{attempt.currentIndex < attempt.snapshot.questions.length - 1 ? <button className="next-question" disabled={busy || Boolean(pendingCompletion.current)} onClick={() => void navigate(attempt.currentIndex + 1)}>Save & next →</button> : <button className="next-question" disabled={busy} onClick={() => void finish()}>{attempt.status === "completed" ? "View results" : "Submit test"}</button>}</nav>
+          <nav className="question-navigation" aria-label="Question navigation"><button disabled={busy || Boolean(pendingCompletion.current) || attempt.currentIndex === 0} onClick={() => void navigate(attempt.currentIndex - 1)}>← Previous</button><button className="bookmark-action" onClick={() => void toggleBookmark()}>{bookmarked ? "Saved" : "Save for later"}</button>{attempt.currentIndex < attempt.snapshot.questions.length - 1 ? <button className="next-question" disabled={busy || Boolean(pendingCompletion.current)} onClick={() => void navigate(attempt.currentIndex + 1)}>Save & next →</button> : <button className="next-question" disabled={busy} onClick={requestFinish}>{attempt.status === "completed" ? "View results" : "Submit test"}</button>}</nav>
         </article>
         <QuestionPalette questions={attempt.snapshot.questions} answers={attempt.answers} currentIndex={attempt.currentIndex} bookmarkedIds={bookmarkedIds} disabled={busy || Boolean(pendingCompletion.current)} sectioned={officialPaper && question.exam === "NDA" && !attempt.snapshot.questions.every((item) => item.subject === "Mathematics")} sectionElapsedSeconds={attempt.sectionElapsedSeconds || {}} onNavigate={jumpToQuestion} />
       </div>

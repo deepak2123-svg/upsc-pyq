@@ -245,14 +245,14 @@ test("answers remain editable and hidden until submission; result sheet grades a
   await expect(palette.getByRole("button", { name: /^Question 1,/ })).toHaveClass(/answered/);
   await page.getByRole("button", { name: "Clear answer", exact: true }).click();
   await expect(options.locator("button.selected")).toHaveCount(0);
-  await expect(page.locator(".practice-topbar")).toContainText("0 answered");
+  await expect(page.locator(".question-palette")).toContainText("0/3 answered");
   await options.getByRole("button", { name: new RegExp(`^${firstCorrect}\\b`) }).click();
   await expect(options.locator("button.selected")).toContainText(firstCorrect);
   await page.reload();
   await expect(options.locator("button.selected")).toContainText(firstCorrect);
   await expect(options.locator("button.correct, button.incorrect")).toHaveCount(0);
   await expect(page.locator(".answer-feedback")).toHaveCount(0);
-  await expect(page.locator(".practice-topbar")).toContainText("1 answered");
+  await expect(page.locator(".question-palette")).toContainText("1/3 answered");
   await expect(page.locator(".practice-topbar")).not.toContainText(first.exam);
   expect(calls).toEqual([]);
   await page.getByRole("button", { name: /^Save & next\b/i }).click();
@@ -264,34 +264,20 @@ test("answers remain editable and hidden until submission; result sheet grades a
   expect(calls).toEqual([]);
   const graded = page.waitForResponse((response) => response.url().endsWith("/api/practice/grade"));
   await page.getByRole("button", { name: "Finish", exact: true }).click();
+  await page.getByRole("button", { name: "Finish and view results", exact: true }).click();
   expect((await graded).status()).toBe(200);
   await expect(page.getByRole("heading", { name: "Result sheet", exact: true })).toBeVisible();
   await expect(page.getByText("Practice complete", { exact: true })).toBeVisible();
   const sheet = page.getByRole("table", { name: "Answer sheet", exact: true });
   await expect(sheet.getByRole("row")).toHaveCount(4);
-  await expect(sheet).toContainText("Correct answer");
+  await expect(sheet).toContainText("Correct option");
   await expect(sheet.getByRole("row").nth(1)).toContainText("Correct");
   await expect(sheet.getByRole("row").nth(2)).toContainText("Incorrect");
   await expect(sheet.getByRole("row").nth(3)).toContainText("Unattempted");
   await expect(page.locator(".result-summary")).toContainText("50%");
   await expect(page.locator(".result-summary")).toContainText("Correct");
-  await expect(page.getByRole("heading", { name: "Performance by exam source", exact: true })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Performance by subject and topic", exact: true })).toBeVisible();
-  const examTable = page.getByRole("table", { name: "Exam source performance", exact: true });
-  const selectedExams = [...new Set(snapshot.questions.map((question) => question.exam))];
-  await expect(examTable.getByRole("row")).toHaveCount(selectedExams.length + 1);
-  for (const exam of selectedExams) {
-    const count = snapshot.questions.filter((question) => question.exam === exam).length;
-    const correct = Number(first.exam === exam);
-    const incorrect = Number(second.exam === exam);
-    const answered = correct + incorrect;
-    const row = examTable.getByRole("row").filter({ has: page.getByRole("rowheader", { name: exam, exact: true }) });
-    await expect(row.getByRole("cell")).toHaveText([String(count), String(answered), String(correct), String(incorrect), String(count - answered), answered ? `${Math.round(correct / answered * 100)}%` : "—"]);
-  }
-  const topicTable = page.getByRole("table", { name: "Subject and topic performance", exact: true });
-  await expect(topicTable).toContainText("Geography");
-  await expect(topicTable).toContainText(CHAPTER);
-  await expect(topicTable.getByRole("row").nth(1).getByRole("cell")).toHaveText(["3", "2", "1", "1", "1", "50%"]);
+  await expect(page.getByRole("heading", { name: "Answer key and score", exact: true })).toBeVisible();
+  await expect(page.locator(".result-final-score")).toContainText("Final score");
   const saved = await storedAttempt(page, snapshot.id);
   expect(saved.status).toBe("completed");
   expect(saved.answers).toEqual({ [first.id]: firstCorrect, [second.id]: secondWrong });
@@ -350,7 +336,7 @@ test("editing an old fully graded in-progress attempt invalidates cached feedbac
   const calls: string[] = [];
   page.on("request", (request) => { if (/\/api\/practice\/(check|grade)$/.test(request.url())) calls.push(request.url()); });
   await page.reload();
-  await expect(page.locator(".practice-topbar")).toContainText("3 answered");
+  await expect(page.locator(".question-palette")).toContainText("3/3 answered");
   expect(Object.keys((await storedAttempt(page, snapshot.id)).feedback as object)).toHaveLength(3);
   const first = snapshot.questions[0];
   const wrong = Object.keys(first.options).find((option) => option !== correctAnswer(first.id))!;
@@ -365,6 +351,7 @@ test("editing an old fully graded in-progress attempt invalidates cached feedbac
   expect(calls).toEqual([]);
   const graded = page.waitForResponse((response) => response.url().endsWith("/api/practice/grade"));
   await page.getByRole("button", { name: "Finish", exact: true }).click();
+  await page.getByRole("button", { name: "Finish and view results", exact: true }).click();
   const response = await graded;
   expect(response.status()).toBe(200);
   const result = await response.json();
@@ -445,6 +432,7 @@ test("failed final grading retains submitted answers and permits a results retry
     else await route.continue();
   });
   await page.getByRole("button", { name: "Finish", exact: true }).click();
+  await page.getByRole("button", { name: "Finish and view results", exact: true }).click();
   await expect(page.getByRole("alert")).toContainText("Result service unavailable");
   const saved = await storedAttempt(page, snapshot.id);
   expect(saved.status).toBe("completed");
@@ -517,6 +505,7 @@ for (const width of [390, 768, 1024, 1600]) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)).toBe(false);
     await page.screenshot({ path: testInfo.outputPath(`practice-${width}.png`), fullPage: true });
     await page.getByRole("button", { name: "Finish", exact: true }).click();
+    await page.getByRole("button", { name: "Finish and view results", exact: true }).click();
     await expect(page.getByRole("table", { name: "Answer sheet" })).toBeVisible();
     if (width < 600) await expect(page.getByText("Swipe to view all columns.", { exact: true }).first()).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)).toBe(false);

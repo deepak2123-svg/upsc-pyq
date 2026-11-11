@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import type { LocalAttempt, PracticeQuestion, PracticeSnapshot } from "../../lib/practice-types";
 import { createLocalAttempt, getAttempt, putAttempt } from "../../lib/practice-store";
 import { attemptReturnPath, formatPracticeTime, hasCompleteFeedback, practiceDurationMinutes, requestAnswerFeedback } from "../../lib/practice-session";
-import { PYQ_EXAMS, PYQ_EXAM_COLORS } from "../../lib/pyq-exams";
+import { PYQ_EXAM_COLORS } from "../../lib/pyq-exams";
 import { formatPracticePrompt, formatPracticeText } from "../../lib/practice-prompt";
 import { PracticePromptView } from "./practice-prompt-view";
 import {MathText} from './math-text';
@@ -32,15 +32,28 @@ function countQuestion(value: Performance, attempt: LocalAttempt, question: Prac
   }
 }
 function accuracy(value: Performance) { return value.answered ? `${Math.round(value.correct / value.answered * 100)}%` : "—"; }
+function markingRule(question: PracticeQuestion) {
+  if (question.exam === "NDA") return question.subject === "Mathematics" ? { positive: 2.5, negative: 2.5 / 3 } : { positive: 4, negative: 4 / 3 };
+  if (question.exam === "CDS") return /mathematics/i.test(question.subject) ? { positive: 100 / 120, negative: 100 / 360 } : { positive: 1, negative: 1 / 3 };
+  return { positive: 2, negative: 2 / 3 };
+}
+function questionMarks(attempt: LocalAttempt, question: PracticeQuestion) {
+  if (questionExclusion(question.id, question.contentRevision ?? 0) || !attempt.answers[question.id]) return 0;
+  const feedback = attempt.feedback[question.id];
+  if (!feedback) return 0;
+  const rule = markingRule(question);
+  return feedback.correct ? rule.positive : -rule.negative;
+}
+function formatMarks(value: number, signed = true) {
+  const rounded = Math.round(value * 100) / 100;
+  const label = Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(2);
+  return signed && rounded > 0 ? `+${label}` : label;
+}
 function sourceLabel(question: PracticeQuestion) { return `${question.exam} ${question.year} · ${question.paper} · Q${question.questionNumber}`; }
 function scopeLabel(question: PracticeQuestion) { return [question.subject, question.section, question.topic || "Unclassified topic"].filter(Boolean).join(" · "); }
 function dateLabel(value?: string) {
   const date = value ? new Date(value) : null;
   return date && Number.isFinite(date.getTime()) ? date.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" }) : "Not recorded";
-}
-
-function PerformanceTable({ label, rows, ready, source = false, mixed = false }: { label: string; rows: [string, Performance][]; ready: boolean; source?: boolean; mixed?: boolean }) {
-  return <><p className="result-scroll-hint">Swipe to view all columns.</p><div className="result-table-scroll"><table className="result-performance-table" aria-label={label}><thead><tr><th scope="col">{mixed ? "Exam source / subject and topic" : source ? "Exam source" : "Subject / topic"}</th><th scope="col">Total</th><th scope="col">Answered</th><th scope="col">Correct</th><th scope="col">Incorrect</th><th scope="col">Unattempted</th><th scope="col">Accuracy</th></tr></thead><tbody>{rows.map(([name, value]) => {const exam=PYQ_EXAMS.includes(name as typeof PYQ_EXAMS[number]);return <tr key={name} className={mixed&&exam?'result-performance-source-row':undefined}><th scope="row">{source||exam ? <span className="result-exam-label" style={{ color: PYQ_EXAM_COLORS[name as keyof typeof PYQ_EXAM_COLORS] }}>{name}</span> : name}</th><td>{value.total}</td><td>{value.answered}</td><td>{ready ? value.correct : "—"}</td><td>{ready ? value.incorrect : "—"}</td><td>{value.unattempted}</td><td>{ready ? accuracy(value) : "—"}</td></tr>;})}</tbody></table></div></>;
 }
 
 export function ResultsClient({ id }: { id: string }) {
@@ -82,19 +95,8 @@ export function ResultsClient({ id }: { id: string }) {
   const stats = useMemo(() => {
     if (!attempt) return null;
     const total = newPerformance();
-    const byExam = new Map<string, Performance>();
-    const byTopic = new Map<string, Performance>();
-    for (const question of attempt.snapshot.questions) {
-      countQuestion(total, attempt, question);
-      const exam = byExam.get(question.exam) || newPerformance();
-      countQuestion(exam, attempt, question);
-      byExam.set(question.exam, exam);
-      const name = scopeLabel(question);
-      const topic = byTopic.get(name) || newPerformance();
-      countQuestion(topic, attempt, question);
-      byTopic.set(name, topic);
-    }
-    return { total, byExam: PYQ_EXAMS.filter((exam) => byExam.has(exam)).map((exam): [string, Performance] => [exam, byExam.get(exam)!]), byTopic: [...byTopic.entries()].sort((a, b) => b[1].total - a[1].total || a[0].localeCompare(b[0])) };
+    for (const question of attempt.snapshot.questions) countQuestion(total, attempt, question);
+    return { total };
   }, [attempt]);
 
   const retake = useCallback(async () => {
@@ -119,7 +121,8 @@ export function ResultsClient({ id }: { id: string }) {
   const duration = practiceDurationMinutes(attempt.snapshot.recipe);
   const subjects = [...new Set(attempt.snapshot.questions.map((question) => question.subject))].join(" + ");
   const completed = attempt.completionReason === "time_expired" ? "Time expired" : "Submitted";
-  const wholePaperResult = 'version' in attempt.snapshot.recipe && attempt.snapshot.recipe.version === 5;
+  const score = ready ? attempt.snapshot.questions.reduce((total, question) => total + questionMarks(attempt, question), 0) : 0;
+  const maximumScore = attempt.snapshot.questions.reduce((total, question) => questionExclusion(question.id, question.contentRevision ?? 0) ? total : total + markingRule(question).positive, 0);
   return (
     <main className="results-page pyq-page exam-results">
       <header className="result-page-nav result-no-print"><Link className="pyq-brand" href="/" aria-label="UPSC.PYQ.Practise home"><span className="pyq-brand-mark" aria-hidden="true">PYQ</span><span>UPSC.PYQ.Practise</span></Link><Link className="back-link" href="/attempts">← Attempts</Link></header>
@@ -127,21 +130,21 @@ export function ResultsClient({ id }: { id: string }) {
         <div className="result-sheet-heading"><div><p className="pyq-kicker">Practice complete</p><h1>Result sheet</h1><p>{subjects || "Official PYQs"}</p></div><span className="result-completion-reason">{completed}</span></div>
         <dl className="result-session-details"><div><dt>Completed</dt><dd>{dateLabel(attempt.completedAt)}</dd></div><div><dt>Time taken</dt><dd>{formatPracticeTime(attempt.elapsedSeconds)}</dd></div><div><dt>Time limit</dt><dd>{duration === null ? "Untimed" : `${duration} minutes`}</dd></div><div><dt>Attempt ID</dt><dd>{attempt.id}</dd></div></dl>
         <div className="result-numbers"><div><strong>{stats.total.total}</strong><span>Scored questions</span></div><div><strong>{stats.total.answered}</strong><span>Answered</span></div><div><strong>{ready ? stats.total.correct : "—"}</strong><span>Correct</span></div><div><strong>{ready ? stats.total.incorrect : "—"}</strong><span>Incorrect</span></div><div><strong>{stats.total.unattempted}</strong><span>Unattempted</span></div><div><strong>{ready ? accuracy(stats.total) : "—"}</strong><span>Accuracy</span></div></div>
-        <p className="result-score-note">Accuracy is correct answers ÷ scored answers. Unattempted and excluded questions do not affect accuracy. No common marks scheme is applied to mixed-exam practice.</p>
+        <p className="result-score-note">Marks use the official positive and negative-marking rule for each question’s source paper. Unattempted and excluded questions receive 0.</p>
         {attempt.snapshot.questions.map((q,index)=>questionCorrectionNotice(q)?<p className="result-score-note" key={q.id}>Saved Q{index+1}: {questionCorrectionNotice(q)}</p>:null)}
         {stats.total.excluded > 0 && <p role="status">{stats.total.excluded} question{stats.total.excluded === 1 ? '' : 's'} excluded from score. Totals above include scored questions only; your original answers are preserved.</p>}
         {(grading || !ready) && <div className="result-grading-status result-no-print" role={error ? "alert" : "status"} aria-live="polite"><p>{error || "Your answers are submitted and saved. Loading the answer sheet…"}</p>{error && <button disabled={grading} onClick={() => setRetry((value) => value + 1)}>Retry answers</button>}</div>}
         <div className="result-actions result-no-print"><button disabled={retaking} onClick={() => void retake()}>{retaking ? "Starting…" : "Retake selection"}</button><button className="result-print-button" disabled={!ready} onClick={() => window.print()}>Print result sheet</button><Link href="/">Choose new PYQs</Link></div>
         {actionError && <p className="result-action-error result-no-print" role="alert">{actionError}</p>}
       </section>
-      {wholePaperResult ? <section className="result-breakdown result-paper-performance"><h2>Performance breakdown</h2><PerformanceTable label="Paper performance breakdown" rows={[...stats.byExam,...stats.byTopic]} ready={ready} mixed /></section> : <><section className="result-breakdown"><h2>Performance by exam source</h2><PerformanceTable label="Exam source performance" rows={stats.byExam} ready={ready} source /></section><section className="result-breakdown"><h2>Performance by subject and topic</h2><PerformanceTable label="Subject and topic performance" rows={stats.byTopic} ready={ready} /></section></>}
-      <section className="result-answer-sheet result-combined-review"><h2>Answers and question review</h2><p>Compare your answers with the official key. Select any question to open its full paper view, options and explanation.</p><p className="result-scroll-hint">Swipe to view all columns.</p><div className="result-table-scroll"><table aria-label="Answer sheet" data-testid="answer-sheet"><thead><tr><th scope="col">No.</th><th scope="col">Source / topic</th><th scope="col">Your answer</th><th scope="col">Correct answer</th><th scope="col">Result</th></tr></thead><tbody>{attempt.snapshot.questions.map((question, index) => {
+      <section className="result-answer-sheet result-combined-review"><h2>Answer key and score</h2><p>Your selected option, the official answer and marks for every question. Select a row to review the full question.</p><p className="result-scroll-hint">Swipe to view all columns.</p><div className="result-table-scroll"><table aria-label="Answer sheet" data-testid="answer-sheet"><thead><tr><th scope="col">No.</th><th scope="col">Source / topic</th><th scope="col">Your option</th><th scope="col">Correct option</th><th scope="col">Result</th><th scope="col">Marks</th></tr></thead><tbody>{attempt.snapshot.questions.map((question, index) => {
         const feedback = ready ? attempt.feedback[question.id] : undefined;
         const selected = attempt.answers[question.id];
         const status = statusOf(attempt, question);
         const expanded = expandedQuestion === index;
-        return <Fragment key={question.id}><tr className={expanded ? "is-expanded" : undefined}><th scope="row"><button type="button" className="result-review-toggle" aria-expanded={expanded} aria-controls={`answer-detail-${index + 1}`} aria-label={`${expanded ? "Close" : "Review"} question ${index + 1}`} onClick={() => setExpandedQuestion(expanded ? null : index)}><span>{index + 1}</span><i aria-hidden="true">⌄</i></button></th><td><button type="button" className="result-source-toggle" aria-expanded={expanded} aria-controls={`answer-detail-${index + 1}`} onClick={() => setExpandedQuestion(expanded ? null : index)}><span className="result-source" style={{ color: PYQ_EXAM_COLORS[question.exam] }}>{sourceLabel(question)}</span><small>{scopeLabel(question)}</small></button></td><td>{selected || "—"}</td><td>{feedbackAnswerLabel(feedback)}</td><td><span className={`answer-status ${status.toLowerCase().replaceAll(" ", "-")}`}>{status}</span></td></tr>{expanded ? <tr className="result-answer-detail-row"><td colSpan={5} id={`answer-detail-${index + 1}`}><div className="result-question-detail"><PracticePromptView blocks={formatPracticePrompt(question.promptLines,{options:question.options})} className="result-question-prompt" figure={question.figure} underlined={question.underlined} /><dl className="result-question-options">{Object.entries(question.options).map(([key, value]) => <div key={key} className={feedbackAcceptsOption(feedback,key) ? "is-correct" : selected === key ? "is-selected" : ""}><dt>{key}</dt><dd><MathText value={formatPracticeText(value)}/>{feedbackAcceptsOption(feedback,key) && <small>Correct answer</small>}{selected === key && <small>Your answer</small>}</dd></div>)}</dl><p className="result-explanation-label">Explanation</p><p className="result-explanation"><MathText value={feedback ? feedback.explanation || "No published explanation is available for this question." : "The answer sheet has not loaded yet."}/></p><Link className="result-no-print" href={`/practice/${id}?q=${index}`}>Open in question view</Link></div></td></tr> : null}</Fragment>;
-      })}</tbody></table></div></section>
+        const marks = ready ? questionMarks(attempt, question) : 0;
+        return <Fragment key={question.id}><tr className={expanded ? "is-expanded" : undefined}><th scope="row"><button type="button" className="result-review-toggle" aria-expanded={expanded} aria-controls={`answer-detail-${index + 1}`} aria-label={`${expanded ? "Close" : "Review"} question ${index + 1}`} onClick={() => setExpandedQuestion(expanded ? null : index)}><span>{index + 1}</span><i aria-hidden="true">⌄</i></button></th><td><button type="button" className="result-source-toggle" aria-expanded={expanded} aria-controls={`answer-detail-${index + 1}`} onClick={() => setExpandedQuestion(expanded ? null : index)}><span className="result-source" style={{ color: PYQ_EXAM_COLORS[question.exam] }}>{sourceLabel(question)}</span><small>{scopeLabel(question)}</small></button></td><td>{selected || "—"}</td><td>{feedbackAnswerLabel(feedback)}</td><td><span className={`answer-status ${status.toLowerCase().replaceAll(" ", "-")}`}>{status}</span></td><td className={`result-row-marks ${marks > 0 ? "is-positive" : marks < 0 ? "is-negative" : ""}`}>{ready ? formatMarks(marks) : "—"}</td></tr>{expanded ? <tr className="result-answer-detail-row"><td colSpan={6} id={`answer-detail-${index + 1}`}><div className="result-question-detail"><PracticePromptView blocks={formatPracticePrompt(question.promptLines,{options:question.options})} className="result-question-prompt" figure={question.figure} underlined={question.underlined} /><dl className="result-question-options">{Object.entries(question.options).map(([key, value]) => <div key={key} className={feedbackAcceptsOption(feedback,key) ? "is-correct" : selected === key ? "is-selected" : ""}><dt>{key}</dt><dd><MathText value={formatPracticeText(value)}/>{feedbackAcceptsOption(feedback,key) && <small>Correct answer</small>}{selected === key && <small>Your answer</small>}</dd></div>)}</dl><p className="result-explanation-label">Explanation</p><p className="result-explanation"><MathText value={feedback ? feedback.explanation || "No published explanation is available for this question." : "The answer sheet has not loaded yet."}/></p><Link className="result-no-print" href={`/practice/${id}?q=${index}`}>Open in question view</Link></div></td></tr> : null}</Fragment>;
+      })}</tbody></table></div><div className="result-final-score"><span>Final score</span><strong>{ready ? `${formatMarks(score, false)} / ${formatMarks(maximumScore, false)}` : "—"}</strong></div></section>
       <p className="result-print-footer">UPSC.PYQ.Practise · Local practice result · {attempt.id}</p>
     </main>
   );

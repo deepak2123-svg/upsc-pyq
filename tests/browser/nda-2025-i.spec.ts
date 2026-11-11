@@ -13,7 +13,7 @@ test('NDA I 2025 full paper preserves saved choices and scores the official key'
  await answer('D');
  for(const[number,letter]of [[7,'B'],[86,'C'],[102,'C']] as const){await page.getByRole('button',{name:`Question ${number}, not answered`,exact:true}).click();await answer(letter);}
  await page.reload();await expect(page.locator('.question-heading')).toContainText('Question 102 of 150');
- const graded=page.waitForResponse(r=>r.url().endsWith('/api/practice/grade'));await page.getByRole('button',{name:'Finish',exact:true}).click();
+ const graded=page.waitForResponse(r=>r.url().endsWith('/api/practice/grade'));await page.getByRole('button',{name:'Finish',exact:true}).click();await page.getByRole('button',{name:'Finish and view results',exact:true}).click();
  const result=await(await graded).json();expect(result.correct).toBe(3);expect(result.incorrect).toBe(1);expect(result.scored).toBe(150);expect(result.excluded).toBe(0);expect(result.unattempted).toBe(146);
  expect(result.feedback['nda-2025-i-86'].correctAnswer).toBe('D');expect(result.feedback['nda-2025-i-102'].correctAnswer).toBe('C');
  await expect(page.getByRole('heading',{name:'Result sheet',exact:true})).toBeVisible();

@@ -64,6 +64,7 @@ test('2015 innovation institution is browsable and its reviewed pilgrimage/Rowla
   await expect(page.getByText(/National Innovation Foundation-India/)).toBeVisible();
   await page.getByRole('group',{name:'Answer options'}).getByRole('button',{name:/^A\b/}).click();
   await page.getByRole('button',{name:'Finish',exact:true}).click();
+  await page.getByRole('button',{name:'Finish and view results',exact:true}).click();
   await expect(page.getByRole('heading',{name:'Result sheet',exact:true})).toBeVisible();
   await expect(page.locator('.result-summary')).toContainText('100%');
   const inventory=await(await page.request.get('/api/pyqs/inventory')).json();
@@ -105,6 +106,7 @@ test('reviewed national-calendar topic opens through setup, grading and a one-an
   await expect(page.getByText(/Chaitra 1 of the national calendar/)).toBeVisible();
   await page.getByRole('group',{name:'Answer options'}).getByRole('button',{name:/^A\b/}).click();
   await page.getByRole('button',{name:'Finish',exact:true}).click();
+  await page.getByRole('button',{name:'Finish and view results',exact:true}).click();
   await expect(page.getByRole('heading',{name:'Result sheet',exact:true})).toBeVisible();
   await expect(page.locator('.result-summary')).toContainText('100%');
   await page.evaluate(snapshot=>sessionStorage.setItem(`upsc-pyq-print:${snapshot.id}`,JSON.stringify({snapshot,includeAnswerKey:true})),snapshot);
@@ -206,6 +208,7 @@ test('source-reviewed Legal aid opens from the explorer and scores through setup
   await page.getByRole('group',{name:'Answer options'}).getByRole('button',{name:/^C\b/}).click();
   const graded=page.waitForResponse(response=>response.url().endsWith('/api/practice/grade'));
   await page.getByRole('button',{name:'Finish',exact:true}).click();
+  await page.getByRole('button',{name:'Finish and view results',exact:true}).click();
   expect((await graded).status()).toBe(200);
   await expect(page.getByRole('heading',{name:'Result sheet',exact:true})).toBeVisible();
   await expect(page.locator('.result-summary')).toContainText('100%');

@@ -14,7 +14,7 @@ test('NDA II 2025 launches 149/150, preserves answers and accepts either Q58 opt
  await answer('B');
  for(const[number,letter]of [[58,'B'],[66,'B']] as const){await page.getByRole('button',{name:`Question ${number}, not answered`,exact:true}).click();await answer(letter);}
  await page.reload();await expect(page.locator('.question-heading')).toContainText('Question 66 of 149');
- const graded=page.waitForResponse(r=>r.url().endsWith('/api/practice/grade'));await page.getByRole('button',{name:'Finish',exact:true}).click();
+ const graded=page.waitForResponse(r=>r.url().endsWith('/api/practice/grade'));await page.getByRole('button',{name:'Finish',exact:true}).click();await page.getByRole('button',{name:'Finish and view results',exact:true}).click();
  const result=await(await graded).json();expect(result.correct).toBe(2);expect(result.incorrect).toBe(1);expect(result.scored).toBe(149);expect(result.unattempted).toBe(146);
  expect(result.feedback['nda-2025-ii-58'].correctAnswers).toEqual(['A','B']);
  await expect(page.getByRole('heading',{name:'Result sheet',exact:true})).toBeVisible();

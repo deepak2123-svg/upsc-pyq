@@ -20,7 +20,7 @@ async function save(page:Page,snapshot:PracticeSnapshot,status='in_progress',ans
 test('149 cleared questions grade, persist and fit mobile results',async({page})=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/prepare/NDA');const snapshot=await snapshotFor(page);await save(page,snapshot);await page.goto(`/practice/${snapshot.id}`);
  const first=paper.questions.find(q=>q.id===snapshot.questions[0].id)!;await page.getByRole('group',{name:'Answer options',exact:true}).getByRole('button',{name:new RegExp(`^${first.answer}\\b`)}).click();
- await page.reload();const graded=page.waitForResponse(r=>r.url().endsWith('/api/practice/grade'));await page.getByRole('button',{name:'Finish',exact:true}).click();const result=await(await graded).json();expect(result.correct).toBe(1);expect(result.scored).toBe(149);expect(result.excluded).toBe(0);
+ await page.reload();const graded=page.waitForResponse(r=>r.url().endsWith('/api/practice/grade'));await page.getByRole('button',{name:'Finish',exact:true}).click();await page.getByRole('button',{name:'Finish and view results',exact:true}).click();const result=await(await graded).json();expect(result.correct).toBe(1);expect(result.scored).toBe(149);expect(result.excluded).toBe(0);
  await expect(page.getByRole('table',{name:'Answer sheet',exact:true}).getByRole('row')).toHaveCount(150);await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([]);
 });
 for(const [scope,count] of [['english',50],['science',50],['gs',49]] as const)test(`${scope}: exact preparation membership`,async({page})=>{

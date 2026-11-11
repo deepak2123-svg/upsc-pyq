@@ -1,8 +1,8 @@
 /* A quiet reading surface; exam colours identify provenance, not correctness. */
 .exam-experience { --exam-text: #202733; background: #f4f6f8; color: var(--exam-text); }
 .practice-header-shell { position:sticky; top:0; z-index:50; border-top:2px solid #171717; background:#fff; box-shadow:0 1px 0 #dfe3e9; }
-.exam-experience .practice-topbar { position:relative; width: min(1760px, calc(100% - 32px)); height: 96px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
-.exam-experience .practice-topbar > a { display:inline-flex; align-items:center; gap:9px; min-height:56px; padding:0 20px; border:1px solid #d4d9e2; border-radius:13px; background:#fff; color:#111827; font-size:15px; font-weight:650; }
+.exam-experience .practice-topbar { position:relative; width: min(1760px, calc(100% - 32px)); height: 76px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.exam-experience .practice-topbar > a { display:inline-flex; align-items:center; gap:8px; min-height:46px; padding:0 16px; border:1px solid #d4d9e2; border-radius:11px; background:#fff; color:#111827; font-size:14px; font-weight:650; }
 .exam-experience .practice-topbar > a span { font-size:28px; line-height:0; font-weight:350; transform:translateY(-1px); }
 .practice-paper-title { position:absolute; left:50%; transform:translateX(-50%); display:grid; gap:3px; min-width:0; max-width:min(620px,48vw); text-align:center; }
 .practice-paper-title strong { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:17px; font-weight:760; }
@@ -10,15 +10,15 @@
 .practice-topbar-actions { display:flex; align-items:center; justify-content:flex-end; gap:10px; margin-left:auto; }
 .exam-experience .practice-session-title strong { font-size: 14px; font-weight: 680; letter-spacing: -.015em; }
 .exam-experience .practice-session-title small { font-size: 11px; margin-top: 2px; }
-.exam-experience .practice-topbar button { min-height:56px; padding:10px 22px; font-size:14px; font-weight:700; }
-.practice-timer { min-width:124px; min-height:56px; display:flex; align-items:center; justify-content:center; gap:10px; padding:8px 15px; border:0; border-radius:13px; background:#f3f3f1; text-align:center; box-shadow:none; }
+.exam-experience .practice-topbar button { min-height:46px; padding:8px 18px; font-size:13px; font-weight:700; }
+.practice-timer { min-width:112px; min-height:46px; display:flex; align-items:center; justify-content:center; gap:9px; padding:7px 13px; border:0; border-radius:11px; background:#f3f3f1; text-align:center; box-shadow:none; }
 .practice-timer svg { width:19px; height:19px; fill:none; stroke:#667085; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
 .exam-experience .practice-timer time { font-size:18px; font-weight:750; letter-spacing:.01em; }
 .exam-experience .practice-topbar .finish-practice { border-color:#e00000; border-radius:13px; background:#e00000; color:#fff; }
 .exam-experience .practice-topbar .finish-practice:hover { background:#c90000; }
+.exam-experience .practice-topbar .finish-practice.view-results { border-color:#2859d9; background:#2859d9; }
+.exam-experience .practice-topbar .finish-practice.view-results:hover { background:#1f49bc; }
 .practice-timer.is-low time { color: #a33d13; }
-.exam-experience .practice-progress { width:100%; height:4px; background:#e4e7ed; }
-.exam-experience .practice-progress span { background:#334ee8; }
 .exam-workspace { width: min(1760px, calc(100% - 32px)); margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) 450px; gap: 18px; align-items: start; }
 .exam-experience .practice-question { width: 100%; min-width: 0; margin-top: 22px; padding: 22px 24px 24px; box-sizing: border-box; border: 1px solid #dce1e8; border-radius: 14px; background: #fff; box-shadow: 0 8px 28px rgb(29 42 61 / 4%); }
 .exam-experience .question-heading { justify-content: space-between; align-items: center; font-size: 11px; gap: 16px; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid #e5e9ef; color: #647084; }
@@ -57,7 +57,7 @@
 .question-origin { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; margin: 18px 0 0; padding-top: 13px; border-top: 1px solid #e2e6ec; color: #657084; font-size: 11px; line-height: 1.5; }
 .question-origin > span { width: 8px; height: 8px; margin-right: 3px; border-radius: 50%; }
 .question-origin strong { color: #303947; font-weight: 650; }
-.question-palette { position: sticky; top: 118px; max-height: calc(100dvh - 134px); overflow: auto; margin-top: 22px; padding: 14px; background: #fff; border: 1px solid #d9dfe8; border-radius: 12px; box-shadow: 0 6px 20px rgb(29 42 61 / 4%); scrollbar-width: thin; }
+.question-palette { position: sticky; top: 98px; max-height: calc(100dvh - 114px); overflow: auto; margin-top: 22px; padding: 14px; background: #fff; border: 1px solid #d9dfe8; border-radius: 12px; box-shadow: 0 6px 20px rgb(29 42 61 / 4%); scrollbar-width: thin; }
 .palette-heading { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-bottom: 11px; border-bottom: 1px solid #e4e8ee; }
 .palette-heading > div { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; width: 100%; }
 .palette-heading strong { font-size: 13px; }
@@ -105,6 +105,13 @@
 .practice-save-error button { margin-top: 9px; min-height: 40px; padding: 7px 12px; border: 1px solid #b97421; background: #fff; border-radius: 7px; color: #704010; }
 .exam-experience button:focus-visible, .exam-experience a:focus-visible, .exam-results button:focus-visible, .exam-results a:focus-visible, .exam-results summary:focus-visible { outline: 3px solid #2757d3; outline-offset: 4px; }
 .exam-experience .practice-topbar button:disabled, .exam-results button:disabled { opacity: .5; cursor: wait; }
+.finish-confirm-backdrop { position:fixed; inset:0; z-index:100; display:grid; place-items:center; padding:20px; background:rgb(18 27 43 / 48%); backdrop-filter:blur(2px); }
+.finish-confirm-dialog { width:min(440px,100%); padding:28px; border:1px solid #d7dde7; border-radius:16px; background:#fff; box-shadow:0 24px 70px rgb(15 23 42 / 24%); }
+.finish-confirm-dialog h2 { margin:7px 0 10px; font-size:25px; letter-spacing:-.03em; }
+.finish-confirm-dialog > p:not(.pyq-kicker) { margin:0; color:#566274; font-size:14px; line-height:1.6; }
+.finish-confirm-dialog > div { display:flex; justify-content:flex-end; gap:10px; margin-top:24px; }
+.finish-confirm-dialog button { min-height:44px; padding:8px 14px; border:1px solid #cfd6e1; border-radius:9px; background:#fff; color:#202733; font:inherit; font-size:13px; font-weight:650; }
+.finish-confirm-dialog .confirm-finish { border-color:#e00000; background:#e00000; color:#fff; }
 
 .exam-results { width: min(1240px, calc(100% - 64px)); padding-bottom: 72px; }
 .result-page-nav { display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:54px; margin-bottom:18px; padding-bottom:14px; border-bottom:1px solid #e0e5ec; }
@@ -152,7 +159,14 @@
 .result-combined-review table { table-layout: fixed; }
 .result-combined-review th:first-child { width: 72px; }
 .result-combined-review th:nth-child(3), .result-combined-review th:nth-child(4) { width: 120px; }
-.result-combined-review th:last-child { width: 130px; }
+.result-combined-review th:nth-child(5) { width: 130px; }
+.result-combined-review th:last-child { width: 90px; }
+.result-row-marks { font-weight:700; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.result-row-marks.is-positive { color:#18794e; }
+.result-row-marks.is-negative { color:#b42318; }
+.result-final-score { display:flex; align-items:center; justify-content:flex-end; gap:28px; padding:17px 20px; border:1px solid #d8dfe8; border-top:0; border-radius:0 0 12px 12px; background:#f4f6f8; }
+.result-final-score span { color:#566274; font-size:12px; font-weight:650; }
+.result-final-score strong { min-width:110px; font-size:18px; font-variant-numeric:tabular-nums; }
 .result-review-toggle, .result-source-toggle { border: 0; background: transparent; color: inherit; text-align: left; cursor: pointer; }
 .result-review-toggle { display: inline-flex; align-items: center; gap: 8px; min-width: 48px; min-height: 36px; padding: 4px; color: #2757d3; font-weight: 650; }
 .result-review-toggle i { font-style: normal; transition: transform 150ms ease; }
@@ -277,7 +291,7 @@
   .result-question-prompt p { font-size: 19px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .exam-experience .practice-progress span, .exam-experience .practice-options button { transition: none; }
+  .exam-experience .practice-options button { transition: none; }
 }
 
 /* Reading-first online paper: question on the left, navigation on the right. */

@@ -22,7 +22,7 @@ test('149 available questions: answer, rapid navigation, reload, submission and 
  await answer(paper.questions.find(q=>q.id===snapshot.questions[0].id)!.answer);
  for(const n of [10,30,70]){await page.getByRole('button',{name:`Question ${n}, not answered`,exact:true}).click();await answer(paper.questions.find(q=>q.id===snapshot.questions[n-1].id)!.answer);}
  await page.reload();await expect(page.locator('.question-heading')).toContainText('Question 70 of 149');
- const graded=page.waitForResponse(r=>r.url().endsWith('/api/practice/grade'));await page.getByRole('button',{name:'Finish',exact:true}).click();const result=await(await graded).json();expect(result.correct).toBe(4);expect(result.incorrect).toBe(0);expect(result.scored).toBe(149);expect(result.excluded).toBe(0);
+ const graded=page.waitForResponse(r=>r.url().endsWith('/api/practice/grade'));await page.getByRole('button',{name:'Finish',exact:true}).click();await page.getByRole('button',{name:'Finish and view results',exact:true}).click();const result=await(await graded).json();expect(result.correct).toBe(4);expect(result.incorrect).toBe(0);expect(result.scored).toBe(149);expect(result.excluded).toBe(0);
  await expect(page.getByRole('heading',{name:'Result sheet',exact:true})).toBeVisible();await expect(page.getByRole('table',{name:'Answer sheet',exact:true}).getByRole('row')).toHaveCount(150);
  await page.reload();await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);expect(errors).toEqual([]);
 });
