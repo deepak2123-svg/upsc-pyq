@@ -23,9 +23,10 @@ test('compact setup keeps sources explicit, validates timing and starts the sele
  const customCount=dialog.getByLabel('Custom question count',{exact:true});
  const customControl=dialog.locator('.compact-custom-count');
  const customBox=await customControl.boundingBox();
- expect(customBox?.width).toBeGreaterThanOrEqual(120);
+ expect(customBox?.width).toBe(86);
  expect(customBox?.height).toBe(38);
- await expect(customControl).toContainText('Custom');
+ await expect(customCount).toHaveAttribute('placeholder','Custom');
+ expect(await customCount.evaluate(input=>getComputedStyle(input).appearance)).toBe('textfield');
  await customCount.fill('17');
  await expect(dialog.locator('.compact-setup-footer')).toContainText('17');
  await dialog.getByRole('group',{name:'Questions',exact:true}).getByRole('button',{name:'10',exact:true}).click();
