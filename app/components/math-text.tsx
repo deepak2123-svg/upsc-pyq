@@ -1,4 +1,5 @@
 import katex from "katex";
+import {normalizeMathDelimiters} from '../../lib/math-text-normalizer';
 
 const accentToken = /([A-Za-z](?:\u20d7|\u0302)|[îĵ])/gu;
 const latexToken = /(\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\])/g;
@@ -33,7 +34,7 @@ function LatexMath({value}:{value:string}) {
 
 /** Render delimited LaTeX plus imported Unicode accents without changing source text. */
 export function MathText({value}:{value:string}) {
-  return <>{value.split(latexToken).map((token,index)=>
+  return <>{normalizeMathDelimiters(value).split(latexToken).map((token,index)=>
     /^(?:\\\([\s\S]*\\\)|\\\[[\s\S]*\\\])$/.test(token)
       ? <LatexMath value={token} key={index}/>
       : <UnicodeMathText value={token} key={index}/>
