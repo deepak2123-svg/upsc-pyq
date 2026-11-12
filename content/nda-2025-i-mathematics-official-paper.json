@@ -496,8 +496,8 @@
       "id": "nda-2025-i-maths-7",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "If x = (1111)_{2}, y = (1001)_{2} and z = (110)_{2}, then what is \\(x^{3}\\) – \\(y^{3}\\) – \\(z^{3}\\) – 3xyz equal to?",
-      "sourceTextHash": "389378f51716cc006fc58a0f3caa65116414965c3d19992b54cecb3490ec1ea0",
+      "sourceText": "If x = \\((1111)_{2}\\), y = \\((1001)_{2}\\) and z = \\((110)_{2}\\), then what is \\(x^{3}\\) – \\(y^{3}\\) – \\(z^{3}\\) – 3xyz equal to?",
+      "sourceTextHash": "9234e9e633925bb3cc63196828f30b6d207916943b3ec05a3daa13a8dfe4ac27",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -512,16 +512,16 @@
       "taxonomyVersion": "nda-mathematics-v1",
       "difficulty": "Moderate",
       "promptLines": [
-        "If x = (1111)_{2}, y = (1001)_{2} and z = (110)_{2}, then what is \\(x^{3}\\) – \\(y^{3}\\) – \\(z^{3}\\) – 3xyz equal to?"
+        "If x = \\((1111)_{2}\\), y = \\((1001)_{2}\\) and z = \\((110)_{2}\\), then what is \\(x^{3}\\) – \\(y^{3}\\) – \\(z^{3}\\) – 3xyz equal to?"
       ],
       "options": {
-        "A": "(1111001)_{2}",
-        "B": "(1001111)_{2}",
-        "C": "(1)_{2}",
-        "D": "(0)_{2}"
+        "A": "\\((1111001)_{2}\\)",
+        "B": "\\((1001111)_{2}\\)",
+        "C": "\\((1)_{2}\\)",
+        "D": "\\((0)_{2}\\)"
       },
       "answer": "D",
-      "explanation": "Official UPSC final key, Series A Q7: D ((0)_{2}).",
+      "explanation": "Official UPSC final key, Series A Q7: D (\\((0)_{2}\\)).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
@@ -954,8 +954,8 @@
       "id": "nda-2025-i-maths-13",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "What is (√3+i√3-i)^{3} equal to?",
-      "sourceTextHash": "52a44268ef835689d9f2d341ab40937a3eb6c7a56ee803c36f3220fe09db7cdd",
+      "sourceText": "What is \\((√3+i√3-i)^{3}\\) equal to?",
+      "sourceTextHash": "5c3d8dcd62e56de4f9b30ae2210a4e4ca31968bb0f5103c6f1909df30c70b7ca",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -970,7 +970,7 @@
       "taxonomyVersion": "nda-mathematics-v1",
       "difficulty": "Moderate",
       "promptLines": [
-        "What is (√3+i√3-i)^{3} equal to?"
+        "What is \\((√3+i√3-i)^{3}\\) equal to?"
       ],
       "options": {
         "A": "-1",
@@ -1027,8 +1027,8 @@
       "id": "nda-2025-i-maths-14",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "If \\(x^{2}\\) – x + 1 = 0, then what is (x – 1/x)^{2} + (x – 1/x)^{4} + (x – 1/x)^{8} equal to?",
-      "sourceTextHash": "be29397b9475b7a78726e007c5b4597bd9cb7cd22f9a44a4c3aa159e596cee38",
+      "sourceText": "If \\(x^{2}\\) – x + 1 = 0, then what is \\((x – 1/x)^{2}\\) + \\((x – 1/x)^{4}\\) + \\((x – 1/x)^{8}\\) equal to?",
+      "sourceTextHash": "17f770f968bdfa499aec72d451ccc93d2e6074d211c478e61f8b16d52b5ca922",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -1043,7 +1043,7 @@
       "taxonomyVersion": "nda-mathematics-v1",
       "difficulty": "Moderate",
       "promptLines": [
-        "If \\(x^{2}\\) – x + 1 = 0, then what is (x – 1/x)^{2} + (x – 1/x)^{4} + (x – 1/x)^{8} equal to?"
+        "If \\(x^{2}\\) – x + 1 = 0, then what is \\((x – 1/x)^{2}\\) + \\((x – 1/x)^{4}\\) + \\((x – 1/x)^{8}\\) equal to?"
       ],
       "options": {
         "A": "81",
@@ -1465,8 +1465,8 @@
       "id": "nda-2025-i-maths-20",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "What is the number of rational terms in the expansion of (\\(3^{1/2}\\) + \\(5^{1/4}\\))^{12}?",
-      "sourceTextHash": "4e9649fd22920626f066da35eeddfa0eef262ef582393389e8c8b4d97ab39a4e",
+      "sourceText": "What is the number of rational terms in the expansion of \\((3^{1/2} + 5^{1/4})^{12}\\)?",
+      "sourceTextHash": "f684be3813bcc9b82ec2f837948e52f99a773d120b939df0d84427daa8da5d9b",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -1481,7 +1481,7 @@
       "taxonomyVersion": "nda-mathematics-v1",
       "difficulty": "Moderate",
       "promptLines": [
-        "What is the number of rational terms in the expansion of (\\(3^{1/2}\\) + \\(5^{1/4}\\))^{12}?"
+        "What is the number of rational terms in the expansion of \\((3^{1/2} + 5^{1/4})^{12}\\)?"
       ],
       "options": {
         "A": "2",
@@ -1538,8 +1538,8 @@
       "id": "nda-2025-i-maths-21",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "If the sum of binomial coefficients in the expansion of (x+y)^{n} is 256, then the greatest binomial coefficient occurs in which one of the following terms?",
-      "sourceTextHash": "5c8ca7f3e09bf44c3f95f4db762cb10f6879bed84d3ba3ee7e9753e410056fc8",
+      "sourceText": "If the sum of binomial coefficients in the expansion of \\((x+y)^{n}\\) is 256, then the greatest binomial coefficient occurs in which one of the following terms?",
+      "sourceTextHash": "61e0ca3193032382d45bf0bfcfb1564fbf21e4085b9d0332b893568654176840",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -1554,7 +1554,7 @@
       "taxonomyVersion": "nda-mathematics-v1",
       "difficulty": "Moderate",
       "promptLines": [
-        "If the sum of binomial coefficients in the expansion of (x+y)^{n} is 256, then the greatest binomial coefficient occurs in which one of the following terms?"
+        "If the sum of binomial coefficients in the expansion of \\((x+y)^{n}\\) is 256, then the greatest binomial coefficient occurs in which one of the following terms?"
       ],
       "options": {
         "A": "Third",
@@ -1611,8 +1611,8 @@
       "id": "nda-2025-i-maths-22",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "If k < (√2+1)^{3} < k+2, where k is a natural number, then what is the value of k?",
-      "sourceTextHash": "a14e4da3ac1d70bd69af240805b036b9247c03b6f7ed4a9ca0e6dff7d05a4706",
+      "sourceText": "If k < \\((√2+1)^{3}\\) < k+2, where k is a natural number, then what is the value of k?",
+      "sourceTextHash": "d9c1ff7a7162d172d1157559eb51fb128fb44fa96df5c2b2eac8540fa22f2ac9",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -1627,7 +1627,7 @@
       "taxonomyVersion": "nda-mathematics-v1",
       "difficulty": "Moderate",
       "promptLines": [
-        "If k < (√2+1)^{3} < k+2, where k is a natural number, then what is the value of k?"
+        "If k < \\((√2+1)^{3}\\) < k+2, where k is a natural number, then what is the value of k?"
       ],
       "options": {
         "A": "11",
@@ -1840,8 +1840,8 @@
       "id": "nda-2025-i-maths-25",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Consider the following in respect of a non-singular matrix M:\nI.|\\(M^{2}\\)| = |M|^{2}\nII.|M| = |\\(M^{-1}\\)|\nIII.|M| = |\\(M^{T}\\)|\nHow many of the above are correct?",
-      "sourceTextHash": "b8a3593fce8c646ea4aae6b6b26fdd9affe33dfaaad17cd46c7fdd609f5013b2",
+      "sourceText": "Consider the following in respect of a non-singular matrix M:\nI.|\\(M^{2}\\)| = \\(|M|^{2}\\)\nII.|M| = |\\(M^{-1}\\)|\nIII.|M| = |\\(M^{T}\\)|\nHow many of the above are correct?",
+      "sourceTextHash": "fe2212c29d5299cb5c3c0cae80860ea6ed008662deb2a97152858c1bd95a6547",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -1857,7 +1857,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Consider the following in respect of a non-singular matrix M:",
-        "I.|\\(M^{2}\\)| = |M|^{2}\nII.|M| = |\\(M^{-1}\\)|\nIII.|M| = |\\(M^{T}\\)|",
+        "I.|\\(M^{2}\\)| = \\(|M|^{2}\\)\nII.|M| = |\\(M^{-1}\\)|\nIII.|M| = |\\(M^{T}\\)|",
         "How many of the above are correct?"
       ],
       "options": {
@@ -1915,8 +1915,8 @@
       "id": "nda-2025-i-maths-26",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "If f(θ) = [\n[cosθ, sinθ]\n[-sinθ, cosθ]\n] then what is {f(π)}^{2} equal to?",
-      "sourceTextHash": "577e0804d5e425e2f3f3a98832b9a5d0e39018ffb19d4fd2b353b724189d54c7",
+      "sourceText": "If f(θ) = [\n[cosθ, sinθ]\n[-sinθ, cosθ]\n] then what is \\({f(π)}^{2}\\) equal to?",
+      "sourceTextHash": "13a4fc567da9726e7b87c16ddeeee129ed903a45da9f947a5435f8211e942b7d",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -1933,7 +1933,7 @@
       "promptLines": [
         "If f(θ) = [",
         "[cosθ, sinθ]\n[-sinθ, cosθ]",
-        "] then what is {f(π)}^{2} equal to?"
+        "] then what is \\({f(π)}^{2}\\) equal to?"
       ],
       "options": {
         "A": "[\n\n[-1, 0]\n[0, -1]\n]",
@@ -5358,8 +5358,8 @@
       "id": "nda-2025-i-maths-71",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Consider the following for the two (02) items that follow:\nLet x = secθ – cosθ and y = \\(sec^{4}\\) θ – \\(cos^{4}\\) θ.\nWhat is (dy/dx)^{2} equal to?",
-      "sourceTextHash": "b434e5585b14988a2b70a4e63528f488db70e68c241de6a99116e8b03398609c",
+      "sourceText": "Consider the following for the two (02) items that follow:\nLet x = secθ – cosθ and y = \\(sec^{4}\\) θ – \\(cos^{4}\\) θ.\nWhat is \\((dy/dx)^{2}\\) equal to?",
+      "sourceTextHash": "c90fd72580d787793db18e8776b41283a30d60ee386b27324d400e7771a6e34d",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -5376,7 +5376,7 @@
       "promptLines": [
         "Consider the following for the two (02) items that follow:",
         "Let x = secθ – cosθ and y = \\(sec^{4}\\) θ – \\(cos^{4}\\) θ.",
-        "What is (dy/dx)^{2} equal to?"
+        "What is \\((dy/dx)^{2}\\) equal to?"
       ],
       "options": {
         "A": "\\(4y^{2}\\)+\\(4x^{2}\\)+4",
@@ -5674,8 +5674,8 @@
       "id": "nda-2025-i-maths-75",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Consider the following for the two (02) items that follow:\nLet (x+y)^{p+q} = \\(x^{p}\\) \\(y^{q}\\), where p, q are positive integers.\nThe derivative of y with respect to x",
-      "sourceTextHash": "8087c83a83e7757aedba8e4f4f5f795bb63f2345b21d471bf62e789d39d5d58d",
+      "sourceText": "Consider the following for the two (02) items that follow:\nLet \\((x+y)^{p+q}\\) = \\(x^{p}\\) \\(y^{q}\\), where p, q are positive integers.\nThe derivative of y with respect to x",
+      "sourceTextHash": "900fcb12e7e83c435cff658a0466c299fe7edb8a689246243b9c8ce834f99100",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -5691,7 +5691,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Consider the following for the two (02) items that follow:",
-        "Let (x+y)^{p+q} = \\(x^{p}\\) \\(y^{q}\\), where p, q are positive integers.",
+        "Let \\((x+y)^{p+q}\\) = \\(x^{p}\\) \\(y^{q}\\), where p, q are positive integers.",
         "The derivative of y with respect to x"
       ],
       "options": {
@@ -5749,8 +5749,8 @@
       "id": "nda-2025-i-maths-76",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Consider the following for the two (02) items that follow:\nLet (x+y)^{p+q} = \\(x^{p}\\) \\(y^{q}\\), where p, q are positive integers.\nIf p+q = 10, then what is dy/dx equal to?",
-      "sourceTextHash": "ccaac7fd5f9d102b83120cab13ea045ef7fb53c1290f2029805f0c543e55be30",
+      "sourceText": "Consider the following for the two (02) items that follow:\nLet \\((x+y)^{p+q}\\) = \\(x^{p}\\) \\(y^{q}\\), where p, q are positive integers.\nIf p+q = 10, then what is dy/dx equal to?",
+      "sourceTextHash": "e57a29be60c44b946945863b0a453955262f8538de8b172b8bda5cfbfb8cbd28",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -5766,14 +5766,14 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Consider the following for the two (02) items that follow:",
-        "Let (x+y)^{p+q} = \\(x^{p}\\) \\(y^{q}\\), where p, q are positive integers.",
+        "Let \\((x+y)^{p+q}\\) = \\(x^{p}\\) \\(y^{q}\\), where p, q are positive integers.",
         "If p+q = 10, then what is dy/dx equal to?"
       ],
       "options": {
         "A": "y/x",
         "B": "xy",
         "C": "\\(x^{10}\\) \\(y^{10}\\)",
-        "D": "(y/x)^{10}"
+        "D": "\\((y/x)^{10}\\)"
       },
       "answer": "A",
       "explanation": "Official UPSC final key, Series A Q76: A (y/x).",
@@ -6126,8 +6126,8 @@
       "id": "nda-2025-i-maths-81",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Consider the following for the two (02) items that follow:\nLet the function y = (1-cosx)^{-1}, where x ≠ 2nπ and n is an integer.\nWhat is the range of the function?",
-      "sourceTextHash": "c375a89a4d0f88173a5e521f671ac9b6adce8cba0ff9b9785492b9702e9a24d0",
+      "sourceText": "Consider the following for the two (02) items that follow:\nLet the function y = \\((1-cosx)^{-1}\\), where x ≠ 2nπ and n is an integer.\nWhat is the range of the function?",
+      "sourceTextHash": "fc7c5f8890827bfd85f7787d861029e7f6a1939ec4decdfb9227b6e3dfcffd43",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -6143,7 +6143,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Consider the following for the two (02) items that follow:",
-        "Let the function y = (1-cosx)^{-1}, where x ≠ 2nπ and n is an integer.",
+        "Let the function y = \\((1-cosx)^{-1}\\), where x ≠ 2nπ and n is an integer.",
         "What is the range of the function?"
       ],
       "options": {
@@ -6201,8 +6201,8 @@
       "id": "nda-2025-i-maths-82",
       "origin": "pyq",
       "sourceTextLocked": true,
-      "sourceText": "Consider the following for the two (02) items that follow:\nLet the function y = (1-cosx)^{-1}, where x ≠ 2nπ and n is an integer.\nWhat is ∫y dx equal to?",
-      "sourceTextHash": "c3a088856b4c02125cb1538d836fd589dfd0a58849eb6e5215ae296cf23e3d65",
+      "sourceText": "Consider the following for the two (02) items that follow:\nLet the function y = \\((1-cosx)^{-1}\\), where x ≠ 2nπ and n is an integer.\nWhat is ∫y dx equal to?",
+      "sourceTextHash": "4e5e27948d48d8d8f83c3e76d8e3310266294d500a7680474bc6a00498c1b193",
       "exam": "NDA",
       "year": 2025,
       "paper": "I Mathematics",
@@ -6218,7 +6218,7 @@
       "difficulty": "Moderate",
       "promptLines": [
         "Consider the following for the two (02) items that follow:",
-        "Let the function y = (1-cosx)^{-1}, where x ≠ 2nπ and n is an integer.",
+        "Let the function y = \\((1-cosx)^{-1}\\), where x ≠ 2nπ and n is an integer.",
         "What is ∫y dx equal to?"
       ],
       "options": {
@@ -8998,13 +8998,13 @@
         "The probability of a man hitting a target is 1/5. If the man fires 7 times, then what is the probability that he hits the target at least twice?"
       ],
       "options": {
-        "A": "1 – (3/5)(4/5)^{6}",
-        "B": "1 – (3/5)(4/5)^{7}",
-        "C": "1 – (11/5)(4/5)^{6}",
-        "D": "1 – (11/5)(4/5)^{7}"
+        "A": "1 – (3/5)\\((4/5)^{6}\\)",
+        "B": "1 – (3/5)\\((4/5)^{7}\\)",
+        "C": "1 – (11/5)\\((4/5)^{6}\\)",
+        "D": "1 – (11/5)\\((4/5)^{7}\\)"
       },
       "answer": "C",
-      "explanation": "Official UPSC final key, Series A Q118: C (1 – (11/5)(4/5)^{6}).",
+      "explanation": "Official UPSC final key, Series A Q118: C (1 – (11/5)\\((4/5)^{6}\\)).",
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,

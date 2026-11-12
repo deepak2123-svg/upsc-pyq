@@ -57,7 +57,7 @@ const additional={6:[L.quadratic],10:[L.complex],36:[L.identities],37:[L.identit
 assert.deepEqual(Object.keys(primary).map(Number).sort((a,b)=>a-b),range(1,120));
 const leafLabels=Object.fromEntries(Object.entries(L).map(([name,id])=>[id,name.replace(/([A-Z])/g,' $1').toLowerCase()]));
 const pathParts=id=>id.replace(/^subtopic:nda-mathematics:/,'').split(':');
-const mathify=value=>value.replace(/(?:[A-Za-z0-9πθαβγΔωΣ∫∞√]+(?:\^\{[^{}\n]+\}|_\{[^{}\n]+\})+)+/gu,token=>`\\(${token}\\)`);
+const mathify=value=>value.replace(/(?:\([^()\n]+\)|\{[^{}\n]+\}|\|[^|\n]+\||[A-Za-z0-9πθαβγΔωΣ∫∞√]+)(?:\^\{[^{}\n]+\}|_\{[^{}\n]+\})+/gu,token=>`\\(${token}\\)`);
 
 assert.equal(source.paper.exam,'NDA');assert.equal(source.paper.year,2025);assert.equal(source.paper.session,'I');assert.equal(source.paper.subject,'Mathematics');assert.equal(source.paper.bookletSeries,'A');assert.equal(source.paper.paperCode,'AEBC-B-MTH');
 assert.deepEqual(rows.map(q=>q.number),range(1,120));assert.ok(rows.every(q=>Object.keys(q.options).join('')==='ABCD'));
