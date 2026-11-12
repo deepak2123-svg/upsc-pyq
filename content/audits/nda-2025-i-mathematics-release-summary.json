@@ -1,0 +1,65 @@
+{
+  "paperId": "nda-2025-i-mathematics",
+  "identifiedPaper": "NDA & NA Examination (I), 2025 - Paper I Mathematics - Series A",
+  "expected": 120,
+  "available": 120,
+  "newRecords": 120,
+  "reusedRecords": 0,
+  "keyStatus": "official-final",
+  "questionPaperSha256": "69d96829844298ecfa959dc4b4d76968267c442b252dade2432ed4906097cf45",
+  "keySha256": "88c7deb221d08852ef7663874a3ce27cec69a9cafebc9f334ec0f6b3119f7f52",
+  "figuresRequired": 0,
+  "formulaOrContentDefectsResolved": [
+    {
+      "questionNumber": 2,
+      "resolution": "Official final key B supersedes the publisher transcription aid C."
+    },
+    {
+      "questionNumber": 43,
+      "resolution": "Official final key C supersedes the publisher transcription aid B."
+    },
+    {
+      "questionNumber": 64,
+      "resolution": "Official final key A supersedes the publisher transcription aid B."
+    },
+    {
+      "questionNumber": 80,
+      "resolution": "Official final key A supersedes the publisher transcription aid D."
+    }
+  ],
+  "requiresReview": [],
+  "chapterTotals": [
+    {
+      "chapter": "algebra",
+      "count": 24
+    },
+    {
+      "chapter": "matrices-and-determinants",
+      "count": 12
+    },
+    {
+      "chapter": "trigonometry",
+      "count": 21
+    },
+    {
+      "chapter": "analytical-geometry",
+      "count": 15
+    },
+    {
+      "chapter": "vector-algebra",
+      "count": 5
+    },
+    {
+      "chapter": "integral-calculus-and-differential-equations",
+      "count": 9
+    },
+    {
+      "chapter": "differential-calculus",
+      "count": 14
+    },
+    {
+      "chapter": "statistics-and-probability",
+      "count": 20
+    }
+  ]
+}

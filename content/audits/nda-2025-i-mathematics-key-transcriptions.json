@@ -1,0 +1,40 @@
+{
+  "paperId": "nda-2025-i-mathematics",
+  "issuer": "Union Public Service Commission",
+  "status": "official-final",
+  "series": "A",
+  "subject": "Mathematics",
+  "sha256": "88c7deb221d08852ef7663874a3ce27cec69a9cafebc9f334ec0f6b3119f7f52",
+  "firstPassColumns": [
+    "BBBAACDABBBAACC",
+    "ACCCCCBDBCDDBDB",
+    "BACABCCABACDCCB",
+    "BCBDCADABDBCDBB",
+    "BCDABDCBAACCCAD",
+    "AACCABBBDCDCAAC",
+    "DCCDDCDCBABCDCB",
+    "ACAADCAABBBBCBC"
+  ],
+  "secondPassRows": [
+    "BABBBADA",
+    "BCACCACC",
+    "BCCBDCCA",
+    "ACADACDA",
+    "ACBCBADD",
+    "CCCADBCC",
+    "DBCDCBDA",
+    "ADAABBCA",
+    "BBBBADBB",
+    "BCADACAB",
+    "BDCBCDBB",
+    "ADDCCCCB",
+    "ABCDCADC",
+    "CDCBAACB",
+    "CBBBDCBC"
+  ],
+  "mismatches": [],
+  "dropped": [],
+  "multipleAnswers": [],
+  "reviewedAt": "2026-11-11",
+  "reviewerMethod": "Two fresh visual readings of the Series A grid by the same AI agent, column-first and row-first; not independent human review."
+}

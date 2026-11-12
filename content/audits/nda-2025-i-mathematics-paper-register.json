@@ -1,0 +1,910 @@
+{
+  "templateVersion": 1,
+  "paperId": "nda-2025-i-mathematics",
+  "workflowState": "source-review-complete",
+  "identity": {
+    "exam": "NDA",
+    "year": 2025,
+    "session": "I",
+    "paper": "I Mathematics",
+    "paperCode": "AEBC-B-MTH",
+    "series": "A",
+    "language": "English/Hindi bilingual booklet; English transcript used",
+    "examDate": "2025-04-13",
+    "expected": 120
+  },
+  "questionPaper": {
+    "url": "https://www.upsc.gov.in/sites/default/files/QP-NDA-NA-I-25-MATHEMATICS-150425.pdf",
+    "asset": "/papers/nda-2025-i-mathematics/official-question-paper.pdf",
+    "sha256": "69d96829844298ecfa959dc4b4d76968267c442b252dade2432ed4906097cf45",
+    "pages": 40
+  },
+  "key": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": "2025-10-14",
+    "retrievedAt": "2026-11-11",
+    "url": "https://cn.edurev.in/files/13053934_589fc629-d89b-427c-aa87-e9c24d1b9dc1.pdf",
+    "asset": "/papers/nda-2025-i-mathematics/official-final-key.pdf",
+    "sha256": "88c7deb221d08852ef7663874a3ce27cec69a9cafebc9f334ec0f6b3119f7f52",
+    "page": 1,
+    "series": "A",
+    "session": "I",
+    "paper": "I",
+    "subject": "Mathematics",
+    "totalQuestions": 120,
+    "dropped": 0,
+    "scored": 120,
+    "visualReview": "The preserved UPSC final-key scan identifies NDA & NA Examination I 2025, Paper One Mathematics, Series A, 120 questions, zero dropped and 120 scored. Series A was read column-first and checked row-first against the rendered page.",
+    "searchLog": [
+      {
+        "date": "2026-11-11",
+        "url": "https://www.upsc.gov.in/examinations/previous-question-papers",
+        "result": "Official UPSC archive exposes the NDA & NA Examination (I), 2025 Mathematics question paper."
+      },
+      {
+        "date": "2026-11-11",
+        "url": "https://www.upsc.gov.in/sites/default/files/QP-NDA-NA-I-25-MATHEMATICS-150425.pdf",
+        "result": "Official 40-page Series A question-paper scan preserved and visually checked."
+      },
+      {
+        "date": "2026-11-11",
+        "url": "https://cn.edurev.in/files/13053934_589fc629-d89b-427c-aa87-e9c24d1b9dc1.pdf",
+        "result": "Preserved four-page mirror of the UPSC final-key scan; page 1 identifies Series A, 120 scored and zero dropped."
+      }
+    ]
+  },
+  "pdfPageMapping": {
+    "pages": 40,
+    "cover": 1,
+    "questions": "English questions on PDF/printed odd pages 3-35; facing even pages carry Hindi; pages 37-39 are rough work."
+  },
+  "expectedQuestionNumbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "sourceTranscript": {
+    "path": "content/staging/nda-2025-i-maths-source-transcript.json",
+    "sha256": "565fa2100aa6a77d7b48879c865b28e240d011f4671c587e4c0a8925a34e778d"
+  },
+  "questionSlots": [
+    {
+      "number": 1,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-1",
+      "status": "reviewed"
+    },
+    {
+      "number": 2,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-2",
+      "status": "reviewed"
+    },
+    {
+      "number": 3,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-3",
+      "status": "reviewed"
+    },
+    {
+      "number": 4,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-4",
+      "status": "reviewed"
+    },
+    {
+      "number": 5,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-5",
+      "status": "reviewed"
+    },
+    {
+      "number": 6,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-6",
+      "status": "reviewed"
+    },
+    {
+      "number": 7,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-7",
+      "status": "reviewed"
+    },
+    {
+      "number": 8,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-8",
+      "status": "reviewed"
+    },
+    {
+      "number": 9,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-9",
+      "status": "reviewed"
+    },
+    {
+      "number": 10,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-10",
+      "status": "reviewed"
+    },
+    {
+      "number": 11,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-11",
+      "status": "reviewed"
+    },
+    {
+      "number": 12,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-12",
+      "status": "reviewed"
+    },
+    {
+      "number": 13,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-13",
+      "status": "reviewed"
+    },
+    {
+      "number": 14,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-14",
+      "status": "reviewed"
+    },
+    {
+      "number": 15,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-15",
+      "status": "reviewed"
+    },
+    {
+      "number": 16,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-16",
+      "status": "reviewed"
+    },
+    {
+      "number": 17,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-17",
+      "status": "reviewed"
+    },
+    {
+      "number": 18,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-18",
+      "status": "reviewed"
+    },
+    {
+      "number": 19,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-19",
+      "status": "reviewed"
+    },
+    {
+      "number": 20,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-20",
+      "status": "reviewed"
+    },
+    {
+      "number": 21,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-21",
+      "status": "reviewed"
+    },
+    {
+      "number": 22,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-22",
+      "status": "reviewed"
+    },
+    {
+      "number": 23,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-23",
+      "status": "reviewed"
+    },
+    {
+      "number": 24,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-24",
+      "status": "reviewed"
+    },
+    {
+      "number": 25,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-25",
+      "status": "reviewed"
+    },
+    {
+      "number": 26,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-26",
+      "status": "reviewed"
+    },
+    {
+      "number": 27,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-27",
+      "status": "reviewed"
+    },
+    {
+      "number": 28,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-28",
+      "status": "reviewed"
+    },
+    {
+      "number": 29,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-29",
+      "status": "reviewed"
+    },
+    {
+      "number": 30,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-30",
+      "status": "reviewed"
+    },
+    {
+      "number": 31,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-31",
+      "status": "reviewed"
+    },
+    {
+      "number": 32,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-32",
+      "status": "reviewed"
+    },
+    {
+      "number": 33,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-33",
+      "status": "reviewed"
+    },
+    {
+      "number": 34,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-34",
+      "status": "reviewed"
+    },
+    {
+      "number": 35,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-35",
+      "status": "reviewed"
+    },
+    {
+      "number": 36,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-36",
+      "status": "reviewed"
+    },
+    {
+      "number": 37,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-37",
+      "status": "reviewed"
+    },
+    {
+      "number": 38,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-38",
+      "status": "reviewed"
+    },
+    {
+      "number": 39,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-39",
+      "status": "reviewed"
+    },
+    {
+      "number": 40,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-40",
+      "status": "reviewed"
+    },
+    {
+      "number": 41,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-41",
+      "status": "reviewed"
+    },
+    {
+      "number": 42,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-42",
+      "status": "reviewed"
+    },
+    {
+      "number": 43,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-43",
+      "status": "reviewed"
+    },
+    {
+      "number": 44,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-44",
+      "status": "reviewed"
+    },
+    {
+      "number": 45,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-45",
+      "status": "reviewed"
+    },
+    {
+      "number": 46,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-46",
+      "status": "reviewed"
+    },
+    {
+      "number": 47,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-47",
+      "status": "reviewed"
+    },
+    {
+      "number": 48,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-48",
+      "status": "reviewed"
+    },
+    {
+      "number": 49,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-49",
+      "status": "reviewed"
+    },
+    {
+      "number": 50,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-50",
+      "status": "reviewed"
+    },
+    {
+      "number": 51,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-51",
+      "status": "reviewed"
+    },
+    {
+      "number": 52,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-52",
+      "status": "reviewed"
+    },
+    {
+      "number": 53,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-53",
+      "status": "reviewed"
+    },
+    {
+      "number": 54,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-54",
+      "status": "reviewed"
+    },
+    {
+      "number": 55,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-55",
+      "status": "reviewed"
+    },
+    {
+      "number": 56,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-56",
+      "status": "reviewed"
+    },
+    {
+      "number": 57,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-57",
+      "status": "reviewed"
+    },
+    {
+      "number": 58,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-58",
+      "status": "reviewed"
+    },
+    {
+      "number": 59,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-59",
+      "status": "reviewed"
+    },
+    {
+      "number": 60,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-60",
+      "status": "reviewed"
+    },
+    {
+      "number": 61,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-61",
+      "status": "reviewed"
+    },
+    {
+      "number": 62,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-62",
+      "status": "reviewed"
+    },
+    {
+      "number": 63,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-63",
+      "status": "reviewed"
+    },
+    {
+      "number": 64,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-64",
+      "status": "reviewed"
+    },
+    {
+      "number": 65,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-65",
+      "status": "reviewed"
+    },
+    {
+      "number": 66,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-66",
+      "status": "reviewed"
+    },
+    {
+      "number": 67,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-67",
+      "status": "reviewed"
+    },
+    {
+      "number": 68,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-68",
+      "status": "reviewed"
+    },
+    {
+      "number": 69,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-69",
+      "status": "reviewed"
+    },
+    {
+      "number": 70,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-70",
+      "status": "reviewed"
+    },
+    {
+      "number": 71,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-71",
+      "status": "reviewed"
+    },
+    {
+      "number": 72,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-72",
+      "status": "reviewed"
+    },
+    {
+      "number": 73,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-73",
+      "status": "reviewed"
+    },
+    {
+      "number": 74,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-74",
+      "status": "reviewed"
+    },
+    {
+      "number": 75,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-75",
+      "status": "reviewed"
+    },
+    {
+      "number": 76,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-76",
+      "status": "reviewed"
+    },
+    {
+      "number": 77,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-77",
+      "status": "reviewed"
+    },
+    {
+      "number": 78,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-78",
+      "status": "reviewed"
+    },
+    {
+      "number": 79,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-79",
+      "status": "reviewed"
+    },
+    {
+      "number": 80,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-80",
+      "status": "reviewed"
+    },
+    {
+      "number": 81,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-81",
+      "status": "reviewed"
+    },
+    {
+      "number": 82,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-82",
+      "status": "reviewed"
+    },
+    {
+      "number": 83,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-83",
+      "status": "reviewed"
+    },
+    {
+      "number": 84,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-84",
+      "status": "reviewed"
+    },
+    {
+      "number": 85,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-85",
+      "status": "reviewed"
+    },
+    {
+      "number": 86,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-86",
+      "status": "reviewed"
+    },
+    {
+      "number": 87,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-87",
+      "status": "reviewed"
+    },
+    {
+      "number": 88,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-88",
+      "status": "reviewed"
+    },
+    {
+      "number": 89,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-89",
+      "status": "reviewed"
+    },
+    {
+      "number": 90,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-90",
+      "status": "reviewed"
+    },
+    {
+      "number": 91,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-91",
+      "status": "reviewed"
+    },
+    {
+      "number": 92,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-92",
+      "status": "reviewed"
+    },
+    {
+      "number": 93,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-93",
+      "status": "reviewed"
+    },
+    {
+      "number": 94,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-94",
+      "status": "reviewed"
+    },
+    {
+      "number": 95,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-95",
+      "status": "reviewed"
+    },
+    {
+      "number": 96,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-96",
+      "status": "reviewed"
+    },
+    {
+      "number": 97,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-97",
+      "status": "reviewed"
+    },
+    {
+      "number": 98,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-98",
+      "status": "reviewed"
+    },
+    {
+      "number": 99,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-99",
+      "status": "reviewed"
+    },
+    {
+      "number": 100,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-100",
+      "status": "reviewed"
+    },
+    {
+      "number": 101,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-101",
+      "status": "reviewed"
+    },
+    {
+      "number": 102,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-102",
+      "status": "reviewed"
+    },
+    {
+      "number": 103,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-103",
+      "status": "reviewed"
+    },
+    {
+      "number": 104,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-104",
+      "status": "reviewed"
+    },
+    {
+      "number": 105,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-105",
+      "status": "reviewed"
+    },
+    {
+      "number": 106,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-106",
+      "status": "reviewed"
+    },
+    {
+      "number": 107,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-107",
+      "status": "reviewed"
+    },
+    {
+      "number": 108,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-108",
+      "status": "reviewed"
+    },
+    {
+      "number": 109,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-109",
+      "status": "reviewed"
+    },
+    {
+      "number": 110,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-110",
+      "status": "reviewed"
+    },
+    {
+      "number": 111,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-111",
+      "status": "reviewed"
+    },
+    {
+      "number": 112,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-112",
+      "status": "reviewed"
+    },
+    {
+      "number": 113,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-113",
+      "status": "reviewed"
+    },
+    {
+      "number": 114,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-114",
+      "status": "reviewed"
+    },
+    {
+      "number": 115,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-115",
+      "status": "reviewed"
+    },
+    {
+      "number": 116,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-116",
+      "status": "reviewed"
+    },
+    {
+      "number": 117,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-117",
+      "status": "reviewed"
+    },
+    {
+      "number": 118,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-118",
+      "status": "reviewed"
+    },
+    {
+      "number": 119,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-119",
+      "status": "reviewed"
+    },
+    {
+      "number": 120,
+      "accountingAction": "new",
+      "canonicalQuestionId": "nda-2025-i-maths-120",
+      "status": "reviewed"
+    }
+  ]
+}

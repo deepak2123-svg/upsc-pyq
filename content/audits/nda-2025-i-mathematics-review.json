@@ -1,0 +1,5432 @@
+{
+  "paperId": "nda-2025-i-mathematics",
+  "register": "content/audits/nda-2025-i-mathematics-paper-register.json",
+  "evidence": {
+    "status": "official-final",
+    "issuer": "Union Public Service Commission",
+    "releasedAt": "2025-10-14",
+    "retrievedAt": "2026-11-11",
+    "url": "https://cn.edurev.in/files/13053934_589fc629-d89b-427c-aa87-e9c24d1b9dc1.pdf",
+    "asset": "/papers/nda-2025-i-mathematics/official-final-key.pdf",
+    "sha256": "88c7deb221d08852ef7663874a3ce27cec69a9cafebc9f334ec0f6b3119f7f52",
+    "page": 1,
+    "series": "A",
+    "session": "I",
+    "paper": "I",
+    "subject": "Mathematics",
+    "totalQuestions": 120,
+    "dropped": 0,
+    "scored": 120,
+    "visualReview": "The preserved UPSC final-key scan identifies NDA & NA Examination I 2025, Paper One Mathematics, Series A, 120 questions, zero dropped and 120 scored. Series A was read column-first and checked row-first against the rendered page.",
+    "searchLog": [
+      {
+        "date": "2026-11-11",
+        "url": "https://www.upsc.gov.in/examinations/previous-question-papers",
+        "result": "Official UPSC archive exposes the NDA & NA Examination (I), 2025 Mathematics question paper."
+      },
+      {
+        "date": "2026-11-11",
+        "url": "https://www.upsc.gov.in/sites/default/files/QP-NDA-NA-I-25-MATHEMATICS-150425.pdf",
+        "result": "Official 40-page Series A question-paper scan preserved and visually checked."
+      },
+      {
+        "date": "2026-11-11",
+        "url": "https://cn.edurev.in/files/13053934_589fc629-d89b-427c-aa87-e9c24d1b9dc1.pdf",
+        "result": "Preserved four-page mirror of the UPSC final-key scan; page 1 identifies Series A, 120 scored and zero dropped."
+      }
+    ]
+  },
+  "signoff": {
+    "paperId": "nda-2025-i-mathematics",
+    "reviewedAt": "2026-11-11",
+    "reviewer": "Codex AI agent",
+    "reviewerMethod": "Structured HTML transcription was checked for 120-question completeness and sampled against the official Series A scan; every question is tied to its exact English PDF page. The UPSC final-key grid was rendered and checked column-first and row-first.",
+    "classificationMethod": "Question-by-question concept pass against the existing NDA Mathematics syllabus, followed by a fresh placement reread by the same AI agent.",
+    "originalPdfSha256": "69d96829844298ecfa959dc4b4d76968267c442b252dade2432ed4906097cf45",
+    "keyPdfSha256": "88c7deb221d08852ef7663874a3ce27cec69a9cafebc9f334ec0f6b3119f7f52",
+    "sourceTranscriptSha256": "565fa2100aa6a77d7b48879c865b28e240d011f4671c587e4c0a8925a34e778d",
+    "reviewedQuestionNumbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120
+    ],
+    "figureQuestionNumbers": [],
+    "formulaOrContentDefectsResolved": [
+      {
+        "questionNumber": 2,
+        "resolution": "Official final key B supersedes the publisher transcription aid C."
+      },
+      {
+        "questionNumber": 43,
+        "resolution": "Official final key C supersedes the publisher transcription aid B."
+      },
+      {
+        "questionNumber": 64,
+        "resolution": "Official final key A supersedes the publisher transcription aid B."
+      },
+      {
+        "questionNumber": 80,
+        "resolution": "Official final key A supersedes the publisher transcription aid D."
+      }
+    ],
+    "unresolvedDefects": []
+  },
+  "reconciliation": {
+    "expected": 120,
+    "newSourceOccurrences": 120,
+    "reusedSourceOccurrences": 0,
+    "duplicateAliases": 0,
+    "awaitingReviewCount": 0,
+    "dispositionCounts": {
+      "official-final": 120,
+      "official-provisional": 0,
+      "reasoned-verified": 0,
+      "withdrawn": 0,
+      "duplicate": 0,
+      "quarantined": 0
+    },
+    "eligibleUniqueQuestionCount": 120,
+    "sectionTotals": {
+      "mathematics": 120
+    },
+    "correctedExistingKeys": [],
+    "materialHistoricalRepairs": []
+  },
+  "questionSlots": [
+    {
+      "number": 1,
+      "canonicalQuestionId": "nda-2025-i-maths-1",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "7d4fe87c574ac0a50f09d320290bfc680a69e416aa8a734de9fe56b313a77784",
+        "optionsHash": "39e3e42244ccd47b60bc8a243badd5d84e2fdfa2a440715eea092730407043ac",
+        "sourcePages": [
+          3
+        ],
+        "printedPage": 3,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:equations-and-sequences:arithmetic-geometric-and-harmonic-progressions",
+        "additionalIds": [],
+        "rationale": "The solution directly tests progressions; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "The terms of S form an arithmetic progression with common difference 6."
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 2,
+      "canonicalQuestionId": "nda-2025-i-maths-2",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "fddc9fe80c1bc28b8b9c0ba8e050f37d4faa483d15d778bdb1c4dd7175b7fa07",
+        "optionsHash": "3726647a11d57a432d71a066bd13a0bc1f97fb18a0e3795d3bd95e6ea2aa4ff5",
+        "sourcePages": [
+          3
+        ],
+        "printedPage": 3,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:equations-and-sequences:arithmetic-geometric-and-harmonic-progressions",
+        "additionalIds": [],
+        "rationale": "The solution directly tests progressions; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "Two"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 3,
+      "canonicalQuestionId": "nda-2025-i-maths-3",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "33f1e955a7678f2733dcd2ea38b274320e8719cd280fd962ad71115865865744",
+        "optionsHash": "700ad75bc51f238518bf8e60bbfc34d6c6aff3b0669f0659147d051ed4bbd96a",
+        "sourcePages": [
+          3
+        ],
+        "printedPage": 3,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:equations-and-sequences:quadratic-equations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests quadratic; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "6"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 4,
+      "canonicalQuestionId": "nda-2025-i-maths-4",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "0597150792eab1dcd499eb4841f48f93b110cfdcba9f0811f00d78314a0a18ac",
+        "optionsHash": "5b938f63da5f9ff50cff081e6c4209c28d504d7473da750a7da01c44a000b444",
+        "sourcePages": [
+          3
+        ],
+        "printedPage": 3,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:matrices-and-determinants:matrices:systems-of-linear-equations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests systems; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "0"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 5,
+      "canonicalQuestionId": "nda-2025-i-maths-5",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "6192cd01f1618820f7ed41f994e8e38a409cc834a5fe031f0de6994333af0be8",
+        "optionsHash": "becde668cbbe999c2c70b34a70f44f1220693f0c53323f25a0d23b3de084954f",
+        "sourcePages": [
+          3
+        ],
+        "printedPage": 3,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:equations-and-sequences:arithmetic-geometric-and-harmonic-progressions",
+        "additionalIds": [],
+        "rationale": "The solution directly tests progressions; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "-3"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 6,
+      "canonicalQuestionId": "nda-2025-i-maths-6",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "190c5b33293313481d1b6ceb79e2959f93d8e44a4a15e87f8856c210da6945b4",
+        "optionsHash": "b112dec3635064528b9639c6904694eb5baef5a92d58d5f3fa391c8b9c6a7423",
+        "sourcePages": [
+          3
+        ],
+        "printedPage": 3,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:equations-and-sequences:arithmetic-geometric-and-harmonic-progressions",
+        "additionalIds": [
+          "subtopic:nda-mathematics:algebra:equations-and-sequences:quadratic-equations"
+        ],
+        "rationale": "The solution directly tests progressions; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "Both I and II"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 7,
+      "canonicalQuestionId": "nda-2025-i-maths-7",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "389378f51716cc006fc58a0f3caa65116414965c3d19992b54cecb3490ec1ea0",
+        "optionsHash": "3a175ab2ce53bef3c2a971c34d12945983c2d1c6d9ec804c0d697ca16a9594d4",
+        "sourcePages": [
+          3
+        ],
+        "printedPage": 3,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:foundations:binary-numbers",
+        "additionalIds": [],
+        "rationale": "The solution directly tests binary; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "(0)_{2}"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 8,
+      "canonicalQuestionId": "nda-2025-i-maths-8",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "2531530b7c9771fe123e8367cc4df33f33dc02f1f5c958a4f9e57861d180fd67",
+        "optionsHash": "51244f2f78d560b2b871f61b4ea4cbceada14290bee52f3dac47f4a318aa79ed",
+        "sourcePages": [
+          5
+        ],
+        "printedPage": 5,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:matrices-and-determinants:matrices:determinants",
+        "additionalIds": [],
+        "rationale": "The solution directly tests determinants; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "0"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 9,
+      "canonicalQuestionId": "nda-2025-i-maths-9",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "e4474c80de089b8e2b0315fcdb206711f759110d5dcf0bcb9d527f71e41665f9",
+        "optionsHash": "60de1fed3c1b5f5da80f6f35567a5bc08bd820d677cb577ff5228a8a014919ff",
+        "sourcePages": [
+          5
+        ],
+        "printedPage": 5,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:matrices-and-determinants:matrices:determinants",
+        "additionalIds": [],
+        "rationale": "The solution directly tests determinants; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "One"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 10,
+      "canonicalQuestionId": "nda-2025-i-maths-10",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "7a460315078927030bb77ce5849aaf39e7e02a3fcbf226d27b3d3f22a101b082",
+        "optionsHash": "285f4707459ee6362593fea855c4f25799204e61bcd85f6cc330f2c5bb662655",
+        "sourcePages": [
+          5
+        ],
+        "printedPage": 5,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:matrices-and-determinants:matrices:determinants",
+        "additionalIds": [
+          "subtopic:nda-mathematics:algebra:foundations:real-and-complex-numbers"
+        ],
+        "rationale": "The solution directly tests determinants; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "-6"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 11,
+      "canonicalQuestionId": "nda-2025-i-maths-11",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "d436b3a8e57f77545a676a79039200b8acbf391c8dac537e853466434d4b1c25",
+        "optionsHash": "704c63053a3967ca6a411e4256474bb3c51c2491533268ad934362e28529c720",
+        "sourcePages": [
+          5
+        ],
+        "printedPage": 5,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:matrices-and-determinants:matrices:determinants",
+        "additionalIds": [],
+        "rationale": "The solution directly tests determinants; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "0"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 12,
+      "canonicalQuestionId": "nda-2025-i-maths-12",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "b5cf49451d51267b5fcdd5dad0d5458f5dbc70d099579e1c11ad428577c3a0a7",
+        "optionsHash": "231337cdc925d1b26a3e0f7f5d09e38822a5f77655111a3930eecdde5eb4b57e",
+        "sourcePages": [
+          5
+        ],
+        "printedPage": 5,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:matrices-and-determinants:matrices:determinants",
+        "additionalIds": [],
+        "rationale": "The solution directly tests determinants; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "x = 0"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 13,
+      "canonicalQuestionId": "nda-2025-i-maths-13",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "52a44268ef835689d9f2d341ab40937a3eb6c7a56ee803c36f3220fe09db7cdd",
+        "optionsHash": "9fad3ce2c7e3c1cd7326d8c72a35ac24db0825e6fc626ba658fa78d8b33e953d",
+        "sourcePages": [
+          5
+        ],
+        "printedPage": 5,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:foundations:real-and-complex-numbers",
+        "additionalIds": [],
+        "rationale": "The solution directly tests complex; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "-1"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 14,
+      "canonicalQuestionId": "nda-2025-i-maths-14",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "be29397b9475b7a78726e007c5b4597bd9cb7cd22f9a44a4c3aa159e596cee38",
+        "optionsHash": "c8b2619f3ca4678e76d9efb155e9de5d61dcee118ab2842642c59603b0180924",
+        "sourcePages": [
+          5
+        ],
+        "printedPage": 5,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:foundations:real-and-complex-numbers",
+        "additionalIds": [],
+        "rationale": "The solution directly tests complex; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "87"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 15,
+      "canonicalQuestionId": "nda-2025-i-maths-15",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "b125142ebc59f730cbdad3f3ba6da21293090a339985913b61611cf7f8b95c6f",
+        "optionsHash": "14c867119a9914c312f7cea10aec96a9b2f38bb6bdff436afb85d001d49e405b",
+        "sourcePages": [
+          7
+        ],
+        "printedPage": 7,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:counting-and-expansion:permutations-and-combinations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests permutations; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "288"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 16,
+      "canonicalQuestionId": "nda-2025-i-maths-16",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "bbae1e6f06f756e80204a3b61cbd9dcf95147161e267ad639f5fd88257ca8edf",
+        "optionsHash": "d1032743a0c696f4381df200fadabed03efb9320c658e9d07cff37d95bef9861",
+        "sourcePages": [
+          7
+        ],
+        "printedPage": 7,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:foundations:real-and-complex-numbers",
+        "additionalIds": [],
+        "rationale": "The solution directly tests complex; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "0"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 17,
+      "canonicalQuestionId": "nda-2025-i-maths-17",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "20fbd0cdb4d5c8e0dab3824b3ef91f0db473386947a3b123cde5231b5cf66186",
+        "optionsHash": "da94475656ffa13b89fd7df901ca3a1942cac508bb2b45bb59aab13502255edc",
+        "sourcePages": [
+          7
+        ],
+        "printedPage": 7,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:counting-and-expansion:permutations-and-combinations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests permutations; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "8"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 18,
+      "canonicalQuestionId": "nda-2025-i-maths-18",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "38eec784bca162e42dca041aa5c020c401f8e6f5133cc1597ea74c9dc7a2d1cf",
+        "optionsHash": "22a0824200bd250f624c0976eac50bef903fb166a4b700cc42b74fe0b2e2a346",
+        "sourcePages": [
+          7
+        ],
+        "printedPage": 7,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:counting-and-expansion:permutations-and-combinations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests permutations; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "12"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 19,
+      "canonicalQuestionId": "nda-2025-i-maths-19",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "1a506b0d4040b67ba138e7e21fe7356450e27179fd5447872f17a8ceb0555986",
+        "optionsHash": "427a1b55c5389375557428ec4086c91cf0feed6337150d0add99f13a324afc83",
+        "sourcePages": [
+          7
+        ],
+        "printedPage": 7,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:counting-and-expansion:permutations-and-combinations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests permutations; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "6"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 20,
+      "canonicalQuestionId": "nda-2025-i-maths-20",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "4e9649fd22920626f066da35eeddfa0eef262ef582393389e8c8b4d97ab39a4e",
+        "optionsHash": "3debe44f692a79ea5fa836dc833595ff7445d25bdb3ed63876f2d0d7d2646b66",
+        "sourcePages": [
+          7
+        ],
+        "printedPage": 7,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:counting-and-expansion:binomial-theorem",
+        "additionalIds": [],
+        "rationale": "The solution directly tests binomial; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "4"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 21,
+      "canonicalQuestionId": "nda-2025-i-maths-21",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "5c8ca7f3e09bf44c3f95f4db762cb10f6879bed84d3ba3ee7e9753e410056fc8",
+        "optionsHash": "555c64e009829706f3ef7fa6abb0616593f2016fb92e61c2e32bd8650b00eaff",
+        "sourcePages": [
+          7
+        ],
+        "printedPage": 7,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:counting-and-expansion:binomial-theorem",
+        "additionalIds": [],
+        "rationale": "The solution directly tests binomial; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "Fifth"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 22,
+      "canonicalQuestionId": "nda-2025-i-maths-22",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "a14e4da3ac1d70bd69af240805b036b9247c03b6f7ed4a9ca0e6dff7d05a4706",
+        "optionsHash": "afdc085d99293a5c7cedb64a7bef4b8ff27818c5efbdf3659e1e4215c4ea5787",
+        "sourcePages": [
+          7
+        ],
+        "printedPage": 7,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:equations-and-sequences:inequalities",
+        "additionalIds": [],
+        "rationale": "The solution directly tests inequalities; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "13"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 23,
+      "canonicalQuestionId": "nda-2025-i-maths-23",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "7244f47c154cea766781ba21ed106904449a0f7d9aa096b2f4c903614ba08500",
+        "optionsHash": "8807cb58eafeb78fd6c3ef6e00bc240e63454269a5bab4304525d89e312cd288",
+        "sourcePages": [
+          7
+        ],
+        "printedPage": 7,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:matrices-and-determinants:matrices:systems-of-linear-equations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests systems; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "1"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 24,
+      "canonicalQuestionId": "nda-2025-i-maths-24",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "4ecc636610e51f6e6bc4bbbe1182746953b85935a12baafed11afbde6f46c7bd",
+        "optionsHash": "faadea1b1577e3bc27de8eaff5b50b0bfa31a445ad835da72387eba538aa1cce",
+        "sourcePages": [
+          7
+        ],
+        "printedPage": 7,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:matrices-and-determinants:matrices:types-and-operations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests matrix ops; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "1"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 25,
+      "canonicalQuestionId": "nda-2025-i-maths-25",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "b8a3593fce8c646ea4aae6b6b26fdd9affe33dfaaad17cd46c7fdd609f5013b2",
+        "optionsHash": "60de1fed3c1b5f5da80f6f35567a5bc08bd820d677cb577ff5228a8a014919ff",
+        "sourcePages": [
+          9
+        ],
+        "printedPage": 9,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:matrices-and-determinants:matrices:determinants",
+        "additionalIds": [],
+        "rationale": "The solution directly tests determinants; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "Two"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 26,
+      "canonicalQuestionId": "nda-2025-i-maths-26",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "577e0804d5e425e2f3f3a98832b9a5d0e39018ffb19d4fd2b353b724189d54c7",
+        "optionsHash": "ef6f5faa99d121847adb5b6aba434075604c5f8b4184831c6348b4c2d14aaad4",
+        "sourcePages": [
+          9
+        ],
+        "printedPage": 9,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:matrices-and-determinants:matrices:types-and-operations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests matrix ops; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "[\n\n[1, 0]\n[0, 1]\n]"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 27,
+      "canonicalQuestionId": "nda-2025-i-maths-27",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "fabd94f76606855fdeb52695780ffe4ff3af6f97b4cc7372a23ea74e82f325e6",
+        "optionsHash": "d5a50b59d662b71e1bf2c5470b26c888f5c5ba81268e116fe17e3e6a6eff17e1",
+        "sourcePages": [
+          9
+        ],
+        "printedPage": 9,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:matrices-and-determinants:matrices:types-and-operations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests matrix ops; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "\\(5I_{3}\\)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 28,
+      "canonicalQuestionId": "nda-2025-i-maths-28",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "1ee4ede9e89f763bbd6d2c7951cabe6b9e901c61a6af4f799243cc18187c12c5",
+        "optionsHash": "98bc149eba6f51abd41cce01b5229fb7ae78a70d0cef81f3ed4b4c24006a6151",
+        "sourcePages": [
+          9
+        ],
+        "printedPage": 9,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:counting-and-expansion:permutations-and-combinations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests permutations; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "2n"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 29,
+      "canonicalQuestionId": "nda-2025-i-maths-29",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "a445657ffc16ee60ec9bd43d9871c645680b60d59f085f6bd292fc7c81ba8939",
+        "optionsHash": "c09473e58730dcbba3ee248fe8c15c2631685371da3dcb0742c17682cc63dc00",
+        "sourcePages": [
+          9
+        ],
+        "printedPage": 9,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:counting-and-expansion:permutations-and-combinations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests permutations; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "42"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 30,
+      "canonicalQuestionId": "nda-2025-i-maths-30",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "d3190341b8521734b87f725e6298ad93f7652ebd86a7d12b69f6942491e29f11",
+        "optionsHash": "4d0dfffee69c131d9b2420647524fa0ba00c9924859a41077b81d580db63bc82",
+        "sourcePages": [
+          9
+        ],
+        "printedPage": 9,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:matrices-and-determinants:matrices:types-and-operations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests matrix ops; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "Identity matrix"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 31,
+      "canonicalQuestionId": "nda-2025-i-maths-31",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "84326323be95bea7b5c85e171d393a5691e70d764760708143895f8e220a45e5",
+        "optionsHash": "cc5c85220b2af55a333a21851fce1e0e2b2fa5e2412f4fdb937ecaf0ee0c20b3",
+        "sourcePages": [
+          11
+        ],
+        "printedPage": 11,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities",
+        "additionalIds": [],
+        "rationale": "The solution directly tests identities; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "0"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 32,
+      "canonicalQuestionId": "nda-2025-i-maths-32",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "e310e6e395f1a03dfba6f8a0cc3397849717eb3761d931cfe4bd892c7c5c51fa",
+        "optionsHash": "f2ac95c4af4556cc77e8fcfa7de7cd7fb20a6f86c97ee0edc1d00320d2c84462",
+        "sourcePages": [
+          11
+        ],
+        "printedPage": 11,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities",
+        "additionalIds": [],
+        "rationale": "The solution directly tests identities; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "-3/4"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 33,
+      "canonicalQuestionId": "nda-2025-i-maths-33",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "699d361ddd4f7a8e59d0224be55b93fb73676bdf2e4d7b31a5b74c8b2932e495",
+        "optionsHash": "7f587d8614dac186887744c3e365c04a3131ae067d164cb2a24a782f0e2359ff",
+        "sourcePages": [
+          11
+        ],
+        "printedPage": 11,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities",
+        "additionalIds": [],
+        "rationale": "The solution directly tests identities; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "3/2"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 34,
+      "canonicalQuestionId": "nda-2025-i-maths-34",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "c3b0e7111d19666b68b13444223e838f5582e3d306c2ae430a00f1c6ab511ab3",
+        "optionsHash": "dba7fcfe33e7e6d1396f2d0d595cbe392ac049a0bb4e02b861c4e3e08dae374e",
+        "sourcePages": [
+          11
+        ],
+        "printedPage": 11,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities",
+        "additionalIds": [],
+        "rationale": "The solution directly tests identities; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "0"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 35,
+      "canonicalQuestionId": "nda-2025-i-maths-35",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "7deb4169a3a6aae1ffff02689c3e5707b89a803dd58c31703881e10c8c487f67",
+        "optionsHash": "ba9949f30c59d4496f4bbeb2cac5946df75127110c9da5c8c626759ae549a7f2",
+        "sourcePages": [
+          11
+        ],
+        "printedPage": 11,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities",
+        "additionalIds": [],
+        "rationale": "The solution directly tests identities; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "√2"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 36,
+      "canonicalQuestionId": "nda-2025-i-maths-36",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "a44f3e8c10e57c65b26032ea769bc23ac4a899b267a93a49112193aa930a140d",
+        "optionsHash": "b112dec3635064528b9639c6904694eb5baef5a92d58d5f3fa391c8b9c6a7423",
+        "sourcePages": [
+          11
+        ],
+        "printedPage": 11,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:applications:properties-of-triangles",
+        "additionalIds": [
+          "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities"
+        ],
+        "rationale": "The solution directly tests triangles; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "Both I and II"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 37,
+      "canonicalQuestionId": "nda-2025-i-maths-37",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "f910581b83cc6a3ee0c8cd29792cc2009737755aad9e7c36796deb35a6a2f462",
+        "optionsHash": "e7561b673edd19dbdcaae123ebdf6029099b94a342a53e077124a72571402e39",
+        "sourcePages": [
+          11
+        ],
+        "printedPage": 11,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:applications:properties-of-triangles",
+        "additionalIds": [
+          "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities"
+        ],
+        "rationale": "The solution directly tests triangles; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "120°"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 38,
+      "canonicalQuestionId": "nda-2025-i-maths-38",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "dbea0a3c15788ffbce34fc795d696d65b78ce6626d5cac55edaaf30f6b66d00d",
+        "optionsHash": "49bc63beb23e15da8b603c65fbed8a9564dbc496ea52bcef8fc47537631ab354",
+        "sourcePages": [
+          11
+        ],
+        "printedPage": 11,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:applications:properties-of-triangles",
+        "additionalIds": [
+          "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities"
+        ],
+        "rationale": "The solution directly tests triangles; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "15√3/4 square cm"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 39,
+      "canonicalQuestionId": "nda-2025-i-maths-39",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "05a54286196c9dd198fafd0576ab616600f492a79fb421dd2938eda3ae72e37a",
+        "optionsHash": "07bb16cbc1ec0335ab96c9a9a8b67117c9e57bf5d7213030a8692c67c8f5c7f8",
+        "sourcePages": [
+          13
+        ],
+        "printedPage": 13,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:applications:heights-and-distances",
+        "additionalIds": [],
+        "rationale": "The solution directly tests heights; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "3+√32 · a"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 40,
+      "canonicalQuestionId": "nda-2025-i-maths-40",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "04ca54bd6cdc068ad819d31776e27a8070d362db4f2f7ca6945b3875d1230dbe",
+        "optionsHash": "a84cd175a7ad395a5d8a3345cd4cf335733a90dc11ec7935176111525c8a0090",
+        "sourcePages": [
+          13
+        ],
+        "printedPage": 13,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:applications:heights-and-distances",
+        "additionalIds": [],
+        "rationale": "The solution directly tests heights; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "3+√32 · b"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 41,
+      "canonicalQuestionId": "nda-2025-i-maths-41",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "5f63a51259513708cc84bcdab9ec82b3397b7993b50f19e71baaa3cc47156dd3",
+        "optionsHash": "2e3215861f1cc7276e0462987ae0e2652157baf96ffff1c3b81503e0d40fb973",
+        "sourcePages": [
+          13
+        ],
+        "printedPage": 13,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities",
+        "additionalIds": [],
+        "rationale": "The solution directly tests identities; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "tanα · tan2α"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 42,
+      "canonicalQuestionId": "nda-2025-i-maths-42",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "f5ea47266de2bfba1fa13367d4388ba45d1736c3835d0a914ad253af93bf3a75",
+        "optionsHash": "a9719f59f694872095ee68d91d299d62184ed0bc653a1dee7751c62dd85d5010",
+        "sourcePages": [
+          13
+        ],
+        "printedPage": 13,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities",
+        "additionalIds": [],
+        "rationale": "The solution directly tests identities; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "2cosec4α"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 43,
+      "canonicalQuestionId": "nda-2025-i-maths-43",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "12b6775aaf52e371b88dce42c54b37e99e6131e35b7fa6d9638c25385e938744",
+        "optionsHash": "f770f0f5942e4a4b4eb3a97db0710aeeff5fe2b1ed0c297901342e02109cd978",
+        "sourcePages": [
+          13
+        ],
+        "printedPage": 13,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities",
+        "additionalIds": [],
+        "rationale": "The solution directly tests identities; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "pp+2q"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 44,
+      "canonicalQuestionId": "nda-2025-i-maths-44",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "07416c5c275cc37d48dac25163686cef285f93049c50490fc0713e668b909c34",
+        "optionsHash": "71f5e3d79cc221cecfd319a00e45da14e4eaaa3df6bc755f3e9c898fe5d02898",
+        "sourcePages": [
+          13
+        ],
+        "printedPage": 13,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities",
+        "additionalIds": [],
+        "rationale": "The solution directly tests identities; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "3/4"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 45,
+      "canonicalQuestionId": "nda-2025-i-maths-45",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "e4faa756fcd0411fc1408d34c2abb7e54ca8ee7ee6f8aa33b0743cdd855dceca",
+        "optionsHash": "3c369ae25ef0e89bfb83edcc4214c779e813592a4f57be9838ebfe647b0a1108",
+        "sourcePages": [
+          15
+        ],
+        "printedPage": 15,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities",
+        "additionalIds": [],
+        "rationale": "The solution directly tests identities; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "11/5"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 46,
+      "canonicalQuestionId": "nda-2025-i-maths-46",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "9f2798536e3106ac141cfa04f8f08211f3e5bdeb1d0c6ec99077e8a05a3d839c",
+        "optionsHash": "94ecb0f52d4dbb4df2b3c50a312c770ac53864760cd23f647bb1109394ddf7c5",
+        "sourcePages": [
+          15
+        ],
+        "printedPage": 15,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:applications:properties-of-triangles",
+        "additionalIds": [
+          "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities"
+        ],
+        "rationale": "The solution directly tests triangles; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "30°"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 47,
+      "canonicalQuestionId": "nda-2025-i-maths-47",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "a0cb15435847063f6b0cf2abec0a64e5f79828fc4f86b3eaf38606f10f6aaf02",
+        "optionsHash": "4da4f8415966ef7a1622ea83785371c08b000e875615f404233eed94a283d44e",
+        "sourcePages": [
+          15
+        ],
+        "printedPage": 15,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:applications:properties-of-triangles",
+        "additionalIds": [
+          "subtopic:nda-mathematics:algebra:equations-and-sequences:arithmetic-geometric-and-harmonic-progressions"
+        ],
+        "rationale": "The solution directly tests triangles; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "I and III only"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 48,
+      "canonicalQuestionId": "nda-2025-i-maths-48",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "9032c2900291f016175b36ddeb901600ecb9e505e9845c848a56fb98d9368351",
+        "optionsHash": "0a1e55f3cd68abbd7cad127ffa12738a9027f7b6c6500900ab843c33744e73b2",
+        "sourcePages": [
+          15
+        ],
+        "printedPage": 15,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:applications:heights-and-distances",
+        "additionalIds": [],
+        "rationale": "The solution directly tests heights; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "\\(tan^{-1}\\)(1/3)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 49,
+      "canonicalQuestionId": "nda-2025-i-maths-49",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "bcafc5159be90204cbbcbe07bafbadec57ab05c6d63bf184b97902ec09814e3a",
+        "optionsHash": "face0c037f1460696afba652648d68e4bb1e374ec33e2cb6fa7ed887d171a078",
+        "sourcePages": [
+          15
+        ],
+        "printedPage": 15,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:inverse-trigonometric-functions",
+        "additionalIds": [],
+        "rationale": "The solution directly tests inverse trig; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "π/2"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 50,
+      "canonicalQuestionId": "nda-2025-i-maths-50",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "28cb41d839a0747ce7fb1c378fbedc3e734ce4223732b5bc574affdf7449ccb5",
+        "optionsHash": "2475b17f1ee0b70abab1d7c21c113ae953bb1b35045a33a51c4a2badb60362a6",
+        "sourcePages": [
+          15
+        ],
+        "printedPage": 15,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:inverse-trigonometric-functions",
+        "additionalIds": [],
+        "rationale": "The solution directly tests inverse trig; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "1/3"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 51,
+      "canonicalQuestionId": "nda-2025-i-maths-51",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "505fcc356c6bf4e17228f4876aafa50137988f4bb2352acd978624ac8b7f073b",
+        "optionsHash": "a972a0381ba36f530a507d19d93e3f1af0f56b58fee03b45f57d40f4b76aa4fd",
+        "sourcePages": [
+          17
+        ],
+        "printedPage": 17,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:two-dimensions:straight-lines",
+        "additionalIds": [],
+        "rationale": "The solution directly tests lines2d; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "mn – 1 = 0"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 52,
+      "canonicalQuestionId": "nda-2025-i-maths-52",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "ae61c2dff0e38c6adb7b26f2741fd69fa99b342d01995bb926ac2ee6c2245dc4",
+        "optionsHash": "dcb92aac0ed9f42f5f3101e05e6f441e79031b28975e972c855af598215eb784",
+        "sourcePages": [
+          17
+        ],
+        "printedPage": 17,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:two-dimensions:cartesian-coordinates",
+        "additionalIds": [],
+        "rationale": "The solution directly tests coordinates2d; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "4 – 2√3"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 53,
+      "canonicalQuestionId": "nda-2025-i-maths-53",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "e03a8515417d8afa6faf2a3b764e26112024429761be3edfea64217ff06d0f65",
+        "optionsHash": "86012fd885a8694d397a914f0878eb2f78f1ed64043b889e078f817081830802",
+        "sourcePages": [
+          17
+        ],
+        "printedPage": 17,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:two-dimensions:cartesian-coordinates",
+        "additionalIds": [
+          "subtopic:nda-mathematics:trigonometry:applications:properties-of-triangles"
+        ],
+        "rationale": "The solution directly tests coordinates2d; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "(1, √2 – 1)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 54,
+      "canonicalQuestionId": "nda-2025-i-maths-54",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "757fa348e5059b56a523039eaf9ba4c901cd5b2a1a223f0608d128f2e0372b1e",
+        "optionsHash": "ce86d07204a43763ac2e24f7403806c0603274a8ad48aa413bb62a15dce9953a",
+        "sourcePages": [
+          17
+        ],
+        "printedPage": 17,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:two-dimensions:cartesian-coordinates",
+        "additionalIds": [],
+        "rationale": "The solution directly tests coordinates2d; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "(3,1)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 55,
+      "canonicalQuestionId": "nda-2025-i-maths-55",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "626af8be221286e299d7a8ad2fbf4d672bdb09b0997bf843f8b291a34822c99f",
+        "optionsHash": "3ab2ef7a078ec3d91b2a962b6c13ea4eaa821743b7b89c959737fc20ab86d98a",
+        "sourcePages": [
+          17
+        ],
+        "printedPage": 17,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:two-dimensions:cartesian-coordinates",
+        "additionalIds": [
+          "subtopic:nda-mathematics:trigonometry:applications:properties-of-triangles"
+        ],
+        "rationale": "The solution directly tests coordinates2d; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "3x-4y+30 = 0"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 56,
+      "canonicalQuestionId": "nda-2025-i-maths-56",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "0e96f8812c18b770e2117269c119df6ab4753eece38d87d28a47d3c0ec3d1aa2",
+        "optionsHash": "7d06c45fd3c44a7945a125e6c8e18fe7f5ec8c6f8033e760ff46b7b5c27607a5",
+        "sourcePages": [
+          17
+        ],
+        "printedPage": 17,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:two-dimensions:circles",
+        "additionalIds": [],
+        "rationale": "The solution directly tests circles; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "\\(x^{2}\\)+\\(y^{2}\\) = 25"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 57,
+      "canonicalQuestionId": "nda-2025-i-maths-57",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "d435fffc82247b7e74317f3d65b9c9ce390c3b913253a252ba8a208b4bcf5f45",
+        "optionsHash": "3c2820a95d5bf4c262c2f55c74783964ec8c3fd368fe10ac464be7b3f4310536",
+        "sourcePages": [
+          19
+        ],
+        "printedPage": 19,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:two-dimensions:circles",
+        "additionalIds": [],
+        "rationale": "The solution directly tests circles; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "(-1+1/√2, -1-1/√2)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 58,
+      "canonicalQuestionId": "nda-2025-i-maths-58",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "189b8ca0425f12a91efd40f8cf76845772fdae636bbbc47071c16431428501c6",
+        "optionsHash": "c8e79add37201973b18b1bfe814abba3e7e8106376a8245be8d3da8a4651c7a0",
+        "sourcePages": [
+          19
+        ],
+        "printedPage": 19,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:two-dimensions:parabola-ellipse-and-hyperbola",
+        "additionalIds": [],
+        "rationale": "The solution directly tests conics; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "(1,2)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 59,
+      "canonicalQuestionId": "nda-2025-i-maths-59",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "e3bfb356011fbd0b9aa48d6d2a1add5c9d2ea16cfeec67fe7fc07e1bf45cb251",
+        "optionsHash": "b17a940c89ea6cf6a7952c242989b3656cba86babc391df6bac176e1748c28de",
+        "sourcePages": [
+          19
+        ],
+        "printedPage": 19,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:two-dimensions:parabola-ellipse-and-hyperbola",
+        "additionalIds": [],
+        "rationale": "The solution directly tests conics; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "4√3 units"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 60,
+      "canonicalQuestionId": "nda-2025-i-maths-60",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "fde7466e826c80637a7ec4bef28577142fb3a561b127d243af31cf2fc3d5a72d",
+        "optionsHash": "a9a447d21221a6561a6d95294e06904d5ca20a63b1572116198fe02233c803b5",
+        "sourcePages": [
+          19
+        ],
+        "printedPage": 19,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:two-dimensions:parabola-ellipse-and-hyperbola",
+        "additionalIds": [],
+        "rationale": "The solution directly tests conics; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "4/5"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 61,
+      "canonicalQuestionId": "nda-2025-i-maths-61",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "ef286f458c0ef258f30212ab2a01be6ada1f6e5ae0775ec2abda90bd411a59d6",
+        "optionsHash": "75b5bfeceee27f2246ab6bd9e6446a8ec5e309e79bc5ddce21d11e125a0b80e3",
+        "sourcePages": [
+          19
+        ],
+        "printedPage": 19,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:three-dimensions:direction-cosines-and-ratios",
+        "additionalIds": [],
+        "rationale": "The solution directly tests directions3d; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "-\\(cos^{2}\\) γ"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 62,
+      "canonicalQuestionId": "nda-2025-i-maths-62",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "5b51c3d70a1d102f9b60ec623657a9e7c819729489d810fe85daea6575602121",
+        "optionsHash": "bb1cff5b4d6f1391ef15924800729e98ce991718e14e8f2118e8b64af11ce41a",
+        "sourcePages": [
+          19
+        ],
+        "printedPage": 19,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:three-dimensions:coordinates-and-distance",
+        "additionalIds": [
+          "subtopic:nda-mathematics:vector-algebra:vectors:geometrical-applications"
+        ],
+        "rationale": "The solution directly tests distance3d; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "√66 square units"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 63,
+      "canonicalQuestionId": "nda-2025-i-maths-63",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "71907e18b165d22f396cdfb8c87698490d048182a42abc43abef80b4a8a7bea8",
+        "optionsHash": "c48616de529aca8392d3caf00cabf8dc48a1cc079915b8ba83578f1f01136c2b",
+        "sourcePages": [
+          19
+        ],
+        "printedPage": 19,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:three-dimensions:coordinates-and-distance",
+        "additionalIds": [
+          "subtopic:nda-mathematics:vector-algebra:vectors:geometrical-applications"
+        ],
+        "rationale": "The solution directly tests distance3d; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "3"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 64,
+      "canonicalQuestionId": "nda-2025-i-maths-64",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "f8f0813c3d0eda8fb0fc63a4897f77ea12a7d6a434ad90fb95b73eeb94b0d273",
+        "optionsHash": "3e2f91a631300ddbe133736d19d6dbfdf233dd7eef4692d73125daa90f006ba2",
+        "sourcePages": [
+          21
+        ],
+        "printedPage": 21,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:three-dimensions:direction-cosines-and-ratios",
+        "additionalIds": [],
+        "rationale": "The solution directly tests directions3d; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "-31/49"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 65,
+      "canonicalQuestionId": "nda-2025-i-maths-65",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "7f0dff41946299e496b828b673cf8c3ed4655d285e3e72f33af5461c082a3745",
+        "optionsHash": "d4479fab670b54dabbcd33f3eca91a504235672f6a3f52cc737ab858327349c3",
+        "sourcePages": [
+          21
+        ],
+        "printedPage": 21,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:analytical-geometry:three-dimensions:lines-and-planes",
+        "additionalIds": [],
+        "rationale": "The solution directly tests planes3d; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "3x+2y+z = 6"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 66,
+      "canonicalQuestionId": "nda-2025-i-maths-66",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "bb6d34175953e77d56b911b8315ddec0e3f9a28b7b8afa0f254777849dce70ea",
+        "optionsHash": "bb374ff623fc92385f3da37829db56dfac016d8beb3543b629ec5f97833c67bb",
+        "sourcePages": [
+          21
+        ],
+        "printedPage": 21,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:vector-algebra:vectors:dot-product",
+        "additionalIds": [
+          "subtopic:nda-mathematics:analytical-geometry:three-dimensions:direction-cosines-and-ratios"
+        ],
+        "rationale": "The solution directly tests dot; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "2"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 67,
+      "canonicalQuestionId": "nda-2025-i-maths-67",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "23d4e3e832343e946428e94bd4a604ba8d1474feedbfe47606f4daab8e382c28",
+        "optionsHash": "b112dec3635064528b9639c6904694eb5baef5a92d58d5f3fa391c8b9c6a7423",
+        "sourcePages": [
+          21
+        ],
+        "printedPage": 21,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:vector-algebra:vectors:cross-product",
+        "additionalIds": [
+          "subtopic:nda-mathematics:vector-algebra:vectors:geometrical-applications"
+        ],
+        "rationale": "The solution directly tests cross; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "Both I and II"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 68,
+      "canonicalQuestionId": "nda-2025-i-maths-68",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "a3eea3b517506617a36c53fc0569e68ebbfafe1976df1c7c6a71a7e859163034",
+        "optionsHash": "6fdff8c640b1d86c1dbb33b6f973d0f0d7da5908f1b70d97b8faebc5f3e887b6",
+        "sourcePages": [
+          21
+        ],
+        "printedPage": 21,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:vector-algebra:vectors:geometrical-applications",
+        "additionalIds": [
+          "subtopic:nda-mathematics:vector-algebra:vectors:components-and-magnitude"
+        ],
+        "rationale": "The solution directly tests vector geometry; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "1:3"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 69,
+      "canonicalQuestionId": "nda-2025-i-maths-69",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "0649bdb0c287e92cd9fc1cfc069b70ba38d48889014987a54aa93aa989cf3c43",
+        "optionsHash": "77d1cd4a1651e25a4237495af9c97692da6b2ab036197267919fa6ab89fed531",
+        "sourcePages": [
+          21
+        ],
+        "printedPage": 21,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:vector-algebra:vectors:geometrical-applications",
+        "additionalIds": [
+          "subtopic:nda-mathematics:vector-algebra:vectors:components-and-magnitude"
+        ],
+        "rationale": "The solution directly tests vector geometry; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "0 (zero vector)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 70,
+      "canonicalQuestionId": "nda-2025-i-maths-70",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "62275f500c37bdff4266a14cc0111c57c82c13079f3e68ab40fe9369d574666f",
+        "optionsHash": "e8bab98ceb62fc591cd4b94360e67e93498ec6d71559b5b923217c5ecec5617c",
+        "sourcePages": [
+          21
+        ],
+        "printedPage": 21,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:vector-algebra:vectors:dot-product",
+        "additionalIds": [
+          "subtopic:nda-mathematics:vector-algebra:vectors:cross-product"
+        ],
+        "rationale": "The solution directly tests dot; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "0"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 71,
+      "canonicalQuestionId": "nda-2025-i-maths-71",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "b434e5585b14988a2b70a4e63528f488db70e68c241de6a99116e8b03398609c",
+        "optionsHash": "dc1688d8f8618699cd3db22917a0c26678d495e59859a95585ad64c77cedde84",
+        "sourcePages": [
+          23
+        ],
+        "printedPage": 23,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:integral-calculus-and-differential-equations:differential-equations:first-order-equations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests diff first; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "\\(16y^{2}\\)+\\(4x^{2}\\)+4"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 72,
+      "canonicalQuestionId": "nda-2025-i-maths-72",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "6d2976f8c26cbaaa873c4c28d1e69664031f8b7bfdffb4e9ac1c0ba8d0929985",
+        "optionsHash": "8a48181a2227cac4da387f5f1e1697e919408c60eb6a4e8fafb3d801a2f593d9",
+        "sourcePages": [
+          23
+        ],
+        "printedPage": 23,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:integral-calculus-and-differential-equations:differential-equations:first-order-equations",
+        "additionalIds": [],
+        "rationale": "The solution directly tests diff first; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "-16x"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 73,
+      "canonicalQuestionId": "nda-2025-i-maths-73",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "cdd04ff5bf5b04836ea51f0200458f4f4ef39b5e7c7744af703a9f30de4ed829",
+        "optionsHash": "99e37d4e720fe2b39d65fd138177b9b9b0e35e6a67a56762898da4b92e106dad",
+        "sourcePages": [
+          23
+        ],
+        "printedPage": 23,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:differentiation:maxima-and-minima",
+        "additionalIds": [
+          "subtopic:nda-mathematics:analytical-geometry:two-dimensions:straight-lines"
+        ],
+        "rationale": "The solution directly tests extrema; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "π/3"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 74,
+      "canonicalQuestionId": "nda-2025-i-maths-74",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "b2a7efcaf732a33e5f2e79e62eb6cf8755c14b8821a21818480277afaff95734",
+        "optionsHash": "3a68d8f4ae880fcaedb425f8f531f2940ae0476f44fcf304a24dd11acc69b034",
+        "sourcePages": [
+          23
+        ],
+        "printedPage": 23,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:differentiation:maxima-and-minima",
+        "additionalIds": [
+          "subtopic:nda-mathematics:analytical-geometry:two-dimensions:straight-lines"
+        ],
+        "rationale": "The solution directly tests extrema; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "√3/2 square unit"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 75,
+      "canonicalQuestionId": "nda-2025-i-maths-75",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "8087c83a83e7757aedba8e4f4f5f795bb63f2345b21d471bf62e789d39d5d58d",
+        "optionsHash": "3017e5e0c8de2026e1a842c96cf33de1434a773d768560cdbd19bdb6081fb8b4",
+        "sourcePages": [
+          23
+        ],
+        "printedPage": 23,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:differentiation:derivatives-and-rules",
+        "additionalIds": [],
+        "rationale": "The solution directly tests derivatives; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "is independent of both p and q"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 76,
+      "canonicalQuestionId": "nda-2025-i-maths-76",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "ccaac7fd5f9d102b83120cab13ea045ef7fb53c1290f2029805f0c543e55be30",
+        "optionsHash": "e2afae9ce18a46f2d97fe66c5eeeb480d13eed571a6c927a976ee90ae6cd411a",
+        "sourcePages": [
+          23
+        ],
+        "printedPage": 23,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:differentiation:derivatives-and-rules",
+        "additionalIds": [],
+        "rationale": "The solution directly tests derivatives; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "y/x"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 77,
+      "canonicalQuestionId": "nda-2025-i-maths-77",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "99a74b270b2315a8565ae52d5d2daf74ea45fcd57ef18698a8a3c81b1d4c24c6",
+        "optionsHash": "a841d7e83c4984139dfd977d75136c6f856b52ac2b045ce43dff05a8afb658df",
+        "sourcePages": [
+          23
+        ],
+        "printedPage": 23,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:definite-integrals-and-areas",
+        "additionalIds": [],
+        "rationale": "The solution directly tests definite; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "A straight line passing through (1,4)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 78,
+      "canonicalQuestionId": "nda-2025-i-maths-78",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "ddfa7fc84f37b6838f47e10ef74f019bf8999334361b301cd0371f4ceb1f3c94",
+        "optionsHash": "19448a97b07d207ce7cd0539597a22dd116479e3bede0b340f01b8375ec1bae4",
+        "sourcePages": [
+          25
+        ],
+        "printedPage": 25,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:definite-integrals-and-areas",
+        "additionalIds": [],
+        "rationale": "The solution directly tests definite; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "32 square units"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 79,
+      "canonicalQuestionId": "nda-2025-i-maths-79",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "5103f34af15a8aba93fe873b833f362c484a6b83dee4eeca9a47426a477f32da",
+        "optionsHash": "15d730fbe97be41c641604b7ddfcdcc7d6d9c2764a360eda53d8a2e7d881b5fa",
+        "sourcePages": [
+          25
+        ],
+        "printedPage": 25,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:functions-and-limits:continuity",
+        "additionalIds": [],
+        "rationale": "The solution directly tests continuity; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "0"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 80,
+      "canonicalQuestionId": "nda-2025-i-maths-80",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "93eee41708d9222c194934d4774ef6fda22ad2f00b617dc8c55b5bf236d7fd35",
+        "optionsHash": "b112dec3635064528b9639c6904694eb5baef5a92d58d5f3fa391c8b9c6a7423",
+        "sourcePages": [
+          25
+        ],
+        "printedPage": 25,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:functions-and-limits:continuity",
+        "additionalIds": [],
+        "rationale": "The solution directly tests continuity; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "I only"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 81,
+      "canonicalQuestionId": "nda-2025-i-maths-81",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "c375a89a4d0f88173a5e521f671ac9b6adce8cba0ff9b9785492b9702e9a24d0",
+        "optionsHash": "1e35815e27ba27630389624b3fc2c63946dfab0285aefc98645970c67f0265ac",
+        "sourcePages": [
+          25
+        ],
+        "printedPage": 25,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:functions-and-limits:domain-and-range",
+        "additionalIds": [],
+        "rationale": "The solution directly tests domain; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "[0.5, ∞)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 82,
+      "canonicalQuestionId": "nda-2025-i-maths-82",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "c3a088856b4c02125cb1538d836fd589dfd0a58849eb6e5215ae296cf23e3d65",
+        "optionsHash": "641788d17d9ffba25468b91068e5871fe846c690ed6ffa0774f6b7e10d168416",
+        "sourcePages": [
+          25
+        ],
+        "printedPage": 25,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:definite-integrals-and-areas",
+        "additionalIds": [],
+        "rationale": "The solution directly tests definite; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "-cot(x/2) + c"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 83,
+      "canonicalQuestionId": "nda-2025-i-maths-83",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "acad22c6534c5e66bce85cf3b1d5a0bb395dbf8259cd89e649f3335285d42487",
+        "optionsHash": "8f893e3a5a0f7e15b746a619975794af16aebb300952fe6937153e64f4cc3cf7",
+        "sourcePages": [
+          25
+        ],
+        "printedPage": 25,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:functions-and-limits:limits",
+        "additionalIds": [],
+        "rationale": "The solution directly tests limits; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "0"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 84,
+      "canonicalQuestionId": "nda-2025-i-maths-84",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "98293f7199a28b9c5c598b091ac2a193fc07f527b75f0845da2b2c6e2a11b4ea",
+        "optionsHash": "d1c496af16042f425bc3986f30fa08ce871064a095693bf2d3c65bf31a993b82",
+        "sourcePages": [
+          27
+        ],
+        "printedPage": 27,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:functions-and-limits:limits",
+        "additionalIds": [],
+        "rationale": "The solution directly tests limits; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "Limit does not exist"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 85,
+      "canonicalQuestionId": "nda-2025-i-maths-85",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "84ffcf2e2f51a6613298ca85bb5f1aac0477c519abe2f7161884736480cd86f2",
+        "optionsHash": "9156c71278711497eefdc8bba4cae4e124181f839ae9e23816e8cc352682b094",
+        "sourcePages": [
+          27
+        ],
+        "printedPage": 27,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:functions-and-limits:domain-and-range",
+        "additionalIds": [],
+        "rationale": "The solution directly tests domain; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "(-∞, ∞)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 86,
+      "canonicalQuestionId": "nda-2025-i-maths-86",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "58bf0a70fcf42c06295fc681c93f5077301895d16e94872001cec8f4b04b8480",
+        "optionsHash": "8ef8fb8719dc34f05428c999a08cd66d113f601659e4725d514e0b6ff45c2869",
+        "sourcePages": [
+          27
+        ],
+        "printedPage": 27,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:definite-integrals-and-areas",
+        "additionalIds": [],
+        "rationale": "The solution directly tests definite; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "9 square units"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 87,
+      "canonicalQuestionId": "nda-2025-i-maths-87",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "5a34fc021e980a8015a9f12c06a106581c88ea4ab3995447bf5f4b7c3edd93dd",
+        "optionsHash": "0012f39cb2f31e47480fdb3e8e5155672d6ccad1eb575381c18622ca2b1029c2",
+        "sourcePages": [
+          27
+        ],
+        "printedPage": 27,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:foundations:relations",
+        "additionalIds": [
+          "subtopic:nda-mathematics:matrices-and-determinants:matrices:systems-of-linear-equations"
+        ],
+        "rationale": "The solution directly tests relations; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "1"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 88,
+      "canonicalQuestionId": "nda-2025-i-maths-88",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "9ab95371af04bbab2b3abbfb795d43bbab108270767dd4879d93ae17e4a87ef5",
+        "optionsHash": "b112dec3635064528b9639c6904694eb5baef5a92d58d5f3fa391c8b9c6a7423",
+        "sourcePages": [
+          27
+        ],
+        "printedPage": 27,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:foundations:relations",
+        "additionalIds": [
+          "subtopic:nda-mathematics:differential-calculus:functions-and-limits:composite-and-inverse-functions"
+        ],
+        "rationale": "The solution directly tests relations; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "I only"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 89,
+      "canonicalQuestionId": "nda-2025-i-maths-89",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "0f630cc6b50a1005c85d8a05b88fcb219520f10e2c2288bb2e83afe846f78d10",
+        "optionsHash": "704c63053a3967ca6a411e4256474bb3c51c2491533268ad934362e28529c720",
+        "sourcePages": [
+          27
+        ],
+        "printedPage": 27,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:functions-and-limits:limits",
+        "additionalIds": [
+          "subtopic:nda-mathematics:differential-calculus:functions-and-limits:composite-and-inverse-functions"
+        ],
+        "rationale": "The solution directly tests limits; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "-1"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 90,
+      "canonicalQuestionId": "nda-2025-i-maths-90",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "15b81b4760cecad131cda02cc8933da6467f8531323a25546ef06b967a7d496d",
+        "optionsHash": "23c87ae56b60f4859e6fc0c3e4b9c71273391b41fe56c464043fade58c90b04d",
+        "sourcePages": [
+          27
+        ],
+        "printedPage": 27,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:definite-integrals-and-areas",
+        "additionalIds": [],
+        "rationale": "The solution directly tests definite; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "4/3 square units"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 91,
+      "canonicalQuestionId": "nda-2025-i-maths-91",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "d20d49cbc4fdfd755f44ca0b8b295ea3bb72dab15379bbe8f285282f1eb3cd86",
+        "optionsHash": "f5433a720638790857c8a2f47a91a78c6cda1c1268f1549fc5992f1d422a65c6",
+        "sourcePages": [
+          29
+        ],
+        "printedPage": 29,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:inverse-trigonometric-functions",
+        "additionalIds": [],
+        "rationale": "The solution directly tests inverse trig; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "\\(3sin^{-1}\\)(x/3)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 92,
+      "canonicalQuestionId": "nda-2025-i-maths-92",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "3099b1b4d60bd41e70425d35346b28a824c8b6af17a293ba0daba484e75af7f5",
+        "optionsHash": "6fbe5222a24de12701f222cdec10a23f74ea826424ca6897027870a701a92e94",
+        "sourcePages": [
+          29
+        ],
+        "printedPage": 29,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:differentiation:derivatives-and-rules",
+        "additionalIds": [],
+        "rationale": "The solution directly tests derivatives; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "3/√9-\\(x^{2}\\)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 93,
+      "canonicalQuestionId": "nda-2025-i-maths-93",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "16e20c0dd2f3ff0193377cb61d6fe79d8195c519166f2b1b942e8c018535a955",
+        "optionsHash": "87c4deede855c52677cc126cb2381c7fb7c4e51efabd6c5d20b9c12d7838f16d",
+        "sourcePages": [
+          29
+        ],
+        "printedPage": 29,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:functions-and-limits:limits",
+        "additionalIds": [],
+        "rationale": "The solution directly tests limits; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "4/3"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 94,
+      "canonicalQuestionId": "nda-2025-i-maths-94",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "442f953d2448344c69882ed4e71fd99e9e633778a96d6e167328400246e2bd3d",
+        "optionsHash": "b112dec3635064528b9639c6904694eb5baef5a92d58d5f3fa391c8b9c6a7423",
+        "sourcePages": [
+          29
+        ],
+        "printedPage": 29,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:differential-calculus:differentiation:maxima-and-minima",
+        "additionalIds": [],
+        "rationale": "The solution directly tests extrema; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "Neither I nor II"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 95,
+      "canonicalQuestionId": "nda-2025-i-maths-95",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "d8d805ab1768d7fc98a8d0b0f70710a311b0f43a1a98b0fb37352065c3e143a0",
+        "optionsHash": "aca83109d7c4a85c3637f606c5945de8341de078cb5610654aa8f1389dc54b93",
+        "sourcePages": [
+          29
+        ],
+        "printedPage": 29,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:foundations:relations",
+        "additionalIds": [
+          "subtopic:nda-mathematics:differential-calculus:functions-and-limits:composite-and-inverse-functions"
+        ],
+        "rationale": "The solution directly tests relations; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "81"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 96,
+      "canonicalQuestionId": "nda-2025-i-maths-96",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "7df09873c72519d6c286f8766cf226f7425efa95bfdc987a3e273beb6d4efeae",
+        "optionsHash": "ad6b31826011a359b48937e772e7dcc99b17308f38f41e85d6944bc472cce462",
+        "sourcePages": [
+          29
+        ],
+        "printedPage": 29,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:foundations:relations",
+        "additionalIds": [
+          "subtopic:nda-mathematics:differential-calculus:functions-and-limits:composite-and-inverse-functions"
+        ],
+        "rationale": "The solution directly tests relations; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "9"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 97,
+      "canonicalQuestionId": "nda-2025-i-maths-97",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "27e16be7883e506b926fb186d918244d5a4b90bb170f8dc9f79405737d917108",
+        "optionsHash": "112a6f0b6251596fdc5dec82030994c36ae6f70480e3348347ea474d07b48ce5",
+        "sourcePages": [
+          29
+        ],
+        "printedPage": 29,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:foundations:relations",
+        "additionalIds": [
+          "subtopic:nda-mathematics:differential-calculus:functions-and-limits:composite-and-inverse-functions"
+        ],
+        "rationale": "The solution directly tests relations; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "10"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 98,
+      "canonicalQuestionId": "nda-2025-i-maths-98",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "d8fbd965cddfc26a430742e2d02dc69a24c20fb5e8b7fafcc657a72225d7e0f9",
+        "optionsHash": "eca10b684dbc54aa7a7cece1124083e37be139203cffcabb9e10035d7156bb87",
+        "sourcePages": [
+          31
+        ],
+        "printedPage": 31,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:algebra:foundations:relations",
+        "additionalIds": [
+          "subtopic:nda-mathematics:differential-calculus:functions-and-limits:composite-and-inverse-functions"
+        ],
+        "rationale": "The solution directly tests relations; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "20"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 99,
+      "canonicalQuestionId": "nda-2025-i-maths-99",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "28002a12ea89730e26ec9c7fbb42a4b76cf0e9c637a79db5e5939bde949e16fc",
+        "optionsHash": "8c135c1814555daed948e4015326f160013da9e9906f5a38ee535a62cd0775f4",
+        "sourcePages": [
+          31
+        ],
+        "printedPage": 31,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:definite-integrals-and-areas",
+        "additionalIds": [],
+        "rationale": "The solution directly tests definite; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "2(√3 – √2)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 100,
+      "canonicalQuestionId": "nda-2025-i-maths-100",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "b937dc52b5ad34f1a79615d5cb540a770a61d095b897a282f86b9e1d9bc6ce47",
+        "optionsHash": "d6e33904fef33977ec94f462776e1e6a8e2e99fdbc5751da3a0a16b44a4bd89a",
+        "sourcePages": [
+          31
+        ],
+        "printedPage": 31,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:definite-integrals-and-areas",
+        "additionalIds": [],
+        "rationale": "The solution directly tests definite; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "6 – √3 – 2√2"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 101,
+      "canonicalQuestionId": "nda-2025-i-maths-101",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "7591dc2ed8de7c9f2862ca660db758ad3dcfa5e8d113d0aa3c39f22a35f11879",
+        "optionsHash": "7233a19d99c58c6ca72c3acf781ef9f89c4e752ef664ee39103860d508de2d86",
+        "sourcePages": [
+          31
+        ],
+        "printedPage": 31,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:statistics:central-tendency",
+        "additionalIds": [],
+        "rationale": "The solution directly tests central; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "39"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 102,
+      "canonicalQuestionId": "nda-2025-i-maths-102",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "23822211d72e9be2a254975885151af7119dea9d999d8602ba78fa4ad8c25393",
+        "optionsHash": "e62ccd91074a6c4d83a3ee0411a76df73f13e0de27a8dd0ad5544d5da6be0ef2",
+        "sourcePages": [
+          31
+        ],
+        "printedPage": 31,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:statistics:central-tendency",
+        "additionalIds": [],
+        "rationale": "The solution directly tests central; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "164.41 cm"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 103,
+      "canonicalQuestionId": "nda-2025-i-maths-103",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "efa28dadb3a40fdaf320b45550a97810befaaa0b3a1c4babf352883ca2ef2464",
+        "optionsHash": "f984151ebc2dbdc54c1b2f86e88b0d0d6a698a09310f993d6381b13fefcbafcf",
+        "sourcePages": [
+          31
+        ],
+        "printedPage": 31,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:statistics:central-tendency",
+        "additionalIds": [],
+        "rationale": "The solution directly tests central; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "164.9 cm"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 104,
+      "canonicalQuestionId": "nda-2025-i-maths-104",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "30fabc4ef2eba7a96fe0e813a57b4ee2da6f00b8ecd80fb021dc0195a8a5603a",
+        "optionsHash": "a461b536429426336eb7797c4dc7867ebffc46797c1a7d1e2541800578f10c08",
+        "sourcePages": [
+          33
+        ],
+        "printedPage": 33,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:statistics:central-tendency",
+        "additionalIds": [],
+        "rationale": "The solution directly tests central; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "histogram"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 105,
+      "canonicalQuestionId": "nda-2025-i-maths-105",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "be99f7277ec446d2f732d8735269c1e72e09369606f6b960ffd9763ef2cbe29c",
+        "optionsHash": "64e76bc02460b5ca666192b02f81fdd6b43cd34c3b678aec903c952556730c90",
+        "sourcePages": [
+          33
+        ],
+        "printedPage": 33,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:statistics:variance-and-standard-deviation",
+        "additionalIds": [],
+        "rationale": "The solution directly tests variance; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "Variance(X) < Variance(Y)"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 106,
+      "canonicalQuestionId": "nda-2025-i-maths-106",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "a17fc2cd01bf7f6a000bf275769dad2dc6fc9517ffee12bec609a5072a153507",
+        "optionsHash": "61b0a06b346580a1522b9d0e86f38ef3308a913d0d7e84b22f79d16aa2a92145",
+        "sourcePages": [
+          33
+        ],
+        "printedPage": 33,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:statistics:variance-and-standard-deviation",
+        "additionalIds": [],
+        "rationale": "The solution directly tests variance; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "Coefficient of variation of X is strictly more than coefficient of variation of Y."
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 107,
+      "canonicalQuestionId": "nda-2025-i-maths-107",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "0e995de68040fe222c4b685334532b6ae8d5612eee86819bde763332bdacef52",
+        "optionsHash": "f1828daefed08fca2e73e7ad42eefdf7b02144ca7fe7e23ed3be92a6b7c7ffe7",
+        "sourcePages": [
+          33
+        ],
+        "printedPage": 33,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:probability:random-variables-and-binomial-distribution",
+        "additionalIds": [],
+        "rationale": "The solution directly tests random; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "1/4"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 108,
+      "canonicalQuestionId": "nda-2025-i-maths-108",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "5d3b36be4d3030170986aec1df7ec1c4330f80dfc11f17360ba061dd2c3f2d92",
+        "optionsHash": "31885eaa5214f075a4958900a3e0a1899c725a9ecc66052af952427f1223bfbf",
+        "sourcePages": [
+          33
+        ],
+        "printedPage": 33,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:probability:random-variables-and-binomial-distribution",
+        "additionalIds": [],
+        "rationale": "The solution directly tests random; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "135/1024"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 109,
+      "canonicalQuestionId": "nda-2025-i-maths-109",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "74bb283167b50c9b9b605491d978f361e0cf82651b01c84cd4c5e1726597f636",
+        "optionsHash": "d3474cdbb5786db2d0f79d372459014e4528357279d40b65559c9873c17799e8",
+        "sourcePages": [
+          33
+        ],
+        "printedPage": 33,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:probability:events-and-sample-spaces",
+        "additionalIds": [
+          "subtopic:nda-mathematics:algebra:counting-and-expansion:permutations-and-combinations"
+        ],
+        "rationale": "The solution directly tests events; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "10/33"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 110,
+      "canonicalQuestionId": "nda-2025-i-maths-110",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "38e39cfcd72ed38dc048cdc175e0dca91dc6ba25cb8c5fc52078f8cc27327915",
+        "optionsHash": "71ad1bbb3991e62e30ca3f299e52910f2f2f71a4a1e064ac38cd47ae9188d457",
+        "sourcePages": [
+          33
+        ],
+        "printedPage": 33,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:probability:events-and-sample-spaces",
+        "additionalIds": [
+          "subtopic:nda-mathematics:algebra:counting-and-expansion:permutations-and-combinations"
+        ],
+        "rationale": "The solution directly tests events; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "D"
+        ],
+        "displayedAcceptedOptions": [
+          "D"
+        ],
+        "optionTexts": [
+          "53/66"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 111,
+      "canonicalQuestionId": "nda-2025-i-maths-111",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "c4ded354fafa29e0cc8ebde11c9ce9ec56df78aae32cf7190171a0e900087953",
+        "optionsHash": "1e20391c94cd98cc352eb50af6d99bcd2d78b4832083231b725632fb0c9c73f2",
+        "sourcePages": [
+          35
+        ],
+        "printedPage": 35,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:probability:conditional-probability",
+        "additionalIds": [],
+        "rationale": "The solution directly tests conditional; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "23/45"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 112,
+      "canonicalQuestionId": "nda-2025-i-maths-112",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "10a5c4ba758e38357c4b9fb1a1579b36a7566ef41f8965850fa254f59845cd6a",
+        "optionsHash": "37dff2af676cf5d09e384fb57d7e77365d5920d23b815cf85b09f67f549bb27f",
+        "sourcePages": [
+          35
+        ],
+        "printedPage": 35,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:probability:conditional-probability",
+        "additionalIds": [],
+        "rationale": "The solution directly tests conditional; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "5/23"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 113,
+      "canonicalQuestionId": "nda-2025-i-maths-113",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "2ee763a7e219d4ae6a99cc0de22afea7eaefddfcf917de40fa35a34eaa82c023",
+        "optionsHash": "9a790749ff6c1b75d000ff5087dc35ffff33a63694a267eb0d34b90677997fc2",
+        "sourcePages": [
+          35
+        ],
+        "printedPage": 35,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:statistics:central-tendency",
+        "additionalIds": [],
+        "rationale": "The solution directly tests central; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "A"
+        ],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "2.25"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 114,
+      "canonicalQuestionId": "nda-2025-i-maths-114",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "164c26800707fd8675a84bde11951bae044cd2e11642ca14a79e88665266f630",
+        "optionsHash": "5f3c1c6c32aa124a5dcff2502f4c0dddb31f5f720c932dd3e2a5e46f3897f24d",
+        "sourcePages": [
+          35
+        ],
+        "printedPage": 35,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:statistics:variance-and-standard-deviation",
+        "additionalIds": [],
+        "rationale": "The solution directly tests variance; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "0.5"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 115,
+      "canonicalQuestionId": "nda-2025-i-maths-115",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "ca626ab374c80f0175a3f62d33b452c936c96cf1f14f904d381e072dc3a704f0",
+        "optionsHash": "b42e26e653f3108ac665b7308ee671c020cce9ce311f8ef1b43aae6c19bc7991",
+        "sourcePages": [
+          35
+        ],
+        "printedPage": 35,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:probability:conditional-probability",
+        "additionalIds": [],
+        "rationale": "The solution directly tests conditional; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "3/8"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 116,
+      "canonicalQuestionId": "nda-2025-i-maths-116",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "46ab39c6d78cdeb7d44f8814507286ee2aa9daeb3810d058f9788c00f0d46ffa",
+        "optionsHash": "c0cf9fb096368298c308f9a015781e22825d5d8654bc48a728a5b62037629fad",
+        "sourcePages": [
+          35
+        ],
+        "printedPage": 35,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:probability:conditional-probability",
+        "additionalIds": [],
+        "rationale": "The solution directly tests conditional; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "5/12"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 117,
+      "canonicalQuestionId": "nda-2025-i-maths-117",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "57ad95f22a6ec98584aab8be666fffaae5fd1ab8d7bf6c3c01743c8357b7cf78",
+        "optionsHash": "2ccab6b3983cc052776245b3f68a8488fc7fcc9459fba32207d303fa1bc9ab98",
+        "sourcePages": [
+          35
+        ],
+        "printedPage": 35,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:probability:events-and-sample-spaces",
+        "additionalIds": [
+          "subtopic:nda-mathematics:statistics-and-probability:probability:addition-and-multiplication-rules"
+        ],
+        "rationale": "The solution directly tests events; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "5/12"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 118,
+      "canonicalQuestionId": "nda-2025-i-maths-118",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "f2b616dc5328be8284018d829dbb907db7cee41a9e059976b79a96613dc8b5d7",
+        "optionsHash": "efc69b33236e1ad95328e794e5142540e579faf059999b29754c4b5042e0c80f",
+        "sourcePages": [
+          35
+        ],
+        "printedPage": 35,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:probability:addition-and-multiplication-rules",
+        "additionalIds": [
+          "subtopic:nda-mathematics:statistics-and-probability:probability:random-variables-and-binomial-distribution"
+        ],
+        "rationale": "The solution directly tests rules; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "1 – (11/5)(4/5)^{6}"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 119,
+      "canonicalQuestionId": "nda-2025-i-maths-119",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "921bd22ddb30fa6420cfa53b6f06ffdabf078f5cc79bcfc3b63c09f97cfba0c4",
+        "optionsHash": "028648270621fbe9a3d8c0c20088a88f98970b7683ceae094000c3e815331de9",
+        "sourcePages": [
+          35
+        ],
+        "printedPage": 35,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:probability:random-variables-and-binomial-distribution",
+        "additionalIds": [],
+        "rationale": "The solution directly tests random; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "B"
+        ],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "1000"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    },
+    {
+      "number": 120,
+      "canonicalQuestionId": "nda-2025-i-maths-120",
+      "accountingAction": "new",
+      "disposition": "official-final",
+      "reproduction": {
+        "approved": true,
+        "sourceTextHash": "dc7aa31eac69bb6f613fbbfa55ed81e62f656c6a6f20508ad291c465b05a2a95",
+        "optionsHash": "c9d0db80b203ab81c85fea1d8c2f735a8c70f31bff4bfc5e260854aa80fe758c",
+        "sourcePages": [
+          35
+        ],
+        "printedPage": 35,
+        "requiresFigure": false,
+        "figureKey": null
+      },
+      "classification": {
+        "primaryId": "subtopic:nda-mathematics:statistics-and-probability:statistics:central-tendency",
+        "additionalIds": [],
+        "rationale": "The solution directly tests central; this is the most specific existing NDA Mathematics leaf.",
+        "confidence": "high",
+        "secondPass": "Fresh source and concept reread by the same AI agent; not independent human review."
+      },
+      "answerEvidence": {
+        "keyPage": 1,
+        "officialAcceptedOptions": [
+          "C"
+        ],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "137.5"
+        ],
+        "twoPassAudit": "content/audits/nda-2025-i-mathematics-key-transcriptions.json"
+      },
+      "revision": {
+        "status": "official-final",
+        "revision": 1,
+        "contentRevision": 0,
+        "preparationScope": "maths"
+      }
+    }
+  ]
+}

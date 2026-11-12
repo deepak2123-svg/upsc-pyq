@@ -1,0 +1,2219 @@
+{
+  "paper": {
+    "exam": "NDA",
+    "year": 2025,
+    "session": "I",
+    "subject": "Mathematics",
+    "bookletSeries": "A",
+    "paperCode": "AEBC-B-MTH"
+  },
+  "transcriptionAid": "https://mcqquestion.com/nda-na/nda-na-1-2025-mathematics-full-question-paper/",
+  "questions": [
+    {
+      "number": 1,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "topicHint": "Algebra",
+      "promptLines": [
+        "The sum of the first k terms of a series S is 3k^{2} + 5k. Which one of the following is correct?"
+      ],
+      "options": {
+        "A": "The terms of S form an arithmetic progression with common difference 14.",
+        "B": "The terms of S form an arithmetic progression with common difference 6.",
+        "C": "The terms of S form a geometric progression with common ratio 10/7.",
+        "D": "The terms of S form a geometric progression with common ratio 11/4."
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Subtracting consecutive partial sums gives the general term of the series as 6k+2. Since this term is a simple linear function of k, the series is an AP, and the coefficient of k gives a common difference of 6."
+    },
+    {
+      "number": 2,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "topicHint": "Algebra",
+      "promptLines": [
+        "The sum of the first 8 terms of a GP is five times the sum of its first 4 terms. If r ≠ 1 is the common ratio, then what is the number of possible real values of r?"
+      ],
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "More than three"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Setting the sum of the first 8 terms equal to 5 times the sum of the first 4 terms leads to a quartic equation in the common ratio r. Solving it gives four roots, but excluding r=1 as stated leaves exactly three valid real values."
+    },
+    {
+      "number": 3,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "topicHint": "Algebra",
+      "promptLines": [
+        "If one root of the equation x^{2} – kx + k = 0 exceeds the other by 2√3, then which one of the following is a value of k?"
+      ],
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "9",
+        "D": "12"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "For this quadratic, the sum and product of the roots both equal k. Using the fact that the difference between the roots is 2 times the square root of 3 gives an equation in k, and solving it gives k=6."
+    },
+    {
+      "number": 4,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "topicHint": "Algebra",
+      "promptLines": [
+        "If x + 5/y = 4 and y + 5/x = -4, then what is (x+y) equal to?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "4",
+        "D": "5"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Solving the two given equations together as a system gives two valid (x,y) pairs. In both cases, x and y turn out to be exact negatives of each other, making their sum 0."
+    },
+    {
+      "number": 5,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "topicHint": "Algebra",
+      "promptLines": [
+        "If 5th, 7th and 13th terms of an AP are in GP, then what is the ratio of its first term to its common difference?"
+      ],
+      "options": {
+        "A": "-3",
+        "B": "-2",
+        "C": "2",
+        "D": "3"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Writing the 5th, 7th, and 13th AP terms in terms of the first term and common difference, then applying the GP condition that the middle term squared equals the product of the outer terms, gives a direct relation between the first term and the common difference. Solving it shows the first term is exactly -3 times the common difference."
+    },
+    {
+      "number": 6,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "topicHint": "Algebra",
+      "promptLines": [
+        "If p, 1, q are in AP and p, 2, q are in GP, then which of the following statements is/are correct?",
+        "I.p, 4, q are in HP.\nII.(1/p), 1/4, (1/q) are in AP.",
+        "Select the answer using the code given below."
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "From the given AP and GP conditions, p+q=2 and pq=4. Checking both proposed statements about p, 4, q against these values confirms both hold true, since they describe the same underlying harmonic-progression relationship."
+    },
+    {
+      "number": 7,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "topicHint": "Algebra",
+      "promptLines": [
+        "If x = (1111)_{2}, y = (1001)_{2} and z = (110)_{2}, then what is x^{3} – y^{3} – z^{3} – 3xyz equal to?"
+      ],
+      "options": {
+        "A": "(1111001)_{2}",
+        "B": "(1001111)_{2}",
+        "C": "(1)_{2}",
+        "D": "(0)_{2}"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Converting each binary number to decimal gives 15, 9, and 6. Using the standard algebraic identity for this cubic expression with these three values produces exactly zero, which in binary is simply 0."
+    },
+    {
+      "number": 8,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "topicHint": "Matrices & Determinants",
+      "promptLines": [
+        "If Δ = |",
+        "[a, b, c]\n[d, e, f]\n[g, h, i]",
+        "| and A, B, C, D, G are the cofactors of the elements a, b, c, d, g respectively, then what is bB + cC – dD – gG equal to?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Δ",
+        "D": "-Δ"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "This combination mixes elements from one row with cofactors belonging to a different row of the determinant. Such a mismatched, ‘alien’, cofactor expansion always sums to zero, regardless of the actual entries in the matrix."
+    },
+    {
+      "number": 9,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "topicHint": "Matrices & Determinants",
+      "promptLines": [
+        "Consider the following statements in respect of the determinant Δ = |",
+        "[k(k+2), 2k+1, 1]\n[2k+1, k+2, 1]\n[3, 3, 1]",
+        "|:",
+        "I.Δ is positive if k > 0.\nII.Δ is negative if k < 0.\nIII.Δ is zero if k = 0.",
+        "How many of the statements given above are correct?"
+      ],
+      "options": {
+        "A": "None",
+        "B": "One",
+        "C": "Two",
+        "D": "All three"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Expanding this determinant algebraically shows it always equals (k-1) cubed. Checking each statement against this formula shows only the claim about negative values for k less than zero actually holds for every such k, while the other two claims fail for some values in their stated ranges."
+    },
+    {
+      "number": 10,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "topicHint": "Matrices & Determinants",
+      "promptLines": [
+        "If |",
+        "[2, 3+i, -1]\n[3-i, 0, i-1]\n[-1, -1-i, 1]",
+        "| = A + iB, where i = √-1, then what is A + B equal to?"
+      ],
+      "options": {
+        "A": "-10",
+        "B": "-6",
+        "C": "0",
+        "D": "6"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Expanding this complex-valued determinant directly gives a purely real result of -6. This means A equals -6 and B equals 0, so their sum is -6."
+    },
+    {
+      "number": 11,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "topicHint": "Matrices & Determinants",
+      "promptLines": [
+        "If A^{2} + B^{2} + C^{2} = 0, then what is the value of the following?\n|",
+        "[1, cosC, cosB]\n[cosC, 1, cosA]\n[cosB, cosA, 1]",
+        "|"
+      ],
+      "options": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Since A, B, and C are real numbers whose squares sum to zero, each of them must individually be zero. Substituting cosine of zero, which is 1, into every entry of this determinant produces three identical rows, making the whole determinant zero."
+    },
+    {
+      "number": 12,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "topicHint": "Matrices & Determinants",
+      "promptLines": [
+        "If ω is a non-real cube root of unity, then what is a root of the following equation?\n|",
+        "[x+1, ω, ω^{2}]\n[ω, x+ω^{2}, 1]\n[ω^{2}, 1, x+ω]",
+        "| = 0"
+      ],
+      "options": {
+        "A": "x = 0",
+        "B": "x = 1",
+        "C": "x = ω",
+        "D": "x = ω^{2}"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Expanding this determinant in terms of x and the cube root of unity simplifies remarkably to just x cubed. Setting this equal to zero shows x=0 is the only root, appearing three times over."
+    },
+    {
+      "number": 13,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "topicHint": "Complex Numbers",
+      "promptLines": [
+        "What is (√3+i√3-i)^{3} equal to?"
+      ],
+      "options": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "3"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Simplifying this complex fraction and raising the result to the third power, using the standard rules for complex number arithmetic, gives exactly -1."
+    },
+    {
+      "number": 14,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "topicHint": "Complex Numbers",
+      "promptLines": [
+        "If x^{2} – x + 1 = 0, then what is (x – 1/x)^{2} + (x – 1/x)^{4} + (x – 1/x)^{8} equal to?"
+      ],
+      "options": {
+        "A": "81",
+        "B": "85",
+        "C": "87",
+        "D": "90"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "The two complex roots of this quadratic both make the expression (x minus 1 over x) equal to a value whose square, fourth power, and eighth power sum to 87. This holds identically for either root, since they are complex conjugates of each other."
+    },
+    {
+      "number": 15,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "topicHint": "Permutations & Combinatorics",
+      "promptLines": [
+        "How many 7-letter words (with or without meaning) can be constructed using all the letters of the word CAPITAL so that all consonants come together in each word?"
+      ],
+      "options": {
+        "A": "360",
+        "B": "300",
+        "C": "288",
+        "D": "240"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "CAPITAL has four consonants, C, P, T, and L, needing to stay together, and three vowels, A, A, and I. Treating the consonant block as one unit alongside the three vowels gives arrangements accounting for the repeated A, then multiplying by the ways to arrange the consonants within their own block gives a total of 288."
+    },
+    {
+      "number": 16,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "topicHint": "Complex Numbers",
+      "promptLines": [
+        "If z ≠ 0 is a complex number, then what is amp(z) + amp(z) equal to?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "π/2",
+        "C": "π",
+        "D": "2π"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "The argument of a complex number’s conjugate is always the negative of the original number’s argument. Adding a value to its own negative always gives zero."
+    },
+    {
+      "number": 17,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "topicHint": "Permutations & Combinatorics",
+      "promptLines": [
+        "How many sides are there in a polygon which has 20 diagonals?"
+      ],
+      "options": {
+        "A": "6",
+        "B": "7",
+        "C": "8",
+        "D": "10"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "The number of diagonals in an n-sided polygon is given by n(n-3)/2. Setting this formula equal to 20 and solving gives n=8."
+    },
+    {
+      "number": 18,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "topicHint": "Permutations & Combinatorics",
+      "promptLines": [
+        "In how many ways can the letters of the word DELHI be arranged keeping the positions of vowels and consonants unchanged?"
+      ],
+      "options": {
+        "A": "6",
+        "B": "9",
+        "C": "12",
+        "D": "24"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "DELHI has two vowels, E and I, and three consonants, D, L, and H, which can each be freely rearranged among themselves as long as they stay in their own vowel or consonant positions. Multiplying the 2 ways to arrange the vowels by the 6 ways to arrange the consonants gives 12 total arrangements."
+    },
+    {
+      "number": 19,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "topicHint": "Permutations & Combinatorics",
+      "promptLines": [
+        "What is the number of positive integer solutions of x+y+z = 5?"
+      ],
+      "options": {
+        "A": "3",
+        "B": "5",
+        "C": "6",
+        "D": "9"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Counting positive integer solutions to this equation is a standard stars-and-bars problem, since each variable must be at least 1. Working through the combinatorial formula gives exactly 6 valid solutions."
+    },
+    {
+      "number": 20,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "topicHint": "Permutations & Combinatorics",
+      "promptLines": [
+        "What is the number of rational terms in the expansion of (3^{1/2} + 5^{1/4})^{12}?"
+      ],
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "6"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "A term in this binomial expansion is rational only when both the power of 3 and the power of 5 in that term come out to whole numbers. Checking every possible term shows exactly four of them satisfy both conditions simultaneously."
+    },
+    {
+      "number": 21,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "topicHint": "Permutations & Combinatorics",
+      "promptLines": [
+        "If the sum of binomial coefficients in the expansion of (x+y)^{n} is 256, then the greatest binomial coefficient occurs in which one of the following terms?"
+      ],
+      "options": {
+        "A": "Third",
+        "B": "Fourth",
+        "C": "Fifth",
+        "D": "Ninth"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Since the binomial coefficients sum to 256, which is 2 to the 8th power, the exponent n must be 8. For an even exponent like 8, the single greatest binomial coefficient occurs at the middle term, which here is the fifth term."
+    },
+    {
+      "number": 22,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "topicHint": "Algebra",
+      "promptLines": [
+        "If k < (√2+1)^{3} < k+2, where k is a natural number, then what is the value of k?"
+      ],
+      "options": {
+        "A": "11",
+        "B": "13",
+        "C": "15",
+        "D": "17"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Computing the numeric value of (the square root of 2 plus 1) cubed gives approximately 14.07. The natural number k satisfying k less than this value and this value less than k+2 is 13."
+    },
+    {
+      "number": 23,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "topicHint": "Matrices & Determinants",
+      "promptLines": [
+        "If [",
+        "[x, 1, 1]",
+        "] × [",
+        "[1, 2, 3]\n[4, 5, 6]\n[7, 8, 9]",
+        "] × [",
+        "[1]\n[1]\n[x]",
+        "] = [",
+        "[45]",
+        "], then which one of the following is a value of x?"
+      ],
+      "options": {
+        "A": "-2",
+        "B": "-1",
+        "C": "0",
+        "D": "1"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Carrying out this chain of matrix multiplications step by step leaves a single equation in x. Solving that equation gives x=1 as one of its two roots, matching the given options."
+    },
+    {
+      "number": 24,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "topicHint": "Matrices & Determinants",
+      "promptLines": [
+        "If A = [",
+        "[y, z, x]\n[z, x, y]\n[x, y, z]",
+        "] where x, y, z are integers, is an orthogonal matrix, then what is the value of x^{2}+y^{2}+z^{2}?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "4",
+        "D": "14"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "For this matrix to be orthogonal, the sum of the squares of x, y, and z must equal 1, and their pairwise products must sum to zero. Since x, y, and z are integers, the only way their squares can sum to exactly 1 is if one of them is plus or minus 1 and the other two are 0."
+    },
+    {
+      "number": 25,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "topicHint": "Matrices & Determinants",
+      "promptLines": [
+        "Consider the following in respect of a non-singular matrix M:",
+        "I.|M^{2}| = |M|^{2}\nII.|M| = |M^{-1}|\nIII.|M| = |M^{T}|",
+        "How many of the above are correct?"
+      ],
+      "options": {
+        "A": "None",
+        "B": "One",
+        "C": "Two",
+        "D": "All three"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "The determinant of a squared matrix always equals the determinant of the original matrix squared, and the determinant of a matrix always equals the determinant of its transpose, so these two statements genuinely always hold. But the determinant of the inverse is the reciprocal of the original determinant, not necessarily equal to it, so that statement fails in general."
+    },
+    {
+      "number": 26,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "topicHint": "Matrices & Determinants",
+      "promptLines": [
+        "If f(θ) = [",
+        "[cosθ, sinθ]\n[-sinθ, cosθ]",
+        "] then what is {f(π)}^{2} equal to?"
+      ],
+      "options": {
+        "A": "[\n\n[-1, 0]\n[0, -1]\n]",
+        "B": "[\n\n[1, 1]\n[1, 1]\n]",
+        "C": "[\n\n[-1, 0]\n[0, 1]\n]",
+        "D": "[\n\n[1, 0]\n[0, 1]\n]"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Substituting theta equal to pi into this rotation-style matrix gives a matrix of all -1’s on the diagonal. Squaring that matrix, since two negatives multiply to a positive, gives back the identity matrix."
+    },
+    {
+      "number": 27,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "topicHint": "Matrices & Determinants",
+      "promptLines": [
+        "If A = [",
+        "[1, 2, 2]\n[2, 1, 2]\n[2, 2, 1]",
+        "] then what is A^{2} – 4A equal to?"
+      ],
+      "options": {
+        "A": "-5I_{3}",
+        "B": "-I_{3}",
+        "C": "I_{3}",
+        "D": "5I_{3}"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Carrying out the matrix multiplication for A squared and then subtracting 4 times A directly gives a diagonal matrix with 5 on every diagonal entry and zero elsewhere. This is exactly 5 times the identity matrix."
+    },
+    {
+      "number": 28,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "topicHint": "Permutations & Combinatorics",
+      "promptLines": [
+        "If the number of selections of r as well as (n+r) things from 5n different things are equal, then what is the value of r?"
+      ],
+      "options": {
+        "A": "n",
+        "B": "2n",
+        "C": "3n",
+        "D": "4n"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Two different selection sizes from the same total give an equal number of ways only when the two sizes add up to that total. Setting r plus (n+r) equal to 5n and solving gives r=2n."
+    },
+    {
+      "number": 29,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "topicHint": "Permutations & Combinatorics",
+      "promptLines": [
+        "What is the number of selections of at most 3 things from 6 different things?"
+      ],
+      "options": {
+        "A": "20",
+        "B": "22",
+        "C": "41",
+        "D": "42"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Selecting at most 3 things from 6 means adding up the ways to select 0, 1, 2, or 3 things. Adding these four combination counts together gives a total of 42."
+    },
+    {
+      "number": 30,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "topicHint": "Matrices & Determinants",
+      "promptLines": [
+        "If A = [",
+        "[x, y, z]\n[y, z, x]\n[z, x, y]",
+        "] where x, y, z are integers, is an orthogonal matrix, then what is A^{2} equal to?"
+      ],
+      "options": {
+        "A": "Null matrix",
+        "B": "Identity matrix",
+        "C": "A",
+        "D": "-A"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "For this matrix to be orthogonal, multiplying it by its own transpose must give the identity matrix. Since A being orthogonal means its transpose is also its inverse, squaring A does not generally give identity directly, but working through the specific structure of this circulant matrix under the orthogonality condition shows A squared equals the identity matrix."
+    },
+    {
+      "number": 31,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the three (03) items that follow:",
+        "Let p = sin35°, q = sin25° and r = sin(-95°).",
+        "What is (p+q+r) equal to?"
+      ],
+      "options": {
+        "A": "-1",
+        "B": "0",
+        "C": "2sin5°",
+        "D": "2cos5°"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Since sin(-95 degrees) equals negative sin(95 degrees), which equals negative cos(5 degrees), and sin35 plus sin25 combines with this negative cosine term to cancel out exactly. Direct numerical computation confirms the three values sum to zero."
+    },
+    {
+      "number": 32,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the three (03) items that follow:",
+        "Let p = sin35°, q = sin25° and r = sin(-95°).",
+        "What is (pq+qr+rp) equal to?"
+      ],
+      "options": {
+        "A": "-3/4",
+        "B": "0",
+        "C": "1/4",
+        "D": "3/4"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Computing each of the three pairwise products of p, q, and r directly and adding them together gives a combined value of -3/4."
+    },
+    {
+      "number": 33,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the three (03) items that follow:",
+        "Let p = sin35°, q = sin25° and r = sin(-95°).",
+        "What is (p^{2}+q^{2}+r^{2}) equal to?"
+      ],
+      "options": {
+        "A": "1/2",
+        "B": "1",
+        "C": "3/2",
+        "D": "2"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Squaring each of the three given sine values and adding them together gives a combined value of 3/2."
+    },
+    {
+      "number": 34,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let p = |sinα – sin(α-90°)|.",
+        "What is the minimum value of p?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1/2",
+        "C": "1/√2",
+        "D": "1"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Since sine of (alpha minus 90 degrees) equals negative cosine of alpha, this expression simplifies to the absolute value of sine alpha plus cosine alpha. This combined expression can be written as the square root of 2 times a single sine term, whose absolute value can drop all the way down to 0."
+    },
+    {
+      "number": 35,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let p = |sinα – sin(α-90°)|.",
+        "What is the maximum value of p?"
+      ],
+      "options": {
+        "A": "1",
+        "B": "√2",
+        "C": "√3",
+        "D": "2"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "The same expression, the square root of 2 times a single sine term, reaches its largest possible absolute value exactly when that sine term equals 1, giving a maximum of the square root of 2."
+    },
+    {
+      "number": 36,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the three (03) items that follow:",
+        "The sides of a triangle ABC are AB = 3 cm, BC = 5 cm and CA = 7 cm.",
+        "Consider the following statements:",
+        "I.The triangle is obtuse-angled triangle.\nII.The sum of acute angles of the triangle is also acute.",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Using the law of cosines on the given triangle’s three sides shows the largest angle, opposite the 7 cm side, comes out to 120 degrees, confirming the triangle is obtuse. Since the other two angles must then add up to only 60 degrees, that sum itself is genuinely acute."
+    },
+    {
+      "number": 37,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the three (03) items that follow:",
+        "The sides of a triangle ABC are AB = 3 cm, BC = 5 cm and CA = 7 cm.",
+        "What is ∠B equal to?"
+      ],
+      "options": {
+        "A": "60°",
+        "B": "105°",
+        "C": "120°",
+        "D": "150°"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Applying the law of cosines with the given side lengths shows the angle opposite the longest side, angle B, works out to exactly 120 degrees."
+    },
+    {
+      "number": 38,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the three (03) items that follow:",
+        "The sides of a triangle ABC are AB = 3 cm, BC = 5 cm and CA = 7 cm.",
+        "What is the area of the triangle?"
+      ],
+      "options": {
+        "A": "15√3/4 square cm",
+        "B": "15√3/2 square cm",
+        "C": "15√3 square cm",
+        "D": "30√3 square cm"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Using Heron’s formula with the three given side lengths of 3, 5, and 7 cm gives an area of 15 times the square root of 3, divided by 4."
+    },
+    {
+      "number": 39,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "The top (M) of a tower is observed from three points P, Q and R lying in a horizontal straight line which passes directly along the foot (N) of the tower. The angles of elevations of M from P, Q and R are 30°, 45° and 60° respectively. Let PQ = a and QR = b.",
+        "What is PN equal to?"
+      ],
+      "options": {
+        "A": "3-√32 · a",
+        "B": "3+√32 · a",
+        "C": "3-√34 · a",
+        "D": "3+√34 · a"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Setting up the horizontal distances from each observation point to the tower’s foot using the three given elevation angles, then using the fact that PQ equals the difference between the first two distances, gives an equation for the tower’s height in terms of a. Substituting back gives PN as (3 plus the square root of 3), divided by 2, all multiplied by a."
+    },
+    {
+      "number": 40,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "The top (M) of a tower is observed from three points P, Q and R lying in a horizontal straight line which passes directly along the foot (N) of the tower. The angles of elevations of M from P, Q and R are 30°, 45° and 60° respectively. Let PQ = a and QR = b.",
+        "What is MN equal to?"
+      ],
+      "options": {
+        "A": "3+√32 · b",
+        "B": "3-√32 · b",
+        "C": "3-√34 · b",
+        "D": "3+√34 · b"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Using the same setup but working from the QR distance, labelled b, gives an equation for the tower’s actual height, MN. Solving it gives MN as (3 plus the square root of 3), divided by 2, all multiplied by b."
+    },
+    {
+      "number": 41,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the three (03) items that follow:",
+        "Let p = tan2α – tanα and q = cotα – cot2α.",
+        "What is (p/q) equal to?"
+      ],
+      "options": {
+        "A": "-tanα · tan2α",
+        "B": "-cotα · cot2α",
+        "C": "tanα · tan2α",
+        "D": "cotα · cot2α"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Rewriting p and q using the sine and cosine addition formulas shows both share a common sine-of-alpha factor that cancels neatly in their ratio. What remains after simplification is exactly the product of tangent alpha and tangent 2 alpha."
+    },
+    {
+      "number": 42,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the three (03) items that follow:",
+        "Let p = tan2α – tanα and q = cotα – cot2α.",
+        "What is (p+q) equal to?"
+      ],
+      "options": {
+        "A": "sec4α",
+        "B": "cosec4α",
+        "C": "2sec4α",
+        "D": "2cosec4α"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Adding the simplified forms of p and q together and combining them over a common denominator collapses neatly down to a single cosecant term. The final simplified result is exactly 2 times the cosecant of 4 alpha."
+    },
+    {
+      "number": 43,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the three (03) items that follow:",
+        "Let p = tan2α – tanα and q = cotα – cot2α.",
+        "What is tan^{2} α equal to?"
+      ],
+      "options": {
+        "A": "pqp+q",
+        "B": "p+2qp",
+        "C": "pp+2q",
+        "D": "p2p+q"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Expressing both p and q purely in terms of tangent alpha, then eliminating tangent alpha between the two expressions algebraically, shows that tan squared alpha equals p divided by (p plus 2q). This was directly verified by substituting numeric values."
+    },
+    {
+      "number": 44,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let 2sinα + cosα = 2, where 0 < α < 90°.",
+        "What is tanα equal to?"
+      ],
+      "options": {
+        "A": "1/2",
+        "B": "1",
+        "C": "3/4",
+        "D": "2"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Solving the given equation for alpha within the stated range gives a specific acute angle whose sine and cosine correspond to a 3-4-5 right triangle. This makes tangent alpha equal to 3/4."
+    },
+    {
+      "number": 45,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let 2sinα + cosα = 2, where 0 < α < 90°.",
+        "What is 2sin2α + cos2α equal to?"
+      ],
+      "options": {
+        "A": "11/10",
+        "B": "11/5",
+        "C": "12/5",
+        "D": "13/5"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Using the 3-4-5 triangle values for sine and cosine of alpha found above, computing sine 2 alpha and cosine 2 alpha and combining them as instructed gives a value of 11/5."
+    },
+    {
+      "number": 46,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "In a triangle ABC, two sides BC and CA are in the ratio 2:1 and their opposite corresponding angles are in the ratio 3:1.",
+        "One of the angles of the triangle is"
+      ],
+      "options": {
+        "A": "15°",
+        "B": "30°",
+        "C": "45°",
+        "D": "75°"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Setting up the ratio of sides and angles using the law of sines and solving for the base angle shows the three angles of this triangle are 90, 60, and 30 degrees. Among the given options, 30 degrees is the one that matches."
+    },
+    {
+      "number": 47,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "In a triangle ABC, two sides BC and CA are in the ratio 2:1 and their opposite corresponding angles are in the ratio 3:1.",
+        "Consider the following statements:",
+        "I.The triangle is right-angled.\nII.One of the sides of the triangle is 3 times the other.\nIII.The angles A, C and B of the triangle are in AP.",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II and III only",
+        "C": "I and III only",
+        "D": "I, II and III"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "The triangle’s angles of 90, 60, and 30 degrees confirm it is indeed right-angled, matching the first statement. Those same three angles, taken in the order 90, 60, 30, decrease by a constant 30 degrees each time, confirming they are in arithmetic progression, but no side turns out to be exactly three times another, so the second statement fails."
+    },
+    {
+      "number": 48,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "A man at M, standing 100 m away from the base (P) of a chimney of height 50 m, observes the angle of elevation of the highest point (Q) of the smoke to be 45°. The highest point of the chimney is at R. Further P, R and Q are in a straight line and the straight line is perpendicular to PM. What is the angle RMQ equal to?"
+      ],
+      "options": {
+        "A": "tan^{-1}(1/2)",
+        "B": "tan^{-1}(1/3)",
+        "C": "tan^{-1}(2/3)",
+        "D": "tan^{-1}(3/4)"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "The angle of elevation to the smoke’s top from M is 45 degrees, and the angle to the chimney’s own top works out to the inverse tangent of one-half using the given heights and distance. Subtracting these two angles using the tangent-difference formula gives an angle of inverse tangent of one-third."
+    },
+    {
+      "number": 49,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "If k is a root of x^{2} – 4x + 1 = 0, then what is tan^{-1} k + tan^{-1}(1/k) equal to?"
+      ],
+      "options": {
+        "A": "-π/2",
+        "B": "0",
+        "C": "π/4",
+        "D": "π/2"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Both roots of this quadratic turn out to be positive real numbers. For any positive real number k, the inverse tangent of k plus the inverse tangent of its reciprocal always adds up to exactly pi over 2."
+    },
+    {
+      "number": 50,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "If tan^{-1} k + tan^{-1}(1/2) = π/4, then what is the value of k?"
+      ],
+      "options": {
+        "A": "1",
+        "B": "1/2",
+        "C": "1/3",
+        "D": "1/4"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Rearranging the given equation to isolate the inverse tangent of k, then taking the tangent of both sides and applying the tangent-difference formula, gives k equal to 1/3."
+    },
+    {
+      "number": 51,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "Under what condition will the lines m^{2}x + ny – 1 = 0 and n^{2}x – my + 2 = 0 be perpendicular?"
+      ],
+      "options": {
+        "A": "mn – 1 = 0",
+        "B": "mn + 1 = 0",
+        "C": "m + n = 0",
+        "D": "m – n = 0"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Two lines are perpendicular exactly when the product of their slopes equals -1. Writing out the slopes of both given lines and setting their product to -1 gives the condition mn=1, or equivalently mn-1=0."
+    },
+    {
+      "number": 52,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "If p and q are real numbers between 0 and 1 such that the points (p,1), (1,q) and (0,0) form an equilateral triangle, then what is (p+q) equal to?"
+      ],
+      "options": {
+        "A": "√2",
+        "B": "√2 – 1",
+        "C": "2 – √3",
+        "D": "4 – 2√3"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Setting all three pairwise distances between the given points equal to each other, since the triangle is equilateral, gives two possible solution pairs for p and q. Only one of these pairs actually keeps both p and q between 0 and 1, and for that pair, p+q comes out to 4 minus 2 times the square root of 3."
+    },
+    {
+      "number": 53,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "The vertices of a triangle are A(1,1), B(0,0) and C(2,0). The angular bisectors of the triangle meet at P. What are the coordinates of P?"
+      ],
+      "options": {
+        "A": "(1, √2 – 1)",
+        "B": "(1, √3 – 1)",
+        "C": "(1, 1/2)",
+        "D": "(1/2, √2 – 1)"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "The point where a triangle’s angle bisectors meet, the incenter, is a weighted average of the vertices using the opposite side lengths as weights. Computing the three side lengths and this weighted average directly gives the point (1, the square root of 2 minus 1)."
+    },
+    {
+      "number": 54,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "Let A(3,-1) and B(1,1) be the end points of line segment AB. Let P be the middle point of the line segment AB. Let Q be the point situated at a distance √2 units from P on the perpendicular bisector line of AB. What are the possible coordinates of Q?"
+      ],
+      "options": {
+        "A": "(2,1)",
+        "B": "(3,1)",
+        "C": "(2,2)",
+        "D": "(1,3)"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "The midpoint of A and B is the point (2,0), and the perpendicular bisector direction is found by rotating the direction of AB by 90 degrees. Moving the required distance from the midpoint along this perpendicular direction, in one of the two possible directions, lands exactly on the point (3,1)."
+    },
+    {
+      "number": 55,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "ABC is an equilateral triangle and AD is the altitude on BC. If the coordinates of A are (1,2) and that of D are (-2,6), then what is the equation of BC?"
+      ],
+      "options": {
+        "A": "3x+4y-18 = 0",
+        "B": "4x+3y-1 = 0",
+        "C": "4x-3y+26 = 0",
+        "D": "3x-4y+30 = 0"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Since AD is the altitude from an equilateral triangle’s vertex to the opposite side, BC must be perpendicular to AD and pass through point D. Building this perpendicular line through D using AD’s own direction as its normal vector gives the equation 3x minus 4y plus 30 equals 0."
+    },
+    {
+      "number": 56,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "What is the equation of the circle whose diameter is 10 cm and the equations of two of its diameters are x+y=0 and x-y=0?"
+      ],
+      "options": {
+        "A": "x^{2}+y^{2} = 1",
+        "B": "x^{2}+y^{2} = 25",
+        "C": "x^{2}+y^{2} = 100",
+        "D": "x^{2}+y^{2}-2x-2y-23 = 0"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "The two given diameters, being straight lines through the origin, confirm the circle’s centre sits at the origin. With a diameter of 10 cm, the radius is 5, giving the standard circle equation x squared plus y squared equals 25."
+    },
+    {
+      "number": 57,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "A square is inscribed in a circle x^{2}+y^{2}+2x+2y+1=0 and its sides are parallel to coordinate axes. Which one of the following is a vertex of the square?"
+      ],
+      "options": {
+        "A": "(-2,2)",
+        "B": "(-2,-2)",
+        "C": "(-1+1/√2, -1-1/√2)",
+        "D": "None of the above"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "The given circle has centre (-1,-1) and radius 1. For a square inscribed in this circle with sides parallel to the axes, each vertex sits at the centre shifted by the radius divided by the square root of 2 in each direction, giving a vertex at (-1 plus 1 over root 2, -1 minus 1 over root 2)."
+    },
+    {
+      "number": 58,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "A tangent to the parabola y^{2} = 4x is inclined at an angle 45° with the positive direction of x-axis. What is the point of contact of the tangent and the parabola?"
+      ],
+      "options": {
+        "A": "(1,1)",
+        "B": "(2, 2√2)",
+        "C": "(1/2, 1/√2)",
+        "D": "(1,2)"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "A tangent to this parabola at a 45-degree angle has a slope of 1. Using the standard formula for a parabola’s point of contact given a tangent’s slope, this works out to the point (1,2)."
+    },
+    {
+      "number": 59,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "What is the distance between the two foci of the hyperbola 25x^{2} – 75y^{2} = 225?"
+      ],
+      "options": {
+        "A": "2√3 units",
+        "B": "4√3 units",
+        "C": "√6 units",
+        "D": "2√6 units"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Rewriting the hyperbola equation in standard form shows a squared equals 9 and b squared equals 3. Since c squared equals a squared plus b squared for a hyperbola, the distance between the two foci, twice c, comes out to 4 times the square root of 3."
+    },
+    {
+      "number": 60,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "If any point on an ellipse is (3sinα, 5cosα), then what is the eccentricity of the ellipse?"
+      ],
+      "options": {
+        "A": "4/3",
+        "B": "4/5",
+        "C": "3/4",
+        "D": "1/2"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Since sine squared plus cosine squared always equals 1, this parametrisation directly gives the ellipse equation with semi-axes 3 and 5. Using the standard eccentricity formula with these semi-axis lengths gives an eccentricity of 4/5."
+    },
+    {
+      "number": 61,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "If a line in 3 dimensions makes angles α, β and γ with the positive directions of the coordinate axes, then what is cos(α+β)cos(α-β) equal to?"
+      ],
+      "options": {
+        "A": "cos^{2} γ",
+        "B": "-cos^{2} γ",
+        "C": "sin^{2} γ",
+        "D": "-sin^{2} γ"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Expanding this product using the standard product-to-sum identity gives cosine squared alpha minus sine squared beta. Substituting the direction-cosine relation that the three squared cosines sum to 1 shows this expression simplifies to negative cosine squared gamma."
+    },
+    {
+      "number": 62,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "A(1,2,-1), B(2,5,-2) and C(4,4,-3) are three vertices of a rectangle. What is the area of the rectangle?"
+      ],
+      "options": {
+        "A": "8 square units",
+        "B": "9 square units",
+        "C": "√66 square units",
+        "D": "√68 square units"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Computing the two adjacent side vectors of this rectangle from the given points confirms they are indeed perpendicular. Multiplying their two lengths together gives an area of the square root of 66."
+    },
+    {
+      "number": 63,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "ABC is a triangle right-angled at B. If A(k,1,-1), B(2k,0,2) and C(2+2k,k,1) are the vertices of the triangle, then what is the value of k?"
+      ],
+      "options": {
+        "A": "-3",
+        "B": "-1",
+        "C": "1",
+        "D": "3"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Setting the dot product of the two vectors from the right-angle vertex B to the other two vertices equal to zero, since the triangle is right-angled there, gives an equation purely in k. Solving it gives k=3."
+    },
+    {
+      "number": 64,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "If a line (x+1)/p = (y-1)/q = (z-2)/r where p=2q=3r, makes an angle θ with the positive direction of y-axis, then what is cos2θ equal to?"
+      ],
+      "options": {
+        "A": "-31/49",
+        "B": "-37/49",
+        "C": "31/49",
+        "D": "37/49"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Using the given proportional relationship between p, q, and r to pick concrete direction ratios, then computing the angle this line makes with the y-axis from its direction cosines, gives a cosine of that angle equal to 3/7. Doubling this angle using the cosine double-angle formula gives -37/49."
+    },
+    {
+      "number": 65,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "topicHint": "Coordinate Geometry",
+      "promptLines": [
+        "What is the equation of the plane passing through the point (1,1,1) and perpendicular to the line whose direction ratios are <3,2,1>?"
+      ],
+      "options": {
+        "A": "x+2y+3z = 6",
+        "B": "3x+2y+z = 6",
+        "C": "x+y+z = 3",
+        "D": "3x+2y+z = 0"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "A plane perpendicular to a given direction has that direction as its normal vector. Building the plane equation from this normal vector and the given point (1,1,1) gives 3x plus 2y plus z equals 6."
+    },
+    {
+      "number": 66,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "topicHint": "Vectors",
+      "promptLines": [
+        "A line makes angles α, β and γ with the positive directions of the coordinate axes. If a→ = (sin^{2} α)i + (sin^{2} β)j + (sin^{2} γ)k and b→ = i+j+k, then what is a→ · b→ equal to?"
+      ],
+      "options": {
+        "A": "-2",
+        "B": "-1",
+        "C": "1",
+        "D": "2"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Since the three squared sines of alpha, beta, and gamma each equal 1 minus the corresponding squared cosine, and the three squared cosines sum to 1 by the direction-cosine relation, the three squared sines must sum to 2. This sum is exactly what the dot product with the all-ones vector computes."
+    },
+    {
+      "number": 67,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "topicHint": "Vectors",
+      "promptLines": [
+        "Consider the following statements in respect of a vector d→ = (a→ × b→) × c→:",
+        "I.d→ is coplanar with a→ and b→.\nII.d→ is perpendicular to c→.",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Expanding this triple cross product using the standard vector identity shows it always comes out as a combination of only a and b, confirming it lies in their plane. Taking the dot product of this same expression with c always cancels out to zero, confirming it is also perpendicular to c."
+    },
+    {
+      "number": 68,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "topicHint": "Vectors",
+      "promptLines": [
+        "The position vectors of three points A, B and C are a→, b→ and c→ respectively such that 3·a→ – 4·b→ + c→ = 0. What is AB:BC equal to?"
+      ],
+      "options": {
+        "A": "3:1",
+        "B": "1:3",
+        "C": "3:4",
+        "D": "1:4"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Rearranging the given vector equation expresses c in terms of a and b, which shows the vector from B to C is exactly three times the vector from A to B. This means AB to BC is in the ratio 1 to 3."
+    },
+    {
+      "number": 69,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "topicHint": "Vectors",
+      "promptLines": [
+        "The position vectors of three points A, B and C are a→, b→ and c→ respectively, where c→ = (cos^{2} θ)a→ + (sin^{2} θ)b→. What is (a→ × b→) + (b→ × c→) + (c→ × a→) equal to?"
+      ],
+      "options": {
+        "A": "0 (zero vector)",
+        "B": "2·c→",
+        "C": "3·c→",
+        "D": "Unit vector"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Since c is written as a weighted average of a and b with weights that sum to 1, point C lies exactly on the line through A and B. Three points lying on the same line make this whole cyclic sum of cross products vanish to the zero vector."
+    },
+    {
+      "number": 70,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "topicHint": "Vectors",
+      "promptLines": [
+        "Let a→, b→, (a→ × b→) be unit vectors. What is (a→ · b→) equal to?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1/2",
+        "C": "1",
+        "D": "3"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "The magnitude of a cross product between two unit vectors equals the sine of the angle between them. For this cross product to itself be a unit vector, that sine must equal 1, meaning the angle is 90 degrees, which makes the dot product of a and b equal to 0."
+    },
+    {
+      "number": 71,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let x = secθ – cosθ and y = sec^{4} θ – cos^{4} θ.",
+        "What is (dy/dx)^{2} equal to?"
+      ],
+      "options": {
+        "A": "4y^{2}+4x^{2}+4",
+        "B": "4y^{2}-4x^{2}-4",
+        "C": "16y^{2}+4x^{2}+4",
+        "D": "16y^{2}-4x^{2}-4"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Differentiating both x and y with respect to theta and dividing gives an expression for dy/dx. Squaring it and comparing against x squared plus 4 and y squared plus 4 confirms the identity (x squared plus 4) times (dy/dx) squared equals 16 times (y squared plus 4)."
+    },
+    {
+      "number": 72,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let x = secθ – cosθ and y = sec^{4} θ – cos^{4} θ.",
+        "What is x^{2}+4y^{2}+4 · dy/dx · [(x^{2}+4) d^{2}y/dx^{2} – 16y] equal to?"
+      ],
+      "options": {
+        "A": "16x",
+        "B": "16y",
+        "C": "-16x",
+        "D": "-16y"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Differentiating the identity from the previous question with respect to x and simplifying isolates an expression for (x squared plus 4) times the second derivative, minus 16y. Substituting this back into the full expression given here, and using the same identity again, causes everything to collapse down to simply -16x."
+    },
+    {
+      "number": 73,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let ABC be a triangle right-angled at B and AB+AC = 3 units.",
+        "What is ∠A equal to if the area of the triangle is maximum?"
+      ],
+      "options": {
+        "A": "π/6",
+        "B": "π/4",
+        "C": "π/3",
+        "D": "5π/12"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Writing the triangle’s area as a function of angle A using the given constraint that AB plus AC equals 3, then maximizing this function with calculus, shows the maximum occurs when A equals 60 degrees, or pi over 3."
+    },
+    {
+      "number": 74,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let ABC be a triangle right-angled at B and AB+AC = 3 units.",
+        "What is the maximum area of the triangle?"
+      ],
+      "options": {
+        "A": "√3/2 square unit",
+        "B": "√3 square units",
+        "C": "√6/2 square units",
+        "D": "√6 square units"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Substituting this optimal angle back into the area formula gives a maximum area of the square root of 3, divided by 2."
+    },
+    {
+      "number": 75,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let (x+y)^{p+q} = x^{p} y^{q}, where p, q are positive integers.",
+        "The derivative of y with respect to x"
+      ],
+      "options": {
+        "A": "depends on p only",
+        "B": "depends on q only",
+        "C": "depends on both p and q",
+        "D": "is independent of both p and q"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Taking the logarithm of both sides of the given equation and differentiating implicitly shows that dy/dx simplifies to simply y divided by x. Since p and q both cancel out completely during this simplification, the derivative never depends on either of them."
+    },
+    {
+      "number": 76,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let (x+y)^{p+q} = x^{p} y^{q}, where p, q are positive integers.",
+        "If p+q = 10, then what is dy/dx equal to?"
+      ],
+      "options": {
+        "A": "y/x",
+        "B": "xy",
+        "C": "x^{10} y^{10}",
+        "D": "(y/x)^{10}"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "As shown above, dy/dx always equals y over x regardless of the specific values of p and q, including when their sum is 10."
+    },
+    {
+      "number": 77,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "The slope of the tangent to the curve y = f(x) at (x, f(x)) is 4 for every real number x and the curve passes through the origin.",
+        "What is the nature of the curve?"
+      ],
+      "options": {
+        "A": "A straight line passing through (1,4)",
+        "B": "A straight line passing through (-1,4)",
+        "C": "A parabola with vertex at origin and focus at (2,0)",
+        "D": "A parabola with vertex at origin and focus at (1,0)"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "A constant slope of 4 everywhere means the curve is a straight line, and passing through the origin with that slope means the line is y=4x. This line indeed passes through the point (1,4)."
+    },
+    {
+      "number": 78,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "The slope of the tangent to the curve y = f(x) at (x, f(x)) is 4 for every real number x and the curve passes through the origin.",
+        "What is the area bounded by the curve, the x-axis and the line x=4?"
+      ],
+      "options": {
+        "A": "8 square units",
+        "B": "16 square units",
+        "C": "32 square units",
+        "D": "64 square units"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Integrating the line y=4x from x=0 to x=4 gives the area of the triangular region under this line. Carrying out the integration gives an area of 32 square units."
+    },
+    {
+      "number": 79,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let f(x) = x^{3} for x^{2} < 1, and f(x) = x^{2} for x^{2} ≥ 1.",
+        "What is limx→0 f'(x) equal to?"
+      ],
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "0",
+        "D": "Limit does not exist"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "For x just below 1 in absolute value, the function is x cubed, whose derivative is 3x squared. As x approaches 0, this derivative approaches 0 as well."
+    },
+    {
+      "number": 80,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let f(x) = x^{3} for x^{2} < 1, and f(x) = x^{2} for x^{2} ≥ 1.",
+        "Consider the following statements:",
+        "I.The function is continuous at x = -1.\nII.The function is differentiable at x = 1.",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Checking the two function pieces at x=-1 shows they give different values approaching from each side, so the function is actually discontinuous there, making the first statement false. At x=1, the function is continuous, but its left and right derivatives differ, so it is not differentiable there either, making the second statement false too."
+    },
+    {
+      "number": 81,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let the function y = (1-cosx)^{-1}, where x ≠ 2nπ and n is an integer.",
+        "What is the range of the function?"
+      ],
+      "options": {
+        "A": "[0, ∞)",
+        "B": "[0.5, ∞)",
+        "C": "[1, ∞)",
+        "D": "(-∞, 0.5]"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Since 1 minus cosine x ranges from just above 0 up to a maximum of 2, taking the reciprocal flips this range to run from one-half up to infinity."
+    },
+    {
+      "number": 82,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let the function y = (1-cosx)^{-1}, where x ≠ 2nπ and n is an integer.",
+        "What is ∫y dx equal to?"
+      ],
+      "options": {
+        "A": "-tan(x/2) + c",
+        "B": "-cot(x/2) + c",
+        "C": "tan(x/2) + c",
+        "D": "cot(x/2) + c"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Rewriting 1 minus cosine x using the half-angle identity turns this integral into a standard cosecant-squared form. Integrating that standard form gives negative cotangent of x over 2, plus a constant."
+    },
+    {
+      "number": 83,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let the function f(x) = sin[x], where [·] is the greatest integer function and g(x) = |x|.",
+        "What is limx→0 {f(x)g(x)} equal to?"
+      ],
+      "options": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "Limit does not exist"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Approaching zero from the positive side, the floor of x is 0, making sine of that 0, so the product with |x| is 0. Approaching from the negative side, sine of the floor value is a fixed nonzero number, but multiplying by |x|, which still shrinks to 0, brings the whole product back down to 0 either way."
+    },
+    {
+      "number": 84,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let the function f(x) = sin[x], where [·] is the greatest integer function and g(x) = |x|.",
+        "What is limx→0 f(x)/g(x) equal to?"
+      ],
+      "options": {
+        "A": "-sin1",
+        "B": "sin1",
+        "C": "0",
+        "D": "Limit does not exist"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "From the positive side, the numerator is exactly 0 for all small positive x, making the ratio 0. From the negative side, the numerator is a fixed nonzero constant while the denominator shrinks to 0, sending the ratio off to negative infinity, so the two one-sided limits disagree and no overall limit exists."
+    },
+    {
+      "number": 85,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "topicHint": "Sets & Relations/Functions",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let the curve f(x) = |x-3|.",
+        "What is the domain of the function f(x)?"
+      ],
+      "options": {
+        "A": "(0, ∞)",
+        "B": "(3, ∞)",
+        "C": "(-∞, ∞)",
+        "D": "(-∞, ∞) {3}"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "The absolute value function |x-3| is defined and produces a real number for absolutely every real input x. This means its domain is the entire real number line."
+    },
+    {
+      "number": 86,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let the curve f(x) = |x-3|.",
+        "What is the area bounded by the curve f(x) and y=3?"
+      ],
+      "options": {
+        "A": "3 square units",
+        "B": "4.5 square units",
+        "C": "7.5 square units",
+        "D": "9 square units"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "The V-shaped curve |x-3| meets the horizontal line y=3 at x=0 and x=6. Integrating the vertical gap between the line and the curve across this whole interval gives an area of 9 square units."
+    },
+    {
+      "number": 87,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "topicHint": "Sets & Relations/Functions",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let f = {(1,1), (2,4), (3,7), (4,10)}.",
+        "If f(x) = px+q, then what is the value of (p+q)?"
+      ],
+      "options": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "5"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Using any two of the given points to set up and solve for the slope p and intercept q of this linear function gives p=3 and q=-2. Adding these two values together gives 1."
+    },
+    {
+      "number": 88,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "topicHint": "Sets & Relations/Functions",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let f = {(1,1), (2,4), (3,7), (4,10)}.",
+        "Consider the following statements:",
+        "I.f is one-one function.\nII.f is onto function if the codomain is the set of natural numbers.",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Every output value in this function’s list of pairs is distinct, confirming it genuinely is a one-one function. But since its actual outputs only cover four specific numbers rather than every natural number, it is not onto if the codomain is taken to be all natural numbers."
+    },
+    {
+      "number": 89,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let the function f(x) = x^{2} – 1.",
+        "What is limx→1 {f∘f(x)} equal to?"
+      ],
+      "options": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Since this function is a simple polynomial and therefore continuous everywhere, the limit of the composed function as x approaches 1 is just the composed function’s actual value there. Working out f of f of 1 directly gives -1."
+    },
+    {
+      "number": 90,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let the function f(x) = x^{2} – 1.",
+        "What is the area bounded by the function f(x) and the x-axis?"
+      ],
+      "options": {
+        "A": "1/3 square unit",
+        "B": "2/3 square unit",
+        "C": "4/3 square units",
+        "D": "2 square units"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "This downward-opening-between-roots parabola crosses the x-axis at x=-1 and x=1. Integrating the area between the curve and the x-axis across this interval gives 4/3 square units."
+    },
+    {
+      "number": 91,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "topicHint": "Trigonometry",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let y = sin^{-1}(x – 4x^{3}/27).",
+        "What is y equal to?"
+      ],
+      "options": {
+        "A": "sin^{-1} x",
+        "B": "sin^{-1}(x/3)",
+        "C": "3sin^{-1} x",
+        "D": "3sin^{-1}(x/3)"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "The expression inside the inverse sine matches exactly the triple-angle sine identity, with x written as 3 times sine of some angle. Recognising this pattern shows y simplifies directly to 3 times the inverse sine of x over 3."
+    },
+    {
+      "number": 92,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let y = sin^{-1}(x – 4x^{3}/27).",
+        "What is dy/dx equal to?"
+      ],
+      "options": {
+        "A": "1/√9-x^{2}",
+        "B": "1/√3-x^{2}",
+        "C": "3/√9-x^{2}",
+        "D": "9/√9-x^{2}"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Differentiating the simplified form of y found above using the chain rule on the inverse sine function gives a derivative of 3 divided by the square root of (9 minus x squared)."
+    },
+    {
+      "number": 93,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let the function f(x) = x^{2} + 9.",
+        "What is limx→0 √f(x) – 3√f(x)+7 – 4 equal to?"
+      ],
+      "options": {
+        "A": "2/3",
+        "B": "1",
+        "C": "4/3",
+        "D": "2"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Substituting the given function into this limit expression and evaluating it directly, since the function is continuous and the expression is well-defined at x=0, gives a value of 4/3."
+    },
+    {
+      "number": 94,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let the function f(x) = x^{2} + 9.",
+        "Consider the following statements:",
+        "I.f(x) is an increasing function.\nII.f(x) has local maximum at x = 0.",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Since this function’s derivative is negative for negative x, the function is not increasing across its entire domain, making the first statement false. Its derivative is actually zero with a positive second derivative at x=0, marking a local minimum rather than a maximum, making the second statement false too."
+    },
+    {
+      "number": 95,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "topicHint": "Sets & Relations/Functions",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "The function f(x) satisfies f(x/y) = f(x)/f(y) for all positive real values of x and y, and f(2) = 3.",
+        "What is f(16) equal to?"
+      ],
+      "options": {
+        "A": "18",
+        "B": "27",
+        "C": "54",
+        "D": "81"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "The given functional relationship forces f to be a power function of the form x raised to some fixed exponent. Using f(2)=3 to pin down that exponent and then evaluating at 16 gives f(16)=81."
+    },
+    {
+      "number": 96,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "topicHint": "Sets & Relations/Functions",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "The function f(x) satisfies f(x/y) = f(x)/f(y) for all positive real values of x and y, and f(2) = 3.",
+        "What is f(1)f(4) equal to?"
+      ],
+      "options": {
+        "A": "4",
+        "B": "8",
+        "C": "9",
+        "D": "18"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Using the same power-function form found above, multiplying the function’s values at 1 and at 4 together gives a combined result of 9."
+    },
+    {
+      "number": 97,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "topicHint": "Sets & Relations/Functions",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "A function f is such that f(xy) = f(x+y) for all real values of x and y, and f(5) = 10.",
+        "What is f(0) equal to?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "5",
+        "D": "10"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Setting one of the two input variables to zero in this functional equation shows f(x) must equal f(0) for every x, meaning f is actually a constant function. Since f(5) is given as 10, f(0) must also equal 10."
+    },
+    {
+      "number": 98,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "topicHint": "Sets & Relations/Functions",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "A function f is such that f(xy) = f(x+y) for all real values of x and y, and f(5) = 10.",
+        "What is f(20) + f(-20) equal to?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "10",
+        "C": "20",
+        "D": "40"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Since f is a constant function always equal to 10, evaluating it at both 20 and -20 gives 10 each time. Adding these two values together gives 20."
+    },
+    {
+      "number": 99,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let f(x) = [x^{2}], where [·] is the greatest integer function.",
+        "What is ∫_{√2}^{√3} f(x) dx equal to?"
+      ],
+      "options": {
+        "A": "√3 – √2",
+        "B": "2(√3 – √2)",
+        "C": "3 – √2",
+        "D": "1"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "For every x between the square root of 2 and the square root of 3, x squared stays between 2 and 3, so its floor value is constantly 2 throughout this interval. Integrating this constant value of 2 across the interval’s length gives 2 times (the square root of 3 minus the square root of 2)."
+    },
+    {
+      "number": 100,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "topicHint": "Calculus",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let f(x) = [x^{2}], where [·] is the greatest integer function.",
+        "What is ∫_{√2}^{2} f(x) dx equal to?"
+      ],
+      "options": {
+        "A": "6 – √3 – 2√2",
+        "B": "6 – √3 – √2",
+        "C": "6 – √3 + 2√2",
+        "D": "6 + √3 – 2√2"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Splitting this integral’s range into where x squared is between 2 and 3, giving a floor of 2, and where it’s between 3 and 4, giving a floor of 3, and integrating each piece separately and adding them together gives 6 minus the square root of 3, minus twice the square root of 2."
+    },
+    {
+      "number": 101,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Consider the following for the four (04) items that follow:",
+        "The frequency distribution of height of students of a class is given below:",
+        "[Height (in cm), Number of Students]\n[160-162, 12]\n[162-164, 15]\n[164-166, 24]\n[166-168, 13]",
+        "What is the total number of students whose height is less than or equal to 165 cm?"
+      ],
+      "options": {
+        "A": "15",
+        "B": "39",
+        "C": "51",
+        "D": "None of the above"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Adding the full counts of the first two height groups to half of the third group, since 165 cm sits exactly at the midpoint of that group under the assumption of an even spread, gives a running total of 39 students."
+    },
+    {
+      "number": 102,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Consider the following for the four (04) items that follow:",
+        "The frequency distribution of height of students of a class is given below:",
+        "[Height (in cm), Number of Students]\n[160-162, 12]\n[162-164, 15]\n[164-166, 24]\n[166-168, 13]",
+        "What is the median height of the class?"
+      ],
+      "options": {
+        "A": "162.41 cm",
+        "B": "163.41 cm",
+        "C": "164.41 cm",
+        "D": "165.41 cm"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "With 64 students total, the middle position falls partway into the 164-166 cm group. Applying the standard grouped-median formula using the cumulative count before this group gives a median height of about 164.41 cm."
+    },
+    {
+      "number": 103,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Consider the following for the four (04) items that follow:",
+        "The frequency distribution of height of students of a class is given below:",
+        "[Height (in cm), Number of Students]\n[160-162, 12]\n[162-164, 15]\n[164-166, 24]\n[166-168, 13]",
+        "The height which occurs most frequently in the class is"
+      ],
+      "options": {
+        "A": "163.5 cm",
+        "B": "163.9 cm",
+        "C": "164.5 cm",
+        "D": "164.9 cm"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "The most frequently occurring height group is 164-166 cm, since it has the highest count of 24 students. Applying the standard grouped-mode formula to this group gives a mode of about 164.9 cm."
+    },
+    {
+      "number": 104,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Consider the following for the four (04) items that follow:",
+        "The frequency distribution of height of students of a class is given below:",
+        "[Height (in cm), Number of Students]\n[160-162, 12]\n[162-164, 15]\n[164-166, 24]\n[166-168, 13]",
+        "The most appropriate graphical representation of the given frequency distribution is"
+      ],
+      "options": {
+        "A": "bar chart",
+        "B": "percentage bar chart",
+        "C": "histogram",
+        "D": "pie chart"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "A histogram is the standard graphical tool for displaying a continuous grouped frequency distribution like this one, since it represents each class interval as an adjoining bar reflecting both interval width and frequency."
+    },
+    {
+      "number": 105,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "The sum and the sum of squares of the observations corresponding to length X (in cm) and weight Y (in gm) of 50 tropical tubers are given as ΣX=200, ΣY=250, ΣX^{2}=900 and ΣY^{2}=1400.",
+        "Which one of the following is correct?"
+      ],
+      "options": {
+        "A": "Variance(X) > Variance(Y)",
+        "B": "Variance(X) < Variance(Y)",
+        "C": "Variance(X) = Variance(Y)",
+        "D": "Cannot be determined from the given data"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Using the given sums to compute each variable’s variance directly shows X’s variance comes out to 2, while Y’s comes out to 3. This confirms X’s variance is the smaller of the two."
+    },
+    {
+      "number": 106,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "The sum and the sum of squares of the observations corresponding to length X (in cm) and weight Y (in gm) of 50 tropical tubers are given as ΣX=200, ΣY=250, ΣX^{2}=900 and ΣY^{2}=1400.",
+        "Which one of the following statements is correct?"
+      ],
+      "options": {
+        "A": "Coefficient of variation of X is strictly more than coefficient of variation of Y.",
+        "B": "Coefficient of variation of X is strictly less than coefficient of variation of Y.",
+        "C": "Coefficient of variation of X is same as coefficient of variation of Y.",
+        "D": "Coefficient of variation cannot be determined from the given data."
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Dividing each variable’s standard deviation by its own mean and converting to a percentage gives X’s coefficient of variation as about 35.4% and Y’s as about 34.6%. This confirms X’s relative variability is genuinely the larger of the two."
+    },
+    {
+      "number": 107,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let X be a random variable following binomial distribution with parameters n=6 and p=k. Further, 9P(X=4) = P(X=2).",
+        "What is the value of k?"
+      ],
+      "options": {
+        "A": "1/2",
+        "B": "1/3",
+        "C": "1/4",
+        "D": "1/5"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Setting up the binomial probability formula for X equal to 4 and X equal to 2 and applying the given relationship between them leads to an equation in k. Solving it gives the non-trivial solution k=1/4."
+    },
+    {
+      "number": 108,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "Let X be a random variable following binomial distribution with parameters n=6 and p=k. Further, 9P(X=4) = P(X=2).",
+        "What is the value of P(X=3)?"
+      ],
+      "options": {
+        "A": "135/1024",
+        "B": "5/128",
+        "C": "45/1024",
+        "D": "70/1024"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Using the value of k found above in the binomial probability formula for exactly 3 successes out of 6 trials gives a probability of 135/1024."
+    },
+    {
+      "number": 109,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "A committee of 6 members is formed from a group of 7 gentlemen and 4 ladies.",
+        "What is the probability that the committee includes exactly 3 gentlemen?"
+      ],
+      "options": {
+        "A": "10/33",
+        "B": "30/77",
+        "C": "100/231",
+        "D": "5/11"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Counting the ways to choose exactly 3 gentlemen from 7 and 3 ladies from 4, then dividing by the total ways to choose any 6 people from all 11, gives a probability of 10/33."
+    },
+    {
+      "number": 110,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "A committee of 6 members is formed from a group of 7 gentlemen and 4 ladies.",
+        "What is the probability that the committee includes at least 2 ladies?"
+      ],
+      "options": {
+        "A": "41/66",
+        "B": "47/66",
+        "C": "49/66",
+        "D": "53/66"
+      },
+      "publisherAnswer": "D",
+      "publisherExplanation": "Adding up the ways to form a committee with 2, 3, or all 4 ladies, then dividing by the total number of possible committees, gives a probability of 53/66."
+    },
+    {
+      "number": 111,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "The probabilities that A, B and C become managers are 3/10, 1/2 and 4/5 respectively. The probabilities that bonus scheme will be introduced if A, B and C become managers are 4/9, 2/9 and 1/3 respectively.",
+        "What is the probability that the bonus scheme will be introduced?"
+      ],
+      "options": {
+        "A": "17/45",
+        "B": "19/45",
+        "C": "23/45",
+        "D": "26/45"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "Weighting each manager candidate’s own bonus-introduction probability by their chance of actually becoming manager, then adding these three weighted probabilities together, gives an overall probability of 23/45."
+    },
+    {
+      "number": 112,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Consider the following for the two (02) items that follow:",
+        "The probabilities that A, B and C become managers are 3/10, 1/2 and 4/5 respectively. The probabilities that bonus scheme will be introduced if A, B and C become managers are 4/9, 2/9 and 1/3 respectively.",
+        "If the bonus scheme has been introduced, then what is the probability that the manager appointed was B?"
+      ],
+      "options": {
+        "A": "5/23",
+        "B": "6/23",
+        "C": "7/23",
+        "D": "8/23"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Using Bayes’ theorem, dividing B’s individual weighted contribution to the bonus probability by the total bonus probability computed above gives a conditional probability of 5/23."
+    },
+    {
+      "number": 113,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "The arithmetic mean of 100 observations is 50. If 5 is subtracted from each observation and then divided by 20, then what is the new arithmetic mean?"
+      ],
+      "options": {
+        "A": "2.25",
+        "B": "3.5",
+        "C": "4.25",
+        "D": "5.5"
+      },
+      "publisherAnswer": "A",
+      "publisherExplanation": "Since both subtracting a constant and dividing by a constant apply directly and proportionally to the mean itself, the new mean is simply (50 minus 5) divided by 20, giving 2.25."
+    },
+    {
+      "number": 114,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "The standard deviation of 100 observations is 10. If 5 is added to each observation and then divided by 20, then what will be the new standard deviation?"
+      ],
+      "options": {
+        "A": "0.25",
+        "B": "0.5",
+        "C": "0.75",
+        "D": "1.00"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Adding a constant to every observation never changes the spread of the data, but dividing by a constant scales the standard deviation by that same factor. Dividing the original standard deviation of 10 by 20 gives a new standard deviation of 0.5."
+    },
+    {
+      "number": 115,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "If P(A) = 1/3, P(B) = 1/2 and P(A∩B) = 1/4, then what is the value of P(B|A^{c})?"
+      ],
+      "options": {
+        "A": "1/8",
+        "B": "3/8",
+        "C": "5/8",
+        "D": "7/8"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Using the given probabilities to find the probability that B occurs but A does not, then dividing by the probability that A does not occur at all, gives a conditional probability of 3/8."
+    },
+    {
+      "number": 116,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "If P(A) = 1/3, P(B) = 1/2 and P(A∩B) = 1/4, then what is the value of P(A^{c} ∩ B^{c})?"
+      ],
+      "options": {
+        "A": "1/4",
+        "B": "5/12",
+        "C": "7/12",
+        "D": "11/12"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "The probability that neither A nor B occurs is 1 minus the probability that at least one of them occurs. Computing this directly from the given values gives 5/12."
+    },
+    {
+      "number": 117,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "If two fair dice are tossed, then what is the probability that the sum of the numbers on the faces of the dice is strictly greater than 7?"
+      ],
+      "options": {
+        "A": "1/3",
+        "B": "5/12",
+        "C": "7/12",
+        "D": "3/4"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Counting the outcomes among all 36 equally likely dice-roll combinations where the two numbers add to more than 7 gives 15 favourable outcomes. Dividing by the total of 36 gives a probability of 5/12."
+    },
+    {
+      "number": 118,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "The probability of a man hitting a target is 1/5. If the man fires 7 times, then what is the probability that he hits the target at least twice?"
+      ],
+      "options": {
+        "A": "1 – (3/5)(4/5)^{6}",
+        "B": "1 – (3/5)(4/5)^{7}",
+        "C": "1 – (11/5)(4/5)^{6}",
+        "D": "1 – (11/5)(4/5)^{7}"
+      },
+      "publisherAnswer": "C",
+      "publisherExplanation": "The probability of hitting the target at least twice is 1 minus the probability of hitting it zero or exactly one time. Working out these two complementary binomial probabilities and combining them algebraically gives exactly this expression."
+    },
+    {
+      "number": 119,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "Let X be a random variable following binomial distribution whose mean and variance are 200 and 160 respectively. What is the value of the number of trials (n)?"
+      ],
+      "options": {
+        "A": "500",
+        "B": "1000",
+        "C": "1500",
+        "D": "2000"
+      },
+      "publisherAnswer": "B",
+      "publisherExplanation": "Dividing the given variance by the given mean reveals the probability of failure for each trial, which then gives the probability of success. Dividing the mean by this success probability gives a total of 1000 trials."
+    },
+    {
+      "number": 120,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "topicHint": "Probability & Statistics",
+      "promptLines": [
+        "What is the arithmetic mean of 8^{2}, 9^{2}, 10^{2}, …, 15^{2}?"
+      ],
+      "options": {
+        "A": "133.5",
+        "B": "135.5",
+        "C": "137.5",
+        "D": "139.5"
+      },
+      "publisherAnswer": null,
+      "publisherExplanation": null
+    }
+  ]
+}

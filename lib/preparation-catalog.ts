@@ -7,6 +7,7 @@ import officialNdaPlacements from '../content/nda-2026-i-preparation-placements.
 import officialNdaIIPlacements from '../content/nda-2026-ii-preparation-placements.json' with {type:'json'};
 import officialNdaIIMathematicsPlacements from '../content/nda-2026-ii-mathematics-preparation-placements.json' with {type:'json'};
 import officialNdaIMathematicsPlacements from '../content/nda-2026-i-mathematics-preparation-placements.json' with {type:'json'};
+import officialNda2025IMathematicsPlacements from '../content/nda-2025-i-mathematics-preparation-placements.json' with {type:'json'};
 import officialNda2017IPlacements from '../content/nda-2017-i-preparation-placements.json' with {type:'json'};
 import officialNda2016IPlacements from '../content/nda-2016-i-preparation-placements.json' with {type:'json'};
 import officialNda2016IIPlacements from '../content/nda-2016-ii-preparation-placements.json' with {type:'json'};
@@ -123,7 +124,7 @@ function buildPreparationInventory(target: PreparationExam): PreparationInventor
   // Future English/maths/CSAT imports need explicit reviewed concept placements.
   // A historic global "outside GS" decision is not silently removed or promoted.
   const questions = new Map(historicalPyqQuestions.map(q => [q.id, q]));
-  for (const row of [...applicability.approvedPlacements,...officialNdaPlacements,...officialNdaIIPlacements,...officialNdaIMathematicsPlacements,...officialNdaIIMathematicsPlacements,...officialNda2025IIPlacements,...officialNda2025IPlacements,...reviewedNda2024IIPlacements,...officialNda2024IPlacements,...officialNda2023IIPlacements,...officialNda2023IPlacements,...officialNda2022IIPlacements,...officialNda2022IPlacements,...officialNda2021IIPlacements,...officialNda2021IPlacements,...officialNda2020CombinedPlacements,...officialNda2019IIPlacements,...officialNda2019IPlacements,...officialNda2018IIPlacements,...officialNda2018IPlacements,...officialNda2017IIPlacements,...officialNda2017IPlacements,...officialNda2016IPlacements,...officialNda2016IIPlacements,...officialNda2015IIPlacements,...officialNda2015IPlacements,...officialNda2014IPlacements,...officialNda2014IIPlacements] as ReviewedPlacement[]) {
+  for (const row of [...officialNda2025IMathematicsPlacements,...applicability.approvedPlacements,...officialNdaPlacements,...officialNdaIIPlacements,...officialNdaIMathematicsPlacements,...officialNdaIIMathematicsPlacements,...officialNda2025IIPlacements,...officialNda2025IPlacements,...reviewedNda2024IIPlacements,...officialNda2024IPlacements,...officialNda2023IIPlacements,...officialNda2023IPlacements,...officialNda2022IIPlacements,...officialNda2022IPlacements,...officialNda2021IIPlacements,...officialNda2021IPlacements,...officialNda2020CombinedPlacements,...officialNda2019IIPlacements,...officialNda2019IPlacements,...officialNda2018IIPlacements,...officialNda2018IPlacements,...officialNda2017IIPlacements,...officialNda2017IPlacements,...officialNda2016IPlacements,...officialNda2016IIPlacements,...officialNda2015IIPlacements,...officialNda2015IPlacements,...officialNda2014IPlacements,...officialNda2014IIPlacements] as ReviewedPlacement[]) {
     if (row.target !== target || row.status !== 'approved' || !row.rationale.trim()) continue;
     const question = questions.get(row.questionId);
     const leaf = nodes.find(n => n.kind === 'subtopic' && n.id === row.subtopicId);
