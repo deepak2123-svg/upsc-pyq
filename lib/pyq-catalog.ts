@@ -324,7 +324,10 @@ export function getSubjectPracticeInventory(multiPlacement = true): SubjectPract
     links: [...links.values()].sort((a, b) => a.subjectId.localeCompare(b.subjectId) || a.source.localeCompare(b.source) || a.target.localeCompare(b.target)),
     legacyAliases: Object.fromEntries([...legacyAliases.entries()].sort(([a], [b]) => a.localeCompare(b)).map(([id, aliases]) => [id, [...aliases].sort()])),
     legacyQuestionSets,
-    questionYearsById: Object.fromEntries(pyqQuestions.map(question => [question.id, question.year])),
+    // Preparation inventories also project reviewed English and Mathematics PYQs
+    // which intentionally sit outside the GS-only catalogue. Year filtering must
+    // therefore cover the full historical bank, not only the GS subset.
+    questionYearsById: Object.fromEntries(historicalPyqQuestions.map(question => [question.id, question.year])),
   };
 }
 

@@ -7,7 +7,7 @@ import { PYQ_EXAMS, PYQ_EXAM_COLORS, type PyqExam } from "../../lib/pyq-exams";
 import type { PracticeInventoryNode, SubjectPracticeInventory } from "../../lib/pyq-catalog";
 import type { PracticeOrder, PracticeRecipeV3, PracticeRecipeV4, PracticeSnapshot } from "../../lib/practice-types";
 import { createLocalAttempt } from "../../lib/practice-store";
-import { addScope, ancestors, buildSelectionIndex, removeScope, restoreVersionedPaths, scopeDisplayNumber, selectedScopeIds, selectionCounts, selectionCountsByYears, setScopeExam, type SelectionPaths } from "../../lib/practice-selection";
+import { addScope, ancestors, buildSelectionIndex, defaultSources, removeScope, restoreVersionedPaths, scopeDisplayNumber, selectedScopeIds, selectionCounts, selectionCountsByYears, type SelectionPaths } from "../../lib/practice-selection";
 import {coalesceCoveredDraftScopes,freezeSelectionMembership,restoreFrozenSelection} from '../../lib/practice-draft-membership';
 import { ScopeFlow } from "./scope-flow";
 import { SyllabusNavigation } from "./syllabus-navigation";
@@ -143,17 +143,26 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       if (raw) {
         const draft = JSON.parse(raw);
         if (views?.some(view => view.id === draft.viewId)) {setViewId(draft.viewId);restoredViewId=draft.viewId;}
-        if ([3, 4, 5, 6].includes(draft.version) && (draft.inventoryVersion === initialInventory.version || draft.inventoryVersion === 3 && initialInventory.version === 4)) {
+        if ([3, 4, 5, 6, 7].includes(draft.version) && (draft.inventoryVersion === initialInventory.version || draft.inventoryVersion === 3 && initialInventory.version === 4)) {
           let savedPaths:SelectionPaths;
-          if(draft.version===6) {
+          if(draft.version>=6) {
             const frozen=restoreFrozenSelection(initialInventory,draft.paths,draft.frozenScopes);
-            setWorkingInventory(frozen.inventory);savedPaths=frozen.paths;
+            const frozenIndex=buildSelectionIndex(frozen.inventory);
+            savedPaths=Object.fromEntries(Object.keys(frozen.paths).flatMap(id=>{
+              const leaf=frozenIndex.nodesById.get(id);
+              return leaf?.kind==='subtopic'?[[id,defaultSources(leaf,preparationExam||initialExam)]]:[];
+            }));
+            setWorkingInventory(frozen.inventory);
             if(frozen.removedCount)setDraftWarning('Some saved questions are no longer eligible and were removed.');
           } else if(draft.taxonomyVersion===initialInventory.taxonomyVersion&&draft.taxonomyVersion&&Object.keys(draft.paths||{}).length) {
             savedPaths={};setDraftWarning('This older selection has no question-membership record. Re-add its parts to confirm the current questions.');
           } else savedPaths=restoreVersionedPaths(draft.paths,baseIndex,initialInventory.legacyAliases,initialInventory.legacyRestoreAliases||{},draft.taxonomyVersion!==initialInventory.taxonomyVersion);
           setPaths(savedPaths);
-          if (Array.isArray(draft.enabledExams)) setEnabledExams(PYQ_EXAMS.filter((exam) => draft.enabledExams.includes(exam) && (!initialExam || initialExam === exam)));
+          if(draft.version<7) {
+            const recovered=PYQ_EXAMS.filter(exam=>Object.values(savedPaths).some(exams=>exams.includes(exam))&&(!initialExam||initialExam===exam));
+            setEnabledExams(recovered);
+            setSelectedYearsByExam(Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,recovered.includes(exam)?[...availableYearsByExam[exam]]:[]])) as YearsByExam);
+          } else if (Array.isArray(draft.enabledExams)) setEnabledExams(PYQ_EXAMS.filter((exam) => draft.enabledExams.includes(exam) && (!initialExam || initialExam === exam)));
           else if (Object.keys(savedPaths).length) setEnabledExams(PYQ_EXAMS.filter((exam) => Object.values(savedPaths).some((exams) => exams.includes(exam))));
           const savedExpanded = Array.isArray(draft.expandedIds) ? draft.expandedIds.filter((id: unknown): id is string => typeof id === "string" && baseIndex.nodesById.has(id)) : [];
           setExpandedIds(savedExpanded);
@@ -165,7 +174,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
           }
           if (draft.version >= 4 && (draft.count === "all" || Number.isInteger(draft.count) && draft.count > 0 && draft.count <= 5000)) setCount(draft.count);
           if (draft.order === "newest" || draft.order === "shuffle") setOrder(draft.order);
-          if(draft.yearsByExam&&typeof draft.yearsByExam==="object")setSelectedYearsByExam(Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,availableYearsByExam[exam].filter(year=>Array.isArray(draft.yearsByExam[exam])&&draft.yearsByExam[exam].includes(year))])) as YearsByExam);
+          if(draft.version>=7&&draft.yearsByExam&&typeof draft.yearsByExam==="object")setSelectedYearsByExam(Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,availableYearsByExam[exam].filter(year=>Array.isArray(draft.yearsByExam[exam])&&draft.yearsByExam[exam].includes(year))])) as YearsByExam);
           if (Number.isInteger(draft.durationMinutes) && draft.durationMinutes >= 1 && draft.durationMinutes <= 720) {
             const savedMinutes = String(draft.durationMinutes);
             setDurationChoice(DURATIONS.some((minutes) => minutes === draft.durationMinutes) ? savedMinutes : "custom");
@@ -213,9 +222,10 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   useEffect(() => {
     if (!restored) return;
     const minutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
-    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 6, viewId, inventoryVersion: initialInventory.version, taxonomyVersion:initialInventory.taxonomyVersion, frozenScopes:frozenMembership, paths, focusId, expandedIds, enabledExams, yearsByExam:selectedYearsByExam, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
+    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 7, viewId, inventoryVersion: initialInventory.version, taxonomyVersion:initialInventory.taxonomyVersion, frozenScopes:frozenMembership, paths, focusId, expandedIds, enabledExams, yearsByExam:selectedYearsByExam, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
   }, [restored, draftKey, viewId, initialInventory.version, initialInventory.taxonomyVersion, frozenMembership, paths, focusId, expandedIds, enabledExams, selectedYearsByExam, count, order, durationChoice, customMinutes]);
-  const totals = useMemo(() => selectionCountsByYears(paths,index,workingInventory.questionYearsById,selectedYearsByExam), [paths,index,workingInventory.questionYearsById,selectedYearsByExam]);
+  const filteredPaths=useMemo(()=>Object.fromEntries(Object.entries(paths).map(([id,exams])=>[id,exams.filter(exam=>enabledExams.includes(exam))])),[paths,enabledExams]);
+  const totals = useMemo(() => selectionCountsByYears(filteredPaths,index,workingInventory.questionYearsById,selectedYearsByExam), [filteredPaths,index,workingInventory.questionYearsById,selectedYearsByExam]);
   const selectedIds = useMemo(() => selectedScopeIds(paths, index), [paths, index]);
   const current = focusId ? index.nodesById.get(focusId) : undefined;
   const activeView = (current && views?.find(view => view.subjectIds.includes(current.subjectId))) || views?.find(view => view.id === viewId) || views?.[0];
@@ -228,7 +238,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const focusPath = current ? ancestors(current.id, index) : [];
   const hasExplicitSelection = selectedIds.length > 0;
   const summaryPaths = paths;
-  const summaryTotals = useMemo(() => selectionCountsByYears(summaryPaths,index,workingInventory.questionYearsById,selectedYearsByExam), [summaryPaths,index,workingInventory.questionYearsById,selectedYearsByExam]);
+  const summaryTotals = useMemo(() => selectionCounts(summaryPaths,index), [summaryPaths,index]);
   const summaryActionLabel = "Finalise test →";
   const sourceLeaves = [...index.nodesById.values()].filter((node):node is PracticeInventoryNode => node.kind === "subtopic" && Object.hasOwn(summaryPaths, node.id));
   const matrixYears=[...new Set(PYQ_EXAMS.flatMap(exam=>availableYearsByExam[exam]))].sort((a,b)=>a-b);
@@ -240,10 +250,12 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   })) as Record<PyqExam,Record<number,number>>;
   const allSourceLeaves = [...index.nodesById.values()].filter((node) => node.kind === "subtopic" && Object.hasOwn(paths, node.id));
   const setupSourceMetrics = Object.fromEntries(PYQ_EXAMS.map((exam) => {
-    const eligible = allSourceLeaves.filter((leaf) => leaf.examCounts[exam] > 0);
-    const enabled = eligible.filter((leaf) => paths[leaf.id]?.includes(exam));
+    const eligible = allSourceLeaves.filter((leaf) => paths[leaf.id]?.includes(exam) && leaf.examCounts[exam] > 0);
+    const enabled = enabledExams.includes(exam) ? eligible : [];
     const available = selectionCounts(Object.fromEntries(eligible.map(leaf => [leaf.id, [exam]])), index).examTotals[exam];
-    return [exam, { available, count: totals.examTotals[exam], state: (enabled.length === 0 ? "none" : enabled.length === eligible.length ? "all" : "partial") as "none" | "partial" | "all" }];
+    const allYears=availableYearsByExam[exam];
+    const yearsComplete=allYears.length===selectedYearsByExam[exam].length&&allYears.every(year=>selectedYearsByExam[exam].includes(year));
+    return [exam, { available, count: totals.examTotals[exam], state: (enabled.length === 0 ? "none" : yearsComplete ? "all" : "partial") as "none" | "partial" | "all" }];
   })) as Record<PyqExam, { available: number; count: number; state: "none" | "partial" | "all" }>;
   const durationMinutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
   const validDuration = durationMinutes === null || Number.isInteger(durationMinutes) && durationMinutes >= 1 && durationMinutes <= 720;
@@ -255,7 +267,6 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     const enabled = !enabledExams.includes(exam);
     setEnabledExams((existing) => enabled ? [...existing, exam] : existing.filter((item) => item !== exam));
     setSelectedYearsByExam(existing=>({...existing,[exam]:enabled?[...availableYearsByExam[exam]]:[]}));
-    setPaths((existing) => Object.keys(existing).reduce((updated, id) => setScopeExam(updated, id, exam, enabled, index), existing));
     setError(""); setNotice("");
   }
   function setYearCell(exam:PyqExam,year:number,enabled:boolean){
@@ -265,7 +276,6 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       setEnabledExams(active=>years.length?[...new Set([...active,exam])]:active.filter(value=>value!==exam));
       return {...existing,[exam]:years};
     });
-    if(enabled&&!enabledExams.includes(exam))setPaths(existing=>Object.keys(existing).reduce((updated,id)=>setScopeExam(updated,id,exam,true,index),existing));
     setError("");setNotice("");
   }
   function toggleYearColumn(year:number){
@@ -277,7 +287,6 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
     const recent=mode==="five"?matrixYears.slice(-5):mode==="ten"?matrixYears.slice(-10):matrixYears;
     const next=Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,mode==="clear"||initialExam&&exam!==initialExam?[]:availableYearsByExam[exam].filter(year=>recent.includes(year))])) as YearsByExam;
     setSelectedYearsByExam(next);setEnabledExams(PYQ_EXAMS.filter(exam=>next[exam].length));
-    setPaths(existing=>Object.keys(existing).reduce((updated,id)=>PYQ_EXAMS.reduce((value,exam)=>setScopeExam(value,id,exam,next[exam].length>0,index),updated),existing));
     setError("");setNotice("");
   }
   function toggleSetupSource(exam: PyqExam) {
@@ -286,9 +295,12 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
   function addToTest(id: string) {
     if (loading || !restored) return;
+    const sources=[...new Set((index.leavesById.get(id)||[]).flatMap(leaf=>defaultSources(leaf,preparationExam||initialExam)))];
+    setEnabledExams(existing=>[...new Set([...existing,...sources])]);
+    setSelectedYearsByExam(existing=>Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,sources.includes(exam)?[...availableYearsByExam[exam]]:existing[exam]])) as YearsByExam);
     setPaths((existing) => {
-      const next = addScope(existing, id, index, initialExam);
-      return coalesceCoveredDraftScopes(Object.fromEntries(Object.entries(next).map(([leafId, exams]) => [leafId, Object.hasOwn(existing, leafId) ? exams : enabledExams.filter((exam) => index.nodesById.get(leafId)!.examCounts[exam] > 0)])),index);
+      const next = addScope(existing, id, index, preparationExam||initialExam);
+      return coalesceCoveredDraftScopes(next,index);
     });
     setError("");setDraftWarning(""); setNotice("Added to test.");
   }
@@ -343,7 +355,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
   async function createSnapshot() {
     if (count === null || practiceCount === null) return;
-    const enabledPaths=Object.fromEntries(Object.entries(paths).filter(([,exams])=>exams.length));
+    const enabledPaths=Object.fromEntries(Object.entries(filteredPaths).filter(([,exams])=>exams.length));
     const recipe: PracticeRecipeV3 | PracticeRecipeV4 = { version: initialInventory.version, ...(initialInventory.version===4?{taxonomyVersion:initialInventory.taxonomyVersion,frozenScopes:freezeSelectionMembership(enabledPaths,index),yearsByExam:selectedYearsByExam, ...(preparationExam ? {preparationExam} : {})}:{}), subjectIds: totals.subjectIds, paths: Object.entries(enabledPaths).map(([subtopicId, exams]) => ({ subtopicId, exams: [...exams] })), count, order, durationMinutes };
     const response = await fetch("/api/practice-snapshots", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(recipe) });
     const snapshot = await response.json() as PracticeSnapshot & { error?: string };
@@ -406,10 +418,9 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
             const node = index.nodesById.get(id)!;
             const context = ancestors(id, index).slice(0, -1).map((parent) => parent.label).join(" › ");
             const leaves = index.leavesById.get(id) || [];
-            const metric = selectionCountsByYears(Object.fromEntries(leaves.filter(leaf => Object.hasOwn(paths, leaf.id)).map(leaf => [leaf.id, paths[leaf.id]])),index,workingInventory.questionYearsById,selectedYearsByExam);
+            const metric = selectionCounts(Object.fromEntries(leaves.filter(leaf => Object.hasOwn(paths, leaf.id)).map(leaf => [leaf.id, paths[leaf.id]])),index);
             return <li key={id}><div><strong>{scopeDisplayNumber(id, index)} {node.label}</strong>{context ? <small className="test-item-path">{context}</small> : null}</div><div className="test-item-actions"><span>{format(metric.matchingCount)} MCQs</span><button type="button" disabled={loading} aria-label={`Remove ${node.label} from test`} onClick={() => remove(id)}>Remove</button></div></li>;
           })}</ul> : null}
-          {totals.subjectIds.length > 0 && totals.matchingCount === 0 ? <p className="scope-shortage">No questions match the enabled exam sources. Re-enable a source or choose another scope.</p> : null}
         </div>
         <div className="scope-dock-footer"><div className="scope-matching test-cart-total" data-testid="matching-count"><strong>{format(summaryTotals.matchingCount)}</strong><span>unique MCQs</span></div><button type="button" className="start-practice" disabled={!restored || summaryTotals.matchingCount === 0 || loading} onClick={openSetup}>{summaryActionLabel}</button>{draftWarning ? <p className="scope-shortage">{draftWarning}</p> : null}</div>
       </aside>

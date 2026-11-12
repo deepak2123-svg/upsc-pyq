@@ -1,7 +1,7 @@
 import {expect,test} from '@playwright/test';
 
 test('compact setup keeps sources explicit, validates timing and starts the selected online test',async({page})=>{
- await page.goto('/');
+ await page.goto('/library');
  const browser=page.locator('.scope-library-browser');
  await browser.getByRole('button',{name:'Add to test: Geography',exact:true}).click();
  await page.locator('.scope-test-summary').getByRole('button',{name:'Finalise test →',exact:true}).click();
