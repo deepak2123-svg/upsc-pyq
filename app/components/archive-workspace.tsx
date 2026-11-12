@@ -79,12 +79,12 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const [paths, setPaths] = useState<SelectionPaths>({});
   const [focusId, setFocusId] = useState<string>();
   const [expandedIds, setExpandedIds] = useState<string[]>([]);
-  const [enabledExams, setEnabledExams] = useState<PyqExam[]>(preparationExam ? [preparationExam] : initialExam ? [initialExam] : [...PYQ_EXAMS]);
+  const [enabledExams, setEnabledExams] = useState<PyqExam[]>(initialExam ? [initialExam] : [...PYQ_EXAMS]);
   const availableYearsByExam=useMemo(()=>Object.fromEntries(PYQ_EXAMS.map(exam=>{
     const ids=new Set(initialInventory.nodes.filter(node=>node.kind==="subtopic").flatMap(node=>node.questionIdsByExam?.[exam]||[]));
     return [exam,[...new Set([...ids].map(id=>initialInventory.questionYearsById[id]).filter(Number.isInteger))].sort((a,b)=>a-b)];
   })) as YearsByExam,[initialInventory]);
-  const [selectedYearsByExam,setSelectedYearsByExam]=useState<YearsByExam>(()=>Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,(!preparationExam&&!initialExam||exam===(preparationExam||initialExam))?[...availableYearsByExam[exam]]:[]])) as YearsByExam);
+  const [selectedYearsByExam,setSelectedYearsByExam]=useState<YearsByExam>(()=>Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,(!initialExam||exam===initialExam)?[...availableYearsByExam[exam]]:[]])) as YearsByExam);
   const [count, setCount] = useState<number | "all" | null>(null);
   const [order, setOrder] = useState<PracticeOrder>("newest");
   const [durationChoice, setDurationChoice] = useState("untimed");
@@ -143,22 +143,25 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
       if (raw) {
         const draft = JSON.parse(raw);
         if (views?.some(view => view.id === draft.viewId)) {setViewId(draft.viewId);restoredViewId=draft.viewId;}
-        if ([3, 4, 5, 6, 7].includes(draft.version) && (draft.inventoryVersion === initialInventory.version || draft.inventoryVersion === 3 && initialInventory.version === 4)) {
+        if ([3, 4, 5, 6, 7, 8].includes(draft.version) && (draft.inventoryVersion === initialInventory.version || draft.inventoryVersion === 3 && initialInventory.version === 4)) {
           let savedPaths:SelectionPaths;
           if(draft.version>=6) {
             const frozen=restoreFrozenSelection(initialInventory,draft.paths,draft.frozenScopes);
-            const frozenIndex=buildSelectionIndex(frozen.inventory);
-            savedPaths=Object.fromEntries(Object.keys(frozen.paths).flatMap(id=>{
-              const leaf=frozenIndex.nodesById.get(id);
-              return leaf?.kind==='subtopic'?[[id,defaultSources(leaf,preparationExam||initialExam)]]:[];
+            const upgradingExclusivePreparationDraft=draft.version<8&&Boolean(preparationExam);
+            const membershipInventory=upgradingExclusivePreparationDraft?initialInventory:frozen.inventory;
+            const membershipIndex=buildSelectionIndex(membershipInventory);
+            const membershipIds=upgradingExclusivePreparationDraft?Object.keys(draft.paths):Object.keys(frozen.paths);
+            savedPaths=Object.fromEntries(membershipIds.flatMap(id=>{
+              const leaf=membershipIndex.nodesById.get(id);
+              return leaf?.kind==='subtopic'?[[id,defaultSources(leaf,initialExam)]]:[];
             }));
-            setWorkingInventory(frozen.inventory);
-            if(frozen.removedCount)setDraftWarning('Some saved questions are no longer eligible and were removed.');
+            setWorkingInventory(membershipInventory);
+            if(!upgradingExclusivePreparationDraft&&frozen.removedCount)setDraftWarning('Some saved questions are no longer eligible and were removed.');
           } else if(draft.taxonomyVersion===initialInventory.taxonomyVersion&&draft.taxonomyVersion&&Object.keys(draft.paths||{}).length) {
             savedPaths={};setDraftWarning('This older selection has no question-membership record. Re-add its parts to confirm the current questions.');
           } else savedPaths=restoreVersionedPaths(draft.paths,baseIndex,initialInventory.legacyAliases,initialInventory.legacyRestoreAliases||{},draft.taxonomyVersion!==initialInventory.taxonomyVersion);
           setPaths(savedPaths);
-          if(draft.version<7) {
+          if(draft.version<8) {
             const recovered=PYQ_EXAMS.filter(exam=>Object.values(savedPaths).some(exams=>exams.includes(exam))&&(!initialExam||initialExam===exam));
             setEnabledExams(recovered);
             setSelectedYearsByExam(Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,recovered.includes(exam)?[...availableYearsByExam[exam]]:[]])) as YearsByExam);
@@ -174,7 +177,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
           }
           if (draft.version >= 4 && (draft.count === "all" || Number.isInteger(draft.count) && draft.count > 0 && draft.count <= 5000)) setCount(draft.count);
           if (draft.order === "newest" || draft.order === "shuffle") setOrder(draft.order);
-          if(draft.version>=7&&draft.yearsByExam&&typeof draft.yearsByExam==="object")setSelectedYearsByExam(Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,availableYearsByExam[exam].filter(year=>Array.isArray(draft.yearsByExam[exam])&&draft.yearsByExam[exam].includes(year))])) as YearsByExam);
+          if(draft.version>=8&&draft.yearsByExam&&typeof draft.yearsByExam==="object")setSelectedYearsByExam(Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,availableYearsByExam[exam].filter(year=>Array.isArray(draft.yearsByExam[exam])&&draft.yearsByExam[exam].includes(year))])) as YearsByExam);
           if (Number.isInteger(draft.durationMinutes) && draft.durationMinutes >= 1 && draft.durationMinutes <= 720) {
             const savedMinutes = String(draft.durationMinutes);
             setDurationChoice(DURATIONS.some((minutes) => minutes === draft.durationMinutes) ? savedMinutes : "custom");
@@ -222,7 +225,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   useEffect(() => {
     if (!restored) return;
     const minutes = durationChoice === "untimed" ? null : Number(durationChoice === "custom" ? customMinutes : durationChoice);
-    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 7, viewId, inventoryVersion: initialInventory.version, taxonomyVersion:initialInventory.taxonomyVersion, frozenScopes:frozenMembership, paths, focusId, expandedIds, enabledExams, yearsByExam:selectedYearsByExam, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
+    try { window.sessionStorage.setItem(draftKey, JSON.stringify({ version: 8, viewId, inventoryVersion: initialInventory.version, taxonomyVersion:initialInventory.taxonomyVersion, frozenScopes:frozenMembership, paths, focusId, expandedIds, enabledExams, yearsByExam:selectedYearsByExam, count, order, durationMinutes: Number.isInteger(minutes) && Number(minutes) >= 1 && Number(minutes) <= 720 ? minutes : null })); } catch { setDraftWarning("Your builder settings could not be saved. Returning to this page may reset them. Practice storage is checked before starting."); }
   }, [restored, draftKey, viewId, initialInventory.version, initialInventory.taxonomyVersion, frozenMembership, paths, focusId, expandedIds, enabledExams, selectedYearsByExam, count, order, durationChoice, customMinutes]);
   const filteredPaths=useMemo(()=>Object.fromEntries(Object.entries(paths).map(([id,exams])=>[id,exams.filter(exam=>enabledExams.includes(exam))])),[paths,enabledExams]);
   const totals = useMemo(() => selectionCountsByYears(filteredPaths,index,workingInventory.questionYearsById,selectedYearsByExam), [filteredPaths,index,workingInventory.questionYearsById,selectedYearsByExam]);
@@ -295,11 +298,11 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
   function addToTest(id: string) {
     if (loading || !restored) return;
-    const sources=[...new Set((index.leavesById.get(id)||[]).flatMap(leaf=>defaultSources(leaf,preparationExam||initialExam)))];
+    const sources=[...new Set((index.leavesById.get(id)||[]).flatMap(leaf=>defaultSources(leaf,initialExam)))];
     setEnabledExams(existing=>[...new Set([...existing,...sources])]);
     setSelectedYearsByExam(existing=>Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,sources.includes(exam)?[...availableYearsByExam[exam]]:existing[exam]])) as YearsByExam);
     setPaths((existing) => {
-      const next = addScope(existing, id, index, preparationExam||initialExam);
+      const next = addScope(existing, id, index, initialExam);
       return coalesceCoveredDraftScopes(next,index);
     });
     setError("");setDraftWarning(""); setNotice("Added to test.");

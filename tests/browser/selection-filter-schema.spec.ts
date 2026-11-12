@@ -76,3 +76,34 @@ test('adding a scope re-enables its real exam source and all available years',as
   await expect(dialog).toContainText(`${expected.toLocaleString('en-IN')} available MCQs`);
   await expect(dialog.locator('.compact-source').filter({hasText:'NDA'})).toHaveAttribute('aria-pressed','true');
 });
+
+test('NDA syllabus context keeps every paper source available for a shared topic',async({page,request})=>{
+  const inventory=await (await request.get('/api/pyqs/inventory?preparationExam=NDA')).json();
+  const leaf=inventory.nodes.find((node:Node)=>node.kind==='subtopic'&&node.label==='Climate negotiations');
+  expect(leaf).toBeTruthy();
+  const sourceCounts=Object.fromEntries((['CSE','CAPF','CDS','NDA'] as Exam[]).map(exam=>[exam,new Set(leaf.questionIdsByExam?.[exam]||[]).size]));
+  expect(sourceCounts.CSE).toBeGreaterThan(0);
+  expect(sourceCounts.CAPF).toBeGreaterThan(0);
+  expect(sourceCounts.NDA).toBeGreaterThan(0);
+  const expected=Object.values(sourceCounts).reduce((sum,count)=>sum+count,0);
+
+  await page.goto('/prepare/NDA');
+  await page.evaluate(({inventory,leaf})=>sessionStorage.setItem('upsc-pyq-builder:preparation-v1:NDA',JSON.stringify({
+    version:7,inventoryVersion:inventory.version,taxonomyVersion:inventory.taxonomyVersion,
+    paths:{[leaf.id]:['NDA']},frozenScopes:[{
+      id:leaf.id,subjectId:leaf.subjectId,label:leaf.label,parentId:leaf.parentId,order:leaf.order,
+      questionIdsByExam:{CSE:[],CAPF:[],CDS:[],NDA:leaf.questionIdsByExam.NDA},
+    }],
+    focusId:leaf.id,enabledExams:['NDA'],yearsByExam:{CSE:[],CAPF:[],CDS:[],NDA:Object.values(inventory.questionYearsById)},count:'all',order:'newest',
+  })),{inventory,leaf});
+  await page.reload();
+
+  await expect(page.getByTestId('matching-count').locator('strong')).toHaveText(expected.toLocaleString('en-IN'));
+  await page.locator('.scope-dock').getByRole('button',{name:'Finalise test →',exact:true}).click();
+  const dialog=page.getByRole('dialog',{name:'Finalise test',exact:true});
+  for(const exam of ['CSE','CAPF','NDA']) {
+    const source=dialog.locator('.compact-source').filter({hasText:exam});
+    await expect(source).toBeEnabled();
+    await expect(source).toHaveAttribute('aria-pressed','true');
+  }
+});
