@@ -101,6 +101,7 @@ test('NDA syllabus context keeps every paper source available for a shared topic
   await expect(page.getByTestId('matching-count').locator('strong')).toHaveText(expected.toLocaleString('en-IN'));
   await page.locator('.scope-dock').getByRole('button',{name:'Finalise test →',exact:true}).click();
   const dialog=page.getByRole('dialog',{name:'Finalise test',exact:true});
+  await expect(dialog.getByLabel('Selected topics')).toContainText('Climate negotiations');
   for(const exam of ['CSE','CAPF','NDA']) {
     const source=dialog.locator('.compact-source').filter({hasText:exam});
     await expect(source).toBeEnabled();

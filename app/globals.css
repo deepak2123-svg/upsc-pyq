@@ -1846,6 +1846,9 @@ h3 { font-size: 16px; }
 .compact-setup-heading { display: flex; gap: 12px; align-items: center; margin-bottom: 20px; }
 .compact-setup .compact-setup-heading h2 { font-size: 23px; margin: 0 0 4px; }
 .compact-setup .compact-setup-heading p { margin: 0; font-size: 13px; }
+.compact-selected-topics { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin-top: 8px; font-size: 11px; }
+.compact-selected-topics > span { color: var(--muted); }
+.compact-selected-topics strong { max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 4px 7px; border-radius: 999px; background: #eef2ff; color: var(--accent); font-weight: 650; }
 .compact-setup-back { width: 36px; height: 36px; background: white; border: 1px solid var(--line); border-radius: 10px; font-size: 20px; }
 .compact-methods { display: flex; padding: 4px; background: #f0f2f7; border-radius: 10px; margin-bottom: 22px; }
 .compact-methods button { flex: 1; border: 0; background: transparent; color: var(--muted); padding: 9px; border-radius: 7px; font: inherit; font-size: 13px; }

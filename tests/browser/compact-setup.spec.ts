@@ -7,6 +7,7 @@ test('compact setup keeps sources explicit, validates timing and starts the sele
  await page.locator('.scope-test-summary').getByRole('button',{name:'Finalise test →',exact:true}).click();
  const dialog=page.getByRole('dialog',{name:'Finalise test',exact:true});
  await expect(dialog).toBeVisible();
+ await expect(dialog.getByLabel('Selected topics')).toContainText('Geography');
  expect((await dialog.boundingBox())!.width).toBeLessThanOrEqual(521);
  const sources=dialog.locator('.compact-source');
  await expect(sources).toHaveCount(4);
