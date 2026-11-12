@@ -82,8 +82,9 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, visibleSub
   }, [focus, index, inventory.subjects, visibleSubjectIds]);
 
   const subjectLabel = focus ? index.nodesById.get(focus.subjectId)?.label || "this subject" : "UPSC";
+  const isNdaScience = inventory.preparationExam === "NDA" && focus?.subjectId === "subject:science";
   const nextKind = cards[0]?.kind || focus?.kind || "subject";
-  const nextLevel = levelNames[nextKind];
+  const nextLevel = isNdaScience && nextKind === "subtopic" ? "topic" : levelNames[nextKind];
   const pluralLevel = `${nextLevel}${nextLevel === "subpart" ? "s" : "s"}`;
   const heading = pluralLevel.charAt(0).toUpperCase() + pluralLevel.slice(1);
   const focusState = focus ? scopeMetrics(focus.id, paths, index).state : "none";
@@ -103,6 +104,7 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, visibleSub
         {focus ? <small>{scopeDisplayNumber(focus.id, index)}</small> : null}
         <h3>{focus?.label || "Subjects"}</h3>
         {focus ? <span>{number(preferredExam ? focus.examCounts[preferredExam] : focus.questionCount)} MCQs</span> : null}
+        {isNdaScience ? <p>NCERT-style chapter order · class labels omitted</p> : null}
       </div>
       <div className="scope-card-exam-key" aria-label="Exam source colours">
         {(preferredExam ? [preferredExam] : PYQ_EXAMS).map((exam) => <span key={exam}><i style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} />{exam}</span>)}

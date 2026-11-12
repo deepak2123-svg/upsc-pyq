@@ -42,6 +42,7 @@ export function SyllabusNavigation({
   const expanded = new Set(expandedIds);
   const subject = focusPath.find((node) => node.kind === "subject");
   const section = focusPath.find((node) => node.kind === "head");
+  const isNdaScience = subject?.id === "subject:science" && Boolean(section && (index.childrenById.get(section.id) || []).some((node) => node.id.startsWith("topic:science:")));
   const subjects = [...index.nodesById.values()]
     .filter((node) => node.kind === "subject" && !node.legacyOnly && (!visibleSubjectIds || visibleSubjectIds.includes(node.id)));
 
@@ -89,6 +90,6 @@ export function SyllabusNavigation({
       <ul className="syllabus-sections">{(index.childrenById.get(subject.id) || []).filter((node) => subject.legacyOnly||!node.legacyOnly).map((node) => <li key={node.id}><button type="button" disabled={disabled} aria-label={node.label} aria-current={node.id === activeId ? "location" : undefined} data-active={section?.id === node.id} onClick={() => onBrowse(node.id)}><span>{node.kind === "head" && subject.label === "Mathematics" ? `${scopeDisplayNumber(node.id,index)} · ` : node.kind === "head" && subject.label === "Geography" ? `${node.order}. ` : null}{node.label}</span><small>{format(nodeCount(node, preferredExam))}</small></button></li>)}</ul>
     </> : <ul className="syllabus-sections">{subjects.map((node) => <li key={node.id}><button type="button" disabled={disabled} aria-label={node.label} onClick={() => onBrowse(node.id)}><strong>{node.label}</strong><small>{format(nodeCount(node, preferredExam))}</small></button></li>)}</ul>}
     </section>
-    {section ? <section className="syllabus-chapters-panel" aria-labelledby="syllabus-chapters-title"><header><small>{section.label}</small><h3 id="syllabus-chapters-title">Chapters & subchapters</h3></header><ul className="scope-syllabus-tree">{(index.childrenById.get(section.id) || []).filter((node) => section.legacyOnly||!node.legacyOnly).map((node) => renderNode(node, 0))}</ul></section> : null}
+    {section ? <section className="syllabus-chapters-panel" aria-labelledby="syllabus-chapters-title"><header><small>{section.label}</small><h3 id="syllabus-chapters-title">{isNdaScience ? "NCERT-style chapters & topics" : "Chapters & subchapters"}</h3>{isNdaScience ? <p>Arranged for progressive study without class labels.</p> : null}</header><ul className="scope-syllabus-tree">{(index.childrenById.get(section.id) || []).filter((node) => section.legacyOnly||!node.legacyOnly).map((node) => renderNode(node, 0))}</ul></section> : null}
   </nav>;
 }

@@ -1675,6 +1675,7 @@ h3 { font-size: 16px; }
 .syllabus-chapters-panel > header { padding: 5px 5px 12px; border-bottom: 1px solid var(--line); }
 .syllabus-chapters-panel header small { color: var(--accent); font-size: 10px; }
 .syllabus-chapters-panel h3 { font-size: 14px; margin: 5px 0 0; }
+.syllabus-chapters-panel header p { margin: 5px 0 0; color: var(--muted); font-size: 11px; line-height: 1.45; }
 .syllabus-chapters-panel .scope-syllabus-tree > li + li { border-top: 1px solid #eef0f4; }
 .syllabus-chapters-panel .scope-syllabus-tree ul { margin-left: 18px; padding-left: 5px; border-left: 1px solid #ccd7ed; }
 .explorer-layout .syllabus-chapters-panel .scope-syllabus-row { padding-left: 0; }
