@@ -7,7 +7,9 @@ type Props={exam?:PreparationExam;views?:PreparationView[];activeView?:Preparati
 
 /** Presentation state is independent of the saved exam, cart and syllabus view. */
 export function PreparationSelector({exam,views,activeView,pendingExam,onPrefetchExam,disabled,onExam,onView}:Props){
- const [expanded,setExpanded]=useState(true);
+ // A resolved exam + paper is the selector's resting state. Keep the large
+ // editor for first-time/incomplete choices, then return to the compact path.
+ const [expanded,setExpanded]=useState(()=>!exam||!activeView);
  const shell=useRef<HTMLDivElement>(null),editor=useRef<HTMLDivElement>(null),summary=useRef<HTMLButtonElement>(null);
  const before=useRef<DOMRect|null>(null);
  const editorId=useId();
@@ -58,7 +60,7 @@ export function PreparationSelector({exam,views,activeView,pendingExam,onPrefetc
     <span className="preparation-change">Change <span className="preparation-chevron" aria-hidden="true"/></span>
    </button>
    <div className="preparation-selector-options" ref={editor} id={editorId} hidden={!expanded} inert={!expanded}>
-    <div className="preparation-choice-row"><span className="preparation-choice-label">Preparing for</span><div role="group" aria-label="Preparing for">{PREPARATION_EXAMS.map(target=><button type="button" key={target} disabled={disabled} aria-pressed={(pendingExam||exam)===target} onPointerEnter={()=>onPrefetchExam?.(target)} onFocus={()=>onPrefetchExam?.(target)} onClick={()=>{if(target!==exam)onExam(target);}}>UPSC {target}</button>)}</div></div>
+    <div className="preparation-choice-row"><span className="preparation-choice-label">Preparing for</span><div role="group" aria-label="Preparing for">{PREPARATION_EXAMS.map(target=><button type="button" key={target} disabled={disabled} aria-pressed={(pendingExam||exam)===target} onPointerEnter={()=>onPrefetchExam?.(target)} onFocus={()=>onPrefetchExam?.(target)} onClick={()=>{if(target!==exam)onExam(target);else if(activeView)toggle(false);}}>UPSC {target}</button>)}</div></div>
     {pendingExam?<small role="status">Switching to UPSC {pendingExam}…</small>:null}
     {views?<div className="preparation-choice-row preparation-choice-divider"><span className="preparation-choice-label">Paper</span><div role="group" aria-label="Paper">{[...new Set(views.map(view=>view.paper))].map(paper=><button type="button" key={paper} disabled={disabled} aria-pressed={activeView?.paper===paper} onClick={()=>{
      const view=views.find(item=>item.paper===paper)!;
