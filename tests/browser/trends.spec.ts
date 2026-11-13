@@ -10,6 +10,12 @@ test('PYQ trends filters exam, paper, year and term from real catalogue data',as
  await expect(page.getByRole('heading',{name:'NDA · GAT · Science'})).toBeVisible();
  await page.getByRole('button',{name:'GS',exact:true}).click();
  await expect(page.getByRole('heading',{name:'NDA · GAT · GS'})).toBeVisible();
+ await expect(page.getByRole('group',{name:'Main topics'})).toBeVisible();
+ const mainTopic=page.getByRole('group',{name:'Main topics'}).getByRole('button').first();
+ await mainTopic.click();
+ await expect(page.getByRole('group',{name:/subdivisions/})).toBeVisible();
+ const subdivision=page.getByRole('group',{name:/subdivisions/}).getByRole('button').first();
+ await subdivision.click();
  const table=page.getByRole('table');
  await expect(table).toBeVisible();
  await expect(table.locator('thead')).toContainText('I');await expect(table.locator('thead')).toContainText('II');
