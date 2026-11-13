@@ -475,3 +475,38 @@
 @media(max-width:640px) { .preparation-selector-options { padding:13px; } .preparation-choice-row { gap:7px; } .preparation-choice-label { width:100%; } .preparation-choice-row [aria-label="Preparing for"] { width:100%; } .preparation-choice-row [aria-label="Preparing for"] button { flex:1; padding:8px; } .preparation-selection { gap:12px; padding:12px 13px; } .preparation-selection-path { gap:5px; } }
 @media(pointer:coarse) { .preparation-navigation button { min-height:44px; } }
 @media(prefers-reduced-motion:reduce) { .preparation-choice-row button { transition:none; } }
+
+/* Historical topic-frequency workspace. */
+.trends-page { width:min(1760px,calc(100% - 48px)); margin:0 auto; padding:52px 0 80px; color:var(--ink); }
+.trends-hero { max-width:840px; }
+.trends-hero h1 { margin:8px 0 10px; font-size:clamp(42px,5vw,72px); letter-spacing:-.055em; }
+.trends-hero>p:last-child { margin:0; color:var(--muted); font-size:18px; line-height:1.55; }
+.trends-controls { display:grid; grid-template-columns:1fr 1.35fr .8fr; gap:14px; margin:34px 0 18px; padding:18px; border:1px solid var(--line); border-radius:18px; background:var(--surface); }
+.trends-controls fieldset { min-width:0; margin:0; padding:0; border:0; }
+.trends-controls legend { margin-bottom:9px; color:var(--muted); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; }
+.trends-controls fieldset>div { display:flex; flex-wrap:wrap; gap:7px; }
+.trends-controls button { min-height:40px; padding:8px 13px; border:1px solid var(--line); border-radius:9px; background:var(--surface); color:var(--muted); font-weight:600; }
+.trends-controls button[aria-pressed="true"] { border-color:color-mix(in srgb,var(--trend-color,var(--accent)) 42%,var(--line)); background:color-mix(in srgb,var(--trend-color,var(--accent)) 9%,white); color:var(--trend-color,var(--accent)); }
+.trends-summary { display:grid; grid-template-columns:minmax(300px,2fr) repeat(3,minmax(120px,.55fr)); overflow:hidden; border:1px solid var(--line); border-radius:18px; background:var(--surface); }
+.trends-summary>div { display:flex; flex-direction:column; justify-content:center; min-height:112px; padding:20px 24px; border-left:1px solid var(--line); }
+.trends-summary>div:first-child { border-left:0; }
+.trends-summary p,.trends-summary span { margin:0; color:var(--muted); font-size:13px; }
+.trends-summary h2 { margin:5px 0; font-size:22px; }
+.trends-summary strong { font-size:30px; }
+.trends-table-section { margin-top:40px; }
+.trends-section-heading h2 { margin:0 0 6px; font-size:28px; }
+.trends-section-heading p { margin:0 0 18px; color:var(--muted); }
+.trends-table-scroll { overflow:auto; max-height:70vh; border:1px solid var(--line); border-radius:18px; background:var(--surface); }
+.trends-table { width:100%; min-width:1100px; border-collapse:separate; border-spacing:0; font-size:13px; }
+.trends-table th,.trends-table td { padding:11px 12px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); text-align:center; }
+.trends-table thead th { position:sticky; top:0; z-index:2; background:var(--paper); color:var(--muted); font-size:12px; }
+.trends-table thead tr:nth-child(2) th { top:39px; }
+.trends-table thead tr:first-child>th:first-child,.trends-table tbody>tr>th:first-child { position:sticky; left:0; z-index:3; min-width:310px; text-align:left; }
+.trends-table tbody th { background:var(--surface); }
+.trends-table tbody th span,.trends-table tbody th strong,.trends-table tbody th a { display:block; }
+.trends-table tbody th span { color:var(--muted); font-size:11px; font-weight:500; }
+.trends-table tbody th strong { margin:4px 0; font-size:14px; }
+.trends-table tbody th a { width:max-content; color:var(--accent); font-size:11px; text-decoration:none; }
+.trends-table td.has-count { background:color-mix(in srgb,var(--accent) calc(var(--heat) * 42%),white); color:var(--ink); font-weight:700; }
+.trends-empty { padding:36px; border:1px solid var(--line); border-radius:16px; color:var(--muted); background:var(--surface); }
+@media(max-width:900px){.trends-page{width:min(100% - 24px,1760px);padding-top:28px}.trends-controls{grid-template-columns:1fr}.trends-summary{grid-template-columns:1fr 1fr}.trends-summary>div:nth-child(3){border-left:0}.trends-summary>div{min-height:92px}.trends-hero>p:last-child{font-size:16px}}
