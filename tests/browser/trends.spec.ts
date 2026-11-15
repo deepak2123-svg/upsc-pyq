@@ -42,7 +42,7 @@ test('PYQ trends filters exam, paper, year and term from real catalogue data',as
  await expect(page.getByRole('heading',{name:'CSE · GS Paper I'})).toBeVisible();
  expect(await table.locator('tbody tr').count()).toBeGreaterThan(1);
  await expect(table.locator('thead')).toContainText('Questions');
- await expect(table.getByRole('link',{name:'Open in library →'}).first()).toBeVisible();
+ await expect(table.getByRole('link',{name:'Open in library →'})).toHaveCount(0);
  await page.getByRole('button',{name:'GS Paper II / CSAT',exact:true}).click();
  await expect(page.getByRole('heading',{name:'CSE · GS Paper II / CSAT'})).toBeVisible();
  await expect(page.getByText('No official CSE GS Paper II / CSAT questions have been imported yet.')).toBeVisible();
