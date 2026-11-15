@@ -25,7 +25,7 @@ const viewsByExam:Record<PreparationExam,PreparationView[]>={
 };
 const ranges=[5,10,0] as const;
 const format=(value:number)=>new Intl.NumberFormat('en-IN').format(value);
-type TrendRow={subject:string;topic:string;subtopic:string;taxonomyId?:string|null;cells:Record<string,number>;total:number;recent:number};
+type TrendRow={component:string;subject:string;topic:string;subtopic:string;taxonomyId?:string|null;cells:Record<string,number>;total:number;recent:number};
 
 export function TrendsWorkspace({questions}:{questions:TrendQuestion[]}){
  const [exam,setExam]=useState<PreparationExam>('NDA');
@@ -41,8 +41,8 @@ export function TrendsWorkspace({questions}:{questions:TrendQuestion[]}){
   const allowed=new Set(years),map=new Map<string,TrendRow>();
   for(const q of available){
    if(!allowed.has(q.year))continue;
-   const key=`${q.subject}\u0000${q.topic}\u0000${q.subtopic}`;
-   const row=map.get(key)||{subject:q.subject,topic:q.topic,subtopic:q.subtopic,taxonomyId:q.taxonomyId,cells:{},total:0,recent:0};
+   const key=`${q.component}\u0000${q.subject}\u0000${q.topic}\u0000${q.subtopic}`;
+   const row=map.get(key)||{component:q.component,subject:q.subject,topic:q.topic,subtopic:q.subtopic,taxonomyId:q.taxonomyId,cells:{},total:0,recent:0};
    const cell=`${q.year}:${q.term}`;row.cells[cell]=(row.cells[cell]||0)+q.count;row.total+=q.count;
    if(q.year>=Math.max(...years)-4)row.recent+=q.count;
    map.set(key,row);
@@ -52,11 +52,11 @@ export function TrendsWorkspace({questions}:{questions:TrendQuestion[]}){
  const componentRows=useMemo(()=>{
   const map=new Map<string,TrendRow>();
   for(const row of rows){
-   const component=map.get(row.subject)||{subject:row.subject,topic:'',subtopic:'',cells:{},total:0,recent:0};
+   const component=map.get(row.component)||{component:row.component,subject:row.subject,topic:'',subtopic:'',cells:{},total:0,recent:0};
    for(const [cell,count] of Object.entries(row.cells))component.cells[cell]=(component.cells[cell]||0)+count;
-   component.total+=row.total;component.recent+=row.recent;map.set(row.subject,component);
+   component.total+=row.total;component.recent+=row.recent;map.set(row.component,component);
   }
-  return [...map.values()].sort((a,b)=>b.total-a.total||a.subject.localeCompare(b.subject));
+  return [...map.values()].sort((a,b)=>b.total-a.total||a.component.localeCompare(b.component));
  },[rows]);
  const maxCell=Math.max(1,...componentRows.flatMap(row=>Object.values(row.cells)));
  function chooseExam(next:PreparationExam){setExam(next);setActiveView(viewsByExam[next][0]);}
@@ -65,7 +65,7 @@ export function TrendsWorkspace({questions}:{questions:TrendQuestion[]}){
   <div className="trends-range" role="group" aria-label="Years">{ranges.map(value=><button key={value} aria-pressed={range===value} onClick={()=>setRange(value)}>{value?`Last ${value}`:'All years'}</button>)}</div>
   <section className="trends-summary" aria-labelledby="trend-summary-title"><div><p>Selected series</p><h2 id="trend-summary-title">{exam} · {activeView.paper}{sectioned?` · ${activeView.label}`:''}</h2><span>{years.length?`${Math.min(...years)}–${Math.max(...years)}`:'No years available'}</span></div><div><strong>{format(available.filter(q=>years.includes(q.year)).reduce((sum,q)=>sum+q.count,0))}</strong><span>mapped questions</span></div><div><strong>{format(componentRows.length)}</strong><span>components</span></div><div><strong>{years.length}</strong><span>years</span></div></section>
   <section className="trends-table-section">
-   {!componentRows.length?<div className="trends-empty">No mapped questions are available for this selection.</div>:<div className="trends-table-scroll"><table className="trends-table"><thead><tr><th rowSpan={2}>Component</th>{years.map(year=><th key={year} colSpan={terms.length}>{year}</th>)}<th rowSpan={2}>Total</th><th rowSpan={2}>Last 5</th></tr><tr>{years.flatMap(year=>terms.map(term=><th key={`${year}:${term}`}>{term==='—'?'Questions':term}</th>))}</tr></thead><tbody>{componentRows.map(row=><tr key={row.subject}><th scope="row"><strong>{row.subject}</strong><Link href={`/prepare/${exam}`}>Open in library →</Link></th>{years.flatMap(year=>terms.map(term=>{const count=row.cells[`${year}:${term}`]||0;return <td key={`${year}:${term}`} className={count?'has-count':''} style={count?{'--heat':Math.max(.12,count/maxCell)} as React.CSSProperties:undefined}>{count||'—'}</td>}))}<td><strong>{row.total}</strong></td><td>{row.recent}</td></tr>)}</tbody></table></div>}
+   {!componentRows.length?<div className="trends-empty">No official {exam} {activeView.label} questions have been imported yet.</div>:<div className="trends-table-scroll"><table className="trends-table"><thead><tr><th rowSpan={2}>Component</th>{years.map(year=><th key={year} colSpan={terms.length}>{year}</th>)}<th rowSpan={2}>Total</th><th rowSpan={2}>Last 5</th></tr><tr>{years.flatMap(year=>terms.map(term=><th key={`${year}:${term}`}>{term==='—'?'Questions':term}</th>))}</tr></thead><tbody>{componentRows.map(row=><tr key={row.component}><th scope="row"><strong>{row.component}</strong><Link href={`/prepare/${exam}`}>Open in library →</Link></th>{years.flatMap(year=>terms.map(term=>{const count=row.cells[`${year}:${term}`]||0;return <td key={`${year}:${term}`} className={count?'has-count':''} style={count?{'--heat':Math.max(.12,count/maxCell)} as React.CSSProperties:undefined}>{count||'—'}</td>}))}<td><strong>{row.total}</strong></td><td>{row.recent}</td></tr>)}</tbody></table></div>}
   </section>
  </main>;
 }
