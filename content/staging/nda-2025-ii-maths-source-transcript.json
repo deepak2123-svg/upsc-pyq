@@ -1,0 +1,2916 @@
+{
+  "paper": {
+    "exam": "NDA",
+    "year": 2025,
+    "session": "II",
+    "subject": "Mathematics",
+    "bookletSeries": "A",
+    "paperCode": "TODC-O-MTH",
+    "examDate": "",
+    "totalQuestions": 120
+  },
+  "questions": [
+    {
+      "number": 1,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "promptLines": [
+        "If \\(p^x = q^y = r^z\\), where \\(x\\), \\(y\\) and \\(z\\) are in GP, then consider the following statements :",
+        "I. \\(p\\), \\(q\\) and \\(r\\) are in AP.",
+        "II. \\(\\ln p\\), \\(\\ln q\\) and \\(\\ln r\\) are in GP.",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 2,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "promptLines": [
+        "If \\(A\\) and \\(B\\) are non-empty subsets of a set, and \\(A^c\\) and \\(B^c\\) represent their complements, then which of the following is/are correct?",
+        "I. \\(A - B = B^c - A^c\\)",
+        "II. \\(A - B^c = A^c - B\\)",
+        "Select the answer using the code given below."
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 3,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "promptLines": [
+        "Let \\(y = x!\\) and \\(z = (2x)!\\). If \\((z / y) = 120\\), then what is the value of \\((3x)!\\)?"
+      ],
+      "options": {
+        "A": "\\(362880\\)",
+        "B": "\\(181440\\)",
+        "C": "\\(90720\\)",
+        "D": "\\(45360\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 4,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "promptLines": [
+        "Let \\(n\\) be a natural number. The number of consecutive zeros at the end of the expansion of \\(n!\\) is exactly 2. How many values of \\(n\\) are possible?"
+      ],
+      "options": {
+        "A": "\\(3\\)",
+        "B": "\\(4\\)",
+        "C": "\\(5\\)",
+        "D": "More than 5"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 5,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "promptLines": [
+        "If \\((10 + \\log_{10} x)\\), \\((10 + \\log_{10} y)\\) and \\((10 + \\log_{10} z)\\) are in AP, then consider the following statements :",
+        "I. The GM of \\(x\\) and \\(z\\) is \\(y^2\\).",
+        "II. The AM of \\(\\log_{10} x\\) and \\(\\log_{10} z\\) is \\(\\log_{10} y\\).",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 6,
+      "pdfPage": 3,
+      "printedPage": 3,
+      "promptLines": [
+        "How many terms of the series \\(1 + 3 + 5 + 7 + \\ldots\\) amount to a sum equal to 12345678987654321?"
+      ],
+      "options": {
+        "A": "\\(11111111\\)",
+        "B": "\\(110000011\\)",
+        "C": "\\(111101111\\)",
+        "D": "\\(111111111\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 7,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "How many terms are identical in the two APs 19, 21, 23, ... up to 110 terms and 19, 22, 25, 28, ... up to 75 terms?"
+      ],
+      "options": {
+        "A": "\\(35\\)",
+        "B": "\\(36\\)",
+        "C": "\\(37\\)",
+        "D": "\\(38\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 8,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "If",
+        "\\[\\alpha = \\dfrac{-1 + \\sqrt{-3}}{2}\\]",
+        "then what is the value of",
+        "\\((1 + \\alpha^{19} - \\alpha^{35})^{100} - (1 - 3\\alpha^{25} + \\alpha^{38})^{50}\\)?"
+      ],
+      "options": {
+        "A": "\\(-2\\)",
+        "B": "\\(-1\\)",
+        "C": "\\(0\\)",
+        "D": "\\(2\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 9,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "What is the remainder when \\(5^{99}\\) is divided by 13?"
+      ],
+      "options": {
+        "A": "\\(10\\)",
+        "B": "\\(9\\)",
+        "C": "\\(8\\)",
+        "D": "\\(6\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 10,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "What is the value of the determinant of the inverse of the matrix",
+        "\\(\\begin{bmatrix} -4 & -5 \\\\ 2 & 2 \\end{bmatrix}\\)?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{1}{2}\\)",
+        "B": "\\(1\\)",
+        "C": "\\(2\\)",
+        "D": "\\(4\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 11,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "In a class of 45 students, 34 like to play cricket and 26 like to play football. Further, each student likes to play at least one of the two games. How many students like to play exactly one game?"
+      ],
+      "options": {
+        "A": "\\(45\\)",
+        "B": "\\(30\\)",
+        "C": "\\(25\\)",
+        "D": "\\(15\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 12,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "The system of equations",
+        "\\(2x - 3y - 5 = 0,\\ 15y - 10x + 50 = 0\\)"
+      ],
+      "options": {
+        "A": "has a unique solution",
+        "B": "has infinitely many solutions",
+        "C": "is inconsistent",
+        "D": "is consistent and has exactly two solutions"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 13,
+      "pdfPage": 5,
+      "printedPage": 5,
+      "promptLines": [
+        "If",
+        "\\[\\left(\\dfrac{1 - i}{1 + i}\\right)^{2m}\\left(\\dfrac{1 + i}{1 - i}\\right)^{2n} = 1\\]",
+        "where \\(i = \\sqrt{-1}\\), then what is the smallest positive value of \\((m - n)\\)?"
+      ],
+      "options": {
+        "A": "\\(1\\)",
+        "B": "\\(2\\)",
+        "C": "\\(4\\)",
+        "D": "\\(8\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 14,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "promptLines": [
+        "In obtaining the solution of the system of equations \\(x + y + z = 7\\), \\(x + 2y + 3z = 16\\) and \\(x + 3y + 4z = 22\\) by Cramer's rule, the value of \\(y\\) is obtained by dividing \\(D\\) by \\(D_2\\), where",
+        "\\[D = \\begin{vmatrix} 1 & 1 & 1 \\\\ 1 & 2 & 3 \\\\ 1 & 3 & 4 \\end{vmatrix}\\]",
+        "What is the value of the determinant \\(D_2\\)?"
+      ],
+      "options": {
+        "A": "\\(-13\\)",
+        "B": "\\(-3\\)",
+        "C": "\\(3\\)",
+        "D": "\\(13\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 15,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "promptLines": [
+        "Consider the following in respect of non-singular matrices \\(A\\) and \\(B\\) :",
+        "I. \\((AB)^{-1} = A^{-1}B^{-1}\\)",
+        "II. \\((BA)(AB)^{-1} = I\\), where \\(I\\) is the identity matrix",
+        "III. \\((AB)^T = A^T B^T\\)",
+        "How many of the above are correct?"
+      ],
+      "options": {
+        "A": "None",
+        "B": "One",
+        "C": "Two",
+        "D": "All three"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 16,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "promptLines": [
+        "The value of the determinant",
+        "\\[\\begin{vmatrix} a & b & c \\\\ l & m & n \\\\ p & q & r \\end{vmatrix}\\]",
+        "is equal to"
+      ],
+      "options": {
+        "A": "\\(\\begin{vmatrix} a & b & c \\\\ p & q & r \\\\ l & m & n \\end{vmatrix}\\)",
+        "B": "\\(\\begin{vmatrix} l & m & n \\\\ a & b & c \\\\ p & q & r \\end{vmatrix}\\)",
+        "C": "\\(\\begin{vmatrix} p & q & r \\\\ a & b & c \\\\ l & m & n \\end{vmatrix}\\)",
+        "D": "\\(\\begin{vmatrix} a & p & l \\\\ b & q & m \\\\ c & r & n \\end{vmatrix}\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 17,
+      "pdfPage": 7,
+      "printedPage": 7,
+      "promptLines": [
+        "Let \\(1\\), \\(\\omega\\), \\(\\omega^2\\) be three cube roots of unity. If \\(x = a + b\\), \\(y = a\\omega + b\\omega^2\\), \\(z = a\\omega^2 + b\\omega\\), then what is \\(x^2 + y^2 + z^2\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(6ab\\)",
+        "B": "\\(3ab\\)",
+        "C": "\\(a^2 + b^2\\)",
+        "D": "\\(1\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 18,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "promptLines": [
+        "How many 4-digit numbers that are divisible by 4 can be formed using the digits 1, 2, 3 and 4 (repetition of digits is not allowed)?"
+      ],
+      "options": {
+        "A": "\\(3\\)",
+        "B": "\\(6\\)",
+        "C": "\\(9\\)",
+        "D": "\\(12\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 19,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "promptLines": [
+        "If \\(a\\), \\(b\\), \\(c\\) are the sides of a triangle \\(ABC\\) and \\(p\\) is the perimeter of the triangle, then what is",
+        "\\[\\begin{vmatrix} p + c & a & b \\\\ c & p + a & b \\\\ c & a & p + b \\end{vmatrix}\\]",
+        "equal to?"
+      ],
+      "options": {
+        "A": "\\(p^3\\)",
+        "B": "\\(2p^3\\)",
+        "C": "\\(3p^3\\)",
+        "D": "\\(4p^3\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 20,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "promptLines": [
+        "Which one of the following is the greatest coefficient in the expansion of \\((1 + x)^{100}\\)?"
+      ],
+      "options": {
+        "A": "The coefficient of \\(x^{100}\\)",
+        "B": "The coefficient of \\(x^{99}\\)",
+        "C": "The coefficient of \\(x^{51}\\)",
+        "D": "The coefficient of \\(x^{50}\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 21,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(\\alpha\\) and \\(\\beta\\) be the roots of the quadratic equation",
+        "\\[x^2 + (\\log_{0.5}(a^2))x + (\\log_{0.5}(a^2))^4 = 0\\]",
+        "where \\(a^2 \\neq 1\\) and \\(\\log_{0.5}(a^2) > 0\\). Further,",
+        "\\(\\beta^2 = \\alpha(\\log_{a^2}(0\\cdot 5))\\).",
+        "What is \\(\\beta\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\log_{a^2}(0\\cdot 5)\\)",
+        "B": "\\(\\log_{0.5}(a^2)\\)",
+        "C": "\\(2(\\log_{a^2}(0\\cdot 5))\\)",
+        "D": "\\(2\\log_{0.5}(a^2)\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 22,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(\\alpha\\) and \\(\\beta\\) be the roots of the quadratic equation",
+        "\\[x^2 + (\\log_{0.5}(a^2))x + (\\log_{0.5}(a^2))^4 = 0\\]",
+        "where \\(a^2 \\neq 1\\) and \\(\\log_{0.5}(a^2) > 0\\). Further,",
+        "\\(\\beta^2 = \\alpha(\\log_{a^2}(0\\cdot 5))\\).",
+        "What is the relation between \\(\\alpha\\) and \\(\\beta\\)?"
+      ],
+      "options": {
+        "A": "\\(\\alpha = 2\\beta\\)",
+        "B": "\\(2\\alpha = \\beta\\)",
+        "C": "\\(\\alpha = -2\\beta\\)",
+        "D": "\\(2\\alpha = -\\beta\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 23,
+      "pdfPage": 9,
+      "printedPage": 9,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(p = \\sum_{j=1}^{n} \\log_{10} 2^j\\) and \\(q = \\sum_{j=1}^{n} \\log_{10} 5^j\\).",
+        "If \\(p + q = 66\\), then which one of the following is correct?"
+      ],
+      "options": {
+        "A": "\\(n < 7\\)",
+        "B": "\\(7 < n < 9\\)",
+        "C": "\\(9 < n < 12\\)",
+        "D": "\\(n > 12\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 24,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(p = \\sum_{j=1}^{n} \\log_{10} 2^j\\) and \\(q = \\sum_{j=1}^{n} \\log_{10} 5^j\\).",
+        "If \\(p + q = 15\\), then what is \\(q - p\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\log_{10} 2\\cdot 5\\)",
+        "B": "\\(5\\log_{10} 2\\cdot 5\\)",
+        "C": "\\(10\\log_{10} 2\\cdot 5\\)",
+        "D": "\\(15\\log_{10} 2\\cdot 5\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 25,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(\\sin A + \\sin B = p\\) and \\(\\cos A + \\cos B = q\\).",
+        "What is \\(\\dfrac{p}{q}\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\tan\\left(\\dfrac{A - B}{2}\\right)\\)",
+        "B": "\\(\\cot\\left(\\dfrac{A - B}{2}\\right)\\)",
+        "C": "\\(\\tan\\left(\\dfrac{A + B}{2}\\right)\\)",
+        "D": "\\(\\cot\\left(\\dfrac{A + B}{2}\\right)\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 26,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(\\sin A + \\sin B = p\\) and \\(\\cos A + \\cos B = q\\).",
+        "What is \\(\\dfrac{p^2 - q^2}{p^2 + q^2}\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\cos(A + B)\\)",
+        "B": "\\(\\cos(A - B)\\)",
+        "C": "\\(\\cos\\left(\\dfrac{\\pi}{2} - A - B\\right)\\)",
+        "D": "\\(\\cos(\\pi - A - B)\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 27,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(p = \\mathrm{cosec}\\,20^\\circ\\) and \\(q = \\mathrm{cosec}\\,70^\\circ\\).",
+        "What is \\(\\left(\\dfrac{\\sqrt{3}p}{4} - \\dfrac{q}{4}\\right)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "\\(0\\)",
+        "C": "\\(1\\)",
+        "D": "\\(2\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 28,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(p = \\mathrm{cosec}\\,20^\\circ\\) and \\(q = \\mathrm{cosec}\\,70^\\circ\\).",
+        "What is \\(\\dfrac{p^2 + q^2}{p^2 q^2}\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{1}{2}\\)",
+        "B": "\\(1\\)",
+        "C": "\\(\\dfrac{3}{2}\\)",
+        "D": "\\(2\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 29,
+      "pdfPage": 11,
+      "printedPage": 11,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(\\cos(2x + 3y) = \\dfrac{1}{2}\\) and \\(\\cos(3x + 2y) = \\dfrac{\\sqrt{3}}{2}\\),",
+        "where \\(-\\pi < (2x + 3y) < \\pi\\) and \\(-\\pi < (3x + 2y) < \\pi\\).",
+        "How many values does \\((x + y)\\) have?"
+      ],
+      "options": {
+        "A": "Two",
+        "B": "Three",
+        "C": "Four",
+        "D": "More than four"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 30,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(\\cos(2x + 3y) = \\dfrac{1}{2}\\) and \\(\\cos(3x + 2y) = \\dfrac{\\sqrt{3}}{2}\\),",
+        "where \\(-\\pi < (2x + 3y) < \\pi\\) and \\(-\\pi < (3x + 2y) < \\pi\\).",
+        "How many values does \\((y - x)\\) have?"
+      ],
+      "options": {
+        "A": "Two",
+        "B": "Three",
+        "C": "Four",
+        "D": "More than four"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 31,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Consider the equation",
+        "\\(abx^2 + bcx + ca = cax^2 + abx + bc\\)",
+        "If the roots of the equation are equal, then which one of the following is correct?"
+      ],
+      "options": {
+        "A": "\\(ac = b^2\\)",
+        "B": "\\(a + c = 2b\\)",
+        "C": "\\(\\dfrac{1}{a} + \\dfrac{1}{c} = \\dfrac{1}{2b}\\)",
+        "D": "\\(\\dfrac{1}{a} + \\dfrac{1}{c} = \\dfrac{2}{b}\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 32,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Consider the equation",
+        "\\(abx^2 + bcx + ca = cax^2 + abx + bc\\)",
+        "If the roots of the equation are equal, then \\(a\\), \\(b\\), \\(c\\) are in"
+      ],
+      "options": {
+        "A": "AP",
+        "B": "GP",
+        "C": "HP",
+        "D": "None of the above"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 33,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\((6 + 10 + 14 + \\ldots \\text{ up to } m \\text{ terms})\\)",
+        "\\(= (1 + 3 + 5 + 7 + \\ldots \\text{ up to } n \\text{ terms})\\)",
+        "where \\(m < 25\\) and \\(n < 25\\).",
+        "What is the relation between \\(m\\) and \\(n\\)?"
+      ],
+      "options": {
+        "A": "\\(n^2 = m(m + 1)\\)",
+        "B": "\\(n^2 = m(m + 2)\\)",
+        "C": "\\(n^2 = 2m(m + 1)\\)",
+        "D": "\\(n^2 = 2m(m + 2)\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 34,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\((6 + 10 + 14 + \\ldots \\text{ up to } m \\text{ terms})\\)",
+        "\\(= (1 + 3 + 5 + 7 + \\ldots \\text{ up to } n \\text{ terms})\\)",
+        "where \\(m < 25\\) and \\(n < 25\\).",
+        "How many values of \\(m\\) are possible?"
+      ],
+      "options": {
+        "A": "None",
+        "B": "One",
+        "C": "Two",
+        "D": "More than two"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 35,
+      "pdfPage": 13,
+      "printedPage": 13,
+      "promptLines": [
+        "For the following two (02) items :",
+        "There are 8 points on a plane out of which 4 points are collinear.",
+        "How many triangles can be formed by joining these points?"
+      ],
+      "options": {
+        "A": "\\(56\\)",
+        "B": "\\(54\\)",
+        "C": "\\(53\\)",
+        "D": "\\(52\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 36,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "For the following two (02) items :",
+        "There are 8 points on a plane out of which 4 points are collinear.",
+        "How many quadrilaterals can be formed by joining these points?"
+      ],
+      "options": {
+        "A": "\\(70\\)",
+        "B": "\\(69\\)",
+        "C": "\\(53\\)",
+        "D": "None of the above"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 37,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(f(x) = ax^2 + bx + c\\) be a quadratic polynomial such that \\(f(1) = f(4) = 2\\). Further, 2 is a root of \\(f(x) = 0\\).",
+        "What is the other root of \\(f(x) = 0\\)?"
+      ],
+      "options": {
+        "A": "\\(1\\)",
+        "B": "\\(2\\)",
+        "C": "\\(3\\)",
+        "D": "Cannot be determined"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 38,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(f(x) = ax^2 + bx + c\\) be a quadratic polynomial such that \\(f(1) = f(4) = 2\\). Further, 2 is a root of \\(f(x) = 0\\).",
+        "What is \\((a + b + c)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(0\\)",
+        "B": "\\(1\\)",
+        "C": "\\(2\\)",
+        "D": "Cannot be determined"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 39,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let",
+        "\\[A = \\begin{bmatrix} \\cos\\theta & \\sin\\theta \\\\ -\\sin\\theta & \\cos\\theta \\end{bmatrix}\\]",
+        "What is the value of the determinant of the matrix \\(A^4\\)?"
+      ],
+      "options": {
+        "A": "\\(0\\)",
+        "B": "\\(1\\)",
+        "C": "\\(\\cos 4\\theta - \\sin 4\\theta\\)",
+        "D": "\\(\\cos^2 4\\theta - \\sin^2 4\\theta\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 40,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let",
+        "\\[A = \\begin{bmatrix} \\cos\\theta & \\sin\\theta \\\\ -\\sin\\theta & \\cos\\theta \\end{bmatrix}\\]",
+        "What is \\([\\mathrm{adj}\\,A]^{-1}\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-A\\)",
+        "B": "\\(-A^T\\)",
+        "C": "\\(A\\)",
+        "D": "\\(A^T\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 41,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "What is the sum of the binary numbers \\((101101101)_2\\) and \\((100011)_2\\)?"
+      ],
+      "options": {
+        "A": "\\((110010000)_2\\)",
+        "B": "\\((110001000)_2\\)",
+        "C": "\\((110000100)_2\\)",
+        "D": "\\((100100000)_2\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 42,
+      "pdfPage": 15,
+      "printedPage": 15,
+      "promptLines": [
+        "Set \\(X\\) contains \\(3n\\) elements and set \\(Y\\) contains \\(2n\\) elements, and they have \\(n\\) elements in common. How many elements does \\((X - Y) \\times (Y - X)\\) have?"
+      ],
+      "options": {
+        "A": "\\(5n^2\\)",
+        "B": "\\(4n^2\\)",
+        "C": "\\(3n^2\\)",
+        "D": "\\(2n^2\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 43,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "promptLines": [
+        "Let \\(A = \\{-3, -2, -1, 0, 1, 2, 3\\}\\) and \\(B = \\{0, 1, 4, 9\\}\\). How many elements does the subset of \\(A \\times B\\) corresponding to the relation \\(R = \\{(x, y) : |x| < y\\}\\) have, where \\(x \\in A\\) and \\(y \\in B\\)?"
+      ],
+      "options": {
+        "A": "\\(9\\)",
+        "B": "\\(12\\)",
+        "C": "\\(15\\)",
+        "D": "\\(16\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 44,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "promptLines": [
+        "Consider the following statements :",
+        "Statement–I :",
+        "If \\(X\\) is an \\(n \\times n\\) matrix, then \\(\\det(mX) = m^n \\det(X)\\), where \\(m\\) is a scalar.",
+        "Statement–II :",
+        "If \\(Y\\) is a matrix obtained from \\(X\\) by multiplying any row or column by a scalar \\(m\\), then \\(\\det(Y) = m\\det(X)\\).",
+        "Which one of the following is correct in respect of the above statements?"
+      ],
+      "options": {
+        "A": "Both Statement–I and Statement–II are correct and Statement–II explains Statement–I",
+        "B": "Both Statement–I and Statement–II are correct but Statement–II does not explain Statement–I",
+        "C": "Statement–I is correct but Statement–II is not correct",
+        "D": "Statement–I is not correct but Statement–II is correct"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 45,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "promptLines": [
+        "Consider the following statements about the matrix \\(M = \\begin{bmatrix} 71 & 23 & 48 \\\\ 57 & 28 & 29 \\\\ 65 & 17 & 48 \\end{bmatrix}\\) :",
+        "Statement–I : The inverse of \\(M\\) does not exist.",
+        "Statement–II : \\(M\\) is non-singular.",
+        "Which one of the following is correct in respect of the above statements?"
+      ],
+      "options": {
+        "A": "Both Statement–I and Statement–II are correct and Statement–II explains Statement–I",
+        "B": "Both Statement–I and Statement–II are correct but Statement–II does not explain Statement–I",
+        "C": "Statement–I is correct but Statement–II is not correct",
+        "D": "Statement–I is not correct but Statement–II is correct"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 46,
+      "pdfPage": 17,
+      "printedPage": 17,
+      "promptLines": [
+        "What is",
+        "\\[\\cot^{-1}9 + \\mathrm{cosec}^{-1}\\left(\\dfrac{\\sqrt{41}}{4}\\right)\\]",
+        "equal to?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{\\pi}{4}\\)",
+        "B": "\\(\\dfrac{\\pi}{3}\\)",
+        "C": "\\(\\dfrac{\\pi}{2}\\)",
+        "D": "\\(\\pi\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 47,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "promptLines": [
+        "How many values of \\(\\theta\\), where \\(-\\pi < \\theta < \\pi\\), satisfy both the equations \\(\\cot\\theta = -\\sqrt{3}\\) and \\(\\mathrm{cosec}\\,\\theta = -2\\) simultaneously?"
+      ],
+      "options": {
+        "A": "\\(4\\)",
+        "B": "\\(2\\)",
+        "C": "\\(1\\)",
+        "D": "None"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 48,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "promptLines": [
+        "If \\(x + \\dfrac{1}{x} = 2\\cos\\theta\\), then what is \\(x^3 + \\dfrac{1}{x^3}\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\cos^3\\theta\\)",
+        "B": "\\(\\cos 3\\theta\\)",
+        "C": "\\(2\\cos 3\\theta\\)",
+        "D": "\\(3\\cos 3\\theta\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 49,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "promptLines": [
+        "If \\(0 \\leq x \\leq \\dfrac{\\pi}{2}\\), then what is the number of values of \\(x\\) satisfying the equation",
+        "\\(\\tan x + \\sec x = 2\\cos x\\)?"
+      ],
+      "options": {
+        "A": "\\(0\\)",
+        "B": "\\(1\\)",
+        "C": "\\(2\\)",
+        "D": "\\(3\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 50,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "promptLines": [
+        "What is the value of",
+        "\\[\\tan\\left[\\dfrac{1}{2}\\sec^{-1}\\left(\\dfrac{2}{\\sqrt{3}}\\right)\\right]?\\]"
+      ],
+      "options": {
+        "A": "\\(2 - \\sqrt{3}\\)",
+        "B": "\\(2 + \\sqrt{3}\\)",
+        "C": "\\(\\sqrt{3} - 1\\)",
+        "D": "\\(\\sqrt{3} + 1\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 51,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "promptLines": [
+        "For the following two (02) items :",
+        "A plane \\(P\\) is parallel to the line having direction ratios \\(\\langle 1, 3, 2 \\rangle\\) and contains the line of intersection of the planes \\(6x + 4y - 5z = 2\\) and \\(x - 2y + 3z = 0\\).",
+        "Which of the following are the direction ratios of the line of intersection of the given planes?"
+      ],
+      "options": {
+        "A": "\\(\\langle 2, 23, 16 \\rangle\\)",
+        "B": "\\(\\langle 2, -23, -16 \\rangle\\)",
+        "C": "\\(\\langle 2, 3, 2 \\rangle\\)",
+        "D": "\\(\\langle -1, 3, -2 \\rangle\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 52,
+      "pdfPage": 19,
+      "printedPage": 19,
+      "promptLines": [
+        "For the following two (02) items :",
+        "A plane \\(P\\) is parallel to the line having direction ratios \\(\\langle 1, 3, 2 \\rangle\\) and contains the line of intersection of the planes \\(6x + 4y - 5z = 2\\) and \\(x - 2y + 3z = 0\\).",
+        "What is the equation of the plane \\(P\\)?"
+      ],
+      "options": {
+        "A": "\\(2x - 20y + 29z + 2 = 0\\)",
+        "B": "\\(2x - 20y + 29z - 2 = 0\\)",
+        "C": "\\(2x + 3y + 2z - 4 = 0\\)",
+        "D": "\\(x - 3y + 2z + 5 = 0\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 53,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Suppose \\(S\\) is the sphere with the smallest radius that passes through the points \\(A(1, 0, 0)\\), \\(B(0, 1, 0)\\) and \\(C(0, 0, 1)\\).",
+        "What is the radius of \\(S\\)?"
+      ],
+      "options": {
+        "A": "\\(\\sqrt{\\dfrac{1}{3}}\\)",
+        "B": "\\(\\sqrt{\\dfrac{2}{3}}\\)",
+        "C": "\\(\\dfrac{1}{3}\\)",
+        "D": "\\(1\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 54,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Suppose \\(S\\) is the sphere with the smallest radius that passes through the points \\(A(1, 0, 0)\\), \\(B(0, 1, 0)\\) and \\(C(0, 0, 1)\\).",
+        "On which one of the following planes does the centre of \\(S\\) lie?"
+      ],
+      "options": {
+        "A": "\\(x + y + z - 1 = 0\\)",
+        "B": "\\(x + y + z + 1 = 0\\)",
+        "C": "\\(3x + 3y + 3z - 1 = 0\\)",
+        "D": "\\(3x + 3y + 3z + 1 = 0\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 55,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(A(1, -1, 0)\\), \\(B(-2, 1, 8)\\) and \\(C(-1, 2, 7)\\) are three consecutive vertices of a parallelogram \\(ABCD\\).",
+        "What is the fourth vertex \\(D\\)?"
+      ],
+      "options": {
+        "A": "\\((0, -2, 1)\\)",
+        "B": "\\((2, 0, -1)\\)",
+        "C": "\\((1, 0, 1)\\)",
+        "D": "\\((1, 2, 0)\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 56,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(A(1, -1, 0)\\), \\(B(-2, 1, 8)\\) and \\(C(-1, 2, 7)\\) are three consecutive vertices of a parallelogram \\(ABCD\\).",
+        "If angle \\(BCD\\) is \\(\\theta\\), then what is \\(\\cos^2\\theta\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(26/77\\)",
+        "B": "\\(27/77\\)",
+        "C": "\\(82/237\\)",
+        "D": "\\(83/237\\)"
+      },
+      "answer": null,
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "The Set A cell for this question is blank in the supplied key; answer left null."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 57,
+      "pdfPage": 21,
+      "printedPage": 21,
+      "promptLines": [
+        "For different values of \\(m\\), the equation \\(4y = mx - m + 2\\) represents"
+      ],
+      "options": {
+        "A": "parallel lines",
+        "B": "concurrent lines",
+        "C": "lines at a fixed distance from the origin of coordinates",
+        "D": "the same line"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 58,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "promptLines": [
+        "The equation of the locus of a point equidistant from the points \\((a, b)\\) and \\((c, d)\\) is \\((a - c)x + (b - d)y + k = 0\\). What is the value of \\(k\\)?"
+      ],
+      "options": {
+        "A": "\\(a^2 - c^2 + b^2 - d^2\\)",
+        "B": "\\(c^2 + d^2 - a^2 - b^2\\)",
+        "C": "\\((a^2 - c^2 + b^2 - d^2)/2\\)",
+        "D": "\\((c^2 + d^2 - a^2 - b^2)/2\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 59,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "promptLines": [
+        "Consider the following statements in respect of the equation \\(x^2 + 3y = 0\\) :",
+        "I. The equation represents the equation to parabola that opens upwards.",
+        "II. The axis of the parabola is \\(x = 0\\).",
+        "III. The equation of the latus rectum is \\(4y - 3 = 0\\).",
+        "How many of the statements given above are correct?"
+      ],
+      "options": {
+        "A": "None",
+        "B": "One",
+        "C": "Two",
+        "D": "All three"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 60,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "promptLines": [
+        "What is the sum of the intercepts of the line",
+        "\\[\\dfrac{x}{a^2} + \\dfrac{y}{b^2} = \\dfrac{2}{a^2 + b^2}\\]",
+        "on the coordinate axes?"
+      ],
+      "options": {
+        "A": "\\(2\\)",
+        "B": "\\(1\\)",
+        "C": "\\(\\dfrac{1}{2}\\)",
+        "D": "\\(a^2 + b^2\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 61,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "promptLines": [
+        "Which one of the following is the perpendicular form of the straight line \\(\\sqrt{3}x + 2y = 7\\)?"
+      ],
+      "options": {
+        "A": "\\(y = -\\dfrac{\\sqrt{3}}{2}x + \\dfrac{7}{2}\\)",
+        "B": "\\(\\dfrac{x}{\\left(\\dfrac{7}{\\sqrt{3}}\\right)} + \\dfrac{y}{\\left(\\dfrac{7}{2}\\right)} = 1\\)",
+        "C": "\\(\\dfrac{\\sqrt{3}}{\\sqrt{7}}x + \\dfrac{2}{\\sqrt{7}}y = \\sqrt{7}\\)",
+        "D": "\\(\\dfrac{\\sqrt{3}}{\\sqrt{7}}x + \\dfrac{2}{\\sqrt{7}}y = 7\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 62,
+      "pdfPage": 23,
+      "printedPage": 23,
+      "promptLines": [
+        "If the vertices \\(B\\) and \\(D\\) of a square \\(ABCD\\) are \\((2, 3)\\) and \\((4, 1)\\) respectively, then what is the area of the square?"
+      ],
+      "options": {
+        "A": "\\(2\\) square units",
+        "B": "\\(3\\) square units",
+        "C": "\\(4\\) square units",
+        "D": "\\(8\\) square units"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 63,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "promptLines": [
+        "What is the value of \\(\\sin\\theta\\) if \\(\\theta\\) is the acute angle between the lines whose equations are \\(px + qy = p + q\\) and \\(p(x - y) + q(x + y) = 2q\\)?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{\\sqrt{3}}{2}\\)",
+        "B": "\\(\\dfrac{3}{4}\\)",
+        "C": "\\(\\dfrac{1}{2}\\)",
+        "D": "\\(\\dfrac{1}{\\sqrt{2}}\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 64,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "promptLines": [
+        "The circle \\(x^2 + y^2 - 2kx - 2ky + k^2 = 0\\) touches the \\(x\\)-axis at \\(P\\) and \\(y\\)-axis at \\(Q\\). What is \\(PQ\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\sqrt{2}k\\)",
+        "B": "\\(2k\\)",
+        "C": "\\(2\\sqrt{2}k\\)",
+        "D": "\\(4k\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 65,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "promptLines": [
+        "What is the distance between the foci of the hyperbola \\(x^2 - 4y^2 = 1\\)?"
+      ],
+      "options": {
+        "A": "\\(\\sqrt{3}\\)",
+        "B": "\\(\\sqrt{5}\\)",
+        "C": "\\(2\\sqrt{3}\\)",
+        "D": "\\(2\\sqrt{5}\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 66,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "promptLines": [
+        "Let \\(\\vec{p} = \\vec{a} - \\vec{b}\\), \\(\\vec{q} = \\vec{a} + \\vec{b}\\). If \\(|\\vec{a}| = |\\vec{b}| = 2\\) and \\(\\vec{a} \\cdot \\vec{b} = 2\\), then what is the value of \\(|\\vec{p} \\times \\vec{q}|\\)?"
+      ],
+      "options": {
+        "A": "\\(\\sqrt{3}\\)",
+        "B": "\\(\\sqrt{6}\\)",
+        "C": "\\(2\\sqrt{3}\\)",
+        "D": "\\(4\\sqrt{3}\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 67,
+      "pdfPage": 25,
+      "printedPage": 25,
+      "promptLines": [
+        "How many of the following can be a vector perpendicular to both the vectors \\(2\\hat{i} - \\hat{j} + \\hat{k}\\) and \\(\\hat{i} + \\hat{j} + 3\\hat{k}\\)?",
+        "I. \\(4\\hat{i} + 5\\hat{j} - 3\\hat{k}\\)",
+        "II. \\(-8\\hat{i} - 10\\hat{j} + 6\\hat{k}\\)",
+        "III. \\(\\dfrac{1}{50}(-4\\hat{i} - 5\\hat{j} + 3\\hat{k})\\)",
+        "Select the correct answer."
+      ],
+      "options": {
+        "A": "None",
+        "B": "One",
+        "C": "Two",
+        "D": "All three"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 68,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "promptLines": [
+        "What is the area of the parallelogram whose sides are represented by the vectors \\(\\hat{i} + 2\\hat{j} + 3\\hat{k}\\) and \\(2\\hat{i} + \\hat{j} + 2\\hat{k}\\)?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{1}{2}\\sqrt{26}\\) square units",
+        "B": "\\(\\dfrac{1}{2}\\sqrt{27}\\) square units",
+        "C": "\\(\\sqrt{26}\\) square units",
+        "D": "\\(\\sqrt{27}\\) square units"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 69,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "promptLines": [
+        "The position vectors of the vertices \\(A\\), \\(B\\), \\(C\\) and \\(D\\) of a quadrilateral \\(ABCD\\) are given by \\(3\\hat{i} + 4\\hat{j} - 2\\hat{k}\\), \\(4\\hat{i} - 4\\hat{j} - 3\\hat{k}\\), \\(2\\hat{i} - 3\\hat{j} + 2\\hat{k}\\) and \\(6\\hat{i} - 2\\hat{j} + \\hat{k}\\) respectively. What is the angle between the diagonals \\(AC\\) and \\(BD\\) of the quadrilateral?"
+      ],
+      "options": {
+        "A": "\\(90^\\circ\\)",
+        "B": "\\(75^\\circ\\)",
+        "C": "\\(60^\\circ\\)",
+        "D": "\\(45^\\circ\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 70,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "promptLines": [
+        "A force \\(\\vec{F} = 2\\hat{i} - \\lambda\\hat{j} + 5\\hat{k}\\) is applied at the point \\(A(1, 2, 5)\\). If its moment about the point \\(B(-1, -2, 3)\\) is \\(16\\hat{i} - 6\\hat{j} + 2\\lambda\\hat{k}\\), then what is the value of \\(\\lambda\\)?"
+      ],
+      "options": {
+        "A": "\\(-2\\)",
+        "B": "\\(0\\)",
+        "C": "\\(1\\)",
+        "D": "\\(2\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 71,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let",
+        "\\[f(x) = \\begin{cases} \\dfrac{1 - \\cos 2x}{x^2}, & x < 0 \\\\ 9, & x = 0 \\\\ \\dfrac{\\sqrt{x}}{\\sqrt{(16 + \\sqrt{x})} - 4}, & x > 0 \\end{cases}\\]",
+        "What is \\(\\lim_{x \\to 0-} f(x)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(2\\)",
+        "B": "\\(4\\)",
+        "C": "\\(6\\)",
+        "D": "\\(8\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 72,
+      "pdfPage": 27,
+      "printedPage": 27,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let",
+        "\\[f(x) = \\begin{cases} \\dfrac{1 - \\cos 2x}{x^2}, & x < 0 \\\\ 9, & x = 0 \\\\ \\dfrac{\\sqrt{x}}{\\sqrt{(16 + \\sqrt{x})} - 4}, & x > 0 \\end{cases}\\]",
+        "What is \\(\\lim_{x \\to 0+} f(x)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(6\\)",
+        "B": "\\(7\\)",
+        "C": "\\(8\\)",
+        "D": "\\(9\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 73,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "promptLines": [
+        "For the following three (03) items :",
+        "Consider the function \\(f(x) = x|x|\\).",
+        "What is \\(\\lim_{x \\to -1} f(x)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "\\(0\\)",
+        "C": "\\(1\\)",
+        "D": "Limit does not exist"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 74,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "promptLines": [
+        "For the following three (03) items :",
+        "Consider the function \\(f(x) = x|x|\\).",
+        "What is the area bounded by the curve \\(f(x)\\), the \\(x\\)-axis and the lines \\(x = -2\\) and \\(x = 1\\)?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{1}{3}\\)",
+        "B": "\\(\\dfrac{2}{3}\\)",
+        "C": "\\(\\dfrac{5}{2}\\)",
+        "D": "\\(3\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 75,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "promptLines": [
+        "For the following three (03) items :",
+        "Consider the function \\(f(x) = x|x|\\).",
+        "Consider the following statements :",
+        "I. The function is increasing in the interval \\((-\\infty, \\infty)\\).",
+        "II. The function is differentiable at \\(x = 0\\).",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 76,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Consider the function",
+        "\\[f(x) = \\dfrac{x}{1 - x}\\ (x > 0,\\ x \\neq 1)\\]",
+        "What is \\(\\dfrac{f(x)}{f(x + 1)}\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-f(x^2)\\)",
+        "B": "\\(-f(\\sqrt{x})\\)",
+        "C": "\\(f(x^2)\\)",
+        "D": "\\(f(x - 1)\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 77,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Consider the function",
+        "\\[f(x) = \\dfrac{x}{1 - x}\\ (x > 0,\\ x \\neq 1)\\]",
+        "What is \\((1 - x)f(\\sqrt{x}) + x f(\\sqrt{x} + 1)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-f(x)\\)",
+        "B": "\\(f(x)\\)",
+        "C": "\\(x\\)",
+        "D": "\\(0\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 78,
+      "pdfPage": 29,
+      "printedPage": 29,
+      "promptLines": [
+        "For the following three (03) items :",
+        "Let \\(y = f(x) = \\dfrac{x\\sin^{-1}x}{\\sqrt{1 - x^2}} + \\ln\\sqrt{1 - x^2}\\).",
+        "What is the slope of the tangent to the curve \\(y = f(x)\\) at \\(x = 0\\cdot 5\\)?"
+      ],
+      "options": {
+        "A": "\\(4\\pi\\sqrt{3}/27\\)",
+        "B": "\\(8\\pi\\sqrt{3}/27\\)",
+        "C": "\\(4\\pi\\)",
+        "D": "\\(8\\pi\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 79,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "promptLines": [
+        "For the following three (03) items :",
+        "Let \\(y = f(x) = \\dfrac{x\\sin^{-1}x}{\\sqrt{1 - x^2}} + \\ln\\sqrt{1 - x^2}\\).",
+        "What is \\(\\dfrac{d^2y}{dx^2}\\) at \\(x = 0\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(0\\)",
+        "B": "\\(0\\cdot 5\\)",
+        "C": "\\(1\\)",
+        "D": "\\(1\\cdot 5\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 80,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "promptLines": [
+        "For the following three (03) items :",
+        "Let \\(y = f(x) = \\dfrac{x\\sin^{-1}x}{\\sqrt{1 - x^2}} + \\ln\\sqrt{1 - x^2}\\).",
+        "If \\(x = \\sin\\theta\\), then what is \\(\\dfrac{dy}{dx}\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\theta\\sec\\theta\\)",
+        "B": "\\(\\theta\\sec^2\\theta\\)",
+        "C": "\\(\\theta\\sec^3\\theta\\)",
+        "D": "\\(2\\tan\\theta + \\theta\\sec^2\\theta\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 81,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Consider the function \\(f(x) = 1 - \\sqrt[3]{(x - 1)^2}\\).",
+        "What is the domain of the function?"
+      ],
+      "options": {
+        "A": "\\((1, \\infty)\\)",
+        "B": "\\((-\\infty, \\infty)\\)",
+        "C": "\\((0, \\infty)\\)",
+        "D": "\\((-\\infty, \\infty) \\setminus \\{1\\}\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 82,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Consider the function \\(f(x) = 1 - \\sqrt[3]{(x - 1)^2}\\).",
+        "The function has"
+      ],
+      "options": {
+        "A": "a minimum at \\(x = 1\\)",
+        "B": "a maximum at \\(x = 1\\)",
+        "C": "neither maximum nor minimum at \\(x = 1\\)",
+        "D": "no extremum"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 83,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Consider the function",
+        "\\[f(x) = \\begin{cases} 4(5^x), & x < 0 \\\\ 8k + x, & x \\geq 0 \\end{cases}\\]",
+        "If the function is continuous, then what is the value of \\(k\\)?"
+      ],
+      "options": {
+        "A": "\\(0\\cdot 5\\)",
+        "B": "\\(1\\)",
+        "C": "\\(1\\cdot 5\\)",
+        "D": "\\(2\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 84,
+      "pdfPage": 31,
+      "printedPage": 31,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Consider the function",
+        "\\[f(x) = \\begin{cases} 4(5^x), & x < 0 \\\\ 8k + x, & x \\geq 0 \\end{cases}\\]",
+        "What is \\(f'(-1)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{2}{5}\\ln 5\\)",
+        "B": "\\(\\dfrac{3}{5}\\ln 5\\)",
+        "C": "\\(\\dfrac{4}{5}\\ln 5\\)",
+        "D": "\\(20\\ln 5\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 85,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(u = \\int e^x\\cos x\\,dx\\) and \\(v = \\int e^x\\sin x\\,dx\\).",
+        "What is \\(u + v\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-\\dfrac{du}{dx}\\)",
+        "B": "\\(-\\dfrac{dv}{dx}\\)",
+        "C": "\\(\\dfrac{du}{dx}\\)",
+        "D": "\\(\\dfrac{dv}{dx}\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 86,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let \\(u = \\int e^x\\cos x\\,dx\\) and \\(v = \\int e^x\\sin x\\,dx\\).",
+        "Consider the following :",
+        "I. \\(\\dfrac{du}{dx} = -v\\)",
+        "II. \\(\\dfrac{dv}{dx} = -u\\)",
+        "Which of the above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 87,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let the function \\(f(x) = |x - 3| + |x - 4|\\) be defined on the interval \\([0, 5]\\).",
+        "What is \\(\\dfrac{dy}{dx}\\) at \\(x = 3\\cdot 5\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(0\\)",
+        "B": "\\(1\\)",
+        "C": "\\(2\\)",
+        "D": "\\(3\\cdot 5\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 88,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Let the function \\(f(x) = |x - 3| + |x - 4|\\) be defined on the interval \\([0, 5]\\).",
+        "Consider the following statements :",
+        "I. The function is differentiable at \\(x = 3\\).",
+        "II. The function is differentiable at \\(x = 4\\).",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 89,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Consider the function \\(f(x) = \\dfrac{10^x - 10^{-x}}{10^x + 10^{-x}}\\).",
+        "What is \\(f \\circ f \\circ f \\circ f \\circ f(0)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(0\\)",
+        "B": "\\(1\\)",
+        "C": "\\(5\\)",
+        "D": "\\(10\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 90,
+      "pdfPage": 33,
+      "printedPage": 33,
+      "promptLines": [
+        "For the following two (02) items :",
+        "Consider the function \\(f(x) = \\dfrac{10^x - 10^{-x}}{10^x + 10^{-x}}\\).",
+        "What is the inverse of the function?"
+      ],
+      "options": {
+        "A": "\\(\\log_{10}(2x - 1)\\)",
+        "B": "\\(\\dfrac{1}{2}\\log_{10}(2x - 1)\\)",
+        "C": "\\(\\dfrac{1}{4}\\log_{10}\\left(\\dfrac{2x}{2 - x}\\right)\\)",
+        "D": "\\(\\dfrac{1}{2}\\log_{10}\\left(\\dfrac{1 + x}{1 - x}\\right)\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Shared introductory text for this group of items is repeated at the start of promptLines.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 91,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "promptLines": [
+        "What is the degree of the differential equation",
+        "\\[\\left(\\dfrac{d^2y}{dx^2}\\right)^{\\frac{3}{2}} = \\left(\\dfrac{dy}{dx}\\right)^{\\frac{5}{2}}\\ ?\\]"
+      ],
+      "options": {
+        "A": "\\(3\\)",
+        "B": "\\(2\\)",
+        "C": "\\(\\dfrac{5}{2}\\)",
+        "D": "\\(\\dfrac{3}{2}\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 92,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "promptLines": [
+        "What is \\(\\displaystyle\\int_n^{n+1}(x - [x])\\,dx\\), where \\([\\cdot]\\) is the greatest integer function and \\(n\\) is natural number?"
+      ],
+      "options": {
+        "A": "\\(\\dfrac{4n + 1}{2}\\)",
+        "B": "\\(\\dfrac{2n + 1}{2}\\)",
+        "C": "\\(\\dfrac{1}{2}\\)",
+        "D": "\\(1\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 93,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "promptLines": [
+        "Consider the following statements :",
+        "I. \\(y = xe^{2x}\\) is the solution of \\(\\dfrac{dy}{dx} = y\\left(2 + \\dfrac{1}{x}\\right)\\).",
+        "II. \\(y = x\\ln|x| + cx\\) is the solution of \\(\\dfrac{dy}{dx} = \\dfrac{x + y}{x}\\).",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 94,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "promptLines": [
+        "If \\(k\\) is an arbitrary constant, then what is the general solution of the equation",
+        "\\((x + y)^2\\dfrac{dy}{dx} = k^2\\)?"
+      ],
+      "options": {
+        "A": "\\(y + x = \\tan(x + c) + k\\)",
+        "B": "\\(x + y = k\\tan\\left(\\dfrac{y - c}{k}\\right)\\)",
+        "C": "\\(x - y = k\\tan\\left(\\dfrac{y - c}{k}\\right)\\)",
+        "D": "\\(y - x = \\tan(x + c) + k\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 95,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "promptLines": [
+        "What is \\(\\displaystyle\\int \\dfrac{dx}{10^x + 10^{-x}}\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\tan^{-1}(10^x) + c\\)",
+        "B": "\\((\\ln 10)\\tan^{-1}(10^x) + c\\)",
+        "C": "\\(\\dfrac{1}{\\ln 10}\\tan^{-1}(10^x) + c\\)",
+        "D": "\\(\\ln(10^x + 10^{-x}) + c\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 96,
+      "pdfPage": 35,
+      "printedPage": 35,
+      "promptLines": [
+        "A wire of length 20 cm is to be bent into a rectangle. Which of the following statements is/are correct?",
+        "I. The rectangle of the largest area is the square.",
+        "II. It is possible to form a rectangle of an area of 27 cm\\(^2\\).",
+        "Select the answer using the code given below."
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 97,
+      "pdfPage": 37,
+      "printedPage": 37,
+      "promptLines": [
+        "If \\(I_1 = \\displaystyle\\int_e^{e^2}\\dfrac{dx}{\\ln x}\\) and \\(I_2 = \\displaystyle\\int_1^2\\dfrac{e^x}{x}\\,dx\\), then which one of the following is correct?"
+      ],
+      "options": {
+        "A": "\\(I_1 - I_2 = 0\\)",
+        "B": "\\(I_1 + I_2 = 0\\)",
+        "C": "\\(I_1 - 2I_2 = 0\\)",
+        "D": "\\(2I_1 - I_2 = 0\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 98,
+      "pdfPage": 37,
+      "printedPage": 37,
+      "promptLines": [
+        "What is the area of the region bounded by \\(|x| \\leq 2k\\) and \\(|y| \\leq k\\), where \\(k\\) is a positive real number?"
+      ],
+      "options": {
+        "A": "\\(2k^2\\)",
+        "B": "\\(4k^2\\)",
+        "C": "\\(5k^2\\)",
+        "D": "\\(8k^2\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 99,
+      "pdfPage": 37,
+      "printedPage": 37,
+      "promptLines": [
+        "Consider the following statements regarding the function \\(f(x) = \\dfrac{1}{x - 5}\\) :",
+        "Statement–I :",
+        "\\(f(x)\\) is decreasing on the intervals \\(x < 5\\) and \\(x > 5\\).",
+        "Statement–II :",
+        "\\(f'(x) > 0\\) for all \\(x \\neq 5\\).",
+        "Which one of the following is correct in respect of the above statements?"
+      ],
+      "options": {
+        "A": "Both Statement–I and Statement–II are correct and Statement–II explains Statement–I",
+        "B": "Both Statement–I and Statement–II are correct but Statement–II does not explain Statement–I",
+        "C": "Statement–I is correct but Statement–II is not correct",
+        "D": "Statement–I is not correct but Statement–II is correct"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 100,
+      "pdfPage": 37,
+      "printedPage": 37,
+      "promptLines": [
+        "Consider the following statements :",
+        "Statement–I :",
+        "The function \\(f(x) = \\dfrac{x^3 + 128}{x}\\) has a minimum value 48 at \\(x = 4\\).",
+        "Statement–II :",
+        "As \\(x\\) increases through 4, \\(f'(x)\\) changes sign from positive to negative.",
+        "Which one of the following is correct in respect of the above statements?"
+      ],
+      "options": {
+        "A": "Both Statement–I and Statement–II are correct and Statement–II explains Statement–I",
+        "B": "Both Statement–I and Statement–II are correct but Statement–II does not explain Statement–I",
+        "C": "Statement–I is correct but Statement–II is not correct",
+        "D": "Statement–I is not correct but Statement–II is correct"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 101,
+      "pdfPage": 39,
+      "printedPage": 39,
+      "promptLines": [
+        "What is the harmonic mean of the numbers \\(C(10, 3)\\), \\(C(10, 4)\\), \\(C(10, 5)\\), \\(C(10, 6)\\) and \\(C(10, 7)\\) ?"
+      ],
+      "options": {
+        "A": "\\(3150/19\\)",
+        "B": "\\(4000/19\\)",
+        "C": "\\(252\\)",
+        "D": "\\(225\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 102,
+      "pdfPage": 39,
+      "printedPage": 39,
+      "promptLines": [
+        "In a sample survey of a village, the probability that a farmer is in debt is \\(0\\cdot 60\\). What is the probability that three randomly selected farmers are all in debt (assume independence of events)?"
+      ],
+      "options": {
+        "A": "\\(0\\cdot 000216\\)",
+        "B": "\\(0\\cdot 064\\)",
+        "C": "\\(0\\cdot 216\\)",
+        "D": "\\(0\\cdot 512\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 103,
+      "pdfPage": 39,
+      "printedPage": 39,
+      "promptLines": [
+        "The probability that a family owns a laptop is \\(0\\cdot 68\\); that it also owns a desktop is \\(0\\cdot 56\\). If the probability that it owns both is \\(0\\cdot 48\\), then what is the probability that a randomly selected family owns a laptop or a desktop?"
+      ],
+      "options": {
+        "A": "\\(0\\cdot 80\\)",
+        "B": "\\(0\\cdot 76\\)",
+        "C": "\\(0\\cdot 36\\)",
+        "D": "\\(0\\cdot 28\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 104,
+      "pdfPage": 39,
+      "printedPage": 39,
+      "promptLines": [
+        "An urn contains 10 white and 5 red balls. If two balls are drawn at random, then what is the probability that both the balls are red?"
+      ],
+      "options": {
+        "A": "\\(2/21\\)",
+        "B": "\\(1/7\\)",
+        "C": "\\(4/21\\)",
+        "D": "\\(3/7\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 105,
+      "pdfPage": 39,
+      "printedPage": 39,
+      "promptLines": [
+        "An urn contains 5 white, 6 red and 4 blue balls. Three balls are drawn at random. What is the probability that a white ball, a red ball and a blue ball are drawn?"
+      ],
+      "options": {
+        "A": "\\(28/91\\)",
+        "B": "\\(2/7\\)",
+        "C": "\\(24/91\\)",
+        "D": "\\(23/91\\)"
+      },
+      "answer": "C",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 106,
+      "pdfPage": 39,
+      "printedPage": 39,
+      "promptLines": [
+        "Under which of the following conditions may binomial distribution be used?",
+        "I. The number of trials is infinite and not fixed.",
+        "II. The trials are independent.",
+        "III. Each trial has two possible outcomes.",
+        "Select the correct answer using the code given below."
+      ],
+      "options": {
+        "A": "II only",
+        "B": "III only",
+        "C": "I and II",
+        "D": "II and III"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 107,
+      "pdfPage": 39,
+      "printedPage": 39,
+      "promptLines": [
+        "A person \\(X\\) speaks the truth 4 out of 5 times and person \\(Y\\) speaks the truth 5 out of 6 times. What is the probability that they will contradict each other in stating the fact?"
+      ],
+      "options": {
+        "A": "\\(3/10\\)",
+        "B": "\\(1/15\\)",
+        "C": "\\(1/6\\)",
+        "D": "\\(7/10\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 108,
+      "pdfPage": 41,
+      "printedPage": 41,
+      "promptLines": [
+        "The probability that a student passes Physics test is \\(2/3\\) and the probability that he passes both Physics test and English test is \\(11/15\\). The probability that he passes at least one test is \\(4/5\\). What is the probability that he passes English test?"
+      ],
+      "options": {
+        "A": "\\(11/15\\)",
+        "B": "\\(13/15\\)",
+        "C": "\\(14/15\\)",
+        "D": "\\(1\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 109,
+      "pdfPage": 41,
+      "printedPage": 41,
+      "promptLines": [
+        "An event \\(X\\) can happen with probability \\(p\\) and event \\(Y\\) can happen with probability \\(q\\). Further, \\(X\\) and \\(Y\\) are independent events. Which of the following statements is/are correct?",
+        "I. The probability that exactly one of the events happens is \\(p + q - pq\\).",
+        "II. The probability that at least one of the events happens is \\(p + q - 2pq\\).",
+        "Select the answer using the code given below."
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 110,
+      "pdfPage": 41,
+      "printedPage": 41,
+      "promptLines": [
+        "Three faces of a die are black, two faces are white and one face is red. The die is tossed three times. What is the probability that the colours black, white and red appear in the first, second and third tosses respectively?"
+      ],
+      "options": {
+        "A": "\\(1/36\\)",
+        "B": "\\(1/6\\)",
+        "C": "\\(7/36\\)",
+        "D": "\\(5/36\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 111,
+      "pdfPage": 41,
+      "printedPage": 41,
+      "promptLines": [
+        "A fair coin is tossed 4 times. What is the probability that two heads do not occur consecutively?"
+      ],
+      "options": {
+        "A": "\\(1/8\\)",
+        "B": "\\(3/8\\)",
+        "C": "\\(7/16\\)",
+        "D": "\\(1/2\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 112,
+      "pdfPage": 41,
+      "printedPage": 41,
+      "promptLines": [
+        "In a throw of three dice, what is the probability of getting one prime number, one composite number and one number which is neither prime nor composite?"
+      ],
+      "options": {
+        "A": "\\(1/2\\)",
+        "B": "\\(1/3\\)",
+        "C": "\\(1/4\\)",
+        "D": "\\(1/6\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 113,
+      "pdfPage": 41,
+      "printedPage": 41,
+      "promptLines": [
+        "An integer is chosen at random from the first 50 integers. What is the probability that the integer is neither divisible by 5 nor 9?"
+      ],
+      "options": {
+        "A": "\\(7/10\\)",
+        "B": "\\(18/25\\)",
+        "C": "\\(37/50\\)",
+        "D": "\\(19/25\\)"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 114,
+      "pdfPage": 41,
+      "printedPage": 41,
+      "promptLines": [
+        "Out of 50 consecutive natural numbers, two integers are chosen at random. What is the probability that their sum is odd?"
+      ],
+      "options": {
+        "A": "\\(1/2\\)",
+        "B": "\\(24/49\\)",
+        "C": "\\(1/4\\)",
+        "D": "\\(25/49\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 115,
+      "pdfPage": 43,
+      "printedPage": 43,
+      "promptLines": [
+        "The standard deviation of 100 observations is 10. If 20 is added to each observation, then what will be the new standard deviation?"
+      ],
+      "options": {
+        "A": "\\(10\\)",
+        "B": "\\(15\\)",
+        "C": "\\(20\\)",
+        "D": "\\(25\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 116,
+      "pdfPage": 43,
+      "printedPage": 43,
+      "promptLines": [
+        "Let \\(X\\) be a random variable following binomial distribution with parameters \\(n = 5\\) and \\(p = k\\). Further, \\(P(X = 1) = 0\\cdot 4096\\) and \\(P(X = 2) = 0\\cdot 2048\\). What is the value of \\(k\\)?"
+      ],
+      "options": {
+        "A": "\\(0\\cdot 2\\)",
+        "B": "\\(0\\cdot 25\\)",
+        "C": "\\(0\\cdot 3\\)",
+        "D": "\\(0\\cdot 35\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 117,
+      "pdfPage": 43,
+      "printedPage": 43,
+      "promptLines": [
+        "The frequency distribution of the marks obtained by students in a Science examination is given below :",
+        "What is the arithmetic mean?"
+      ],
+      "options": {
+        "A": "\\(20\\)",
+        "B": "\\(25\\)",
+        "C": "\\(30\\)",
+        "D": "\\(35\\)"
+      },
+      "answer": "B",
+      "requiresFigure": true,
+      "figureFile": "nda-2025-ii-maths-q117.png",
+      "figureAlt": "Frequency distribution table: Marks 5-15, 15-25, 25-35, 35-45; Number of students 20, 30, 30, 20.",
+      "transcriptionNotes": [
+        "The stem includes a table; see the cropped figure image.",
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 118,
+      "pdfPage": 43,
+      "printedPage": 43,
+      "promptLines": [
+        "If \\(P(A) = 0\\cdot 3\\), \\(P(B) = 0\\cdot 4\\) and \\(P(A|B) = 0\\cdot 5\\), then what is the value of \\(P(B|A)\\)?"
+      ],
+      "options": {
+        "A": "\\(0\\cdot 325\\)",
+        "B": "\\(0\\cdot 333\\)",
+        "C": "\\(0\\cdot 375\\)",
+        "D": "\\(0\\cdot 667\\)"
+      },
+      "answer": "D",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    },
+    {
+      "number": 119,
+      "pdfPage": 43,
+      "printedPage": 43,
+      "promptLines": [
+        "If \\(P(A) = 1/3\\), \\(P(B) = 1/2\\) and \\(P(A \\cap B) = 1/4\\), then what is the value of \\(P(\\overline{A} \\cup B)\\)?"
+      ],
+      "options": {
+        "A": "\\(7/12\\)",
+        "B": "\\(2/3\\)",
+        "C": "\\(3/4\\)",
+        "D": "\\(11/12\\)"
+      },
+      "answer": "A",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed.",
+        "Key answer conflicts with an independent check of the question text; verify against the UPSC official key before use."
+      ],
+      "confidence": "low"
+    },
+    {
+      "number": 120,
+      "pdfPage": 43,
+      "printedPage": 43,
+      "promptLines": [
+        "Consider the following statements :",
+        "I. Mean and variance have the same unit of measurement.",
+        "II. Mean deviation and standard deviation have the same unit of measurement.",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "B",
+      "requiresFigure": false,
+      "figureFile": null,
+      "figureAlt": null,
+      "transcriptionNotes": [
+        "Answer source: Yoddhaa Defence Institute NDA-II 2025 answer key (Set A), treated as the official key as instructed."
+      ],
+      "confidence": "high"
+    }
+  ]
+}

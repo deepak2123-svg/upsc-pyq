@@ -1,0 +1,139 @@
+{
+  "paperId": "nda-2025-ii-mathematics",
+  "identifiedPaper": "NDA & NA Examination (II), 2025 - Paper I Mathematics - Series A",
+  "expected": 120,
+  "available": 120,
+  "newRecords": 120,
+  "reusedRecords": 0,
+  "keyStatus": "reasoned-verified",
+  "questionPaperSha256": "8c27af0dd99ccb7406c905dc0d2ccda60cbdd5d62e73593bfe63246a717d26a0",
+  "keySha256": "56e45a85df5a0ff79fce2d53dfaa1c3d8e7b0b4a4023a3da43b7da249614b16e",
+  "figuresRequired": 1,
+  "formulaOrContentDefectsResolved": [
+    {
+      "questionNumber": 1,
+      "publisherOption": "C",
+      "resolvedOption": "B",
+      "resolution": "Only ln p, ln q and ln r must be in GP."
+    },
+    {
+      "questionNumber": 11,
+      "publisherOption": "D",
+      "resolvedOption": "C",
+      "resolution": "The exactly-one count is 30, option C."
+    },
+    {
+      "questionNumber": 15,
+      "publisherOption": "B",
+      "resolvedOption": "A",
+      "resolution": "All three matrix identities reverse multiplication order and are false."
+    },
+    {
+      "questionNumber": 23,
+      "publisherOption": "B",
+      "resolvedOption": "C",
+      "resolution": "n(n+1)/2=66 gives n=11."
+    },
+    {
+      "questionNumber": 24,
+      "publisherOption": "A",
+      "resolvedOption": "D",
+      "resolution": "n=5 and q-p=15 log10(5/2), option D."
+    },
+    {
+      "questionNumber": 29,
+      "publisherOption": "A",
+      "resolvedOption": "C",
+      "resolution": "The four sign combinations give four values of x+y."
+    },
+    {
+      "questionNumber": 30,
+      "publisherOption": "A",
+      "resolvedOption": "C",
+      "resolution": "The four sign combinations give four values of y-x."
+    },
+    {
+      "questionNumber": 45,
+      "publisherOption": "A",
+      "resolvedOption": "C",
+      "resolution": "det M=0, so M is singular and only Statement I is true."
+    },
+    {
+      "questionNumber": 56,
+      "publisherOption": null,
+      "resolvedOption": "B",
+      "resolution": "The publisher grid is blank; vector dot products give cos²θ=27/77."
+    },
+    {
+      "questionNumber": 57,
+      "publisherOption": "C",
+      "resolvedOption": "B",
+      "resolution": "Every line passes through (1,1/2), so the family is concurrent."
+    },
+    {
+      "questionNumber": 62,
+      "publisherOption": "A",
+      "resolvedOption": "C",
+      "resolution": "BD is a diagonal with squared length 8, so the square area is 4."
+    },
+    {
+      "questionNumber": 67,
+      "publisherOption": "A",
+      "resolvedOption": "D",
+      "resolution": "All three vectors are scalar multiples of the common perpendicular."
+    },
+    {
+      "questionNumber": 75,
+      "publisherOption": "B",
+      "resolvedOption": "C",
+      "resolution": "x|x| is increasing everywhere and differentiable at zero."
+    },
+    {
+      "questionNumber": 80,
+      "publisherOption": "B",
+      "resolvedOption": "C",
+      "resolution": "With x=sinθ, differentiation gives dy/dx=θ sec³θ."
+    },
+    {
+      "questionNumber": 119,
+      "publisherOption": "A",
+      "resolvedOption": "D",
+      "resolution": "P(Ā∪B)=1-P(A∩B̄)=11/12."
+    }
+  ],
+  "requiresReview": [],
+  "chapterTotals": [
+    {
+      "chapter": "algebra",
+      "count": 31
+    },
+    {
+      "chapter": "matrices-and-determinants",
+      "count": 10
+    },
+    {
+      "chapter": "trigonometry",
+      "count": 11
+    },
+    {
+      "chapter": "analytical-geometry",
+      "count": 14
+    },
+    {
+      "chapter": "vector-algebra",
+      "count": 6
+    },
+    {
+      "chapter": "differential-calculus",
+      "count": 18
+    },
+    {
+      "chapter": "integral-calculus-and-differential-equations",
+      "count": 10
+    },
+    {
+      "chapter": "statistics-and-probability",
+      "count": 20
+    }
+  ]
+}

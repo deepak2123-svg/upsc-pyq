@@ -26,6 +26,7 @@ import nda2024II from '../../../content/nda-2024-ii-reviewed-paper.json';
 import nda2026IIMathematics from '../../../content/nda-2026-ii-mathematics-official-paper.json';
 import nda2026IMathematics from '../../../content/nda-2026-i-mathematics-official-paper.json';
 import nda2025IMathematics from '../../../content/nda-2025-i-mathematics-official-paper.json';
+import nda2025IIMathematics from '../../../content/nda-2025-ii-mathematics-official-paper.json';
 import {getPreparationInventory} from '../../../lib/preparation-catalog';
 import {questionEligible} from '../../../lib/question-review';
 import type {PracticeRecipeV4} from '../../../lib/practice-types';
@@ -33,6 +34,7 @@ import type {PracticeRecipeV4} from '../../../lib/practice-types';
 type PaperQuestion={id:string;questionNumber:number;preparationScope:string};
 type PaperData={paperId:string;questions:PaperQuestion[];evidence?:{status:string;series?:string;url?:string;asset?:string;sha256?:string}};
 const papers:Record<string,{data:PaperData;title:string;summary:string;notice:string}>={
+ 'nda-2025-ii-mathematics':{data:nda2025IIMathematics,title:'NDA II 2025 · Mathematics',summary:'120 available / 120 source questions · Paper I · Series A',notice:'All 120 questions use the supplied publisher Set A key with 15 independently reasoned corrections; no official UPSC key was supplied.'},
  'nda-2025-i-mathematics':{data:nda2025IMathematics,title:'NDA I 2025 · Mathematics',summary:'120 available / 120 source questions · Paper I · Series A',notice:'All 120 questions are scored against the official final Series A Mathematics key.'},
  'nda-2026-i-mathematics':{data:nda2026IMathematics,title:'NDA I 2026 · Mathematics',summary:'120 available / 120 source questions · Paper I · Series A',notice:'All 120 questions are scored against the official provisional Series A Mathematics key.'},
  'nda-2026-ii-mathematics':{data:nda2026IIMathematics,title:'NDA II 2026 · Mathematics',summary:'120 available / 120 source questions · Paper I · Series A',notice:'All 120 questions are scored against the official provisional Series A Mathematics key.'},

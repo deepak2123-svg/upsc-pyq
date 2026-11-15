@@ -1,0 +1,92 @@
+{
+  "nda-2025-ii-maths-1": {
+    "questionNumber": 1,
+    "publisherOption": "C",
+    "resolvedOption": "B",
+    "resolution": "Only ln p, ln q and ln r must be in GP."
+  },
+  "nda-2025-ii-maths-11": {
+    "questionNumber": 11,
+    "publisherOption": "D",
+    "resolvedOption": "C",
+    "resolution": "The exactly-one count is 30, option C."
+  },
+  "nda-2025-ii-maths-15": {
+    "questionNumber": 15,
+    "publisherOption": "B",
+    "resolvedOption": "A",
+    "resolution": "All three matrix identities reverse multiplication order and are false."
+  },
+  "nda-2025-ii-maths-23": {
+    "questionNumber": 23,
+    "publisherOption": "B",
+    "resolvedOption": "C",
+    "resolution": "n(n+1)/2=66 gives n=11."
+  },
+  "nda-2025-ii-maths-24": {
+    "questionNumber": 24,
+    "publisherOption": "A",
+    "resolvedOption": "D",
+    "resolution": "n=5 and q-p=15 log10(5/2), option D."
+  },
+  "nda-2025-ii-maths-29": {
+    "questionNumber": 29,
+    "publisherOption": "A",
+    "resolvedOption": "C",
+    "resolution": "The four sign combinations give four values of x+y."
+  },
+  "nda-2025-ii-maths-30": {
+    "questionNumber": 30,
+    "publisherOption": "A",
+    "resolvedOption": "C",
+    "resolution": "The four sign combinations give four values of y-x."
+  },
+  "nda-2025-ii-maths-45": {
+    "questionNumber": 45,
+    "publisherOption": "A",
+    "resolvedOption": "C",
+    "resolution": "det M=0, so M is singular and only Statement I is true."
+  },
+  "nda-2025-ii-maths-56": {
+    "questionNumber": 56,
+    "publisherOption": null,
+    "resolvedOption": "B",
+    "resolution": "The publisher grid is blank; vector dot products give cos²θ=27/77."
+  },
+  "nda-2025-ii-maths-57": {
+    "questionNumber": 57,
+    "publisherOption": "C",
+    "resolvedOption": "B",
+    "resolution": "Every line passes through (1,1/2), so the family is concurrent."
+  },
+  "nda-2025-ii-maths-62": {
+    "questionNumber": 62,
+    "publisherOption": "A",
+    "resolvedOption": "C",
+    "resolution": "BD is a diagonal with squared length 8, so the square area is 4."
+  },
+  "nda-2025-ii-maths-67": {
+    "questionNumber": 67,
+    "publisherOption": "A",
+    "resolvedOption": "D",
+    "resolution": "All three vectors are scalar multiples of the common perpendicular."
+  },
+  "nda-2025-ii-maths-75": {
+    "questionNumber": 75,
+    "publisherOption": "B",
+    "resolvedOption": "C",
+    "resolution": "x|x| is increasing everywhere and differentiable at zero."
+  },
+  "nda-2025-ii-maths-80": {
+    "questionNumber": 80,
+    "publisherOption": "B",
+    "resolvedOption": "C",
+    "resolution": "With x=sinθ, differentiation gives dy/dx=θ sec³θ."
+  },
+  "nda-2025-ii-maths-119": {
+    "questionNumber": 119,
+    "publisherOption": "A",
+    "resolvedOption": "D",
+    "resolution": "P(Ā∪B)=1-P(A∩B̄)=11/12."
+  }
+}
