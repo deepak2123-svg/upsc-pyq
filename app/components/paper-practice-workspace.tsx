@@ -64,9 +64,8 @@ export function PaperPracticeWorkspace({ rows, years }: { rows: PaperPracticeRow
   const dropped = selectedPapers[0] ? Math.max(0, expectedQuestions(selectedPapers[0].row) - selectedPapers[0].count) : 0;
 
   return <main className="pyq-page paper-practice-page">
-    <header className="paper-practice-title"><p className="pyq-kicker">Whole-paper practice</p><h1>Practice official papers</h1><p>Select one official paper. Every question comes only from that paper.</p></header>
     <div className="paper-practice-layout"><section className="source-year-matrix paper-year-matrix" aria-labelledby="paper-grid-title">
-      <div className="source-year-heading"><div><h2 id="paper-grid-title">Paper bank</h2></div>{selected.length ? <button className="paper-grid-clear" disabled={!ready || loading} onClick={() => setSelected([])}>Clear selection</button> : null}</div>
+      <div className="source-year-heading"><div><h1 id="paper-grid-title">Paper bank</h1><p>Select an available question count to practise that paper.</p></div>{selected.length ? <button className="paper-grid-clear" disabled={!ready || loading} onClick={() => setSelected([])}>Clear selection</button> : null}</div>
       <div className="source-year-scroll" role="region" aria-label="Previous paper selection grid">
         <div className="paper-grouped-grid" style={{ '--year-columns': years.length } as CSSProperties}>
           <span className="paper-column-heading">Exam</span><span className="paper-column-heading">Attempt</span><span className="paper-column-heading">Paper</span>
@@ -77,7 +76,7 @@ export function PaperPracticeWorkspace({ rows, years }: { rows: PaperPracticeRow
               <div className="paper-merged-attempt" style={{ gridRow: `span ${attempt.rows.length}` }}><strong>{attempt.attempt}</strong></div>
               {attempt.rows.map(row => <div className="paper-grid-row" key={row.id}>
                 <div className="paper-row-label"><strong>{row.paper}</strong></div>
-                {displayYears.map(year => { const key = `${row.id}:${year}`, count = row.counts[year] || 0, active = selected.includes(key); return <button key={year} disabled={!ready || !count || loading} className="source-year-cell" aria-pressed={active} aria-label={`${row.label} ${year}, ${count} questions, ${active ? 'selected' : 'not selected'}`} onClick={() => toggle(key)}>{count}</button>; })}
+                {displayYears.map(year => { const key = `${row.id}:${year}`, count = row.counts[year] || 0, active = selected.includes(key); return <button key={year} disabled={!ready || !count || loading} data-available={Boolean(count)} className="source-year-cell" aria-pressed={active} aria-label={`${row.label} ${year}, ${count} questions, ${active ? 'selected' : 'not selected'}`} onClick={() => toggle(key)}>{count||'—'}</button>; })}
               </div>)}
             </div>)}
           </div>)}
