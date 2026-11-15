@@ -477,7 +477,11 @@
 @media(prefers-reduced-motion:reduce) { .preparation-choice-row button { transition:none; } }
 
 /* Historical topic-frequency workspace. */
-.trends-page { width:min(1760px,calc(100% - 48px)); margin:0 auto; padding:52px 0 80px; color:var(--ink); }
+.trends-page { width:min(1760px,calc(100% - 48px)); margin:0 auto; padding:34px 0 80px; color:var(--ink); }
+.trends-page>.preparation-navigation { display:inline-block; margin-bottom:16px; }
+.trends-range { display:flex; width:max-content; max-width:100%; gap:5px; margin:0 0 16px auto; padding:5px; border:1px solid var(--line); border-radius:11px; background:var(--surface); }
+.trends-range button { min-height:34px; padding:6px 11px; border:1px solid transparent; border-radius:8px; background:transparent; color:var(--muted); font-size:13px; }
+.trends-range button[aria-pressed="true"] { border-color:color-mix(in srgb,var(--accent) 20%,transparent); background:var(--accent-soft); color:var(--accent); font-weight:600; }
 .trends-hero { max-width:840px; }
 .trends-hero h1 { margin:8px 0 10px; font-size:clamp(42px,5vw,72px); letter-spacing:-.055em; }
 .trends-hero>p:last-child { margin:0; color:var(--muted); font-size:18px; line-height:1.55; }
