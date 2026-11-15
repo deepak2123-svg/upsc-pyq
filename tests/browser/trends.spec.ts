@@ -17,7 +17,8 @@ test('PYQ trends filters exam, paper, year and term from real catalogue data',as
  await expect(page.getByRole('heading',{name:'NDA · GAT · GS'})).toBeVisible();
  expect(await table.locator('tbody tr').count()).toBeGreaterThan(1);
  await expect(table).toBeVisible();
- await expect(table.getByRole('columnheader',{name:'Component'})).toBeVisible();
+ await expect(table.getByRole('columnheader',{name:'Rank & component'})).toBeVisible();
+ await expect(table.getByRole('columnheader',{name:'Share'})).toBeVisible();
  await expect(table.locator('thead')).toContainText('I');await expect(table.locator('thead')).toContainText('II');
  await page.getByRole('button',{name:'Change preparation selection'}).click();
  await page.getByRole('button',{name:'Mathematics',exact:true}).click();
