@@ -4,8 +4,8 @@ import {PREPARATION_EXAMS,type PreparationExam} from './preparation-exams';
 import {questionEligible} from './question-review';
 import type {PyqExam} from './pyq-exams';
 
-export type TrendQuestion={exam:PyqExam;paper:string;branch:string;component:string;term:string;year:number;subject:string;topic:string;subtopic:string;taxonomyId?:string|null;count:number};
-type ThematicPlacement={paper:string;branch:string;component:string};
+export type TrendQuestion={exam:PyqExam;paper:string;branch:string;component:string;subcomponent:string;term:string;year:number;subject:string;topic:string;subtopic:string;taxonomyId?:string|null;count:number};
+type ThematicPlacement={paper:string;branch:string;component:string;subcomponent:string};
 
 function thematicPlacements(){
  const placements=new Map<string,ThematicPlacement>();
@@ -15,13 +15,13 @@ function thematicPlacements(){
   for(const leaf of inventory.nodes.filter(node=>node.kind==='subtopic')){
    const view=inventory.preparationViews.find(item=>item.subjectIds.includes(leaf.subjectId));
    if(!view)continue;
-   let component=subjects.get(leaf.subjectId)||leaf.label;
-   if(view.subjectIds.length===1){
-    let node=leaf;
-    while(node.parentId&&node.parentId!==leaf.subjectId){const parent=nodes.get(node.parentId);if(!parent)break;node=parent;}
-    component=node.label;
-   }
-   const placement={paper:view.paper,branch:exam==='NDA'&&view.paper==='GAT'?view.label:'All',component};
+   const path=[leaf];
+   let node=leaf;
+   while(node.parentId&&node.parentId!==leaf.subjectId){const parent=nodes.get(node.parentId);if(!parent)break;path.unshift(parent);node=parent;}
+   const singleSubject=view.subjectIds.length===1;
+   const component=singleSubject?(path[0]?.label||leaf.label):(subjects.get(leaf.subjectId)||leaf.label);
+   const subcomponent=singleSubject?(path[1]?.label||path[0]?.label||leaf.label):(path[0]?.label||leaf.label);
+   const placement={paper:view.paper,branch:exam==='NDA'&&view.paper==='GAT'?view.label:'All',component,subcomponent};
    for(const questionId of leaf.questionIdsByExam?.[exam]||[])if(!placements.has(`${exam}:${questionId}`))placements.set(`${exam}:${questionId}`,placement);
   }
  }
@@ -56,11 +56,11 @@ export function getTrendQuestions():TrendQuestion[]{
  for(const question of combinedQuestions){
   if(!questionEligible(question.id))continue;
   const placement=PREPARATION_EXAMS.includes(question.exam as PreparationExam)?placements.get(`${question.exam}:${question.id}`):undefined;
-  const row:TrendQuestion={exam:question.exam as PyqExam,paper:placement?.paper||paperOf(question),branch:placement?.branch||branchOf(question),component:placement?.component||question.subject,term:termOf(question),year:question.year,
+  const row:TrendQuestion={exam:question.exam as PyqExam,paper:placement?.paper||paperOf(question),branch:placement?.branch||branchOf(question),component:placement?.component||question.subject,subcomponent:placement?.subcomponent||question.taxonomyChapter||question.topic||question.subject,term:termOf(question),year:question.year,
    subject:question.subject,topic:question.taxonomyChapter||question.topic||question.subject,
    subtopic:question.taxonomySubtopic||question.subtopic||question.topic||question.subject,
    taxonomyId:question.taxonomyId,count:1};
-  const key=[row.exam,row.paper,row.branch,row.component,row.term,row.year,row.subject,row.topic,row.subtopic].join('\u0000');
+  const key=[row.exam,row.paper,row.branch,row.component,row.subcomponent,row.term,row.year,row.subject,row.topic,row.subtopic].join('\u0000');
   const existing=rows.get(key);if(existing)existing.count++;else rows.set(key,row);
  }
  return [...rows.values()];

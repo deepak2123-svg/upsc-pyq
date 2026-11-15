@@ -526,11 +526,20 @@
 .trends-table tbody th span { color:var(--muted); font-size:11px; font-weight:500; }
 .trends-table tbody th strong { margin:4px 0; font-size:14px; }
 .trends-table td.has-count { background:color-mix(in srgb,var(--accent) calc(var(--heat) * 42%),white); color:var(--ink); font-weight:700; }
-.trend-component-title { display:flex; align-items:center; gap:9px; }
-.trend-component-title strong { margin:0!important; }
+.trend-component-toggle { display:flex; align-items:center; width:100%; gap:9px; padding:0; border:0; background:transparent; color:var(--ink); text-align:left; cursor:pointer; }
+.trend-component-toggle strong { margin:0!important; font-size:14px; }
+.trend-component-toggle:focus-visible { outline:2px solid var(--accent); outline-offset:4px; border-radius:4px; }
+.trend-chevron { margin-left:auto; color:var(--muted)!important; font-size:18px!important; transition:transform .18s ease; }
+.trend-component-toggle[aria-expanded="true"] .trend-chevron { transform:rotate(180deg); }
 .trend-rank { display:grid!important; place-items:center; width:23px; height:23px; flex:0 0 23px; border-radius:7px; background:var(--accent-soft); color:var(--accent)!important; font-size:11px!important; font-weight:800!important; }
 .trend-share-bar { width:100%; height:4px; margin-top:9px; overflow:hidden; border-radius:999px; background:var(--paper); }
 .trend-share-bar i { display:block; height:100%; border-radius:inherit; background:var(--accent); }
+.trend-component-row>th { box-shadow:inset 0 -1px 0 var(--line); }
+.trend-subcomponent-row>th,.trend-subcomponent-row>td { background:color-mix(in srgb,var(--accent) 2.5%,var(--surface)); }
+.trend-subcomponent-row>th { padding-left:45px; }
+.trend-subcomponent-title { display:flex; align-items:center; gap:8px; }
+.trend-subcomponent-title span { color:var(--accent)!important; font-size:14px!important; }
+.trend-subcomponent-title strong { margin:0!important; font-size:13px!important; font-weight:650; }
 .trend-total strong,.trend-share strong { font-size:14px; }
 .trend-share strong { color:var(--accent); }
 .trends-empty { padding:36px; border:1px solid var(--line); border-radius:16px; color:var(--muted); background:var(--surface); }

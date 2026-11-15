@@ -6,16 +6,26 @@ test('PYQ trends filters exam, paper, year and term from real catalogue data',as
  await expect(page.getByRole('heading',{name:'NDA · GAT · English'})).toBeVisible();
  await expect(page.getByText('Historical question analysis')).toBeHidden();
  const table=page.getByRole('table');
+ const expectLevelTwo=async()=>{
+  const before=await table.locator('tbody tr').count(),toggle=table.locator('.trend-component-toggle').first();
+  await expect(toggle).toHaveAttribute('aria-expanded','false');
+  await toggle.click();
+  await expect(toggle).toHaveAttribute('aria-expanded','true');
+  expect(await table.locator('tbody tr').count()).toBeGreaterThan(before);
+ };
  expect(await table.locator('tbody tr').count()).toBeGreaterThan(1);
+ await expectLevelTwo();
  await page.getByRole('button',{name:'Change preparation selection'}).click();
  await expect(page.getByRole('group',{name:'GAT section'})).toBeVisible();
  await page.getByRole('button',{name:'Science',exact:true}).click();
  await expect(page.getByRole('heading',{name:'NDA · GAT · Science'})).toBeVisible();
  expect(await table.locator('tbody tr').count()).toBeGreaterThan(1);
+ await expectLevelTwo();
  await page.getByRole('button',{name:'Change preparation selection'}).click();
  await page.getByRole('button',{name:'GS',exact:true}).click();
  await expect(page.getByRole('heading',{name:'NDA · GAT · GS'})).toBeVisible();
  expect(await table.locator('tbody tr').count()).toBeGreaterThan(1);
+ await expectLevelTwo();
  await expect(table).toBeVisible();
  await expect(table.getByRole('columnheader',{name:'Rank & component'})).toBeVisible();
  await expect(table.getByRole('columnheader',{name:'Share'})).toBeVisible();
@@ -24,10 +34,12 @@ test('PYQ trends filters exam, paper, year and term from real catalogue data',as
  await page.getByRole('button',{name:'Mathematics',exact:true}).click();
  await expect(page.getByRole('heading',{name:'NDA · Mathematics'})).toBeVisible();
  expect(await table.locator('tbody tr').count()).toBeGreaterThan(1);
+ await expectLevelTwo();
  await page.getByRole('button',{name:'Change preparation selection'}).click();
  await page.getByRole('button',{name:'UPSC CDS',exact:true}).click();
  await expect(page.getByRole('heading',{name:'CDS · General Knowledge'})).toBeVisible();
  expect(await table.locator('tbody tr').count()).toBeGreaterThan(1);
+ await expectLevelTwo();
  await page.getByRole('button',{name:'Last 5',exact:true}).click();
  await expect(page.getByText('5',{exact:true}).last()).toBeVisible();
  await page.getByRole('button',{name:'English',exact:true}).click();
@@ -41,6 +53,7 @@ test('PYQ trends filters exam, paper, year and term from real catalogue data',as
  await page.getByRole('button',{name:'UPSC CSE',exact:true}).click();
  await expect(page.getByRole('heading',{name:'CSE · GS Paper I'})).toBeVisible();
  expect(await table.locator('tbody tr').count()).toBeGreaterThan(1);
+ await expectLevelTwo();
  await expect(table.locator('thead')).toContainText('Questions');
  await expect(table.getByRole('link',{name:'Open in library →'})).toHaveCount(0);
  await page.getByRole('button',{name:'GS Paper II / CSAT',exact:true}).click();
