@@ -23,6 +23,25 @@ test.beforeEach(async ({ page }) => {
   await expect(browser(page).getByRole("button", { name: "Open Geography", exact: true })).toBeEnabled();
 });
 
+test('exam-source filters persist through thematic drill-down and recalculate level counts',async({page})=>{
+  const filters=page.getByRole('region',{name:'Exam sources'}),nda=filters.getByRole('button',{name:/NDA/});
+  const geography=browser(page).locator('.subject-overview').filter({has:page.getByRole('button',{name:'Open Geography',exact:true})});
+  const initial=Number((await geography.getByText(/questions$/).textContent())?.replace(/\D/g,''));
+  await expect(filters).toBeVisible();
+  await expect(nda).toHaveAttribute('aria-pressed','true');
+  await nda.click();
+  await expect(nda).toHaveAttribute('aria-pressed','false');
+  const filtered=Number((await geography.getByText(/questions$/).textContent())?.replace(/\D/g,''));
+  expect(filtered).toBeLessThan(initial);
+  await expect(geography.locator('.scope-card-source-counts [data-exam=NDA]')).toHaveCount(0);
+  await add(page,'Geography');
+  await expect(count(page)).toHaveText(filtered.toLocaleString('en-IN'));
+  await open(page,'Geography');
+  await expect(filters).toBeVisible();
+  await expect(nda).toHaveAttribute('aria-pressed','false');
+  await expect(browser(page).locator('.scope-card-source-counts [data-exam=NDA]')).toHaveCount(0);
+});
+
 test("opening and folding folders never adds questions", async ({ page }) => {
   const tree = page.getByRole("navigation", { name: "Syllabus" });
   const inventory=await(await page.request.get('/api/pyqs/inventory')).json();

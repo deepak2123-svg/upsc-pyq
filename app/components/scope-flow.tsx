@@ -18,6 +18,7 @@ type ScopeCardsProps = {
   paths: SelectionPaths;
   focusId?: string;
   preferredExam?: PyqExam;
+  enabledExams?: readonly PyqExam[];
   visibleSubjectIds?: string[];
   onAdd: (id: string) => void;
   onBrowse: (id: string) => void;
@@ -43,10 +44,10 @@ const levelNames: Record<ScopeNode["kind"], string> = {
   subtopic: "subpart",
 };
 
-function cardMetrics(node: ScopeNode, paths: SelectionPaths, index: ReturnType<typeof buildSelectionIndex>, preferredExam?: PyqExam): CardMetrics {
+function cardMetrics(node: ScopeNode, paths: SelectionPaths, index: ReturnType<typeof buildSelectionIndex>, preferredExam?: PyqExam, enabledExams:readonly PyqExam[]=PYQ_EXAMS): CardMetrics {
   const metric = scopeMetrics(node.id, paths, index);
   const availableExams = emptyExamCounts();
-  for (const exam of PYQ_EXAMS) if (!preferredExam || exam === preferredExam) availableExams[exam] = node.examCounts[exam];
+  for (const exam of PYQ_EXAMS) if ((!preferredExam || exam === preferredExam)&&enabledExams.includes(exam)) availableExams[exam] = node.examCounts[exam];
   return { selectedCount: metric.selectedCount, state: metric.state, availableExams };
 }
 
@@ -69,7 +70,7 @@ function SourceDistribution({ counts, exams = PYQ_EXAMS }: { counts: ExamCounts;
   </>;
 }
 
-export function ScopeFlow({ inventory, paths, focusId, preferredExam, visibleSubjectIds, onAdd, onBrowse, onBack, onBrowseRoot, disabled = false }: ScopeCardsProps) {
+export function ScopeFlow({ inventory, paths, focusId, preferredExam, enabledExams=PYQ_EXAMS, visibleSubjectIds, onAdd, onBrowse, onBack, onBrowseRoot, disabled = false }: ScopeCardsProps) {
   const index = useMemo(() => buildSelectionIndex(inventory), [inventory]);
   const focus = index.nodesById.get(focusId || "");
 
@@ -88,6 +89,8 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, visibleSub
   const pluralLevel = `${nextLevel}${nextLevel === "subpart" ? "s" : "s"}`;
   const heading = pluralLevel.charAt(0).toUpperCase() + pluralLevel.slice(1);
   const focusState = focus ? scopeMetrics(focus.id, paths, index).state : "none";
+  const activeExams=preferredExam?[preferredExam]:enabledExams;
+  const focusAvailable=focus?activeExams.reduce((sum,exam)=>sum+focus.examCounts[exam],0):0;
 
   return <section className="scope-cards" aria-label={`${subjectLabel} ${pluralLevel}`} data-focus-id={focus?.id || "root"}>
     {focus ? <nav className="library-breadcrumbs" aria-label="Folder path">
@@ -103,19 +106,19 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, visibleSub
       <div>
         {focus ? <small>{scopeDisplayNumber(focus.id, index)}</small> : null}
         <h3>{focus?.label || "Subjects"}</h3>
-        {focus ? <span>{number(preferredExam ? focus.examCounts[preferredExam] : focus.questionCount)} MCQs</span> : null}
+        {focus ? <span>{number(focusAvailable)} MCQs</span> : null}
         {isNdaScience ? <p>NCERT-style chapter order · class labels omitted</p> : null}
       </div>
       <div className="scope-card-exam-key" aria-label="Exam source colours">
-        {(preferredExam ? [preferredExam] : PYQ_EXAMS).map((exam) => <span key={exam}><i style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} />{exam}</span>)}
+        {activeExams.map((exam) => <span key={exam}><i style={{ "--exam-color": PYQ_EXAM_COLORS[exam] } as CSSProperties} />{exam}</span>)}
       </div>
-      {focus ? <button type="button" className="explorer-add" disabled={disabled || (preferredExam?focus.examCounts[preferredExam]:focus.questionCount)===0 || focusState === "all"} onClick={() => onAdd(focus.id)}>{focusState === "all" ? "Added" : focusState === "partial" ? "Add remaining" : "Add entire folder"}</button> : null}
+      {focus ? <button type="button" className="explorer-add" disabled={disabled || focusAvailable===0 || focusState === "all"} onClick={() => onAdd(focus.id)}>{focusState === "all" ? "Added" : focusState === "partial" ? "Add remaining" : "Add entire folder"}</button> : null}
     </header>
-    {cards.length && focus ? <h4 className="explorer-contents-label">{heading}</h4> : !cards.length && focus ? <div className="explorer-leaf"><SourceDistribution counts={cardMetrics(focus, paths, index, preferredExam).availableExams} exams={preferredExam ? [preferredExam] : PYQ_EXAMS} /></div> : null}
+    {cards.length && focus ? <h4 className="explorer-contents-label">{heading}</h4> : !cards.length && focus ? <div className="explorer-leaf"><SourceDistribution counts={cardMetrics(focus, paths, index, preferredExam,enabledExams).availableExams} exams={activeExams} /></div> : null}
     <div className="scope-card-grid">
       {cards.map((node) => {
-        const metrics = cardMetrics(node, paths, index, preferredExam);
-        const availableCount = preferredExam ? node.examCounts[preferredExam] : node.questionCount;
+        const metrics = cardMetrics(node, paths, index, preferredExam,enabledExams);
+        const availableCount = activeExams.reduce((sum,exam)=>sum+node.examCounts[exam],0);
         const displayNumber = scopeDisplayNumber(node.id, index);
         const countText = `${number(availableCount)} questions`;
         return <article
@@ -137,7 +140,7 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, visibleSub
               </div>
               <button type="button" className="explorer-add" disabled={disabled || availableCount===0 || metrics.state === "all"} aria-label={`${metrics.state === "all" ? "Added" : "Add to test:"} ${node.label}`} onClick={() => onAdd(node.id)}>{metrics.state === "all" ? "Added" : metrics.state === "partial" ? "Add remaining" : node.kind === "subject" ? "+ Add to test" : "Add to test"}</button>
             </div>
-            <SourceDistribution counts={metrics.availableExams} exams={preferredExam ? [preferredExam] : node.kind === "subject" ? SUBJECT_SOURCE_ORDER : PYQ_EXAMS} />
+            <SourceDistribution counts={metrics.availableExams} exams={preferredExam ? [preferredExam] : node.kind === "subject" ? SUBJECT_SOURCE_ORDER.filter(exam=>activeExams.includes(exam)) : activeExams} />
           </div>
         </article>;
       })}

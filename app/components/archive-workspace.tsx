@@ -235,6 +235,12 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   const current = focusId ? index.nodesById.get(focusId) : undefined;
   const activeView = (current && views?.find(view => view.subjectIds.includes(current.subjectId))) || views?.find(view => view.id === viewId) || views?.[0];
   const visibleSubjectIds = activeView?.subjectIds;
+  const filterExams:readonly PyqExam[]=initialExam?[initialExam]:PYQ_EXAMS;
+  const sourceFilterCounts=useMemo(()=>Object.fromEntries(PYQ_EXAMS.map(exam=>{
+    if(current)return [exam,current.examCounts[exam]];
+    const subjectIds=visibleSubjectIds||workingInventory.subjects.map(subject=>subject.id);
+    return [exam,subjectIds.reduce((sum,id)=>sum+(index.nodesById.get(id)?.examCounts[exam]||0),0)];
+  })) as Record<PyqExam,number>,[current,visibleSubjectIds,workingInventory.subjects,index]);
   function changeView(view: PreparationView) {
     if (loading || exporting || !restored) return;
     const landing=preparationLandingScope(preparationExam,view);
@@ -300,11 +306,16 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   }
   function addToTest(id: string) {
     if (loading || !restored) return;
-    const sources=[...new Set((index.leavesById.get(id)||[]).flatMap(leaf=>defaultSources(leaf,initialExam)))];
+    const sources=[...new Set((index.leavesById.get(id)||[]).flatMap(leaf=>defaultSources(leaf,initialExam)).filter(exam=>enabledExams.includes(exam)))];
+    if(!sources.length)return;
     setEnabledExams(existing=>[...new Set([...existing,...sources])]);
     setSelectedYearsByExam(existing=>Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,sources.includes(exam)?[...availableYearsByExam[exam]]:existing[exam]])) as YearsByExam);
     setPaths((existing) => {
       const next = addScope(existing, id, index, initialExam);
+      for(const leaf of index.leavesById.get(id)||[]){
+        const previous=existing[leaf.id]||[];
+        if(next[leaf.id])next[leaf.id]=next[leaf.id].filter(exam=>previous.includes(exam)||sources.includes(exam));
+      }
       return coalesceCoveredDraftScopes(next,index);
     });
     setError("");setDraftWarning(""); setNotice("Added to test.");
@@ -398,6 +409,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
   return <main className="pyq-page archive-workspace scope-workspace library-workspace" aria-busy={loading||switching}>
     <PreparationSelector exam={preparationExam} views={views} activeView={activeView} pendingExam={switching?requestedExam:undefined} onPrefetchExam={prefetchExam} disabled={!restored || loading || exporting || switching} onExam={exam=>{setRequestedExam(exam);startExamTransition(()=>router.push(`/prepare/${exam}`));}} onView={changeView}/>
     <header className="scope-library-heading"><div>{initialExam ? <><Link className="back-link" href="/">← All UPSC sources</Link><p className="pyq-kicker">{initialExam}</p></> : null}<h1>{preparationExam ? `${preparationExam} question library` : initialExam ? `${initialExam} question library` : "Question library"}</h1></div></header>
+    <section className="library-source-filter" aria-label="Exam sources"><div><strong>Question sources</strong><span>Filter every library level</span></div><div role="group" aria-label="Included exam sources">{filterExams.map(exam=>{const active=enabledExams.includes(exam),available=sourceFilterCounts[exam];return <button type="button" key={exam} disabled={!restored||loading||available===0} aria-pressed={active} style={{"--exam-color":PYQ_EXAM_COLORS[exam]} as CSSProperties} onClick={()=>toggleSource(exam)}><span><i aria-hidden="true"/>{exam}<b>{format(available)}</b></span><small>{active?'Included':'Excluded'}</small></button>})}</div></section>
     <div className={`scope-library-layout explorer-layout ${selectedIds.length ? "has-selection" : "no-selection"}`}>
       <h2 className="library-column-label library-column-label-left">Library</h2>
       <h2 className="library-column-label library-column-label-middle">{current ? ({subject:"Sections",head:"Chapters",topic:"Subparts",subtopic:"Subpart"} as const)[current.kind] : "Subjects"}</h2>
@@ -412,7 +424,7 @@ export function ArchiveWorkspace({ initialInventory, initialExam }: { initialInv
 
       <section className="scope-refine scope-library-browser" aria-labelledby="scope-refine-title">
         <h2 id="scope-refine-title" className="visually-hidden">{current ? `Browse ${current.label}` : "Browse subjects"}</h2>
-        <ScopeFlow inventory={workingInventory} paths={paths} focusId={focusId} preferredExam={initialExam} visibleSubjectIds={visibleSubjectIds} onAdd={addToTest} onBrowse={browse} onBack={goBack} onBrowseRoot={browseRoot} disabled={loading || !restored} />
+        <ScopeFlow inventory={workingInventory} paths={filteredPaths} focusId={focusId} preferredExam={initialExam} enabledExams={enabledExams} visibleSubjectIds={visibleSubjectIds} onAdd={addToTest} onBrowse={browse} onBack={goBack} onBrowseRoot={browseRoot} disabled={loading || !restored} />
         <p className="visually-hidden" role="status" aria-live="polite">{notice}</p>
       </section>
 
