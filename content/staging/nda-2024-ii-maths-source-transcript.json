@@ -1,0 +1,2897 @@
+{
+  "paper": {
+    "exam": "NDA",
+    "year": 2024,
+    "session": "II",
+    "subject": "Mathematics",
+    "bookletSeries": "A",
+    "paperCode": "SURN-B-MTH/81A",
+    "examDate": "2024-09-01",
+    "questionPaperUrl": "https://www.upsc.gov.in/sites/default/files/QP-NDA-NA-II-24-MATHEMATICS-020924.pdf"
+  },
+  "transcriptionAid": {
+    "name": "WishWas Training Academy solved-paper transcript",
+    "baseUrl": "https://www.wishwas.in/nda/papers/2024-ii-maths",
+    "notice": "Secondary structured transcript and worked solutions; never official answer evidence.",
+    "pages": [
+      {
+        "part": 1,
+        "url": "https://www.wishwas.in/nda/papers/2024-ii-maths",
+        "sha256": "866a369e5c7785d528a3002b70e9052ae74c1e3ecd5e145d6259426fea988fd4",
+        "solutionsUrl": "https://www.wishwas.in/nda/papers/2024-ii-maths/solutions/1",
+        "solutionsSha256": "ca9ac10d8fb96f386ef37d451caef9ad3a9981fcc2c06d876fb98df70252c4fd"
+      },
+      {
+        "part": 2,
+        "url": "https://www.wishwas.in/nda/papers/2024-ii-maths/2",
+        "sha256": "d7a69e0b33742b7c0d241d6f80fc5b1cebf370c69dbcd677cd87e0f6c4b92ddc",
+        "solutionsUrl": "https://www.wishwas.in/nda/papers/2024-ii-maths/solutions/2",
+        "solutionsSha256": "f8acaef79da974ce26838aaa0e9d5cdfa9df374f0d6bb4d79889aa26acedaea5"
+      },
+      {
+        "part": 3,
+        "url": "https://www.wishwas.in/nda/papers/2024-ii-maths/3",
+        "sha256": "d7a3b0301895c7ce848cd992981da3bca6a1c8a1ffe685c19a8dfd4264a5acb5",
+        "solutionsUrl": "https://www.wishwas.in/nda/papers/2024-ii-maths/solutions/3",
+        "solutionsSha256": "6b78c6466f227dc7c37e2c9652c6f1991a6b5442d8cf6b17ca661177f8da3611"
+      },
+      {
+        "part": 4,
+        "url": "https://www.wishwas.in/nda/papers/2024-ii-maths/4",
+        "sha256": "4d941c16a35799690937c708fd0dc36f2711d6f2dfc03854d34c0f82cefc7c02",
+        "solutionsUrl": "https://www.wishwas.in/nda/papers/2024-ii-maths/solutions/4",
+        "solutionsSha256": "4099f4cfca02347179c6d1ec17edc27e2d382953f3d923e0357618f06c76ac7b"
+      }
+    ]
+  },
+  "publisherKeyAid": {
+    "name": "EduRev NDA II 2024 Mathematics Set A key",
+    "url": "https://edurev.in/p/383349/previous-year-question-paper-nda-mathematics-2024",
+    "sha256": "f573c70b2fc444e1f95cc1c8580472513ec1d901fb4df4390717c0a355db1019",
+    "notice": "Secondary publisher answer table; never official UPSC answer evidence.",
+    "gridOrder": [
+      1,
+      31,
+      61,
+      91,
+      2,
+      32,
+      62,
+      92,
+      3,
+      33,
+      63,
+      93,
+      4,
+      34,
+      64,
+      94,
+      5,
+      35,
+      65,
+      95,
+      6,
+      36,
+      66,
+      96,
+      7,
+      37,
+      67,
+      97,
+      8,
+      38,
+      68,
+      98,
+      9,
+      39,
+      69,
+      99,
+      10,
+      40,
+      70,
+      100,
+      11,
+      41,
+      71,
+      101,
+      12,
+      42,
+      72,
+      102,
+      13,
+      43,
+      73,
+      103,
+      14,
+      44,
+      74,
+      104,
+      15,
+      45,
+      75,
+      105,
+      16,
+      46,
+      76,
+      106,
+      17,
+      47,
+      77,
+      107,
+      18,
+      48,
+      78,
+      108,
+      19,
+      49,
+      79,
+      109,
+      20,
+      50,
+      80,
+      110,
+      21,
+      51,
+      81,
+      111,
+      22,
+      52,
+      82,
+      112,
+      23,
+      53,
+      83,
+      113,
+      24,
+      54,
+      84,
+      114,
+      25,
+      55,
+      85,
+      115,
+      26,
+      56,
+      86,
+      116,
+      27,
+      57,
+      87,
+      117,
+      28,
+      58,
+      88,
+      118,
+      29,
+      59,
+      89,
+      119,
+      30,
+      60,
+      90,
+      120
+    ],
+    "letters": [
+      "D",
+      "C",
+      "C",
+      "D",
+      "A",
+      "B",
+      "D",
+      "B",
+      "A",
+      "D",
+      "C",
+      "C",
+      "D",
+      "D",
+      "B",
+      "B",
+      "C",
+      "D",
+      "B",
+      "D",
+      "C",
+      "B",
+      "D",
+      "A",
+      "A",
+      "C",
+      "B",
+      "C",
+      "C",
+      "C",
+      "A",
+      "C",
+      "B",
+      "A",
+      "C",
+      "B",
+      "B",
+      "A",
+      "D",
+      "A",
+      "C",
+      "A",
+      "A",
+      "D",
+      "A",
+      "B",
+      "A",
+      "B",
+      "A",
+      "D",
+      "B",
+      "C",
+      "B",
+      "C",
+      "D",
+      "C",
+      "C",
+      "D",
+      "B",
+      "C",
+      "C",
+      "B",
+      "C",
+      "A",
+      "D",
+      "C",
+      "D",
+      "A",
+      "A",
+      "C",
+      "B",
+      "D",
+      "C",
+      "D",
+      "B",
+      "B",
+      "B",
+      "A",
+      "A",
+      "B",
+      "C",
+      "A",
+      "C",
+      "B",
+      "B",
+      "B",
+      "A",
+      "D",
+      "A",
+      "A",
+      "B",
+      "D",
+      "C",
+      "A",
+      "B",
+      "B",
+      "B",
+      "C",
+      "B",
+      "D",
+      "C",
+      "D",
+      "A",
+      "D",
+      "A",
+      "B",
+      "B",
+      "A",
+      "B",
+      "B",
+      "A",
+      "A",
+      "C",
+      "A",
+      "A",
+      "A",
+      "D",
+      "B",
+      "D",
+      "D"
+    ]
+  },
+  "questions": [
+    {
+      "number": 1,
+      "promptLines": [
+        "Let \\(X\\) be a matrix of order \\(3 \\times 3\\), \\(Y\\) be a matrix of order \\(2 \\times 3\\) and \\(Z\\) be a matrix of order \\(3 \\times 2\\). Which of the following statements are correct?",
+        "I. \\((ZY)X\\) is defined and is a square matrix of order 3.",
+        "II. \\(Y(XZ)\\) is defined and is a square matrix of order 2.",
+        "III. \\(X(YZ)\\) is not defined.",
+        "Select the answer using the code given below."
+      ],
+      "options": {
+        "A": "I and II only",
+        "B": "II and III only",
+        "C": "I and III only",
+        "D": "I, II and III"
+      },
+      "topicLabel": "Types of matrices and operations",
+      "topicHref": "/nda/maths/matrices/matrices",
+      "pdfPage": 3,
+      "printedPage": 3,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">A product ​<span class=\"tex\">AB</span>​ is defined only when the number of columns of ​<span class=\"tex\">A</span>​ equals the number of rows of ​<span class=\"tex\">B</span>​; an ​<span class=\"tex\">m \\times n</span>​ matrix times an ​<span class=\"tex\">n \\times p</span>​ matrix is ​<span class=\"tex\">m \\times p</span>​. I: ​<span class=\"tex\">ZY</span>​ is ​<span class=\"tex\">(3 \\times 2)(2 \\times 3) = 3 \\times 3</span>​, and times ​<span class=\"tex\">X</span>​ (​<span class=\"tex\">3 \\times 3</span>​) it is ​<span class=\"tex\">3 \\times 3</span>​. Correct. II: ​<span class=\"tex\">XZ</span>​ is ​<span class=\"tex\">(3 \\times 3)(3 \\times 2) = 3 \\times 2</span>​, and ​<span class=\"tex\">Y(XZ)</span>​ is ​<span class=\"tex\">(2 \\times 3)(3 \\times 2) = 2 \\times 2</span>​. Correct. III: ​<span class=\"tex\">YZ</span>​ is ​<span class=\"tex\">(2 \\times 3)(3 \\times 2) = 2 \\times 2</span>​; ​<span class=\"tex\">X</span>​ has 3 columns but ​<span class=\"tex\">YZ</span>​ has 2 rows, so ​<span class=\"tex\">X(YZ)</span>​ is not defined. Correct. Answer: I, II and III.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 2,
+      "promptLines": [
+        "Consider the following statements :",
+        "I. The set of all irrational numbers between \\(\\sqrt{12}\\) and \\(\\sqrt{15}\\) is an infinite set.",
+        "II. The set of all odd integers less than 1000 is a finite set.",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "topicLabel": "Sets and Venn diagrams",
+      "topicHref": "/nda/maths/algebra/sets",
+      "pdfPage": 3,
+      "printedPage": 3,
+      "answerDraft": "A",
+      "answerInference": "explicit-letter",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><p class=\"text-sm mt-2 bg-amber-50 border border-amber-300 rounded-md px-3 py-2\"><strong>Our working gives (a).</strong> Statement II turns on the word &#39;integers&#39;: negative odd integers make the set infinite, so II is false. A solver who reads it as positive integers would pick (c).</p><div class=\"mt-2 leading-relaxed\">Statement I: between any two different real numbers there are infinitely many irrational numbers. Since ​<span class=\"tex\">\\sqrt{12} \\approx 3.46</span>​ and ​<span class=\"tex\">\\sqrt{15} \\approx 3.87</span>​ are different, the set is infinite. I is correct. Statement II: integers include negative numbers. The odd integers less than 1000 are ​<span class=\"tex\">999, 997, \\ldots, 1, -1, -3, -5, \\ldots</span>​ and this list never ends on the negative side. So the set is infinite, and II is wrong. (It would be finite only if the statement said odd natural numbers.) Answer: I only.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 3,
+      "promptLines": [
+        "How many 4-digit numbers are there having all digits as odd?"
+      ],
+      "options": {
+        "A": "625",
+        "B": "400",
+        "C": "196",
+        "D": "120"
+      },
+      "topicLabel": "Permutations and combinations",
+      "topicHref": "/nda/maths/algebra/permutations-combinations",
+      "pdfPage": 3,
+      "printedPage": 3,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The odd digits are 1, 3, 5, 7, 9, which is 5 choices. Nothing says the digits must be different, so each of the four places can be filled in 5 ways independently. Also, no odd digit is zero, so the first place has no restriction. By the multiplication rule the count is ​<span class=\"tex\">5 \\times 5 \\times 5 \\times 5 = 5^4 = 625</span>​. Answer: 625.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 4,
+      "promptLines": [
+        "If \\(\\omega \\neq 1\\) is a cube root of unity, then what is \\((1 + \\omega - \\omega^2)^{100} + (1 - \\omega + \\omega^2)^{100}\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(2^{100}\\omega^2\\)",
+        "B": "\\(2^{100}\\omega\\)",
+        "C": "\\(2^{100}\\)",
+        "D": "\\(-2^{100}\\)"
+      },
+      "topicLabel": "Complex numbers",
+      "topicHref": "/nda/maths/algebra/complex-numbers",
+      "pdfPage": 3,
+      "printedPage": 3,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Use ​<span class=\"tex\">1 + \\omega + \\omega^2 = 0</span>​ and ​<span class=\"tex\">\\omega^3 = 1</span>​. Since ​<span class=\"tex\">1 + \\omega = -\\omega^2</span>​, the first bracket is ​<span class=\"tex\">-\\omega^2 - \\omega^2 = -2\\omega^2</span>​. Since ​<span class=\"tex\">1 + \\omega^2 = -\\omega</span>​, the second bracket is ​<span class=\"tex\">-\\omega - \\omega = -2\\omega</span>​. Now ​<span class=\"math-wide\"><span class=\"tex\">(-2\\omega^2)^{100} = 2^{100}\\omega^{200} = 2^{100}\\omega^2</span></span>​ because ​<span class=\"tex\">200 = 3 \\times 66 + 2</span>​. And ​<span class=\"math-wide\"><span class=\"tex\">(-2\\omega)^{100} = 2^{100}\\omega^{100} = 2^{100}\\omega</span></span>​ because ​<span class=\"tex\">100 = 3 \\times 33 + 1</span>​. Adding: ​<span class=\"math-wide\"><span class=\"tex\">2^{100}(\\omega^2 + \\omega) = 2^{100}(-1) = -2^{100}</span></span>​. Answer: ​<span class=\"tex\">-2^{100}</span>​.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 5,
+      "promptLines": [
+        "Let \\(A\\) and \\(B\\) be two square matrices of same order. If \\(AB\\) is a null matrix, then which one of the following is correct?"
+      ],
+      "options": {
+        "A": "Both \\(A\\) and \\(B\\) are null matrices",
+        "B": "Either \\(A\\) or \\(B\\) is a null matrix",
+        "C": "\\(B\\) is a null matrix if \\(A\\) is a non-singular matrix",
+        "D": "Both \\(A\\) and \\(B\\) are singular matrices"
+      },
+      "topicLabel": "Adjoint and inverse of a matrix",
+      "topicHref": "/nda/maths/matrices/adjoint-inverse",
+      "pdfPage": 3,
+      "printedPage": 3,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">If ​<span class=\"tex\">A</span>​ is non-singular, ​<span class=\"tex\">A^{-1}</span>​ exists. Multiply ​<span class=\"tex\">AB = O</span>​ on the left by ​<span class=\"tex\">A^{-1}</span>​: ​<span class=\"tex\">A^{-1}AB = A^{-1}O</span>​, so ​<span class=\"tex\">B = O</span>​. Hence (c) is always true. The others can fail. Two non-zero matrices can have a zero product, for example ​<span class=\"math-wide\"><span class=\"tex\">A = \\begin{pmatrix} 1 &amp; 0 \\\\ 0 &amp; 0 \\end{pmatrix}</span></span>​ and ​<span class=\"math-wide\"><span class=\"tex\">B = \\begin{pmatrix} 0 &amp; 0 \\\\ 0 &amp; 1 \\end{pmatrix}</span></span>​, so (a) and (b) are wrong. And (d) fails when ​<span class=\"tex\">A</span>​ is the identity matrix and ​<span class=\"tex\">B</span>​ is the null matrix, since then ​<span class=\"tex\">A</span>​ is not singular. Answer: ​<span class=\"tex\">B</span>​ is a null matrix if ​<span class=\"tex\">A</span>​ is a non-singular matrix.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 6,
+      "promptLines": [
+        "In the expansion of \\((1 + x)^p (1 + x)^q\\), if the coefficient of \\(x^3\\) is 35, then what is the value of \\((p + q)\\)?"
+      ],
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "topicLabel": "Binomial theorem",
+      "topicHref": "/nda/maths/algebra/binomial-theorem",
+      "pdfPage": 5,
+      "printedPage": 5,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Combine the powers: ​<span class=\"tex\">(1 + x)^p (1 + x)^q = (1 + x)^{p+q}</span>​. Write ​<span class=\"tex\">n = p + q</span>​. In ​<span class=\"tex\">(1 + x)^n</span>​ the coefficient of ​<span class=\"tex\">x^3</span>​ is ​<span class=\"tex\">\\binom{n}{3} = \\frac{n(n-1)(n-2)}{6}</span>​. Set this equal to 35: ​<span class=\"tex\">n(n-1)(n-2) = 210</span>​. Try ​<span class=\"tex\">n = 7</span>​: ​<span class=\"tex\">7 \\times 6 \\times 5 = 210</span>​. It fits. So ​<span class=\"tex\">p + q = 7</span>​. Answer: 7.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 7,
+      "promptLines": [
+        "If \\(p\\) times the \\(p\\)th term of an AP is equal to \\(q\\) times the \\(q\\)th term \\((p \\neq q)\\), then what is the \\((p + q)\\)th term equal to?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "\\(p + q\\)",
+        "C": "\\(pq\\)",
+        "D": "\\(pq(p + q)\\)"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "topicHref": "/nda/maths/algebra/progressions",
+      "pdfPage": 5,
+      "printedPage": 5,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Let the first term be ​<span class=\"tex\">a</span>​ and the common difference ​<span class=\"tex\">d</span>​; the ​<span class=\"tex\">n</span>​th term is ​<span class=\"tex\">a + (n-1)d</span>​. Given ​<span class=\"tex\">p[a + (p-1)d] = q[a + (q-1)d]</span>​. Bring everything to one side: ​<span class=\"tex\">a(p - q) + d(p^2 - q^2 - p + q) = 0</span>​, that is ​<span class=\"tex\">a(p - q) + d(p - q)(p + q - 1) = 0</span>​. Since ​<span class=\"tex\">p \\neq q</span>​, divide by ​<span class=\"tex\">(p - q)</span>​: ​<span class=\"tex\">a + (p + q - 1)d = 0</span>​. But the left side is exactly the ​<span class=\"tex\">(p + q)</span>​th term. So it equals 0. Answer: 0.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 8,
+      "promptLines": [
+        "Let \\(p = \\ln(x)\\), \\(q = \\ln(x^3)\\) and \\(r = \\ln(x^5)\\), where \\(x > 1\\). Which of the following statements is/are correct?",
+        "I. \\(p\\), \\(q\\) and \\(r\\) are in AP.",
+        "II. \\(p\\), \\(q\\) and \\(r\\) can never be in GP.",
+        "Select the answer using the code given below."
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "topicHref": "/nda/maths/algebra/progressions",
+      "pdfPage": 5,
+      "printedPage": 5,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Use ​<span class=\"tex\">\\ln(x^n) = n\\ln x</span>​. Put ​<span class=\"tex\">t = \\ln x</span>​; since ​<span class=\"tex\">x &gt; 1</span>​, ​<span class=\"tex\">t &gt; 0</span>​. Then ​<span class=\"tex\">p = t</span>​, ​<span class=\"tex\">q = 3t</span>​, ​<span class=\"tex\">r = 5t</span>​. I: ​<span class=\"tex\">q - p = 2t</span>​ and ​<span class=\"tex\">r - q = 2t</span>​, equal differences, so they are in AP. Correct. II: for a GP we need ​<span class=\"tex\">q^2 = pr</span>​, that is ​<span class=\"tex\">9t^2 = 5t^2</span>​, which needs ​<span class=\"tex\">t = 0</span>​. But ​<span class=\"tex\">t &gt; 0</span>​, so they can never be in GP. Correct. Answer: Both I and II.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 9,
+      "promptLines": [
+        "If \\(Z = \\frac{1}{3}\\begin{vmatrix} i & 2i & 1 \\\\ 2i & 3i & 2 \\\\ 3 & 1 & 3 \\end{vmatrix} = x + iy\\); \\(i = \\sqrt{-1}\\) then what is modulus of \\(Z\\) equal to?"
+      ],
+      "options": {
+        "A": "1",
+        "B": "\\(\\sqrt{2}\\)",
+        "C": "2",
+        "D": "\\(\\sqrt{3}\\)"
+      },
+      "topicLabel": "Complex numbers",
+      "topicHref": "/nda/maths/algebra/complex-numbers",
+      "pdfPage": 5,
+      "printedPage": 5,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Expand the determinant along the first row. First term: ​<span class=\"math-wide\"><span class=\"tex\">i(3i \\cdot 3 - 2 \\cdot 1) = i(9i - 2) = -9 - 2i</span></span>​. Second term: ​<span class=\"math-wide\"><span class=\"tex\">-2i(2i \\cdot 3 - 2 \\cdot 3) = -2i(6i - 6) = 12 + 12i</span></span>​. Third term: ​<span class=\"math-wide\"><span class=\"tex\">1(2i \\cdot 1 - 3i \\cdot 3) = 2i - 9i = -7i</span></span>​. Sum: ​<span class=\"tex\">(-9 + 12) + (-2 + 12 - 7)i = 3 + 3i</span>​. So ​<span class=\"tex\">Z = \\frac{1}{3}(3 + 3i) = 1 + i</span>​. Its modulus is ​<span class=\"tex\">\\sqrt{1^2 + 1^2} = \\sqrt{2}</span>​. Answer: ​<span class=\"tex\">\\sqrt{2}</span>​.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 10,
+      "promptLines": [
+        "What is the value of the sum \\(\\sum_{n=1}^{20} (i^{n-1} + i^n + i^{n+1})\\) where \\(i = \\sqrt{-1}\\)?"
+      ],
+      "options": {
+        "A": "\\(-2i\\)",
+        "B": "0",
+        "C": "1",
+        "D": "\\(2i\\)"
+      },
+      "topicLabel": "Complex numbers",
+      "topicHref": "/nda/maths/algebra/complex-numbers",
+      "pdfPage": 5,
+      "printedPage": 5,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Take ​<span class=\"tex\">i^n</span>​ common: ​<span class=\"math-wide\"><span class=\"tex\">i^{n-1} + i^n + i^{n+1} = i^n\\left(\\frac{1}{i} + 1 + i\\right)</span></span>​. Since ​<span class=\"tex\">\\frac{1}{i} = -i</span>​, the bracket is ​<span class=\"tex\">-i + 1 + i = 1</span>​. So each term is just ​<span class=\"tex\">i^n</span>​, and the sum is ​<span class=\"tex\">i + i^2 + \\cdots + i^{20}</span>​. Powers of ​<span class=\"tex\">i</span>​ repeat every four: ​<span class=\"tex\">i + i^2 + i^3 + i^4 = i - 1 - i + 1 = 0</span>​. Twenty terms make five such groups, each adding to 0. Answer: 0.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 11,
+      "promptLines": [
+        "Let \\(x > 1\\), \\(y > 1\\), \\(z > 1\\) be in GP. Then \\(\\frac{1}{1 + \\ln x}\\), \\(\\frac{1}{1 + \\ln y}\\), \\(\\frac{1}{1 + \\ln z}\\) are"
+      ],
+      "options": {
+        "A": "in AP",
+        "B": "in GP",
+        "C": "in HP",
+        "D": "neither in AP nor in GP nor in HP"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "topicHref": "/nda/maths/algebra/progressions",
+      "pdfPage": 7,
+      "printedPage": 7,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"tex\">x, y, z</span>​ in GP means ​<span class=\"tex\">y^2 = xz</span>​. Take logs: ​<span class=\"tex\">2\\ln y = \\ln x + \\ln z</span>​, so ​<span class=\"tex\">\\ln x, \\ln y, \\ln z</span>​ are in AP. Adding 1 to each term of an AP keeps it an AP, so ​<span class=\"tex\">1 + \\ln x</span>​, ​<span class=\"tex\">1 + \\ln y</span>​, ​<span class=\"tex\">1 + \\ln z</span>​ are in AP (and all are positive because ​<span class=\"tex\">x, y, z &gt; 1</span>​). Numbers whose reciprocals are in AP are in HP by definition. So the three given fractions are in HP. Check: ​<span class=\"tex\">x, y, z = e, e^2, e^3</span>​ gives ​<span class=\"tex\">\\frac12, \\frac13, \\frac14</span>​, which is an HP. Answer: in HP.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 12,
+      "promptLines": [
+        "If \\(\\omega = -\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}\\) then what is \\(\\begin{vmatrix} 1 + \\omega & 1 + \\omega^2 & \\omega + \\omega^2 \\\\ 1 & \\omega & \\omega^2 \\\\ \\frac{1}{\\omega} & \\frac{1}{\\omega^2} & 1 \\end{vmatrix}\\) equal to?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "\\(\\omega\\)",
+        "C": "\\(\\omega^2\\)",
+        "D": "\\(1 - \\omega^2\\)"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "topicHref": "/nda/maths/matrices/determinants",
+      "pdfPage": 7,
+      "printedPage": 7,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">This ​<span class=\"tex\">\\omega</span>​ is a cube root of unity, so ​<span class=\"tex\">\\omega^3 = 1</span>​ and ​<span class=\"tex\">1 + \\omega + \\omega^2 = 0</span>​. Simplify row 1: ​<span class=\"tex\">1 + \\omega = -\\omega^2</span>​, ​<span class=\"tex\">1 + \\omega^2 = -\\omega</span>​, ​<span class=\"tex\">\\omega + \\omega^2 = -1</span>​. Simplify row 3: ​<span class=\"tex\">\\frac{1}{\\omega} = \\omega^2</span>​ and ​<span class=\"tex\">\\frac{1}{\\omega^2} = \\omega</span>​, so row 3 is ​<span class=\"tex\">(\\omega^2, \\omega, 1)</span>​. Row 1 is therefore ​<span class=\"tex\">(-\\omega^2, -\\omega, -1)</span>​, which is ​<span class=\"tex\">-1</span>​ times row 3. When one row is a multiple of another, the determinant is zero. Answer: 0.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 13,
+      "promptLines": [
+        "If the sum of the first \\(n\\) terms of a series is \\(n(2n + 1)\\), then what is the \\(n\\)th term?"
+      ],
+      "options": {
+        "A": "\\(4n - 1\\)",
+        "B": "\\(4n\\)",
+        "C": "\\(4n + 1\\)",
+        "D": "\\(4n + 3\\)"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "topicHref": "/nda/maths/algebra/progressions",
+      "pdfPage": 7,
+      "printedPage": 7,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The ​<span class=\"tex\">n</span>​th term is the sum of ​<span class=\"tex\">n</span>​ terms minus the sum of ​<span class=\"tex\">(n-1)</span>​ terms: ​<span class=\"tex\">T_n = S_n - S_{n-1}</span>​. Here ​<span class=\"tex\">S_n = 2n^2 + n</span>​ and ​<span class=\"math-wide\"><span class=\"tex\">S_{n-1} = 2(n-1)^2 + (n-1) = 2n^2 - 4n + 2 + n - 1 = 2n^2 - 3n + 1</span></span>​. Subtract: ​<span class=\"math-wide\"><span class=\"tex\">T_n = (2n^2 + n) - (2n^2 - 3n + 1) = 4n - 1</span></span>​. Check: ​<span class=\"tex\">T_1 = 3 = S_1 = 1 \\times 3</span>​. Correct. Answer: ​<span class=\"tex\">4n - 1</span>​.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 14,
+      "promptLines": [
+        "In how many ways can the letters of the word INDIA be permutated such that in each combination, vowels should occupy odd positions?"
+      ],
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "9",
+        "D": "12"
+      },
+      "topicLabel": "Permutations and combinations",
+      "topicHref": "/nda/maths/algebra/permutations-combinations",
+      "pdfPage": 7,
+      "printedPage": 7,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">INDIA has 5 letters: vowels I, I, A (three, with I repeated) and consonants N, D (two). The odd positions are 1st, 3rd and 5th, exactly three places, so the three vowels fill them and the consonants take the 2nd and 4th places. Vowels: arrangements of I, I, A are ​<span class=\"tex\">\\frac{3!}{2!} = 3</span>​. Consonants: N and D can be arranged in ​<span class=\"tex\">2! = 2</span>​ ways. Total ​<span class=\"tex\">= 3 \\times 2 = 6</span>​. Answer: 6.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 15,
+      "promptLines": [
+        "The letters of the word EQUATION are arranged in such a way that all vowels as well as consonants are together. How many such arrangements are there?"
+      ],
+      "options": {
+        "A": "240",
+        "B": "720",
+        "C": "1440",
+        "D": "1620"
+      },
+      "topicLabel": "Permutations and combinations",
+      "topicHref": "/nda/maths/algebra/permutations-combinations",
+      "pdfPage": 7,
+      "printedPage": 7,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">EQUATION has 8 different letters: vowels E, U, A, I, O (five) and consonants Q, T, N (three). Tie the vowels into one block and the consonants into another block. The two blocks can be placed in ​<span class=\"tex\">2! = 2</span>​ orders. Inside the vowel block the letters can be arranged in ​<span class=\"tex\">5! = 120</span>​ ways, and inside the consonant block in ​<span class=\"tex\">3! = 6</span>​ ways. Total ​<span class=\"tex\">= 2 \\times 120 \\times 6 = 1440</span>​. Answer: 1440.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 16,
+      "promptLines": [
+        "If \\(n\\) is a root of the equation \\(x^2 + px + m = 0\\) and \\(m\\) is a root of the equation \\(x^2 + px + n = 0\\), where \\(m \\neq n\\), then what is the value of \\(p + m + n\\)?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "topicLabel": "Quadratic equations",
+      "topicHref": "/nda/maths/algebra/quadratic-equations",
+      "pdfPage": 9,
+      "printedPage": 9,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">A root satisfies its equation. So ​<span class=\"tex\">n^2 + pn + m = 0</span>​ and ​<span class=\"tex\">m^2 + pm + n = 0</span>​. Subtract the second from the first: ​<span class=\"tex\">(n^2 - m^2) + p(n - m) - (n - m) = 0</span>​. Factor out ​<span class=\"tex\">(n - m)</span>​: ​<span class=\"tex\">(n - m)(n + m + p - 1) = 0</span>​. Since ​<span class=\"tex\">m \\neq n</span>​, the first factor is not zero, so ​<span class=\"tex\">n + m + p - 1 = 0</span>​, giving ​<span class=\"tex\">p + m + n = 1</span>​. Answer: 1.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 17,
+      "promptLines": [
+        "In how many ways can a student choose \\((n - 2)\\) courses out of \\(n\\) courses if 2 courses are compulsory \\((n > 4)\\)?"
+      ],
+      "options": {
+        "A": "\\((n - 3)(n - 4)\\)",
+        "B": "\\((n - 1)(n - 2)\\)",
+        "C": "\\((n - 3)(n - 4)/2\\)",
+        "D": "\\((n - 2)(n - 3)/2\\)"
+      },
+      "topicLabel": "Permutations and combinations",
+      "topicHref": "/nda/maths/algebra/permutations-combinations",
+      "pdfPage": 9,
+      "printedPage": 9,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The 2 compulsory courses are taken for sure. That leaves ​<span class=\"tex\">(n - 2) - 2 = n - 4</span>​ courses still to be chosen, from the remaining ​<span class=\"tex\">n - 2</span>​ courses. The number of ways is ​<span class=\"tex\">\\binom{n-2}{n-4}</span>​. Using ​<span class=\"tex\">\\binom{N}{r} = \\binom{N}{N-r}</span>​, this equals ​<span class=\"tex\">\\binom{n-2}{2} = \\frac{(n-2)(n-3)}{2}</span>​. Check with ​<span class=\"tex\">n = 5</span>​: choose 1 more course from 3, which is 3 ways, and the formula gives ​<span class=\"tex\">\\frac{3 \\times 2}{2} = 3</span>​. Answer: ​<span class=\"tex\">(n - 2)(n - 3)/2</span>​.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 18,
+      "promptLines": [
+        "If \\(D_n = \\begin{vmatrix} n & 20 & 30 \\\\ n^2 & 40 & 50 \\\\ n^3 & 60 & 70 \\end{vmatrix}\\) then what is the value of \\(\\sum_{n=1}^{4} D_n\\)?"
+      ],
+      "options": {
+        "A": "\\(-10000\\)",
+        "B": "\\(-10\\)",
+        "C": "10",
+        "D": "10000"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "topicHref": "/nda/maths/matrices/determinants",
+      "pdfPage": 9,
+      "printedPage": 9,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Only the first column changes with ​<span class=\"tex\">n</span>​, so the determinants can be added by adding their first columns. ​<span class=\"tex\">\\sum n = 1 + 2 + 3 + 4 = 10</span>​, ​<span class=\"tex\">\\sum n^2 = 1 + 4 + 9 + 16 = 30</span>​, ​<span class=\"tex\">\\sum n^3 = 1 + 8 + 27 + 64 = 100</span>​. So the sum is ​<span class=\"math-wide\"><span class=\"tex\">\\begin{vmatrix} 10 &amp; 20 &amp; 30 \\\\ 30 &amp; 40 &amp; 50 \\\\ 100 &amp; 60 &amp; 70 \\end{vmatrix}</span></span>​. Expand along row 1: ​<span class=\"math-wide\"><span class=\"tex\">10(2800 - 3000) - 20(2100 - 5000) + 30(1800 - 4000) = -2000 + 58000 - 66000 = -10000</span></span>​. Answer: ​<span class=\"tex\">-10000</span>​.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 19,
+      "promptLines": [
+        "Consider the following in respect of the matrices \\(P = \\begin{bmatrix} 0 & c & -b \\\\ -c & 0 & a \\\\ b & -a & 0 \\end{bmatrix}\\) and \\(Q = \\begin{bmatrix} a^2 & ab & ac \\\\ ab & b^2 & bc \\\\ ac & bc & c^2 \\end{bmatrix}\\)",
+        "I. \\(PQ\\) is a null matrix.",
+        "II. \\(QP\\) is an identity matrix of order 3.",
+        "III. \\(PQ = QP\\) Which of the above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "I and III",
+        "D": "II and III"
+      },
+      "topicLabel": "Types of matrices and operations",
+      "topicHref": "/nda/maths/matrices/matrices",
+      "pdfPage": 9,
+      "printedPage": 9,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Multiply row 1 of ​<span class=\"tex\">P</span>​, ​<span class=\"tex\">(0, c, -b)</span>​, by the columns of ​<span class=\"tex\">Q</span>​: ​<span class=\"tex\">c \\cdot ab - b \\cdot ac = 0</span>​, ​<span class=\"tex\">c \\cdot b^2 - b \\cdot bc = 0</span>​, ​<span class=\"tex\">c \\cdot bc - b \\cdot c^2 = 0</span>​. Rows 2 and 3 give zeros in the same way (for example ​<span class=\"tex\">-c \\cdot a^2 + a \\cdot ac = 0</span>​). So ​<span class=\"tex\">PQ = O</span>​ and I is correct. For ​<span class=\"tex\">QP</span>​: row 1 of ​<span class=\"tex\">Q</span>​, ​<span class=\"tex\">(a^2, ab, ac)</span>​, times column 1 of ​<span class=\"tex\">P</span>​, ​<span class=\"tex\">(0, -c, b)</span>​, gives ​<span class=\"tex\">-abc + abc = 0</span>​, and every other entry also cancels, so ​<span class=\"tex\">QP = O</span>​ too. Hence II is wrong (it is not the identity) and III is correct since ​<span class=\"tex\">PQ = QP = O</span>​. Answer: I and III.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 20,
+      "promptLines": [
+        "If \\(P\\) is a skew-symmetric matrix of order 3, then what is \\(\\det(P)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "0",
+        "C": "1",
+        "D": "3"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "topicHref": "/nda/maths/matrices/determinants",
+      "pdfPage": 9,
+      "printedPage": 9,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Skew-symmetric means ​<span class=\"tex\">P^T = -P</span>​. Take determinants of both sides. ​<span class=\"tex\">\\det(P^T) = \\det(P)</span>​, and for a ​<span class=\"tex\">3 \\times 3</span>​ matrix ​<span class=\"tex\">\\det(-P) = (-1)^3\\det(P) = -\\det(P)</span>​. So ​<span class=\"tex\">\\det(P) = -\\det(P)</span>​, which gives ​<span class=\"tex\">2\\det(P) = 0</span>​ and ​<span class=\"tex\">\\det(P) = 0</span>​. This holds for every skew-symmetric matrix of odd order. Answer: 0.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 21,
+      "promptLines": [
+        "If \\(4\\sin^{-1}x + \\cos^{-1}x = \\pi\\), then what is \\(\\sin^{-1}x + 4\\cos^{-1}x\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\pi/2\\)",
+        "B": "\\(\\pi\\)",
+        "C": "\\(3\\pi/2\\)",
+        "D": "\\(2\\pi\\)"
+      },
+      "topicLabel": "Inverse trigonometric functions",
+      "topicHref": "/nda/maths/trigonometry/inverse-trig",
+      "pdfPage": 11,
+      "printedPage": 11,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Use the identity ​<span class=\"tex\">\\sin^{-1}x + \\cos^{-1}x = \\frac{\\pi}{2}</span>​. Write the given equation as ​<span class=\"math-wide\"><span class=\"tex\">3\\sin^{-1}x + (\\sin^{-1}x + \\cos^{-1}x) = \\pi</span></span>​, so ​<span class=\"math-wide\"><span class=\"tex\">3\\sin^{-1}x = \\pi - \\frac{\\pi}{2} = \\frac{\\pi}{2}</span></span>​ and ​<span class=\"tex\">\\sin^{-1}x = \\frac{\\pi}{6}</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">\\cos^{-1}x = \\frac{\\pi}{2} - \\frac{\\pi}{6} = \\frac{\\pi}{3}</span></span>​. Required value ​<span class=\"math-wide\"><span class=\"tex\">= \\frac{\\pi}{6} + 4 \\cdot \\frac{\\pi}{3} = \\frac{\\pi}{6} + \\frac{8\\pi}{6} = \\frac{9\\pi}{6} = \\frac{3\\pi}{2}</span></span>​. Quicker: the two expressions add up to ​<span class=\"tex\">5 \\cdot \\frac{\\pi}{2}</span>​, so the second is ​<span class=\"tex\">\\frac{5\\pi}{2} - \\pi = \\frac{3\\pi}{2}</span>​. Answer: ​<span class=\"tex\">3\\pi/2</span>​.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 22,
+      "promptLines": [
+        "What is \\(\\cot^2(\\sec^{-1}2) + \\tan^2(\\mathrm{cosec}^{-1}3)\\) equal to?"
+      ],
+      "options": {
+        "A": "11/12",
+        "B": "11/24",
+        "C": "7/24",
+        "D": "1/24"
+      },
+      "topicLabel": "Inverse trigonometric functions",
+      "topicHref": "/nda/maths/trigonometry/inverse-trig",
+      "pdfPage": 11,
+      "printedPage": 11,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Let ​<span class=\"tex\">\\theta = \\sec^{-1}2</span>​, so ​<span class=\"tex\">\\sec\\theta = 2</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">\\tan^2\\theta = \\sec^2\\theta - 1 = 4 - 1 = 3</span></span>​, so ​<span class=\"tex\">\\cot^2\\theta = \\frac{1}{3}</span>​. Let ​<span class=\"tex\">\\phi = \\mathrm{cosec}^{-1}3</span>​, so ​<span class=\"tex\">\\mathrm{cosec}\\,\\phi = 3</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">\\cot^2\\phi = \\mathrm{cosec}^2\\phi - 1 = 9 - 1 = 8</span></span>​, so ​<span class=\"tex\">\\tan^2\\phi = \\frac{1}{8}</span>​. Adding: ​<span class=\"math-wide\"><span class=\"tex\">\\frac{1}{3} + \\frac{1}{8} = \\frac{8 + 3}{24} = \\frac{11}{24}</span></span>​. Answer: 11/24.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 23,
+      "promptLines": [
+        "In a triangle \\(ABC\\) \\(\\frac{a}{\\cos A} = \\frac{b}{\\cos B} = \\frac{c}{\\cos C}\\) What is the area of the triangle if \\(a = 6\\) cm?"
+      ],
+      "options": {
+        "A": "\\(9\\sqrt{3}\\) square cm",
+        "B": "12 square cm",
+        "C": "\\(18\\sqrt{3}\\) square cm",
+        "D": "24 square cm"
+      },
+      "topicLabel": "Properties of triangles",
+      "topicHref": "/nda/maths/trigonometry/properties-of-triangles",
+      "pdfPage": 11,
+      "printedPage": 11,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">By the sine rule, ​<span class=\"tex\">a = 2R\\sin A</span>​, ​<span class=\"tex\">b = 2R\\sin B</span>​, ​<span class=\"tex\">c = 2R\\sin C</span>​. Put these in the given relation: ​<span class=\"math-wide\"><span class=\"tex\">\\frac{2R\\sin A}{\\cos A} = \\frac{2R\\sin B}{\\cos B} = \\frac{2R\\sin C}{\\cos C}</span></span>​, so ​<span class=\"tex\">\\tan A = \\tan B = \\tan C</span>​. Angles of a triangle lie between ​<span class=\"tex\">0^\\circ</span>​ and ​<span class=\"tex\">180^\\circ</span>​, where equal tangents mean equal angles. So ​<span class=\"tex\">A = B = C = 60^\\circ</span>​ and the triangle is equilateral with side 6 cm. Area ​<span class=\"math-wide\"><span class=\"tex\">= \\frac{\\sqrt{3}}{4} \\times 6^2 = 9\\sqrt{3}</span></span>​ square cm. Answer: ​<span class=\"tex\">9\\sqrt{3}</span>​ square cm.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 24,
+      "promptLines": [
+        "The roots of the equation \\(7x^2 - 6x + 1 = 0\\) are \\(\\tan\\alpha\\) and \\(\\tan\\beta\\), where \\(2\\alpha\\) and \\(2\\beta\\) are the angles of a triangle.",
+        "Which one of the following is correct?"
+      ],
+      "options": {
+        "A": "The triangle is equilateral",
+        "B": "The triangle is isosceles but not right-angled",
+        "C": "The triangle is right-angled",
+        "D": "The triangle is right-angled isosceles"
+      },
+      "topicLabel": "Sum and difference formulae",
+      "topicHref": "/nda/maths/trigonometry/sum-difference",
+      "pdfPage": 11,
+      "printedPage": 11,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Sum of roots: ​<span class=\"tex\">\\tan\\alpha + \\tan\\beta = \\frac{6}{7}</span>​. Product: ​<span class=\"tex\">\\tan\\alpha\\tan\\beta = \\frac{1}{7}</span>​. So ​<span class=\"math-wide\"><span class=\"tex\">\\tan(\\alpha + \\beta) = \\frac{6/7}{1 - 1/7} = 1</span></span>​, giving ​<span class=\"tex\">\\alpha + \\beta = 45^\\circ</span>​ (both are acute since ​<span class=\"tex\">2\\alpha, 2\\beta &lt; 180^\\circ</span>​). Then ​<span class=\"tex\">2\\alpha + 2\\beta = 90^\\circ</span>​, so the third angle is ​<span class=\"tex\">180^\\circ - 90^\\circ = 90^\\circ</span>​: the triangle is right-angled. Is it isosceles? The discriminant ​<span class=\"tex\">36 - 28 = 8</span>​ is not zero, so ​<span class=\"tex\">\\tan\\alpha \\neq \\tan\\beta</span>​ and the two acute angles are different. So it is right-angled but not isosceles. Answer: The triangle is right-angled.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 25,
+      "promptLines": [
+        "In a triangle \\(ABC\\), \\(\\angle A = 75^\\circ\\) and \\(\\angle B = 45^\\circ\\). What is \\(2a - b\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(c\\)",
+        "B": "\\(\\sqrt{2}c\\)",
+        "C": "\\(2c\\)",
+        "D": "\\(2\\sqrt{2}c\\)"
+      },
+      "topicLabel": "Properties of triangles",
+      "topicHref": "/nda/maths/trigonometry/properties-of-triangles",
+      "pdfPage": 11,
+      "printedPage": 11,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"math-wide\"><span class=\"tex\">C = 180^\\circ - 75^\\circ - 45^\\circ = 60^\\circ</span></span>​. By the sine rule, ​<span class=\"tex\">a = k\\sin 75^\\circ</span>​, ​<span class=\"tex\">b = k\\sin 45^\\circ</span>​, ​<span class=\"tex\">c = k\\sin 60^\\circ</span>​. Now ​<span class=\"math-wide\"><span class=\"tex\">\\sin 75^\\circ = \\sin(45^\\circ + 30^\\circ) = \\frac{\\sqrt{6} + \\sqrt{2}}{4}</span></span>​. So ​<span class=\"math-wide\"><span class=\"tex\">2a - b = k\\left(\\frac{\\sqrt{6} + \\sqrt{2}}{2} - \\frac{\\sqrt{2}}{2}\\right) = \\frac{k\\sqrt{6}}{2}</span></span>​. And ​<span class=\"tex\">c = \\frac{k\\sqrt{3}}{2}</span>​. Dividing: ​<span class=\"math-wide\"><span class=\"tex\">\\frac{2a - b}{c} = \\frac{\\sqrt{6}}{\\sqrt{3}} = \\sqrt{2}</span></span>​. So ​<span class=\"tex\">2a - b = \\sqrt{2}c</span>​. Answer: ​<span class=\"tex\">\\sqrt{2}c</span>​.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 26,
+      "promptLines": [
+        "What is the number of solutions of the equation \\(\\cot 2x \\cdot \\cot 3x = 1\\) for \\(0 < x < \\pi\\)?"
+      ],
+      "options": {
+        "A": "Only one",
+        "B": "Only two",
+        "C": "Only five",
+        "D": "More than five"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "topicHref": "/nda/maths/trigonometry/ratios-identities",
+      "pdfPage": 11,
+      "printedPage": 11,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><p class=\"text-sm mt-2 bg-amber-50 border border-amber-300 rounded-md px-3 py-2\"><strong>Our working gives (none).</strong> Faulty as printed. cos 5x = 0 gives five values in (0, pi), but x = pi/2 makes cot 2x = cot(pi) undefined, so only four are valid solutions (checked numerically) and 4 is not an option. The setter almost certainly intended (c) &#39;Only five&#39;.</p><div class=\"mt-2 leading-relaxed\">Write the equation as ​<span class=\"tex\">\\cos 2x\\cos 3x = \\sin 2x\\sin 3x</span>​, so ​<span class=\"tex\">\\cos 2x\\cos 3x - \\sin 2x\\sin 3x = 0</span>​, that is ​<span class=\"tex\">\\cos 5x = 0</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">5x = \\frac{\\pi}{2}, \\frac{3\\pi}{2}, \\frac{5\\pi}{2}, \\frac{7\\pi}{2}, \\frac{9\\pi}{2}</span></span>​, giving ​<span class=\"math-wide\"><span class=\"tex\">x = \\frac{\\pi}{10}, \\frac{3\\pi}{10}, \\frac{\\pi}{2}, \\frac{7\\pi}{10}, \\frac{9\\pi}{10}</span></span>​ in the interval. This count of five is what the setter intended, option (c). Strictly, though, at ​<span class=\"tex\">x = \\frac{\\pi}{2}</span>​ we get ​<span class=\"tex\">\\cot 2x = \\cot\\pi</span>​, which is not defined, so that value must be thrown out. The other four values do satisfy the equation, so the true number of solutions is 4, which is not among the options.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 27,
+      "promptLines": [
+        "What is the general solution of \\(\\cos^{100}x - \\sin^{100}x = 1\\)? where \\(n\\) is an integer."
+      ],
+      "options": {
+        "A": "\\(n\\pi\\)",
+        "B": "\\((2n + 1)\\pi\\)",
+        "C": "\\(2n\\pi\\)",
+        "D": "\\((2n + 1)\\pi/2\\)"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "topicHref": "/nda/maths/trigonometry/ratios-identities",
+      "pdfPage": 13,
+      "printedPage": 13,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Rewrite as ​<span class=\"tex\">\\cos^{100}x = 1 + \\sin^{100}x</span>​. Even powers are never negative, so the right side is at least 1. But ​<span class=\"tex\">\\cos^{100}x</span>​ is at most 1, because ​<span class=\"tex\">|\\cos x| \\leq 1</span>​. Both can hold only when ​<span class=\"tex\">\\cos^{100}x = 1</span>​ and ​<span class=\"tex\">\\sin^{100}x = 0</span>​, that is ​<span class=\"tex\">\\sin x = 0</span>​ (then ​<span class=\"tex\">\\cos x = \\pm 1</span>​ automatically). ​<span class=\"tex\">\\sin x = 0</span>​ gives ​<span class=\"tex\">x = n\\pi</span>​. Options (b) and (c) each give only half of these solutions. Answer: ​<span class=\"tex\">n\\pi</span>​.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 28,
+      "promptLines": [
+        "In a triangle \\(ABC\\) \\(\\tan A + \\tan B + \\tan C = k\\) What is the value of \\(\\cot A\\cot B\\cot C\\)?"
+      ],
+      "options": {
+        "A": "\\(0 \\cdot 5k\\)",
+        "B": "\\(1/k\\)",
+        "C": "\\(3/k\\)",
+        "D": "\\(1/k^3\\)"
+      },
+      "topicLabel": "Sum and difference formulae",
+      "topicHref": "/nda/maths/trigonometry/sum-difference",
+      "pdfPage": 13,
+      "printedPage": 13,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">In a triangle ​<span class=\"tex\">A + B = 180^\\circ - C</span>​, so ​<span class=\"tex\">\\tan(A + B) = -\\tan C</span>​. Expand: ​<span class=\"math-wide\"><span class=\"tex\">\\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B} = -\\tan C</span></span>​. Cross-multiply: ​<span class=\"math-wide\"><span class=\"tex\">\\tan A + \\tan B = -\\tan C + \\tan A\\tan B\\tan C</span></span>​. So ​<span class=\"math-wide\"><span class=\"tex\">\\tan A + \\tan B + \\tan C = \\tan A\\tan B\\tan C</span></span>​. Hence ​<span class=\"tex\">\\tan A\\tan B\\tan C = k</span>​, and taking the reciprocal, ​<span class=\"tex\">\\cot A\\cot B\\cot C = \\frac{1}{k}</span>​. Check with the equilateral triangle: ​<span class=\"tex\">k = 3\\sqrt{3}</span>​ and ​<span class=\"tex\">\\cot^3 60^\\circ = \\frac{1}{3\\sqrt{3}}</span>​. Answer: ​<span class=\"tex\">1/k</span>​.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 29,
+      "promptLines": [
+        "What is \\(\\sin 12^\\circ \\sin 48^\\circ\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\frac{\\sqrt{5} - 1}{4}\\)",
+        "B": "\\(\\frac{\\sqrt{5} + 1}{4}\\)",
+        "C": "\\(\\frac{\\sqrt{5} - 1}{8}\\)",
+        "D": "\\(\\frac{\\sqrt{5} + 1}{8}\\)"
+      },
+      "topicLabel": "Sum and difference formulae",
+      "topicHref": "/nda/maths/trigonometry/sum-difference",
+      "pdfPage": 13,
+      "printedPage": 13,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Use ​<span class=\"math-wide\"><span class=\"tex\">2\\sin A\\sin B = \\cos(A - B) - \\cos(A + B)</span></span>​. So ​<span class=\"math-wide\"><span class=\"tex\">\\sin 12^\\circ\\sin 48^\\circ = \\frac{1}{2}\\left[\\cos 36^\\circ - \\cos 60^\\circ\\right]</span></span>​. The standard value is ​<span class=\"tex\">\\cos 36^\\circ = \\frac{\\sqrt{5} + 1}{4}</span>​, and ​<span class=\"tex\">\\cos 60^\\circ = \\frac{1}{2}</span>​. So the bracket is ​<span class=\"math-wide\"><span class=\"tex\">\\frac{\\sqrt{5} + 1}{4} - \\frac{2}{4} = \\frac{\\sqrt{5} - 1}{4}</span></span>​. Half of that is ​<span class=\"tex\">\\frac{\\sqrt{5} - 1}{8}</span>​. Rough check: ​<span class=\"tex\">0.208 \\times 0.743 \\approx 0.155</span>​ and ​<span class=\"tex\">\\frac{2.236 - 1}{8} \\approx 0.155</span>​. Answer: ​<span class=\"tex\">\\frac{\\sqrt{5} - 1}{8}</span>​.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 30,
+      "promptLines": [
+        "What is \\(\\frac{\\cos 17^\\circ - \\sin 17^\\circ}{\\cos 17^\\circ + \\sin 17^\\circ}\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\tan 34^\\circ\\)",
+        "B": "\\(\\cot 34^\\circ\\)",
+        "C": "\\(\\tan 62^\\circ\\)",
+        "D": "\\(\\cot 62^\\circ\\)"
+      },
+      "topicLabel": "Sum and difference formulae",
+      "topicHref": "/nda/maths/trigonometry/sum-difference",
+      "pdfPage": 13,
+      "printedPage": 13,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Divide the top and bottom by ​<span class=\"tex\">\\cos 17^\\circ</span>​: the expression becomes ​<span class=\"math-wide\"><span class=\"tex\">\\frac{1 - \\tan 17^\\circ}{1 + \\tan 17^\\circ}</span></span>​. Since ​<span class=\"tex\">\\tan 45^\\circ = 1</span>​, this is ​<span class=\"math-wide\"><span class=\"tex\">\\frac{\\tan 45^\\circ - \\tan 17^\\circ}{1 + \\tan 45^\\circ\\tan 17^\\circ} = \\tan(45^\\circ - 17^\\circ) = \\tan 28^\\circ</span></span>​. Now ​<span class=\"math-wide\"><span class=\"tex\">\\tan 28^\\circ = \\cot(90^\\circ - 28^\\circ) = \\cot 62^\\circ</span></span>​. Answer: ​<span class=\"tex\">\\cot 62^\\circ</span>​.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 31,
+      "promptLines": [
+        "Consider the following numbers :",
+        "I. \\(\\tan 22 \\cdot 5^\\circ\\)",
+        "II. \\(\\cot 22 \\cdot 5^\\circ\\)",
+        "III. \\(\\tan 22 \\cdot 5^\\circ - \\cot 22 \\cdot 5^\\circ\\) How many of the above are irrational numbers?"
+      ],
+      "options": {
+        "A": "None",
+        "B": "Only one",
+        "C": "Only two",
+        "D": "All three"
+      },
+      "topicLabel": "Multiple and sub-multiple angles",
+      "topicHref": "/nda/maths/trigonometry/multiple-angles",
+      "pdfPage": 13,
+      "printedPage": 13,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Here ​<span class=\"tex\">22 \\cdot 5^\\circ</span>​ means ​<span class=\"tex\">22.5^\\circ</span>​, half of ​<span class=\"tex\">45^\\circ</span>​. Use ​<span class=\"math-wide\"><span class=\"tex\">\\tan\\frac{\\theta}{2} = \\frac{1 - \\cos\\theta}{\\sin\\theta}</span></span>​ with ​<span class=\"tex\">\\theta = 45^\\circ</span>​: ​<span class=\"math-wide\"><span class=\"tex\">\\tan 22.5^\\circ = \\frac{1 - \\frac{1}{\\sqrt{2}}}{\\frac{1}{\\sqrt{2}}} = \\sqrt{2} - 1</span></span>​, which is irrational. Its reciprocal is ​<span class=\"math-wide\"><span class=\"tex\">\\cot 22.5^\\circ = \\frac{1}{\\sqrt{2} - 1} = \\sqrt{2} + 1</span></span>​, also irrational. Their difference is ​<span class=\"tex\">(\\sqrt{2} - 1) - (\\sqrt{2} + 1) = -2</span>​, which is rational. So exactly two of the three numbers are irrational. Answer: Only two.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 32,
+      "promptLines": [
+        "If \\(\\frac{x}{\\cos\\theta} = \\frac{y}{\\cos\\left(\\frac{2\\pi}{3} - \\theta\\right)} = \\frac{z}{\\cos\\left(\\frac{2\\pi}{3} + \\theta\\right)}\\) then what is \\(x + y + z\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "0",
+        "C": "1",
+        "D": "3"
+      },
+      "topicLabel": "Sum and difference formulae",
+      "topicHref": "/nda/maths/trigonometry/sum-difference",
+      "pdfPage": 13,
+      "printedPage": 13,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Let each ratio equal ​<span class=\"tex\">k</span>​. Then ​<span class=\"tex\">x = k\\cos\\theta</span>​, ​<span class=\"math-wide\"><span class=\"tex\">y = k\\cos\\left(\\frac{2\\pi}{3} - \\theta\\right)</span></span>​, ​<span class=\"math-wide\"><span class=\"tex\">z = k\\cos\\left(\\frac{2\\pi}{3} + \\theta\\right)</span></span>​. Use ​<span class=\"math-wide\"><span class=\"tex\">\\cos(A - B) + \\cos(A + B) = 2\\cos A\\cos B</span></span>​ with ​<span class=\"tex\">A = \\frac{2\\pi}{3}</span>​: ​<span class=\"math-wide\"><span class=\"tex\">y + z = 2k\\cos\\frac{2\\pi}{3}\\cos\\theta = 2k\\left(-\\frac{1}{2}\\right)\\cos\\theta = -k\\cos\\theta</span></span>​. Therefore ​<span class=\"math-wide\"><span class=\"tex\">x + y + z = k\\cos\\theta - k\\cos\\theta = 0</span></span>​. Answer: 0.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 33,
+      "promptLines": [
+        "If \\(p\\tan(\\theta - 30^\\circ) = q\\tan(\\theta + 120^\\circ)\\), then what is \\((p + q)/(p - q)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\sin 2\\theta\\)",
+        "B": "\\(\\cos 2\\theta\\)",
+        "C": "\\(2\\sin 2\\theta\\)",
+        "D": "\\(2\\cos 2\\theta\\)"
+      },
+      "topicLabel": "Sum and difference formulae",
+      "topicHref": "/nda/maths/trigonometry/sum-difference",
+      "pdfPage": 13,
+      "printedPage": 13,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Write ​<span class=\"tex\">A = \\theta + 120^\\circ</span>​ and ​<span class=\"tex\">B = \\theta - 30^\\circ</span>​. The given relation is ​<span class=\"tex\">\\frac{p}{q} = \\frac{\\tan A}{\\tan B}</span>​. By componendo and dividendo, ​<span class=\"math-wide\"><span class=\"tex\">\\frac{p + q}{p - q} = \\frac{\\tan A + \\tan B}{\\tan A - \\tan B}</span></span>​. Writing tan as sin over cos, this equals ​<span class=\"math-wide\"><span class=\"tex\">\\frac{\\sin A\\cos B + \\cos A\\sin B}{\\sin A\\cos B - \\cos A\\sin B} = \\frac{\\sin(A + B)}{\\sin(A - B)}</span></span>​. Here ​<span class=\"tex\">A + B = 2\\theta + 90^\\circ</span>​ and ​<span class=\"tex\">A - B = 150^\\circ</span>​. So the value is ​<span class=\"math-wide\"><span class=\"tex\">\\frac{\\sin(2\\theta + 90^\\circ)}{\\sin 150^\\circ} = \\frac{\\cos 2\\theta}{1/2} = 2\\cos 2\\theta</span></span>​. Answer: ​<span class=\"tex\">2\\cos 2\\theta</span>​.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 34,
+      "promptLines": [
+        "Let \\(P\\) and \\(Q\\) be two non-void relations on a set \\(A\\). Which of the following statements are correct?",
+        "I. \\(P\\) and \\(Q\\) are reflexive \\(\\Rightarrow P \\cap Q\\) is reflexive.",
+        "II. \\(P\\) and \\(Q\\) are symmetric \\(\\Rightarrow P \\cup Q\\) is symmetric.",
+        "III. \\(P\\) and \\(Q\\) are transitive \\(\\Rightarrow P \\cap Q\\) is transitive.",
+        "Select the answer using the code given below."
+      ],
+      "options": {
+        "A": "I and II only",
+        "B": "II and III only",
+        "C": "I and III only",
+        "D": "I, II and III"
+      },
+      "topicLabel": "Relations and equivalence relations",
+      "topicHref": "/nda/maths/algebra/relations",
+      "pdfPage": 15,
+      "printedPage": 15,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">I: if both are reflexive, every pair ​<span class=\"tex\">(a, a)</span>​ is in ​<span class=\"tex\">P</span>​ and in ​<span class=\"tex\">Q</span>​, so it is in ​<span class=\"tex\">P \\cap Q</span>​. Correct. II: take ​<span class=\"tex\">(a, b)</span>​ in ​<span class=\"tex\">P \\cup Q</span>​. It lies in ​<span class=\"tex\">P</span>​ or in ​<span class=\"tex\">Q</span>​; that relation is symmetric, so ​<span class=\"tex\">(b, a)</span>​ lies in it too, and hence in ​<span class=\"tex\">P \\cup Q</span>​. Correct. III: take ​<span class=\"tex\">(a, b)</span>​ and ​<span class=\"tex\">(b, c)</span>​ in ​<span class=\"tex\">P \\cap Q</span>​. Both pairs are in ​<span class=\"tex\">P</span>​, so ​<span class=\"tex\">(a, c)</span>​ is in ​<span class=\"tex\">P</span>​; both are in ​<span class=\"tex\">Q</span>​, so ​<span class=\"tex\">(a, c)</span>​ is in ​<span class=\"tex\">Q</span>​. So ​<span class=\"tex\">(a, c)</span>​ is in ​<span class=\"tex\">P \\cap Q</span>​. Correct. (Only the union of transitive relations can fail, and that is not asked.) Answer: I, II and III.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 35,
+      "promptLines": [
+        "If \\(A\\) and \\(B\\) are two non-empty sets having 10 elements in common, then how many elements do \\(A \\times B\\) and \\(B \\times A\\) have in common?"
+      ],
+      "options": {
+        "A": "10",
+        "B": "20",
+        "C": "40",
+        "D": "100"
+      },
+      "topicLabel": "Relations and equivalence relations",
+      "topicHref": "/nda/maths/algebra/relations",
+      "pdfPage": 15,
+      "printedPage": 15,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">A pair ​<span class=\"tex\">(x, y)</span>​ is in ​<span class=\"tex\">A \\times B</span>​ when ​<span class=\"tex\">x</span>​ is in ​<span class=\"tex\">A</span>​ and ​<span class=\"tex\">y</span>​ is in ​<span class=\"tex\">B</span>​. It is in ​<span class=\"tex\">B \\times A</span>​ when ​<span class=\"tex\">x</span>​ is in ​<span class=\"tex\">B</span>​ and ​<span class=\"tex\">y</span>​ is in ​<span class=\"tex\">A</span>​. For the pair to be in both, ​<span class=\"tex\">x</span>​ must be in both ​<span class=\"tex\">A</span>​ and ​<span class=\"tex\">B</span>​, and ​<span class=\"tex\">y</span>​ must be in both ​<span class=\"tex\">A</span>​ and ​<span class=\"tex\">B</span>​. So ​<span class=\"math-wide\"><span class=\"tex\">(A \\times B) \\cap (B \\times A) = (A \\cap B) \\times (A \\cap B)</span></span>​. With ​<span class=\"tex\">n(A \\cap B) = 10</span>​, the number of common pairs is ​<span class=\"tex\">10 \\times 10 = 100</span>​. Answer: 100.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 36,
+      "promptLines": [
+        "What is the remainder when \\(7^n - 6n\\) is divided by 36 for \\(n = 100\\)?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "6"
+      },
+      "topicLabel": "Binomial theorem",
+      "topicHref": "/nda/maths/algebra/binomial-theorem",
+      "pdfPage": 15,
+      "printedPage": 15,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Write ​<span class=\"tex\">7 = 1 + 6</span>​ and use the binomial theorem: ​<span class=\"math-wide\"><span class=\"tex\">7^n = (1 + 6)^n = 1 + 6n + \\binom{n}{2}6^2 + \\binom{n}{3}6^3 + \\cdots</span></span>​. Every term from the third onwards contains ​<span class=\"tex\">6^2 = 36</span>​ as a factor. So ​<span class=\"math-wide\"><span class=\"tex\">7^n - 6n = 1 + 36 \\times (\\text{an integer})</span></span>​. This is true for every positive integer ​<span class=\"tex\">n</span>​, including ​<span class=\"tex\">n = 100</span>​. Check with ​<span class=\"tex\">n = 2</span>​: ​<span class=\"tex\">49 - 12 = 37 = 36 + 1</span>​. So the remainder is 1. Answer: 1.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 37,
+      "promptLines": [
+        "What is the maximum number of possible points of intersection of four straight lines and a circle (intersection is between lines as well as circle and lines)?"
+      ],
+      "options": {
+        "A": "6",
+        "B": "10",
+        "C": "14",
+        "D": "16"
+      },
+      "topicLabel": "Permutations and combinations",
+      "topicHref": "/nda/maths/algebra/permutations-combinations",
+      "pdfPage": 15,
+      "printedPage": 15,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Count the two kinds of intersection separately. Lines with lines: two straight lines meet in at most one point, and 4 lines form ​<span class=\"tex\">\\binom{4}{2} = 6</span>​ pairs, so at most 6 points. Lines with the circle: one line cuts a circle in at most 2 points, so 4 lines give at most ​<span class=\"tex\">4 \\times 2 = 8</span>​ points. The maximum happens when all these points are different, giving ​<span class=\"tex\">6 + 8 = 14</span>​. Answer: 14.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 38,
+      "promptLines": [
+        "In an AP, the ratio of the sum of the first \\(p\\) terms to the sum of the first \\(q\\) terms is \\(p^2 : q^2\\).",
+        "Which one of the following is correct?"
+      ],
+      "options": {
+        "A": "The first term is equal to the common difference",
+        "B": "The first term is equal to twice the common difference",
+        "C": "The common difference is equal to twice the first term",
+        "D": "The first term is equal to square of the common difference"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "topicHref": "/nda/maths/algebra/progressions",
+      "pdfPage": 15,
+      "printedPage": 15,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">With first term ​<span class=\"tex\">a</span>​ and common difference ​<span class=\"tex\">d</span>​, ​<span class=\"tex\">S_n = \\frac{n}{2}[2a + (n-1)d]</span>​. The condition gives ​<span class=\"math-wide\"><span class=\"tex\">\\frac{p[2a + (p-1)d]}{q[2a + (q-1)d]} = \\frac{p^2}{q^2}</span></span>​, so ​<span class=\"math-wide\"><span class=\"tex\">\\frac{2a + (p-1)d}{2a + (q-1)d} = \\frac{p}{q}</span></span>​. Cross-multiply: ​<span class=\"tex\">2aq + (p-1)qd = 2ap + (q-1)pd</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">2a(q - p) = d[(q-1)p - (p-1)q] = d(q - p)</span></span>​. For ​<span class=\"tex\">p \\neq q</span>​ this gives ​<span class=\"tex\">d = 2a</span>​. Check: ​<span class=\"tex\">1, 3, 5, \\ldots</span>​ has ​<span class=\"tex\">S_n = n^2</span>​. Answer: The common difference is equal to twice the first term.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 39,
+      "promptLines": [
+        "What is the number of real roots of the equation \\((x - 1)^2 + (x - 3)^2 + (x - 5)^2 = 0\\)?"
+      ],
+      "options": {
+        "A": "None",
+        "B": "Only one",
+        "C": "Only two",
+        "D": "Three"
+      },
+      "topicLabel": "Quadratic equations",
+      "topicHref": "/nda/maths/algebra/quadratic-equations",
+      "pdfPage": 15,
+      "printedPage": 15,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">For real ​<span class=\"tex\">x</span>​ each square is zero or positive. A sum of three such squares can be zero only if every one is zero at the same time. That would need ​<span class=\"tex\">x = 1</span>​, ​<span class=\"tex\">x = 3</span>​ and ​<span class=\"tex\">x = 5</span>​ together, which is impossible. So no real ​<span class=\"tex\">x</span>​ works. Check by expanding: ​<span class=\"tex\">3x^2 - 18x + 35 = 0</span>​ has discriminant ​<span class=\"math-wide\"><span class=\"tex\">18^2 - 4 \\times 3 \\times 35 = 324 - 420 = -96 &lt; 0</span></span>​, so no real roots. Answer: None.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 40,
+      "promptLines": [
+        "In a class of 240 students, 180 passed in English, 130 passed in Hindi and 150 passed in Sanskrit. Further, 60 passed in only one subject, 110 passed in only two subjects and 10 passed in none of the subjects. How many passed in all three subjects?"
+      ],
+      "options": {
+        "A": "60",
+        "B": "55",
+        "C": "40",
+        "D": "35"
+      },
+      "topicLabel": "Sets and Venn diagrams",
+      "topicHref": "/nda/maths/algebra/sets",
+      "pdfPage": 15,
+      "printedPage": 15,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Students who passed at least one subject: ​<span class=\"tex\">240 - 10 = 230</span>​. Each of them passed exactly one, exactly two or all three subjects. Let ​<span class=\"tex\">x</span>​ pass all three. Then ​<span class=\"tex\">60 + 110 + x = 230</span>​, so ​<span class=\"tex\">x = 60</span>​. Check with the subject totals: adding ​<span class=\"tex\">180 + 130 + 150 = 460</span>​ counts a one-subject student once, a two-subject student twice and a three-subject student three times: ​<span class=\"tex\">60 + 2 \\times 110 + 3 \\times 60 = 460</span>​. It matches. Answer: 60.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 41,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(Z_1\\) and \\(Z_2\\) be any two complex numbers such that \\(Z_1^2 + Z_2^2 + Z_1Z_2 = 0\\).",
+        "What is the value of \\(\\left|\\frac{Z_1}{Z_2}\\right|\\)?"
+      ],
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "topicLabel": "Complex numbers",
+      "topicHref": "/nda/maths/algebra/complex-numbers",
+      "pdfPage": 17,
+      "printedPage": 17,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Divide the given relation by ​<span class=\"tex\">Z_2^2</span>​ (taking ​<span class=\"tex\">Z_2 \\neq 0</span>​) and put ​<span class=\"tex\">t = \\frac{Z_1}{Z_2}</span>​: ​<span class=\"tex\">t^2 + t + 1 = 0</span>​. Multiply by ​<span class=\"tex\">(t - 1)</span>​: ​<span class=\"tex\">t^3 - 1 = 0</span>​, so ​<span class=\"tex\">t^3 = 1</span>​ with ​<span class=\"tex\">t \\neq 1</span>​. That means ​<span class=\"tex\">t</span>​ is a complex cube root of unity, ​<span class=\"tex\">\\omega</span>​ or ​<span class=\"tex\">\\omega^2</span>​, that is ​<span class=\"tex\">t = \\frac{-1 \\pm i\\sqrt{3}}{2}</span>​. Its modulus is ​<span class=\"tex\">\\sqrt{\\frac{1}{4} + \\frac{3}{4}} = 1</span>​. (Also directly: ​<span class=\"tex\">|t|^3 = |t^3| = 1</span>​ gives ​<span class=\"tex\">|t| = 1</span>​.) Answer: 1.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 42,
+      "promptLines": [
+        "What is the value of \\(\\frac{1}{2} + \\mathrm{Re}\\left(\\frac{Z_1}{Z_2}\\right)\\)?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "topicLabel": "Complex numbers",
+      "topicHref": "/nda/maths/algebra/complex-numbers",
+      "pdfPage": 17,
+      "printedPage": 17,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Divide the given relation by ​<span class=\"tex\">Z_2^2</span>​ and put ​<span class=\"tex\">t = \\frac{Z_1}{Z_2}</span>​: ​<span class=\"tex\">t^2 + t + 1 = 0</span>​. By the quadratic formula, ​<span class=\"math-wide\"><span class=\"tex\">t = \\frac{-1 \\pm \\sqrt{1 - 4}}{2} = \\frac{-1 \\pm i\\sqrt{3}}{2}</span></span>​. For either sign the real part is ​<span class=\"tex\">-\\frac{1}{2}</span>​. So ​<span class=\"math-wide\"><span class=\"tex\">\\frac{1}{2} + \\mathrm{Re}\\left(\\frac{Z_1}{Z_2}\\right) = \\frac{1}{2} - \\frac{1}{2} = 0</span></span>​. Answer: 0.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 43,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : The product of 5 consecutive terms of an AP is 229635. The first, second and fifth terms are in GP.",
+        "What is the common difference?"
+      ],
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "topicHref": "/nda/maths/algebra/progressions",
+      "pdfPage": 17,
+      "printedPage": 17,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Let the terms be ​<span class=\"tex\">a, a + d, a + 2d, a + 3d, a + 4d</span>​. First, second and fifth in GP: ​<span class=\"tex\">(a + d)^2 = a(a + 4d)</span>​, so ​<span class=\"tex\">a^2 + 2ad + d^2 = a^2 + 4ad</span>​, giving ​<span class=\"tex\">d^2 = 2ad</span>​ and ​<span class=\"tex\">d = 2a</span>​ (taking ​<span class=\"tex\">d \\neq 0</span>​). The terms become ​<span class=\"tex\">a, 3a, 5a, 7a, 9a</span>​. Their product is ​<span class=\"tex\">945a^5 = 229635</span>​, so ​<span class=\"tex\">a^5 = 243 = 3^5</span>​ and ​<span class=\"tex\">a = 3</span>​. Hence ​<span class=\"tex\">d = 2a = 6</span>​. The terms are ​<span class=\"tex\">3, 9, 15, 21, 27</span>​; check: ​<span class=\"tex\">3, 9, 27</span>​ are in GP. Answer: 6.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 44,
+      "promptLines": [
+        "What is the sum of all five terms?"
+      ],
+      "options": {
+        "A": "60",
+        "B": "65",
+        "C": "75",
+        "D": "80"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "topicHref": "/nda/maths/algebra/progressions",
+      "pdfPage": 17,
+      "printedPage": 17,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Let the terms be ​<span class=\"tex\">a, a + d, a + 2d, a + 3d, a + 4d</span>​. The GP condition ​<span class=\"tex\">(a + d)^2 = a(a + 4d)</span>​ gives ​<span class=\"tex\">d^2 = 2ad</span>​, so ​<span class=\"tex\">d = 2a</span>​ (for ​<span class=\"tex\">d \\neq 0</span>​). The terms are then ​<span class=\"tex\">a, 3a, 5a, 7a, 9a</span>​, with product ​<span class=\"math-wide\"><span class=\"tex\">1 \\times 3 \\times 5 \\times 7 \\times 9 \\times a^5 = 945a^5</span></span>​. Setting ​<span class=\"tex\">945a^5 = 229635</span>​ gives ​<span class=\"tex\">a^5 = 243</span>​, so ​<span class=\"tex\">a = 3</span>​. The terms are ​<span class=\"tex\">3, 9, 15, 21, 27</span>​. Their sum is ​<span class=\"tex\">25a = 75</span>​. Answer: 75.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 45,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\((8 + 3\\sqrt{7})^{20} = U + V\\) and \\((8 - 3\\sqrt{7})^{20} = W\\), where \\(U\\) is an integer and \\(0 < V < 1\\).",
+        "What is \\(V + W\\) equal to?"
+      ],
+      "options": {
+        "A": "8",
+        "B": "4",
+        "C": "2",
+        "D": "1"
+      },
+      "topicLabel": "Binomial theorem",
+      "topicHref": "/nda/maths/algebra/binomial-theorem",
+      "pdfPage": 17,
+      "printedPage": 17,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Add the two binomial expansions. In ​<span class=\"math-wide\"><span class=\"tex\">(8 + 3\\sqrt{7})^{20} + (8 - 3\\sqrt{7})^{20}</span></span>​ the terms with odd powers of ​<span class=\"tex\">\\sqrt{7}</span>​ cancel and the rest are whole numbers, so ​<span class=\"tex\">U + V + W</span>​ is an integer. Since ​<span class=\"tex\">U</span>​ is an integer, ​<span class=\"tex\">V + W</span>​ is an integer too. Now ​<span class=\"tex\">3\\sqrt{7} = \\sqrt{63} \\approx 7.94</span>​, so ​<span class=\"tex\">8 - 3\\sqrt{7} \\approx 0.06</span>​ lies between 0 and 1, and so does its 20th power: ​<span class=\"tex\">0 &lt; W &lt; 1</span>​. With ​<span class=\"tex\">0 &lt; V &lt; 1</span>​ we get ​<span class=\"tex\">0 &lt; V + W &lt; 2</span>​. The only integer in that range is 1. Answer: 1.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 46,
+      "promptLines": [
+        "What is the value of \\((U + V)W\\)?"
+      ],
+      "options": {
+        "A": "1/2",
+        "B": "1",
+        "C": "3/2",
+        "D": "2"
+      },
+      "topicLabel": "Binomial theorem",
+      "topicHref": "/nda/maths/algebra/binomial-theorem",
+      "pdfPage": 17,
+      "printedPage": 17,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"tex\">(U + V)W</span>​ is simply the product of the two given powers: ​<span class=\"math-wide\"><span class=\"tex\">(8 + 3\\sqrt{7})^{20}(8 - 3\\sqrt{7})^{20} = \\left[(8 + 3\\sqrt{7})(8 - 3\\sqrt{7})\\right]^{20}</span></span>​. Use ​<span class=\"tex\">(a + b)(a - b) = a^2 - b^2</span>​: ​<span class=\"tex\">8^2 - (3\\sqrt{7})^2 = 64 - 63 = 1</span>​. So the value is ​<span class=\"tex\">1^{20} = 1</span>​. Answer: 1.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 47,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : The roots of the quadratic equation \\(a^2(b^2 - c^2)x^2 + b^2(c^2 - a^2)x + c^2(a^2 - b^2) = 0\\) are equal \\((a^2 \\neq b^2 \\neq c^2)\\).",
+        "Which one of the following statements is correct?"
+      ],
+      "options": {
+        "A": "\\(a^2\\), \\(b^2\\), \\(c^2\\) are in AP.",
+        "B": "\\(a^2\\), \\(b^2\\), \\(c^2\\) are in GP.",
+        "C": "\\(a^2\\), \\(b^2\\), \\(c^2\\) are in HP.",
+        "D": "\\(a^2\\), \\(b^2\\), \\(c^2\\) are neither in AP nor in GP nor in HP."
+      },
+      "topicLabel": "Quadratic equations",
+      "topicHref": "/nda/maths/algebra/quadratic-equations",
+      "pdfPage": 19,
+      "printedPage": 19,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Add the three coefficients: ​<span class=\"math-wide\"><span class=\"tex\">a^2(b^2 - c^2) + b^2(c^2 - a^2) + c^2(a^2 - b^2) = 0</span></span>​. So ​<span class=\"tex\">x = 1</span>​ satisfies the equation. The roots are equal, so both roots are 1 and their product is 1: ​<span class=\"math-wide\"><span class=\"tex\">\\frac{c^2(a^2 - b^2)}{a^2(b^2 - c^2)} = 1</span></span>​. Cross-multiply: ​<span class=\"tex\">a^2c^2 - b^2c^2 = a^2b^2 - a^2c^2</span>​, so ​<span class=\"tex\">2a^2c^2 = b^2(a^2 + c^2)</span>​, that is ​<span class=\"tex\">b^2 = \\frac{2a^2c^2}{a^2 + c^2}</span>​. This says ​<span class=\"tex\">b^2</span>​ is the harmonic mean of ​<span class=\"tex\">a^2</span>​ and ​<span class=\"tex\">c^2</span>​. Answer: ​<span class=\"tex\">a^2</span>​, ​<span class=\"tex\">b^2</span>​, ​<span class=\"tex\">c^2</span>​ are in HP.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 48,
+      "promptLines": [
+        "Which one of the following is a root of the equation?"
+      ],
+      "options": {
+        "A": "\\(\\frac{b^2(c^2 - a^2)}{a^2(c^2 - b^2)}\\)",
+        "B": "\\(\\frac{b^2(c^2 - a^2)}{a^2(b^2 - c^2)}\\)",
+        "C": "\\(\\frac{b^2(c^2 - a^2)}{2a^2(c^2 - b^2)}\\)",
+        "D": "\\(\\frac{b^2(c^2 - a^2)}{2a^2(b^2 - c^2)}\\)"
+      },
+      "topicLabel": "Quadratic equations",
+      "topicHref": "/nda/maths/algebra/quadratic-equations",
+      "pdfPage": 19,
+      "printedPage": 19,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">For ​<span class=\"tex\">Ax^2 + Bx + C = 0</span>​ with equal roots, each root is ​<span class=\"tex\">-\\frac{B}{2A}</span>​ (half the sum of the roots). Here ​<span class=\"tex\">A = a^2(b^2 - c^2)</span>​ and ​<span class=\"tex\">B = b^2(c^2 - a^2)</span>​. So the root is ​<span class=\"tex\">-\\frac{b^2(c^2 - a^2)}{2a^2(b^2 - c^2)}</span>​. Take the minus sign into the bottom bracket: ​<span class=\"tex\">\\frac{b^2(c^2 - a^2)}{2a^2(c^2 - b^2)}</span>​. (Its value is 1, since the coefficients add up to zero.) Answer: ​<span class=\"tex\">\\frac{b^2(c^2 - a^2)}{2a^2(c^2 - b^2)}</span>​.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 49,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(A = \\begin{bmatrix} 3 & -3 & 4 \\\\ 2 & -3 & 4 \\\\ 0 & -1 & 1 \\end{bmatrix}\\)",
+        "What is \\(A(\\mathrm{adj}\\, A)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\begin{bmatrix} 5 & 0 & 0 \\\\ 0 & 5 & 0 \\\\ 0 & 0 & 5 \\end{bmatrix}\\)",
+        "B": "\\(\\begin{bmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 2 \\end{bmatrix}\\)",
+        "C": "\\(\\begin{bmatrix} 1/2 & 0 & 0 \\\\ 0 & 1/2 & 0 \\\\ 0 & 0 & 1/2 \\end{bmatrix}\\)",
+        "D": "\\(\\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix}\\)"
+      },
+      "topicLabel": "Adjoint and inverse of a matrix",
+      "topicHref": "/nda/maths/matrices/adjoint-inverse",
+      "pdfPage": 19,
+      "printedPage": 19,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Use the property ​<span class=\"tex\">A(\\mathrm{adj}\\, A) = |A| I</span>​. So only the determinant is needed. Expand along the first row: ​<span class=\"math-wide\"><span class=\"tex\">|A| = 3[(-3)(1) - (4)(-1)] - (-3)[(2)(1) - (4)(0)] + 4[(2)(-1) - (-3)(0)] = 3(1) + 3(2) + 4(-2) = 3 + 6 - 8 = 1</span></span>​. Hence ​<span class=\"tex\">A(\\mathrm{adj}\\, A) = 1 \\cdot I</span>​, the identity matrix of order 3. Answer: the identity matrix, option (d).</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 50,
+      "promptLines": [
+        "What is \\(A^{-1}\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\begin{bmatrix} 1 & -1 & 0 \\\\ -2 & 3 & -4 \\\\ -2 & 3 & -3 \\end{bmatrix}\\)",
+        "B": "\\(\\begin{bmatrix} 1/2 & -1/2 & 0 \\\\ -1 & 3/2 & -2 \\\\ -1 & 3/2 & -3/2 \\end{bmatrix}\\)",
+        "C": "\\(\\begin{bmatrix} 2 & -2 & 0 \\\\ -4 & 6 & -8 \\\\ -4 & 6 & -6 \\end{bmatrix}\\)",
+        "D": "\\(\\begin{bmatrix} 1/5 & -1/5 & 0 \\\\ -2/5 & 3/5 & -4/5 \\\\ -2/5 & 3/5 & -3/5 \\end{bmatrix}\\)"
+      },
+      "topicLabel": "Adjoint and inverse of a matrix",
+      "topicHref": "/nda/maths/matrices/adjoint-inverse",
+      "pdfPage": 19,
+      "printedPage": 19,
+      "answerDraft": "A",
+      "answerInference": "explicit-letter",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"tex\">A^{-1} = \\frac{\\mathrm{adj}\\, A}{|A|}</span>​. Expanding along row 1, ​<span class=\"math-wide\"><span class=\"tex\">|A| = 3(-3 + 4) + 3(2 - 0) + 4(-2 - 0) = 1</span></span>​. So ​<span class=\"tex\">A^{-1} = \\mathrm{adj}\\, A</span>​. Cofactors: row 1 gives ​<span class=\"tex\">1, -2, -2</span>​; row 2 gives ​<span class=\"tex\">-1, 3, 3</span>​; row 3 gives ​<span class=\"tex\">0, -4, -3</span>​. The adjoint is the transpose of the cofactor matrix: ​<span class=\"math-wide\"><span class=\"tex\">\\begin{bmatrix} 1 &amp; -1 &amp; 0 \\\\ -2 &amp; 3 &amp; -4 \\\\ -2 &amp; 3 &amp; -3 \\end{bmatrix}</span></span>​. Check its first row against column 1 of ​<span class=\"tex\">A</span>​: ​<span class=\"tex\">1(3) - 1(2) + 0 = 1</span>​. Correct. The other options are this matrix divided by 2, multiplied by 2, or divided by 5. Answer: option (a).</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 51,
+      "promptLines": [
+        "What is \\(3\\alpha + 2\\beta\\) equal to if \\((2\\hat{i} + 6\\hat{j} + 27\\hat{k}) \\times (\\hat{i} + \\alpha\\hat{j} + \\beta\\hat{k})\\) is a null vector?"
+      ],
+      "options": {
+        "A": "36",
+        "B": "33",
+        "C": "30",
+        "D": "27"
+      },
+      "topicLabel": "The cross product",
+      "topicHref": "/nda/maths/vectors/cross-product",
+      "pdfPage": 21,
+      "printedPage": 21,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The cross product of two non-zero vectors is the null vector only when the vectors are parallel, which means their components are proportional: ​<span class=\"math-wide\"><span class=\"tex\">\\frac{2}{1} = \\frac{6}{\\alpha} = \\frac{27}{\\beta}</span></span>​. From ​<span class=\"tex\">\\frac{6}{\\alpha} = 2</span>​ we get ​<span class=\"tex\">\\alpha = 3</span>​. From ​<span class=\"tex\">\\frac{27}{\\beta} = 2</span>​ we get ​<span class=\"tex\">\\beta = \\frac{27}{2}</span>​. So ​<span class=\"tex\">3\\alpha + 2\\beta = 9 + 27 = 36</span>​. Answer: 36.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 52,
+      "promptLines": [
+        "For what value of the angle between the vectors \\(\\vec{a}\\) and \\(\\vec{b}\\) is the quantity \\(|\\vec{a} \\times \\vec{b}| + \\sqrt{3}|\\vec{a} \\cdot \\vec{b}|\\) maximum?"
+      ],
+      "options": {
+        "A": "\\(0^\\circ\\)",
+        "B": "\\(30^\\circ\\)",
+        "C": "\\(45^\\circ\\)",
+        "D": "\\(60^\\circ\\)"
+      },
+      "topicLabel": "The cross product",
+      "topicHref": "/nda/maths/vectors/cross-product",
+      "pdfPage": 21,
+      "printedPage": 21,
+      "answerDraft": "B",
+      "answerInference": "explicit-letter",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><p class=\"text-sm mt-2 bg-amber-50 border border-amber-300 rounded-md px-3 py-2\"><strong>Our working gives (b).</strong> Because of the modulus on the dot product, 150 degrees gives the same maximum; only 30 degrees is among the options.</p><div class=\"mt-2 leading-relaxed\">Let the angle be ​<span class=\"tex\">\\theta</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">|\\vec{a} \\times \\vec{b}| = |\\vec{a}||\\vec{b}|\\sin\\theta</span></span>​ and ​<span class=\"math-wide\"><span class=\"tex\">|\\vec{a} \\cdot \\vec{b}| = |\\vec{a}||\\vec{b}||\\cos\\theta|</span></span>​. For the angles in the options ​<span class=\"tex\">\\cos\\theta</span>​ is positive, so the quantity is ​<span class=\"math-wide\"><span class=\"tex\">|\\vec{a}||\\vec{b}|(\\sin\\theta + \\sqrt{3}\\cos\\theta)</span></span>​. Write ​<span class=\"math-wide\"><span class=\"tex\">\\sin\\theta + \\sqrt{3}\\cos\\theta = 2\\left(\\frac{1}{2}\\sin\\theta + \\frac{\\sqrt{3}}{2}\\cos\\theta\\right) = 2\\sin(\\theta + 60^\\circ)</span></span>​. This is largest, equal to 2, when ​<span class=\"tex\">\\theta + 60^\\circ = 90^\\circ</span>​, that is ​<span class=\"tex\">\\theta = 30^\\circ</span>​. Check: at ​<span class=\"tex\">30^\\circ</span>​, ​<span class=\"math-wide\"><span class=\"tex\">\\frac{1}{2} + \\sqrt{3} \\cdot \\frac{\\sqrt{3}}{2} = 2</span></span>​. Answer: ​<span class=\"tex\">30^\\circ</span>​.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 53,
+      "promptLines": [
+        "Let \\(\\theta\\) be the angle between two unit vectors \\(\\vec{a}\\) and \\(\\vec{b}\\). If \\(\\vec{a} + 2\\vec{b}\\) is perpendicular to \\(5\\vec{a} - 4\\vec{b}\\), then what is \\(\\cos\\theta + \\cos 2\\theta\\) equal to?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1/2",
+        "C": "1",
+        "D": "\\(\\frac{\\sqrt{3} + 1}{2}\\)"
+      },
+      "topicLabel": "The dot product",
+      "topicHref": "/nda/maths/vectors/dot-product",
+      "pdfPage": 21,
+      "printedPage": 21,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Perpendicular vectors have dot product zero: ​<span class=\"math-wide\"><span class=\"tex\">(\\vec{a} + 2\\vec{b}) \\cdot (5\\vec{a} - 4\\vec{b}) = 0</span></span>​. Expand: ​<span class=\"math-wide\"><span class=\"tex\">5|\\vec{a}|^2 - 4\\vec{a} \\cdot \\vec{b} + 10\\vec{a} \\cdot \\vec{b} - 8|\\vec{b}|^2 = 0</span></span>​. For unit vectors ​<span class=\"tex\">|\\vec{a}|^2 = |\\vec{b}|^2 = 1</span>​ and ​<span class=\"tex\">\\vec{a} \\cdot \\vec{b} = \\cos\\theta</span>​. So ​<span class=\"tex\">5 + 6\\cos\\theta - 8 = 0</span>​, giving ​<span class=\"tex\">\\cos\\theta = \\frac{1}{2}</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">\\cos 2\\theta = 2\\cos^2\\theta - 1 = \\frac{1}{2} - 1 = -\\frac{1}{2}</span></span>​. Sum: ​<span class=\"tex\">\\frac{1}{2} - \\frac{1}{2} = 0</span>​. Answer: 0.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 54,
+      "promptLines": [
+        "Let \\(ABCDEF\\) be a regular hexagon. If \\(\\overrightarrow{AD} = m\\overrightarrow{BC}\\) and \\(\\overrightarrow{CF} = n\\overrightarrow{AB}\\), then what is \\(mn\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-4\\)",
+        "B": "\\(-2\\)",
+        "C": "2",
+        "D": "4"
+      },
+      "topicLabel": "Vectors at work: force, moment and geometry",
+      "topicHref": "/nda/maths/vectors/vector-applications",
+      "pdfPage": 21,
+      "printedPage": 21,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Place the hexagon with centre at the origin and side 1: ​<span class=\"tex\">A(1, 0)</span>​, ​<span class=\"tex\">B\\left(\\frac12, \\frac{\\sqrt3}{2}\\right)</span>​, ​<span class=\"tex\">C\\left(-\\frac12, \\frac{\\sqrt3}{2}\\right)</span>​, ​<span class=\"tex\">D(-1, 0)</span>​, ​<span class=\"tex\">F\\left(\\frac12, -\\frac{\\sqrt3}{2}\\right)</span>​. Then ​<span class=\"tex\">\\overrightarrow{AD} = (-2, 0)</span>​ and ​<span class=\"tex\">\\overrightarrow{BC} = (-1, 0)</span>​, so ​<span class=\"math-wide\"><span class=\"tex\">\\overrightarrow{AD} = 2\\overrightarrow{BC}</span></span>​ and ​<span class=\"tex\">m = 2</span>​. Next ​<span class=\"tex\">\\overrightarrow{CF} = (1, -\\sqrt{3})</span>​ and ​<span class=\"math-wide\"><span class=\"tex\">\\overrightarrow{AB} = \\left(-\\frac12, \\frac{\\sqrt3}{2}\\right)</span></span>​, so ​<span class=\"math-wide\"><span class=\"tex\">\\overrightarrow{CF} = -2\\overrightarrow{AB}</span></span>​ and ​<span class=\"tex\">n = -2</span>​. (A long diagonal is parallel to a side and twice as long; here ​<span class=\"tex\">CF</span>​ points opposite to ​<span class=\"tex\">AB</span>​.) So ​<span class=\"tex\">mn = 2 \\times (-2) = -4</span>​. Answer: ​<span class=\"tex\">-4</span>​.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 55,
+      "promptLines": [
+        "The vectors \\(\\vec{a}\\), \\(\\vec{b}\\) and \\(\\vec{c}\\) are of the same length. If taken pairwise, they form equal angles. If \\(\\vec{a} = \\hat{i} + \\hat{j}\\) and \\(\\vec{b} = \\hat{j} + \\hat{k}\\), then what can \\(\\vec{c}\\) be equal to?",
+        "I. \\(\\hat{i} + \\hat{k}\\)",
+        "II. \\(\\frac{-\\hat{i} + 4\\hat{j} - \\hat{k}}{3}\\) Select the correct answer using the code given below."
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "topicLabel": "The dot product",
+      "topicHref": "/nda/maths/vectors/dot-product",
+      "pdfPage": 21,
+      "printedPage": 21,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"tex\">|\\vec{a}| = |\\vec{b}| = \\sqrt{2}</span>​ and ​<span class=\"tex\">\\vec{a} \\cdot \\vec{b} = 1</span>​. Since all lengths are equal, equal angles mean equal dot products. So ​<span class=\"tex\">\\vec{c}</span>​ must satisfy ​<span class=\"tex\">|\\vec{c}| = \\sqrt{2}</span>​, ​<span class=\"tex\">\\vec{a} \\cdot \\vec{c} = 1</span>​ and ​<span class=\"tex\">\\vec{b} \\cdot \\vec{c} = 1</span>​. Test I: ​<span class=\"tex\">\\vec{c} = (1, 0, 1)</span>​ has length ​<span class=\"tex\">\\sqrt{2}</span>​, ​<span class=\"tex\">\\vec{a} \\cdot \\vec{c} = 1</span>​, ​<span class=\"tex\">\\vec{b} \\cdot \\vec{c} = 1</span>​. It works. Test II: ​<span class=\"tex\">\\vec{c} = \\frac{1}{3}(-1, 4, -1)</span>​ has ​<span class=\"tex\">|\\vec{c}|^2 = \\frac{1 + 16 + 1}{9} = 2</span>​, ​<span class=\"math-wide\"><span class=\"tex\">\\vec{a} \\cdot \\vec{c} = \\frac{-1 + 4}{3} = 1</span></span>​, ​<span class=\"math-wide\"><span class=\"tex\">\\vec{b} \\cdot \\vec{c} = \\frac{4 - 1}{3} = 1</span></span>​. It works too. Answer: Both I and II.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 56,
+      "promptLines": [
+        "The diagonals of a quadrilateral \\(ABCD\\) are along the lines \\(x - 2y = 1\\) and \\(4x + 2y = 3\\). The quadrilateral \\(ABCD\\) may be a"
+      ],
+      "options": {
+        "A": "rectangle",
+        "B": "cyclic quadrilateral",
+        "C": "parallelogram",
+        "D": "rhombus"
+      },
+      "topicLabel": "The straight line",
+      "topicHref": "/nda/maths/geometry/straight-line",
+      "pdfPage": 21,
+      "printedPage": 21,
+      "answerDraft": "D",
+      "answerInference": "explicit-letter",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><p class=\"text-sm mt-2 bg-amber-50 border border-amber-300 rounded-md px-3 py-2\"><strong>Our working gives (d).</strong> The wording &#39;may be&#39; is loose: a square (which is a rectangle and a parallelogram) and some cyclic quadrilaterals also have perpendicular diagonals. Rhombus is the clearly intended answer.</p><div class=\"mt-2 leading-relaxed\">Find the slopes. ​<span class=\"tex\">x - 2y = 1</span>​ gives ​<span class=\"tex\">y = \\frac{x - 1}{2}</span>​, slope ​<span class=\"tex\">\\frac{1}{2}</span>​. ​<span class=\"tex\">4x + 2y = 3</span>​ gives ​<span class=\"tex\">y = -2x + \\frac{3}{2}</span>​, slope ​<span class=\"tex\">-2</span>​. The product of the slopes is ​<span class=\"tex\">\\frac{1}{2} \\times (-2) = -1</span>​, so the diagonals are perpendicular. Among the named shapes, the one whose defining feature is perpendicular diagonals is the rhombus (its diagonals bisect each other at right angles). A general rectangle or parallelogram does not have perpendicular diagonals. Answer: rhombus.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 57,
+      "promptLines": [
+        "The foci of the ellipse \\(4x^2 + 9y^2 = 1\\) are at \\(Q\\) and \\(R\\). If \\(P(x, y)\\) is any point on the ellipse, then what is \\(PQ + PR\\) equal to?"
+      ],
+      "options": {
+        "A": "2",
+        "B": "1",
+        "C": "2/3",
+        "D": "1/3"
+      },
+      "topicLabel": "Parabola, ellipse and hyperbola",
+      "topicHref": "/nda/maths/geometry/conics",
+      "pdfPage": 21,
+      "printedPage": 21,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">For any point on an ellipse, the sum of its distances from the two foci equals the length of the major axis, ​<span class=\"tex\">2a</span>​. Write the equation in standard form: ​<span class=\"tex\">\\frac{x^2}{1/4} + \\frac{y^2}{1/9} = 1</span>​. So ​<span class=\"tex\">a^2 = \\frac{1}{4}</span>​ (the larger one) and ​<span class=\"tex\">b^2 = \\frac{1}{9}</span>​, giving ​<span class=\"tex\">a = \\frac{1}{2}</span>​. Hence ​<span class=\"tex\">PQ + PR = 2a = 2 \\times \\frac{1}{2} = 1</span>​. Answer: 1.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 58,
+      "promptLines": [
+        "If \\(P(2, 4)\\), \\(Q(8, 12)\\), \\(R(10, 14)\\) and \\(S(x, y)\\) are vertices of a parallelogram, then what is \\((x + y)\\) equal to?"
+      ],
+      "options": {
+        "A": "8",
+        "B": "10",
+        "C": "12",
+        "D": "14"
+      },
+      "topicLabel": "Coordinates and the distance formula",
+      "topicHref": "/nda/maths/geometry/coordinates",
+      "pdfPage": 23,
+      "printedPage": 23,
+      "answerDraft": "B",
+      "answerInference": "explicit-letter",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><p class=\"text-sm mt-2 bg-amber-50 border border-amber-300 rounded-md px-3 py-2\"><strong>Our working gives (b).</strong> Taken in the order P, Q, R, S. The other possible fourth vertices, (0, 2) and (16, 22), give sums 2 and 38, which are not among the options.</p><div class=\"mt-2 leading-relaxed\">In a parallelogram ​<span class=\"tex\">PQRS</span>​ the diagonals ​<span class=\"tex\">PR</span>​ and ​<span class=\"tex\">QS</span>​ bisect each other, so they have the same midpoint. Midpoint of ​<span class=\"tex\">PR</span>​: ​<span class=\"math-wide\"><span class=\"tex\">\\left(\\frac{2 + 10}{2}, \\frac{4 + 14}{2}\\right) = (6, 9)</span></span>​. Midpoint of ​<span class=\"tex\">QS</span>​: ​<span class=\"math-wide\"><span class=\"tex\">\\left(\\frac{8 + x}{2}, \\frac{12 + y}{2}\\right)</span></span>​. Equate: ​<span class=\"tex\">8 + x = 12</span>​ gives ​<span class=\"tex\">x = 4</span>​, and ​<span class=\"tex\">12 + y = 18</span>​ gives ​<span class=\"tex\">y = 6</span>​. So ​<span class=\"tex\">S = (4, 6)</span>​ and ​<span class=\"tex\">x + y = 10</span>​. Answer: 10.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 59,
+      "promptLines": [
+        "The equation of a circle is \\((x^2 - 4x + 3) + (y^2 - 6y + 8) = 0\\) Which of the following statements are correct?",
+        "I. The end points of a diameter of the circle are at \\((1, 2)\\) and \\((3, 4)\\).",
+        "II. The end points of a diameter of the circle are at \\((1, 4)\\) and \\((3, 2)\\).",
+        "III. The end points of a diameter of the circle are at \\((2, 4)\\) and \\((4, 2)\\).",
+        "Select the answer using the code given below."
+      ],
+      "options": {
+        "A": "I and II only",
+        "B": "II and III only",
+        "C": "I and III only",
+        "D": "I, II and III"
+      },
+      "topicLabel": "The circle",
+      "topicHref": "/nda/maths/geometry/circle",
+      "pdfPage": 23,
+      "printedPage": 23,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Complete the squares: ​<span class=\"tex\">(x - 2)^2 - 1 + (y - 3)^2 - 1 = 0</span>​, so ​<span class=\"tex\">(x - 2)^2 + (y - 3)^2 = 2</span>​. Centre ​<span class=\"tex\">(2, 3)</span>​, radius ​<span class=\"tex\">\\sqrt{2}</span>​. The ends of a diameter must lie on the circle and have the centre as midpoint. I: midpoint of ​<span class=\"tex\">(1, 2)</span>​ and ​<span class=\"tex\">(3, 4)</span>​ is ​<span class=\"tex\">(2, 3)</span>​, and ​<span class=\"tex\">(1, 2)</span>​ is on the circle since ​<span class=\"tex\">1 + 1 = 2</span>​. Correct. II: midpoint of ​<span class=\"tex\">(1, 4)</span>​ and ​<span class=\"tex\">(3, 2)</span>​ is ​<span class=\"tex\">(2, 3)</span>​, and ​<span class=\"tex\">1 + 1 = 2</span>​. Correct. III: midpoint of ​<span class=\"tex\">(2, 4)</span>​ and ​<span class=\"tex\">(4, 2)</span>​ is ​<span class=\"tex\">(3, 3)</span>​, not the centre. Wrong. Answer: I and II only.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 60,
+      "promptLines": [
+        "Consider the points \\(P(4k, 4k)\\) and \\(Q(4k, -4k)\\) lying on the parabola \\(y^2 = 4kx\\). If the vertex is \\(A\\), then what is \\(\\angle PAQ\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(60^\\circ\\)",
+        "B": "\\(90^\\circ\\)",
+        "C": "\\(120^\\circ\\)",
+        "D": "\\(135^\\circ\\)"
+      },
+      "topicLabel": "Parabola, ellipse and hyperbola",
+      "topicHref": "/nda/maths/geometry/conics",
+      "pdfPage": 23,
+      "printedPage": 23,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The vertex of ​<span class=\"tex\">y^2 = 4kx</span>​ is the origin, so ​<span class=\"tex\">A = (0, 0)</span>​. Slope of ​<span class=\"tex\">AP = \\frac{4k - 0}{4k - 0} = 1</span>​. Slope of ​<span class=\"tex\">AQ = \\frac{-4k - 0}{4k - 0} = -1</span>​. The product of the slopes is ​<span class=\"tex\">1 \\times (-1) = -1</span>​, so ​<span class=\"tex\">AP</span>​ is perpendicular to ​<span class=\"tex\">AQ</span>​. In other words, ​<span class=\"tex\">AP</span>​ makes ​<span class=\"tex\">45^\\circ</span>​ above the axis and ​<span class=\"tex\">AQ</span>​ makes ​<span class=\"tex\">45^\\circ</span>​ below it. So ​<span class=\"tex\">\\angle PAQ = 90^\\circ</span>​. Answer: ​<span class=\"tex\">90^\\circ</span>​.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 61,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : A triangle \\(ABC\\) is inscribed in the circle \\(x^2 + y^2 = 100\\). \\(B\\) and \\(C\\) have coordinates \\((6, 8)\\) and \\((-8, 6)\\) respectively.",
+        "What is \\(\\angle BAC\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\pi/2\\)",
+        "B": "\\(\\pi/3\\) or \\(2\\pi/3\\)",
+        "C": "\\(\\pi/4\\) or \\(3\\pi/4\\)",
+        "D": "\\(\\pi/6\\) or \\(5\\pi/6\\)"
+      },
+      "topicLabel": "The circle",
+      "topicHref": "/nda/maths/geometry/circle",
+      "pdfPage": 23,
+      "printedPage": 23,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The centre is ​<span class=\"tex\">O(0, 0)</span>​. Slope of ​<span class=\"tex\">OB = \\frac{8}{6} = \\frac{4}{3}</span>​ and slope of ​<span class=\"tex\">OC = \\frac{6}{-8} = -\\frac{3}{4}</span>​. Their product is ​<span class=\"tex\">-1</span>​, so ​<span class=\"tex\">\\angle BOC = 90^\\circ</span>​: the chord ​<span class=\"tex\">BC</span>​ subtends a right angle at the centre. The angle at a point on the circle is half the angle at the centre. If ​<span class=\"tex\">A</span>​ lies on the major arc, ​<span class=\"math-wide\"><span class=\"tex\">\\angle BAC = \\frac{90^\\circ}{2} = 45^\\circ = \\frac{\\pi}{4}</span></span>​. If ​<span class=\"tex\">A</span>​ lies on the minor arc, the angle is ​<span class=\"math-wide\"><span class=\"tex\">180^\\circ - 45^\\circ = 135^\\circ = \\frac{3\\pi}{4}</span></span>​. Since the position of ​<span class=\"tex\">A</span>​ is not given, both are possible. Answer: ​<span class=\"tex\">\\pi/4</span>​ or ​<span class=\"tex\">3\\pi/4</span>​.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 62,
+      "promptLines": [
+        "What are the coordinates of \\(A\\)?"
+      ],
+      "options": {
+        "A": "\\((-6, 8)\\)",
+        "B": "\\((-6, -8)\\)",
+        "C": "\\((5\\sqrt{2}, 5\\sqrt{2})\\)",
+        "D": "Cannot be determined due to insufficient data"
+      },
+      "topicLabel": "The circle",
+      "topicHref": "/nda/maths/geometry/circle",
+      "pdfPage": 23,
+      "printedPage": 23,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The only information about ​<span class=\"tex\">A</span>​ is that it lies on the circle ​<span class=\"tex\">x^2 + y^2 = 100</span>​, so that the triangle is inscribed. Every point of the circle other than ​<span class=\"tex\">B</span>​ and ​<span class=\"tex\">C</span>​ gives a valid triangle. In fact all three points in options (a), (b) and (c) lie on the circle: ​<span class=\"tex\">36 + 64 = 100</span>​, ​<span class=\"tex\">36 + 64 = 100</span>​ and ​<span class=\"tex\">50 + 50 = 100</span>​. Nothing in the data picks one of them over the others. So ​<span class=\"tex\">A</span>​ cannot be fixed. Answer: Cannot be determined due to insufficient data.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 63,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : \\(ABCD\\) is an isosceles trapezium and \\(AB\\) is parallel to \\(DC\\). Let \\(A(2, 3)\\), \\(B(4, 3)\\), \\(C(5, 1)\\) be the vertices.",
+        "What are the coordinates of vertex \\(D\\)?"
+      ],
+      "options": {
+        "A": "\\((2, 1)\\)",
+        "B": "\\((1, 2)\\)",
+        "C": "\\((1, 1)\\)",
+        "D": "\\((3, 1)\\)"
+      },
+      "topicLabel": "Coordinates and the distance formula",
+      "topicHref": "/nda/maths/geometry/coordinates",
+      "pdfPage": 23,
+      "printedPage": 23,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"tex\">AB</span>​ joins ​<span class=\"tex\">(2, 3)</span>​ and ​<span class=\"tex\">(4, 3)</span>​, so it is horizontal. ​<span class=\"tex\">DC</span>​ is parallel to it and passes through ​<span class=\"tex\">C(5, 1)</span>​, so ​<span class=\"tex\">D = (d, 1)</span>​. Isosceles means the slant sides are equal: ​<span class=\"tex\">AD = BC</span>​. ​<span class=\"tex\">BC^2 = (5 - 4)^2 + (1 - 3)^2 = 5</span>​. ​<span class=\"tex\">AD^2 = (d - 2)^2 + 4 = 5</span>​ gives ​<span class=\"tex\">d = 1</span>​ or ​<span class=\"tex\">d = 3</span>​. With ​<span class=\"tex\">d = 3</span>​, ​<span class=\"tex\">AD</span>​ would be parallel to ​<span class=\"tex\">BC</span>​ and the figure would be a parallelogram, not an isosceles trapezium. So ​<span class=\"tex\">d = 1</span>​: the figure is then symmetric about the line ​<span class=\"tex\">x = 3</span>​. Answer: ​<span class=\"tex\">(1, 1)</span>​.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 64,
+      "promptLines": [
+        "What is the point of intersection of the diagonals of the trapezium?"
+      ],
+      "options": {
+        "A": "\\((3, 7/2)\\)",
+        "B": "\\((3, 7/3)\\)",
+        "C": "\\((7/2, 2)\\)",
+        "D": "\\((5/2, 2)\\)"
+      },
+      "topicLabel": "The straight line",
+      "topicHref": "/nda/maths/geometry/straight-line",
+      "pdfPage": 23,
+      "printedPage": 23,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">First find ​<span class=\"tex\">D</span>​. ​<span class=\"tex\">DC</span>​ is horizontal through ​<span class=\"tex\">C(5, 1)</span>​, so ​<span class=\"tex\">D = (d, 1)</span>​; equal slant sides ​<span class=\"tex\">AD = BC = \\sqrt{5}</span>​ give ​<span class=\"tex\">d = 1</span>​ (the value ​<span class=\"tex\">d = 3</span>​ makes a parallelogram). So ​<span class=\"tex\">D = (1, 1)</span>​. The trapezium is symmetric about the line ​<span class=\"tex\">x = 3</span>​, so the diagonals meet on ​<span class=\"tex\">x = 3</span>​. Diagonal ​<span class=\"tex\">AC</span>​ joins ​<span class=\"tex\">(2, 3)</span>​ and ​<span class=\"tex\">(5, 1)</span>​: slope ​<span class=\"tex\">= -\\frac{2}{3}</span>​, so ​<span class=\"tex\">y = 3 - \\frac{2}{3}(x - 2)</span>​. At ​<span class=\"tex\">x = 3</span>​: ​<span class=\"tex\">y = 3 - \\frac{2}{3} = \\frac{7}{3}</span>​. Check on ​<span class=\"tex\">BD</span>​ from ​<span class=\"tex\">(4, 3)</span>​ to ​<span class=\"tex\">(1, 1)</span>​: ​<span class=\"tex\">y = 3 + \\frac{2}{3}(3 - 4) = \\frac{7}{3}</span>​. Answer: ​<span class=\"tex\">(3, 7/3)</span>​.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 65,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(2x^2 + 2y^2 + 2z^2 + 3x + 3y + 3z - 6 = 0\\) be a sphere.",
+        "What is the diameter of the sphere?"
+      ],
+      "options": {
+        "A": "\\(\\frac{5\\sqrt{3}}{4}\\)",
+        "B": "\\(\\frac{5\\sqrt{3}}{2}\\)",
+        "C": "\\(\\frac{3\\sqrt{5}}{4}\\)",
+        "D": "\\(\\frac{3\\sqrt{5}}{2}\\)"
+      },
+      "topicLabel": "The sphere",
+      "topicHref": "/nda/maths/geometry/sphere",
+      "pdfPage": 25,
+      "printedPage": 25,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Divide by 2 to make the coefficients of the squares 1: ​<span class=\"math-wide\"><span class=\"tex\">x^2 + y^2 + z^2 + \\frac{3}{2}x + \\frac{3}{2}y + \\frac{3}{2}z - 3 = 0</span></span>​. Compare with ​<span class=\"math-wide\"><span class=\"tex\">x^2 + y^2 + z^2 + 2ux + 2vy + 2wz + d = 0</span></span>​: ​<span class=\"tex\">u = v = w = \\frac{3}{4}</span>​, ​<span class=\"tex\">d = -3</span>​. Radius ​<span class=\"math-wide\"><span class=\"tex\">= \\sqrt{u^2 + v^2 + w^2 - d} = \\sqrt{\\frac{27}{16} + 3} = \\sqrt{\\frac{75}{16}} = \\frac{5\\sqrt{3}}{4}</span></span>​. The diameter is twice this: ​<span class=\"tex\">\\frac{5\\sqrt{3}}{2}</span>​. Option (a) is the radius, so take care. Answer: ​<span class=\"tex\">\\frac{5\\sqrt{3}}{2}</span>​.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 66,
+      "promptLines": [
+        "The centre of the sphere lies on the plane"
+      ],
+      "options": {
+        "A": "\\(2x + 2y + 2z - 3 = 0\\)",
+        "B": "\\(4x + 4y + 4z - 3 = 0\\)",
+        "C": "\\(4x + 8y + 8z - 15 = 0\\)",
+        "D": "\\(4x + 8y + 8z + 15 = 0\\)"
+      },
+      "topicLabel": "The sphere",
+      "topicHref": "/nda/maths/geometry/sphere",
+      "pdfPage": 25,
+      "printedPage": 25,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Divide the equation by 2: ​<span class=\"math-wide\"><span class=\"tex\">x^2 + y^2 + z^2 + \\frac{3}{2}x + \\frac{3}{2}y + \\frac{3}{2}z - 3 = 0</span></span>​. The centre is (minus half of each first-degree coefficient): ​<span class=\"math-wide\"><span class=\"tex\">\\left(-\\frac{3}{4}, -\\frac{3}{4}, -\\frac{3}{4}\\right)</span></span>​. Put it in each plane. (a): ​<span class=\"tex\">-\\frac{9}{2} - 3 \\neq 0</span>​. (b): ​<span class=\"tex\">-9 - 3 \\neq 0</span>​. (c): ​<span class=\"tex\">-3 - 6 - 6 - 15 = -30 \\neq 0</span>​. (d): ​<span class=\"tex\">-3 - 6 - 6 + 15 = 0</span>​. Only (d) is satisfied. Answer: ​<span class=\"tex\">4x + 8y + 8z + 15 = 0</span>​.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 67,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(S\\) be the line of intersection of two planes \\(x + y + z = 1\\) and \\(2x + 3y - 4z = 8\\).",
+        "Which of the following are the direction ratios of \\(S\\)?"
+      ],
+      "options": {
+        "A": "\\(\\langle -7, -6, 1 \\rangle\\)",
+        "B": "\\(\\langle -7, 6, 1 \\rangle\\)",
+        "C": "\\(\\langle -6, 5, 1 \\rangle\\)",
+        "D": "\\(\\langle 6, 5, 1 \\rangle\\)"
+      },
+      "topicLabel": "Line and plane in three dimensions",
+      "topicHref": "/nda/maths/geometry/line-and-plane",
+      "pdfPage": 25,
+      "printedPage": 25,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The line of intersection lies in both planes, so it is perpendicular to both normals, ​<span class=\"tex\">(1, 1, 1)</span>​ and ​<span class=\"tex\">(2, 3, -4)</span>​. Its direction is their cross product: ​<span class=\"math-wide\"><span class=\"tex\">\\begin{vmatrix} \\hat{i} &amp; \\hat{j} &amp; \\hat{k} \\\\ 1 &amp; 1 &amp; 1 \\\\ 2 &amp; 3 &amp; -4 \\end{vmatrix} = \\hat{i}(-4 - 3) - \\hat{j}(-4 - 2) + \\hat{k}(3 - 2) = (-7, 6, 1)</span></span>​. Check: ​<span class=\"tex\">(-7, 6, 1) \\cdot (1, 1, 1) = 0</span>​ and ​<span class=\"math-wide\"><span class=\"tex\">(-7, 6, 1) \\cdot (2, 3, -4) = -14 + 18 - 4 = 0</span></span>​. Answer: ​<span class=\"tex\">\\langle -7, 6, 1 \\rangle</span>​.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 68,
+      "promptLines": [
+        "If \\(\\langle l, m, n \\rangle\\) are direction cosines of \\(S\\), then what is the value of \\(43(l^2 - m^2 - n^2)\\)?"
+      ],
+      "options": {
+        "A": "6",
+        "B": "5",
+        "C": "4",
+        "D": "1"
+      },
+      "topicLabel": "Points in space and direction cosines",
+      "topicHref": "/nda/maths/geometry/points-in-space",
+      "pdfPage": 25,
+      "printedPage": 25,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The direction ratios of ​<span class=\"tex\">S</span>​ come from the cross product of the normals ​<span class=\"tex\">(1, 1, 1)</span>​ and ​<span class=\"tex\">(2, 3, -4)</span>​, which is ​<span class=\"tex\">(-7, 6, 1)</span>​. Direction cosines are the ratios divided by their length: ​<span class=\"tex\">\\sqrt{49 + 36 + 1} = \\sqrt{86}</span>​. So ​<span class=\"tex\">l^2 = \\frac{49}{86}</span>​, ​<span class=\"tex\">m^2 = \\frac{36}{86}</span>​, ​<span class=\"tex\">n^2 = \\frac{1}{86}</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">l^2 - m^2 - n^2 = \\frac{49 - 36 - 1}{86} = \\frac{12}{86} = \\frac{6}{43}</span></span>​. Multiply by 43: the value is 6. (The squares make the sign of the direction irrelevant.) Answer: 6.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 69,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(L : x + y + z + 4 = 0 = 2x - y - z + 8\\) be a line and \\(P : x + 2y + 3z + 1 = 0\\) be a plane.",
+        "What are the direction ratios of the line?"
+      ],
+      "options": {
+        "A": "\\(\\langle 2, 1, -1 \\rangle\\)",
+        "B": "\\(\\langle 0, -1, 2 \\rangle\\)",
+        "C": "\\(\\langle 0, 1, -1 \\rangle\\)",
+        "D": "\\(\\langle 2, 3, -3 \\rangle\\)"
+      },
+      "topicLabel": "Line and plane in three dimensions",
+      "topicHref": "/nda/maths/geometry/line-and-plane",
+      "pdfPage": 25,
+      "printedPage": 25,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The line is the intersection of the planes ​<span class=\"tex\">x + y + z + 4 = 0</span>​ and ​<span class=\"tex\">2x - y - z + 8 = 0</span>​, so it is perpendicular to both normals ​<span class=\"tex\">(1, 1, 1)</span>​ and ​<span class=\"tex\">(2, -1, -1)</span>​. Cross product: ​<span class=\"math-wide\"><span class=\"tex\">\\hat{i}(1 \\cdot (-1) - 1 \\cdot (-1)) - \\hat{j}(1 \\cdot (-1) - 1 \\cdot 2) + \\hat{k}(1 \\cdot (-1) - 1 \\cdot 2) = (0, 3, -3)</span></span>​. Dividing by 3 gives ​<span class=\"tex\">(0, 1, -1)</span>​. Another way: adding the two equations gives ​<span class=\"tex\">3x + 12 = 0</span>​, so ​<span class=\"tex\">x = -4</span>​ all along the line and the first ratio must be 0; then ​<span class=\"tex\">y + z = 0</span>​. Answer: ​<span class=\"tex\">\\langle 0, 1, -1 \\rangle</span>​.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 70,
+      "promptLines": [
+        "What is the point of intersection of \\(L\\) and \\(P\\)?"
+      ],
+      "options": {
+        "A": "\\((4, 3, -3)\\)",
+        "B": "\\((4, -3, 3)\\)",
+        "C": "\\((-4, -3, -3)\\)",
+        "D": "\\((-4, -3, 3)\\)"
+      },
+      "topicLabel": "Line and plane in three dimensions",
+      "topicHref": "/nda/maths/geometry/line-and-plane",
+      "pdfPage": 25,
+      "printedPage": 25,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The point must satisfy all three equations. Add the two equations of ​<span class=\"tex\">L</span>​: ​<span class=\"tex\">(x + y + z + 4) + (2x - y - z + 8) = 0</span>​ gives ​<span class=\"tex\">3x + 12 = 0</span>​, so ​<span class=\"tex\">x = -4</span>​. Put this in the first: ​<span class=\"tex\">y + z = 0</span>​, so ​<span class=\"tex\">z = -y</span>​. Now use the plane ​<span class=\"tex\">P</span>​: ​<span class=\"tex\">-4 + 2y + 3(-y) + 1 = 0</span>​, so ​<span class=\"tex\">-y - 3 = 0</span>​ and ​<span class=\"tex\">y = -3</span>​, ​<span class=\"tex\">z = 3</span>​. The point is ​<span class=\"tex\">(-4, -3, 3)</span>​. Check in ​<span class=\"tex\">2x - y - z + 8</span>​: ​<span class=\"tex\">-8 + 3 - 3 + 8 = 0</span>​. Correct. Answer: ​<span class=\"tex\">(-4, -3, 3)</span>​.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 71,
+      "promptLines": [
+        "Let \\(z = [y]\\) and \\(y = [x] - x\\), where \\([\\cdot]\\) is the greatest integer function. If \\(x\\) is not an integer but positive, then what is the value of \\(z\\)?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "topicLabel": "Functions: domain, range and graph",
+      "topicHref": "/nda/maths/diff-calculus/functions",
+      "pdfPage": 27,
+      "printedPage": 27,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">For any ​<span class=\"tex\">x</span>​, ​<span class=\"tex\">x - [x]</span>​ is the fractional part of ​<span class=\"tex\">x</span>​. When ​<span class=\"tex\">x</span>​ is not an integer, this fractional part lies strictly between 0 and 1. So ​<span class=\"tex\">y = [x] - x</span>​ is the negative of it and lies strictly between ​<span class=\"tex\">-1</span>​ and ​<span class=\"tex\">0</span>​. The greatest integer not exceeding a number between ​<span class=\"tex\">-1</span>​ and ​<span class=\"tex\">0</span>​ is ​<span class=\"tex\">-1</span>​. Hence ​<span class=\"tex\">z = [y] = -1</span>​. Example: ​<span class=\"tex\">x = 2.3</span>​ gives ​<span class=\"tex\">y = 2 - 2.3 = -0.3</span>​ and ​<span class=\"tex\">[-0.3] = -1</span>​. Answer: ​<span class=\"tex\">-1</span>​.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 72,
+      "promptLines": [
+        "If \\(f(x) = 4x + 1\\) and \\(g(x) = kx + 2\\) such that \\(f \\circ g(x) = g \\circ f(x)\\), then what is the value of \\(k\\)?"
+      ],
+      "options": {
+        "A": "7",
+        "B": "5",
+        "C": "4",
+        "D": "3"
+      },
+      "topicLabel": "Composite and inverse functions",
+      "topicHref": "/nda/maths/diff-calculus/composite-inverse-functions",
+      "pdfPage": 27,
+      "printedPage": 27,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Work out both composites. ​<span class=\"math-wide\"><span class=\"tex\">f \\circ g(x) = f(kx + 2) = 4(kx + 2) + 1 = 4kx + 9</span></span>​. ​<span class=\"math-wide\"><span class=\"tex\">g \\circ f(x) = g(4x + 1) = k(4x + 1) + 2 = 4kx + k + 2</span></span>​. The ​<span class=\"tex\">x</span>​ terms already agree, so we need the constants to agree: ​<span class=\"tex\">9 = k + 2</span>​, giving ​<span class=\"tex\">k = 7</span>​. Answer: 7.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 73,
+      "promptLines": [
+        "What is the minimum value of the function \\(f(x) = \\log_{10}(x^2 + 2x + 11)\\)?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "10"
+      },
+      "topicLabel": "Maxima and minima",
+      "topicHref": "/nda/maths/diff-calculus/maxima-minima",
+      "pdfPage": 27,
+      "printedPage": 27,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"tex\">\\log_{10}</span>​ is an increasing function, so ​<span class=\"tex\">f</span>​ is smallest when the quantity inside is smallest. Complete the square: ​<span class=\"tex\">x^2 + 2x + 11 = (x + 1)^2 + 10</span>​. A square is never negative, so the least value is 10, reached at ​<span class=\"tex\">x = -1</span>​. Therefore the minimum of ​<span class=\"tex\">f</span>​ is ​<span class=\"tex\">\\log_{10}10 = 1</span>​. Answer: 1.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 74,
+      "promptLines": [
+        "Which one of the following is correct regarding \\(\\lim_{x \\to 3} \\frac{|x - 3|}{x - 3}\\)?"
+      ],
+      "options": {
+        "A": "Limit exists and is equal to 1",
+        "B": "Limit exists and is equal to 0",
+        "C": "Limit exists and is equal to \\(-1\\)",
+        "D": "Limit does not exist"
+      },
+      "topicLabel": "Limits",
+      "topicHref": "/nda/maths/diff-calculus/limits",
+      "pdfPage": 27,
+      "printedPage": 27,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Look at the two sides separately. For ​<span class=\"tex\">x &gt; 3</span>​, ​<span class=\"tex\">|x - 3| = x - 3</span>​, so the fraction equals ​<span class=\"tex\">1</span>​; the right-hand limit is ​<span class=\"tex\">1</span>​. For ​<span class=\"tex\">x &lt; 3</span>​, ​<span class=\"tex\">|x - 3| = -(x - 3)</span>​, so the fraction equals ​<span class=\"tex\">-1</span>​; the left-hand limit is ​<span class=\"tex\">-1</span>​. A limit exists only when the left-hand and right-hand limits are equal. Here ​<span class=\"tex\">1 \\neq -1</span>​. Answer: Limit does not exist.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 75,
+      "promptLines": [
+        "What is the maximum value of \\(a\\cos x + b\\sin x + c\\)?"
+      ],
+      "options": {
+        "A": "\\(\\sqrt{a^2 + b^2 + c}\\)",
+        "B": "\\(\\sqrt{a^2 + b^2} + c\\)",
+        "C": "\\(\\sqrt{a^2 + b^2} - c\\)",
+        "D": "\\(\\sqrt{a^2 + b^2}\\)"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "topicHref": "/nda/maths/trigonometry/ratios-identities",
+      "pdfPage": 27,
+      "printedPage": 27,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Write ​<span class=\"tex\">a = r\\cos\\alpha</span>​ and ​<span class=\"tex\">b = r\\sin\\alpha</span>​ with ​<span class=\"tex\">r = \\sqrt{a^2 + b^2}</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">a\\cos x + b\\sin x = r(\\cos x\\cos\\alpha + \\sin x\\sin\\alpha) = r\\cos(x - \\alpha)</span></span>​. Since cosine lies between ​<span class=\"tex\">-1</span>​ and ​<span class=\"tex\">1</span>​, this part lies between ​<span class=\"tex\">-\\sqrt{a^2 + b^2}</span>​ and ​<span class=\"tex\">\\sqrt{a^2 + b^2}</span>​. Adding the constant ​<span class=\"tex\">c</span>​ shifts everything by ​<span class=\"tex\">c</span>​. So the maximum is ​<span class=\"tex\">\\sqrt{a^2 + b^2} + c</span>​ (note that ​<span class=\"tex\">c</span>​ is outside the root). Answer: ​<span class=\"tex\">\\sqrt{a^2 + b^2} + c</span>​.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 76,
+      "promptLines": [
+        "If \\(f(2x) = 4x^2 + 1\\), then for how many real values of \\(x\\) will \\(f(2x)\\) be the GM of \\(f(x)\\) and \\(f(4x)\\)?"
+      ],
+      "options": {
+        "A": "Four",
+        "B": "Two",
+        "C": "One",
+        "D": "None"
+      },
+      "topicLabel": "Functions: domain, range and graph",
+      "topicHref": "/nda/maths/diff-calculus/functions",
+      "pdfPage": 27,
+      "printedPage": 27,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Since ​<span class=\"tex\">f(2x) = (2x)^2 + 1</span>​, the rule is ​<span class=\"tex\">f(t) = t^2 + 1</span>​. So ​<span class=\"tex\">f(x) = x^2 + 1</span>​ and ​<span class=\"tex\">f(4x) = 16x^2 + 1</span>​. The GM condition is ​<span class=\"tex\">[f(2x)]^2 = f(x) \\cdot f(4x)</span>​: ​<span class=\"tex\">(4x^2 + 1)^2 = (x^2 + 1)(16x^2 + 1)</span>​. Expand: ​<span class=\"tex\">16x^4 + 8x^2 + 1 = 16x^4 + 17x^2 + 1</span>​. This gives ​<span class=\"tex\">9x^2 = 0</span>​, so ​<span class=\"tex\">x = 0</span>​ only. At ​<span class=\"tex\">x = 0</span>​ all three values are 1, and 1 is indeed the GM of 1 and 1. So there is exactly one real value. Answer: One.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 77,
+      "promptLines": [
+        "If \\(f(x) = [x]^2 - 30[x] + 221 = 0\\), where \\([x]\\) is the greatest integer function, then what is the sum of all integer solutions?"
+      ],
+      "options": {
+        "A": "13",
+        "B": "17",
+        "C": "27",
+        "D": "30"
+      },
+      "topicLabel": "Quadratic equations",
+      "topicHref": "/nda/maths/algebra/quadratic-equations",
+      "pdfPage": 29,
+      "printedPage": 29,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Put ​<span class=\"tex\">t = [x]</span>​. The equation is ​<span class=\"tex\">t^2 - 30t + 221 = 0</span>​. We need two numbers with sum 30 and product 221: they are 13 and 17, so ​<span class=\"tex\">(t - 13)(t - 17) = 0</span>​ and ​<span class=\"tex\">[x] = 13</span>​ or ​<span class=\"tex\">[x] = 17</span>​. ​<span class=\"tex\">[x] = 13</span>​ holds for ​<span class=\"tex\">13 \\leq x &lt; 14</span>​, where the only integer is 13. ​<span class=\"tex\">[x] = 17</span>​ holds for ​<span class=\"tex\">17 \\leq x &lt; 18</span>​, where the only integer is 17. So the integer solutions are 13 and 17, and their sum is ​<span class=\"tex\">13 + 17 = 30</span>​. Answer: 30.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 78,
+      "promptLines": [
+        "If \\(f(x) = 9x - 8\\sqrt{x}\\) such that \\(g(x) = f(x) - 1\\), then which one of the following is correct?"
+      ],
+      "options": {
+        "A": "\\(g(x) = 0\\) has no real roots",
+        "B": "\\(g(x) = 0\\) has only one real root which is an integer",
+        "C": "\\(g(x) = 0\\) has two real roots which are integers",
+        "D": "\\(g(x) = 0\\) has only one real root which is not an integer"
+      },
+      "topicLabel": "Quadratic equations",
+      "topicHref": "/nda/maths/algebra/quadratic-equations",
+      "pdfPage": 29,
+      "printedPage": 29,
+      "answerDraft": "B",
+      "answerInference": "explicit-letter",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"tex\">g(x) = 9x - 8\\sqrt{x} - 1</span>​. Put ​<span class=\"tex\">t = \\sqrt{x}</span>​, remembering ​<span class=\"tex\">t \\geq 0</span>​. Then ​<span class=\"tex\">9t^2 - 8t - 1 = 0</span>​, which factorises as ​<span class=\"tex\">(9t + 1)(t - 1) = 0</span>​. So ​<span class=\"tex\">t = 1</span>​ or ​<span class=\"tex\">t = -\\frac{1}{9}</span>​. A square root cannot be negative, so ​<span class=\"tex\">t = -\\frac{1}{9}</span>​ is rejected. ​<span class=\"tex\">t = 1</span>​ gives ​<span class=\"tex\">x = 1</span>​. Check: ​<span class=\"tex\">9 - 8 - 1 = 0</span>​. (Note ​<span class=\"tex\">x = \\frac{1}{81}</span>​ fails: ​<span class=\"tex\">\\frac{1}{9} - \\frac{8}{9} - 1 \\neq 0</span>​.) So there is only one real root, ​<span class=\"tex\">x = 1</span>​, an integer. Answer: option (b).</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 79,
+      "promptLines": [
+        "What is \\(\\lim_{x \\to \\frac{\\pi}{2}} (\\sec\\theta - \\tan\\theta)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "0",
+        "C": "1/2",
+        "D": "1"
+      },
+      "topicLabel": "Limits",
+      "topicHref": "/nda/maths/diff-calculus/limits",
+      "pdfPage": 29,
+      "printedPage": 29,
+      "answerDraft": "B",
+      "answerInference": "explicit-letter",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><p class=\"text-sm mt-2 bg-amber-50 border border-amber-300 rounded-md px-3 py-2\"><strong>Our working gives (b).</strong> Misprint in the paper: the limit is printed with x tending to pi/2 while the function is in theta. Solved taking theta tending to pi/2, which is clearly what is meant.</p><div class=\"mt-2 leading-relaxed\">Take the variable as ​<span class=\"tex\">\\theta \\to \\frac{\\pi}{2}</span>​. Both ​<span class=\"tex\">\\sec\\theta</span>​ and ​<span class=\"tex\">\\tan\\theta</span>​ become infinite there, so combine them first: ​<span class=\"math-wide\"><span class=\"tex\">\\sec\\theta - \\tan\\theta = \\frac{1 - \\sin\\theta}{\\cos\\theta}</span></span>​. Multiply top and bottom by ​<span class=\"tex\">(1 + \\sin\\theta)</span>​: ​<span class=\"math-wide\"><span class=\"tex\">\\frac{1 - \\sin^2\\theta}{\\cos\\theta(1 + \\sin\\theta)} = \\frac{\\cos^2\\theta}{\\cos\\theta(1 + \\sin\\theta)} = \\frac{\\cos\\theta}{1 + \\sin\\theta}</span></span>​. As ​<span class=\"tex\">\\theta \\to \\frac{\\pi}{2}</span>​ this tends to ​<span class=\"tex\">\\frac{0}{1 + 1} = 0</span>​. Answer: 0.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 80,
+      "promptLines": [
+        "Let \\(f(x)f(y) = f(xy)\\) for all real \\(x\\), \\(y\\). If \\(f(2) = 4\\), then what is the value of \\(f(1/2)\\)?"
+      ],
+      "options": {
+        "A": "1/4",
+        "B": "1/2",
+        "C": "1",
+        "D": "4"
+      },
+      "topicLabel": "Functions: domain, range and graph",
+      "topicHref": "/nda/maths/diff-calculus/functions",
+      "pdfPage": 29,
+      "printedPage": 29,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Put ​<span class=\"tex\">x = 2</span>​, ​<span class=\"tex\">y = 1</span>​: ​<span class=\"tex\">f(2)f(1) = f(2)</span>​, so ​<span class=\"tex\">4f(1) = 4</span>​ and ​<span class=\"tex\">f(1) = 1</span>​. Now put ​<span class=\"tex\">x = 2</span>​, ​<span class=\"tex\">y = \\frac{1}{2}</span>​: ​<span class=\"tex\">f(2)f\\left(\\frac{1}{2}\\right) = f(1) = 1</span>​. So ​<span class=\"tex\">4f\\left(\\frac{1}{2}\\right) = 1</span>​ and ​<span class=\"tex\">f\\left(\\frac{1}{2}\\right) = \\frac{1}{4}</span>​. This agrees with the natural example ​<span class=\"tex\">f(x) = x^2</span>​, which satisfies the rule and has ​<span class=\"tex\">f(2) = 4</span>​. Answer: 1/4.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 81,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(f \\circ g(x) = \\cos^2\\sqrt{x}\\) and \\(g \\circ f(x) = |\\cos x|\\).",
+        "Which one of the following is \\(f(x)\\)?"
+      ],
+      "options": {
+        "A": "\\(\\cos x\\)",
+        "B": "\\(\\cos x^2\\)",
+        "C": "\\(\\cos^2 x\\)",
+        "D": "\\(\\cos|x|\\)"
+      },
+      "topicLabel": "Composite and inverse functions",
+      "topicHref": "/nda/maths/diff-calculus/composite-inverse-functions",
+      "pdfPage": 29,
+      "printedPage": 29,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Look at ​<span class=\"tex\">f \\circ g(x) = \\cos^2\\sqrt{x}</span>​. It suggests an inner function ​<span class=\"tex\">g(x) = \\sqrt{x}</span>​ and an outer function ​<span class=\"tex\">f(x) = \\cos^2 x</span>​, since then ​<span class=\"tex\">f(g(x)) = \\cos^2(\\sqrt{x})</span>​. Test this pair on the second condition: ​<span class=\"tex\">g(f(x)) = \\sqrt{\\cos^2 x} = |\\cos x|</span>​, because the square root of a square is the modulus. Both conditions hold. With ​<span class=\"tex\">f(x) = \\cos x</span>​ instead, ​<span class=\"tex\">g(f(x)) = \\sqrt{\\cos x}</span>​, which is not ​<span class=\"tex\">|\\cos x|</span>​. Answer: ​<span class=\"tex\">\\cos^2 x</span>​.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 82,
+      "promptLines": [
+        "Which one of the following is \\(g(x)\\)?"
+      ],
+      "options": {
+        "A": "\\(\\sqrt{x}\\)",
+        "B": "\\(|x|\\)",
+        "C": "\\(x^2\\)",
+        "D": "\\(x|x|\\)"
+      },
+      "topicLabel": "Composite and inverse functions",
+      "topicHref": "/nda/maths/diff-calculus/composite-inverse-functions",
+      "pdfPage": 29,
+      "printedPage": 29,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Try ​<span class=\"tex\">g(x) = \\sqrt{x}</span>​ together with ​<span class=\"tex\">f(x) = \\cos^2 x</span>​. Then ​<span class=\"tex\">f(g(x)) = \\cos^2(\\sqrt{x})</span>​, which matches the first condition. And ​<span class=\"tex\">g(f(x)) = \\sqrt{\\cos^2 x} = |\\cos x|</span>​, which matches the second, because ​<span class=\"tex\">\\sqrt{a^2} = |a|</span>​. The other choices fail: for example ​<span class=\"tex\">g(x) = |x|</span>​ would need ​<span class=\"tex\">f(|x|) = \\cos^2\\sqrt{x}</span>​ and ​<span class=\"tex\">|f(x)| = |\\cos x|</span>​ together, which cannot both hold. Answer: ​<span class=\"tex\">\\sqrt{x}</span>​.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 83,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(f(x) = [x]^2 - [x^2]\\).",
+        "What is \\(f(0 \\cdot 999) + f(1 \\cdot 001)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "topicLabel": "Functions: domain, range and graph",
+      "topicHref": "/nda/maths/diff-calculus/functions",
+      "pdfPage": 29,
+      "printedPage": 29,
+      "answerDraft": "B",
+      "answerInference": "explicit-letter",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><p class=\"text-sm mt-2 bg-amber-50 border border-amber-300 rounded-md px-3 py-2\"><strong>Our working gives (b).</strong> The paper does not say so in the English text, but [x] is taken as the greatest integer function, as elsewhere in the paper.</p><div class=\"mt-2 leading-relaxed\">Here ​<span class=\"tex\">[\\,\\cdot\\,]</span>​ is the greatest integer function. At ​<span class=\"tex\">x = 0.999</span>​: ​<span class=\"tex\">[x] = 0</span>​, and ​<span class=\"tex\">x^2 \\approx 0.998</span>​, so ​<span class=\"tex\">[x^2] = 0</span>​. Thus ​<span class=\"tex\">f(0.999) = 0^2 - 0 = 0</span>​. At ​<span class=\"tex\">x = 1.001</span>​: ​<span class=\"tex\">[x] = 1</span>​, and ​<span class=\"tex\">x^2 = 1.002001</span>​, so ​<span class=\"tex\">[x^2] = 1</span>​. Thus ​<span class=\"tex\">f(1.001) = 1^2 - 1 = 0</span>​. The sum is ​<span class=\"tex\">0 + 0 = 0</span>​. Answer: 0.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 84,
+      "promptLines": [
+        "Consider the following statements :",
+        "I. \\(f(x)\\) is continuous at \\(x = 0\\).",
+        "II. \\(f(x)\\) is continuous at \\(x = 1\\).",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "topicLabel": "Continuity",
+      "topicHref": "/nda/maths/diff-calculus/continuity",
+      "pdfPage": 31,
+      "printedPage": 31,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">At ​<span class=\"tex\">x = 0</span>​: ​<span class=\"tex\">f(0) = 0 - 0 = 0</span>​. Just to the right (​<span class=\"tex\">0 &lt; x &lt; 1</span>​): ​<span class=\"tex\">[x] = 0</span>​ and ​<span class=\"tex\">[x^2] = 0</span>​, so ​<span class=\"tex\">f = 0</span>​. Just to the left (​<span class=\"tex\">-1 &lt; x &lt; 0</span>​): ​<span class=\"tex\">[x] = -1</span>​, so ​<span class=\"tex\">[x]^2 = 1</span>​, while ​<span class=\"tex\">x^2</span>​ is between 0 and 1, so ​<span class=\"tex\">[x^2] = 0</span>​; ​<span class=\"tex\">f = 1</span>​. The left limit 1 differs from ​<span class=\"tex\">f(0) = 0</span>​, so ​<span class=\"tex\">f</span>​ is not continuous at 0. At ​<span class=\"tex\">x = 1</span>​: ​<span class=\"tex\">f(1) = 1 - 1 = 0</span>​. Just left of 1, ​<span class=\"tex\">f = 0 - 0 = 0</span>​. Just right of 1 (​<span class=\"tex\">1 &lt; x &lt; \\sqrt{2}</span>​): ​<span class=\"tex\">[x] = 1</span>​, ​<span class=\"tex\">[x^2] = 1</span>​, ​<span class=\"tex\">f = 0</span>​. All agree, so ​<span class=\"tex\">f</span>​ is continuous at 1. Answer: II only.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 85,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(f(x) = \\cos 2x + x\\) on \\([-\\pi/2, \\pi/2]\\).",
+        "What is the greatest value of \\(f(x)\\)?"
+      ],
+      "options": {
+        "A": "\\(\\frac{\\sqrt{3}}{2} - \\frac{\\pi}{12}\\)",
+        "B": "\\(\\frac{\\sqrt{3}}{2} + \\frac{\\pi}{12}\\)",
+        "C": "\\(\\frac{\\sqrt{3}}{2} + \\frac{\\pi}{9}\\)",
+        "D": "\\(\\frac{\\sqrt{3}}{2} + \\frac{\\pi}{6}\\)"
+      },
+      "topicLabel": "Maxima and minima",
+      "topicHref": "/nda/maths/diff-calculus/maxima-minima",
+      "pdfPage": 31,
+      "printedPage": 31,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"tex\">f&#39;(x) = -2\\sin 2x + 1</span>​. Setting it to zero: ​<span class=\"tex\">\\sin 2x = \\frac{1}{2}</span>​. With ​<span class=\"tex\">2x</span>​ in ​<span class=\"tex\">[-\\pi, \\pi]</span>​, ​<span class=\"tex\">2x = \\frac{\\pi}{6}</span>​ or ​<span class=\"tex\">\\frac{5\\pi}{6}</span>​, so ​<span class=\"tex\">x = \\frac{\\pi}{12}</span>​ or ​<span class=\"tex\">\\frac{5\\pi}{12}</span>​. Compare values at these points and at the end points. ​<span class=\"math-wide\"><span class=\"tex\">f\\left(\\frac{\\pi}{12}\\right) = \\frac{\\sqrt{3}}{2} + \\frac{\\pi}{12} \\approx 1.13</span></span>​. ​<span class=\"math-wide\"><span class=\"tex\">f\\left(\\frac{5\\pi}{12}\\right) = -\\frac{\\sqrt{3}}{2} + \\frac{5\\pi}{12} \\approx 0.44</span></span>​. ​<span class=\"math-wide\"><span class=\"tex\">f\\left(\\frac{\\pi}{2}\\right) = -1 + \\frac{\\pi}{2} \\approx 0.57</span></span>​. ​<span class=\"math-wide\"><span class=\"tex\">f\\left(-\\frac{\\pi}{2}\\right) = -1 - \\frac{\\pi}{2} \\approx -2.57</span></span>​. The greatest is at ​<span class=\"tex\">x = \\frac{\\pi}{12}</span>​. Answer: ​<span class=\"tex\">\\frac{\\sqrt{3}}{2} + \\frac{\\pi}{12}</span>​.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 86,
+      "promptLines": [
+        "What is the least value of \\(f(x)\\)?"
+      ],
+      "options": {
+        "A": "\\(-\\left(1 + \\frac{\\pi}{2}\\right)\\)",
+        "B": "\\(-\\left(\\frac{1}{2} + \\frac{\\pi}{2}\\right)\\)",
+        "C": "\\(-\\left(1 + \\frac{\\pi}{4}\\right)\\)",
+        "D": "\\(-2\\left(\\frac{1}{2} - \\frac{\\pi}{4}\\right)\\)"
+      },
+      "topicLabel": "Maxima and minima",
+      "topicHref": "/nda/maths/diff-calculus/maxima-minima",
+      "pdfPage": 31,
+      "printedPage": 31,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">On a closed interval the least value occurs at a critical point or an end point. ​<span class=\"tex\">f&#39;(x) = 1 - 2\\sin 2x = 0</span>​ gives ​<span class=\"tex\">\\sin 2x = \\frac{1}{2}</span>​, so ​<span class=\"tex\">x = \\frac{\\pi}{12}</span>​ or ​<span class=\"tex\">\\frac{5\\pi}{12}</span>​. Values: ​<span class=\"math-wide\"><span class=\"tex\">f\\left(\\frac{\\pi}{12}\\right) \\approx 1.13</span></span>​, ​<span class=\"math-wide\"><span class=\"tex\">f\\left(\\frac{5\\pi}{12}\\right) = -\\frac{\\sqrt{3}}{2} + \\frac{5\\pi}{12} \\approx 0.44</span></span>​. End points: ​<span class=\"math-wide\"><span class=\"tex\">f\\left(\\frac{\\pi}{2}\\right) = \\cos\\pi + \\frac{\\pi}{2} = -1 + \\frac{\\pi}{2} \\approx 0.57</span></span>​ and ​<span class=\"math-wide\"><span class=\"tex\">f\\left(-\\frac{\\pi}{2}\\right) = \\cos(-\\pi) - \\frac{\\pi}{2} = -1 - \\frac{\\pi}{2} \\approx -2.57</span></span>​. The smallest is at the left end point. Answer: ​<span class=\"tex\">-\\left(1 + \\frac{\\pi}{2}\\right)</span>​.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 87,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : The area bounded by the parabola \\(y^2 = kx\\) and the line \\(x = k\\), where \\(k > 0\\), is \\(4/3\\) square units.",
+        "What is the value of \\(k\\)?"
+      ],
+      "options": {
+        "A": "1/2",
+        "B": "1",
+        "C": "\\(\\sqrt{2}\\)",
+        "D": "2"
+      },
+      "topicLabel": "Definite integrals and areas",
+      "topicHref": "/nda/maths/int-calculus/definite-integrals",
+      "pdfPage": 31,
+      "printedPage": 31,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The parabola ​<span class=\"tex\">y^2 = kx</span>​ opens to the right and is symmetric about the x-axis. Its upper half is ​<span class=\"tex\">y = \\sqrt{kx}</span>​. The region between the curve and the line ​<span class=\"tex\">x = k</span>​ has area ​<span class=\"math-wide\"><span class=\"tex\">2\\int_0^k \\sqrt{kx}\\,dx = 2\\sqrt{k} \\cdot \\frac{2}{3}x^{3/2}\\Big|_0^k = \\frac{4}{3}\\sqrt{k} \\cdot k^{3/2} = \\frac{4}{3}k^2</span></span>​. Set this equal to ​<span class=\"tex\">\\frac{4}{3}</span>​: ​<span class=\"tex\">k^2 = 1</span>​, and since ​<span class=\"tex\">k &gt; 0</span>​, ​<span class=\"tex\">k = 1</span>​. Answer: 1.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 88,
+      "promptLines": [
+        "What is the area of the parabola bounded by the latus rectum?"
+      ],
+      "options": {
+        "A": "1/6 square unit",
+        "B": "2/3 square unit",
+        "C": "1 square unit",
+        "D": "4/3 square units"
+      },
+      "topicLabel": "Definite integrals and areas",
+      "topicHref": "/nda/maths/int-calculus/definite-integrals",
+      "pdfPage": 33,
+      "printedPage": 33,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">First find ​<span class=\"tex\">k</span>​: the area between ​<span class=\"tex\">y^2 = kx</span>​ and ​<span class=\"tex\">x = k</span>​ is ​<span class=\"math-wide\"><span class=\"tex\">2\\int_0^k \\sqrt{kx}\\,dx = \\frac{4}{3}k^2 = \\frac{4}{3}</span></span>​, so ​<span class=\"tex\">k = 1</span>​ and the parabola is ​<span class=\"tex\">y^2 = x</span>​. Compare with ​<span class=\"tex\">y^2 = 4ax</span>​: ​<span class=\"tex\">4a = 1</span>​, so ​<span class=\"tex\">a = \\frac{1}{4}</span>​ and the latus rectum is the line ​<span class=\"tex\">x = \\frac{1}{4}</span>​. Area cut off by it ​<span class=\"math-wide\"><span class=\"tex\">= 2\\int_0^{1/4} \\sqrt{x}\\,dx = 2 \\cdot \\frac{2}{3}\\left(\\frac{1}{4}\\right)^{3/2} = \\frac{4}{3} \\cdot \\frac{1}{8} = \\frac{1}{6}</span></span>​. (This matches the standard result ​<span class=\"tex\">\\frac{8a^2}{3}</span>​.) Answer: 1/6 square unit.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 89,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(y\\,dx + (x - y^3)\\,dy = 0\\) be a differential equation.",
+        "What are the order and degree respectively of the differential equation?"
+      ],
+      "options": {
+        "A": "1 and 1",
+        "B": "1 and 2",
+        "C": "2 and 1",
+        "D": "1 and 3"
+      },
+      "topicLabel": "Differential equations: order, degree and formation",
+      "topicHref": "/nda/maths/int-calculus/differential-equations-basics",
+      "pdfPage": 33,
+      "printedPage": 33,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Divide by ​<span class=\"tex\">dx</span>​ to see the derivative: ​<span class=\"tex\">y + (x - y^3)\\frac{dy}{dx} = 0</span>​. The highest derivative present is the first derivative ​<span class=\"tex\">\\frac{dy}{dx}</span>​, so the order is 1. The degree is the power of that highest derivative once the equation is a polynomial in derivatives; here ​<span class=\"tex\">\\frac{dy}{dx}</span>​ appears to the power 1. The ​<span class=\"tex\">y^3</span>​ is a power of ​<span class=\"tex\">y</span>​, not of a derivative, so it does not affect the degree. Answer: 1 and 1.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 90,
+      "promptLines": [
+        "What is the solution of the differential equation?"
+      ],
+      "options": {
+        "A": "\\(y^4 + 2x = c\\)",
+        "B": "\\(y^4 + 3x = c\\)",
+        "C": "\\(2xy^4 + x = c\\)",
+        "D": "\\(4xy - y^4 = c\\)"
+      },
+      "topicLabel": "Solving differential equations; growth and decay",
+      "topicHref": "/nda/maths/int-calculus/solving-differential-equations",
+      "pdfPage": 33,
+      "printedPage": 33,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Open the bracket: ​<span class=\"tex\">y\\,dx + x\\,dy - y^3\\,dy = 0</span>​. The first two terms together are exactly the differential of a product: ​<span class=\"tex\">y\\,dx + x\\,dy = d(xy)</span>​. So ​<span class=\"tex\">d(xy) = y^3\\,dy</span>​. Integrate both sides: ​<span class=\"tex\">xy = \\frac{y^4}{4} + C</span>​. Multiply by 4: ​<span class=\"tex\">4xy - y^4 = c</span>​. Check by differentiating: ​<span class=\"tex\">4y\\,dx + 4x\\,dy - 4y^3\\,dy = 0</span>​, which is 4 times the given equation. Answer: ​<span class=\"tex\">4xy - y^4 = c</span>​.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 91,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(f(x) = |x^2 - x - 2|\\).",
+        "What is \\(\\int_0^2 f(x)\\,dx\\) equal to?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "5/3",
+        "D": "10/3"
+      },
+      "topicLabel": "Definite integrals and areas",
+      "topicHref": "/nda/maths/int-calculus/definite-integrals",
+      "pdfPage": 33,
+      "printedPage": 33,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Factorise: ​<span class=\"tex\">x^2 - x - 2 = (x - 2)(x + 1)</span>​. Between ​<span class=\"tex\">x = -1</span>​ and ​<span class=\"tex\">x = 2</span>​ this is negative or zero, so on ​<span class=\"tex\">[0, 2]</span>​ the modulus changes its sign: ​<span class=\"tex\">f(x) = -x^2 + x + 2</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">\\int_0^2 (-x^2 + x + 2)\\,dx = \\left[-\\frac{x^3}{3} + \\frac{x^2}{2} + 2x\\right]_0^2 = -\\frac{8}{3} + 2 + 4 = \\frac{10}{3}</span></span>​. Answer: 10/3.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 92,
+      "promptLines": [
+        "What is \\(\\int_1^3 f(x)\\,dx\\) equal to?"
+      ],
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "topicLabel": "Definite integrals and areas",
+      "topicHref": "/nda/maths/int-calculus/definite-integrals",
+      "pdfPage": 33,
+      "printedPage": 33,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"tex\">x^2 - x - 2 = (x - 2)(x + 1)</span>​ is negative on ​<span class=\"tex\">[1, 2)</span>​ and positive on ​<span class=\"tex\">(2, 3]</span>​, so split at ​<span class=\"tex\">x = 2</span>​. On ​<span class=\"tex\">[1, 2]</span>​: ​<span class=\"math-wide\"><span class=\"tex\">\\int_1^2 (-x^2 + x + 2)\\,dx = \\left[-\\frac{x^3}{3} + \\frac{x^2}{2} + 2x\\right]_1^2 = \\frac{10}{3} - \\frac{13}{6} = \\frac{7}{6}</span></span>​. On ​<span class=\"tex\">[2, 3]</span>​: ​<span class=\"math-wide\"><span class=\"tex\">\\int_2^3 (x^2 - x - 2)\\,dx = \\left[\\frac{x^3}{3} - \\frac{x^2}{2} - 2x\\right]_2^3 = -\\frac{3}{2} - \\left(-\\frac{10}{3}\\right) = \\frac{11}{6}</span></span>​. Total ​<span class=\"tex\">= \\frac{7}{6} + \\frac{11}{6} = 3</span>​. Answer: 3.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 93,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(f(t) = \\ln(t + \\sqrt{1 + t^2})\\) and \\(g(t) = \\tan(f(t))\\).",
+        "Consider the following statements :",
+        "I. \\(f(t)\\) is an odd function.",
+        "II. \\(g(t)\\) is an odd function.",
+        "Which of the statements given above is/are correct?"
+      ],
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "topicLabel": "Functions: domain, range and graph",
+      "topicHref": "/nda/maths/diff-calculus/functions",
+      "pdfPage": 33,
+      "printedPage": 33,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">A function is odd if ​<span class=\"tex\">f(-t) = -f(t)</span>​. Here ​<span class=\"tex\">f(-t) = \\ln(-t + \\sqrt{1 + t^2})</span>​. Multiply and divide by ​<span class=\"tex\">(t + \\sqrt{1 + t^2})</span>​: ​<span class=\"math-wide\"><span class=\"tex\">-t + \\sqrt{1 + t^2} = \\frac{(1 + t^2) - t^2}{t + \\sqrt{1 + t^2}} = \\frac{1}{t + \\sqrt{1 + t^2}}</span></span>​. So ​<span class=\"math-wide\"><span class=\"tex\">f(-t) = \\ln\\frac{1}{t + \\sqrt{1 + t^2}} = -f(t)</span></span>​. I is correct. Then ​<span class=\"math-wide\"><span class=\"tex\">g(-t) = \\tan(f(-t)) = \\tan(-f(t)) = -\\tan(f(t)) = -g(t)</span></span>​, since tan is odd. II is correct. Answer: Both I and II.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 94,
+      "promptLines": [
+        "What is \\(\\int_{-\\pi}^{\\pi} g(t)\\,dt\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-1\\)",
+        "B": "0",
+        "C": "1/2",
+        "D": "1"
+      },
+      "topicLabel": "Definite integrals and areas",
+      "topicHref": "/nda/maths/int-calculus/definite-integrals",
+      "pdfPage": 35,
+      "printedPage": 35,
+      "answerDraft": "B",
+      "answerInference": "explicit-letter",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><p class=\"text-sm mt-2 bg-amber-50 border border-amber-300 rounded-md px-3 py-2\"><strong>Our working gives (b).</strong> Intended answer is 0 by odd symmetry. Strictly, f(t) reaches pi/2 at t = sinh(pi/2), about 2.30, which is inside the interval, so tan(f(t)) is unbounded there and the integral is improper (it is 0 only as a principal value). The setter overlooked this.</p><div class=\"mt-2 leading-relaxed\">First check whether ​<span class=\"tex\">g</span>​ is odd. ​<span class=\"math-wide\"><span class=\"tex\">f(-t) = \\ln(\\sqrt{1 + t^2} - t) = \\ln\\frac{1}{\\sqrt{1 + t^2} + t} = -f(t)</span></span>​, so ​<span class=\"tex\">f</span>​ is odd. Then ​<span class=\"math-wide\"><span class=\"tex\">g(-t) = \\tan(-f(t)) = -\\tan(f(t)) = -g(t)</span></span>​, so ​<span class=\"tex\">g</span>​ is odd as well. For an odd function, the integral over an interval symmetric about zero is zero, because the area from ​<span class=\"tex\">-\\pi</span>​ to 0 cancels the area from 0 to ​<span class=\"tex\">\\pi</span>​: ​<span class=\"tex\">\\int_{-a}^{a} g(t)\\,dt = 0</span>​. Answer: 0.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 95,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(f : (-1, 1) \\to R\\) be a differentiable function with \\(f(0) = -1\\) and \\(f'(0) = 1\\). Let \\(h(x) = f(2f(x) + 2)\\) and \\(g(x) = (h(x))^2\\).",
+        "What is \\(h'(0)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-2\\)",
+        "B": "\\(-1\\)",
+        "C": "0",
+        "D": "2"
+      },
+      "topicLabel": "Rules of differentiation",
+      "topicHref": "/nda/maths/diff-calculus/rules-of-differentiation",
+      "pdfPage": 35,
+      "printedPage": 35,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Use the chain rule on ​<span class=\"tex\">h(x) = f(2f(x) + 2)</span>​: ​<span class=\"tex\">h&#39;(x) = f&#39;(2f(x) + 2) \\cdot 2f&#39;(x)</span>​. At ​<span class=\"tex\">x = 0</span>​ the inner quantity is ​<span class=\"tex\">2f(0) + 2 = 2(-1) + 2 = 0</span>​. So ​<span class=\"math-wide\"><span class=\"tex\">h&#39;(0) = f&#39;(0) \\cdot 2f&#39;(0) = 1 \\times 2 \\times 1 = 2</span></span>​. Answer: 2.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 96,
+      "promptLines": [
+        "What is \\(g'(0)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(-4\\)",
+        "B": "\\(-2\\)",
+        "C": "0",
+        "D": "4"
+      },
+      "topicLabel": "Rules of differentiation",
+      "topicHref": "/nda/maths/diff-calculus/rules-of-differentiation",
+      "pdfPage": 35,
+      "printedPage": 35,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"tex\">g(x) = (h(x))^2</span>​, so by the chain rule ​<span class=\"tex\">g&#39;(x) = 2h(x)h&#39;(x)</span>​. We need ​<span class=\"tex\">h(0)</span>​ and ​<span class=\"tex\">h&#39;(0)</span>​. ​<span class=\"math-wide\"><span class=\"tex\">h(0) = f(2f(0) + 2) = f(-2 + 2) = f(0) = -1</span></span>​. ​<span class=\"tex\">h&#39;(x) = f&#39;(2f(x) + 2) \\cdot 2f&#39;(x)</span>​, so ​<span class=\"tex\">h&#39;(0) = f&#39;(0) \\cdot 2f&#39;(0) = 2</span>​. Therefore ​<span class=\"tex\">g&#39;(0) = 2 \\times (-1) \\times 2 = -4</span>​. Answer: ​<span class=\"tex\">-4</span>​.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 97,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(I = \\int_0^{\\pi/2} \\frac{f(x)}{g(x)}\\,dx\\), where \\(f(x) = \\sin x\\) and \\(g(x) = \\sin x + \\cos x + 1\\).",
+        "What is \\(\\int_0^{\\pi/2} \\frac{dx}{g(x)}\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\frac{\\ln 2}{2}\\)",
+        "B": "\\(\\frac{\\ln 2}{4}\\)",
+        "C": "\\(\\ln 2\\)",
+        "D": "\\(2\\ln 2\\)"
+      },
+      "topicLabel": "Definite integrals and areas",
+      "topicHref": "/nda/maths/int-calculus/definite-integrals",
+      "pdfPage": 35,
+      "printedPage": 35,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Use the substitution ​<span class=\"tex\">t = \\tan\\frac{x}{2}</span>​: ​<span class=\"tex\">\\sin x = \\frac{2t}{1 + t^2}</span>​, ​<span class=\"tex\">\\cos x = \\frac{1 - t^2}{1 + t^2}</span>​, ​<span class=\"tex\">dx = \\frac{2\\,dt}{1 + t^2}</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">\\sin x + \\cos x + 1 = \\frac{2t + 1 - t^2 + 1 + t^2}{1 + t^2} = \\frac{2t + 2}{1 + t^2}</span></span>​. So ​<span class=\"math-wide\"><span class=\"tex\">\\frac{dx}{g(x)} = \\frac{2\\,dt}{2t + 2} = \\frac{dt}{1 + t}</span></span>​. Limits: ​<span class=\"tex\">x = 0</span>​ gives ​<span class=\"tex\">t = 0</span>​; ​<span class=\"tex\">x = \\frac{\\pi}{2}</span>​ gives ​<span class=\"tex\">t = 1</span>​. The integral is ​<span class=\"math-wide\"><span class=\"tex\">\\int_0^1 \\frac{dt}{1 + t} = \\ln 2 - \\ln 1 = \\ln 2</span></span>​. Answer: ​<span class=\"tex\">\\ln 2</span>​.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 98,
+      "promptLines": [
+        "What is \\(I\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\frac{\\pi}{4} + \\ln 2\\)",
+        "B": "\\(\\frac{\\pi}{4} - \\ln 2\\)",
+        "C": "\\(\\frac{\\pi}{4} - \\frac{\\ln 2}{2}\\)",
+        "D": "\\(\\frac{\\pi}{4} + \\frac{\\ln 2}{2}\\)"
+      },
+      "topicLabel": "Definite integrals and areas",
+      "topicHref": "/nda/maths/int-calculus/definite-integrals",
+      "pdfPage": 35,
+      "printedPage": 35,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Use the property ​<span class=\"math-wide\"><span class=\"tex\">\\int_0^a F(x)\\,dx = \\int_0^a F(a - x)\\,dx</span></span>​ with ​<span class=\"tex\">a = \\frac{\\pi}{2}</span>​. It swaps sin and cos, so ​<span class=\"math-wide\"><span class=\"tex\">I = \\int_0^{\\pi/2} \\frac{\\cos x}{\\sin x + \\cos x + 1}\\,dx</span></span>​ too. Add the two forms: ​<span class=\"math-wide\"><span class=\"tex\">2I = \\int_0^{\\pi/2} \\frac{\\sin x + \\cos x}{\\sin x + \\cos x + 1}\\,dx = \\int_0^{\\pi/2} \\left(1 - \\frac{1}{g(x)}\\right)dx = \\frac{\\pi}{2} - \\int_0^{\\pi/2} \\frac{dx}{g(x)}</span></span>​. With ​<span class=\"tex\">t = \\tan\\frac{x}{2}</span>​ the last integral becomes ​<span class=\"tex\">\\int_0^1 \\frac{dt}{1 + t} = \\ln 2</span>​. So ​<span class=\"tex\">2I = \\frac{\\pi}{2} - \\ln 2</span>​ and ​<span class=\"tex\">I = \\frac{\\pi}{4} - \\frac{\\ln 2}{2}</span>​. Answer: ​<span class=\"tex\">\\frac{\\pi}{4} - \\frac{\\ln 2}{2}</span>​.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 99,
+      "promptLines": [
+        "Direction :",
+        "Consider the following for the two (02) items that follow : Let \\(2\\int \\frac{x^2 - 1}{\\sqrt{x^2 + 1}}\\,dx = U(x)V(x) - 3\\ln\\{U(x) + V(x)\\} + c\\)",
+        "What is \\(|U^2(x) - V^2(x)|\\) equal to?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "topicLabel": "Integration: the idea and standard integrals",
+      "topicHref": "/nda/maths/int-calculus/integration",
+      "pdfPage": 37,
+      "printedPage": 37,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Write ​<span class=\"tex\">x^2 - 1 = (x^2 + 1) - 2</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">\\int \\frac{x^2 - 1}{\\sqrt{x^2 + 1}}\\,dx = \\int \\sqrt{x^2 + 1}\\,dx - 2\\int \\frac{dx}{\\sqrt{x^2 + 1}}</span></span>​. Standard results: ​<span class=\"math-wide\"><span class=\"tex\">\\int \\sqrt{x^2 + 1}\\,dx = \\frac{x}{2}\\sqrt{x^2 + 1} + \\frac{1}{2}\\ln(x + \\sqrt{x^2 + 1})</span></span>​ and ​<span class=\"math-wide\"><span class=\"tex\">\\int \\frac{dx}{\\sqrt{x^2 + 1}} = \\ln(x + \\sqrt{x^2 + 1})</span></span>​. So the integral is ​<span class=\"math-wide\"><span class=\"tex\">\\frac{x}{2}\\sqrt{x^2 + 1} - \\frac{3}{2}\\ln(x + \\sqrt{x^2 + 1})</span></span>​, and twice it is ​<span class=\"math-wide\"><span class=\"tex\">x\\sqrt{x^2 + 1} - 3\\ln(x + \\sqrt{x^2 + 1}) + c</span></span>​. Comparing, ​<span class=\"tex\">U</span>​ and ​<span class=\"tex\">V</span>​ are ​<span class=\"tex\">x</span>​ and ​<span class=\"tex\">\\sqrt{x^2 + 1}</span>​. Then ​<span class=\"tex\">|U^2 - V^2| = |x^2 - (x^2 + 1)| = 1</span>​. Answer: 1.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 100,
+      "promptLines": [
+        "What is \\(U(x)V(x)\\) equal to?"
+      ],
+      "options": {
+        "A": "\\(\\sqrt{x^2 + x^4}\\)",
+        "B": "\\(\\sqrt{x + x^3}\\)",
+        "C": "\\(\\frac{\\sqrt{x^2 + x^4}}{2}\\)",
+        "D": "\\(2\\sqrt{x^2 + x^4}\\)"
+      },
+      "topicLabel": "Integration: the idea and standard integrals",
+      "topicHref": "/nda/maths/int-calculus/integration",
+      "pdfPage": 37,
+      "printedPage": 37,
+      "answerDraft": "A",
+      "answerInference": "explicit-letter",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><p class=\"text-sm mt-2 bg-amber-50 border border-amber-300 rounded-md px-3 py-2\"><strong>Our working gives (a).</strong> ​<span class=\"tex\">x\\sqrt{x^2+1}</span>​ equals ​<span class=\"tex\">\\sqrt{x^2+x^4}</span>​ only for ​<span class=\"tex\">x \\geq 0</span>​; the options ignore the sign.</p><div class=\"mt-2 leading-relaxed\">Write ​<span class=\"tex\">x^2 - 1 = (x^2 + 1) - 2</span>​, so the integrand is ​<span class=\"math-wide\"><span class=\"tex\">\\sqrt{x^2 + 1} - \\frac{2}{\\sqrt{x^2 + 1}}</span></span>​. Using ​<span class=\"math-wide\"><span class=\"tex\">\\int \\sqrt{x^2 + 1}\\,dx = \\frac{x}{2}\\sqrt{x^2 + 1} + \\frac{1}{2}\\ln(x + \\sqrt{x^2 + 1})</span></span>​ and ​<span class=\"math-wide\"><span class=\"tex\">\\int \\frac{dx}{\\sqrt{x^2 + 1}} = \\ln(x + \\sqrt{x^2 + 1})</span></span>​, twice the integral is ​<span class=\"math-wide\"><span class=\"tex\">x\\sqrt{x^2 + 1} - 3\\ln(x + \\sqrt{x^2 + 1}) + c</span></span>​. So ​<span class=\"tex\">U(x)V(x) = x\\sqrt{x^2 + 1}</span>​. Taking ​<span class=\"tex\">x</span>​ inside the root (for ​<span class=\"tex\">x \\geq 0</span>​): ​<span class=\"tex\">\\sqrt{x^2(x^2 + 1)} = \\sqrt{x^2 + x^4}</span>​. Answer: ​<span class=\"tex\">\\sqrt{x^2 + x^4}</span>​.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 101,
+      "promptLines": [
+        "Let \\(x - 3y + 4 = 0\\) and \\(2x - 7y + 8 = 0\\) be two lines of regression computed from some bivariate data. If \\(b_{yx}\\) and \\(b_{xy}\\) are regression coefficients of lines of regression of \\(y\\) on \\(x\\) and \\(x\\) on \\(y\\) respectively, then what is the value of \\(b_{xy} + 7b_{yx}\\)?"
+      ],
+      "options": {
+        "A": "\\(-2\\)",
+        "B": "1",
+        "C": "2",
+        "D": "5"
+      },
+      "topicLabel": "Correlation and regression",
+      "topicHref": "/nda/maths/stats-probability/correlation-regression",
+      "pdfPage": 37,
+      "printedPage": 37,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">We must decide which line is ​<span class=\"tex\">y</span>​ on ​<span class=\"tex\">x</span>​. The test is that ​<span class=\"tex\">b_{yx} \\cdot b_{xy} = r^2</span>​ cannot exceed 1. Try the first line as ​<span class=\"tex\">y</span>​ on ​<span class=\"tex\">x</span>​: ​<span class=\"tex\">y = \\frac{x}{3} + \\frac{4}{3}</span>​, ​<span class=\"tex\">b_{yx} = \\frac{1}{3}</span>​; the second as ​<span class=\"tex\">x</span>​ on ​<span class=\"tex\">y</span>​: ​<span class=\"tex\">x = \\frac{7y}{2} - 4</span>​, ​<span class=\"tex\">b_{xy} = \\frac{7}{2}</span>​. Product ​<span class=\"tex\">= \\frac{7}{6} &gt; 1</span>​, not allowed. So swap: the first line is ​<span class=\"tex\">x</span>​ on ​<span class=\"tex\">y</span>​: ​<span class=\"tex\">x = 3y - 4</span>​, ​<span class=\"tex\">b_{xy} = 3</span>​; the second is ​<span class=\"tex\">y</span>​ on ​<span class=\"tex\">x</span>​: ​<span class=\"tex\">y = \\frac{2x}{7} + \\frac{8}{7}</span>​, ​<span class=\"tex\">b_{yx} = \\frac{2}{7}</span>​. Product ​<span class=\"tex\">= \\frac{6}{7} &lt; 1</span>​, fine. Then ​<span class=\"tex\">b_{xy} + 7b_{yx} = 3 + 2 = 5</span>​. Answer: 5.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 102,
+      "promptLines": [
+        "The mean of \\(n\\) observations \\(1, 4, 9, 16, \\ldots, n^2\\) is 130. What is the value of \\(n\\)?"
+      ],
+      "options": {
+        "A": "18",
+        "B": "19",
+        "C": "20",
+        "D": "21"
+      },
+      "topicLabel": "Mean, median and mode",
+      "topicHref": "/nda/maths/stats-probability/mean-median-mode",
+      "pdfPage": 37,
+      "printedPage": 37,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The sum of the first ​<span class=\"tex\">n</span>​ squares is ​<span class=\"tex\">\\frac{n(n+1)(2n+1)}{6}</span>​. Dividing by ​<span class=\"tex\">n</span>​, the mean is ​<span class=\"tex\">\\frac{(n+1)(2n+1)}{6}</span>​. Set this equal to 130: ​<span class=\"tex\">(n + 1)(2n + 1) = 780</span>​. Try the options: ​<span class=\"tex\">n = 19</span>​ gives ​<span class=\"tex\">20 \\times 39 = 780</span>​. It fits. (​<span class=\"tex\">n = 18</span>​ gives ​<span class=\"tex\">19 \\times 37 = 703</span>​ and ​<span class=\"tex\">n = 20</span>​ gives ​<span class=\"tex\">21 \\times 41 = 861</span>​.) Answer: 19.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 103,
+      "promptLines": [
+        "Three distinct natural numbers are chosen at random from 1 to 10. What is the probability that they are consecutive?"
+      ],
+      "options": {
+        "A": "1/12",
+        "B": "3/40",
+        "C": "1/15",
+        "D": "7/120"
+      },
+      "topicLabel": "Probability and its theorems",
+      "topicHref": "/nda/maths/stats-probability/probability",
+      "pdfPage": 37,
+      "printedPage": 37,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Total ways to choose 3 different numbers from 10: ​<span class=\"math-wide\"><span class=\"tex\">\\binom{10}{3} = \\frac{10 \\times 9 \\times 8}{6} = 120</span></span>​. Favourable choices are sets of three consecutive numbers: ​<span class=\"math-wide\"><span class=\"tex\">\\{1, 2, 3\\}, \\{2, 3, 4\\}, \\ldots, \\{8, 9, 10\\}</span></span>​. The smallest number can be anything from 1 to 8, so there are 8 such sets. Probability ​<span class=\"tex\">= \\frac{8}{120} = \\frac{1}{15}</span>​. Answer: 1/15.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 104,
+      "promptLines": [
+        "\\(A\\), \\(B\\), \\(C\\) are three mutually exclusive and exhaustive events associated with a random experiment. If \\(3P(B) = 4P(A)\\) and \\(3P(C) = 2P(B)\\), then what is \\(P(A)\\) equal to?"
+      ],
+      "options": {
+        "A": "7/29",
+        "B": "8/29",
+        "C": "9/29",
+        "D": "10/29"
+      },
+      "topicLabel": "Probability and its theorems",
+      "topicHref": "/nda/maths/stats-probability/probability",
+      "pdfPage": 39,
+      "printedPage": 39,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Mutually exclusive and exhaustive events have probabilities adding to 1: ​<span class=\"tex\">P(A) + P(B) + P(C) = 1</span>​. Let ​<span class=\"tex\">P(A) = a</span>​. Then ​<span class=\"tex\">P(B) = \\frac{4a}{3}</span>​, and ​<span class=\"tex\">P(C) = \\frac{2}{3}P(B) = \\frac{8a}{9}</span>​. So ​<span class=\"tex\">a + \\frac{4a}{3} + \\frac{8a}{9} = 1</span>​. With denominator 9: ​<span class=\"math-wide\"><span class=\"tex\">\\frac{9a + 12a + 8a}{9} = \\frac{29a}{9} = 1</span></span>​, giving ​<span class=\"tex\">a = \\frac{9}{29}</span>​. Check: ​<span class=\"tex\">P(B) = \\frac{12}{29}</span>​, ​<span class=\"tex\">P(C) = \\frac{8}{29}</span>​, total ​<span class=\"tex\">\\frac{29}{29}</span>​. Answer: 9/29.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 105,
+      "promptLines": [
+        "A die has two faces with number 4, three faces with number 5 and one face with number 6. If the die is rolled once, then what is the probability of getting 4 or 5?"
+      ],
+      "options": {
+        "A": "1/3",
+        "B": "2/3",
+        "C": "5/6",
+        "D": "1/2"
+      },
+      "topicLabel": "Probability and its theorems",
+      "topicHref": "/nda/maths/stats-probability/probability",
+      "pdfPage": 39,
+      "printedPage": 39,
+      "answerDraft": "C",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The die has 6 equally likely faces. Two of them show 4 and three show 5, so ​<span class=\"tex\">2 + 3 = 5</span>​ faces show a 4 or a 5. Probability ​<span class=\"tex\">= \\frac{5}{6}</span>​. Equivalently, the only face that fails is the single 6, so the probability is ​<span class=\"tex\">1 - \\frac{1}{6} = \\frac{5}{6}</span>​. Answer: 5/6.</div>",
+      "publisherKeyDraft": "C",
+      "draftsAgree": true
+    },
+    {
+      "number": 106,
+      "promptLines": [
+        "A box contains 2 black, 4 yellow and 6 white balls. Three balls are drawn in succession with replacement. What is the probability that all three are of the same colour?"
+      ],
+      "options": {
+        "A": "1/6",
+        "B": "1/36",
+        "C": "1/12",
+        "D": "5/12"
+      },
+      "topicLabel": "Probability and its theorems",
+      "topicHref": "/nda/maths/stats-probability/probability",
+      "pdfPage": 39,
+      "printedPage": 39,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">There are 12 balls. Because each ball is put back, every draw has the same chances: black ​<span class=\"tex\">\\frac{2}{12} = \\frac{1}{6}</span>​, yellow ​<span class=\"tex\">\\frac{4}{12} = \\frac{1}{3}</span>​, white ​<span class=\"tex\">\\frac{6}{12} = \\frac{1}{2}</span>​, and the draws are independent. All black: ​<span class=\"math-wide\"><span class=\"tex\">\\left(\\frac{1}{6}\\right)^3 = \\frac{1}{216}</span></span>​. All yellow: ​<span class=\"math-wide\"><span class=\"tex\">\\left(\\frac{1}{3}\\right)^3 = \\frac{8}{216}</span></span>​. All white: ​<span class=\"math-wide\"><span class=\"tex\">\\left(\\frac{1}{2}\\right)^3 = \\frac{27}{216}</span></span>​. Add these exclusive cases: ​<span class=\"math-wide\"><span class=\"tex\">\\frac{1 + 8 + 27}{216} = \\frac{36}{216} = \\frac{1}{6}</span></span>​. Answer: 1/6.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 107,
+      "promptLines": [
+        "\\(A\\) can hit a target 5 times in 6 shots, \\(B\\) can hit 4 times in 5 shots and \\(C\\) can hit 3 times in 4 shots. What is the probability that \\(A\\) and \\(C\\) may hit but \\(B\\) may lose?"
+      ],
+      "options": {
+        "A": "1/8",
+        "B": "1/6",
+        "C": "1/4",
+        "D": "1/3"
+      },
+      "topicLabel": "Probability and its theorems",
+      "topicHref": "/nda/maths/stats-probability/probability",
+      "pdfPage": 39,
+      "printedPage": 39,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"tex\">P(A \\text{ hits}) = \\frac{5}{6}</span>​, ​<span class=\"tex\">P(B \\text{ hits}) = \\frac{4}{5}</span>​ so ​<span class=\"math-wide\"><span class=\"tex\">P(B \\text{ misses}) = 1 - \\frac{4}{5} = \\frac{1}{5}</span></span>​, and ​<span class=\"tex\">P(C \\text{ hits}) = \\frac{3}{4}</span>​. The three shooters act independently, so multiply: ​<span class=\"math-wide\"><span class=\"tex\">P(A \\text{ hits}, B \\text{ misses}, C \\text{ hits}) = \\frac{5}{6} \\times \\frac{1}{5} \\times \\frac{3}{4} = \\frac{15}{120} = \\frac{1}{8}</span></span>​. Answer: 1/8.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 108,
+      "promptLines": [
+        "The letters of the word ZOOLOGY are arranged in all possible ways. What is the probability that the consonants and vowels occur alternatively?"
+      ],
+      "options": {
+        "A": "6/35",
+        "B": "3/35",
+        "C": "2/35",
+        "D": "1/35"
+      },
+      "topicLabel": "Probability and its theorems",
+      "topicHref": "/nda/maths/stats-probability/probability",
+      "pdfPage": 39,
+      "printedPage": 39,
+      "answerDraft": "D",
+      "answerInference": "explicit-letter",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><p class=\"text-sm mt-2 bg-amber-50 border border-amber-300 rounded-md px-3 py-2\"><strong>Our working gives (d).</strong> Y is counted as a consonant, as is usual in such questions.</p><div class=\"mt-2 leading-relaxed\">ZOOLOGY has 7 letters: three O&#39;s (vowels) and four consonants Z, L, G, Y. Total arrangements, with O repeated three times: ​<span class=\"tex\">\\frac{7!}{3!} = 840</span>​. For alternation with 4 consonants and 3 vowels the pattern must be C V C V C V C. The four different consonants fill their four places in ​<span class=\"tex\">4! = 24</span>​ ways. The three O&#39;s are identical, so they fill the vowel places in just 1 way. Favourable ​<span class=\"tex\">= 24</span>​. Probability ​<span class=\"tex\">= \\frac{24}{840} = \\frac{1}{35}</span>​. Answer: 1/35.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 109,
+      "promptLines": [
+        "A natural number \\(x\\) is chosen at random from the first 100 natural numbers. What is the probability that \\(x^2 + x > 50\\)?"
+      ],
+      "options": {
+        "A": "93/100",
+        "B": "47/50",
+        "C": "24/25",
+        "D": "23/25"
+      },
+      "topicLabel": "Probability and its theorems",
+      "topicHref": "/nda/maths/stats-probability/probability",
+      "pdfPage": 39,
+      "printedPage": 39,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">​<span class=\"tex\">x^2 + x = x(x + 1)</span>​ increases as ​<span class=\"tex\">x</span>​ increases, so find where it first exceeds 50. ​<span class=\"tex\">x = 6</span>​: ​<span class=\"tex\">6 \\times 7 = 42</span>​, not more than 50. ​<span class=\"tex\">x = 7</span>​: ​<span class=\"tex\">7 \\times 8 = 56 &gt; 50</span>​. So the condition holds for ​<span class=\"tex\">x = 7, 8, \\ldots, 100</span>​ and fails for ​<span class=\"tex\">x = 1</span>​ to ​<span class=\"tex\">6</span>​. Favourable numbers: ​<span class=\"tex\">100 - 6 = 94</span>​. Probability ​<span class=\"tex\">= \\frac{94}{100} = \\frac{47}{50}</span>​. Answer: 47/50.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 110,
+      "promptLines": [
+        "What is the mean deviation of the first 10 natural numbers?"
+      ],
+      "options": {
+        "A": "2",
+        "B": "\\(2 \\cdot 5\\)",
+        "C": "3",
+        "D": "\\(3 \\cdot 5\\)"
+      },
+      "topicLabel": "Variance and standard deviation",
+      "topicHref": "/nda/maths/stats-probability/variance-sd",
+      "pdfPage": 39,
+      "printedPage": 39,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The numbers are ​<span class=\"tex\">1, 2, \\ldots, 10</span>​. Mean ​<span class=\"tex\">= \\frac{55}{10} = 5.5</span>​ (the median is also 5.5). Mean deviation is the average of the distances from the mean. The distances are ​<span class=\"tex\">4.5, 3.5, 2.5, 1.5, 0.5</span>​ for ​<span class=\"tex\">1</span>​ to ​<span class=\"tex\">5</span>​, and the same five values again for ​<span class=\"tex\">6</span>​ to ​<span class=\"tex\">10</span>​. Their total is ​<span class=\"math-wide\"><span class=\"tex\">2(4.5 + 3.5 + 2.5 + 1.5 + 0.5) = 2 \\times 12.5 = 25</span></span>​. Mean deviation ​<span class=\"tex\">= \\frac{25}{10} = 2.5</span>​. Answer: 2.5.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 111,
+      "promptLines": [
+        "Let \\(\\sum_{i=1}^{9} x_i^2 = 855\\). If \\(M\\) is the mean and \\(\\sigma\\) is the standard deviation of \\(x_1, x_2, \\ldots, x_9\\), then what is the value of \\(M^2 + \\sigma^2\\)?"
+      ],
+      "options": {
+        "A": "100",
+        "B": "95",
+        "C": "90",
+        "D": "85"
+      },
+      "topicLabel": "Variance and standard deviation",
+      "topicHref": "/nda/maths/stats-probability/variance-sd",
+      "pdfPage": 41,
+      "printedPage": 41,
+      "answerDraft": "B",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">The variance formula is ​<span class=\"tex\">\\sigma^2 = \\frac{\\sum x_i^2}{n} - M^2</span>​ (mean of the squares minus the square of the mean). Move ​<span class=\"tex\">M^2</span>​ to the other side: ​<span class=\"tex\">M^2 + \\sigma^2 = \\frac{\\sum x_i^2}{n}</span>​. Here ​<span class=\"tex\">n = 9</span>​ and ​<span class=\"tex\">\\sum x_i^2 = 855</span>​. So ​<span class=\"tex\">M^2 + \\sigma^2 = \\frac{855}{9} = 95</span>​. Answer: 95.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 112,
+      "promptLines": [
+        "The mean of the series \\(x_1, x_2, \\ldots, x_n\\) is \\(\\bar{x}\\). If \\(x_n\\) is replaced by \\(k\\), then what is the new mean?"
+      ],
+      "options": {
+        "A": "\\(\\bar{x} - x_n + k\\)",
+        "B": "\\(\\frac{n\\bar{x} - \\bar{x} + k}{n}\\)",
+        "C": "\\(\\frac{\\bar{x} - x_n - k}{n}\\)",
+        "D": "\\(\\frac{n\\bar{x} - x_n + k}{n}\\)"
+      },
+      "topicLabel": "Mean, median and mode",
+      "topicHref": "/nda/maths/stats-probability/mean-median-mode",
+      "pdfPage": 41,
+      "printedPage": 41,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Mean ​<span class=\"tex\">=</span>​ sum divided by number of terms, so the original sum is ​<span class=\"tex\">n\\bar{x}</span>​. Replacing ​<span class=\"tex\">x_n</span>​ by ​<span class=\"tex\">k</span>​ removes ​<span class=\"tex\">x_n</span>​ from the sum and adds ​<span class=\"tex\">k</span>​: the new sum is ​<span class=\"tex\">n\\bar{x} - x_n + k</span>​. The number of terms is still ​<span class=\"tex\">n</span>​. So the new mean is ​<span class=\"tex\">\\frac{n\\bar{x} - x_n + k}{n}</span>​. Answer: ​<span class=\"tex\">\\frac{n\\bar{x} - x_n + k}{n}</span>​.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 113,
+      "promptLines": [
+        "A fair coin is tossed till two heads occur in succession. What is the probability that the number of tosses required is less than 6?"
+      ],
+      "options": {
+        "A": "5/64",
+        "B": "15/32",
+        "C": "31/64",
+        "D": "19/32"
+      },
+      "topicLabel": "Probability and its theorems",
+      "topicHref": "/nda/maths/stats-probability/probability",
+      "pdfPage": 41,
+      "printedPage": 41,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">We need HH to appear for the first time at toss 2, 3, 4 or 5. Ending at toss 2: HH, probability ​<span class=\"tex\">\\frac{1}{4}</span>​. At toss 3: THH, ​<span class=\"tex\">\\frac{1}{8}</span>​. At toss 4: the last three tosses are THH and the first toss is free (TTHH, HTHH): ​<span class=\"tex\">\\frac{2}{16}</span>​. At toss 5: the last three are THH and the first two must not be HH (TT, TH, HT): ​<span class=\"tex\">\\frac{3}{32}</span>​. Add: ​<span class=\"math-wide\"><span class=\"tex\">\\frac{8}{32} + \\frac{4}{32} + \\frac{4}{32} + \\frac{3}{32} = \\frac{19}{32}</span></span>​. Check: of the 32 sequences of five tosses, 19 contain HH. Answer: 19/32.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 114,
+      "promptLines": [
+        "Urn \\(A\\) contains 2 white and 2 black balls while urn \\(B\\) contains 3 white and 2 black balls. One ball is transferred from urn \\(A\\) to urn \\(B\\) and then a ball is drawn out of urn \\(B\\). What is the probability that the ball is white?"
+      ],
+      "options": {
+        "A": "11/20",
+        "B": "7/12",
+        "C": "3/5",
+        "D": "1"
+      },
+      "topicLabel": "Conditional probability and Bayes' theorem",
+      "topicHref": "/nda/maths/stats-probability/conditional-bayes",
+      "pdfPage": 41,
+      "printedPage": 41,
+      "answerDraft": null,
+      "answerInference": "unresolved",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Use the total probability rule over what was transferred. A white ball is transferred with probability ​<span class=\"tex\">\\frac{2}{4} = \\frac{1}{2}</span>​; urn ​<span class=\"tex\">B</span>​ then has 4 white and 2 black, so ​<span class=\"tex\">P(\\text{white}) = \\frac{4}{6}</span>​. A black ball is transferred with probability ​<span class=\"tex\">\\frac{1}{2}</span>​; urn ​<span class=\"tex\">B</span>​ then has 3 white and 3 black, so ​<span class=\"tex\">P(\\text{white}) = \\frac{3}{6}</span>​. Total: ​<span class=\"math-wide\"><span class=\"tex\">\\frac{1}{2} \\times \\frac{4}{6} + \\frac{1}{2} \\times \\frac{3}{6} = \\frac{4}{12} + \\frac{3}{12} = \\frac{7}{12}</span></span>​. Answer: 7/12.</div>",
+      "publisherKeyDraft": "B",
+      "draftsAgree": true
+    },
+    {
+      "number": 115,
+      "promptLines": [
+        "For two events \\(A\\) and \\(B\\), \\(P(A) = P(A|B) = 0 \\cdot 25\\) and \\(P(B|A) = 0 \\cdot 5\\). Which of the following are correct?",
+        "I. \\(A\\) and \\(B\\) are independent.",
+        "II. \\(P(A^c \\cup B^c) = 0 \\cdot 875\\)",
+        "III. \\(P(A^c \\cap B^c) = 0 \\cdot 375\\)",
+        "Select the answer using the code given below."
+      ],
+      "options": {
+        "A": "I and II only",
+        "B": "II and III only",
+        "C": "I and III only",
+        "D": "I, II and III"
+      },
+      "topicLabel": "Conditional probability and Bayes' theorem",
+      "topicHref": "/nda/maths/stats-probability/conditional-bayes",
+      "pdfPage": 41,
+      "printedPage": 41,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">I: ​<span class=\"tex\">P(A|B) = P(A)</span>​ means knowing ​<span class=\"tex\">B</span>​ does not change the chance of ​<span class=\"tex\">A</span>​, so ​<span class=\"tex\">A</span>​ and ​<span class=\"tex\">B</span>​ are independent. Correct. Then ​<span class=\"tex\">P(B) = P(B|A) = 0.5</span>​ and ​<span class=\"tex\">P(A \\cap B) = 0.25 \\times 0.5 = 0.125</span>​. II: by De Morgan, ​<span class=\"tex\">A^c \\cup B^c = (A \\cap B)^c</span>​, so its probability is ​<span class=\"tex\">1 - 0.125 = 0.875</span>​. Correct. III: ​<span class=\"tex\">A^c \\cap B^c = (A \\cup B)^c</span>​. ​<span class=\"tex\">P(A \\cup B) = 0.25 + 0.5 - 0.125 = 0.625</span>​, so the probability is ​<span class=\"tex\">1 - 0.625 = 0.375</span>​. Correct. Answer: I, II and III.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 116,
+      "promptLines": [
+        "Two perfect dice are thrown. What is the probability that the sum of the numbers on the faces is neither 9 nor 10?"
+      ],
+      "options": {
+        "A": "1/36",
+        "B": "5/36",
+        "C": "7/36",
+        "D": "29/36"
+      },
+      "topicLabel": "Probability and its theorems",
+      "topicHref": "/nda/maths/stats-probability/probability",
+      "pdfPage": 43,
+      "printedPage": 43,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">Two dice give ​<span class=\"tex\">6 \\times 6 = 36</span>​ equally likely outcomes. Sum 9: ​<span class=\"tex\">(3, 6), (4, 5), (5, 4), (6, 3)</span>​, which is 4 outcomes. Sum 10: ​<span class=\"tex\">(4, 6), (5, 5), (6, 4)</span>​, which is 3 outcomes. So 7 outcomes give a sum of 9 or 10. The rest, ​<span class=\"tex\">36 - 7 = 29</span>​, give neither. Probability ​<span class=\"tex\">= \\frac{29}{36}</span>​. Answer: 29/36.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    },
+    {
+      "number": 117,
+      "promptLines": [
+        "The occurrence of a disease in an industry is such that the workers have 20% chance of suffering from it. What is the probability that out of 6 workers chosen at random, 4 or more will suffer from the disease?"
+      ],
+      "options": {
+        "A": "53/3125",
+        "B": "63/3125",
+        "C": "73/3125",
+        "D": "83/3125"
+      },
+      "topicLabel": "Random variables and the binomial distribution",
+      "topicHref": "/nda/maths/stats-probability/binomial-distribution",
+      "pdfPage": 43,
+      "printedPage": 43,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">This is a binomial distribution with ​<span class=\"tex\">n = 6</span>​, ​<span class=\"tex\">p = \\frac{1}{5}</span>​, ​<span class=\"tex\">q = \\frac{4}{5}</span>​, and ​<span class=\"tex\">P(X = r) = \\binom{6}{r}p^r q^{6-r}</span>​. Every term has denominator ​<span class=\"tex\">5^6 = 15625</span>​. ​<span class=\"tex\">P(4) = 15 \\times 1 \\times 16 = 240</span>​ parts. ​<span class=\"tex\">P(5) = 6 \\times 1 \\times 4 = 24</span>​ parts. ​<span class=\"tex\">P(6) = 1</span>​ part. Total ​<span class=\"math-wide\"><span class=\"tex\">= \\frac{240 + 24 + 1}{15625} = \\frac{265}{15625}</span></span>​. Divide top and bottom by 5: ​<span class=\"tex\">\\frac{53}{3125}</span>​. Answer: 53/3125.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 118,
+      "promptLines": [
+        "Three perfect dice are rolled. Under the condition that no two show the same face, what is the probability that one of the faces shown is an ace (one)?"
+      ],
+      "options": {
+        "A": "5/9",
+        "B": "2/3",
+        "C": "1/3",
+        "D": "1/2"
+      },
+      "topicLabel": "Conditional probability and Bayes' theorem",
+      "topicHref": "/nda/maths/stats-probability/conditional-bayes",
+      "pdfPage": 43,
+      "printedPage": 43,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">This is a conditional probability, so count only outcomes with three different faces: ​<span class=\"tex\">6 \\times 5 \\times 4 = 120</span>​. Among these, count those containing a 1. The 1 can be on any of the 3 dice; the other two dice then show two different numbers from the remaining five, in ​<span class=\"tex\">5 \\times 4 = 20</span>​ ways. That gives ​<span class=\"tex\">3 \\times 20 = 60</span>​. Probability ​<span class=\"tex\">= \\frac{60}{120} = \\frac{1}{2}</span>​. Another way: the three faces are a random set of 3 out of 6 numbers, and a particular number is in it with chance ​<span class=\"tex\">\\frac{3}{6}</span>​. Answer: 1/2.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": false
+    },
+    {
+      "number": 119,
+      "promptLines": [
+        "Three perfect dice \\(D_1\\), \\(D_2\\) and \\(D_3\\) are rolled. Let \\(x\\), \\(y\\) and \\(z\\) represent the numbers on \\(D_1\\), \\(D_2\\) and \\(D_3\\) respectively. What is the number of possible outcomes such that \\(x < y < z\\)?"
+      ],
+      "options": {
+        "A": "20",
+        "B": "18",
+        "C": "14",
+        "D": "10"
+      },
+      "topicLabel": "Sample space and events",
+      "topicHref": "/nda/maths/stats-probability/sample-space-events",
+      "pdfPage": 43,
+      "printedPage": 43,
+      "answerDraft": "A",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">For ​<span class=\"tex\">x &lt; y &lt; z</span>​ the three numbers must all be different. Pick any 3 different numbers from ​<span class=\"tex\">1</span>​ to ​<span class=\"tex\">6</span>​: this can be done in ​<span class=\"tex\">\\binom{6}{3} = 20</span>​ ways. Once the three numbers are picked there is exactly one way to give them to the dice so that ​<span class=\"tex\">x &lt; y &lt; z</span>​: the smallest goes to ​<span class=\"tex\">D_1</span>​, the middle one to ​<span class=\"tex\">D_2</span>​ and the largest to ​<span class=\"tex\">D_3</span>​. So the number of outcomes is 20. Answer: 20.</div>",
+      "publisherKeyDraft": "A",
+      "draftsAgree": true
+    },
+    {
+      "number": 120,
+      "promptLines": [
+        "In a binomial distribution, if the mean is 6 and the standard deviation is \\(\\sqrt{2}\\), then what are the values of the parameters \\(n\\) and \\(p\\) respectively?"
+      ],
+      "options": {
+        "A": "18 and 1/3",
+        "B": "9 and 1/3",
+        "C": "18 and 2/3",
+        "D": "9 and 2/3"
+      },
+      "topicLabel": "Random variables and the binomial distribution",
+      "topicHref": "/nda/maths/stats-probability/binomial-distribution",
+      "pdfPage": 43,
+      "printedPage": 43,
+      "answerDraft": "D",
+      "answerInference": "solution-tail-option-text",
+      "solutionHtml": "<p class=\"font-semibold text-navy\">Answer: (unknown)</p><div class=\"mt-2 leading-relaxed\">For a binomial distribution, mean ​<span class=\"tex\">= np</span>​ and variance ​<span class=\"tex\">= npq</span>​, where ​<span class=\"tex\">q = 1 - p</span>​. The variance is the square of the standard deviation: ​<span class=\"tex\">(\\sqrt{2})^2 = 2</span>​. So ​<span class=\"tex\">np = 6</span>​ and ​<span class=\"tex\">npq = 2</span>​. Divide: ​<span class=\"tex\">q = \\frac{2}{6} = \\frac{1}{3}</span>​, hence ​<span class=\"tex\">p = 1 - \\frac{1}{3} = \\frac{2}{3}</span>​. Then ​<span class=\"math-wide\"><span class=\"tex\">n = \\frac{6}{p} = 6 \\times \\frac{3}{2} = 9</span></span>​. Check: ​<span class=\"math-wide\"><span class=\"tex\">9 \\times \\frac{2}{3} \\times \\frac{1}{3} = 2</span></span>​. Answer: 9 and 2/3.</div>",
+      "publisherKeyDraft": "D",
+      "draftsAgree": true
+    }
+  ]
+}

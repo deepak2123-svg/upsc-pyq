@@ -1,0 +1,84 @@
+{
+  "paperId": "nda-2024-ii-mathematics",
+  "identifiedPaper": "NDA & NA Examination (II), 2024 - Paper I Mathematics - Series A",
+  "expected": 120,
+  "available": 116,
+  "newRecords": 120,
+  "reusedRecords": 0,
+  "keyStatus": "reasoned-verified",
+  "questionPaperSha256": "761d264ba21e9fb4d1a71d39ad92b04842762bfc47f8d7300dc2ca90cfdc1c4c",
+  "keySha256": null,
+  "figuresRequired": 0,
+  "formulaOrContentDefectsResolved": [
+    {
+      "questionNumber": 118,
+      "publisherOption": "A",
+      "resolvedOption": "D",
+      "resolution": "Direct evaluation gives probability 1/2; the publisher table option A (5/9) is incorrect."
+    }
+  ],
+  "requiresReview": [
+    {
+      "questionNumber": 26,
+      "canonicalQuestionId": "nda-2024-ii-maths-26",
+      "status": "quarantined",
+      "reason": "The printed equation has x = pi/2 as an algebraic candidate, but cot 2x and cot 3x are undefined there. Four valid solutions remain and 4 is not offered.",
+      "reopenWith": "Matching official UPSC final key or erratum"
+    },
+    {
+      "questionNumber": 79,
+      "canonicalQuestionId": "nda-2024-ii-maths-79",
+      "status": "quarantined",
+      "reason": "The limit approaches x = pi/2 while the displayed function is written in theta, so the limiting variable is undefined.",
+      "reopenWith": "Matching official UPSC final key or erratum"
+    },
+    {
+      "questionNumber": 94,
+      "canonicalQuestionId": "nda-2024-ii-maths-94",
+      "status": "quarantined",
+      "reason": "The integrand has poles inside the stated interval. The ordinary improper integral does not exist; zero is only a Cauchy principal value.",
+      "reopenWith": "Matching official UPSC final key or erratum"
+    },
+    {
+      "questionNumber": 100,
+      "canonicalQuestionId": "nda-2024-ii-maths-100",
+      "status": "quarantined",
+      "reason": "The proposed antiderivative relies on sqrt(x^2+x^4)=x sqrt(1+x^2), which is false for x<0; no domain restriction is printed.",
+      "reopenWith": "Matching official UPSC final key or erratum"
+    }
+  ],
+  "chapterTotals": [
+    {
+      "chapter": "matrices-and-determinants",
+      "count": 8
+    },
+    {
+      "chapter": "algebra",
+      "count": 31
+    },
+    {
+      "chapter": "trigonometry",
+      "count": 13
+    },
+    {
+      "chapter": "vector-algebra",
+      "count": 5
+    },
+    {
+      "chapter": "analytical-geometry",
+      "count": 15
+    },
+    {
+      "chapter": "differential-calculus",
+      "count": 15
+    },
+    {
+      "chapter": "integral-calculus-and-differential-equations",
+      "count": 9
+    },
+    {
+      "chapter": "statistics-and-probability",
+      "count": 20
+    }
+  ]
+}
