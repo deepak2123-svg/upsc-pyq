@@ -1,8 +1,13 @@
 import {expect,test} from '@playwright/test';
 
-test('compact source directory filters and paginates every paper without inflating totals',async({page})=>{
+test('Sources is not duplicated in the primary navigation',async({page})=>{
  await page.goto('/');
- await page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Sources',exact:true}).click();
+ await expect(page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Sources',exact:true})).toHaveCount(0);
+ await expect(page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Practice Official Papers',exact:true})).toBeVisible();
+});
+
+test('compact source directory filters and paginates every paper without inflating totals',async({page})=>{
+ await page.goto('/legal/sources');
  await expect(page.getByRole('heading',{name:'Added PYQ papers'})).toBeVisible();
  const rows=page.locator('.source-table tbody tr'), next=page.getByRole('button',{name:'Next →',exact:true});
  const paperCount=Number((await page.locator('.source-directory-toolbar > p').innerText()).split(' ')[0]);

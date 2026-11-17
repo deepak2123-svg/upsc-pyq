@@ -17,7 +17,6 @@ export function SiteHeader({searchQuery=""}:{searchQuery?:string}) {
           <Link href="/papers">Practice Official Papers</Link>
           <Link href="/attempts">Attempts</Link>
           <Link href="/bookmarks">Bookmarks</Link>
-          <Link href="/legal/sources">Sources</Link>
         </nav>
       </div>
     </header>
