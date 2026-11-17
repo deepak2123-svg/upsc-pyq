@@ -12,9 +12,8 @@ test('NDA maths exposes the 24-chapter taxonomy and its subchapters',async({page
  await page.goto('/prepare/NDA?view=nda-maths');
  const middle=page.locator('.scope-library-browser');
  await expect(middle.locator('.scope-cards-heading h3')).toHaveText('Mathematics');
- await expect(middle.locator('.scope-card-number')).toHaveText(['Section 1']);
- await middle.getByRole('button',{name:'Open NDA Mathematics',exact:true}).click();
  await expect(middle.locator('.scope-card-number')).toHaveText(Array.from({length:24},(_,i)=>`Chapter ${i+1}`));
+ await expect(middle.locator('.library-breadcrumbs li')).toHaveText(['Subjects','Mathematics']);
  await expect(middle.locator('.explorer-folder')).toHaveText(chapters.map(chapter=>`${chapter}›`));
  await middle.getByRole('button',{name:'Open Matrices and Determinants',exact:true}).click();
  await expect(middle.locator('.scope-card-number')).toHaveText(['20.1','20.2','20.3','20.4']);
@@ -23,9 +22,9 @@ test('NDA maths exposes the 24-chapter taxonomy and its subchapters',async({page
  await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
 
-test('a fresh NDA maths view opens its taxonomy folder',async({page})=>{
+test('a fresh NDA maths view opens directly on its 24 chapters',async({page})=>{
  await page.goto('/prepare/NDA?view=nda-maths');
  await expect(page.locator('.scope-library-browser .scope-cards-heading h3')).toHaveText('Mathematics');
- await expect(page.locator('.scope-library-browser .scope-card-number')).toHaveText(['Section 1']);
- await expect(page.getByRole('button',{name:'Open NDA Mathematics',exact:true})).toBeVisible();
+ await expect(page.locator('.scope-library-browser .scope-card-number')).toHaveText(Array.from({length:24},(_,i)=>`Chapter ${i+1}`));
+ await expect(page.getByRole('button',{name:'Open NDA Mathematics',exact:true})).toHaveCount(0);
 });

@@ -84,6 +84,7 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, enabledExa
 
   const subjectLabel = focus ? index.nodesById.get(focus.subjectId)?.label || "this subject" : "UPSC";
   const isNdaScience = inventory.preparationExam === "NDA" && focus?.subjectId === "subject:science";
+  const isNdaMathRoot = inventory.preparationExam === "NDA" && focus?.id === "head:nda-mathematics:nda-mathematics";
   const nextKind = cards[0]?.kind || focus?.kind || "subject";
   const nextLevel = isNdaScience && nextKind === "subtopic" ? "topic" : levelNames[nextKind];
   const pluralLevel = `${nextLevel}${nextLevel === "subpart" ? "s" : "s"}`;
@@ -97,15 +98,15 @@ export function ScopeFlow({ inventory, paths, focusId, preferredExam, enabledExa
       <button type="button" className="library-back-arrow" aria-label="Back to previous folder" disabled={disabled} onClick={onBack}>←</button>
       <ol>
         <li><button type="button" disabled={disabled} onClick={onBrowseRoot}>Subjects</button></li>
-        {ancestors(focus.id,index).map(node=><li key={node.id}>{node.id===focus.id
+        {ancestors(focus.id,index).filter(node=>!isNdaMathRoot||node.id!==focus.id).map(node=><li key={node.id}>{node.id===focus.id
           ? <span aria-current="location">{node.label}</span>
           : <button type="button" disabled={disabled} onClick={()=>onBrowse(node.id)}>{node.label}</button>}</li>)}
       </ol>
     </nav> : null}
     <header className="scope-cards-heading">
       <div>
-        {focus ? <small>{scopeDisplayNumber(focus.id, index)}</small> : null}
-        <h3>{focus?.label || "Subjects"}</h3>
+        {focus&&!isNdaMathRoot ? <small>{scopeDisplayNumber(focus.id, index)}</small> : null}
+        <h3>{isNdaMathRoot?subjectLabel:focus?.label || "Subjects"}</h3>
         {focus ? <span>{number(focusAvailable)} MCQs</span> : null}
         {isNdaScience ? <p>NCERT-style chapter order · class labels omitted</p> : null}
       </div>
