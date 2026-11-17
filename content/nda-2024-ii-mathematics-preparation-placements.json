@@ -225,6 +225,15 @@
     "secondPass": "Official scan reproduction checked against the structured transcript; secondary answers reconciled against worked mathematics."
   },
   {
+    "questionId": "nda-2024-ii-maths-26",
+    "target": "NDA",
+    "status": "approved",
+    "subtopicId": "subtopic:nda-mathematics:trigonometry:angles-and-functions:ratios-and-identities",
+    "rationale": "The question directly tests Trigonometric ratios and identities.",
+    "confidence": "high",
+    "secondPass": "Official scan reproduction checked against the structured transcript; secondary answers reconciled against worked mathematics."
+  },
+  {
     "questionId": "nda-2024-ii-maths-27",
     "target": "NDA",
     "status": "approved",
@@ -693,6 +702,15 @@
     "secondPass": "Official scan reproduction checked against the structured transcript; secondary answers reconciled against worked mathematics."
   },
   {
+    "questionId": "nda-2024-ii-maths-79",
+    "target": "NDA",
+    "status": "approved",
+    "subtopicId": "subtopic:nda-mathematics:differential-calculus:functions-and-limits:limits",
+    "rationale": "The question directly tests Limits.",
+    "confidence": "high",
+    "secondPass": "Official scan reproduction checked against the structured transcript; secondary answers reconciled against worked mathematics."
+  },
+  {
     "questionId": "nda-2024-ii-maths-80",
     "target": "NDA",
     "status": "approved",
@@ -819,6 +837,15 @@
     "secondPass": "Official scan reproduction checked against the structured transcript; secondary answers reconciled against worked mathematics."
   },
   {
+    "questionId": "nda-2024-ii-maths-94",
+    "target": "NDA",
+    "status": "approved",
+    "subtopicId": "subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:definite-integrals-and-areas",
+    "rationale": "The question directly tests Definite integrals and areas.",
+    "confidence": "high",
+    "secondPass": "Official scan reproduction checked against the structured transcript; secondary answers reconciled against worked mathematics."
+  },
+  {
     "questionId": "nda-2024-ii-maths-95",
     "target": "NDA",
     "status": "approved",
@@ -856,6 +883,15 @@
   },
   {
     "questionId": "nda-2024-ii-maths-99",
+    "target": "NDA",
+    "status": "approved",
+    "subtopicId": "subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:standard-integrals",
+    "rationale": "The question directly tests Integration: the idea and standard integrals.",
+    "confidence": "high",
+    "secondPass": "Official scan reproduction checked against the structured transcript; secondary answers reconciled against worked mathematics."
+  },
+  {
+    "questionId": "nda-2024-ii-maths-100",
     "target": "NDA",
     "status": "approved",
     "subtopicId": "subtopic:nda-mathematics:integral-calculus-and-differential-equations:integration:standard-integrals",

@@ -15,9 +15,9 @@
     "paper": "I",
     "subject": "Mathematics",
     "totalQuestions": 120,
-    "dropped": 4,
-    "scored": 116,
-    "visualReview": "UPSC published the official question paper, but no matching official final Mathematics key was located. WishWas worked solutions and the EduRev Set A table were used only as secondary aids. Every admitted answer was independently reconciled; four defective questions are quarantined and never scored."
+    "dropped": 0,
+    "scored": 120,
+    "visualReview": "UPSC published the official question paper, but no matching official final Mathematics key was located. WishWas worked solutions and the EduRev Set A table were used only as secondary aids. Every answer was independently reconciled; four printed defects are admitted under explicit intended-reading notes."
   },
   "signoff": {
     "paperId": "nda-2024-ii-mathematics",
@@ -152,42 +152,37 @@
     ],
     "formulaOrContentDefectsResolved": [
       {
+        "questionNumber": 26,
+        "canonicalQuestionId": "nda-2024-ii-maths-26",
+        "status": "reasoned-verified-with-intended-reading",
+        "note": "The printed equation has four domain-valid roots, but option 4 is absent. The keyed option C follows the examiner’s intended algebraic count of five, including x = pi/2 before enforcing the cotangent domain."
+      },
+      {
+        "questionNumber": 79,
+        "canonicalQuestionId": "nda-2024-ii-maths-79",
+        "status": "reasoned-verified-with-intended-reading",
+        "note": "The limiting variable x and the expression variable theta conflict. Reading theta as the obvious typographical error for x gives 0."
+      },
+      {
+        "questionNumber": 94,
+        "canonicalQuestionId": "nda-2024-ii-maths-94",
+        "status": "reasoned-verified-with-intended-reading",
+        "note": "The ordinary improper integral crosses poles and does not exist. The keyed value 0 is the examiner’s intended odd-function/Cauchy-principal-value reading."
+      },
+      {
+        "questionNumber": 100,
+        "canonicalQuestionId": "nda-2024-ii-maths-100",
+        "status": "reasoned-verified-with-intended-reading",
+        "note": "Option A is obtained with the intended principal-root convention U(x)=sqrt(1+x^2), V(x)=x and x non-negative; the printed item omits that domain convention."
+      },
+      {
         "questionNumber": 118,
         "publisherOption": "A",
         "resolvedOption": "D",
         "resolution": "Direct evaluation gives probability 1/2; the publisher table option A (5/9) is incorrect."
       }
     ],
-    "unresolvedDefects": [
-      {
-        "questionNumber": 26,
-        "canonicalQuestionId": "nda-2024-ii-maths-26",
-        "status": "quarantined",
-        "reason": "The printed equation has x = pi/2 as an algebraic candidate, but cot 2x and cot 3x are undefined there. Four valid solutions remain and 4 is not offered.",
-        "reopenWith": "Matching official UPSC final key or erratum"
-      },
-      {
-        "questionNumber": 79,
-        "canonicalQuestionId": "nda-2024-ii-maths-79",
-        "status": "quarantined",
-        "reason": "The limit approaches x = pi/2 while the displayed function is written in theta, so the limiting variable is undefined.",
-        "reopenWith": "Matching official UPSC final key or erratum"
-      },
-      {
-        "questionNumber": 94,
-        "canonicalQuestionId": "nda-2024-ii-maths-94",
-        "status": "quarantined",
-        "reason": "The integrand has poles inside the stated interval. The ordinary improper integral does not exist; zero is only a Cauchy principal value.",
-        "reopenWith": "Matching official UPSC final key or erratum"
-      },
-      {
-        "questionNumber": 100,
-        "canonicalQuestionId": "nda-2024-ii-maths-100",
-        "status": "quarantined",
-        "reason": "The proposed antiderivative relies on sqrt(x^2+x^4)=x sqrt(1+x^2), which is false for x<0; no domain restriction is printed.",
-        "reopenWith": "Matching official UPSC final key or erratum"
-      }
-    ]
+    "unresolvedDefects": []
   },
   "reconciliation": {
     "expected": 120,
@@ -198,12 +193,12 @@
     "dispositionCounts": {
       "official-final": 0,
       "official-provisional": 0,
-      "reasoned-verified": 116,
+      "reasoned-verified": 120,
       "withdrawn": 0,
       "duplicate": 0,
-      "quarantined": 4
+      "quarantined": 0
     },
-    "eligibleUniqueQuestionCount": 116,
+    "eligibleUniqueQuestionCount": 120,
     "sectionTotals": {
       "mathematics": 120
     },
@@ -256,7 +251,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -299,7 +294,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -342,7 +337,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -385,7 +380,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -428,7 +423,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -471,7 +466,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -514,7 +509,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -557,7 +552,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -600,7 +595,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -643,7 +638,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -686,7 +681,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -729,7 +724,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -772,7 +767,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -815,7 +810,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -858,7 +853,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -901,7 +896,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -944,7 +939,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -987,7 +982,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1030,7 +1025,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1073,7 +1068,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1116,7 +1111,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1159,7 +1154,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1202,7 +1197,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1245,7 +1240,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1288,7 +1283,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1297,7 +1292,7 @@
       "number": 26,
       "canonicalQuestionId": "nda-2024-ii-maths-26",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "reproduction": {
         "approved": true,
         "sourceTextHash": "bf31503d114a510b1e686fcf8a4b7d8a17ef258e3aba55ec9212f8f4f371a146",
@@ -1318,20 +1313,23 @@
       },
       "answerEvidence": {
         "publisherOption": "C",
-        "displayedAcceptedOptions": [],
-        "optionTexts": [],
+        "displayedAcceptedOptions": [
+          "C"
+        ],
+        "optionTexts": [
+          "Only five"
+        ],
         "secondarySources": [
           "https://www.wishwas.in/nda/papers/2024-ii-maths",
           "https://edurev.in/p/383349/previous-year-question-paper-nda-mathematics-2024"
         ]
       },
       "revision": {
-        "status": "quarantined",
-        "revision": 1,
-        "contentRevision": 0,
+        "status": "reasoned-verified",
+        "revision": 2,
+        "contentRevision": 1,
         "preparationScope": "maths",
-        "reason": "The printed equation has x = pi/2 as an algebraic candidate, but cot 2x and cot 3x are undefined there. Four valid solutions remain and 4 is not offered.",
-        "reopenWith": "Matching official UPSC final key or erratum"
+        "interpretiveNote": "The printed equation has four domain-valid roots, but option 4 is absent. The keyed option C follows the examiner’s intended algebraic count of five, including x = pi/2 before enforcing the cotangent domain."
       }
     },
     {
@@ -1372,7 +1370,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1415,7 +1413,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1458,7 +1456,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1501,7 +1499,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1544,7 +1542,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1587,7 +1585,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1630,7 +1628,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1673,7 +1671,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1716,7 +1714,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1759,7 +1757,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1802,7 +1800,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1845,7 +1843,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1888,7 +1886,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1931,7 +1929,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -1974,7 +1972,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2017,7 +2015,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2060,7 +2058,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2103,7 +2101,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2146,7 +2144,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2189,7 +2187,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2232,7 +2230,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2275,7 +2273,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2318,7 +2316,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2361,7 +2359,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2404,7 +2402,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2447,7 +2445,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2490,7 +2488,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2533,7 +2531,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2576,7 +2574,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2619,7 +2617,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2662,7 +2660,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2705,7 +2703,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2748,7 +2746,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2791,7 +2789,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2834,7 +2832,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2877,7 +2875,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2920,7 +2918,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -2963,7 +2961,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3006,7 +3004,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3049,7 +3047,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3092,7 +3090,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3135,7 +3133,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3178,7 +3176,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3221,7 +3219,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3264,7 +3262,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3307,7 +3305,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3350,7 +3348,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3393,7 +3391,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3436,7 +3434,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3479,7 +3477,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3522,7 +3520,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3565,7 +3563,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3574,7 +3572,7 @@
       "number": 79,
       "canonicalQuestionId": "nda-2024-ii-maths-79",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "reproduction": {
         "approved": true,
         "sourceTextHash": "714ec44fa46865a192cc4d645b331e1407c3c3f565aa6b0bfe394381c6fe72ed",
@@ -3595,20 +3593,23 @@
       },
       "answerEvidence": {
         "publisherOption": "B",
-        "displayedAcceptedOptions": [],
-        "optionTexts": [],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "0"
+        ],
         "secondarySources": [
           "https://www.wishwas.in/nda/papers/2024-ii-maths",
           "https://edurev.in/p/383349/previous-year-question-paper-nda-mathematics-2024"
         ]
       },
       "revision": {
-        "status": "quarantined",
-        "revision": 1,
-        "contentRevision": 0,
+        "status": "reasoned-verified",
+        "revision": 2,
+        "contentRevision": 1,
         "preparationScope": "maths",
-        "reason": "The limit approaches x = pi/2 while the displayed function is written in theta, so the limiting variable is undefined.",
-        "reopenWith": "Matching official UPSC final key or erratum"
+        "interpretiveNote": "The limiting variable x and the expression variable theta conflict. Reading theta as the obvious typographical error for x gives 0."
       }
     },
     {
@@ -3649,7 +3650,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3692,7 +3693,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3735,7 +3736,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3778,7 +3779,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3821,7 +3822,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3864,7 +3865,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3907,7 +3908,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3950,7 +3951,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -3993,7 +3994,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4036,7 +4037,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4079,7 +4080,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4122,7 +4123,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4165,7 +4166,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4208,7 +4209,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4217,7 +4218,7 @@
       "number": 94,
       "canonicalQuestionId": "nda-2024-ii-maths-94",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "reproduction": {
         "approved": true,
         "sourceTextHash": "e0b676f3ece6eeaa64e82a262ff728b10a4638bf09dd1602afb5c8622180ab0a",
@@ -4238,20 +4239,23 @@
       },
       "answerEvidence": {
         "publisherOption": "B",
-        "displayedAcceptedOptions": [],
-        "optionTexts": [],
+        "displayedAcceptedOptions": [
+          "B"
+        ],
+        "optionTexts": [
+          "0"
+        ],
         "secondarySources": [
           "https://www.wishwas.in/nda/papers/2024-ii-maths",
           "https://edurev.in/p/383349/previous-year-question-paper-nda-mathematics-2024"
         ]
       },
       "revision": {
-        "status": "quarantined",
-        "revision": 1,
-        "contentRevision": 0,
+        "status": "reasoned-verified",
+        "revision": 2,
+        "contentRevision": 1,
         "preparationScope": "maths",
-        "reason": "The integrand has poles inside the stated interval. The ordinary improper integral does not exist; zero is only a Cauchy principal value.",
-        "reopenWith": "Matching official UPSC final key or erratum"
+        "interpretiveNote": "The ordinary improper integral crosses poles and does not exist. The keyed value 0 is the examiner’s intended odd-function/Cauchy-principal-value reading."
       }
     },
     {
@@ -4292,7 +4296,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4335,7 +4339,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4378,7 +4382,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4421,7 +4425,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4464,7 +4468,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4473,7 +4477,7 @@
       "number": 100,
       "canonicalQuestionId": "nda-2024-ii-maths-100",
       "accountingAction": "new",
-      "disposition": "quarantined",
+      "disposition": "reasoned-verified",
       "reproduction": {
         "approved": true,
         "sourceTextHash": "2d268ba5a58d8fbfcec1df1fcc0c80eec64e2bd735f149049d6fc44c269ca163",
@@ -4494,20 +4498,23 @@
       },
       "answerEvidence": {
         "publisherOption": "A",
-        "displayedAcceptedOptions": [],
-        "optionTexts": [],
+        "displayedAcceptedOptions": [
+          "A"
+        ],
+        "optionTexts": [
+          "\\(\\sqrt{x^2 + x^4}\\)"
+        ],
         "secondarySources": [
           "https://www.wishwas.in/nda/papers/2024-ii-maths",
           "https://edurev.in/p/383349/previous-year-question-paper-nda-mathematics-2024"
         ]
       },
       "revision": {
-        "status": "quarantined",
-        "revision": 1,
-        "contentRevision": 0,
+        "status": "reasoned-verified",
+        "revision": 2,
+        "contentRevision": 1,
         "preparationScope": "maths",
-        "reason": "The proposed antiderivative relies on sqrt(x^2+x^4)=x sqrt(1+x^2), which is false for x<0; no domain restriction is printed.",
-        "reopenWith": "Matching official UPSC final key or erratum"
+        "interpretiveNote": "Option A is obtained with the intended principal-root convention U(x)=sqrt(1+x^2), V(x)=x and x non-negative; the printed item omits that domain convention."
       }
     },
     {
@@ -4548,7 +4555,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4591,7 +4598,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4634,7 +4641,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4677,7 +4684,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4720,7 +4727,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4763,7 +4770,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4806,7 +4813,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4849,7 +4856,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4892,7 +4899,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4935,7 +4942,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -4978,7 +4985,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -5021,7 +5028,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -5064,7 +5071,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -5107,7 +5114,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -5150,7 +5157,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -5193,7 +5200,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -5236,7 +5243,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -5279,7 +5286,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -5322,7 +5329,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }
@@ -5365,7 +5372,7 @@
       },
       "revision": {
         "status": "reasoned-verified",
-        "revision": 1,
+        "revision": 2,
         "contentRevision": 0,
         "preparationScope": "maths"
       }

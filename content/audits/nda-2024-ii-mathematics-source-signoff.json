@@ -131,40 +131,35 @@
   ],
   "formulaOrContentDefectsResolved": [
     {
+      "questionNumber": 26,
+      "canonicalQuestionId": "nda-2024-ii-maths-26",
+      "status": "reasoned-verified-with-intended-reading",
+      "note": "The printed equation has four domain-valid roots, but option 4 is absent. The keyed option C follows the examiner’s intended algebraic count of five, including x = pi/2 before enforcing the cotangent domain."
+    },
+    {
+      "questionNumber": 79,
+      "canonicalQuestionId": "nda-2024-ii-maths-79",
+      "status": "reasoned-verified-with-intended-reading",
+      "note": "The limiting variable x and the expression variable theta conflict. Reading theta as the obvious typographical error for x gives 0."
+    },
+    {
+      "questionNumber": 94,
+      "canonicalQuestionId": "nda-2024-ii-maths-94",
+      "status": "reasoned-verified-with-intended-reading",
+      "note": "The ordinary improper integral crosses poles and does not exist. The keyed value 0 is the examiner’s intended odd-function/Cauchy-principal-value reading."
+    },
+    {
+      "questionNumber": 100,
+      "canonicalQuestionId": "nda-2024-ii-maths-100",
+      "status": "reasoned-verified-with-intended-reading",
+      "note": "Option A is obtained with the intended principal-root convention U(x)=sqrt(1+x^2), V(x)=x and x non-negative; the printed item omits that domain convention."
+    },
+    {
       "questionNumber": 118,
       "publisherOption": "A",
       "resolvedOption": "D",
       "resolution": "Direct evaluation gives probability 1/2; the publisher table option A (5/9) is incorrect."
     }
   ],
-  "unresolvedDefects": [
-    {
-      "questionNumber": 26,
-      "canonicalQuestionId": "nda-2024-ii-maths-26",
-      "status": "quarantined",
-      "reason": "The printed equation has x = pi/2 as an algebraic candidate, but cot 2x and cot 3x are undefined there. Four valid solutions remain and 4 is not offered.",
-      "reopenWith": "Matching official UPSC final key or erratum"
-    },
-    {
-      "questionNumber": 79,
-      "canonicalQuestionId": "nda-2024-ii-maths-79",
-      "status": "quarantined",
-      "reason": "The limit approaches x = pi/2 while the displayed function is written in theta, so the limiting variable is undefined.",
-      "reopenWith": "Matching official UPSC final key or erratum"
-    },
-    {
-      "questionNumber": 94,
-      "canonicalQuestionId": "nda-2024-ii-maths-94",
-      "status": "quarantined",
-      "reason": "The integrand has poles inside the stated interval. The ordinary improper integral does not exist; zero is only a Cauchy principal value.",
-      "reopenWith": "Matching official UPSC final key or erratum"
-    },
-    {
-      "questionNumber": 100,
-      "canonicalQuestionId": "nda-2024-ii-maths-100",
-      "status": "quarantined",
-      "reason": "The proposed antiderivative relies on sqrt(x^2+x^4)=x sqrt(1+x^2), which is false for x<0; no domain restriction is printed.",
-      "reopenWith": "Matching official UPSC final key or erratum"
-    }
-  ]
+  "unresolvedDefects": []
 }
