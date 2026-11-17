@@ -23,6 +23,15 @@ test.beforeEach(async ({ page }) => {
   await expect(browser(page).getByRole("button", { name: "Open Geography", exact: true })).toBeEnabled();
 });
 
+test("preparation selector opens as a readable header popover", async ({ page }) => {
+  await page.getByRole("button", { name: "Change preparation selection" }).click();
+  const chooser = page.getByRole("group", { name: "Preparing for" });
+  await expect(chooser).toBeVisible();
+  await expect(chooser.getByRole("button", { name: "UPSC NDA" })).toBeVisible();
+  await expect(page.getByRole("group", { name: "Paper" })).toBeVisible();
+  expect((await chooser.boundingBox())?.width).toBeGreaterThan(250);
+});
+
 test('exam-source filters persist through thematic drill-down and recalculate level counts',async({page})=>{
   const filters=page.getByRole('region',{name:'Exam sources'}),nda=filters.getByRole('button',{name:/NDA/});
   const geography=browser(page).locator('.subject-overview').filter({has:page.getByRole('button',{name:'Open Geography',exact:true})});
