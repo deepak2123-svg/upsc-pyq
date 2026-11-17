@@ -17,7 +17,7 @@ test('lean explorer omits graph edges without changing the public inventory cont
  assert.equal(response.status,200);
  const text=await response.text();
  assert.ok(text.includes('"links":[]'));
- assert.ok(Buffer.byteLength(text)<800000,'explorer payload must stay below its old 1.06 MB size');
+ assert.ok(Buffer.byteLength(text)<900000,'explorer payload must stay below its old 1.06 MB size after the 24-chapter Mathematics expansion');
  const repeat=await inventory('NDA');
  assert.deepEqual(repeat,full,'rendering must not mutate cached eligibility or membership');
 });
@@ -65,7 +65,7 @@ test('three target syllabuses expose the agreed paper structure and bounded empt
     assert.equal(data.nodes.filter(n => n.subjectId === 'subject:geography' && n.kind === 'subtopic' && n.id.includes(':physical-geography:')).length, 92);
   }
   assert.ok(nda.nodes.some(n => n.label === 'Synonyms'));
-  assert.ok(nda.nodes.some(n => n.label === 'Differential Calculus'));
+  assert.ok(nda.nodes.some(n => n.label === 'Functions, Limits, Continuity and Differentiability'));
   assert.ok(!cds.nodes.some(n => n.label === 'Differential Calculus'));
   assert.ok(cse.nodes.some(n => n.label === 'Data Interpretation'));
   assert.equal(nda.subjects.find(n => n.id === 'subject:english').questionCount, 1250);

@@ -1,6 +1,7 @@
 /** Editorial concept expansion. These are practice topics, not additional official papers.
  * Stable concept keys can be shared; the exam view selects its appropriate depth.
  */
+import {ndaMathematicsChapters} from './nda-mathematics-taxonomy.ts';
 export type SyllabusSection = readonly [string, readonly (readonly [string, readonly string[]])[]];
 export const defenceWorldHistory: readonly SyllabusSection[] = [
   ['World History',[
@@ -63,37 +64,7 @@ export const elementaryMaths: readonly SyllabusSection[] = [
   ]],
 ];
 export const ndaMaths: readonly SyllabusSection[] = [
-  ['Algebra', [
-    ['Foundations', ['Sets and Venn diagrams', 'Relations', 'Real and complex numbers', 'Binary numbers']],
-    ['Equations and sequences', ['Quadratic equations', 'Inequalities', 'Arithmetic, geometric and harmonic progressions']],
-    ['Counting and expansion', ['Permutations and combinations', 'Binomial theorem', 'Logarithms']],
-  ]],
-  ['Matrices and Determinants', [
-    ['Matrices', ['Types and operations', 'Determinants', 'Adjoint and inverse', 'Systems of linear equations']],
-  ]],
-  ['Trigonometry', [
-    ['Angles and functions', ['Angle measures', 'Ratios and identities', 'Compound and multiple angles', 'Inverse trigonometric functions']],
-    ['Applications', ['Properties of triangles', 'Heights and distances']],
-  ]],
-  ['Analytical Geometry', [
-    ['Two dimensions', ['Cartesian coordinates', 'Straight lines', 'Circles', 'Parabola, ellipse and hyperbola']],
-    ['Three dimensions', ['Coordinates and distance', 'Direction cosines and ratios', 'Lines and planes', 'Spheres']],
-  ]],
-  ['Differential Calculus', [
-    ['Functions and limits', ['Domain and range', 'Composite and inverse functions', 'Limits', 'Continuity']],
-    ['Differentiation', ['Derivatives and rules', 'Increasing and decreasing functions', 'Maxima and minima']],
-  ]],
-  ['Integral Calculus and Differential Equations', [
-    ['Integration', ['Standard integrals', 'Substitution', 'Integration by parts', 'Definite integrals and areas']],
-    ['Differential equations', ['Order and degree', 'Formation', 'First-order equations', 'Growth and decay applications']],
-  ]],
-  ['Vector Algebra', [
-    ['Vectors', ['Components and magnitude', 'Addition and scalar multiplication', 'Dot product', 'Cross product', 'Geometrical applications']],
-  ]],
-  ['Statistics and Probability', [
-    ['Statistics', ['Data representation', 'Central tendency', 'Variance and standard deviation', 'Correlation and regression']],
-    ['Probability', ['Events and sample spaces', 'Addition and multiplication rules', 'Conditional probability', 'Bayes theorem', 'Random variables and binomial distribution']],
-  ]],
+  ['NDA Mathematics', ndaMathematicsChapters],
 ];
 export const csatSyllabus: readonly SyllabusSection[] = [
   ['Comprehension and Communication', [

@@ -34,6 +34,7 @@ import officialNda2018IIPlacements from '../content/nda-2018-ii-preparation-plac
 import officialNda2018IPlacements from '../content/nda-2018-i-preparation-placements.json' with {type:'json'};
 import officialNda2017IIPlacements from '../content/nda-2017-ii-preparation-placements.json' with {type:'json'};
 import {organiseNdaScience} from './nda-science-syllabus';
+import {migrateNdaMathematicsSubtopicId} from './nda-mathematics-taxonomy.ts';
 
 export type PreparationInventory = SubjectPracticeInventory & { preparationExam: PreparationExam; preparationViews: PreparationView[] };
 const exams: PyqExam[] = ['CSE', 'CAPF', 'CDS', 'NDA'];
@@ -129,7 +130,8 @@ function buildPreparationInventory(target: PreparationExam): PreparationInventor
 for (const row of [...officialNda2024IIMathematicsPlacements,...officialNda2025IIMathematicsPlacements,...officialNda2025IMathematicsPlacements,...applicability.approvedPlacements,...officialNdaPlacements,...officialNdaIIPlacements,...officialNdaIMathematicsPlacements,...officialNdaIIMathematicsPlacements,...officialNda2025IIPlacements,...officialNda2025IPlacements,...reviewedNda2024IIPlacements,...officialNda2024IPlacements,...officialNda2023IIPlacements,...officialNda2023IPlacements,...officialNda2022IIPlacements,...officialNda2022IPlacements,...officialNda2021IIPlacements,...officialNda2021IPlacements,...officialNda2020CombinedPlacements,...officialNda2019IIPlacements,...officialNda2019IPlacements,...officialNda2018IIPlacements,...officialNda2018IPlacements,...officialNda2017IIPlacements,...officialNda2017IPlacements,...officialNda2016IPlacements,...officialNda2016IIPlacements,...officialNda2015IIPlacements,...officialNda2015IPlacements,...officialNda2014IPlacements,...officialNda2014IIPlacements] as ReviewedPlacement[]) {
     if (row.target !== target || row.status !== 'approved' || !row.rationale.trim()) continue;
     const question = questions.get(row.questionId);
-    const leaf = nodes.find(n => n.kind === 'subtopic' && n.id === row.subtopicId);
+    const placementId=row.questionId.includes('-maths-')?migrateNdaMathematicsSubtopicId(row.subtopicId,question):row.subtopicId;
+    const leaf = nodes.find(n => n.kind === 'subtopic' && n.id === placementId);
     if (!question || !leaf || !questionReview(question.id) || !questionEligible(question.id)) throw new Error(`Invalid approved preparation placement: ${row.questionId}`);
     const members = leaf.questionIdsByExam![question.exam];
     if (!members.includes(question.id)) members.push(question.id);
