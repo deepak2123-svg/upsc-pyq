@@ -49,7 +49,8 @@ test('whole-paper practice keeps term and subject selections exact',async({page}
  await expect(page.getByRole('dialog',{name:'Finish this test?',exact:true})).toContainText('150 will remain unattempted');
  await page.getByRole('button',{name:'Finish and view results',exact:true}).click();
  expect((await graded).status()).toBe(200);
- await expect(page.getByRole('link',{name:'UPSC.PYQ.Practise home',exact:true})).toHaveAttribute('href','/');
+ await expect(page.getByRole('link',{name:'UPSC.PYQ.Practise home',exact:true})).toHaveAttribute('href','/papers');
+ await expect(page.getByRole('link',{name:'Choose new PYQs',exact:true})).toHaveAttribute('href','/papers');
  await expect(page.getByRole('heading',{name:'Performance breakdown',exact:true})).toHaveCount(0);
  await expect(page.getByRole('heading',{name:'Answer key and score',exact:true})).toBeVisible();
  const answerSheet=page.getByRole('table',{name:'Answer sheet',exact:true});

@@ -15,6 +15,7 @@ test('preparation return paths remain local and preserve the target exam', () =>
   assert.equal(safePracticeReturnPath('/prepare/CAPF'), '/');
   assert.equal(safePracticeReturnPath('//example.com/prepare/NDA'), '/');
   assert.equal(safePracticeReturnPath('/prepare/NDA?redirect=https://example.com'), '/');
+  assert.equal(attemptReturnPath({ snapshot: { recipe: { version: 4, preparationExam: 'NDA' } } }), '/prepare/NDA');
   assert.equal(attemptReturnPath({ snapshot: { recipe: { version: 4, preparationExam: 'CDS' } } }), '/prepare/CDS');
   assert.equal(attemptReturnPath({ snapshot: { recipe: { version: 5, paperKeys: ['NDA:II:GAT:2026'], count: 'all', order: 'newest' } } }), '/papers');
 });

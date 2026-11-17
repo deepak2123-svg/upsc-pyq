@@ -121,11 +121,12 @@ export function ResultsClient({ id }: { id: string }) {
   const duration = practiceDurationMinutes(attempt.snapshot.recipe);
   const subjects = [...new Set(attempt.snapshot.questions.map((question) => question.subject))].join(" + ");
   const completed = attempt.completionReason === "time_expired" ? "Time expired" : "Submitted";
+  const returnPath = attemptReturnPath(attempt);
   const score = ready ? attempt.snapshot.questions.reduce((total, question) => total + questionMarks(attempt, question), 0) : 0;
   const maximumScore = attempt.snapshot.questions.reduce((total, question) => questionExclusion(question.id, question.contentRevision ?? 0) ? total : total + markingRule(question).positive, 0);
   return (
     <main className="results-page pyq-page exam-results">
-      <header className="result-page-nav result-no-print"><Link className="pyq-brand" href="/" aria-label="UPSC.PYQ.Practise home"><span className="pyq-brand-mark" aria-hidden="true">PYQ</span><span>UPSC.PYQ.Practise</span></Link><Link className="back-link" href="/attempts">← Attempts</Link></header>
+      <header className="result-page-nav result-no-print"><Link className="pyq-brand" href={returnPath} aria-label="UPSC.PYQ.Practise home"><span className="pyq-brand-mark" aria-hidden="true">PYQ</span><span>UPSC.PYQ.Practise</span></Link><Link className="back-link" href="/attempts">← Attempts</Link></header>
       <section className="result-summary">
         <div className="result-sheet-heading"><div><p className="pyq-kicker">Practice complete</p><h1>Result sheet</h1><p>{subjects || "Official PYQs"}</p></div><span className="result-completion-reason">{completed}</span></div>
         <dl className="result-session-details"><div><dt>Completed</dt><dd>{dateLabel(attempt.completedAt)}</dd></div><div><dt>Time taken</dt><dd>{formatPracticeTime(attempt.elapsedSeconds)}</dd></div><div><dt>Time limit</dt><dd>{duration === null ? "Untimed" : `${duration} minutes`}</dd></div><div><dt>Attempt ID</dt><dd>{attempt.id}</dd></div></dl>
@@ -134,7 +135,7 @@ export function ResultsClient({ id }: { id: string }) {
         {attempt.snapshot.questions.map((q,index)=>questionCorrectionNotice(q)?<p className="result-score-note" key={q.id}>Saved Q{index+1}: {questionCorrectionNotice(q)}</p>:null)}
         {stats.total.excluded > 0 && <p role="status">{stats.total.excluded} question{stats.total.excluded === 1 ? '' : 's'} excluded from score. Totals above include scored questions only; your original answers are preserved.</p>}
         {(grading || !ready) && <div className="result-grading-status result-no-print" role={error ? "alert" : "status"} aria-live="polite"><p>{error || "Your answers are submitted and saved. Loading the answer sheet…"}</p>{error && <button disabled={grading} onClick={() => setRetry((value) => value + 1)}>Retry answers</button>}</div>}
-        <div className="result-actions result-no-print"><button disabled={retaking} onClick={() => void retake()}>{retaking ? "Starting…" : "Retake selection"}</button><button className="result-print-button" disabled={!ready} onClick={() => window.print()}>Print result sheet</button><Link href="/">Choose new PYQs</Link></div>
+        <div className="result-actions result-no-print"><button disabled={retaking} onClick={() => void retake()}>{retaking ? "Starting…" : "Retake selection"}</button><button className="result-print-button" disabled={!ready} onClick={() => window.print()}>Print result sheet</button><Link href={returnPath}>Choose new PYQs</Link></div>
         {actionError && <p className="result-action-error result-no-print" role="alert">{actionError}</p>}
       </section>
       <section className="result-answer-sheet result-combined-review"><h2>Answer key and score</h2><p>Your selected option, the official answer and marks for every question. Select a row to review the full question.</p><p className="result-scroll-hint">Swipe to view all columns.</p><div className="result-table-scroll"><table aria-label="Answer sheet" data-testid="answer-sheet"><thead><tr><th scope="col">No.</th><th scope="col">Source / topic</th><th scope="col">Your option</th><th scope="col">Correct option</th><th scope="col">Result</th><th scope="col">Marks</th></tr></thead><tbody>{attempt.snapshot.questions.map((question, index) => {
