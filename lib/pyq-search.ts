@@ -1,5 +1,6 @@
 import { getQuestionPath, historicalPyqQuestions, type PyqQuestion } from './pyq-catalog';
 import { questionContentRevision, questionEligible } from './question-review';
+import { PYQ_EXAMS, type PyqExam } from './pyq-exams';
 
 export type PyqSearchResult = Pick<PyqQuestion,'id'|'exam'|'year'|'paper'|'questionNumber'|'subject'|'topic'|'subtopic'|'promptLines'|'options'> & { contentRevision:number; syllabus: { subject:string; head:string; chapter:string; subtopic:string; scopeId:string } | null };
 
@@ -7,7 +8,7 @@ const normalize=(value:string)=>value.toLocaleLowerCase('en-IN').normalize('NFKD
 
 export function searchPyqs(rawQuery:string,limit=50){
  const query=normalize(rawQuery).slice(0,160),terms=query.split(' ').filter(Boolean);
- if(!terms.length)return {query:'',total:0,results:[] as PyqSearchResult[]};
+ if(!terms.length)return {query:'',total:0,counts:Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,0])) as Record<PyqExam,number>,results:[] as PyqSearchResult[]};
  const matches=historicalPyqQuestions.filter(question=>questionEligible(question.id)).map(question=>{
   const prompt=normalize(question.promptLines.join(' ')),options=normalize(Object.values(question.options).join(' '));
   const metadata=normalize(`${question.exam} ${question.year} ${question.paper} question ${question.questionNumber} ${question.subject} ${question.topic} ${question.subtopic}`);
@@ -15,6 +16,7 @@ export function searchPyqs(rawQuery:string,limit=50){
   if(!terms.every(term=>searchable.includes(term)))return null;
   const score=(prompt.includes(query)?12:0)+(options.includes(query)?8:0)+(metadata.includes(query)?6:0)+terms.reduce((sum,term)=>sum+(prompt.includes(term)?3:0)+(metadata.includes(term)?2:0)+(options.includes(term)?1:0),0);
   return {question,score};
- }).filter((value):value is {question:PyqQuestion;score:number}=>!!value).sort((a,b)=>b.score-a.score||b.question.year-a.question.year||a.question.exam.localeCompare(b.question.exam)||a.question.questionNumber-b.question.questionNumber);
- return {query:rawQuery.trim(),total:matches.length,results:matches.slice(0,Math.max(1,Math.min(limit,100))).map(({question})=>{const path=getQuestionPath(question);return {id:question.id,exam:question.exam,year:question.year,paper:question.paper,questionNumber:question.questionNumber,subject:question.subject,topic:question.topic,subtopic:question.subtopic,promptLines:question.promptLines,options:question.options,contentRevision:questionContentRevision(question.id),syllabus:path?{subject:path.subject,head:path.head,chapter:path.topic,subtopic:path.subtopic,scopeId:path.subtopicId}:null};})};
+ }).filter((value):value is {question:PyqQuestion;score:number}=>!!value).sort((a,b)=>b.question.year-a.question.year||b.question.paper.localeCompare(a.question.paper,undefined,{numeric:true})||b.score-a.score||a.question.questionNumber-b.question.questionNumber);
+ const counts=Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,matches.filter(({question})=>question.exam===exam).length])) as Record<PyqExam,number>;
+ return {query:rawQuery.trim(),total:matches.length,counts,results:matches.slice(0,Math.max(1,Math.min(limit,100))).map(({question})=>{const path=getQuestionPath(question);return {id:question.id,exam:question.exam,year:question.year,paper:question.paper,questionNumber:question.questionNumber,subject:question.subject,topic:question.topic,subtopic:question.subtopic,promptLines:question.promptLines,options:question.options,contentRevision:questionContentRevision(question.id),syllabus:path?{subject:path.subject,head:path.head,chapter:path.topic,subtopic:path.subtopic,scopeId:path.subtopicId}:null};})};
 }

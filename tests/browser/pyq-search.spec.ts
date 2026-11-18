@@ -25,3 +25,17 @@ test('checks a materially corrected live search question at its current revision
  await expect(card.getByRole('status')).toContainText('Correct.');
  await expect(card).not.toContainText('excluded from scoring');
 });
+
+test('summarises all four exams and groups matching MCQs newest first',async({page})=>{
+ await page.goto('/?q=india');
+ const summary=page.getByLabel('Matches for india by exam');
+ await expect(summary.locator(':scope > div')).toHaveCount(4);
+ expect(await summary.locator(':scope > div').evaluateAll(items=>items.map(item=>item.querySelector('span')?.textContent))).toEqual(['CSE','CAPF','CDS','NDA']);
+ const groups=page.locator('.pyq-search-exam-group');
+ expect(await groups.count()).toBeGreaterThan(1);
+ for(const group of await groups.all()){
+  await expect(group.locator(':scope > header')).toContainText('Most recent first');
+  const years=(await group.locator('.pyq-search-card>header>span').allTextContents()).map(label=>Number(label.match(/\b(20\d{2})\b/)?.[1]));
+  expect(years).toEqual([...years].sort((a,b)=>b-a));
+ }
+});

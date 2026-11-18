@@ -78,8 +78,27 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .pyq-footer > span:last-child { display: flex; gap: 18px; }
 .pyq-footer a { color: inherit; }
 .pyq-search { padding: 28px 0 18px; border-bottom: 1px solid var(--line); }
-.pyq-search-results { display: grid; gap: 16px; }
+.pyq-search-results { display: grid; gap: 24px; }
+.pyq-search-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
+.pyq-search-heading>div>span { color: var(--accent); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.pyq-search-heading h1 { margin: 5px 0 7px; font-size: clamp(28px,4vw,44px); letter-spacing: -.04em; }
+.pyq-search-heading>p { margin: 0 0 3px; color: var(--muted); font-size: 12px; white-space: nowrap; }
 .pyq-search-summary { margin: 0; color: var(--muted); font-size: 13px; }
+.pyq-search-exam-summary { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 10px; }
+.pyq-search-exam-summary>div { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; padding: 15px 16px 13px; overflow: hidden; border: 1px solid color-mix(in srgb,var(--exam-color) 30%,var(--line)); border-radius: 13px; background: color-mix(in srgb,var(--exam-color) 7%,white); }
+.pyq-search-exam-summary>div::after { position: absolute; right: 0; bottom: 0; left: 0; height: 3px; background: var(--exam-color); content: ""; }
+.pyq-search-exam-summary span { color: var(--exam-color); font-size: 13px; font-weight: 800; }
+.pyq-search-exam-summary strong { grid-row: span 2; color: var(--ink); font-size: 25px; line-height: 1; font-variant-numeric: tabular-nums; }
+.pyq-search-exam-summary small { color: var(--muted); font-size: 10px; }
+.pyq-search-exam-summary .has-no-matches { filter: grayscale(.7); opacity: .58; }
+.pyq-search-exam-group { display: grid; gap: 12px; padding-top: 4px; }
+.pyq-search-exam-group>header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 4px; }
+.pyq-search-exam-group>header>div { display: flex; align-items: center; gap: 9px; }
+.pyq-search-exam-group>header i { width: 9px; height: 9px; border-radius: 50%; background: var(--exam-color); }
+.pyq-search-exam-group h2 { margin: 0; font-size: 21px; }
+.pyq-search-exam-group>header span { color: var(--muted); font-size: 12px; }
+.pyq-search-exam-group>header small { color: var(--muted); font-size: 11px; }
+.pyq-search-exam-cards { display: grid; gap: 14px; }
 .pyq-search-card { padding: clamp(20px,3vw,30px); border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
 .pyq-search-card header { display: flex; justify-content: space-between; gap: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
 .pyq-search-card header span { font-weight: 750; }
@@ -113,6 +132,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .exam-arrow { grid-column: 3; grid-row: 1 / span 2; }
   .exam-name strong { font-size: 15px; }
   .pyq-footer { flex-direction: column; }
+  .pyq-search-heading { align-items: start; flex-direction: column; gap: 5px; }
+  .pyq-search-heading>p { white-space: normal; }
+  .pyq-search-exam-summary { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .pyq-search-options { grid-template-columns: 1fr; }
   .pyq-search-card header { flex-direction: column; gap: 5px; }
   .pyq-search-card header small { text-align: left; }
