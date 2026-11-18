@@ -15,3 +15,13 @@ test('searches reviewed PYQ stems and option text without exposing answers',asyn
 test('keeps the question library visible for an unmatched term',async({page})=>{
  await page.goto('/?q=term-that-cannot-exist-94721');await expect(page.getByText(/No reviewed MCQs match/)).toBeVisible();await expect(page.getByText('CSE question library',{exact:true})).toBeVisible();
 });
+
+test('checks a materially corrected live search question at its current revision',async({page})=>{
+ await page.goto('/?q=asean');
+ const card=page.locator('.pyq-search-card').filter({hasText:'became the 11th member of ASEAN in 2025'});
+ await expect(card).toHaveCount(1);
+ await card.getByRole('radio',{name:/Timor-Leste/}).click();
+ await card.getByRole('button',{name:'Check answer'}).click();
+ await expect(card.getByRole('status')).toContainText('Correct.');
+ await expect(card).not.toContainText('excluded from scoring');
+});
