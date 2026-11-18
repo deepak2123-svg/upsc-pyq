@@ -82,7 +82,7 @@ export default async function PastPaperPage({params}:{params:Promise<{slug:strin
  });
  const evidence=paper.data.evidence;
  const official=evidence?.status==='official-final', provisional=evidence?.status==='official-provisional', archived=evidence?.status==='archived-final-key';
- return <><SiteHeader/><main className="original-paper-page"><Link href="/legal/sources">← All source papers</Link>
+ return <><SiteHeader/><main className="original-paper-page"><Link href="/papers">← Practice official papers</Link>
   <header><div className="eyebrow">{official?'Official UPSC final key':provisional?'Official UPSC provisional key':archived?'Archived final key':'Independently verified'}{evidence?.series?` · Series ${evidence.series}`:''}</div><h1>{paper.title}</h1><p>{paper.summary}</p></header>
   <p className="original-paper-notice">{paper.notice} Original wording, question numbers and option order are preserved.</p>
   <OfficialPaperLauncher choices={choices} paperTitle={paper.title} timeLimitLabel={mathematics?'Mathematics':'GAT'}/>

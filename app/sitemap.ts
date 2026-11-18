@@ -8,6 +8,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...PYQ_EXAMS.map((exam) => ({ url: `${base}/exams/${exam}`, changeFrequency: "weekly" as const, priority: 0.9 })),
     { url: `${base}/legal/privacy`, changeFrequency: "yearly", priority: 0.2 },
     { url: `${base}/legal/terms`, changeFrequency: "yearly", priority: 0.2 },
-    { url: `${base}/legal/sources`, changeFrequency: "monthly", priority: 0.3 },
   ];
 }

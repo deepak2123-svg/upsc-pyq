@@ -1,5 +1,13 @@
 import {test,expect} from '@playwright/test';
 
+test('the retired Sources directory is no longer public',async({page})=>{
+ const response=await page.goto('/legal/sources');
+ expect(response?.status()).toBe(404);
+ await page.goto('/papers');
+ await expect(page.getByRole('heading',{name:'Paper bank',exact:true})).toBeVisible();
+ await expect(page.getByRole('navigation',{name:'Primary navigation'}).getByRole('link',{name:'Sources',exact:true})).toHaveCount(0);
+});
+
 test('whole-paper practice keeps term and subject selections exact',async({page})=>{
  const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));
  await page.goto('/');

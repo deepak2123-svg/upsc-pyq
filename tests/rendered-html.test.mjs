@@ -13,17 +13,12 @@ async function workerFetch(pathname = "/", init = {}) {
   );
 }
 
-test('Sources links reviewed papers to full-paper practice',async()=>{
-  const response=await workerFetch('/legal/sources');
+test('official paper bank is the public entry point for full-paper practice',async()=>{
+  const response=await workerFetch('/papers');
   assert.equal(response.status,200);
   const html=await response.text();
-  assert.match(html,/Added PYQ papers/);
-  assert.match(html,/Complete source review/);
-  assert.match(html,/Official provisional/);
-  assert.match(html,/Officially withdrawn/);
-  assert.match(html,/<table class="source-table"/);
-  assert.match(html,/href="\/papers\/nda-2026-i-gat"/);
-  assert.match(html,/Practise full paper/);
+  assert.match(html,/Paper bank/);
+  assert.match(html,/Practice Official Papers/);
 });
 
 test('reviewed historical paper opens the original-order practice launcher',async()=>{
