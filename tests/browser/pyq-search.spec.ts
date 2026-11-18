@@ -22,8 +22,9 @@ test('checks a materially corrected live search question at its current revision
  await expect(card).toHaveCount(1);
  await card.getByRole('radio',{name:/Timor-Leste/}).click();
  await card.getByRole('button',{name:'Check answer'}).click();
- await expect(card.getByRole('status')).toContainText('Correct.');
+ await expect(card.getByRole('status')).toHaveText('Correct.');
  await expect(card).not.toContainText('excluded from scoring');
+ await expect(card).not.toContainText('provisional key');
 });
 
 test('summarises all four exams and groups matching MCQs newest first',async({page})=>{
