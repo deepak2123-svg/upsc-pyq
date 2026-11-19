@@ -13,5 +13,5 @@ export default async function Home({searchParams}:{searchParams:Promise<{q?:stri
   const {q=''}=await searchParams;
   const searching=q.trim().length>0;
   const inventory = searching ? null : getPreparationExplorerInventory('CSE');
-  return <><SiteHeader searchQuery={q} /><main className="pyq-page"><PyqSearch query={q}/></main>{inventory?<ArchiveWorkspace key="CSE" initialInventory={inventory} />:null}</>;
+  return <><SiteHeader searchQuery={q} /><main className={`pyq-page${searching?' is-searching':''}`}><PyqSearch query={q}/></main>{inventory?<ArchiveWorkspace key="CSE" initialInventory={inventory} />:null}</>;
 }

@@ -26,6 +26,7 @@ test('checks a materially corrected live search question at its current revision
 });
 
 test('summarises all four exams and groups matching MCQs newest first',async({page})=>{
+ await page.setViewportSize({width:1280,height:800});
  await page.goto('/?q=india');
  const summary=page.getByLabel('Matches for india by exam');
  await expect(summary.locator(':scope > a')).toHaveCount(4);
@@ -41,6 +42,10 @@ test('summarises all four exams and groups matching MCQs newest first',async({pa
   const years=(await group.locator('.pyq-search-card>header>span').allTextContents()).map(label=>Number(label.match(/\b(20\d{2})\b/)?.[1]));
   expect(years).toEqual([...years].sort((a,b)=>b-a));
  }
+ await page.setViewportSize({width:1600,height:900});
+ await expect(groups.first().locator('.pyq-search-exam-cards')).toHaveCSS('column-count','3');
+ await page.setViewportSize({width:2200,height:1200});
+ await expect(groups.first().locator('.pyq-search-exam-cards')).toHaveCSS('column-count','4');
  await page.setViewportSize({width:390,height:844});
  await expect(groups.first().locator('.pyq-search-exam-cards')).toHaveCSS('column-count','1');
 });

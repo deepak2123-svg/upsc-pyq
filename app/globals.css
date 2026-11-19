@@ -59,6 +59,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .pyq-nav a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 550; transition: color 120ms ease; }
 .pyq-nav a:hover { color: var(--ink); }
 .pyq-page { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+.pyq-page.is-searching { width: min(2400px, calc(100% - 40px)); }
 .pyq-home { min-height: calc(100vh - 64px); display: flex; flex-direction: column; }
 .pyq-intro { padding: clamp(64px, 10vw, 112px) 0 clamp(38px, 6vw, 64px); max-width: 740px; }
 .pyq-kicker { margin: 0 0 18px; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
@@ -126,6 +127,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .pyq-search-answer-status { margin: 10px 0 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
 .pyq-search-answer-status.is-excluded { color: #946200; }
 .pyq-search-answer-status.is-error { color: #b42318; }
+@media (min-width: 1500px) {
+  .pyq-search-exam-cards { column-count: 3; }
+}
+@media (min-width: 2100px) {
+  .pyq-search-exam-cards { column-count: 4; }
+}
 
 @media (max-width: 700px) {
   .pyq-header-inner, .pyq-page { width: min(100% - 28px, 1120px); }
