@@ -36,7 +36,7 @@ test('summarises all four exams and groups matching MCQs newest first',async({pa
  expect(pillBox?.width).toBeLessThanOrEqual(160);
  const groups=page.locator('.pyq-search-exam-group');
  expect(await groups.count()).toBeGreaterThan(1);
- await expect.poll(()=>groups.first().locator('.pyq-search-exam-cards').evaluate(element=>getComputedStyle(element).gridTemplateColumns.split(' ').length)).toBe(2);
+ await expect(groups.first().locator('.pyq-search-exam-cards')).toHaveCSS('column-count','2');
  for(const group of await groups.all()){
   await expect(group.locator(':scope > header')).toContainText('Most recent first');
   await expect(group).toHaveCSS('border-top-style','solid');
@@ -44,5 +44,5 @@ test('summarises all four exams and groups matching MCQs newest first',async({pa
   expect(years).toEqual([...years].sort((a,b)=>b-a));
  }
  await page.setViewportSize({width:390,height:844});
- await expect.poll(()=>groups.first().locator('.pyq-search-exam-cards').evaluate(element=>getComputedStyle(element).gridTemplateColumns.split(' ').length)).toBe(1);
+ await expect(groups.first().locator('.pyq-search-exam-cards')).toHaveCSS('column-count','1');
 });

@@ -99,11 +99,11 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .pyq-search-exam-group h2 { margin: 0; font-size: 21px; }
 .pyq-search-exam-group>header span { color: var(--muted); font-size: 12px; }
 .pyq-search-exam-group>header small { color: var(--muted); font-size: 11px; }
-.pyq-search-exam-cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-items:start; gap:14px; }
+.pyq-search-exam-cards { column-count:2; column-gap:14px; }
+.pyq-search-exam-cards .pyq-search-card { width:100%; margin:0 0 14px; break-inside:avoid; }
 .pyq-search-exam-cards .pyq-search-card header { flex-direction:column; gap:5px; }
 .pyq-search-exam-cards .pyq-search-card header small { text-align:left; }
 .pyq-search-exam-cards .pyq-search-syllabus { max-width:none; align-items:flex-start; text-align:left; }
-.pyq-search-exam-cards .pyq-search-options { grid-template-columns:1fr; }
 .pyq-search-card { padding: clamp(20px,3vw,30px); border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
 .pyq-search-card header { display: flex; justify-content: space-between; gap: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
 .pyq-search-card header span { font-weight: 750; }
@@ -141,7 +141,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .pyq-search-heading>p { white-space: normal; }
   .pyq-search-exam-summary { grid-template-columns: repeat(2,minmax(0,152px)); }
   .pyq-search-exam-group { padding:12px; border-radius:14px; }
-  .pyq-search-exam-cards { grid-template-columns:1fr; }
+  .pyq-search-exam-cards { column-count:1; }
   .pyq-search-options { grid-template-columns: 1fr; }
   .pyq-search-card header { flex-direction: column; gap: 5px; }
   .pyq-search-card header small { text-align: left; }
