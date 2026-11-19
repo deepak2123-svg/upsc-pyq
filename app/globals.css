@@ -116,14 +116,16 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .pyq-search-options { padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px 12px; }
 .pyq-search-options>button { display: grid; grid-template-columns: 28px minmax(0,1fr); gap: 8px; align-items: start; padding: 10px; border: 1px solid #edf0f3; border-radius: 9px; background: var(--surface); color: var(--ink); line-height: 1.45; text-align: left; }
 .pyq-search-options>button:hover:not(:disabled) { border-color: #aebde7; background: #f7f9ff; }
-.pyq-search-options>button[aria-checked="true"] { border-color: var(--accent); background: var(--accent-soft); box-shadow: 0 0 0 1px var(--accent); }
+.pyq-search-options>button.is-selected { border-color: var(--accent); background: var(--accent-soft); box-shadow: 0 0 0 1px var(--accent); }
+.pyq-search-options>button.is-correct { border-color: #12a66a; background: #ecfdf3; box-shadow: 0 0 0 1px #12a66a; }
+.pyq-search-options>button.is-correct strong { background: #d1fadf; color: #067647; }
+.pyq-search-options>button.is-incorrect { border-color: #e5484d; background: #fff1f0; box-shadow: 0 0 0 1px #e5484d; }
+.pyq-search-options>button.is-incorrect strong { background: #fee4e2; color: #b42318; }
+.pyq-search-options>button.is-excluded { border-color: #e0a11a; background: #fffaeb; box-shadow: 0 0 0 1px #e0a11a; }
 .pyq-search-options strong { width: 24px; height: 24px; display: grid; place-items: center; border-radius: 6px; background: var(--accent-soft); color: var(--accent); font-size: 12px; }
-.pyq-search-actions { display: flex; align-items: center; gap: 14px; margin-top: 16px; }
-.pyq-search-actions>button { min-height: 38px; padding: 8px 16px; border: 0; border-radius: 8px; background: var(--accent); color: white; font-weight: 750; }
-.pyq-search-actions>button:disabled { opacity: .45; }
-.pyq-search-actions p { margin: 0; font-size: 13px; line-height: 1.45; }
-.pyq-search-actions .is-correct { color: #067647; }
-.pyq-search-actions .is-incorrect, .pyq-search-actions [role="alert"] { color: #b42318; }
+.pyq-search-answer-status { margin: 10px 0 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
+.pyq-search-answer-status.is-excluded { color: #946200; }
+.pyq-search-answer-status.is-error { color: #b42318; }
 
 @media (max-width: 700px) {
   .pyq-header-inner, .pyq-page { width: min(100% - 28px, 1120px); }
@@ -146,7 +148,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .pyq-search-card header { flex-direction: column; gap: 5px; }
   .pyq-search-card header small { text-align: left; }
   .pyq-search-syllabus { max-width: none; align-items: flex-start; text-align: left; }
-  .pyq-search-actions { align-items: stretch; flex-direction: column; }
 }
 
 @media (max-width: 430px) {

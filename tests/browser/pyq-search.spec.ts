@@ -5,8 +5,7 @@ test('searches reviewed PYQ stems and option text without exposing answers',asyn
  await expect(page).toHaveURL(/\?q=HBrO/);await expect(page.getByText('1 matching MCQ',{exact:true})).toBeVisible();const card=page.locator('.pyq-search-card');await expect(card).toHaveCount(1);await expect(card).toContainText('Hypobromous acid');await expect(card).toContainText('HBrO₄');await expect(card).not.toContainText('Correct answer');
  await expect(card.getByText('Syllabus location')).toBeVisible();
  await card.getByRole('radio',{name:/HBrO₄/}).click();
- await card.getByRole('button',{name:'Check answer'}).click();
- await expect(card.getByRole('status')).toContainText(/Correct|Incorrect/);
+ await expect(card.locator('.is-correct')).toHaveCount(1);
  const location=card.getByRole('link',{name:/Open .* in the NDA syllabus/});
  await expect(location).toHaveAttribute('href',/\/prepare\/NDA\?scope=/);
  await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
@@ -21,8 +20,7 @@ test('checks a materially corrected live search question at its current revision
  const card=page.locator('.pyq-search-card').filter({hasText:'became the 11th member of ASEAN in 2025'});
  await expect(card).toHaveCount(1);
  await card.getByRole('radio',{name:/Timor-Leste/}).click();
- await card.getByRole('button',{name:'Check answer'}).click();
- await expect(card.getByRole('status')).toHaveText('Correct.');
+ await expect(card.getByRole('radio',{name:/^A:/})).toHaveClass(/is-correct/);
  await expect(card).not.toContainText('excluded from scoring');
  await expect(card).not.toContainText('provisional key');
 });
