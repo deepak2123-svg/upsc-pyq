@@ -1,0 +1,48 @@
+{
+  "paperId": "nda-2023-ii-mathematics",
+  "identifiedPaper": "NDA & NA Examination (II), 2023 - Paper I Mathematics - Series A",
+  "expected": 120,
+  "available": 120,
+  "newRecords": 120,
+  "reusedRecords": 0,
+  "keyStatus": "official-final",
+  "questionPaperSha256": "17f6b6522047267a3deb6c933e8ca0818bf5fbd3e6482512e86157abec084d01",
+  "keySha256": "e193bd43dde362767654bab3196630de7df675399fe175fb38a434b06dfd40a7",
+  "figuresRequired": 0,
+  "formulaOrContentDefectsResolved": [],
+  "requiresReview": [],
+  "chapterTotals": [
+    {
+      "chapter": "algebra",
+      "count": 31
+    },
+    {
+      "chapter": "matrices-and-determinants",
+      "count": 11
+    },
+    {
+      "chapter": "differential-calculus",
+      "count": 24
+    },
+    {
+      "chapter": "trigonometry",
+      "count": 13
+    },
+    {
+      "chapter": "analytical-geometry",
+      "count": 17
+    },
+    {
+      "chapter": "integral-calculus-and-differential-equations",
+      "count": 6
+    },
+    {
+      "chapter": "vector-algebra",
+      "count": 5
+    },
+    {
+      "chapter": "statistics-and-probability",
+      "count": 13
+    }
+  ]
+}

@@ -1,0 +1,2179 @@
+{
+  "paper": {
+    "exam": "NDA",
+    "year": 2023,
+    "session": "II",
+    "subject": "Mathematics",
+    "bookletSeries": "A",
+    "paperCode": "MTH-A",
+    "questionPaperUrl": "https://upsc.gov.in/sites/default/files/QP-NDA-NA-II-2023-Mathematics-040923.pdf"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "pdfPage": 2,
+      "printedPage": 1,
+      "promptLines": [
+        "If z z̅ = |z + z̅|, where z = x + iy and i = √(-1), then the locus of z is a pair of:"
+      ],
+      "options": {
+        "A": "straight lines",
+        "B": "rectangular hyperbolas",
+        "C": "parabolas",
+        "D": "circles"
+      },
+      "topicLabel": "Complex numbers",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 2,
+      "pdfPage": 2,
+      "printedPage": 2,
+      "promptLines": [
+        "If 1! + 3! + 5! + 7! + ... + 199! is divided by 24, what is the remainder?"
+      ],
+      "options": {
+        "A": "3",
+        "B": "6",
+        "C": "7",
+        "D": "9"
+      },
+      "topicLabel": "Sets and Venn diagrams",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 3,
+      "pdfPage": 2,
+      "printedPage": 3,
+      "promptLines": [
+        "What is the value of √(12 + 5i) + √(12 - 5i), where i = √(-1)?"
+      ],
+      "options": {
+        "A": "24",
+        "B": "25",
+        "C": "5√2",
+        "D": "5(√2 - 1)"
+      },
+      "topicLabel": "Complex numbers",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 4,
+      "pdfPage": 2,
+      "printedPage": 4,
+      "promptLines": [
+        "If A = [1, 2, 3]ᵀ, then what is det(I + AA′), where I is the 3 × 3 identity matrix?"
+      ],
+      "options": {
+        "A": "15",
+        "B": "6",
+        "C": "0",
+        "D": "-1"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 5,
+      "pdfPage": 2,
+      "printedPage": 5,
+      "promptLines": [
+        "If A, B and C are square matrices of order 3 and det(BC) = 2 det(A), then what is det(2A⁻¹BC)?"
+      ],
+      "options": {
+        "A": "16",
+        "B": "8",
+        "C": "4",
+        "D": "2"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 6,
+      "pdfPage": 2,
+      "printedPage": 6,
+      "promptLines": [
+        "If the nth term of a sequence is (2n + 5)/7, then what is the sum of its first 140 terms?"
+      ],
+      "options": {
+        "A": "2840",
+        "B": "2780",
+        "C": "2920",
+        "D": "5700"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 7,
+      "pdfPage": 2,
+      "printedPage": 7,
+      "promptLines": [
+        "Let A be a skew-symmetric matrix of order 3. What is det(4A⁴) − det(3A³) + det(2A²) − det(A) + det(−I), where I is the identity matrix of order 3?"
+      ],
+      "options": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 8,
+      "pdfPage": 3,
+      "printedPage": 8,
+      "promptLines": [
+        "If A = [[0,3,4],[-3,0,5],[-4,-5,0]], then which one of the following statements is correct?"
+      ],
+      "options": {
+        "A": "A² is symmetric and det(A²)=0",
+        "B": "A² is symmetric and det(A²)≠0",
+        "C": "A² is skew-symmetric and det(A²)=0",
+        "D": "A² is skew-symmetric and det(A²)≠0"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 9,
+      "pdfPage": 3,
+      "printedPage": 9,
+      "promptLines": [
+        "If A = diag(2,3,4), consider: 1. Aⁿ will always be singular for every positive integer n. 2. Aⁿ will always be diagonal for every positive integer n. 3. Aⁿ will always be symmetric for every positive integer n. Select the correct answer."
+      ],
+      "options": {
+        "A": "1 and 2 only",
+        "B": "2 and 3 only",
+        "C": "1 and 3 only",
+        "D": "1, 2 and 3"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 10,
+      "pdfPage": 3,
+      "printedPage": 10,
+      "promptLines": [
+        "If (a + b), 2b, (b + c) are in HP, then which one of the following is correct?"
+      ],
+      "options": {
+        "A": "a, b and c are in AP",
+        "B": "a - b, b - c and c - a are in AP",
+        "C": "a, b and c are in GP",
+        "D": "a - b, b - c and c - a are in GP"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 11,
+      "pdfPage": 3,
+      "printedPage": 11,
+      "promptLines": [
+        "Let t₁, t₂, t₃, … be in GP. What is (t₁t₃⋯t₂₁)^(1/11) equal to?"
+      ],
+      "options": {
+        "A": "t₁₀",
+        "B": "t₁₀²",
+        "C": "t₁₁",
+        "D": "t₁₁²"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 12,
+      "pdfPage": 3,
+      "printedPage": 12,
+      "promptLines": [
+        "Which one of the following is a square root of −√(−1)?"
+      ],
+      "options": {
+        "A": "1+i",
+        "B": "(1−i)/√2",
+        "C": "(1+i)/√2",
+        "D": "i/√2"
+      },
+      "topicLabel": "Complex numbers",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 13,
+      "pdfPage": 3,
+      "printedPage": 13,
+      "promptLines": [
+        "What is the maximum number of points of intersection of 10 circles?"
+      ],
+      "options": {
+        "A": "45",
+        "B": "60",
+        "C": "90",
+        "D": "120 1 2 3 10 11"
+      },
+      "topicLabel": "Permutations and combinations",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 14,
+      "pdfPage": 4,
+      "printedPage": 14,
+      "promptLines": [
+        "A set S contains (2n + 1) elements. There are 4096 subsets of S which contain at most n elements. What is n equal to?"
+      ],
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "topicLabel": "Sets and Venn diagrams",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 15,
+      "pdfPage": 4,
+      "printedPage": 15,
+      "promptLines": [
+        "If det([[x²+3x,x−1,x+3],[x+1,−2x,x−4],[x−3,x+4,3x]]) = ax⁴+bx³+cx²+dx+e, what is e?"
+      ],
+      "options": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 16,
+      "pdfPage": 4,
+      "printedPage": 16,
+      "promptLines": [
+        "If all elements of a third order determinant are equal to 1 or -1, then the value of the determinant is:"
+      ],
+      "options": {
+        "A": "0 only",
+        "B": "an even number but not necessarily 0",
+        "C": "an odd number",
+        "D": "0, 1 or -1"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 17,
+      "pdfPage": 4,
+      "printedPage": 17,
+      "promptLines": [
+        "If A = [[2,−1,0],[−1,3,0],[1,0,1]], what is det(adj(adj A))?"
+      ],
+      "options": {
+        "A": "5",
+        "B": "25",
+        "C": "125",
+        "D": "625"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 18,
+      "pdfPage": 4,
+      "printedPage": 18,
+      "promptLines": [
+        "If A = diag(1,1,1), what is 23A³ − 19A² − 4A equal to?"
+      ],
+      "options": {
+        "A": "Null matrix of order 3",
+        "B": "Identity matrix of order 3",
+        "C": "diag(2,2,2)",
+        "D": "diag(7,7,7)"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 19,
+      "pdfPage": 4,
+      "printedPage": 19,
+      "promptLines": [
+        "The value of the determinant of a matrix A of order 3 is 3. If C is the matrix of cofactors of the matrix A, then what is the value of determinant of C2?"
+      ],
+      "options": {
+        "A": "3",
+        "B": "9",
+        "C": "81",
+        "D": "729"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 20,
+      "pdfPage": 5,
+      "printedPage": 20,
+      "promptLines": [
+        "If Aₖ = [[k−1,k],[k−2,k+1]], what is det(A₁)+det(A₂)+det(A₃)+⋯+det(A₁₀₀)?"
+      ],
+      "options": {
+        "A": "100",
+        "B": "1000",
+        "C": "9900",
+        "D": "10000"
+      },
+      "topicLabel": "Determinants: value and properties",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 21,
+      "pdfPage": 5,
+      "printedPage": 21,
+      "promptLines": [
+        "The Cartesian product A × A has 16 elements among which are (0, 2) and (1, 3). Which of the following statements is/are correct? 1. It is possible to determine set A. 2. A × A contains the element (3, 2). Select the correct answer using the code given below:"
+      ],
+      "options": {
+        "A": "1 only",
+        "B": "2 only",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "topicLabel": "Sets and Venn diagrams",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 22,
+      "pdfPage": 5,
+      "printedPage": 22,
+      "promptLines": [
+        "Let A = {1, 2, 3, ..., 20}. Define a relation R from A to A by R = {(x, y) : 4x - 3y = 1}, where x, y ∈ A. Which of the following statements is/are correct? 1. The domain of R is {1, 4, 7, 10, 13, 16). 2. The range of R is {1, 5, 9, 13, 17). 3. The range of R is equal to codomain of R. Select the correct answer using the code given below:"
+      ],
+      "options": {
+        "A": "1 only",
+        "B": "2 only",
+        "C": "1 and 2",
+        "D": "2 and 3"
+      },
+      "topicLabel": "Relations and equivalence relations",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 23,
+      "pdfPage": 5,
+      "printedPage": 23,
+      "promptLines": [
+        "Consider: 1. f(x)={x³ for 0≤x≤2; 4x for 2≤x≤8} is a function. 2. g(x)={x² for 0≤x≤4; 3x for 4≤x≤8} is a function. Which statement(s) are correct?"
+      ],
+      "options": {
+        "A": "1 only",
+        "B": "2 only",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2 1 2 3 100"
+      },
+      "topicLabel": "Composite and inverse functions",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 24,
+      "pdfPage": 6,
+      "printedPage": 24,
+      "promptLines": [
+        "Consider the following statements 1. A = (A ∪ B) ∪ (A - B), 2. A ∪ (B - A) = (A ∪ B) 3. B = (A ∪ B) - (A - B) Which of the statements given above are correct?"
+      ],
+      "options": {
+        "A": "1 and 2 only",
+        "B": "2 and 3 only",
+        "C": "1 and 3 only",
+        "D": "1, 2 and 3"
+      },
+      "topicLabel": "Sets and Venn diagrams",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 25,
+      "pdfPage": 6,
+      "printedPage": 25,
+      "promptLines": [
+        "A function satisfies f(x−y)=f(x)/f(y), where f(y)≠0. If f(1)=0.5, what is f(2)+f(3)+f(4)+f(5)+f(6)?"
+      ],
+      "options": {
+        "A": "15/32",
+        "B": "17/32",
+        "C": "29/64",
+        "D": "31/64"
+      },
+      "topicLabel": "Composite and inverse functions",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 26,
+      "pdfPage": 6,
+      "printedPage": 26,
+      "promptLines": [
+        "What is 2 cot((1/2) cos⁻¹(√5/3)) equal to?"
+      ],
+      "options": {
+        "A": "−1",
+        "B": "1",
+        "C": "3+√5",
+        "D": "3−√5"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 27,
+      "pdfPage": 6,
+      "printedPage": 27,
+      "promptLines": [
+        "If sec⁻¹p − cosec⁻¹q = 0, where p>0 and q>0, what is p⁻²+q⁻²?"
+      ],
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "1/2",
+        "D": "1/(2√2)"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 28,
+      "pdfPage": 6,
+      "printedPage": 28,
+      "promptLines": [
+        "What is 1 + sin²(cos⁻¹(3/√17)) equal to?"
+      ],
+      "options": {
+        "A": "25/17",
+        "B": "8/17",
+        "C": "9/17",
+        "D": "47/17"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 29,
+      "pdfPage": 6,
+      "printedPage": 29,
+      "promptLines": [
+        "If tan(π cosθ)=cot(π sinθ), 0<θ<π/2, what is 8sin²(θ+π/4)?"
+      ],
+      "options": {
+        "A": "16",
+        "B": "2",
+        "C": "1",
+        "D": "1/2"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 30,
+      "pdfPage": 6,
+      "printedPage": 30,
+      "promptLines": [
+        "If tanα=1/7, sinβ=1/√10 and 0<α,β<π/2, what is cos(α+2β)?"
+      ],
+      "options": {
+        "A": "−1/2",
+        "B": "−1/√2",
+        "C": "1/√2",
+        "D": "1/2"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 31,
+      "pdfPage": 7,
+      "printedPage": 31,
+      "promptLines": [
+        "For the next two items, consider (1−x)⁴+(5−x)⁴=82. What is the number of real roots?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "2",
+        "C": "4",
+        "D": "8"
+      },
+      "topicLabel": "Quadratic equations",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 32,
+      "pdfPage": 7,
+      "printedPage": 32,
+      "promptLines": [
+        "For the equation (1−x)⁴+(5−x)⁴=82, what is the sum of all roots?"
+      ],
+      "options": {
+        "A": "24",
+        "B": "12",
+        "C": "10",
+        "D": "6"
+      },
+      "topicLabel": "Quadratic equations",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 33,
+      "pdfPage": 7,
+      "printedPage": 33,
+      "promptLines": [
+        "For the next three items, consider equation I: z³+2z²+2z+1=0 and equation II: z¹⁹⁸⁵+z¹⁰⁰+1=0. What are the roots of equation I?"
+      ],
+      "options": {
+        "A": "1, ω, ω2",
+        "B": "-1, ω, ω2",
+        "C": "1, -ω, ω2",
+        "D": "-1, -ω, -ω2"
+      },
+      "topicLabel": "Complex numbers",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 34,
+      "pdfPage": 7,
+      "printedPage": 34,
+      "promptLines": [
+        "For equation II, z¹⁹⁸⁵+z¹⁰⁰+1=0, which option is a root?"
+      ],
+      "options": {
+        "A": "-1",
+        "B": "-ω",
+        "C": "-ω2",
+        "D": "ω"
+      },
+      "topicLabel": "Complex numbers",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 35,
+      "pdfPage": 7,
+      "printedPage": 35,
+      "promptLines": [
+        "How many roots are common to z³+2z²+2z+1=0 and z¹⁹⁸⁵+z¹⁰⁰+1=0?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "topicLabel": "Complex numbers",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 36,
+      "pdfPage": 7,
+      "printedPage": 36,
+      "promptLines": [
+        "For the next two items, (a+b)x²−(a+b+c)x+k=0, where a,b,c are real. If k=c/2 (c≠0), then the roots are:"
+      ],
+      "options": {
+        "A": "Real and equal",
+        "B": "Real and unequal",
+        "C": "Real iff a > c",
+        "D": "Complex but not real"
+      },
+      "topicLabel": "Quadratic equations",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 37,
+      "pdfPage": 8,
+      "printedPage": 37,
+      "promptLines": [
+        "For (a+b)x²−(a+b+c)x+k=0, if one root is −1, what are the two roots?"
+      ],
+      "options": {
+        "A": "and",
+        "B": "and",
+        "C": "1 and",
+        "D": "-1 and"
+      },
+      "topicLabel": "Quadratic equations",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 38,
+      "pdfPage": 8,
+      "printedPage": 38,
+      "promptLines": [
+        "For the next three items, let (1+x)ⁿ=1+T₁x+T₂x²+⋯+Tₙxⁿ. What is T₁+2T₂+3T₃+⋯+nTₙ?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2n",
+        "D": "n2n - 1"
+      },
+      "topicLabel": "Binomial theorem",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 39,
+      "pdfPage": 8,
+      "printedPage": 39,
+      "promptLines": [
+        "For (1+x)ⁿ=1+T₁x+T₂x²+⋯+Tₙxⁿ, what is 1−T₁+2T₂−3T₃+⋯+(−1)ⁿnTₙ?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "-2n - 1",
+        "C": "n2n - 1",
+        "D": "1"
+      },
+      "topicLabel": "Binomial theorem",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 40,
+      "pdfPage": 8,
+      "printedPage": 40,
+      "promptLines": [
+        "For (1+x)ⁿ=1+T₁x+T₂x²+⋯+Tₙxⁿ, what is T₁+T₂+⋯+Tₙ?"
+      ],
+      "options": {
+        "A": "2n",
+        "B": "2n - 1",
+        "C": "2n - 1",
+        "D": "2n + 1"
+      },
+      "topicLabel": "Binomial theorem",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 41,
+      "pdfPage": 8,
+      "printedPage": 41,
+      "promptLines": [
+        "For the next two items, f(x)=x²−1 and (g∘f)(x)=x−√(x+1). Which option can be g(x)?"
+      ],
+      "options": {
+        "A": "√(x+1)−⁴√(x+1)",
+        "B": "√(x+1)−⁴√(x+1)+1",
+        "C": "√(x+1)+⁴√(x+1)",
+        "D": "x+1−√(x+1)+1"
+      },
+      "topicLabel": "Composite and inverse functions",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 42,
+      "pdfPage": 8,
+      "printedPage": 42,
+      "promptLines": [
+        "Refer to the passage above. What is g(15) equal to ?"
+      ],
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4 1 2 3 n 1 2 3 n 1 2 3 n 1 2 3 n"
+      },
+      "topicLabel": "Composite and inverse functions",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 43,
+      "pdfPage": 9,
+      "printedPage": 43,
+      "promptLines": [
+        "For the next two items, f is defined on ℝ−{0} and 2f(x)+f(1/x)=x+3. What is f(0.5)?"
+      ],
+      "options": {
+        "A": "1/2",
+        "B": "2/3",
+        "C": "1",
+        "D": "2"
+      },
+      "topicLabel": "Composite and inverse functions",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 44,
+      "pdfPage": 9,
+      "printedPage": 44,
+      "promptLines": [
+        "Refer to the passage above. If f is differentiable, then what is f'(0.5) equal to?"
+      ],
+      "options": {
+        "A": "1/4",
+        "B": "2/3",
+        "C": "2",
+        "D": "4"
+      },
+      "topicLabel": "Composite and inverse functions",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 45,
+      "pdfPage": 9,
+      "printedPage": 45,
+      "promptLines": [
+        "For the next two items, f(x)=det([[x+1,2,3],[2,x+4,6],[3,6,x+9]]). On which interval is f decreasing?"
+      ],
+      "options": {
+        "A": "[−28/3,0]",
+        "B": "[0,28/3]",
+        "C": "[0,50/3]",
+        "D": "[0,56/3]"
+      },
+      "topicLabel": "Maxima and minima",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 46,
+      "pdfPage": 9,
+      "printedPage": 46,
+      "promptLines": [
+        "Refer to the passage above. The function attains local minimum value at :"
+      ],
+      "options": {
+        "A": "x=−28/3",
+        "B": "x=−1",
+        "C": "x=0",
+        "D": "x=28/3"
+      },
+      "topicLabel": "Maxima and minima",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 47,
+      "pdfPage": 9,
+      "printedPage": 47,
+      "promptLines": [
+        "For the next two items, 4x²+y²=9. What is the maximum value of y?"
+      ],
+      "options": {
+        "A": "3/2",
+        "B": "3",
+        "C": "4",
+        "D": "6"
+      },
+      "topicLabel": "Maxima and minima",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 48,
+      "pdfPage": 9,
+      "printedPage": 48,
+      "promptLines": [
+        "Refer to the passage above. What is the maximum value of xy ?"
+      ],
+      "options": {
+        "A": "9/4",
+        "B": "3/2",
+        "C": "4/9",
+        "D": "2/3"
+      },
+      "topicLabel": "Maxima and minima",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 49,
+      "pdfPage": 10,
+      "printedPage": 49,
+      "promptLines": [
+        "For the next two items, f(x)=π+sin²x. What is the range of f?"
+      ],
+      "options": {
+        "A": "[0, 1]",
+        "B": "[π, π + 1]",
+        "C": "[π - 1, π + 1]",
+        "D": "[π - 1, π - 1]"
+      },
+      "topicLabel": "Composite and inverse functions",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 50,
+      "pdfPage": 10,
+      "printedPage": 50,
+      "promptLines": [
+        "Refer to the passage above. What is the period of the function?"
+      ],
+      "options": {
+        "A": "2π",
+        "B": "π",
+        "C": "π/2",
+        "D": "non-periodic"
+      },
+      "topicLabel": "Composite and inverse functions",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 51,
+      "pdfPage": 10,
+      "printedPage": 51,
+      "promptLines": [
+        "For the next two items, a parabola passes through (1,2) and satisfies dy/dx=2y/x, with x>0,y>0. What is its directrix?"
+      ],
+      "options": {
+        "A": "y=−1/8",
+        "B": "y=1/8",
+        "C": "x=−1/8",
+        "D": "x=1/8"
+      },
+      "topicLabel": "Parabola, ellipse and hyperbola",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 52,
+      "pdfPage": 10,
+      "printedPage": 52,
+      "promptLines": [
+        "Refer to the passage above. What is the length of latus rectum of the parabola?"
+      ],
+      "options": {
+        "A": "1",
+        "B": "1/2",
+        "C": "1/4",
+        "D": "1/8"
+      },
+      "topicLabel": "Parabola, ellipse and hyperbola",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 53,
+      "pdfPage": 10,
+      "printedPage": 53,
+      "promptLines": [
+        "For the next two items, f(x)=(a^(x−1)+b^(x−1))/2 and g(x)=x−1. What is lim(x→1)(f(x)−1)/g(x)?"
+      ],
+      "options": {
+        "A": "ln(ab)/4",
+        "B": "ln(ab)/2",
+        "C": "ln(ab)",
+        "D": "2ln(ab)"
+      },
+      "topicLabel": "Limits",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 54,
+      "pdfPage": 10,
+      "printedPage": 54,
+      "promptLines": [
+        "For the functions above, what is lim(x→1) f(x)^(1/g(x))?"
+      ],
+      "options": {
+        "A": "⁴√(ab)",
+        "B": "ab",
+        "C": "2ab",
+        "D": "√(ab)/2"
+      },
+      "topicLabel": "Limits",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 55,
+      "pdfPage": 11,
+      "printedPage": 55,
+      "promptLines": [
+        "For the next two items, f(x)=√(2−x)+√(2+x). What is the domain?"
+      ],
+      "options": {
+        "A": "(-2, 2)",
+        "B": "[-2, 2]",
+        "C": "R - (-2, 2)",
+        "D": "R - [2, 2]"
+      },
+      "topicLabel": "Functions: domain, range and graph",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 56,
+      "pdfPage": 11,
+      "printedPage": 56,
+      "promptLines": [
+        "Refer to the passage above. What is the greatest value of the function?"
+      ],
+      "options": {
+        "A": "√3",
+        "B": "√6",
+        "C": "√8",
+        "D": "4"
+      },
+      "topicLabel": "Functions: domain, range and graph",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 57,
+      "pdfPage": 11,
+      "printedPage": 57,
+      "promptLines": [
+        "For the next two items, f(x)=|x|, g(x)=[x]−1 and h(x)=f(g(x))/g(f(x)), where [·] is the greatest-integer function. What is lim(x→0⁺)h(x)?"
+      ],
+      "options": {
+        "A": "-2",
+        "B": "-1",
+        "C": "0",
+        "D": "1"
+      },
+      "topicLabel": "Limits",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 58,
+      "pdfPage": 11,
+      "printedPage": 58,
+      "promptLines": [
+        "For the functions above, what is lim(x→0⁻)h(x)?"
+      ],
+      "options": {
+        "A": "-2",
+        "B": "-1",
+        "C": "0",
+        "D": "2"
+      },
+      "topicLabel": "Limits",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 59,
+      "pdfPage": 11,
+      "printedPage": 59,
+      "promptLines": [
+        "For the next two items, f(x)={(x−3)/|x−3|+a, x<3; a−b, x=3; (x−3)/|x−3|+b, x>3}, and f is continuous at x=3. What is a?"
+      ],
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "topicLabel": "Continuity",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 60,
+      "pdfPage": 11,
+      "printedPage": 60,
+      "promptLines": [
+        "Refer to the passage above. What is the value of b?"
+      ],
+      "options": {
+        "A": "-1",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "topicLabel": "Continuity",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 61,
+      "pdfPage": 12,
+      "printedPage": 61,
+      "promptLines": [
+        "For the next two items, let I=∫₋₂π²π (sin⁴x+cos⁴x)/(1+3ˣ) dx. What is ∫₀π(sin⁴x+cos⁴x)dx?"
+      ],
+      "options": {
+        "A": "3π/8",
+        "B": "3π/4",
+        "C": "3π/2",
+        "D": "3π"
+      },
+      "topicLabel": "Definite integrals and areas",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 62,
+      "pdfPage": 12,
+      "printedPage": 62,
+      "promptLines": [
+        "Refer to the passage above. What is I equal to?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "3π/4",
+        "C": "3π/2",
+        "D": "3π"
+      },
+      "topicLabel": "Definite integrals and areas",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 63,
+      "pdfPage": 12,
+      "printedPage": 63,
+      "promptLines": [
+        "For the next two items, f(x)={ax(x+1)+b, x<1; x−1, 1≤x≤2}. If f is differentiable at x=1, what is a+b?"
+      ],
+      "options": {
+        "A": "−1/3",
+        "B": "−1",
+        "C": "0",
+        "D": "1"
+      },
+      "topicLabel": "Continuity",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 64,
+      "pdfPage": 12,
+      "printedPage": 64,
+      "promptLines": [
+        "For the function above, what is lim(x→0)f(x)?"
+      ],
+      "options": {
+        "A": "−1/3",
+        "B": "−2/3",
+        "C": "0",
+        "D": "1"
+      },
+      "topicLabel": "Continuity",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 65,
+      "pdfPage": 12,
+      "printedPage": 65,
+      "promptLines": [
+        "If f(x) = |ln|x|| where 0 < x < 1, then what is f'(0.5) equal to ?"
+      ],
+      "options": {
+        "A": "-2",
+        "B": "-1",
+        "C": "0",
+        "D": "2"
+      },
+      "topicLabel": "Rules of differentiation",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 66,
+      "pdfPage": 12,
+      "printedPage": 66,
+      "promptLines": [
+        "If f′(x)=cos(ln x) and y=f((2x−3)/x), what is dy/dx?"
+      ],
+      "options": {
+        "A": "cos(ln((2x−3)/x))",
+        "B": "−(3/x²)sin(ln((2x−3)/x))",
+        "C": "(3/x²)cos(ln((2x−3)/x))",
+        "D": "−(3/x²)cos(ln((2x−3)/x))"
+      },
+      "topicLabel": "Rules of differentiation",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 67,
+      "pdfPage": 13,
+      "printedPage": 67,
+      "promptLines": [
+        "What is ∫₀^(8π)|sin x| dx?"
+      ],
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "8",
+        "D": "16"
+      },
+      "topicLabel": "Definite integrals and areas",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 68,
+      "pdfPage": 13,
+      "printedPage": 68,
+      "promptLines": [
+        "What is the area between f(x)=x|x| and the x-axis for x∈[−1,1]?"
+      ],
+      "options": {
+        "A": "2/3",
+        "B": "1/2",
+        "C": "1/4",
+        "D": "1/3"
+      },
+      "topicLabel": "Definite integrals and areas",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 69,
+      "pdfPage": 13,
+      "printedPage": 69,
+      "promptLines": [
+        "For x²(d³y/dx³)²+(dy/dx)⁴+sin x=0, what are the order and degree?"
+      ],
+      "options": {
+        "A": "3, 4",
+        "B": "1, 4",
+        "C": "2, 2",
+        "D": "3, 2"
+      },
+      "topicLabel": "Differential equations: order, degree and formation",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 70,
+      "pdfPage": 13,
+      "printedPage": 70,
+      "promptLines": [
+        "What is the differential equation of all parabolas y²=4a(x−b)?"
+      ],
+      "options": {
+        "A": "y″+(y′)²=0",
+        "B": "y″+x²(y′)²=0",
+        "C": "y²y″+(y′)²=0",
+        "D": "yy″+(y′)²=0"
+      },
+      "topicLabel": "Solving differential equations; growth and decay",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 71,
+      "pdfPage": 13,
+      "printedPage": 71,
+      "promptLines": [
+        "For the next two items, a₁,a₂,… are in AP and a₁+a₄+a₇+a₁₀+a₁₃+a₁₆+a₁₉+a₂₂=300. What is a₁+a₂−a₃−a₄−a₅−a₆+a₇+a₈?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "25",
+        "C": "125",
+        "D": "250"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 72,
+      "pdfPage": 13,
+      "printedPage": 72,
+      "promptLines": [
+        "For the AP above, what is Σ(n=1 to 34) aₙ?"
+      ],
+      "options": {
+        "A": "900",
+        "B": "1025",
+        "C": "1200",
+        "D": "1275 1 2 3 ... 1 5 10 15 20 25 30 34 1 5 10 15 20 25 30 34"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 73,
+      "pdfPage": 14,
+      "printedPage": 73,
+      "promptLines": [
+        "For the next two items, p=cos(π/5)cos(2π/5) and q=cos(4π/5)cos(8π/5). What is p+q?"
+      ],
+      "options": {
+        "A": "−1/2",
+        "B": "−1/4",
+        "C": "0",
+        "D": "1/2"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 74,
+      "pdfPage": 14,
+      "printedPage": 74,
+      "promptLines": [
+        "Refer to the passage above. What is the value of pq?"
+      ],
+      "options": {
+        "A": "−1/16",
+        "B": "−1/4",
+        "C": "1/4",
+        "D": "1/16"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 75,
+      "pdfPage": 14,
+      "printedPage": 75,
+      "promptLines": [
+        "For the next two items, p=1/3−tan3x/tanx and q=1−3tan²x, where 0<x<π and x≠π/2. What is pq?"
+      ],
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "8/3",
+        "D": "−8/3"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 76,
+      "pdfPage": 14,
+      "printedPage": 76,
+      "promptLines": [
+        "For the functions p and q above, for how many values of x does 1/p become zero?"
+      ],
+      "options": {
+        "A": "No value",
+        "B": "Only one value",
+        "C": "Only two values",
+        "D": "Only three values"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 77,
+      "pdfPage": 14,
+      "printedPage": 77,
+      "promptLines": [
+        "For the next two items, sinx+siny=√3(cosy−cosx), x+y=π/2 and 0<x,y<π/2. What is sin3x+sin3y?"
+      ],
+      "options": {
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "3"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 78,
+      "pdfPage": 14,
+      "printedPage": 78,
+      "promptLines": [
+        "Under the same conditions, what is cos³x+cos³y?"
+      ],
+      "options": {
+        "A": "3√3/8",
+        "B": "3√6/8",
+        "C": "3√6/4",
+        "D": "1"
+      },
+      "topicLabel": "Trigonometric ratios and identities",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 79,
+      "pdfPage": 15,
+      "printedPage": 79,
+      "promptLines": [
+        "For the next two items, angles A,B,C of triangle ABC are in the ratio 3:5:4, with opposite sides a,b,c. What is a+b+√2c equal to?"
+      ],
+      "options": {
+        "A": "За",
+        "B": "2b",
+        "C": "3b",
+        "D": "2c"
+      },
+      "topicLabel": "Properties of triangles",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 80,
+      "pdfPage": 15,
+      "printedPage": 80,
+      "promptLines": [
+        "For the same triangle, what is a²:b²:c²?"
+      ],
+      "options": {
+        "A": "2:(2+√3):3",
+        "B": "2:(2−√3):2",
+        "C": "2:(2+√3):2",
+        "D": "2:(2−√3):3"
+      },
+      "topicLabel": "Properties of triangles",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 81,
+      "pdfPage": 15,
+      "printedPage": 81,
+      "promptLines": [
+        "What is the equation of directrix of parabola y2 = 4bx, where b < 0 and b2 + b - 2 = 0?"
+      ],
+      "options": {
+        "A": "x + 1 = 0",
+        "B": "x - 2 = 0",
+        "C": "x - 1 = 0",
+        "D": "x + 2 = 0"
+      },
+      "topicLabel": "Parabola, ellipse and hyperbola",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 82,
+      "pdfPage": 15,
+      "printedPage": 82,
+      "promptLines": [
+        "The points (-a, -b), (0, 0), (a, b) and (a2, ab) are:"
+      ],
+      "options": {
+        "A": "lying on the same circle",
+        "B": "vertices of a square",
+        "C": "vertices of a parallelogram that is not a square",
+        "D": "collinear"
+      },
+      "topicLabel": "The straight line",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 83,
+      "pdfPage": 15,
+      "printedPage": 83,
+      "promptLines": [
+        "Given 16p²+49q²−4r²−56pq=0, which point lies on the pair of lines (px+qy+r)(px+qy−r)=0?"
+      ],
+      "options": {
+        "A": "(2,7/2)",
+        "B": "(2,−7/2)",
+        "C": "(4,−7)",
+        "D": "(4,7)"
+      },
+      "topicLabel": "Coordinates and the distance formula",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 84,
+      "pdfPage": 15,
+      "printedPage": 84,
+      "promptLines": [
+        "If 3x+y−5=0 is a chord of x²+y²−25=0, what is the midpoint of the chord?"
+      ],
+      "options": {
+        "A": "(3/4,1/4)",
+        "B": "(3/2,1/2)",
+        "C": "(3/4,−1/4)",
+        "D": "(3/2,−1/2)"
+      },
+      "topicLabel": "The circle",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 85,
+      "pdfPage": 16,
+      "printedPage": 85,
+      "promptLines": [
+        "For x²/(24−k)+y²/(k−16)=2, consider: 1. k=19 gives an ellipse. 2. k=12 gives a hyperbola. 3. k=20 gives a circle. Which are correct?"
+      ],
+      "options": {
+        "A": "Only one",
+        "B": "Only two",
+        "C": "All three",
+        "D": "None"
+      },
+      "topicLabel": "Parabola, ellipse and hyperbola",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 86,
+      "pdfPage": 16,
+      "printedPage": 86,
+      "promptLines": [
+        "For x²/cos²θ−y²/sin²θ=1, consider: 1. foci are independent of θ. 2. eccentricity is secθ. 3. distance between foci is 2. Which are correct?"
+      ],
+      "options": {
+        "A": "Only one",
+        "B": "Only two",
+        "C": "All three",
+        "D": "None"
+      },
+      "topicLabel": "Parabola, ellipse and hyperbola",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 87,
+      "pdfPage": 16,
+      "printedPage": 87,
+      "promptLines": [
+        "For the circle 4x²+4y²−4ax−4ay+a²=0, which statement is correct?"
+      ],
+      "options": {
+        "A": "Only one",
+        "B": "Only two",
+        "C": "All three",
+        "D": "None"
+      },
+      "topicLabel": "The circle",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 88,
+      "pdfPage": 16,
+      "printedPage": 88,
+      "promptLines": [
+        "For what value of k does (k−3)x−(5−k²)y+k²−7k+6=0 represent a family of concurrent lines?"
+      ],
+      "options": {
+        "A": "-1, 1",
+        "B": "-1, 2",
+        "C": "1, -2",
+        "D": "2, -2"
+      },
+      "topicLabel": "The straight line",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 89,
+      "pdfPage": 16,
+      "printedPage": 89,
+      "promptLines": [
+        "The line x + y = 4 cuts the line joining P(-1, 1) and Q(5, 7) at R. What is PR ∶ RQ equal to ?"
+      ],
+      "options": {
+        "A": "1 ∶ 1",
+        "B": "1 ∶ 2",
+        "C": "2 ∶ 1",
+        "D": "1 ∶ 3"
+      },
+      "topicLabel": "The straight line",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 90,
+      "pdfPage": 17,
+      "printedPage": 90,
+      "promptLines": [
+        "What is the sum of the intercepts of the line whose perpendicular distance from origin is 4 units and the angle which the normal makes with positive direction of x-axis is 15°?"
+      ],
+      "options": {
+        "A": "8",
+        "B": "4√6",
+        "C": "8√6",
+        "D": "16"
+      },
+      "topicLabel": "The straight line",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 91,
+      "pdfPage": 17,
+      "printedPage": 91,
+      "promptLines": [
+        "What is the length of the projection of i+2j+3k on 2i+3j−2k?"
+      ],
+      "options": {
+        "A": "1/√17",
+        "B": "2/√17",
+        "C": "3/√17",
+        "D": "2/√14"
+      },
+      "topicLabel": "The dot product",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 92,
+      "pdfPage": 17,
+      "printedPage": 92,
+      "promptLines": [
+        "If |a×b|²+(a·b)²=144 and |b|=4, what is |a|?"
+      ],
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "topicLabel": "Vectors at work: force, moment and geometry",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 93,
+      "pdfPage": 17,
+      "printedPage": 93,
+      "promptLines": [
+        "If θ is the angle between vectors a and b and a·b≥0, which option is correct?"
+      ],
+      "options": {
+        "A": "0≤θ≤π",
+        "B": "π/2≤θ≤π",
+        "C": "0≤θ≤π/2",
+        "D": "0<θ<π/2"
+      },
+      "topicLabel": "The dot product",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 94,
+      "pdfPage": 17,
+      "printedPage": 94,
+      "promptLines": [
+        "The vectors and are collinear if :"
+      ],
+      "options": {
+        "A": "β = 20",
+        "B": "β = 40",
+        "C": "β = -40",
+        "D": "β = 26"
+      },
+      "topicLabel": "Vectors at work: force, moment and geometry",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 95,
+      "pdfPage": 17,
+      "printedPage": 95,
+      "promptLines": [
+        "Let a=(0,1,1), b=(1,0,1). Consider: 1. There is only one unit vector perpendicular to both. 2. The angle between a and b is π/3. Which are correct?"
+      ],
+      "options": {
+        "A": "1 only",
+        "B": "2 only",
+        "C": "Both 1 and 2",
+        "D": "Neither 1 nor 2"
+      },
+      "topicLabel": "Vectors at work: force, moment and geometry",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 96,
+      "pdfPage": 18,
+      "printedPage": 96,
+      "promptLines": [
+        "A line has direction ratios 3,−2,6 and passes through (1,−1,1). Which pair of points on it is at distance 2 from that point?"
+      ],
+      "options": {
+        "A": "(−11/7,13/7,19/7) and (1/7,3/7,5/7)",
+        "B": "(19/7,−11/7,13/7) and (−1/7,3/7,−5/7)",
+        "C": "(13/7,11/7,19/7) and (−1/7,−3/7,5/7)",
+        "D": "(13/7,−11/7,19/7) and (1/7,−3/7,−5/7)"
+      },
+      "topicLabel": "Line and plane in three dimensions",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 97,
+      "pdfPage": 18,
+      "printedPage": 97,
+      "promptLines": [
+        "Which plane is parallel to the line (x−2)/3=(y−3)/4=(z−4)/5?"
+      ],
+      "options": {
+        "A": "2x + 2y + z - 1 = 0",
+        "B": "2x - y - 2z + 5 = 0",
+        "C": "2x + 2y - 2z + 1 = 0",
+        "D": "x - 2y + z - 1 = 0"
+      },
+      "topicLabel": "Line and plane in three dimensions",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 98,
+      "pdfPage": 18,
+      "printedPage": 98,
+      "promptLines": [
+        "What is the angle between the lines 2x = 3y = -z and 6x = -y = -4z?"
+      ],
+      "options": {
+        "A": "0°",
+        "B": "30°",
+        "C": "60°",
+        "D": "90°"
+      },
+      "topicLabel": "Line and plane in three dimensions",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 99,
+      "pdfPage": 18,
+      "printedPage": 99,
+      "promptLines": [
+        "Which equation represents the sphere through (0,0,0), (2,0,0), (0,6,0) and (0,0,8)?"
+      ],
+      "options": {
+        "A": "x²+y²+z²−2x−8z=0",
+        "B": "x²+y²+z²−2x−6y=0",
+        "C": "x²+y²+z²−6y−8z=0",
+        "D": "x²+y²+z²−2x−6y−8z=0"
+      },
+      "topicLabel": "Line and plane in three dimensions",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 100,
+      "pdfPage": 18,
+      "printedPage": 100,
+      "promptLines": [
+        "A point P lies on the line joining A(1, 2, 3) and B(2, 10, 1). If z-coordinate of P is 7, what is the sum of other two coordinates?"
+      ],
+      "options": {
+        "A": "-15",
+        "B": "-13",
+        "C": "-11",
+        "D": "-9"
+      },
+      "topicLabel": "Line and plane in three dimensions",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 101,
+      "pdfPage": 18,
+      "printedPage": 101,
+      "promptLines": [
+        "The sums of deviations of n numbers from 10 and 20 are p and q. If (p−q)²=10000, what is n?"
+      ],
+      "options": {
+        "A": "10",
+        "B": "20",
+        "C": "50",
+        "D": "100"
+      },
+      "topicLabel": "Variance and standard deviation",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 102,
+      "pdfPage": 19,
+      "printedPage": 102,
+      "promptLines": [
+        "If x̄=20 is the mean of x₁,…,x₁₀, what is Σ(i=1 to 10)(3xᵢ−4)/5?"
+      ],
+      "options": {
+        "A": "0",
+        "B": "12",
+        "C": "112",
+        "D": "1012"
+      },
+      "topicLabel": "Variance and standard deviation",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 103,
+      "pdfPage": 19,
+      "printedPage": 103,
+      "promptLines": [
+        "If the mean and the sum of squares of 10 observations are 40 and 16160 respectively, then what is the standard deviation?"
+      ],
+      "options": {
+        "A": "16",
+        "B": "6",
+        "C": "5",
+        "D": "4"
+      },
+      "topicLabel": "Variance and standard deviation",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 104,
+      "pdfPage": 19,
+      "printedPage": 104,
+      "promptLines": [
+        "Three dice are thrown. What is the probability that the sum is a perfect square?"
+      ],
+      "options": {
+        "A": "17/108",
+        "B": "5/108",
+        "C": "19/108",
+        "D": "23/108"
+      },
+      "topicLabel": "Probability and its theorems",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 105,
+      "pdfPage": 19,
+      "printedPage": 105,
+      "promptLines": [
+        "A, B, C and D are mutually exclusive and exhaustive events. If 2P"
+      ],
+      "options": {
+        "A": "12",
+        "B": "15",
+        "C": "20",
+        "D": "30"
+      },
+      "topicLabel": "Probability and its theorems",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 106,
+      "pdfPage": 19,
+      "printedPage": 106,
+      "promptLines": [
+        "Two distinct natural numbers from 1 to 9 are picked at random. What is the probability their product has unit digit 1?"
+      ],
+      "options": {
+        "A": "1/81",
+        "B": "1/72",
+        "C": "1/18",
+        "D": "1/36"
+      },
+      "topicLabel": "Probability and its theorems",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 107,
+      "pdfPage": 19,
+      "printedPage": 107,
+      "promptLines": [
+        "Two dice are thrown. What is the probability that the difference is 2 or 3?"
+      ],
+      "options": {
+        "A": "7/36",
+        "B": "7/18",
+        "C": "5/18",
+        "D": "11/36"
+      },
+      "topicLabel": "Probability and its theorems",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 108,
+      "pdfPage": 19,
+      "printedPage": 108,
+      "promptLines": [
+        "The numbers 1,2,…,10 have frequencies ⁹C₀,⁹C₁,…,⁹C₉ respectively. What is their mean?"
+      ],
+      "options": {
+        "A": "1.1×2⁸",
+        "B": "1.2×7⁴",
+        "C": "5.5",
+        "D": "0.55"
+      },
+      "topicLabel": "Variance and standard deviation",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 109,
+      "pdfPage": 20,
+      "printedPage": 109,
+      "promptLines": [
+        "The probability that a person recovers from a disease is 0.8. What is the probability that exactly 2 persons out of 5 will recover from the disease?"
+      ],
+      "options": {
+        "A": "0.00512",
+        "B": "0.02048",
+        "C": "0.2048",
+        "D": "0.0512"
+      },
+      "topicLabel": "Probability and its theorems",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 110,
+      "pdfPage": 20,
+      "printedPage": 110,
+      "promptLines": [
+        "Suppose that there is a chance for a newly constructed building to collapse, whether the design is faulty or not. The chance that the design is faulty is 10%. The chance that the building collapses is 95% if the design is faulty, otherwise it is 45%. If it is seen that the building has collapsed, then what is the probability that it is due to faulty design?"
+      ],
+      "options": {
+        "A": "0.10",
+        "B": "0.19",
+        "C": "0.45",
+        "D": "0.95"
+      },
+      "topicLabel": "Probability and its theorems",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 111,
+      "pdfPage": 20,
+      "printedPage": 111,
+      "promptLines": [
+        "If r is the correlation coefficient between x and y, what is the correlation coefficient between 3x+4 and −3y+3?"
+      ],
+      "options": {
+        "A": "-r",
+        "B": "r",
+        "C": "√3 r",
+        "D": "-√3r"
+      },
+      "topicLabel": "Correlation and regression",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 112,
+      "pdfPage": 20,
+      "printedPage": 112,
+      "promptLines": [
+        "A fair coin is tossed six times. What is the probability that the sixth result is different from each of the first five results?"
+      ],
+      "options": {
+        "A": "7/16",
+        "B": "1/16",
+        "C": "1/32",
+        "D": "1/64"
+      },
+      "topicLabel": "Probability and its theorems",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 113,
+      "pdfPage": 20,
+      "printedPage": 113,
+      "promptLines": [
+        "If H is the harmonic mean of ¹⁰C₄, ¹⁰C₅ and ¹⁰C₆, what is 270/H?"
+      ],
+      "options": {
+        "A": "1",
+        "B": "14/17",
+        "C": "17/14",
+        "D": "1/31"
+      },
+      "topicLabel": "Progressions: AP, GP and HP",
+      "answerDraft": "C",
+      "publisherKeyDraft": "C",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 114,
+      "pdfPage": 20,
+      "printedPage": 114,
+      "promptLines": [
+        "In a class, there are n students including the students P and Q. What is the probability that P and Q sit together if seats are assigned randomly?"
+      ],
+      "options": {
+        "A": "1/n",
+        "B": "2/n",
+        "C": "4/n",
+        "D": "1/(2n)"
+      },
+      "topicLabel": "Permutations and combinations",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 115,
+      "pdfPage": 20,
+      "printedPage": 115,
+      "promptLines": [
+        "For X∼B(6,p), if 9P(X=4)=P(X=2), what is p?"
+      ],
+      "options": {
+        "A": "1/4",
+        "B": "1/2",
+        "C": "3/4",
+        "D": "4/5"
+      },
+      "topicLabel": "Probability and its theorems",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 116,
+      "pdfPage": 21,
+      "printedPage": 116,
+      "promptLines": [
+        "Consider the following for the next items that follow: Three boys P, Q, R and three girls S, T, U are to be arranged in a row for a group photograph. What is the probability that all three boys sit together?"
+      ],
+      "options": {
+        "A": "1/5",
+        "B": "1/4",
+        "C": "1/3",
+        "D": "1/12"
+      },
+      "topicLabel": "Permutations and combinations",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 117,
+      "pdfPage": 21,
+      "printedPage": 117,
+      "promptLines": [
+        "Refer to the passage above. What is the probability that boys and girls sit alternatively?"
+      ],
+      "options": {
+        "A": "4/5",
+        "B": "1/10",
+        "C": "5/6",
+        "D": "1/7"
+      },
+      "topicLabel": "Permutations and combinations",
+      "answerDraft": "B",
+      "publisherKeyDraft": "B",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 118,
+      "pdfPage": 21,
+      "printedPage": 118,
+      "promptLines": [
+        "Refer to the passage above. What is the probability that no two girls sit together?"
+      ],
+      "options": {
+        "A": "2/5",
+        "B": "3/5",
+        "C": "1/18",
+        "D": "1/5"
+      },
+      "topicLabel": "Permutations and combinations",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 119,
+      "pdfPage": 21,
+      "printedPage": 119,
+      "promptLines": [
+        "Refer to the passage above. What is the probability that P and Q take the two end positions?"
+      ],
+      "options": {
+        "A": "1/15",
+        "B": "7/15",
+        "C": "14/15",
+        "D": "11/45"
+      },
+      "topicLabel": "Permutations and combinations",
+      "answerDraft": "A",
+      "publisherKeyDraft": "A",
+      "solutionHtml": "Official UPSC final key."
+    },
+    {
+      "number": 120,
+      "pdfPage": 21,
+      "printedPage": 120,
+      "promptLines": [
+        "Refer to the passage above. What is the probability that Q and U sit together?"
+      ],
+      "options": {
+        "A": "2/3",
+        "B": "1/4",
+        "C": "5/6",
+        "D": "1/3"
+      },
+      "topicLabel": "Permutations and combinations",
+      "answerDraft": "D",
+      "publisherKeyDraft": "D",
+      "solutionHtml": "Official UPSC final key."
+    }
+  ],
+  "transcriptionAid": {
+    "baseUrl": "local structured transcript"
+  },
+  "publisherKeyAid": {
+    "url": "official UPSC key"
+  }
+}
