@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 
 export default async function Home({searchParams}:{searchParams:Promise<{q?:string}>}) {
   const {q=''}=await searchParams;
-  const inventory = getPreparationExplorerInventory('CSE');
-  return <><SiteHeader searchQuery={q} /><main className="pyq-page"><PyqSearch query={q}/></main><ArchiveWorkspace key="CSE" initialInventory={inventory} /></>;
+  const searching=q.trim().length>0;
+  const inventory = searching ? null : getPreparationExplorerInventory('CSE');
+  return <><SiteHeader searchQuery={q} /><main className="pyq-page"><PyqSearch query={q}/></main>{inventory?<ArchiveWorkspace key="CSE" initialInventory={inventory} />:null}</>;
 }

@@ -12,8 +12,8 @@ test('searches reviewed PYQ stems and option text without exposing answers',asyn
  await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
 
-test('keeps the question library visible for an unmatched term',async({page})=>{
- await page.goto('/?q=term-that-cannot-exist-94721');await expect(page.getByText(/No reviewed MCQs match/)).toBeVisible();await expect(page.getByText('CSE question library',{exact:true})).toBeVisible();
+test('keeps search focused for an unmatched term',async({page})=>{
+ await page.goto('/?q=term-that-cannot-exist-94721');await expect(page.getByText(/No reviewed MCQs match/)).toBeVisible();await expect(page.getByText('CSE question library',{exact:true})).toHaveCount(0);
 });
 
 test('checks a materially corrected live search question at its current revision',async({page})=>{
