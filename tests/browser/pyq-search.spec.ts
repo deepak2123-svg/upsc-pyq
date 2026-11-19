@@ -32,10 +32,13 @@ test('summarises all four exams and groups matching MCQs newest first',async({pa
  const summary=page.getByLabel('Matches for india by exam');
  await expect(summary.locator(':scope > a')).toHaveCount(4);
  expect(await summary.locator(':scope > a').evaluateAll(items=>items.map(item=>item.querySelector('strong')?.textContent))).toEqual(['CSE','CAPF','CDS','NDA']);
+ const pillBox=await summary.locator(':scope > a').first().boundingBox();
+ expect(pillBox?.width).toBeLessThanOrEqual(160);
  const groups=page.locator('.pyq-search-exam-group');
  expect(await groups.count()).toBeGreaterThan(1);
  for(const group of await groups.all()){
   await expect(group.locator(':scope > header')).toContainText('Most recent first');
+  await expect(group).toHaveCSS('border-top-style','solid');
   const years=(await group.locator('.pyq-search-card>header>span').allTextContents()).map(label=>Number(label.match(/\b(20\d{2})\b/)?.[1]));
   expect(years).toEqual([...years].sort((a,b)=>b-a));
  }
