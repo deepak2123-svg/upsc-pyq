@@ -74,12 +74,12 @@ test('homepage search returns answer-free matching MCQs and supports option text
   assert.doesNotMatch(html,/Correct answer|officialAcceptedOptions|"answer"/);
 });
 
-test('homepage search reports no result without weakening the normal library',async()=>{
+test('homepage search reports no result without appending the normal library',async()=>{
   const response=await workerFetch('/?q=term-that-cannot-exist-94721');
   assert.equal(response.status,200);
   const html=await response.text();
   assert.match(html,/No reviewed MCQs match/);
-  assert.match(html,/Question library/i);
+  assert.doesNotMatch(html,/Question library/i);
 });
 
 test("server-renders an exam archive through the browse-first selector", async () => {

@@ -2425,7 +2425,8 @@
         "Judiciary",
         "Education policies",
         "Press policies",
-        "Local self-government"
+        "Local self-government",
+        "Colonial cities and hill stations"
       ],
       "boundary": "Questions testing Colonial Administration in Modern India & National Movement; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "editorial-draft"
@@ -2583,6 +2584,27 @@
       "editorialExampleStatus": "source-question-reviewed",
       "representativeQuestions": [
         "NDA I 2025 GAT Series A Q67: Ripon’s local self-government resolution"
+      ]
+    },
+    {
+      "id": "syllabus:history/modern-india-national-movement/colonial-administration/colonial-cities-and-hill-stations",
+      "parentId": "syllabus:history/modern-india-national-movement/colonial-administration",
+      "kind": "subpart",
+      "label": "Colonial cities and hill stations",
+      "order": 10,
+      "includes": [
+        "Colonial urban planning, cantonments and hill-station development",
+        "Administrative, military and sanitary functions of colonial settlements"
+      ],
+      "excludes": [
+        "Architectural style without a settlement-history task",
+        "Post-independence urban policy",
+        "Physical geography of hill stations without colonial institutions"
+      ],
+      "placementRule": "Use when the tested concept is the historical purpose, organisation or development of a colonial settlement. Add Colonial architecture only when built form or architectural style is independently material.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA II 2015 GAT Series A Q138: architecture, sanitary role and military administration of colonial hill stations"
       ]
     },
     {
@@ -21433,6 +21455,7 @@
       "order": 1,
       "includes": [
         "Competitions and venues",
+        "Athletes and disciplines",
         "Winners and records",
         "Rules and terminology",
         "Sports institutions"
@@ -21457,11 +21480,32 @@
       "editorialExampleStatus": "pending-real-question-pilot"
     },
     {
+      "id": "syllabus:current-affairs/sports-culture-recognition/sports/athletes-and-disciplines",
+      "parentId": "syllabus:current-affairs/sports-culture-recognition/sports",
+      "kind": "subpart",
+      "label": "Athletes and disciplines",
+      "order": 2,
+      "includes": [
+        "Association of an athlete with a sport, event or discipline",
+        "Identity of a sportsperson through the discipline in which they compete"
+      ],
+      "excludes": [
+        "Competition winners or records",
+        "Rules and technical terminology without an athlete-identity task",
+        "A venue or tournament host"
+      ],
+      "placementRule": "Use for athlete-to-discipline identification. Use Winners and records only when a result, medal, title or record is materially tested.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA II 2015 GAT Series A Q149: Vikas Gowda and discus throw"
+      ]
+    },
+    {
       "id": "syllabus:current-affairs/sports-culture-recognition/sports/winners-and-records",
       "parentId": "syllabus:current-affairs/sports-culture-recognition/sports",
       "kind": "subpart",
       "label": "Winners and records",
-      "order": 2,
+      "order": 3,
       "includes": [
         "Winners and records"
       ],
@@ -21477,7 +21521,7 @@
       "parentId": "syllabus:current-affairs/sports-culture-recognition/sports",
       "kind": "subpart",
       "label": "Rules and terminology",
-      "order": 3,
+      "order": 4,
       "includes": [
         "Rules and terminology"
       ],
@@ -21493,7 +21537,7 @@
       "parentId": "syllabus:current-affairs/sports-culture-recognition/sports",
       "kind": "subpart",
       "label": "Sports institutions",
-      "order": 4,
+      "order": 5,
       "includes": [
         "Sports institutions"
       ],

@@ -87,8 +87,8 @@ for (const node of nodes) {
 lines.push('', '## Remaining editorial work', '', 'Review chapter-specific exclusions, adjacent-topic cross-links and real-question examples; complete a pilot for every subject before freezing the registry. Draft metadata is not a claim of completed classification.', '');
 const outputs = [['content/taxonomy/upsc-prelims-v2-draft.json', json], ['docs/upsc-prelims-syllabus-v2.md', lines.join('\n')]];
 if (process.argv.includes('--check')) {
-  for (const [file, expected] of outputs) assert.equal(fs.readFileSync(file, 'utf8'), expected, `Stale artifact: ${file}`);
+  for (const [file, expected] of outputs) assert.equal(fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n'), expected, `Stale artifact: ${file}`);
 } else {
-  for (const [file, value] of outputs) if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== value) fs.writeFileSync(file, value);
+  for (const [file, value] of outputs) if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n') !== value) fs.writeFileSync(file, value);
 }
 console.log(JSON.stringify({ status: registry.status, counts: Object.fromEntries(['subject', 'section', 'chapter', 'subpart'].map(kind => [kind, nodes.filter(node => node.kind === kind).length])) }));

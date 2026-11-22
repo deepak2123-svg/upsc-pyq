@@ -35,7 +35,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 
 - **1. European Companies:** Portuguese; Dutch and Danish; English and French; Factories and trading networks; Carnatic conflicts.
 - **2. British Expansion:** Bengal conquest; Anglo-Mysore wars; Anglo-Maratha wars; Anglo-Burmese wars; Subsidiary alliance; Annexation policies; Punjab conquest.
-- **3. Colonial Administration:** Company government; Crown rule and proclamations; Civil services; Census and surveys; Army and police; Judiciary; Education policies; Press policies; Local self-government.
+- **3. Colonial Administration:** Company government; Crown rule and proclamations; Civil services; Census and surveys; Army and police; Judiciary; Education policies; Press policies; Local self-government; Colonial cities and hill stations.
 - **4. Colonial Economy:** Land revenue settlements; Commercialisation of agriculture; Deindustrialisation; Drain of wealth; Economic critics of colonialism; Transport and communications; Famine policies; Modern industries.
 - **5. Social and Religious Reform:** Brahmo and Prarthana Samaj; Arya Samaj; Aligarh movement; Ramakrishna movement; Theosophical movement; Anti-caste movements; Women and reform.
 - **6. Popular Resistance:** Tribal uprisings; Peasant movements; Civil rebellions; Revolt of 1857; Resistance in princely states.
@@ -305,7 +305,7 @@ Empty concepts remain visible with disabled test actions. Existing unreviewed le
 - **5. Internal and Maritime Security:** Security agencies; Border security; Maritime initiatives; Counter-terrorism developments.
 ### Sports, Culture & Recognition
 
-- **1. Sports:** Competitions and venues; Winners and records; Rules and terminology; Sports institutions.
+- **1. Sports:** Competitions and venues; Athletes and disciplines; Winners and records; Rules and terminology; Sports institutions.
 - **2. Awards and Honours:** Civilian honours; International awards; Literary awards; Arts recognition; Recipients and institutions.
 - **3. Books and Authors:** Books in news; Authors and works; Publication milestones.
 - **4. Culture and Heritage Recognition:** Cultural events; Heritage inscriptions; Cultural institutions; Traditions in news; Language recognition.

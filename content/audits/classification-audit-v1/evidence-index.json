@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "auditVersion": "classification-audit-v1",
+  "cohorts": [
+    {
+      "id": "nda-2015-ii-analogue-risk",
+      "reviewerA": "content/audits/nda-2015-ii-classification-reviewer-a.json",
+      "reviewerB": "content/audits/nda-2015-ii-classification-reviewer-b.json",
+      "adjudication": "content/audits/nda-2015-ii-classification-adjudication.json",
+      "beforeClassificationModule": "scripts/nda-2015-ii-classification.mjs",
+      "classificationRevision": 1,
+      "generatedOutputVerified": true
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "auditVersion": "classification-audit-v1",
+  "paperId": "nda-2015-ii-gat",
+  "reviewer": {
+    "id": "taxonomy-reviewer-b",
+    "method": "blind full-stem-and-options semantic review against taxonomy definitions; existing placement and rationale hidden",
+    "reviewedAt": "2026-11-19",
+    "independent": true
+  },
+  "decisions": [
+    {
+      "questionId": "nda-2015-ii-53",
+      "primaryLeaf": "syllabus:science-technology/space/space-programmes/indian-missions",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the launch chronology of Aryabhata as a milestone in India’s space programme.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-121",
+      "primaryLeaf": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/amendment-and-basic-structure",
+      "additionalLeaves": [
+        "syllabus:polity-governance/constitutional-foundations/constitutional-structure/preamble"
+      ],
+      "tag": "Static",
+      "rationale": "Tests the constitutional amendment that inserted a defining term into the Preamble.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-122",
+      "primaryLeaf": "syllabus:economy/external-sector/balance-of-payments/current-account",
+      "additionalLeaves": [
+        "syllabus:economy/external-sector/balance-of-payments/capital-and-financial-flows"
+      ],
+      "tag": "Event-based",
+      "rationale": "Tests dated Indian balance-of-payments outcomes, chiefly the trade balance and net invisibles, while also materially testing the capital-account balance.",
+      "confidence": "medium",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-124",
+      "primaryLeaf": "syllabus:polity-governance/institutions/judiciary/judicial-review",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Directly tests the constitutional provisions through which the Supreme Court and High Courts exercise judicial review.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-125",
+      "primaryLeaf": "syllabus:history/modern-india-national-movement/british-expansion/subsidiary-alliance",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the obligations and loss of autonomy imposed by Wellesley’s Subsidiary Alliance system.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-126",
+      "primaryLeaf": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests identification of a European traveller through his association with Dara Shukoh’s Mughal court.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-127",
+      "primaryLeaf": "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics",
+      "additionalLeaves": [
+        "syllabus:economy/development/development-policy/five-year-plans"
+      ],
+      "tag": "Event-based",
+      "rationale": "Tests the dated subsector composition of agricultural growth during the Eleventh Plan, with the plan period independently material.",
+      "confidence": "medium",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-129",
+      "primaryLeaf": "syllabus:economy/agriculture/allied-activities/livestock",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests livestock’s contribution to agricultural value added, employment, and inclusive rural growth.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-130",
+      "primaryLeaf": "syllabus:history/modern-india-national-movement/gandhian-movements/non-cooperation-and-khilafat",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the aims, leadership, and organisational decisions of the Khilafat and Non-Cooperation movement.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-131",
+      "primaryLeaf": "syllabus:social-development/health-nutrition/public-health/health-indicators",
+      "additionalLeaves": [
+        "syllabus:social-development/health-nutrition/public-health/maternal-and-child-health"
+      ],
+      "tag": "Event-based",
+      "rationale": "Tests contemporary trends in life expectancy, infant and maternal mortality, and institutional delivery; the latter three also materially concern maternal and child health.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-132",
+      "primaryLeaf": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/schedules",
+      "additionalLeaves": [
+        "syllabus:polity-governance/institutions/parliament/composition"
+      ],
+      "tag": "Static",
+      "rationale": "Tests the subject matter of the Fourth Schedule, specifically allocation of Council of States seats.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-133",
+      "primaryLeaf": "syllabus:history/modern-india-national-movement/colonial-administration/crown-rule-and-proclamations",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the British Resident as the Governor-General’s representative in indirectly ruled Indian states.",
+      "confidence": "medium",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-134",
+      "primaryLeaf": "syllabus:history/modern-india-national-movement/colonial-economy/land-revenue-settlements",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests zamindari ownership, fixed revenue obligations, and peasant effects under the Permanent Settlement.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-135",
+      "primaryLeaf": "syllabus:history/medieval-india/regional-kingdoms/vijayanagara",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the decisive battle and chronology associated with Vijayanagara’s political collapse.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-137",
+      "primaryLeaf": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the places, observations, and agrarian claims recorded by travellers to medieval and Mughal India.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-138",
+      "primaryLeaf": "syllabus:history/art-culture/architecture/colonial-architecture",
+      "additionalLeaves": [
+        "syllabus:history/modern-india-national-movement/colonial-administration/army-and-police"
+      ],
+      "tag": "Static",
+      "rationale": "Tests the European built form and military-sanitary functions of colonial hill stations; the existing leaves only partially cover the broader colonial-urbanism concept.",
+      "confidence": "low",
+      "taxonomyChangeNeeded": true
+    },
+    {
+      "questionId": "nda-2015-ii-139",
+      "primaryLeaf": "syllabus:history/art-culture/architecture/vesara-and-regional-temples",
+      "additionalLeaves": [
+        "syllabus:history/art-culture/architecture/nagara-temples",
+        "syllabus:history/art-culture/architecture/dravida-temples"
+      ],
+      "tag": "Static",
+      "rationale": "Tests dynasty-to-temple attribution across Chalukya-Hoysala regional traditions, Konark’s Nagara tradition, and a Pandya-associated Dravida gopura.",
+      "confidence": "medium",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-140",
+      "primaryLeaf": "syllabus:history/art-culture/music/hindustani-traditions",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests identification of the Senia lineage as a Hindustani musical tradition invoking Tansen.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-141",
+      "primaryLeaf": "syllabus:history/modern-india-national-movement/social-and-religious-reform/women-and-reform",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the reformer and association connected with advocacy of widow remarriage.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-142",
+      "primaryLeaf": "syllabus:international-relations-organisations/regional-groupings/regional-and-plurilateral-forums/south-asian-forums",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the institutional headquarters of the principal South Asian regional forum.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-143",
+      "primaryLeaf": "syllabus:history/modern-india-national-movement/popular-resistance/peasant-movements",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the leadership of the Faraizi mobilisation in eastern Bengal, conventionally treated as an agrarian-peasant movement with a religious reform origin.",
+      "confidence": "medium",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-144",
+      "primaryLeaf": "syllabus:history/modern-india-national-movement/colonial-administration/crown-rule-and-proclamations",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the chairmanship of the Indian States Committee, an inquiry into Crown relations and paramountcy over Indian states.",
+      "confidence": "medium",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-145",
+      "primaryLeaf": "syllabus:polity-governance/federalism-local-government/local-government/panchayats",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the state-level exclusions from the constitutional Panchayati Raj framework under Part IX.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-146",
+      "primaryLeaf": "syllabus:economy/development/development-policy/five-year-plans",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests authorship associated with the drafting of India’s First Five Year Plan.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-147",
+      "primaryLeaf": "syllabus:current-affairs/sports-culture-recognition/books-and-authors/authors-and-works",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Tests the author-work pairing for a contemporary book on Pakistan.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-148",
+      "primaryLeaf": "syllabus:current-affairs/sports-culture-recognition/personalities-and-commemorations/significant-days-and-themes",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Tests the year-specific official theme of the International Day of United Nations Peacekeepers.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "nda-2015-ii-149",
+      "primaryLeaf": "syllabus:current-affairs/sports-culture-recognition/sports/winners-and-records",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Tests a contemporary athlete-to-discipline association; the selected leaf is the nearest sports-person leaf, but it does not expressly cover athlete identities or disciplines.",
+      "confidence": "low",
+      "taxonomyChangeNeeded": true
+    },
+    {
+      "questionId": "nda-2015-ii-150",
+      "primaryLeaf": "syllabus:current-affairs/sports-culture-recognition/sports/competitions-and-venues",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Tests the host state of a specifically dated national athletics championship.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false
+    }
+  ]
+}

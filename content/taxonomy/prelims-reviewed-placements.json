@@ -29445,15 +29445,17 @@
     },
     {
       "questionId": "nda-2015-ii-121",
-      "expectedRecordHash": "a5317b20d0636e4842bb3338945e2ad2454b8ac8a22f9f3794ae40f222f2baac",
-      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/preamble",
-      "additionalIds": [],
+      "expectedRecordHash": "7788e4e62cd48d2c52e30af73d5c0ce193e2eb820d695e402b3ab954d8061ab8",
+      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/amendment-and-basic-structure",
+      "additionalIds": [
+        "syllabus:polity-governance/constitutional-foundations/constitutional-structure/preamble"
+      ],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (cds-2018-2018-2-141).",
+      "rationale": "Tests the constitutional amendment that inserted the word “Secular” into the Preamble.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Static"
@@ -29461,18 +29463,21 @@
     },
     {
       "questionId": "nda-2015-ii-122",
-      "expectedRecordHash": "2eb0a30d0bb864065108badc9bdb55a9302ceadf1ebe601bf4a5c1ec7bf0bbea",
-      "primaryId": "syllabus:history/modern-india-national-movement/colonial-economy/drain-of-wealth",
-      "additionalIds": [],
+      "expectedRecordHash": "bb540c24a5abeebd3abc78e9ad965eb9c5f7bc8854559db2c46b39592ea2cfa2",
+      "primaryId": "syllabus:economy/external-sector/balance-of-payments/accounting-framework",
+      "additionalIds": [
+        "syllabus:economy/external-sector/balance-of-payments/current-account",
+        "syllabus:economy/external-sector/balance-of-payments/capital-and-financial-flows"
+      ],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-91).",
+      "rationale": "The task compares dated trade, invisibles and capital-account balances, so the balance-of-payments accounting framework is primary and both component accounts are independently material.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b disagreed; taxonomy-adjudicator-codex recorded the final concept decision."
       },
       "tags": [
-        "Static"
+        "Event-based"
       ]
     },
     {
@@ -29495,15 +29500,15 @@
     },
     {
       "questionId": "nda-2015-ii-124",
-      "expectedRecordHash": "1513cc2ea5188270913893de81f0bd1e99d36f41b1caffcc2d8e9e664b5bc2cd",
-      "primaryId": "syllabus:polity-governance/federalism-local-government/local-government/municipalities",
+      "expectedRecordHash": "9f5fe91eb4aa6346f840a4ee17c59c309bf666e34d90f8814cf8a28c6bb68693",
+      "primaryId": "syllabus:polity-governance/institutions/judiciary/judicial-review",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-ii-138).",
+      "rationale": "Directly asks which constitutional provisions most clearly confer judicial-review powers.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Static"
@@ -29511,15 +29516,15 @@
     },
     {
       "questionId": "nda-2015-ii-125",
-      "expectedRecordHash": "3c1261cbf72e9a6b07f00c168bd329bcbf2d8ce121c6b211138d6da8fb546134",
+      "expectedRecordHash": "6aae1b097c83aa6b03ba14a9df076bf2e06c554fbdf688ebd70c4a0304be4ba0",
       "primaryId": "syllabus:history/modern-india-national-movement/british-expansion/subsidiary-alliance",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-114).",
+      "rationale": "Tests the obligations and loss of autonomy imposed through Wellesley’s Subsidiary Alliance.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Static"
@@ -29527,15 +29532,15 @@
     },
     {
       "questionId": "nda-2015-ii-126",
-      "expectedRecordHash": "2db342406fc5b25a859161db117d43ef7844fd5ccdeb56312aab9a3eb8002f50",
+      "expectedRecordHash": "4f6356c7cb7cf890143a1199e598e17827ea5969b526a88f9cce03e68e279b35",
       "primaryId": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2022-ii-124).",
+      "rationale": "Identifies François Bernier through his role at Dara Shukoh’s court, testing the identity of a foreign traveller.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Static"
@@ -29543,31 +29548,43 @@
     },
     {
       "questionId": "nda-2015-ii-127",
-      "expectedRecordHash": "63303b61eea1881df46d01e61cd933c2343db049141187b377c79181259bc3e8",
-      "primaryId": "syllabus:economy/development/development-policy/planning-institutions",
-      "additionalIds": [],
+      "expectedRecordHash": "9dba2ae42ff1de638708c22afeff21c43b9f66e99bbb08bf718098171dcc5534",
+      "primaryId": "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics",
+      "additionalIds": [
+        "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+      ],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-81).",
+      "rationale": "The question tests a dated agricultural-growth statistic and the contributing subsectors; the Eleventh Plan supplies the period rather than independently testing plan policy, and livestock is one answer component rather than a separate conceptual task.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b disagreed; taxonomy-adjudicator-codex recorded the final concept decision."
       },
       "tags": [
-        "Static"
-      ]
+        "Event-based"
+      ],
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
     },
     {
       "questionId": "nda-2015-ii-129",
-      "expectedRecordHash": "2f55131266dee288c93887d55369eb4cd7aea6f25477bdd4af14ce48bddbc615",
-      "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
+      "expectedRecordHash": "5d7408d9441e25365b726312f602784a6f1ad6efa04cd7ab2e74aa4201c4a101",
+      "primaryId": "syllabus:economy/agriculture/allied-activities/livestock",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-i-146).",
+      "rationale": "Tests the livestock sector’s agricultural value addition, employment role and inclusive-growth potential.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Static"
@@ -29587,15 +29604,15 @@
     },
     {
       "questionId": "nda-2015-ii-130",
-      "expectedRecordHash": "3dadb6fd07ea4777085a7b8d23d74fb80a0926f23b8aab6032a1ba27ca7e95df",
-      "primaryId": "syllabus:history/modern-india-national-movement/gandhian-movements/civil-disobedience",
+      "expectedRecordHash": "370a09d2ac062af5b47e585632b7d0900a7fbd2782414811809436c023884669",
+      "primaryId": "syllabus:history/modern-india-national-movement/gandhian-movements/non-cooperation-and-khilafat",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-131).",
+      "rationale": "Tests the aims, leadership and Non-Cooperation linkage of the Khilafat Movement.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Static"
@@ -29603,31 +29620,35 @@
     },
     {
       "questionId": "nda-2015-ii-131",
-      "expectedRecordHash": "f9a3f2cd5542041c5e078640df37628a739bbcc863211374596dbff95b291c70",
-      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
-      "additionalIds": [],
+      "expectedRecordHash": "e51880023e1bddd1df3d565ab4b859d3aea23ebcc06fe78bae8c1fa350ac29cc",
+      "primaryId": "syllabus:social-development/health-nutrition/public-health/health-indicators",
+      "additionalIds": [
+        "syllabus:social-development/health-nutrition/public-health/maternal-and-child-health"
+      ],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-99).",
+      "rationale": "The dated comparison is principally about health indicators, while infant mortality, maternal mortality and institutional delivery make maternal and child health independently material.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b disagreed; taxonomy-adjudicator-codex recorded the final concept decision."
       },
       "tags": [
-        "Static"
+        "Event-based"
       ]
     },
     {
       "questionId": "nda-2015-ii-132",
-      "expectedRecordHash": "363c9d90d5b33388d05212b5bb193efbf2928004c8b976c8aec15f421b3ef45f",
+      "expectedRecordHash": "824257155550c72f401f0ee1b8d528ff7c8a589c512142a4a0fedf5d85b0ee60",
       "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/schedules",
-      "additionalIds": [],
+      "additionalIds": [
+        "syllabus:polity-governance/institutions/parliament/composition"
+      ],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (cds-2016-2016-1-121).",
+      "rationale": "Tests the Fourth Schedule’s allocation of seats in the Council of States.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Static"
@@ -29635,15 +29656,15 @@
     },
     {
       "questionId": "nda-2015-ii-133",
-      "expectedRecordHash": "dd301ef09509eb71c939d281c7398fb613fe36b2eb5fadab5e3e5071ac75b862",
-      "primaryId": "syllabus:history/modern-india-national-movement/colonial-administration/company-government",
+      "expectedRecordHash": "b0ade534fa45461abbb117fc5066442f614480d110f54d368e0c558a9ccb80dd",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-administration/crown-rule-and-proclamations",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-i-81).",
+      "rationale": "Tests the office of the British Resident within colonial relations with indirectly ruled princely states.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Static"
@@ -29651,15 +29672,15 @@
     },
     {
       "questionId": "nda-2015-ii-134",
-      "expectedRecordHash": "8d08ed60b725288f7bda426398d616da5489bed868ae2f996d2f5d23269eb5b1",
-      "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/solar-radiation-and-insolation",
+      "expectedRecordHash": "dfb237d610472b942790be4cdbd0d9c7d4f31c98ab806e0ce1fff0ffc8b8b22f",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-economy/land-revenue-settlements",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2025-ii-120).",
+      "rationale": "Tests the ownership, fixed-revenue obligations and social effects of the Permanent Settlement.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Static"
@@ -29667,15 +29688,15 @@
     },
     {
       "questionId": "nda-2015-ii-135",
-      "expectedRecordHash": "28bf807020fbd467019f34a644a8e87b34643bd612356e49737064c62300f66b",
+      "expectedRecordHash": "fcb6014a6880ae1ab80a25777d80e2470c390a2b8b8ab2e867bc649d899ececa",
       "primaryId": "syllabus:history/medieval-india/regional-kingdoms/vijayanagara",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2022-ii-120).",
+      "rationale": "Tests the Battle of Talikota as the decisive military blow to the Vijayanagara Empire.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Static"
@@ -29683,50 +29704,55 @@
     },
     {
       "questionId": "nda-2015-ii-137",
-      "expectedRecordHash": "97916e94ee7b76e7fe16c6f59cbf277b42d9f177473aa2195b5c3a6fba0d48bb",
-      "primaryId": "syllabus:polity-governance/institutions/parliament/sessions-and-procedures",
+      "expectedRecordHash": "95a1b53146500d6301ab890ff61f6290a16d944426012dfecc973e44768b2799",
+      "primaryId": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2026-i-137).",
+      "rationale": "Evaluates the itineraries and observations recorded by Abdur Razzaq, Ibn Battuta and François Bernier.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
-        "Event-based"
+        "Static"
       ]
     },
     {
       "questionId": "nda-2015-ii-138",
-      "expectedRecordHash": "70550a7ecf26d0e9ed0516f706bde7ed461fdb8fbcda66b3ba8a805ce88d1923",
-      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/preamble",
-      "additionalIds": [],
+      "expectedRecordHash": "9795cc829987a492038aa88684ffc182930c1f4ce1984a84fd9a84e2b41cd01a",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-administration/colonial-cities-and-hill-stations",
+      "additionalIds": [
+        "syllabus:history/art-culture/architecture/colonial-architecture"
+      ],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-i-140).",
+      "rationale": "The complete statement set tests the administrative, military, sanitary and built-environment functions of colonial hill stations. The new bounded settlement-history leaf is primary and the explicit architectural-style statement justifies a material additional placement.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b disagreed; taxonomy-adjudicator-codex recorded the final concept decision."
       },
       "tags": [
-        "Event-based"
+        "Static"
       ]
     },
     {
       "questionId": "nda-2015-ii-139",
-      "expectedRecordHash": "fca405a8c03c53b92f89143b5a3409d2beb9f7efce8e43c4ce63a7e3f57373ca",
-      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
-      "additionalIds": [],
+      "expectedRecordHash": "ab0b5e63b113233df2550c69ab4392faebd686be0f1d0a3a172e17b6487ef1c6",
+      "primaryId": "syllabus:history/art-culture/architecture/vesara-and-regional-temples",
+      "additionalIds": [
+        "syllabus:history/art-culture/architecture/nagara-temples",
+        "syllabus:history/art-culture/architecture/dravida-temples"
+      ],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-116).",
+      "rationale": "Matches Chalukya, Hoysala, Pandya and Eastern Ganga dynasties with temples spanning regional, Nagara and Dravida traditions.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
-        "Event-based"
+        "Static"
       ]
     },
     {
@@ -29743,127 +29769,127 @@
     },
     {
       "questionId": "nda-2015-ii-140",
-      "expectedRecordHash": "7638152927169f0ab3754cebd9703ec2ab0d918138baff2467a03af9d28ce6dc",
-      "primaryId": "syllabus:history/medieval-india/mughal-empire/akbar",
+      "expectedRecordHash": "fc90683e5237a9af05c026118ab88046345b307420128d4cab3445c57179c6a1",
+      "primaryId": "syllabus:history/art-culture/music/hindustani-traditions",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-137).",
+      "rationale": "The question identifies the Senia lineage as a Hindustani tradition; Tansen explains the name but does not create a separate forms-and-composers task.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b disagreed; taxonomy-adjudicator-codex recorded the final concept decision."
       },
       "tags": [
-        "Event-based"
+        "Static"
       ]
     },
     {
       "questionId": "nda-2015-ii-141",
-      "expectedRecordHash": "b4b739f1c6349bebe60b13c4ae1fdecc5df2582d79e73e5e9641c3c6fb7e5b0c",
-      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "expectedRecordHash": "19c3c4a54dd5af93a24a5e38b019750996205e6eb56c84cb7c7b81e747a5f4cb",
+      "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/women-and-reform",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-i-127).",
+      "rationale": "Tests Veeresalingam Pantulu’s organised advocacy of widow remarriage through the Rajahmundri association.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
-        "Event-based"
+        "Static"
       ]
     },
     {
       "questionId": "nda-2015-ii-142",
-      "expectedRecordHash": "c5f7c3dab8098d5c11548b4912ebcc6037836c8fcfa1abfeee869d31761ba0f3",
-      "primaryId": "syllabus:geography/world-geography/world-mapping/countries-and-capitals",
+      "expectedRecordHash": "be4397a69e44f9c6c01631ff8e68052b42146198bad0a15328dfcbe95e1ef8d3",
+      "primaryId": "syllabus:international-relations-organisations/regional-groupings/regional-and-plurilateral-forums/south-asian-forums",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-i-92).",
+      "rationale": "Tests the institutional headquarters of the South Asian regional organisation SAARC.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
-        "Event-based"
+        "Static"
       ]
     },
     {
       "questionId": "nda-2015-ii-143",
-      "expectedRecordHash": "714778af674b98ed84e10210e7092d94ebbd321b37374bc4024c573728a9648c",
-      "primaryId": "syllabus:history/art-culture/literature-and-languages/sanskrit-literature",
+      "expectedRecordHash": "33ebfa25721670fd09337fe325a144ecb44cbb07f228fa83bce58b4170f793aa",
+      "primaryId": "syllabus:history/modern-india-national-movement/popular-resistance/peasant-movements",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-135).",
+      "rationale": "Tests the leadership of the Faraizi movement, which developed into a major agrarian movement in eastern Bengal.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
-        "Event-based"
+        "Static"
       ]
     },
     {
       "questionId": "nda-2015-ii-144",
-      "expectedRecordHash": "9e419c634b9b664a8ac24bdf18736b70f782e957ad7fc000b00ec883d85c37d4",
-      "primaryId": "syllabus:history/modern-india-national-movement/constitutional-developments/simon-commission-and-nehru-report",
+      "expectedRecordHash": "c9a7ac88dcb86983afddd6adc98eef64929f9ca7454965140c736e92545de371",
+      "primaryId": "syllabus:history/modern-india-national-movement/colonial-administration/crown-rule-and-proclamations",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-59).",
+      "rationale": "Tests the chairmanship of the Indian States Committee, formed to examine relations between the Crown and princely states.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
-        "Event-based"
+        "Static"
       ]
     },
     {
       "questionId": "nda-2015-ii-145",
-      "expectedRecordHash": "ac1906525af7ec0d7a46b9fbc2e8fd73b8a718d743c4bbdea66ce2c9548fc3c8",
-      "primaryId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/schedules",
+      "expectedRecordHash": "f6d8a965fa483065f742203dcd576ff483db6e1033c7b2e4fdb5fa2fa08968df",
+      "primaryId": "syllabus:polity-governance/federalism-local-government/local-government/panchayats",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2019-ii-133).",
+      "rationale": "Tests the state-level exceptions to the application of the constitutional Panchayati Raj provisions in Part IX.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
-        "Event-based"
+        "Static"
       ]
     },
     {
       "questionId": "nda-2015-ii-146",
-      "expectedRecordHash": "738e6f690893e83d8020bba0b766eba91caf2b3d336e8db2c64eabe087f19f08",
-      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "expectedRecordHash": "317f4c17bf4953cb93d7a1f0f4ee3f7116862063a7778e33b1774b55d0b32798",
+      "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-139).",
+      "rationale": "Tests the authorship of India’s First Five Year Plan draft.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
-        "Event-based"
+        "Static"
       ]
     },
     {
       "questionId": "nda-2015-ii-147",
-      "expectedRecordHash": "9d75257a3dc0633db993b65173550db764aa8549ccb0133ebfb8734a18fd1d3d",
+      "expectedRecordHash": "6ab8e2b80196104cfd170ac20b02f1cb776d8ffaf70bfd0a02d58659068fe1b6",
       "primaryId": "syllabus:current-affairs/sports-culture-recognition/books-and-authors/authors-and-works",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-150).",
+      "rationale": "Tests the author-work association for the contemporary book “Pakistan Paradox: Instability and Resilience.”",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Event-based"
@@ -29871,15 +29897,15 @@
     },
     {
       "questionId": "nda-2015-ii-148",
-      "expectedRecordHash": "c9136843aefb574874e228719adddf0e72b2780f4b8c20bc2ba04b4003452fcc",
-      "primaryId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/recipients-and-institutions",
+      "expectedRecordHash": "20d9a5551775727fab2da5d165d79f95f21c1874c2a0683bc098bd8249f63539",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/personalities-and-commemorations/significant-days-and-themes",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-94).",
+      "rationale": "Asks for the officially designated 2015 theme of the International Day of United Nations Peacekeepers.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Event-based"
@@ -29887,18 +29913,18 @@
     },
     {
       "questionId": "nda-2015-ii-149",
-      "expectedRecordHash": "119d26902e60f94e21f9407732d2a4f6c8240ac6d0a4c1fc69619f7e8388a4a8",
-      "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/winners-and-records",
+      "expectedRecordHash": "b656fc7676e1006a96510c08d1fc2ba0c0235b9aa2cf1becd1bde00880717b76",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/athletes-and-disciplines",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2021-ii-91).",
+      "rationale": "The question asks which sporting discipline Vikas Gowda competes in; it tests athlete-to-discipline identity, not a dated result, record, rule or venue.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b disagreed; taxonomy-adjudicator-codex recorded the final concept decision."
       },
       "tags": [
-        "Event-based"
+        "Static"
       ]
     },
     {
@@ -29915,15 +29941,15 @@
     },
     {
       "questionId": "nda-2015-ii-150",
-      "expectedRecordHash": "43dbc9d4a6aa302876e0bfbb59e2955b8cd608c0edce06576ab7ff0678eb5944",
-      "primaryId": "syllabus:geography/indian-geography/drainage/lakes-and-wetlands",
+      "expectedRecordHash": "f267a2c9c4b9a7bc738bab40e96418ce69ac14159f3a34d5be996f057959eb11",
+      "primaryId": "syllabus:current-affairs/sports-culture-recognition/sports/competitions-and-venues",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-ii-82).",
+      "rationale": "Tests the host state of a specifically dated national athletics championship.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Event-based"
@@ -30399,15 +30425,15 @@
     },
     {
       "questionId": "nda-2015-ii-53",
-      "expectedRecordHash": "6580faa5f52cbddd9959435ca55b7f6efe95c6fc8c613058b8e3e091b19f1d19",
-      "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
+      "expectedRecordHash": "f9d7ea983f83634de7e645a8b319b330bec5e4dd751ab84856c1ac574059f978",
+      "primaryId": "syllabus:science-technology/space/space-programmes/indian-missions",
       "additionalIds": [],
       "status": "approved",
       "basis": "official-complete-paper-second-pass",
-      "rationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-54).",
+      "rationale": "Tests the launch-year milestone of Aryabhata, India’s first satellite mission.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review."
+        "rationale": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag."
       },
       "tags": [
         "Static"

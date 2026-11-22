@@ -54,6 +54,12 @@ export const sourceTopicSpecs = {
     placementRule:'Use for historical development of local self-government under colonial administration. Do not imply that an 1882 resolution is an East India Company measure.',
     representativeQuestions:['NDA I 2025 GAT Series A Q67: Ripon’s local self-government resolution'],
   },
+  'History/Modern India & National Movement/Colonial Administration/Colonial cities and hill stations': {
+    includes:['Colonial urban planning, cantonments and hill-station development','Administrative, military and sanitary functions of colonial settlements'],
+    excludes:['Architectural style without a settlement-history task','Post-independence urban policy','Physical geography of hill stations without colonial institutions'],
+    placementRule:'Use when the tested concept is the historical purpose, organisation or development of a colonial settlement. Add Colonial architecture only when built form or architectural style is independently material.',
+    representativeQuestions:['NDA II 2015 GAT Series A Q138: architecture, sanitary role and military administration of colonial hill stations'],
+  },
   'History/Modern India & National Movement/Constitutional Developments/Chronology of constitutional politics': {
     includes:['Comparative chronology of constitutional negotiations and national-movement political developments','Lucknow Pact, Swaraj Party, Communal Award and Simla Conference'],
     excludes:['Random date trivia unrelated to constitutional politics','Pure biographies','Ancient or medieval event ordering'],
@@ -89,6 +95,12 @@ export const sourceTopicSpecs = {
     excludes:['Indo-Pacific or South Asian forums without a West Asian remit','Military alliances inferred solely from regional proximity','A bilateral country relationship without a regional-forum task'],
     placementRule:'Use for regional organisations in West Asia. Preserve negative-membership questions and do not give each alternative country an independent placement.',
     representativeQuestions:['CSE 2016 GS-I Series A Q70: Gulf Cooperation Council non-member'],
+  },
+  'Current Affairs/Sports, Culture & Recognition/Sports/Athletes and disciplines': {
+    includes:['Association of an athlete with a sport, event or discipline','Identity of a sportsperson through the discipline in which they compete'],
+    excludes:['Competition winners or records','Rules and technical terminology without an athlete-identity task','A venue or tournament host'],
+    placementRule:'Use for athlete-to-discipline identification. Use Winners and records only when a result, medal, title or record is materially tested.',
+    representativeQuestions:['NDA II 2015 GAT Series A Q149: Vikas Gowda and discus throw'],
   },
   'Economy/Public Finance/Taxation/International taxation': {
     includes:['Cross-border corporate taxation, tax-base erosion and profit shifting','International tax cooperation and multinational-company tax practices'],

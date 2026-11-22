@@ -59,8 +59,9 @@ const hash = value => crypto.createHash('sha256').update(typeof value==='string'
 const registry=read('content/taxonomy/upsc-prelims-v2-draft.json');
 const rawBank=read('content/question-bank.json').questions;
 const frozenCohort=read('content/taxonomy/prelims-classification-register.json');
-assert.equal(hash(fs.readFileSync('content/question-bank.json','utf8')),frozenCohort.baselineBankSha256,'Historical bank changed; review and migrate the frozen classification baseline explicitly.');
-assert.equal(hash(fs.readFileSync('content/taxonomy/physical-geography-v1.2-review.json','utf8')),'fe554233fa3c3a3d565b435aab5fba67d1852cc2b23f6b488fda6fad4e9f8d7f','Preserved Physical Geography review changed unexpectedly.');
+const canonicalText = file => fs.readFileSync(file,'utf8').replace(/\r\n/g,'\n');
+assert.equal(hash(canonicalText('content/question-bank.json')),frozenCohort.baselineBankSha256,'Historical bank changed; review and migrate the frozen classification baseline explicitly.');
+assert.equal(hash(canonicalText('content/taxonomy/physical-geography-v1.2-review.json')),'fe554233fa3c3a3d565b435aab5fba67d1852cc2b23f6b488fda6fad4e9f8d7f','Preserved Physical Geography review changed unexpectedly.');
 const imports=read('content/reviewed-prelims-imports.json');
 const completeNda=read('content/nda-2026-i-official-paper.json');
 const completeNdaII=read('content/nda-2026-ii-official-paper.json');
@@ -242,7 +243,7 @@ for (const record of records.values()) {
   if (!sourceIds.length) continue;
   const sharedIds = sourceIds.map(id => id.replace('syllabus:current-affairs/economy-development/', 'syllabus:economy/current-affairs/'));
   for (const id of sharedIds) assert.equal(nodeById.get(id)?.kind, 'subpart', `Missing Economy cross-list: ${id}`);
-  record.additionalIds = [...new Set([...record.additionalIds, ...sharedIds])];
+  record.additionalIds = [...new Set([...record.additionalIds, ...sharedIds])].filter(id => id !== record.primaryId);
   record.sharedEconomyCurrentAffairs = {sourceIds, additionalIds: sharedIds, basis: 'editor-requested-shared-category', rationale: 'Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility.'};
 }
 const rows=[...records.values()].sort((a,b)=>a.questionId.localeCompare(b.questionId));
@@ -253,11 +254,11 @@ const output={version:1,taxonomyVersion:registry.version,status:'partially-appli
   pilotSubjects:[...coverage].sort(),records:rows};
 const file='content/taxonomy/prelims-reviewed-placements.json';
 const bytes=`${JSON.stringify(output,null,2)}\n`;
-if(process.argv.includes('--check'))assert.equal(fs.readFileSync(file,'utf8'),bytes,'Stale reviewed placement ledger');
-else if(!fs.existsSync(file)||fs.readFileSync(file,'utf8')!==bytes)fs.writeFileSync(file,bytes);
+if(process.argv.includes('--check'))assert.equal(canonicalText(file),bytes,'Stale reviewed placement ledger');
+else if(!fs.existsSync(file)||canonicalText(file)!==bytes)fs.writeFileSync(file,bytes);
 const scopePolicy=Object.fromEntries(rows.filter(row=>row.status==='out-of-scope').map(row=>[row.questionId,{inGsScope:false,reason:row.scopeReason}]));
 const scopeFile='content/prelims-gs-scope-policy.json';
 const scopeBytes=`${JSON.stringify(scopePolicy,null,2)}\n`;
-if(process.argv.includes('--check'))assert.equal(fs.readFileSync(scopeFile,'utf8'),scopeBytes);
-else if(!fs.existsSync(scopeFile)||fs.readFileSync(scopeFile,'utf8')!==scopeBytes)fs.writeFileSync(scopeFile,scopeBytes);
+if(process.argv.includes('--check'))assert.equal(canonicalText(scopeFile),scopeBytes);
+else if(!fs.existsSync(scopeFile)||canonicalText(scopeFile)!==scopeBytes)fs.writeFileSync(scopeFile,scopeBytes);
 console.log(JSON.stringify({records:rows.length,approved:rows.filter(r=>r.status==='approved').length,preserved:rows.filter(r=>r.basis==='preserved-physical-v1.2-review').length,freshReviewed:rows.filter(r=>r.status==='approved'&&r.basis!=='preserved-physical-v1.2-review').length,pendingAfterRepair:rows.filter(r=>r.status==='pending').length,outOfScope:rows.filter(r=>r.status==='out-of-scope').length,pilotSubjects:coverage.size}));

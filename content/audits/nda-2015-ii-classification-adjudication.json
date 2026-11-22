@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "auditVersion": "classification-audit-v1",
+  "paperId": "nda-2015-ii-gat",
+  "adjudicator": {
+    "id": "taxonomy-adjudicator-codex",
+    "method": "Full-stem adjudication against the most-specific-concept and material-additional-placement rules after receiving two blind independent reviews",
+    "reviewedAt": "2026-11-19T13:49:12Z"
+  },
+  "decisions": [
+    {
+      "questionId": "nda-2015-ii-122",
+      "primaryLeaf": "syllabus:economy/external-sector/balance-of-payments/accounting-framework",
+      "additionalLeaves": [
+        "syllabus:economy/external-sector/balance-of-payments/current-account",
+        "syllabus:economy/external-sector/balance-of-payments/capital-and-financial-flows"
+      ],
+      "tag": "Event-based",
+      "rationale": "The task compares dated trade, invisibles and capital-account balances, so the balance-of-payments accounting framework is primary and both component accounts are independently material.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false,
+      "resolves": "reviewer-disagreement"
+    },
+    {
+      "questionId": "nda-2015-ii-127",
+      "primaryLeaf": "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "The question tests a dated agricultural-growth statistic and the contributing subsectors; the Eleventh Plan supplies the period rather than independently testing plan policy, and livestock is one answer component rather than a separate conceptual task.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false,
+      "resolves": "reviewer-disagreement"
+    },
+    {
+      "questionId": "nda-2015-ii-131",
+      "primaryLeaf": "syllabus:social-development/health-nutrition/public-health/health-indicators",
+      "additionalLeaves": [
+        "syllabus:social-development/health-nutrition/public-health/maternal-and-child-health"
+      ],
+      "tag": "Event-based",
+      "rationale": "The dated comparison is principally about health indicators, while infant mortality, maternal mortality and institutional delivery make maternal and child health independently material.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false,
+      "resolves": "reviewer-disagreement"
+    },
+    {
+      "questionId": "nda-2015-ii-138",
+      "primaryLeaf": "syllabus:history/modern-india-national-movement/colonial-administration/colonial-cities-and-hill-stations",
+      "additionalLeaves": [
+        "syllabus:history/art-culture/architecture/colonial-architecture"
+      ],
+      "tag": "Static",
+      "rationale": "The complete statement set tests the administrative, military, sanitary and built-environment functions of colonial hill stations. The new bounded settlement-history leaf is primary and the explicit architectural-style statement justifies a material additional placement.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false,
+      "resolves": "taxonomy-change"
+    },
+    {
+      "questionId": "nda-2015-ii-140",
+      "primaryLeaf": "syllabus:history/art-culture/music/hindustani-traditions",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "The question identifies the Senia lineage as a Hindustani tradition; Tansen explains the name but does not create a separate forms-and-composers task.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false,
+      "resolves": "reviewer-disagreement"
+    },
+    {
+      "questionId": "nda-2015-ii-149",
+      "primaryLeaf": "syllabus:current-affairs/sports-culture-recognition/sports/athletes-and-disciplines",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "The question asks which sporting discipline Vikas Gowda competes in; it tests athlete-to-discipline identity, not a dated result, record, rule or venue.",
+      "confidence": "high",
+      "taxonomyChangeNeeded": false,
+      "resolves": "taxonomy-change"
+    }
+  ]
+}

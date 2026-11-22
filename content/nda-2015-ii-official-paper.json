@@ -3811,13 +3811,13 @@
       "year": 2015,
       "paper": "II",
       "questionNumber": 53,
-      "subject": "Economy",
-      "topic": "Development Policy",
-      "subtopic": "Five Year Plans",
-      "taxonomyHead": "Development",
-      "taxonomyChapter": "Development Policy",
-      "taxonomySubtopic": "Five Year Plans",
-      "taxonomyId": "syllabus:economy/development/development-policy/five-year-plans",
+      "subject": "Science & Technology",
+      "topic": "Space Programmes",
+      "subtopic": "Indian missions",
+      "taxonomyHead": "Space",
+      "taxonomyChapter": "Space Programmes",
+      "taxonomySubtopic": "Indian missions",
+      "taxonomyId": "syllabus:science-technology/space/space-programmes/indian-missions",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -3865,9 +3865,17 @@
           "B"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-54).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the launch-year milestone of Aryabhata, India’s first satellite mission.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -8587,11 +8595,11 @@
       "questionNumber": 121,
       "subject": "Polity & Governance",
       "topic": "Constitutional Structure",
-      "subtopic": "Preamble",
+      "subtopic": "Amendment and basic structure",
       "taxonomyHead": "Constitutional Foundations",
       "taxonomyChapter": "Constitutional Structure",
-      "taxonomySubtopic": "Preamble",
-      "taxonomyId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/preamble",
+      "taxonomySubtopic": "Amendment and basic structure",
+      "taxonomyId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/amendment-and-basic-structure",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -8608,7 +8616,15 @@
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
-      "additionalPaths": [],
+      "additionalPaths": [
+        {
+          "subject": "Polity & Governance",
+          "head": "Constitutional Foundations",
+          "chapter": "Constitutional Structure",
+          "subtopic": "Preamble",
+          "taxonomyId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/preamble"
+        }
+      ],
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
@@ -8639,9 +8655,17 @@
           "C"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (cds-2018-2018-2-141).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the constitutional amendment that inserted the word “Secular” into the Preamble.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -8654,13 +8678,13 @@
       "year": 2015,
       "paper": "II",
       "questionNumber": 122,
-      "subject": "History",
-      "topic": "Colonial Economy",
-      "subtopic": "Drain of wealth",
-      "taxonomyHead": "Modern India & National Movement",
-      "taxonomyChapter": "Colonial Economy",
-      "taxonomySubtopic": "Drain of wealth",
-      "taxonomyId": "syllabus:history/modern-india-national-movement/colonial-economy/drain-of-wealth",
+      "subject": "Economy",
+      "topic": "Balance of Payments",
+      "subtopic": "Accounting framework",
+      "taxonomyHead": "External Sector",
+      "taxonomyChapter": "Balance of Payments",
+      "taxonomySubtopic": "Accounting framework",
+      "taxonomyId": "syllabus:economy/external-sector/balance-of-payments/accounting-framework",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -8677,11 +8701,26 @@
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
-      "additionalPaths": [],
+      "additionalPaths": [
+        {
+          "subject": "Economy",
+          "head": "External Sector",
+          "chapter": "Balance of Payments",
+          "subtopic": "Current account",
+          "taxonomyId": "syllabus:economy/external-sector/balance-of-payments/current-account"
+        },
+        {
+          "subject": "Economy",
+          "head": "External Sector",
+          "chapter": "Balance of Payments",
+          "subtopic": "Capital and financial flows",
+          "taxonomyId": "syllabus:economy/external-sector/balance-of-payments/capital-and-financial-flows"
+        }
+      ],
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Static"
+        "Event-based"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -8708,9 +8747,17 @@
           "D"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-91).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "The task compares dated trade, invisibles and capital-account balances, so the balance-of-payments accounting framework is primary and both component accounts are independently material.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b disagreed; taxonomy-adjudicator-codex recorded the final concept decision.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "adjudicated",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": "taxonomy-adjudicator-codex"
       }
     },
     {
@@ -8794,12 +8841,12 @@
       "paper": "II",
       "questionNumber": 124,
       "subject": "Polity & Governance",
-      "topic": "Local Government",
-      "subtopic": "Municipalities",
-      "taxonomyHead": "Federalism & Local Government",
-      "taxonomyChapter": "Local Government",
-      "taxonomySubtopic": "Municipalities",
-      "taxonomyId": "syllabus:polity-governance/federalism-local-government/local-government/municipalities",
+      "topic": "Judiciary",
+      "subtopic": "Judicial review",
+      "taxonomyHead": "Institutions",
+      "taxonomyChapter": "Judiciary",
+      "taxonomySubtopic": "Judicial review",
+      "taxonomyId": "syllabus:polity-governance/institutions/judiciary/judicial-review",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -8847,9 +8894,17 @@
           "B"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-ii-138).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Directly asks which constitutional provisions most clearly confer judicial-review powers.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -8916,9 +8971,17 @@
           "A"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-114).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the obligations and loss of autonomy imposed through Wellesley’s Subsidiary Alliance.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -8985,9 +9048,17 @@
           "C"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2022-ii-124).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Identifies François Bernier through his role at Dara Shukoh’s court, testing the identity of a foreign traveller.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -9001,12 +9072,12 @@
       "paper": "II",
       "questionNumber": 127,
       "subject": "Economy",
-      "topic": "Development Policy",
-      "subtopic": "Planning institutions",
-      "taxonomyHead": "Development",
-      "taxonomyChapter": "Development Policy",
-      "taxonomySubtopic": "Planning institutions",
-      "taxonomyId": "syllabus:economy/development/development-policy/planning-institutions",
+      "topic": "Sectoral Developments",
+      "subtopic": "Agricultural trends and statistics",
+      "taxonomyHead": "Current Affairs",
+      "taxonomyChapter": "Sectoral Developments",
+      "taxonomySubtopic": "Agricultural trends and statistics",
+      "taxonomyId": "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -9023,11 +9094,19 @@
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
-      "additionalPaths": [],
+      "additionalPaths": [
+        {
+          "subject": "Current Affairs",
+          "head": "Economy & Development",
+          "chapter": "Sectoral Developments",
+          "subtopic": "Agricultural trends and statistics",
+          "taxonomyId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics"
+        }
+      ],
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Static"
+        "Event-based"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -9054,9 +9133,17 @@
           "A"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-81).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "The question tests a dated agricultural-growth statistic and the contributing subsectors; the Eleventh Plan supplies the period rather than independently testing plan policy, and livestock is one answer component rather than a separate conceptual task.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b disagreed; taxonomy-adjudicator-codex recorded the final concept decision.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "adjudicated",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": "taxonomy-adjudicator-codex"
       }
     },
     {
@@ -9139,13 +9226,13 @@
       "year": 2015,
       "paper": "II",
       "questionNumber": 129,
-      "subject": "Current Affairs",
-      "topic": "Events and Diplomacy",
-      "subtopic": "Political developments",
-      "taxonomyHead": "International Affairs",
-      "taxonomyChapter": "Events and Diplomacy",
-      "taxonomySubtopic": "Political developments",
-      "taxonomyId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
+      "subject": "Economy",
+      "topic": "Allied Activities",
+      "subtopic": "Livestock",
+      "taxonomyHead": "Agriculture",
+      "taxonomyChapter": "Allied Activities",
+      "taxonomySubtopic": "Livestock",
+      "taxonomyId": "syllabus:economy/agriculture/allied-activities/livestock",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -9193,9 +9280,17 @@
           "D"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-i-146).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the livestock sector’s agricultural value addition, employment role and inclusive-growth potential.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -9210,11 +9305,11 @@
       "questionNumber": 130,
       "subject": "History",
       "topic": "Gandhian Movements",
-      "subtopic": "Civil Disobedience",
+      "subtopic": "Non-Cooperation and Khilafat",
       "taxonomyHead": "Modern India & National Movement",
       "taxonomyChapter": "Gandhian Movements",
-      "taxonomySubtopic": "Civil Disobedience",
-      "taxonomyId": "syllabus:history/modern-india-national-movement/gandhian-movements/civil-disobedience",
+      "taxonomySubtopic": "Non-Cooperation and Khilafat",
+      "taxonomyId": "syllabus:history/modern-india-national-movement/gandhian-movements/non-cooperation-and-khilafat",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -9262,9 +9357,17 @@
           "D"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-131).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the aims, leadership and Non-Cooperation linkage of the Khilafat Movement.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -9277,13 +9380,13 @@
       "year": 2015,
       "paper": "II",
       "questionNumber": 131,
-      "subject": "Geography",
-      "topic": "Geomorphic Processes and Landforms",
-      "subtopic": "Major Landform Types",
-      "taxonomyHead": "Physical Geography",
-      "taxonomyChapter": "Geomorphic Processes and Landforms",
-      "taxonomySubtopic": "Major Landform Types",
-      "taxonomyId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "subject": "Social Development",
+      "topic": "Public Health",
+      "subtopic": "Health indicators",
+      "taxonomyHead": "Health & Nutrition",
+      "taxonomyChapter": "Public Health",
+      "taxonomySubtopic": "Health indicators",
+      "taxonomyId": "syllabus:social-development/health-nutrition/public-health/health-indicators",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -9300,11 +9403,19 @@
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
-      "additionalPaths": [],
+      "additionalPaths": [
+        {
+          "subject": "Social Development",
+          "head": "Health & Nutrition",
+          "chapter": "Public Health",
+          "subtopic": "Maternal and child health",
+          "taxonomyId": "syllabus:social-development/health-nutrition/public-health/maternal-and-child-health"
+        }
+      ],
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Static"
+        "Event-based"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -9331,9 +9442,17 @@
           "C"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-99).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "The dated comparison is principally about health indicators, while infant mortality, maternal mortality and institutional delivery make maternal and child health independently material.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b disagreed; taxonomy-adjudicator-codex recorded the final concept decision.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "adjudicated",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": "taxonomy-adjudicator-codex"
       }
     },
     {
@@ -9369,7 +9488,15 @@
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
-      "additionalPaths": [],
+      "additionalPaths": [
+        {
+          "subject": "Polity & Governance",
+          "head": "Institutions",
+          "chapter": "Parliament",
+          "subtopic": "Composition",
+          "taxonomyId": "syllabus:polity-governance/institutions/parliament/composition"
+        }
+      ],
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
@@ -9400,9 +9527,17 @@
           "B"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (cds-2016-2016-1-121).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the Fourth Schedule’s allocation of seats in the Council of States.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -9417,11 +9552,11 @@
       "questionNumber": 133,
       "subject": "History",
       "topic": "Colonial Administration",
-      "subtopic": "Company government",
+      "subtopic": "Crown rule and proclamations",
       "taxonomyHead": "Modern India & National Movement",
       "taxonomyChapter": "Colonial Administration",
-      "taxonomySubtopic": "Company government",
-      "taxonomyId": "syllabus:history/modern-india-national-movement/colonial-administration/company-government",
+      "taxonomySubtopic": "Crown rule and proclamations",
+      "taxonomyId": "syllabus:history/modern-india-national-movement/colonial-administration/crown-rule-and-proclamations",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -9469,9 +9604,17 @@
           "C"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-i-81).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the office of the British Resident within colonial relations with indirectly ruled princely states.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -9484,13 +9627,13 @@
       "year": 2015,
       "paper": "II",
       "questionNumber": 134,
-      "subject": "Geography",
-      "topic": "The Atmosphere, Insolation, Heat Budget and Temperature",
-      "subtopic": "Solar Radiation and Insolation",
-      "taxonomyHead": "Physical Geography",
-      "taxonomyChapter": "The Atmosphere, Insolation, Heat Budget and Temperature",
-      "taxonomySubtopic": "Solar Radiation and Insolation",
-      "taxonomyId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/solar-radiation-and-insolation",
+      "subject": "History",
+      "topic": "Colonial Economy",
+      "subtopic": "Land revenue settlements",
+      "taxonomyHead": "Modern India & National Movement",
+      "taxonomyChapter": "Colonial Economy",
+      "taxonomySubtopic": "Land revenue settlements",
+      "taxonomyId": "syllabus:history/modern-india-national-movement/colonial-economy/land-revenue-settlements",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -9538,9 +9681,17 @@
           "B"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2025-ii-120).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the ownership, fixed-revenue obligations and social effects of the Permanent Settlement.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -9607,9 +9758,17 @@
           "A"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2022-ii-120).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the Battle of Talikota as the decisive military blow to the Vijayanagara Empire.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -9700,13 +9859,13 @@
       "year": 2015,
       "paper": "II",
       "questionNumber": 137,
-      "subject": "Polity & Governance",
-      "topic": "Parliament",
-      "subtopic": "Sessions and procedures",
-      "taxonomyHead": "Institutions",
-      "taxonomyChapter": "Parliament",
-      "taxonomySubtopic": "Sessions and procedures",
-      "taxonomyId": "syllabus:polity-governance/institutions/parliament/sessions-and-procedures",
+      "subject": "History",
+      "topic": "Sources and Chronology",
+      "subtopic": "Foreign accounts",
+      "taxonomyHead": "Medieval India",
+      "taxonomyChapter": "Sources and Chronology",
+      "taxonomySubtopic": "Foreign accounts",
+      "taxonomyId": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -9727,7 +9886,7 @@
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Event-based"
+        "Static"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -9754,9 +9913,17 @@
           "D"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2026-i-137).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Evaluates the itineraries and observations recorded by Abdur Razzaq, Ibn Battuta and François Bernier.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -9769,13 +9936,13 @@
       "year": 2015,
       "paper": "II",
       "questionNumber": 138,
-      "subject": "Polity & Governance",
-      "topic": "Constitutional Structure",
-      "subtopic": "Preamble",
-      "taxonomyHead": "Constitutional Foundations",
-      "taxonomyChapter": "Constitutional Structure",
-      "taxonomySubtopic": "Preamble",
-      "taxonomyId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/preamble",
+      "subject": "History",
+      "topic": "Colonial Administration",
+      "subtopic": "Colonial cities and hill stations",
+      "taxonomyHead": "Modern India & National Movement",
+      "taxonomyChapter": "Colonial Administration",
+      "taxonomySubtopic": "Colonial cities and hill stations",
+      "taxonomyId": "syllabus:history/modern-india-national-movement/colonial-administration/colonial-cities-and-hill-stations",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -9792,11 +9959,19 @@
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
-      "additionalPaths": [],
+      "additionalPaths": [
+        {
+          "subject": "History",
+          "head": "Art & Culture",
+          "chapter": "Architecture",
+          "subtopic": "Colonial architecture",
+          "taxonomyId": "syllabus:history/art-culture/architecture/colonial-architecture"
+        }
+      ],
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Event-based"
+        "Static"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -9823,9 +9998,17 @@
           "B"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-i-140).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "The complete statement set tests the administrative, military, sanitary and built-environment functions of colonial hill stations. The new bounded settlement-history leaf is primary and the explicit architectural-style statement justifies a material additional placement.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b disagreed; taxonomy-adjudicator-codex recorded the final concept decision.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "adjudicated",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": "taxonomy-adjudicator-codex"
       }
     },
     {
@@ -9838,13 +10021,13 @@
       "year": 2015,
       "paper": "II",
       "questionNumber": 139,
-      "subject": "Geography",
-      "topic": "Geomorphic Processes and Landforms",
-      "subtopic": "Major Landform Types",
-      "taxonomyHead": "Physical Geography",
-      "taxonomyChapter": "Geomorphic Processes and Landforms",
-      "taxonomySubtopic": "Major Landform Types",
-      "taxonomyId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "subject": "History",
+      "topic": "Architecture",
+      "subtopic": "Vesara and regional temples",
+      "taxonomyHead": "Art & Culture",
+      "taxonomyChapter": "Architecture",
+      "taxonomySubtopic": "Vesara and regional temples",
+      "taxonomyId": "syllabus:history/art-culture/architecture/vesara-and-regional-temples",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -9861,11 +10044,26 @@
       "requiresFigure": false,
       "figureKey": null,
       "figureAlt": null,
-      "additionalPaths": [],
+      "additionalPaths": [
+        {
+          "subject": "History",
+          "head": "Art & Culture",
+          "chapter": "Architecture",
+          "subtopic": "Nagara temples",
+          "taxonomyId": "syllabus:history/art-culture/architecture/nagara-temples"
+        },
+        {
+          "subject": "History",
+          "head": "Art & Culture",
+          "chapter": "Architecture",
+          "subtopic": "Dravida temples",
+          "taxonomyId": "syllabus:history/art-culture/architecture/dravida-temples"
+        }
+      ],
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Event-based"
+        "Static"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -9892,9 +10090,17 @@
           "D"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-116).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Matches Chalukya, Hoysala, Pandya and Eastern Ganga dynasties with temples spanning regional, Nagara and Dravida traditions.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -9908,12 +10114,12 @@
       "paper": "II",
       "questionNumber": 140,
       "subject": "History",
-      "topic": "Mughal Empire",
-      "subtopic": "Akbar",
-      "taxonomyHead": "Medieval India",
-      "taxonomyChapter": "Mughal Empire",
-      "taxonomySubtopic": "Akbar",
-      "taxonomyId": "syllabus:history/medieval-india/mughal-empire/akbar",
+      "topic": "Music",
+      "subtopic": "Hindustani traditions",
+      "taxonomyHead": "Art & Culture",
+      "taxonomyChapter": "Music",
+      "taxonomySubtopic": "Hindustani traditions",
+      "taxonomyId": "syllabus:history/art-culture/music/hindustani-traditions",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -9934,7 +10140,7 @@
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Event-based"
+        "Static"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -9961,9 +10167,17 @@
           "D"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-i-137).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "The question identifies the Senia lineage as a Hindustani tradition; Tansen explains the name but does not create a separate forms-and-composers task.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b disagreed; taxonomy-adjudicator-codex recorded the final concept decision.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "adjudicated",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": "taxonomy-adjudicator-codex"
       }
     },
     {
@@ -9976,13 +10190,13 @@
       "year": 2015,
       "paper": "II",
       "questionNumber": 141,
-      "subject": "Geography",
-      "topic": "Geomorphic Processes and Landforms",
-      "subtopic": "Major Landform Types",
-      "taxonomyHead": "Physical Geography",
-      "taxonomyChapter": "Geomorphic Processes and Landforms",
-      "taxonomySubtopic": "Major Landform Types",
-      "taxonomyId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "subject": "History",
+      "topic": "Social and Religious Reform",
+      "subtopic": "Women and reform",
+      "taxonomyHead": "Modern India & National Movement",
+      "taxonomyChapter": "Social and Religious Reform",
+      "taxonomySubtopic": "Women and reform",
+      "taxonomyId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/women-and-reform",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -10003,7 +10217,7 @@
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Event-based"
+        "Static"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -10030,9 +10244,17 @@
           "D"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-i-127).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests Veeresalingam Pantulu’s organised advocacy of widow remarriage through the Rajahmundri association.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -10045,13 +10267,13 @@
       "year": 2015,
       "paper": "II",
       "questionNumber": 142,
-      "subject": "Geography",
-      "topic": "World Mapping",
-      "subtopic": "Countries and capitals",
-      "taxonomyHead": "World Geography",
-      "taxonomyChapter": "World Mapping",
-      "taxonomySubtopic": "Countries and capitals",
-      "taxonomyId": "syllabus:geography/world-geography/world-mapping/countries-and-capitals",
+      "subject": "International Relations & Organisations",
+      "topic": "Regional and Plurilateral Forums",
+      "subtopic": "South Asian forums",
+      "taxonomyHead": "Regional Groupings",
+      "taxonomyChapter": "Regional and Plurilateral Forums",
+      "taxonomySubtopic": "South Asian forums",
+      "taxonomyId": "syllabus:international-relations-organisations/regional-groupings/regional-and-plurilateral-forums/south-asian-forums",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -10072,7 +10294,7 @@
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Event-based"
+        "Static"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -10099,9 +10321,17 @@
           "C"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-i-92).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the institutional headquarters of the South Asian regional organisation SAARC.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -10115,12 +10345,12 @@
       "paper": "II",
       "questionNumber": 143,
       "subject": "History",
-      "topic": "Literature and Languages",
-      "subtopic": "Sanskrit literature",
-      "taxonomyHead": "Art & Culture",
-      "taxonomyChapter": "Literature and Languages",
-      "taxonomySubtopic": "Sanskrit literature",
-      "taxonomyId": "syllabus:history/art-culture/literature-and-languages/sanskrit-literature",
+      "topic": "Popular Resistance",
+      "subtopic": "Peasant movements",
+      "taxonomyHead": "Modern India & National Movement",
+      "taxonomyChapter": "Popular Resistance",
+      "taxonomySubtopic": "Peasant movements",
+      "taxonomyId": "syllabus:history/modern-india-national-movement/popular-resistance/peasant-movements",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -10141,7 +10371,7 @@
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Event-based"
+        "Static"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -10168,9 +10398,17 @@
           "B"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-135).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the leadership of the Faraizi movement, which developed into a major agrarian movement in eastern Bengal.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -10184,12 +10422,12 @@
       "paper": "II",
       "questionNumber": 144,
       "subject": "History",
-      "topic": "Constitutional Developments",
-      "subtopic": "Simon Commission and Nehru Report",
+      "topic": "Colonial Administration",
+      "subtopic": "Crown rule and proclamations",
       "taxonomyHead": "Modern India & National Movement",
-      "taxonomyChapter": "Constitutional Developments",
-      "taxonomySubtopic": "Simon Commission and Nehru Report",
-      "taxonomyId": "syllabus:history/modern-india-national-movement/constitutional-developments/simon-commission-and-nehru-report",
+      "taxonomyChapter": "Colonial Administration",
+      "taxonomySubtopic": "Crown rule and proclamations",
+      "taxonomyId": "syllabus:history/modern-india-national-movement/colonial-administration/crown-rule-and-proclamations",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -10210,7 +10448,7 @@
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Event-based"
+        "Static"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -10237,9 +10475,17 @@
           "C"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2020-i-ii-59).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the chairmanship of the Indian States Committee, formed to examine relations between the Crown and princely states.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -10253,12 +10499,12 @@
       "paper": "II",
       "questionNumber": 145,
       "subject": "Polity & Governance",
-      "topic": "Constitutional Structure",
-      "subtopic": "Schedules",
-      "taxonomyHead": "Constitutional Foundations",
-      "taxonomyChapter": "Constitutional Structure",
-      "taxonomySubtopic": "Schedules",
-      "taxonomyId": "syllabus:polity-governance/constitutional-foundations/constitutional-structure/schedules",
+      "topic": "Local Government",
+      "subtopic": "Panchayats",
+      "taxonomyHead": "Federalism & Local Government",
+      "taxonomyChapter": "Local Government",
+      "taxonomySubtopic": "Panchayats",
+      "taxonomyId": "syllabus:polity-governance/federalism-local-government/local-government/panchayats",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -10279,7 +10525,7 @@
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Event-based"
+        "Static"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -10306,9 +10552,17 @@
           "C"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2019-ii-133).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the state-level exceptions to the application of the constitutional Panchayati Raj provisions in Part IX.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -10321,13 +10575,13 @@
       "year": 2015,
       "paper": "II",
       "questionNumber": 146,
-      "subject": "Geography",
-      "topic": "Geomorphic Processes and Landforms",
-      "subtopic": "Major Landform Types",
-      "taxonomyHead": "Physical Geography",
-      "taxonomyChapter": "Geomorphic Processes and Landforms",
-      "taxonomySubtopic": "Major Landform Types",
-      "taxonomyId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "subject": "Economy",
+      "topic": "Development Policy",
+      "subtopic": "Five Year Plans",
+      "taxonomyHead": "Development",
+      "taxonomyChapter": "Development Policy",
+      "taxonomySubtopic": "Five Year Plans",
+      "taxonomyId": "syllabus:economy/development/development-policy/five-year-plans",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -10348,7 +10602,7 @@
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Event-based"
+        "Static"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -10375,9 +10629,17 @@
           "B"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2018-ii-139).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the authorship of India’s First Five Year Plan draft.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -10444,9 +10706,17 @@
           "A"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2024-i-150).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the author-work association for the contemporary book “Pakistan Paradox: Instability and Resilience.”",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -10460,12 +10730,12 @@
       "paper": "II",
       "questionNumber": 148,
       "subject": "Current Affairs",
-      "topic": "Awards and Honours",
-      "subtopic": "Recipients and institutions",
+      "topic": "Personalities and Commemorations",
+      "subtopic": "Significant days and themes",
       "taxonomyHead": "Sports, Culture & Recognition",
-      "taxonomyChapter": "Awards and Honours",
-      "taxonomySubtopic": "Recipients and institutions",
-      "taxonomyId": "syllabus:current-affairs/sports-culture-recognition/awards-and-honours/recipients-and-institutions",
+      "taxonomyChapter": "Personalities and Commemorations",
+      "taxonomySubtopic": "Significant days and themes",
+      "taxonomyId": "syllabus:current-affairs/sports-culture-recognition/personalities-and-commemorations/significant-days-and-themes",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -10513,9 +10783,17 @@
           "B"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2017-ii-94).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Asks for the officially designated 2015 theme of the International Day of United Nations Peacekeepers.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     },
     {
@@ -10530,11 +10808,11 @@
       "questionNumber": 149,
       "subject": "Current Affairs",
       "topic": "Sports",
-      "subtopic": "Winners and records",
+      "subtopic": "Athletes and disciplines",
       "taxonomyHead": "Sports, Culture & Recognition",
       "taxonomyChapter": "Sports",
-      "taxonomySubtopic": "Winners and records",
-      "taxonomyId": "syllabus:current-affairs/sports-culture-recognition/sports/winners-and-records",
+      "taxonomySubtopic": "Athletes and disciplines",
+      "taxonomyId": "syllabus:current-affairs/sports-culture-recognition/sports/athletes-and-disciplines",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -10555,7 +10833,7 @@
       "preparationScope": "gs",
       "underlined": [],
       "classificationTags": [
-        "Event-based"
+        "Static"
       ],
       "source": {
         "dataset": "Complete NDA II 2015 GAT, official final key",
@@ -10582,9 +10860,17 @@
           "C"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2021-ii-91).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "The question asks which sporting discipline Vikas Gowda competes in; it tests athlete-to-discipline identity, not a dated result, record, rule or venue.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b disagreed; taxonomy-adjudicator-codex recorded the final concept decision.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "adjudicated",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": "taxonomy-adjudicator-codex"
       }
     },
     {
@@ -10597,13 +10883,13 @@
       "year": 2015,
       "paper": "II",
       "questionNumber": 150,
-      "subject": "Geography",
-      "topic": "Drainage",
-      "subtopic": "Lakes and wetlands",
-      "taxonomyHead": "Indian Geography",
-      "taxonomyChapter": "Drainage",
-      "taxonomySubtopic": "Lakes and wetlands",
-      "taxonomyId": "syllabus:geography/indian-geography/drainage/lakes-and-wetlands",
+      "subject": "Current Affairs",
+      "topic": "Sports",
+      "subtopic": "Competitions and venues",
+      "taxonomyHead": "Sports, Culture & Recognition",
+      "taxonomyChapter": "Sports",
+      "taxonomySubtopic": "Competitions and venues",
+      "taxonomyId": "syllabus:current-affairs/sports-culture-recognition/sports/competitions-and-venues",
       "taxonomyVersion": "upsc-prelims-v2-draft",
       "difficulty": "Moderate",
       "promptLines": [
@@ -10651,9 +10937,17 @@
           "A"
         ],
         "optionsReordered": false,
-        "classificationRationale": "Classified by reviewed source scope and closest verified PYQ taxonomy analogue (nda-2023-ii-82).",
-        "secondPass": "Same-agent comparison of the structured secondary transcript against the archived Series A source, with the official key transcribed independently in two orientations; not independent human review.",
-        "reviewedAt": "2026-11-03"
+        "classificationRationale": "Tests the host state of a specifically dated national athletics championship.",
+        "secondPass": "Independent blind reviewers taxonomy-reviewer-a and taxonomy-reviewer-b agreed on the primary, additional placements and tag.",
+        "reviewedAt": "2026-11-19",
+        "classificationAuditVersion": "classification-audit-v1",
+        "classificationRevision": 1,
+        "classificationAuditStatus": "independent-agreement",
+        "classificationReviewers": [
+          "taxonomy-reviewer-a",
+          "taxonomy-reviewer-b"
+        ],
+        "classificationAdjudicator": null
       }
     }
   ]
