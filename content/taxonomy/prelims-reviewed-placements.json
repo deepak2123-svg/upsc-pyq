@@ -3445,16 +3445,13 @@
       "questionId": "capf-2024-i-122",
       "expectedRecordHash": "742ec1bfa4854f218177b3e19e32ca67533340f5b8a6bb25eb40a323daa4526e",
       "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/climate-negotiations",
-      "additionalIds": [
-        "syllabus:environment-ecology/environmental-governance/international-framework/climate-conventions",
-        "syllabus:environment-ecology/climate-change/climate-responses/mitigation"
-      ],
+      "additionalIds": [],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
       "rationale": "COP28 outcomes are compared for stocktake, temperature goal and fossil/coal transition language.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: historical negotiation outcomes and mitigation are material. Preserve the negative instruction and the proposed allocation of transition leadership."
+        "rationale": "Adjudication found that the dated COP28 outcomes are primary; convention and mitigation references are context, not independently material additional concepts."
       },
       "tags": [
         "Event-based"
@@ -3505,22 +3502,22 @@
     {
       "questionId": "capf-2024-i-31",
       "expectedRecordHash": "7ad5f0f0012d26dba69f6bfca24600c1bc2c238ab9a5b1f90fa5b09808ac4397",
-      "primaryId": "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/the-moon-and-eclipses",
-      "additionalIds": [],
+      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "additionalIds": [
+        "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/the-moon-and-eclipses"
+      ],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "moon-eclipse",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Principally tests rotation-based time zones, the date line and daylight saving, while lunar motion is independently material to resolving the answer.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed on both placements because the Moon statement must also be evaluated, rather than merely appearing as an example."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-moon-and-eclipses"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2024/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2024-i-32",
@@ -3586,22 +3583,20 @@
     {
       "questionId": "capf-2024-i-35",
       "expectedRecordHash": "88688867fc2a342a1e4d6fadcc510816b654e8f36f8de0511f98e755be9f1c0d",
-      "primaryId": "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/planets",
+      "primaryId": "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/universe-and-origin-theories",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "planet",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests the sequence proposed by the Nebular Hypothesis for formation of the Solar System.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that origin theory is the specific concept; planets and the Sun are objects within the tested theory, not separate placements."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/planets"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2024/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2024-i-36",
@@ -3609,39 +3604,35 @@
       "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "manual-date-line",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Requires applying global time and calendar-day differences across New Zealand, Hawaii and Alaska.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that the locations are operands in a date-line calculation, not independent regional-geography concepts."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2024/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2024-i-37",
       "expectedRecordHash": "c7bec62444810cb251dc7808efcfbde59ac691a1635a99557982aa15efbeb040",
-      "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/thunderstorms-lightning-and-tornadoes",
+      "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "thunderstorm",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests hail formation, vertical freezing conditions and the layered structure of hailstones.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that hail is tested as solid precipitation; cumulonimbus is causal context rather than a second independently tested classification."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/thunderstorms-lightning-and-tornadoes"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2024/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2024-i-38",
@@ -3649,19 +3640,17 @@
       "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-currents",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "ocean-current",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Matches named ocean currents to the basins in which they flow.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that current distribution is the complete tested concept and does not warrant separate world-region placements."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/oceanography/ocean-currents"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2024/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2024-i-39",
@@ -3686,22 +3675,20 @@
     {
       "questionId": "capf-2024-i-4",
       "expectedRecordHash": "638206365c7c08115a729afc4feb01af33fef0a71ce9ef3ddc674bac44b9ea74",
-      "primaryId": "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/the-sun",
+      "primaryId": "syllabus:science-technology/physics/mechanics/gravitation",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "sun",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests the scale of Sun-Earth Lagrange-point geometry produced by the two bodies’ gravitational field.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that gravitation and orbital dynamics are the concept required; the named Lagrange points do not make this a space-mission question."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/universe-solar-system-shape-and-size-of-earth/the-sun"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2024/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2024-i-40",
@@ -3726,22 +3713,20 @@
     {
       "questionId": "capf-2024-i-41",
       "expectedRecordHash": "679179deb7895fcda6a1642e5b4d046470ff937289e4e479e75a7de0d6faaf0a",
-      "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/metamorphic-rocks",
+      "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/the-rock-cycle",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "metamorphic-rock",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Directly tests lithification, metamorphism and solidification as transformations in the rock cycle.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that all three processes are evaluated within one bounded rock-cycle concept."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/rocks-and-minerals/metamorphic-rocks"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2024/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2024-i-42",
@@ -3826,22 +3811,20 @@
     {
       "questionId": "capf-2024-i-5",
       "expectedRecordHash": "d90f3456180d453a95849e56cd0b455ac33f2d5eb58b52794cd48d803edbd63c",
-      "primaryId": "syllabus:geography/physical-geography/oceanography/waves",
+      "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/greenhouse-effect-and-global-warming",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "ocean-wave",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests the shortwave-entry and longwave-retention mechanism underlying the greenhouse effect.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that the radiation mechanism is primary; no dated climate event or policy is involved."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/oceanography/waves"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2024/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2024-i-7",
@@ -3942,53 +3925,38 @@
     {
       "questionId": "capf-2025-i-1",
       "expectedRecordHash": "a0e733509e6ea26c89e52e68d152445e5c093f141cdb76d45720e98422d4d008",
-      "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
-      "additionalIds": [
-        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy",
-        "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
-      ],
+      "primaryId": "syllabus:current-affairs/national-affairs/government-initiatives/schemes-and-missions",
+      "additionalIds": [],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Green Hydrogen Mission approval timing and certification-scheme ministry are evaluated.",
+      "rationale": "Tests the dated approval and responsible ministry associated with the National Green Hydrogen Mission and its certification scheme.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: dated energy-policy development and programme administration are explicit. Do not silently replace the proposed ministry name."
+        "rationale": "Independent audit reviewers agreed that the mission and its administering ministry are the material task; hydrogen as an energy carrier is contextual rather than a separate placement."
       },
       "tags": [
         "Event-based"
       ],
       "editorialBatch": "CAPF/2025/I/existing-1",
-      "answerEligibilityUnchanged": true,
-      "sharedEconomyCurrentAffairs": {
-        "sourceIds": [
-          "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends"
-        ],
-        "additionalIds": [
-          "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
-        ],
-        "basis": "editor-requested-shared-category",
-        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
-      }
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2025-i-121",
       "expectedRecordHash": "83a1a7899e69bdedc486f16d09e412800257f209bbfa88b9eb400bd02976dfe9",
-      "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
+      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "cloud",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests axial inclination as the cause of seasonal variation in solar energy received at a place on Earth.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that this is a static seasons mechanism, despite the question using the word seasonal."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2025/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2025-i-122",
@@ -4029,16 +3997,14 @@
     {
       "questionId": "capf-2025-i-124",
       "expectedRecordHash": "8c2f0c97fc745e9a9955b1f0b0b9f128bdddac6b62b2cb02c40f3db8f95fa578",
-      "primaryId": "syllabus:environment-ecology/climate-change/climate-responses/mitigation",
-      "additionalIds": [
-        "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/environmental-policy"
-      ],
+      "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/environmental-policy",
+      "additionalIds": [],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Three Indian emissions-intensity, energy-capacity and net-zero targets are compared.",
+      "rationale": "Tests India’s dated emissions-intensity, non-fossil-capacity and net-zero climate-policy targets.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: historical climate commitments are primary. Preserve the proposed old intensity target because its validity is being tested; do not substitute a current target in the stem."
+        "rationale": "Independent audit reviewers agreed that recall of India’s announced target package is primary; each mitigation instrument is part of that policy package rather than an additional placement."
       },
       "tags": [
         "Event-based"
@@ -4067,42 +4033,38 @@
     {
       "questionId": "capf-2025-i-71",
       "expectedRecordHash": "d062e310d1a46e134053808074d2e1845707a379b19bc28ca67e116835b64bde",
-      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "grid",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests longitude-based time difference and the calendar-day rule applied when crossing the International Date Line.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that both statements test one bounded rotation-and-time concept."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2025/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2025-i-72",
       "expectedRecordHash": "67ca5005f1468ffc7564010b0218ebdadc9b6b53ce86455812c942e1216f6cba",
-      "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/rocks-overview",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "rock-overview",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests the expansion, hydration and crystallization processes by which salts disintegrate rock during weathering.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that the proposed salts and processes are details within weathering, not separate chemistry placements."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/rocks-and-minerals/rocks-overview"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2025/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2025-i-73",
@@ -4110,59 +4072,53 @@
       "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "mass-movement",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Requires distinguishing rapid mass movements such as mudflow and slump from slower forms such as creep and solifluction.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that movement rate is tested within the mass-movement classification."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/geomorphic-processes-and-landforms/mass-movements"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2025/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2025-i-74",
       "expectedRecordHash": "d652b6afc6a6a258d18454897f90dc924c5095535985d894130a728a7cea70bf",
-      "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/ionosphere",
+      "primaryId": "syllabus:geography/physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "ionosphere",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests the layered cone, felsic lava, trapped gas and explosive-eruption characteristics of stratovolcanoes.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that all statements describe one volcanic landform and eruption mechanism."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/ionosphere"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2025/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2025-i-75",
       "expectedRecordHash": "56a7261bbcee7f2c947332b81f4995a4c5a684d552b4dcc16e407c109848e15d",
-      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "mass-movement",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests abrasion as the stream-erosion process that drills potholes into bedrock.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that the process is materially tested through formation of a fluvial landform."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/geomorphic-processes-and-landforms/mass-movements"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2025/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2025-i-76",
@@ -4170,19 +4126,17 @@
       "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-floor-relief",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "ocean-floor",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests the ocean-basin distribution of named deep-sea trenches.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that the named basins locate ocean-floor landforms and do not create separate regional placements."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/oceanography/ocean-floor-relief"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2025/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2025-i-77",
@@ -4190,19 +4144,17 @@
       "primaryId": "syllabus:geography/physical-geography/oceanography/tides",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "tides",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests the interval, Sun-Moon geometry and counteracting gravitational forces that produce neap tides.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that each statement is part of the same tide mechanism."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/oceanography/tides"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2025/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2025-i-78",
@@ -4245,42 +4197,38 @@
     {
       "questionId": "capf-2025-i-80",
       "expectedRecordHash": "81e4e411a0d5bca91e5a30a661a048b5c0573828201ee6e9c4912615ef2961a5",
-      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "primaryId": "syllabus:geography/world-geography/cartography-and-geospatial-tools/remote-sensing-and-gis",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "grid",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests raster data structure, its compatibility with imagery and the relation between cell size and spatial resolution in GIS.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that raster representation is a GIS concept; remote-sensing imagery is an interoperability detail."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2025/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2025-i-81",
       "expectedRecordHash": "f857bb6dee568b49467c4f64ac5472fe27671eb4cbdb3c397198a9b2b1ea89dd",
-      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "primaryId": "syllabus:geography/world-geography/cartography-and-geospatial-tools/remote-sensing-and-gis",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "grid",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Directly tests data, hardware, software and people as components of a Geographic Information System.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that all four elements belong to one GIS-system concept."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2025/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2025-i-82",
@@ -4353,15 +4301,13 @@
       "questionId": "capf-2026-i-1",
       "expectedRecordHash": "3825a0b9844ca0b5bfd143c90e57238e5d2eda123bab9ee661c5c323141ebfa2",
       "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/climate-negotiations",
-      "additionalIds": [
-        "syllabus:environment-ecology/environmental-governance/international-framework/climate-conventions"
-      ],
+      "additionalIds": [],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
       "rationale": "Four competing meanings of SB64 include a specific UNFCCC subsidiary-body session.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: climate-negotiation institutional identity is the tested concept. Missile, submarine and company descriptions are alternatives, not additional defence or commerce placements."
+        "rationale": "Independent audit reviewers agreed that the numbered session is the event-specific climate-negotiation concept; UNFCCC is its institutional context rather than a second task."
       },
       "tags": [
         "Event-based"
@@ -4412,51 +4358,16 @@
     {
       "questionId": "capf-2026-i-14",
       "expectedRecordHash": "d0f3a35766afdcb8c9e5951863ce64d9bc8326ea423b73a8029897b969ea9cb3",
-      "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics",
-      "additionalIds": [
-        "syllabus:current-affairs/economy-development/sectoral-developments/industrial-developments",
-        "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics",
-        "syllabus:economy/current-affairs/sectoral-developments/industrial-developments"
-      ],
-      "status": "approved",
-      "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Milk, steel and wheat are compared for whether India ranks first in global production.",
-      "secondPass": {
-        "status": "approved",
-        "rationale": "Second pass: changing agricultural and industrial production rankings are the task. No source data year is supplied, so none is inferred from exam metadata."
-      },
-      "tags": [
-        "Event-based"
-      ],
-      "editorialBatch": "CAPF/2026/I/existing-1",
-      "answerEligibilityUnchanged": true,
-      "sharedEconomyCurrentAffairs": {
-        "sourceIds": [
-          "syllabus:current-affairs/economy-development/sectoral-developments/agricultural-trends-and-statistics",
-          "syllabus:current-affairs/economy-development/sectoral-developments/industrial-developments"
-        ],
-        "additionalIds": [
-          "syllabus:economy/current-affairs/sectoral-developments/agricultural-trends-and-statistics",
-          "syllabus:economy/current-affairs/sectoral-developments/industrial-developments"
-        ],
-        "basis": "editor-requested-shared-category",
-        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
-      }
-    },
-    {
-      "questionId": "capf-2026-i-22",
-      "expectedRecordHash": "3bdcd5d8d10e7e7b8b01b4d7b6cdb7fcbe9efbe68832315a1330a11fb3011b95",
       "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/economic-rankings",
       "additionalIds": [
-        "syllabus:social-development/population/demography-and-development/human-development-indicators",
         "syllabus:economy/current-affairs/economic-reports-and-indices/economic-rankings"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Four states are compared with the all-India score in the 2023–24 SDG data.",
+      "rationale": "Requires contemporary global production-rank knowledge for milk, steel and wheat.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: edition-specific development comparison is primary. Do not substitute later scores or infer a release date from exam year."
+        "rationale": "Independent audit reviewers agreed that the common task is comparative ranking, not the production process or sector of each commodity."
       },
       "tags": [
         "Event-based"
@@ -4475,20 +4386,49 @@
       }
     },
     {
+      "questionId": "capf-2026-i-22",
+      "expectedRecordHash": "3bdcd5d8d10e7e7b8b01b4d7b6cdb7fcbe9efbe68832315a1330a11fb3011b95",
+      "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports",
+      "additionalIds": [
+        "syllabus:economy/current-affairs/economic-reports-and-indices/development-reports"
+      ],
+      "status": "approved",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Four states are compared with the all-India score in the 2023–24 SDG data.",
+      "secondPass": {
+        "status": "approved",
+        "rationale": "Independent audit reviewers agreed that the dated NITI Aayog SDG publication is a development report; human-development indicators are not independently tested by the state-score comparison."
+      },
+      "tags": [
+        "Event-based"
+      ],
+      "editorialBatch": "CAPF/2026/I/existing-1",
+      "answerEligibilityUnchanged": true,
+      "sharedEconomyCurrentAffairs": {
+        "sourceIds": [
+          "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports"
+        ],
+        "additionalIds": [
+          "syllabus:economy/current-affairs/economic-reports-and-indices/development-reports"
+        ],
+        "basis": "editor-requested-shared-category",
+        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
+      }
+    },
+    {
       "questionId": "capf-2026-i-6",
       "expectedRecordHash": "b268e1ed30383161c5c1ee526feb5f992d0d282823d2adc7ee8fa11e84385bcb",
-      "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
+      "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/bilateral-developments",
       "additionalIds": [
-        "syllabus:international-relations-organisations/india-s-relations/bilateral-relations/major-powers",
-        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy",
+        "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
         "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
       ],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
-      "rationale": "Kudankulam reactor-unit projects are compared for international cooperation partners.",
+      "rationale": "Tests which major-power partner is involved in construction of specified Kudankulam nuclear-power units.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: project partnership and energy infrastructure are material. No reactor-physics mechanism is asked and proposed US cooperation is not adopted as fact."
+        "rationale": "Adjudication made bilateral cooperation primary because the answer is the partner country; the named infrastructure project remains independently material, while reactor physics and generic energy are not tested."
       },
       "tags": [
         "Event-based"
@@ -4603,34 +4543,20 @@
     {
       "questionId": "capf-2026-i-76",
       "expectedRecordHash": "09fe0b63d8bc273599334d5b26cdeb7f48b25544f923a5b80122782feee542b8",
-      "primaryId": "syllabus:geography/indian-geography/location-and-extent/strategic-locations",
-      "additionalIds": [
-        "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
-        "syllabus:environment-ecology/biodiversity/species-and-relationships/species-distribution",
-        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
-      ],
+      "primaryId": "syllabus:current-affairs/environment-geography/species-and-sites-in-news/habitat-developments",
+      "additionalIds": [],
       "status": "approved",
       "basis": "complete-stem-and-options-second-pass",
-      "rationale": "A coastal feature is identified from Malacca proximity, a proposed port and turtle-nesting/coastal-ecosystem clues.",
+      "rationale": "Identifies Galathea Bay through a proposed transshipment port, leatherback nesting and sensitive coastal ecosystems.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: strategic coastal location, named development context and species habitat are genuine independent clues. Do not infer a project approval date or a formal threat category not separately verified here."
+        "rationale": "Adjudication found that the leaf already integrates the current development and habitat clues; duplicating those clues as infrastructure, strategic location or species-distribution placements would over-classify one site-identification task."
       },
       "tags": [
         "Event-based"
       ],
       "editorialBatch": "CAPF/2026/I/existing-1",
-      "answerEligibilityUnchanged": true,
-      "sharedEconomyCurrentAffairs": {
-        "sourceIds": [
-          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
-        ],
-        "additionalIds": [
-          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
-        ],
-        "basis": "editor-requested-shared-category",
-        "rationale": "Also browse the approved Economy & Development current-affairs category from Economy. Retain canonical IDs, original placements and independent verification eligibility."
-      }
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2026-i-77",
@@ -4638,39 +4564,35 @@
       "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "grid",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests the geometric definition of a great circle and its division of the spherical Earth into equal hemispheres.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that this is a static geographical-grid concept."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2026/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2026-i-78",
       "expectedRecordHash": "cf5f4af9cd492fb0866119f47d9980d66c0804338498b8431cdb0a9f4cd10966",
-      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "primaryId": "syllabus:science-technology/space/space-programmes/navigation-systems",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "grid",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Tests the satellite-signal and ranging principles by which GPS determines a terrestrial position.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that navigation-system operation is primary and no separate communications or mechanics placement is independently required."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2026/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2026-i-79",
@@ -4698,19 +4620,17 @@
       "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
       "additionalIds": [],
       "status": "approved",
-      "basis": "preserved-physical-v1.2-review",
-      "rationale": "cloud",
+      "basis": "complete-stem-and-options-second-pass",
+      "rationale": "Identifies cirrus from its ice-crystal composition, feathery appearance and high-altitude formation.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Migration check: existing reviewed primary ID resolves to the preserved chapter/subpart. No post-review material content repair is recorded. This is preservation, not a claim of a new original-paper review."
+        "rationale": "Independent audit reviewers agreed that every clue identifies a cloud type within one static concept."
       },
-      "tags": [],
-      "previousReview": {
-        "file": "content/taxonomy/physical-geography-v1.2-review.json",
-        "version": "upsc-geography-v1.2",
-        "status": "rule-reviewed",
-        "legacyId": "physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds"
-      }
+      "tags": [
+        "Static"
+      ],
+      "editorialBatch": "CAPF/2026/I/existing-1",
+      "answerEligibilityUnchanged": true
     },
     {
       "questionId": "capf-2026-i-81",
@@ -4773,7 +4693,6 @@
       "expectedRecordHash": "c3fb7ef1d88ba4efcb71b8e57bb7c57bbc09d7f2a89cf0ae3459c2a61c35d4c0",
       "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
       "additionalIds": [
-        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy",
         "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/household-energy-access",
         "syllabus:economy/current-affairs/sectoral-developments/mineral-and-energy-trends"
       ],
@@ -4782,7 +4701,7 @@
       "rationale": "Electricity generation trends and rural/urban availability are compared over stated periods.",
       "secondPass": {
         "status": "approved",
-        "rationale": "Second pass: historical energy-sector performance and access are material. The end year is an observation reference, not an invented publication date."
+        "rationale": "Adjudication retained household energy access because rural and urban availability are independently evaluated, while the generic energy leaf would merely duplicate the primary sector-trend concept."
       },
       "tags": [
         "Event-based"

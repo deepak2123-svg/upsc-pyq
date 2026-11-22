@@ -137,7 +137,7 @@ test('review ledger checks hashes and separates preserved decisions, fresh passe
   const byId=new Map([...bank,...imports,...official.filter(q=>!oldIds.has(q.id))].map(q=>[q.id,q]));
   assert.equal(new Set(ledger.records.map(r=>r.questionId)).size,ledger.records.length);
   assert.equal(ledger.pilotSubjects.length,9);
-  assert.equal(ledger.records.filter(r=>r.basis==='preserved-physical-v1.2-review').length,341,'Both NDA 2025 papers now have fresh complete-paper reviews');
+  assert.equal(ledger.records.filter(r=>r.basis==='preserved-physical-v1.2-review').length,320,'CAPF calibration questions now have fresh independent audit decisions instead of inherited physical-geography preservation');
   const repaired=ledger.records.find(r=>r.questionId==='nda-2025-i-86');
   assert.equal(repaired.status,'approved');
   assert.equal(repaired.basis,'nda-2025-complete-source-review');
@@ -353,7 +353,7 @@ test('all existing CAPF records are classified through 2026 with precise homes a
   const bank=JSON.parse(fs.readFileSync('content/question-bank.json')).questions;
   const ledger=JSON.parse(fs.readFileSync('content/taxonomy/prelims-reviewed-placements.json'));
   const byId=new Map(ledger.records.map(row=>[row.questionId,row]));
-  for(const [year,count]of [[2022,16],[2023,20],[2024,13],[2025,10],[2026,22]]) {
+  for(const [year,count]of [[2022,16],[2023,20],[2024,21],[2025,20],[2026,25]]) {
     assert.equal(ledger.records.filter(row=>row.editorialBatch===`CAPF/${year}/I/existing-1`).length,count);
   }
   assert.ok(bank.filter(q=>q.exam==='CAPF').every(q=>byId.get(q.id)?.status==='approved'));
@@ -364,6 +364,12 @@ test('all existing CAPF records are classified through 2026 with precise homes a
   assert.match(byId.get('capf-2026-i-90').primaryId,/eutrophication$/);
   assert.equal(byId.get('capf-2023-i-44').editorialFollowUps[0].status,'pending');
   assert.ok(byId.get('capf-2024-i-84').additionalIds.some(id=>id.endsWith('/maritime-initiatives')));
+  assert.match(byId.get('capf-2024-i-4').primaryId,/mechanics\/gravitation$/);
+  assert.ok(byId.get('capf-2024-i-31').additionalIds.some(id=>id.endsWith('/the-moon-and-eclipses')));
+  assert.deepEqual(byId.get('capf-2024-i-122').additionalIds,[]);
+  assert.match(byId.get('capf-2025-i-1').primaryId,/government-initiatives\/schemes-and-missions$/);
+  assert.match(byId.get('capf-2026-i-76').primaryId,/species-and-sites-in-news\/habitat-developments$/);
+  assert.deepEqual(byId.get('capf-2026-i-76').additionalIds,[]);
   assert.equal(byId.get('capf-2026-i-84').eventDate,undefined);
   const policy=JSON.parse(fs.readFileSync('content/question-review-policy.json'));
   assert.equal(policy['capf-2018-i-41'].status,'withdrawn');

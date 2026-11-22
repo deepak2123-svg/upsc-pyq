@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "auditVersion": "classification-audit-v1",
+  "taxonomyVersion": "upsc-prelims-v2-draft",
+  "paperId": "capf-2024-i",
+  "batchId": "calibration-pilot/capf/2024/i/batch-01",
+  "reviewer": {
+    "id": "taxonomy-reviewer-b-capf-2024",
+    "method": "blind full-stem-and-options semantic review against the frozen taxonomy catalog; existing placements, rationales, analogues, and other reviewer decisions hidden",
+    "reviewedAt": "2026-11-22T00:00:00Z",
+    "independent": true
+  },
+  "decisions": [
+    {
+      "questionId": "capf-2024-i-4",
+      "primaryLeaf": "syllabus:science-technology/physics/mechanics/gravitation",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the locations of Sun-Earth Lagrange points, which arise from the gravitational and orbital dynamics of the two-body system.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-5",
+      "primaryLeaf": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/greenhouse-effect-and-global-warming",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the short-wave entry and long-wave heat-retention mechanism underlying the greenhouse effect.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-31",
+      "primaryLeaf": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "additionalLeaves": [
+        "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/the-moon-and-eclipses"
+      ],
+      "tag": "Static",
+      "rationale": "Primarily tests Earth rotation, time zones, the Date Line and daylight saving; one independently material statement also tests the Moon's direction of rotation and revolution.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-35",
+      "primaryLeaf": "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/universe-and-origin-theories",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Directly tests the sequence and mechanics proposed by the Nebular Hypothesis for formation of the Solar System.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-36",
+      "primaryLeaf": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Requires applying global time and calendar-day differences across New Zealand, Hawaii and Alaska relative to the International Date Line.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-37",
+      "primaryLeaf": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests hail formation, its vertical temperature conditions and the layered structure of hailstones as a form of precipitation.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-38",
+      "primaryLeaf": "syllabus:geography/physical-geography/oceanography/ocean-currents",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the ocean-basin locations of the Kuroshio, Agulhas, East Wind Drift and Antilles currents.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-41",
+      "primaryLeaf": "syllabus:geography/physical-geography/rocks-and-minerals/the-rock-cycle",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Directly asks which lithification, metamorphism and solidification processes belong to the rock cycle.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-122",
+      "primaryLeaf": "syllabus:environment-ecology/environmental-governance/international-framework/climate-conventions",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Tests the negotiated outcomes of COP28, including the Global Stocktake and language on fossil fuels, coal power and the 1.5°C goal.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    }
+  ]
+}

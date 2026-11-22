@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "auditVersion": "classification-audit-v1",
+  "taxonomyVersion": "upsc-prelims-v2-draft",
+  "paperId": "capf-2025-i",
+  "batchId": "calibration-pilot/capf/2025/i/batch-01",
+  "reviewer": {
+    "id": "taxonomy-reviewer-a-capf-2025",
+    "method": "blind full-stem-and-options semantic review against the frozen taxonomy catalog; existing placements, rationales, analogues, and other reviewer decisions hidden",
+    "reviewedAt": "2026-11-22T00:00:00Z",
+    "independent": true
+  },
+  "decisions": [
+    {
+      "questionId": "capf-2025-i-1",
+      "primaryLeaf": "syllabus:current-affairs/national-affairs/government-initiatives/schemes-and-missions",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Tests the dated approval and responsible ministry associated with the National Green Hydrogen Mission and its certification scheme.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2025-i-71",
+      "primaryLeaf": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests longitude-based time difference and the calendar-day rule applied when crossing the International Date Line.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2025-i-72",
+      "primaryLeaf": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the expansion, hydration and crystallization processes by which salts disintegrate rock during weathering.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2025-i-73",
+      "primaryLeaf": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Requires distinguishing rapid mass movements such as mudflow and slump from slower forms such as creep and solifluction.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2025-i-74",
+      "primaryLeaf": "syllabus:geography/physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the layered cone, felsic lava, trapped gas and explosive-eruption characteristics of stratovolcanoes.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2025-i-75",
+      "primaryLeaf": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests abrasion as the stream-erosion process that drills potholes into bedrock.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2025-i-76",
+      "primaryLeaf": "syllabus:geography/physical-geography/oceanography/ocean-floor-relief",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the ocean-basin distribution of named deep-sea trenches, which are features of ocean-floor relief.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2025-i-77",
+      "primaryLeaf": "syllabus:geography/physical-geography/oceanography/tides",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the interval, Sun-Moon geometry and counteracting gravitational forces that produce neap tides.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2025-i-80",
+      "primaryLeaf": "syllabus:geography/world-geography/cartography-and-geospatial-tools/remote-sensing-and-gis",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests raster data structure, its compatibility with imagery and the relation between cell size and spatial resolution in GIS.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2025-i-81",
+      "primaryLeaf": "syllabus:geography/world-geography/cartography-and-geospatial-tools/remote-sensing-and-gis",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Directly tests data, hardware, software and people as the constituent components of a Geographic Information System.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2025-i-121",
+      "primaryLeaf": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests axial inclination as the cause of seasonal variation in the solar energy received at a place on Earth.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2025-i-124",
+      "primaryLeaf": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/environmental-policy",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Tests India's dated emissions-intensity, non-fossil-capacity and net-zero climate-policy targets.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    }
+  ]
+}

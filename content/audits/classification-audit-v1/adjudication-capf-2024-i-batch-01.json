@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "auditVersion": "classification-audit-v1",
+  "taxonomyVersion": "upsc-prelims-v2-draft",
+  "paperId": "capf-2024-i",
+  "batchId": "calibration-pilot/capf/2024/i/batch-01",
+  "adjudicator": {
+    "id": "taxonomy-adjudicator-capf-2024",
+    "reviewedAt": "2026-11-22T00:00:00Z"
+  },
+  "decisions": [
+    {
+      "questionId": "capf-2024-i-122",
+      "primaryLeaf": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/climate-negotiations",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Tests the specifically dated negotiated outcomes of COP28, including the Global Stocktake and transition language. The event-specific climate-negotiations leaf is primary because answering requires recall of that conference's adopted outcomes rather than general knowledge of the climate-convention framework; convention and mitigation references are context, not independently material additional concepts.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false,
+      "resolves": "reviewer-disagreement"
+    }
+  ]
+}

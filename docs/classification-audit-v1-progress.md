@@ -16,11 +16,24 @@ Status: **pending-independent-review**. This report does not certify pending rec
 - Active: 5651
 - GS: 2525
 - Preparation: 3126
-- Reviewer A: 28
-- Reviewer B: 28
-- Resolved: 28
-- Applied and verified: 28
-- Unresolved: 5623
+- Reviewer A: 58
+- Reviewer B: 58
+- Exact agreements: 48
+- Disagreements: 10
+- Adjudicated: 10
+- Agreement rate: 82.8%
+- Resolved: 58
+- Applied and verified: 58
+- Unresolved: 5593
+
+## Calibration pilot
+
+| Exam | Reviewed / planned | Agreements | Disagreements |
+|---|---:|---:|---:|
+| CAPF | 30/30 | 26 | 4 |
+| CDS | 0/30 | 0 | 0 |
+| CSE | 0/30 | 0 | 0 |
+| NDA | 1/30 | 1 | 0 |
 
 ## Automated risk flags
 

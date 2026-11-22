@@ -31601,13 +31601,44 @@
         "multiple-placement",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
-      "adjudication": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/climate-negotiations",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Tests the negotiated outcomes and transition language adopted at the specifically dated COP28 conference.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:environment-ecology/environmental-governance/international-framework/climate-conventions",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Tests the negotiated outcomes of COP28, including the Global Stocktake and language on fossil fuels, coal power and the 1.5°C goal.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "adjudication": {
+        "reviewerId": "taxonomy-adjudicator-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/climate-negotiations",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Tests the specifically dated negotiated outcomes of COP28, including the Global Stocktake and transition language. The event-specific climate-negotiations leaf is primary because answering requires recall of that conference's adopted outcomes rather than general knowledge of the climate-convention framework; convention and mitigation references are context, not independently material additional concepts.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false,
+        "resolves": "reviewer-disagreement"
+      },
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2024/i/batch-01"
@@ -31718,13 +31749,37 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+        "additionalIds": [
+          "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/the-moon-and-eclipses"
+        ],
+        "tag": "Static",
+        "rationale": "Principally tests rotation-based time zones, date-line conventions and daylight saving, while the lunar-motion statement is independently needed to resolve the answer.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+        "additionalIds": [
+          "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/the-moon-and-eclipses"
+        ],
+        "tag": "Static",
+        "rationale": "Primarily tests Earth rotation, time zones, the Date Line and daylight saving; one independently material statement also tests the Moon's direction of rotation and revolution.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2024/i/batch-01"
@@ -31868,13 +31923,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/universe-and-origin-theories",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the contraction, disk formation and condensation sequence proposed by the Nebular Hypothesis for Solar-System origin.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/universe-and-origin-theories",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Directly tests the sequence and mechanics proposed by the Nebular Hypothesis for formation of the Solar System.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2024/i/batch-01"
@@ -31905,13 +31980,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Requires applying international-date-line and longitudinal time differences to New Zealand, Hawaii and Alaska.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Requires applying global time and calendar-day differences across New Zealand, Hawaii and Alaska relative to the International Date Line.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2024/i/batch-01"
@@ -31942,13 +32037,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests how hail forms as layered solid precipitation within cumulonimbus-cloud updrafts and freezing zones.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests hail formation, its vertical temperature conditions and the layered structure of hailstones as a form of precipitation.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2024/i/batch-01"
@@ -31979,13 +32094,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-currents",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Matches named surface currents to the oceans in which they flow.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-currents",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the ocean-basin locations of the Kuroshio, Agulhas, East Wind Drift and Antilles currents.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2024/i/batch-01"
@@ -32056,13 +32191,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:science-technology/physics/mechanics/gravitation",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the scale of the Sun-Earth Lagrange-point geometry produced by the two bodies' gravitational field.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:science-technology/physics/mechanics/gravitation",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the locations of Sun-Earth Lagrange points, which arise from the gravitational and orbital dynamics of the two-body system.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2024/i/batch-01"
@@ -32133,13 +32288,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/the-rock-cycle",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Directly tests lithification, metamorphism and solidification as transformations in the rock cycle.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/the-rock-cycle",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Directly asks which lithification, metamorphism and solidification processes belong to the rock cycle.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2024/i/batch-01"
@@ -32326,13 +32501,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/greenhouse-effect-and-global-warming",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the shortwave-entry and longwave-retention mechanism underlying the greenhouse effect.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2024",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/greenhouse-effect-and-global-warming",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the short-wave entry and long-wave heat-retention mechanism underlying the greenhouse effect.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2024/i/batch-01"
@@ -32560,13 +32755,33 @@
         "multiple-placement",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/national-affairs/government-initiatives/schemes-and-missions",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Tests the dated approval and responsible ministry associated with the National Green Hydrogen Mission and its certification scheme.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/national-affairs/government-initiatives/schemes-and-missions",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Tests dated approval and administering-ministry facts for the National Green Hydrogen Mission and its certification scheme, rather than hydrogen-production technology.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2025/i/batch-01"
@@ -32597,13 +32812,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests axial inclination as the cause of seasonal variation in the solar energy received at a place on Earth.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests axial inclination as the cause of seasonal variation in solar energy received at a place on Earth.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2025/i/batch-01"
@@ -32712,13 +32947,33 @@
         "multiple-placement",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/environmental-policy",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Tests India's dated emissions-intensity, non-fossil-capacity and net-zero climate-policy targets.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/environmental-policy",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Tests India's dated national emissions-intensity, non-fossil-capacity and net-zero policy commitments, not the general science of mitigation.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2025/i/batch-01"
@@ -32786,13 +33041,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests longitude-based time difference and the calendar-day rule applied when crossing the International Date Line.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Requires applying longitude-based time differences and the calendar-day rule at the International Date Line.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2025/i/batch-01"
@@ -32823,13 +33098,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the expansion, hydration and crystallization processes by which salts disintegrate rock during weathering.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Directly tests the thermal, hydration and crystallization mechanisms involved in salt weathering of rocks.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2025/i/batch-01"
@@ -32860,13 +33155,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Requires distinguishing rapid mass movements such as mudflow and slump from slower forms such as creep and solifluction.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Classifies creep, mudflow, solifluction and slump by the speed of mass movement.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2025/i/batch-01"
@@ -32897,13 +33212,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the layered cone, felsic lava, trapped gas and explosive-eruption characteristics of stratovolcanoes.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/plate-tectonics-earthquakes-volcanoes-and-mountain-building/volcanoes",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests stratovolcano morphology, felsic lava, ash layering and the pressure conditions behind explosive eruptions.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2025/i/batch-01"
@@ -32934,13 +33269,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests abrasion as the stream-erosion process that drills potholes into bedrock.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the stream-erosion process that drills potholes into bedrock, a fluvial landform mechanism.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2025/i/batch-01"
@@ -32971,13 +33326,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-floor-relief",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the ocean-basin distribution of named deep-sea trenches, which are features of ocean-floor relief.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/oceanography/ocean-floor-relief",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Requires locating named ocean trenches by basin, testing the distribution of deep-ocean floor relief.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2025/i/batch-01"
@@ -33008,13 +33383,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/oceanography/tides",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the interval, Sun-Moon geometry and counteracting gravitational forces that produce neap tides.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/oceanography/tides",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the interval, Sun-Moon geometry and opposing gravitational effects that produce neap tides.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2025/i/batch-01"
@@ -33122,13 +33517,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/world-geography/cartography-and-geospatial-tools/remote-sensing-and-gis",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests raster data structure, its compatibility with imagery and the relation between cell size and spatial resolution in GIS.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/world-geography/cartography-and-geospatial-tools/remote-sensing-and-gis",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the raster data model and spatial resolution used to represent remote-sensing imagery in GIS.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2025/i/batch-01"
@@ -33159,13 +33574,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/world-geography/cartography-and-geospatial-tools/remote-sensing-and-gis",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Directly tests data, hardware, software and people as the constituent components of a Geographic Information System.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2025",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/world-geography/cartography-and-geospatial-tools/remote-sensing-and-gis",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Directly tests the data, hardware, software and people components of a Geographic Information System.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2025/i/batch-01"
@@ -33315,13 +33750,33 @@
         "multiple-placement",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/climate-negotiations",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Tests the identity of the specifically numbered SB 64 session of the UNFCCC subsidiary bodies within the climate-negotiation process.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/climate-negotiations",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Tests recognition of SB 64 as a specifically numbered session of the UNFCCC subsidiary bodies that conduct the climate-negotiation process.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2026/i/batch-01"
@@ -33438,13 +33893,33 @@
         "multiple-placement",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/economic-rankings",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Requires contemporary global production-rank knowledge for milk, steel and wheat rather than their production processes or locations.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/economic-rankings",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Requires the contemporary global production rank of India across milk, steel and wheat rather than the production process of any one commodity.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2026/i/batch-01"
@@ -33480,13 +33955,33 @@
         "multiple-placement",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Tests a state-level comparison drawn from NITI Aayog's explicitly dated 2023-24 SDG performance publication.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Tests a state score reported in NITI Aayog’s dated 2023-24 Sustainable Development Goals dataset against the all-India score.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2026/i/batch-01"
@@ -33523,13 +34018,50 @@
         "multiple-placement",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
-      "adjudication": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/bilateral-developments",
+        "additionalIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "tag": "Event-based",
+        "rationale": "Tests which major-power partner is involved in the current construction of specified Kudankulam nuclear-power units; both bilateral cooperation and the named infrastructure project are independently material.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
+        "additionalIds": [
+          "syllabus:international-relations-organisations/india-s-relations/bilateral-relations/major-powers"
+        ],
+        "tag": "Event-based",
+        "rationale": "Tests the foreign partner attached to ongoing Kudankulam nuclear-power units; the project status is primary and India’s cooperation with Russia or the USA is independently material.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "adjudication": {
+        "reviewerId": "taxonomy-adjudicator-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/bilateral-developments",
+        "additionalIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+        ],
+        "tag": "Event-based",
+        "rationale": "The correctness task turns on which foreign partner is involved in the ongoing Kudankulam unit projects, so the dated bilateral development is primary. The identity and unit grouping of the infrastructure project are independently material and retained as an additional placement. The static major-powers leaf is omitted because Russia and the USA are competing partner names within this event, not a separate test of the broader bilateral-relations framework; generic energy is likewise too broad.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false,
+        "resolves": "reviewer-disagreement"
+      },
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2026/i/batch-01"
@@ -33757,13 +34289,47 @@
         "multiple-placement",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
-      "adjudication": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/environment-geography/disasters-and-places-in-news/significant-locations",
+        "additionalIds": [
+          "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
+          "syllabus:environment-ecology/ecology-ecosystems/ecosystems/marine-and-coastal-ecosystems"
+        ],
+        "tag": "Event-based",
+        "rationale": "Identifies Galathea Bay as a significant location through its proposed transhipment port and independently material leatherback, coral-reef and seagrass habitat characteristics.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/environment-geography/species-and-sites-in-news/habitat-developments",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Identifies Galathea Bay through the combined current-development and habitat clues of a proposed transshipment port, leatherback nesting and sensitive coastal ecosystems.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "adjudication": {
+        "reviewerId": "taxonomy-adjudicator-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/environment-geography/species-and-sites-in-news/habitat-developments",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "The most specific tested concept is recognition of Galathea Bay as a site in the news through the interaction of a proposed port with leatherback nesting and sensitive coastal habitats. This habitat-developments leaf captures both sides of that identification task more precisely than the generic significant-locations leaf. Separate infrastructure-project and marine-ecosystem placements are omitted because the port, turtle, coral and seagrass statements function together as clues to the one site-development context rather than asking independent project policy or ecosystem-process knowledge.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false,
+        "resolves": "reviewer-disagreement"
+      },
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2026/i/batch-01"
@@ -33794,13 +34360,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the geometric definition of a great circle and its division of the spherical Earth into equal hemispheres.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the defining geometry of a great circle on the Earth and its division of the globe into equal hemispheres.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2026/i/batch-01"
@@ -33831,13 +34417,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:science-technology/space/space-programmes/navigation-systems",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests the satellite-signal and ranging principles by which GPS determines a terrestrial position.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:science-technology/space/space-programmes/navigation-systems",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests how the GPS satellite-navigation system uses signals and measured satellite distances to determine a receiver’s position.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2026/i/batch-01"
@@ -33908,13 +34514,33 @@
         "reused-rationale",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Identifies cirrus from its ice-crystal composition, feathery appearance and high-altitude formation.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
+        "additionalIds": [],
+        "tag": "Static",
+        "rationale": "Tests identification of cirrus from its ice-crystal composition, feather-like form and high-altitude occurrence.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
       "adjudication": null,
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2026/i/batch-01"
@@ -34065,13 +34691,48 @@
         "multiple-placement",
         "taxonomy-example-pending"
       ],
-      "reviewerA": null,
-      "reviewerB": null,
-      "adjudication": null,
+      "reviewerA": {
+        "reviewerId": "taxonomy-reviewer-a-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
+        "additionalIds": [],
+        "tag": "Event-based",
+        "rationale": "Tests explicitly dated trends in India's electricity generation and rural and urban power availability.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "reviewerB": {
+        "reviewerId": "taxonomy-reviewer-b-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
+        "additionalIds": [
+          "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/household-energy-access"
+        ],
+        "tag": "Event-based",
+        "rationale": "Tests dated trends in India’s electricity generation and the independently material improvement in rural and urban electricity availability.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false
+      },
+      "adjudication": {
+        "reviewerId": "taxonomy-adjudicator-capf-2026",
+        "reviewedAt": "2026-11-22T00:00:00Z",
+        "primaryId": "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
+        "additionalIds": [
+          "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/household-energy-access"
+        ],
+        "tag": "Event-based",
+        "rationale": "The dated national electricity-generation and availability trends make current energy-sector trends primary. Rural and urban electricity availability is a separate proposition that must be evaluated to solve the question, so household energy access is independently material and retained as an additional placement. A generic energy-infrastructure placement is omitted because it adds no distinct tested concept beyond these two specific leaves.",
+        "confidence": "high",
+        "ambiguityFlags": [],
+        "taxonomyChangeNeeded": false,
+        "resolves": "reviewer-disagreement"
+      },
       "application": {
-        "status": "pending",
-        "classificationRevision": null,
-        "generatedOutputVerified": false
+        "status": "applied",
+        "classificationRevision": 1,
+        "generatedOutputVerified": true
       },
       "auditWave": "calibration-pilot",
       "batchId": "calibration-pilot/capf/2026/i/batch-01"

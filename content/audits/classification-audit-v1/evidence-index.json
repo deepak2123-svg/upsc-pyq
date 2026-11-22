@@ -10,6 +10,30 @@
       "beforeClassificationModule": "scripts/nda-2015-ii-classification.mjs",
       "classificationRevision": 1,
       "generatedOutputVerified": true
+    },
+    {
+      "id": "calibration-pilot-capf-2024-i-batch-01",
+      "reviewerA": "content/audits/classification-audit-v1/reviewer-a-capf-2024-i-batch-01.json",
+      "reviewerB": "content/audits/classification-audit-v1/reviewer-b-capf-2024-i-batch-01.json",
+      "adjudication": "content/audits/classification-audit-v1/adjudication-capf-2024-i-batch-01.json",
+      "classificationRevision": 1,
+      "generatedOutputVerified": true
+    },
+    {
+      "id": "calibration-pilot-capf-2025-i-batch-01",
+      "reviewerA": "content/audits/classification-audit-v1/reviewer-a-capf-2025-i-batch-01.json",
+      "reviewerB": "content/audits/classification-audit-v1/reviewer-b-capf-2025-i-batch-01.json",
+      "adjudication": "content/audits/classification-audit-v1/adjudication-capf-2025-i-batch-01.json",
+      "classificationRevision": 1,
+      "generatedOutputVerified": true
+    },
+    {
+      "id": "calibration-pilot-capf-2026-i-batch-01",
+      "reviewerA": "content/audits/classification-audit-v1/reviewer-a-capf-2026-i-batch-01.json",
+      "reviewerB": "content/audits/classification-audit-v1/reviewer-b-capf-2026-i-batch-01.json",
+      "adjudication": "content/audits/classification-audit-v1/adjudication-capf-2026-i-batch-01.json",
+      "classificationRevision": 1,
+      "generatedOutputVerified": true
     }
   ]
 }

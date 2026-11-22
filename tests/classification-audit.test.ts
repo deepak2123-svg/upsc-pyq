@@ -46,19 +46,26 @@ test('bundled independent cohort is applied while the remaining audit stays pend
   const manifest = buildInitialManifest();
   const result = validateManifest(manifest, { compareRuntime: true });
   assert.deepEqual(result.issues, []);
-  assert.equal(result.resolvedCount, 28);
-  assert.equal(result.appliedCount, 28);
+  assert.equal(result.resolvedCount, 58);
+  assert.equal(result.appliedCount, 58);
   assert.equal(result.certificationComplete, false);
   const report = progressReport(manifest);
   assert.equal(report.status, 'pending-independent-review');
-  assert.equal(report.review.unresolved, EXPECTED_ACTIVE_BASELINE - 28);
-  assert.equal(report.review.adjudicated, 6);
+  assert.equal(report.review.unresolved, EXPECTED_ACTIVE_BASELINE - 58);
+  assert.equal(report.review.adjudicated, 10);
   const defect = manifest.records.find(record => record.questionId === 'nda-2015-ii-137')!;
   assert.equal(defect.before.primaryId, 'syllabus:polity-governance/institutions/parliament/sessions-and-procedures');
   assert.equal(defect.before.tags.join('|'), 'Event-based');
   assert.equal(defect.reviewerA?.reviewerId, 'taxonomy-reviewer-a');
   assert.equal(defect.reviewerB?.reviewerId, 'taxonomy-reviewer-b');
   assert.equal(defect.application.status, 'applied');
+  const capfAdjudicated = manifest.records.find(record => record.questionId === 'capf-2024-i-122')!;
+  assert.equal(capfAdjudicated.adjudication?.reviewerId, 'taxonomy-adjudicator-capf-2024');
+  assert.deepEqual(capfAdjudicated.adjudication?.additionalIds, []);
+  assert.equal(capfAdjudicated.application.status, 'applied');
+  const capf2026Adjudicated = manifest.records.find(record => record.questionId === 'capf-2026-i-76')!;
+  assert.equal(capf2026Adjudicated.adjudication?.primaryId, 'syllabus:current-affairs/environment-geography/species-and-sites-in-news/habitat-developments');
+  assert.deepEqual(capf2026Adjudicated.adjudication?.additionalIds, []);
 });
 
 test('blind review packets omit prior classifications, rationales, answers and explanations', () => {

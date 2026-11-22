@@ -174,7 +174,8 @@ type EvidenceIndex = {
     reviewerA: string;
     reviewerB: string;
     adjudication: string;
-    beforeClassificationModule: string;
+    /** Legacy cohorts may supply an immutable module to reconstruct their pre-audit state. */
+    beforeClassificationModule?: string;
     classificationRevision: number;
     generatedOutputVerified: boolean;
   }>;
@@ -487,13 +488,22 @@ function decisionFromEvidence(
 function semanticAdditionalIds(primaryId: string, additionalIds: string[], catalog: Map<string, TaxonomyCatalogLeaf>) {
   const primary = catalog.get(primaryId);
   if (!primary) return additionalIds;
+  const placements = [primaryId, ...additionalIds]
+    .map(id => ({ id, leaf: catalog.get(id) }))
+    .filter((row): row is { id: string; leaf: TaxonomyCatalogLeaf } => Boolean(row.leaf));
+  const isEconomyMirrorPair = (a: TaxonomyCatalogLeaf, b: TaxonomyCatalogLeaf) =>
+    a.chapter === b.chapter && a.subpart === b.subpart && (
+      (a.subject === 'Economy' && a.section === 'Current Affairs' && b.subject === 'Current Affairs' && b.section === 'Economy & Development') ||
+      (a.subject === 'Current Affairs' && a.section === 'Economy & Development' && b.subject === 'Economy' && b.section === 'Current Affairs')
+    );
   return additionalIds.filter(id => {
     const candidate = catalog.get(id);
-    if (!candidate || primary.chapter !== candidate.chapter || primary.subpart !== candidate.subpart) return true;
-    return !(
-      (primary.subject === 'Economy' && primary.section === 'Current Affairs' && candidate.subject === 'Current Affairs' && candidate.section === 'Economy & Development') ||
-      (primary.subject === 'Current Affairs' && primary.section === 'Economy & Development' && candidate.subject === 'Economy' && candidate.section === 'Current Affairs')
-    );
+    if (!candidate) return true;
+    if (isEconomyMirrorPair(primary, candidate)) return false;
+    if (candidate.subject === 'Economy' && candidate.section === 'Current Affairs') {
+      return !placements.some(row => row.id !== id && isEconomyMirrorPair(candidate, row.leaf));
+    }
+    return true;
   });
 }
 
@@ -516,7 +526,7 @@ export function applyBundledReviewEvidence(manifest: AuditManifest) {
     const reviewA = readJson<ReviewEnvelope>(cohort.reviewerA);
     const reviewB = readJson<ReviewEnvelope>(cohort.reviewerB);
     const adjudication = readJson<AdjudicationEnvelope>(cohort.adjudication);
-    const before = parseClassificationModule(cohort.beforeClassificationModule);
+    const before = cohort.beforeClassificationModule ? parseClassificationModule(cohort.beforeClassificationModule) : null;
     assert.equal(reviewA.auditVersion, AUDIT_VERSION, cohort.id);
     assert.equal(reviewB.auditVersion, AUDIT_VERSION, cohort.id);
     assert.equal(adjudication.auditVersion, AUDIT_VERSION, cohort.id);
@@ -546,20 +556,22 @@ export function applyBundledReviewEvidence(manifest: AuditManifest) {
       const record = recordById.get(first.questionId);
       const runtime = runtimeById.get(first.questionId);
       assert.ok(second && record && runtime, `${cohort.id}: incomplete evidence for ${first.questionId}`);
-      const number = String(record.sourceIdentity.questionNumber);
-      const prior = before[number];
-      assert.ok(prior, `${cohort.id}: missing before-state for ${first.questionId}`);
-      const priorPrimary = idByPath.get(prior.path);
-      const priorAdditional = (prior.additional || []).map(path => idByPath.get(path));
-      assert.ok(priorPrimary, `${cohort.id}: unknown before primary ${prior.path}`);
-      assert.ok(priorAdditional.every(Boolean), `${cohort.id}: unknown before additional placement`);
-      record.before = {
-        primaryId: priorPrimary,
-        additionalIds: priorAdditional as string[],
-        tags: Number(number) >= 136 ? ['Event-based'] : ['Static'],
-      };
-      if (!record.riskFlags.includes('question-number-analogue-rationale')) {
-        record.riskFlags = [...record.riskFlags, 'question-number-analogue-rationale'].sort();
+      if (before) {
+        const number = String(record.sourceIdentity.questionNumber);
+        const prior = before[number];
+        assert.ok(prior, `${cohort.id}: missing before-state for ${first.questionId}`);
+        const priorPrimary = idByPath.get(prior.path);
+        const priorAdditional = (prior.additional || []).map(path => idByPath.get(path));
+        assert.ok(priorPrimary, `${cohort.id}: unknown before primary ${prior.path}`);
+        assert.ok(priorAdditional.every(Boolean), `${cohort.id}: unknown before additional placement`);
+        record.before = {
+          primaryId: priorPrimary,
+          additionalIds: priorAdditional as string[],
+          tags: Number(number) >= 136 ? ['Event-based'] : ['Static'],
+        };
+        if (!record.riskFlags.includes('question-number-analogue-rationale')) {
+          record.riskFlags = [...record.riskFlags, 'question-number-analogue-rationale'].sort();
+        }
       }
       record.reviewerA = decisionFromEvidence(reviewA.reviewer.id, reviewA.reviewer.reviewedAt, first);
       record.reviewerB = decisionFromEvidence(reviewB.reviewer.id, reviewB.reviewer.reviewedAt, second);
@@ -726,6 +738,18 @@ export function progressReport(manifest: AuditManifest) {
   const reviewedB = manifest.records.filter(record => record.reviewerB).length;
   const agreements = manifest.records.filter(record => record.reviewerA && record.reviewerB && decisionsEqual(record.reviewerA, record.reviewerB)).length;
   const disagreements = manifest.records.filter(record => record.reviewerA && record.reviewerB && !decisionsEqual(record.reviewerA, record.reviewerB)).length;
+  const calibrationRecords = manifest.records.filter(record => record.auditWave === 'calibration-pilot');
+  const calibrationReviewed = calibrationRecords.filter(record => record.reviewerA && record.reviewerB);
+  const calibrationByExam = Object.fromEntries([...new Set(calibrationRecords.map(record => String(record.sourceIdentity.exam)))].sort().map(exam => {
+    const planned = calibrationRecords.filter(record => record.sourceIdentity.exam === exam);
+    const reviewed = planned.filter(record => record.reviewerA && record.reviewerB);
+    return [exam, {
+      planned: planned.length,
+      reviewed: reviewed.length,
+      agreements: reviewed.filter(record => decisionsEqual(record.reviewerA!, record.reviewerB!)).length,
+      disagreements: reviewed.filter(record => !decisionsEqual(record.reviewerA!, record.reviewerB!)).length,
+    }];
+  }));
   const riskCounts: Record<string, number> = {};
   for (const record of manifest.records) for (const flag of record.riskFlags) riskCounts[flag] = (riskCounts[flag] || 0) + 1;
   return {
@@ -750,6 +774,14 @@ export function progressReport(manifest: AuditManifest) {
       appliedAndVerified: validation.appliedCount,
       unresolved: manifest.records.length - validation.resolvedCount,
     },
+    calibration: {
+      planned: calibrationRecords.length,
+      reviewed: calibrationReviewed.length,
+      agreements: calibrationReviewed.filter(record => decisionsEqual(record.reviewerA!, record.reviewerB!)).length,
+      disagreements: calibrationReviewed.filter(record => !decisionsEqual(record.reviewerA!, record.reviewerB!)).length,
+      adjudicated: calibrationReviewed.filter(record => record.adjudication).length,
+      byExam: calibrationByExam,
+    },
     riskCounts: Object.fromEntries(Object.entries(riskCounts).sort(([a], [b]) => a.localeCompare(b))),
     validationIssues: validation.issues,
     certificationComplete: validation.certificationComplete,
@@ -759,13 +791,20 @@ export function progressReport(manifest: AuditManifest) {
 export function progressMarkdown(report: ReturnType<typeof progressReport>) {
   const rows = Object.entries(report.coverage.byExam).map(([exam, count]) => `| ${exam} | ${count} |`).join('\n');
   const risks = Object.entries(report.riskCounts).map(([flag, count]) => `| \`${flag}\` | ${count} |`).join('\n');
+  const reviewTotal = report.review.agreements + report.review.disagreements;
+  const agreementRate = reviewTotal ? `${(report.review.agreements / reviewTotal * 100).toFixed(1)}%` : 'n/a';
+  const calibrationRows = Object.entries(report.calibration.byExam).map(([exam, row]) =>
+    `| ${exam} | ${row.reviewed}/${row.planned} | ${row.agreements} | ${row.disagreements} |`,
+  ).join('\n');
   return `# MCQ classification re-audit progress\n\n` +
     `Audit: \`${report.auditVersion}\` · Taxonomy: \`${report.taxonomyVersion}\`\n\n` +
     `Status: **${report.status}**. This report does not certify pending records.\n\n` +
     `## Coverage\n\n| Exam | Active MCQs |\n|---|---:|\n${rows}\n\n` +
     `- Active: ${report.coverage.activeQuestions}\n- GS: ${report.coverage.gsQuestions}\n- Preparation: ${report.coverage.preparationQuestions}\n` +
-    `- Reviewer A: ${report.review.reviewerA}\n- Reviewer B: ${report.review.reviewerB}\n- Resolved: ${report.review.resolved}\n` +
+    `- Reviewer A: ${report.review.reviewerA}\n- Reviewer B: ${report.review.reviewerB}\n- Exact agreements: ${report.review.agreements}\n` +
+    `- Disagreements: ${report.review.disagreements}\n- Adjudicated: ${report.review.adjudicated}\n- Agreement rate: ${agreementRate}\n- Resolved: ${report.review.resolved}\n` +
     `- Applied and verified: ${report.review.appliedAndVerified}\n- Unresolved: ${report.review.unresolved}\n\n` +
+    `## Calibration pilot\n\n| Exam | Reviewed / planned | Agreements | Disagreements |\n|---|---:|---:|---:|\n${calibrationRows}\n\n` +
     `## Automated risk flags\n\n| Flag | Questions |\n|---|---:|\n${risks}\n\n` +
     `## Certification gate\n\nCertification requires two distinct reviewer identities for every question, adjudication of every disagreement, an applied classification revision, generated-output verification, unchanged source hashes, and zero validation issues.\n`;
 }
@@ -776,7 +815,10 @@ function writeJson(file: string, value: unknown) {
 }
 
 function readManifest() {
-  return JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8')) as AuditManifest;
+  // Reviewer evidence is append-only and may be added after the baseline manifest
+  // was first created. Rehydrate it on every command so check/report never assess a
+  // stale snapshot or require hand-editing the generated manifest.
+  return applyBundledReviewEvidence(JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8')) as AuditManifest);
 }
 
 export function writeAuditArtifacts(manifest: AuditManifest) {

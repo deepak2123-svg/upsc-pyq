@@ -63,14 +63,47 @@
     }
   },
   "review": {
-    "reviewerA": 28,
-    "reviewerB": 28,
-    "agreements": 22,
-    "disagreements": 6,
-    "adjudicated": 6,
-    "resolved": 28,
-    "appliedAndVerified": 28,
-    "unresolved": 5623
+    "reviewerA": 58,
+    "reviewerB": 58,
+    "agreements": 48,
+    "disagreements": 10,
+    "adjudicated": 10,
+    "resolved": 58,
+    "appliedAndVerified": 58,
+    "unresolved": 5593
+  },
+  "calibration": {
+    "planned": 120,
+    "reviewed": 31,
+    "agreements": 27,
+    "disagreements": 4,
+    "adjudicated": 4,
+    "byExam": {
+      "CAPF": {
+        "planned": 30,
+        "reviewed": 30,
+        "agreements": 26,
+        "disagreements": 4
+      },
+      "CDS": {
+        "planned": 30,
+        "reviewed": 0,
+        "agreements": 0,
+        "disagreements": 0
+      },
+      "CSE": {
+        "planned": 30,
+        "reviewed": 0,
+        "agreements": 0,
+        "disagreements": 0
+      },
+      "NDA": {
+        "planned": 30,
+        "reviewed": 1,
+        "agreements": 1,
+        "disagreements": 0
+      }
+    }
   },
   "riskCounts": {
     "event-based": 427,

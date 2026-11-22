@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "auditVersion": "classification-audit-v1",
+  "taxonomyVersion": "upsc-prelims-v2-draft",
+  "paperId": "capf-2024-i",
+  "batchId": "calibration-pilot/capf/2024/i/batch-01",
+  "reviewer": {
+    "id": "taxonomy-reviewer-a-capf-2024",
+    "method": "blind full-stem-and-options semantic review against the frozen taxonomy catalog; existing placements, rationales, analogues, and other reviewer decisions hidden",
+    "reviewedAt": "2026-11-22T00:00:00Z",
+    "independent": true
+  },
+  "decisions": [
+    {
+      "questionId": "capf-2024-i-4",
+      "primaryLeaf": "syllabus:science-technology/physics/mechanics/gravitation",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the scale of the Sun-Earth Lagrange-point geometry produced by the two bodies' gravitational field.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-5",
+      "primaryLeaf": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature/greenhouse-effect-and-global-warming",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the shortwave-entry and longwave-retention mechanism underlying the greenhouse effect.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-31",
+      "primaryLeaf": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "additionalLeaves": [
+        "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/the-moon-and-eclipses"
+      ],
+      "tag": "Static",
+      "rationale": "Principally tests rotation-based time zones, date-line conventions and daylight saving, while the lunar-motion statement is independently needed to resolve the answer.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-35",
+      "primaryLeaf": "syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/universe-and-origin-theories",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the contraction, disk formation and condensation sequence proposed by the Nebular Hypothesis for Solar-System origin.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-36",
+      "primaryLeaf": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Requires applying international-date-line and longitudinal time differences to New Zealand, Hawaii and Alaska.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-37",
+      "primaryLeaf": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/precipitation",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests how hail forms as layered solid precipitation within cumulonimbus-cloud updrafts and freezing zones.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-38",
+      "primaryLeaf": "syllabus:geography/physical-geography/oceanography/ocean-currents",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Matches named surface currents to the oceans in which they flow.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-41",
+      "primaryLeaf": "syllabus:geography/physical-geography/rocks-and-minerals/the-rock-cycle",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Directly tests lithification, metamorphism and solidification as transformations in the rock cycle.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2024-i-122",
+      "primaryLeaf": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/climate-negotiations",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Tests the negotiated outcomes and transition language adopted at the specifically dated COP28 conference.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "auditVersion": "classification-audit-v1",
+  "taxonomyVersion": "upsc-prelims-v2-draft",
+  "paperId": "capf-2026-i",
+  "batchId": "calibration-pilot/capf/2026/i/batch-01",
+  "adjudicator": {
+    "id": "taxonomy-adjudicator-capf-2026",
+    "reviewedAt": "2026-11-22T00:00:00Z"
+  },
+  "decisions": [
+    {
+      "questionId": "capf-2026-i-6",
+      "primaryLeaf": "syllabus:current-affairs/international-affairs/events-and-diplomacy/bilateral-developments",
+      "additionalLeaves": [
+        "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+      ],
+      "tag": "Event-based",
+      "rationale": "The correctness task turns on which foreign partner is involved in the ongoing Kudankulam unit projects, so the dated bilateral development is primary. The identity and unit grouping of the infrastructure project are independently material and retained as an additional placement. The static major-powers leaf is omitted because Russia and the USA are competing partner names within this event, not a separate test of the broader bilateral-relations framework; generic energy is likewise too broad.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false,
+      "resolves": "reviewer-disagreement"
+    },
+    {
+      "questionId": "capf-2026-i-76",
+      "primaryLeaf": "syllabus:current-affairs/environment-geography/species-and-sites-in-news/habitat-developments",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "The most specific tested concept is recognition of Galathea Bay as a site in the news through the interaction of a proposed port with leatherback nesting and sensitive coastal habitats. This habitat-developments leaf captures both sides of that identification task more precisely than the generic significant-locations leaf. Separate infrastructure-project and marine-ecosystem placements are omitted because the port, turtle, coral and seagrass statements function together as clues to the one site-development context rather than asking independent project policy or ecosystem-process knowledge.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false,
+      "resolves": "reviewer-disagreement"
+    },
+    {
+      "questionId": "capf-2026-i-84",
+      "primaryLeaf": "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
+      "additionalLeaves": [
+        "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/household-energy-access"
+      ],
+      "tag": "Event-based",
+      "rationale": "The dated national electricity-generation and availability trends make current energy-sector trends primary. Rural and urban electricity availability is a separate proposition that must be evaluated to solve the question, so household energy access is independently material and retained as an additional placement. A generic energy-infrastructure placement is omitted because it adds no distinct tested concept beyond these two specific leaves.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false,
+      "resolves": "reviewer-disagreement"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "auditVersion": "classification-audit-v1",
+  "taxonomyVersion": "upsc-prelims-v2-draft",
+  "paperId": "capf-2026-i",
+  "batchId": "calibration-pilot/capf/2026/i/batch-01",
+  "reviewer": {
+    "id": "taxonomy-reviewer-a-capf-2026",
+    "method": "blind full-stem-and-options semantic review against the frozen taxonomy catalog; existing placements, rationales, analogues, and other reviewer decisions hidden",
+    "reviewedAt": "2026-11-22T00:00:00Z",
+    "independent": true
+  },
+  "decisions": [
+    {
+      "questionId": "capf-2026-i-1",
+      "primaryLeaf": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/climate-negotiations",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Tests the identity of the specifically numbered SB 64 session of the UNFCCC subsidiary bodies within the climate-negotiation process.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2026-i-6",
+      "primaryLeaf": "syllabus:current-affairs/international-affairs/events-and-diplomacy/bilateral-developments",
+      "additionalLeaves": [
+        "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects"
+      ],
+      "tag": "Event-based",
+      "rationale": "Tests which major-power partner is involved in the current construction of specified Kudankulam nuclear-power units; both bilateral cooperation and the named infrastructure project are independently material.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2026-i-14",
+      "primaryLeaf": "syllabus:current-affairs/economy-development/economic-reports-and-indices/economic-rankings",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Requires contemporary global production-rank knowledge for milk, steel and wheat rather than their production processes or locations.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2026-i-22",
+      "primaryLeaf": "syllabus:current-affairs/economy-development/economic-reports-and-indices/development-reports",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Tests a state-level comparison drawn from NITI Aayog's explicitly dated 2023-24 SDG performance publication.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2026-i-76",
+      "primaryLeaf": "syllabus:current-affairs/environment-geography/disasters-and-places-in-news/significant-locations",
+      "additionalLeaves": [
+        "syllabus:current-affairs/economy-development/sectoral-developments/infrastructure-projects",
+        "syllabus:environment-ecology/ecology-ecosystems/ecosystems/marine-and-coastal-ecosystems"
+      ],
+      "tag": "Event-based",
+      "rationale": "Identifies Galathea Bay as a significant location through its proposed transhipment port and independently material leatherback, coral-reef and seagrass habitat characteristics.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2026-i-77",
+      "primaryLeaf": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/the-grid-latitudes-and-longitudes",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the geometric definition of a great circle and its division of the spherical Earth into equal hemispheres.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2026-i-78",
+      "primaryLeaf": "syllabus:science-technology/space/space-programmes/navigation-systems",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Tests the satellite-signal and ranging principles by which GPS determines a terrestrial position.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2026-i-80",
+      "primaryLeaf": "syllabus:geography/physical-geography/condensation-clouds-precipitation-air-masses-fronts-and-cyclones/clouds",
+      "additionalLeaves": [],
+      "tag": "Static",
+      "rationale": "Identifies cirrus from its ice-crystal composition, feathery appearance and high-altitude formation.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    },
+    {
+      "questionId": "capf-2026-i-84",
+      "primaryLeaf": "syllabus:current-affairs/economy-development/sectoral-developments/mineral-and-energy-trends",
+      "additionalLeaves": [],
+      "tag": "Event-based",
+      "rationale": "Tests explicitly dated trends in India's electricity generation and rural and urban power availability.",
+      "confidence": "high",
+      "ambiguityFlags": [],
+      "taxonomyChangeNeeded": false
+    }
+  ]
+}
