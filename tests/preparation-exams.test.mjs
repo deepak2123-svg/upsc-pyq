@@ -62,7 +62,10 @@ test('three target syllabuses expose the agreed paper structure and bounded empt
       const leaves = data.nodes.filter(n => n.kind === 'subtopic' && n.subjectId === subject.id);
       for (const exam of sources) assert.equal(subject.examCounts[exam], new Set(leaves.flatMap(n => n.questionIdsByExam[exam])).size);
     }
-    assert.equal(data.nodes.filter(n => n.subjectId === 'subject:geography' && n.kind === 'subtopic' && n.id.includes(':physical-geography:')).length, 92);
+    const physicalLeaves = data.nodes.filter(n => n.subjectId === 'subject:geography' && n.kind === 'subtopic' && n.id.includes(':physical-geography:'));
+    assert.equal(physicalLeaves.length, 93);
+    assert.ok(physicalLeaves.some(n =>
+      n.label === 'Arid Basin Landforms' && n.parentId === 'topic:geography:physical-geography:geomorphic-processes-and-landforms'));
   }
   assert.ok(nda.nodes.some(n => n.label === 'Synonyms'));
   assert.ok(nda.nodes.some(n => n.label === 'Functions, Limits, Continuity and Differentiability'));
@@ -71,11 +74,21 @@ test('three target syllabuses expose the agreed paper structure and bounded empt
   assert.equal(nda.subjects.find(n => n.id === 'subject:english').questionCount, 1250);
 });
 
-test('CSE science cannot inherit NDA physics, while NDA keeps its own science', async () => {
+test('CSE science admits only the reviewed cross-source question and NDA retains its own science', async () => {
   const cse = await inventory('CSE'), nda = await inventory('NDA');
   const cseIds = new Set(cse.nodes.filter(n => n.kind === 'subtopic').flatMap(n => sources.flatMap(e => n.questionIdsByExam[e])));
   assert.ok(!cseIds.has('nda-2026-i-51'));
-  assert.ok(cse.nodes.filter(n => n.subjectId === 'subject:science').every(n => n.examCounts.NDA === 0 && n.examCounts.CDS === 0 && n.examCounts.CAPF === 0));
+  const crossSourceScience = cse.nodes.filter(n => n.subjectId === 'subject:science' && n.kind === 'subtopic')
+    .flatMap(n => ['NDA', 'CDS', 'CAPF'].flatMap(exam => n.questionIdsByExam[exam]));
+  assert.deepEqual(crossSourceScience, ['nda-2018-ii-122']);
+  const magnetism = cse.nodes.find(n => n.id === 'subtopic:science:physics:light-and-electricity:magnetism');
+  assert.deepEqual(magnetism.questionIdsByExam.NDA, ['nda-2018-ii-122']);
+  const cseResponse = await fetchApp('/api/practice-snapshots', recipe(cse, [magnetism], 'NDA'));
+  assert.equal(cseResponse.status, 201);
+  const cseSnapshot = await cseResponse.json();
+  assert.equal(cseSnapshot.matchingCount, 1);
+  assert.deepEqual(cseSnapshot.questions.map(q => [q.id, q.exam, q.subtopic]), [['nda-2018-ii-122', 'NDA', 'Magnetism']]);
+  assert.ok(cseSnapshot.questions.every(q => !('answer' in q)));
   const leaves = nda.nodes.filter(n => n.kind === 'subtopic' && n.questionIdsByExam.NDA.includes('nda-2026-i-51'));
   const response = await fetchApp('/api/practice-snapshots', recipe(nda, leaves, 'NDA'));
   assert.equal(response.status, 201);

@@ -1,6 +1,7 @@
 import policy from '../content/question-review-policy.json' with { type: 'json' };
 import importPolicy from '../content/prelims-import-review-policy.json' with { type: 'json' };
 import scopePolicy from '../content/prelims-gs-scope-policy.json' with { type: 'json' };
+import { geomorphicReviewPlacements } from './geomorphic-review-placements.ts';
 import aliasPolicy from '../content/prelims-question-alias-policy.json' with { type: 'json' };
 import materialRepairPolicy from '../content/prelims-material-source-repair-policy.json' with { type: 'json' };
 import officialNdaPolicy from '../content/nda-2026-i-official-review-policy.json' with {type:'json'};
@@ -44,8 +45,18 @@ const records: Readonly<Record<string, QuestionReview>> = { ...policy, ...import
 const cleared = new Set(['official-final', 'official-provisional', 'reasoned-verified']);
 export function questionReview(id: string) { return records[id]; }
 export function questionEligible(id: string) { const row = records[id]; return !row || cleared.has(row.status); }
-export const gsOutOfScopeIds=Object.keys(scopePolicy);
-const outsideGs=new Set([...gsOutOfScopeIds,...Object.entries(officialPolicies).filter(([,row])=>row.preparationScope!=='gs').map(([id])=>id)]);
+const databaseOutsideGs = new Set(Object.keys(scopePolicy));
+const outsideGs = new Set([...databaseOutsideGs,...Object.entries(officialPolicies).filter(([,row])=>row.preparationScope!=='gs').map(([id])=>id)]);
+for (const { questionId, scope } of geomorphicReviewPlacements.values()) {
+  if (scope === 'prelims') {
+    outsideGs.delete(questionId);
+    databaseOutsideGs.delete(questionId);
+  } else {
+    outsideGs.add(questionId);
+    databaseOutsideGs.add(questionId);
+  }
+}
+export const gsOutOfScopeIds = [...databaseOutsideGs];
 export function questionInGsScope(id:string){return !outsideGs.has(id);}
 export function questionReviewRevision(id: string) { return records[id]?.revision ?? 0; }
 export function questionContentRevision(id: string) { return records[id]?.contentRevision ?? 0; }

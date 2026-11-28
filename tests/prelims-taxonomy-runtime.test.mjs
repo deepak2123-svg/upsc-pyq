@@ -65,7 +65,7 @@ test('Economy Current Affairs mirrors every approved economic current-affairs le
   const ids=result.body.questions.map(q=>q.id);
   assert.equal(new Set(ids).size,ids.length);
   assert.equal(ids.length,selectionCounts(sourcePaths,index).matchingCount);
-  assert.equal(data.totalCount,2525,'Shared categories do not duplicate records; preparation-only English/science and held records are excluded');
+  assert.equal(data.totalCount,2521,'Shared categories preserve the unique eligible GS roster');
 });
 
 test('older V4 and V3 scopes retain frozen membership after a question moves to another subject',async()=>{
@@ -605,7 +605,7 @@ test('NDA 2019 complete-stem decisions preserve exam-period facts and material o
   assert.ok(ledger.records.filter(row=>/^NDA\/2019\//.test(row.editorialBatch||'')).every(row=>row.answerEligibilityUnchanged));
 });
 
-test('NDA 2018 cohorts preserve historical wording and distinguish tested concepts from incidental news',()=>{
+test('NDA 2018 historical ledger records the original concept and news-tag decisions',()=>{
   const bank=JSON.parse(fs.readFileSync('content/question-bank.json')).questions;
   const ledger=JSON.parse(fs.readFileSync('content/taxonomy/prelims-reviewed-placements.json'));
   const byId=new Map(ledger.records.map(row=>[row.questionId,row]));

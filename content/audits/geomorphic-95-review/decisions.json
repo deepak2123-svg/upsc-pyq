@@ -1,0 +1,2793 @@
+{
+  "classificationRevision": "nda-geomorphic-95-v1",
+  "taxonomyVersion": "upsc-prelims-v2-draft",
+  "cohort": "All 95 NDA members of the previously served Geomorphic Processes and Landforms chapter",
+  "adjudicatorId": "codex-geomorphic-adjudication",
+  "records": [
+    {
+      "questionId": "nda-2026-i-111",
+      "expectedSourceTextHash": "5536fb26e3c920d7ca1f91b10526ea7084a5a61dd36f53009616c62fffd3cde5",
+      "packetQuestionHash": "bdfeb8e0cb44eb9a53159f2658a733933c08204fb20e148cb1bc084f18f57d48",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Tests the mechanisms and characteristic effects of chemical rock weathering, including solution, carbonation, hydration, and oxidation.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the mechanisms and characteristic effects of chemical rock weathering, including solution, carbonation, hydration, and oxidation.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matches solution, carbonation, hydration and oxidation to their effects on rock minerals.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-102",
+      "expectedSourceTextHash": "e7cb5226e74d23816db9bdf920a520427ee6ce48391fce72f3ed3c122dc599bb",
+      "packetQuestionHash": "e44ec4e28e931f15adad66fe4ba59aeab2e8fc00dc779093471d41434fc47eea",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Distinguishes physical breakdown of rock under pressure from oxidation, carbonation, and hydration.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes physical breakdown of rock under pressure from oxidation, carbonation, and hydration.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes mechanical action from chemical alteration of rocks.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2026-ii-116",
+      "expectedSourceTextHash": "c86b08e2898f8e1b2d2c7cd1840d98ef4d0019de06235e2cb2e1ba741f54e733",
+      "packetQuestionHash": "e756f175b6e7240ed67ef6079c2bf3ce5c6c98d69f5dfcfb4a37c383befd119b",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Tests the mechanical and chemical erosion processes by which rivers shape channels.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the mechanical and chemical erosion processes by which rivers shape channels.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the erosive mechanisms by which rivers shape their channels and valleys.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2025-i-88",
+      "expectedSourceTextHash": "ec322b7bfffaebef79b88639756fd03c68974d187e41dbab324782cb16090a37",
+      "packetQuestionHash": "9ca2ad3d82ca4d440369efc91aad1dd05d0fd108e22cb7594dfc143bf3794c74",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Tests the gravity, expansion, and pressure forces involved in mechanical weathering.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the gravity, expansion, and pressure forces involved in mechanical weathering.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Classifies forces that can break rock apart through mechanical weathering.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2025-ii-118",
+      "expectedSourceTextHash": "e87a7faa9295d4ccc6eafdc6cfb22bbaf195c5ed8c7231ecd1a50454fbe3989e",
+      "packetQuestionHash": "326a4d466f84e9550bf5c96b85a6a2d64ca22de98cedf4e99e0fe8958befad0a",
+      "primaryId": "syllabus:geography/indian-geography/soils/soil-formation-processes",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Tests classes of pedogenesis and the downward translocation of soil material by eluviation and illuviation.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/indian-geography/soils/soil-formation-processes",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests classes of pedogenesis and the downward translocation of soil material by eluviation and illuviation.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/indian-geography/soils/soil-formation-processes",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests general soil-forming mechanisms and the removal and accumulation of material among soil horizons through eluviation and illuviation.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2024-i-71",
+      "expectedSourceTextHash": "db8882acbdd8997d9602cec5a289b65bc15a56c93024a2187a52a9e4a23a1811",
+      "packetQuestionHash": "34a80635ef58c7b64294c069f6bdd088a34d50d1a90f00acec31a93ad80952f7",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/aeolian-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Tests the formation, profile, and orientation of wind-deposited barchan dunes.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/aeolian-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the formation, profile, and orientation of wind-deposited barchan dunes.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/aeolian-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests how persistent winds build barchan dunes and determine their slopes and horn orientation.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2024-ii-83",
+      "expectedSourceTextHash": "9b09d858caeaf9113a98170549fccd5f27ac06f2f76bde64ad62dbb0c9c2b383",
+      "packetQuestionHash": "c87a71003c28306aa4f8a7f3cfbb08b2f6c1e2e8d1386039ad61593b00686afe",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/arid-basin-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "A playa is a dryland basin-floor landform. The question asks how it is classified, so the physical process leaf is more precise than the regional deserts leaf.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies a playa at the floor of a bolson as a desert-basin landform. Its lake-bed origin makes a wind-only placement misleading.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/world-geography/world-physical-features/plains-and-deserts",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Places playas and bolsons in arid basin geomorphology. The grouping is defined by the desert setting and enclosed basin drainage.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2024-ii-112",
+      "expectedSourceTextHash": "447cf2993cfa415d6eaa55bac81f9fbdec926b3cd750c8b0a8a9d5f73f695708",
+      "packetQuestionHash": "708b66135ae1a8f26c0856c70ca36991fae87399f36c28fa7fa82331744111c5",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Separates chemical weathering processes from physically breaking rock through freezing and thawing.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Separates chemical weathering processes from physically breaking rock through freezing and thawing.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes the physical role of thawing from chemical weathering processes such as solution and reduction.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2022-i-118",
+      "expectedSourceTextHash": "6f482a02c94d617cc9d827afea3a207f70d89c1718c0ace761bd6ae80c96cc31",
+      "packetQuestionHash": "69cbb136286b2c54bcd8bf02ba857025a27e28897bb0f4e4847d8c51c789e4c2",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Distinguishes gravity-driven downslope displacement of a boulder from movement by an erosional agent or breakdown in place.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes gravity-driven downslope displacement of a boulder from movement by an erosional agent or breakdown in place.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies gravity-driven downslope movement of a boulder after heavy rain.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2022-i-119",
+      "expectedSourceTextHash": "0d19d46d4e9a53dff9b4c2cdc31d20f730cfbd7a2a727d273ab63067d9385a15",
+      "packetQuestionHash": "f6c2b8ce958d91719f0512f10c29ee09eebe00eb93dba645df47b261103d9327",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The statements test the conditions and triggers of downslope movement. Earthquakes are a trigger here and do not warrant a separate tectonics placement.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests landslide mechanics through slope, material, rainfall, and seismic triggers.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the general slope conditions, material properties and triggers of landslide movement, a form of mass wasting.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2022-i-120",
+      "expectedSourceTextHash": "dd398f3982748f3b3b14cb84e09d456ab9c509ba4c530baf62cc106895789e79",
+      "packetQuestionHash": "d248af70865e9eb318276f839769dbfccb89b4c109059e371d663c9b119c2001",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Identifies a gravity-driven flow of snow and ice on a mountain slope by its movement and material.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies a gravity-driven flow of snow and ice on a mountain slope by its movement and material.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/mass-movements",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies an avalanche by rapid gravity-driven movement of snow and ice on a steep slope.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2022-i-134",
+      "expectedSourceTextHash": "fd91673520d39f5a18f437395c14978e412fd11bb356195d3b876f0a3dd79d2f",
+      "packetQuestionHash": "d2a5192fc1524d2c9c45562e3cab85743bcd5f50e7744c374f8c146ada77858f",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Tests which kind of rock breakdown dominates in the heat and low moisture of a tropical desert.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests which kind of rock breakdown dominates in the heat and low moisture of a tropical desert.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests how a hot, dry climate affects the relative prevalence of mechanical, chemical and biological weathering.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2022-i-139",
+      "expectedSourceTextHash": "6d7ea4edd37b8805b558b167d0aba140c75e063631fc8e55c5f0786c325711ff",
+      "packetQuestionHash": "87f858dd362e70c59878b78c218a6f6d92babd0ca88f0d0dbc68ab2a298ca88f",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/basics-of-geomorphic-processes",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Recognizes denudation as the surface-lowering combination of weathering, mass wasting, erosion, and transport.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/basics-of-geomorphic-processes",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Recognizes denudation as the surface-lowering combination of weathering, mass wasting, erosion, and transport.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/basics-of-geomorphic-processes",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Recognizes denudation as the combined work of weathering, mass wasting, erosion and transportation.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2022-i-140",
+      "expectedSourceTextHash": "d23887901edfc041f9788497bb337ba272ac3dfdd2b2a9dd5cbd1d552f5c0028",
+      "packetQuestionHash": "cdc26bdcb4e2a39cf1add86e9d1d0214a5edee2fcb47f6be9b42fafa539c6713",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Moraines, eskers and outwash plains identify glacial deposition. Recognizing the glaciated territory among the choices does not require comparing individual Himalayan ranges.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+        "additionalIds": [
+          "syllabus:geography/indian-geography/physiographic-divisions/himalayan-ranges"
+        ],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies glacial depositional features and uses their occurrence to select a glaciated Indian region.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Uses moraines, eskers and outwash plains to recognize a landscape shaped by glaciers and meltwater.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2022-ii-127",
+      "expectedSourceTextHash": "ebf1f02036fa722dcebbde399528a31d88d49d6f45f1c886b4420a17ecb50960",
+      "packetQuestionHash": "8f1f06e54d2c9f3420225103e826c9697fdd5eac39ff55237240cae9070a69a6",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The rock association is diagnostic of the residual tors produced by differential weathering. The question does not test general igneous-rock classification.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the bedrock association of tors, a residual landform exposed by differential weathering of jointed rock.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Associates a tor, a residual rock outcrop shaped by differential weathering, with its characteristic parent rock.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2021-i-111",
+      "expectedSourceTextHash": "598840e507c731eec59eadb29eab4389c40d81d4eaa37c45eb9e0bd029bb8479",
+      "packetQuestionHash": "30b0c794b1c7e3cf69cd501c92892a5503520d07d0149bc1889a1bbab690b772",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Identifies hydration as a mineral-weathering mechanism that adds water and increases mineral volume.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies hydration as a mineral-weathering mechanism that adds water and increases mineral volume.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies hydration as the weathering process in which minerals take up water and expand or change.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2021-i-119",
+      "expectedSourceTextHash": "3e4346225e868233ecb5733bd45b5b703091a32458ae693ad046a77e93cf1e4d",
+      "packetQuestionHash": "90e5e6adca28796571d8b7294dfc0c67306b170872b616216f2486156c3fb980",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Distinguishes the field appearance of streamlined glacial deposits from other glacial forms.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes the field appearance of streamlined glacial deposits from other glacial forms.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/glacial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the surface pattern made by closely spaced elongated glacial depositional hills.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2021-ii-54",
+      "expectedSourceTextHash": "80e4f0cd1049c9d9156fce2b161b1207aac8e4a1298881a7098bf7f5d1b9848a",
+      "packetQuestionHash": "02c1f6ece74bdeda56618f43997a90ac9afbfcd5a3ca1f76abe44b69398ed203",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/arid-basin-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The defining feature is a sediment-covered floor of an ephemeral dryland lake. Arid basin geomorphology is more precise than desert location or wind deposition.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the fine sediment floor of an ephemeral desert lake, a basin landform rather than a wind-built feature.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/world-geography/world-physical-features/plains-and-deserts",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Recognizes the fine-sediment bed of an ephemeral desert lake as an arid-basin landform.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2021-ii-85",
+      "expectedSourceTextHash": "96e982076ddad2a5e2eed345b6932f3c1455911c5b247ac0ce3678f5a7aeccd9",
+      "packetQuestionHash": "5a818239d30ffb4a6a7eee9f376e4d37bd539fa7c302aaac7cfffd48b6b905d1",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Identifies a river landform produced by the interplay of channel erosion and deposition.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies a river landform produced by the interplay of channel erosion and deposition.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes river features by the role of erosion and deposition in their formation.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2019-i-104",
+      "expectedSourceTextHash": "553255f9e842c148451c76e989770a8e61c0ad42c782ccac4655fd3d469e6af3",
+      "packetQuestionHash": "0365efb957bacc6befd3a1a79135d4f2a6a17f8eaaed49c8545cde2064a75286",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Classifies rock breakdown caused by pressure from salt crystals growing within pores and fractures.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Classifies rock breakdown caused by pressure from salt crystals growing within pores and fractures.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Classifies the growth of salt crystals in cracks and pores according to how the crystals break down rock.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-103",
+      "expectedSourceTextHash": "69443f3f98174a45630880b3ae101fd9ff330f9ff96b6798351c44dd02f1f00d",
+      "packetQuestionHash": "ae70780a3c2587a7c31ad332aece4417d78fb0022dd660d29c4bc82ae5c26770",
+      "primaryId": "syllabus:geography/world-geography/world-physical-features/rivers-and-lakes",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "This identifies the drainage pattern of named world rivers. The existing Indian drainage leaf would put the question in the wrong regional branch.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/world-geography/world-physical-features/rivers-and-lakes",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests which geometric drainage pattern describes the rivers of north-western Europe; the focus is on world drainage, rather than a landform made by a river.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/indian-geography/drainage/drainage-evolution",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Uses northwestern European rivers as an example of the general geomorphic classification of drainage patterns formed by river networks.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-128",
+      "expectedSourceTextHash": "e993fc546d3c6535f853f291837eff1eaf8f49a37d18c1399b032781215f5299",
+      "packetQuestionHash": "fc4630206f2eb229837ecb0b1644a1bf3ebf506d32ebf0e0859dadf35828e14b",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/groundwater-and-karst-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Identifies the underground-water deposition responsible for speleothems such as stalactites, stalagmites, and pillars.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/groundwater-and-karst-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the underground-water deposition responsible for speleothems such as stalactites, stalagmites, and pillars.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/groundwater-and-karst-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the agent responsible for mineral deposition that forms stalactites, stalagmites and cave pillars.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2019-ii-129",
+      "expectedSourceTextHash": "c51087e55969a177c0f19b49bcc95e4888149693a2dadd0a06267d68d532f3c4",
+      "packetQuestionHash": "9890968cda9cdf3e19916f14c0f1b25a215af836ddec3559f8ea2f5e36a55c9e",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Distinguishes a canyon's stepped valley sides from the profiles of gorges, glacial valleys, and karst valleys.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes a canyon's stepped valley sides from the profiles of gorges, glacial valleys, and karst valleys.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the stepped profile of a canyon, a valley produced by river incision.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-75",
+      "expectedSourceTextHash": "7d333ac7bf3a5af8f6dff805083c8cfced0f90708f27818ed04f22ace61ee3b5",
+      "packetQuestionHash": "a2dde552a076288a4d9508c23fc4adfb99b342623f4bd5d6a4ce53c275e92564",
+      "primaryId": "syllabus:social-development/education/education-systems/literacy",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Compares female literacy across Union Territories; the tested variable is literacy, not location.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:social-development/education/education-systems/literacy",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Compares female literacy across Union Territories; the tested variable is literacy, not location.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:social-development/education/education-systems/literacy",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Compares Indian Union Territories by their female literacy rates, a gender-disaggregated education indicator.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-76",
+      "expectedSourceTextHash": "d118f72bf7c4446f87faf5358fe83a1ca0498f402f6ac2193fdb1ee64d45bb9e",
+      "packetQuestionHash": "75aef9baf5f08d3ff1ca827fa67f3f2e84293b393b0437198094d1191d08dd29",
+      "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/planetary-winds",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Tests the direction, latitude, and Southern Hemisphere setting of a persistent mid-latitude westerly belt.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/planetary-winds",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the direction, latitude, and Southern Hemisphere setting of a persistent mid-latitude westerly belt.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/planetary-winds",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the direction, latitude belt and strength of the Southern Hemisphere westerlies known as the Roaring Forties.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-77",
+      "expectedSourceTextHash": "2730a868d37ecec3fcaad08a3421b991635094ab5d72e89783ba9fba5e9a5d05",
+      "packetQuestionHash": "1693e3c9a8b50874e9b0862078f503adcf1899c24fe446ad50dd033cfb3024bf",
+      "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/pressure-belts",
+      "additionalIds": [
+        "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/local-winds"
+      ],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The doldrums test equatorial pressure belts. Chinook is a separate assertion about the direction and thermodynamic effects of a named local wind.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/pressure-belts",
+        "additionalIds": [
+          "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/local-winds"
+        ],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The first assertion tests the equatorial low-pressure belt, and the second independently tests the warming and drying signature of a local downslope wind.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/pressure-belts",
+        "additionalIds": [
+          "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/local-winds"
+        ],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "One statement identifies the equatorial low-pressure belt and its calm conditions. The other independently tests the temperature and moisture characteristics of the Chinook local wind.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-78",
+      "expectedSourceTextHash": "b691946c8f580c96e0c0f757babbefd5de3452e236bd425169a769a50cac8425",
+      "packetQuestionHash": "0a89c738e69fc3e0ec6b69d337142960bd8e907f61b61937d363a7b2f406d77e",
+      "primaryId": "syllabus:geography/world-geography/world-physical-features/plains-and-deserts",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Compares aridity among major named world deserts; the question asks for identification of a particular desert.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/world-geography/world-physical-features/plains-and-deserts",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Compares aridity among major named world deserts; the question asks for identification of a particular desert.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/world-geography/world-physical-features/plains-and-deserts",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Compares major world deserts by their relative aridity.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-94",
+      "expectedSourceTextHash": "5ef824e070225732e22d216b7c5f5f2542ea20d06859e78e81eba6d736efefc2",
+      "packetQuestionHash": "13daec711cf4cb4aa868bb64381242f77a16e272e0034e7ad5e0b43f625bc7fa",
+      "primaryId": "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Tests the location of a headquarters within the Indian railway zone network.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the location of a headquarters within the Indian railway zone network.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the location of an administrative headquarters in India's zonal railway network.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-95",
+      "expectedSourceTextHash": "478ad740cf358de04b3baf1878aa072a12a9fd4e9ec5df14c88dd9bc10a40f8b",
+      "packetQuestionHash": "400640611262e5db4a5a9af515783c88186f63d21319b1639c3e49c2ec82a824",
+      "primaryId": null,
+      "additionalIds": [],
+      "scope": "original-paper-only",
+      "tag": "Static",
+      "rationale": "The question tests a specific academy’s registration and governance. The Centre–State wording alone does not test general Union–State administrative powers.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:polity-governance/federalism-local-government/union-state-relations/administrative-relations",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the institutional form and Centre–State administrative collaboration of a highway-sector body, not route locations or transport volumes.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": null,
+        "additionalIds": [],
+        "scope": "original-paper-only",
+        "tag": "Static",
+        "rationale": "The tested facts concern the legal registration and governance of a named civilian highway training academy. The existing leaves cover transport networks, general government relations and defence training institutions. A specific fit for civilian sector training bodies is missing.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-97",
+      "expectedSourceTextHash": "e53c7eecf4e9ab2dc52a1811d12a88b77cdebd224316d47a7b7b7b2882492f00",
+      "packetQuestionHash": "d088661bc009af31926898091cf74a51121e0f0f66145506c405674e2957da63",
+      "primaryId": "syllabus:environment-ecology/conservation/protected-areas/tiger-reserves",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Tests comparative core or critical habitat area among designated Indian tiger reserves.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-first-a",
+        "primaryId": "syllabus:environment-ecology/conservation/protected-areas/tiger-reserves",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests comparative core or critical habitat area among designated Indian tiger reserves.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:environment-ecology/conservation/protected-areas/tiger-reserves",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Compares designated tiger reserves by core or critical tiger habitat area.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-98",
+      "expectedSourceTextHash": "b39b2c17b810177a640af5f207e73573f2f021f590dbb735b3463487405a9360",
+      "packetQuestionHash": "29cc1bf8293b249e7465fdc6c56f3b773842055a8ff01d3700322f910e92a40c",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/coastal-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The options require distinguishing coastal depositional forms such as spits and tombolos from a wave-eroded stack.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/coastal-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The options require distinguishing coastal depositional forms such as spits and tombolos from a wave-eroded stack.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/coastal-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes coastal features formed by deposition from coastal features formed by erosion.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-100",
+      "expectedSourceTextHash": "92d89a1dde428064eff2d7b65744f5ead3b9e9a9a97b965258372f303f4f6099",
+      "packetQuestionHash": "44e419edb7ed33fef0e5bc0c97d0a3481ca877564f923976f3af2ce39f3b7ec0",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The question tests how heat and moisture influence the rate of chemical breakdown of rock.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The question tests how heat and moisture influence the rate of chemical breakdown of rock.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-first",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the effect of temperature and moisture on the rate of chemical weathering.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-110",
+      "expectedSourceTextHash": "97f7c831d3301ce5e49a4df1478d6ebdd02a2efe6d49749af6d97da81b8c9942",
+      "packetQuestionHash": "cce6d974ec78671b4da5ab133e98de3a1dc2539b6d3259ef905c38f5dd1d2642",
+      "primaryId": "syllabus:geography/indian-geography/natural-vegetation/altitudinal-vegetation",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Identification of a Himalayan tree by its elevation range tests altitudinal vegetation zonation.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/indian-geography/natural-vegetation/altitudinal-vegetation",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identification of a Himalayan tree by its elevation range tests altitudinal vegetation zonation.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/indian-geography/natural-vegetation/altitudinal-vegetation",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies Himalayan tree species associated with a specified elevation belt.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-112",
+      "expectedSourceTextHash": "6521ff1f44d4bbddd431518ab9a3e4eef0bd5407c297fd7969c7f6e3bd7b5fd7",
+      "packetQuestionHash": "8b6b74874fa8dd03761c216645c38893762f7b239b16c0a13ff27a28a84f5f42",
+      "primaryId": "syllabus:geography/indian-geography/agriculture-and-irrigation/commercial-crops",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The statements test the climate, rainfall and soil requirements of tea as a commercial plantation crop.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/indian-geography/agriculture-and-irrigation/commercial-crops",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The statements test the climate, rainfall and soil requirements of tea as a commercial plantation crop.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/indian-geography/agriculture-and-irrigation/commercial-crops",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the climate, rainfall and soil conditions required by tea as a plantation crop.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-113",
+      "expectedSourceTextHash": "a56ddc4bd4ec3d749e22d3dfc88b9bcf6d01fa29f60abfa3e8d3be09a1d0c01d",
+      "packetQuestionHash": "8f6a0e1daeff5bdf8a4eb79265181020fe56659467ea9a7bd5636f267fe56b8d",
+      "primaryId": "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Event-based",
+      "rationale": "The prompt asks the purpose of Bharatmala, a named infrastructure initiative. Knowledge of transport infrastructure in general does not identify that programme.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/transport",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Event-based",
+        "rationale": "Identifying the objective of the named Bharatmala infrastructure programme requires recognising its road connectivity mandate.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Event-based",
+        "rationale": "Identifies the sector and connectivity objective of the named public infrastructure programme.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-115",
+      "expectedSourceTextHash": "1dfb2e339cea1c83d8cda90dfc40640071d696671c34a04c9e60619a40fc1bc7",
+      "packetQuestionHash": "269e41f830814027897c054f5acfb948d1ffd7cb6da2026e0dcc87d8748cb29d",
+      "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Identifying which city is associated with iron and steel production tests the location of a specific industry. The options are centres, not regional industrial clusters.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-regions",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The task distinguishes Indian iron and steel centres from a centre associated with another industry.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes iron and steel production centres from a centre associated with a different industry.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-116",
+      "expectedSourceTextHash": "1bbee35f718990fe6c8d0421d75b5394a6d96be47c13a0e7df0837826e173b3f",
+      "packetQuestionHash": "8ab78ba199205e605087a6977ef22dd1d591e83de1e471af2b990630141d030d",
+      "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Fuel access, cooling water and transport are compared as conditions of a suitable site. The question asks about industrial location, without separately testing generation technology.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The statements assess site-selection factors for a thermal power station, including fuel access, cooling water, transport and distance from urban centres.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:economy/industry-services-infrastructure/services-and-infrastructure/energy",
+        "additionalIds": [
+          "syllabus:geography/indian-geography/industry-and-transport/industrial-location"
+        ],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the infrastructure requirements of thermal power generation and the suitability of sites based on fuel supply, water access, transport and urban proximity.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-122",
+      "expectedSourceTextHash": "652d86418319e59dcc344cd80b1e426d64c8c5fe3cb0863bc36c85270a4c7ed2",
+      "packetQuestionHash": "7248a5794b9afb70a97c821e1f86946e9232f2e11c5d6ed86cda1674ce17f023",
+      "primaryId": "subtopic:history:world-history:french-revolution:enlightenment-political-thought",
+      "additionalIds": [],
+      "scope": "defence-only",
+      "tag": "Static",
+      "rationale": "The correct proposition concerns de Gouges’s conception of political nationhood. Claims about revolutionary authorities serve as distractors, so no second placement is required.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "semantic-reviewer-a-nda-2018-i-03",
+        "primaryId": "subtopic:history:world-history:french-revolution:enlightenment-political-thought",
+        "additionalIds": [],
+        "scope": "defence-only",
+        "tag": "Static",
+        "rationale": "The statements test Olympe de Gouges's revolutionary declaration about political nationhood and equality of women and men, an Enlightenment-rights concept.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "subtopic:history:world-history:french-revolution:enlightenment-political-thought",
+        "additionalIds": [
+          "subtopic:history:world-history:french-revolution:revolutionary-government-and-the-terror"
+        ],
+        "scope": "defence-only",
+        "tag": "Static",
+        "rationale": "Compares claims about Olympe de Gouges's arguments on citizenship and the nation with claims about her position toward revolutionary authorities.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-123",
+      "expectedSourceTextHash": "b6249fe9a3a4a2ddbaa0b339abdff459f6abf1f41b18130378f978a37881d18b",
+      "packetQuestionHash": "74f28c260f80cd8b1a3f603652e6452cdd10b2915bd21cce755f08f9c2f7fe59",
+      "primaryId": "subtopic:history:world-history:industrial-revolution:inventions-and-inventors",
+      "additionalIds": [],
+      "scope": "defence-only",
+      "tag": "Static",
+      "rationale": "Attributing the named mine-drainage steam engine to its inventor tests early steam technology within Industrial Revolution history.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "subtopic:history:world-history:industrial-revolution:inventions-and-inventors",
+        "additionalIds": [],
+        "scope": "defence-only",
+        "tag": "Static",
+        "rationale": "Attributing the named mine-drainage steam engine to its inventor tests early steam technology within Industrial Revolution history.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "subtopic:history:world-history:industrial-revolution:inventions-and-inventors",
+        "additionalIds": [],
+        "scope": "defence-only",
+        "tag": "Static",
+        "rationale": "Identifies the inventor associated with an early steam-powered device used for mine drainage.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-125",
+      "expectedSourceTextHash": "f47fa62f3dbe7f96907dcef9c46597c709aebaa0948d0fe3f56ac5b9bb6fa9d9",
+      "packetQuestionHash": "2b56da2241ecd20f7da8a84cd9857da04c0f29c38d4c2f975b33e39b66b724bb",
+      "primaryId": "syllabus:history/medieval-india/sources-and-chronology/literary-sources",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The donor identifies the transmission history of a Mughal court chronicle. The British recipient and date are clues, without testing British administration or a contemporary event.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:history/medieval-india/sources-and-chronology/literary-sources",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifying the donor of the Badshah Nama manuscript to George III tests the transmission and provenance of a Mughal court chronicle.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:history/medieval-india/sources-and-chronology/literary-sources",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the transmission history of the Badshah Nama, a Mughal court chronicle, through its presentation to King George.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-127",
+      "expectedSourceTextHash": "c03202a12ede793d4b890300c4bb8c0d114ca6bf15b6db9f04dfbd34f95766ef",
+      "packetQuestionHash": "109cc374dd10a8f10a94832c6193d94e9c5d8fa289e84d80979edbb1905924a2",
+      "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/women-and-reform",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The item identifies a Marathi reformer through an organised nineteenth-century effort to encourage widow remarriage.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/women-and-reform",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The item identifies a Marathi reformer through an organised nineteenth-century effort to encourage widow remarriage.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/women-and-reform",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the reformer associated with an organisation promoting widow remarriage in nineteenth-century Maharashtra.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-128",
+      "expectedSourceTextHash": "8ef68896f04ab05184c511437c063510678c2ce6201c25ae8cbb0f7476630d88",
+      "packetQuestionHash": "c5722476dd203e1ec164b4abc6523184e5561a9aebe03e6ffc631c710f7c0b64",
+      "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/political-associations",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The options distinguish early Indian political associations by establishment date, city and the interests they represented.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/political-associations",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The options distinguish early Indian political associations by establishment date, city and the interests they represented.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:history/modern-india-national-movement/early-nationalism/political-associations",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies a pre-Congress political association in Calcutta by its founding year and landlord constituency.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-130",
+      "expectedSourceTextHash": "ad06117ed108a28fd8e2a71a007cf56f88a68bfbef899a556c8f4b1210595056",
+      "packetQuestionHash": "ff1e35bd56806a4a27bea5150118de0283862731f23323bea146cdd51f939c88",
+      "primaryId": "syllabus:history/modern-india-national-movement/popular-resistance/revolt-of-1857",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Matching a rebel leader to the battle at Chinhat tests regional leadership in the Revolt of 1857.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:history/modern-india-national-movement/popular-resistance/revolt-of-1857",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matching a rebel leader to the battle at Chinhat tests regional leadership in the Revolt of 1857.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:history/modern-india-national-movement/popular-resistance/revolt-of-1857",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Connects a participant in the 1857 revolt with the Battle of Chinhat.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-133",
+      "expectedSourceTextHash": "3fa4a2f54e8de20077f4199647304d5265b8089b3ffc58991414e817799cabb4",
+      "packetQuestionHash": "3731ba16641d3103c5be938cc8dcd836eb5169c6344810eb321e87499230096b",
+      "primaryId": "syllabus:history/medieval-india/sources-and-chronology/literary-sources",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The task distinguishes court biographies from chronicles as literary sources. The mixed periods do not independently test an ancient-period syllabus concept.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:history/medieval-india/sources-and-chronology/literary-sources",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The question distinguishes early medieval court biographies of rulers from a Buddhist chronicle by their literary form and historical purpose.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:history/medieval-india/sources-and-chronology/literary-sources",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes court biographies of historical rulers from a Buddhist chronicle by the nature of the texts as historical sources.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-134",
+      "expectedSourceTextHash": "4add2739cd86ce0999b06927392ca22cdf2cce6557c3f51ec011d8996576841d",
+      "packetQuestionHash": "5abe1b7c065c9b2a49f7b0e3141caf37650adc1cc7ac4ff38ce8498dee36d860",
+      "primaryId": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Matching travellers such as Ibn Battuta and Nikitin to their origins tests identification of foreign observers of medieval and early modern India.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matching travellers such as Ibn Battuta and Nikitin to their origins tests identification of foreign observers of medieval and early modern India.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matches travellers whose accounts are sources for medieval India with their countries of origin.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-135",
+      "expectedSourceTextHash": "a3d544ef3026b060787048f41c3b1be13aeae1c9cc91a071052caeee25e50e1a",
+      "packetQuestionHash": "956169758691edea14b2056ceeed73606b83c85380daefdf51c0fc8eb9fe4ef7",
+      "primaryId": "syllabus:history/medieval-india/regional-kingdoms/rajput-states",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The task identifies the principal dynastic clans linked to the Rajput Agnikula origin tradition.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:history/medieval-india/regional-kingdoms/rajput-states",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The task identifies the principal dynastic clans linked to the Rajput Agnikula origin tradition.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:history/medieval-india/regional-kingdoms/rajput-states",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the clans included in the Agnikula tradition of Rajput origins.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-139",
+      "expectedSourceTextHash": "39b2a7b4682986a6012969521db8ed8ddd9f4ab382c4d13b8345cc7a8d112070",
+      "packetQuestionHash": "4a446bc6f7a31cd7325f67a379b2f4cc380461b6740737d7210926a77e43ccab",
+      "primaryId": "syllabus:polity-governance/institutions/constitutional-and-statutory-bodies/election-commission",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The constitutional language about superintendence, direction and control tests the institutional authority of the Election Commission.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:polity-governance/institutions/constitutional-and-statutory-bodies/election-commission",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The constitutional language about superintendence, direction and control tests the institutional authority of the Election Commission.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:polity-governance/institutions/constitutional-and-statutory-bodies/election-commission",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the constitutional institution vested with overall supervision and control of elections.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-i-141",
+      "expectedSourceTextHash": "d86581ac2ab1bf4990d4f3c5f7170c6cb4c0eb97c65bf497ffe2b1ed0695a4a1",
+      "packetQuestionHash": "0d9ef23407d34bb71d261cd91f65ccfc0002f658bcefb22f6c4eca6bed845b15",
+      "primaryId": "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+      "additionalIds": [
+        "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+      ],
+      "scope": "prelims",
+      "tag": "Event-based",
+      "rationale": "The project questions concern the named road link and its effect on all-season access. Implementing agency and design claims also require knowledge of the specific construction project.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Event-based",
+        "rationale": "The statements describe the Rohtang tunnel construction project through its altitude, implementing body, all-season connectivity and effects on the Leh–Manali road route.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+        "additionalIds": [
+          "syllabus:economy/current-affairs/sectoral-developments/infrastructure-projects"
+        ],
+        "scope": "prelims",
+        "tag": "Event-based",
+        "rationale": "Tests the Rohtang Tunnel's effect on the Manali–Leh road and all-season access, along with characteristics and delivery of the project during construction.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-55",
+      "expectedSourceTextHash": "801d89cc4ffb311f1e38042c91b33b30768bab4bb72c69cac724b00cea508936",
+      "packetQuestionHash": "65d6aa16b0c86f9ce327ceb181f81647e1557ddc876707f6c10fcb0df7b47196",
+      "primaryId": "syllabus:environment-ecology/ecology-ecosystems/ecological-principles/productivity",
+      "additionalIds": [
+        "syllabus:environment-ecology/ecology-ecosystems/ecosystems/marine-and-coastal-ecosystems"
+      ],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Production of organic carbon tests marine primary productivity. The second assertion requires separate knowledge of algae in a marine biome, supporting the secondary leaf.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:environment-ecology/ecology-ecosystems/ecological-principles/productivity",
+        "additionalIds": [
+          "syllabus:environment-ecology/ecology-ecosystems/ecosystems/marine-and-coastal-ecosystems"
+        ],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Organic carbon production by marine phytoplankton tests primary productivity. The separately evaluated statement concerns the occurrence of algae in a cold-water biome.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:environment-ecology/ecology-ecosystems/ecological-principles/productivity",
+        "additionalIds": [
+          "syllabus:environment-ecology/ecology-ecosystems/ecosystems/marine-and-coastal-ecosystems"
+        ],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Evaluates marine primary production by phytoplankton and whether the occurrence of algae in cold-water habitats explains it.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-56",
+      "expectedSourceTextHash": "5edc60437c52023ec7f33fa058b961afaebcb807aa3ba528a21a7b558fc3fa92",
+      "packetQuestionHash": "92c1eb863d3e8104c0e21ad32d0d922883e5944eb9d7903ad45df9d0dec6ea60",
+      "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Geostrophic flow parallel to isobars is evaluated through the balance between Coriolis and pressure-gradient forces.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Geostrophic flow parallel to isobars is evaluated through the balance between Coriolis and pressure-gradient forces.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the pressure-gradient and Coriolis balance that produces geostrophic flow along isobars.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-73",
+      "expectedSourceTextHash": "e5ba533e2c44725f5909053f867d435670d43881b16d39316000c819f78387c2",
+      "packetQuestionHash": "c8eb048e46f1508dec1ce2352124d7bda999428ea4f3d22d3ab8a81e3737bce9",
+      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "additionalIds": [
+        "syllabus:geography/indian-geography/location-and-extent/regional-place-mapping"
+      ],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The sunrise sequence applies Earth’s rotation to the relative east–west locations of four named towns. Regional mapping supplies the ordering, while the primary concept explains why it affects sunrise.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+        "additionalIds": [
+          "syllabus:geography/indian-geography/location-and-extent/latitudes-and-longitudes"
+        ],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Ordering sunrise times applies the effect of Earth's rotation on local solar time and requires comparing the relative longitudes of the named northeastern Indian places.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+        "additionalIds": [
+          "syllabus:geography/indian-geography/location-and-extent/regional-place-mapping"
+        ],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Ordering local sunrise times requires applying Earth's rotation to the relative east–west locations of the named northeastern cities.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-74",
+      "expectedSourceTextHash": "7163eca98b9348a3d1909c8c3a44e8fe323f1fe3833cf03c02c763bfa8876213",
+      "packetQuestionHash": "1aab68bcd159bac2fe4a771cce2bc726201f183dfbebfa02a715649ca0d936bf",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The task identifies the local geomorphic term for raised land in a river delta.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The task identifies the local geomorphic term for raised land in a river delta.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the local landform term for raised features in a river delta.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-75",
+      "expectedSourceTextHash": "426ba7963eeec92747d5c8f89ceddeea6a3d09ae73b2007fe7232bf499efbc05",
+      "packetQuestionHash": "ed58fb34f991410b6f9505841502d148989445b5467c3c2e32dc9f2c3be81c5f",
+      "primaryId": "syllabus:environment-ecology/conservation/protected-areas/sanctuaries",
+      "additionalIds": [
+        "syllabus:geography/indian-geography/location-and-extent/regional-place-mapping"
+      ],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The entities tested are named wildlife sanctuaries. Ordering them from south to north independently requires regional place knowledge.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:environment-ecology/conservation/protected-areas/sanctuaries",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "South-to-north ordering tests recall of the geographic distribution of the named Indian protected areas.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:environment-ecology/conservation/protected-areas/sanctuaries",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Orders named wildlife sanctuaries by their geographic distribution from south to north.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-99",
+      "expectedSourceTextHash": "91f7628f5c115d1c0071d19ef39eb5b179dc5cc0b1925d567e1b6b8da1a236ee",
+      "packetQuestionHash": "40c23f18b51b78856039b541e223a049bfdec11c37988387412ee4616d091569",
+      "primaryId": "syllabus:geography/human-economic-geography/population-geography/population-indicators",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Event-based",
+      "rationale": "The measured rates are specifically from Census 2011. A census-dependent state ranking requires the figures for that release, beyond the general concept of population growth.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/human-economic-geography/population-geography/population-indicators",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The tested population indicator is the sign of Census 2011 population growth for the listed Indian states.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/human-economic-geography/population-geography/population-indicators",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Compares state-level population growth rates from a specified census to identify where growth was negative.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-101",
+      "expectedSourceTextHash": "4b5d79fd150045f441e369c3b4410d27b5754d4819ad98887276d9b3a49cc7f3",
+      "packetQuestionHash": "23cd15d3c59e8807a007bd57eb54616d56e3c04641a946baebb1c0596b5673a3",
+      "primaryId": "syllabus:geography/indian-geography/industry-and-transport/ports-and-waterways",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Matching major Indian ports to their physical siting distinguishes riverside, estuarine, deltaic and enclosed harbour locations.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/ports-and-waterways",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matching major Indian ports to their physical siting distinguishes riverside, estuarine, deltaic and enclosed harbour locations.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/ports-and-waterways",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matches major Indian ports to the physical settings of their harbour sites.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-102",
+      "expectedSourceTextHash": "ba543b741a6b72bdad4c63dc0ca04aefe243bf35b82f28370546fcb26c861dbb",
+      "packetQuestionHash": "f573bcc952bcc286f92ed50733723242f4c919137a10bbd135decffd39162e4e",
+      "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/metamorphic-rocks",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The options test which physical and chemical agents take part in rock metamorphism.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/metamorphic-rocks",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The options test which physical and chemical agents take part in rock metamorphism.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/physical-geography/rocks-and-minerals/metamorphic-rocks",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes agents in the metamorphic transformation of rocks.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-116",
+      "expectedSourceTextHash": "281f0f1df4a5adea639e7c127fcfc55d3ffc067e88e6e572133a5161f7d81415",
+      "packetQuestionHash": "aeaaeabbe1d35d23c0b15d5ed3b5ecbab5ededd513514f0a7a7a843ee0bb8774",
+      "primaryId": "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Matching railway zones to their headquarters tests the regional organisation of India's railway network.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matching railway zones to their headquarters tests the regional organisation of India's railway network.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/road-and-rail-networks",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matches Indian railway administrative zones to their headquarters.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-117",
+      "expectedSourceTextHash": "64d81a711c62d1fbb2f6e9c6a4aea2e6bf2c01879900523c88b38decc2f6330d",
+      "packetQuestionHash": "53739316d4e650a512e7d8b48ec452784fc446f6fc7add88760bef603a61eda9",
+      "primaryId": "syllabus:geography/indian-geography/population-and-settlements/population-distribution",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The task compares the size and geographic distribution of the census population across four Indian states.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/indian-geography/population-and-settlements/population-distribution",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The task compares the size and geographic distribution of the census population across four Indian states.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/indian-geography/population-and-settlements/population-distribution",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Compares the population sizes of northeastern Indian states using one census reference year.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-119",
+      "expectedSourceTextHash": "8f714aedfa9853026493af78710f61a15708005bcfd696e0615c202e45fb84cc",
+      "packetQuestionHash": "6b7e7dbb165507a0461a39df78409dd5d3518864bc72d524ce68af37b179dcb7",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The options distinguish chemical weathering reactions such as carbonation and oxidation from physical exfoliation.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The options distinguish chemical weathering reactions such as carbonation and oxidation from physical exfoliation.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes chemical weathering mechanisms from mechanical exfoliation.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-122",
+      "expectedSourceTextHash": "ba643adb9f221e7fb4d87384d37b7432095fdb840ac171120967e02d3d37d415",
+      "packetQuestionHash": "3e7f39eab7a0e1bc7b44fcde0ef69832d89a8acb014842b58113ed09347a8a6d",
+      "primaryId": "syllabus:science-technology/physics/light-and-electricity/magnetism",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The proportional change in magnetic field is the sole concept. The calculation uses elementary coil magnetism, which fits General Science as specified in the regression placement.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "geomorphic-95-a-middle",
+        "primaryId": "syllabus:science-technology/physics/light-and-electricity/magnetism",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The calculation uses the relationship between the magnetic field of a current-carrying circular coil, its turn count and its radius.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:science-technology/physics/light-and-electricity/magnetism",
+        "additionalIds": [],
+        "scope": "defence-only",
+        "tag": "Static",
+        "rationale": "Requires quantitative scaling of the magnetic field at the centre of a current-carrying circular coil as its turn count and radius change.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-125",
+      "expectedSourceTextHash": "6aaa3bbf8ae7b70046bd0414a3b891744e00f5506e82c590e663dbd851f859f6",
+      "packetQuestionHash": "dacf76a8ee3c6fdefd778a7439797519daf0877a12d86dd77e9edf0a29c7c31e",
+      "primaryId": "syllabus:history/ancient-india/early-medieval-transitions/trade-guilds",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The statements test the origins and relationships of named South Indian merchant guilds, including Ayyavole, Manigramam and Anjuvannam.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:history/ancient-india/early-medieval-transitions/trade-guilds",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The statements test the origins and relationships of named South Indian merchant guilds, including Ayyavole, Manigramam and Anjuvannam.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:history/ancient-india/early-medieval-transitions/trade-guilds",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the origins and organisational relationships of specific South Indian merchant guilds known from inscriptions.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-127",
+      "expectedSourceTextHash": "ed51068b16c34815227650a4ea1de3422e58c16c40253257bb40c4ea780ecbe8",
+      "packetQuestionHash": "ab679a64de7741bdec2bad2a1a0d7f3890087ba993c5bf0183ee6efc3ffb9a94",
+      "primaryId": "subtopic:history:world-history:american-revolution:colonial-resistance-and-early-congresses",
+      "additionalIds": [],
+      "scope": "defence-only",
+      "tag": "Static",
+      "rationale": "The Stamp Act Congress predates independence and belongs to organized colonial resistance to British taxation. The new World History leaf captures that distinction.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "subtopic:history:world-history:american-revolution:declaration-and-independence",
+        "additionalIds": [],
+        "scope": "defence-only",
+        "tag": "Static",
+        "rationale": "Dating the Stamp Act Congress tests the chronology of organized colonial opposition that culminated in American independence.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": null,
+        "additionalIds": [],
+        "scope": "original-paper-only",
+        "tag": "Static",
+        "rationale": "Tests the chronology of organised colonial opposition to the Stamp Act. The American Revolution taxonomy has a declaration and independence leaf, with a gap for resistance to parliamentary taxation before the independence movement.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-128",
+      "expectedSourceTextHash": "da656979b4663624e99f63ad459d180d6766b4fefe2120e806697b4a51d7f81f",
+      "packetQuestionHash": "6ddc4faa64ddfb0f833e46bec7385b3150f2a25cedf57772a9a5e74e24615dab",
+      "primaryId": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Identifying the fifteenth-century Italian visitor to Vijayanagar requires knowing which foreign travellers provide accounts of the kingdom.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifying the fifteenth-century Italian visitor to Vijayanagar requires knowing which foreign travellers provide accounts of the kingdom.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:history/medieval-india/sources-and-chronology/foreign-accounts",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the traveller by origin, century and visit to Vijayanagara, contextualising a foreign account of the kingdom.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-134",
+      "expectedSourceTextHash": "802542c38539aba002ec7370a02baee17a3602a4dddc08a6e7625a9aa0b539fb",
+      "packetQuestionHash": "f600e0225e51af170ab8346e4b1ffde745ff5e53af8afde071b2199feafee834",
+      "primaryId": "syllabus:geography/world-geography/world-physical-features/islands-and-peninsulas",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The answer is a fixed country–island association. The prompt supplies no event to identify and location knowledge alone solves it.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/world-geography/world-physical-features/islands-and-peninsulas",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The item asks which country contains Sentosa Island. The passing news reference does not require identifying an event or reading a particular report.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-middle",
+        "primaryId": "syllabus:geography/world-geography/world-mapping/places-in-news",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Event-based",
+        "rationale": "Identifies the country containing an island explicitly selected for its recent news relevance.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-135",
+      "expectedSourceTextHash": "4a4f6e0086bce37c781d9a5434e46cbb016230a4e95fb2a265d918ac63e5bafd",
+      "packetQuestionHash": "b6677ab4b3cab4ede7e31e856791ff409479b9a95e52fbda3fe129005438af97",
+      "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/bilateral-developments",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Event-based",
+      "rationale": "The dated statement concerns India’s response to China’s specific connectivity project. That diplomatic relationship is more precise than a broad political-development label.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/bilateral-developments",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Event-based",
+        "rationale": "The June 2018 statement about sovereignty and territorial integrity identifies India's diplomatic objection to China's Belt and Road Initiative.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:current-affairs/international-affairs/events-and-diplomacy/political-developments",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Event-based",
+        "rationale": "Identify the cross-border project named indirectly by India's stated June 2018 sovereignty position.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-136",
+      "expectedSourceTextHash": "b173aee54541a7651c95732aa93c70b30dcbeb275e5bc3384b7093976c056263",
+      "packetQuestionHash": "b7700b78df7a782d6b68d59e6db7eec3977df560d7bcc68a632bb45fd8e319d4",
+      "primaryId": "syllabus:international-relations-organisations/regional-groupings/regional-and-plurilateral-forums/g20-and-g7",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Eliminating the non-member requires knowing the standing composition of the G7. The question does not ask about a summit or a change in membership.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:international-relations-organisations/regional-groupings/regional-and-plurilateral-forums/g20-and-g7",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Eliminating the non-member requires knowing the standing composition of the G7. The question does not ask about a summit or a change in membership.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:international-relations-organisations/regional-groupings/regional-and-plurilateral-forums/g20-and-g7",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Tests the membership of the G7 forum and the exclusion of a former G8 member.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-139",
+      "expectedSourceTextHash": "73afdddd4d6a913175aff6212a89028f5d7414d9745ad81c996835494fccb83a",
+      "packetQuestionHash": "472bcbef85ed130a89791ff9aff8b378a7c385cdcf3230d007deadab73dbc7ec",
+      "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The question connects the Nehru–Mahalanobis strategy to the Five-Year Plan that introduced it, testing India's planning history.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The question connects the Nehru–Mahalanobis strategy to the Five-Year Plan that introduced it, testing India's planning history.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Links the Nehru–Mahalanobis development strategy to the Five-Year Plan that introduced it.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2018-ii-143",
+      "expectedSourceTextHash": "f054ac7dd15c34b6d0c9d716f9fe72fbd0c67774d12f3e39bdb0de127cb76a09",
+      "packetQuestionHash": "9c290bf8d84a869284dc5b385d58320fcbccd87d15b5aae79af3087c13a3e4c4",
+      "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/environmental-reports-and-indices",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Event-based",
+      "rationale": "The first-ranked non-Himalayan state must be identified from the June 2018 Composite Water Management Index issued by NITI Aayog.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/environmental-reports-and-indices",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Event-based",
+        "rationale": "The first-ranked non-Himalayan state must be identified from the June 2018 Composite Water Management Index issued by NITI Aayog.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:current-affairs/environment-geography/climate-and-conservation-developments/environmental-reports-and-indices",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Event-based",
+        "rationale": "Tests the state ranking in the specific June 2018 edition of the Composite Water Management Index.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-58",
+      "expectedSourceTextHash": "ff7c9a3c28de9b3e834b6bad89c4290c427adaa5e175fd2d998c55f48d39c0cf",
+      "packetQuestionHash": "53dba011b1e838045acf94180bb89880042e15104d7810a0b1cf747953e011f1",
+      "primaryId": "syllabus:geography/world-geography/world-physical-features/plains-and-deserts",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The choices distinguish regions by the location of the named Taklamakan Desert. No dune formation process is needed to answer.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/world-geography/world-physical-features/plains-and-deserts",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The choices distinguish regions by the location of the named Taklamakan Desert. No dune formation process is needed to answer.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/world-geography/world-physical-features/plains-and-deserts",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Locates the named Taklamakan Desert in the correct major world region.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-60",
+      "expectedSourceTextHash": "69febdcf241cb3cbedf7d7ed99ca0064d6a3a37957caa4c4fc7eec850cd3e137",
+      "packetQuestionHash": "68140bb0c599fb6bd9e4dd9dce4156cc7e219029373fe868e84db8a24e46580d",
+      "primaryId": "syllabus:geography/indian-geography/location-and-extent/regional-place-mapping",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Sorting Bilaspur, Jodhpur, Bhopal and Ranchi west to east requires the relative locations of Indian cities on a regional map.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/indian-geography/location-and-extent/regional-place-mapping",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Sorting Bilaspur, Jodhpur, Bhopal and Ranchi west to east requires the relative locations of Indian cities on a regional map.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/indian-geography/location-and-extent/regional-place-mapping",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Orders four Indian cities by longitude using their positions on the map.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-61",
+      "expectedSourceTextHash": "2c82028ae4ae4fe1362427047896aa34629277f9c66d2e8235a7204207e99a2c",
+      "packetQuestionHash": "e12138b2a54b1e2e1585cd842f7d06a1719d6eb5d66ba1943cdbce07f2acd862",
+      "primaryId": "syllabus:geography/indian-geography/climate-and-monsoon/western-disturbances",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Identifying the system that brings extra winter precipitation to Kashmir calls for knowing the seasonal effects of western disturbances.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/indian-geography/climate-and-monsoon/western-disturbances",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifying the system that brings extra winter precipitation to Kashmir calls for knowing the seasonal effects of western disturbances.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/indian-geography/climate-and-monsoon/western-disturbances",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the circulation system that brings Kashmir its winter precipitation.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-93",
+      "expectedSourceTextHash": "5b4fc94b74f978f15b692e8b20ee3305885ffa9d4dd768402e6353170eb37d00",
+      "packetQuestionHash": "58cf56ddd269b74393657c0c84f8fda27a3f7e4cb483184ec8aafa1d7c41e05a",
+      "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The question locates a named power station. It does not ask about electricity generation or infrastructure policy.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matching Koradi Thermal Power Station to its city is a facility-location question about power-generation infrastructure.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/indian-geography/industry-and-transport/industrial-location",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Locates a given thermal power station among Indian cities, so the facility's siting is central.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-98",
+      "expectedSourceTextHash": "db9c9c01bc1335e8921fb658e82a04fc043ce45814599c2e56e316b6c0627887",
+      "packetQuestionHash": "8206bd751b0e9664c1dedcc3a5897d008786b48fd9f0d854a218b3868f5d9f84",
+      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The shortest day in the Northern Hemisphere is the winter solstice, so the tested concept is seasonal change in day length.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The shortest day in the Northern Hemisphere is the winter solstice, so the tested concept is seasonal change in day length.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/revolution-and-seasons",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Connects the Northern Hemisphere's minimum day length to its winter solstice.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-100",
+      "expectedSourceTextHash": "81f014e02dd566838b469c5a89ca6cac0bf67979bfdaf00a894222c9f0567d9a",
+      "packetQuestionHash": "c0b6ad22b57885ade2febd9bde25173bc9d5d1101f5d3fa2f6123d63b32a4ae9",
+      "primaryId": "syllabus:geography/indian-geography/climate-and-monsoon/rainfall-distribution",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The comparison is the share of rainfall India receives from each source. It does not ask what drives monsoon circulation.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/indian-geography/climate-and-monsoon/rainfall-distribution",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The options compare the contribution of different weather systems to India's rainfall. The Southwest Monsoon supplies the largest share.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/indian-geography/climate-and-monsoon/monsoon-mechanisms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes the Indian monsoon circulation that contributes the greatest rainfall.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-141",
+      "expectedSourceTextHash": "f72cbd05943a8d2eb04781d9f35f56c685c5904c1ac839b8387865bbf0c3af0b",
+      "packetQuestionHash": "147028103bca295709f50894302a4bc5960fcd921ac17eacabc23a26bde992d6",
+      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Estimating the difference in sunrise times between the two ends of India requires applying Earth's rotation to the longitudinal separation.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Estimating the difference in sunrise times between the two ends of India requires applying Earth's rotation to the longitudinal separation.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Uses east–west longitudinal spread to explain a difference in local solar time.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-142",
+      "expectedSourceTextHash": "05341b1f10c82b996a9eb82cea542906561649e083cd66f52d0ece1b294fdcb5",
+      "packetQuestionHash": "8fb08a3af1afaa1320ac0818e7d7864b81d50bbcee07993ecfb54603bd59c63c",
+      "primaryId": "syllabus:geography/indian-geography/natural-vegetation/vegetation-distribution",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The states are compared by forests as a proportion of their own land area. This is vegetation distribution rather than a named survey or a forest-management policy.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/indian-geography/natural-vegetation/vegetation-distribution",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The denominator is each state's total area. The required comparison is the relative extent of forests across states, with no survey edition named.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/indian-geography/natural-vegetation/vegetation-distribution",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Compares relative forest coverage as a share of land area across Indian states.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-143",
+      "expectedSourceTextHash": "3abc999867ea5abfad0091b4a9f2cd5a37552f9d334938d923e988437f3a14b4",
+      "packetQuestionHash": "95ee9aa5661f09d1e889147680de3583fb2476ea39649689e2224b933efe4b95",
+      "primaryId": "syllabus:geography/indian-geography/location-and-extent/regional-place-mapping",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The prompt compares the extent of state coastlines, a regional mapping fact. Knowledge of coastal plains and their physical features does not settle the ranking.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/indian-geography/physiographic-divisions/coastal-plains",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The alternatives compare the lengths of India's state coastlines. This is a question about the extent of India's coastal belt.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/indian-geography/location-and-extent/regional-place-mapping",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Compares coastline lengths of Indian states as a matter of regional extent.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-144",
+      "expectedSourceTextHash": "3b7a96aa9ce345c2e21166d761a0512becf4226f5a53ff61003cf861f0ef50e3",
+      "packetQuestionHash": "b219e6ed6916e373cc5c379c0e8f7b12289eea97dd8e57e40dd4d05488142211",
+      "primaryId": "syllabus:geography/indian-geography/natural-vegetation/vegetation-distribution",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The states are compared by absolute forest area. The coverage distribution is the tested concept, with no particular report or policy in the stem.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/indian-geography/natural-vegetation/vegetation-distribution",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The alternatives compare absolute forest-covered area across states, testing where India's forest cover is concentrated. No report is named.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/indian-geography/natural-vegetation/vegetation-distribution",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies which state has the greatest absolute area of forest cover.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-146",
+      "expectedSourceTextHash": "c4503668fb9632c3887cda3a745a0eef30a1847046ec384b052c1ef38b2ff972",
+      "packetQuestionHash": "c22e3cfa804f18e62a4c61fd6a5f75c63cc138c058375c254e8b49de73149492",
+      "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The question asks which motion causes the Coriolis effect. There is no wind example that would make atmospheric circulation the primary concept.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/physical-geography/latitudes-longitudes-time-and-motions-of-the-earth/rotation-and-time",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The question asks which Earth motion produces the Coriolis effect. It can be solved by distinguishing rotation from revolution and axial tilt.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/physical-geography/atmospheric-pressure-winds-and-circulation/forces-affecting-wind",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Asks which planetary motion gives rise to the Coriolis deflection force.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2017-ii-147",
+      "expectedSourceTextHash": "ee63532c990300773f74a4bb9ee9356c4e71b8ab679d6a592e147f0073fd1487",
+      "packetQuestionHash": "52522ccb3f1679411e3b5bf8233a58f9009e17775f32a4f26089355a4ec7b93c",
+      "primaryId": "syllabus:geography/world-geography/world-physical-features/rivers-and-lakes",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Identifying the country containing the Mekong Delta requires locating the river's downstream outlet, without analyzing how its delta formed.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/world-geography/world-physical-features/rivers-and-lakes",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifying the country containing the Mekong Delta requires locating the river's downstream outlet, without analyzing how its delta formed.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/world-geography/world-physical-features/rivers-and-lakes",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Locates the Mekong River delta at the downstream end of the river system.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2016-i-107",
+      "expectedSourceTextHash": "1aa54c9448548f6896217ed7b4cebb3787b952a50f5e29502af190a34eb7149c",
+      "packetQuestionHash": "4590c0af8591a2c3d5bc4ff272d25cda957984f0b76687bb4a606cfd3a5af8c8",
+      "primaryId": "syllabus:geography/indian-geography/location-and-extent/regional-place-mapping",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The three landscape clues work together to identify a region. The formation of a particular landform is outside the solving task.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/indian-geography/location-and-extent/regional-place-mapping",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The combination of deserts, fertile plains and wooded mountains is used to identify a named Indian region from its geographic profile.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/indian-geography/location-and-extent/regional-place-mapping",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Recognizes an Indian region from a combined profile of desert, plains and mountains.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2016-i-113",
+      "expectedSourceTextHash": "c236ec84ae58669ad312b42953ac5d792662f5417b195b7fad4d1e74103df2f0",
+      "packetQuestionHash": "c7337a313dd7f53cec1018649050e42e4b4694b0f0bc105b7a286e540b9c654d",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/aeolian-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The required term is the local name for a shifting sand dune. The Thar supplies the setting for a wind-formed landform.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/aeolian-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The required term is the local name for a shifting sand dune. The Thar supplies the setting for a wind-formed landform.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/aeolian-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the regional term for shifting wind-shaped dunes in the Thar.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2016-ii-137",
+      "expectedSourceTextHash": "55fdebb741cce9bd49b7c4edcf546cd2c024a0062bc36a2f7e2aab63c038451d",
+      "packetQuestionHash": "6cf5dd148a60224f19e37f075687ea7a024cd2b77ce5a134a08c2222860dc811",
+      "primaryId": "syllabus:geography/human-economic-geography/resources-and-land-use/land-use",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The ranking uses the availability of cultivable land relative to population. It compares land-use resources rather than agricultural production or crop choice.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/human-economic-geography/resources-and-land-use/land-use",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Ranking countries by arable land per person requires comparing land available for cultivation relative to population. No dataset edition is specified.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/human-economic-geography/resources-and-land-use/land-use",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Compares arable land per person across countries, requiring knowledge of cultivable land availability.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2016-ii-138",
+      "expectedSourceTextHash": "8310abd8dabd7555e70d5cbf346765124b8d1cb976b80a0a2a611c2cce5b0213",
+      "packetQuestionHash": "58aa83b688e81f488a5bf2c7af608004b2b79f8ce8115f546cfad7ae905dc073",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The exercise tests how several named landforms are classified across groundwater, rivers, glaciers and wind. A single process-specific leaf would miss most pairings.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The exercise classifies features by four different geomorphic agents. No single process-specific leaf represents the combination the question tests.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/basics-of-geomorphic-processes",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matches four surface-shaping agents with their features across groundwater, rivers, glaciers and wind.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2015-i-111",
+      "expectedSourceTextHash": "e24f55e5e790f1df368ac1c2b07e8facc557b0550c3a26c33a9a93c302bb6cea",
+      "packetQuestionHash": "6ac540809e07920fb951803b1a6b6a6383097221935312c3d6ca78126cc0e2bf",
+      "primaryId": "syllabus:geography/world-geography/world-physical-features/islands-and-peninsulas",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "World islands are matched to their origin types. Knowledge of the named physical features is required in addition to the words describing their formation.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/world-geography/world-physical-features/islands-and-peninsulas",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matching Mauritius, Madagascar, the Andamans and Nicobars, and Maldives to island types requires classifying named examples by their origins.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/world-geography/world-physical-features/islands-and-peninsulas",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes different origins of islands by linking each island type to a named example.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2015-i-112",
+      "expectedSourceTextHash": "043016aae43bc0253494135f43f36e1cc199b5629298f641fcc7ef2608d0ca15",
+      "packetQuestionHash": "0dcfbd70b8c9e769a5fe9c33359f3a46353cc26855bd382f6c626786d22717cc",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The diagram must be interpreted using erosion around the outer river bend and deposition at the inner bend of a meander.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The diagram must be interpreted using erosion around the outer river bend and deposition at the inner bend of a meander.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/fluvial-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Uses the supplied meander diagram to distinguish zones of river erosion.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-89",
+      "expectedSourceTextHash": "0a01d55fde0af488caebc428c2ff6f331855478aafcc07f9548291d741efee7a",
+      "packetQuestionHash": "8b5f5ea93376dbea5559749b4f1e0c57a2eaa5f77be281384650f39d4e78f870",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/groundwater-and-karst-landforms",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Distinguishing cave-ceiling stalactites from cave-floor stalagmites tests depositional features of karst landscapes.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/groundwater-and-karst-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishing cave-ceiling stalactites from cave-floor stalagmites tests depositional features of karst landscapes.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/groundwater-and-karst-landforms",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes roof-hanging and floor-rising mineral deposits in limestone caves.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-131",
+      "expectedSourceTextHash": "81ac1c3ed782fde5595ac0fb16463dbc061c38e973e83e9e8d0720b48452f757",
+      "packetQuestionHash": "87b67e0e0bad2b2f0ae67b62e21297aa8deecc4184042980c7084b423e6b12cb",
+      "primaryId": "syllabus:social-development/health-nutrition/public-health/health-indicators",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Event-based",
+      "rationale": "The question asks about then-current trends and values for several health measures. It tests health indicators, with no particular health programme in the prompt.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:social-development/health-nutrition/public-health/health-indicators",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Event-based",
+        "rationale": "The question requires recognizing then-current Indian trends and values in life expectancy, infant and maternal mortality, and institutional deliveries.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:social-development/health-nutrition/public-health/health-indicators",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Event-based",
+        "rationale": "Compares then-current life expectancy, infant and maternal mortality, and institutional-delivery trends.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-139",
+      "expectedSourceTextHash": "c3dceb0f6e2f620b958a6f5e6d92e824acd5442d39a1acbbfb72e197924a0869",
+      "packetQuestionHash": "bb180a30acfce39064dff22301d1ea2a9955c3f9f33ddb4f829ece7a7a453d08",
+      "primaryId": "syllabus:history/art-culture/architecture/vesara-and-regional-temples",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The tested relationships are regional temple monuments and their patron dynasties. Neither patron chronology alone nor one specific architectural style covers the full match.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:history/art-culture/architecture/vesara-and-regional-temples",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matching four regional dynasties to their temple monuments tests architectural patronage across several regional traditions.",
+        "confidence": "medium"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:history/art-culture/architecture/vesara-and-regional-temples",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Pairs temples in multiple regional architectural traditions with their patron dynasties.",
+        "confidence": "medium"
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-141",
+      "expectedSourceTextHash": "b98f4aa06404dd396dd8db26568fd853bcfbcc56153d9d2a8a11443e3904bd15",
+      "packetQuestionHash": "bdd9e797fa0ff238500e43380aaca7fb61a851e958a28ed22a11e6e3d424fccd",
+      "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/women-and-reform",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The founding of the Rajahmundri Social Reform Association is tested in the context of its nineteenth-century campaign for widow remarriage.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/women-and-reform",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The founding of the Rajahmundri Social Reform Association is tested in the context of its nineteenth-century campaign for widow remarriage.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:history/modern-india-national-movement/social-and-religious-reform/women-and-reform",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the reformer associated with a nineteenth-century society for widow remarriage.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2015-ii-146",
+      "expectedSourceTextHash": "0c14eb02604e6f9e02d69efbaecf1067c2e2a70d612ffbee6b3e9aee2edfb099",
+      "packetQuestionHash": "2f4b2e1ca3b74ee30c7d51cd44eace66e5ca415f218c7d135c9c0526755b45da",
+      "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Identifying the economist who drafted India's First Five-Year Plan tests the origins of the planning programme.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifying the economist who drafted India's First Five-Year Plan tests the origins of the planning programme.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:economy/development/development-policy/five-year-plans",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Identifies the economist linked to drafting India's First Five-Year Plan.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2014-i-80",
+      "expectedSourceTextHash": "73e5da1186a183c0ef127be6af3927e3b585ffb781146addada5abbb6be23746",
+      "packetQuestionHash": "e02366420c79bebb4095702a66971509be94327415c1b464048f081303d95138",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The assertion and reason link warm, wet conditions to faster chemical decomposition of rock, a control on chemical weathering.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The assertion and reason link warm, wet conditions to faster chemical decomposition of rock, a control on chemical weathering.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Relates heat and moisture to the rate of chemical decomposition of rocks.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2014-i-111",
+      "expectedSourceTextHash": "341f8f4c067d7407dd6b460baf60b018dd6defd1a70d717241ef698be7a13326",
+      "packetQuestionHash": "62b253011ab82cd249d39c52f4b9e247827d8fbf68677780ba5562e9f16bf2d3",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "Evaluating crystallization, hydration and freeze–thaw action requires distinguishing mechanisms of mechanical and chemical weathering.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Evaluating crystallization, hydration and freeze–thaw action requires distinguishing mechanisms of mechanical and chemical weathering.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishes weathering mechanisms including crystallization, hydration and frost action.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2014-i-143",
+      "expectedSourceTextHash": "cf26d274a8b2c3394b490414983bf7b67adabc278b6e43bf190c5a0da47ac299",
+      "packetQuestionHash": "78381c7dac429e58b23e330fa09d49e62aeb9e8fd1de25d1d2b107088401e55e",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The question asks how tropical warmth and moisture promote hydrolysis as a mechanism of bedrock decomposition.",
+      "resolution": "agreed",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "The question asks how tropical warmth and moisture promote hydrolysis as a mechanism of bedrock decomposition.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/weathering",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Explains which humid-tropical conditions promote hydrolysis of bedrock.",
+        "confidence": "high"
+      }
+    },
+    {
+      "questionId": "nda-2014-ii-75",
+      "expectedSourceTextHash": "d1cb91af228f6e2c2d452427a519650c60ea8664b8e78e3c5ec6c6349c72676b",
+      "packetQuestionHash": "f712c55c91e4dc3f5a30f814632b16bda256b87ab7550b6e7f331e7e239f7131",
+      "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+      "additionalIds": [],
+      "scope": "prelims",
+      "tag": "Static",
+      "rationale": "The pairs classify named glacial and wind-formed landforms by erosion or deposition. Either process-specific leaf alone would exclude half of the material.",
+      "resolution": "adjudicated",
+      "reviewerA": {
+        "reviewerId": "codex-geomorphic-tail-a",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/major-landform-types",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Distinguishing cirques and drumlins from yardangs and barchans requires comparing erosional and depositional landforms across two agents.",
+        "confidence": "high"
+      },
+      "reviewerB": {
+        "reviewerId": "geomorphic-95-b-tail",
+        "primaryId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/basics-of-geomorphic-processes",
+        "additionalIds": [],
+        "scope": "prelims",
+        "tag": "Static",
+        "rationale": "Matches aeolian and glacial features to the respective erosion and deposition processes.",
+        "confidence": "medium"
+      }
+    }
+  ]
+}

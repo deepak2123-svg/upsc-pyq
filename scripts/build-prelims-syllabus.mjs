@@ -28,13 +28,16 @@ for (const [subjectIndex, [subject, sections]] of Object.entries(outline).entrie
     for (const [chapterIndex, chapter] of chapters.entries()) {
       const chapterId = `${sectionId}/${slug(chapter.name)}`;
       const subparts = chapter.subtopics.map(part => typeof part === 'string' ? { name: part } : part);
+      if (chapterId === 'syllabus:geography/physical-geography/geomorphic-processes-and-landforms') {
+        subparts.push({ name: 'Arid Basin Landforms', addedInPrelims: true });
+      }
       add(chapterId, sectionId, 'chapter', chapter.name, chapter.order ?? chapterIndex + 1, {
         includes: subparts.map(part => part.name),
         boundary: `Questions testing ${chapter.name} in ${section}; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.`,
         reviewStatus: section === 'Physical Geography' ? 'existing-registry-preserved' : 'editorial-draft',
       });
       for (const [partIndex, part] of subparts.entries()) {
-        const legacyId = section === 'Physical Geography' ? `${slug(section)}/${slug(chapter.name)}/${slug(part.name)}` : undefined;
+        const legacyId = section === 'Physical Geography' && !part.addedInPrelims ? `${slug(section)}/${slug(chapter.name)}/${slug(part.name)}` : undefined;
         add(`${chapterId}/${slug(part.name)}`, chapterId, 'subpart', part.name, part.order ?? partIndex + 1, {
           includes: [part.name],
           excludes: ['Incidental references without testing this concept', 'Unrelated neighbouring concepts'],

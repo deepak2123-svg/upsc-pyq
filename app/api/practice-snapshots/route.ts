@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import {readFrozenScopes} from '../../../lib/practice-draft-membership';
 import {legacySnapshotQuestionIds} from '../../../lib/legacy-placement-bridge';
 import { questionContentRevision,questionReview } from '../../../lib/question-review';
+import { geomorphicReviewPlacements } from '../../../lib/geomorphic-review-placements';
 import { getPreparationInventory, preparationQuestionIds, getPreparationQuestions, preparationPathResolver } from '../../../lib/preparation-catalog';
 import { isPreparationExam } from '../../../lib/preparation-exams';
 import { PYQ_EXAMS, getExamQuestions, getLegacyQuestionPath, getSubjectPracticeInventory, isPyqExam, pyqQuestions, type PracticeInventoryNode, type PyqExam } from "../../../lib/pyq-catalog";
@@ -110,7 +111,9 @@ export async function POST(request: Request) {
           const question=eligibleById.get(id);
           if(!question)return NextResponse.json({error:'Some saved questions are no longer eligible. Refresh the library to review the selection.'},{status:409});
           if(question.exam!==exam)return NextResponse.json({error:'A saved question has a different examination source.'},{status:400});
-          if (preparationExam && !preparationSubjectIds.get(scope.subjectId)?.has(id)) {
+          const movedFromGeography = scope.subjectId === 'subject:geography'
+            && geomorphicReviewPlacements.get(id)?.scope === 'prelims';
+          if (preparationExam && !preparationSubjectIds.get(scope.subjectId)?.has(id) && !movedFromGeography) {
             return NextResponse.json({ error: 'A saved question does not belong to this preparation subject.' }, { status: 400 });
           }
         }

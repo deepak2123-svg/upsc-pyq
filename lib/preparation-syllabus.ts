@@ -5,7 +5,7 @@ import {ndaMathematicsChapters} from './nda-mathematics-taxonomy.ts';
 export type SyllabusSection = readonly [string, readonly (readonly [string, readonly string[]])[]];
 export const defenceWorldHistory: readonly SyllabusSection[] = [
   ['World History',[
-    ['American Revolution',['Declaration and independence']],
+    ['American Revolution',['Declaration and independence','Colonial resistance and early congresses']],
     ['Industrial Revolution',['Conditions in Britain','Inventions and inventors','Labour movements','Phases and industries','Origins and terminology']],
     ['Russian Revolution',['1905 Revolution','1917 Revolution']],
     // Structural industrialisation, urbanisation, secularisation and bureaucracy;

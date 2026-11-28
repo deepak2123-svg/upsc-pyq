@@ -1,6 +1,7 @@
 import { getQuestionPath, historicalPyqQuestions, type PyqQuestion } from './pyq-catalog';
 import { questionContentRevision, questionEligible } from './question-review';
 import { PYQ_EXAMS, type PyqExam } from './pyq-exams';
+import { geomorphicReviewPlacements } from './geomorphic-review-placements';
 
 export type PyqSearchResult = Pick<PyqQuestion,'id'|'exam'|'year'|'paper'|'questionNumber'|'subject'|'topic'|'subtopic'|'promptLines'|'options'> & { contentRevision:number; syllabus: { subject:string; head:string; chapter:string; subtopic:string; scopeId:string } | null };
 
@@ -9,7 +10,8 @@ const normalize=(value:string)=>value.toLocaleLowerCase('en-IN').normalize('NFKD
 export function searchPyqs(rawQuery:string,limit=50){
  const query=normalize(rawQuery).slice(0,160),terms=query.split(' ').filter(Boolean);
  if(!terms.length)return {query:'',total:0,counts:Object.fromEntries(PYQ_EXAMS.map(exam=>[exam,0])) as Record<PyqExam,number>,results:[] as PyqSearchResult[]};
- const matches=historicalPyqQuestions.filter(question=>questionEligible(question.id)).map(question=>{
+ const matches=historicalPyqQuestions.filter(question=>questionEligible(question.id)
+  && geomorphicReviewPlacements.get(question.id)?.scope !== 'original-paper-only').map(question=>{
   const prompt=normalize(question.promptLines.join(' ')),options=normalize(Object.values(question.options).join(' '));
   const metadata=normalize(`${question.exam} ${question.year} ${question.paper} question ${question.questionNumber} ${question.subject} ${question.topic} ${question.subtopic}`);
   const searchable=`${prompt} ${options} ${metadata}`;

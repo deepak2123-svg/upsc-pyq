@@ -5301,7 +5301,8 @@
         "Glacial Landforms",
         "Aeolian Landforms",
         "Coastal Landforms",
-        "Major Landform Types"
+        "Major Landform Types",
+        "Arid Basin Landforms"
       ],
       "boundary": "Questions testing Geomorphic Processes and Landforms in Physical Geography; incidental mentions do not justify placement. Review neighbouring chapters before approving overlaps.",
       "reviewStatus": "existing-registry-preserved"
@@ -5458,6 +5459,26 @@
       "placementRule": "Require complete-stem and option review plus a written concept-specific rationale; additional placements require independent material relevance.",
       "editorialExampleStatus": "pending-real-question-pilot",
       "legacyTaxonomyId": "physical-geography/geomorphic-processes-and-landforms/major-landform-types"
+    },
+    {
+      "id": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms/arid-basin-landforms",
+      "parentId": "syllabus:geography/physical-geography/geomorphic-processes-and-landforms",
+      "kind": "subpart",
+      "label": "Arid Basin Landforms",
+      "order": 10,
+      "includes": [
+        "Playas, bolsons and other landforms shaped by runoff and sedimentation in enclosed dryland basins"
+      ],
+      "excludes": [
+        "Wind-shaped dunes and yardangs",
+        "Location of named deserts and world regions"
+      ],
+      "placementRule": "Use when the question tests how a dryland basin or its floor forms or how that feature is classified.",
+      "editorialExampleStatus": "source-question-reviewed",
+      "representativeQuestions": [
+        "NDA 2024 II Q83: playa on a bolson floor",
+        "NDA 2021 II Q54: fine-sediment bed of an ephemeral desert lake"
+      ]
     },
     {
       "id": "syllabus:geography/physical-geography/the-atmosphere-insolation-heat-budget-and-temperature",

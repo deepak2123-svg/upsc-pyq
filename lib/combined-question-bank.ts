@@ -37,10 +37,11 @@ import officialNda2017IIPaper from '../content/nda-2017-ii-official-paper.json' 
 import {prelimsPath,reviewedPrelimsPlacements,PRELIMS_TAXONOMY_VERSION} from './prelims-taxonomy.ts';
 import type {PyqQuestion} from './pyq-catalog';
 import {migrateNdaMathematicsQuestion} from './nda-mathematics-taxonomy.ts';
+import { geomorphicClassificationRevision, geomorphicReviewPlacements, getGeomorphicDefencePath } from "./geomorphic-review-placements.ts";
 
 // Bound the catalogue's TypeScript shape instead of constructing an exponentially
 // large union from every imported JSON variant. This does not discard runtime fields.
-type BankQuestion=Omit<PyqQuestion,'exam'|'origin'> & {exam:string;origin:string;sourceText:string;source:Record<string,unknown>;preparationScope?:string;taxonomyVersion?:string};
+type BankQuestion=Omit<PyqQuestion,'exam'|'origin'> & {exam:string;origin:string;sourceText:string;source:Record<string,unknown>;preparationScope?:string;taxonomyVersion?:string;classificationTags?:string[];classificationRevision?:string};
 
 const cleared = new Set(['official-final', 'official-provisional', 'reasoned-verified']);
 const policy: Record<string, {status: string}> = importPolicy;
@@ -89,5 +90,54 @@ export const combinedQuestions=[...reviewedBaseQuestions.map(question=>{
   if(official.year===2015&&official.paper==='II'&&official.preparationScope==='gs')Object.assign(merged,{subject:question.subject,topic:question.topic,subtopic:question.subtopic,taxonomyHead:question.taxonomyHead,taxonomyChapter:question.taxonomyChapter,taxonomySubtopic:question.taxonomySubtopic,taxonomyId:question.taxonomyId,taxonomyVersion:question.taxonomyVersion});
   merged.additionalPaths=freshPlacementIds.has(official.id)?official.additionalPaths:official.preparationScope==='gs'?(preservedPaths.length?preservedPaths:official.additionalPaths):official.additionalPaths;
   return merged;
-}),...officialQuestions.filter(q=>!priorIds.has(q.id))];
+}),...officialQuestions.filter(q=>!priorIds.has(q.id))].map(applyGeomorphicReview);
+
+function applyGeomorphicReview(question: BankQuestion): BankQuestion {
+  const placement = geomorphicReviewPlacements.get(question.id);
+  if (!placement) return question;
+  if (question.sourceTextHash !== placement.expectedSourceTextHash) {
+    throw new Error("Source changed after geomorphology review: " + question.id);
+  }
+  const reviewed = {
+    ...question,
+    classificationTags: [placement.tag],
+    classificationRevision: geomorphicClassificationRevision,
+  };
+  if (placement.scope === "original-paper-only") {
+    return {
+      ...reviewed,
+      subject: "General Studies",
+      topic: "General",
+      subtopic: "General",
+      taxonomyId: undefined,
+      taxonomyHead: undefined,
+      taxonomyChapter: undefined,
+      taxonomySubtopic: undefined,
+      taxonomyVersion: undefined,
+      additionalPaths: [],
+    };
+  }
+  if (!placement.primaryId) throw new Error("Missing reviewed primary ID: " + question.id);
+  const primary = placement.scope === "defence-only"
+    ? getGeomorphicDefencePath(placement.primaryId)
+    : prelimsPath(placement.primaryId);
+  if (!primary) throw new Error("Missing reviewed primary category: " + question.id);
+  const additionalPaths = placement.additionalIds.map((id) => {
+    const leaf = prelimsPath(id);
+    if (!leaf) throw new Error("Missing reviewed secondary category: " + question.id);
+    return { subject: leaf.subject, head: leaf.head, chapter: leaf.chapter, subtopic: leaf.subtopic, taxonomyId: leaf.id };
+  });
+  return {
+    ...reviewed,
+    subject: primary.subject,
+    topic: primary.chapter,
+    subtopic: primary.subtopic,
+    taxonomyHead: primary.head,
+    taxonomyChapter: primary.chapter,
+    taxonomySubtopic: primary.subtopic,
+    taxonomyId: primary.id,
+    taxonomyVersion: placement.scope === "prelims" ? PRELIMS_TAXONOMY_VERSION : undefined,
+    additionalPaths,
+  };
+}
 export default { ...historicalBank, questions: combinedQuestions };

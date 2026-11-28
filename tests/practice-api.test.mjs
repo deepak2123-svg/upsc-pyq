@@ -67,7 +67,7 @@ function pathsFor(nodes) {
 test("multi-placement inventory conserves every unique parent and examination count", async () => {
   const data = await inventory();
   assert.equal(data.version, 4);
-  assert.equal(data.totalCount, 2525); // Complete reviewed NDA papers add only CSE-applicable GS records; English and school Science stay preparation-only.
+  assert.equal(data.totalCount, 2521); // The reviewed GS roster excludes defence-only and original-paper-only questions.
   assert.equal(data.mappedCount + data.unmappedCount, data.totalCount);
   assert.ok(data.mappedCount >= 1208, 'Reviewed mappings must not disappear');
   assert.equal(new Set(data.nodes.map((node) => node.id)).size, data.nodes.length);
@@ -86,12 +86,26 @@ test("multi-placement inventory conserves every unique parent and examination co
   for(const q of latestPaper.questions){expectedPhysical.delete(q.id);if(questionEligible(q.id)&&[{subject:q.subject,head:q.taxonomyHead},...q.additionalPaths].some(p=>p.subject==='Geography'&&p.head==='Physical Geography'))expectedPhysical.add(q.id);}
   expectedPhysical.add('nda-2016-i-70');
   expectedPhysical.add('nda-2016-i-86');
+  const geomorphicReview = JSON.parse(await readFile(
+    new URL('../content/audits/geomorphic-95-review/decisions.json', import.meta.url), 'utf8',
+  ));
+  function projectGeomorphicReview(expectedIds, prefix) {
+    for (const row of geomorphicReview.records) {
+      expectedIds.delete(row.questionId);
+      if (row.scope === 'prelims' && questionEligible(row.questionId)
+        && [row.primaryId, ...row.additionalIds].some(id => id?.startsWith(prefix))) {
+        expectedIds.add(row.questionId);
+      }
+    }
+  }
+  projectGeomorphicReview(expectedPhysical, 'syllabus:geography/physical-geography/');
   assert.equal(byId.get(physical).questionCount, expectedPhysical.size);
   // Other Geography shrinks when reviewed records receive precise subject homes.
   // Its exact count, like every parent, is checked against unique leaf IDs below.
   assert.ok(data.nodes.some(node=>node.kind==='subtopic'&&!node.legacyOnly&&node.id.includes(':world-geography:')&&node.questionIdsByExam.CAPF.includes('capf-2017-i-125')));
   const expectedFirstChapter=new Set(placementLedger.records.filter(row=>row.status==='approved'&&[row.primaryId,...row.additionalIds].some(id=>id.startsWith('syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/'))&&questionEligible(row.questionId)).map(row=>row.questionId));
   for(const q of latestPaper.questions){expectedFirstChapter.delete(q.id);if(questionEligible(q.id)&&[{subject:q.subject,head:q.taxonomyHead,chapter:q.topic},...q.additionalPaths].some(p=>p.subject==='Geography'&&p.head==='Physical Geography'&&p.chapter==='Universe, Solar System, Shape and Size of Earth'))expectedFirstChapter.add(q.id);}
+  projectGeomorphicReview(expectedFirstChapter, 'syllabus:geography/physical-geography/universe-solar-system-shape-and-size-of-earth/');
   assert.equal(byId.get(firstPhysicalChapter).questionCount,expectedFirstChapter.size);
   assert.equal(byId.get(otherGeomorphology).questionCount, 7);
   assert.equal(byId.get(planets).questionCount, 11); // NDA I 2022 Q117 belongs to Rotation and Time, not Planets.

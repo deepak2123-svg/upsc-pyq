@@ -36,6 +36,7 @@ import officialNda2018IPlacements from '../content/nda-2018-i-preparation-placem
 import officialNda2017IIPlacements from '../content/nda-2017-ii-preparation-placements.json' with {type:'json'};
 import {organiseNdaScience} from './nda-science-syllabus';
 import {migrateNdaMathematicsSubtopicId} from './nda-mathematics-taxonomy.ts';
+import { geomorphicDefenceTransfers, geomorphicReviewPlacements } from './geomorphic-review-placements.ts';
 
 export type PreparationInventory = SubjectPracticeInventory & { preparationExam: PreparationExam; preparationViews: PreparationView[] };
 const exams: PyqExam[] = ['CSE', 'CAPF', 'CDS', 'NDA'];
@@ -45,6 +46,11 @@ type Transfer = { questionId: string; target: PreparationExam; status: string; r
 type ReviewedPlacement = Transfer & { subtopicId: string };
 const approved = new Set((applicability.approvedScienceTransfers as Transfer[])
   .filter(row => row.status === 'approved' && row.rationale.trim()).map(row => `${row.target}:${row.questionId}`));
+for (const placement of geomorphicReviewPlacements.values()) {
+  if (placement.scope === 'prelims' && placement.primaryId?.startsWith('syllabus:science-technology/')) {
+    approved.add(`CSE:${placement.questionId}`);
+  }
+}
 
 /** Question membership, counts and server eligibility all come from this same projection.
  * Source-exam facts and answer/content revisions are never rewritten by a target view.
@@ -136,6 +142,17 @@ for (const row of [...officialNda2023IIMathematicsPlacements,...officialNda2024I
     if (!question || !leaf || !questionReview(question.id) || !questionEligible(question.id)) throw new Error(`Invalid approved preparation placement: ${row.questionId}`);
     const members = leaf.questionIdsByExam![question.exam];
     if (!members.includes(question.id)) members.push(question.id);
+  }
+  if (target === 'NDA' || target === 'CDS') {
+    for (const row of geomorphicDefenceTransfers) {
+      const question = questions.get(row.questionId);
+      const leaf = nodes.find((node) => node.kind === 'subtopic' && node.id === row.subtopicId);
+      if (!question || !leaf?.questionIdsByExam || !questionEligible(question.id)) {
+        throw new Error('Invalid geomorphology defence placement: ' + row.questionId);
+      }
+      const members = leaf.questionIdsByExam[question.exam];
+      if (!members.includes(question.id)) members.push(question.id);
+    }
   }
   if(target==='NDA')nodes=organiseNdaScience(nodes);
   const byId = new Map<string, { parentId?: string; examCounts: ExamCounts; questionCount: number }>([...subjects, ...nodes].map(n => [n.id, n]));

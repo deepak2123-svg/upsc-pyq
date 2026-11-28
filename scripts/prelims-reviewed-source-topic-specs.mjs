@@ -1,5 +1,11 @@
 // Concept boundaries established by full original-question review, not keywords.
 export const sourceTopicSpecs = {
+  'Geography/Physical Geography/Geomorphic Processes and Landforms/Arid Basin Landforms': {
+    includes:['Playas, bolsons and other landforms shaped by runoff and sedimentation in enclosed dryland basins'],
+    excludes:['Wind-shaped dunes and yardangs','Location of named deserts and world regions'],
+    placementRule:'Use when the question tests how a dryland basin or its floor forms or how that feature is classified.',
+    representativeQuestions:['NDA 2024 II Q83: playa on a bolson floor','NDA 2021 II Q54: fine-sediment bed of an ephemeral desert lake'],
+  },
   'History/Medieval India/Regional Kingdoms/Assam and Ahoms': {
     includes:['Ahom state, commanders and regional conflicts','Saraighat and regional resistance'],
     excludes:['Recent Assam state policy','Unrelated North-East ethnic geography'],

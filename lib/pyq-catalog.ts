@@ -1,6 +1,7 @@
 import questionBank, {legacyQuestions} from "./combined-question-bank";
+import { geomorphicReviewPlacements } from './geomorphic-review-placements';
 import { questionEligible,questionInGsScope } from './question-review';
-import {canonicalSubjectLabel,subjectScopeKey,prelimsPaths,PRELIMS_TAXONOMY_VERSION} from './prelims-taxonomy';
+import {canonicalSubjectLabel,subjectScopeKey,prelimsPath,prelimsPaths,PRELIMS_TAXONOMY_VERSION} from './prelims-taxonomy';
 import {bridgeLegacyPlacements,legacySnapshotQuestionIds} from './legacy-placement-bridge';
 import { historicalPhysicalQuestionSets, historicalPhysicalTargets, slug as taxonomySlug, taxonomyIdForLegacyQuestion, taxonomyIdForQuestion, taxonomyNode } from "./taxonomy";
 import { PYQ_EXAMS, type PyqExam } from "./pyq-exams";
@@ -189,7 +190,22 @@ const emptyExamCounts = (): ExamCounts => ({ CSE: 0, CAPF: 0, CDS: 0, NDA: 0 });
 export function getQuestionPaths(question: PyqQuestion) {
   const primary = getQuestionPath(question);
   const paths = primary ? [primary] : [];
-  for (const place of question.additionalPaths || []) {
+  const additional = [...(question.additionalPaths || [])];
+  if (geomorphicReviewPlacements.has(question.id)) {
+    // Economy and Current Affairs share these syllabus leaves.
+    for (const id of [question.taxonomyId, ...additional.map(place => place.taxonomyId)]) {
+      const mirrorId = id?.startsWith('syllabus:economy/current-affairs/')
+        ? id.replace('syllabus:economy/current-affairs/', 'syllabus:current-affairs/economy-development/')
+        : id?.startsWith('syllabus:current-affairs/economy-development/')
+          ? id.replace('syllabus:current-affairs/economy-development/', 'syllabus:economy/current-affairs/')
+          : undefined;
+      const mirror = mirrorId && prelimsPath(mirrorId);
+      if (mirror && mirror.id !== question.taxonomyId && !additional.some(place => place.taxonomyId === mirror.id)) {
+        additional.push({ subject: mirror.subject, head: mirror.head, chapter: mirror.chapter, subtopic: mirror.subtopic, taxonomyId: mirror.id });
+      }
+    }
+  }
+  for (const place of additional) {
     const subject=canonicalSubjectLabel(place.subject);
     const { head, chapter: topic, subtopic } = place;
     const mapped=place.taxonomyId?taxonomyNode(place.taxonomyId):undefined;

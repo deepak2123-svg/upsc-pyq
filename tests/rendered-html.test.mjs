@@ -74,12 +74,15 @@ test('homepage search returns answer-free matching MCQs and supports option text
   assert.doesNotMatch(html,/Correct answer|officialAcceptedOptions|"answer"/);
 });
 
-test('homepage search reports no result without weakening the normal library',async()=>{
+test('homepage search reports no result and the regular homepage still offers the library',async()=>{
   const response=await workerFetch('/?q=term-that-cannot-exist-94721');
   assert.equal(response.status,200);
   const html=await response.text();
   assert.match(html,/No reviewed MCQs match/);
-  assert.match(html,/Question library/i);
+  assert.doesNotMatch(html,/CSE(?:<!-- -->)? question library/i);
+  const home = await workerFetch('/');
+  assert.equal(home.status, 200);
+  assert.match(await home.text(), /CSE(?:<!-- -->)? question library/i);
 });
 
 test("server-renders an exam archive through the browse-first selector", async () => {
@@ -100,7 +103,7 @@ test("inventory returns cross-exam subjects and unique official PYQ flows", asyn
   const response = await workerFetch("/api/pyqs/inventory");
   assert.equal(response.status, 200);
   const inventory = await response.json();
-  assert.equal(inventory.totalCount, 2525);
+  assert.equal(inventory.totalCount, 2521);
   assert.equal(inventory.mappedCount + inventory.unmappedCount, inventory.totalCount);
   assert.deepEqual(inventory.subjects.filter(s=>!s.legacyOnly).map((subject) => subject.label), ["Geography", "History", "Polity & Governance", "Economy", "Environment & Ecology", "Science & Technology", "Social Development", "International Relations & Organisations", "Current Affairs"]);
   assert.ok(inventory.nodes.some((node) => node.kind === "topic"));
